@@ -1,0 +1,16 @@
+{
+  "id": "example_scenario",
+  "displayName": "Example Scenario",
+  "description": "Example scenario description.",
+  "image": "totalwar:textures/gui/scenarios/example.png",
+  "mapId": "example_map",
+  "teamAName": "Team Alpha",
+  "teamBName": "Team Bravo",
+  "classIds": [],
+  "classIdsTeamA": [],
+  "classIdsTeamB": [],
+  "pointIds": [],
+  "defaultScoreToWin": 1000,
+  "defaultTimeLimitSeconds": 2400,
+  "defaultMaxPlayers": 24
+}

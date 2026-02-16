@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "search_for_the_obsidilith"
+  ],
+  "tasks": {
+    "asd": {
+      "type": "heracles:item",
+      "item": "bosses_of_mass_destruction:obsidian_heart",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "asds": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Stone finally falls.”",
+      "",
+      "→ Defeat The Obsidilith"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          7,
+          271
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "bosses_of_mass_destruction:obsidian_heart",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Slay The Obsidilith"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

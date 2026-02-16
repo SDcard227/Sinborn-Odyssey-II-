@@ -1,0 +1,71 @@
+{
+  "dependencies": [
+    "craft_the_cursed_eye"
+  ],
+  "tasks": {
+    "fda": {
+      "type": "heracles:item",
+      "item": "compatdelight:crystal_fruit_shake",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "asd": {
+      "type": "heracles:item",
+      "item": "compatdelight:star_lily_salad",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "ad": {
+      "type": "heracles:item",
+      "item": "compatdelight:crystal_fruit_salad",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "dasd": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 19
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Victory still burns.”",
+      "",
+      "> → Cook a meal from the past Trials"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -66,
+          454
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "compatdelight:soul_star_stew",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Devoid Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

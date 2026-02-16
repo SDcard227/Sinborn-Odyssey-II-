@@ -1,0 +1,12 @@
+#.
+#Render the armor hud on the right side.
+"Right Aligned" = false
+#.
+#Additional Y offset of the armor hud
+#Range: > -2147483648
+"Y Offset" = 0
+#.
+#Additional X offset of the armor hud
+#Range: > -2147483648
+"X Offset" = 0
+

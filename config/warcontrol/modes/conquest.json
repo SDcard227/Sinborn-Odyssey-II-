@@ -1,0 +1,20 @@
+{
+  "countdownSeconds": 15,
+  "timeLimitSeconds": 900,
+  "scoreToWin": 500,
+  "scoring": {
+    "baseRatePerSecond": 0,
+    "perOwnedPointRatePerSecond": 1
+  },
+  "capture": {
+    "tickIntervalTicks": 10,
+    "progressPerSecondPerAdvantage": 10.0,
+    "freezeOnEqual": true,
+    "neutralBackslidePerSecond": 0.0
+  },
+  "respawn": {
+    "delaySeconds": 5,
+    "allowClassChangeOnRespawn": true,
+    "allowSpawnOnCapturedPoints": true
+  }
+}

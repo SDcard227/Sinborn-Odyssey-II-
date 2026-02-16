@@ -1,0 +1,9 @@
+{
+  "skeletonHeadSpawnRate": 12,
+  "witherSkeletonHeadSpawnRate": 12,
+  "timeBeforeRevival": 140,
+  "skeletonHeadShouldDropExperience": true,
+  "respawnedEntityShouldDropExperience": true,
+  "respawnedEntityShouldDropItem": true,
+  "canSpawnFromSpawner": false
+}

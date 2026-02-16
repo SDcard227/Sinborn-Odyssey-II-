@@ -1,0 +1,38 @@
+
+["HUD Layout"]
+	#Horizontal offset from center
+	#Range: -1000 ~ 1000
+	barXOffset = 0
+	#Vertical offset from bottom
+	#Range: 0 ~ 1000
+	barYOffset = 24
+	#Width of the bar in pixels
+	#Range: 1 ~ 1000
+	barWidth = 180
+	#Height of the bar in pixels
+	#Range: 1 ~ 100
+	barHeight = 2
+	#Whether to render text/emoji icons on the stamina bar penalty zones.
+	showIcons = true
+
+[Colors]
+	#Range: 0 ~ 16777215
+	colorBackground = 2236962
+	#Range: 0 ~ 16777215
+	colorSafe = 65280
+	#Range: 0 ~ 16777215
+	colorCritical = 16711680
+	#Range: 0 ~ 16777215
+	colorTireless = 65450
+	#Range: 0 ~ 16777215
+	colorStripes = 16711680
+	#Color for Hunger penalty stripes
+	#Range: 0 ~ 16777215
+	colorPenaltyHunger = 16763904
+	#Color for Food Poisoning penalty stripes
+	#Range: 0 ~ 16777215
+	colorPenaltyPoison = 11141375
+	#color for weight stripes
+	#Range: 0 ~ 16777215
+	colorPenaltyWeight = 5592405
+

@@ -1,0 +1,17 @@
+{
+  "id": "natural_bamboo_jungle",
+  "name": "Bamboo Jungle Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:dirt_path",
+    "minecraft:podzol",
+    "minecraft:rooted_dirt"
+  ],
+  "slabMaterials": [
+    "minecraft:bamboo_slab",
+    "minecraft:jungle_slab"
+  ]
+}

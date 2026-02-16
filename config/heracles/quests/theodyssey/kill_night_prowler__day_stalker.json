@@ -1,0 +1,56 @@
+{
+  "dependencies": [
+    "essence_of_eventide"
+  ],
+  "tasks": {
+    "FAS": {
+      "type": "heracles:item",
+      "item": "#soulsweapons:duo_boss_souls",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "LKJL;": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“A lord falls.”",
+      "",
+      "→ Slay either of The Lords"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          459
+        ]
+      }
+    },
+    "icon": {
+      "item": "#soulsweapons:duo_boss_souls",
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Kill Night Prowler / Day Stalker"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

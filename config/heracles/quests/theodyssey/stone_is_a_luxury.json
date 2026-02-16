@@ -1,0 +1,98 @@
+{
+  "dependencies": [
+    "early_beginnings"
+  ],
+  "tasks": {
+    "flint2": {
+      "type": "heracles:item",
+      "item": "earlystage:flint_pickaxe",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "Flint": {
+      "type": "heracles:item",
+      "item": "earlystage:flint_sword",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "Flint3": {
+      "type": "heracles:item",
+      "item": "earlystage:flint_axe",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "Flint4": {
+      "type": "heracles:item",
+      "item": "earlystage:flint_hoe",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "Flint1": {
+      "type": "heracles:item",
+      "item": "earlystage:flint_shovel",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "Stone Is a Luxury": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "You begin with stone because metal hasn’t noticed you yet. ",
+      "",
+      "> → Obtain a full flint arsenal "
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          -71
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "earlystage:flint",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Stone Is a Luxury"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

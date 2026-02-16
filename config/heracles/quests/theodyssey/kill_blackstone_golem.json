@@ -1,0 +1,71 @@
+{
+  "dependencies": [
+    "obtain_summoner_pearl"
+  ],
+  "tasks": {
+    "CHEKER": {
+      "title": "Kill the Black Stone Golem",
+      "icon": {
+        "item": {
+          "id": "minecraft:gilded_blackstone",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "hyd": {
+      "item": {
+        "id": "things:hardening_catalyst",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Stone is not immortal.”",
+      "",
+      "> → Kill Blackstone Golem"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -346,
+          283
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "contractor:divinity_gilded_blackstone_bricks",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Kill Blackstone Golem"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

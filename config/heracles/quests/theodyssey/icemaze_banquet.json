@@ -1,0 +1,103 @@
+{
+  "dependencies": [
+    "ocean_meal"
+  ],
+  "tasks": {
+    "dsgds": {
+      "type": "heracles:item",
+      "item": "hybrid-delights:masgouf",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "df": {
+      "type": "heracles:item",
+      "item": "rusticdelight:fried_calamari",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "dsgs": {
+      "type": "heracles:item",
+      "item": "createfood:fish_onion_pizza",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "dsg": {
+      "type": "heracles:item",
+      "item": "hybrid-delights:eel_noodles",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "dsfdg": {
+      "type": "heracles:item",
+      "item": "vinery:kelp_cider",
+      "nbt": {
+        "Year": 1,
+        "EffectDuration": 1800,
+        "EffectAmplifier": 0
+      },
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "ds": {
+      "type": "heracles:item",
+      "item": "oceansdelight:guardian_soup",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "gsdg": {
+      "type": "heracles:item",
+      "item": "candlelight:tropical_fish_supreme",
+      "nbt": {
+        "StoredEffects": []
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coim": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 7
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“You ate where ships die.”",
+      "",
+      "> → Eat seafood foods + eat meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          129,
+          156
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "farmersdelight:kelp_roll_slice",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Ice-Maze Banquet"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "classes": [
+    {
+      "id": "assault",
+      "displayName": "\u0428\u0442\u0443\u0440\u043c\u043e\u0432\u0438\u043a",
+      "description": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0439 \u0431\u043e\u0435\u0446 \u0431\u043b\u0438\u0436\u043d\u0435\u0433\u043e \u0438 \u0441\u0440\u0435\u0434\u043d\u0435\u0433\u043e \u0431\u043e\u044f, \u0438\u0434\u0435\u0430\u043b\u044c\u043d\u043e \u043f\u043e\u0434\u0445\u043e\u0434\u0438\u0442 \u0434\u043b\u044f \u0431\u044b\u0441\u0442\u0440\u043e\u0433\u043e \u0437\u0430\u0445\u0432\u0430\u0442\u0430 \u0442\u043e\u0447\u0435\u043a \u0438 \u0448\u0442\u0443\u0440\u043c\u0430 \u0443\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u0439.",
+      "limitPerTeam": -1,
+      "cost": 0,
+      "kit": {
+        "primaryItems": [
+          "{Count:1b,id:\"tacz:modern_kinetic_gun\",tag:{AttachmentEXTENDED_MAG:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:extended_mag_3\"}},AttachmentMUZZLE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:muzzle_brake_cyclone_d2\"}},AttachmentSCOPE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:sight_coyote\"}},AttachmentSTOCK:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:stock_ak12\"}},GunCurrentAmmoCount:40,GunFireMode:\"AUTO\",GunId:\"maxstuff:ak109\",HasBulletInBarrel:1b}}"
+        ],
+        "secondaryItems": [
+          "{Count:1b,id:\"superbwarfare:igla_9k38\",tag:{Attachments:{},GeckoLibID:130L,GunData:{Ammo:1,UUID:[I;551466759,1788822859,-1440247223,-618411041]},Perks:{}}}"
+        ],
+        "items": [
+          "{Count:1b,id:\"superbwarfare:crowbar\",tag:{Damage:0}}",
+          "{Count:4b,id:\"superbwarfare:armor_plate\"}",
+          "{Count:4b,id:\"superbwarfare:medical_kit\"}",
+          "{Count:4b,id:\"superbwarfare:medium_anti_air_missile\"}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:1b,id:\"superbwarfare:large_battery_pack\",tag:{Energy:20000000}}",
+          "{Count:3b,id:\"superbwarfare:m18_smoke_grenade\"}",
+          "{Count:3b,id:\"superbwarfare:tm_62\"}",
+          "{Count:3b,id:\"superbwarfare:hand_grenade\"}"
+        ],
+        "armorItems": [
+          "{Count:1b,id:\"superbwarfare:ru_chest_6b43\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:ru_helmet_6b47\",tag:{Damage:0}}"
+        ],
+        "curiosItems": {
+          "iff": [
+            "{Count:1b,id:\"superbwarfare:iff\"}"
+          ],
+          "back": [
+            "{Count:1b,id:\"superbwarfare:parachute\",tag:{Damage:0}}"
+          ]
+        }
+      },
+      "perks": {
+        "captureSpeedMult": 1.1
+      }
+    },
+    {
+      "id": "rifleman",
+      "displayName": "\u0421\u043d\u0430\u0439\u043f\u0435\u0440",
+      "description": "\u0411\u043e\u0435\u0446 \u0434\u0430\u043b\u044c\u043d\u0435\u0433\u043e \u0431\u043e\u044f, \u044d\u0444\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u043e \u0443\u043d\u0438\u0447\u0442\u043e\u0436\u0430\u0435\u0442 \u0446\u0435\u043b\u0438 \u043d\u0430 \u0440\u0430\u0441\u0441\u0442\u043e\u044f\u043d\u0438\u0438 \u0438 \u043a\u043e\u043d\u0442\u0440\u043e\u043b\u0438\u0440\u0443\u0435\u0442 \u043f\u043e\u0434\u0445\u043e\u0434\u044b \u043a \u043a\u043b\u044e\u0447\u0435\u0432\u044b\u043c \u0442\u043e\u0447\u043a\u0430\u043c.",
+      "limitPerTeam": -1,
+      "cost": 1,
+      "kit": {
+        "primaryItems": [
+          "{Count:1b,id:\"tacz:modern_kinetic_gun\",tag:{AttachmentMUZZLE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:muzzle_silencer_phantom_s1\"}},AttachmentSCOPE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"maxstuff:vuduu\"}},GunCurrentAmmoCount:5,GunFireMode:\"SEMI\",GunId:\"tacz:m700\",HasBulletInBarrel:1b}}"
+        ],
+        "secondaryItems": [
+          "{Count:1b,id:\"tacz:modern_kinetic_gun\",tag:{GunCurrentAmmoCount:12,GunFireMode:\"BURST\",GunId:\"maxstuff:mk23\",HasBulletInBarrel:1b}}"
+        ],
+        "items": [
+          "{Count:1b,id:\"superbwarfare:igla_9k38\",tag:{Attachments:{},GeckoLibID:130L,GunData:{Ammo:1,UUID:[I;551466759,1788822859,-1440247223,-618411041]},Perks:{}}}",
+          "{Count:1b,id:\"superbwarfare:crowbar\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:steel_pipe\",tag:{Damage:0}}",
+          "{Count:4b,id:\"superbwarfare:armor_plate\"}",
+          "{Count:2b,id:\"superbwarfare:rgo_grenade\"}",
+          "{Count:8b,id:\"superbwarfare:m18_smoke_grenade\"}",
+          "{Count:36b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:30_06\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:45acp\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:45acp\"}}",
+          "{Count:4b,id:\"superbwarfare:medium_anti_air_missile\"}",
+          "{Count:1b,id:\"superbwarfare:large_battery_pack\",tag:{Energy:20000000}}",
+          "{Count:2b,id:\"superbwarfare:tm_62\"}",
+          "{Count:4b,id:\"superbwarfare:medical_kit\"}"
+        ],
+        "armorItems": [
+          "{Count:1b,id:\"superbwarfare:ru_chest_6b43\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:ru_helmet_6b47\",tag:{Damage:0}}"
+        ],
+        "curiosItems": {
+          "iff": [
+            "{Count:1b,id:\"superbwarfare:iff\"}"
+          ],
+          "back": [
+            "{Count:1b,id:\"superbwarfare:parachute\",tag:{Damage:0,Open:0b}}"
+          ]
+        }
+      },
+      "perks": {}
+    },
+    {
+      "id": "gunner",
+      "displayName": "\u041f\u0443\u043b\u0435\u043c\u0451\u0442\u0447\u0438\u043a",
+      "description": "\u041f\u0435\u0445\u043e\u0442\u0438\u043d\u0435\u0446 \u043e\u0431\u043b\u0430\u0434\u0430\u044e\u0449\u0438\u0439 \u0441\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044e\u0449\u0438\u043c \u0438 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044e\u0449\u0438\u043c \u0441\u0432\u043e\u044e \u0448\u0442\u0443\u0440\u043c\u043e\u0432\u0443\u044e \u043f\u0435\u0445\u043e\u0442\u0443 \u043e\u0433\u043d\u0435\u043c.",
+      "limitPerTeam": 2,
+      "cost": 1,
+      "kit": {
+        "primaryItems": [
+          "{Count:1b,id:\"tacz:modern_kinetic_gun\",tag:{AttachmentEXTENDED_MAG:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:extended_mag_3\"}},AttachmentGRIP:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:grip_vertical_military\"}},AttachmentMUZZLE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:muzzle_brake_cthulhu\"}},AttachmentSCOPE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:sight_exp3\"}},AttachmentSTOCK:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:stock_ak12\"}},GunCurrentAmmoCount:150,GunFireMode:\"AUTO\",GunId:\"tacz:fn_evolys\",HasBulletInBarrel:1b}}"
+        ],
+        "secondaryItems": [
+          "{Count:1b,id:\"superbwarfare:rpg\",tag:{Attachments:{},GeckoLibID:142L,GunData:{Ammo:1,UUID:[I;-1362542921,-785103728,-1384977978,-2312748]},Perks:{}}}"
+        ],
+        "items": [
+          "{Count:1b,id:\"superbwarfare:crowbar\",tag:{Damage:0}}",
+          "{Count:4b,id:\"superbwarfare:m18_smoke_grenade\"}",
+          "{Count:8b,id:\"superbwarfare:armor_plate\"}",
+          "{Count:4b,id:\"superbwarfare:medical_kit\"}",
+          "{Count:4b,id:\"superbwarfare:rgo_grenade\"}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:1b,id:\"superbwarfare:large_battery_pack\",tag:{Energy:20000000}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:308\"}}",
+          "{Count:2b,id:\"superbwarfare:rpg_rocket_standard\"}",
+          "{Count:2b,id:\"superbwarfare:rpg_rocket_tbg\"}"
+        ],
+        "armorItems": [
+          "{Count:1b,id:\"superbwarfare:ru_chest_6b43\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:ru_helmet_6b47\",tag:{Damage:0}}"
+        ],
+        "curiosItems": {
+          "iff": [
+            "{Count:1b,id:\"superbwarfare:iff\"}"
+          ],
+          "back": [
+            "{Count:1b,id:\"superbwarfare:parachute\",tag:{Damage:0,Open:0b}}"
+          ]
+        }
+      },
+      "perks": {
+        "moveSpeedMult": 0.95
+      }
+    },
+    {
+      "id": "recon",
+      "displayName": "\u0420\u0430\u0437\u0432\u0435\u0434\u0447\u0438\u043a",
+      "description": "\u0411\u044b\u0441\u0442\u0440\u044b\u0439 \u0438 \u0441\u043a\u0440\u044b\u0442\u043d\u044b\u0439 \u0431\u043e\u0435\u0446, \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0438\u0432\u0430\u0435\u0442 \u043f\u0440\u043e\u0442\u0438\u0432\u043d\u0438\u043a\u043e\u0432, \u043f\u043e\u043c\u0435\u0447\u0430\u0435\u0442 \u0446\u0435\u043b\u0438 \u0438 \u043f\u043e\u043c\u043e\u0433\u0430\u0435\u0442 \u043a\u043e\u043c\u0430\u043d\u0434\u0435 \u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c\u0441\u044f \u043d\u0430 \u043f\u043e\u043b\u0435 \u0431\u043e\u044f.",
+      "limitPerTeam": 2,
+      "cost": 1,
+      "kit": {
+        "primaryItems": [
+          "{Count:1b,id:\"tacz:modern_kinetic_gun\",tag:{AttachmentEXTENDED_MAG:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:light_extended_mag_3\"}},AttachmentGRIP:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:grip_vertical_ranger\"}},AttachmentLASER:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:laser_compact\"}},AttachmentMUZZLE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:muzzle_compensator_trident\"}},AttachmentSCOPE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:scope_hamr\"}},GunCurrentAmmoCount:39,GunFireMode:\"AUTO\",GunId:\"maxstuff:aug_a3_para\",HasBulletInBarrel:1b}}"
+        ],
+        "secondaryItems": [
+          "{Count:1b,id:\"superbwarfare:m_79\",tag:{Attachments:{},GeckoLibID:137L,GunData:{Ammo:1,UUID:[I;-1135591626,1968260979,-1517544863,-1597507606]},Perks:{}}}"
+        ],
+        "items": [
+          "{Count:1b,id:\"superbwarfare:steel_pipe\",tag:{Damage:0}}",
+          "{Count:4b,id:\"superbwarfare:armor_plate\"}",
+          "{Count:2b,id:\"superbwarfare:ptkm_1r\"}",
+          "{Count:4b,id:\"superbwarfare:m18_smoke_grenade\"}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:8b,id:\"superbwarfare:grenade_40mm\"}",
+          "{Count:4b,id:\"superbwarfare:medical_kit\"}",
+          "{Count:1b,id:\"vvp:ags_30_item\"}",
+          "{Count:1b,id:\"superbwarfare:monitor\",tag:{}}",
+          "{Count:2b,id:\"vvp:item_40_mm\"}",
+          "{Count:1b,id:\"superbwarfare:crowbar\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:drone\"}",
+          "{Count:2b,id:\"vvp:item_40_mm\"}"
+        ],
+        "armorItems": [
+          "{Count:1b,id:\"superbwarfare:ru_chest_6b43\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:ru_helmet_6b47\",tag:{Damage:0}}"
+        ],
+        "curiosItems": {
+          "iff": [
+            "{Count:1b,id:\"superbwarfare:iff\"}"
+          ],
+          "back": [
+            "{Count:1b,id:\"superbwarfare:parachute\",tag:{Damage:0}}"
+          ]
+        }
+      },
+      "perks": {}
+    },
+    {
+      "id": "engineer",
+      "displayName": "\u0418\u043d\u0436\u0435\u043d\u0435\u0440",
+      "description": "\u0421\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0438, \u0441\u0442\u0440\u043e\u0438\u0442 \u0443\u043a\u0440\u0435\u043f\u043b\u0435\u043d\u0438\u044f \u0438 \u0442\u043e\u0447\u043a\u0438 \u0441\u043d\u0430\u0431\u0436\u0435\u043d\u0438\u044f, \u0440\u0435\u043c\u043e\u043d\u0442\u0438\u0440\u0443\u0435\u0442 \u0442\u0435\u0445\u043d\u0438\u043a\u0443 \u0438 \u0443\u0441\u0438\u043b\u0438\u0432\u0430\u0435\u0442 \u043e\u0431\u043e\u0440\u043e\u043d\u0443 \u043a\u043e\u043c\u0430\u043d\u0434\u044b.",
+      "limitPerTeam": -1,
+      "cost": 1,
+      "kit": {
+        "primaryItems": [
+          "{Count:1b,id:\"tacz:modern_kinetic_gun\",tag:{AttachmentEXTENDED_MAG:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:light_extended_mag_3\"}},AttachmentGRIP:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:grip_vertical_military\"}},AttachmentLASER:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:laser_nightstick\"}},AttachmentMUZZLE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:muzzle_silencer_knight_qd\"}},AttachmentSCOPE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:sight_coyote\"}},AttachmentSTOCK:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:stock_carbon_bone_c5\"}},GunCurrentAmmoCount:33,GunFireMode:\"AUTO\",GunId:\"maxstuff:udp9\",HasBulletInBarrel:1b}}"
+        ],
+        "secondaryItems": [
+          "{Count:1b,id:\"superbwarfare:repair_tool\",tag:{Attachments:{},Energy:100000,GeckoLibID:146L,GunData:{UUID:[I;-616339009,1003832718,-1287472608,-927790068]},Perks:{}}}"
+        ],
+        "items": [
+          "{Count:1b,id:\"superbwarfare:monitor\",tag:{}}",
+          "{Count:1b,id:\"superbwarfare:crowbar\",tag:{Damage:0}}",
+          "{Count:4b,id:\"superbwarfare:armor_plate\"}",
+          "{Count:4b,id:\"superbwarfare:medical_kit\"}",
+          "{Count:2b,id:\"superbwarfare:c4_bomb\",tag:{Control:1b}}",
+          "{Count:2b,id:\"superbwarfare:claymore_mine\"}",
+          "{Count:2b,id:\"superbwarfare:tm_62\"}",
+          "{Count:1b,id:\"superbwarfare:defuser\",tag:{Damage:0}}",
+          "{Count:32b,id:\"superbwarfare:mortar_shell\"}",
+          "{Count:1b,id:\"superbwarfare:detonator\"}",
+          "{Count:1b,id:\"superbwarfare:large_battery_pack\",tag:{Energy:20000000}}",
+          "{Count:1b,id:\"superbwarfare:artillery_indicator\"}",
+          "{Count:1b,id:\"superbwarfare:mortar_deployer\"}",
+          "{Count:1b,id:\"superbwarfare:monitor\",tag:{}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:9mm\"}}",
+          "{Count:1b,id:\"superbwarfare:drone\"}"
+        ],
+        "armorItems": [
+          "{Count:1b,id:\"superbwarfare:ru_chest_6b43\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:ru_helmet_6b47\",tag:{Damage:0}}"
+        ],
+        "curiosItems": {
+          "iff": [
+            "{Count:1b,id:\"superbwarfare:iff\"}"
+          ],
+          "back": [
+            "{Count:1b,id:\"superbwarfare:parachute\",tag:{Damage:0}}"
+          ]
+        }
+      },
+      "perks": {}
+    },
+    {
+      "id": "at",
+      "displayName": "\u041f\u0440\u043e\u0442\u0438\u0432\u043e\u0442\u0430\u043d\u043a\u043e\u0432\u044b\u0439 \u041f\u0435\u0445\u043e\u0442\u0438\u043d\u0435\u0446",
+      "description": "\u0411\u043e\u0435\u0446 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0438, \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u0443\u044e\u0449\u0438\u0439\u0441\u044f \u043d\u0430 \u0443\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d\u0438\u0438 \u0431\u0440\u043e\u043d\u0435\u0442\u0435\u0445\u043d\u0438\u043a\u0438 \u0438 \u0441\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u043d\u0438\u0438 \u0432\u0440\u0430\u0436\u0435\u0441\u043a\u0438\u0445 \u043c\u0430\u0448\u0438\u043d.",
+      "limitPerTeam": 2,
+      "cost": 1,
+      "kit": {
+        "primaryItems": [
+          "{Count:1b,id:\"tacz:modern_kinetic_gun\",tag:{AttachmentEXTENDED_MAG:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:extended_mag_3\"}},AttachmentMUZZLE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:muzzle_brake_cyclone_d2\"}},AttachmentSCOPE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:sight_coyote\"}},AttachmentSTOCK:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:stock_ak12\"}},GunCurrentAmmoCount:40,GunFireMode:\"AUTO\",GunId:\"maxstuff:ak109\",HasBulletInBarrel:1b}}"
+        ],
+        "secondaryItems": [
+          "{Count:1b,id:\"superbwarfare:javelin\",tag:{Attachments:{},GeckoLibID:132L,GunData:{Ammo:1,UUID:[I;-1914481228,-232501365,-2145806097,-1035099544]},Perks:{}}}"
+        ],
+        "items": [
+          "{Count:1b,id:\"superbwarfare:crowbar\",tag:{Damage:0}}",
+          "{Count:4b,id:\"superbwarfare:medical_kit\"}",
+          "{Count:8b,id:\"superbwarfare:tm_62\"}",
+          "{Count:2b,id:\"superbwarfare:ptkm_1r\"}",
+          "{Count:2b,id:\"superbwarfare:ptkm_1r\"}",
+          "{Count:4b,id:\"superbwarfare:javelin_missile\"}",
+          "{Count:4b,id:\"superbwarfare:javelin_missile\"}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:762x39\"}}",
+          "{Count:4b,id:\"superbwarfare:medium_anti_ground_missile\"}",
+          "{Count:1b,id:\"superbwarfare:tow_deployer\"}",
+          "{Count:1b,id:\"superbwarfare:large_battery_pack\",tag:{Energy:20000000}}",
+          "{Count:4b,id:\"superbwarfare:armor_plate\"}"
+        ],
+        "armorItems": [
+          "{Count:1b,id:\"superbwarfare:ru_chest_6b43\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:ru_helmet_6b47\",tag:{Damage:0}}"
+        ],
+        "curiosItems": {
+          "iff": [
+            "{Count:1b,id:\"superbwarfare:iff\"}"
+          ],
+          "back": [
+            "{Count:1b,id:\"superbwarfare:parachute\",tag:{Damage:0,Open:0b}}"
+          ]
+        }
+      },
+      "perks": {}
+    },
+    {
+      "id": "drone",
+      "displayName": "\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 FPV-\u0434\u0440\u043e\u043d\u0430",
+      "description": "\u0442\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0441\u0442, \u0443\u043f\u0440\u0430\u0432\u043b\u044f\u0435\u0442 \u0443\u0434\u0430\u0440\u043d\u044b\u043c \u0434\u0440\u043e\u043d\u043e\u043c \u0434\u043b\u044f \u0440\u0430\u0437\u0432\u0435\u0434\u043a\u0438 \u0438 \u0442\u043e\u0447\u0435\u0447\u043d\u043e\u0433\u043e \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u044f \u043a\u043b\u044e\u0447\u0435\u0432\u044b\u0445 \u0446\u0435\u043b\u0435\u0439.",
+      "limitPerTeam": 2,
+      "cost": 1,
+      "kit": {
+        "primaryItems": [
+          "{Count:1b,id:\"tacz:modern_kinetic_gun\",tag:{AttachmentEXTENDED_MAG:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:extended_mag_3\"}},AttachmentGRIP:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:grip_vertical_military\"}},AttachmentMUZZLE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:muzzle_compensator_trident\"}},AttachmentSCOPE:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:sight_exp3\"}},AttachmentSTOCK:{Count:1b,id:\"tacz:attachment\",tag:{AttachmentId:\"tacz:stock_tactical_ar\"}},GunCurrentAmmoCount:49,GunFireMode:\"AUTO\",GunId:\"maxstuff:ar57\",HasBulletInBarrel:1b}}"
+        ],
+        "secondaryItems": [
+          "{Count:1b,id:\"tacz:modern_kinetic_gun\",tag:{GunCurrentAmmoCount:6,GunFireMode:\"SEMI\",GunId:\"tacz:deagle\",HasBulletInBarrel:1b}}"
+        ],
+        "items": [
+          "{Count:4b,id:\"superbwarfare:armor_plate\"}",
+          "{Count:1b,id:\"superbwarfare:monitor\",tag:{}}",
+          "{Count:6b,id:\"superbwarfare:drone\"}",
+          "{Count:2b,id:\"superbwarfare:rpg_rocket_standard\"}",
+          "{Count:2b,id:\"superbwarfare:rpg_rocket_tbg\"}",
+          "{Count:4b,id:\"superbwarfare:tm_62\"}",
+          "{Count:4b,id:\"superbwarfare:medical_kit\"}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:50ae\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:57x28\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:57x28\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:57x28\"}}",
+          "{Count:1b,id:\"superbwarfare:crowbar\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:large_battery_pack\",tag:{Energy:20000000}}",
+          "{Count:48b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:50ae\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:57x28\"}}",
+          "{Count:60b,id:\"tacz:ammo\",tag:{AmmoId:\"tacz:57x28\"}}"
+        ],
+        "armorItems": [
+          "{Count:1b,id:\"superbwarfare:ru_chest_6b43\",tag:{Damage:0}}",
+          "{Count:1b,id:\"superbwarfare:ru_helmet_6b47\",tag:{Damage:0}}"
+        ],
+        "curiosItems": {
+          "iff": [
+            "{Count:1b,id:\"superbwarfare:iff\"}"
+          ],
+          "back": [
+            "{Count:1b,id:\"superbwarfare:parachute\",tag:{Damage:0,Open:0b}}"
+          ]
+        }
+      },
+      "perks": {}
+    },
+    {
+      "id": "template",
+      "displayName": "\u041f\u0432\u043f-\u0411\u044b\u0434\u043b\u043e \u0421 \u041f\u043e\u043c\u043f\u0435\u044f - \u0422\u043e\u043b\u044c\u043a\u043e \u0434\u043b\u044f \u0411\u0430\u0440\u043e\u043d\u0430",
+      "description": "\u0425\u0443\u0439\u043b\u043e \u043a\u043e\u0442\u043e\u0440\u043e\u0435 \u043d\u0435 \u0437\u043d\u0430\u0435\u0442 \u0447\u0435\u043c \u0432 \u0441\u0432\u043e\u0435\u0439 \u0436\u0438\u0437\u043d\u0438 \u0437\u0430\u043d\u044f\u0442\u044c\u0441\u044f \u0438 \u043f\u0440\u0438\u0448\u0435\u043b \u043f\u043e\u0440\u0442\u0438\u0442\u044c \u0436\u0438\u0437\u043d\u044c \u0438\u0433\u0440\u043e\u043a\u0430\u043c \u043d\u0430 \u043f\u0440\u043e\u0435\u043a\u0442\u0435 FastPolit",
+      "limitPerTeam": 1,
+      "cost": 1,
+      "kit": {
+        "primaryItems": [
+          "{Count:1b,id:\"minecraft:netherite_sword\",tag:{Damage:0,Enchantments:[{id:\"minecraft:sharpness\",lvl:5s}],RepairCost:1}}"
+        ],
+        "secondaryItems": [
+          "{Count:1b,id:\"minecraft:netherite_axe\",tag:{Damage:0,Enchantments:[{id:\"minecraft:sharpness\",lvl:5s}],RepairCost:1}}"
+        ],
+        "items": [
+          "{Count:1b,id:\"minecraft:bow\",tag:{Damage:0,Enchantments:[{id:\"minecraft:power\",lvl:5s},{id:\"minecraft:infinity\",lvl:1s},{id:\"minecraft:flame\",lvl:1s}],RepairCost:7}}",
+          "{Count:32b,id:\"minecraft:golden_apple\"}",
+          "{Count:64b,id:\"minecraft:tipped_arrow\",tag:{Potion:\"minecraft:strong_harming\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_regeneration\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_regeneration\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_strength\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_strength\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_strength\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_swiftness\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_swiftness\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_swiftness\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_regeneration\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_regeneration\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_leaping\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_leaping\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_leaping\"}}",
+          "{Count:1b,id:\"minecraft:potion\",tag:{Potion:\"minecraft:strong_leaping\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}",
+          "{Count:1b,id:\"minecraft:splash_potion\",tag:{Potion:\"minecraft:strong_healing\"}}"
+        ],
+        "armorItems": [
+          "{Count:1b,id:\"minecraft:netherite_boots\",tag:{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:4s}],RepairCost:1}}",
+          "{Count:1b,id:\"minecraft:netherite_leggings\",tag:{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:4s}],RepairCost:1}}",
+          "{Count:1b,id:\"minecraft:netherite_chestplate\",tag:{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:4s}],RepairCost:1}}",
+          "{Count:1b,id:\"minecraft:netherite_helmet\",tag:{Damage:0,Enchantments:[{id:\"minecraft:protection\",lvl:4s}],RepairCost:1}}"
+        ],
+        "curiosItems": {}
+      },
+      "perks": {}
+    }
+  ]
+}

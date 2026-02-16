@@ -1,0 +1,75 @@
+{
+  "dependencies": [
+    "obtain_icy_pearl"
+  ],
+  "tasks": {
+    "gd": {
+      "type": "heracles:item",
+      "item": "aquamirae:dead_sea_scroll",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "g": {
+      "type": "heracles:item",
+      "item": "aquamirae:shell_horn",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fah": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 12
+      },
+      "type": "heracles:item"
+    },
+    "gld": {
+      "item": {
+        "id": "immersive_weathering:enchanted_golden_moss_clump",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The sea does not forgive mistakes.”",
+      "",
+      "> → Find Shell Horn → Slay Captain Cornelia → Locate Mother of the Maze"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -147,
+          203
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "aquamirae:three_bolt_helmet",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Aquamirae Boss Chain"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

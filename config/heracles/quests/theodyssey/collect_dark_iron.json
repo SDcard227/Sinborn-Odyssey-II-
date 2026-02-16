@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_corruption_quest"
+  ],
+  "tasks": {
+    "iornnblkl": {
+      "type": "heracles:item",
+      "item": "graveyard:dark_iron_ingot",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Metal dragged from graves.”",
+      "",
+      "> → Dark Iron x3"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -311,
+          341
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "graveyard:dark_iron_ingot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Collect Dark Iron"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

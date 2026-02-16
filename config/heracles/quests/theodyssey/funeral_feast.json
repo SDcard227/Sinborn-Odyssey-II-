@@ -1,0 +1,84 @@
+{
+  "dependencies": [
+    "purifying_meal"
+  ],
+  "tasks": {
+    "fuj": {
+      "type": "heracles:item",
+      "item": "compatdelight:corruption_wrap",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "va": {
+      "type": "heracles:item",
+      "item": "compatdelight:corruption_shake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "cuhh": {
+      "type": "heracles:item",
+      "item": "compatdelight:corruption_roll",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "cuh": {
+      "type": "heracles:item",
+      "item": "compatdelight:corruotion_ice_cream",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "du": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 15
+      },
+      "type": "heracles:item"
+    },
+    "ttd": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 30
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“You ate among the dead.”",
+      "",
+      "> → Table + 3+ foods + eat meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -513,
+          429
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "compatdelight:corruotion_ice_cream",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Funeral Feast"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

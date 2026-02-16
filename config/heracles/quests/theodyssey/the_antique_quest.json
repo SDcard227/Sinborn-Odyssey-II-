@@ -1,0 +1,67 @@
+{
+  "dependencies": [
+    "the_hungry_eyes"
+  ],
+  "tasks": {
+    "ea": {
+      "title": "Kill The Sacred Pontiff",
+      "icon": {
+        "item": {
+          "id": "companions:holy_robe_mask",
+          "count": 1,
+          "nbt": {
+            "Damage": 0
+          }
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "FAHH": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Faith shatters like bone.”",
+      "",
+      "> → Kill Pontiff of Old"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -190,
+          309
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "dustydecorations:old_globe",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Antique Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

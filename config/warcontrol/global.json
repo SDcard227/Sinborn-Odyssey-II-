@@ -1,0 +1,45 @@
+{
+  "hub": {
+    "dimension": "minecraft:overworld",
+    "spawnPos": {
+      "x": 0,
+      "y": 80,
+      "z": 0,
+      "yaw": 0,
+      "pitch": 0
+    }
+  },
+  "matchmaking": {
+    "defaultMaxPlayers": 24,
+    "minPlayers": 2,
+    "startCountdownMinPlayers": 2,
+    "startCountdownTwoPlayerSeconds": 10,
+    "startCountdownThresholdPlayers": 4,
+    "startCountdownBaseSeconds": 255,
+    "startCountdownReducePerPlayerSeconds": 5,
+    "startCountdownMinSeconds": 10,
+    "maxTeamDiff": 2,
+    "allowJoinInProgress": true
+  },
+  "protection": {
+    "baseSafeZoneRadius": 20.0,
+    "baseNoEnemyRadius": 30.0,
+    "spawnProtectionSeconds": 4
+  },
+  "reset": {
+    "mode": "ARENA_SLOTS",
+    "instancesRootFolder": "warcontrol_instances",
+    "arenaDimension": "minecraft:overworld",
+    "arenaRegion": {
+      "min": { "x": 0, "y": 0, "z": 0 },
+      "max": { "x": 50000, "y": 320, "z": 50000 }
+    },
+    "slotCount": 4,
+    "regionSize": 256,
+    "slotSpacing": 6000,
+    "boundaryWarnSeconds": 1,
+    "forceUnloadChunks": true,
+    "enforceAllVehiclesInsideSlot": true,
+    "applyChunksPerTick": 4
+  }
+}

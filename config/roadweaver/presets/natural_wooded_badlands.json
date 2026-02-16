@@ -1,0 +1,17 @@
+{
+  "id": "natural_wooded_badlands",
+  "name": "Wooded Badlands Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:coarse_dirt",
+    "minecraft:terracotta",
+    "minecraft:red_sand"
+  ],
+  "slabMaterials": [
+    "minecraft:red_sandstone_slab",
+    "minecraft:oak_slab"
+  ]
+}

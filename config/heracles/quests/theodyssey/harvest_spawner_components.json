@@ -1,0 +1,77 @@
+{
+  "dependencies": [
+    "the_crypitc_quest"
+  ],
+  "tasks": {
+    "fragments": {
+      "type": "heracles:item",
+      "item": "dungeonnowloading:spawner_fragment",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "skully": {
+      "type": "heracles:item",
+      "item": "dungeonnowloading:skull_of_chaos",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "blade": {
+      "type": "heracles:item",
+      "item": "dungeonnowloading:spawner_blade",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "frame": {
+      "type": "heracles:item",
+      "item": "dungeonnowloading:spawner_frame",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Control the cage, not the monsters.”",
+      "",
+      "> → Locate the lost Spawner Fragments"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -309,
+          231
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "dungeonnowloading:spawner_frame",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Harvest Spawner Components"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

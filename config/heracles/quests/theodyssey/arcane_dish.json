@@ -1,0 +1,73 @@
+{
+  "dependencies": [
+    "craft_the_magical_eye"
+  ],
+  "tasks": {
+    "fsf": {
+      "icon": {
+        "item": {
+          "id": "festive_delight:christmas_tea",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "entity": {
+        "type": "minecraft:pig"
+      },
+      "amount": 1,
+      "type": "heracles:kill_entity"
+    },
+    "fsd": {
+      "type": "heracles:item",
+      "item": "bewitchment:witchberry_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "asd": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 9
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Magic tastes bitter and sweet.”",
+      "",
+      "> → A Meal Worthy for a master of the arts"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          551
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "bakingdelight:cherry_milk_tea",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Arcane Dish"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

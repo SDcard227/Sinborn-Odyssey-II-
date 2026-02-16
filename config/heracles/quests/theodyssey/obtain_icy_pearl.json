@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_frosted_quest"
+  ],
+  "tasks": {
+    "cuhhh": {
+      "type": "heracles:item",
+      "item": "endermanoverhaul:icy_pearl",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "nun": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Cold clings longer than fear.”",
+      "",
+      "> → Find an Icy Pearl"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -176,
+          228
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endermanoverhaul:icy_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain Icy Pearl"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

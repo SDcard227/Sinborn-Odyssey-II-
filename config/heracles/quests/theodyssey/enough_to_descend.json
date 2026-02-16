@@ -1,0 +1,82 @@
+{
+  "dependencies": [
+    "secondlife_banquet",
+    "funeral_feast",
+    "labyrinth_long_table",
+    "inventor4oczs_spread",
+    "golembreaker_table",
+    "icemaze_banquet",
+    "bossslayer_banquet",
+    "pontiff4oczs_platter",
+    "eventide_festival"
+  ],
+  "tasks": {
+    "asd": {
+      "title": "Dive into the Abyss",
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "fulret": {
+      "item": {
+        "id": "adventurez:ender_flute",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "sa": {
+      "item": {
+        "id": "iceandfire:legendary_dragon_seeker",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“You are ready for what lies ahead.”",
+      "",
+      "> → Complete ALL mandatory Eye FEASTS"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          667
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "summonerscrolls:enderman_summoner_scroll",
+        "count": 1,
+        "nbt": {
+          "count": 1,
+          "summon": "summonerscrolls:enderman_summon",
+          "cost": 4,
+          "Damage": 0,
+          "damageAmount": 5
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Enough to Descend"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

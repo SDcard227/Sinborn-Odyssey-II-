@@ -1,0 +1,24 @@
+
+[client]
+
+	#Configuration for display related options
+	[client.display]
+		#If enabled, renders a HUD element displaying the fruit's moveset and cooldowns.
+		displayCooldownGUI = true
+		#If disabled, the HUD will remain even if there are no cooldowns.
+		vanishCooldownGUI = false
+		#Offsets the fruit HUD by the specified X value.
+		#Range: -750 ~ 0
+		displayCooldownGUIXOffset = 0
+		#Offsets the fruit HUD by the specified Y value.
+		#Range: 0 ~ 250
+		displayCooldownGUIYOffset = 0
+
+	#Properties relating to controls
+	[client.controls]
+		#A value to multiple the mouse sensitivity by when aiming down weapon sights. Go to (Options > Controls > Mouse Settings > ADS Sensitivity) in game to change this!
+		#Range: 0.0 ~ 1.0
+		aimDownSightSensitivity = 0.75
+		#When enabled, switches the shoot and aim controls of weapons. Due to technical reasons, you won't be able to use offhand items if you enable this setting.
+		flipControls = false
+

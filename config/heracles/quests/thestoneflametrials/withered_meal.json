@@ -1,0 +1,89 @@
+{
+  "dependencies": [
+    "obtain_the_wither_eye"
+  ],
+  "tasks": {
+    "safga": {
+      "type": "heracles:item",
+      "item": "frightsdelight:punch_wither_berry",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "sad": {
+      "type": "heracles:item",
+      "item": "frightsdelight:wither_berry_cheesecake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "aggsa": {
+      "type": "heracles:item",
+      "item": "compatdelight:wither_meat_stick",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "saf": {
+      "type": "heracles:item",
+      "item": "bakingdelight:wither_rose_cake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "safdsf": {
+      "type": "heracles:item",
+      "item": "frightsdelight:soup_wither_berry",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "saff": {
+      "type": "heracles:item",
+      "item": "frightsdelight:bone_kebab_wither_berry",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 7
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Bitter fuel for survivors.”",
+      "",
+      "> → Cook a wither-themed meal"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          120,
+          59
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "frightsdelight:wither_berry",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Withered Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

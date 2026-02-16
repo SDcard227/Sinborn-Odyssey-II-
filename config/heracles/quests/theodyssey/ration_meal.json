@@ -1,0 +1,78 @@
+{
+  "dependencies": [
+    "craft_the_rogue_eye"
+  ],
+  "tasks": {
+    "gjd": {
+      "type": "heracles:item",
+      "item": "farm_and_charm:oatmeal_with_strawberries",
+      "amount": 2,
+      "collection": "AUTOMATIC",
+      "icon": {
+        "item": {
+          "id": "farm_and_charm:oatmeal_with_strawberries",
+          "count": 1
+        },
+        "type": "heracles:item"
+      }
+    },
+    "fatg": {
+      "type": "heracles:item",
+      "item": "farm_and_charm:oat_pancake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "fa": {
+      "type": "heracles:item",
+      "item": "herbalbrews:yerba_mate_tea",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fa": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 18
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Fuel, not indulgence.”",
+      "",
+      "> → Cook ration meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -76,
+          281
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "farm_and_charm:bacon_with_eggs",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Ration Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

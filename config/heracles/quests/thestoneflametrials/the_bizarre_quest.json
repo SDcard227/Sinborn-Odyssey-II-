@@ -1,0 +1,89 @@
+{
+  "dependencies": [
+    "the_stone__flame_trials"
+  ],
+  "tasks": {
+    "asf": {
+      "type": "heracles:item",
+      "item": "minecraft:horn_coral",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "saf": {
+      "type": "heracles:item",
+      "item": "minecraft:tube_coral",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asfghh": {
+      "type": "heracles:item",
+      "item": "minecraft:conduit",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "asfd": {
+      "type": "heracles:item",
+      "item": "minecraft:fire_coral",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asfdsz": {
+      "type": "heracles:item",
+      "item": "minecraft:ender_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "safs": {
+      "type": "heracles:item",
+      "item": "minecraft:bubble_coral",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "saf": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 7
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The world hides its best meals far from home.”",
+      "",
+      "> → Obtain exotic meats/ingredients"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          34,
+          31
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "hybrid-aquatic:coral_chunk",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Bizarre Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

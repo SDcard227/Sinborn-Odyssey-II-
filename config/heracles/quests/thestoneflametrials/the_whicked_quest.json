@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_stone__flame_trials"
+  ],
+  "tasks": {
+    "eye": {
+      "type": "heracles:item",
+      "item": "endrem:witch_pupil",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Knowledge brewed slowly.”",
+      "",
+      "> → Witch hut/ritual/themed objective"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          -23,
+          31
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:witch_pupil",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Whicked Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "dependencies": [
+    "purchased_meal",
+    "cook_the_dragon"
+  ],
+  "tasks": {
+    "asd": {
+      "icon": {
+        "item": {
+          "id": "bosses_of_mass_destruction:obsidian_heart",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "structures": "bosses_of_mass_destruction:obsidilith_arena",
+      "type": "heracles:structure"
+    }
+  },
+  "rewards": {
+    "asdsa": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The world answers arrogance.”",
+      "",
+      "> → Locate and trigger the Obsidilith fight"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          7,
+          232
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "bosses_of_mass_destruction:charged_ender_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Search For The Obsidilith"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

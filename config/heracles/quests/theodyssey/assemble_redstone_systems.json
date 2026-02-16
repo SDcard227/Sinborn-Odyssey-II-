@@ -1,0 +1,99 @@
+{
+  "dependencies": [
+    "obtain_warped_pearl"
+  ],
+  "tasks": {
+    "daf": {
+      "type": "heracles:item",
+      "item": "dungeonnowloading:redstone_circuit",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "BRAH": {
+      "title": "Obtain Catalyzed Redstone",
+      "icon": {
+        "item": {
+          "id": "dungeonnowloading:catalyzed_redstone",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "fa": {
+      "type": "heracles:item",
+      "item": "dungeonnowloading:redstone_idol",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "hd": {
+      "title": "Obtain The combution Cell ",
+      "icon": {
+        "item": {
+          "id": "dungeonnowloading:combustion_cell",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "fgh": {
+      "type": "heracles:item",
+      "item": "dungeonnowloading:redstone_core",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "das": {
+      "type": "heracles:item",
+      "item": "dungeonnowloading:redstone_chip",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fa": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Knowledge becomes leverage.”",
+      "",
+      "> → Chips x2 + Circuits x2 + Cores x2 + Catalyzed/Cell"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -139,
+          281
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "dungeonnowloading:redstone_circuit",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Assemble Redstone Systems"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,34 @@
+
+[common]
+
+	#Properties relating to gameplay
+	[common.gameplay]
+		#CAREFUL! If this option is enabled, EATING another Fruit while having an active one, will explode the Player!
+		onlyOneFruitPerLife = false
+		#The damage will be multiplied by this number. It affects EVERY fruit.
+		#Range: 1 ~ 999
+		damageMultiplier = 1
+		#The damage scaling will stop once the player reaches this Mastery level.
+		#Range: 1.0 ~ 999.0
+		maxScaling = 3.0
+		#If enabled, attacks will consume hunger.
+		applyHunger = true
+		#If enabled, users will not be able to swim if they have non-water type fruits active.
+		noSwimming = false
+
+		#Properties related to fruit griefing
+		[common.gameplay.griefing]
+			#If true, some attacks will produce (visual) debri
+			destructionDebri = true
+			#If true, players in Survival will be able to remove debris
+			allowVaccumingInSurvival = true
+			#If true, allows fire attacks to light and spread fires on blocks
+			setFireToBlocks = true
+			#If true, Squid attacks will stain and dye blocks
+			stainBlocks = true
+
+	#Properties relating to the spas world and its ecosystem
+	[common.world]
+		#If enabled, mobs will chase after and eat fruits!
+		mobsEatFruits = true
+

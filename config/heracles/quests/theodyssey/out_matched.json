@@ -1,0 +1,65 @@
+{
+  "dependencies": [
+    "edge_of_safety"
+  ],
+  "tasks": {
+    "eyeball": {
+      "type": "heracles:item",
+      "item": "iceandfire:cyclops_eye",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "x": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The world is stronger than you.”",
+      "",
+      "> → Find the Cyclops and slay the vile Beast"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          167
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "simplyswords:bramblethorn",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Out Matched"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

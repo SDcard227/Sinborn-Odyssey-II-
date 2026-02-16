@@ -1,0 +1,16 @@
+{
+  "id": "natural_frozen_river",
+  "name": "Frozen River Path",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:packed_ice",
+    "minecraft:gravel",
+    "minecraft:snow_block"
+  ],
+  "slabMaterials": [
+    "minecraft:spruce_slab"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "dependencies": [
+    "harvest_spawner_components"
+  ],
+  "tasks": {
+    "hex": {
+      "type": "heracles:item",
+      "item": "dungeonnowloading:chaotic_hexahedron",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "g": {
+      "item": {
+        "id": "summonerscrolls:bee_summoner_scroll",
+        "count": 1,
+        "nbt": {
+          "count": 5,
+          "summon": "summonerscrolls:bee_summon",
+          "cost": 3,
+          "Damage": 0,
+          "damageAmount": 5
+        }
+      },
+      "type": "heracles:item"
+    },
+    "cuh": {
+      "item": {
+        "id": "dungeonnowloading:labyrinth_trophy",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“A trophy that watches back.”",
+      "",
+      "> → Locate The Chaotic Hexahedron (boss drop)"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -338,
+          204
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "dungeonnowloading:chaotic_hexahedron",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain The Chaotic Hexahedron"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

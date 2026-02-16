@@ -1,0 +1,8 @@
+{
+  "skeletonHeadEntities": [
+    "minecraft:skeleton"
+  ],
+  "witherSkeletonHeadEntities": [
+    "minecraft:wither_skeleton"
+  ]
+}

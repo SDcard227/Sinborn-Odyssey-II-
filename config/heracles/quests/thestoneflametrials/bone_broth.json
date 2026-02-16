@@ -1,0 +1,83 @@
+{
+  "dependencies": [
+    "craft_the_undead_eye"
+  ],
+  "tasks": {
+    "saf": {
+      "type": "heracles:item",
+      "item": "frightsdelight:punch_rotten_flesh",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "asd": {
+      "type": "heracles:item",
+      "item": "frightsdelight:rotten_flesh_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "saff": {
+      "type": "heracles:item",
+      "item": "frightsdelight:monster_mash",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sg": {
+      "type": "heracles:item",
+      "item": "frightsdelight:spidereye_lollipop",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "fsadf": {
+      "type": "heracles:item",
+      "item": "frightsdelight:undead_kebab",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "safs": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Warmth stolen from death itself.”",
+      "",
+      "> → Table + place 4+ foods + consume bone broth"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          -103,
+          59
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "farmersdelight:bone_broth",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Bone Broth"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "dependencies": [
+    "dungeon_meal"
+  ],
+  "tasks": {
+    "SK": {
+      "type": "heracles:item",
+      "item": "silentsdelight:plated_warden_heart",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sk": {
+      "type": "heracles:item",
+      "item": "silentsdelight:warden_ear_fried_rice",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "SK2": {
+      "type": "heracles:item",
+      "item": "silentsdelight:sculk_catalyst_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sk2": {
+      "type": "heracles:item",
+      "item": "compatdelight:sculk_cider",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "c1": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 15
+      },
+      "type": "heracles:item"
+    },
+    "c": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 30
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“A meal worthy of the journy.”",
+      "",
+      "> → Table + place 2+ food blocks + eat dungeon meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -476,
+          149
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "silentsdelight:warden_heart",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Labyrinth Long Table"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "example_map",
+  "displayName": "Example Map",
+  "templateWorldFolder": "warcontrol_template",
+  "templateRegion": {
+    "min": { "x": -128, "y": 60, "z": -128 },
+    "max": { "x": 127, "y": 120, "z": 127 }
+  },
+  "modeId": "conquest",
+  "teams": {
+    "A": {
+      "baseSpawn": {
+        "x": 0,
+        "y": 80,
+        "z": 0,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "safeZoneRadius": 20.0,
+      "noEnemyRadius": 30.0
+    },
+    "B": {
+      "baseSpawn": {
+        "x": 100,
+        "y": 80,
+        "z": 0,
+        "yaw": 180,
+        "pitch": 0
+      },
+      "safeZoneRadius": 20.0,
+      "noEnemyRadius": 30.0
+    }
+  },
+  "points": [
+    {
+      "id": "alpha",
+      "name": "Alpha",
+      "pos": { "x": 20, "y": 80, "z": 0 },
+      "radius": 8.0,
+      "allowSpawnIfOwned": false
+    },
+    {
+      "id": "bravo",
+      "name": "Bravo",
+      "pos": { "x": 60, "y": 80, "z": 0 },
+      "radius": 8.0,
+      "allowSpawnIfOwned": false
+    }
+  ],
+  "vehiclePads": []
+}

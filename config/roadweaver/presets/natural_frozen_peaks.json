@@ -1,0 +1,16 @@
+{
+  "id": "natural_frozen_peaks",
+  "name": "Frozen Peaks Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:packed_ice",
+    "minecraft:snow_block",
+    "minecraft:stone"
+  ],
+  "slabMaterials": [
+    "minecraft:stone_slab"
+  ]
+}

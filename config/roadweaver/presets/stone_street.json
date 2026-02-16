@@ -1,0 +1,16 @@
+{
+  "id": "stone_street",
+  "name": "Stone Street",
+  "type": "ARTIFICIAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:stone_bricks",
+    "minecraft:polished_andesite"
+  ],
+  "slabMaterials": [
+    "minecraft:stone_brick_slab",
+    "minecraft:polished_andesite_slab"
+  ]
+}

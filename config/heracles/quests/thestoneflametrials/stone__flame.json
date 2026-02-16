@@ -1,0 +1,65 @@
+{
+  "dependencies": [
+    "slay_the_obsidilith"
+  ],
+  "tasks": {
+    "asf": {
+      "type": "heracles:item",
+      "item": "compatdelight:glazed_obsidian_heart",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asfs": {
+      "type": "heracles:item",
+      "item": "createfood:chorus_fruit_juice_bottle",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "asfa": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 28
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“You ate where mountains break.”",
+      "",
+      "> → Eat a volcanic meal"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          7,
+          311
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "compatdelight:obsidian_heart_sandwich",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Stone & Flame"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

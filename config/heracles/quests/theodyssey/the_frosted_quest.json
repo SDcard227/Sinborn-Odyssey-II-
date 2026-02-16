@@ -1,0 +1,77 @@
+{
+  "dependencies": [
+    "the_hungry_eyes"
+  ],
+  "tasks": {
+    "Maze": {
+      "title": "Enter The Ice Maze",
+      "icon": {
+        "item": {
+          "id": "hybrid-aquatic:diving_helmet",
+          "count": 1,
+          "nbt": {
+            "Damage": 0
+          }
+        },
+        "type": "heracles:item"
+      },
+      "biomes": "#aquamirae:ice_maze",
+      "type": "heracles:biome"
+    },
+    "cuh": {
+      "title": "Begin the Frosted Quest",
+      "icon": {
+        "item": {
+          "id": "rottencreatures:frozen_rotten_flesh",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Enter the depths of The Maze”"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -206,
+          257
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "rottencreatures:frozen_rotten_flesh",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Frosted Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

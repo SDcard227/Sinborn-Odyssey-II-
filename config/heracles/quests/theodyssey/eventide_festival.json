@@ -1,0 +1,95 @@
+{
+  "dependencies": [
+    "arcane_dish"
+  ],
+  "tasks": {
+    "fsaf": {
+      "type": "heracles:item",
+      "item": "rusticdelight:cherry_blossom_roll",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "fasd": {
+      "type": "heracles:item",
+      "item": "rusticdelight:cherry_blossom_cheesecake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "chsad": {
+      "type": "heracles:item",
+      "item": "createfood:caramel_chip_chocolate_milkshake_bottle",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "fafas": {
+      "type": "heracles:item",
+      "item": "rusticdelight:chocolate_pancakes",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "das": {
+      "type": "heracles:item",
+      "item": "rusticdelight:cherry_blossom_pancakes",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "fasfd": {
+      "type": "heracles:item",
+      "item": "createfood:glow_berry_cream_cake_glow_berry",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "fsdf": {
+      "type": "heracles:item",
+      "item": "mobs_of_mythology:cooked_chupacabra_meat",
+      "amount": 5,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "afdsa": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 17
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“You dined at the edge of night.”",
+      "",
+      "> → Table + 5+ fancy foods + eat dish"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          584
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "rusticdelight:cherry_blossom_roll",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Eventide Festival"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

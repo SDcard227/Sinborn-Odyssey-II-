@@ -1,0 +1,38 @@
+{
+	"renderTwoDArrow": true,
+	"arrowDirectionList": [
+		{
+			"arrow": "minecraft:arrow",
+			"direction": "UP_RIGHT"
+		},
+		{
+			"arrow": "minecraft:tipped_arrow",
+			"direction": "UP_RIGHT"
+		},
+		{
+			"arrow": "minecraft:spectral_arrow",
+			"direction": "UP_RIGHT"
+		}
+	],
+	"arrowScale": 1.5,
+	"arrowOffset": 0.15000000596046448,
+	"arrowRoll": 22.5,
+	"arrowShakePowerFactor": 200.0,
+	"arrowShakeSpeedFactor": 2.0,
+	"renderTippedArrow": false,
+	"renderCriticalParticles": false,
+	"renderTwoDFireworkRocket": true,
+	"fireworkRocketDirection": "UP",
+	"fireworkRocketScale": 1.5,
+	"fireworkRocketOffset": 0.125,
+	"fireworkRocketRoll": 22.5,
+	"renderTwoDTrident": false,
+	"tridentDirection": "UP_RIGHT",
+	"tridentScale": 1.5,
+	"tridentOffset": 0.125,
+	"tridentRoll": 22.5,
+	"tridentShakePowerFactor": 100.0,
+	"tridentShakeSpeedFactor": 2.0,
+	"renderTwoDProjectileItem": true,
+	"projectileItemScale": 1.5
+}

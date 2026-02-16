@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_undead_quest"
+  ],
+  "tasks": {
+    "Exo": {
+      "type": "heracles:item",
+      "item": "endrem:exotic_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "sasf": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“A gaze that does not blink.”",
+      "",
+      "> → Craft The Undead Eye"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          -68,
+          59
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:undead_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Undead Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

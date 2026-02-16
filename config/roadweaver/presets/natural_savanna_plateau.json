@@ -1,0 +1,16 @@
+{
+  "id": "natural_savanna_plateau",
+  "name": "Savanna Plateau Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:dirt_path",
+    "minecraft:coarse_dirt",
+    "minecraft:stone"
+  ],
+  "slabMaterials": [
+    "minecraft:acacia_slab"
+  ]
+}

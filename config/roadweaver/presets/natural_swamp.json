@@ -1,0 +1,17 @@
+{
+  "id": "natural_swamp",
+  "name": "Swamp Path",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:mud",
+    "minecraft:muddy_mangrove_roots",
+    "minecraft:dirt_path"
+  ],
+  "slabMaterials": [
+    "minecraft:mud_brick_slab",
+    "minecraft:oak_slab"
+  ]
+}

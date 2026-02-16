@@ -1,0 +1,16 @@
+{
+  "id": "natural_old_growth_spruce_taiga",
+  "name": "Old Growth Spruce Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:podzol",
+    "minecraft:coarse_dirt",
+    "minecraft:rooted_dirt"
+  ],
+  "slabMaterials": [
+    "minecraft:spruce_slab"
+  ]
+}

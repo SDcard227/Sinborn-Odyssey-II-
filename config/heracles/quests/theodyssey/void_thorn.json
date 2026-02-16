@@ -1,0 +1,73 @@
+{
+  "dependencies": [
+    "kill_void_blossom"
+  ],
+  "tasks": {
+    "ehfa": {
+      "type": "heracles:item",
+      "item": "bosses_of_mass_destruction:blazing_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "csad": {
+      "title": "Find the Gauntlets Arena",
+      "icon": {
+        "item": {
+          "id": "betternether:geyser",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "structures": "bosses_of_mass_destruction:gauntlet_arena",
+      "type": "heracles:structure"
+    }
+  },
+  "rewards": {
+    "sad": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Endurance over strength.”",
+      "",
+      "> → Complete The trial",
+      "",
+      "> → Obtain The Blazing Eye"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -139,
+          412
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "companions:nether_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Survive The Nether Gauntlet"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_whicked_quest"
+  ],
+  "tasks": {
+    "asd": {
+      "type": "heracles:item",
+      "item": "endrem:witch_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "sad": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Sight sharpened through patience.”",
+      "",
+      "> → Craft The Witch's Eye"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          -83,
+          3
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:witch_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Witch's Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

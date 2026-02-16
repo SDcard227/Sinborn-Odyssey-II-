@@ -1,0 +1,6 @@
+
+#This category holds general values that most people will want to change.
+["General Settings"]
+	#Put the namespace and id of any block here to make it invincible.
+	"Indestructible Blocks" = ["lifesteal:revive_head", "lifesteal:revive_wall_head"]
+

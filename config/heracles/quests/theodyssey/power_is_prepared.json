@@ -1,0 +1,92 @@
+{
+  "dependencies": [
+    "out_matched"
+  ],
+  "tasks": {
+    "Backpack": {
+      "icon": {
+        "item": {
+          "id": "camping:small_backpack",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "recipes": [
+        "camping:small_backpack"
+      ],
+      "type": "heracles:recipe"
+    },
+    "Quiver": {
+      "type": "heracles:item",
+      "item": "supplementaries:quiver",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "Glider": {
+      "title": "Craft a Basic Glider",
+      "icon": {
+        "item": {
+          "id": "vc_gliders:paraglider_wood",
+          "count": 1,
+          "nbt": {
+            "Damage": 0
+          }
+        },
+        "type": "heracles:item"
+      },
+      "recipes": [
+        "vc_gliders:paraglider_wood"
+      ],
+      "type": "heracles:recipe"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 12
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Winning starts before combat.”",
+      "",
+      "> → Obtain Travel gear to prep you for the journey ahead"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          204
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "camping:multitool",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Power Is Prepared"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

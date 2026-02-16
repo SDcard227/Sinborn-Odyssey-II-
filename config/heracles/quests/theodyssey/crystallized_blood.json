@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_lost_quest"
+  ],
+  "tasks": {
+    "awg": {
+      "type": "heracles:item",
+      "item": "companions:crystallized_blood",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "dads": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Pain preserved.”",
+      "",
+      "> → Obtain 3x Blood"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -284,
+          357
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "companions:crystallized_blood",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Crystallized Blood"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

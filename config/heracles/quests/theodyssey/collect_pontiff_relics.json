@@ -1,0 +1,65 @@
+{
+  "dependencies": [
+    "the_antique_quest"
+  ],
+  "tasks": {
+    "af": {
+      "type": "heracles:item",
+      "item": "companions:relic_gold",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "ad": {
+      "type": "heracles:item",
+      "item": "companions:old_cloth",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "adff": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 28
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Tradition wears thin.”",
+      "",
+      "> → Old Cloth x2 + Relic Gold"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -161,
+          343
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "companions:saint_klimt_music_disc",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Collect Pontiff Relics"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

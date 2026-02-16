@@ -1,0 +1,93 @@
+{
+  "dependencies": [
+    "ration_meal"
+  ],
+  "tasks": {
+    "ghs": {
+      "type": "heracles:item",
+      "item": "brewery:mashed_potatoes",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sg": {
+      "type": "heracles:item",
+      "item": "candlelight:lasagne",
+      "nbt": {
+        "StoredEffects": []
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "af": {
+      "type": "heracles:item",
+      "item": "bakery:pudding",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sh": {
+      "type": "heracles:item",
+      "item": "farm_and_charm:grandmothers_strawberry_cake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "da": {
+      "type": "heracles:item",
+      "item": "brewery:beer_barley",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "af": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 30
+      },
+      "type": "heracles:item"
+    },
+    "afa": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 15
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Preparedness tastes earned.”",
+      "",
+      "> → Table + 3+ foods + eat ration meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -40,
+          279
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "createfood:pasta_plate_chicken_cut_tomato_sauce",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Inventor’s Spread"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

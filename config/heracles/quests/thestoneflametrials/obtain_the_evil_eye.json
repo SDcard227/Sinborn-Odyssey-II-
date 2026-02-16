@@ -1,0 +1,66 @@
+{
+  "dependencies": [
+    "enriching_quest"
+  ],
+  "tasks": {
+    "asf": {
+      "type": "heracles:item",
+      "item": "endrem:evil_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "asd": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "asfds": {
+      "item": {
+        "id": "artifacts:lucky_scarf",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“A gaze sharpened by greed.”",
+      "",
+      "> → Obtain The Evil Eye"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          7,
+          156
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:evil_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain The Evil Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

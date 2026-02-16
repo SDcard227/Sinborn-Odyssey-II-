@@ -1,0 +1,75 @@
+{
+  "dependencies": [
+    "the_hungry_eyes"
+  ],
+  "tasks": {
+    "fah": {
+      "title": " Beginning the Cryptic Quest",
+      "icon": {
+        "item": {
+          "id": "minecraft:filled_map",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "bls": {
+      "icon": {
+        "item": {
+          "id": "dungeonnowloading:labyrinth_trophy",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "structures": "#dungeonnowloading:labyrinth",
+      "type": "heracles:structure"
+    }
+  },
+  "rewards": {
+    "FAH": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The maze teaches through pain.”",
+      "",
+      "> → Enter The Labyrinth"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -275,
+          252
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "dungeonnowloading:great_experience_bottle",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Crypitc Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

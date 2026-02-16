@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_fortified_quest"
+  ],
+  "tasks": {
+    "asfa": {
+      "type": "heracles:item",
+      "item": "endrem:nether_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ezf": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 9
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Heat given Form.”",
+      "",
+      "→ Obtain The Nether Eye"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          55,
+          114
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:nether_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Locate a Nether Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "dependencies": [
+    "the_hungry_eyes"
+  ],
+  "tasks": {
+    "BLK": {
+      "title": "Beginning The Blackened Quest",
+      "icon": {
+        "item": {
+          "id": "adventurez:gilded_upgrade_smithing_template",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "FUJ": {
+      "icon": {
+        "item": {
+          "id": "minecraft:red_nether_bricks",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "from": "minecraft:overworld",
+      "to": "minecraft:the_nether",
+      "title": "Realm of Red",
+      "type": "heracles:changed_dimension"
+    }
+  },
+  "rewards": {
+    "COIN": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "\"Set out to Hunt the Eye of Black\""
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -281,
+          282
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "adventurez:gilded_blackstone_shard",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Blackened Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

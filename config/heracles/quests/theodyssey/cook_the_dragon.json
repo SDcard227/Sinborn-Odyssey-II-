@@ -1,0 +1,118 @@
+{
+  "dependencies": [
+    "kill_the_dragon"
+  ],
+  "tasks": {
+    "asf": {
+      "type": "heracles:item",
+      "item": "ends_delight:steamed_dragon_egg_block",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sad": {
+      "type": "heracles:item",
+      "item": "ends_delight:bubble_tea",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "saffg2q": {
+      "type": "heracles:item",
+      "item": "ends_delight:dragon_leg_with_sauce_block",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "saf": {
+      "type": "heracles:item",
+      "item": "endersdelight:stuffed_shulker_block",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asfas": {
+      "type": "heracles:item",
+      "item": "ends_delight:dragon_meat_stew_block",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "saddf": {
+      "type": "heracles:item",
+      "item": "vinery:chorus_wine",
+      "nbt": {
+        "Year": 0,
+        "EffectDuration": 1800,
+        "EffectAmplifier": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "safg": {
+      "type": "heracles:item",
+      "item": "createfood:chorus_fruit_cream_frosted_cake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asgfg": {
+      "type": "heracles:item",
+      "item": "createfood:chorus_fruit_cheesecake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "saff": {
+      "type": "heracles:item",
+      "item": "createfood:chorus_fruit_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asds": {
+      "type": "heracles:item",
+      "item": "brewery:beer_haley",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "dsg": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 45
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Victory becomes food with Nothing left to conquer... or is there more?.”",
+      "",
+      "> → Obtain/craft dragon dish item(s)"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          820
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "ends_delight:smoked_dragon_leg",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Dine On The End"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

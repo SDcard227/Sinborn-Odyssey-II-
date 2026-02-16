@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "obtain_skull_of_chaos"
+  ],
+  "tasks": {
+    "BUB": {
+      "type": "heracles:item",
+      "item": "endermanoverhaul:bubble_pearl",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "Coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Mobility is survival.”",
+      "",
+      "> → Get Bubble Pearl"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -369,
+          177
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endermanoverhaul:bubble_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain Bubble Pearl"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

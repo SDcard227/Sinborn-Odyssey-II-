@@ -1,0 +1,64 @@
+{
+  "dependencies": [
+    "kill_corrupted_champion"
+  ],
+  "tasks": {
+    "staff": {
+      "title": "Acquire The Champs Staff",
+      "icon": {
+        "item": {
+          "id": "graveyard:purple_bone_staff",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "cuh": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Power borrowed from the dead.”",
+      "",
+      "> → Any staff from Graveyard"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -379,
+          388
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "graveyard:black_bone_staff",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain Graveyard Staff"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

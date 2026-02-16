@@ -1,0 +1,94 @@
+{
+  "dependencies": [
+    "obtain_the_evil_eye"
+  ],
+  "tasks": {
+    "asfa": {
+      "type": "heracles:item",
+      "item": "bakery:glowberry_tart",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asfad": {
+      "type": "heracles:item",
+      "item": "candlelight:tomato_mozzarella_salad",
+      "nbt": {
+        "StoredEffects": []
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asf": {
+      "type": "heracles:item",
+      "item": "candlelight:beef_wellington",
+      "nbt": {
+        "StoredEffects": []
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sad": {
+      "type": "heracles:item",
+      "item": "farm_and_charm:potato_with_roast_meat",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "safaf": {
+      "type": "heracles:item",
+      "item": "vinery:cherry_wine",
+      "nbt": {
+        "Year": 0,
+        "EffectDuration": 1800,
+        "EffectAmplifier": 0
+      },
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "safd": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Luxury as survival.”",
+      "",
+      "> → obtain a premium meal item"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          7,
+          193
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "candlelight:chicken_teriyaki",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Classy Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

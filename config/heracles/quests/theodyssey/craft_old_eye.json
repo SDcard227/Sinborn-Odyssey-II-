@@ -1,0 +1,57 @@
+{
+  "dependencies": [
+    "obtain_a_warped_pearl"
+  ],
+  "tasks": {
+    "qra": {
+      "type": "heracles:item",
+      "item": "endrem:old_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "af a": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 18
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      ""
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -57,
+          420
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:old_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "CRAFT Old Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

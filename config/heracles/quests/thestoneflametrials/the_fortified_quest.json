@@ -1,0 +1,65 @@
+{
+  "dependencies": [
+    "the_stone__flame_trials"
+  ],
+  "tasks": {
+    "asds": {
+      "title": "Enter A Nether Fortresses",
+      "icon": {
+        "item": {
+          "id": "minecraft:nether_brick_fence",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "structures": "#betterfortresses:better_fortresses",
+      "type": "heracles:structure"
+    }
+  },
+  "rewards": {
+    "dfd": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Fire yields only to discipline.”",
+      "",
+      "→ Defeat Nether elites or fortress challenges"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          28,
+          88
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:nether_brick",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Fortified Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

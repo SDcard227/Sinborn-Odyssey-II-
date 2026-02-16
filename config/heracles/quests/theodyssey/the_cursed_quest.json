@@ -1,0 +1,72 @@
+{
+  "dependencies": [
+    "the_hungry_eyes"
+  ],
+  "tasks": {
+    "dgd": {
+      "title": "Begin the Cursed Quest",
+      "icon": {
+        "item": {
+          "id": "bosses_of_mass_destruction:soul_star",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "dsa": {
+      "title": "Find The Lich Tower",
+      "structures": "bosses_of_mass_destruction:lich_tower",
+      "type": "heracles:structure"
+    }
+  },
+  "rewards": {
+    "sdf": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 19
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The sky screams back.”",
+      "",
+      "→ Kill The Lich"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -216,
+          325
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "bewitchment:curse_poppet",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Cursed Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

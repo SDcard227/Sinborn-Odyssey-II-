@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "harvest_sea_ingredients"
+  ],
+  "tasks": {
+    "cuhh": {
+      "type": "heracles:item",
+      "item": "endrem:cold_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "eye": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Pressure shapes the icy gaze.”",
+      "",
+      "> → Craft the Cold Eye"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          40,
+          157
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:cold_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Cold Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

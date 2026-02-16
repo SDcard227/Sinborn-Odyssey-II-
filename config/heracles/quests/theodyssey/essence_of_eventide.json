@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "kill_frenzied_shade"
+  ],
+  "tasks": {
+    "dds": {
+      "type": "heracles:item",
+      "item": "soulsweapons:essence_of_eventide",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fasd": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 19
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Dusk captured.”",
+      "",
+      "> → Obtain The Essence of The Frenzied"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          418
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "soulsweapons:essence_of_eventide",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Essence of Eventide"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

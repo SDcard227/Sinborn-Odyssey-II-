@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "revive_crystal"
+  ],
+  "tasks": {
+    "as": {
+      "type": "heracles:item",
+      "item": "endermanoverhaul:crimson_pearl",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fdfs": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 12
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Movement stained red.”",
+      "",
+      "> → Obtain Crimson Pearl"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -326,
+          412
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endermanoverhaul:crimson_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Crimson Pearl"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

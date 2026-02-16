@@ -1,0 +1,75 @@
+{
+  "dependencies": [
+    "the_hungry_eyes"
+  ],
+  "tasks": {
+    "dew": {
+      "title": "Begin The Rouge Quest",
+      "icon": {
+        "item": {
+          "id": "minecraft:redstone_lamp",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "fa": {
+      "icon": {
+        "item": {
+          "id": "dungeonnowloading:temple_of_duality_trophy",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "structures": "#dungeonnowloading:temple_of_duality",
+      "type": "heracles:structure"
+    }
+  },
+  "rewards": {
+    "coio": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 7
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Logic hides behind traps.”",
+      "",
+      "→ Enter The Temple of Duality"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -199,
+          281
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "dungeonnowloading:redstone_idol",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Rogue Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

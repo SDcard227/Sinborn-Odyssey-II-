@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "stone_is_a_luxury"
+  ],
+  "tasks": {
+    "sa": {
+      "type": "heracles:item",
+      "item": "earlystage:sieve",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "sadf": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 9
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "This is an intro to wood!",
+      "",
+      "> → Craft a Sieve"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          -41
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:stripped_oak_wood",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Intro to woods"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

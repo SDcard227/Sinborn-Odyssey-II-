@@ -1,0 +1,84 @@
+{
+  "dependencies": [
+    "quiet_food_long_roads"
+  ],
+  "tasks": {
+    "Table": {
+      "block": "minecraft:air",
+      "state": {},
+      "title": "Set the table",
+      "icon": {
+        "item": {
+          "id": "candlelight:oak_table",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:block_interaction"
+    },
+    "chickie1": {
+      "item": "farmersdelight:roast_chicken",
+      "title": "Enjoy your Bounty",
+      "type": "heracles:item_interaction"
+    },
+    "chickie": {
+      "block": "minecraft:air",
+      "state": {},
+      "title": "Prep the Dish",
+      "icon": {
+        "item": {
+          "id": "farmersdelight:roast_chicken_block",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:block_interaction"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 12
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Survival becomes routine.”",
+      "",
+      "> → Place a table + place 1 food block + eat 1 cooked meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          104
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "candlelight:table_sign",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The First Supper"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,13 @@
+#Animation Trigger Sensitivity
+#Range: 0.0 ~ 1.0
+triggerSensitivity = 0.615
+#Fluid Level Detect Height
+#Range: > 0
+fluidLevelDetectHeight = 28
+#Minimum Animation Trigger Depth
+#Range: > 1
+triggerDepth = 2
+#Minimum Animation Trigger Depth
+#Range: 0.0 ~ 10.0
+speedModifier = 0.92323
+

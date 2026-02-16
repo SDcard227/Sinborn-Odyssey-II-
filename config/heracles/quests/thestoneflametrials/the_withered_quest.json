@@ -1,0 +1,60 @@
+{
+  "dependencies": [
+    "the_stone__flame_trials"
+  ],
+  "tasks": {
+    "asd": {
+      "type": "heracles:item",
+      "item": "minecraft:nether_star",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Slay a Wither"
+    }
+  },
+  "rewards": {
+    "sdgfs": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Ash settles slowly after ruin.”",
+      "",
+      "> → Defeat the Wither"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          51,
+          59
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:wither_skeleton_skull",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Withered Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

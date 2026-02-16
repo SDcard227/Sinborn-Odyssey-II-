@@ -1,0 +1,16 @@
+{
+  "id": "natural_eroded_badlands",
+  "name": "Eroded Badlands Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:red_sand",
+    "minecraft:terracotta",
+    "minecraft:red_terracotta"
+  ],
+  "slabMaterials": [
+    "minecraft:red_sandstone_slab"
+  ]
+}

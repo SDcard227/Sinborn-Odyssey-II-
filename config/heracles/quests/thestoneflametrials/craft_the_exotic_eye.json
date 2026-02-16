@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_bizarre_quest"
+  ],
+  "tasks": {
+    "affs": {
+      "type": "heracles:item",
+      "item": "endrem:exotic_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "saf": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Curiosity sharpened into vision.”",
+      "",
+      "> → Craft The Exotic Eye"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          87,
+          3
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:exotic_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Exotic Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

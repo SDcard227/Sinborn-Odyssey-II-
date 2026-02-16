@@ -1,0 +1,60 @@
+{
+  "dependencies": [
+    "the_stone__flame_trials"
+  ],
+  "tasks": {
+    "dsf": {
+      "entity": {
+        "type": "minecraft:guardian"
+      },
+      "amount": 1,
+      "type": "heracles:kill_entity"
+    }
+  },
+  "rewards": {
+    "sdgd": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The ocean’s patience finally breaks.”",
+      "",
+      "> → Defeat an Elder Guardian"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          -17,
+          88
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:prismarine_shard",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Keeper's Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

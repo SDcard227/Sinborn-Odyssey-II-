@@ -1,0 +1,16 @@
+{
+  "id": "natural_snowy_slopes",
+  "name": "Snowy Slopes Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:snow_block",
+    "minecraft:powder_snow",
+    "minecraft:stone"
+  ],
+  "slabMaterials": [
+    "minecraft:stone_slab"
+  ]
+}

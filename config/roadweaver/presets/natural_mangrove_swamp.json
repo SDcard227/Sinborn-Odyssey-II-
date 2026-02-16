@@ -1,0 +1,17 @@
+{
+  "id": "natural_mangrove_swamp",
+  "name": "Mangrove Swamp Path",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:mud",
+    "minecraft:muddy_mangrove_roots",
+    "minecraft:mangrove_roots"
+  ],
+  "slabMaterials": [
+    "minecraft:mud_brick_slab",
+    "minecraft:mangrove_slab"
+  ]
+}

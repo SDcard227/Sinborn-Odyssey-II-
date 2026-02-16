@@ -1,0 +1,16 @@
+{
+  "id": "natural_mushroom_fields",
+  "name": "Mushroom Fields Path",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:mycelium",
+    "minecraft:dirt_path",
+    "minecraft:coarse_dirt"
+  ],
+  "slabMaterials": [
+    "minecraft:oak_slab"
+  ]
+}

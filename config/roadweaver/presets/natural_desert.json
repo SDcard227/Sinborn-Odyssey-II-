@@ -1,0 +1,18 @@
+{
+  "id": "natural_desert",
+  "name": "Desert Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:sandstone",
+    "minecraft:smooth_sandstone",
+    "minecraft:sand",
+    "minecraft:gravel"
+  ],
+  "slabMaterials": [
+    "minecraft:sandstone_slab",
+    "minecraft:smooth_sandstone_slab"
+  ]
+}

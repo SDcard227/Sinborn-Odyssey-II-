@@ -1,0 +1,64 @@
+{
+  "dependencies": [
+    "eat_before_you_wander"
+  ],
+  "tasks": {
+    "lookers": {
+      "title": "The Search Begins",
+      "icon": {
+        "item": {
+          "id": "minecraft:ender_eye",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Nine gazes, nine paths, one fate.”",
+      "",
+      "> → Now that the journey has begun its time to turn your eyes towards the future"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          280
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:ender_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Eyes of Hunger"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

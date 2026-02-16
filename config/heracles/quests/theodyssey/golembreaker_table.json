@@ -1,0 +1,84 @@
+{
+  "dependencies": [
+    "nether_meal"
+  ],
+  "tasks": {
+    "fuhj": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:roast_stuffed_hoglin",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "mahhh": {
+      "type": "heracles:item",
+      "item": "compatdelight:fire_coral_cider",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "fahh": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:magma_cake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "uhsh": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:striderloaf",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fk": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 15
+      },
+      "type": "heracles:item"
+    },
+    "coh": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 30
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“You ate after breaking the unbreakable.”",
+      "",
+      "> → Table + place 3+ Nether foods + eat nether meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -549,
+          282
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mynethersdelight:plate_of_stuffed_hoglin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Golem-Breaker Table"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

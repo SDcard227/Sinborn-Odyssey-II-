@@ -1,0 +1,17 @@
+{
+  "id": "natural_windswept_savanna",
+  "name": "Windswept Savanna Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:coarse_dirt",
+    "minecraft:stone",
+    "minecraft:gravel"
+  ],
+  "slabMaterials": [
+    "minecraft:acacia_slab",
+    "minecraft:stone_slab"
+  ]
+}

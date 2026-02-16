@@ -1,0 +1,85 @@
+{
+  "dependencies": [
+    "collect_dark_iron"
+  ],
+  "tasks": {
+    "c": {
+      "title": "Kill Corrupted Champion",
+      "icon": {
+        "item": {
+          "id": "graveyard:cyan_bone_staff",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "c": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "hrt": {
+      "item": {
+        "id": "lifesteal:heart_crystal",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "cuh": {
+      "item": {
+        "id": "summonerscrolls:husk_summoner_scroll",
+        "count": 1,
+        "nbt": {
+          "count": 1,
+          "summon": "summonerscrolls:husk_summon",
+          "cost": 2,
+          "Damage": 0,
+          "damageAmount": 5
+        }
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“A hero that never rested.”",
+      "",
+      "> → Kill boss"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -339,
+          366
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "graveyard:skull_with_rib_cage",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Kill Corrupted Champion"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

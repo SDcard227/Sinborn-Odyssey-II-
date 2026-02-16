@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "crimson_ingots"
+  ],
+  "tasks": {
+    "das": {
+      "type": "heracles:item",
+      "item": "soulsweapons:essence_of_eventide",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "das": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 19
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Hunt the hunter.”",
+      "",
+      "> → Slay The Frenzied One"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          380
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "soulsweapons:lord_soul_dark",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Kill Frenzied Shade"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "dependencies": [
+    "xsf"
+  ],
+  "tasks": {
+    "Veg1": {
+      "type": "heracles:item",
+      "item": "#c:tomato",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Acquire: Tomato"
+    },
+    "Veg2": {
+      "type": "heracles:item",
+      "item": "minecraft:potato",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "Veg3": {
+      "type": "heracles:item",
+      "item": "#c:crops/cabbage",
+      "amount": 1,
+      "collection": "AUTOMATIC",
+      "title": "Aquire: Greens"
+    },
+    "meat2": {
+      "type": "heracles:item",
+      "item": "minecraft:mutton",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "Veg": {
+      "type": "heracles:item",
+      "item": "minecraft:carrot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "veg": {
+      "type": "heracles:item",
+      "item": "minecraft:wheat",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "meat1": {
+      "type": "heracles:item",
+      "item": "minecraft:beef",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "Scraps & Roots": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“You eat what the land gives, not what you want.”",
+      "",
+      "> → Collect raw plants + raw meat and prep for your first real meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          -10
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "farm_and_charm:wild_tomatoes",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Scraps & Roots"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

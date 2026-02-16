@@ -1,0 +1,78 @@
+
+[body_part_xp]
+	#how many head xp is given the player per action that triggers head xp (default 0.1)
+	head_xp = 0.1
+	#how many arms xp is given the player per action that triggers arms xp (default 0.3)
+	arms_xp = 0.3
+	#how many legs xp is given the player per action that triggers legs xp (default 0.05)
+	legs_xp = 0.05
+	#how many back xp is given the player per action that triggers back xp (default 0.5)
+	back_xp = 0.5
+	#how many internal organs xp is given the player per action that triggers internal organs xp (default 1)
+	internal_organs_xp = 1.0
+
+[head_boosts]
+	enable_bonus_xp = true
+	#default 0.1
+	bonus_xp_boost = 0.1
+	enable_trading_boost = true
+	#default 0.05
+	trading_boost_boost = 0.05
+	enable_attack_speed = true
+	#default 0.25
+	attack_speed_boost = 0.25
+
+[arms_boosts]
+	enable_bonus_reach = true
+	#default 0.2
+	bonus_reach_boost = 0.2
+	enable_attack_damage = true
+	#default 0.5
+	attack_damage_boost = 0.5
+	enable_attack_knockback = true
+	#default 0.1
+	attack_knockback_boost = 0.1
+
+[legs_boosts]
+	enable_jump_height = true
+	#default 1
+	jump_height_boost = 1.0
+	enable_walking_speed = true
+	#default 0.005
+	walking_speed_boost = 0.005
+	enable_swimming_speed = true
+	#default 0.05
+	swimming_speed_boost = 0.05
+
+[back_boosts]
+	enable_extra_inventory = true
+	enable_knockback_resistance = true
+	#default 0.05
+	knockback_resistance_boost = 0.05
+	enable_damage_resistance = true
+	#default 0.5
+	damage_resistance_boost = 0.5
+
+[internal_organs_boosts]
+	enable_bonus_health = true
+	#default 1
+	bonus_health_boost = 1.0
+	enable_saturation = true
+	#default 0.1
+	saturation_boost = 0.1
+	enable_luck = true
+	#default 0.1
+	luck_boost = 0.1
+
+[death_config]
+	#How many upgrades of every type you lose on death, default 1
+	upgrades_lost_on_death = 1.0
+	#How many body xp of every body part you lose on death, default 210 (all)
+	body_xp_lost_on_death = 210.0
+
+[sound_popup_config]
+	#whether the page filp sound should play when you open the gui
+	enable_gui_sound = true
+	#whether a popup should appear and a sound should play when an upgrade is ready
+	enable_upgrade_notifications = true
+

@@ -1,0 +1,61 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "fs": {
+      "type": "heracles:item",
+      "item": "iceandfire:legendary_dragon_seeker",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sad": {
+      "title": "Begin The Journey",
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "Optional eyes pay less than mandatory eyes.",
+      "",
+      "> Theme objective → craft eye → cook meal → feast"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          7,
+          58
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:crying_obsidian",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Stone & Flame Trials"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

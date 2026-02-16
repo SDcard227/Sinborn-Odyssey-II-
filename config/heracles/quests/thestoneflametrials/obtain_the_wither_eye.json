@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_withered_quest"
+  ],
+  "tasks": {
+    "saf": {
+      "type": "heracles:item",
+      "item": "endrem:wither_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "saf": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The scar left on the world.”",
+      "",
+      "> → Craft Wither Eye"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          85,
+          59
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:wither_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain The Wither Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

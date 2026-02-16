@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "kill_blackstone_golem"
+  ],
+  "tasks": {
+    "d": {
+      "type": "heracles:item",
+      "item": "adventurez:blackstone_golem_heart",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Even mountains have cores.”",
+      "",
+      "> → Get Blackstone Golem Heart"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -377,
+          284
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "adventurez:blackstone_golem_heart",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Harvest Golem Heart"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "dependencies": [
+    "ancient_anima"
+  ],
+  "tasks": {
+    "sda": {
+      "type": "heracles:item",
+      "item": "bosses_of_mass_destruction:void_thorn",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "asd": {
+      "title": "Slay The Void Blossom",
+      "icon": {
+        "item": {
+          "id": "bosses_of_mass_destruction:void_blossom",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "sad": {
+      "title": "Enter the Den of The Void Blossom",
+      "icon": {
+        "item": {
+          "id": "bosses_of_mass_destruction:void_lily",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "structures": "bosses_of_mass_destruction:void_blossom",
+      "type": "heracles:structure"
+    },
+    "asdd": {
+      "type": "heracles:item",
+      "item": "bosses_of_mass_destruction:crystal_fruit",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ca": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 19
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The earth fights you.”",
+      "",
+      "> → Slay The Void Blossom",
+      "",
+      "> → Obtain 2x Void Thorns"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -166,
+          387
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "bosses_of_mass_destruction:void_blossom",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Kill Void Blossom"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

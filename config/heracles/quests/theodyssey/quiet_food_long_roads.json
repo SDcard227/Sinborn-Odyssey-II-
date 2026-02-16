@@ -1,0 +1,65 @@
+{
+  "dependencies": [
+    "steel_the_show"
+  ],
+  "tasks": {
+    "tpmunch1": {
+      "type": "heracles:item",
+      "item": "createfood:mutton_wrap_lettuce_tomato",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "TFOODS1": {
+      "type": "heracles:item",
+      "item": "bakery:vegetable_sandwich",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Food should not slow you down.”",
+      "",
+      "> → Obtain travel-stable foods"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          73
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:dirt_path",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Quiet Food, Long Roads"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

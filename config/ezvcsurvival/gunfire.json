@@ -1,0 +1,5800 @@
+{
+  "enabled": true,
+  "mobs": {
+    "cataclysm:maledictus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:savannah_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:baby_wind_phoenix": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:coral_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:summoned_prowler": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "recruits:captain": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:snow_leopard": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "companions:cloak": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:warped_forest_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:seal": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "irons_spellbooks:archevoker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:flower_fields_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:rusty_page": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "wither_spawn_animation:animated_altar_storm_soil_min_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:roadrunner": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:laviathan": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:trader_llama": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "wither_spawn_animation:animated_altar_storm_soil_min_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:catacombs_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:desert_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:dark_oak_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:necromancer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:warden": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:endergrade": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:horse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:dread_lich": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:wind_phoenix": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:llama": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:underzealot": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:maned_wolf": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:skreecher": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:ender_guardian": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:deepling_warlock": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:tadpole": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:dolphin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:pumpkin_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "aquamirae:maw": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:dark_oak_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:badlands_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:gelada_monkey": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:corrodent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:cornelius": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:monarch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:hammerhead_shark": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:magnetron": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:dropbear": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:tiger": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golem_spawn_animation:snow_golem_altar_z_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "recruits:horseman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:woodland_witch_doctor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:grizzly_bear": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:murmur_head": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pet_cemetery:skeleton_wolf": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:caramel_cube": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:witch_doctor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:brown_squirrel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:hairstreak": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:bee": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:devils_hole_pupfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:illusioner": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:arid_yeti": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "block_factorys_bosses:big_cage_skelly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_iron_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:ember_pole": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:axolotl_pet_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:mooshroom": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:bison": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mowziesmobs:foliaath": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:cherry_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:yeti": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mowziesmobs:frostmaw": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:drowned": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:axolotl": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "irons_spellbooks:summoned_vex": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:white_squirrel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:gorilla": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "recruits:recruit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:frigid_gator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:tusklin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:strider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "companions:croissant_dragon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:raycat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "dracolotl:dracolotl": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "quark:crab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "recruits:recruit_shieldman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:frigid_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:hollow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:cosmic_cod": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:wither": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:underminer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:buckeye": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_monsters:dark_oak_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:wandering_trader": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:wither_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:deep_one_mage": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:tamed_shadow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:gumbeeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:kangaroo": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:hammerhead_pet_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:cage_skelly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:crab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "celestisynth:traverser": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:swamp_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "golem_spawn_animation:snow_golem_altar_jack_min_x_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:shade_maw": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "witherstormmod:tentacle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:stone_statue": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:hummingbird": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:siren": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:elder_guardian": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:netherite_monstrosity": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "block_factorys_bosses:poison_area": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:piglin_executioner": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:wadjet": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:glowstonebutterfly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:boundroid": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:deep_one": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:summoned_koboldiator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mowziesmobs:umvuthana_raptor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:revenant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:crow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:deer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:cave_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:mushroom_fields_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:guster": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "block_factorys_bosses:underworld_knight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:summoned_counterspell_watcher": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:pufferfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:golden_hermit_king": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:fox": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "irons_spellbooks:magehunter_vindicator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mowziesmobs:umvuthana_crane": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_chicken": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "golem_spawn_animation:iron_golem_altar_jack_min_x_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:summoned_ignited_revenant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:warped_mushlin_king": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "block_factorys_bosses:big_cage": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:koboleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "simplyswords:simplybeeentity": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm_spellbooks:summoned_koboleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_bee": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:silverfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:warped_toad": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:chicken": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:giant_squid": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:zombie": {
+      "enabled": true,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "golem_spawn_animation:iron_golem_altar_x_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:dark_oak_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:dread_knight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_pillager": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:bass_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:emu": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:cockroach": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:grey_squirrel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:shadow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:licowitch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:golden_allay": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:baby_wind_phoenix": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:elite_draugr": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:flutter": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:hoglin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:pet_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:ferrouslime": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:deepling_angler": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:capuchin_monkey": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:draugr": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "recruits:patrol_leader": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:myrmex_swarmer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:polar_bear": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "companions:nether_bullfrog": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm_spellbooks:extended_death_laser_beam": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:phantom": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:zombified_piglin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:summoned_royal_draugur": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:ice_spikes_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:soul_mage": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:turtle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:sheep": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:ender_dragon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:cherry_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "quark:wraith": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:vex": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:soulbutterfly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:rattlesnake": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "quark:foxhound": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "wither_spawn_animation:animated_altar_storm_soil_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:red_mummy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_storm_soil_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:basalt_executioner": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:sacred_pontiff": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_monsters:swamp_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:skeleton": {
+      "enabled": true,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:tainted_slime": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:summoned_coral_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:spring_azure": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:bone_serpent_part": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:raccoon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "companions:shade_sword": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:ravager": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:clawdian": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:squid": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:bone_serpent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:old_netherite_monstrosity": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:blue_monarch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:myrmex_soldier": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:potoo": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:horseless_headsman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:fly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:trilocaris": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:drowned_host": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "golem_spawn_animation:iron_golem_altarjack_z_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:zebra": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "irons_spellbooks:dead_king": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "sleep_tight:bedbug": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "quark:shiba": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:pixie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:straddler": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:sea_bear": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "dungeonsdelight:rotten_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:shulker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:nucleeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:hullbreaker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:mudskipper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:myrmex_sentinel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mowziesmobs:umvuthana_follower_raptor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "celestisynth:star_monolith": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:ender_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:black_squirrel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:sugar_glider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "supplementaries:red_merchant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:red_mummy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:swamp_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:glacial_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:crimson_mosquito": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:sunny_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:ice_spike": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:baby_phoenix": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "aquamirae:eel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "golem_spawn_animation:iron_golem_altar_jack_x_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:orca": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:the_furnace": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:priest": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:orangetip": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:sea_viper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:penguin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:troll": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:phantom_ancient_remnant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:jerboa": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:auburn_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:bone_stalker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:bat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:cosmaw": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:netherite_ministrosity": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:phoenix": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:amphithere": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:spirit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:comb_jelly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golem_spawn_animation:snow_golem_altar_jack_x_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_bygone_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:shadow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_bygone_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:cherry_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "recruits:messenger": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:arid_yeti": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "railways:conductor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:relicheirus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "brewery:beer_elemental": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:wither_storm_segment": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:blaze": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_pig": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:ender_frog": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:sea_viper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_cow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:extended_laser_beam": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:vile_gator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:mummy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:skunk": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:flaming_skeleton_guard_fireball": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:enderiophage": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "aquamirae:anglerfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:sunbird": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:magma_cube": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:sea_pig": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:deepling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:tasmanian_devil": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:myrmex_worker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:ancient_remnant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:cat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:stradpole": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golem_spawn_animation:snow_golem_altar_min_x_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:stymphalian_bird": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm_spellbooks:summoned_aptrgangr": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:tree_ent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:tropical_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:hippogryph": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:the_prowler": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:gloomoth": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:savanna_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:sunken": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:vesper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:urchinkin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:lanternfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm_spellbooks:summoned_ignited_berserker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonsdelight:monster_yam": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:the_scarecrow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:panda": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:zombie_villager": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "block_factorys_bosses:sandworm": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:cherry_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:soul_ember": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:froststalker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:giant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:coral_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:ice_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:lobster": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mowziesmobs:lantern": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:seagull": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:hermit_king": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:end_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:summoned_clawdian": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:cherry_rose": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:moose": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golem_spawn_animation:snow_golem_altar_x_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:glow_squid": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:shoebill": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:brainiac": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:puppet_glove": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:farseer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:soulsand_valley_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:mummy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:amethyst_crab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:swallowtail": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "pet_cemetery:zombie_parrot": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "aquamirae:tortured_soul": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "recruits:crossbowman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:frigid_gator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:sand_crab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:warped_mosco": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:subterranodon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:littlewood": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm_spellbooks:summoned_draugur": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:grottoceratops": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:witch_doctor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_snow_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:ancient_ancient_remnant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:husk": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:golden_hermit_king": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:cave_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mca:female_zombie_villager": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:swamp_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:cyclops": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:soul_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_storm_min_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mowziesmobs:umvuthana": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:gilded_ent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:miner_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_storm_min_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_parrot": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:luxtructosaurus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:komodo_dragon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:dark_oak_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "block_factorys_bosses:yeti": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:summoned_watcher": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:emerald_swallowtail": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:donkey": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:forsaken": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "aquamirae:maze_mother": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:mine_guardian": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:ghast": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mowziesmobs:umvuthana_crane_player": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:ignited_berserker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "block_factorys_bosses:soul_area": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "quark:stoneling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:the_leviathan": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:piglin_brute": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:scarecrow_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "aquamirae:golden_moth": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "witherstormmod:wither_storm": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "golem_spawn_animation:iron_golem_altar_min_x_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:summoned_polar_bear": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:the_baby_leviathan": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:crocodile": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:teletor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "quark:toretoise": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "witherstormmod:sickened_villager": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_storm_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:cultist": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:deepling_brute": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_storm_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:triops": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:rhinoceros": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:frilled_shark": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:baby_penguin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:firefly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:stray": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:bald_eagle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "pet_cemetery:skeleton_parrot": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:scarab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:ice_dragon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "celestisynth:tempest": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:blobfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_halloween:pumpkin_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:ringlet": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:mimicube": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:gum_worm": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:void_worm": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:sweetish_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:guardian": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:parrot": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "aquamirae:spinefish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:scylla": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:apothecarist": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "golem_spawn_animation:snow_golem_altar_jack_z_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:broken_dinamo": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:centipede_head": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:coral_sea_viper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:the_watcher": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:atlatitan": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:pile_of_bones": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:vallumraptor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "vinery:mule": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "companions:puppet": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:gingerbread_man": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "recruits:scout": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:sea_serpent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:frog": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:white_hairstreak": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "companions:antlion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "witherstormmod:sickened_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:banana_slug": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golem_spawn_animation:snow_golem_altar_min_z_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:mimic_octopus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:bunfungus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:void_worm_part": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm_spellbooks:summoned_amethyst_crab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:caniac": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:mule": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "witherstormmod:sickened_wolf": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:cindaria": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:hydra": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "companions:minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "vinery:wandering_winemaker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:vindicator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "aquamirae:pillagers_patrol": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_vindicator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:savannah_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:flying_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm_spellbooks:summoned_coralssus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:evoker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:slime": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:tamed_shadow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:firework_toad": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:flaming_skeleton_guard_sword": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:dread_ghoul": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:phoenix": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:withered_symbiont": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "quark:forgotten": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:tarantula_hawk": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:gilded_ent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:hostile_imp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:nameless_sorcerer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:cachalot_whale": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:allay": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:chorus_morpho_butterfly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:endermaptera": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:frigid_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:debug_wizard": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pet_cemetery:zombie_wolf": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:soul_knight_wither_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pet_cemetery:skeleton_cat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_monsters:savanna_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:lionfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:nether_wastes_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:birdwing": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:coralssus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:endermite": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "recruits:bowman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:gammaroach": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "witherstormmod:sickened_mushroom_cow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:spectral_steed": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "wither_spawn_animation:animated_altar_soil_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:living_candle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:bogged_shadow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_soil_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:yellow_swallowtail": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:cage": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:crimson_walker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:sickened_cat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:gummy_bear": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "irons_spellbooks:fire_boss": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:illager_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:hippocamtus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:coral_sea_viper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:bogged_bone_stalker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:savanna_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:notor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:charaxes": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golem_spawn_animation:iron_golem_altar_z_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:the_harbinger": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "celestisynth:veilguard": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:woodland_witch_doctor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:cherry_tree_ent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:crimson_mushlin_king": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "aquamirae:luminous_jelly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:terrapin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:baby_phoenix": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:dread_horse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:trout_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "wither_spawn_animation:animated_altar_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:anaconda": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "wither_spawn_animation:animated_altar_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:ember": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:tremorzilla": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mowziesmobs:bluff": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:lightning_dragon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mca:grim_reaper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:witch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mowziesmobs:grottol": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:pig": {
+      "enabled": true,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:alligator_snapping_turtle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:candicorn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mowziesmobs:baby_foliaath": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermanoverhaul:crimson_forest_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:goat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:tree_ent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mca:male_zombie_villager": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:fire_dragon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm_spellbooks:summoned_elite_draugur": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:cod": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "witherstormmod:sickened_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:dread_beast": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:mantis_shrimp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:cherry_tree_ent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:crimson_butterfly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "witherstormmod:sickened_phantom": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:soul_furnace": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:platypus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:skeleton_horse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:snowy_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:cow": {
+      "enabled": true,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mowziesmobs:umvuthi": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:rocky_roller": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:radgill": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:vile_gator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:hippocampus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golem_spawn_animation:iron_golem_altar_jack_min_z_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "block_factorys_bosses:fire_area": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:soul_vulture": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_soil_min_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:blue_jay": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_monsters:miner_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:dread_scuttler": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:toucan": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:salmon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:myrmex_queen": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:ignis": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mowziesmobs:naga": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_soil_min_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "witherstormmod:wither_storm_head": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pet_cemetery:zombie_cat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:anteater": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "companions:hostile_puppet_glove": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:ghost": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:rain_frog": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:hollow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "recruits:nomad": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mowziesmobs:ferrous_wroughtnaut": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:hermit_king": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:yeti": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:myrmex_royal": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "witherstormmod:sickened_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_monsters:glacial_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:rabbit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:pillager": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_min_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:pyromancer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_min_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:murmur": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:zoglin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:bogged_shadow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "golem_spawn_animation:snow_golem_altar_jack_min_z_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:leafcutter_ant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:sunken_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:tremorsaurus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:enderfly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminous_beasts:sand_crab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "recruits:villager_noble": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:dread_thrall": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:mungus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:caiman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "irons_spellbooks:cursed_armor_stand": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:spectre": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "irons_spellbooks:citadel_keeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:swamp_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:kobolediator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_beasts:bogged_bone_stalker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "aquamirae:captain_cornelia": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:catfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:deepling_priest": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "irons_spellbooks:cryomancer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_bygone_min_x": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:piglin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "wither_spawn_animation:animated_altar_bygone_min_z": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:auburn_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:tripodfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobs:skelewag": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:gorgon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:ignited_revenant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:boundroid_winch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:deep_one_knight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:miner_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:elephant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:infernal_dragon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:wild_antlion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:miner_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobs:gazelle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:sniffer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:windswept_hills_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:wind_phoenix": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:dinamo": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:zombie_horse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "iceandfire:cockatrice": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:camel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:royal_draugr": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_halloween:horseless_headsman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexscaves:gossamer_worm": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "companions:bubble_frog": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexscaves:watcher": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:mankh": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:zebra_longwing": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endermanoverhaul:end_islands_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "cataclysm:aptrgangr": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:bone_stalker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:teddy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "minecraft:ocelot": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mowziesmobs:umvuthana_follower_player": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "iceandfire:deathworm": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:modern_remnant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golem_spawn_animation:iron_golem_altar_min_z_java": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "minecraft:wolf": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "block_factorys_bosses:dragon_guard_sword": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminousworld:mourning_cloak": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "cataclysm:symbiocto": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "craft_of_the_wild:stone_talus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:chaos_spawner": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:fairkeeper_boros": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:fairkeeper_boros_part": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:fairkeeper_ouros": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:fairkeeper_ouros_part": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:hollow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:spawner_carrier": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:scuttle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:ballista_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeonnowloading:sealed_chaos": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "dungeonnowloading:whimper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "dungeonnowloading:copper_creep": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "phantasm:crystie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "phantasm:behemoth": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endermail:ender_mailman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:skull": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:skull_deserter": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:kamath": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:skull_mimic": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:the_grave_watcher": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:palehand": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:ghoul": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:mimy_chest": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:mummy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:ammit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:horuso": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:gigant_scorpion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:infernus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:lady_blaze": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:pyro_knight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:torture": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:weakness": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:failure": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:the_aberrator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:palehand_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:flower_fairy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "dungeons_and_combat:bloodymancer_cultist": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:sandstone_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:sunleia": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:weakness_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:bloody_cultist": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:hermit_witch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:remanent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:ernos": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:prisoner_skull": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:royal_skull": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:counselor_skull": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:chained": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:high_priest": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dungeons_and_combat:fractured_vex": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:corpse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:corpse_villager": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:corpse_warlock": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:corpse_to_player": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "eeeabsmobs:immortal_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:immortal_knight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:immortal_shaman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:immortal_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:immortal_executioner": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:immortal": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:guling_sentinel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:guling_sentinel_heavy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:nameless_guardian": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "eeeabsmobs:tester": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "call_of_yucutan:ah_puch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "call_of_yucutan:mitnal_monkey": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "call_of_yucutan:kukulkan": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "call_of_yucutan:undead_warrior": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "call_of_yucutan:blowgun_huracan": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "call_of_yucutan:updater": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "call_of_yucutan:golden_guard": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "call_of_yucutan:chaac": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "call_of_yucutan:ahaw": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endergetic:puff_bug": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endergetic:booflo_baby": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endergetic:booflo_adolescent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endergetic:booflo": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "endergetic:charger_eetle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endergetic:glider_eetle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endergetic:brood_eetle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "endergetic:purpoid": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "pale_monarch:pale_monarch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pale_monarch:pale_monarch_death_entity": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pale_monarch:armored_corpse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pale_monarch:monarch_idol_entity": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pale_monarch:false_king_1": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pale_monarch:false_king_2": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "pale_monarch:shadow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "species:wraptor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "species:deepfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:stackatick": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:birt": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:limpet": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "species:treeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:trooper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:goober": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:cruncher": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:mammutilation": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:springling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:ghoul": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "species:quake": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "species:bewereager": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "species:spectre": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "species:wicked": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "species:leaf_hanger": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "species:cliff_hanger": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_1": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_2": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_3": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_4": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_1": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_2": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_3": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_4": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_5": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_6": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_6": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_5": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_7": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_7": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_6spectral": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_6spectral": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_8": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_8": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_9": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_9": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_10": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_10": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_11": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_11": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_12": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_12": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_13_slime": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_13_magma_slime": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_13_slime": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_13_magma_slime": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:skeletonpose_14": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "corpsebutbetter:witherskeletonpose_14": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "outer_end:purpur_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "outer_end:himmelite": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "outer_end:entombed": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "outer_end:stalker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "outer_end:spectrafly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "outer_end:sinker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:skeletosaurus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:overgrown_colossus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:endersent": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:warped_fungussus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:lava_eater": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:frostbitten_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:shulker_mimic": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:chorusling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:withered_abomination": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:ancient_guardian": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:ambusher": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:spiky_bug": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:cloud_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:haunted_knight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:haunted_guard": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:posessed_paladin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:knights_armor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:guard": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:mossy_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:skeloraptor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "legendary_monsters:dune_sentinel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "legendary_monsters:bomber": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:stratling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "legendary_monsters:hovering_hurricane": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:gremlin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:fallen_knight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:eldbomb": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:eldknight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:samhain": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:swampman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:ratman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:lizzy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "knightquest:bad_patch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:ghastling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:ghosty": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:netherman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "knightquest:netherman_clone": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:decrepit_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:skeleton_demoman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:decaying_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:baby_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:baby_skeleton_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:controlled_baby_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:barrel_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:phantom_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:phantom_creeper_copy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:door_knight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:restless_spirit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:skeleton_thrasher": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:pumpkin_spirit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:seared_spirit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:firelight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:diamond_termite": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:bonescaller": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:bone_imp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:bone_imp_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:supreme_bonescaller": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:supreme_bonescaller_stage_2": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:dark_vortex": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:dread_hound": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:fallen_chaos_knight": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:scarlet_persecutor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:spirit_guide": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:spirit_guide_assistant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:zombie_clown": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:mr_pumpkin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:mr_pumpkin_controlled": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:sir_pumpkinhead": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:felsteed": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:sir_pumpkinhead_without_horse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:sir_the_headless": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:pumpkinhead": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:riding_felsteed": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:decaying_zombie_not_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:door_knight_not_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:bonescaller_not_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:supreme_bonescaller_not_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:skeleton_thrasher_not_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:dread_hound_not_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:firelight_not_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:zombie_clown_not_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:seared_spirit_not_despawn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:dire_hound_leader": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:maggot": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:corpse_fly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:bloody_gadfly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:corpse_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "born_in_chaos_v1:zombie_fisherman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:swarmer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:thornshell_crab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "born_in_chaos_v1:glutton_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "born_in_chaos_v1:zombie_bruiser": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:pumpkin_bomb": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:senor_pumpkin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:lord_pumpkinhead": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:lords_felsteed": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:lord_pumpkinhead_withouta_horse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:lord_the_headless": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:lord_pumpkinhead_head": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:infernal_spirit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:riding_lords_felsteed": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:zombie_lumberjack": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:siamese_skeletons": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:siamese_skeletonsleft": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:siamese_skeletonsright": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:missioner": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:phantom_bomb_entity": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:controlled_spiritual_assistant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:spiritof_chaos": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:lifestealer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:lifestealer_true_form": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:baby_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:mother_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:baby_spider_controlled": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "born_in_chaos_v1:nightmare_stalker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:pumpkin_dunce": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:mrs_pumpkin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:pumpkin_bruiser": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:krampus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:krampus_henchman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "born_in_chaos_v1:missionary_raider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:deinosuchus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:anky": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:raptor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:tamed_rex": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:trex": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:pteranodon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:spino": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:op_spino": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:kg": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:blockling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:stego": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:bronto": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:indom": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:indomtamable": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:lush_block": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:fedrgtfh": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "dinorumble:indoraptor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:trike": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:giga": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:tiki": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:ankyb": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:scorpiusrex": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:drex": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:grim_eater": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:undead_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:undead_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:carno": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:the_white_golaith": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:dime": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:allosuars": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:compy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:theflesh_abomination": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:cera": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:quetaz": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:flesh_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:super_flesh_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:mega_flesh_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:tiny_flesh_minion": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:wise_goat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:utahraptor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:amethestcrab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "dinorumble:dilo": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:jungle_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:bamboo_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:desert_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:badlands_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:hills_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:savannah_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:mushroom_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "creeperoverhaul:swamp_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:dripstone_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:cave_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:dark_oak_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:spruce_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:beach_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:snowy_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "creeperoverhaul:ocean_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mutantmonsters:mutant_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mutantmonsters:mutant_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mutantmonsters:mutant_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mutantmonsters:mutant_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mutantmonsters:spider_pig": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mutantmonsters:endersoul_clone": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "bosses_of_mass_destruction:lich": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "bosses_of_mass_destruction:obsidilith": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "bosses_of_mass_destruction:gauntlet": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "bosses_of_mass_destruction:void_blossom": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "chest_with_legs:shadow_chester": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "chest_with_legs:chester": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "chest_with_legs:hutch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "chest_with_legs:ro_bin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "chest_with_legs:stone_egg_e": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "crittersandcompanions:dragonfly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:dumbo_octopus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:ferret": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:jumping_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:koi_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:leaf_insect": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:otter": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:red_panda": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:sea_bunny": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:shima_enaga": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "netherexp:apparition": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "netherexp:wisp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "netherexp:vessel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "netherexp:ecto_slab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "netherexp:banshee": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "netherexp:stampede": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "tide:slimy_salmon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:devils_hole_pupfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:white_crappie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:marstilus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:blossom_bass": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:catfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:mackerel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:anglerfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:angelfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:warped_guppy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:dripstone_darter": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:aquathorn": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:deep_blue": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:inferno_guppy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:pike": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:guppy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:ash_perch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:carp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:frostbite_flounder": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:alpha_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:mantyvern": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:bedrock_bug": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:vengeance": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:dutchman_sock": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:endergazer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:blue_neonfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:mooneye": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:soulscale": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:obsidian_pike": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:spore_stalker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:amber_rockfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:ender_glider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:largemouth_bass": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:coelacanth": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:mahi_mahi": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:arapaima": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:gilded_minnow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:sturgeon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:pale_clubfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:magma_mackerel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:enderfin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:brook_trout": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:cave_eel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:sand_tiger_shark": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:anchovy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:great_white_shark": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:voidseeker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:sailfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:dragon_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:witherfin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:ocean_perch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:glowfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:bluegill": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:cave_crawler": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:crimson_fangjaw": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:shadow_shark": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:bedrock_tetra": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:iron_tetra": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:deep_grouper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:sun_emblem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:shadow_snapper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:chasm_eel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:elytrout": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:sleepy_carp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:pentapus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:walleye": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:bull_shark": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:yellow_perch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:blazing_swordfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:swordfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:red_snapper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:lapis_lanternfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:luminescent_jellyfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:red_40": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:neptune_koi": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:crystal_shrimp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:volcano_tuna": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:violet_carp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:smallmouth_bass": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:echo_snapper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:nephrosilu": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:black_crappie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:shooting_starfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:tuna": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:snatcher_squid": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:crystalline_carp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:saturn_cuttlefish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:midas_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:rainbow_trout": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:snook": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:chorus_cod": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:judgment_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:ember_koi": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:darkness_eater": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:flounder": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:manta_ray": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:abyss_angler": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:uranias_pisces": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:pluto_snail": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:mirage_catfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "tide:incandescent_larva": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golemoverhaul:barrel_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golemoverhaul:candle_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golemoverhaul:coal_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golemoverhaul:hay_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golemoverhaul:honey_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golemoverhaul:kelp_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golemoverhaul:netherite_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "golemoverhaul:slime_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "golemoverhaul:terracotta_golem": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mythsandlegends:imp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:imp_clone": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:possessed_armor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:possessed_armor_archer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:possessed_armor_inquisitor": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:gargoyle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:black_charro": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:lampad": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:warborn_aegis": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:alp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:condemned": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:scorched_sentinel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:abaddon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:karakondjul": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:molten_ball": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mythsandlegends:amarok": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "royalvariations:royal_zombie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "royalvariations:royal_skeleton": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "royalvariations:royal_creeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "royalvariations:royal_enderman": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mebahels-skeleton-revival:skeleton_head": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "winteroverhaul:robin": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "as_you_wish:genie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "as_you_wish:green_genie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "as_you_wish:green_genie_boss": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "as_you_wish:free_genie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "as_you_wish:red_genie": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "as_you_wish:desert_spirit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "clockwork:dragonfly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "clockwork:broken_dragonfly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "enlightened_end:floating_elevibloom": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:ringling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:fumesplat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:gloop": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:bouncer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:stalker": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:void_leviathan": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:activated_nuclear_bomb": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:falling_bounceling_nut": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:disturbed_helium_gas": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:disturbed_xenon_gas": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:falling_heliosand": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:ooze_bubble": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:radiator": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "enlightened_end:eidolon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "true_end:unknown": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "windswept:chilled": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "windswept:frostbiter": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    }
+  }
+}

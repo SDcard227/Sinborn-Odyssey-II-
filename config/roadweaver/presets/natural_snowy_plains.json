@@ -1,0 +1,16 @@
+{
+  "id": "natural_snowy_plains",
+  "name": "Snowy Plains Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:snow_block",
+    "minecraft:packed_ice",
+    "minecraft:gravel"
+  ],
+  "slabMaterials": [
+    "minecraft:spruce_slab"
+  ]
+}

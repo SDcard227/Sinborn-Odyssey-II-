@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "crimson_pearl"
+  ],
+  "tasks": {
+    "asda": {
+      "type": "heracles:item",
+      "item": "endrem:lost_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fdgs": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 12
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“You learned from dying.”",
+      "",
+      "> → Craft The Lost Eye"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -352,
+          431
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:lost_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Lost Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

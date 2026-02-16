@@ -1,0 +1,16 @@
+{
+  "id": "natural_old_growth_birch_forest",
+  "name": "Old Growth Birch Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:dirt_path",
+    "minecraft:coarse_dirt",
+    "minecraft:rooted_dirt"
+  ],
+  "slabMaterials": [
+    "minecraft:birch_slab"
+  ]
+}

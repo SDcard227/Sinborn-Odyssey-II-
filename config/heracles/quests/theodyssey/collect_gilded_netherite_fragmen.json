@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "harvest_golem_heart"
+  ],
+  "tasks": {
+    "frag": {
+      "type": "heracles:item",
+      "item": "adventurez:gilded_netherite_fragment",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "cuh": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Wealth earned through force.”",
+      "",
+      "> → Get Gilded Netherite Fragment x4"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -416,
+          284
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "adventurez:gilded_netherite_fragment",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Collect Fragments"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

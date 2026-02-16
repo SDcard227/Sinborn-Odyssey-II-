@@ -1,0 +1,73 @@
+{
+  "dependencies": [
+    "the_stone__flame_trials"
+  ],
+  "tasks": {
+    "coin": {
+      "type": "heracles:item",
+      "item": "numismatic-overhaul:gold_coin",
+      "amount": 64,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "safa": {
+      "item": {
+        "id": "things:hardening_catalyst",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "safd": {
+      "item": {
+        "id": "summonerscrolls:charged_creeper_summoner_scroll",
+        "count": 1,
+        "nbt": {
+          "count": 1,
+          "summon": "summonerscrolls:charged_creeper_summon",
+          "cost": 5,
+          "Damage": 0,
+          "damageAmount": 15
+        }
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Power bought instead of earned.”",
+      "",
+      "→ Obtain a large amount of coins"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          7,
+          121
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:raw_gold",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Enriching Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

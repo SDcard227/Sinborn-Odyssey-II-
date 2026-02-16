@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_magic_quest"
+  ],
+  "tasks": {
+    "sad": {
+      "type": "heracles:item",
+      "item": "soulsweapons:crimson_ingot",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "dasd": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 19
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Blood tempers magic.”",
+      "",
+      "> → Ingot x2"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          347
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "soulsweapons:crimson_ingot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Crimson Ingots"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

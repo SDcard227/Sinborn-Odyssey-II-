@@ -1,0 +1,94 @@
+{
+  "dependencies": [
+    "the_last_course"
+  ],
+  "tasks": {
+    "xaf": {
+      "title": "Slay the ender dragon",
+      "icon": {
+        "item": {
+          "id": "minecraft:dragon_head",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "ebe": {
+      "icon": {
+        "item": {
+          "id": "minecraft:end_portal_frame",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "from": "minecraft:overworld",
+      "to": "minecraft:the_end",
+      "title": "Enter the End",
+      "type": "heracles:changed_dimension"
+    }
+  },
+  "rewards": {
+    "daf": {
+      "item": {
+        "id": "summonerscrolls:enderman_summoner_scroll",
+        "count": 1,
+        "nbt": {
+          "count": 1,
+          "summon": "summonerscrolls:enderman_summon",
+          "cost": 4,
+          "Damage": 0,
+          "damageAmount": 5
+        }
+      },
+      "type": "heracles:item"
+    },
+    "dfa": {
+      "item": {
+        "id": "adventurez:ender_flute",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“No turning back.”",
+      "",
+      "> → Enter The End"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          755
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:end_portal_frame",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Enter the End"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

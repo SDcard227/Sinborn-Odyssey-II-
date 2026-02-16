@@ -1,0 +1,70 @@
+{
+  "dependencies": [
+    "the_hungry_eyes"
+  ],
+  "tasks": {
+    "qr": {
+      "type": "heracles:item",
+      "item": "graveyard:corruption",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "CUHH": {
+      "title": "Beginning The Corrupted Quest",
+      "icon": {
+        "item": {
+          "id": "graveyard:upper_bone_staff",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Rot spreads quickly.”",
+      "",
+      "> → Corruption x4"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -290,
+          309
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "graveyard:corruption",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Corrupted Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "dependencies": [
+    "create_the_cryptic_eye"
+  ],
+  "tasks": {
+    "EX3": {
+      "type": "heracles:item",
+      "item": "silentsdelight:sculk_shrieker_shake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "EX2": {
+      "type": "heracles:item",
+      "item": "silentsdelight:sculk_barbecue_stick",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "EX1": {
+      "type": "heracles:item",
+      "item": "silentsdelight:sculk_soup",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ex1": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Eat fast. Move faster.”",
+      "",
+      "→ Cook 1 dungeon-themed meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -440,
+          149
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "silentsdelight:sculk_barbecue_stick",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Dungeon Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

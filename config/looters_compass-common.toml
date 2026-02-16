@@ -1,0 +1,6 @@
+#Whether the Looter's Compass should also be rewarded to the player when the "Centennial" advancement is made
+#(This is Lootr's advancement for opening 100 loot containers)
+add_to_centennial_advancement_rewards = false
+#Whether the crafting recipe for the Looter's Compass should be disabled
+disable_recipe = false
+

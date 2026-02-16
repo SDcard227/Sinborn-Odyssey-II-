@@ -1,0 +1,71 @@
+{
+  "dependencies": [
+    "fire_makes_it_safe"
+  ],
+  "tasks": {
+    "steel": {
+      "type": "heracles:item",
+      "item": "earlystage:steel_ingot",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "sd": {
+      "block": "minecraft:blast_furnace",
+      "state": {},
+      "icon": {
+        "item": {
+          "id": "minecraft:blast_furnace",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:block_interaction"
+    }
+  },
+  "rewards": {
+    "dsf": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 7
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "Look whos looking to steel the show! ",
+      "",
+      "> → Create Early Stage steel using the iron from the Sieve"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          45
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "earlystage:steel_ingot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Steel the Show!"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

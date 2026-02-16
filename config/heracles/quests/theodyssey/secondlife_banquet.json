@@ -1,0 +1,109 @@
+{
+  "dependencies": [
+    "comfort_meal"
+  ],
+  "tasks": {
+    "dasd": {
+      "type": "heracles:item",
+      "item": "candlelight:chicken_alfredo",
+      "nbt": {
+        "StoredEffects": []
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "fw": {
+      "type": "heracles:item",
+      "item": "brewery:beer_wheat",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "sda": {
+      "type": "heracles:item",
+      "item": "farmersdelight:sweet_berry_cheesecake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "adsd": {
+      "type": "heracles:item",
+      "item": "candlelight:tomato_soup",
+      "nbt": {
+        "StoredEffects": []
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "fas": {
+      "type": "heracles:item",
+      "item": "createfood:glow_berry_milkshake_bottle",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "sa": {
+      "type": "heracles:item",
+      "item": "createfood:berry_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "dss": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 3
+      },
+      "type": "heracles:item"
+    },
+    "dsad": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 30
+      },
+      "type": "heracles:item"
+    },
+    "dagr": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 15
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“You lived when you shouldn’t have.”",
+      "",
+      "> → Table + 4+ comfort foods + eat meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -415,
+          471
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "festive_delight:festive_chicken_block",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Second-Life Banquet"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "dependencies": [
+    "scraps__roots"
+  ],
+  "tasks": {
+    "EAT1": {
+      "icon": {
+        "item": {
+          "id": "candlelight:veggie_plate",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "item": "candlelight:veggie_plate",
+      "title": "Eat a Full Plate of Veggies",
+      "type": "heracles:item_interaction"
+    },
+    "FUEGOOO": {
+      "title": "Craft a Campfire",
+      "icon": {
+        "item": {
+          "id": "minecraft:campfire",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "recipes": [
+        "minecraft:campfire"
+      ],
+      "type": "heracles:recipe"
+    },
+    "MUCHIES1": {
+      "icon": {
+        "item": {
+          "id": "farmersdelight:barbecue_stick",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "item": "farmersdelight:barbecue_stick",
+      "title": "Finsh your First Meal",
+      "type": "heracles:item_interaction"
+    },
+    "ds": {
+      "type": "heracles:item",
+      "item": "dehydration:campfire_cauldron",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Heat is the first technology.”",
+      "",
+      "> → Craft a campfire + cook any food"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          20
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:campfire",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Fire Makes It Safe"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

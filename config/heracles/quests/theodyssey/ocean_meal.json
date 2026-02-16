@@ -1,0 +1,77 @@
+{
+  "dependencies": [
+    "craft_cold_eye"
+  ],
+  "tasks": {
+    "cuuhh": {
+      "icon": {
+        "item": {
+          "id": "bakingdelight:sea_salt",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "item": "minecraft:air",
+      "title": "Seasoning your bounty",
+      "type": "heracles:item_interaction"
+    },
+    "dagv": {
+      "type": "heracles:item",
+      "item": "createfood:dark_chocolate_chip_milkshake_bottle",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "squidy": {
+      "type": "heracles:item",
+      "item": "bakingdelight:glow_squid_tentacle_kebabs",
+      "amount": 5,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Salted survival.”",
+      "",
+      "> → Cook 1 ocean meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          88,
+          155
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "oceansdelight:tentacle_on_a_stick",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Ocean Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "dependencies": [
+    "the_hungry_eyes"
+  ],
+  "tasks": {
+    "sda": {
+      "type": "heracles:item",
+      "item": "soulsweapons:soul_ingot",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "dsf": {
+      "type": "heracles:item",
+      "item": "arcanuscontinuum:wooden_staff",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "das": {
+      "icon": {
+        "item": {
+          "id": "arcanuscontinuum:magic_tome",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "fd": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 18
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Metal remembers life.”",
+      "",
+      "> → Obtain 4x Ingot"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          311
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "arcanuscontinuum:crystal_staff",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Magic Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

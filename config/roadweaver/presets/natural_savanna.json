@@ -1,0 +1,16 @@
+{
+  "id": "natural_savanna",
+  "name": "Savanna Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:dirt_path",
+    "minecraft:coarse_dirt",
+    "minecraft:gravel"
+  ],
+  "slabMaterials": [
+    "minecraft:acacia_slab"
+  ]
+}

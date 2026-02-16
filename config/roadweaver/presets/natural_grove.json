@@ -1,0 +1,16 @@
+{
+  "id": "natural_grove",
+  "name": "Grove Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:snow_block",
+    "minecraft:powder_snow",
+    "minecraft:dirt_path"
+  ],
+  "slabMaterials": [
+    "minecraft:spruce_slab"
+  ]
+}

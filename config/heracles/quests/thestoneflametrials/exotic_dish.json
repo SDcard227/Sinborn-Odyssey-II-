@@ -1,0 +1,95 @@
+{
+  "dependencies": [
+    "craft_the_exotic_eye"
+  ],
+  "tasks": {
+    "dsgg": {
+      "type": "heracles:item",
+      "item": "compatdelight:horn_coral_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "dgs": {
+      "type": "heracles:item",
+      "item": "compatdelight:tube_coral_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "af": {
+      "type": "heracles:item",
+      "item": "compatdelight:bubble_coral_juice",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "saf": {
+      "type": "heracles:item",
+      "item": "compatdelight:brain_coral_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "safd": {
+      "type": "heracles:item",
+      "item": "compatdelight:coral_jelly",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "dsdg": {
+      "type": "heracles:item",
+      "item": "compatdelight:tube_coral_wrap",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "ds": {
+      "type": "heracles:item",
+      "item": "compatdelight:bubble_coral_ice_cream",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "asda": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 9
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Unfamiliar flavors, perfectly earned.”",
+      "",
+      "> → Table + place 4+ foods + consume exotic dish"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          144,
+          -27
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "oceansdelight:cabbage_wrapped_elder_guardian",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Exotic Dish"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

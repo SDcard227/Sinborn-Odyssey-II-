@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_rogue_quest"
+  ],
+  "tasks": {
+    "da": {
+      "type": "heracles:item",
+      "item": "endermanoverhaul:warped_pearl",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "da": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Movement is preparation.”",
+      "",
+      "> → Obtain a Warped Pearl"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -168,
+          280
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endermanoverhaul:warped_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain Warped Pearl"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "kill_night_prowler__day_stalker"
+  ],
+  "tasks": {
+    "pearl": {
+      "type": "heracles:item",
+      "item": "endermanoverhaul:crimson_pearl",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 27
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Even magic needs movement.”",
+      "",
+      "→ Obtain a Crimson Pearl"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          492
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endermanoverhaul:crimson_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "A Crimson Pearl"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

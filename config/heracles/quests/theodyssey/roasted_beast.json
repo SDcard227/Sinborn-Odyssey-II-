@@ -1,0 +1,79 @@
+{
+  "dependencies": [
+    "craft_old_eye"
+  ],
+  "tasks": {
+    "afa": {
+      "type": "heracles:item",
+      "item": "vinery:jellie_wine",
+      "nbt": {
+        "Year": 0,
+        "EffectDuration": 1800,
+        "EffectAmplifier": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sf": {
+      "type": "heracles:item",
+      "item": "candlelight:beef_wellington",
+      "nbt": {
+        "StoredEffects": []
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "ad": {
+      "type": "heracles:item",
+      "item": "frightsdelight:rotten_flesh_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "sdf": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Meat earned the hard way.”",
+      "",
+      "> → Cook heavy meat meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -22,
+          420
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "createfood:cheese_and_beef_bun_onion",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Roasted Beast"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

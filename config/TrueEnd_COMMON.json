@@ -1,0 +1,12 @@
+{
+  "doFlashingLights": true,
+  "btdConversationDelay": 40.0,
+  "doChatReplies": true,
+  "doRandomEvents": true,
+  "showFog": true,
+  "clearDreamItems": true,
+  "entitySpawnChance": 0.05,
+  "randomEventChance": 0.005,
+  "doDaytimeChange": true,
+  "showCredits": false
+}

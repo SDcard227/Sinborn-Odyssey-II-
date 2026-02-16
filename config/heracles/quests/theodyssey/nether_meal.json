@@ -1,0 +1,71 @@
+{
+  "dependencies": [
+    "craft_black_eye"
+  ],
+  "tasks": {
+    "FUH": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:hot_cream",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "FAHHH": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:rock_soup",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "FAHH": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:hot_wings",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Fuel for violent places.”",
+      "",
+      "→ Cook 1 Nether-based meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -516,
+          283
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mynethersdelight:raw_stuffed_hoglin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Nether Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

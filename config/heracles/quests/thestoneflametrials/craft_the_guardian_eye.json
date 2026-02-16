@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_protectors_quest"
+  ],
+  "tasks": {
+    "ey": {
+      "type": "heracles:item",
+      "item": "endrem:guardian_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "adf": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“A stare borrowed from the deep.”",
+      "",
+      "> → Craft The Guardian Eye"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          -44,
+          114
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:guardian_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Guardian Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

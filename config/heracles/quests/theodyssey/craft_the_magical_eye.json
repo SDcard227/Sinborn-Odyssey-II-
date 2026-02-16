@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "a_crimson_pearl"
+  ],
+  "tasks": {
+    "magic eye": {
+      "type": "heracles:item",
+      "item": "endrem:magical_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "Coin": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 19
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Rules bend for you.”",
+      "",
+      "→ Craft The Magic Eye"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          522
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:magical_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Magical Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "obtain_graveyard_staff"
+  ],
+  "tasks": {
+    "perl": {
+      "type": "heracles:item",
+      "item": "endermanoverhaul:summoner_pearl",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Even decay answers the call.”",
+      "",
+      "→ Summoner Pearl"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -410,
+          414
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endermanoverhaul:summoner_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain a Summoner Pearl"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

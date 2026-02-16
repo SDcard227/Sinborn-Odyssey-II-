@@ -1,0 +1,83 @@
+{
+  "dependencies": [
+    "the_stone__flame_trials"
+  ],
+  "tasks": {
+    "asfdsfg": {
+      "type": "heracles:item",
+      "item": "minecraft:rotten_flesh",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "afg": {
+      "type": "heracles:item",
+      "item": "minecraft:bone",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "eagg": {
+      "type": "heracles:item",
+      "item": "minecraft:phantom_membrane",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "saff": {
+      "type": "heracles:item",
+      "item": "endrem:undead_soul",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asgasd": {
+      "type": "heracles:item",
+      "item": "minecraft:ghast_tear",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "dsvx": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 7
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Even the dead leave something behind.”",
+      "",
+      "> → Kill undead elites or clear graveyard structures"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          -32,
+          59
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "rottencreatures:magma_rotten_flesh",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Undead Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

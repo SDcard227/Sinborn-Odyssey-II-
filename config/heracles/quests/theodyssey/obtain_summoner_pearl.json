@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "the_blackened_quest"
+  ],
+  "tasks": {
+    "OJO": {
+      "type": "heracles:item",
+      "item": "endermanoverhaul:summoner_pearl",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fhuh coin": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Danger comes when called.”",
+      "",
+      "> → Get Summoner Pearl"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -317,
+          283
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endermanoverhaul:summoner_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain Summoner Pearl"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

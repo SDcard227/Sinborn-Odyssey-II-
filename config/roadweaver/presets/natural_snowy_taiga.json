@@ -1,0 +1,16 @@
+{
+  "id": "natural_snowy_taiga",
+  "name": "Snowy Taiga Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:snow_block",
+    "minecraft:coarse_dirt",
+    "minecraft:gravel"
+  ],
+  "slabMaterials": [
+    "minecraft:spruce_slab"
+  ]
+}

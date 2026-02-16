@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "aquamirae_boss_chain"
+  ],
+  "tasks": {
+    "fuhh": {
+      "type": "heracles:item",
+      "item": "aquamirae:ship_graveyard_echo",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "cuuhhh": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 12
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Songs of wreckage remain.”",
+      "",
+      "> → Echo x2"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -114,
+          167
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "aquamirae:frozen_key",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Collect Echoes"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

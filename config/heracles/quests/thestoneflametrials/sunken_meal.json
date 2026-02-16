@@ -1,0 +1,89 @@
+{
+  "dependencies": [
+    "craft_the_guardian_eye"
+  ],
+  "tasks": {
+    "safsa": {
+      "type": "heracles:item",
+      "item": "bakingdelight:sea_salt",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "saf": {
+      "type": "heracles:item",
+      "item": "oceansdelight:guardian_soup",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "safsf": {
+      "type": "heracles:item",
+      "item": "bakingdelight:sea_salt_lemon",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "asfsa": {
+      "type": "heracles:item",
+      "item": "oceansdelight:cabbage_wrapped_elder_guardian",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "safs": {
+      "type": "heracles:item",
+      "item": "oceansdelight:elder_guardian_roll",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "safsaa": {
+      "type": "heracles:item",
+      "item": "oceansdelight:cooked_guardian_tail",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "asf": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Salted triumph.”",
+      "",
+      "> → Cook an ocean-based meal"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          -74,
+          144
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "oceansdelight:bowl_of_guardian_soup",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Sunken Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

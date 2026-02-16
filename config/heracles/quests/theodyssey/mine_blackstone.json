@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "collect_gilded_netherite_fragmen"
+  ],
+  "tasks": {
+    "blkstn": {
+      "type": "heracles:item",
+      "item": "minecraft:blackstone",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "cuh": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The ground resists you.”",
+      "",
+      "> → Mine Blackstone x2"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -452,
+          284
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:blackstone",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Mine Blackstone"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

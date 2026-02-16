@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "obtain_a_summoner_pearl"
+  ],
+  "tasks": {
+    "ojos": {
+      "type": "heracles:item",
+      "item": "endrem:corrupted_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "cuh": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Rot brought into daylight.”",
+      "",
+      "→ Craft The Corrupted Eye"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -448,
+          429
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:corrupted_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Corrupted Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

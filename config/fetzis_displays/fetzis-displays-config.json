@@ -1,0 +1,7 @@
+{
+  "modVersion": "1.0.1",
+  "configWiki": "https://fetzis-orga.gitbook.io/fetzis-displays/config-settings",
+  "chatMessageOnJoin": false,
+  "chatMessageOnce": true,
+  "itemGUIPos": "BOTTOM_LEFT"
+}

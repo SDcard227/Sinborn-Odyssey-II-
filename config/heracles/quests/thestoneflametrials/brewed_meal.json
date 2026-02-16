@@ -1,0 +1,95 @@
+{
+  "dependencies": [
+    "craft_the_witchs_eye"
+  ],
+  "tasks": {
+    "asfa": {
+      "type": "heracles:item",
+      "item": "frightsdelight:bone_kebab_spider_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asd": {
+      "type": "heracles:item",
+      "item": "compatdelight:grim_elixir_shake",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "asf": {
+      "type": "heracles:item",
+      "item": "bewitchment:witchberry",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sad": {
+      "type": "heracles:item",
+      "item": "bewitchment:witchberry_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "zs": {
+      "type": "heracles:item",
+      "item": "bewitchment:witchberry_cookie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "saf": {
+      "type": "heracles:item",
+      "item": "bewitchment:garlic_bread",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "saff": {
+      "type": "heracles:item",
+      "item": "bewitchment:grotesque_stew",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "asd": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Strength steeped, not swung, a feast for the clever.”",
+      "",
+      "> → Cook brewed drink/meal"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          -144,
+          -27
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "bewitchment:witchberry_cookie",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Brewed Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

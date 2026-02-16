@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "crystallized_blood"
+  ],
+  "tasks": {
+    "dasd": {
+      "type": "heracles:item",
+      "item": "lifesteal:revive_crystal",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ad": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The power to bring back one who is lost.”",
+      "",
+      "> → Obtain a Revive Crystal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -306,
+          386
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "lifesteal:revive_crystal",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Revive Crystal "
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

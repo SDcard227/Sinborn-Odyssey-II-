@@ -1,0 +1,71 @@
+{
+  "dependencies": [
+    "the_first_supper"
+  ],
+  "tasks": {
+    "Travel the world": {
+      "title": "Travel From Spawn",
+      "icon": {
+        "item": {
+          "id": "supplementaries:globe_sepia",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "chek2": {
+      "item": {
+        "id": "minecraft:white_banner",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "Chek": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Comfort ends where monsters begin.”",
+      "",
+      "> → Travel far from spawn (recommended: 500+ blocks)"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          136
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "supplementaries:globe",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png",
+    "title": {
+      "translate": "The World Pushes Back"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

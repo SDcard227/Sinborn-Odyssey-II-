@@ -1,0 +1,65 @@
+{
+  "dependencies": [
+    "obtain_tiara"
+  ],
+  "tasks": {
+    "dafd": {
+      "type": "heracles:item",
+      "item": "aquamirae:fin",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "fa;l": {
+      "type": "heracles:item",
+      "item": "aquamirae:anglers_fang",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fdsa": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 32
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Everything here fights back.”",
+      "",
+      "> → Fin x3 + Angler Fang x2"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -11,
+          156
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "aquamirae:esca",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Harvest Sea Ingredients"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

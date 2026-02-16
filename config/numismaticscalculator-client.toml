@@ -1,0 +1,13 @@
+
+#Numismatics Calculator Config
+[general]
+	#Require Holding Down SHIFT For Total Value Tooltip
+	requireShiftForTotalTooltip = true
+	#Show Control Panel Buttons
+	showControlPanel = true
+	#Main Overlay Animation Enabled
+	mainOverlayPositionAnimationEnabled = true
+	#Main Overlay Animation Duration
+	#Range: 0 ~ 10000
+	mainOverlayPositionAnimationDuration = 150
+

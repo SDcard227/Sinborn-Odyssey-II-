@@ -1,0 +1,65 @@
+{
+  "dependencies": [
+    "craft_the_lost_eye"
+  ],
+  "tasks": {
+    "asd": {
+      "type": "heracles:item",
+      "item": "herbalbrews:coffee",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "ds": {
+      "type": "heracles:item",
+      "item": "farm_and_charm:grandmothers_strawberry_cake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ad": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 17
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Warmth after failure.”",
+      "",
+      "> → Cook comfort meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -382,
+          456
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "farm_and_charm:oat_pancake",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Comfort Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

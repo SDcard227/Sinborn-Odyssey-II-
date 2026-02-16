@@ -1,0 +1,132 @@
+{
+  "dependencies": [
+    "enter_the_end"
+  ],
+  "tasks": {
+    "safd": {
+      "type": "heracles:item",
+      "item": "ends_delight:dragon_leg",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asd": {
+      "type": "heracles:item",
+      "item": "minecraft:shield",
+      "nbt": {
+        "display": {
+          "Name": "{\"italic\":false,\"color\":\"#9936D6\",\"translate\":\"stellarity.items.trinkets.crest_of_the_end\",\"fallback\":\"Crest of The End\"}",
+          "Lore": [
+            "{\"text\":\"\"}",
+            "{\"italic\":false,\"color\":\"#EEEEEE\",\"translate\":\"stellarity.items.trinkets.crest_of_the_end.description.1\",\"fallback\":\"Blocking damage adds extra\"}",
+            "{\"italic\":false,\"color\":\"#EEEEEE\",\"translate\":\"stellarity.items.trinkets.crest_of_the_end.description.2\",\"fallback\":\"force to your next melee attack\"}"
+          ]
+        },
+        "CustomModelData": 90000,
+        "stellar_durability": {
+          "max_dur": 442,
+          "enabled": 1
+        },
+        "HideFlags": 32,
+        "stellarity.special_item": "crest_of_the_end",
+        "Damage": 0,
+        "BlockEntityTag": {
+          "id": "minecraft:banner",
+          "Patterns": [
+            {
+              "Pattern": "b",
+              "Color": 10
+            },
+            {
+              "Pattern": "gra",
+              "Color": 2
+            },
+            {
+              "Pattern": "tt",
+              "Color": 15
+            },
+            {
+              "Pattern": "bt",
+              "Color": 15
+            },
+            {
+              "Pattern": "cr",
+              "Color": 10
+            },
+            {
+              "Pattern": "cbo",
+              "Color": 15
+            },
+            {
+              "Pattern": "flo",
+              "Color": 10
+            },
+            {
+              "Pattern": "flo",
+              "Color": 15
+            }
+          ]
+        }
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "egg": {
+      "type": "heracles:item",
+      "item": "minecraft:dragon_egg",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "dsaji": {
+      "type": "heracles:item",
+      "item": "ends_delight:raw_dragon_meat",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "asf": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 80
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“The final monster falls.”",
+      "",
+      "> → Kill Ender Dragon"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          785
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:dragon_egg",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Kill the Dragon"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

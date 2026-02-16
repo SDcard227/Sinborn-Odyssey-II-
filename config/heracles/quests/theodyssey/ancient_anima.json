@@ -1,0 +1,73 @@
+{
+  "dependencies": [
+    "the_cursed_quest"
+  ],
+  "tasks": {
+    "asd": {
+      "type": "heracles:item",
+      "item": "bosses_of_mass_destruction:ancient_anima",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "sad": {
+      "title": "Slay The Lich",
+      "icon": {
+        "item": {
+          "id": "simplyswords:awakened_lichblade",
+          "count": 1,
+          "nbt": {
+            "Damage": 0
+          }
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "cuhh": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Magic that refuses death.”",
+      "",
+      "→ Obtain 2x Acient Anima"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -190,
+          357
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "bosses_of_mass_destruction:ancient_anima",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Ancient Anima"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

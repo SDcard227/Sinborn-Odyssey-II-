@@ -1,0 +1,16 @@
+{
+  "id": "natural_windswept_gravelly_hills",
+  "name": "Windswept Gravelly Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:gravel",
+    "minecraft:stone",
+    "minecraft:cobblestone"
+  ],
+  "slabMaterials": [
+    "minecraft:stone_slab"
+  ]
+}

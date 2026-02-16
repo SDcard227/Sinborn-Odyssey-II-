@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "assemble_redstone_systems"
+  ],
+  "tasks": {
+    "fas": {
+      "type": "heracles:item",
+      "item": "endrem:rogue_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "gs": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 45
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Prepared minds win.”",
+      "",
+      "> → Craft the Rogue Eye"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -106,
+          281
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:rogue_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Rogue Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

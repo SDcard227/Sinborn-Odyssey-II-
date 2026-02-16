@@ -1,0 +1,31 @@
+
+#GunFire Generation
+#If true, automatically adds new entities to gunfire.json when detected
+#If false, only uses entities already in the file (allows manual control)
+[gunfire_generation]
+	enable_generation = true
+
+#GeneralSounds Generation
+#If true, automatically adds new entities to generalsounds.json when detected
+#If false, only uses entities and sounds already in the file (allows manual control)
+[generalsounds_generation]
+	enable_generation = true
+
+#Debug Mode
+[debugging]
+	debug = false
+
+[weather]
+	#Range: 0.0 ~ 1.0
+	thunder_range_multiplier = 0.8
+
+[tacz_gun_modifiers]
+	#Gun type modifiers in format: type=speed,range
+	#Speed: multiplier for mob reaction speed
+	#Range: multiplier for detection range
+	#Example: 'pistol=1.0,3.8' means normal speed, 3.8x range
+	modifiers = ["pistol=1.0,3.8", "sniper=1.0,8.0", "rifle=1.0,6.5", "shotgun=1.0,4.8", "smg=1.0,3.0", "rpg=1.0,10.0", "mg=1.0,4.0"]
+
+[tacz_silenced_guns]
+	ids = ["daffas_arsenal:hk45_sup", "daffas_arsenal:apacoba9_sup"]
+

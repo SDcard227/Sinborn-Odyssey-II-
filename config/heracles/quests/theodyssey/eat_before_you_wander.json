@@ -1,0 +1,94 @@
+{
+  "dependencies": [
+    "power_is_prepared"
+  ],
+  "tasks": {
+    "foof": {
+      "block": "minecraft:air",
+      "state": {},
+      "icon": {
+        "item": {
+          "id": "createfood:cheesecake",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:block_interaction"
+    },
+    "fruit": {
+      "type": "heracles:item",
+      "item": "bakingdelight:sweet_berries_juice",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "table": {
+      "title": "Set the Table",
+      "icon": {
+        "item": {
+          "id": "candlelight:oak_table",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "food": {
+      "block": "minecraft:air",
+      "state": {},
+      "icon": {
+        "item": {
+          "id": "farmersdelight:shepherds_pie_block",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:block_interaction"
+    }
+  },
+  "rewards": {
+    "Check": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Never leave hungry again.”",
+      "",
+      "> → Table + place 2 food blocks + eat 2 different meals"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          242
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "createfood:cheeseburger_bacon_lettuce",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Eat Before You Wander"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

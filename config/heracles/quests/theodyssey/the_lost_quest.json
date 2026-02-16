@@ -1,0 +1,66 @@
+{
+  "dependencies": [
+    "the_hungry_eyes"
+  ],
+  "tasks": {
+    "gs": {
+      "type": "heracles:item",
+      "item": "createmetalwork:crushed_netherite_scrap",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "afd": {
+      "title": "Begin The Lost Quest",
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "fqr": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 28
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Even legends break.”",
+      "",
+      "> → Find 4x Scrap"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -264,
+          323
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "companions:netherite_dagger",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "The Lost Quest"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,313 @@
+
+[General]
+	#Set to false to completely disable the stamina system
+	enableStamina = true
+	#If true, players in Creative mode will not consume or use the stamina system.
+	disableInCreative = true
+	#If true, players in Spectator mode will not consume or use the stamina system.
+	disableInSpectator = true
+	#Initial Max Stamina value for players.
+	#Range: 1.0 ~ 10000.0
+	initialMaxStamina = 100.0
+
+["Depletion Rates"]
+	#Stamina drained per tick while sprinting. Set to 0.0 to disable. Set to negative to gain stamina
+	#Range: -100.0 ~ 100.0
+	depletionSprint = 0.15
+	#Stamina drained per jump. Set to 0.0 to disable. Set to negative to gain stamina
+	#Range: -100.0 ~ 100.0
+	depletionJump = 0.85
+	#Stamina drained per attack. Set to 0.0 to disable. Set to negative to gain stamina
+	#Range: -100.0 ~ 100.0
+	depletionAttack = 3.45
+	#Stamina drained per block broken. Set to 0.0 to disable. Set to negative to gain stamina
+	#Range: -100.0 ~ 100.0
+	depletionBlockBreak = 1.1
+	#Stamina drained per tick while swimming. Set to 0.0 to disable. Set to negative to gain stamina
+	#Range: -100.0 ~ 100.0
+	depletionSwim = 0.05
+	#Stamina drained per tick while climbing. Set to 0.0 to disable. Set to negative to gain stamina
+	#Range: -100.0 ~ 100.0
+	depletionClimb = 0.7
+
+["Recovery Settings"]
+	#Stamina recovered per tick
+	#Range: 0.0 ~ 100.0
+	recoveryPerTick = 0.45
+	#Multiplier for recovery when standing completely still
+	#Range: 1.0 ~ 10.0
+	recoveryRestMult = 1.45
+	#Multiplier for recovery when hanging on a ladder/vine (slow climbing or not moving)
+	#Range: 0.0 ~ 10.0
+	recoveryClimbMult = 0.2
+	#Ticks before stamina starts regenerating after action (20 ticks = 1 sec)
+	#Range: 0 ~ 2000
+	recoveryDelay = 50
+
+["Fatigue & Limits"]
+	#Ticks spent in critical stamina (red zone) before fatigue penalty begins (180 ticks = 9s)
+	#Range: 0 ~ 10000
+	fatigueDurationToPenalty = 180
+	#The absolute floor for Max Stamina (Stamina bar cannot shrink smaller than this)
+	#Range: 1.0 ~ 100.0
+	minMaxStamina = 10.0
+	#Percentage of Max Stamina where fatigue penalty starts (0.25 = 25%)
+	#Range: 0.0 ~ 1.0
+	fatigueThreshold = 0.25
+	#Ticks to wait after leaving red zone before penalty recovers
+	#Range: 0 ~ 2000
+	penaltyRecoveryDelay = 100
+	#
+	#
+	#Base rate for exponential penalty increase
+	#Range: 0.0 ~ 10.0
+	penaltyBaseRate = 0.02
+	#Divisor for exponential curve (Lower = Steeper curve)
+	#Range: 1.0 ~ 1000.0
+	penaltyCurveFactor = 150.0
+	#How much penalty recovers per tick when conditions improve (0.05 = 1.0 penalty per second )
+	#Range: 0.0 ~ 100.0
+	penaltyDecayRate = 0.05
+	#How much penalty accumulates per tick when conditions worsen (0.1 = 2.0 penalty per second)
+	#Range: 0.0 ~ 100.0
+	penaltyBuildupRate = 0.1
+	#
+	#
+	#Maximum reduction to Max Stamina caused by physical exhaustion
+	#Range: 0.0 ~ 100.0
+	maxExertionPenalty = 30.0
+	#Maximum reduction to Max Stamina caused by starvation
+	#Range: 0.0 ~ 100.0
+	maxHungerPenalty = 30.0
+	#Food level at which stamina penalty begins (6 = 3 shanks)
+	#Range: 0 ~ 20
+	hungerPenaltyThreshold = 6
+
+	["Fatigue & Limits"."Sleep Mechanics"]
+		#DEFAULT: Fatigue decays over time, sleeping, and eating consumables reduces it.
+		#HARDCORE: Fatigue doesn't decay naturally. You must sleep or eat food that reduces fatigue.
+		#Allowed Values: DEFAULT, HARDCORE
+		sleepMode = "DEFAULT"
+		#Flat amount of fatigue penalty to remove after a successful sleep.
+		#Set to a high number (e.g. 100.0) to fully clear it.
+		#Range: 0.0 ~ 1000.0
+		sleepFatigueReduction = 20.0
+
+["Item depletion cost"]
+	#Custom Stamina Costs for Items.
+	#Format: "ItemId;TYPE;Cost;..."
+	#Types:
+	#  TICK  = Cost per tick while using. (1 Arg: Cost)
+	#  USE   = Cost on right-click. (1 Arg: Cost)
+	#  BLOCK = Cost when blocking damage. (2 Args: BaseCost; DamageMultiplier)
+	#
+	#Examples:
+	#  "minecraft:shield;TICK;0.2;BLOCK;2.0;0.8" (0.2/tick to hold, 2.0 + (Damage * 0.8) on block)
+	#  "minecraft:bow;TICK;1.0"
+	#Note: Negative cost values will restore stamina instead of draining it.
+	#
+	itemCosts = ["minecraft:shield;TICK;0.2;BLOCK;2.0;0.8", "minecraft:bow;TICK;0.5", "minecraft:crossbow;TICK;0.5", "minecraft:trident;TICK;0.5", "minecraft:snowball;USE;1.0", "minecraft:egg;USE;1.0", "minecraft:ender_pearl;USE;4.0", "minecraft:splash_potion;USE;2.0", "minecraft:lingering_potion;USE;2.0", "minecraft:experience_bottle;USE;1.0", "minecraft:firework_rocket;USE;1.5", "minecraft:fishing_rod;USE;3.0", "minecraft:flint_and_steel;USE;2.5", "minecraft:spyglass;TICK;0.1", "minecraft:goat_horn;TICK;0.6"]
+	#
+	#Ticks to disable an item (visual grey overlay) if you run out of stamina while using it.
+	#Range: 0 ~ 1200
+	itemInterruptionCooldown = 120
+
+["Weight System"]
+	#Enable the weight calculation system.
+	enableWeightSystem = true
+	#Weight at which the penalty begins to apply (0% penalty).
+	#Range: 0.0 ~ 10000.0
+	weightPenaltyThreshold = 125.0
+	#Weight at which the penalty reaches maximum (100% penalty).
+	#Range: 1.0 ~ 10000.0
+	weightPenaltyLimit = 400.0
+	#Maximum amount of Max Stamina removed when at full weight limit.
+	#Range: 0.0 ~ 100.0
+	maxWeightPenaltyAmount = 40.0
+	#Maximum depth for recursive weight calculation (Backpacks inside backpacks). Higher values may cause lag.
+	#Range: 0 ~ 10
+	maxWeightRecursionDepth = 3
+	#
+	#
+	#The 'Auto-Weigher' (Stack Size Heuristic).
+	#Used for ANY item that is not explicitly listed in the configs below.
+	#Formula: Weight = (Base / MaxStackSize) * Count
+	#Result: 1 Full Stack of ANY item = 1.0 Weight.
+	#Examples (if Base is 1.0):
+	# - 1 Sword (Stack 1) = 1.0 Weight
+	# - 16 Ender Pearls (Stack 16) = 1.0 Weight (0.06 per pearl)
+	# - 64 Dirt (Stack 64) = 1.0 Weight (0.015 per block)
+	#Range: 0.0 ~ 1000.0
+	autoWeightBase = 10.0
+	#
+	#
+	#Custom Container NBT Paths.
+	#Use this for backpacks/containers that store items inside their NBT data.
+	#Format: 'modid:item;path.to.list'
+	#Use dots (.) for nested tags.
+	#Example: 'minecraft:shulker_box;BlockEntityTag.Items'
+	#Example: 'somemod:satchel;Inventory'
+	#Note: Vanilla Shulker Boxes and Bundles are already handled.
+	#Note: Compatible with Curios and Packedup by SuperMartijin642, should work with most backpack (or other containers) mods normally but if it doesnt work, add the path to this list
+	#
+	customContainerPaths = []
+	#
+	#
+	#Priority 1: Explicit Item Weights.
+	#These values override the Auto-Weigher. Use this for heavy equipment that doesn't stack.
+	#(Works with stackable but ex. minecraft:obsidian;5 will mean EACH obisidan is 5 weight not 5/stacksize)
+	#Format: 'modid:item;weight'
+	#Example: 'minecraft:netherite_chestplate;15.0'
+	#
+	customItemWeights = ["minecraft:netherite_chestplate;15.0", "minecraft:netherite_leggings;12.0", "minecraft:netherite_boots;8.0", "minecraft:netherite_helmet;8.0", "minecraft:netherite_sword;5.0", "minecraft:netherite_pickaxe;6.0", "minecraft:netherite_axe;7.0", "minecraft:netherite_shovel;4.0", "minecraft:netherite_hoe;4.0", "minecraft:diamond_chestplate;12.0", "minecraft:diamond_leggings;10.0", "minecraft:diamond_boots;6.0", "minecraft:diamond_helmet;6.0", "minecraft:diamond_sword;4.0", "minecraft:diamond_pickaxe;5.0", "minecraft:diamond_axe;6.0", "minecraft:diamond_shovel;3.0", "minecraft:diamond_hoe;3.0", "minecraft:diamond_horse_armor;15.0", "minecraft:iron_chestplate;10.0", "minecraft:iron_leggings;8.0", "minecraft:iron_boots;5.0", "minecraft:iron_helmet;5.0", "minecraft:iron_sword;3.5", "minecraft:iron_pickaxe;4.5", "minecraft:iron_axe;5.5", "minecraft:iron_shovel;2.5", "minecraft:iron_hoe;2.5", "minecraft:iron_horse_armor;12.0", "minecraft:shield;4.0", "minecraft:golden_chestplate;12.0", "minecraft:golden_leggings;10.0", "minecraft:golden_boots;6.0", "minecraft:golden_helmet;6.0", "minecraft:golden_sword;4.0", "minecraft:golden_pickaxe;5.0", "minecraft:golden_axe;6.0", "minecraft:golden_shovel;3.0", "minecraft:golden_hoe;3.0", "minecraft:golden_horse_armor;15.0", "minecraft:chainmail_chestplate;8.0", "minecraft:chainmail_leggings;6.0", "minecraft:chainmail_boots;4.0", "minecraft:chainmail_helmet;4.0", "minecraft:leather_chestplate;3.0", "minecraft:leather_leggings;2.0", "minecraft:leather_boots;1.0", "minecraft:leather_helmet;1.0", "minecraft:leather_horse_armor;4.0", "minecraft:stone_sword;3.0", "minecraft:stone_pickaxe;4.0", "minecraft:stone_axe;5.0", "minecraft:stone_shovel;2.0", "minecraft:stone_hoe;2.0", "minecraft:wooden_sword;1.5", "minecraft:wooden_pickaxe;2.0", "minecraft:wooden_axe;2.5", "minecraft:wooden_shovel;1.0", "minecraft:wooden_hoe;1.0", "minecraft:bow;2.0", "minecraft:crossbow;3.0", "minecraft:trident;4.0"]
+	#
+	#
+	#Priority 2: Tag/Category Weights.
+	#Used if the item is not in the explicit list above.
+	#Useful for making entire categories of items heavy.
+	#(same as above, for every ONE item in the tag it adds X weight not X/stacksize)
+	#Format: 'tag;weight'
+	#
+	customTagWeights = ["forge:ores;0.25", "forge:storage_blocks;0.15", "minecraft:logs;0.15", "minecraft:planks;0.1", "forge:stone;0.1", "forge:cobblestone;0.1", "forge:sand;0.1", "forge:gravel;0.1", "forge:ingots;0.2", "forge:gems;0.1", "forge:obsidian;1.2"]
+
+[Consumables]
+	#
+	#Attribute Modifiers applied when consuming an item.
+	#Format: "ItemId;TYPE;Args...;TYPE;Args..."
+	#Keywords & Scales:
+	#  INSTANT;Amount        (FLAT: Instantly restores X stamina points)
+	#  REGEN;Amount;Seconds (PERCENT: Modifies regen speed. 0.2 = +20%)
+	#  POISON;Amount        (FLAT: Adds X points of Food Poisoning penalty)
+	#  PENALTY;Amount        (PERCENT: Adds Resistance to penalty buildup)
+	#     Formula: 30% Base Resistance + Amount. Caps at 80% total.
+	#     Examples: 10.0 = 40% resist (0.3 + 0.1), 50.0 = 80% resist (0.3 + 0.5).
+	#  CURE;Target;Amount    (FLAT: Removes X points of chosen penalties)
+	#     Targets: FATIGUE, HUNGER, POISON, WEIGHT, ALL, or Custom NBT Keys (e.g. 'thirstLevel')
+	#Examples:
+	#  "minecraft:apple;INSTANT;10.0" (Restores 10 Stamina)
+	#  "minecraft:milk_bucket;CURE;POISON;100.0" (Removes 100.0 Poison Penalty)
+	#  "modid:clean_water;CURE;thirstLevel;50.0" (Removes 50.0 from custom 'thirstLevel' penalty)
+	#  "modid:herbal_tea;CURE;POISON;50.0;CURE;FATIGUE;20.0" (Cures Poison AND Fatigue at the same time)
+	#  "modid:anti_toxin;CURE;minecraft:wither;25.0" (Removes 25.0 penalty caused by the Wither effect)
+	#  "minecraft:golden_carrot;PENALTY;20.0" (Grants 50% resistance to penalty buildup, cures nothing)
+	#  "minecraft:golden_apple;CURE;ALL;100.0;PENALTY;50.0;REGEN;0.25;60" (Cures ALL, Grants High Resist, +25% Regen)
+	#
+	consumable_values = ["minecraft:apple;INSTANT;10.0", "minecraft:melon_slice;INSTANT;4.0", "minecraft:sweet_berries;INSTANT;3.0;PENALTY;5.0", "minecraft:glow_berries;INSTANT;3.0;PENALTY;5.0", "minecraft:chorus_fruit;INSTANT;5.0", "minecraft:carrot;INSTANT;6.0", "minecraft:potato;INSTANT;5.0", "minecraft:baked_potato;INSTANT;12.0;PENALTY;5.0", "minecraft:beetroot;INSTANT;4.0", "minecraft:dried_kelp;INSTANT;2.0", "minecraft:bread;INSTANT;12.0", "minecraft:cookie;INSTANT;4.0;PENALTY;2.0", "minecraft:pumpkin_pie;INSTANT;16.0", "minecraft:beef;INSTANT;6.0", "minecraft:cooked_beef;INSTANT;18.;PENALTY;5.0", "minecraft:porkchop;INSTANT;6.0;PENALTY;5.0", "minecraft:cooked_porkchop;INSTANT;18.0PENALTY;5.0", "minecraft:chicken;INSTANT;4.0", "minecraft:cooked_chicken;INSTANT;14.0PENALTY;5.0", "minecraft:mutton;INSTANT;5.0", "minecraft:cooked_mutton;INSTANT;16.0PENALTY;5.0", "minecraft:rabbit;INSTANT;5.0", "minecraft:cooked_rabbit;INSTANT;12.0PENALTY;5.0", "minecraft:cod;INSTANT;5.0", "minecraft:cooked_cod;INSTANT;12.0PENALTY;5.0", "minecraft:salmon;INSTANT;5.0", "minecraft:cooked_salmon;INSTANT;14.0PENALTY;5.0", "minecraft:tropical_fish;INSTANT;4.0", "minecraft:mushroom_stew;INSTANT;15.0;CURE;FATIGUE;10.0", "minecraft:beetroot_soup;INSTANT;15.0;CURE;FATIGUE;10.0", "minecraft:rabbit_stew;INSTANT;20.0;CURE;FATIGUE;25.0", "minecraft:suspicious_stew;INSTANT;15.0;POISON;5.0;REGEN;-0.1;20", "minecraft:milk_bucket;CURE;POISON;100.0;PENALTY;15.0", "minecraft:honey_bottle;INSTANT;10.0;REGEN;0.15;60;CURE;POISON;15.0", "minecraft:golden_carrot;INSTANT;12.0;REGEN;0.2;60;PENALTY;20.0", "minecraft:golden_apple;INSTANT;10.0;REGEN;0.25;60;CURE;ALL;20.0;PENALTY;10.0", "minecraft:enchanted_golden_apple;INSTANT;20.0;REGEN;0.5;120;CURE;ALL;100.0;PENALTY;50.0", "minecraft:rotten_flesh;INSTANT;8.0;REGEN;-0.3;30;POISON;15.0", "minecraft:spider_eye;INSTANT;4.0;REGEN;-0.3;15;POISON;10.0", "minecraft:pufferfish;INSTANT;4.0;REGEN;-0.5;15;POISON;20.0", "minecraft:poisonous_potato;INSTANT;4.0;REGEN;-0.2;10;POISON;10.0"]
+	#
+	#Duration (in seconds) for the penalty resistance buff applied by penalty-reducing items.
+	#Range: 0 ~ 600
+	penaltyReliefDuration = 25
+
+	[Consumables."Food Poisoning"]
+		#Maximum reduction to Max Stamina caused by food poisoning (Flat value, e.g. 40.0 = 40% of default bar)
+		#Range: 0.0 ~ 100.0
+		maxPoisonPenalty = 40.0
+		#Seconds to wait after eating bad food before poison penalty starts decaying
+		#Range: 0 ~ 600
+		poisonDecayDelay = 45
+		#How much poison penalty recovers per tick after the delay (Flat value)
+		#Range: 0.0 ~ 100.0
+		poisonDecayRate = 0.05
+
+["Infinite stamina effects"]
+	#List of Status Effects that grant infinite stamina (No stamina depletion).
+	#
+	infiniteStaminaEffects = ["minecraft:speed", "minecraft:saturation", "parcool:inexhaustible"]
+
+["Exhaustion Penalties"]
+	#Ticks the penalties persist after stamina regenerates above 0 (0 to disable)
+	#Range: 0 ~ 12000
+	exhaustionCooldownDuration = 60
+	#List of Attribute Penalties to apply when Stamina hits 0.
+	#Format: "AttributeRegistryName;Amount;Operation"
+	#Operations: 0 = ADDITION (Flat number), 1 = MULTIPLY_BASE, 2 = MULTIPLY_TOTAL (Percentage)
+	#
+	customExhaustionPenalties = ["minecraft:generic.movement_speed;-0.10;2", "minecraft:generic.attack_speed;-0.15;2", "minecraft:generic.attack_damage;-0.15;2"]
+	#
+	#Movement speed multiplier when exhausted sprinting (e.g. -0.5 is 50% slower, -0.9 is 90% slower). Set to 0.0 to disable sprinting speed penalty.
+	#Range: -1.0 ~ 0.0
+	exhaustedSpeedPenalty = -0.65
+
+["Mod Compats"]
+
+	["Mod Compats"."NBT and Status Effects"]
+		#
+		#Universal Compatibility with Scaling Penalties. This section is advanced but very useful when learned, I've made a ton of examples for your assistance.
+		#Allows you to link external mod data (NBT tags or Potion Effects) to the stamina system.
+		#
+		#Format: "Type;Key;Comparator;Threshold;WorstValue;MaxPenalty;ColorInt;IconText"
+		#
+		#Arguments Explained:
+		#  1. Type:       'NBT' (checks player data) or 'EFFECT' (checks potion amplifier/level).
+		#  2. Key:        The NBT path (e.g. 'thirstLevel') or Effect ID (e.g. 'minecraft:poison').
+		#  3. Comparator: Logic for calculating the penalty.
+		#       SCALE MODES (Linear penalty between two points):
+		#         >  : Penalty increases as value rises above Threshold, maxing at WorstValue.
+		#         <  : Penalty increases as value falls below Threshold, maxing at WorstValue.
+		#       MULTIPLIER MODE (Penalty stacks per unit):
+		#         * : (or *>) Each point ABOVE Threshold adds MaxPenalty to total.
+		#              Formula: (CurrentValue - Threshold) * MaxPenalty
+		#         *< : Each point BELOW Threshold adds MaxPenalty to total.
+		#              Formula: (Threshold - CurrentValue) * MaxPenalty
+		#       INSTANT FLAG:
+		#         !  : Add ! before any comparator (!>, !<, !*, !*<) to apply penalty instantly.
+		#              Without !, penalties build up gradually over time.
+		#  4. Threshold:  The safe value where penalty starts (0%).
+		#  5. WorstValue: In SCALE mode: The value where penalty reaches 100%.
+		#                 In MULTIPLIER mode: The Maximum total penalty allowed (Hard Cap).
+		#  6. MaxPenalty: In SCALE mode: Total penalty amount at WorstValue.
+		#                 In MULTIPLIER mode: Penalty amount per 1 unit of difference.
+		#  7. ColorInt:   Decimal color code for the HUD overlay (e.g. 16711680 is Red).
+		#  8. IconText:   Emoji or text to display on the bar. Write 'none' to disable.
+		#
+		#Examples (SCALE MODE):
+		#  "NBT;thirstLevel;<;6;0;20.0;38143;💧"
+		#    -> Thirst dropping from 6 to 0 builds penalty from 0 to 20.
+		#  "NBT;temperature;>;37;42;25.0;16724016;🔥"
+		#    -> Temperature rising from 37 to 42 builds penalty from 0 to 25.
+		#  "EFFECT;minecraft:wither;>;-1;3;40.0;3355443;💀"
+		#    -> Wither I to IV builds penalty from 0 to 40.
+		#
+		#Examples (SCALE MODE):
+		#  "NBT;thirstLevel;!<;6;0;20.0;38143;💧"
+		#    -> Thirst dropping from 6 to 0 instantly applies penalty from 0 to 20.
+		#
+		#Examples (MULTIPLIER MODE):
+		#  "NBT;thirstLevel;*<;6;30;2.0;38143;💧"
+		#    -> Below 6 thirst, every point lost adds 2.0 penalty (builds over time). Caps at 30 total.
+		#    -> Thirst 5 = 2 penalty, Thirst 4 = 4 penalty, Thirst 3 = 6 penalty, etc.
+		#  "EFFECT;minecraft:poison;*;0;50;5.0;4488448;☣"
+		#    -> Every poison level adds 5 penalty (builds over time). Caps at 50.
+		#    -> Poison I = 5, Poison II = 10, Poison III = 15, etc.
+		#  "NBT;radiation;*;10;100;3.5;65280;☢"
+		#    -> Above 10 radiation, every point adds 3.5 penalty (builds over time). Caps at 100.
+		#    -> Radiation 11 = 3.5, Radiation 12 = 7.0, Radiation 15 = 17.5, etc.
+		#
+		#Examples (MULTIPLIER MODE):
+		#  "NBT;thirstLevel;!*<;6;30;2.0;38143;💧"
+		#    -> Below 6 thirst, every point lost instantly adds 2.0 penalty. Caps at 30 total.
+		#  "EFFECT;minecraft:poison;!*;0;50;5.0;4488448;☣"
+		#    -> Every poison level instantly adds 5 penalty. Caps at 50.
+		#    -> Poison I = 5, Poison II = 10, Poison III = 15, etc.
+		#  "EFFECT;hordes:infected;!*;0;80;10.0;8388736;🦠"
+		#    -> every level instantly adds 10 penalty. Caps at 80.
+		#    -> Infection III = 10, Infection IV = 20, Infection V = 30, etc.
+		#
+		universalPenalties = ["NBT;thirstLevel;*<;6;0;20.0;38143;💧", "NBT;targetTemperatureLevel;>;2;4;15.0;16724016;🔥", "NBT;targetTemperatureLevel;<;2;0;15.0;65535;❄", "EFFECT;minecraft:poison;!*;0;50;15.0;4488448;☣"]
+
+	["Mod Compats".ParCool]
+		#ParCool Action Stamina Costs
+		#Format: "ActionName;START;Cost;CONTINUE;Cost"
+		#Types:
+		#  START    = One-time cost when action begins
+		#  CONTINUE = Cost per tick while action is active
+		#
+		#Examples:
+		#  "WallRun;START;15.0;CONTINUE;0.5"
+		#  "Vault;START;8.0" (no continue cost)
+		#  "Roll;START;5.0;CONTINUE;0.0" (explicit zero)
+		#Note: Negative cost values will restore stamina instead of draining it.
+		#Note: Fast run and Fast swim costs are added onto the cost of regular sprinting and regular swimming. 
+		#
+		parCoolActionCosts = ["BreakfallReady;START;0.0", "CatLeap;START;2.0;CONTINUE;0.3", "ChargeJump;CONTINUE;0.2", "ClimbPoles;CONTINUE;0.3", "ClimbUp;START;2.0", "ClingToCliff;CONTINUE;0.2", "HideInBlock;START;1.0;CONTINUE;0.1", "Crawl;START;0.5;", "Dive;START;2.0", "Dodge;START;15.0", "FastRun;START;2.5;CONTINUE;0.1", "FastSwim;START;2.5;CONTINUE;0.06", "Flipping;START;2.0", "HangDown;CONTINUE;0.2", "HorizontalWallRun;CONTINUE;0.4", "JumpFromBar;START;5.0", "QuickTurn;START;2.0", "RideZipline;START;2.0;CONTINUE;0.2", "Roll;START;2.0", "SkyDive;START;0.0", "Slide;START;2.0;CONTINUE;0.2", "Tap;START;2.0", "Vault;START;3.0", "VerticalWallRun;CONTINUE;0.8", "WallJump;START;4.0", "WallSlide;CONTINUE;0.2"]
+

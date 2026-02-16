@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "void_thorn"
+  ],
+  "tasks": {
+    "eye": {
+      "type": "heracles:item",
+      "item": "endrem:cursed_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ASD": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 23
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Survival forged into sight.”",
+      "",
+      "> → Craft The Cursed Eye"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -104,
+          435
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:cursed_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Craft The Cursed Eye"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

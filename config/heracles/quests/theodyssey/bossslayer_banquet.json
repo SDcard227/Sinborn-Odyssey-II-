@@ -1,0 +1,110 @@
+{
+  "dependencies": [
+    "infernal_meal"
+  ],
+  "tasks": {
+    "sads": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:striderloaf",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "a": {
+      "type": "heracles:item",
+      "item": "frightsdelight:punch_ghasttear",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "sdaf": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:magma_cake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asffga": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:ghasta_with_cream",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sad": {
+      "type": "heracles:item",
+      "item": "frightsdelight:ghasttear_pie",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "asff": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:roast_stuffed_hoglin",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "fas": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 30
+      },
+      "type": "heracles:item"
+    },
+    "afa": {
+      "item": {
+        "id": "numismatic-overhaul:gold_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "asd": {
+      "icon": {
+        "item": {
+          "id": "numismatic-overhaul:bronze_coin",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 15
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Nothing left scares you.",
+      "",
+      "> → Table + 6+ foods (mostly placeable) + eat meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -21,
+          463
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mynethersdelight:strider_with_grilled_fungus",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Boss-Slayer Banquet"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

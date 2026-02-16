@@ -1,0 +1,59 @@
+{
+  "dependencies": [
+    "hunt_death_worms"
+  ],
+  "tasks": {
+    "ads": {
+      "type": "heracles:item",
+      "item": "endermanoverhaul:warped_pearl",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "af": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 30
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Distance warps survival.”",
+      "",
+      "→ Find a Warped Pearl"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -93,
+          394
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endermanoverhaul:warped_pearl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain a Warped Pearl"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

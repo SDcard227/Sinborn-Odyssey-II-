@@ -1,0 +1,65 @@
+{
+  "dependencies": [
+    "collect_echoes"
+  ],
+  "tasks": {
+    "druda": {
+      "type": "heracles:item",
+      "item": "aquamirae:abyssal_tiara",
+      "nbt": {
+        "Damage": 0
+      },
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "asdf": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 20
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Light survives the deep.”",
+      "",
+      "> → Obtain the treasure of the maze"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -66,
+          158
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "aquamirae:abyssal_tiara",
+        "count": 1,
+        "nbt": {
+          "Damage": 0
+        }
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Obtain Tiara"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

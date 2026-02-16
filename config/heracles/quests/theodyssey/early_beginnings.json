@@ -1,0 +1,57 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "df": {
+      "type": "heracles:item",
+      "item": "earlystage:crafting_rock",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 9
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "The start of an epic journey",
+      "",
+      "> → Obtain the Early essentials"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -241,
+          -105
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "earlystage:rock",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Early Beginnings"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

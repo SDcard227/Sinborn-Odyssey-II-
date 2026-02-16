@@ -1,0 +1,17 @@
+{
+  "id": "natural_stony_peaks",
+  "name": "Stony Peaks Trail",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:stone",
+    "minecraft:calcite",
+    "minecraft:andesite"
+  ],
+  "slabMaterials": [
+    "minecraft:stone_slab",
+    "minecraft:andesite_slab"
+  ]
+}

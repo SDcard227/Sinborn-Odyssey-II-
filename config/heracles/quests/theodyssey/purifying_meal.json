@@ -1,0 +1,77 @@
+{
+  "dependencies": [
+    "craft_the_corrupted_eye"
+  ],
+  "tasks": {
+    "d": {
+      "type": "heracles:item",
+      "item": "dehydration:purified_water_bowl",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "cuhh": {
+      "type": "heracles:item",
+      "item": "bakery:sweetberry_cake",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "da": {
+      "type": "heracles:item",
+      "item": "compatdelight:cleansing_juice",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "cuh": {
+      "type": "heracles:item",
+      "item": "createfood:cheese_pizza",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "cuh": {
+      "item": {
+        "id": "numismatic-overhaul:bronze_coin",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Stability through ritual.”",
+      "",
+      "> → Cook 1 cleansing meal"
+    ],
+    "groups": {
+      "The Odyssey": {
+        "position": [
+          -481,
+          429
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "dehydration:purified_water_bowl",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Purifying Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

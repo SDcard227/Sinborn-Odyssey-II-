@@ -1,0 +1,83 @@
+{
+  "dependencies": [
+    "locate_a_nether_eye"
+  ],
+  "tasks": {
+    "asfa": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:spicy_noodle_soup",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "afeda": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:spicy_cotton",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "eaa": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:strider_egg",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "aefe": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:breakfast_sampler",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "dasew": {
+      "type": "heracles:item",
+      "item": "mynethersdelight:chilidog",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "aef": {
+      "item": {
+        "id": "numismatic-overhaul:silver_coin",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "“Fuel forged in flame.”",
+      "",
+      "> → Cook a Nether-based meal"
+    ],
+    "groups": {
+      "The Stone & Flame Trials": {
+        "position": [
+          85,
+          144
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mynethersdelight:sausage_and_potatoes",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "Ashen Meal"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

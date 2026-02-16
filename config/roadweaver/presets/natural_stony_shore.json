@@ -1,0 +1,17 @@
+{
+  "id": "natural_stony_shore",
+  "name": "Stony Shore Path",
+  "type": "NATURAL",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "materials": [
+    "minecraft:stone",
+    "minecraft:cobblestone",
+    "minecraft:gravel"
+  ],
+  "slabMaterials": [
+    "minecraft:stone_slab",
+    "minecraft:cobblestone_slab"
+  ]
+}

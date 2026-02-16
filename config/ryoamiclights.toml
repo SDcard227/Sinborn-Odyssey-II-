@@ -267,6 +267,7 @@
 				dumbo_octopus = true
 				sea_bunny = true
 				otter = true
+				red_panda = true
 
 			[light_sources.settings.entities.born_in_chaos_v1]
 				decrepit_skeleton = true
@@ -360,6 +361,7 @@
 				bull_shark = true
 				swordfish = true
 				great_white_shark = true
+				mooneye = true
 
 			[light_sources.settings.entities.irons_spellbooks]
 				necromancer = true
@@ -435,6 +437,7 @@
 				lightning_dragon_charge = true
 				dread_horse = true
 				dragon_egg = true
+				hippogryph = true
 
 			[light_sources.settings.entities.mowziesmobs]
 				ferrous_wroughtnaut = true

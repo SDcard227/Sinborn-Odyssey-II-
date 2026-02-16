@@ -308,6 +308,17 @@
         "value": 100
       }
     },
+    "peak_stamina:elytra_cost_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "peak_stamina:regen_delay_multiplier": {
       "enabled": false,
       "min": {
@@ -364,6 +375,17 @@
       }
     },
     "forge:block_reach": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "peak_stamina:block_place_cost_multiplier": {
       "enabled": false,
       "min": {
         "default": 0,

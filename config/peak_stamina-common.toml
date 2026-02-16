@@ -29,6 +29,9 @@
 	#Stamina drained per tick while climbing. Set to 0.0 to disable. Set to negative to gain stamina
 	#Range: -100.0 ~ 100.0
 	depletionClimb = 0.7
+	#Stamina drained per block placed. Set to 0.0 to disable. Set to negative to gain stamina
+	#Range: -100.0 ~ 100.0
+	depletionBlockPlace = 0.7
 
 ["Recovery Settings"]
 	#Stamina recovered per tick
@@ -43,6 +46,9 @@
 	#Ticks before stamina starts regenerating after action (20 ticks = 1 sec)
 	#Range: 0 ~ 2000
 	recoveryDelay = 50
+	#Multiplier for recovery while inside water
+	#Range: 0.0 ~ 10.0
+	recoveryWaterMult = 0.3
 
 ["Fatigue & Limits"]
 	#Ticks spent in critical stamina (red zone) before fatigue penalty begins (180 ticks = 9s)
@@ -94,23 +100,31 @@
 		sleepFatigueReduction = 20.0
 
 ["Item depletion cost"]
-	#Custom Stamina Costs for Items.
+	#Custom Stamina Costs for Items. Priority 1
 	#Format: "ItemId;TYPE;Cost;..."
 	#Types:
 	#  TICK  = Cost per tick while using. (1 Arg: Cost)
 	#  USE   = Cost on right-click. (1 Arg: Cost)
 	#  BLOCK = Cost when blocking damage. (2 Args: BaseCost; DamageMultiplier)
+	#  USE_ON_BLOCK = Cost on right-click block. (1 Arg: Cost)
 	#
 	#Examples:
 	#  "minecraft:shield;TICK;0.2;BLOCK;2.0;0.8" (0.2/tick to hold, 2.0 + (Damage * 0.8) on block)
 	#  "minecraft:bow;TICK;1.0"
+	#  "minecraft:iron_axe;USE_ON_BLOCK;5.0" (Costs stamina to strip logs)
 	#Note: Negative cost values will restore stamina instead of draining it.
 	#
 	itemCosts = ["minecraft:shield;TICK;0.2;BLOCK;2.0;0.8", "minecraft:bow;TICK;0.5", "minecraft:crossbow;TICK;0.5", "minecraft:trident;TICK;0.5", "minecraft:snowball;USE;1.0", "minecraft:egg;USE;1.0", "minecraft:ender_pearl;USE;4.0", "minecraft:splash_potion;USE;2.0", "minecraft:lingering_potion;USE;2.0", "minecraft:experience_bottle;USE;1.0", "minecraft:firework_rocket;USE;1.5", "minecraft:fishing_rod;USE;3.0", "minecraft:flint_and_steel;USE;2.5", "minecraft:spyglass;TICK;0.1", "minecraft:goat_horn;TICK;0.6"]
 	#
-	#Ticks to disable an item (visual grey overlay) if you run out of stamina while using it.
+	#Ticks to disable an item if you run out of stamina while using it.
 	#Range: 0 ~ 1200
 	itemInterruptionCooldown = 120
+	#Custom Stamina Costs for Item Tags (Categories). Priority 2
+	#Works exactly like itemCosts but applies to any item with the specified Tag.
+	#Priority: Specific items in 'itemCosts' will override these tag settings.
+	#Format: "TagId;TYPE;Cost;..."
+	#Example: "forge:tools/bows;TICK;0.5"
+	itemCostTags = ["forge:tools/bows;TICK;0.5", "forge:tools/shields;TICK;0.2;BLOCK;2.0;0.8"]
 
 ["Weight System"]
 	#Enable the weight calculation system.
@@ -227,6 +241,9 @@
 	#Movement speed multiplier when exhausted sprinting (e.g. -0.5 is 50% slower, -0.9 is 90% slower). Set to 0.0 to disable sprinting speed penalty.
 	#Range: -1.0 ~ 0.0
 	exhaustedSpeedPenalty = -0.65
+	#If true, players will experience stalling (drag increases, lift decreases) when stamina hits 0, eventually forcing them to land or fall to their death if they become too slow to continue flying.
+	#If false, players can continue flying normally even with 0 stamina however they just will not be able to use anything.
+	disableElytraWhenExhausted = true
 
 ["Mod Compats"]
 
@@ -310,4 +327,24 @@
 		#Note: Fast run and Fast swim costs are added onto the cost of regular sprinting and regular swimming. 
 		#
 		parCoolActionCosts = ["BreakfallReady;START;0.0", "CatLeap;START;2.0;CONTINUE;0.3", "ChargeJump;CONTINUE;0.2", "ClimbPoles;CONTINUE;0.3", "ClimbUp;START;2.0", "ClingToCliff;CONTINUE;0.2", "HideInBlock;START;1.0;CONTINUE;0.1", "Crawl;START;0.5;", "Dive;START;2.0", "Dodge;START;15.0", "FastRun;START;2.5;CONTINUE;0.1", "FastSwim;START;2.5;CONTINUE;0.06", "Flipping;START;2.0", "HangDown;CONTINUE;0.2", "HorizontalWallRun;CONTINUE;0.4", "JumpFromBar;START;5.0", "QuickTurn;START;2.0", "RideZipline;START;2.0;CONTINUE;0.2", "Roll;START;2.0", "SkyDive;START;0.0", "Slide;START;2.0;CONTINUE;0.2", "Tap;START;2.0", "Vault;START;3.0", "VerticalWallRun;CONTINUE;0.8", "WallJump;START;4.0", "WallSlide;CONTINUE;0.2"]
+
+["Elytra Mechanics"]
+	#Stamina drained per tick while flying with Elytra.
+	#Range: -100.0 ~ 100.0
+	depletionElytra = 0.25
+	#If true, players will experience stalling (drag increases, lift decreases) when stamina hits 0.
+	#If false, players can continue flying normally even with 0 stamina.
+	disableElytraWhenExhausted = true
+	#How much horizontal speed is retained every X ticks when stalling (0.9 = 10% speed loss per tick). Lower = faster stop. (note that if the speed retainment is too high, the player will never fall out of the sky)
+	#Range: 0.0 ~ 1.0
+	exhaustedElytraDrag = 0.86
+	#How often (in ticks) the drag physics are applied (I suggest changing this over elytra speed retainment). Higher = less frequent slowdown and longer gliding. 1 = Every tick.
+	#Range: 1 ~ 100
+	exhaustedElytraTickInterval = 3
+	#Extra vertical gravity applied per tick when stalling. (Negative value pulls down).
+	#Range: -10.0 ~ 0.0
+	exhaustedElytraGravity = -0.025
+	#Speed threshold below which the Elytra will force-close and drop the player.
+	#Range: 0.0 ~ 5.0
+	exhaustedElytraMinSpeed = 0.5
 

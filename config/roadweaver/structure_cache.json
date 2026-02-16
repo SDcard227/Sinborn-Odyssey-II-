@@ -289,6 +289,86 @@
       ]
     },
     {
+      "id": "alekiships:unfinished_rowboat_birch",
+      "displayName": "Unfinished Rowboat Birch",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "alekiships:unfinished_rowboat_cherry",
+      "displayName": "Unfinished Rowboat Cherry",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "alekiships:unfinished_rowboat_dark_oak",
+      "displayName": "Unfinished Rowboat Dark Oak",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "alekiships:unfinished_rowboat_oak",
+      "displayName": "Unfinished Rowboat Oak",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "alekiships:unfinished_rowboat_spruce",
+      "displayName": "Unfinished Rowboat Spruce",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "alekiships:unfinished_sloop_birch",
+      "displayName": "Unfinished Sloop Birch",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "alekiships:unfinished_sloop_cherry",
+      "displayName": "Unfinished Sloop Cherry",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "alekiships:unfinished_sloop_dark_oak",
+      "displayName": "Unfinished Sloop Dark Oak",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "alekiships:unfinished_sloop_oak",
+      "displayName": "Unfinished Sloop Oak",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "alekiships:unfinished_sloop_spruce",
+      "displayName": "Unfinished Sloop Spruce",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
       "id": "alexscaves:abyssal_ruins",
       "displayName": "Abyssal Ruins",
       "isVanilla": false,
@@ -4809,6 +4889,28 @@
         "terralith:underground/oak_cabin",
         "terralith:underground/old_refinery",
         "terralith:underground/sunken_tower"
+      ]
+    },
+    {
+      "tagId": "alekiships:unfinished_rowboat",
+      "displayName": "#Unfinished Rowboat",
+      "structureIds": [
+        "alekiships:unfinished_rowboat_birch",
+        "alekiships:unfinished_rowboat_cherry",
+        "alekiships:unfinished_rowboat_dark_oak",
+        "alekiships:unfinished_rowboat_oak",
+        "alekiships:unfinished_rowboat_spruce"
+      ]
+    },
+    {
+      "tagId": "alekiships:unfinished_sloop",
+      "displayName": "#Unfinished Sloop",
+      "structureIds": [
+        "alekiships:unfinished_sloop_birch",
+        "alekiships:unfinished_sloop_cherry",
+        "alekiships:unfinished_sloop_dark_oak",
+        "alekiships:unfinished_sloop_oak",
+        "alekiships:unfinished_sloop_spruce"
       ]
     },
     {

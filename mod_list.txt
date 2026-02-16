@@ -5,6 +5,8 @@
 abridged-2.0.0-forge-1.20.1.jar
 accessories-neoforge-1.0.0-beta.48+1.20.1.jar
 accessories_cclayer-7.4.0-beta.18+1.20.1.jar
+AI-Improvements-1.20-0.5.2.jar
+alekiNiftyShips-FORGE-1.20.1-1.0.14.jar
 alexscaves-2.0.2.jar
 alexscavesbettercombat.jar
 alexsmobs-1.22.9.jar
@@ -21,9 +23,10 @@ aquamirae_delight-1.5.2-forge-1.20.1.jar
 architectury-9.2.14-forge.jar
 artifacts-forge-9.5.16.jar
 ATi Structures Default V1.4.2 (1.20+).jar
-AttributeFix-Forge-1.20.1-21.0.4.jar
+AttributeFix-Forge-1.20.1-21.0.5.jar
 azurelib-neo-1.20.1-3.1.3.jar
 backpacked_tfc-1.2.0-forge-1.20.1.jar
+BadOptimizations-2.4.1-1.20.1.jar
 balm-forge-1.20.1-7.3.38-all.jar
 banner-flags-2.3.jar
 barbequesdelight-1.0.5.jar
@@ -72,15 +75,15 @@ common-networking-forge-1.0.5-1.20.1.jar
 companions-forge-1.20.1-1.2.2.jar
 compatdelight-1.0.1.1.jar
 Compat_AlexsCaves-Enlightend.jar
-Connector-1.0.0-beta.47+1.20.1.jar
+Connector-1.0.0-beta.48+1.20.1.jar
 continuity-3.0.0+1.20.1.forge.jar
 Controlling-forge-1.20.1-12.0.2.jar
 coolrain-1.20.1-Forge-1.0.3.jar
 coroutil-forge-1.20.1-1.3.7.jar
 corpsebutbetter-1.0.8-forge-1.20.1.jar
-countereds_terrain_slabs-2.2.6.jar
+countereds_terrain_slabs-2.2.6.jar.disabled
 craft_of_the_wild-forge-1.20.1-1.0.1-beta.jar
-CrashAssistant-forge-1.19-1.20.1-1.10.28.jar
+CrashAssistant-forge-1.19-1.20.1-1.10.30.jar
 crawlondemand-1.20-1.0.1.jar
 create-1.20.1-6.0.8.jar
 create-metalwork-1.20.1-1.0.11-forge.jar
@@ -110,6 +113,7 @@ dummmmmmy-1.20-2.0.9.jar
 Dungeon Now Loading-forge-1.20.1-2.11.jar
 dungeons-and-taverns-3.0.3.f.jar
 dungeons_and_combat-1.2.2-forge-1.20.1.jar
+dynamic-fps-3.11.4+minecraft-1.20.0-forge.jar
 dynamiccrosshair-9.10+1.20.1-forge.jar
 EasyAnvils-v8.0.2-1.20.1-Forge.jar
 EasyMagic-v8.0.1-1.20.1-Forge.jar
@@ -135,21 +139,21 @@ enemybanner-1.20.1-0.0.7.jar
 enhancedmastery-1.0.0.jar
 entityculling-forge-1.9.5-mc1.20.1.jar
 entity_model_features_1.20.1-forge-3.0.11.jar
-entity_texture_features_1.20.1-forge-7.0.8.jar
+entity_texture_features_1.20.1-forge-7.0.9.jar
 Epic Witch Huts v1.2.0 (1.20+).jar
 epic-structures-villages-1.2.0.jar
 eso-forge-1.20.1-1.2.2-all.jar
 etched-3.0.2.jar
 experimentalsettingsdisabler-1.20.1-3.0.jar
 explosiveenhancement-forge-1.20.1-1.1.0-client.jar
-exposure-1.20.1-1.7.16-forge.jar
+exposure-forge-1.20.1-1.9.13.jar
 exposure_catalog-1.20.1-1.0.3-forge.jar
 ExtraBounties-universal.jar
 fabric-api-0.92.6+1.11.14+1.20.1.jar
 fair-wage-0.0.1.jar
 fancymenu_forge_3.8.1_MC_1.20.1.jar
 fancytoasts-forge-1.20.1-1.4.6.jar
-FarmersDelight-1.20.1-1.2.9.jar
+FarmersDelight-1.20.1-1.2.10.jar
 ferritecore-6.0.1-forge.jar
 Festive_Delight_1.3_Forge_1.20.1.jar
 fetzisdisplays-forge-1.0.1-1.20.1.jar
@@ -178,7 +182,7 @@ Highlighter-1.20.1-forge-1.1.9.jar
 horseman-1.20.1-1.3.14-forge.jar
 iceandfire-2.1.13-1.20.1-beta-5.jar
 iceandfirebettercombat.jar
-Iceberg-1.20.1-forge-1.1.13.jar
+Iceberg-1.20.1-forge-1.1.25.jar
 ice_and_fire_delight-1.1.5-forge-1.20.1.jar
 ice_and_fire_spellbooks-2.3.2-1.20.1.jar
 ImmediatelyFast-Forge-1.5.4+1.20.4.jar
@@ -231,6 +235,7 @@ mapcompass-forge-2.0.0+1.20.1.jar
 mcqoy-0.4.1+forge-1.20.jar
 mebahels-skeleton-revival-1.0.4-fabric-1.20.1.jar
 melody_forge_1.0.3_MC_1.20.1-1.20.4.jar
+memoryleakfix-forge-1.17+-1.1.5.jar
 midnightlib-forge-1.9.2+1.20.1.jar
 minecraft-comes-alive-7.6.13+1.20.1-universal.jar
 minecraft-cursor-forge-3.11.2+1.20.1-patch.1.jar
@@ -260,9 +265,10 @@ oceansdelight-1.0.2-1.20.jar
 OctoLib-FORGE-0.5.0.1+1.20.1.jar
 oculus-mc1.20.1-1.8.0.jar
 overpacked-1.1-1.20.1-forge.jar
+packetfixer-3.3.1-1.18-1.20.4-merged.jar
 pale_monarch-1.1.0-forge-1.20.1.jar
 PassableFoliage-1.20.1-forge-8.2.1.jar
-peak_stamina-1.6.12.jar
+peak_stamina-1.7.12.jar
 pet_cemetery-1.20.1-2.0.0.jar
 photon-forge-1.20.1-1.1.17.jar
 player-animation-lib-forge-1.0.2-rc1+1.20.jar
@@ -274,11 +280,12 @@ ptd-1.0.5-forge-1.20.1.jar
 ptw-1.1.0-mc+1.20.1.jar
 pufferfish_unofficial_additions-1.20.1-2.2.4-all.jar
 puffish_attributes-0.8.2-1.20-forge.jar
-puffish_skills-0.17.1-1.20-forge.jar
+puffish_skills-0.17.2-1.20-forge.jar
 PuzzlesLib-v8.1.33-1.20.1-Forge.jar
 Quark-4.0-462.jar
 raccompat-1.20.1-0.1.3.jar
 radiantgear-forge-2.2.0+1.20.1.jar
+radium-mc1.20.1-0.12.4+git.26c9d8e.jar
 rare-ice-0.6.0.jar
 realmrpg_skeletons-1.1.0-forge-1.20.1.jar
 recruits-1.20.1-1.14.2.3.jar
@@ -288,9 +295,10 @@ resourcefulconfig-forge-1.20.1-2.1.3.jar
 resourcefullib-forge-1.20.1-2.1.29.jar
 rhino-forge-2001.2.3-build.10.jar
 roadweaver-forge-2.1.1-1.20.1.jar
-rusticdelight-forge-1.20.1-1.5.0.jar
+rusticdelight-forge-1.20.1-1.5.1.jar
 RyoamicLights-forge-0.2.3+mc1.20.1.jar
 satans-curse-(anti-gamemode)-1.0.0.jar
+saturn-mc1.20.1-0.1.3.jar
 Searchables-forge-1.20.1-1.0.3.jar
 seasonal_lets_do-forge-1.3.0+1.20.1.jar
 seeker_compass-1.20.1-4.0.0.jar
@@ -298,9 +306,10 @@ SereneSeasons-forge-1.20.1-9.1.0.2.jar
 sereneseasonsfix-1.20.2-1.1.1.0.jar
 sereneslicecompat-forge-1.20.1-0.3.3.jar
 seriousplayeranimations-1.1.1.jar
+servercore-forge-1.5.2+1.20.1.jar
 sfcr-1.7.6-mc1.20.jar
 ShieldBannerFix-Forge-1.20.1-5.0.1.jar
-ShoulderSurfing-Forge-1.20.1-4.18.2.jar
+ShoulderSurfing-Forge-1.20.1-4.19.0.jar
 silentsdelight-forge-1.0.1-1.20.1.jar
 simpleradio-forge-1.20.1-3.4.6.jar
 simplymore-forge-1.1.3.jar
@@ -313,7 +322,7 @@ sliceanddice-forge-3.6.0.jar
 smallships-forge-1.20.1-2.0.0-b1.4.jar
 SmartBrainLib-forge-1.20.1-1.15.jar
 SnowRealMagic-1.20.1-Forge-10.7.0.jar
-sophisticatedcore-1.20.1-1.3.1.1460.jar
+sophisticatedcore-1.20.1-1.3.4.1491.jar
 spark-1.10.53-forge.jar
 spawn-animations-compats-13.0.jar
 spawnanimations-v1.11.2-mc1.17-1.21.10-mod.jar
@@ -328,10 +337,10 @@ structurify-forge-2.0.17+mc1.20.1.jar
 StylishEffects-v8.0.2-1.20.1-Forge.jar
 SubtleEffects-forge-1.20.1-1.13.2.jar
 supplementaries-1.20-3.1.42-forge.jar
-surveyor-1.1.2+1.20.jar
+surveyor-1.2.1+1.20.jar
 TerraBlender-forge-1.20.1-3.0.1.10.jar
 Terralith_1.20.x_v2.5.4.jar
-tide-extra-compatibility-2.0.0.jar
+tide-extra-compatibility-2.1.1.jar
 tide-forge-1.20.1-2.0.3.jar
 toomanypaintings-25.10.20-1.20-forge.jar
 totalwar-0.1.8.jar
@@ -354,10 +363,10 @@ via_romana-2.2.2+1.20.1-forge.jar
 VibrativeVoice-forge-1.20.1-1.2.0.jar
 villagespawnpoint-1.20.1-4.6.jar
 VisualWorkbench-v8.0.1-1.20.1-Forge.jar
-voicechat-forge-1.20.1-2.6.11.jar
+voicechat-forge-1.20.1-2.6.12.jar
 Voiceless Survival-forge-1.20.1-2.0.1.jar
 vr_typewriter_daycounter_v1.1.jar
-wakes-1.20.1-Forge-1.0.8.jar
+wakes-1.20.1-Forge-1.0.9.jar
 warriorrage-forge-1.20.1-1.0.2.jar
 watut-forge-1.20.1-1.2.3.jar
 Waves-1.20.1-1.6a.jar

@@ -24,6 +24,7 @@ reworked world-start and a fresh coat of paint on survival gear.
 ### Fixes
 - Scroll system: fixed 2 stale mod-gates (`antique_atlas`, dead `divine` namespace) and created 11 missing age-milestone scrolls so every chapter-gate quest resolves cleanly.
 - Repaired two corrupt biome-tag files shipped by epic-structures-villages (a doubled namespace, a JSON syntax error) so its village structures spawn in their intended biomes.
+- HistoryStages no longer blocks opening the GUI of gated blocks — chests, furnaces, etc. behind an unresearched scroll can be opened, consistent with gated items already being usable.
 
 ## v1.4.4 (2026-05-16) — Server-Compatibility Hotfix
 

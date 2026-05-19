@@ -3,7 +3,7 @@
 > Versioning realigned to the Modrinth line (1.4.x). The earlier 4.0.x numbers
 > below are retired — 1.4.3 onward is the current sequence.
 
-## v1.4.6 (2026-05-18) — Server Fix & the Awakening
+## v1.4.7 (2026-05-18) — Server Fix & the Awakening
 
 The pack now installs and runs server-side with zero manual setup — plus a
 reworked world-start and a fresh coat of paint on survival gear.

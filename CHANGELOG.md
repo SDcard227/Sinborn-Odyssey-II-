@@ -1,5 +1,40 @@
 # Sinborn Odyssey 2 — Changelog
 
+> Versioning realigned to the Modrinth line (1.4.x). The earlier 4.0.x numbers
+> below are retired — 1.4.3 onward is the current sequence.
+
+## v1.4.5 (2026-05-18) — Server Setup Hotfix
+
+- **Pre-tuned `server.properties` now ships with the pack** — fresh dedicated-server installs auto-get `view-distance=8 / simulation-distance=6`. No manual server config needed.
+- Fixes the dedicated-server join-timeout: the `10/10` default was too heavy for a 400-mod pack, so players got "Timed Out" during worldgen on join.
+- No content changes from 1.4.4.
+
+## v1.4.4 (2026-05-16) — Server-Compatibility Hotfix
+
+- **Fixed dedicated-server boot crash.** Simply Bows mandatorily depends on Simply Tooltips, but 1.4.3 flagged Simply Tooltips client-only — fresh server installs crashed with "simplytooltips not installed." Now marked server-required.
+- No content changes from 1.4.3.
+
+## v1.4.3 (2026-05-15) — The Discovery Update
+
+The biggest progression overhaul the pack has had — a full crafting-as-discovery rework.
+
+### Scroll system
+- **238 research scrolls** now gate the pack — research the knowledge to craft.
+- **9 new scrolls** — 6 Alex's Caves biome scrolls (Magnetic Deep, Primordial Strata, Blighted Hollows, Forlorn Hollows, Abyssal Chasm, Sugarstone Caverns), Woodworking, Alchemy, Runesmithing.
+- 293 weapons sorted into tiered arsenal scrolls (iron / master / legendary).
+
+### Content
+- **The Scattered Archive** — 55+ collectible history folios (chest loot + boss drops) + 85 cryptic lore-hint books.
+- 658 Heracles quests — every scroll has a discovery quest.
+- Tooltip overhaul — Simply Tooltips made pack-wide; Obscure Tooltips + Fragmentum removed.
+
+### Fixes
+- Cold Sweat worldgen deadlock fixed (Cold Sweat → 2.4, fiahi → 3.1.6).
+- Scroll sync-packet overflow fixed — no more "Invalid player data" disconnects.
+
+### New mods
+- Realm RPG: Treasure Balloons, Simply Bows, Simply Tooltips.
+
 ## v4.0.5 (2026-04-26) — Hotfix
 
 Status Effect Bars Reforged side-flag fix.

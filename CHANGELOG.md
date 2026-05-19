@@ -9,6 +9,7 @@
 - **Pre-tuned `server.properties` now ships with the pack** — fresh dedicated-server installs auto-get `view-distance=8 / simulation-distance=6`. No manual server config needed.
 - Fixes the dedicated-server join-timeout: the `10/10` default was too heavy for a 400-mod pack, so players got "Timed Out" during worldgen on join.
 - Result: the pack now installs and runs server-side with zero manual file-shuffling.
+- **Scroll system polish:** locked items now show a lock-icon overlay in JEI; fixed 2 stale mod-gates (`antique_atlas`, dead `divine` namespace) and created 11 missing age-milestone scrolls so every chapter-gate quest resolves cleanly.
 
 ## v1.4.4 (2026-05-16) — Server-Compatibility Hotfix
 

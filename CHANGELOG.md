@@ -3,13 +3,27 @@
 > Versioning realigned to the Modrinth line (1.4.x). The earlier 4.0.x numbers
 > below are retired — 1.4.3 onward is the current sequence.
 
-## v1.4.5 (2026-05-18) — Server Setup Hotfix
+## v1.4.5 (2026-05-18) — Server Fix & the Awakening
 
-- **Simply Bows + Simply Tooltips removed; Obscure Tooltips restored.** Simply Bows hard-depends on Simply Tooltips, which is client-only — so fresh dedicated-server installs kept crashing with "simplytooltips not installed." Cutting the pair removes the dependency conflict at the root. Obscure Tooltips (the pack's original tooltip mod) + Fragmentum are back. This permanently retires the 1.4.4 server-side workaround.
-- **Pre-tuned `server.properties` now ships with the pack** — fresh dedicated-server installs auto-get `view-distance=8 / simulation-distance=6`. No manual server config needed.
-- Fixes the dedicated-server join-timeout: the `10/10` default was too heavy for a 400-mod pack, so players got "Timed Out" during worldgen on join.
-- Result: the pack now installs and runs server-side with zero manual file-shuffling.
-- **Scroll system polish:** locked items now show a lock-icon overlay in JEI; fixed 2 stale mod-gates (`antique_atlas`, dead `divine` namespace) and created 11 missing age-milestone scrolls so every chapter-gate quest resolves cleanly.
+The pack now installs and runs server-side with zero manual setup — plus a
+reworked world-start and a fresh coat of paint on survival gear.
+
+### Server compatibility
+- **Simply Bows + Simply Tooltips removed; Obscure Tooltips restored.** Simply Bows hard-depends on Simply Tooltips, which is client-only — so fresh dedicated-server installs kept crashing with "simplytooltips not installed." Cutting the pair removes the dependency conflict at the root. Obscure Tooltips (the pack's original tooltip mod) + Fragmentum are back.
+- **Pre-tuned `server.properties` now ships with the pack** — fresh dedicated-server installs auto-get `view-distance=8 / simulation-distance=6`, fixing the join-timeout players hit during worldgen.
+- Result: the pack installs and runs server-side with zero manual file-shuffling.
+
+### World start — "Awaken"
+- **MCA's destiny screen is now a single "Awaken" button.** Instead of picking a structure that frequently failed to teleport, new players are flung to a random **safe-land** location up to **6,000 blocks** from spawn — re-rolled off water and lava until it finds solid ground.
+- Fixed MCA destiny's broken `minecraft:pyramid` structure ID (and the same dead ID in villager rumors) → `minecraft:desert_pyramid`.
+
+### Survival gear
+- **Crafted backpacks come pre-colored** in a sharp gunmetal two-tone instead of bland default brown. Tier upgrades (copper → netherite) inherit the color.
+- **Starter kits are now matched sets** — backpack, tent, and sleeping bag share one color per kit.
+
+### Fixes
+- Scroll system: fixed 2 stale mod-gates (`antique_atlas`, dead `divine` namespace) and created 11 missing age-milestone scrolls so every chapter-gate quest resolves cleanly.
+- Repaired two corrupt biome-tag files shipped by epic-structures-villages (a doubled namespace, a JSON syntax error) so its village structures spawn in their intended biomes.
 
 ## v1.4.4 (2026-05-16) — Server-Compatibility Hotfix
 

@@ -68,7 +68,6 @@ Searchables-forge-1.20.1-1.0.3.jar
 SereneSeasons-forge-1.20.1-9.1.0.2.jar
 ShieldBannerFix-Forge-1.20.1-5.0.1.jar
 ShoulderSurfing-Forge-1.20.1-4.19.0.jar
-SimplyTooltips-forge-0.1.3.jar
 SmartBrainLib-forge-1.20.1-1.15.jar
 SnowRealMagic-1.20.1-Forge-10.7.0.jar
 SoLOnion_FORGE_v1.4.5_mc1.20.1.jar
@@ -185,7 +184,6 @@ damageindicator-2.2.1-1.20.1.jar
 delightfulcreators-1.2.jar
 desert_1.20.1-neo-forge-0.41.2.jar
 diet-forge-2.1.1+1.20.1.jar
-disabled
 distraction_free_recipes-forge-1.2.1-1.20.1.jar
 divein-0.1.12-1.20.1-forge.jar
 dracolotl-1.0.3-forge-neoforge-1.20.1.jar
@@ -233,6 +231,7 @@ foragersinsight-1.20.1-ITW-3.25.jar
 forge-dungeonsdelight-1.20.1-1.2.10.jar
 forge-runiclib-1.20.1-4.3.8.jar
 formations-1.0.4-forge-mc1.20.2.jar
+fragmentum-forge-1.20.1-1.1.0.jar
 frightsdelight-forge-1.20.1-1.4.3.jar
 fruitsdelight-1.1.1.jar
 fusion-1.2.12-forge-mc1.20.1.jar
@@ -330,6 +329,7 @@ no-telemetry-1.10.0.jar
 numismatics_utils-1.1.jar
 nyfsspiders-forge-1.20.1-2.1.1.jar
 obscure_api-18.jar
+obscure_tooltips-forge-1.20.1-3.10.0.jar
 oceanic_delight-1.0.3-forge-1.20.1.jar
 oceansdelight-1.0.2-1.20.jar
 oculus-flywheel-compat-Forge-2.0.3.jar
@@ -373,7 +373,6 @@ seriousplayeranimations-1.1.1.jar
 servercore-forge-1.5.2+1.20.1.jar
 silentsdelight-forge-1.0.1-1.20.1.jar
 simpleradio-forge-1.20.1-3.4.6.jar
-simplybows-forge-0.1.2.jar
 simplycataclysm-1.0.1+1.20.1+forge.jar
 simplymore-forge-1.1.3.jar
 simplyswords-forge-1.56.0-1.20.1.jar

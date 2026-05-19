@@ -5,9 +5,10 @@
 
 ## v1.4.5 (2026-05-18) — Server Setup Hotfix
 
+- **Simply Bows + Simply Tooltips removed; Obscure Tooltips restored.** Simply Bows hard-depends on Simply Tooltips, which is client-only — so fresh dedicated-server installs kept crashing with "simplytooltips not installed." Cutting the pair removes the dependency conflict at the root. Obscure Tooltips (the pack's original tooltip mod) + Fragmentum are back. This permanently retires the 1.4.4 server-side workaround.
 - **Pre-tuned `server.properties` now ships with the pack** — fresh dedicated-server installs auto-get `view-distance=8 / simulation-distance=6`. No manual server config needed.
 - Fixes the dedicated-server join-timeout: the `10/10` default was too heavy for a 400-mod pack, so players got "Timed Out" during worldgen on join.
-- No content changes from 1.4.4.
+- Result: the pack now installs and runs server-side with zero manual file-shuffling.
 
 ## v1.4.4 (2026-05-16) — Server-Compatibility Hotfix
 

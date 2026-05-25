@@ -1,5 +1,5 @@
 {
-  "display_name": "The Bamboo Hearth",
+  "display_name": "The Cipher's Forgetting-Broth",
   "research_time": 5400,
   "items": [
     "alexscaves:deep_sea_sushi_roll",
@@ -16,9 +16,7 @@
     "farmersdelight:tatami"
   ],
   "tags": [],
-  "mods": [
-    "culturaldelights"
-  ],
+  "mods": [],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],

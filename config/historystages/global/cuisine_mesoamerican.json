@@ -1,5 +1,5 @@
 {
-  "display_name": "The Codex of Sun-Maize",
+  "display_name": "The Yucatan Codex",
   "research_time": 5400,
   "items": [
     "call_of_yucutan:chili_pepper",
@@ -13,7 +13,9 @@
     "delightful:cactus_chili"
   ],
   "tags": [],
-  "mods": [],
+  "mods": [
+    "culturaldelights"
+  ],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],

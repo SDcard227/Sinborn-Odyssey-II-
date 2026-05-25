@@ -1,5 +1,5 @@
 {
-  "display_name": "The Corrupted Hearth",
+  "display_name": "The Seeped Gallery-Broth",
   "research_time": 10800,
   "items": [
     "minecraft:ghast_tear"
@@ -11,7 +11,8 @@
     "mynethersdelight",
     "nethervinery",
     "witherstorm_delight",
-    "frightsdelight"
+    "frightsdelight",
+    "silentsdelight"
   ],
   "mod_exceptions": [],
   "recipes": [],

@@ -46,8 +46,10 @@
       "",
       "Gates combat with 1 entity.",
       "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Slaying the Leviathan] [auto]"
+      "→ Find the scroll [discovery]",
+      "→ Research [Slaying the Leviathan] [auto]",
+      "",
+      "📜 A folio left by the dying god may guide your hunt."
     ],
     "groups": {
       "The Eleven-Eyed Hunt": {

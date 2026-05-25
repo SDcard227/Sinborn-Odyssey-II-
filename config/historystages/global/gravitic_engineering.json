@@ -5,7 +5,8 @@
   "tags": [],
   "mods": [
     "create_gravity",
-    "breezy"
+    "breezy",
+    "vc_gliders"
   ],
   "mod_exceptions": [],
   "recipes": [],

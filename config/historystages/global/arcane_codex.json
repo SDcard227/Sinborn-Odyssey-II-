@@ -256,7 +256,8 @@
     "irons_spellbooks",
     "necronomicon",
     "create_wizardry",
-    "obscure_api"
+    "obscure_api",
+    "traveloptics"
   ],
   "mod_exceptions": [],
   "recipes": [],

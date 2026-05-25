@@ -6,18 +6,12 @@
   "mods": [
     "chalk",
     "createdeco",
-    "desert",
     "glow_sticks",
-    "luminousworld",
     "quark",
     "snowrealmagic",
     "supplementaries",
-    "verdant",
     "via_romana",
-    "mo_bubbles",
-    "wither_spawn_animation",
-    "winteroverhaul",
-    "beachparty"
+    "winteroverhaul"
   ],
   "mod_exceptions": [
     "chalk:chalk",

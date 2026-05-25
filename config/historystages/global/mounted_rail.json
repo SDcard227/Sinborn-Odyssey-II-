@@ -6,8 +6,7 @@
   "mods": [
     "cmpackagecouriers",
     "railways",
-    "trotting_wagons",
-    "vc_gliders"
+    "trotting_wagons"
   ],
   "mod_exceptions": [],
   "recipes": [],

@@ -45,7 +45,9 @@
     "mowzies_cataclysm",
     "simplycataclysm",
     "witherreincarnated",
-    "dungeonnowloading"
+    "dungeonnowloading",
+    "timelessprison",
+    "wither_spawn_animation"
   ],
   "mod_exceptions": [
     "cataclysm:ancient_spear",

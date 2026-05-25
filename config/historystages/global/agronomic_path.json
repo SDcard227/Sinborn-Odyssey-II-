@@ -3,7 +3,9 @@
   "research_time": 2700,
   "items": [],
   "tags": [],
-  "mods": [],
+  "mods": [
+    "cropcritters"
+  ],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],

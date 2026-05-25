@@ -256,9 +256,6 @@
     "irons_spellbooks",
     "necronomicon",
     "create_wizardry",
-    "apotheosis",
-    "skilltree",
-    "magicmod",
     "obscure_api"
   ],
   "mod_exceptions": [],

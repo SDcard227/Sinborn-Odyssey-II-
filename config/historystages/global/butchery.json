@@ -17,7 +17,9 @@
     "farmersdelight:steak_and_potatoes"
   ],
   "tags": [],
-  "mods": [],
+  "mods": [
+    "hearthandharvest"
+  ],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],

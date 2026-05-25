@@ -15,7 +15,8 @@
     "verdant",
     "via_romana",
     "mo_bubbles",
-    "wither_spawn_animation"
+    "wither_spawn_animation",
+    "winteroverhaul"
   ],
   "mod_exceptions": [
     "chalk:chalk",

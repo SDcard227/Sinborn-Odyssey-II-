@@ -1,0 +1,15 @@
+{
+  "display_name": "The Eye Hunt Age",
+  "research_time": 3600,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

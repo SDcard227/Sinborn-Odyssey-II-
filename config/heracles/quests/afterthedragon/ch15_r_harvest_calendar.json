@@ -1,0 +1,92 @@
+{
+  "dependencies": ["ch15_r_seasons2"],
+  "tasks": {
+    "seasonal_farm": {
+      "title": "Build a 4-season farm rotation — plant crops appropriate to each Serene Seasons season",
+      "icon": {"item": {"id": "minecraft:wheat", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "cask_brew": {
+      "title": "Fill a Hearth & Harvest Cask — brew a seasonal preserved food or beverage",
+      "icon": {"item": {"id": "minecraft:barrel", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "wheat": {"item": {"id": "minecraft:wheat", "count": 32}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Harvest Calendar"},
+    "subtitle": {"text": "Serene Seasons makes farming a planning problem. Plan 4 seasons ahead. The cask does the rest."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.15 · THE HARVEST CALENDAR",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Serene Seasons changes crop viability by season.",
+      "  Not all crops grow in all seasons.",
+      "  The farm needs to rotate. The planner needs to rotate.",
+      "  Ch15 is post-dragon homecoming — you now have time",
+      "  to sit with the seasons instead of fighting through them.",
+      "  Build the 4-season rotation. Let it run.",
+      "",
+      "◈ SERENE SEASONS CROP SCHEDULE",
+      "  └ Spring: Wheat, Carrot, Potato, Beetroot",
+      "    (most staple crops — high spring fertility)",
+      "  └ Summer: Melons, Pumpkins, Sugar Cane, Bamboo",
+      "    (high-yield water crops; heat-tolerant)",
+      "  └ Autumn: Nether Wart (Overworld autumn = Nether climate analog)",
+      "    Mushrooms; most farm mods unlock autumn-specific crops",
+      "  └ Winter: most crops stop growing",
+      "    Use winter for: Cask brewing, food processing, building",
+      "  └ Check Serene Seasons calendar in JEI or mod guide",
+      "    for your specific mod version crop schedule",
+      "",
+      "◈ HEARTH & HARVEST CASK",
+      "  └ Cask: fermentation/preservation container",
+      "  └ Requires: Tapper (tree sap), Salt (salt deposits),",
+      "    Crow (for crop loss prevention around farms)",
+      "  └ Fill Cask: specific seasonal ingredients → aged food/drink",
+      "  └ Aged products: superior nutrition stats vs fresh versions",
+      "  └ Winter use: fill casks in autumn, harvest preserved food in spring",
+      "  └ Salt: required for preservation mechanics",
+      "    Salt deposits found in arid/desert biomes",
+      "",
+      "◈ FARM AUTOMATION",
+      "  └ Create Mechanical Harvester: automates crop harvesting",
+      "    Pair with Conveyor Belt → Chest for hands-free farming",
+      "  └ Hearth & Harvest Scarecrow: prevents crow crop damage",
+      "    (Crows peck crops — Scarecrow prevents loss in range)",
+      "  └ Farm & Charm Scarecrow: similar mechanic — one per farm",
+      "",
+      "▸ The kingdom runs on food.",
+      "  The food runs on seasons.",
+      "  The seasons run on their own schedule regardless of your plans.",
+      "  The cask is how you bank summer surplus for winter shortage.",
+      "  Plan the rotation. Fill the casks.",
+      "  The harvest calendar is a 4-chapter promise",
+      "  you make to yourself every spring.",
+      "",
+      "▶ Build a 4-season crop rotation farm [check]",
+      "▶ Fill a Hearth & Harvest Cask [check]",
+      "",
+      "◇ Serene Seasons + Farmer's Delight: seasonal crops",
+      "  feed directly into FD cooking recipes.",
+      "  Match your FD meal prep to seasonal availability.",
+      "  Autumn is the best cooking season:",
+      "  most ingredients available, best preservation window."
+    ],
+    "groups": {"After the Dragon": {"position": [-450, 0]}},
+    "icon": {"item": {"id": "minecraft:wheat", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

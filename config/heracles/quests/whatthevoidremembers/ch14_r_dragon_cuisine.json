@@ -1,0 +1,91 @@
+{
+  "dependencies": ["ch14_dragon_eat"],
+  "tasks": {
+    "full_dragon_menu": {
+      "title": "Cook and eat 4 different dragon-based dishes from End's Delight (unlocked via Dragon Egg Research)",
+      "icon": {"item": {"id": "ends_delight:cooked_ender_dragon_meat", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "dragon_steak": {
+      "type": "heracles:item",
+      "item": "ends_delight:cooked_ender_dragon_meat",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "dragon_meat": {"item": {"id": "ends_delight:raw_ender_dragon_meat", "count": 8}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Dragon Cuisine"},
+    "subtitle": {"text": "The Dragon Egg Research mechanic unlocks the full End's Delight recipe tree. Cook from that tree."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.14 · DRAGON CUISINE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ End's Delight is the dragon food mod.",
+      "  Its full recipe tree unlocks via the Dragon Egg Research mechanic.",
+      "  Once researched, every dragon-based dish becomes craftable.",
+      "  The dishes use dragon materials you have already been farming:",
+      "  Dragon Breath, Dragon Meat, Popped Chorus Fruit, Ender Pearl.",
+      "",
+      "◈ END'S DELIGHT RECIPE CHAIN",
+      "  └ Raw Ender Dragon Meat: drops from Ender Dragon on kill",
+      "    (re-summon farming yields more each run)",
+      "  └ Cooked Dragon Meat: furnace/smoker 1:1",
+      "    High saturation, combat buff food",
+      "  └ Dragon Steak: Cooked Meat + additional End materials",
+      "    (check JEI under ends_delight: after Dragon Egg Research)",
+      "  └ Dragon Breath uses: End's Delight multi-step cooking",
+      "    Some recipes require Dragon Breath as a flavor catalyst",
+      "  └ Popped Chorus Fruit: binding ingredient in several dishes",
+      "",
+      "◈ STAT VALUE OF DRAGON FOODS",
+      "  └ Dragon-tier foods: some of the highest saturation in the pack",
+      "  └ Combat-facing buffs: strength/resistance for boss fights",
+      "  └ Stack multiple dishes before Ch15-17 boss encounters",
+      "    (buffed meals persist through combat — pre-eat before fights)",
+      "  └ Diet mod integration: dragon foods count toward protein group",
+      "    (this helps balance Diet if other protein sources are scarce)",
+      "",
+      "◈ WHAT DRAGON EGG RESEARCH UNLOCKS",
+      "  └ Interacting with the Dragon Egg in End's Delight",
+      "    opens a research window or grants a recipe book",
+      "  └ Full tree: all dragon-based cooking recipes",
+      "  └ The Egg is consumed OR returned — check JEI/mod behavior",
+      "    If consumed: farm the re-summon Dragon for another egg",
+      "    (re-summon Dragon does NOT drop a second egg — this is false;",
+      "     Dragon Egg is one-per-world — research uses it non-destructively)",
+      "",
+      "▸ Senshi (Dungeon Meshi) would approve.",
+      "  You did not just kill the dragon.",
+      "  You identified the cuts. You sourced the ingredients.",
+      "  You built a farm for the side dishes.",
+      "  You researched the egg before cooking anything else.",
+      "  You did the whole meal.",
+      "  That is the correct approach.",
+      "",
+      "▶ Cook and eat 4 dragon dishes (End's Delight) [check]",
+      "▶ Collect 4 Cooked Ender Dragon Meat",
+      "",
+      "◇ End's Delight vs Ender's Delight: different mods.",
+      "  End's Delight = dragon cuisine (ends_delight: namespace).",
+      "  Ender's Delight = enderman/shulker food (endersdelight: namespace).",
+      "  Both are in the pack. Both have separate recipe trees.",
+      "  The complete End food system requires both."
+    ],
+    "groups": {"What the Void Remembers": {"position": [450, 0]}},
+    "icon": {"item": {"id": "ends_delight:cooked_ender_dragon_meat", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

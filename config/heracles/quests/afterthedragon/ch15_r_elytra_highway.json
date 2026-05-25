@@ -1,0 +1,90 @@
+{
+  "dependencies": ["ch15_world"],
+  "tasks": {
+    "firework_factory": {
+      "title": "Automate Firework Rocket production via Create — build a factory that produces 64+ rockets per minute",
+      "icon": {"item": {"id": "minecraft:firework_rocket", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "rocket_stack": {
+      "type": "heracles:item",
+      "item": "minecraft:firework_rocket",
+      "amount": 256,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "rockets": {"item": {"id": "minecraft:firework_rocket", "count": 64}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Elytra Highway"},
+    "subtitle": {"text": "Elytra without rockets is gliding. Elytra with infinite rockets is flight. Automate the rockets. Own the sky."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.15 · ELYTRA HIGHWAY",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Elytra changes everything about Overworld travel.",
+      "  The map that took 100+ hours to traverse by foot",
+      "  takes 10 minutes by air.",
+      "  But Elytra flight requires Firework Rockets for thrust.",
+      "  Manual crafting is the bottleneck.",
+      "  Remove the bottleneck. Automate the rockets.",
+      "  Then own the entire sky.",
+      "",
+      "◈ FIREWORK ROCKET RECIPE",
+      "  └ Basic flight rocket: 1 Paper + 1 Gunpowder (no star)",
+      "    (a firework with no star has no explosion — pure thrust)",
+      "  └ Duration 3: 3 Gunpowder = longest duration = 3× thrust distance",
+      "    Tradeoff: costs 3× gunpowder",
+      "    Recommendation: Duration 1 (1 gunpowder) for fuel efficiency",
+      "  └ Stack size: 64 — bring multiple stacks for long flights",
+      "",
+      "◈ CREATE FIREWORK FACTORY",
+      "  └ Paper source: Sugarcane → Paper (Millstone or manual craft)",
+      "    Sugarcane farm: automate with Create Mechanical Harvester",
+      "  └ Gunpowder source: Creeper farm → Gunpowder",
+      "    Creeper farm: trap Creepers, detonate via Redstone automation",
+      "    OR: Witch farm (slower but passive: Witches drop Gunpowder)",
+      "  └ Craft automation: Deployer holding Gunpowder + Paper → Rockets",
+      "    OR: Mechanical Crafter array for bulk crafting",
+      "  └ Target output: 256 rockets = 4 full stacks = 1 session supply",
+      "",
+      "◈ VIA ROMANA INTEGRATION",
+      "  └ Via Romana roads give a sprint/walk speed bonus",
+      "    For ground travel (horses, recruits, carts): use roads",
+      "    For aerial travel (you + Elytra): fly above roads",
+      "  └ Road network + Elytra: ground troops on roads,",
+      "    aerial scouting above — complete kingdom logistics",
+      "",
+      "▸ After the dragon, the world is smaller.",
+      "  Not because it changed.",
+      "  Because you changed.",
+      "  The same mountains that took 3 days to cross before",
+      "  take 40 seconds at full Elytra speed.",
+      "  Build the rocket factory and the world",
+      "  becomes yours in a different way.",
+      "",
+      "▶ Automate Firework Rocket production with Create [check]",
+      "▶ Collect 256 Firework Rockets",
+      "",
+      "◇ Rocket acceleration stacking: each rocket during flight",
+      "  resets your speed to maximum.",
+      "  Time your rockets at speed decay — not constantly.",
+      "  Correct timing: roughly every 2-3 seconds.",
+      "  This gives maximum distance per rocket consumed."
+    ],
+    "groups": {"After the Dragon": {"position": [450, 0]}},
+    "icon": {"item": {"id": "minecraft:elytra", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

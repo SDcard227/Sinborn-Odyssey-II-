@@ -1,0 +1,29 @@
+{
+  "display_name": "The Hearthkeeper's Manual",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "farmersdelight",
+    "delightful",
+    "delightfulcreators",
+    "lendersdelight",
+    "rusticdelight",
+    "chefsdelight",
+    "hearthandharvest",
+    "farm_and_charm",
+    "vintagedelight",
+    "ratatouille",
+    "silentsdelight",
+    "moredelight",
+    "abnormals_delight",
+    "casualness_delight",
+    "compatdelight",
+    "dropthemeat"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

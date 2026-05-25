@@ -1,0 +1,65 @@
+{
+  "dependencies": ["ch08_ocean"],
+  "tasks": {
+    "pressure_test": {
+      "title": "Dive to 40+ blocks below sea level and observe Pressure damage kicking in",
+      "icon": {"item": {"id": "minecraft:water_bucket", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "air_pocket": {
+      "title": "Create an air pocket at depth to reset the Pressure counter during a deep dive",
+      "icon": {"item": {"id": "minecraft:sponge", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "water_breathing": {
+      "type": "heracles:item",
+      "item": "minecraft:potion",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "sponge": {
+      "item": {"id": "minecraft:sponge", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Pressure System"},
+    "subtitle": {"text": "Depth is a resource. Know how much you have."},
+    "description": [
+      "The Pressure mod adds depth-based damage.",
+      "Damage increases with depth below the nearest air block above you.",
+      "",
+      "An air pocket — even 3 blocks directly above — resets the counter.",
+      "Armor shifts when damage begins. It doesn't negate it at extreme depth.",
+      "Netherite players are not immune. The math still applies.",
+      "",
+      "Managing pressure means managing air pockets.",
+      "Break a hole in the cave ceiling. Build a pocket.",
+      "Continue descending. Break another.",
+      "",
+      "This system pairs with Alex's Caves deep biomes",
+      "and the Abyssal descent toward ancient cities.",
+      "",
+      "→ Dive deep enough to observe Pressure damage [check]",
+      "→ Create an air pocket to reset the counter [check]",
+      "→ Brew 4 Water Breathing potions (Pufferfish + Water Bottle)"
+    ],
+    "groups": {"Below the Waking World": {"position": [150, 150]}},
+    "icon": {"item": {"id": "minecraft:water_bucket", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

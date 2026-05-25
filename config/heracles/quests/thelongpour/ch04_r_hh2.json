@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch04_r_hh1"],
+  "tasks": {
+    "salt": {
+      "type": "heracles:item",
+      "item": "hearthandharvest:salt",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "cask": {
+      "type": "heracles:item",
+      "item": "hearthandharvest:cask",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "crow": {
+      "title": "Tame a crow with Corn Kernels",
+      "icon": {"item": {"id": "hearthandharvest:corn", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "corn": {
+      "item": {"id": "hearthandharvest:corn", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 5},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Syrup and Salt"},
+    "subtitle": {"text": "Two ingredients that changed what food could last."},
+    "description": [
+      "Salt comes from boiling water in a Cooking Pot.",
+      "Salt cures meat. Salt preserves cheese.",
+      "Salt has more uses than any single food — it enables others.",
+      "",
+      "The Cask in darkness doubles fermentation speed.",
+      "Barrel + Cask = twice the wine, half the wait.",
+      "",
+      "Hearth and Harvest also adds Crows.",
+      "Tame them with Corn Kernels. They ride your shoulder.",
+      "They retrieve items when sent. Useful.",
+      "",
+      "→ Make 4 salt (boil water in Cooking Pot)",
+      "→ Craft a Cask",
+      "→ Tame a crow [check]"
+    ],
+    "groups": {"The Long Pour": {"position": [300, 0]}},
+    "icon": {"item": {"id": "hearthandharvest:salt", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

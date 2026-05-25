@@ -1,0 +1,32 @@
+{
+  "display_name": "The Wild Study",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "alexsmobs",
+    "alexsmobsdelight",
+    "fieldguide",
+    "untameddelight",
+    "alexsdelight",
+    "atmospheric",
+    "environmental",
+    "habitat",
+    "incubation",
+    "naturalist",
+    "neapolitan",
+    "twigs",
+    "upgrade_aquatic",
+    "windswept",
+    "wetland_whimsy",
+    "verdant"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": ["alexsmobs:warped_mosco"],
+    "spawnlock": []
+  }
+}

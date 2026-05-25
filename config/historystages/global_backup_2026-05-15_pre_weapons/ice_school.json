@@ -1,0 +1,26 @@
+{
+  "display_name": "The Ice School",
+  "research_time": 2700,
+  "items": [
+    "irons_spellbooks:frost_essence",
+    "irons_spellbooks:ice_rune",
+    "irons_spellbooks:scroll_chilling_radiance",
+    "irons_spellbooks:scroll_cone_of_cold",
+    "irons_spellbooks:scroll_frostbite",
+    "irons_spellbooks:scroll_frostwave",
+    "irons_spellbooks:scroll_frozen_humanity",
+    "irons_spellbooks:scroll_frozen_step",
+    "irons_spellbooks:scroll_ice_block",
+    "irons_spellbooks:scroll_ice_spike"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

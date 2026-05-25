@@ -1,0 +1,119 @@
+{
+  "dependencies": [
+    "ch09_r_eldritch"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/boundless"
+    },
+    "elytra": {
+      "type": "heracles:item",
+      "item": "minecraft:elytra",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "shulker_shell": {
+      "item": {
+        "id": "minecraft:shulker_shell",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Boundless"
+    },
+    "subtitle": {
+      "text": "After the Ender Dragon falls, the End Cities open. The Shulker is the tax collector. The Elytra is the reward."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.09 · BOUNDLESS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Boundless scroll is the post-dragon prize.",
+      "  It covers the End Cities, the Elytra,",
+      "  the Shulker Box economy, and Chorus Fruit.",
+      "  Everything after the fight.",
+      "  Everything that makes the End worth living in.",
+      "",
+      "◈ END CITY LOOT PRIORITY",
+      "  └ ✦ Elytra: in End Ship (flying hulk attached to city)",
+      "    Only one per End Ship — first come first served",
+      "    Essential for all late-game traversal",
+      "  └ ✦ Shulker Boxes: carry inventory between worlds",
+      "    Craft: Shulker Shell × 2 + Chest",
+      "    Stack up to 27 additional stacks inside",
+      "    Best logistics tool in the game, full stop",
+      "  └ ✦ Chorus Fruit: teleports on eat (ignores walls)",
+      "    Chorus Plant: farmable in End (Chorus Flower seeds)",
+      "  └ ✦ End City chest loot: Enchanted diamond/iron,",
+      "    saddles, horse armor — solid secondary loot",
+      "",
+      "◈ SHULKER COMBAT",
+      "  └ Shulker projectile: levitates target 20+ sec",
+      "    (prevents shield blocking mid-levitation)",
+      "  └ Strategy: gap-close during closed shell",
+      "    strike during open animation",
+      "  └ Purpur blocks: the city itself is Shulker territory",
+      "    — do not sprint blindly into corners",
+      "  └ Shulker Shell: 2 per kill at best; farm many",
+      "",
+      "◈ SCROLL: Boundless",
+      "  └ 15% drop from Shulkers (post-dragon End Cities)",
+      "  └ Research time: 30 min",
+      "  └ Unlocks: End City navigation guide,",
+      "    Shulker Box recipe knowledge,",
+      "    Chorus Plant farming, Elytra context",
+      "",
+      "▸ The End is not a destination.",
+      "  It is a staging ground.",
+      "  Everything the civilizations built here",
+      "  was built on borrowed time.",
+      "  The Elytra was their way out.",
+      "  Find yours.",
+      "",
+      "▶ Find The Boundless scroll [check]",
+      "▶ Find an Elytra",
+      "",
+      "◇ Mending + Unbreaking III on the Elytra.",
+      "  You will use this for the rest of the playthrough.",
+      "  Treat it accordingly."
+    ],
+    "groups": {
+      "The Eleven-Eyed Hunt": {
+        "position": [
+          -300,
+          300
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:elytra",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

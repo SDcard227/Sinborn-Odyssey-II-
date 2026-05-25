@@ -1,0 +1,60 @@
+{
+  "dependencies": ["ch09_r_kuku2"],
+  "tasks": {
+    "lost_eye": {
+      "title": "Craft the Lost Eye (center: Fragment of Rebirth + other ingredients — see eye_recipes.js)",
+      "icon": {"item": {"id": "endrem:lost_eye", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "place_lost": {
+      "title": "Place the Lost Eye in the End Portal frame",
+      "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "lost_eye_reward": {
+      "item": {"id": "endrem:lost_eye", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Lost Eye"},
+    "subtitle": {"text": "It was not lost. It was buried. Now you carry it."},
+    "description": [
+      "The Lost Eye is the Sky Civilization's inheritance.",
+      "It required: Fragment of Rebirth (Kukulkan kill),",
+      "celestisynth:celestial_netherite_ingot (late game craft),",
+      "alexscaves:tectonic_shard, blood_orb, ominous_catalyst,",
+      "lifesteal:revive_crystal, endermanoverhaul:crimson_pearl.",
+      "",
+      "Some of these ingredients are from chapters you haven't reached.",
+      "If you have the Fragment of Rebirth, secure it.",
+      "The remaining ingredients arrive in Ch15-16.",
+      "",
+      "If you have all components now: craft it. Place it.",
+      "Two frames filled is two confirmations given.",
+      "",
+      "If not: the hunt continues in parallel.",
+      "The portal is patient.",
+      "",
+      "→ Craft the Lost Eye when all ingredients are collected [check]",
+      "→ Place the Lost Eye in the frame [check]"
+    ],
+    "groups": {"The Eleven-Eyed Hunt": {"position": [-450, 0]}},
+    "icon": {"item": {"id": "endrem:lost_eye", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

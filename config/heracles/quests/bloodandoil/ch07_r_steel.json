@@ -1,0 +1,75 @@
+{
+  "dependencies": ["ch07_steel"],
+  "tasks": {
+    "steel_plate": {
+      "title": "Produce Steel Plates (TFMG — steel is required for advanced Create and nuclear components)",
+      "icon": {"item": {"id": "createtfmg:steel_ingot", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "reactor_note": {
+      "title": "Learn: Steel is required for Create Nuclear Shell's Steel Reactor (Ch10 prerequisite)",
+      "icon": {"item": {"id": "minecraft:iron_block", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "steel": {"item": {"id": "createtfmg:steel_ingot", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 4}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Steel Mill"},
+    "subtitle": {"text": "Iron is the foundation. Steel is what you build when you need the foundation to hold forever."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.07 · THE STEEL MILL",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ TFMG adds steel production to the Create ecosystem.",
+      "  Steel is stronger than iron.",
+      "  Steel is required for the next generation of machines.",
+      "  The transition from iron to steel is Ch07's material milestone.",
+      "",
+      "◈ STEEL PRODUCTION (TFMG)",
+      "  └ Iron + Coal → Steel in a TFMG Blast Furnace",
+      "    (not vanilla blast furnace — TFMG-specific)",
+      "  └ Also: Iron + Coke (refined from coal) → Better yield",
+      "  └ Steel Ingot → Steel Plate (press)",
+      "  └ Steel Plate = required material for:",
+      "    → Advanced Create components",
+      "    → Create Nuclear Shell: Steel Reactor",
+      "    → Cannon components (CBC advanced ammo)",
+      "    → Create Teleporters housing",
+      "",
+      "◈ AUTOMATION",
+      "  └ Iron ingot input → TFMG Blast Furnace",
+      "    → Steel output → Press → Steel Plate",
+      "    → Belt to output chest",
+      "  └ Run coal/coke alongside: separate input line",
+      "  └ Diesel Engine stress = runs the whole chain",
+      "",
+      "▸ The steel mill is not the most exciting build.",
+      "  It just makes everything else possible.",
+      "  The civilization that ran out of steel",
+      "  ran out of everything else shortly after.",
+      "",
+      "▶ Produce Steel Plates [check]",
+      "▶ Note the Steel Reactor prerequisite [check]",
+      "",
+      "◇ Create Nuclear Shell Steel Reactor requires",
+      "  substantial steel input.",
+      "  Begin automated steel production now.",
+      "  Ch10 will demand all of it."
+    ],
+    "groups": {"Blood and Oil": {"position": [-600, 150]}},
+    "icon": {"item": {"id": "createtfmg:steel_ingot", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

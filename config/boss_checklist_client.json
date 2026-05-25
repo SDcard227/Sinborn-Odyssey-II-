@@ -1,6 +1,6 @@
 {
   "ProgressionMode": false,
-  "ProgressionModePlus": false,
+  "ProgressionModePlus": true,
   "isAnimationEnabled": true,
   "ShowConfigScreen": true,
   "isChecklistButtonEnabled": true

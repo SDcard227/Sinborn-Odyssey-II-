@@ -1,0 +1,82 @@
+{
+  "dependencies": [
+    "ch05_r_bar1"
+  ],
+  "tasks": {
+    "kill_barako": {
+      "type": "heracles:kill_entity",
+      "entity": "mowziesmobs:barako",
+      "amount": 1
+    },
+    "barako_totem": {
+      "type": "heracles:item",
+      "item": "mowziesmobs:barako_totem",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 5
+      },
+      "type": "heracles:item"
+    },
+    "fire_res": {
+      "item": {
+        "id": "minecraft:potion",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Sun Chief Falls"
+    },
+    "subtitle": {
+      "text": "The jungle does not mourn its kings."
+    },
+    "description": [
+      "Barako commands fire and lightning.",
+      "His followers join the fight when aggravated.",
+      "Clear them first if you can.",
+      "",
+      "His totem, when used, grants fire resistance",
+      "and rapid regeneration for a short time.",
+      "It will save you once. Use it when it counts.",
+      "",
+      "The jungle predates every civilization in this record.",
+      "Barako is not an obstacle. He is a remnant.",
+      "Something that persisted past everything that made it.",
+      "",
+      "→ Kill Barako the Sun Chief [check]",
+      "→ Collect the Barako Totem"
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          -300,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "mowziesmobs:barako_totem",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

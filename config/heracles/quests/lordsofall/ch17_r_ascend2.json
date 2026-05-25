@@ -1,0 +1,66 @@
+{
+  "dependencies": ["ch17_r_ascend1"],
+  "tasks": {
+    "glider_final": {
+      "title": "Equip the Netherite Glider (Gliders mod — fire-resistant, the best glider tier) with your Celestial armor",
+      "icon": {"item": {"id": "gliders:netherite_glider", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "totem_carry": {
+      "title": "Carry 3 Totems of Undying as active insurance — the final build carries its own revival",
+      "icon": {"item": {"id": "minecraft:totem_of_undying", "count": 3}, "type": "heracles:item"},
+      "amount": 3,
+      "collection": "AUTOMATIC",
+      "type": "heracles:item"
+    }
+  },
+  "rewards": {
+    "totem": {
+      "item": {"id": "minecraft:totem_of_undying", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Final Build"},
+    "subtitle": {"text": "This is what survival at maximum investment looks like. Remember what Ch01 looked like."},
+    "description": [
+      "The final character build checklist:",
+      "",
+      "Armor: Fully enchanted Celestial Netherite",
+      "Weapon: Celestial Netherite Sword (or your preferred weapon type)",
+      "Glider: Netherite Glider (fire-resistant) — replaces Elytra for active combat gliding",
+      "Note: Gliders cannot be repaired once destroyed by lightning — store spares",
+      "",
+      "Survival items carried at all times:",
+      "- 3 Totems of Undying (three free deaths)",
+      "- Revive Crystal (from Ch15)",
+      "- 16+ Ender Pearls (emergency teleport)",
+      "- Eiswein x4 (full heals on demand)",
+      "- Fire Resistance potions (for Nether/dragon scenarios)",
+      "",
+      "Elytra + Fireworks for fast flight when Glider is not appropriate",
+      "",
+      "You started with a wooden sword and no food.",
+      "This is what full investment looks like.",
+      "The system works if you use it.",
+      "",
+      "→ Equip Netherite Glider with Celestial armor [check]",
+      "→ Carry 3 Totems of Undying [collect]"
+    ],
+    "groups": {"Lords of All": {"position": [-300, 0]}},
+    "icon": {"item": {"id": "gliders:netherite_glider", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

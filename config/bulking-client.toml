@@ -1,0 +1,5 @@
+
+[Interface]
+	#Should the mod hide the vanilla hunger bar?
+	hide_vanilla_hunger = true
+

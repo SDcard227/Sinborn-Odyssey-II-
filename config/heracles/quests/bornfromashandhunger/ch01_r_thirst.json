@@ -1,0 +1,91 @@
+{
+  "dependencies": ["ch01_r_cold"],
+  "tasks": {
+    "canteen": {
+      "type": "heracles:item",
+      "item": "thirst_was_taken:canteen",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "water": {
+      "title": "Drink clean water",
+      "icon": {
+        "item": {
+          "id": "thirst_was_taken:canteen",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "bucket": {
+      "item": {
+        "id": "minecraft:bucket",
+        "count": 2
+      },
+      "type": "heracles:item"
+    },
+    "food": {
+      "item": {
+        "id": "minecraft:cooked_salmon",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Body Keeps Score"
+    },
+    "subtitle": {
+      "text": "You need more than food."
+    },
+    "description": [
+      "Temperature was the first thing you learned.",
+      "This is the second.",
+      "",
+      "The thirst bar is always draining.",
+      "The Nether drains it three times as fast.",
+      "Dirty water makes you sick. Clean water keeps you moving.",
+      "",
+      "Craft a canteen. Fill it from a clean source.",
+      "Carry it like you carry a weapon.",
+      "",
+      "→ Craft a canteen",
+      "→ Drink clean water [check]"
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          -300,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "thirst_was_taken:canteen",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

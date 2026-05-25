@@ -1,0 +1,56 @@
+{
+  "dependencies": ["ch03_r_frost2"],
+  "tasks": {
+    "trophy": {
+      "title": "Display a Frostmaw trophy in your base",
+      "icon": {"item": {"id": "minecraft:chiseled_stone_bricks", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "ice_blocks": {
+      "type": "heracles:item",
+      "item": "minecraft:blue_ice",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "potion": {
+      "item": {"id": "minecraft:potion", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 6},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Frostmaw's Legacy"},
+    "subtitle": {"text": "What you defeat becomes part of your story."},
+    "description": [
+      "The peaks are quieter now.",
+      "Whatever the Frostmaw guarded is yours to take.",
+      "",
+      "Blue ice. The densest cold the world produces.",
+      "It moves items faster on boat paths.",
+      "It builds bridges that last.",
+      "",
+      "Display the trophy in your base.",
+      "Not as pride — as a record.",
+      "You were here. This thing was here. Now only you remain.",
+      "",
+      "→ Display a Frostmaw trophy [check]",
+      "→ Collect 8 blue ice"
+    ],
+    "groups": {"The Rotting Gate": {"position": [450, 0]}},
+    "icon": {"item": {"id": "minecraft:blue_ice", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

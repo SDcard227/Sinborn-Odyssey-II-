@@ -1,0 +1,18 @@
+{
+  "display_name": "The Drowned Captain's Mess",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "aquamirae",
+    "aquamirae_delight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

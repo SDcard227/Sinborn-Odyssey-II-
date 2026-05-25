@@ -1,0 +1,43 @@
+{
+  "display_name": "The Holiday Feast",
+  "research_time": 2700,
+  "items": [
+    "alexscaves:frosted_gingerbread_block",
+    "alexscaves:frosted_gingerbread_brick_slab",
+    "alexscaves:frosted_gingerbread_brick_stairs",
+    "alexscaves:frosted_gingerbread_brick_wall",
+    "alexscaves:frosted_gingerbread_bricks",
+    "alexscaves:frosted_gingerbread_door",
+    "alexscaves:frosted_gingerbread_slab",
+    "alexscaves:frosted_gingerbread_stairs",
+    "alexscaves:frosted_gingerbread_wall",
+    "alexscaves:gingerbread_block",
+    "alexscaves:gingerbread_boots",
+    "alexscaves:gingerbread_brick_slab",
+    "alexscaves:gingerbread_brick_stairs",
+    "alexscaves:gingerbread_brick_wall",
+    "alexscaves:gingerbread_bricks",
+    "alexscaves:gingerbread_chestplate",
+    "alexscaves:gingerbread_crumbs",
+    "alexscaves:gingerbread_door",
+    "alexscaves:gingerbread_helmet",
+    "alexscaves:gingerbread_leggings",
+    "alexscaves:gingerbread_slab",
+    "alexscaves:gingerbread_stairs",
+    "alexscaves:gingerbread_wall",
+    "minecraft:jack_o_lantern"
+  ],
+  "tags": [],
+  "mods": [
+    "festive_delight",
+    "snowyspirit"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

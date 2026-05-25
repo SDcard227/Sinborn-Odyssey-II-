@@ -1,0 +1,15 @@
+{
+  "display_name": "Ballistics Engineering",
+  "research_time": 10800,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

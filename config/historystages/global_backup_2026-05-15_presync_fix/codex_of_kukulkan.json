@@ -1,0 +1,24 @@
+{
+  "display_name": "The Codex of Kukulkan",
+  "research_time": 1800,
+  "items": [
+    "call_of_yucutan:ah_puch_spawn_egg",
+    "call_of_yucutan:ahaw_spawn_egg",
+    "call_of_yucutan:blowgun_huracan_spawn_egg",
+    "call_of_yucutan:chaac_spawn_egg",
+    "call_of_yucutan:golden_guard_spawn_egg",
+    "call_of_yucutan:kukulkan_spawn_egg",
+    "call_of_yucutan:mitnal_monkey_spawn_egg",
+    "call_of_yucutan:undead_warrior_spawn_egg"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

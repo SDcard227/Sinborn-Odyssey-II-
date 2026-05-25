@@ -1,0 +1,65 @@
+{
+  "dependencies": ["ch12_world"],
+  "tasks": {
+    "mca_friend": {
+      "title": "Build a relationship with an MCA Reborn villager — reach Friend or higher status",
+      "icon": {"item": {"id": "minecraft:rose_gold_ingot", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "bounty_board": {
+      "title": "Place a Bountiful Bounty Board and complete one bounty decree",
+      "icon": {"item": {"id": "bountiful:bounty_board", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "antique_atlas": {
+      "title": "Mark your settlement on an Antique Atlas",
+      "icon": {"item": {"id": "antiqueatlas:antique_atlas", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "rose_gold": {
+      "item": {"id": "minecraft:rose_gold_ingot", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 5},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Council"},
+    "subtitle": {"text": "A kingdom without people is a ruin with good walls. You need the people."},
+    "description": [
+      "Ch12 is not only about the eyes in the portal.",
+      "It is about what you are building while you wait.",
+      "",
+      "MCA Reborn transforms villagers into people — with names, relationships, jobs.",
+      "They have opinions. They remember you. Treat them accordingly.",
+      "Rose gold is the gift currency. The higher the status, the better the trades.",
+      "",
+      "Bountiful adds bounty boards with formal decree contracts.",
+      "Post a board near your settlement center.",
+      "Complete a decree — this establishes the kingdom's administrative function.",
+      "",
+      "Antique Atlas records the world as you explore it.",
+      "Mark your base. It is the center now.",
+      "Everything else is distance from it.",
+      "",
+      "→ Build a friendship with an MCA villager [check]",
+      "→ Set up a Bounty Board and complete a decree [check]",
+      "→ Mark your settlement on the atlas [check]"
+    ],
+    "groups": {"The Kingdom You Build": {"position": [-150, 300]}},
+    "icon": {"item": {"id": "bountiful:bounty_board", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "display_name": "Bookshelf Mastery",
+  "research_time": 5400,
+  "items": [
+    "minecraft:acacia_sign",
+    "minecraft:bamboo_sign",
+    "minecraft:birch_sign",
+    "minecraft:cherry_sign",
+    "minecraft:crimson_sign",
+    "minecraft:dark_oak_sign",
+    "minecraft:glow_ink_sac",
+    "minecraft:ink_sac",
+    "minecraft:jungle_sign",
+    "minecraft:oak_sign",
+    "minecraft:paper",
+    "minecraft:spruce_sign",
+    "minecraft:warped_sign"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

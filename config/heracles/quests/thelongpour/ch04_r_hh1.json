@@ -1,0 +1,59 @@
+{
+  "dependencies": ["ch04_world"],
+  "tasks": {
+    "tapper": {
+      "type": "heracles:item",
+      "item": "hearthandharvest:tree_tapper",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sap": {
+      "type": "heracles:item",
+      "item": "hearthandharvest:sap",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "syrup": {
+      "item": {"id": "hearthandharvest:syrup", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Tapper"},
+    "subtitle": {"text": "Spruce trees have more to give than wood."},
+    "description": [
+      "Hearth and Harvest's Tree Tapper attaches to Spruce or Dark Oak.",
+      "It slowly collects sap from the tree.",
+      "",
+      "Heat sap in a Cooking Pot → Syrup.",
+      "Syrup is a sweetener for Farm and Charm recipes.",
+      "Also a standalone food item with good saturation.",
+      "",
+      "Hearth and Harvest also adds Salt from boiling water",
+      "in a Cooking Pot. Salt is used in cheese and curing.",
+      "",
+      "The Cask doubles fermentation speed in darkness.",
+      "Place it away from light.",
+      "",
+      "→ Craft a Tree Tapper",
+      "→ Collect 4 sap"
+    ],
+    "groups": {"The Long Pour": {"position": [150, 0]}},
+    "icon": {"item": {"id": "hearthandharvest:tree_tapper", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

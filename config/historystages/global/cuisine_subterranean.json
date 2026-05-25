@@ -1,0 +1,33 @@
+{
+  "display_name": "The Caveman Hearth",
+  "research_time": 2700,
+  "items": [
+    "alexscaves:cave_codex",
+    "alexscaves:cave_codex.add",
+    "alexscaves:cave_codex.add_all",
+    "alexscaves:cave_codex.end",
+    "alexscaves:cave_painting",
+    "alexscaves:cave_tablet",
+    "alexscaves:cooked_trilocaris_tail",
+    "alexscaves:fiddlehead",
+    "alexscaves:potted_fiddlehead",
+    "alexscaves:primordial_soup",
+    "alexscaves:seething_stew",
+    "alexscaves:trilocaris_bucket",
+    "alexscaves:trilocaris_tail"
+  ],
+  "tags": [],
+  "mods": [
+    "alexs_caves_delight",
+    "cavedelight",
+    "silentsdelight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

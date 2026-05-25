@@ -1,0 +1,21 @@
+{
+  "display_name": "On the Void Worm",
+  "research_time": 14400,
+  "items": [
+    "alexsmobs:spawn_egg_void_worm",
+    "alexsmobs:void_worm_beak",
+    "alexsmobs:void_worm_effigy",
+    "alexsmobs:void_worm_eye",
+    "alexsmobs:void_worm_mandible"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

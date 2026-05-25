@@ -1,0 +1,103 @@
+{
+  "dependencies": [
+    "ch01_world"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/basic_medicine"
+    },
+    "heal_food": {
+      "title": "Eat a piece of food that restores health — understand natural recovery before potions",
+      "icon": {
+        "item": {
+          "id": "minecraft:cooked_beef",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "bread": {
+      "item": {
+        "id": "minecraft:bread",
+        "count": 12
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Basic Medicine"
+    },
+    "subtitle": {
+      "text": "The first medicine was food. The second medicine was rest. The third was something found in a plant."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.01 · BASIC MEDICINE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Healing in Sinborn is layered.",
+      "  Food restores health passively through saturation.",
+      "  Potions restore it directly.",
+      "  Diet mod (Ch02) multiplies both.",
+      "",
+      "◈ SCROLL: On Basic Medicine",
+      "  └ Found in: village healer chests, apothecary",
+      "    structures, witch hut chests, herb gardens",
+      "  └ Research time: 10 min",
+      "  └ Unlocks: brewing preview, TWM tonic awareness",
+      "    (The Witch's Meadow herbal medicine mod)",
+      "",
+      "▸ TWM — The Witch's Meadow — adds herbal tonics.",
+      "  Tonics are consumables that apply buffs.",
+      "  The scroll system gatekeeps the more advanced tonics.",
+      "  Basic medicine is where that chain starts.",
+      "",
+      "▸ Sculk Sickness (from Ch08 onward) has five stages.",
+      "  The cure is Ambrosia. Finding it before you need it",
+      "  is basic medicine applied forward.",
+      "",
+      "▶ Find the Basic Medicine scroll [check]",
+      "▶ Eat food to restore health [check]",
+      "",
+      "◇ Cardiac mod tracks heart health separately from HP.",
+      "  Pressure mod tracks cardiovascular strain.",
+      "  Both are Ch01 systems — check them early."
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          -450,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:honey_bottle",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

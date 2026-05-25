@@ -1,0 +1,17 @@
+{
+  "display_name": "Music Speakers (the Broadcast Age)",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "simpleradio"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

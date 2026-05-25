@@ -1,0 +1,91 @@
+{
+  "dependencies": ["ch17_world"],
+  "tasks": {
+    "redstone_pearl": {
+      "title": "Craft Redstone Pearls (Create Teleporters Step 1) — the base quantum material from Ender Pearl + Redstone",
+      "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "quantum_fluid": {
+      "title": "Produce Quantum Fluid (Step 2) — Chorus Fruit + Water in a heated Mixer = Quantum Fluid",
+      "icon": {"item": {"id": "minecraft:chorus_fruit", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "chorus_fruit": {"item": {"id": "minecraft:chorus_fruit", "count": 64}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Quantum Chain: Steps 1-2"},
+    "subtitle": {"text": "Redstone Pearl from pearls and redstone. Quantum Fluid from Chorus and water. The chain starts here."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.17 · QUANTUM CHAIN: STEPS 1-2",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Create Teleporters Quantum Mechanism chain is 5 steps.",
+      "  Steps 1 and 2 are the material foundation.",
+      "  Both use resources you have been farming since Ch13.",
+      "  The Chorus farm you built in Ch13 feeds Step 2 indefinitely.",
+      "  The Enderman farm from Ch13 feeds Step 1.",
+      "  Every farm was preparation for this chain.",
+      "",
+      "◈ STEP 1: REDSTONE PEARL",
+      "  └ Recipe: Ender Pearl + Redstone Dust (Create crafting)",
+      "    Check JEI: createteleporters:redstone_pearl",
+      "  └ Material sources:",
+      "    Ender Pearl: Enderman farm (Ch13 — renewable, passive)",
+      "    Redstone: deep mining OR Create automation with ore processing",
+      "  └ Batch target: 32+ Redstone Pearls for a full teleporter setup",
+      "  └ Create automation: Mechanical Crafter → batch production",
+      "",
+      "◈ STEP 2: QUANTUM FLUID",
+      "  └ Recipe: Chorus Fruit + Water → Quantum Fluid",
+      "    Processing: heated Mixer (Create Mixer with Blaze Burner heat)",
+      "  └ Material sources:",
+      "    Chorus Fruit: Ch13 Chorus farm (passive, runs itself)',",
+      "    Water: Water Wheel / Fluid Tank (infinite water setup)",
+      "  └ Fluid output: liquid stored in Create Fluid Tank",
+      "  └ Fluid use: Steps 3-5 require Quantum Fluid as input',",
+      "    (Quantum Casing assembly bath, Advanced Component process)",
+      "  └ Batch target: 4+ buckets of Quantum Fluid minimum",
+      "",
+      "◈ SUPPLY CHAIN REVIEW",
+      "  └ Ender Pearl → Enderman farm running passively ✓",
+      "  └ Chorus Fruit → Chorus farm running passively ✓",
+      "  └ Redstone → automated ore processing ✓ (or manual mining)",
+      "  └ Water → infinite water source + Fluid Pump ✓",
+      "  └ All four inputs should be automated before this quest",
+      "    (if not: automate now, before progressing to Steps 3-5)",
+      "",
+      "▸ The quantum chain is built on what the End left behind.',",
+      "  The Ender Pearl is the native material of the End.',",
+      "  The Chorus Fruit is the crop of the End.',",
+      "  You farmed the dimension to power the machine',",
+      "  that lets you teleport to the dimension you farmed.',",
+      "  The logistics chain is perfect and circular.',",
+      "  That is good engineering.',",
+      "",
+      "▶ Craft Redstone Pearls [check]",
+      "▶ Produce Quantum Fluid in a heated Mixer [check]",
+      "",
+      "◇ Quantum Fluid is also the teleporter fuel — not just a crafting input.",
+      "  The teleporter consumes Quantum Fluid per activation.',",
+      "  Your Chorus farm output = your teleporter fuel supply.',",
+      "  A larger farm = faster teleport recharge.',",
+      "  Scale the farm proportional to how often you teleport."
+    ],
+    "groups": {"Lords of All": {"position": [450, 0]}},
+    "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

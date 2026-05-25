@@ -1,0 +1,77 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Music Speakers (the Broadcast Age) scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Music Speakers (the Broadcast Age) scroll",
+      "icon": {
+        "item": {
+          "id": "etched:boombox",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock music_speakers"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Music Speakers (the Broadcast Age)"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Copied between every civilization that touched it.\"",
+      "",
+      "This scroll unlocks 8 items.",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Music Speakers (the Broadcast Age)] [auto]"
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          923,
+          1238
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "etched:boombox",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

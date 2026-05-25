@@ -1,0 +1,92 @@
+{
+  "dependencies": ["ch17_r_spells2"],
+  "tasks": {
+    "nine_schools": {
+      "title": "Unlock and cast at least one spell from all 9 ISS magic schools — complete the school circuit",
+      "icon": {"item": {"id": "irons_spellbooks:arcane_essence", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "abyssal_beam": {
+      "title": "Cast the Abyssal Beam (T.O. Magic / traveloptics: ISS addon) — the final payoff of the Leviathan kill in Ch11",
+      "icon": {"item": {"id": "irons_spellbooks:arcane_essence", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "ring_of_mana": {"item": {"id": "irons_spellbooks:ring_of_mana", "count": 1}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 12}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Archmage"},
+    "subtitle": {"text": "9 schools. All circuits complete. The Abyssal Beam is the final spell — unlocked by the Leviathan kill in Ch11."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.17 · THE ARCHMAGE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Iron's Spellbooks has 9 magic schools.',",
+      "  The Archmage has cast from all 9.',",
+      "  The Abyssal Beam is the T.O. Magic addon payoff —',",
+      "  it requires the Leviathan kill from Ch11 as a prerequisite.',",
+      "  The spell thread that started in Ch07-08 (first ISS spells)',",
+      "  ends here with the most powerful spell in the pack.',",
+      "",
+      "◈ THE 9 ISS MAGIC SCHOOLS",
+      "  └ Fire: offensive, AoE burn, Ignis synergy',",
+      "  └ Ice: slow/freeze, crowd control',",
+      "  └ Lightning: chain damage, conductor synergy',",
+      "  └ Holy: healing, undead bonus damage, divine interactions',",
+      "  └ Ender: Eldritch school — void entities, End dimension bonus',",
+      "  └ Blood: lifesteal, sustain, HP sacrifice mechanics',",
+      "  └ Evocation: summon constructs, spectral entities',",
+      "  └ Void: abyssal damage, dimensional mechanics',",
+      "  └ Nature: growth, resistance, terrain effects',",
+      "  └ Complete: cast one spell from each school to fill the circuit',",
+      "",
+      "◈ ABYSSAL BEAM (T.O. MAGIC / TRAVELOPTICS:)",
+      "  └ T.O. Magic is an ISS addon mod (namespace: traveloptics:)',",
+      "    NOT a travel mod — it is an ISS extension',",
+      "  └ Abyssal Beam: high-damage void projectile',",
+      "    Unlocked from: Leviathan kill (Ch11 — boss scroll drops)',",
+      "    Source: leviathan drops traveloptics: materials for the spell',",
+      "  └ Effect: fires a sustained void beam, high damage vs any entity',",
+      "  └ Mastery Age bonus: traveloptics: may gain additional effects',",
+      "    after the Phase 17 Mastery Age transition',",
+      "",
+      "◈ ARCHMAGE LOADOUT",
+      "  └ Primary weapon: Abyssal Beam (T.O. Magic) + Void Tendril (Eldritch)',",
+      "  └ Sustain: Blood school spells + Ring of Mana',",
+      "  └ AOE opener: Lightning Chain + Fire school bombardment',",
+      "  └ Crowd control: Ice school freeze on arrival',",
+      "  └ Focus + Spell Book: highest tier (check JEI for irons_spellbooks:)',",
+      "",
+      "▸ The Leviathan was killed in Ch11.',",
+      "  The materials it dropped have been in storage since.',",
+      "  The Abyssal Beam was the reason.',",
+      "  This is the payoff.',",
+      "  6 chapters of preparation for one spell.',",
+      "  That is what the schools were building toward.',",
+      "  Cast it.',",
+      "",
+      "▶ Cast spells from all 9 ISS schools [check]",
+      "▶ Cast the Abyssal Beam (T.O. Magic) [check]",
+      "",
+      "◇ The Archmage is not a class in this pack.',",
+      "  It is a state reached by completing every school.',",
+      "  There is no UI label for it.',",
+      "  The label is: all 9 schools active, Abyssal Beam equipped.',",
+      "  That is what the archmage looks like."
+    ],
+    "groups": {"Lords of All": {"position": [-450, 0]}},
+    "icon": {"item": {"id": "irons_spellbooks:arcane_essence", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "display_name": "The Arcane Codex",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "irons_spellbooks",
+    "ars_nouveau",
+    "create_wizardry",
+    "spelltrials",
+    "immersiveenchanting",
+    "create_enchantment_industry"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

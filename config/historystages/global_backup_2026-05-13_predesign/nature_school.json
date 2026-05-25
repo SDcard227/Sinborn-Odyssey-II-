@@ -1,0 +1,23 @@
+{
+  "display_name": "The Nature School",
+  "research_time": 2700,
+  "items": [
+    "irons_spellbooks:nature_essence",
+    "irons_spellbooks:nature_rune",
+    "irons_spellbooks:scroll_heal",
+    "irons_spellbooks:scroll_greater_heal",
+    "irons_spellbooks:scroll_root",
+    "irons_spellbooks:scroll_oakskin",
+    "irons_spellbooks:scroll_regenerate",
+    "irons_spellbooks:scroll_summon_horse",
+    "irons_spellbooks:scroll_acid_orb",
+    "irons_spellbooks:scroll_spore_blossoms"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

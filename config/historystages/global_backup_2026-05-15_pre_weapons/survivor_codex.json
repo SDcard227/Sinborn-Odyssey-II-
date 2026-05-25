@@ -1,0 +1,29 @@
+{
+  "display_name": "Survivor Codex",
+  "research_time": 25,
+  "items": [
+    "minecraft:bread",
+    "minecraft:bucket",
+    "minecraft:campfire",
+    "minecraft:flint_and_steel",
+    "minecraft:lantern",
+    "minecraft:spyglass",
+    "minecraft:torch",
+    "minecraft:water_bucket"
+  ],
+  "tags": [],
+  "mods": [
+    "food_desire",
+    "heracles",
+    "solonion",
+    "thirst"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

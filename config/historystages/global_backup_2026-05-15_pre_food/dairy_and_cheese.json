@@ -1,0 +1,37 @@
+{
+  "display_name": "Dairy & Cheese",
+  "research_time": 2700,
+  "items": [
+    "alexscaves:chocolate_ice_cream",
+    "alexscaves:chocolate_ice_cream_scoop",
+    "alexscaves:sweetberry_ice_cream",
+    "alexscaves:sweetberry_ice_cream_scoop",
+    "alexscaves:vanilla_ice_cream",
+    "alexscaves:vanilla_ice_cream_scoop",
+    "delightful:nut_butter_and_jam_sandwich",
+    "delightful:nut_butter_bottle",
+    "delightful:salmonberry_ice_cream",
+    "delightful:salmonberry_ice_cream_block",
+    "delightful:source_berry_ice_cream",
+    "delightful:source_berry_ice_cream_block",
+    "dungeons_and_combat:bucket_of_cheese",
+    "dungeons_and_combat:cheese",
+    "dungeons_and_combat:whole_cheese",
+    "foragersinsight:seed_butter",
+    "foragersinsight:seed_butter_jamwich",
+    "minecraft:magma_cream"
+  ],
+  "tags": [],
+  "mods": [
+    "hearthandharvest",
+    "jadensnetherexpansiondelight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

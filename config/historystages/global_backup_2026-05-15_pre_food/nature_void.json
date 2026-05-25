@@ -1,0 +1,17 @@
+{
+  "display_name": "On the Nature of the Void",
+  "research_time": 7200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [
+    "minecraft:the_end"
+  ],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

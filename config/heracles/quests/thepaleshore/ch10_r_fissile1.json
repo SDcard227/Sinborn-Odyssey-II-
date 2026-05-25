@@ -1,0 +1,93 @@
+{
+  "dependencies": [
+    "ch10_reactor"
+  ],
+  "tasks": {
+    "fissile_core": {
+      "type": "heracles:item",
+      "item": "alexscaves:fissile_core",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "neodymium": {
+      "title": "Obtain Scarlet or Azure Neodymium Ingots (Scarlet King mod material drops)",
+      "icon": {
+        "item": {
+          "id": "minecraft:iron_ingot",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "diamond": {
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 2
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "The Engineers' Eye. It is not chaos. It is order misapplied."
+    },
+    "description": [
+      "The Rogue Eye's center ingredient is the Fissile Core",
+      "from Alex's Caves — specifically the Abyssal or nuclear-themed cave biomes.",
+      "",
+      "The Rogue Eye is the Engineers' Civilization inheritance.",
+      "They mastered systems and automation.",
+      "Their machines worked perfectly.",
+      "For the wrong purpose.",
+      "",
+      "The full recipe needs:",
+      "- alexscaves:fissile_core (Alex's Caves biome loot)",
+      "- Scarlet/Azure Neodymium Ingots (Scarlet King mob drops)",
+      "- dnl:catalyzed_redstone or combustion_cell (Dungeon Now Loading)",
+      "- call_of_yucutan:fragment_of_rebirth (already collected in Ch09)",
+      "- traveloptics:last_glow (nuclear/radiant mob drop from T.O Magic 'n Extras)",
+      "",
+      "Gather what is available. The rest arrives in Ch11-12.",
+      "",
+      "→ Collect 1 Fissile Core from Alex's Caves biome loot",
+      "→ Find Neodymium Ingots (Scarlet King mod drops) [check]"
+    ],
+    "groups": {
+      "The Pale Shore": {
+        "position": [
+          150,
+          450
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "alexscaves:fissile_core",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "The Rogue Eye Chain"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

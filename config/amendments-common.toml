@@ -7,7 +7,7 @@
 	#Adds dragons charge item
 	dragon_charge = true
 	#Makes fire & dragon charges have gravity
-	gravity = true
+	gravity = false
 	#Makes fire charges deflectable by punching
 	deflectable = false
 	#Allows throwing fire & dragon charges

@@ -1,0 +1,31 @@
+{
+  "display_name": "Architectural Mastery",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "chalk",
+    "createadditionallogistics",
+    "createdeco",
+    "desert",
+    "echovoids",
+    "glow_sticks",
+    "luminousworld",
+    "netherexp",
+    "quark",
+    "supplementaries",
+    "verdant"
+  ],
+  "mod_exceptions": [
+    "desert:guertoufa_infusion",
+    "desert:rift_knife",
+    "desert:spear_of_sands"
+  ],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

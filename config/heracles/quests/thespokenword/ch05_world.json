@@ -1,0 +1,57 @@
+{
+  "dependencies": ["ch04_gate"],
+  "tasks": {
+    "mca_village": {
+      "title": "Find and enter an MCA-enhanced village",
+      "icon": {"item": {"id": "minecraft:emerald", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "cog": {
+      "type": "heracles:item",
+      "item": "numismatics:cog",
+      "amount": 5,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "rose": {
+      "item": {"id": "minecraft:rose_bush", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 5},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Village Has a Name"},
+    "subtitle": {"text": "Every civilization began with meeting another one."},
+    "description": [
+      "The Silk Road was not a road.",
+      "It was a network of people who wrote things down",
+      "and left them where others could find them.",
+      "",
+      "MCA Reborn replaces vanilla villagers with full NPCs.",
+      "They have names. Relationships. Memories of you.",
+      "They trade in cogs, not emeralds.",
+      "",
+      "Every village you find from here forward is inhabited.",
+      "Not scenery. Not a loot chest.",
+      "People who made different choices than you.",
+      "",
+      "→ Find and enter an MCA-enhanced village [check]",
+      "→ Have 5 cogs to trade with"
+    ],
+    "groups": {"The Spoken Word": {"position": [0, 0]}},
+    "icon": {"item": {"id": "minecraft:emerald", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

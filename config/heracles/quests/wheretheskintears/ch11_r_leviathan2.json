@@ -1,0 +1,62 @@
+{
+  "dependencies": ["ch11_r_leviathan1"],
+  "tasks": {
+    "abyssal_beam": {
+      "title": "Obtain the Abyssal Beam spell scroll (T.O Magic 'n Extras — ONLY obtainable by defeating the Leviathan)",
+      "icon": {"item": {"id": "irons_spellbooks:scroll_forge", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "magical_eye_prep": {
+      "title": "Gather remaining Magical Eye ingredients: irons_spellbooks:divine_pearl + cataclysm:cursium_ingot + ignitium_ingot",
+      "icon": {"item": {"id": "irons_spellbooks:divine_pearl", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "divine_pearl": {
+      "item": {"id": "irons_spellbooks:divine_pearl", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 6},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Abyssal Beam"},
+    "subtitle": {"text": "The only way to obtain it is to be present when it falls."},
+    "description": [
+      "The Abyssal Beam is a T.O Magic 'n Extras spell scroll.",
+      "It is ONLY obtainable by defeating the Leviathan.",
+      "No crafting path. No trade. No loot table.",
+      "Only the kill drops it.",
+      "",
+      "The spell fires a devastating straight-line beam.",
+      "The caster is immobile while channeling.",
+      "This is the combat payoff for the entire Leviathan hunt.",
+      "",
+      "The Magical Eye recipe needs:",
+      "- cataclysm:lacrima (center ✓)",
+      "- cataclysm:cursium_ingot ✓",
+      "- cataclysm:ignitium_ingot ✓",
+      "- traveloptics:abyssal_spellweave_ingot ✓",
+      "- traveloptics:resonant_scrap (mob drops, salvage excess Echo items)",
+      "- traveloptics:verdant_spellweave_ingot (verdant boss drop)",
+      "- irons_spellbooks:divine_pearl (Gold + Amethyst Shards)",
+      "",
+      "→ Learn the Abyssal Beam spell [check]",
+      "→ Gather remaining Magical Eye ingredients [check]"
+    ],
+    "groups": {"Where the Skin Tears": {"position": [-300, 150]}},
+    "icon": {"item": {"id": "traveloptics:abyssal_spellweave_ingot", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

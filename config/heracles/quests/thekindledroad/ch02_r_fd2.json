@@ -1,0 +1,60 @@
+{
+  "dependencies": ["ch02_r_fd1"],
+  "tasks": {
+    "tomato_soup": {
+      "type": "heracles:item",
+      "item": "farmersdelight:tomato_soup",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "pot": {
+      "type": "heracles:item",
+      "item": "farmersdelight:cooking_pot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "bacon": {
+      "item": {"id": "farmersdelight:bacon", "count": 4},
+      "type": "heracles:item"
+    },
+    "cabbage": {
+      "item": {"id": "farmersdelight:cabbage", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Cooking Pot"},
+    "subtitle": {"text": "Soups kept armies alive."},
+    "description": [
+      "Three tomatoes. A bowl.",
+      "On the fire long enough — something warm.",
+      "",
+      "The Cooking Pot is the backbone of Farmer's Delight.",
+      "Eight recipe slots. Outputs into bowls.",
+      "Stews, soups, noodles — things the furnace cannot make.",
+      "",
+      "Every civilization that lasted had a soup.",
+      "Yours starts here.",
+      "",
+      "→ Craft a Cooking Pot",
+      "→ Cook 2 Tomato Soup"
+    ],
+    "groups": {"The Kindled Road": {"position": [-300, 0]}},
+    "icon": {"item": {"id": "farmersdelight:cooking_pot", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

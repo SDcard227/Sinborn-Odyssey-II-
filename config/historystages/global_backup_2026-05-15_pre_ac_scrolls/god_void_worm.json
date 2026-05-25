@@ -1,0 +1,15 @@
+{
+  "display_name": "On the Void Worm",
+  "research_time": 14400,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

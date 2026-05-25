@@ -1,0 +1,130 @@
+{
+  "dependencies": [
+    "ch05_write"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/arcane"
+    },
+    "first_spell": {
+      "title": "Obtain your first Iron's Spellbooks spell scroll — any school",
+      "icon": {
+        "item": {
+          "id": "irons_spellbooks:scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "spellbook": {
+      "title": "Craft or find a Spellbook (Iron's Spellbooks — equip in offhand to cast spells)",
+      "icon": {
+        "item": {
+          "id": "irons_spellbooks:spellbook",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "mana": {
+      "item": {
+        "id": "irons_spellbooks:scroll",
+        "count": 2
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Arcane"
+    },
+    "subtitle": {
+      "text": "Nine schools of magic. Sixty spells. The Scholars who wrote your scrolls were mages first."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.05 · THE ARCANE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Iron's Spellbooks adds a full magic system.",
+      "  Nine schools. Sixty+ spells.",
+      "  Learning the first one changes what you are.",
+      "",
+      "◈ THE NINE SCHOOLS",
+      "  └ ✦ Evocation — direct damage magic",
+      "  └ ✦ Conjuration — summon allies and objects",
+      "  └ ✦ Abjuration — shields, barriers, protection",
+      "  └ ✦ Divination — information and detection",
+      "  └ ✦ Illusion — misdirection and stealth",
+      "  └ ✦ Necromancy — undead, life force manipulation",
+      "  └ ✦ Transmutation — shape-shifting, item changes",
+      "  └ ✦ Ender — void magic, teleportation",
+      "  └ ✦ Holy — healing, light, divine power",
+      "",
+      "◈ HOW TO GET SPELLS",
+      "  └ Spell Scrolls: found in dungeons, mage towers",
+      "    learned by reading (consumed on learn)",
+      "  └ Crafted Spells: arcane worktable + materials",
+      "  └ ISS Wizard drops: 'dacxirons' scroll drops",
+      "    (12% chance from ISS Wizards)",
+      "  └ T.O Magic 'n Extras (traveloptics): ISS addon",
+      "    adds additional school items",
+      "",
+      "◈ SCROLL: The Arcane",
+      "  └ Found in: mage tower ruins, library chests,",
+      "    wizard camp loot, arcane workshop ruins",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: 9 school overview, ISS system entry point",
+      "",
+      "▸ The Scholars who wrote your scrolls learned magic",
+      "  to write things that would survive longer than stone.",
+      "  The ink of a high-level Divination spell",
+      "  does not fade.",
+      "",
+      "▶ Find The Arcane scroll [check]",
+      "▶ Obtain your first ISS spell scroll [check]",
+      "▶ Craft or find a Spellbook [check]",
+      "",
+      "◇ The Spell Schools scroll (Ch09+) goes deeper.",
+      "  The Arcane scroll is the door.",
+      "  The Wizards' Table scroll is the key.",
+      "  Ch09 is where you start casting seriously."
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          300,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "irons_spellbooks:spellbook",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

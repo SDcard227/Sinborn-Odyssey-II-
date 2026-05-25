@@ -1,0 +1,77 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Angler's Arts scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Angler's Arts scroll",
+      "icon": {
+        "item": {
+          "id": "tide:amethyst_fishing_bobber",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock fishing_arts"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Angler's Arts"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Copied between every civilization that touched it.\"",
+      "",
+      "This scroll unlocks 47 items.",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Angler's Arts] [auto]"
+    ],
+    "groups": {
+      "The Long Road Home": {
+        "position": [
+          1453,
+          840
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tide:amethyst_fishing_bobber",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

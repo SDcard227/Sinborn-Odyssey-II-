@@ -1,0 +1,49 @@
+{
+  "dependencies": ["ch05_write"],
+  "tasks": {
+    "cultural_scroll": {
+      "title": "Find and read a Cultural Scroll (mob drop or loot chest)",
+      "icon": {"item": {"id": "minecraft:written_book", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 3},
+      "type": "heracles:item"
+    },
+    "food": {
+      "item": {"id": "farmersdelight:pasta_with_meatballs", "count": 2},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The First Scroll"},
+    "subtitle": {"text": "Every civilization left one. Most of them are still there."},
+    "description": [
+      "Sixteen cultural food traditions exist in this world.",
+      "Each one a scroll. Each one an answer.",
+      "",
+      "Cultural Scrolls are lore books — flavor text, not research items.",
+      "They drop from mobs and appear in loot chests.",
+      "Village chests. Ruins. Desert and jungle temples.",
+      "Mineshafts. Stronghold libraries.",
+      "",
+      "Read them. They tell you who was here before you.",
+      "They also tell you what you are walking toward.",
+      "",
+      "→ Find and read a Cultural Scroll [check]"
+    ],
+    "groups": {"The Spoken Word": {"position": [150, 450]}},
+    "icon": {"item": {"id": "minecraft:written_book", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

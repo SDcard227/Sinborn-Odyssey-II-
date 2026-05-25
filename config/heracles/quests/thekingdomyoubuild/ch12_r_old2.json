@@ -1,0 +1,59 @@
+{
+  "dependencies": ["ch12_r_old1"],
+  "tasks": {
+    "old_eye": {
+      "title": "Craft the Old Eye (center: Sol Visage + death worm chitin + essence + sandstorm + relic gold + ancient pearl)",
+      "icon": {"item": {"id": "endrem:old_eye", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "place_old": {
+      "title": "Place the Old Eye in the End Portal frame",
+      "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "old_eye_reward": {
+      "item": {"id": "endrem:old_eye", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 6},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Old Eye"},
+    "subtitle": {"text": "The Oldest Civilization remembered everything. It was not enough. You carry their record now."},
+    "description": [
+      "The Old Eye is in the frame.",
+      "Ten eyes placed (if all previous eyes collected).",
+      "Two remaining.",
+      "",
+      "The Oldest Civilization fell because remembering everything",
+      "did not protect them from the same mistakes.",
+      "The Old Eye does not feel the world. It remembers it.",
+      "",
+      "This distinction — between memory and feeling —",
+      "is the one the previous cycle failed to understand.",
+      "The Cursed Eye is their monument to that failure.",
+      "",
+      "You have now inherited their memory.",
+      "The question is whether you will carry it differently.",
+      "",
+      "→ Craft the Old Eye [check]",
+      "→ Place it in the frame [check]"
+    ],
+    "groups": {"The Kingdom You Build": {"position": [-300, 150]}},
+    "icon": {"item": {"id": "endrem:old_eye", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

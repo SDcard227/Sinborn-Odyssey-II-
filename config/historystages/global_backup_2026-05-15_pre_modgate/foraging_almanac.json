@@ -1,0 +1,37 @@
+{
+  "display_name": "The Forager's Almanac",
+  "research_time": 1500,
+  "items": [
+    "minecraft:apple",
+    "minecraft:bamboo",
+    "minecraft:beetroot",
+    "minecraft:carrot",
+    "minecraft:cocoa_beans",
+    "minecraft:composter",
+    "minecraft:dried_kelp",
+    "minecraft:honey_bottle",
+    "minecraft:honeycomb",
+    "minecraft:kelp",
+    "minecraft:melon",
+    "minecraft:melon_slice",
+    "minecraft:nether_wart",
+    "minecraft:potato",
+    "minecraft:pumpkin",
+    "minecraft:sugar_cane",
+    "minecraft:sweet_berries",
+    "minecraft:wheat",
+    "minecraft:wheat_seeds"
+  ],
+  "tags": [],
+  "mods": [
+    "fruitsdelight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

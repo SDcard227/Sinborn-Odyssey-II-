@@ -76,7 +76,7 @@
 		z_rotationn2 = 0
 		#scale0
 		#Range: > -100
-		scale0 = 0
+		scale0 = 4
 		#Position and rotation settings
 		#x position3
 		#Range: > -2147483648
@@ -256,13 +256,13 @@
 		#Position and rotation settings
 		#x position27
 		#Range: > -2147483648
-		x_position27 = 0
+		x_position27 = 1
 		#y position28
 		#Range: > -2147483648
-		y_position28 = 0
+		y_position28 = 7
 		#z position29
 		#Range: > -2147483648
-		z_position29 = 0
+		z_position29 = 10
 		#x rotation27
 		#Range: > -2147483648
 		x_rotation27 = 0
@@ -274,7 +274,7 @@
 		z_rotationn29 = 0
 		#scale9
 		#Range: > -100
-		scale9 = 0
+		scale9 = 17
 		#Position and rotation settings
 		#x position30
 		#Range: > -2147483648

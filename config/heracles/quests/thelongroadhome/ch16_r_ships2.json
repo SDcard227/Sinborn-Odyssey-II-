@@ -1,0 +1,60 @@
+{
+  "dependencies": ["ch16_r_ships1"],
+  "tasks": {
+    "drakkar": {
+      "title": "Build a Small Ships Drakkar — the longship, fastest on open water",
+      "icon": {"item": {"id": "smallships:drakkar", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "coastal_route": {
+      "title": "Establish a coastal trade route — use Via Romana road markers at two port locations 1000+ blocks apart",
+      "icon": {"item": {"id": "viaromana:road_marker", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "drakkar": {
+      "item": {"id": "smallships:drakkar", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Drakkar"},
+    "subtitle": {"text": "The Drowned civilization built ships that sank. You are building ships that go where you tell them to."},
+    "description": [
+      "The Drakkar is the fastest Small Ships vessel on open water.",
+      "It is styled after the Viking longship — narrow, fast, aggressive.",
+      "",
+      "The coastal trade route:",
+      "Via Romana road markers can be placed at port locations.",
+      "Two markers 1000+ blocks apart by sea creates a fast-travel maritime route.",
+      "Combined with the road network from Ch12, your civilization now has:",
+      "- Road fast travel (overland)",
+      "- Maritime fast travel (coastal/ocean)",
+      "- Create Teleporter prep beginning in Ch17 (instantaneous)",
+      "",
+      "Infrastructure at three levels of transportation.",
+      "This is what the Oldest Civilization lacked.",
+      "They had knowledge. They did not have logistics.",
+      "The Kingdom You Built has both.",
+      "",
+      "→ Build a Drakkar longship [check]",
+      "→ Establish a coastal trade route with Via Romana markers [check]"
+    ],
+    "groups": {"The Long Road Home": {"position": [300, 150]}},
+    "icon": {"item": {"id": "smallships:drakkar", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

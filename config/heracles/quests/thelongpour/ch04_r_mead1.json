@@ -1,0 +1,56 @@
+{
+  "dependencies": ["ch04_barrel"],
+  "tasks": {
+    "rabbit": {
+      "type": "heracles:item",
+      "item": "minecraft:rabbit_hide",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "rennett": {
+      "title": "Find Rennett from rabbit drops",
+      "icon": {"item": {"id": "meadow:plain_cheese", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "milk": {
+      "item": {"id": "minecraft:milk_bucket", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Rennett"},
+    "subtitle": {"text": "Cheese requires Rennett. Rennett requires rabbits."},
+    "description": [
+      "Meadow adds seven cheeses. All of them require one thing: Rennett.",
+      "Rennett drops from wild rabbits.",
+      "",
+      "Milk. Rennett. Salt. Time.",
+      "That is all cheese has ever been.",
+      "",
+      "Seven types: Plain, Lavender, Herb (Yarrow), Juniper,",
+      "Oat, Goat, Warped.",
+      "Five milk types: Cow, Buffalo, Goat, Oat, Sheep.",
+      "The Oat Milk is from a Cooking Pot recipe.",
+      "",
+      "→ Collect 4 rabbit hide (hunt rabbits)",
+      "→ Find Rennett from rabbit drops [check]"
+    ],
+    "groups": {"The Long Pour": {"position": [-150, 150]}},
+    "icon": {"item": {"id": "minecraft:rabbit_hide", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

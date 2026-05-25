@@ -1,0 +1,83 @@
+{
+  "dependencies": [
+    "ch04_ferment"
+  ],
+  "tasks": {
+    "berry_jam": {
+      "type": "heracles:item",
+      "item": "brewinandchewin:sweet_berry_jam",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/vine_brew_studied"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 10
+      },
+      "type": "heracles:item"
+    },
+    "cask": {
+      "item": {
+        "id": "hearthandharvest:cask",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "age": {
+      "type": "heracles:command",
+      "command": "history unlock fermentation_age"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Long Pour"
+    },
+    "subtitle": {
+      "text": "The barrel kept the record. The record is yours."
+    },
+    "description": [
+      "The wine from the first pressing tastes of where it came from.",
+      "The wheat beer carries the season it was harvested in.",
+      "The jam holds the summer.",
+      "",
+      "Cheese records where it was made in its taste,",
+      "and that record requires months to accumulate.",
+      "You can automate many things.",
+      "",
+      "You cannot automate patience.",
+      "",
+      "→ Ferment sweet berry jam",
+      "→ Research the Vine and the Brew scroll [check]"
+    ],
+    "groups": {
+      "The Long Pour": {
+        "position": [
+          0,
+          600
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "brewinandchewin:sweet_berry_jam",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "display_name": "On Command and Ruin",
+  "research_time": 10800,
+  "items": [
+    "witherstorm_delight:the_eye_of_symbiont",
+    "witherstormmod:command_block_book",
+    "witherstormmod:formidi_bomb",
+    "witherstormmod:tentacle",
+    "witherstormmod:wither_storm_sword",
+    "witherstormmod:withered_nether_star",
+    "witherstormmod:withered_spider_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": [
+      "witherstormmod:wither_storm"
+    ]
+  }
+}

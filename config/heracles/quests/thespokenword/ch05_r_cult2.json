@@ -1,0 +1,49 @@
+{
+  "dependencies": ["ch05_r_cult1"],
+  "tasks": {
+    "five_scrolls": {
+      "title": "Find and read 5 different Cultural Scrolls",
+      "icon": {"item": {"id": "minecraft:written_book", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 5},
+      "type": "heracles:item"
+    },
+    "book": {
+      "item": {"id": "minecraft:book", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Five Traditions"},
+    "subtitle": {"text": "Which five you choose is a statement about what you value."},
+    "description": [
+      "The Kindled Fire teaches fire.",
+      "The Cultivated Table teaches permanence.",
+      "The Vine and the Brew teaches patience.",
+      "The Cave Kitchen teaches economy.",
+      "The Hunter's Table teaches obligation.",
+      "The Warrior's Feast teaches that some meals must not be eaten alone.",
+      "",
+      "Read five. Any five.",
+      "The world will not tell you which ones matter.",
+      "You decide.",
+      "",
+      "→ Find and read 5 Cultural Scrolls [check]"
+    ],
+    "groups": {"The Spoken Word": {"position": [300, 450]}},
+    "icon": {"item": {"id": "minecraft:written_book", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

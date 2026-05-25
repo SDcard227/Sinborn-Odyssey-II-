@@ -1,0 +1,26 @@
+{
+  "display_name": "On the Path to Divinity",
+  "research_time": 28800,
+  "items": [
+    "dungeons_and_combat:crimson_dagger",
+    "dungeons_and_combat:crimson_greatsword",
+    "dungeons_and_combat:crimson_sword",
+    "dungeons_and_combat:monarch_boots",
+    "dungeons_and_combat:monarch_helmet",
+    "dungeons_and_combat:monarch_robe"
+  ],
+  "tags": [],
+  "mods": [
+    "celestisynth",
+    "goldcrownissb",
+    "ptd"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

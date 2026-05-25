@@ -1,0 +1,64 @@
+{
+  "dependencies": ["ch15_revive"],
+  "tasks": {
+    "celestial_mat": {
+      "type": "heracles:item",
+      "item": "celestisynth:celestial_dust",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "kingdom_banner": {
+      "title": "Craft a unique banner representing your civilization — place it at the center of your settlement",
+      "icon": {"item": {"id": "minecraft:white_banner", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "celestial_dust": {
+      "item": {"id": "celestisynth:celestial_dust", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Legacy"},
+    "subtitle": {"text": "What you leave behind is the only part of this that survives you."},
+    "description": [
+      "The Oldest Civilization remembered everything. It was not enough.",
+      "The Cryptic Civilization encrypted everything. Still not enough.",
+      "The previous civilizations solved every technical problem they encountered",
+      "and still fell.",
+      "",
+      "The thirteenth option is not a technical solution.",
+      "It is a social solution.",
+      "Legacy — the deliberate act of building something that outlasts you.",
+      "",
+      "Celestisynth materials are the beginning of Ch16.",
+      "Celestial Dust is the entry point — found in End structures or crafted from End materials.",
+      "The Celestisynth system is the highest tier crafting in this pack.",
+      "It requires everything you have learned.",
+      "",
+      "The banner is not mechanical.",
+      "It is symbolic.",
+      "Place it anyway.",
+      "This civilization has a flag now.",
+      "",
+      "→ Obtain your first Celestisynth material [check]",
+      "→ Craft a banner representing your civilization [check]"
+    ],
+    "groups": {"After the Dragon": {"position": [0, 600]}},
+    "icon": {"item": {"id": "celestisynth:celestial_dust", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "display_name": "The Chorus Hearth",
+  "research_time": 1800,
+  "items": [
+    "endersdelight:choremen",
+    "endersdelight:chorus_fruit_pie",
+    "endersdelight:cooked_enderman_steak",
+    "endersdelight:cooked_shulker_meat",
+    "endersdelight:enderfruit_cake",
+    "endersdelight:enderman_steak",
+    "endersdelight:shulker_jerky",
+    "endersdelight:shulker_meat",
+    "endersdelight:teleport_potion",
+    "minecraft:chorus_fruit",
+    "minecraft:popped_chorus_fruit"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

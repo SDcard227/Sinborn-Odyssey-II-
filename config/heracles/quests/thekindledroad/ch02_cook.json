@@ -1,0 +1,66 @@
+{
+  "dependencies": ["ch02_farm"],
+  "tasks": {
+    "cooked_mutton": {
+      "type": "heracles:item",
+      "item": "minecraft:cooked_mutton",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "bread": {
+      "type": "heracles:item",
+      "item": "minecraft:bread",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    },
+    "stew": {
+      "type": "heracles:item",
+      "item": "minecraft:mushroom_stew",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "golden_carrot": {
+      "item": {"id": "minecraft:golden_carrot", "count": 4},
+      "type": "heracles:item"
+    },
+    "coal": {
+      "item": {"id": "minecraft:coal", "count": 16},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 6},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "What the Fire Transforms"},
+    "subtitle": {"text": "Raw things become real things."},
+    "description": [
+      "The same fire that keeps the cold away also changes what you eat.",
+      "",
+      "Bread from grain. Stew from scraps. Mutton from wool.",
+      "The furnace is not just a machine. It is a kitchen.",
+      "",
+      "The Diet system tracks five food groups.",
+      "Bread fills one. Meat another. Stew bridges gaps.",
+      "Keep eating widely. The body remembers.",
+      "",
+      "→ Cook 4 mutton",
+      "→ Bake 8 bread",
+      "→ Make 2 mushroom stew"
+    ],
+    "groups": {"The Kindled Road": {"position": [0, 300]}},
+    "icon": {"item": {"id": "minecraft:bread", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

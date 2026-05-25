@@ -1,0 +1,57 @@
+{
+  "dependencies": ["ch15_community"],
+  "tasks": {
+    "trueend_deep": {
+      "title": "Return to Beyond the Dream (True End mod) — explore the deeper regions past where you went in Ch13",
+      "icon": {"item": {"id": "minecraft:purpur_pillar", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "lost_void_loot": {
+      "title": "Find and loot a major structure in the deep True End — reward rooms only accessible after the dragon",
+      "icon": {"item": {"id": "minecraft:obsidian", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "end_stone_bricks": {
+      "item": {"id": "minecraft:end_stone_bricks", "count": 64},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Lost Void"},
+    "subtitle": {"text": "The True End does not end at the end of the End. It ends at the end of you."},
+    "description": [
+      "Beyond the Dream (True End mod) has depths that require completing the standard End first.",
+      "The dragon's death may unlock previously sealed areas of the dimension.",
+      "",
+      "The Lost Void is not hostile.",
+      "It is a space that records the past — similar to the End's role in general,",
+      "but older, deeper, stranger.",
+      "The structures here were not built by any of the nine documented civilizations.",
+      "They were here before the civilizations arrived.",
+      "",
+      "This is the NMS element of Ch15:",
+      "the journey continues past the credits.",
+      "There is always more space. The question is whether you choose to go into it.",
+      "",
+      "→ Return to Beyond the Dream and go deeper [check]",
+      "→ Loot a major structure in the deep True End [check]"
+    ],
+    "groups": {"After the Dragon": {"position": [0, 300]}},
+    "icon": {"item": {"id": "minecraft:end_stone_bricks", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

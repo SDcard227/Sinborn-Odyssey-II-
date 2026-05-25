@@ -1,0 +1,25 @@
+{
+  "display_name": "The Codex of Sun-Maize",
+  "research_time": 5400,
+  "items": [
+    "call_of_yucutan:chili_pepper",
+    "call_of_yucutan:chili_pepper_seeds",
+    "call_of_yucutan:mayan_calendar",
+    "culturaldelights:avocado",
+    "culturaldelights:avocado_toast",
+    "culturaldelights:cut_avocado",
+    "culturaldelights:tortilla",
+    "culturaldelights:tortilla_chips",
+    "delightful:cactus_chili"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

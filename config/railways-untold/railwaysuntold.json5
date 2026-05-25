@@ -1,0 +1,86 @@
+{
+	// Number of blocks to clear horizontally on each side of the track
+	"horizontalExpansion": 3,
+	// Number of blocks to clear vertically above the track
+	"verticalExpansion": 4,
+	// Comma-separated list of world types where track generation is allowed. Recognized types: 'default' (includes large biomes, amplified), 'flat' (superflat), 'debug'. 'superflat' is accepted as an alias for 'flat'. Set to empty string to disable generation in all world types.
+	"generateInWorldTypes": "default, flat",
+	// Whether to place a starting train at world generation
+	"startingTrain": true,
+	// Whether track branches (junctions) are enabled
+	"branchesEnabled": true,
+	// Whether branches can create additional branches (recursive branching). Only applies if branchesEnabled is true.
+	"recursiveBranchingEnabled": true,
+	// Maximum depth for recursive branching. 0 = unlimited (could affect performance). Only applies when recursiveBranchingEnabled is true.
+	"maxBranchDepth": 3,
+	// Maximum simultaneous active track heads. 0 = unlimited (could affect performance).
+	"maxActiveHeads": 15,
+	// Minimum distance in blocks between consecutive branches from the same track head. After spawning a branch, the parent head must travel this distance before branching again.
+	"minBranchSpacing": 150,
+	// Whether tracks should target and build stations at villages. When disabled, tracks will explore in their cardinal direction without targeting villages.
+	"villageTargeting": true,
+	// Whether tracks should avoid obstacles by turning. When disabled, tracks will go straight through all terrain (tunneling through mountains, descending into ravines) without ever turning.
+	"allAvoidance": true,
+	// Distance in blocks that a player must be within for track placement to occur. When a player is closer than this distance to a track head, chunks ahead will be loaded allowing for longer track segments.
+	"playerTriggerDistance": 96,
+	// Whether workstation blocks (crafting table, stonecutter, anvil, etc.) can be used on trains. When enabled, players can open workstation GUIs by interacting with these blocks on moving contraptions.
+	"contraptionWorkstations": false,
+	// Whether players can sleep in beds placed on trains. When enabled, players can use beds on moving contraptions to sleep and set their respawn point.
+	"contraptionBedSleeping": false,
+	// Enable side-by-side dual track mode. Two parallel tracks with opposite travel directions. Separation = horizontalExpansion * 2 (minimum 5 blocks).
+	"sideBySideTracks": false,
+	// Block used for tunnel walls and facades (e.g., 'create:small_scorchia_bricks')
+	"tunnelFacadeBlock": "create:small_scorchia_bricks",
+	// Block used for support pillars under elevated tracks (e.g., 'create:cut_deepslate_bricks')
+	"supportPillarBlock": "create:cut_deepslate_bricks",
+	// Minimum height above ground before first pillar is placed
+	"pillarFirstThreshold": 5,
+	// Distance in blocks between support pillars
+	"pillarInterval": 9,
+	// Minimum elevation change (in blocks) to classify terrain as a cliff. Lower = more sensitive (curves more often). Higher = less sensitive (goes over steeper terrain).
+	"cliffThreshold": 10,
+	// Allow curves to change elevation while turning (banking curves). When false, curves are always flat and elevation changes happen on straight segments. When true, curves can slope up/down while turning, creating a roller coaster effect.
+	"bankingCurves": false,
+	// Whether tracks can make gentle lateral shifts (slight sideways beziers). When enabled, tracks can shift a few blocks sideways without using 90-degree curves. Creates more natural-looking paths when targets are slightly off-axis.
+	"laterals": true,
+	// Maximum lateral offset (in blocks) for direct bezier shifts. Targets within this lateral distance can use gentle beziers instead of curves. Higher values = more gradual curves, but trains may struggle with large shifts.
+	"lateralOffset": 10,
+	// Whether tracks should curve away from terrain features like cliffs and ravines. When false, tracks will prefer going straight through terrain using bridges, tunnels, and steep slopes instead of curving around. This is separate from allAvoidance which controls structure avoidance.
+	"terrainCurveAvoidance": true,
+	// Rise component of the maximum slope ratio (rise:run). Combined with slopeRun to determine max track steepness. Example: rise=1, run=2 means max slope of 1/2 (0.5).
+	"slopeRise": 1,
+	// Run component of the maximum slope ratio (rise:run). Combined with slopeRise to determine max track steepness. Example: rise=1, run=2 means max slope of 1/2 (0.5).
+	"slopeRun": 2,
+	// Minimum curve radius in blocks. Smaller values allow tighter turns but may cause train navigation issues.
+	"minCurveRadius": 15,
+	// Maximum curve radius in blocks. Larger values create wider, smoother turns.
+	"maxCurveRadius": 25,
+	// Distance in blocks between light placements in tunnels
+	"lightSpacing": 14,
+	// Block used for tunnel lighting (e.g., 'minecraft:wall_torch', 'minecraft:glowstone')
+	"lightingBlock": "minecraft:wall_torch",
+	// How the lighting block attaches: 1 = Wall hanging (like torch), 2 = Embedded in wall (like glowstone)
+	"lightingAttachment": 1,
+	// Whether to place a station at the starting track area with the starting train. Has no effect if startingTrain is disabled.
+	"stationAtStart": true,
+	// Enable loading a custom train from config/railways-untold/train/
+	"customTrain": false,
+	// Filename of the custom train NBT file (e.g., 'my_train.nbt')
+	"trainNbt": "",
+	// Enable loading a custom station from config/railways-untold/station/
+	"customStation": false,
+	// Filename of the custom station NBT file (e.g., 'my_station.nbt')
+	"stationNbt": "",
+	// Base track material name. Values: andesite (Create default), oak, birch, spruce, dark_oak, jungle, acacia, crimson, warped, blackstone, mangrove, cherry, bamboo, stripped_bamboo, ender, tieless, phantom, monorail. Non-default values require Steam 'n' Rails.
+	"trackMaterial": "andesite",
+	// Track width/gauge. Values: standard, wide, narrow. Non-standard values require Steam 'n' Rails. Phantom tracks only support standard gauge.
+	"trackGauge": "standard",
+	// Enable placing custom event schematics along generated tracks. Place .nbt files in config/railways-untold/events/
+	"customEvents": false,
+	// Minimum distance in blocks between consecutive events along a track
+	"eventSeparationMinDistance": 500,
+	// Chance (percent) of placing an event when eligible (after min distance)
+	"eventChance": 15,
+	// Enable verbose debug logging for track placement and chunk loading. Useful for diagnosing issues with track heads stalling or not resuming. Warning: produces a lot of log output.
+	"verboseLogging": false
+}

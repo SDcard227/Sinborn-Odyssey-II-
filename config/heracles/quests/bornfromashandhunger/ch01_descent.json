@@ -1,0 +1,85 @@
+{
+  "dependencies": [
+    "ch01_furnace"
+  ],
+  "tasks": {
+    "deepslate": {
+      "type": "heracles:item",
+      "item": "minecraft:deepslate",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "copper": {
+      "type": "heracles:item",
+      "item": "minecraft:raw_copper",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    },
+    "gold": {
+      "type": "heracles:item",
+      "item": "minecraft:raw_gold",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "iron": {
+      "item": {
+        "id": "minecraft:iron_ingot",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Mountain Opens"
+    },
+    "subtitle": {
+      "text": "Everything the world is made of is below you."
+    },
+    "description": [
+      "The stone changes at depth. Darker. Harder. More honest.",
+      "",
+      "Every civilization that built something lasting went down first.",
+      "They found what the surface could not give them.",
+      "",
+      "You will too.",
+      "",
+      "→ Reach the deepslate layer",
+      "→ Collect 8 raw copper",
+      "→ Collect 4 raw gold"
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          0,
+          450
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:deepslate",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

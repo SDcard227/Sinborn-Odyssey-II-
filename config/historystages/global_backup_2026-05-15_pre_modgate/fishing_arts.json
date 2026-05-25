@@ -1,0 +1,17 @@
+{
+  "display_name": "The Angler's Arts",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "tide"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

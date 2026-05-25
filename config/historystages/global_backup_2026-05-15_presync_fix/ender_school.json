@@ -1,0 +1,24 @@
+{
+  "display_name": "The Ender School",
+  "research_time": 2700,
+  "items": [
+    "irons_spellbooks:ender_essence",
+    "irons_spellbooks:ender_rune",
+    "irons_spellbooks:scroll_teleport",
+    "irons_spellbooks:scroll_ender_step",
+    "irons_spellbooks:scroll_gust",
+    "irons_spellbooks:scroll_telekinesis",
+    "irons_spellbooks:scroll_dragon_breath",
+    "irons_spellbooks:scroll_chain_create"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

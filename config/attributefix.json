@@ -22,6 +22,17 @@
         "value": 512
       }
     },
+    "attributeslib:ghost_health": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "minecraft:generic.follow_range": {
       "enabled": true,
       "min": {
@@ -31,6 +42,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "attributeslib:prot_shred": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "peak_stamina:stamina_usage": {
@@ -55,6 +77,17 @@
         "value": 100
       }
     },
+    "attributeslib:armor_shred": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
+        "value": 2
+      }
+    },
     "irons_spellbooks:nature_spell_power": {
       "enabled": false,
       "min": {
@@ -75,6 +108,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "attributeslib:armor_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "peak_stamina:current_stamina": {
@@ -108,6 +152,28 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "duneons:villager_skins": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 8,
+        "value": 8
+      }
+    },
+    "cold_sweat:heat_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "peak_stamina:weight_calculation_multiplier": {
@@ -220,6 +286,17 @@
         "value": 1024
       }
     },
+    "duneons:mineruse": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "irons_spellbooks:casting_movespeed": {
       "enabled": false,
       "min": {
@@ -264,6 +341,17 @@
         "value": 1024
       }
     },
+    "l2damagetracker:fire_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "minecraft:zombie.spawn_reinforcements": {
       "enabled": true,
       "min": {
@@ -273,6 +361,28 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "l2damagetracker:crit_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "attributeslib:crit_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "minecraft:generic.armor_toughness": {
@@ -295,6 +405,28 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "cold_sweat:temperature_rate": {
+      "enabled": false,
+      "min": {
+        "default": NaN,
+        "value": NaN
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
+      }
+    },
+    "l2damagetracker:explosion_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "irons_spellbooks:holy_spell_power": {
@@ -341,17 +473,6 @@
         "value": 1
       }
     },
-    "block_factorys_bosses:movement_recovery": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 5,
-        "value": 5
-      }
-    },
     "irons_spellbooks:evocation_magic_resist": {
       "enabled": false,
       "min": {
@@ -361,6 +482,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "block_factorys_bosses:movement_recovery": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 5,
+        "value": 5
       }
     },
     "justleveling:beneficial_effect": {
@@ -394,6 +526,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "duneons:electric_2": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 5,
+        "value": 5
       }
     },
     "eeeabsmobs:crit_chance": {
@@ -462,6 +605,17 @@
         "value": 1024
       }
     },
+    "cold_sweat:world_temperature": {
+      "enabled": false,
+      "min": {
+        "default": NaN,
+        "value": NaN
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
+      }
+    },
     "peak_stamina:penalty_gain_multiplier": {
       "enabled": false,
       "min": {
@@ -493,6 +647,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "attributeslib:prot_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 34,
+        "value": 34
       }
     },
     "peak_stamina:max_stamina": {
@@ -550,6 +715,17 @@
         "value": 1
       }
     },
+    "attributeslib:mining_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "caelus:fall_flying": {
       "enabled": false,
       "min": {
@@ -592,6 +768,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "l2damagetracker:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
       }
     },
     "minecraft:generic.max_health": {
@@ -671,6 +858,17 @@
         "value": 2
       }
     },
+    "duneons:static_animations": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "irons_spellbooks:max_mana": {
       "enabled": false,
       "min": {
@@ -704,6 +902,17 @@
         "value": 1
       }
     },
+    "lodestone:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
     "justleveling:projectile_damage": {
       "enabled": false,
       "min": {
@@ -715,7 +924,7 @@
         "value": 1024
       }
     },
-    "craft_of_the_wild:generic.projectile_resistance": {
+    "peak_stamina:slow_climb_speed": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -726,7 +935,7 @@
         "value": 1
       }
     },
-    "peak_stamina:slow_climb_speed": {
+    "craft_of_the_wild:generic.projectile_resistance": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -781,6 +990,39 @@
         "value": 100
       }
     },
+    "attributeslib:overheal": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "attributeslib:healing_received": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "duneons:soulhealers": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "obscure_api:resilience": {
       "enabled": false,
       "min": {
@@ -801,6 +1043,28 @@
       "max": {
         "default": 8,
         "value": 8
+      }
+    },
+    "duneons:eyelaser_on": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "cold_sweat:base_temperature": {
+      "enabled": false,
+      "min": {
+        "default": NaN,
+        "value": NaN
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
       }
     },
     "witherstormmod:target_stationary_flying_speed": {
@@ -847,6 +1111,50 @@
         "value": 10
       }
     },
+    "lodestone:magic_proficiency": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
+    "timelessprison:time_reducer_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 3,
+        "value": 3
+      }
+    },
+    "attributeslib:cold_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "attributeslib:experience_gained": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "witherstormmod:slow_flying_speed": {
       "enabled": false,
       "min": {
@@ -880,6 +1188,17 @@
         "value": 2048
       }
     },
+    "l2damagetracker:damage_absorption": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
     "irons_spellbooks:summon_damage": {
       "enabled": false,
       "min": {
@@ -911,6 +1230,28 @@
       "max": {
         "default": 100000,
         "value": 100000
+      }
+    },
+    "cold_sweat:cold_dampening": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "duneons:eyelaser": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "combatroll:distance": {
@@ -990,6 +1331,39 @@
         "value": 200
       }
     },
+    "duneons:ranged_attack": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "cold_sweat:heat_dampening": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "attributeslib:dodge_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "peak_stamina:exhaustion_duration_multiplier": {
       "enabled": false,
       "min": {
@@ -1023,6 +1397,17 @@
         "value": 1024
       }
     },
+    "attributeslib:fire_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "irons_spellbooks:ice_spell_power": {
       "enabled": false,
       "min": {
@@ -1043,6 +1428,28 @@
       "max": {
         "default": 5,
         "value": 1000000
+      }
+    },
+    "lodestone:magic_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
+    "cold_sweat:freezing_point": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
       }
     },
     "forge:swim_speed": {
@@ -1111,11 +1518,55 @@
         "value": 100
       }
     },
+    "l2damagetracker:bow_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "l2damagetracker:damage_reduction": {
+      "enabled": false,
+      "min": {
+        "default": -10000,
+        "value": -10000
+      },
+      "max": {
+        "default": 10000,
+        "value": 10000
+      }
+    },
+    "traveloptics:aqua_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "irons_spellbooks:ender_spell_power": {
       "enabled": false,
       "min": {
         "default": -100,
         "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "attributeslib:crit_damage": {
+      "enabled": false,
+      "min": {
+        "default": 1,
+        "value": 1
       },
       "max": {
         "default": 100,
@@ -1155,7 +1606,40 @@
         "value": 100
       }
     },
+    "traveloptics:aqua_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "l2damagetracker:crit_rate": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "obscure_api:parry": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
+    "bulking:stomach_size": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -1177,6 +1661,17 @@
         "value": 1000000
       }
     },
+    "attributeslib:draw_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 4,
+        "value": 4
+      }
+    },
     "legendarysurvivaloverhaul:broken_heart_resilience": {
       "enabled": false,
       "min": {
@@ -1186,6 +1681,17 @@
       "max": {
         "default": 10000,
         "value": 10000
+      }
+    },
+    "duneons:attack": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
+        "value": 2
       }
     },
     "irons_spellbooks:ender_magic_resist": {
@@ -1276,6 +1782,17 @@
         "value": 100
       }
     },
+    "duneons:pillaroff": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "justleveling:break_speed": {
       "enabled": false,
       "min": {
@@ -1285,6 +1802,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "attributeslib:current_hp_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
       }
     },
     "cataclysm_spellbooks:technomancy_spell_power": {
@@ -1309,6 +1837,17 @@
         "value": 1024
       }
     },
+    "cold_sweat:cold_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "peak_stamina:climb_cost_multiplier": {
       "enabled": false,
       "min": {
@@ -1318,6 +1857,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "cold_sweat:burning_point": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
       }
     },
     "combatroll:count": {
@@ -1342,6 +1892,39 @@
         "value": 10000
       }
     },
+    "attributeslib:arrow_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "duneons:tower_advancement": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "attributeslib:arrow_velocity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "peak_stamina:penalty_decay_multiplier": {
       "enabled": false,
       "min": {
@@ -1362,6 +1945,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "attributeslib:life_steal": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     }
   }

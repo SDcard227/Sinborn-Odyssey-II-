@@ -1,0 +1,85 @@
+{
+  "dependencies": [
+    "ch01_shelter"
+  ],
+  "tasks": {
+    "furnace": {
+      "type": "heracles:item",
+      "item": "minecraft:furnace",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "iron": {
+      "type": "heracles:item",
+      "item": "minecraft:iron_ingot",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coal": {
+      "item": {
+        "id": "minecraft:coal",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "food": {
+      "item": {
+        "id": "minecraft:cooked_beef",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "Stone into metal. Meat into meal. The furnace is the first engine."
+    },
+    "description": [
+      "Heat applied to the right material changes it permanently.",
+      "",
+      "This is the principle behind every machine that will come after.",
+      "Every engine. Every reactor. Every forge.",
+      "",
+      "It all begins with eight pieces of stone around an empty center.",
+      "",
+      "→ Build a furnace",
+      "→ Smelt 8 iron ingots"
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          0,
+          300
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:furnace",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+    "title": {
+      "translate": "Fire Eats Everything"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "display_name": "On Abaddon",
+  "research_time": 7200,
+  "items": [
+    "mythsandlegends:core_of_abaddon"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

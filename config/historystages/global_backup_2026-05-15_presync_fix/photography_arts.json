@@ -1,0 +1,21 @@
+{
+  "display_name": "The Photography Arts",
+  "research_time": 2700,
+  "items": [
+    "exposure:album",
+    "exposure:black_and_white_film",
+    "exposure:color_film",
+    "exposure:lightroom",
+    "exposure:photograph"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

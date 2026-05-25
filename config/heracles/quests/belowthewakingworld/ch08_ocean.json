@@ -1,0 +1,68 @@
+{
+  "dependencies": ["ch08_world"],
+  "tasks": {
+    "monument": {
+      "title": "Locate an Ocean Monument and enter it",
+      "icon": {"item": {"id": "minecraft:prismarine", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "prismarine": {
+      "type": "heracles:item",
+      "item": "minecraft:prismarine_crystals",
+      "amount": 32,
+      "collection": "AUTOMATIC"
+    },
+    "shipwreck": {
+      "title": "Loot at least 3 shipwrecks or ocean ruins for scrolls and maps",
+      "icon": {"item": {"id": "minecraft:nautilus_shell", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "sponge": {
+      "item": {"id": "minecraft:sponge", "count": 4},
+      "type": "heracles:item"
+    },
+    "prismarine_block": {
+      "item": {"id": "minecraft:prismarine_bricks", "count": 16},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Ocean Civilization"},
+    "subtitle": {"text": "They were here. The monument is all that's left of their engineering."},
+    "description": [
+      "The Ocean Mages merged magic with the natural world at oceanic scale.",
+      "They fell through complete dissolution — there was no civilization left.",
+      "Only the ocean made magical.",
+      "",
+      "The Guardian Eye is their inheritance.",
+      "The Ocean Monument is their last structure.",
+      "The Elder Guardian is what remains where their archive was.",
+      "",
+      "Shipwrecks hold loot tables with map treasure,",
+      "scrolls, compasses, and sometimes the Drowned World scroll.",
+      "Ocean ruins and shipwrecks are the ocean's breadcrumbs.",
+      "Follow them toward the monument.",
+      "",
+      "→ Locate and enter an Ocean Monument [check]",
+      "→ Collect 32 Prismarine Crystals",
+      "→ Loot 3 shipwrecks or ocean ruins [check]"
+    ],
+    "groups": {"Below the Waking World": {"position": [0, 150]}},
+    "icon": {"item": {"id": "minecraft:prismarine", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

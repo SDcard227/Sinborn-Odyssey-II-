@@ -1,0 +1,31 @@
+{
+  "display_name": "Butchery & Cured Meats",
+  "research_time": 2700,
+  "items": [
+    "alexscaves:cooked_dinosaur_chop",
+    "alexscaves:dinosaur_chop",
+    "delightful:cactus_steak",
+    "delightful:cooked_venison_chops",
+    "delightful:venison_chops",
+    "delightful:venison_stew",
+    "delightful:venison_stew_cup",
+    "farmersdelight:bacon",
+    "farmersdelight:bacon_and_eggs",
+    "farmersdelight:bacon_sandwich",
+    "farmersdelight:cooked_bacon",
+    "farmersdelight:pasta_with_mutton_chop",
+    "farmersdelight:steak_and_potatoes"
+  ],
+  "tags": [],
+  "mods": [
+    "cropcritters"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

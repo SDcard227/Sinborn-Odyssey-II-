@@ -1,0 +1,87 @@
+{
+  "dependencies": ["ch16_armor"],
+  "tasks": {
+    "celestial_sword": {
+      "title": "Craft a Celestial Netherite Sword — the highest base damage melee weapon in the pack",
+      "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "celestial_pick": {
+      "title": "Craft a Celestial Netherite Pickaxe — required for any ore that needs a Netherite or better pick",
+      "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "enchanted_book": {"item": {"id": "minecraft:enchanted_book", "count": 2}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Celestial Tools"},
+    "subtitle": {"text": "Same chain. Different output. The sword for bosses. The pickaxe for Ch17 ore that requires top-tier mining."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.16 · CELESTIAL TOOLS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Celestisynth chain produces more than armor.",
+      "  The same Celestial Netherite Ingots craft tools and weapons.",
+      "  The sword is the Ch17 boss weapon.",
+      "  The pickaxe is the mining tool for any ore that needs top tier.",
+      "  Both are required for Ch17 readiness.",
+      "",
+      "◈ CELESTIAL SWORD",
+      "  └ Highest base melee damage in the pack",
+      "  └ Enchantment priority: Sharpness VI (via Ancient Tomes / Immersive),",
+      "    Looting III, Fire Aspect II, Unbreaking III, Mending",
+      "  └ Sharpness VI: exceeds vanilla cap — requires Ancient Tome",
+      "    (Quark mod: Ancient Tomes found in dungeon chests, boost enchants by +1)",
+      "  └ Alternative: Simply Swords gem socket system",
+      "    Check if Celestial Netherite sword accepts gems",
+      "    (Gems provide unique effects beyond standard enchanting)",
+      "",
+      "◈ CELESTIAL PICKAXE",
+      "  └ Mining: handles all ore types at full speed",
+      "  └ Efficiency VI (Ancient Tome): exceeds vanilla cap",
+      "  └ Fortune III + Efficiency VI + Mending: the endgame mining pick",
+      "  └ Silk Touch variant: keep a separate Celestial pick for Silk Touch",
+      "    (for specific mining needs: End Stone, Ender Chest, etc.)",
+      "",
+      "◈ SIMPLY SWORDS INTEGRATION",
+      "  └ Simply Swords adds 15 weapon types beyond the sword",
+      "  └ Celestial Netherite may craft into specialized weapon types:",
+      "    Longsword (extra range), Spear (throw mechanic), Katana (speed)",
+      "  └ Gem system: socket gems into Simply Swords weapons",
+      "    for unique effects not available through enchanting",
+      "  └ Check JEI: simplyswords: recipes for Celestial variants",
+      "",
+      "▸ The weapon is an extension of the hand.",
+      "  The hand is at the end of the arm.",
+      "  The arm wears Celestial Netherite.",
+      "  Everything is the same material now.",
+      "  That is what consistency looks like at Ch16.",
+      "  The character is complete.",
+      "  Ch17 will test whether complete is enough.",
+      "",
+      "▶ Craft a Celestial Netherite Sword [check]",
+      "▶ Craft a Celestial Netherite Pickaxe [check]",
+      "",
+      "◇ Keep separate picks for Fortune III and Silk Touch.",
+      "  Never enchant the same pick with both.",
+      "  Fortune III on ores doubles yield.",
+      "  Silk Touch for specific drops where item form matters.",
+      "  Two picks. Both Celestial."
+    ],
+    "groups": {"The Long Road Home": {"position": [600, 0]}},
+    "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "dependencies": ["ch07_refine"],
+  "tasks": {
+    "mechanical_arm": {
+      "type": "heracles:item",
+      "item": "create:mechanical_arm",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "auto_kitchen": {
+      "title": "Automate at least one food recipe using Create contraptions (e.g. auto-smoking, auto-pressing)",
+      "icon": {"item": {"id": "create:deployer", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "roast_chicken": {
+      "item": {"id": "farmersdelight:roast_chicken", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Factory Food"},
+    "subtitle": {"text": "The machine does not care about the taste. That is not its job."},
+    "description": [
+      "Food automation is the engineer's approach to hunger.",
+      "The machine doesn't rest. The machine doesn't miss.",
+      "The machine runs the Farmer's Delight cutting board",
+      "at the same rate, every second, indefinitely.",
+      "",
+      "A Mechanical Arm can move items between inventories.",
+      "A Deployer can right-click blocks — including cutting boards.",
+      "A Basin + Mechanical Mixer automates brewing recipes.",
+      "A Chute feeds items downward.",
+      "",
+      "Automate one. Learn the architecture.",
+      "The second kitchen line is faster than the first.",
+      "",
+      "→ Craft a Mechanical Arm (for item routing)",
+      "→ Automate at least one food recipe using Create [check]"
+    ],
+    "groups": {"Blood and Oil": {"position": [-150, 300]}},
+    "icon": {"item": {"id": "create:mechanical_arm", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

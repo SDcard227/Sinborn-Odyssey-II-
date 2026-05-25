@@ -1,0 +1,64 @@
+{
+  "dependencies": ["ch08_r_eg1"],
+  "tasks": {
+    "conduit": {
+      "type": "heracles:item",
+      "item": "minecraft:conduit",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "guardian_eye_prep": {
+      "title": "Collect the materials for the Guardian Eye recipe (check the Eye Scroll system for the recipe)",
+      "icon": {"item": {"id": "minecraft:prismarine_crystals", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "sea_lantern": {
+      "type": "heracles:item",
+      "item": "minecraft:sea_lantern",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "guardian_eye": {
+      "item": {"id": "endrem:guardian_eye", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 14},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Guardian Eye"},
+    "subtitle": {"text": "The Ocean Eye. Compressed into crystal. Still watching."},
+    "description": [
+      "The Guardian Eye is the Ocean Civilization's inheritance.",
+      "One of twelve needed for the End Portal.",
+      "",
+      "The Conduit requires Heart of the Sea + 8 Nautilus Shells.",
+      "Place it in water with prismarine surrounding it.",
+      "It gives Conduit Power — water breathing + underwater haste + night vision.",
+      "Build it near the monument. The ocean becomes safe territory.",
+      "",
+      "The Guardian Eye has a custom recipe using End Remastered.",
+      "Open the Eye scroll system (found in ocean ruins) for the full recipe.",
+      "It requires prismarine and materials from the Elder Guardian's drop chain.",
+      "",
+      "→ Craft a Conduit (Heart of the Sea + Nautilus Shells)",
+      "→ Collect materials for the Guardian Eye recipe [check]",
+      "→ Craft 8 Sea Lanterns"
+    ],
+    "groups": {"Below the Waking World": {"position": [-300, 150]}},
+    "icon": {"item": {"id": "endrem:guardian_eye", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

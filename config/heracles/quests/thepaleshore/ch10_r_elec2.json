@@ -1,0 +1,56 @@
+{
+  "dependencies": ["ch10_r_elec1"],
+  "tasks": {
+    "full_loop": {
+      "title": "Run a complete Nuclear → Generator → Electric Motor loop powering your Create network",
+      "icon": {"item": {"id": "create_new_age:electric_motor", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "nuke_shell": {
+      "title": "Craft a Nuclear Shell (Create Nuclear Shell mod — requires uranium and steel barrel)",
+      "icon": {"item": {"id": "create_big_cannons:he_shell", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 5},
+      "type": "heracles:item"
+    },
+    "tfmg_steel": {
+      "item": {"id": "tfmg:steel_ingot", "count": 16},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Nuclear Network"},
+    "subtitle": {"text": "The factory runs on something that used to be a star. Both kinds."},
+    "description": [
+      "A complete nuclear power loop means the factory is energy-independent.",
+      "No fuel trains. No Blaze Burner refills.",
+      "The reactor runs. The generator converts. The motors drive.",
+      "",
+      "Create Nuclear Shell (Cannon Nukes mod) adds the nuclear shell.",
+      "It requires uranium ore, steel barrel, and precise crafting.",
+      "It is not subtle. It is also not necessary for game completion.",
+      "It is available. The choice is yours.",
+      "",
+      "The steel reactor (Create Nuclear Shell) is an alternate heat source",
+      "for the boiler chain — less dangerous than nuclear material handling.",
+      "",
+      "→ Run a complete nuclear → electrical → rotational loop [check]",
+      "→ Craft a Nuclear Shell if you choose to [check]"
+    ],
+    "groups": {"The Pale Shore": {"position": [300, 0]}},
+    "icon": {"item": {"id": "create_new_age:electric_motor", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

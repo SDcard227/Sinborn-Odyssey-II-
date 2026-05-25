@@ -1,0 +1,56 @@
+
+#Found a bug or have a feature request?
+#Report it on GitHub: https://github.com/Flix100000/History-Stages/issues
+#
+#Visual and UI settings (Individual for each player)
+[visuals]
+	#Show information tooltips on locked items? [Default: true]
+	showTooltips = true
+	#If tooltips are enabled, show the name of the required stage? [Default: true]
+	showStageName = true
+	#If an item is in multiple stages, show all of them until all are unlocked? [Default: true]
+	showAllUntilComplete = true
+	#Show a lock icon overlay on locked items in JEI and Inventories? (Will be disabled if EMI is installed) [Default: true]
+	showLockIcons = false
+
+#Settings for dimension access feedback
+[dimension_lock]
+	#Show a simple 'Dimension Locked' message in the actionbar? [Default: true]?
+	useActionbar = true
+	#Show the dimension lock message in the chat? [Default: false]
+	showInChat = false
+	#If dimShowChat is true, should the required stages also be listed? [Default: true]
+	showStagesInChat = true
+
+#Settings for mob damage lock feedback
+[mob_lock]
+	#Show a 'Mob Protected' message in the actionbar? [Default: true]
+	useActionbar = true
+	#Show the mob lock message in the chat? [Default: false]
+	showInChat = false
+	#If mobShowChat is true, should the required stages also be listed? [Default: true]
+	showStagesInChat = true
+
+#Settings for Jade block overlay (requires Jade mod)
+[jade]
+	#Show stage information on locked blocks in the Jade overlay? [Default: true]
+	showInfo = true
+	#If Jade info is enabled, show the name of the required stage? [Default: true]
+	showStageName = true
+	#If a block is in multiple stages, show all of them until all are unlocked? [Default: true]
+	showAllUntilComplete = true
+
+#Individual Stage Visual Settings
+[individual_stages]
+	#Show a silver lock icon on items locked by individual stages? [Default: true]
+	showSilverLockIcons = true
+	#Show tooltip information for items locked by individual stages? [Default: true]
+	showIndividualTooltips = true
+
+#Dependency Display Settings
+[dependencies]
+	#Show dependency requirements in research scroll tooltips? [Default: true]
+	showDependenciesOnScroll = true
+	#Hide already fulfilled dependencies in scroll tooltips? [Default: false]
+	hideFulfilledDependencies = false
+

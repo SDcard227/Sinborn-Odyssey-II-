@@ -1,0 +1,64 @@
+{
+  "dependencies": ["ch15_r_atlas1"],
+  "tasks": {
+    "photo_album": {
+      "title": "Develop a full album of Exposure mod photographs documenting your civilization (minimum 10 photos)",
+      "icon": {"item": {"id": "exposure:camera", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "book_history": {
+      "title": "Write a signed Book and Quill history of your playthrough — title it and sign it",
+      "icon": {"item": {"id": "minecraft:written_book", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "book": {
+      "item": {"id": "minecraft:book", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Record"},
+    "subtitle": {"text": "The Oldest Civilization remembered everything but left no record for the next inheritor. Leave a record."},
+    "description": [
+      "Documentation is the differentiating factor.",
+      "Every previous civilization solved the mechanical problems.",
+      "None of them left an adequate record of how they did it.",
+      "You are.",
+      "",
+      "Exposure camera photographs:",
+      "10 minimum — one per major chapter milestone.",
+      "Suggested: your first base, first boss kill, End portal activated,",
+      "Wither Storm visible, Ender Dragon defeated, homecoming, current base.",
+      "",
+      "The Book and Quill history:",
+      "Write it in first person. Title it something.",
+      "Sign it with your player name.",
+      "The book becomes a Written Book — it persists even when the original is gone.",
+      "",
+      "Store copies in the Ender Chest.",
+      "The record survives the player.",
+      "The player is the civilization.",
+      "The civilization needs to be remembered.",
+      "",
+      "→ Develop 10+ Exposure photographs [check]",
+      "→ Write and sign a history book [check]"
+    ],
+    "groups": {"After the Dragon": {"position": [300, 0]}},
+    "icon": {"item": {"id": "minecraft:written_book", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

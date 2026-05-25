@@ -1,0 +1,23 @@
+{
+  "display_name": "The Evocation School",
+  "research_time": 2700,
+  "items": [
+    "irons_spellbooks:arcane_essence",
+    "irons_spellbooks:evocation_rune",
+    "irons_spellbooks:scroll_evoker_fangs",
+    "irons_spellbooks:scroll_magic_arrow",
+    "irons_spellbooks:scroll_magic_missile",
+    "irons_spellbooks:scroll_haste",
+    "irons_spellbooks:scroll_invisibility",
+    "irons_spellbooks:scroll_counterspell",
+    "irons_spellbooks:scroll_blade_flurry",
+    "irons_spellbooks:scroll_starfall"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

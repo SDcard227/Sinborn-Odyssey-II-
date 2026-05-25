@@ -1,0 +1,55 @@
+{
+  "dependencies": ["ch05_r_rec1"],
+  "tasks": {
+    "company": {
+      "title": "Hire 3 Villager Recruits (any type)",
+      "icon": {"item": {"id": "minecraft:iron_helmet", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "archer": {
+      "title": "Hire an Archer unit",
+      "icon": {"item": {"id": "minecraft:bow", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 6},
+      "type": "heracles:item"
+    },
+    "arrows": {
+      "item": {"id": "minecraft:arrow", "count": 32},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "A Small Company"},
+    "subtitle": {"text": "Three soldiers. Enough to hold a position."},
+    "description": [
+      "Three units is enough to defend a perimeter.",
+      "Mix types: a Scout for mobility, an Archer for range,",
+      "a Swordsman for close defense.",
+      "",
+      "Villager Recruits can be ordered to guard positions.",
+      "They respond to commands.",
+      "In siege scenarios they can hold terrain.",
+      "",
+      "The army grows when the world requires it.",
+      "For now: three is enough.",
+      "",
+      "→ Hire 3 Villager Recruits [check]",
+      "→ Hire an Archer unit [check]"
+    ],
+    "groups": {"The Spoken Word": {"position": [-300, 0]}},
+    "icon": {"item": {"id": "minecraft:iron_helmet", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

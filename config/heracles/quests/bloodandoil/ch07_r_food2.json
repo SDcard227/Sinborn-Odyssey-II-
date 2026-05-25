@@ -1,0 +1,69 @@
+{
+  "dependencies": ["ch07_r_food1"],
+  "tasks": {
+    "auto_farm": {
+      "title": "Build an automated crop farm using Create (mechanical harvester or deployer-plow setup)",
+      "icon": {"item": {"id": "create:mechanical_harvester", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "tomato": {
+      "type": "heracles:item",
+      "item": "farmersdelight:tomato",
+      "amount": 32,
+      "collection": "AUTOMATIC"
+    },
+    "cabbage": {
+      "type": "heracles:item",
+      "item": "farmersdelight:cabbage",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ratatouille": {
+      "item": {"id": "farmersdelight:ratatouille", "count": 8},
+      "type": "heracles:item"
+    },
+    "squid_ink_pasta": {
+      "item": {"id": "farmersdelight:squid_ink_pasta", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Automated Garden"},
+    "subtitle": {"text": "Agriculture at scale. The farmers would be horrified."},
+    "description": [
+      "The Mechanical Harvester attached to a moving contraption",
+      "harvests entire rows at once.",
+      "The Deployer with a hoe tills new soil ahead of planting.",
+      "Seeds in, food out, no hands required.",
+      "",
+      "Farmer's Delight crops: Tomato, Cabbage, Onion, Rice.",
+      "Tomato and Cabbage are the baseline inputs for most FD recipes.",
+      "Rice feeds diet variety. Onion goes in nearly everything.",
+      "",
+      "The Diet mod requires variety.",
+      "Automation ensures variety without effort.",
+      "That is the point of the factory.",
+      "",
+      "→ Build an automated crop farm with Create [check]",
+      "→ Harvest 32 Tomatoes",
+      "→ Harvest 16 Cabbages"
+    ],
+    "groups": {"Blood and Oil": {"position": [-300, 300]}},
+    "icon": {"item": {"id": "create:mechanical_harvester", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

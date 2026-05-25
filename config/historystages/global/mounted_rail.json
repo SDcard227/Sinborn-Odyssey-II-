@@ -1,0 +1,20 @@
+{
+  "display_name": "The Rail Age (Mounted & Cart)",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "cmpackagecouriers",
+    "railways",
+    "trotting_wagons",
+    "vc_gliders"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

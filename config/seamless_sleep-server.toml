@@ -1,0 +1,10 @@
+config_version = 1
+mod_version = "2.5.2"
+
+
+[sleep]
+    #Clear rain/thunder after sleeping. Range: true | false. Default: true
+    sleepClearsWeather = true
+
+    #Sleep animation duration multiplier. Range: 0.25 to 8.0. Default: 1.0
+    sleepAnimationDurationMultiplier = 1.0

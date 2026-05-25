@@ -1,0 +1,54 @@
+{
+  "dependencies": ["ch03_belt"],
+  "tasks": {
+    "road_block": {
+      "title": "Craft Via Romana road blocks",
+      "icon": {"item": {"id": "via_romana:roman_road", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "gravel_road": {
+      "type": "heracles:item",
+      "item": "via_romana:roman_road",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "gravel": {
+      "item": {"id": "minecraft:gravel", "count": 32},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Roman Road"},
+    "subtitle": {"text": "Fast travel begins with building the path."},
+    "description": [
+      "Via Romana adds road blocks that increase movement speed.",
+      "Connect two via_romana markers and the road becomes a fast-travel route.",
+      "",
+      "The Romans built roads before they built cities.",
+      "Connection makes everything else possible.",
+      "",
+      "Stone. Gravel. The same materials as any road.",
+      "Laid in order. Given purpose.",
+      "",
+      "→ Craft Via Romana road blocks [check]",
+      "→ Have 16 road blocks"
+    ],
+    "groups": {"The Rotting Gate": {"position": [150, 450]}},
+    "icon": {"item": {"id": "via_romana:roman_road", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

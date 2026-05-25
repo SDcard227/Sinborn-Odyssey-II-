@@ -1,0 +1,96 @@
+{
+  "dependencies": [
+    "ch08_sculk"
+  ],
+  "tasks": {
+    "echo_shards": {
+      "type": "heracles:item",
+      "item": "minecraft:echo_shard",
+      "amount": 9,
+      "collection": "AUTOMATIC"
+    },
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/drowned_world_studied"
+    }
+  },
+  "rewards": {
+    "echo_shard": {
+      "item": {
+        "id": "minecraft:echo_shard",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "recovery_compass": {
+      "item": {
+        "id": "minecraft:recovery_compass",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 5
+      },
+      "type": "heracles:item"
+    },
+    "age": {
+      "type": "heracles:command",
+      "command": "history unlock abyssal_age"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Below the Waking World"
+    },
+    "subtitle": {
+      "text": "The deep remembers what the surface tries to forget."
+    },
+    "description": [
+      "Nine Echo Shards.",
+      "Each one a fragment of memory stored in crystallized sound.",
+      "Each one a record of something that happened exactly here",
+      "and was absorbed into the rock.",
+      "",
+      "The Ocean Mages understood this.",
+      "They built the Guardian to keep people from reading it.",
+      "The monument is not a landmark.",
+      "It is a lock.",
+      "",
+      "You have the key. It took a chapter to earn it.",
+      "The Drowned World scroll explains what they saw",
+      "when they dived where the ocean refused to let them go.",
+      "",
+      "Read it before you go deeper.",
+      "",
+      "→ Collect 9 Echo Shards (Ancient City and deep ocean loot)",
+      "→ Research the Drowned World scroll [check]"
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          0,
+          600
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:echo_shard",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

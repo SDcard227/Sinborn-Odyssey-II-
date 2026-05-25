@@ -1,0 +1,59 @@
+{
+  "dependencies": ["ch07_r_dw1"],
+  "tasks": {
+    "death_worm_powder_stack": {
+      "type": "heracles:item",
+      "item": "iceandfire:death_worm_powder",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "desert_dungeon": {
+      "title": "Explore a Desert Pyramid or Dungeon Now Loading desert dungeon",
+      "icon": {"item": {"id": "minecraft:suspicious_sand", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "death_worm_powder_reward": {
+      "item": {"id": "iceandfire:death_worm_powder", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "What the Desert Keeps"},
+    "subtitle": {"text": "Every ruin has a reason. The desert has more reasons than most."},
+    "description": [
+      "The Desert civilization fell after mastering death, poison, petrification.",
+      "Their ruins are everywhere.",
+      "Desert Pyramids hold their loot. Their technology. Their scrolls.",
+      "",
+      "Dungeon Now Loading adds procedural dungeons to desert biomes.",
+      "More loot. More context. More of what they left behind.",
+      "",
+      "Death Worm Powder has crafting uses documented in later chapters.",
+      "Collect it now. You will understand its purpose later.",
+      "",
+      "The Black Eye — the eye of the Desert civilization —",
+      "comes from the Cockatrice, not the Death Worm.",
+      "But the worm is a piece of the same picture.",
+      "",
+      "→ Collect 16 Death Worm Powder",
+      "→ Explore a Desert Pyramid or desert dungeon [check]"
+    ],
+    "groups": {"Blood and Oil": {"position": [300, 0]}},
+    "icon": {"item": {"id": "minecraft:suspicious_sand", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

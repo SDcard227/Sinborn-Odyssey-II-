@@ -1,0 +1,42 @@
+{
+  "display_name": "Leatherworking",
+  "research_time": 3600,
+  "items": [
+    "minecraft:leather",
+    "minecraft:leather_helmet",
+    "minecraft:leather_chestplate",
+    "minecraft:leather_leggings",
+    "minecraft:leather_boots",
+    "minecraft:leather_horse_armor",
+    "minecraft:saddle",
+    "minecraft:book",
+    "minecraft:written_book",
+    "minecraft:writable_book",
+    "minecraft:enchanted_book",
+    "minecraft:bookshelf",
+    "minecraft:chiseled_bookshelf",
+    "minecraft:lectern",
+    "minecraft:item_frame",
+    "minecraft:glow_item_frame",
+    "minecraft:painting",
+    "minecraft:rabbit_hide",
+    "supplementaries:sack",
+    "supplementaries:rope",
+    "supplementaries:satchel",
+    "sophisticatedbackpacks:backpack",
+    "sophisticatedbackpacks:iron_backpack",
+    "sophisticatedbackpacks:gold_backpack",
+    "sophisticatedbackpacks:diamond_backpack",
+    "sophisticatedbackpacks:netherite_backpack"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

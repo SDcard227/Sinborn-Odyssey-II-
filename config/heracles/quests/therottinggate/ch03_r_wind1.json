@@ -1,0 +1,56 @@
+{
+  "dependencies": ["ch03_mill"],
+  "tasks": {
+    "bearing": {
+      "type": "heracles:item",
+      "item": "create:windmill_bearing",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sail": {
+      "type": "heracles:item",
+      "item": "create:sail",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "wool": {
+      "item": {"id": "minecraft:white_wool", "count": 16},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Windmill Bearing"},
+    "subtitle": {"text": "The wind costs nothing."},
+    "description": [
+      "Where rivers are absent, wind fills the gap.",
+      "The Windmill Bearing mounts on a shaft.",
+      "Attach sail blocks in a cross pattern.",
+      "",
+      "Minimum 8 sails for useful output.",
+      "Maximum 20 sails. Wind varies by weather.",
+      "",
+      "It spins differently at night. In storms.",
+      "Learn the rhythm.",
+      "",
+      "→ Craft a Windmill Bearing",
+      "→ Craft 8 Sails"
+    ],
+    "groups": {"The Rotting Gate": {"position": [-150, 150]}},
+    "icon": {"item": {"id": "create:windmill_bearing", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "dependencies": [
+    "ch03_r_atlas2"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/rec_paintings"
+    },
+    "camera": {
+      "title": "Craft a Camera (Exposure mod — use film and developing chemicals to photograph the world)",
+      "icon": {
+        "item": {
+          "id": "minecraft:spyglass",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "paper": {
+      "item": {
+        "id": "minecraft:paper",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "On Paintings"
+    },
+    "subtitle": {
+      "text": "The Antique Atlas maps where you've been. The camera proves you were there."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.03 · ON PAINTINGS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Exposure adds a film camera system.",
+      "  You can photograph the world.",
+      "  Develop the film. Display the photograph.",
+      "  Leave a record of what you saw.",
+      "",
+      "◈ EXPOSURE MOD SYSTEM",
+      "  └ Camera: crafted from iron, glass, and redstone",
+      "  └ Film Roll: loaded into camera, holds 8-16 shots",
+      "  └ Develop: use Darkroom station + chemicals",
+      "  └ Output: physical photograph item — shareable,",
+      "    frameable, displayable in-world",
+      "  └ Types: standard photo, black-and-white, aged photo",
+      "",
+      "◈ WHY DOCUMENT",
+      "  └ The lore says: someone explored before you",
+      "    You're finding their notes.",
+      "    This is how you become their notes for someone else.",
+      "  └ Practical: photograph loot room layouts,",
+      "    boss arenas, rare biomes before they're changed",
+      "  └ Aesthetic: build a gallery wall of expedition photos",
+      "",
+      "◈ SCROLL: On Paintings",
+      "  └ Found in: artist's workshop chests, explorer camps,",
+      "    road gallery ruins, museum-like structures",
+      "  └ Research time: 10 min",
+      "  └ Unlocks: full Exposure camera system awareness",
+      "",
+      "▸ The atlas maps. The camera preserves.",
+      "  The Sound Archive records.",
+      "  Together they are the record of someone who lived here.",
+      "",
+      "▶ Find the On Paintings scroll [check]",
+      "▶ Craft a Camera [check]",
+      "",
+      "◇ Photographs can be framed with item frames.",
+      "  Ch05 Culture chapter uses photography",
+      "  as a documentation tool for the archive."
+    ],
+    "groups": {
+      "The Rotting Gate": {
+        "position": [
+          600,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:spyglass",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

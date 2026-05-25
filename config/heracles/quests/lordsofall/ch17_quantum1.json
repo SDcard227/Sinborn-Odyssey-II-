@@ -1,0 +1,62 @@
+{
+  "dependencies": ["ch17_world"],
+  "tasks": {
+    "redstone_pearl": {
+      "title": "Process Redstone Pearls (Create Teleporters step 1 — requires Ender Pearls + Redstone in Create processing)",
+      "icon": {"item": {"id": "createteleporters:redstone_pearl", "count": 4}, "type": "heracles:item"},
+      "amount": 4,
+      "collection": "AUTOMATIC",
+      "type": "heracles:item"
+    },
+    "quantum_fluid": {
+      "title": "Process Quantum Fluid (Create Teleporters step 2 — Redstone Pearl processed into liquid form)",
+      "icon": {"item": {"id": "createteleporters:quantum_fluid_bucket", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "redstone_pearl": {
+      "item": {"id": "createteleporters:redstone_pearl", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Quantum Processing — Phase One"},
+    "subtitle": {"text": "The Redstone Pearl bridges two states: matter and transmission. That is what teleportation is."},
+    "description": [
+      "The Quantum Mechanism chain begins with the Redstone Pearl.",
+      "",
+      "Step 1 — Redstone Pearl:",
+      "Ender Pearls + Redstone combined in Create processing (mixing/compacting).",
+      "The Redstone Pearl is the quantum-stable form of the Ender Pearl.",
+      "It retains teleportation properties but can be processed further.",
+      "You need at least 4 for the full quantum chain.",
+      "",
+      "Step 2 — Quantum Fluid:",
+      "The Redstone Pearl is processed into Quantum Fluid using Create fluid systems.",
+      "A Fluid Tank and Mechanical Press or similar Create machine is required.",
+      "The Quantum Fluid is stored in tanks for downstream processing.",
+      "",
+      "Your Ender Pearl stockpile from Ch13-14 feeds this chain.",
+      "64 pearls minimum recommended for a full teleporter installation.",
+      "",
+      "→ Process 4 Redstone Pearls [collect]",
+      "→ Convert to Quantum Fluid [check]"
+    ],
+    "groups": {"Lords of All": {"position": [0, 150]}},
+    "icon": {"item": {"id": "createteleporters:redstone_pearl", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

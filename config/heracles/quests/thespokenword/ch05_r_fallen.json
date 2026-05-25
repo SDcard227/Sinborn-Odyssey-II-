@@ -1,0 +1,118 @@
+{
+  "dependencies": [
+    "ch05_world"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/fallen"
+    },
+    "ruin_visit": {
+      "title": "Find and enter 3 different types of ruins or abandoned structures — read what they left behind",
+      "icon": {
+        "item": {
+          "id": "minecraft:mossy_cobblestone",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "ancient": {
+      "item": {
+        "id": "minecraft:ancient_debris",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Fallen"
+    },
+    "subtitle": {
+      "text": "Nine civilizations built this world. None of them survived to see you walk through it."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.05 · THE FALLEN",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The world was not empty when you arrived.",
+      "  It was emptied.",
+      "  Nine civilizations. Each one shaped the land.",
+      "  Each one left something.",
+      "  Each one is gone.",
+      "",
+      "◈ THE NINE CIVILIZATIONS (LORE)",
+      "  └ ◇ The Architects: built the great structures",
+      "    their roads still run (Via Romana)",
+      "  └ ◇ The Tenders: kept the wild garden",
+      "    their meadows still bloom",
+      "  └ ◇ The Fermenters: built the first cellars",
+      "    their barrels still age wine underground",
+      "  └ ◇ The Scholars: wrote the scrolls you're reading",
+      "    their libraries are the ruins you explore",
+      "  └ ◇ The Hunters: left trophy rooms in every cave",
+      "  └ ◇ The Craftsmen: the forge-builders, still warm",
+      "  └ ◇ The Void-Seekers: entered the End early",
+      "    did not return in the way they left",
+      "  └ ◇ The Infernal: went into the Nether willingly",
+      "  └ ◇ The Eye-Holders: gathered the Nine Eyes",
+      "    their fate is the reason you are here",
+      "",
+      "◈ SCROLL: The Fallen",
+      "  └ Found in: ancient ruins, abandoned libraries,",
+      "    memorial site chests, deep dungeon archives",
+      "  └ Research time: 30 min",
+      "  └ Unlocks: world narrative context,",
+      "    ruin significance awareness",
+      "",
+      "▸ The Eye-Holders believed the Eyes",
+      "  would keep the world from collapsing.",
+      "  They were right about what the Eyes could do.",
+      "  They were wrong about what would happen after.",
+      "",
+      "▶ Find The Fallen scroll [check]",
+      "▶ Enter 3 different types of ruins [check]",
+      "",
+      "◇ The Scarlet King (lore scroll, this chapter)",
+      "  is what ended the Eye-Holders.",
+      "  Ch12 is where you face it.",
+      "  Read the lore before then."
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          -150,
+          300
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:mossy_cobblestone",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

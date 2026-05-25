@@ -1,0 +1,77 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Wilderness Camping Manual scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Wilderness Camping Manual scroll",
+      "icon": {
+        "item": {
+          "id": "comforts:hammock_amber",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock wilderness_camping"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Wilderness Camping Manual"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Copied between every civilization that touched it.\"",
+      "",
+      "This scroll unlocks 84 items.",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Wilderness Camping Manual] [auto]"
+    ],
+    "groups": {
+      "The Kindled Road": {
+        "position": [
+          1004,
+          837
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "comforts:hammock_amber",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "dependencies": ["ch11_revenant"],
+  "tasks": {
+    "iss_build": {
+      "title": "Set up a dedicated ISS combat build for Ch11 bosses — at least 2 Level II spells from matching schools",
+      "icon": {"item": {"id": "irons_spellbooks:ancient_codex", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "mana_ring": {
+      "type": "heracles:item",
+      "item": "irons_spellbooks:ring_of_mana",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "arcane_essence": {"item": {"id": "irons_spellbooks:arcane_essence", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Combat Build"},
+    "subtitle": {"text": "Evocation for damage. Abjuration for shields. Ender for exits. Pick two. Master them. The bosses don't pause."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.11 · THE COMBAT BUILD",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ By Ch11 you have the spell schools scroll.",
+      "  You have the mana capacity.",
+      "  You have the arcane codex.",
+      "  This quest is about building one coherent",
+      "  combat loadout before entering the Cataclysm chain.",
+      "",
+      "◈ BOSS-SPECIFIC ISS SCHOOL PAIRINGS",
+      "  └ ✦ vs. Ignited Revenant (fire)",
+      "    Holy: Sacred Ground (healing vs. fire DoT)",
+      "    Evocation: Fireball (fire type = zero resist on Revenant)",
+      "    Wait — Revenant IS fire. Use: Ender (Blink away)",
+      "    + Holy (Smite, undead bonus if applicable)",
+      "  └ ✦ vs. Ignis (fire boss)",
+      "    Evocation: Void Tentacles (non-fire damage)",
+      "    Conjuration: Summon Ally (distraction)",
+      "  └ ✦ vs. Annihilator (void boss)",
+      "    Eldritch: bonus effectiveness vs void entities",
+      "    Abjuration: Magic Shield (absorb void zone hit)",
+      "  └ ✦ vs. Monstrosity (Nether physical boss)",
+      "    Evocation: all spells apply",
+      "    Holy: Divine Smite for burst window",
+      "",
+      "◈ MANA MANAGEMENT",
+      "  └ Ring of Mana: +100 Max Mana (wear 2 for +200)",
+      "  └ Ancient Codex: +200 Max Mana + 20% CDR",
+      "    Best base item for sustained combat casting",
+      "  └ Research time bonus: each scroll studied reduces",
+      "    school-specific casting cost (~5% per school)",
+      "  └ Mana regen: Ring of Recovery + Puffish Skills mage track",
+      "",
+      "◈ LEVEL SCALING",
+      "  └ Level III spells: highest damage, but high mana cost",
+      "    Use Level II for sustained fights (more casts per pool)",
+      "    Use Level III for burst windows (boss phase transitions)",
+      "  └ Priority Level III spells for Ch11:",
+      "    Evocation Fireball III, Holy Divine Smite III,",
+      "    Ender Blink III (fastest escape in any situation)",
+      "",
+      "▸ The Cataclysm bosses were not designed for melee.",
+      "  The Engineers who made the portal system",
+      "  were spellcasters.",
+      "  They left their builds in the scroll records.",
+      "  The Wizard drops confirm this.",
+      "",
+      "▶ Set up a dedicated ISS combat build [check]",
+      "▶ Obtain a Ring of Mana",
+      "",
+      "◇ Two rings of mana = +200 max mana base.",
+      "  Add Ancient Codex (+200 more).",
+      "  That is 400 bonus mana on top of your level-based pool.",
+      "  Most Level II spells cost 80-120 mana.",
+      "  Do the math before your first Cataclysm fight."
+    ],
+    "groups": {"Where the Skin Tears": {"position": [-150, 300]}},
+    "icon": {"item": {"id": "irons_spellbooks:ancient_codex", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

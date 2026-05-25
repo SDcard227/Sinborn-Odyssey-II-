@@ -1,0 +1,77 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Master Arsenal: Polearms scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Master Arsenal: Polearms scroll",
+      "icon": {
+        "item": {
+          "id": "dungeons_and_combat:diamond_lance",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock arsenal_master_polearms"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Master Arsenal: Polearms"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Copied between every civilization that touched it.\"",
+      "",
+      "This scroll unlocks 81 items.",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Master Arsenal: Polearms] [auto]"
+    ],
+    "groups": {
+      "Blood and Oil": {
+        "position": [
+          1003,
+          840
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "dungeons_and_combat:diamond_lance",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

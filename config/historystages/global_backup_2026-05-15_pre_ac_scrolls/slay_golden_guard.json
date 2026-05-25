@@ -1,0 +1,17 @@
+{
+  "display_name": "Slaying the Golden Guard",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "call_of_yucutan:golden_guard"
+    ],
+    "spawnlock": []
+  }
+}

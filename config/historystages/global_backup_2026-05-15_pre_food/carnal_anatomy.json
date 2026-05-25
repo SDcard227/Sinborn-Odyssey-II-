@@ -1,0 +1,18 @@
+{
+  "display_name": "Carnal Anatomy",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "incision",
+    "lifesteal"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

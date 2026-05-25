@@ -1,0 +1,18 @@
+{
+  "display_name": "Slaying the Netherite Monstrosity",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "cataclysm:netherite_monstrosity",
+      "cataclysm:old_netherite_monstrosity"
+    ],
+    "spawnlock": []
+  }
+}

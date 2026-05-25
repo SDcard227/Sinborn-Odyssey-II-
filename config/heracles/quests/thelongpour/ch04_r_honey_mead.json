@@ -1,0 +1,81 @@
+{
+  "dependencies": ["ch04_r_mead2"],
+  "tasks": {
+    "beehive": {
+      "type": "heracles:item",
+      "item": "minecraft:beehive",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "honey_bottle": {
+      "type": "heracles:item",
+      "item": "minecraft:honey_bottle",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    },
+    "honeycomb": {
+      "type": "heracles:item",
+      "item": "minecraft:honeycomb",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "honey_block": {"item": {"id": "minecraft:honey_block", "count": 4}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:sprocket", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Apiary"},
+    "subtitle": {"text": "The bees were farming before we were. We just learned to work next to them."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.04 · THE APIARY",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The mead chain begins with the bees.",
+      "  Not the barrel. The bees.",
+      "  Without a honey supply, mead production stalls.",
+      "  Build an apiary. Keep it flowering.",
+      "",
+      "◈ BEE + HONEY SYSTEM",
+      "  └ Beehive: place near 2+ flowers — bees auto-work",
+      "  └ Campfire beneath hive: smoke = calm bees",
+      "    (harvest without angering them)",
+      "  └ Honey Bottle: collected from full hive",
+      "    removes Poison effect when consumed",
+      "  └ Honeycomb: harvested with shears from full hive",
+      "    used in waxing copper, crafting honeycomb blocks,",
+      "    and as input for H&H Cask mead fermentation",
+      "",
+      "◈ MEADOW MOD SYNERGY",
+      "  └ Meadow biomes have dense flower coverage",
+      "  └ Bees in meadow biomes collect faster",
+      "  └ Meadow Cow milk (with Rennett) → cheese",
+      "    Cheese = Dairy group for Diet coverage",
+      "  └ Meadow + apiary = the most efficient",
+      "    dairy + honey production zone",
+      "",
+      "▸ Scale the apiary before scaling the mead production.",
+      "  The bottles run dry faster than you expect.",
+      "",
+      "▶ Craft/place 2 Beehives",
+      "▶ Collect 8 Honey Bottles",
+      "▶ Collect 16 Honeycomb",
+      "",
+      "◇ Honey Bottles cure Poison.",
+      "  Keep a stack. Caves are full of spiders.",
+      "  They are also the fastest Poison vector in Ch04."
+    ],
+    "groups": {"The Long Pour": {"position": [300, 450]}},
+    "icon": {"item": {"id": "minecraft:honey_bottle", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

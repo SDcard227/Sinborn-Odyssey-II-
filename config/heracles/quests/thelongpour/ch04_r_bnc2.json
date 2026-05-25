@@ -1,0 +1,51 @@
+{
+  "dependencies": ["ch04_r_bnc1"],
+  "tasks": {
+    "three_brews": {
+      "title": "Brew 3 unique Brewin and Chewin recipes",
+      "icon": {"item": {"id": "brewinandchewin:keg", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "keep_warm": {
+      "title": "Build a keg with a heat source within 2 blocks",
+      "icon": {"item": {"id": "minecraft:campfire", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 2},
+      "type": "heracles:item"
+    },
+    "honey": {
+      "item": {"id": "minecraft:honey_bottle", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Temperature Control"},
+    "subtitle": {"text": "The hot keg and the cold keg make different things."},
+    "description": [
+      "Hot block within two: full effect, hot recipes unlock.",
+      "Cold block within two: cold recipes unlock.",
+      "No block: basic recipes only.",
+      "",
+      "Build two setups. One warm, one cold.",
+      "The full recipe list is only accessible with both.",
+      "",
+      "→ Brew 3 unique BnC recipes [check]",
+      "→ Build a keg with a heat source [check]"
+    ],
+    "groups": {"The Long Pour": {"position": [300, 300]}},
+    "icon": {"item": {"id": "minecraft:campfire", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

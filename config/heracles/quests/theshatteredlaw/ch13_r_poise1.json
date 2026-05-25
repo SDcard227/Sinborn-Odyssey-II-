@@ -1,0 +1,59 @@
+{
+  "dependencies": ["ch13_world"],
+  "tasks": {
+    "poise_forest": {
+      "title": "Find the Poise Forest biome in the End outer islands (Endergetic Expansion)",
+      "icon": {"item": {"id": "endergetic:poise_sapling", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "poise_wood": {
+      "title": "Collect Poise Wood from the Poise Forest",
+      "icon": {"item": {"id": "endergetic:poise_log", "count": 8}, "type": "heracles:item"},
+      "amount": 8,
+      "collection": "AUTOMATIC",
+      "type": "heracles:item"
+    }
+  },
+  "rewards": {
+    "poise_sapling": {
+      "item": {"id": "endergetic:poise_sapling", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Poise Forest"},
+    "subtitle": {"text": "The End has its own ecology. It predates you. It will outlast you."},
+    "description": [
+      "Endergetic Expansion adds the Poise Forest — a glowing biome in the End's outer islands.",
+      "Poise Trees are luminescent and grow in clusters.",
+      "The biome has its own wood type, flora, and fauna.",
+      "",
+      "The Poise Forest represents the End's native life:",
+      "not hostile, not designed to be consumed — just present.",
+      "The Ender Dragon does not rule the Poise Forest.",
+      "It has been here longer.",
+      "",
+      "Bring Poise Saplings back.",
+      "They can be grown in the Overworld under certain conditions.",
+      "The kingdom you built in Ch12 can have a piece of the End in it.",
+      "",
+      "→ Find the Poise Forest in the outer End [check]",
+      "→ Collect 8 Poise Logs [collect]"
+    ],
+    "groups": {"The Shattered Law": {"position": [-150, 0]}},
+    "icon": {"item": {"id": "endergetic:poise_sapling", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

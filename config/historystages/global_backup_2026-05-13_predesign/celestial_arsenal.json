@@ -1,0 +1,14 @@
+{
+  "display_name": "The Celestial Arsenal",
+  "research_time": 3600,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "celestisynth"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

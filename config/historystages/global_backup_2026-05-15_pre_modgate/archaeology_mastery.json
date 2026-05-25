@@ -1,0 +1,42 @@
+{
+  "display_name": "Archaeology Mastery",
+  "research_time": 1500,
+  "items": [
+    "alexscaves:dinosaur_pottery_sherd",
+    "alexscaves:footprint_pottery_sherd",
+    "alexscaves:guardian_pottery_sherd",
+    "alexscaves:hero_pottery_sherd",
+    "minecraft:angler_pottery_sherd",
+    "minecraft:archer_pottery_sherd",
+    "minecraft:arms_up_pottery_sherd",
+    "minecraft:blade_pottery_sherd",
+    "minecraft:brewer_pottery_sherd",
+    "minecraft:danger_pottery_sherd",
+    "minecraft:decorated_pot",
+    "minecraft:explorer_pottery_sherd",
+    "minecraft:friend_pottery_sherd",
+    "minecraft:heart_pottery_sherd",
+    "minecraft:heartbreak_pottery_sherd",
+    "minecraft:howl_pottery_sherd",
+    "minecraft:miner_pottery_sherd",
+    "minecraft:mourner_pottery_sherd",
+    "minecraft:plenty_pottery_sherd",
+    "minecraft:prize_pottery_sherd",
+    "minecraft:sheaf_pottery_sherd",
+    "minecraft:shelter_pottery_sherd",
+    "minecraft:skull_pottery_sherd",
+    "minecraft:snort_pottery_sherd",
+    "minecraft:suspicious_gravel",
+    "minecraft:suspicious_sand"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

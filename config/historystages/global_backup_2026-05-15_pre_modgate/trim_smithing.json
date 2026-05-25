@@ -1,0 +1,17 @@
+{
+  "display_name": "The Trim Smithing Arts",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "luminous_nether"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

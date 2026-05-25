@@ -1,10 +1,12 @@
 {
   "preventSearchIgnoredItems": false,
-  "ingredientDedupe": false,
-  "resourceLocationDedupe": false,
+  "ingredientDedupe": true,
+  "resourceLocationDedupe": true,
   "debugItemStackModifications": false,
   "logIntervalInMinutes": 10,
   "showSummaryOnDebugScreen": true,
   "memoryUsageWarningPercentage": 90,
-  "debugThreadsStuck": false
+  "debugThreadsStuck": false,
+  "skipTickingUnloadedFluxNetworks": true,
+  "entitySectionCME": false
 }

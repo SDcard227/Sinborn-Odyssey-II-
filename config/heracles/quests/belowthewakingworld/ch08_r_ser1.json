@@ -1,0 +1,59 @@
+{
+  "dependencies": ["ch08_ocean"],
+  "tasks": {
+    "sea_serpent": {
+      "title": "Find and kill a Sea Serpent (Ice & Fire — spawns in Deep Ocean biomes, requires Drowned World scroll)",
+      "icon": {"item": {"id": "iceandfire:sea_serpent_scale", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "sea_serpent_scale": {
+      "type": "heracles:item",
+      "item": "iceandfire:sea_serpent_scale",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "scales": {
+      "item": {"id": "iceandfire:sea_serpent_scale", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Serpent"},
+    "subtitle": {"text": "Before dragons ruled the sky, they ruled the sea."},
+    "description": [
+      "The Ice & Fire Sea Serpent is a massive aquatic predator.",
+      "It spawns in Deep Ocean biomes.",
+      "It requires the Drowned World scroll before it can be damaged.",
+      "",
+      "Sea Serpent Scales drop on kill.",
+      "They are crafting materials for Ice & Fire armor and items.",
+      "The sea serpent heart is a drop with brewing uses.",
+      "",
+      "The Cold Civilization's lore connects to ice serpents.",
+      "The Cold Eye — from Frostmaw's chain — comes from ice, not sea.",
+      "But both are remnants of civilizations that mastered cold.",
+      "",
+      "Ice & Fire creatures are part of the same inherited world.",
+      "",
+      "→ Kill a Sea Serpent [check]",
+      "→ Collect 8 Sea Serpent Scales"
+    ],
+    "groups": {"Below the Waking World": {"position": [-150, 300]}},
+    "icon": {"item": {"id": "iceandfire:sea_serpent_scale", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

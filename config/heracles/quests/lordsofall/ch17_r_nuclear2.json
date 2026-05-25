@@ -1,0 +1,66 @@
+{
+  "dependencies": ["ch17_r_nuclear1"],
+  "tasks": {
+    "cannon_mounted": {
+      "title": "Mount the Create Big Cannon with nuclear shell loaded — ready to fire at a safe target location",
+      "icon": {"item": {"id": "bigcannons:cannon_mount", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "nuclear_fired": {
+      "title": "Fire the Nuclear Shell at a designated test location — away from your settlement and structures",
+      "icon": {"item": {"id": "cannonukes:nuclear_shell", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "nuke_shell": {
+      "item": {"id": "cannonukes:nuclear_shell", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 16},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Trinity"},
+    "subtitle": {"text": "The test site is 50 blocks minimum from anything you do not want destroyed. That is not a joke."},
+    "description": [
+      "WARNING:",
+      "The Nuclear Shell creates a large explosion.",
+      "Do not fire it near your base, your settlement, or any structure you want to keep.",
+      "Pick a flat uninhabited area at least 50 blocks from anything important.",
+      "The explosion does not discriminate between structures.",
+      "",
+      "Mount the cannon pointing at your test site.",
+      "Load the nuclear shell.",
+      "Aim carefully.",
+      "Fire.",
+      "",
+      "The Create Big Cannon + Nuclear Shell combination is the highest-yield weapon",
+      "in this modpack. It is available to you because you built the infrastructure",
+      "and survived long enough to reach Ch17.",
+      "",
+      "The trinity test was July 16, 1945.",
+      "The people who built it spent the rest of their lives deciding what to do",
+      "with the knowledge that they had.",
+      "",
+      "You fired one shell at an empty field.",
+      "That is probably the right call.",
+      "",
+      "→ Mount cannon with nuclear shell [check]",
+      "→ Fire at a safe test location [check]"
+    ],
+    "groups": {"Lords of All": {"position": [-300, 150]}},
+    "icon": {"item": {"id": "bigcannons:cannon_mount", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "dependencies": ["ch06_r_spl2"],
+  "tasks": {
+    "ironbound_tome": {
+      "type": "heracles:item",
+      "item": "irons_spellbooks:ironbound_tome",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "arcane_essence_stack": {
+      "type": "heracles:item",
+      "item": "irons_spellbooks:arcane_essence",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "ring": {
+      "title": "Equip a Ring of Recovery or Ring of Mana in a Curio slot",
+      "icon": {"item": {"id": "irons_spellbooks:ring_of_recovery", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "ring_of_recovery": {
+      "item": {"id": "irons_spellbooks:ring_of_recovery", "count": 1},
+      "type": "heracles:item"
+    },
+    "arcane_ingot": {
+      "item": {"id": "irons_spellbooks:arcane_ingot", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Mana Network"},
+    "subtitle": {"text": "Power without capacity is just a short scream."},
+    "description": [
+      "Mana does not run dry if you understand it.",
+      "The Ring of Recovery slows the drain.",
+      "The Ironbound Tome holds 6 spells instead of 5.",
+      "",
+      "This is not about raw power.",
+      "It is about endurance — sustaining what you have",
+      "long enough for it to matter.",
+      "",
+      "Arcane Ingots come from combining Essence and Iron.",
+      "They unlock the higher crafting tier of ISS.",
+      "The Arcane Anvil upgrades scrolls to higher rarities.",
+      "Start building toward Uncommon.",
+      "",
+      "→ Craft an Ironbound Tome (6 spell slots)",
+      "→ Collect 16 Arcane Essence",
+      "→ Equip a Ring of Recovery or Ring of Mana [check]"
+    ],
+    "groups": {"The Scalded Earth": {"position": [-450, 0]}},
+    "icon": {"item": {"id": "irons_spellbooks:ironbound_tome", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

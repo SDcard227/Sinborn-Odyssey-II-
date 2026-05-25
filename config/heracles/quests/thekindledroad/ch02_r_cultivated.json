@@ -1,0 +1,117 @@
+{
+  "dependencies": [
+    "ch02_r_fd3"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/cultivated_table"
+    },
+    "fifteen_dishes": {
+      "title": "Cook 15 unique Farmer's Delight dishes — start building meal variety",
+      "icon": {
+        "item": {
+          "id": "farmersdelight:chicken_soup",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "tomato": {
+      "item": {
+        "id": "farmersdelight:tomato",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "cabbage": {
+      "item": {
+        "id": "farmersdelight:cabbage",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Cultivated Table"
+    },
+    "subtitle": {
+      "text": "Sixty-four recipes. Every one of them fills a different gap."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.02 · THE CULTIVATED TABLE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Farmer's Delight has 64+ unique recipes.",
+      "  Each one touches a different food group.",
+      "  Each one demands preparation.",
+      "  Each one is worth cooking at least once.",
+      "",
+      "◈ THE FULL KITCHEN",
+      "  └ Cutting Board: knife prep — slices, cuts, mince",
+      "  └ Skillet: fast cook on fire — bacon, eggs, steak",
+      "  └ Cooking Pot: slow soups — chicken soup, stew",
+      "  └ Stove (Farm & Charm): coal-powered, multi-slot",
+      "  └ Smoke Rack: smoked meat — adds preservation flavor",
+      "",
+      "◈ FOOD DESIRE SYSTEM",
+      "  └ The more types of food you eat, the better your stats",
+      "  └ FD is the primary engine for Diet coverage",
+      "  └ Cultural Delights (Ch05) adds sushi, avocado, more",
+      "  └ Youkai's Feasts (Ch05) adds 143+ dishes",
+      "",
+      "◈ SCROLL: The Cultivated Table",
+      "  └ Found in: village chef houses, cooking guild chests,",
+      "    road inns, kitchen ruins",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: full FD recipe awareness, Cultural Delights preview",
+      "",
+      "▸ The scroll is a recipe compendium.",
+      "  It doesn't teach you how to cook.",
+      "  It shows you what has been cooked before.",
+      "",
+      "▶ Find The Cultivated Table scroll [check]",
+      "▶ Cook 15 unique Farmer's Delight dishes [check]",
+      "",
+      "◇ Cultural Delights (Ch05) adds sushi, tamales,",
+      "  and avocado toast. The Cultivated Table scroll",
+      "  mentions them by name."
+    ],
+    "groups": {
+      "The Kindled Road": {
+        "position": [
+          -600,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "farmersdelight:cooking_pot",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

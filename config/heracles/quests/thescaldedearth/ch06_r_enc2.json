@@ -1,0 +1,70 @@
+{
+  "dependencies": ["ch06_r_enc1"],
+  "tasks": {
+    "more_bookshelves": {
+      "type": "heracles:item",
+      "item": "minecraft:chiseled_bookshelf",
+      "amount": 12,
+      "collection": "AUTOMATIC"
+    },
+    "setup_table": {
+      "title": "Place Ancient Books in Chiseled Bookshelves surrounding your Enchanting Table",
+      "icon": {"item": {"id": "minecraft:enchanting_table", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "first_enchant": {
+      "title": "Enchant an item using Immersive Enchanting's skill tree",
+      "icon": {"item": {"id": "minecraft:iron_sword", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "diamond": {
+      "item": {"id": "minecraft:diamond", "count": 2},
+      "type": "heracles:item"
+    },
+    "lapis": {
+      "item": {"id": "minecraft:lapis_lazuli", "count": 32},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Right Bookshelves"},
+    "subtitle": {"text": "The bookshelf is doing more work than it looks like."},
+    "description": [
+      "The Chiseled Bookshelf holds Ancient Books.",
+      "The Enchanting Table reads them.",
+      "This is not magic — this is infrastructure.",
+      "",
+      "The difference between random power and reliable power",
+      "is whether someone organized the knowledge first.",
+      "",
+      "Must unlock I → II → III → IV sequentially.",
+      "Cannot jump to Efficiency IV early.",
+      "Enchanting costs materials now, not XP.",
+      "`BookshelfSearchHeight` in config controls Y-scan range.",
+      "",
+      "You need 15 Chiseled Bookshelves at full setup.",
+      "Start filling them now.",
+      "",
+      "→ Craft 12 more Chiseled Bookshelves (15 total for max power)",
+      "→ Place Ancient Books around your Enchanting Table [check]",
+      "→ Enchant an item using the new skill tree [check]"
+    ],
+    "groups": {"The Scalded Earth": {"position": [300, 450]}},
+    "icon": {"item": {"id": "minecraft:enchanting_table", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

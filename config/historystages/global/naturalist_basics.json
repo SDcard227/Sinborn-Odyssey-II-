@@ -1,0 +1,33 @@
+{
+  "display_name": "On Sniffers, Frogs, and Mangroves",
+  "research_time": 1500,
+  "items": [
+    "minecraft:mangrove_boat",
+    "minecraft:mangrove_door",
+    "minecraft:mangrove_fence",
+    "minecraft:mangrove_hanging_sign",
+    "minecraft:mangrove_leaves",
+    "minecraft:mangrove_log",
+    "minecraft:mangrove_planks",
+    "minecraft:mangrove_roots",
+    "minecraft:mangrove_sign",
+    "minecraft:mangrove_slab",
+    "minecraft:mangrove_stairs",
+    "minecraft:mangrove_trapdoor",
+    "minecraft:mangrove_wood",
+    "minecraft:pitcher_crop",
+    "minecraft:torchflower"
+  ],
+  "tags": [],
+  "mods": [
+    "immersive_weathering"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

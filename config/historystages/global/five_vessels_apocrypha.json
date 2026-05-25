@@ -1,0 +1,23 @@
+{
+  "display_name": "The Five Vessels Apocrypha",
+  "research_time": 28800,
+  "items": [
+    "dungeons_and_combat:crimson_long_sword",
+    "dungeons_and_combat:crimson_scythe",
+    "dungeons_and_combat:crimson_sickle",
+    "dungeons_and_combat:crimson_sickle_sword",
+    "dungeons_and_combat:monarch_chestplate",
+    "dungeons_and_combat:monarch_leggings",
+    "irons_spellbooks:gold_crown"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

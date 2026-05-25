@@ -1,0 +1,114 @@
+{
+  "dependencies": [
+    "ch03_r_armorcraft"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/scales_and_steel"
+    },
+    "class_learn": {
+      "title": "Learn your Dungeons & Combat class — right-click the Class Book item to select your archetype",
+      "icon": {
+        "item": {
+          "id": "minecraft:book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "iron": {
+      "item": {
+        "id": "minecraft:iron_ingot",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Scales & Steel"
+    },
+    "subtitle": {
+      "text": "Dungeons & Combat adds six combat classes. They are not suggestions."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.03 · SCALES & STEEL",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Dungeons & Combat adds a class system,",
+      "  new armor sets, new weapons, new combat feel.",
+      "  It changes how armor and damage interact at every tier.",
+      "",
+      "◈ D&C CLASSES",
+      "  └ Forgotten Knight — heavy armor, shield mastery",
+      "    bonus: damage reduction scales with armor weight",
+      "  └ Titan — strength build, slow but hits hard",
+      "    bonus: bonus damage at low health",
+      "  └ Oni Slayer — agile striker, light armor",
+      "    bonus: attack speed and dual wield bonus",
+      "  └ Exiled — cursed fighter, dark magic affinity",
+      "    bonus: life steal on hit",
+      "  └ + 2 unknown unlockable classes",
+      "    discovered through boss drop class books",
+      "",
+      "◈ DAMAGE SYSTEM",
+      "  └ D&C adds armor penetration to some weapons",
+      "  └ Shields block more damage from heavier attacks",
+      "  └ Attack type matters: slash vs pierce vs blunt",
+      "  └ Material scaling: diamond vs netherite weapon gap is real",
+      "",
+      "◈ SCROLL: Scales & Steel",
+      "  └ Found in: warrior barracks, combat guild archives,",
+      "    dungeon treasuries, boss loot chests",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: full D&C class awareness, damage scaling knowledge",
+      "",
+      "▸ The scroll reads like a contract.",
+      "  Choose a way of fighting.",
+      "  The world will test whether you chose correctly.",
+      "",
+      "▶ Find the Scales & Steel scroll [check]",
+      "▶ Learn your D&C class [check]",
+      "",
+      "◇ Each D&C class has a unique armor set.",
+      "  Forgotten Knight armor drops from the class dungeon.",
+      "  Ch11 boss chain drops class-specific gear."
+    ],
+    "groups": {
+      "The Rotting Gate": {
+        "position": [
+          -600,
+          450
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:iron_chestplate",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

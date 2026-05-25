@@ -1,0 +1,61 @@
+{
+  "dependencies": ["ch16_world"],
+  "tasks": {
+    "etched_record": {
+      "title": "Craft an Etched music disc (Etched mod — engrave custom music onto a disc)",
+      "icon": {"item": {"id": "etched:music_disc", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "xerca_instrument": {
+      "title": "Obtain or craft a Xerca instrument (Xerca mod — playable instruments for settlements)",
+      "icon": {"item": {"id": "xerca:lute", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "music_disc": {
+      "item": {"id": "minecraft:music_disc_11", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Music in the Kingdom"},
+    "subtitle": {"text": "The previous civilizations left artifacts. You are leaving music. That is a different kind of inheritance."},
+    "description": [
+      "Etched lets you engrave music from any audio source onto custom discs.",
+      "The discs play in jukeboxes.",
+      "Your kingdom now has a soundtrack.",
+      "",
+      "Xerca adds playable instruments:",
+      "Lutes, flutes, harps, and other instruments that produce real audio.",
+      "They can be played manually or through note blocks.",
+      "MCA Reborn villagers in your settlement will respond to music.",
+      "",
+      "Music is not a survival mechanic.",
+      "It is a civilization mechanic.",
+      "The first human settlements had music before they had agriculture.",
+      "Music is earlier than farming. It is earlier than building.",
+      "It is what people do when they have enough.",
+      "",
+      "You have enough.",
+      "",
+      "→ Craft an Etched music disc [check]",
+      "→ Obtain a Xerca instrument [check]"
+    ],
+    "groups": {"The Long Road Home": {"position": [-150, 150]}},
+    "icon": {"item": {"id": "xerca:lute", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

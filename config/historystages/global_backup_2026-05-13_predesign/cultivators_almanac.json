@@ -1,0 +1,24 @@
+{
+  "display_name": "Hearthbound Cookery",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "meadow",
+    "seasonal_lets_do",
+    "sereneseasons",
+    "sereneseasonsplus",
+    "lunar",
+    "corn_delight",
+    "seeddelight",
+    "veggiesdelight",
+    "l2harvester",
+    "cbbees",
+    "sliceanddice"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

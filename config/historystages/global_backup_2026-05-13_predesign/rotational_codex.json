@@ -1,0 +1,28 @@
+{
+  "display_name": "The Rotational Codex",
+  "research_time": 3600,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "create",
+    "createadditionallogistics",
+    "create_factory_logistics",
+    "create_mobile_packages",
+    "createnumrec",
+    "createnv",
+    "cmpackagecouriers",
+    "createdeco",
+    "create_central_kitchen",
+    "create_food",
+    "create_some_assembly_required",
+    "sliceanddice",
+    "createaddition",
+    "create_connected",
+    "create_sa"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

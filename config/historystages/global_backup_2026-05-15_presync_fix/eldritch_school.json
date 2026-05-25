@@ -1,0 +1,25 @@
+{
+  "display_name": "The Eldritch School",
+  "research_time": 3600,
+  "items": [
+    "irons_spellbooks:eldritch_essence",
+    "irons_spellbooks:eldritch_rune",
+    "irons_spellbooks:scroll_void_blade",
+    "irons_spellbooks:scroll_abyssal_shroud",
+    "irons_spellbooks:scroll_eldritch_blast",
+    "irons_spellbooks:scroll_planar_binding",
+    "irons_spellbooks:scroll_void_tentacles",
+    "irons_spellbooks:scroll_chronomancy",
+    "irons_spellbooks:necronomicon_spell_book"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "display_name": "On the Drowned World",
+  "research_time": 3600,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "aquamirae",
+    "aquamirae_delight",
+    "tide",
+    "tidesdelight",
+    "oceansdelight",
+    "oceanic_delight",
+    "aquaculturedelight",
+    "finsandtails",
+    "aquacombat"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": ["aquamirae:captain_cornelia", "aquamirae:eel"],
+    "spawnlock": []
+  }
+}

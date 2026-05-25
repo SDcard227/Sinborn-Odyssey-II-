@@ -1,0 +1,19 @@
+{
+  "display_name": "Scrollcasting",
+  "research_time": 5400,
+  "items": [
+    "irons_spellbooks:scroll_pouch"
+  ],
+  "tags": [],
+  "mods": [
+    "cataclysm_spellbooks"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

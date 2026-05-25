@@ -1,0 +1,17 @@
+{
+  "display_name": "On Echo of Tyros",
+  "research_time": 5400,
+  "items": [
+    "mythsandlegends:scorched_bone"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

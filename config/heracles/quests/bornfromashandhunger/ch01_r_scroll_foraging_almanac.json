@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Forager's Almanac scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Forager's Almanac scroll",
+      "icon": {
+        "item": {
+          "id": "fruitsdelight:apple_cauldron",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock foraging_almanac"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Forager's Almanac"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Sun-cult records. Painted on bone.\"",
+      "",
+      "Vanilla + Foragers Insight: berries, apples, wild plants. Replaces cultivators_almanac empty marker.",
+      "",
+      "This scroll unlocks 303 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Mowziesmobs:Chests/Umvuthana Grove Chest",
+      "  \u00b7 Jungle Temple",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Forager's Almanac] [auto]"
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          600,
+          900
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "fruitsdelight:apple_cauldron",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

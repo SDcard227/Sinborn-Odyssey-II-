@@ -1,0 +1,19 @@
+{
+  "display_name": "The Lost Void",
+  "research_time": 7200,
+  "items": [
+    "true_end:beyond_the_dream_egg",
+    "true_end:nightmare_egg",
+    "true_end:unknown_spawn_egg"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

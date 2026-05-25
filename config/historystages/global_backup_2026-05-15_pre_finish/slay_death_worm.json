@@ -1,0 +1,17 @@
+{
+  "display_name": "Slaying the Death Worm",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "iceandfire:deathworm"
+    ],
+    "spawnlock": []
+  }
+}

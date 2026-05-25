@@ -1,0 +1,27 @@
+{
+  "display_name": "Alchemy",
+  "research_time": 4200,
+  "items": [
+    "minecraft:blaze_powder",
+    "minecraft:dragon_breath",
+    "minecraft:experience_bottle",
+    "minecraft:fermented_spider_eye",
+    "minecraft:fire_charge",
+    "minecraft:lingering_potion",
+    "minecraft:potion",
+    "minecraft:splash_potion",
+    "minecraft:tipped_arrow"
+  ],
+  "tags": [],
+  "mods": [
+    "infusedfoods"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

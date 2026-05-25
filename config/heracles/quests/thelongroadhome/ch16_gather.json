@@ -1,0 +1,64 @@
+{
+  "dependencies": ["ch16_world"],
+  "tasks": {
+    "celestial_cluster": {
+      "title": "Collect 16 Celestial Dust (Celestisynth — sustained End farming run needed)",
+      "icon": {"item": {"id": "celestisynth:celestial_dust", "count": 16}, "type": "heracles:item"},
+      "amount": 16,
+      "collection": "AUTOMATIC",
+      "type": "heracles:item"
+    },
+    "end_crystal_gem": {
+      "title": "Collect End Crystal fragments or Celestisynth-specific End gems for the Netherite fusion",
+      "icon": {"item": {"id": "minecraft:end_crystal", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "celestial_dust": {
+      "item": {"id": "celestisynth:celestial_dust", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Celestial Gathering"},
+    "subtitle": {"text": "The End gives abundantly if you know where to look. You know where to look now."},
+    "description": [
+      "16 Celestial Dust is the material investment for a full Celestisynth gear set.",
+      "The End City expeditions from Ch14 gave you the navigation skills.",
+      "This is a sustained gathering run — not a boss fight.",
+      "",
+      "Celestial Dust sources:",
+      "- End City chest loot",
+      "- Specific End structures that generate outer islands",
+      "- Possibly crafted from End materials + specific processes",
+      "- Check the Celestisynth mod's JEI recipes for exact processing",
+      "",
+      "The Elytra from Ch13 makes this efficient.",
+      "Fly between islands. Loot. Return.",
+      "The Shulker Boxes from Ch13-14 hold the haul.",
+      "",
+      "This is the long road home as logistics:",
+      "you know how to navigate the End now.",
+      "The End is a supply chain.",
+      "",
+      "→ Collect 16 Celestial Dust [collect]",
+      "→ Gather End Crystal fusion materials [check]"
+    ],
+    "groups": {"The Long Road Home": {"position": [0, 150]}},
+    "icon": {"item": {"id": "celestisynth:celestial_dust", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

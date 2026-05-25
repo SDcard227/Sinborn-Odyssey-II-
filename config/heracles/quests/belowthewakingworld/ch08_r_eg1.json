@@ -1,0 +1,92 @@
+{
+  "dependencies": [
+    "ch08_ocean"
+  ],
+  "tasks": {
+    "elder_guardian": {
+      "type": "heracles:kill_entity",
+      "entity": "minecraft:elder_guardian",
+      "amount": 1
+    },
+    "sponge": {
+      "type": "heracles:item",
+      "item": "minecraft:sponge",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    },
+    "prismarine_shard": {
+      "type": "heracles:item",
+      "item": "minecraft:prismarine_shard",
+      "amount": 32,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "prismarine_block": {
+      "item": {
+        "id": "minecraft:dark_prismarine",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 12
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Elder"
+    },
+    "subtitle": {
+      "text": "It guards something it has forgotten. That is the saddest kind of guard."
+    },
+    "description": [
+      "The Elder Guardian is the Ocean Monument's central boss.",
+      "Mining Fatigue afflicts anyone who approaches.",
+      "Milk neutralizes it. Bring milk.",
+      "",
+      "The Elder Guardian drops Sponge — the only non-Silk Touch way",
+      "to clear flooded structures. Use it. The monument floods.",
+      "",
+      "More importantly: the Elder Guardian's death is the beginning",
+      "of the Guardian Eye chain.",
+      "It drops materials needed for `endrem:guardian_eye` — the Ocean Eye.",
+      "The recipe requires custom crafting. Read the Eye scroll when you find it.",
+      "",
+      "Prismarine builds Sea Lanterns and conduit structures.",
+      "The monument is also a resource node if you clear it.",
+      "",
+      "→ Kill the Elder Guardian [check]",
+      "→ Collect 8 Sponges",
+      "→ Collect 32 Prismarine Shards"
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          -150,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:sponge",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

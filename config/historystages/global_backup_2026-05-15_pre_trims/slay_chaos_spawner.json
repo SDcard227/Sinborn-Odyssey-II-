@@ -1,0 +1,17 @@
+{
+  "display_name": "Slaying the Chaos Spawner",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "dungeonnowloading:chaos_spawner"
+    ],
+    "spawnlock": []
+  }
+}

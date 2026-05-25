@@ -1,0 +1,4 @@
+{
+  "_comment": "Maps biome IDs to tunnel facade blocks. Overrides the default tunnelFacadeBlock for matched biomes. Use F3 in-game to see biome IDs.",
+  "biome_overrides": {}
+}

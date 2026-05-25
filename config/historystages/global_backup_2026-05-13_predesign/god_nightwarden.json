@@ -1,0 +1,18 @@
+{
+  "display_name": "On the Nightwarden",
+  "research_time": 28800,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "traveloptics:the_nightwarden",
+      "traveloptics:enraged_dead_king"
+    ],
+    "spawnlock": []
+  }
+}

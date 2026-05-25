@@ -1,0 +1,17 @@
+{
+  "display_name": "Dragon Priest Arts",
+  "research_time": 3600,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "mowziesmobs"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": ["mowziesmobs:barako", "mowziesmobs:umvuthi", "mowziesmobs:sculptor", "mowziesmobs:ferrous_wroughtnaut", "mowziesmobs:frostmaw"],
+    "spawnlock": []
+  }
+}

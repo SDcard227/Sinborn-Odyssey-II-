@@ -1,0 +1,22 @@
+{
+  "display_name": "Symbiont Pursuit",
+  "research_time": 10800,
+  "items": [
+    "witherstormmod:command_block",
+    "witherstormmod:formidibomb",
+    "witherstormmod:super_beacon",
+    "witherstormmod:super_support_beacon",
+    "witherstormmod:super_tnt",
+    "witherstormmod:tainted_dust"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

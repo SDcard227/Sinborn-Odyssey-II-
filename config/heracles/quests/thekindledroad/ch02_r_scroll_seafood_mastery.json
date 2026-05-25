@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Seafood Mastery scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Seafood Mastery scroll",
+      "icon": {
+        "item": {
+          "id": "alexsmobs:cooked_catfish",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock seafood_mastery"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Seafood Mastery"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Buried under what they froze themselves into.\"",
+      "",
+      "Ocean foods, sushi, prepared fish.",
+      "",
+      "This scroll unlocks 378 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Cataclysm:Chests/Frosted Prison Treasure",
+      "  \u00b7 Aquamirae:Chests/Ship 1",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Seafood Mastery] [auto]"
+    ],
+    "groups": {
+      "The Kindled Road": {
+        "position": [
+          530,
+          1107
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "alexsmobs:cooked_catfish",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

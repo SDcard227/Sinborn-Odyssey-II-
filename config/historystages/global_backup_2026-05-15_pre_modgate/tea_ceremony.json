@@ -1,0 +1,24 @@
+{
+  "display_name": "The Tea Ceremony",
+  "research_time": 2700,
+  "items": [
+    "delightful:azalea_tea",
+    "delightful:green_tea_leaf",
+    "delightful:lavender_tea",
+    "foragersinsight:dandelion_root_tea",
+    "irons_spellbooks:casters_tea"
+  ],
+  "tags": [],
+  "mods": [
+    "farm_and_charm",
+    "herbalbrews"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

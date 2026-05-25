@@ -1,0 +1,61 @@
+{
+  "dependencies": ["ch03_press"],
+  "tasks": {
+    "belt": {
+      "type": "heracles:item",
+      "item": "create:belt",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "funnel": {
+      "type": "heracles:item",
+      "item": "create:funnel",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "auto": {
+      "title": "Build a fully automated item-processing line",
+      "icon": {"item": {"id": "create:belt", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "brass_cog": {
+      "item": {"id": "create:brass_casing", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Shaft and Belt"},
+    "subtitle": {"text": "Automation is just patience made mechanical."},
+    "description": [
+      "The Belt moves items. The Funnel inputs and outputs them.",
+      "Connect them and the machine runs without you.",
+      "",
+      "This is the principle that scales to every Create structure:",
+      "extractors → belts → processors → outputs.",
+      "",
+      "Build one automated line. Watch it run.",
+      "The first one always surprises you.",
+      "",
+      "→ Craft a Belt",
+      "→ Craft 4 Funnels",
+      "→ Build an automated processing line [check]"
+    ],
+    "groups": {"The Rotting Gate": {"position": [0, 450]}},
+    "icon": {"item": {"id": "create:belt", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

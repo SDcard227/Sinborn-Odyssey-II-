@@ -1,0 +1,15 @@
+{
+  "display_name": "The Legendary Arsenal: Named Hafted",
+  "research_time": 18000,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

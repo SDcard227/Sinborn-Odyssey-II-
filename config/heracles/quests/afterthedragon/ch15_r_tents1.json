@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch15_world"],
+  "tasks": {
+    "simply_tent": {
+      "title": "Set up a Simply Tents tent camp near your base — set respawn to CAMP mode",
+      "icon": {"item": {"id": "simplytents:small_tent", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "hammock": {
+      "title": "Place a Comforts hammock in your base (does NOT set respawn — for comfort and sleep only)",
+      "icon": {"item": {"id": "comforts:hammock", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "tent": {
+      "item": {"id": "simplytents:small_tent", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Rest Well"},
+    "subtitle": {"text": "You have been fighting since Ch01. You are allowed to sleep now."},
+    "description": [
+      "Two sleep mods. Different functions.",
+      "",
+      "Simply Tents:",
+      "Craft a tent and place it in the world.",
+      "CAMP mode sets the respawn to the tent's location.",
+      "SHELTER mode gives basic protection without respawn binding.",
+      "Tents are portable. Use them as mobile bases during exploration.",
+      "",
+      "Comforts:",
+      "Hammocks do not set respawn — they are for comfort only.",
+      "Sleeping in a hammock skips time without the respawn risk.",
+      "Place a hammock in your base for a home rest.",
+      "Place a tent in the field for respawn safety.",
+      "Use the right tool for the right situation.",
+      "",
+      "After the End, rest is not laziness. It is recovery.",
+      "The adventure is over.",
+      "You earned the hammock.",
+      "",
+      "→ Set up a Simply Tents camp with CAMP respawn [check]",
+      "→ Place a Comforts hammock in your base [check]"
+    ],
+    "groups": {"After the Dragon": {"position": [-150, 0]}},
+    "icon": {"item": {"id": "comforts:hammock", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "dependencies": ["ch14_r_end1"],
+  "tasks": {
+    "enders_delight": {
+      "title": "Cook an Enderman Steak (Ender's Delight — not End's Delight — from Enderman kills)",
+      "icon": {"item": {"id": "endersdelight:enderman_steak", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "shulker_soup": {
+      "title": "Craft Shulker Soup (Ender's Delight — uses shulker shells + End materials)",
+      "icon": {"item": {"id": "endersdelight:shulker_soup", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "enderman_steak": {
+      "item": {"id": "endersdelight:enderman_steak", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Entire End, Cooked"},
+    "subtitle": {"text": "Two mods. Two food systems. One dimension. Eat everything."},
+    "description": [
+      "NOTE: Two different mods, both about End food.",
+      "End's Delight (ends_delight:) — Ender Dragon food chain.",
+      "Ender's Delight (endersdelight:) — Enderman and Shulker food chain.",
+      "They are compatible and separate systems.",
+      "",
+      "Enderman Steak comes from Enderman kills, processed in a smoker.",
+      "Endermen are abundant. The steak gives moderate saturation.",
+      "",
+      "Shulker Soup uses Shulker Shells — the same drops you need for Shulker Boxes.",
+      "Prioritize boxes. The soup is secondary.",
+      "But cook it at least once.",
+      "",
+      "The complete End food ecosystem:",
+      "Dragon (ends_delight) → Enderman (endersdelight) → Shulker (endersdelight) → Chorus (vanilla)",
+      "Everything in this dimension is edible.",
+      "You have eaten across every biome in the game now.",
+      "Diet mod is watching.",
+      "",
+      "→ Cook Enderman Steak (Ender's Delight) [check]",
+      "→ Craft Shulker Soup (Ender's Delight) [check]"
+    ],
+    "groups": {"What the Void Remembers": {"position": [-300, 0]}},
+    "icon": {"item": {"id": "endersdelight:enderman_steak", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

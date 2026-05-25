@@ -1,0 +1,26 @@
+{
+  "display_name": "The Holy School",
+  "research_time": 2700,
+  "items": [
+    "irons_spellbooks:holy_essence",
+    "irons_spellbooks:holy_rune",
+    "irons_spellbooks:scroll_bless",
+    "irons_spellbooks:scroll_divine_smite",
+    "irons_spellbooks:scroll_guiding_bolt",
+    "irons_spellbooks:scroll_heart_stop",
+    "irons_spellbooks:scroll_holy_ray",
+    "irons_spellbooks:scroll_sun_strike",
+    "irons_spellbooks:scroll_sunbeam",
+    "irons_spellbooks:scroll_thunderstorm"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

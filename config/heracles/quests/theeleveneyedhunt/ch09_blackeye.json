@@ -1,0 +1,61 @@
+{
+  "dependencies": ["ch09_cockatrice"],
+  "tasks": {
+    "black_eye": {
+      "type": "heracles:item",
+      "item": "endrem:black_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "lightning_ingot": {
+      "type": "heracles:item",
+      "item": "iceandfire:dragonsteel_lightning_ingot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "black_eye_bonus": {
+      "item": {"id": "endrem:black_eye", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 5},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Black Eye"},
+    "subtitle": {"text": "The first inheritance. Twelve confirmations needed. One completed."},
+    "description": [
+      "The Black Eye recipe requires:",
+      "- Cockatrice Eye (center)",
+      "- Dragonsteel Lightning Ingot (Lightning Dragon scale → Dragonsteel)",
+      "- desert:rift (found in desert dungeon chests)",
+      "- witherstormmod:withered_spider_eye (Wither Storm drops)",
+      "- celestisynth:starstruck_scrap (Celestisynth boss chain)",
+      "",
+      "Some ingredients come from bosses you haven't fought yet.",
+      "Gather what you can. The remaining ingredients arrive in later chapters.",
+      "Each eye is a chain — not a single kill.",
+      "",
+      "Picking up the Black Eye triggers the eye_hunt_age.",
+      "The Eye Hunt is now officially open.",
+      "You have twelve to find. You have one.",
+      "",
+      "→ Craft the Black Eye (see eye_recipes.js for full recipe)",
+      "→ Obtain a Dragonsteel Lightning Ingot [check]"
+    ],
+    "groups": {"The Eleven-Eyed Hunt": {"position": [0, 300]}},
+    "icon": {"item": {"id": "endrem:black_eye", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

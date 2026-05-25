@@ -1,0 +1,55 @@
+{
+  "dependencies": ["ch10_electric"],
+  "tasks": {
+    "magnets": {
+      "title": "Attach 6+ Magnets to a Generator Coil to increase FE output",
+      "icon": {"item": {"id": "create_new_age:magnet", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "carbon_brush": {
+      "title": "Attach Carbon Brushes to the Generator Coil for efficiency",
+      "icon": {"item": {"id": "create_new_age:carbon_brush", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "steel": {
+      "item": {"id": "tfmg:steel_ingot", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Maximum Output"},
+    "subtitle": {"text": "12 magnets. Full carbon brush contact. The generator does not negotiate."},
+    "description": [
+      "Create: New Age Generator Coils scale with attachments.",
+      "Up to 12 Magnets increase FE output per SU consumed.",
+      "Carbon Brushes improve energy conversion efficiency.",
+      "",
+      "The generator is the bridge between Create rotational power",
+      "and Forge Energy (FE) used by other tech mods.",
+      "",
+      "Nuclear Reactor → Generator Coil → FE output → Electric Motor → rotation.",
+      "Full electrical loop. No combustion required.",
+      "No Blaze Burners. No water wheels. Pure nuclear.",
+      "",
+      "→ Add 6+ Magnets to a Generator Coil [check]",
+      "→ Attach Carbon Brushes for efficiency [check]"
+    ],
+    "groups": {"The Pale Shore": {"position": [150, 0]}},
+    "icon": {"item": {"id": "create_new_age:magnet", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

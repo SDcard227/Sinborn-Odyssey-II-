@@ -1,0 +1,61 @@
+{
+  "dependencies": ["ch06_world"],
+  "tasks": {
+    "arcane_essence": {
+      "type": "heracles:item",
+      "item": "irons_spellbooks:arcane_essence",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    },
+    "inscription_table": {
+      "type": "heracles:item",
+      "item": "irons_spellbooks:inscription_table",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "journal": {
+      "item": {"id": "irons_spellbooks:flimsy_journal", "count": 1},
+      "type": "heracles:item"
+    },
+    "essence": {
+      "item": {"id": "irons_spellbooks:arcane_essence", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The First Inscription"},
+    "subtitle": {"text": "Not everything the Nether produces is fire."},
+    "description": [
+      "The Nether contains arcane residue from whoever was there before.",
+      "Arcane Essence is the crystallized byproduct of magic",
+      "displaced by heat and pressure over centuries.",
+      "",
+      "You didn't discover magic.",
+      "Someone lost it here.",
+      "",
+      "The Inscription Table is how you reclaim it.",
+      "Spell Scrolls inscribed into Spellbooks. Magic stored, not scattered.",
+      "What was lost to the Nether can be put back in order.",
+      "",
+      "→ Collect 8 Arcane Essence (drops from ISS mobs and structures)",
+      "→ Craft an Inscription Table"
+    ],
+    "groups": {"The Scalded Earth": {"position": [-150, 0]}},
+    "icon": {"item": {"id": "irons_spellbooks:inscription_table", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

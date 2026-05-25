@@ -1,0 +1,17 @@
+{
+  "display_name": "Slaying the Hippogryph",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "iceandfire:hippogryph"
+    ],
+    "spawnlock": []
+  }
+}

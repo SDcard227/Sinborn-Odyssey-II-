@@ -1,0 +1,64 @@
+{
+  "dependencies": ["ch07_r_cbc1"],
+  "tasks": {
+    "small_ship": {
+      "title": "Build and sail a Small Ships vessel (Cog, Brigg, Galley, or Drakkar)",
+      "icon": {"item": {"id": "smallships:cog", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "sail": {
+      "type": "heracles:item",
+      "item": "smallships:sail",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "ocean_route": {
+      "title": "Travel at least 500 blocks by sea using a Small Ship",
+      "icon": {"item": {"id": "smallships:brigg", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "ship_bonus": {
+      "item": {"id": "smallships:sail", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Sea Route"},
+    "subtitle": {"text": "Rail ends at the coast. The ship continues where the train cannot."},
+    "description": [
+      "Small Ships adds four vessel types.",
+      "Cog: 108 slots, 4 cannons, 5 passengers, 40 km/h.",
+      "Brigg: 162 slots, 6 cannons, 11 passengers, 45 km/h.",
+      "Galley: 54 slots, 0 cannons, 9 passengers, 40 km/h.",
+      "Drakkar: 54 slots, 0 cannons, 11 passengers, 30 km/h.",
+      "",
+      "Craft the Sail first (5 wool + 2 stripped logs + 2 leads).",
+      "Then craft the ship item. Place in water with enough clearance.",
+      "R = open/close sails. W/S = lower/raise.",
+      "",
+      "Ocean routes will become critical in Ch08.",
+      "Start building that habit now.",
+      "",
+      "→ Build a Small Ship and sail it [check]",
+      "→ Craft 2 Sails",
+      "→ Travel 500+ blocks by sea [check]"
+    ],
+    "groups": {"Blood and Oil": {"position": [300, 450]}},
+    "icon": {"item": {"id": "smallships:cog", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

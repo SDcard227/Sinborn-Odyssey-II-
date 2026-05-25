@@ -1,0 +1,61 @@
+{
+  "dependencies": ["ch02_world"],
+  "tasks": {
+    "cutting_board": {
+      "type": "heracles:item",
+      "item": "farmersdelight:cutting_board",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "skillet": {
+      "type": "heracles:item",
+      "item": "farmersdelight:skillet",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "tomato": {
+      "item": {"id": "farmersdelight:tomato", "count": 8},
+      "type": "heracles:item"
+    },
+    "onion": {
+      "item": {"id": "farmersdelight:onion", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Cutting Board"},
+    "subtitle": {"text": "Knife work came before cookbooks."},
+    "description": [
+      "Farmer's Delight changes what cooking means.",
+      "",
+      "The Cutting Board: place food, use a knife.",
+      "Yields components no other recipe produces.",
+      "Pork pieces from porkchops. Tomato slices from tomatoes.",
+      "",
+      "The Skillet: sits over fire, cooks fast.",
+      "Fried eggs. Bacon strips. Mushroom rice.",
+      "",
+      "Learn these two tools. Everything else builds on them.",
+      "",
+      "→ Craft a Cutting Board",
+      "→ Craft a Skillet"
+    ],
+    "groups": {"The Kindled Road": {"position": [-150, 0]}},
+    "icon": {"item": {"id": "farmersdelight:cutting_board", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

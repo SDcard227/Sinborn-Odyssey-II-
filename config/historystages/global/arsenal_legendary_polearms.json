@@ -1,0 +1,23 @@
+{
+  "display_name": "The Legendary Arsenal: Named Hafted",
+  "research_time": 18000,
+  "items": [
+    "simplymore:legendary_banglum_great_spear",
+    "simplymore:legendary_banglum_lance",
+    "simplymore:legendary_banglum_pernach",
+    "simplymore:legendary_banglum_quarterstaff",
+    "simplyswords:magiscythe",
+    "simplyswords:magispear",
+    "simplyswords:watching_warglaive"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

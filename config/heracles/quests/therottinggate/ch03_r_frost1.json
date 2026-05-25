@@ -1,0 +1,55 @@
+{
+  "dependencies": ["ch03_world"],
+  "tasks": {
+    "snow": {
+      "type": "heracles:item",
+      "item": "minecraft:snowball",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "peaks": {
+      "title": "Reach a frozen peaks or jagged peaks biome",
+      "icon": {"item": {"id": "minecraft:powder_snow_bucket", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coal": {
+      "item": {"id": "minecraft:coal", "count": 16},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Cold Mountain"},
+    "subtitle": {"text": "Frostmaw is up there. It is always up there."},
+    "description": [
+      "Mowzie's Mobs puts the Frostmaw in frozen peaks.",
+      "A colossus of ice and muscle.",
+      "It has been there since before you arrived.",
+      "",
+      "You are not ready to fight it yet.",
+      "But knowing where it is — that is the first step.",
+      "",
+      "Cold Sweat: high altitude increases heat loss.",
+      "Bring cooked food. Bring extra torches.",
+      "",
+      "→ Collect 16 snowballs",
+      "→ Reach frozen or jagged peaks [check]"
+    ],
+    "groups": {"The Rotting Gate": {"position": [150, 0]}},
+    "icon": {"item": {"id": "minecraft:packed_ice", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "display_name": "The Blood School",
+  "research_time": 3600,
+  "items": [
+    "irons_spellbooks:blood_essence",
+    "irons_spellbooks:blood_rune",
+    "irons_spellbooks:blood_staff",
+    "irons_spellbooks:scroll_acupuncture",
+    "irons_spellbooks:scroll_blood_needles",
+    "irons_spellbooks:scroll_blood_slash",
+    "irons_spellbooks:scroll_blood_step",
+    "irons_spellbooks:scroll_devour",
+    "irons_spellbooks:scroll_heartstop",
+    "irons_spellbooks:scroll_ray_of_siphoning",
+    "irons_spellbooks:scroll_withering_strike"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

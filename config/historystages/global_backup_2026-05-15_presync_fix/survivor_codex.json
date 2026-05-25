@@ -1,0 +1,35 @@
+{
+  "display_name": "Survivor Codex",
+  "research_time": 25,
+  "items": [
+    "cold_sweat:waterskin",
+    "thirst:waterskin",
+    "thirst:purifier",
+    "comforts:sleeping_bag_white",
+    "comforts:sleeping_bag_gray",
+    "comforts:sleeping_bag_black",
+    "comforts:sleeping_bag_brown",
+    "simplytents:zip_tent",
+    "minecraft:torch",
+    "minecraft:lantern",
+    "minecraft:campfire",
+    "minecraft:bread",
+    "minecraft:flint_and_steel",
+    "minecraft:bucket",
+    "minecraft:water_bucket",
+    "food_desire:diet_book",
+    "heracles:quest_book",
+    "solonion:food_book",
+    "minecraft:spyglass"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

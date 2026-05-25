@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Beehive Logistics scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Beehive Logistics scroll",
+      "icon": {
+        "item": {
+          "id": "cbbees:incomplete_mechanical_beehive",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock beehive_logistics"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Beehive Logistics"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Sun-cult records. Painted on bone.\"",
+      "",
+      "Create Buzzy Beez + vanilla beehives.",
+      "",
+      "This scroll unlocks 10 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Mowziesmobs:Chests/Umvuthana Grove Chest",
+      "  \u00b7 Jungle Temple",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Beehive Logistics] [auto]"
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          950,
+          900
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "cbbees:incomplete_mechanical_beehive",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "dependencies": ["ch16_world"],
+  "tasks": {
+    "brigg": {
+      "title": "Build a Small Ships Brigg — the mid-tier sailing vessel (Small Ships mod)",
+      "icon": {"item": {"id": "smallships:brigg", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "ocean_voyage": {
+      "title": "Sail 1000+ blocks across an ocean biome using the Brigg",
+      "icon": {"item": {"id": "minecraft:nautilus_shell", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "nautilus": {
+      "item": {"id": "minecraft:nautilus_shell", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Sailing Fleet"},
+    "subtitle": {"text": "The Drowned Civilization built their whole world on the ocean. You conquered their domain. Now sail it."},
+    "description": [
+      "Small Ships adds four ship types:",
+      "Cog — smallest, fast, good for rivers",
+      "Brigg — mid-size, good ocean vessel",
+      "Galley — large, needs crew",
+      "Drakkar — longship style, fastest on open water",
+      "",
+      "The Brigg is the right balance for oceanic exploration.",
+      "It holds more cargo than the Cog and moves faster than walking.",
+      "",
+      "Ch08 was about surviving the ocean.",
+      "You fought the Aquamirae. You defeated the Elder Guardian. You explored the deep.",
+      "Ch16 is about owning it.",
+      "The ocean is not a threat now. It is a highway.",
+      "",
+      "Sail 1000 blocks. Get used to the ship controls.",
+      "Ch17 involves dimensional travel (Create Teleporters).",
+      "Before quantum mechanics, use boats.",
+      "",
+      "→ Build a Small Ships Brigg [check]",
+      "→ Sail 1000+ blocks on the ocean [check]"
+    ],
+    "groups": {"The Long Road Home": {"position": [150, 150]}},
+    "icon": {"item": {"id": "smallships:brigg", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,21 @@
+
+[food_effect]
+	#Breathing Healing Factor
+	#Range: 1.0 ~ 100.0
+	breathingHealingFactor = 1.5
+	#Tea Healing Interval
+	#Range: 0 ~ 10000
+	teaHealingPeriod = 60
+	#Udumbara effect Healing Interval
+	#Range: 0 ~ 10000
+	udumbaraHealingPeriod = 60
+	#Udumbara flowering duration
+	#Range: 0 ~ 100000
+	udumbaraDuration = 200
+	#Udumbara full moon damage reduction
+	#Range: 0 ~ 100
+	udumbaraFullMoonReduction = 4
+	#Higi Healing Interval
+	#Range: 0 ~ 10000
+	higiHealingPeriod = 60
+

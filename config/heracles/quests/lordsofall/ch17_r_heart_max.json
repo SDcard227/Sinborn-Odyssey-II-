@@ -1,0 +1,91 @@
+{
+  "dependencies": ["ch17_r_ascend2"],
+  "tasks": {
+    "heart_count": {
+      "title": "Reach 20 hearts (40 HP) maximum via Lifesteal PvP gains + Heart Crystal crafting",
+      "icon": {"item": {"id": "lifesteal:heart_crystal", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "revive_ready": {
+      "title": "Craft a Revive Crystal and store it for emergency use — the Lifesteal death recovery item",
+      "icon": {"item": {"id": "lifesteal:revive_crystal", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "heart_crystal": {"item": {"id": "lifesteal:heart_crystal", "count": 4}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Heart Maximum"},
+    "subtitle": {"text": "Lifesteal caps at some maximum. Get there. The Revive Crystal is the safety net. Craft it before Ch17 final content."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.17 · HEART MAXIMUM",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Lifesteal is the heart economy mod.',",
+      "  PvP kill = +1 heart gained.',",
+      "  PvP/Sculk death = -1 heart lost.',",
+      "  Floor: 3 hearts minimum (no player goes below).',",
+      "  Ceiling: there is one — reach it.',",
+      "  The Revive Crystal is the insurance policy.',",
+      "  Craft it before you need it.',",
+      "",
+      "◈ LIFESTEAL HEART GAIN SYSTEM",
+      "  └ PvP kill: +1 heart (only player-vs-player — mob kills do not count)',",
+      "  └ Multiplayer implication: in solo play, PvP kills are not available',",
+      "    Use the crystal chain for solo play heart gain',",
+      "  └ Crystal Fragment → Crystal Core → Heart Crystal → +1 heart',",
+      "    (full chain in Ch11 revive quest — repeat for max hearts)',",
+      "  └ Heart Crystal crafting: confirm JEI for lifesteal: recipes',",
+      "    (crystal_fragment → crystal_core → heart_crystal path)',",
+      "  └ Floor is 3 hearts — you will never go below',",
+      "",
+      "◈ REVIVE CRYSTAL",
+      "  └ Revive Crystal: crafted from Heart Crystal + additional materials',",
+      "    (check JEI: lifesteal:revive_crystal)',",
+      "  └ Use: when a player dies and their hearts reach 0 in multiplayer,',",
+      "    a Revive Crystal can restore them',",
+      "  └ Solo play: functions as emergency HP recovery item',",
+      "  └ Craft at least 2-3 before Ch17 final boss sequences',",
+      "  └ Store in dedicated Shulker Box (labeled EMERGENCY)',",
+      "",
+      "◈ MAX HEART GOAL",
+      "  └ Starting hearts: 10 (vanilla default)',",
+      "  └ Target: 20 hearts (40 HP) for Ch17 endgame comfort',",
+      "  └ Each Heart Crystal = +1 heart (+2 HP)',",
+      "  └ 10 Heart Crystals needed for 20-heart cap',",
+      "  └ Lifesteal mod cap may be higher — check mod config',",
+      "  └ LSData API stores heart count cross-session — persistent',",
+      "",
+      "▸ The body has a natural cap.',",
+      "  Lifesteal says the cap can be raised.',",
+      "  Every heart above 10 is borrowed from a fight you survived.',",
+      "  The floor at 3 hearts is the game saying:',",
+      "  we will not let the body disappear entirely.',",
+      "  The ceiling is yours to reach.',",
+      "  Reach it.',",
+      "",
+      "▶ Reach 20 hearts maximum [check]",
+      "▶ Craft a Revive Crystal for emergency storage [check]",
+      "",
+      "◇ Revive Crystal priority: have one in your Ender Chest.',",
+      "  The Ender Chest is always accessible.',",
+      "  If you die and lose your inventory,',",
+      "  the Ender Chest has the Revive Crystal.',",
+      "  This is the correct Lifesteal emergency planning."
+    ],
+    "groups": {"Lords of All": {"position": [-450, 150]}},
+    "icon": {"item": {"id": "lifesteal:heart_crystal", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

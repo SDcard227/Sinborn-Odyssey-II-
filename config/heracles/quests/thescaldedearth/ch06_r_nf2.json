@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch06_r_nf1"],
+  "tasks": {
+    "magma_gelatin": {
+      "type": "heracles:item",
+      "item": "nethers_delight:magma_gelatin",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "survive_lava": {
+      "title": "Survive a lava encounter using Magma Gelatin's fire resistance",
+      "icon": {"item": {"id": "minecraft:lava_bucket", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "magma_gelatin_bonus": {
+      "item": {"id": "nethers_delight:magma_gelatin", "count": 4},
+      "type": "heracles:item"
+    },
+    "fire_res": {
+      "item": {"id": "minecraft:potion", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 6},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Magma Gelatin"},
+    "subtitle": {"text": "Fire resistant. Not fire proof. Know the difference."},
+    "description": [
+      "Magma Gelatin is the most practical food in the Nether.",
+      "Fire Resistance 1200 ticks — one full minute.",
+      "6.0 saturation. Best fire immunity food in the game.",
+      "",
+      "This is what separates people who explore lava lakes",
+      "from people who died in lava lakes.",
+      "",
+      "Crafted from Magma Cream + other Nether ingredients.",
+      "Bring several. The Nether does not forgive single-serving prep.",
+      "",
+      "Fire Resistant means lava does not kill you immediately.",
+      "It does not mean lava cannot kill you.",
+      "Watch your oxygen bar in deep lava pools.",
+      "",
+      "→ Craft 4 Magma Gelatin",
+      "→ Survive a lava encounter using its fire resistance [check]"
+    ],
+    "groups": {"The Scalded Earth": {"position": [300, 150]}},
+    "icon": {"item": {"id": "nethers_delight:magma_gelatin", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

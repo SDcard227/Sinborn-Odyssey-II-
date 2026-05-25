@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch14_r_trig1"],
+  "tasks": {
+    "baby_trigon_egg": {
+      "title": "Claim the Baby Ender Trigon egg from the Ender Trigon's loot",
+      "icon": {"item": {"id": "minecraft:dragon_egg", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "baby_trigon_tame": {
+      "title": "Hatch and tame the Baby Ender Trigon (follow Ender Trigon mod taming instructions)",
+      "icon": {"item": {"id": "minecraft:purple_dye", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 12},
+      "type": "heracles:item"
+    },
+    "ender_pearl": {
+      "item": {"id": "minecraft:ender_pearl", "count": 16},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Baby Trigon"},
+    "subtitle": {"text": "You killed its parent. It is still willing to follow you. Consider what that means."},
+    "description": [
+      "The Baby Ender Trigon is a tameable companion dropped by the Ender Trigon.",
+      "",
+      "Hatching:",
+      "The egg follows the same hatch ritual as other dragon eggs — consult the Ender Trigon mod.",
+      "Likely requires specific biome conditions or ritual items.",
+      "",
+      "Taming:",
+      "Feed the hatchling appropriate End materials to bond it.",
+      "The baby grows over time into a full companion dragon.",
+      "It can fly. It can fight. It is loyal.",
+      "",
+      "This is not a casual mechanic.",
+      "You killed the strongest thing in this dimension.",
+      "Its offspring chose you anyway.",
+      "Honor that.",
+      "",
+      "The baby Trigon is the closest thing this modpack has to an animal companion.",
+      "The Dracolotl in Ch04 was a companion. The baby Trigon is an heir.",
+      "",
+      "→ Claim the Baby Ender Trigon egg [check]",
+      "→ Hatch and tame it [check]"
+    ],
+    "groups": {"What the Void Remembers": {"position": [300, 0]}},
+    "icon": {"item": {"id": "minecraft:purple_dye", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

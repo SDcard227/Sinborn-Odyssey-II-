@@ -1,0 +1,25 @@
+{
+  "display_name": "The Lightning School",
+  "research_time": 2700,
+  "items": [
+    "irons_spellbooks:lightning_essence",
+    "irons_spellbooks:lightning_rune",
+    "irons_spellbooks:scroll_ball_lightning",
+    "irons_spellbooks:scroll_chain_lightning",
+    "irons_spellbooks:scroll_electrocute",
+    "irons_spellbooks:scroll_lightning_bolt",
+    "irons_spellbooks:scroll_lightning_breath",
+    "irons_spellbooks:scroll_lightning_lance",
+    "irons_spellbooks:scroll_thunder_step"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

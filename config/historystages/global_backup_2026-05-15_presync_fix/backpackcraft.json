@@ -1,0 +1,36 @@
+{
+  "display_name": "Backpackcraft",
+  "research_time": 2700,
+  "items": [
+    "overpacked:black_giant_backpack",
+    "overpacked:blue_giant_backpack",
+    "overpacked:brown_giant_backpack",
+    "overpacked:cyan_giant_backpack",
+    "overpacked:giant_backpack",
+    "overpacked:gray_giant_backpack",
+    "overpacked:green_giant_backpack",
+    "overpacked:light_blue_giant_backpack",
+    "overpacked:light_gray_giant_backpack",
+    "overpacked:lime_giant_backpack",
+    "overpacked:magenta_giant_backpack",
+    "overpacked:orange_giant_backpack",
+    "overpacked:pink_giant_backpack",
+    "overpacked:purple_giant_backpack",
+    "overpacked:red_giant_backpack",
+    "overpacked:white_giant_backpack",
+    "overpacked:yellow_giant_backpack",
+    "quark:backpack",
+    "sophisticatedbackpacks:copper_backpack",
+    "tide:fish_satchel"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

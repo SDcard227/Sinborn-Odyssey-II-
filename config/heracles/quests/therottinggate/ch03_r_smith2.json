@@ -1,0 +1,62 @@
+{
+  "dependencies": ["ch03_r_smith1"],
+  "tasks": {
+    "chestplate": {
+      "type": "heracles:item",
+      "item": "minecraft:iron_chestplate",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "helmet": {
+      "type": "heracles:item",
+      "item": "minecraft:iron_helmet",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "boots": {
+      "type": "heracles:item",
+      "item": "minecraft:iron_boots",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "iron": {
+      "item": {"id": "minecraft:iron_ingot", "count": 12},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 6},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Iron Armor"},
+    "subtitle": {"text": "Defense is the investment that pays in not dying."},
+    "description": [
+      "Your class gave you gear to start with.",
+      "Iron armor is the universal foundation.",
+      "",
+      "Chestplate. Helmet. Boots. Leggings if you can.",
+      "Iron protection keeps you alive long enough",
+      "to gather the materials for what comes next.",
+      "",
+      "Upgrade when you can. Wear iron until you can.",
+      "",
+      "→ Craft an iron chestplate",
+      "→ Craft an iron helmet",
+      "→ Craft iron boots"
+    ],
+    "groups": {"The Rotting Gate": {"position": [-300, 300]}},
+    "icon": {"item": {"id": "minecraft:iron_chestplate", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "display_name": "The Dragon Feast",
+  "research_time": 14400,
+  "items": [
+    "ends_delight:dragon_brain",
+    "ends_delight:dragon_egg_pie",
+    "ends_delight:dragon_breath_jelly",
+    "ends_delight:dragon_meat",
+    "ends_delight:cooked_dragon_meat",
+    "ends_delight:dragon_steak"
+  ],
+  "tags": [],
+  "mods": [
+    "ends_delight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

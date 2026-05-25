@@ -1,0 +1,19 @@
+{
+  "display_name": "The Wilderness Camping Manual",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "comforts",
+    "hardcore_torches",
+    "simplytents"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

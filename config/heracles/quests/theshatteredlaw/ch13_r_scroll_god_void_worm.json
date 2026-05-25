@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the On the Void Worm scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the On the Void Worm scroll",
+      "icon": {
+        "item": {
+          "id": "alexsmobs:void_worm_eye",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock god_void_worm"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "On the Void Worm"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Charted, measured, decoded.\"",
+      "",
+      "Alex's Mobs Void Worm \u2014 End-tier.",
+      "",
+      "This scroll unlocks 3 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Stronghold Library",
+      "  \u00b7 Village/Village Cartographer",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [On the Void Worm] [auto]"
+    ],
+    "groups": {
+      "The Shattered Law": {
+        "position": [
+          1320,
+          1107
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "alexsmobs:void_worm_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "display_name": "The Industrial Kitchen",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "create_central_kitchen",
+    "create_food",
+    "create_some_assembly_required",
+    "chefsdelight",
+    "createaddition"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

@@ -1,0 +1,18 @@
+{
+  "display_name": "The Drowned Captain Mess",
+  "research_time": 3600,
+  "items": [
+    "aquamirae_delight:salted_cod",
+    "aquamirae_delight:cornelia_stew"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

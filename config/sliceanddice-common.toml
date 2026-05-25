@@ -8,8 +8,8 @@
 	jei_show_converted_recipes = false
 
 [basin_cooking]
-	enabled = true
-	replace_fluid_containers = true
+	enabled = false
+	replace_fluid_containers = false
 	#Allowed Values: NONE, HEATED, SUPERHEATED
 	heat_condition = "HEATED"
 

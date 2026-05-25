@@ -1,0 +1,29 @@
+{
+  "display_name": "The Cataclysm Codex",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "cataclysm",
+    "cataclysm_spellbooks",
+    "cataclysm_compat",
+    "cataclysmspells_compat"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "cataclysm:ancient_remnant",
+      "cataclysm:maledictus",
+      "cataclysm:ender_guardian",
+      "cataclysm:the_harbinger",
+      "cataclysm:ignis",
+      "cataclysm:netherite_monstrosity",
+      "cataclysm:the_leviathan",
+      "cataclysm:scylla"
+    ],
+    "spawnlock": []
+  }
+}

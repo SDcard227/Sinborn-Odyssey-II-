@@ -1,0 +1,55 @@
+{
+  "dependencies": ["ch03_mill"],
+  "tasks": {
+    "atlas": {
+      "type": "heracles:item",
+      "item": "antique_atlas:antique_atlas",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "mark": {
+      "title": "Mark 3 locations on your Antique Atlas",
+      "icon": {"item": {"id": "antique_atlas:antique_atlas", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "compass": {
+      "item": {"id": "minecraft:compass", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Atlas"},
+    "subtitle": {"text": "Every cartographer made the map they needed."},
+    "description": [
+      "The Antique Atlas fills as you walk.",
+      "Biomes render on the page. Villages appear as markers.",
+      "You can add your own: right-click to set custom pins.",
+      "",
+      "The world is enormous. The atlas is how you hold it.",
+      "",
+      "Mark your base. Mark the village.",
+      "Mark the Frostmaw peak.",
+      "The map is a memory — keep it honest.",
+      "",
+      "→ Have an Antique Atlas (given at start)",
+      "→ Mark 3 locations [check]"
+    ],
+    "groups": {"The Rotting Gate": {"position": [150, 150]}},
+    "icon": {"item": {"id": "antique_atlas:antique_atlas", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

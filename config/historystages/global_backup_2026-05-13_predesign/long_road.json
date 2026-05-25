@@ -1,0 +1,22 @@
+{
+  "display_name": "The Long Road",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "antique_atlas",
+    "surveyor",
+    "aa4_structure_markers",
+    "viaromana",
+    "via_romana",
+    "roadweaver",
+    "railways",
+    "simpleradio",
+    "create_radar"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

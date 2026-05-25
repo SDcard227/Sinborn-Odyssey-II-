@@ -1,0 +1,17 @@
+{
+  "display_name": "Alex's Mobs Bestiary",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "alexsmobs"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

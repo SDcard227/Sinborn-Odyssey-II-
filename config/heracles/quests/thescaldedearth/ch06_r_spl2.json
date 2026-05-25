@@ -1,0 +1,67 @@
+{
+  "dependencies": ["ch06_r_spl1"],
+  "tasks": {
+    "blaze_rod": {
+      "type": "heracles:item",
+      "item": "minecraft:blaze_rod",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "scroll_forge": {
+      "type": "heracles:item",
+      "item": "irons_spellbooks:scroll_forge",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "fire_spell": {
+      "title": "Learn your first Fire spell at the Scroll Forge",
+      "icon": {"item": {"id": "irons_spellbooks:scroll_forge", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "blaze_powder": {
+      "item": {"id": "minecraft:blaze_powder", "count": 8},
+      "type": "heracles:item"
+    },
+    "arcane_cloth": {
+      "item": {"id": "irons_spellbooks:arcane_cloth", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 5},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Fire School"},
+    "subtitle": {"text": "The rod holds more than fire."},
+    "description": [
+      "Fire magic is not destruction for its own sake.",
+      "It is the fastest path between energy and effect.",
+      "",
+      "The Blaze Rod conducts something the rod knows",
+      "and you are learning to know.",
+      "The Fire school is free from the start — no scroll required.",
+      "It only needs someone willing to hold the rod.",
+      "",
+      "The Scroll Forge lets you craft scrolls from Arcane Essence.",
+      "Inscribe them into your Spellbook at the Inscription Table.",
+      "",
+      "→ Collect 4 Blaze Rods (Blazes drop them in Nether Fortresses)",
+      "→ Craft a Scroll Forge",
+      "→ Learn your first Fire spell [check]"
+    ],
+    "groups": {"The Scalded Earth": {"position": [-300, 0]}},
+    "icon": {"item": {"id": "irons_spellbooks:scroll_forge", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

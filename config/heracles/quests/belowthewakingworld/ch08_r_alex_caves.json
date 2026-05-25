@@ -1,0 +1,78 @@
+{
+  "dependencies": ["ch08_r_alex2"],
+  "tasks": {
+    "caves_explore": {
+      "title": "Explore 3 different Alex's Caves biomes — each has unique mobs, items, and environmental hazards",
+      "icon": {"item": {"id": "minecraft:tuff", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "cave_loot": {
+      "title": "Loot a cave-biome-specific chest from any Alex's Caves biome",
+      "icon": {"item": {"id": "minecraft:chest", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "tuff": {"item": {"id": "minecraft:tuff", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Cave Kingdoms"},
+    "subtitle": {"text": "Alex's Caves adds 6 biomes underground. Each one is a different world."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.08 · THE CAVE KINGDOMS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Alex's Caves adds 6 unique underground biomes.",
+      "  Each one has its own ecosystem,",
+      "  its own mobs, its own items,",
+      "  and its own way of killing you.",
+      "",
+      "◈ THE SIX CAVE BIOMES",
+      "  └ ✦ Magnetic Caves: magnetite ore, floating stone,",
+      "    Magnetite Golem (powerful), Magnote mob",
+      "    electromagnetic environment disrupts compasses",
+      "  └ ✦ Primordial Caves: ancient, overgrown,",
+      "    Trilobite (passive), Prehistoric fish, ancient flora",
+      "  └ ✦ Abyssal Chasm: deep and vertical,",
+      "    Predator (aggressive), extreme fall risk",
+      "  └ ✦ Fossilized Caves: dinosaur fossils, bone blocks,",
+      "    Brute (powerful melee mob)",
+      "  └ ✦ Toxic Caves: mutagen pools, poisonous atmosphere,",
+      "    Contaminated mobs (explode on death)",
+      "    → NOTE: confirmed namespace alexscaves:nucleeper",
+      "  └ ✦ Infernal Rift: hot, lava adjacent,",
+      "    Fire Drake (mini-dragon), volcanic blocks",
+      "",
+      "◈ LOOT HIGHLIGHTS",
+      "  └ Magnetic Caves: Magnetite = strong alternative armor",
+      "  └ Primordial Caves: prehistoric drops for unique recipes",
+      "  └ Toxic Caves: mutagen items for Ch12 alchemical uses",
+      "  └ Infernal Rift: Fire Drake scale = heat armor",
+      "",
+      "▸ The cave systems go deep.",
+      "  Some of them connect to the Sculk.",
+      "  None of them are safe.",
+      "  All of them are worth it.",
+      "",
+      "▶ Explore 3 different Alex's Caves biomes [check]",
+      "▶ Loot a cave-biome-specific chest [check]",
+      "",
+      "◇ Alex's Caves mobs do not appear in the item database",
+      "  by name — use the namespaces: alexscaves:*",
+      "  when searching for drop info."
+    ],
+    "groups": {"Below the Waking World": {"position": [450, 150]}},
+    "icon": {"item": {"id": "minecraft:tuff", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "dependencies": ["ch11_r_emulator1"],
+  "tasks": {
+    "cataclysm_gear": {
+      "title": "Craft a Cataclysm-tier weapon or armor piece using Ignitium Ingots",
+      "icon": {"item": {"id": "cataclysm:ignitium_ingot", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "cryptic_eye_dnl": {
+      "title": "Find a Dungeon Now Loading dungeon containing a Chaotic Hexahedron (Cryptic Eye ingredient)",
+      "icon": {"item": {"id": "dungeonnowloading:chaotic_hexahedron", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "ignitium": {
+      "item": {"id": "cataclysm:ignitium_ingot", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 6},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "After Cataclysm"},
+    "subtitle": {"text": "The chain ended. The portal has more slots to fill."},
+    "description": [
+      "Cataclysm-tier gear uses Ignitium and Cursium Ingots.",
+      "This is some of the best pre-End combat equipment available.",
+      "",
+      "The Cryptic Eye is the Disappeared Civilization's inheritance.",
+      "Its center ingredient: dungeonnowloading:chaotic_hexahedron.",
+      "Dungeon Now Loading adds procedural dungeon structures.",
+      "The Chaotic Hexahedron is a rare loot drop inside them.",
+      "",
+      "The Cryptic Eye also needs:",
+      "- dnl:spawner_blade (Dungeon Now Loading drop)",
+      "- create:experience_nugget (75% byproduct of any Crushing Wheel ore recipe)",
+      "",
+      "Simple recipe but requires specific Dungeon Now Loading content.",
+      "The Nucleeper (alexscaves:nucleeper) is a related ingredient.",
+      "",
+      "→ Craft Cataclysm-tier equipment [check]",
+      "→ Find a Dungeon Now Loading dungeon with Chaotic Hexahedron [check]"
+    ],
+    "groups": {"Where the Skin Tears": {"position": [300, 150]}},
+    "icon": {"item": {"id": "dungeonnowloading:chaotic_hexahedron", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

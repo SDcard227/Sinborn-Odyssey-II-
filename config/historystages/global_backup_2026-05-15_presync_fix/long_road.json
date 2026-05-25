@@ -1,0 +1,30 @@
+{
+  "display_name": "The Long Road",
+  "research_time": 900,
+  "items": [
+    "antiqueatlas:antique_atlas",
+    "antiqueatlas:atlas",
+    "create_ltab:potion_of_luck",
+    "create_ltab:potion_of_luck_lore",
+    "crittersandcompanions:silk_lead",
+    "exposure:camera",
+    "minecraft:carrot_on_a_stick",
+    "minecraft:cartography_table",
+    "minecraft:filled_map",
+    "minecraft:lead",
+    "minecraft:lodestone_compass",
+    "minecraft:map",
+    "minecraft:recovery_compass",
+    "minecraft:warped_fungus_on_a_stick"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "dependencies": [
+    "ch05_r_mca2"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/beasts"
+    },
+    "tame": {
+      "title": "Tame or befriend a creature from Alex's Mobs or Ecologics (not vanilla animals)",
+      "icon": {
+        "item": {
+          "id": "minecraft:golden_apple",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "leather": {
+      "item": {
+        "id": "minecraft:leather",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Beasts"
+    },
+    "subtitle": {
+      "text": "Alex's Mobs adds 89 creatures. Most of them have not been described in any encyclopedia. This scroll starts one."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.05 · THE BEASTS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The world has 89 creatures you haven't seen yet.",
+      "  Some are passive. Most are not.",
+      "  Some can be tamed.",
+      "  All of them drop something.",
+      "",
+      "◈ ALEX'S MOBS — HIGHLIGHTS",
+      "  └ Void Worm: End boss, spawns in The End",
+      "    drops unique void materials",
+      "  └ Platypus: passive, drops venomous spur",
+      "    (venom used in advanced poison recipes)",
+      "  └ Raccoon: tameable with sweet berries",
+      "    carries small items in its hands",
+      "  └ Enderiophage: found in The End",
+      "    drops rare ender materials",
+      "  └ Blobfish: ocean depths, drops rare fish item",
+      "  └ Bone Serpent: Nether, dangerous, drops",
+      "    serpent scales for armor",
+      "",
+      "◈ ECOLOGICS — HIGHLIGHTS",
+      "  └ 24+ documented creature variants",
+      "  └ Coconut Crab: beach mob, drops crab claws",
+      "  └ Mangrove Treefrog: passive, ambient",
+      "  └ Sandy Rabbit: desert variant",
+      "  └ Capybara: river/swamp, passive, tameable",
+      "",
+      "◈ SCROLL: The Beasts",
+      "  └ Found in: wilderness ruins, hunter's lodge,",
+      "    rare beast kill drops (5%), naturalist journal chest",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: Alex's Mobs awareness, tameable creature list",
+      "",
+      "▸ The Scholars who wrote the scrolls sent",
+      "  expeditions to document every creature.",
+      "  Most expeditions came back.",
+      "  Not all of them came back complete.",
+      "",
+      "▶ Find The Beasts scroll [check]",
+      "▶ Tame or befriend an Alex's Mobs/Ecologics creature [check]",
+      "",
+      "◇ The Void Worm (Alex's Mobs) and the Ender Trigon",
+      "  both spawn in The End. Ch14 addresses them.",
+      "  Don't go to The End unprepared."
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          -450,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

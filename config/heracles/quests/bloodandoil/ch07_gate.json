@@ -1,0 +1,89 @@
+{
+  "dependencies": [
+    "ch07_engine"
+  ],
+  "tasks": {
+    "bitumen_gate": {
+      "type": "heracles:item",
+      "item": "tfmg:bitumen",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/combustion_studied"
+    }
+  },
+  "rewards": {
+    "steel_ingot": {
+      "item": {
+        "id": "tfmg:steel_ingot",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 5
+      },
+      "type": "heracles:item"
+    },
+    "age": {
+      "type": "heracles:command",
+      "command": "history unlock oil_age"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Blood and Oil"
+    },
+    "subtitle": {
+      "text": "The black kind. You know what this costs."
+    },
+    "description": [
+      "The previous civilization found oil and called it progress.",
+      "They were right. They were also right about what it cost.",
+      "Those two facts are not in conflict.",
+      "",
+      "Bitumen is what's left when you've extracted everything useful.",
+      "The Distillation Tower bottom output. The residue.",
+      "You have now extracted everything useful.",
+      "",
+      "The Combustion scroll documents what the Engineers learned.",
+      "Their machines worked perfectly for the wrong purpose.",
+      "The Rogue Eye is what they left behind.",
+      "",
+      "The oil age is not an ending.",
+      "It is a new kind of beginning.",
+      "The kind that asks what the power is for.",
+      "",
+      "→ Collect 16 Bitumen (Distillation Tower bottom output)",
+      "→ Research the Combustion scroll [check]"
+    ],
+    "groups": {
+      "Blood and Oil": {
+        "position": [
+          0,
+          600
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "tfmg:bitumen",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

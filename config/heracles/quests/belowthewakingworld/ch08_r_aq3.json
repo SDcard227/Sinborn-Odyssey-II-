@@ -1,0 +1,56 @@
+{
+  "dependencies": ["ch08_r_aq2"],
+  "tasks": {
+    "mother": {
+      "title": "Defeat the Mother of the Maze (Aquamirae — Deep Frozen Ocean, requires Drowned World scroll)",
+      "icon": {"item": {"id": "minecraft:ice", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "sea_heart": {
+      "title": "Collect rare Aquamirae loot from the Mother of the Maze",
+      "icon": {"item": {"id": "minecraft:heart_of_the_sea", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "conduit_material": {
+      "item": {"id": "minecraft:heart_of_the_sea", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 14},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Mother of the Maze"},
+    "subtitle": {"text": "The maze did not build itself. It grew."},
+    "description": [
+      "The Mother of the Maze is the deeper Aquamirae encounter.",
+      "Where Cornelia hunted, the Mother built.",
+      "The underwater maze structure is her territory.",
+      "Entering it is her invitation.",
+      "",
+      "Rare loot from the Mother of the Maze completes",
+      "the Aquamirae equipment set.",
+      "",
+      "The Ocean Mages dissolved into the ocean they studied.",
+      "What Aquamirae adds is what remained after that dissolution.",
+      "Not ruins. Creatures. The civilization became the ecosystem.",
+      "",
+      "→ Defeat the Mother of the Maze [check]",
+      "→ Collect her rare drops [check]"
+    ],
+    "groups": {"Below the Waking World": {"position": [-450, 0]}},
+    "icon": {"item": {"id": "minecraft:prismarine_crystals", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

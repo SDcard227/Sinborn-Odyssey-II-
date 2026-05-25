@@ -1,0 +1,34 @@
+{
+  "display_name": "On Infernal Passage",
+  "research_time": 5400,
+  "items": [],
+  "tags": [
+    "additionaladditions:gilded_netherite_upgrade",
+    "c:nethersteel_ingots",
+    "c:nethersteel_nuggets",
+    "createbigcannons:block_nethersteel",
+    "createbigcannons:ingot_nethersteel",
+    "dungeonsdelight:raw_ghast",
+    "forge:crushed_netherite_scrap",
+    "forge:magma_cube",
+    "forge:netherite_dusts",
+    "forge:raw_ghast",
+    "hardcore_torches:soul_attunement_items",
+    "minecraft:crimson_stems",
+    "minecraft:soul_fire_base_blocks",
+    "minecraft:warped_stems",
+    "mynethersdelight:ghast_meats",
+    "spirit:soul_steel_mainhand"
+  ],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [
+    "minecraft:the_nether"
+  ],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

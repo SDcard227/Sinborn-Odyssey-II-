@@ -1,0 +1,18 @@
+{
+  "display_name": "Powergrid Engineering",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "create_radar",
+    "powergrid"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

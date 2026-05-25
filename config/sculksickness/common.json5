@@ -1,0 +1,82 @@
+{
+	"general": {
+		// Dev Logs: Enable developer logs, good idea not to enable this due to it being able to cause large log sizes.
+		"devLogs": false,
+		// Minimum Stage Interval: The minimum amount of seconds until the infection progresses to next stage.
+		"minStageInterval": 80,
+		// Maximum Stage Interval: The maximum amount of seconds until the infection progresses to next stage.
+		"maxStageInterval": 400,
+		// Step Infect: Chance to Infect an entity per second while walking on sculk. 0 = No chance.
+		"stepInfect": 0.05000000074505806,
+		// Break Infect: Chance to Infect a player when breaking a sculk block. 0 = No chance.
+		"breakInfect": 0.05000000074505806,
+		// Hit Infect: Chance to Infect an entity on hit if hit by a sculk entity. 0 = No chance.
+		"hitInfect": 0.6666666865348816
+	},
+	"blossoms": {
+		// Minimum Blossom Interval: The minimum amount of seconds until a Sculk Blossom ages.
+		"minBlossomInterval": 30,
+		// Maximum Blossom Interval: The maximum amount of seconds until a Sculk Blossom ages.
+		"maxBlossomInterval": 180,
+		// Blossom Max Spew Time: The amount of seconds until a Sculk Blossom stops spewing spores.
+		"maxSpewTime": 8,
+		// Blossom Min Spew Time: The amount of seconds until a Sculk Blossom stops spewing spores.
+		"minSpewTime": 16,
+		// Blossom Spew Radius: The radius a Sculk Blossom can infect an entity. Set to 0 to disable.
+		"blossomInfectRadius": 12,
+		// Blossom Spawn Can Spew: If a blossom should spawn from a catalyst with the ability to spew spores.
+		"blossomSpawnCanSpew": true,
+		// Sculk Blossom Infect: Does being around a spewing Sculk Blossom infect an entity.
+		"blossomInfect": true
+	},
+	"darknessSymptom": {
+		// Darkness: Stage for darkness & amplifies custom shader effect, should be a number 1-5. Set to 0 to disable
+		"applyDarknessAtStage": 3,
+		// Shader: Enables the final stage shader, darkness will still be applied.
+		"isShaderEnabled": true
+	},
+	"weaknessSymptom": {
+		// Weakness: Stage for weakness effect & player shaking, should be a whole number 1-5. Set to 0 to disable
+		"applyWeaknessAtStage": 1
+	},
+	"damageSymptom": {
+		// Weakness: Stage when damage starts to be dealt to an entity, should be a whole number 1-5. Set to 0 to disable
+		"applyDamageAtStage": 5,
+		// Amount of damage taken per half second. Should be a whole number above 0. 1 = 0.5 hearts of damage.
+		"applyDamageAmountPerHalfSecond": 3,
+		// Chance to apply damage per half second. Should be from 0 to below 1.
+		"randomDamageChance": 0.1,
+		// Sprout Stage: The stage once a mob can be killed and sprout a blossom, should be a number 1-5. Set to 0 to disable.
+		"sproutStage": 3
+	},
+	"coughingSymptom": {
+		// Stage for Coughing, should be a whole number 1-5. Set to 0 to disable
+		"applyCoughingAtStage": 2,
+		// Chance for a cough every second
+		"coughRandomRate": 0.10000000149011612,
+		// Radius in which a sculk sickness infected entity coughing will infect another.
+		"coughInfectRadius": 6.0
+	},
+	"misc": {
+		// Does a Sculk Blossom spread Sculk
+		"doSculkSpreadFromBlossom": false,
+		// Amount of charge / power from one sculk spread.
+		"chargeAmount": 10,
+		// Range for a sculk spread.
+		"rangeAmount": 10,
+		// Immunity Effects: Effects which make the entity immune to the Sculk Sickness.
+		"immunityEffects": [
+			"sculksickness:sculk_immunity"
+		],
+		// Sickening Items: Items which make the entity infected with Sculk Sickness (MUST BE EDIBLE).
+		"sickeningItems": [
+			"sculksickness:vile_herb"
+		],
+		// Recovery Items: Items which make the entity heal from the Sculk Sickness (MUST BE EDIBLE).
+		"curativeItems": [
+			"sculksickness:ambrosia_herb"
+		],
+		// Bone Shriek Range: Range from which a shrieker bone will infect players and entities with the darkness effect.
+		"boneShriekRange": 8.0
+	}
+}

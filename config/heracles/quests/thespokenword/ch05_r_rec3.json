@@ -1,0 +1,54 @@
+{
+  "dependencies": ["ch05_r_rec2"],
+  "tasks": {
+    "guard": {
+      "title": "Order a unit to guard your base entrance",
+      "icon": {"item": {"id": "minecraft:iron_chestplate", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "knight": {
+      "title": "Hire a Knight unit",
+      "icon": {"item": {"id": "minecraft:diamond_sword", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 8},
+      "type": "heracles:item"
+    },
+    "chain": {
+      "item": {"id": "minecraft:chainmail_chestplate", "count": 1},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Company Marches"},
+    "subtitle": {"text": "They are not decoration. They are an extension of your will."},
+    "description": [
+      "The Knight is the strongest standard unit.",
+      "Heavy armor. Sword. Trained in formation fighting.",
+      "",
+      "Assign guards to your base entrance.",
+      "They will hold that position against hostile mobs.",
+      "They are not invincible — equip them well.",
+      "",
+      "In later chapters, siege mechanics become available.",
+      "The company you build now is the foundation.",
+      "",
+      "→ Order a unit to guard your base [check]",
+      "→ Hire a Knight unit [check]"
+    ],
+    "groups": {"The Spoken Word": {"position": [-450, 0]}},
+    "icon": {"item": {"id": "minecraft:diamond_sword", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

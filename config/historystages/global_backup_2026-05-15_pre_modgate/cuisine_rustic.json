@@ -1,0 +1,19 @@
+{
+  "display_name": "The Rustic Larder",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "barbequesdelight",
+    "ratatouille_fried_delights",
+    "rusticdelight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

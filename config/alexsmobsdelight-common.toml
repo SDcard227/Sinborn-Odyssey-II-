@@ -1,0 +1,21 @@
+
+["Eternal Seagull"]
+	#Define the cooldown of Eternal Cooked Seagull in tick.
+	#Range: > 0
+	EatCooldown = 160
+	#A list of eternal foods which can be used to convert Eternal Cooked Seagull.
+	EternalFoodItems = ["alexsmobsdelight:eternal_cooked_seagull", "alexsmobsdelight:enchanted_eternal_cooked_seagull"]
+
+["Crocodile Karambit"]
+	#Define the chance of looting when you attack by Crocodile Karambit.
+	#Range: 0 ~ 100
+	LootingChance = 20
+	#Crocodile Karambit will start decrease the chance of looting when lootingHealth * yourMaxHealth < targetsMaxHealth.
+	#When lootingHealth * yourMaxHealth * 2 < targetsMaxHealth, you won't have chance to loot.
+	#Range: 0.0 ~ 20.0
+	LootingHealth = 2.0
+	#If it's true, Crocodile Karambit will loot all items instead of only one random item.
+	LootingAllItems = false
+	#A list of entities which can never be looted by Crocodile Karambit.
+	LootingEntitiesBlacklist = ["alexsmobs:void_worm"]
+

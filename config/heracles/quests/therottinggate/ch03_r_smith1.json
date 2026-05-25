@@ -1,0 +1,62 @@
+{
+  "dependencies": ["ch03_press"],
+  "tasks": {
+    "pick": {
+      "type": "heracles:item",
+      "item": "minecraft:iron_pickaxe",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "axe": {
+      "type": "heracles:item",
+      "item": "minecraft:iron_axe",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "shovel": {
+      "type": "heracles:item",
+      "item": "minecraft:iron_shovel",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "iron": {
+      "item": {"id": "minecraft:iron_ingot", "count": 16},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 5},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Iron Tools"},
+    "subtitle": {"text": "Stone broke. Iron holds."},
+    "description": [
+      "You started with class gear. It served you well.",
+      "But the world demands tools, not just weapons.",
+      "",
+      "An iron pickaxe reaches diamond ore.",
+      "An iron axe clears trees in half the time.",
+      "An iron shovel moves dirt before the light changes.",
+      "",
+      "Three tools. The minimum for what comes next.",
+      "",
+      "→ Craft an iron pickaxe",
+      "→ Craft an iron axe",
+      "→ Craft an iron shovel"
+    ],
+    "groups": {"The Rotting Gate": {"position": [-150, 300]}},
+    "icon": {"item": {"id": "minecraft:iron_pickaxe", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

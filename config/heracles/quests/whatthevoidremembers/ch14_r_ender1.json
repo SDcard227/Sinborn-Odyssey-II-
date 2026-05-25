@@ -1,0 +1,60 @@
+{
+  "dependencies": ["ch14_world"],
+  "tasks": {
+    "biome_pearls_complete": {
+      "title": "Collect Ender Pearls from at least 12 different Enderman Overhaul biome variants",
+      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 12}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "magical_enderman": {
+      "title": "Encounter the Magical Enderman variant (unclassified — Enderman Overhaul, unknown biome)",
+      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "pearls": {
+      "item": {"id": "minecraft:ender_pearl", "count": 16},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Enderman Collection"},
+    "subtitle": {"text": "They are not hostile. They are territorial. There is a difference."},
+    "description": [
+      "Enderman Overhaul adds 20+ biome-specific variants.",
+      "Each has a distinct appearance and passive behavior.",
+      "Most drop standard Ender Pearls — a few have unique drops.",
+      "",
+      "Documented variants include:",
+      "Forests, Desert, Swamp, Jungle, Mesa/Badlands, Frozen/Snowy plains,",
+      "Warped Forest (Nether), Mushroom Island, Beach, Ocean, Mountain,",
+      "Savanna, Dark Forest, Crimson Forest, Basalt Deltas...",
+      "",
+      "The Magical Enderman is unclassified.",
+      "Its spawn biome is unknown.",
+      "It has unique visual effects and may have special drops.",
+      "If you find it, observe it carefully before engaging.",
+      "This questbook does not know what it is.",
+      "That is intentional. Discover it yourself.",
+      "",
+      "→ Collect pearls from 12 different Enderman variants [check]",
+      "→ Encounter the Magical Enderman [check]"
+    ],
+    "groups": {"What the Void Remembers": {"position": [-150, 150]}},
+    "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

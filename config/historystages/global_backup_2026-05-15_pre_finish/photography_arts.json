@@ -1,0 +1,17 @@
+{
+  "display_name": "The Photography Arts",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "exposure"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

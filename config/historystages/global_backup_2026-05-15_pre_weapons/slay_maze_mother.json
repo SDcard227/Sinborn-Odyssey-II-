@@ -1,0 +1,17 @@
+{
+  "display_name": "Slaying the Maze Mother",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "aquamirae:maze_mother"
+    ],
+    "spawnlock": []
+  }
+}

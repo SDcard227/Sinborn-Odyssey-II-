@@ -1,0 +1,61 @@
+{
+  "dependencies": ["ch10_gate"],
+  "tasks": {
+    "ignitium_prep": {
+      "title": "Ensure you have Cursium Ingots from Maledictus (Ch09 rib) before proceeding",
+      "icon": {"item": {"id": "cataclysm:cursium_ingot", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "cursium": {
+      "type": "heracles:item",
+      "item": "cataclysm:cursium_ingot",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "netherite": {
+      "item": {"id": "minecraft:netherite_ingot", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Where the Skin Tears"},
+    "subtitle": {"text": "The Cataclysm chain does not stop. You have to stop it."},
+    "description": [
+      "The Cataclysm boss chain continues.",
+      "Ancient Remnant → Maledictus (Ch09) → Annihilator + Ignis → Emulator",
+      "",
+      "You need Cursium Ingots from Maledictus to unlock Ignis.",
+      "If you didn't collect them in Ch09, return now.",
+      "The infernal_age is gated behind the Netherite Monstrosity kill.",
+      "The Netherite Monstrosity drops lacrima — the trigger item.",
+      "",
+      "The Biological Civilization is the Corrupted Eye's lineage.",
+      "Warped Mosco (Alex's Mobs) and the Netherite Monstrosity",
+      "are both part of the Corrupted Eye ingredient chain.",
+      "",
+      "The Cataclysm chapter is the most combat-intensive in the progression.",
+      "It requires the scroll gates: living_decay and infernal_passage.",
+      "Both needed before these bosses can be damaged.",
+      "",
+      "→ Confirm Cursium Ingots ready [check]",
+      "→ Collect 4 Cursium Ingots total"
+    ],
+    "groups": {"Where the Skin Tears": {"position": [0, 0]}},
+    "icon": {"item": {"id": "cataclysm:cursium_ingot", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "dependencies": [
+    "ch05_r_cult2"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/cave_kitchen"
+    },
+    "underground_cook": {
+      "title": "Cook and eat a meal while underground (below Y=0) — food is culture anywhere",
+      "icon": {
+        "item": {
+          "id": "farmersdelight:mushroom_rice",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "mushroom_harvest": {
+      "type": "heracles:item",
+      "item": "minecraft:brown_mushroom",
+      "amount": 32,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "meal": {
+      "item": {
+        "id": "farmersdelight:mushroom_rice",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Cave Kitchen"
+    },
+    "subtitle": {
+      "text": "The miners ate first. The rest of the culture was built on top of their table."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.05 · THE CAVE KITCHEN",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The miners were underground for days at a time.",
+      "  They needed to eat.",
+      "  They needed to eat well.",
+      "  The cave kitchen scroll is a record of how they managed.",
+      "",
+      "◈ UNDERGROUND FOOD SOURCES",
+      "  └ Mushrooms: grow in darkness, renewable underground",
+      "    → Mushroom Stew (instant, no cooking station)",
+      "    → Mushroom Rice (FD — needs skillet/fire)",
+      "    → Cream of Mushroom Soup (FD — cooking pot)",
+      "  └ Cave vines + Glow Berries: light + food",
+      "  └ Alex's Caves biomes: unique food items per biome",
+      "    (Magnetic Isotope Cluster, cave plants)",
+      "  └ Farmer's Delight Portable Campfire: place anywhere,",
+      "    cook with standard FD methods",
+      "",
+      "◈ THE UNDERGROUND COOK SETUP",
+      "  └ Crafting table + furnace/campfire = kitchen",
+      "  └ Mushrooms replace vegetables for diet group",
+      "  └ Cave-cooked food has same nutrition as surface food",
+      "  └ Diet continues even underground — don't neglect it",
+      "",
+      "◈ SCROLL: The Cave Kitchen",
+      "  └ Found in: mine supply crates, cave camp chests,",
+      "    underground forge loot, deep cave shelters",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: underground food source list,",
+      "    cave food chain awareness",
+      "",
+      "▸ The scroll ends with a recipe.",
+      "  Mushroom rice. Two ingredients.",
+      "  'We ate this for three months underground.',",
+      "  'None of us got sick.',",
+      "  'We got strong.'",
+      "",
+      "▶ Find The Cave Kitchen scroll [check]",
+      "▶ Cook and eat a meal underground [check]",
+      "▶ Collect 32 Brown Mushrooms",
+      "",
+      "◇ Alex's Caves (Ch08) has unique foods per biome.",
+      "  The Cave Kitchen scroll previews them.",
+      "  Magnetic Zone mushrooms are worth finding."
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          450,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "farmersdelight:mushroom_rice",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

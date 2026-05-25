@@ -1,0 +1,55 @@
+{
+  "dependencies": ["ch02_world"],
+  "tasks": {
+    "season": {
+      "title": "Check the current season (F3 screen or visual cues)",
+      "icon": {"item": {"id": "minecraft:flowering_azalea", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "flowers": {
+      "type": "heracles:item",
+      "item": "minecraft:sunflower",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "melon_seeds": {
+      "item": {"id": "minecraft:melon_seeds", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 3},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Seasonal Cycle"},
+    "subtitle": {"text": "The world rotates. The crops know before you do."},
+    "description": [
+      "Serene Seasons changes the sky, the foliage, the temperature.",
+      "And which crops grow.",
+      "",
+      "Spring: most crops fertile.",
+      "Summer: heat crops thrive. Some wilt in autumn.",
+      "Winter: cold suppresses growth entirely.",
+      "",
+      "Plant in season. Harvest before the cold.",
+      "The world runs on a clock older than you.",
+      "",
+      "→ Check the current season [check]",
+      "→ Collect 4 sunflowers"
+    ],
+    "groups": {"The Kindled Road": {"position": [150, 0]}},
+    "icon": {"item": {"id": "minecraft:sunflower", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

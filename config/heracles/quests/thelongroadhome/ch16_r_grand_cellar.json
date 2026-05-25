@@ -1,0 +1,92 @@
+{
+  "dependencies": ["ch16_r_wine2"],
+  "tasks": {
+    "wine_variety": {
+      "title": "Brew 10 different Vinery wine varieties — build a wine rack wall with labeled varieties",
+      "icon": {"item": {"id": "minecraft:glass_bottle", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "eiswein_batch": {
+      "title": "Produce a batch of 8 Eiswein bottles — the full-heal wine requires winter grapes and fermentation time",
+      "icon": {"item": {"id": "minecraft:glass_bottle", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "glass_bottle": {"item": {"id": "minecraft:glass_bottle", "count": 32}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Grand Cellar"},
+    "subtitle": {"text": "All 26 wines. The cellar is a library. Every bottle is a record of a season that passed and a harvest that survived it."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.16 · THE GRAND CELLAR",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Vinery has 26 wine varieties.",
+      "  The Grand Cellar is the project of bottling all 26.",
+      "  This is not for stats. It is for completeness.",
+      "  The cellar becomes a record of every grape variety",
+      "  you planted, tended, and harvested.",
+      "  The Eiswein is the centerpiece — one full-heal per bottle.",
+      "  8 bottles of Eiswein is 8 guaranteed full heals for Ch17.",
+      "",
+      "◈ THE 26 VINERY WINES",
+      "  └ Grape varieties: each wine requires a different grape type",
+      "    Collect Grape Cuttings from: village chests, wandering traders,",
+      "    structure loot, Vinery-specific structure finds",
+      "  └ Wine types range from: Red wines, White wines, Rosé,",
+      "    Sparkling, Dessert (Eiswein), Fortified",
+      "  └ Each requires: Grape growing → harvest → barrel fermentation",
+      "    Fermentation time: varies by wine type",
+      "  └ Full list: check JEI under vinery: for all varieties",
+      "",
+      "◈ EISWEIN PRODUCTION (8-BOTTLE BATCH)",
+      "  └ Requires: winter-frozen grapes (Serene Seasons winter)",
+      "  └ Grape harvest timing: do not harvest until winter",
+      "    One winter = one batch opportunity per vineyard",
+      "  └ Scale vineyard for batch: 16+ grapevines for 8-bottle batch",
+      "    (8 bottles requires ~16 frozen grape harvest minimum)",
+      "  └ Fermentation time: Eiswein ferments longer than standard wines",
+      "    Plan: harvest winter → fill barrel → wait → bottle in spring",
+      "  └ Storage: Cold Sweat temperature consideration",
+      "    Store barrels underground where Cold Sweat reads as cool",
+      "",
+      "◈ CELLAR BUILD",
+      "  └ Wine Rack (Vinery): decorative wine storage block",
+      "    Use to build a wall-mounted bottle display",
+      "  └ Barrel arrangement: each barrel labeled by grape type",
+      "    (sign on each barrel = variety identifier)",
+      "  └ Temperature zone: underground room, preferably insulated stone",
+      "  └ Vinery Wine Press: crafting station for some wine types",
+      "",
+      "▸ The cellar holds the seasons.",
+      "  Each bottle is a year.",
+      "  The Eiswein is the year the grapes froze on the vine",
+      "  and you chose to wait instead of harvesting early.',",
+      "  That patience is the bottle.",
+      "  The cellar is patient seasons, preserved.",
+      "",
+      "▶ Brew 10 different Vinery wine varieties [check]",
+      "▶ Produce a batch of 8 Eiswein bottles [check]",
+      "",
+      "◇ Eiswein priority for Ch17: store 8 bottles in a dedicated",
+      "  Shulker Box labeled 'EISWEIN — EMERGENCY ONLY'.",
+      "  Each bottle = one full-HP recovery in the worst scenario.",
+      "  8 bottles = 8 lives.",
+      "  The Ch17 final sequence will need them."
+    ],
+    "groups": {"The Long Road Home": {"position": [300, 300]}},
+    "icon": {"item": {"id": "minecraft:glass_bottle", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

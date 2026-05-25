@@ -1,0 +1,58 @@
+{
+  "dependencies": ["ch17_world"],
+  "tasks": {
+    "magic_lamp": {
+      "title": "Find or craft a Magic Lamp (As You Wish mod — found in desert structures, pyramids, or rare worldgen)",
+      "icon": {"item": {"id": "asyouwish:magic_lamp", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "genie_summon": {
+      "title": "Summon the Genie from the Magic Lamp (As You Wish mod — interact with the lamp to awaken it)",
+      "icon": {"item": {"id": "asyouwish:magic_lamp", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Lamp"},
+    "subtitle": {"text": "You have fought demons, gods, and ancient mechanisms. A Genie is, relatively speaking, pleasant company."},
+    "description": [
+      "As You Wish adds the Magic Lamp — an item that contains a Genie.",
+      "The lamp is found in desert structure loot (pyramids, desert dungeons).",
+      "You may already have one from Ch09 desert chain exploration.",
+      "",
+      "The Genie:",
+      "Summoned by interacting with the lamp.",
+      "Offers wishes — specific gameplay benefits.",
+      "Wishes are limited and may require specific costs or conditions.",
+      "",
+      "In the context of Ch17:",
+      "You have reached the end of the guided questbook.",
+      "You have solved every problem through your own effort.",
+      "You are now going to accept a wish from a magical entity.",
+      "",
+      "This is not weakness. This is what you've earned.",
+      "The Genie exists. The lamp exists.",
+      "Seventeen chapters of work means you get to use it.",
+      "",
+      "→ Find or craft the Magic Lamp [check]",
+      "→ Summon the Genie [check]"
+    ],
+    "groups": {"Lords of All": {"position": [150, 0]}},
+    "icon": {"item": {"id": "asyouwish:magic_lamp", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

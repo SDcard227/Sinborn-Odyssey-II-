@@ -1,0 +1,89 @@
+{
+  "dependencies": ["ch10_r_atomic"],
+  "tasks": {
+    "nuke_shell": {
+      "title": "Craft a Nuke Shell (Create: Nuclear Shell) — requires Alex's Caves Nuclear Bomb in Mechanical Crafter",
+      "icon": {"item": {"id": "canonnukes:nuke_shell", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "steel_reactor": {
+      "title": "Build the Steel Reactor (Cannon Nukes) — multiblock uranium reactor that outputs Create rotational power",
+      "icon": {"item": {"id": "canonnukes:steel_controller", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "steel_ingot": {"item": {"id": "canonnukes:steel_ingot", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Nuclear Shell"},
+    "subtitle": {"text": "The cannon is old technology. The shell is not. Thirty damage. Ignores armor. Full nuclear detonation on contact."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.10 · THE NUCLEAR SHELL",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Create: Nuclear Shell (mod jar: canonnukes)",
+      "  brings the nuclear fuel chain to its military end.",
+      "  The Steel Reactor powers the factory.",
+      "  The Nuke Shell delivers the factory's output.",
+      "  Both are necessary. In that order.",
+      "",
+      "◈ STEEL REACTOR (Cannon Nukes)",
+      "  └ Multiblock: Steel blocks + steel_controller +",
+      "    steel_input + steel_out + steel_rot_output",
+      "  └ Built-in Ponder tutorial (9 steps) — check in-game",
+      "  └ Feed: smelt raw_uran → uran_ingot →",
+      "    enriched_uran_dust → feed into reactor",
+      "  └ Output: Create rotational power (SU)",
+      "    Powers Create machines directly from fission",
+      "  └ Liquid Uranium (canonnukes:uranium): viscosity 4000",
+      "    process separately from Alex's Caves uranium",
+      "",
+      "◈ NUCLEAR SHELL RECIPE (Mechanical Crafter)",
+      "  └ Pattern:",
+      "    · Iron Plate, empty, Iron Plate",
+      "    · Iron Plate, Diamond, Iron Plate",
+      "    · Hazmat Block, Nuclear Bomb, Hazmat Block",
+      "    · empty, Wooden Slab, empty",
+      "  └ alexscaves:nuclear_bomb — required center",
+      "  └ alexscaves:hazmat_block — structural casing",
+      "  └ Output: canonnukes:nuke_shell",
+      "",
+      "◈ SHELL STATS",
+      "  └ 30 damage on hit",
+      "  └ Ignores armor AND invulnerability frames",
+      "  └ Requires fuse to detonate (no contact explosion)",
+      "  └ Detonation: full Alex's Caves nuclear explosion",
+      "    + persistent radiation zone at impact site",
+      "  └ Load into Create: Big Cannon to fire",
+      "",
+      "▸ The shell was not designed for war.",
+      "  It was designed for excavation.",
+      "  The first use in combat was not authorized.",
+      "  The second use established a doctrine.",
+      "  The third use ended the civilization that made it.",
+      "  This is the fourth.",
+      "",
+      "▶ Craft a Nuke Shell [check]",
+      "▶ Build the Steel Reactor [check]",
+      "",
+      "◇ Radiation zones persist after detonation.",
+      "  Do not detonate near your base.",
+      "  Do not detonate near anything you want to use again.",
+      "  The cannon has range. Use it."
+    ],
+    "groups": {"The Pale Shore": {"position": [-300, 150]}},
+    "icon": {"item": {"id": "canonnukes:nuke_shell", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

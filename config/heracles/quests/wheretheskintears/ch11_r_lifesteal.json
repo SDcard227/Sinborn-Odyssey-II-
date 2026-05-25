@@ -1,0 +1,90 @@
+{
+  "dependencies": ["ch11_world"],
+  "tasks": {
+    "heart_crystal": {
+      "type": "heracles:item",
+      "item": "lifesteal:heart_crystal",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "understand_lifesteal": {
+      "title": "Understand the Lifesteal system — PvP hearts, heart floor at 3, Revive Crystal chain, Diet death reset interaction",
+      "icon": {"item": {"id": "minecraft:heart_of_the_sea", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "crystal_fragment": {"item": {"id": "lifesteal:crystal_fragment", "count": 8}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 6}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Where the Skin Tears"},
+    "subtitle": {"text": "PvP kill: +1 heart. PvP death: -1 heart. Sculk death: -1 heart. The floor is 3. The ceiling is whatever you can take."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.11 · WHERE THE SKIN TEARS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The chapter title is the Lifesteal mechanic.",
+      "  Combat leaves marks.",
+      "  The hearts track them.",
+      "  In singleplayer, the ceiling is irrelevant.",
+      "  In multiplayer, the ceiling is survival.",
+      "",
+      "◈ LIFESTEAL RULES (SINBORN CONFIG)",
+      "  └ PvP kill → +1 heart (gain from opponent)",
+      "  └ PvP death → -1 heart (lose to opponent)",
+      "  └ Sculk Sickness death → -1 heart",
+      "    (custom KubeJS script: sculk_death.js via LSData API)",
+      "  └ Heart floor: 3 hearts minimum (cannot go below)",
+      "  └ In singleplayer: hearts only increase (no loss source",
+      "    except Sculk Sickness death — avoidable)",
+      "",
+      "◈ HEART CRYSTAL CHAIN",
+      "  └ lifesteal:crystal_fragment — drops from Heart Ore",
+      "    (Y -50 to 70 overworld, all Nether below roof)",
+      "  └ 4 fragments → lifesteal:crystal_core",
+      "    (heals 33% max HP on use)",
+      "  └ 4 cores + diamond → lifesteal:heart_crystal",
+      "    +1 permanent heart (stackable — no limit stated)",
+      "  └ heart_crystal + core + ghast_tear + netherite +",
+      "    totem → lifesteal:revive_crystal",
+      "    (Revive Crystal: respawn mechanic for PvP servers)",
+      "",
+      "◈ DEATH INTERACTION WARNINGS",
+      "  └ Diet resets on EVERY death in Sinborn config",
+      "    Rebuild all 5 diet groups after any death",
+      "  └ Sculk Sickness death: -1 heart + Diet reset",
+      "    Two penalties simultaneously — avoid Sculk deaths",
+      "  └ Corpse But Better: your items drop at death location",
+      "    You have 5 minutes before corpse despawns",
+      "    Set corpse gravity to OFF before boss fights",
+      "",
+      "▸ The skin tears in the same place twice.",
+      "  The first time is the wound.",
+      "  The second time is the scar.",
+      "  The heart crystal records both.",
+      "  Farm the ore. Build the chain.",
+      "  Enter Ch12 with more than you started with.",
+      "",
+      "▶ Obtain a Heart Crystal",
+      "▶ Understand the full Lifesteal system [check]",
+      "",
+      "◇ Heart Ore spawns in the overworld AND the Nether.",
+      "  Mine it passively during Nether trips (below roof level).",
+      "  4 fragments per session = 1 crystal per 4 sessions.",
+      "  Start now. The compound interest matters in Ch12."
+    ],
+    "groups": {"Where the Skin Tears": {"position": [-300, 300]}},
+    "icon": {"item": {"id": "lifesteal:heart_crystal", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

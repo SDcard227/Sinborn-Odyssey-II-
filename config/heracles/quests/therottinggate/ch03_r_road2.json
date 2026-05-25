@@ -1,0 +1,54 @@
+{
+  "dependencies": ["ch03_r_road1"],
+  "tasks": {
+    "road_section": {
+      "title": "Build a road connecting your base to the nearest village",
+      "icon": {"item": {"id": "via_romana:roman_road", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "waystone": {
+      "title": "Register a Via Romana waypoint",
+      "icon": {"item": {"id": "waystones:waystone", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 3},
+      "type": "heracles:item"
+    },
+    "stone": {
+      "item": {"id": "minecraft:stone_bricks", "count": 32},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Network"},
+    "subtitle": {"text": "Roads are not about speed. They are about intention."},
+    "description": [
+      "A road means: I plan to come back.",
+      "A road means: this place matters.",
+      "",
+      "Connect your base to the nearest village.",
+      "You do not have to follow it every time.",
+      "But it will be there when you need to come home fast.",
+      "",
+      "Register a waypoint. Mark the route.",
+      "The network grows as the world does.",
+      "",
+      "→ Build road to nearest village [check]",
+      "→ Register a Via Romana waypoint [check]"
+    ],
+    "groups": {"The Rotting Gate": {"position": [300, 450]}},
+    "icon": {"item": {"id": "waystones:waystone", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

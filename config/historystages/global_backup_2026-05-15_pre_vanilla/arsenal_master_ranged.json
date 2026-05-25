@@ -1,0 +1,23 @@
+{
+  "display_name": "The Master Arsenal: Ranged",
+  "research_time": 5400,
+  "items": [
+    "simplycataclysm:black_steel_chakram",
+    "simplymore:mimicry_chakram",
+    "simplyswords:diamond_chakram",
+    "simplyswords:gold_chakram",
+    "simplyswords:mythicmetals_compat.mythril.mythril_chakram",
+    "simplyswords:mythicmetals_compat.steel.steel_chakram",
+    "simplyswords:netherite_chakram"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

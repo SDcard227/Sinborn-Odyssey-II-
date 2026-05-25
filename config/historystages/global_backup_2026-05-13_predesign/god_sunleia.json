@@ -1,0 +1,21 @@
+{
+  "display_name": "On Sunleia",
+  "research_time": 7200,
+  "items": [
+    "dungeons_and_combat:essence_of_sunleia",
+    "dungeons_and_combat:blessed_amulet",
+    "dungeons_and_combat:blessed_gold_ingot",
+    "dungeons_and_combat:divine_blood_vial",
+    "dungeons_and_combat:solar_emblem"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": ["dungeons_and_combat:sunleia"],
+    "spawnlock": []
+  }
+}

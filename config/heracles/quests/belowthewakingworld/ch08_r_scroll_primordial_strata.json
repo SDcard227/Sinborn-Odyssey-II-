@@ -1,0 +1,79 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Primordial Strata scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Primordial Strata scroll",
+      "icon": {
+        "item": {
+          "id": "alexscaves:amber",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock primordial_strata"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Primordial Strata"
+    },
+    "subtitle": {
+      "text": "Amber, fern, and the bones of beasts the world has not seen since."
+    },
+    "description": [
+      "\"Older than the civilisations. Older than the gods who counted them.\"",
+      "",
+      "This scroll unlocks 111 items.",
+      "",
+      "\u25c8 Found in: chests of the Primordial Caves biome",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Primordial Strata] [auto]"
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          1260,
+          900
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "alexscaves:amber",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

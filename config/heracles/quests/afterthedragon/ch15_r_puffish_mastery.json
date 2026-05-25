@@ -1,0 +1,90 @@
+{
+  "dependencies": ["ch15_r_skills2"],
+  "tasks": {
+    "all_trees": {
+      "title": "Max out all 5 Puffish Skills trees — Combat, Mining, Farming, Exploration, Magic",
+      "icon": {"item": {"id": "minecraft:experience_bottle", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "skill_combat": {
+      "title": "Reach level 20+ in Combat (Puffish Skills) — unlocks the highest tier combat perks",
+      "icon": {"item": {"id": "minecraft:diamond_sword", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "xp_bottle": {"item": {"id": "minecraft:experience_bottle", "count": 32}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Puffish Mastery"},
+    "subtitle": {"text": "5 skill trees. 5 paths. Level 20+ in all of them. Your endgame character is defined by what you invested in."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.15 · PUFFISH MASTERY",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Puffish Skills has 5 skill trees.",
+      "  Each tree gives passive bonuses for the associated activity.",
+      "  Ch15 is the chapter where you stop being reactive",
+      "  and start being optimized.",
+      "  Max out the trees that match your playstyle.",
+      "  Then max out the others.",
+      "",
+      "◈ THE FIVE SKILL TREES",
+      "  └ Combat: attack damage, critical hit chance, armor penetration",
+      "    Best for: boss fights, Cataclysm end chain, Ch17 endgame",
+      "  └ Mining: ore yield, tool speed, Fortune-equivalent bonus",
+      "    Best for: Celestisynth ore hunting (Ch15-16), Netherite",
+      "  └ Farming: crop yield, growth speed, food quality bonus",
+      "    Best for: Chorus farm, Bolloom farm, Serene Seasons output",
+      "  └ Exploration: sprint speed, fall resistance, elytra efficiency",
+      "    Best for: post-dragon world mapping, Via Romana bonus stacking",
+      "  └ Magic: ISS mana regen, spell damage, casting cooldown reduction",
+      "    Best for: Eldritch school combat (Ch13-17 boss chain)",
+      "",
+      "◈ SKILL LEVEL SOURCES",
+      "  └ XP is the primary resource — fight, mine, farm, explore",
+      "  └ Enderman farm (Ch13-14): best XP/hour source in the pack",
+      "  └ Boss fights: high XP per kill — the Cataclysm chain levels fast",
+      "  └ XP Bottles: craft from Bottle o' Enchanting sources",
+      "    (Lootr dungeon loot, Bountiful quest rewards)",
+      "  └ ISS casting: grants Magic XP per spell cast",
+      "",
+      "◈ PRIORITY ORDER",
+      "  └ Max Combat first (Ch17 boss chain requires it)",
+      "  └ Max Magic second (ISS Eldritch peak damage, Ch17 archmage)",
+      "  └ Max Exploration third (Elytra efficiency + map traversal)",
+      "  └ Mining + Farming: invest after the combat trees are done",
+      "",
+      "▸ The skill trees are what the journey taught you.",
+      "  Every boss fight increased Combat.",
+      "  Every cave improved Mining.",
+      "  Every farm improved Farming.",
+      "  Every exploration leg improved Exploration.",
+      "  Every spell improved Magic.",
+      "  By Ch15, most trees are partially filled already.",
+      "  Ch15 is where you complete the ones that are not.",
+      "",
+      "▶ Max out all 5 Puffish Skills trees [check]",
+      "▶ Reach Combat level 20+ [check]",
+      "",
+      "◇ Puffish Skills saves progress across sessions.",
+      "  The XP is banked — no re-grinding required.",
+      "  Check your current level with the skills UI",
+      "  and target the biggest gaps.",
+      "  Combat + Magic to 20+ is the Ch17 minimum."
+    ],
+    "groups": {"After the Dragon": {"position": [450, 150]}},
+    "icon": {"item": {"id": "minecraft:experience_bottle", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

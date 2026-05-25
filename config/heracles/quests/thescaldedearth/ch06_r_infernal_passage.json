@@ -1,0 +1,114 @@
+{
+  "dependencies": [
+    "ch06_nether"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/infernal_passage"
+    },
+    "survive_nether": {
+      "title": "Survive 3 in-game days (72 minutes) in the Nether without dying",
+      "icon": {
+        "item": {
+          "id": "minecraft:netherrack",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "fire_res": {
+      "item": {
+        "id": "minecraft:potion",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Infernal Passage"
+    },
+    "subtitle": {
+      "text": "Everything in the Nether is trying to kill you. The ThirstWasTaken bar drains at triple speed."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.06 · THE INFERNAL PASSAGE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Nether is not a biome you explore.",
+      "  It is an environment that fights you continuously.",
+      "  The scroll describes the survival protocol",
+      "  that kept the Infernal civilization alive.",
+      "  They are gone. The protocol remains.",
+      "",
+      "◈ NETHER SURVIVAL CHECKLIST",
+      "  └ ✓ Fire Resistance potion (minimum 2 for entry)",
+      "  └ ✓ Water: 20+ purified water items",
+      "    ThirstWasTaken drains at ×3 in Nether",
+      "    You will run out before you expect to",
+      "  └ ✓ Eiswein (Ch04): emergency full-heal",
+      "  └ ✓ Food: smoked/salted (heat won't spoil smoked)",
+      "  └ ✓ Bed: ▲ DO NOT sleep in Nether — it explodes",
+      "  └ ✓ Compass: doesn't work in Nether",
+      "    Use F3 coordinates. Build a trail.",
+      "  └ ✓ Obsidian: in case you need another portal",
+      "",
+      "◈ NETHER BIOME THREAT LEVELS",
+      "  └ Nether Wastes: medium — ghasts, zombie piglins",
+      "  └ Soul Sand Valley: high — skeleton walls,",
+      "    Jaden's Nether Expansion adds new mobs",
+      "  └ Crimson Forest: medium — hoglins, piglins",
+      "  └ Warped Forest: low — only Endermen",
+      "  └ Basalt Deltas: low mobs, high lava risk",
+      "  └ Bastion Remnant: ▲ extreme — piglins attack on sight",
+      "",
+      "◈ SCROLL: The Infernal Passage",
+      "  └ Found in: Nether fortress chests, bastion loot",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: Nether survival checklist, biome threat map",
+      "",
+      "▶ Find The Infernal Passage scroll [check]",
+      "▶ Survive 3 in-game days in the Nether [check]",
+      "",
+      "◇ Jaden's Nether Expansion adds new Soul Sand Valley",
+      "  mobs and items. The most dangerous is the",
+      "  Soul Reaper. Don't fight it alone in Ch06."
+    ],
+    "groups": {
+      "The Scalded Earth": {
+        "position": [
+          450,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:netherrack",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

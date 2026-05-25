@@ -1,0 +1,7 @@
+{
+  "woundDensityPercentage": 50,
+  "damagePassiveMobs": true,
+  "damageVillagers": false,
+  "damageColor": "RED",
+  "colorOverrides": {}
+}

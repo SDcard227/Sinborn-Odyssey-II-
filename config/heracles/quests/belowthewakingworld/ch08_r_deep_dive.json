@@ -1,0 +1,80 @@
+{
+  "dependencies": ["ch08_r_press2"],
+  "tasks": {
+    "deep_dive": {
+      "title": "Reach Y=-40 or below in an ocean biome — explore the absolute ocean floor",
+      "icon": {"item": {"id": "minecraft:heart_of_the_sea", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "heart_of_sea": {
+      "type": "heracles:item",
+      "item": "minecraft:heart_of_the_sea",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "conduit": {"item": {"id": "minecraft:conduit", "count": 1}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 4}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Abyss"}  ,
+    "subtitle": {"text": "The ocean floor has buried treasure, heart of the sea, and things that have not been named yet."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.08 · THE ABYSS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The ocean goes down past Y=0.",
+      "  Below the ocean floor is stone.",
+      "  Below the stone is the cave system.",
+      "  Below the cave system is everything else.",
+      "  You've been at the bottom of the caves.",
+      "  Go to the bottom of the ocean now.",
+      "",
+      "◈ THE OCEAN FLOOR",
+      "  └ Buried Treasure: X mark on map (from shipwrecks)",
+      "    contains Heart of the Sea + high-value loot",
+      "  └ Heart of the Sea + 8 Nautilus Shells = Conduit",
+      "    Conduit: underwater beacon — Water Breathing",
+      "    + Night Vision + Haste in activation radius",
+      "  └ Nautilus Shells: drop from Drowned (~3% or fishing)",
+      "  └ Ocean ruins: deeper loot at floor level",
+      "  └ Deep Trench: some ocean areas drop below Y=-30",
+      "    extra rare loot, dangerous Aquamirae territory",
+      "",
+      "◈ CONDUIT VALUE",
+      "  └ Conduit activation range: 32-96 blocks",
+      "    (depends on Prismarine blocks surrounding it)",
+      "  └ Effect: Water Breathing (indefinite in range),",
+      "    Night Vision, Haste +1",
+      "  └ Build one at your underwater base",
+      "  └ Never worry about Water Breathing again in that zone",
+      "",
+      "▸ The Heart of the Sea was in a locked chest",
+      "  at the bottom of a buried ship.",
+      "  The ship went down in a storm.",
+      "  The map was found rolled inside a bottle.",
+      "  The bottle was found in a bird's nest.",
+      "  Someone was trying very hard to lead you here.",
+      "",
+      "▶ Reach Y=-40 in ocean biome [check]",
+      "▶ Find a Heart of the Sea",
+      "",
+      "◇ Conduit + drained Ocean Monument = the best",
+      "  underwater base. Never leave.",
+      "  (Or leave for the End, reluctantly.)"
+    ],
+    "groups": {"Below the Waking World": {"position": [450, 300]}},
+    "icon": {"item": {"id": "minecraft:heart_of_the_sea", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

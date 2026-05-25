@@ -1,0 +1,32 @@
+{
+  "display_name": "The East Asian Banquet",
+  "research_time": 5400,
+  "items": [
+    "alexscaves:deep_sea_sushi_roll",
+    "delightful:berry_matcha_latte",
+    "delightful:matcha",
+    "delightful:matcha_gummy",
+    "delightful:matcha_ice_cream",
+    "delightful:matcha_ice_cream_block",
+    "delightful:matcha_latte",
+    "delightful:matcha_milkshake",
+    "delightful:matcha_milkshake_cauldron",
+    "farmersdelight:full_tatami_mat",
+    "farmersdelight:half_tatami_mat",
+    "farmersdelight:tatami"
+  ],
+  "tags": [],
+  "mods": [
+    "culturaldelights",
+    "mineraldelight",
+    "miners_delight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

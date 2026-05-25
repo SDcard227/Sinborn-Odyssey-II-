@@ -1,0 +1,121 @@
+{
+  "dependencies": [
+    "ch07_r_expl2"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/mechanical_expansion"
+    },
+    "deployer": {
+      "type": "heracles:item",
+      "item": "create:deployer",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "mechanical_arm": {
+      "type": "heracles:item",
+      "item": "create:mechanical_arm",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "brass": {
+      "item": {
+        "id": "create:brass_ingot",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Mechanical Expansion"
+    },
+    "subtitle": {
+      "text": "The Deployer places blocks. The Arm transfers items. Together they close the automation loop."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.07 · MECHANICAL EXPANSION",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Mechanical Expansion scroll covers",
+      "  the advanced Create components that complete",
+      "  the fully-automated factory.",
+      "  Belt. Funnel. Deployer. Arm. You have all of it now.",
+      "",
+      "◈ ADVANCED CREATE COMPONENTS",
+      "  └ Deployer: rotational machine that places/uses",
+      "    items in the world — automates building, farming,",
+      "    smelting (place item + furnace = auto-smelt)",
+      "  └ Mechanical Arm: transfers items between",
+      "    any combination of inventories/machines",
+      "    most flexible Create item routing tool",
+      "  └ Schematicannon: builds structures from schematics",
+      "    automates large construction",
+      "  └ Wrench: primary tool for all Create machines",
+      "    rotate direction, access configuration",
+      "  └ Goggles: show stress values, RPM, filter overlays",
+      "",
+      "◈ FULL AUTOMATION CHAIN EXAMPLE",
+      "  └ Harvester → Belt → Funnel into Millstone",
+      "    → Mechanical Arm to Mixer",
+      "    → Deployer to furnace",
+      "    → Belt to output chest",
+      "  └ Everything hands-free, 24/7",
+      "",
+      "◈ SCROLL: Mechanical Expansion",
+      "  └ Found in: Create factory ruins, advanced workshop",
+      "    chests, engineer guild loot",
+      "  └ Research time: 30 min",
+      "  └ Unlocks: full advanced Create awareness,",
+      "    automation chain design knowledge",
+      "",
+      "▸ The scroll's author built a factory that ran itself",
+      "  for 200 years after they left.",
+      "  The products are still in the output chests.",
+      "  Go find it.",
+      "",
+      "▶ Find The Mechanical Expansion scroll [check]",
+      "▶ Craft 2 Deployers",
+      "▶ Craft a Mechanical Arm",
+      "",
+      "◇ The Mechanical Arm is the final missing piece.",
+      "  With it, your factory has no gaps.",
+      "  Ch10 New Age Power turns it into an electric factory."
+    ],
+    "groups": {
+      "Blood and Oil": {
+        "position": [
+          -600,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create:mechanical_arm",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

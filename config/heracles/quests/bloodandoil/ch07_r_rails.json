@@ -1,0 +1,113 @@
+{
+  "dependencies": [
+    "ch07_r_combustion"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/rails_distance"
+    },
+    "train": {
+      "title": "Build a Steam 'n Rails train and run it on an existing rail line",
+      "icon": {
+        "item": {
+          "id": "railways:steam_locomotive",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "powered_rail": {
+      "item": {
+        "id": "minecraft:powered_rail",
+        "count": 32
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Rails & Distance"
+    },
+    "subtitle": {
+      "text": "Steam 'n Rails adds trains. The Nether highway you built is now a train route."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.07 · RAILS & DISTANCE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Steam 'n Rails extends Minecraft railroads",
+      "  into a full train network system.",
+      "  Everything you built in Ch06 runs faster now.",
+      "",
+      "◈ STEAM 'N RAILS OVERVIEW",
+      "  └ Steam Locomotive: replaces minecart for speed",
+      "    burns coal or diesel — much faster than carts",
+      "  └ Passenger Cars: carry multiple players or mobs",
+      "  └ Cargo Cars: automated item transport between stations",
+      "  └ Train Schedule: set automatic routes and stops",
+      "  └ Signal System: prevents train collisions on shared lines",
+      "  └ Station: passengers board/exit, cargo loads/unloads",
+      "",
+      "◈ NETHER HIGHWAY UPGRADE",
+      "  └ The Ch06 Nether rail is now a train route",
+      "  └ Add stations at each portal node",
+      "  └ Set automatic schedule: Nether Hub → each destination",
+      "  └ Train arrives on time. Every time.",
+      "",
+      "◈ SCROLL: Rails & Distance",
+      "  └ Found in: train station ruins, railway guild archives,",
+      "    station master's office chests",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: full Steam 'n Rails system, network design knowledge",
+      "",
+      "▸ The scroll ends with a schedule.",
+      "  Departure: dawn. Arrival: before dark.",
+      "  Every destination. Every day.",
+      "  The train kept the civilization alive",
+      "  after the roads stopped being maintained.",
+      "",
+      "▶ Find The Rails & Distance scroll [check]",
+      "▶ Build a Steam 'n Rails train and run it [check]",
+      "",
+      "◇ Cargo network: Create fluid/item pipes to station,",
+      "  train auto-exports to next node.",
+      "  The full industrial supply chain is possible by Ch07."
+    ],
+    "groups": {
+      "Blood and Oil": {
+        "position": [
+          600,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "railways:steam_locomotive",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

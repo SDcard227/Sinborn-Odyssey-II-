@@ -1,0 +1,120 @@
+{
+  "dependencies": [
+    "ch08_r_aq3"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/drowned_world"
+    },
+    "drowned_city": {
+      "title": "Locate the Gates of the Drowned City (Aquamirae — deep ocean structure, massive and dangerous)",
+      "icon": {
+        "item": {
+          "id": "minecraft:prismarine",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "prismarine": {
+      "item": {
+        "id": "minecraft:prismarine",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Drowned World"
+    },
+    "subtitle": {
+      "text": "The Gates of the Drowned City are Aquamirae's deepest structure. Do not enter alone."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.08 · THE DROWNED WORLD",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Aquamirae adds a deep ocean civilization",
+      "  that drowned.",
+      "  Their city is still there.",
+      "  Its gates are still guarded.",
+      "",
+      "◈ AQUAMIRAE CONTENT",
+      "  └ Gates of the Drowned City:",
+      "    massive multi-room deep ocean structure",
+      "    contains the best ocean-tier loot",
+      "    guarded by Aquamirae-specific mobs",
+      "  └ Mob types: Eel (fast, electric), Orca (pack hunter),",
+      "    Drowned variants with unique armor",
+      "  └ The Drowned World scroll drops from",
+      "    the inner chamber chests of the Gates",
+      "",
+      "◈ PREPARATION FOR GATES ENTRY",
+      "  └ ✓ Water Breathing: at minimum 8-min potion",
+      "    (Respiration III helmet extends this significantly)",
+      "  └ ✓ Night Vision: the deep ocean is dark",
+      "  └ ✓ Full enchanted armor: the Orca deals high damage",
+      "  └ ✓ Fire Resistance: some deep mobs have thermal attacks",
+      "  └ ✓ Eiswein or Regeneration: sustained healing",
+      "    needed for extended underwater fight",
+      "",
+      "◈ SCROLL: The Drowned World",
+      "  └ Found in: Gates of the Drowned City inner chambers,",
+      "    deep ocean ruin chests (rare), drowned mob drops",
+      "  └ Research time: 30 min",
+      "  └ Unlocks: Aquamirae full system awareness,",
+      "    Drowned City loot table knowledge",
+      "",
+      "▸ The scroll was written by the last member",
+      "  of the civilization that built the Gates.",
+      "  They sealed it in a waterproof case.",
+      "  They left it in the outer hall.",
+      "  They did not leave through the outer hall.",
+      "",
+      "▶ Find The Drowned World scroll [check]",
+      "▶ Locate the Gates of the Drowned City [check]",
+      "",
+      "◇ The Drowned World scroll mentions the Eye of the Drowned.",
+      "  One of the custom End Remastered eyes.",
+      "  Found in the inner chamber.",
+      "  Ch09 Eye Hunt needs it."
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          450,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:prismarine",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

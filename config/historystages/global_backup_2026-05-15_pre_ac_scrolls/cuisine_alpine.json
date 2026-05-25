@@ -1,0 +1,17 @@
+{
+  "display_name": "The Alpine Larder",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "meadow"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch16_r_wine1"],
+  "tasks": {
+    "wine_cellar": {
+      "title": "Brew 8 different Vinery wines — collect the full wine range (26 wines available in the mod)",
+      "icon": {"item": {"id": "vinery:wine_bottle", "count": 8}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "brewin_ale": {
+      "title": "Brew a Brewin & Chewin temperature ale — pair it with the Eiswein for the feast table",
+      "icon": {"item": {"id": "brewinandchewin:sweet_berry_jam", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "wine_rack": {
+      "item": {"id": "vinery:wine_rack", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Cellar"},
+    "subtitle": {"text": "A cellar is a civilization's belief in the future. You have to build it in the present for people who aren't born yet."},
+    "description": [
+      "Vinery's 26 wines cover a wide range of effects:",
+      "Combat buffs, healing, speed, resistance, saturation.",
+      "Each wine requires different grape varieties and fermentation conditions.",
+      "",
+      "Focus on:",
+      "- Eiswein (full heal — already done)",
+      "- Any wine with Regeneration (combat)",
+      "- Any wine with Strength (damage)",
+      "- Any wine with Saturation (Diet synergy)",
+      "",
+      "Brewin & Chewin adds ales and fermented drinks:",
+      "The temperature system affects drink potency.",
+      "Sweet Berry Jam is the base for several recipes.",
+      "The ale pairs with the wine for complete beverage coverage.",
+      "",
+      "A fully stocked cellar is:",
+      "Pre-combat healing. Post-combat recovery. Everyday saturation.",
+      "This is the infrastructure of a civilization that intends to continue.",
+      "",
+      "→ Brew 8 different Vinery wines [check]",
+      "→ Brew a Brewin & Chewin ale [check]"
+    ],
+    "groups": {"The Long Road Home": {"position": [-300, 0]}},
+    "icon": {"item": {"id": "vinery:wine_bottle", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

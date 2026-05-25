@@ -1,0 +1,95 @@
+{
+  "dependencies": [
+    "ch09_r_drag1"
+  ],
+  "tasks": {
+    "ice_dragon": {
+      "type": "heracles:kill_entity",
+      "entity": "iceandfire:ice_dragon",
+      "amount": 1
+    },
+    "lightning_dragon": {
+      "type": "heracles:kill_entity",
+      "entity": "iceandfire:lightning_dragon",
+      "amount": 1
+    },
+    "dragonsteel": {
+      "title": "Smelt at least one Dragonsteel Ingot from Dragon Scales",
+      "icon": {
+        "item": {
+          "id": "iceandfire:dragonsteel_fire_ingot",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "lightning_scale": {
+      "item": {
+        "id": "iceandfire:lightning_dragon_scale",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 14
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Three Tiers"
+    },
+    "subtitle": {
+      "text": "Fire, Ice, Lightning. Three dragons. Three scales. One material tier."
+    },
+    "description": [
+      "All three Ice & Fire dragon types are now in scope.",
+      "Each yields unique scales that smelt into different Dragonsteel variants.",
+      "",
+      "Fire Dragon → Dragonsteel Fire Ingot",
+      "Ice Dragon → Dragonsteel Ice Ingot",
+      "Lightning Dragon → Dragonsteel Lightning Ingot",
+      "",
+      "⚠️ Lightning Dragon was missing from the original boss_lock.js.",
+      "It has been fixed in the current version.",
+      "It requires the eye_black scroll same as Fire and Ice.",
+      "",
+      "Dragonsteel Lightning Ingot is an ingredient in the Black Eye recipe.",
+      "You need it. The Lightning Dragon is not optional.",
+      "",
+      "→ Kill an Ice Dragon [check]",
+      "→ Kill a Lightning Dragon [check]",
+      "→ Smelt a Dragonsteel Ingot from scales [check]"
+    ],
+    "groups": {
+      "The Eleven-Eyed Hunt": {
+        "position": [
+          300,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "iceandfire:lightning_dragon_scale",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

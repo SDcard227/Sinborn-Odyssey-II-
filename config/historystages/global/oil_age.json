@@ -1,0 +1,32 @@
+{
+  "display_name": "The Oil Age",
+  "research_time": 7200,
+  "items": [
+    "tfmg:crude_oil",
+    "tfmg:crude_oil_bucket",
+    "tfmg:diesel",
+    "tfmg:diesel_bucket",
+    "tfmg:diesel_engine_cylinder",
+    "tfmg:electromagnetic_coil",
+    "tfmg:gasoline",
+    "tfmg:gasoline_bucket",
+    "tfmg:heavy_oil",
+    "tfmg:heavy_oil_bucket",
+    "tfmg:lubrication_oil",
+    "tfmg:lubrication_oil_bucket",
+    "tfmg:oil_can",
+    "tfmg:oil_deposit",
+    "tfmg:oil_hammer",
+    "tfmg:unfinished_electromagnetic_coil"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

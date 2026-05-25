@@ -1,0 +1,57 @@
+{
+  "dependencies": ["ch06_nether"],
+  "tasks": {
+    "brass": {
+      "type": "heracles:item",
+      "item": "create:brass_ingot",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "mixer": {
+      "type": "heracles:item",
+      "item": "create:mechanical_mixer",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "zinc": {
+      "item": {"id": "create:zinc_ingot", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Alloys"},
+    "subtitle": {"text": "Brass requires the Mixer. The Mixer requires brass to make."},
+    "description": [
+      "Brass = Copper + Zinc in the Mechanical Mixer.",
+      "Zinc spawns between Y: 0 and Y: 60.",
+      "",
+      "The Mechanical Mixer needs heated rotation below it — a Blaze Burner.",
+      "The Blaze Burner needs a Blaze rod to activate.",
+      "That is why you went to the Nether first.",
+      "",
+      "Brass opens the precision tier of Create.",
+      "Brass Casings. Electron Tubes. Filter Slots.",
+      "Everything from here forward becomes more precise.",
+      "",
+      "→ Craft a Mechanical Mixer",
+      "→ Alloy 16 brass ingots"
+    ],
+    "groups": {"The Scalded Earth": {"position": [0, 300]}},
+    "icon": {"item": {"id": "create:brass_ingot", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

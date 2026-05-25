@@ -1,0 +1,37 @@
+{
+  "display_name": "Eye Synthesis",
+  "research_time": 14400,
+  "items": [
+    "end_remastered_promax:ancient_eye",
+    "end_remastered_promax:arcane_eye",
+    "end_remastered_promax:enhance_eye",
+    "end_remastered_promax:environment_eye",
+    "end_remastered_promax:weird_eye",
+    "end_remastered_promax:curios_black_eye",
+    "end_remastered_promax:curios_cold_eye",
+    "end_remastered_promax:curios_corrupted_eye",
+    "end_remastered_promax:curios_cryptic_eye",
+    "end_remastered_promax:curios_cursed_eye",
+    "end_remastered_promax:curios_evil_eye",
+    "end_remastered_promax:curios_exotic_eye",
+    "end_remastered_promax:curios_guardian_eye",
+    "end_remastered_promax:curios_lost_eye",
+    "end_remastered_promax:curios_magical_eye",
+    "end_remastered_promax:curios_nether_eye",
+    "end_remastered_promax:curios_old_eye",
+    "end_remastered_promax:curios_rogue_eye",
+    "end_remastered_promax:curios_undead_eye",
+    "end_remastered_promax:curios_witch_eye",
+    "end_remastered_promax:curios_wither_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

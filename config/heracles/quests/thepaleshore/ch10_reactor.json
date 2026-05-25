@@ -1,0 +1,93 @@
+{
+  "dependencies": [
+    "ch10_electric"
+  ],
+  "tasks": {
+    "solar": {
+      "title": "Build a Create: New Age Solar Panel array (generates heat → boiler → steam power)",
+      "type": "heracles:check"
+    },
+    "heat_pipe": {
+      "title": "Build a Heat Pipe network from reactor to boiler to Steam Engine",
+      "icon": {
+        "item": {
+          "id": "create_new_age:heat_pipe",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "nuclear_reactor": {
+      "title": "Construct a Create: New Age Nuclear Reactor (uranium fuel chain required)",
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "netherite": {
+      "item": {
+        "id": "minecraft:netherite_ingot",
+        "count": 2
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 14
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "The Engineers built perfect machines for the wrong purpose. You build the reactor knowing that."
+    },
+    "description": [
+      "The Create: New Age Nuclear Reactor generates heat.",
+      "Heat pipes carry it to Fluid Tank boilers.",
+      "Boilers generate steam. Steam drives the Engine.",
+      "This replaces Blaze Burners in the highest-tier steam setup.",
+      "",
+      "Solar Panels are the passive alternative.",
+      "They generate heat during daylight.",
+      "Enough solar panels can run the factory without fuel.",
+      "",
+      "The Rogue Eye is the Engineers' inheritance.",
+      "Their machines worked perfectly for the wrong purpose.",
+      "The question is not whether the reactor works.",
+      "It is what you point it at.",
+      "",
+      "→ Build a Solar Panel array [check]",
+      "→ Build a Nuclear Reactor [check]",
+      "→ Run a Heat Pipe network to a boiler [check]"
+    ],
+    "groups": {
+      "The Pale Shore": {
+        "position": [
+          0,
+          450
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:air",
+        "count": 0
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "The Reactor"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

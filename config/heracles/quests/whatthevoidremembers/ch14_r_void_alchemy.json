@@ -1,0 +1,91 @@
+{
+  "dependencies": ["ch14_r_diet2"],
+  "tasks": {
+    "lingering_stack": {
+      "type": "heracles:item",
+      "item": "minecraft:lingering_potion",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    },
+    "splash_regen": {
+      "title": "Brew a Splash Potion of Regeneration II — upgrade path before Lingering Potions",
+      "icon": {"item": {"id": "minecraft:splash_potion", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "glowstone": {"item": {"id": "minecraft:glowstone_dust", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Void Alchemy"},
+    "subtitle": {"text": "Dragon Breath is the key to the top tier of potion brewing. Every other potion is a Splash Potion. This is different."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.14 · VOID ALCHEMY",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Lingering Potions are the final tier of vanilla brewing.",
+      "  They require Dragon Breath — the only End-exclusive brewing material.",
+      "  Splash Potions burst on impact and are gone.",
+      "  Lingering Potions leave a cloud that persists for 30 seconds.",
+      "  Any entity in the cloud receives the potion effect.",
+      "  For healing: a persistent regen zone.",
+      "  For combat: targeted debuff territory.",
+      "",
+      "◈ BREWING CHAIN",
+      "  └ Base: Awkward Potion (Water Bottle + Nether Wart)",
+      "  └ Effect ingredient: add effect modifier",
+      "    (Regeneration: Ghast Tear; Strength: Blaze Powder; etc.)",
+      "  └ Splash conversion: add Gunpowder → Splash Potion",
+      "  └ Lingering conversion: add Dragon Breath → Lingering Potion",
+      "  └ Upgrade: add Glowstone Dust → Level II effect",
+      "  └ Extend: add Redstone Dust → longer duration",
+      "",
+      "◈ PRIORITY LINGERING POTIONS FOR CH15+",
+      "  └ Lingering Regeneration II: area healing mid-boss",
+      "    (throws at feet during AOE dodge window)",
+      "  └ Lingering Slowness IV: slows all entities in zone",
+      "    (boss crowd-control, especially for multi-phase fights)",
+      "  └ Lingering Weakness: reduces boss melee damage output",
+      "    (defensive; useful against Cataclysm and Divine bosses)",
+      "  └ Tipped Arrows: fill area with Lingering Potion → Arrow tips",
+      "    (convert 8 arrows + 1 Lingering Potion = 8 tipped arrows)",
+      "",
+      "◈ DRAGON BREATH SUPPLY MATH",
+      "  └ 1 Dragon Breath = 1 Splash → 1 Lingering Potion",
+      "  └ Target batch: 32+ Dragon Breath per re-summon run",
+      "  └ Efficient cycle: re-summon → collect during fight → brew session",
+      "  └ Alchemy setup: Brewing Stand near End portal or Ender Chest",
+      "    for supply without Overworld trips",
+      "",
+      "▸ The Dragon's breath is its weapon.",
+      "  You are putting it in bottles.",
+      "  The weapon becomes medicine.",
+      "  The medicine becomes armor.",
+      "  This is what alchemy has always been:",
+      "  converting what kills you into what keeps you alive.",
+      "",
+      "▶ Collect 8 Lingering Potions",
+      "▶ Brew a Splash Potion of Regeneration II [check]",
+      "",
+      "◇ Tipped Arrows are one of the best DPS investments",
+      "  in Ch15-17 boss fights.",
+      "  Lingering Weakness or Poison on arrows",
+      "  does not require Elytras, ISS spells, or Create automation.",
+      "  It requires a Brewing Stand and Dragon Breath.",
+      "  You have both. Make the arrows."
+    ],
+    "groups": {"What the Void Remembers": {"position": [450, 150]}},
+    "icon": {"item": {"id": "minecraft:lingering_potion", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

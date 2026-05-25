@@ -1,0 +1,59 @@
+{
+  "dependencies": ["ch12_world"],
+  "tasks": {
+    "sol_visage": {
+      "title": "Confirm you have the Sol Visage from Barako the Sun Chief (Mowzie's Mobs — fought in Ch05 ribs)",
+      "icon": {"item": {"id": "mowziesmobs:sol_visage", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "death_worm_chitin": {
+      "title": "Collect Death Worm Chitin (Ice & Fire — from Death Worm kills in desert biomes, Ch07)",
+      "icon": {"item": {"id": "iceandfire:death_worm_powder", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 10},
+      "type": "heracles:item"
+    },
+    "gold": {
+      "item": {"id": "minecraft:gold_ingot", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Old Eye Chain"},
+    "subtitle": {"text": "Objects that are very old remember being old. Handle accordingly."},
+    "description": [
+      "The Old Eye is the Oldest Civilization's inheritance.",
+      "They mastered total memory, comprehensive knowledge.",
+      "They fell because remembering everything was not enough.",
+      "",
+      "The Old Eye recipe requires:",
+      "- mowziesmobs:sol_visage (center — Barako the Sun Chief drop, Ch05)",
+      "- iceandfire:deathworm_chitin (Death Worm drops, Ch07 desert chain)",
+      "- essence_of_sunleia (sun-related Mowzie's Mobs material)",
+      "- sandstorm_in_a_bottle (desert dungeon loot)",
+      "- companions:relic_gold (Companions! mod drops)",
+      "- ancient_pearl (ancient structure loot)",
+      "",
+      "Check your storage from Ch05 and Ch07.",
+      "The Sol Visage and Death Worm drops should already be there.",
+      "",
+      "→ Confirm Sol Visage from Barako fight [check]",
+      "→ Confirm Death Worm Chitin from Ch07 [check]"
+    ],
+    "groups": {"The Kingdom You Build": {"position": [-150, 150]}},
+    "icon": {"item": {"id": "mowziesmobs:sol_visage", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

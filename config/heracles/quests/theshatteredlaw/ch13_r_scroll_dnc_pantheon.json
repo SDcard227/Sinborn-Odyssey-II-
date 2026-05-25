@@ -1,0 +1,77 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Forgotten Pantheon scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Forgotten Pantheon scroll",
+      "icon": {
+        "item": {
+          "id": "dungeons_and_combat:acid_blazing_shield",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock dnc_pantheon"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Forgotten Pantheon"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Copied between every civilization that touched it.\"",
+      "",
+      "This scroll unlocks 562 items.",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Forgotten Pantheon] [auto]"
+    ],
+    "groups": {
+      "The Shattered Law": {
+        "position": [
+          1200,
+          900
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "dungeons_and_combat:acid_blazing_shield",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

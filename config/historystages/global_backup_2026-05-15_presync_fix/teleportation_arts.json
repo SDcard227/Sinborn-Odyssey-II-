@@ -1,0 +1,40 @@
+{
+  "display_name": "Teleportation Arts (the Quantum Age)",
+  "research_time": 10800,
+  "items": [
+    "createteleporters:adv_tplink",
+    "createteleporters:advanced_part",
+    "createteleporters:block_tp",
+    "createteleporters:block_tp_on",
+    "createteleporters:corrupt_dimension",
+    "createteleporters:custom_portal",
+    "createteleporters:custom_portal_on",
+    "createteleporters:gravity_stab",
+    "createteleporters:incomplete_advanced_part",
+    "createteleporters:incomplete_q_mechanism",
+    "createteleporters:item_tp",
+    "createteleporters:item_tp_rec",
+    "createteleporters:pocket_d_block",
+    "createteleporters:pocket_dimension_remote",
+    "createteleporters:quantum_casing",
+    "createteleporters:quantum_fluid",
+    "createteleporters:quantum_fluid_bucket",
+    "createteleporters:quantum_mechanism",
+    "createteleporters:redstone_pearl",
+    "createteleporters:teleporter",
+    "createteleporters:teleporter_enable",
+    "createteleporters:tp_link",
+    "createteleporters:tp_rec",
+    "createteleporters:warp_portal"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

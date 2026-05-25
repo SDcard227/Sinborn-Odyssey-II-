@@ -1,0 +1,66 @@
+{
+  "dependencies": ["ch09_world"],
+  "tasks": {
+    "find_cockatrice": {
+      "title": "Locate a Cockatrice (Ice & Fire — spawns in Savanna biomes; if rare, check Jungle or Plains)",
+      "icon": {"item": {"id": "iceandfire:cockatrice_feather", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "cockatrice_eye": {
+      "type": "heracles:item",
+      "item": "iceandfire:cockatrice_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "mirror": {
+      "title": "Use a Mirror to petrify the Cockatrice (Ice & Fire — look away or use mirror)",
+      "icon": {"item": {"id": "iceandfire:mirror_shield", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "cockatrice_feather": {
+      "item": {"id": "iceandfire:cockatrice_feather", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Desert Eye"},
+    "subtitle": {"text": "It sees nothing. Not darkness. Not blindness. The absence of looking."},
+    "description": [
+      "The Cockatrice is the Desert Civilization's remnant creature.",
+      "Its gaze petrifies. Looking at it directly causes Slowness and Weakness.",
+      "The Mirror Shield reflects its petrification back.",
+      "",
+      "The Desert Civilization mastered death, poison, petrification.",
+      "They fell after mastering death until they saw nothing else.",
+      "The Cockatrice Eye is what they saw at the end:",
+      "the absence of looking.",
+      "",
+      "⚠️ Known spawn bug: Cockatrice may not spawn in Savannas in 1.20.",
+      "Try Jungle biomes, Plains with high heat, or Desert adjacent biomes.",
+      "Use Antique Atlas to map your search area.",
+      "",
+      "The Cockatrice Eye is the center ingredient of the Black Eye recipe.",
+      "",
+      "→ Find a Cockatrice [check]",
+      "→ Kill it using the Mirror Shield or indirect tactics [check]",
+      "→ Collect the Cockatrice Eye (rare drop — use Looting enchantment)"
+    ],
+    "groups": {"The Eleven-Eyed Hunt": {"position": [0, 150]}},
+    "icon": {"item": {"id": "iceandfire:cockatrice_eye", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

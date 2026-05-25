@@ -1,0 +1,121 @@
+{
+  "dependencies": [
+    "ch13_outer"
+  ],
+  "tasks": {
+    "harbinger": {
+      "type": "heracles:kill_entity",
+      "entity": "cataclysm:harbinger",
+      "amount": 1
+    },
+    "primordial": {
+      "type": "heracles:kill_entity",
+      "entity": "cataclysm:primordial",
+      "amount": 1
+    }
+  },
+  "rewards": {
+    "ignitium": {
+      "item": {
+        "id": "cataclysm:ignitium",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The End Chain"
+    },
+    "subtitle": {
+      "text": "The Ender Guardian. The Harbinger. The Primordial. Three Cataclysm bosses that only exist after the portal opens."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.13 · THE END CHAIN",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Three Cataclysm bosses only spawn in the End.",
+      "  They require portal access.",
+      "  They are the continuation of the Cataclysm chain",
+      "  from Ch11 — extended into the void.",
+      "  Clear them in order. The final drops complete",
+      "  the Cataclysm boss sequence.",
+      "",
+      "◈ END CHAIN BOSSES",
+      "  └ ✦ Ender Guardian (cataclysm:)",
+      "    Found in End-specific ruins on outer islands",
+      "    First post-portal Cataclysm encounter",
+      "    Drops: End-tier Cataclysm materials",
+      "  └ ✦ Harbinger (cataclysm:)",
+      "    Mid-tier End boss, void-themed attacks",
+      "    Uses void zone tactics (see Ch11 Annihilator guide)",
+      "    Drops: Harbinger materials for final tier craft",
+      "  └ ✦ Primordial (cataclysm:)",
+      "    Ancient boss — the oldest Cataclysm entity",
+      "    High HP, mixed attack patterns",
+      "    Drops: Primordial materials = final Cataclysm tier",
+      "",
+      "◈ FIGHT PREPARATION",
+      "  └ Armor: Emulator-tier Cataclysm gear minimum",
+      "    (Ignitium set is the floor, not the ceiling)",
+      "  └ ISS Eldritch school: bonus vs void entities in End",
+      "  └ Elytra + Fireworks: escape route when fight goes wrong",
+      "    (End bosses often aggro from distance — have exit)",
+      "  └ No regeneration mechanics in End: bring healing",
+      "",
+      "◈ SEQUENCE NOTE",
+      "  └ All three bosses: defeat in whatever order found",
+      "  └ No hard prerequisite chain unlike Ch11 Cataclysm",
+      "  └ Find boss structures by exploring outer End islands",
+      "    (same island clusters as End Cities — nearby)",
+      "",
+      "▸ The Primordial was here before the Dragon.",
+      "  It watched the civilizations build the portal.",
+      "  It watched them fill it with eyes.",
+      "  It watched you open it.",
+      "  It did not expect you to come for it next.",
+      "  None of them expected that.",
+      "",
+      "▶ Defeat the Harbinger [check]",
+      "▶ Defeat the Primordial [check]",
+      "",
+      "◇ Cataclysm chain complete after Primordial.",
+      "  Check JEI for any final-tier recipes unlocked.",
+      "  The full chain took 5 chapters.",
+      "  The loot chain took the same 5 chapters.",
+      "  Both are complete now."
+    ],
+    "groups": {
+      "The Shattered Law": {
+        "position": [
+          600,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:ender_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

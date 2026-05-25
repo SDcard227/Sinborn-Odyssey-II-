@@ -1,0 +1,17 @@
+{
+  "display_name": "The Infernal Age",
+  "research_time": 7200,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "netherexp"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

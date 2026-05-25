@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch06_nether"],
+  "tasks": {
+    "hoglin_loin": {
+      "type": "heracles:item",
+      "item": "nethers_delight:hoglin_loin",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "cook_nether": {
+      "title": "Cook a Nether meal using Nether ingredients (campfire, smoker, or stove)",
+      "icon": {"item": {"id": "minecraft:campfire", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "strider_meat": {
+      "title": "Kill a Strider and collect Strider Scales or meat",
+      "icon": {"item": {"id": "minecraft:string", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "cooked_hoglin": {
+      "item": {"id": "nethers_delight:cooked_hoglin_loin", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Nether Kitchen"},
+    "subtitle": {"text": "Survival food for an unsurvivable dimension."},
+    "description": [
+      "The Nether has food if you know where to look.",
+      "Hoglin meat is the most obvious source.",
+      "The Strider feeds on lava and tastes like smoke.",
+      "",
+      "Nether cuisine is not comfort food.",
+      "It is functional food for a hostile environment.",
+      "Nether's Delight adds full cooking chains for every Nether mob.",
+      "",
+      "Hoglin Loin drops from Hoglins (aggro in Crimson Forest, passive elsewhere).",
+      "Warped Moldy Meat causes Blindness + Confusion — do not eat it.",
+      "Plate of Stuffed Hoglin Snout gives 14 hunger — highest in the dimension.",
+      "",
+      "→ Collect 4 Hoglin Loins",
+      "→ Cook a Nether meal [check]",
+      "→ Kill a Strider and collect its drops [check]"
+    ],
+    "groups": {"The Scalded Earth": {"position": [150, 150]}},
+    "icon": {"item": {"id": "nethers_delight:hoglin_loin", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

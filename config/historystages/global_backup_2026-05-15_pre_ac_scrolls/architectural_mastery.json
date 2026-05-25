@@ -1,0 +1,26 @@
+{
+  "display_name": "Architectural Mastery",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "chalk",
+    "createadditionallogistics",
+    "createdeco",
+    "echovoids",
+    "glow_sticks",
+    "luminousworld",
+    "netherexp",
+    "quark",
+    "supplementaries",
+    "verdant"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

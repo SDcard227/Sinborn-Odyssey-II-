@@ -1,0 +1,22 @@
+{
+  "display_name": "Infernal Cuisine",
+  "research_time": 10800,
+  "items": [
+    "minecraft:ghast_tear"
+  ],
+  "tags": [],
+  "mods": [
+    "createnv",
+    "lendersdelight",
+    "mynethersdelight",
+    "nethervinery"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "display_name": "The Jade Kitchen",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "youkaisfeasts"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

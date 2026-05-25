@@ -1,0 +1,59 @@
+{
+  "dependencies": ["ch04_brew"],
+  "tasks": {
+    "keg": {
+      "type": "heracles:item",
+      "item": "brewinandchewin:keg",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "jam": {
+      "title": "Ferment sweet berry mash in the keg",
+      "icon": {"item": {"id": "brewinandchewin:sweet_berry_jam", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "strength": {
+      "item": {"id": "minecraft:potion", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 6},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "What Time Makes"},
+    "subtitle": {"text": "You can automate many things. Not patience."},
+    "description": [
+      "Brewin and Chewin is a Farmer's Delight extension.",
+      "The Keg ferments what the Cooking Pot and Barrel cannot.",
+      "",
+      "Temperature matters: hot or cold blocks within two",
+      "will affect the brew. Check JEI's Keg category.",
+      "No guidebook — use advancements.",
+      "",
+      "The Tipsy effect gives screen wobble and chat scramble.",
+      "It is worth experiencing. Once.",
+      "",
+      "The Long Pour remains the same length",
+      "while every other age accelerates.",
+      "This is its lesson.",
+      "",
+      "→ Craft a Keg",
+      "→ Ferment sweet berry mash [check]"
+    ],
+    "groups": {"The Long Pour": {"position": [0, 450]}},
+    "icon": {"item": {"id": "brewinandchewin:keg", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

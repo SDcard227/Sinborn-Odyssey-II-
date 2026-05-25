@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Symbiont Pursuit scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Symbiont Pursuit scroll",
+      "icon": {
+        "item": {
+          "id": "witherstormmod:formidibomb",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock symbiont_pursuit"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Symbiont Pursuit"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"The Heir line carries this. Only the Heir line.\"",
+      "",
+      "Wither Storm summoning + Symbiont kill chain.",
+      "",
+      "This scroll unlocks 6 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 End City Treasure",
+      "  \u00b7 Ancient City Ice Box",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Symbiont Pursuit] [auto]"
+    ],
+    "groups": {
+      "What the Void Remembers": {
+        "position": [
+          1146,
+          840
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "witherstormmod:formidibomb",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

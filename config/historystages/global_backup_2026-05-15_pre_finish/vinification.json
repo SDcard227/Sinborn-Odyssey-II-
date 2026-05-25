@@ -1,0 +1,18 @@
+{
+  "display_name": "Vinification (Wines)",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "createvinery",
+    "vinery"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

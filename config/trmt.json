@@ -1,0 +1,61 @@
+{
+  "erosion": {
+    "grassEnabled": true,
+    "dirtEnabled": true,
+    "sandEnabled": true,
+    "leavesEnabled": true,
+    "vegetationEnabled": true
+  },
+  "erosionMultipliers": {
+    "player": 0.5,
+    "mounted": 1.5
+  },
+  "erosionThresholds": {
+    "grass": {
+      "min": 2.0,
+      "max": 4.0
+    },
+    "dirt": {
+      "min": 8.0,
+      "max": 12.0
+    },
+    "coarseDirt": {
+      "min": 12.0,
+      "max": 20.0
+    },
+    "sand": {
+      "min": 4.0,
+      "max": 8.0
+    },
+    "vegetation": {
+      "dropChance": 0.2,
+      "min": 2.0,
+      "max": 3.0
+    },
+    "leaves": {
+      "dropChance": 0.1,
+      "min": 2.0,
+      "max": 3.0
+    }
+  },
+  "deErosionTimeoutDays": {
+    "grass": {
+      "stage1": 1.0,
+      "stage2": 2.0,
+      "stage3": 3.0,
+      "stage4": 5.0,
+      "stage5": 8.0
+    },
+    "dirt": {
+      "erodedDirt": 13.0,
+      "erodedCoarseDirt": 21.0
+    },
+    "sand": {
+      "stage1": 1.0,
+      "stage2": 1.0,
+      "stage3": 2.0,
+      "stage4": 3.0,
+      "stage5": 5.0
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "dependencies": [
+    "ch03_r_smith2"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/weapon_forms"
+    },
+    "sword_craft": {
+      "title": "Craft any Simply Swords weapon (claymore, katana, lance, or other specialty weapon type)",
+      "icon": {
+        "item": {
+          "id": "minecraft:iron_sword",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "iron": {
+      "item": {
+        "id": "minecraft:iron_ingot",
+        "count": 12
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Weapon Forms"
+    },
+    "subtitle": {
+      "text": "Simply Swords adds 15 weapon forms. Each one fights differently."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.03 · THE WEAPON FORMS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Simply Swords adds 15 weapon archetypes.",
+      "  Each crafted from standard materials.",
+      "  Each with different attack patterns, reach, and speed.",
+      "",
+      "◈ THE 15 WEAPON TYPES",
+      "  └ ⚔ Greatsword — slow, high damage, wide sweep",
+      "  └ ⚔ Rapier — fast, piercing, low knockback",
+      "  └ ⚔ Katana — medium speed, bonus crit chance",
+      "  └ ⚔ Saber — cavalry bonus, mounted damage",
+      "  └ ⚔ Claymore — Scottish two-hander, reach",
+      "  └ ⚔ Longsword — balanced, all-purpose",
+      "  └ ⚔ Twinblade — dual-tip, combo attacks",
+      "  └ ⚔ Warhammer — blunt, armor penetration",
+      "  └ ⚔ Spear — extended reach, throw ability",
+      "  └ ⚔ Halberd — pole-axe, sweep + thrust",
+      "  └ ⚔ Scythe — harvest weapon, wide arc",
+      "  └ ⚔ Dagger — small, fast, backstab bonus",
+      "  └ ⚔ Quarterstaff — reach, no sharp damage",
+      "  └ ⚔ Battle Axe — cleave through armor",
+      "  └ ⚔ Falchion — curved blade, fast swings",
+      "",
+      "◈ GEM SYSTEM",
+      "  └ Weapons can have gem slots",
+      "  └ Socket gems for stat bonuses",
+      "  └ Gems found in dungeon loot, boss drops",
+      "  └ Multiple gem slots on high-tier weapons",
+      "",
+      "◈ SCROLL: The Weapon Forms",
+      "  └ Found in: blacksmith chests, combat school ruins,",
+      "    armory loot, warrior graves",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: all 15 weapon type awareness, gem socket knowledge",
+      "",
+      "▸ The scroll is worn smooth at the edges.",
+      "  Someone read it until the paper thinned.",
+      "  Then they picked a form and practiced until they didn't need it.",
+      "",
+      "▶ Find The Weapon Forms scroll [check]",
+      "▶ Craft any Simply Swords specialty weapon [check]",
+      "",
+      "◇ On The Blade scroll (this chain, next) covers",
+      "  the combat philosophy behind weapon choice.",
+      "  Read both before Ch11."
+    ],
+    "groups": {
+      "The Rotting Gate": {
+        "position": [
+          -300,
+          450
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:iron_sword",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

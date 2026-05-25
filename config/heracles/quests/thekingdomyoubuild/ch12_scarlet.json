@@ -1,0 +1,60 @@
+{
+  "dependencies": ["ch12_manifestor"],
+  "tasks": {
+    "seal_king": {
+      "title": "Use Banishing Chains to seal the Scarlet King before Manifestation reaches 500",
+      "icon": {"item": {"id": "scarlet_king:banishing_chains", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "scarlet_crown": {
+      "type": "heracles:item",
+      "item": "scarlet_king:scarlet_crown",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "chains": {
+      "item": {"id": "scarlet_king:banishing_chains", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Scarlet King"},
+    "subtitle": {"text": "You don't defeat power. You contain it."},
+    "description": [
+      "The Scarlet King is UNKILLABLE.",
+      "Direct damage does nothing.",
+      "The only solution is Banishing Chains to seal it.",
+      "",
+      "Seal with Manifestation below 500 →",
+      "the King drops the Scarlet Crown.",
+      "",
+      "The moral question is not whether you use the Crown.",
+      "You must use it to craft the Cursed Eye.",
+      "The pack requires it. There is no clean path.",
+      "The Cursed Eye is the Previous Cycle's inheritance.",
+      "The previous civilization accepted the Manifestor fully.",
+      "They became the cycle's warning.",
+      "You are now holding what they left behind.",
+      "",
+      "→ Seal the Scarlet King with Banishing Chains [check]",
+      "→ Collect the Scarlet Crown from its drop"
+    ],
+    "groups": {"The Kingdom You Build": {"position": [0, 300]}},
+    "icon": {"item": {"id": "scarlet_king:scarlet_crown", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

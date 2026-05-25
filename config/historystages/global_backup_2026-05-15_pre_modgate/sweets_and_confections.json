@@ -1,0 +1,51 @@
+{
+  "display_name": "Sweets & Confections",
+  "research_time": 2700,
+  "items": [
+    "alexscaves:block_of_chiseled_chocolate",
+    "alexscaves:block_of_chocolate",
+    "alexscaves:block_of_chocolate_frosting",
+    "alexscaves:block_of_frosted_chocolate",
+    "alexscaves:block_of_polished_chocolate",
+    "alexscaves:candy_cane",
+    "alexscaves:caramel",
+    "alexscaves:caramel_apple",
+    "alexscaves:gelatin_blue",
+    "alexscaves:gelatin_green",
+    "alexscaves:gelatin_pink",
+    "alexscaves:gelatin_red",
+    "alexscaves:gelatin_yellow",
+    "alexscaves:gummy_ring_blue",
+    "alexscaves:gummy_ring_green",
+    "alexscaves:gummy_ring_pink",
+    "alexscaves:gummy_ring_red",
+    "alexscaves:gummy_ring_yellow",
+    "alexscaves:hot_chocolate_bottle",
+    "alexscaves:sundae",
+    "alexscaves:sweet_puff",
+    "alexscaves:sweet_tooth",
+    "delightful:cantaloupe_gummy",
+    "delightful:cantaloupe_popsicle",
+    "delightful:cooked_marshmallow_stick",
+    "delightful:marshmallow_stick",
+    "delightful:passion_fruit_tart",
+    "delightful:passion_fruit_tart_slice",
+    "delightful:pumpkin_pie",
+    "delightful:salmonberry_gummy",
+    "delightful:source_berry_gummy",
+    "farmersdelight:sweet_berry_cheesecake"
+  ],
+  "tags": [],
+  "mods": [
+    "caves_delight",
+    "ratatouille"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

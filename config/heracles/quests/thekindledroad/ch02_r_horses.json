@@ -1,0 +1,120 @@
+{
+  "dependencies": [
+    "ch02_r_companions"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/rec_horses"
+    },
+    "saddle": {
+      "title": "Obtain a Saddle",
+      "icon": {
+        "item": {
+          "id": "minecraft:saddle",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "amount": 1,
+      "type": "heracles:item",
+      "item": "minecraft:saddle",
+      "collection": "AUTOMATIC"
+    },
+    "tame_horse": {
+      "title": "Tame a horse — approach unmounted, keep attempting until hearts appear",
+      "icon": {
+        "item": {
+          "id": "minecraft:golden_apple",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "hay": {
+      "item": {
+        "id": "minecraft:hay_block",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "On Horses"
+    },
+    "subtitle": {
+      "text": "The road is long. It is shorter from a saddle."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.02 · ON HORSES",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The horse doesn't care about your quest.",
+      "  But it runs faster than you.",
+      "  And it carries the weight while you think.",
+      "",
+      "◈ HORSE MECHANICS",
+      "  └ Taming: approach unmounted, keep mounting",
+      "    until hearts appear — feed apples/sugar/hay",
+      "  └ Breeding: golden apples or golden carrots",
+      "    to speed-breed for better stats",
+      "  └ Horse Armor: iron/gold/diamond — reduces damage",
+      "  └ Chest: attach with lead while riding",
+      "",
+      "◈ TRAVEL BONUS",
+      "  └ Via Romana roads give +speed while riding",
+      "  └ A horse on a stone road is the Ch02 fast travel",
+      "  └ Ch07 introduces Small Ships for water routes",
+      "",
+      "◈ SCROLL: On Horses",
+      "  └ Found in: stable loot, village outpost chests,",
+      "    rider supply crates, road waypoint ruins",
+      "  └ Research time: 10 min",
+      "  └ Unlocks: mounted travel awareness,",
+      "    Via Romana road interaction knowledge",
+      "",
+      "▶ Find the On Horses scroll [check]",
+      "▶ Obtain a Saddle",
+      "▶ Tame a horse [check]",
+      "",
+      "◇ A tamed horse follows the player if on a lead.",
+      "  Build a stable. Name it. It remembers."
+    ],
+    "groups": {
+      "The Kindled Road": {
+        "position": [
+          -600,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:saddle",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Survivor Codex scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Survivor Codex scroll",
+      "icon": {
+        "item": {
+          "id": "cold_sweat:waterskin",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock survivor_codex"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Survivor Codex"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Charted, measured, decoded.\"",
+      "",
+      "Starter scroll, auto-granted via starter_items.js. Holds basic survival kit: waterskin, sleeping bag, torch, etc.",
+      "",
+      "This scroll unlocks 19 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Stronghold Library",
+      "  \u00b7 Village/Village Cartographer",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Survivor Codex] [auto]"
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          703,
+          960
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "cold_sweat:waterskin",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

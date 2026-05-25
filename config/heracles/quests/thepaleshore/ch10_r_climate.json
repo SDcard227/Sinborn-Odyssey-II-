@@ -1,0 +1,127 @@
+{
+  "dependencies": [
+    "ch10_world"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/climate_engineering"
+    },
+    "insulate_base": {
+      "title": "Insulate your base against Cold Sweat temperature — use armor insulation, heat sources, and block layering",
+      "icon": {
+        "item": {
+          "id": "minecraft:ice",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "golden_apple": {
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Climate Engineering"
+    },
+    "subtitle": {
+      "text": "Cold Sweat does not pause when you are building. The base temperature is an engineering problem. Solve it."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.10 · CLIMATE ENGINEERING",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Cold Sweat has been running in the background",
+      "  since you left spawn.",
+      "  By Ch10 you have the infrastructure to solve it",
+      "  permanently instead of managing it constantly.",
+      "  Climate Engineering is that solution.",
+      "",
+      "◈ COLD SWEAT TEMPERATURE OVERVIEW",
+      "  └ Every block has a temperature value",
+      "  └ Player's body temperature = average of nearby blocks",
+      "  └ Too cold: Hypothermia buildup → health loss",
+      "  └ Too hot: Hyperthermia buildup → health loss",
+      "  └ Thermometer: check current body temp at any time",
+      "  └ Desert biome: ~120°F ambient (requires cooling)",
+      "  └ Tundra biome: -40°F ambient (requires heating)",
+      "",
+      "◈ BASE INSULATION STRATEGY",
+      "  └ Wool blocks: best insulation material",
+      "    Line walls with wool to buffer extreme ambient temps",
+      "  └ Heat sources: campfire, furnace, lava block adjacent",
+      "    raises ambient temp inside enclosed space",
+      "  └ Nuclear reactor waste heat: pipe into base heating",
+      "    CNA Heat Pipes carry warmth passively through walls",
+      "  └ Insulated armor: Cold Sweat armor pieces",
+      "    provide direct body temperature offset",
+      "",
+      "◈ FREEZE IT & HEAT IT INTEGRATION",
+      "  └ Food freeze mechanic: food stored in cold areas",
+      "    lasts longer — use Cold Sweat cold zones for storage",
+      "  └ Food rot mechanic: hot areas accelerate spoilage",
+      "    Separate food storage from heat pipes",
+      "  └ Optimal: cold storage room (wool-insulated, ice-adjacent)",
+      "    + separate warm living/work area (reactor-adjacent)",
+      "",
+      "◈ SCROLL: Climate Engineering",
+      "  └ Found in insulated workshop structures,",
+      "    thermal research loot, Cold Sweat config chests",
+      "  └ Research time: 25 min",
+      "  └ Unlocks: full Cold Sweat insulation reference,",
+      "    block temperature table, base design principles",
+      "",
+      "▸ The cold does not know you are a person.",
+      "  The heat does not know you are mortal.",
+      "  They both treat you the same way.",
+      "  The solution is the same: infrastructure.",
+      "",
+      "▶ Find The Climate Engineering scroll [check]",
+      "▶ Insulate your base against Cold Sweat [check]",
+      "",
+      "◇ Nuclear reactor passive heat + wool insulation",
+      "  = zero Cold Sweat concerns inside your base.",
+      "  You will never wear thermal armor at home again."
+    ],
+    "groups": {
+      "The Pale Shore": {
+        "position": [
+          -150,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:ice",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

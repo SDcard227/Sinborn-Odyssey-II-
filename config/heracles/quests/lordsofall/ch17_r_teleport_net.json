@@ -1,0 +1,89 @@
+{
+  "dependencies": ["ch17_teleporter"],
+  "tasks": {
+    "network_complete": {
+      "title": "Register 5 destinations in your Create Teleporter network — base, End, farm hub, village, and one more",
+      "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "cross_dimension": {
+      "title": "Use the teleporter to travel cross-dimensionally — teleport between Overworld and End in under 5 seconds",
+      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "chorus_fruit": {"item": {"id": "minecraft:chorus_fruit", "count": 64}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 12}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Teleporter Network"},
+    "subtitle": {"text": "5 destinations. Cross-dimensional. The void is 5 seconds away. That is what the quantum chain bought you."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.17 · THE TELEPORTER NETWORK",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The teleporter network is the culmination of logistics.",
+      "  Roads (Via Romana), sea (Small Ships), sky (Elytra),",
+      "  and now instantaneous point-to-point quantum transport.',",
+      "  The kingdom you built is connected at every scale.',",
+      "  A destination registered in the network',",
+      "  is a place that is always 5 seconds away.',",
+      "",
+      "◈ NETWORK SETUP",
+      "  └ Teleporter block: placed at each destination',",
+      "  └ Quantum Mechanism: installed in each teleporter',",
+      "  └ Registration: right-click teleporter to name it',",
+      "    All teleporters on the same network share destination list',",
+      "  └ Fuel: each teleporter needs Quantum Fluid in connected tank',",
+      "    Chorus farm supply pipeline → Fluid Pump → Tank → Teleporter',",
+      "  └ Power: SU from main Create network (extend grid to each site)',",
+      "",
+      "◈ RECOMMENDED NETWORK DESTINATIONS",
+      "  └ Home Base: primary hub, central supply',",
+      "  └ End Base: outer island farming hub, Enderman + Chorus farms',",
+      "  └ Farm Hub: agricultural cluster (seasonal farm, vineyard, livestock)',",
+      "  └ Village Hub: nearest major MCA village, council + trade',",
+      "  └ Nuclear Site: Create Nuclear Shell test range (safe distance)',",
+      "  └ Optional: coastal outpost, PTD ritual site, music hall',",
+      "",
+      "◈ CROSS-DIMENSIONAL TRAVEL",
+      "  └ Create Teleporters supports cross-dimensional teleportation',",
+      "    (End ↔ Overworld — same network, different dimension marker)',",
+      "  └ This replaces the 5-minute End portal sequence with 5 seconds',",
+      "  └ Quantum Fluid consumption: cross-dimensional costs more fuel',",
+      "    Scale Chorus farm output proportionally',",
+      "  └ Emergency access: End base teleporter means',",
+      "    you can return to the End for farm maintenance without",
+      "    committing to a full End expedition',",
+      "",
+      "▸ Before the portal, the End was far.',",
+      "  After the portal, it was a one-time trip.',",
+      "  After the teleporter, it is a supply chain node.',",
+      "  The dimension that killed 12 previous civilizations',",
+      "  is now 5 seconds from your kitchen.',",
+      "  That is what the quantum mechanism actually means.',",
+      "",
+      "▶ Register 5 destinations in the teleporter network [check]",
+      "▶ Complete a cross-dimensional teleport (Overworld ↔ End) [check]",
+      "",
+      "◇ Teleporter maintenance: Quantum Fluid refills automatically',",
+      "  if your supply pipeline is connected.',",
+      "  Build the pipeline before placing final teleporters.',",
+      "  A teleporter without fuel is a decorative block.",
+      "  Build the fuel supply first."
+    ],
+    "groups": {"Lords of All": {"position": [450, 150]}},
+    "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

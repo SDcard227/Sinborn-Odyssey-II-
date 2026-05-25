@@ -1,0 +1,36 @@
+{
+  "display_name": "The Mythril Age",
+  "research_time": 7200,
+  "items": [
+    "echovoids:block_of_mythril",
+    "echovoids:cut_mythril",
+    "echovoids:mythril_bars",
+    "echovoids:mythril_block_of_neon",
+    "echovoids:mythril_chain",
+    "echovoids:mythril_end_rod",
+    "echovoids:mythril_endstone_tiles",
+    "echovoids:mythril_ingot",
+    "echovoids:mythril_log",
+    "echovoids:mythril_log_wood",
+    "echovoids:mythril_neon_tube",
+    "echovoids:mythril_sapling",
+    "echovoids:mythril_slab",
+    "echovoids:mythril_stairs",
+    "echovoids:mythril_tile_slab",
+    "echovoids:mythril_tile_stairs",
+    "echovoids:mythril_tiles",
+    "echovoids:mythril_wart",
+    "echovoids:pearl_lamp_mythril_slab",
+    "echovoids:pearl_lamp_mythril_stairs"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

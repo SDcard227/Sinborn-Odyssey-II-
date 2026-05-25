@@ -1,0 +1,17 @@
+{
+  "display_name": "The Codex of Kukulkan",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "call_of_yucutan"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

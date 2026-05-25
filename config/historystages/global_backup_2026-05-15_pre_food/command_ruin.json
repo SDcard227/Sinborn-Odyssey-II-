@@ -1,0 +1,33 @@
+{
+  "display_name": "On Command and Ruin",
+  "research_time": 10800,
+  "items": [
+    "witherstorm_delight:the_eye_of_symbiont"
+  ],
+  "tags": [],
+  "mods": [
+    "witherstormmod"
+  ],
+  "mod_exceptions": [
+    "witherstormmod:command_block",
+    "witherstormmod:command_block_sword",
+    "witherstormmod:formidibomb",
+    "witherstormmod:gold_command_block_sword",
+    "witherstormmod:iron_command_block_sword",
+    "witherstormmod:stone_command_block_sword",
+    "witherstormmod:super_beacon",
+    "witherstormmod:super_support_beacon",
+    "witherstormmod:super_tnt",
+    "witherstormmod:tainted_dust",
+    "witherstormmod:wooden_command_block_sword"
+  ],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": [
+      "witherstormmod:wither_storm"
+    ]
+  }
+}

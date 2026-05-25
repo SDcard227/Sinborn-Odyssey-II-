@@ -1,0 +1,66 @@
+{
+  "dependencies": ["ch15_world"],
+  "tasks": {
+    "mca_reunion": {
+      "title": "Visit every MCA Reborn villager you have befriended — check in with your community",
+      "icon": {"item": {"id": "minecraft:rose_gold_ingot", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "village_food": {
+      "title": "Cook a feast and share it — deliver 4 high-quality meals to your settlement's residents",
+      "icon": {"item": {"id": "farmersdelight:honey_glazed_ham", "count": 4}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "camera_portrait": {
+      "title": "Take a portrait photograph of your base (Exposure mod camera) — document the homecoming",
+      "icon": {"item": {"id": "exposure:camera", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "rose_gold": {
+      "item": {"id": "minecraft:rose_gold_ingot", "count": 12},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Homecoming"},
+    "subtitle": {"text": "The community you left behind is the community you return to. They need to know you came back."},
+    "description": [
+      "You went into the End.",
+      "The people you left in the kingdom you built in Ch12 are still there.",
+      "They have been there the whole time.",
+      "",
+      "MCA Reborn villagers remember you.",
+      "The bounty board has been running without you.",
+      "The Villager Recruits have been holding the line.",
+      "",
+      "Frieren's companions grew old while she was on her next adventure.",
+      "The lesson is not to slow down. The lesson is to come back.",
+      "Returning is intentional. Returning means the community was worth returning to.",
+      "",
+      "Cook food. Share it.",
+      "That is what civilizations do that survive.",
+      "The previous eleven did not.",
+      "",
+      "→ Visit every befriended MCA villager [check]",
+      "→ Deliver 4 meals to the settlement [check]",
+      "→ Photograph the homecoming [check]"
+    ],
+    "groups": {"After the Dragon": {"position": [0, 150]}},
+    "icon": {"item": {"id": "minecraft:rose_gold_ingot", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

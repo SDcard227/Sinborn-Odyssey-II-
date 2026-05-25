@@ -1,0 +1,58 @@
+{
+  "dependencies": ["ch04_brew"],
+  "tasks": {
+    "keg2": {
+      "type": "heracles:item",
+      "item": "brewinandchewin:keg",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "tipsy": {
+      "title": "Experience the Tipsy effect",
+      "icon": {"item": {"id": "brewinandchewin:keg", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "jam": {
+      "item": {"id": "brewinandchewin:sweet_berry_jam", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Keg"},
+    "subtitle": {"text": "Brewin and Chewin extends what the Farmer's Delight kitchen can do."},
+    "description": [
+      "Brewin and Chewin is a Farmer's Delight extension.",
+      "The Keg is its core station.",
+      "",
+      "Temperature matters: hot or cold blocks within two blocks",
+      "change what the brew becomes.",
+      "Hot = one recipe. Cold = another.",
+      "",
+      "No guidebook. Use the Advancements screen (L) and JEI Keg category.",
+      "Discover recipes by trying.",
+      "",
+      "Tipsy effect: screen wobble and chat scramble.",
+      "Experience it once. You will remember it.",
+      "",
+      "→ Have a Keg placed and running",
+      "→ Experience the Tipsy effect [check]"
+    ],
+    "groups": {"The Long Pour": {"position": [150, 300]}},
+    "icon": {"item": {"id": "brewinandchewin:keg", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

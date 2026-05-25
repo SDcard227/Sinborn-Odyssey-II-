@@ -1,0 +1,58 @@
+{
+  "display_name": "The Cataclysm Codex",
+  "research_time": 5400,
+  "items": [
+    "simplycataclysm:ancient_metal_greataxe",
+    "simplycataclysm:ancient_metal_greathammer",
+    "simplycataclysm:ancient_metal_longsword",
+    "simplycataclysm:ancient_metal_sai",
+    "simplycataclysm:ancient_metal_scythe",
+    "simplycataclysm:ancient_metal_twinblade",
+    "simplycataclysm:ancient_metal_warglaive",
+    "simplycataclysm:black_steel_greataxe",
+    "simplycataclysm:black_steel_greathammer",
+    "simplycataclysm:black_steel_longsword",
+    "simplycataclysm:black_steel_sai",
+    "simplycataclysm:black_steel_scythe",
+    "simplycataclysm:black_steel_twinblade",
+    "simplycataclysm:black_steel_warglaive",
+    "simplycataclysm:cursium_greataxe",
+    "simplycataclysm:cursium_greathammer",
+    "simplycataclysm:cursium_longsword",
+    "simplycataclysm:cursium_sai",
+    "simplycataclysm:cursium_scythe",
+    "simplycataclysm:cursium_twinblade",
+    "simplycataclysm:cursium_warglaive",
+    "simplycataclysm:ignitium_greataxe",
+    "simplycataclysm:ignitium_greathammer",
+    "simplycataclysm:ignitium_longsword",
+    "simplycataclysm:ignitium_sai",
+    "simplycataclysm:ignitium_scythe",
+    "simplycataclysm:ignitium_twinblade",
+    "simplycataclysm:ignitium_warglaive",
+    "simplycataclysm:witherite_greataxe",
+    "simplycataclysm:witherite_greathammer",
+    "simplycataclysm:witherite_longsword",
+    "simplycataclysm:witherite_sai",
+    "simplycataclysm:witherite_scythe",
+    "simplycataclysm:witherite_twinblade",
+    "simplycataclysm:witherite_warglaive"
+  ],
+  "tags": [],
+  "mods": [
+    "cataclysm",
+    "cataclysm_spellbooks",
+    "cataclysm_compat",
+    "cataclysmspells_compat"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "cataclysm:scylla"
+    ],
+    "spawnlock": []
+  }
+}

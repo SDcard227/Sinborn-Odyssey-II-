@@ -1,0 +1,57 @@
+{
+  "dependencies": ["ch04_world"],
+  "tasks": {
+    "barrel": {
+      "type": "heracles:item",
+      "item": "minecraft:barrel",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "vinery_barrel": {
+      "type": "heracles:item",
+      "item": "vinery:fermentation_barrel",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "oak_planks": {
+      "item": {"id": "minecraft:oak_planks", "count": 32},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 5},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Barrel and the Wait"},
+    "subtitle": {"text": "The barrel asks nothing of you. Only time."},
+    "description": [
+      "The Vinery Fermentation Barrel is irreversible.",
+      "Once you add juice, you cannot remove it.",
+      "The five minutes of fermentation cannot be skipped.",
+      "",
+      "This is the lesson the fermentation age teaches",
+      "that every other age tries to forget:",
+      "some things cannot be hurried.",
+      "",
+      "The barrel waits. The chemistry runs.",
+      "The wine becomes wine in its own time.",
+      "",
+      "→ Craft 2 barrels",
+      "→ Craft a Vinery Fermentation Barrel"
+    ],
+    "groups": {"The Long Pour": {"position": [0, 150]}},
+    "icon": {"item": {"id": "vinery:fermentation_barrel", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

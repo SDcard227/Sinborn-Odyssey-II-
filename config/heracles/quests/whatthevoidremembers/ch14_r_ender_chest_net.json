@@ -1,0 +1,87 @@
+{
+  "dependencies": ["ch14_r_ender1"],
+  "tasks": {
+    "ender_chest_end": {
+      "title": "Place an Ender Chest in your End base — link it to your Overworld Ender Chest for cross-dimensional supply",
+      "icon": {"item": {"id": "minecraft:ender_chest", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "ender_chest_supply": {
+      "title": "Use the Ender Chest network to resupply mid-expedition without returning to the Overworld",
+      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "obsidian": {"item": {"id": "minecraft:obsidian", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Ender Chest Network"},
+    "subtitle": {"text": "The Ender Chest is the most underrated logistic item in the game. One in the End. One at home. Infinite supply."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.14 · ENDER CHEST NETWORK",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Ender Chest is a cross-dimensional personal inventory.",
+      "  Every Ender Chest in the world shares the same contents.",
+      "  One chest placed in the End, one at your Overworld base:",
+      "  you can retrieve anything from home without leaving the End.",
+      "  This is the core logistics solution for deep End expeditions.",
+      "",
+      "◈ ENDER CHEST CRAFTING",
+      "  └ Recipe: 8 Obsidian + 1 Eye of Ender (center)",
+      "  └ Eye of Ender = Ender Pearl + Blaze Powder (1:1 craft)",
+      "  └ Silk Touch pickaxe: recovers the Ender Chest on break",
+      "    (without Silk Touch it drops 8 Obsidian — chest is lost)",
+      "  └ Always carry a Silk Touch pickaxe when moving Ender Chests",
+      "",
+      "◈ NETWORK SETUP",
+      "  └ Place Ender Chest 1: Overworld base — load with resupply items",
+      "    (Dragon Breath stock, Firework Rockets, potions, food, pearls)",
+      "  └ Place Ender Chest 2: End base — retrieve as needed",
+      "  └ Shulker Box trick: put a labeled Shulker Box in the Ender Chest",
+      "    containing a pre-packed loadout for each activity",
+      "    (combat kit, farming kit, building kit — each in its own box)",
+      "  └ Capacity: 27 slots × however many Shulker Boxes you pack",
+      "    = functionally unlimited cross-dimensional inventory",
+      "",
+      "◈ END EXPEDITION LOGISTICS",
+      "  └ Before long expeditions: load Ender Chest with 3-session supply",
+      "  └ During combat: retrieve potions from Ender Chest between fights",
+      "  └ After void death: Ender Chest is in a fixed location",
+      "    Recovery Compass → find death site → retrieve dropped items",
+      "    If items fell in void: at minimum your Ender Chest has a backup kit",
+      "  └ Create Teleporter Network (Ch10/Ch17): teleporter stations",
+      "    can be supplied via Ender Chest for Quantum Fluid top-ups",
+      "",
+      "▸ The Ender Chest was invented by the same civilizations",
+      "  that built the End Cities.",
+      "  They needed a way to send supplies forward",
+      "  without putting the supply carrier at risk.",
+      "  The solution was physics: make the chest exist everywhere at once.",
+      "  Elegant. Dangerous to lose. Worth building.",
+      "",
+      "▶ Place an Ender Chest in your End base [check]",
+      "▶ Resupply mid-expedition from the Ender Chest [check]",
+      "",
+      "◇ Sophisticated Backpacks upgrade: the Ender Chest upgrade",
+      "  (if available) integrates Ender Chest access into your backpack.",
+      "  Check JEI under sophisticated_backpacks:.",
+      "  If present: install it in your main exploration backpack",
+      "  for one-click cross-dimensional access."
+    ],
+    "groups": {"What the Void Remembers": {"position": [-600, 0]}},
+    "icon": {"item": {"id": "minecraft:ender_chest", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

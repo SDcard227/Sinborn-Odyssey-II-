@@ -1,0 +1,17 @@
+{
+  "display_name": "The Cryptic Eye",
+  "research_time": 3600,
+  "items": [
+    "endrem:cryptic_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

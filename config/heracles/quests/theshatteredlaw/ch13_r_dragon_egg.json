@@ -1,0 +1,86 @@
+{
+  "dependencies": ["ch13_r_dragon2"],
+  "tasks": {
+    "dragon_egg": {
+      "type": "heracles:item",
+      "item": "minecraft:dragon_egg",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "respawn": {
+      "title": "Re-summon and defeat the Ender Dragon — use 4 End Crystals to respawn it and farm Dragon Breath",
+      "icon": {"item": {"id": "minecraft:end_crystal", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "dragon_breath": {"item": {"id": "minecraft:dragon_breath", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Dragon Egg"},
+    "subtitle": {"text": "The Egg is the trophy. The re-summon is the farm. Four End Crystals. Four pillars. Infinite Dragon Breath."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.13 · THE DRAGON EGG",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Dragon Egg drops once from the first kill.",
+      "  Only once. Collect it before it falls into void.",
+      "  After that: re-summon the Dragon for farming.",
+      "  Dragon Breath is needed for Lingering Potions.",
+      "  End's Delight (Ch14) uses Dragon Breath for cooking.",
+      "  Farm more than one batch.",
+      "",
+      "◈ DRAGON EGG COLLECTION",
+      "  └ Dragon Egg teleports when clicked — use piston",
+      "    to push it off its pedestal, collect when it falls",
+      "  └ Alternative: TNT nearby (teleports on explosion proximity)",
+      "    → place TNT, ignite, collect at landing",
+      "  └ One egg total across all Dragon kills",
+      "    Re-summoned Dragon does NOT drop another egg",
+      "",
+      "◈ DRAGON RE-SUMMON",
+      "  └ Place 4 End Crystals on the edge of the bedrock portal",
+      "    (one on each cardinal face of the exit portal)",
+      "  └ Dragon respawns: End Crystals regenerate on pillars,",
+      "    then Dragon emerges and begins attack phase",
+      "  └ Re-summoned Dragon: same HP, same fight, no egg",
+      "  └ Drops: Dragon Breath (collect with glass bottles",
+      "    during the dragon's breath attack), XP",
+      "",
+      "◈ DRAGON BREATH COLLECTION",
+      "  └ Use glass bottle on the breath cloud: fills with breath",
+      "  └ Collect during: death beam, ground breath attack",
+      "  └ Stack: 64 dragon_breath minimum per run",
+      "  └ Uses: Lingering Potion (splash + dragon_breath = lingering)",
+      "    End's Delight (Ch14): required cooking ingredient",
+      "",
+      "▸ The Egg does not hatch.",
+      "  No civilization figured out how to hatch it.",
+      "  Or they knew, and chose not to.",
+      "  The Dragon Egg Research mechanic (Ch14) explores why.",
+      "  This quest is just about collecting it.",
+      "  That part is simpler.",
+      "",
+      "▶ Collect the Dragon Egg",
+      "▶ Re-summon and defeat the Dragon again [check]",
+      "",
+      "◇ End's Delight Dragon Egg Research mechanic:",
+      "  uses the egg as a research trigger for all dragon recipes.",
+      "  Do not cook the egg. Use it as a research item.",
+      "  Full mechanic explained in Ch14."
+    ],
+    "groups": {"The Shattered Law": {"position": [450, 150]}},
+    "icon": {"item": {"id": "minecraft:dragon_egg", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

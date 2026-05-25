@@ -1,0 +1,20 @@
+{
+  "display_name": "The Pack Whistle",
+  "research_time": 1500,
+  "items": [
+    "minecraft:goat_horn"
+  ],
+  "tags": [],
+  "mods": [
+    "messenger_crow",
+    "xercamusic"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

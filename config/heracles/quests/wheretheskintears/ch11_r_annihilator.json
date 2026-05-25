@@ -1,0 +1,123 @@
+{
+  "dependencies": [
+    "ch11_r_emulator1"
+  ],
+  "tasks": {
+    "annihilator_kill": {
+      "type": "heracles:kill_entity",
+      "entity": "cataclysm:annihilator",
+      "amount": 1
+    },
+    "emulator_prep": {
+      "title": "Prepare for the Emulator fight — clear both Annihilator and Ignis before attempting the final Cataclysm boss",
+      "icon": {
+        "item": {
+          "id": "minecraft:ender_eye",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "ignitium": {
+      "item": {
+        "id": "cataclysm:ignitium",
+        "count": 6
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Annihilator"
+    },
+    "subtitle": {
+      "text": "Ignis burns. The Annihilator destroys. Both are required before the Emulator. The chain has two endings."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.11 · THE ANNIHILATOR",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Cataclysm chain has a fork at Tier 2.",
+      "  Ignis is the fire path.",
+      "  The Annihilator is the void path.",
+      "  Both must be cleared before the Emulator.",
+      "  Both reward Ignitium.",
+      "  The Annihilator is not optional.",
+      "",
+      "◈ ANNIHILATOR — FIGHT OVERVIEW",
+      "  └ Void-type boss (parallel to Ignis fire-type)",
+      "  └ Primary attacks: void zone creation,",
+      "    phase-shift strike, void sphere projectile",
+      "  └ Void zones: deal damage AND pull inward",
+      "    (movement priority: get out, then fight)",
+      "  └ Armor priority: high Protection — void damage",
+      "    partially bypasses fire resistance buffs",
+      "  └ ISS Eldritch school: bonus effectiveness",
+      "    against void-type entities (Eldritch knowledge)",
+      "",
+      "◈ VOID RESISTANCE",
+      "  └ No vanilla resistance to void damage",
+      "  └ Best defense: high HP + Regeneration beacon",
+      "    (outpace the void damage per tick)",
+      "  └ Totems of Undying: carry 2 for the Annihilator",
+      "    Death from void zone is instant — no second chance",
+      "  └ ISS Abjuration: Magic Shield absorbs first void hit",
+      "    Rebuild shield after each absorption",
+      "",
+      "◈ DUAL CLEAR STRATEGY",
+      "  └ Clear Ignis first (fire resistance helps Ignis fight)",
+      "  └ Restock potions between fights",
+      "  └ Annihilator second (void damage, different resistance)",
+      "  └ Both fights can be done in one session",
+      "    if you manage resources between arenas",
+      "",
+      "▸ The Annihilator was created to remove things",
+      "  that should not exist.",
+      "  It does not distinguish.",
+      "  It has no preference about what should not exist.",
+      "  You are in that category by definition.",
+      "",
+      "▶ Defeat the Annihilator [check]",
+      "▶ Complete the dual clear — ready for Emulator [check]",
+      "",
+      "◇ The Emulator fight requires both Ignis and Annihilator",
+      "  to be cleared. Do not attempt Emulator with",
+      "  either boss alive — the Emulator copies their patterns."
+    ],
+    "groups": {
+      "Where the Skin Tears": {
+        "position": [
+          450,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "cataclysm:ignitium",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

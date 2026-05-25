@@ -1,0 +1,127 @@
+{
+  "dependencies": [
+    "ch02_r_bnt3"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/art_of_dwelling"
+    },
+    "build_home": {
+      "title": "Build a permanent base — roof, walls, door, and a bed inside",
+      "icon": {
+        "item": {
+          "id": "minecraft:oak_door",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "torch_light": {
+      "title": "Place 10 torches inside your home (Hardcore Torches — torches last 40 min, plan your supply)",
+      "icon": {
+        "item": {
+          "id": "minecraft:torch",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "planks": {
+      "item": {
+        "id": "minecraft:oak_planks",
+        "count": 32
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Art of Dwelling"
+    },
+    "subtitle": {
+      "text": "The difference between a camp and a home is intention."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.02 · THE ART OF DWELLING",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ You've been moving since the start.",
+      "  The Wanderer's Notes said: explore.",
+      "  This one says: stop. Build something.",
+      "  Make a place that is yours.",
+      "",
+      "◈ BUILDING SYSTEMS TO KNOW",
+      "  └ Hardcore Torches: torches burn out after 40 min",
+      "    Plan your torch supply or use lanterns",
+      "    Lanterns don't burn out — craft them early",
+      "  └ Supplementaries: Sacks store 64 stacks,",
+      "    Ropes extend ladders/bridges,",
+      "    Flax-to-Rope is required before Sacks",
+      "  └ Comforts: sleeping bags (no respawn set) vs",
+      "    Simply Tents: tent sets respawn in CAMP mode",
+      "",
+      "◈ BASE PRIORITIES",
+      "  └ 1. Secure roof + walls → prevents mob spawn inside",
+      "  └ 2. Lit interior → no mob spawn at all",
+      "  └ 3. Chest storage → begin organized inventory",
+      "  └ 4. Crafting stations → workbench, furnace, anvil",
+      "  └ 5. Bed → sets respawn, survives death",
+      "",
+      "◈ SCROLL: The Art of Dwelling",
+      "  └ Found in: village house chests, abandoned cabins,",
+      "    settler ruins, road waypoint shelters",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: base-building awareness,",
+      "    Supplementaries + Hardcore Torches knowledge",
+      "",
+      "▸ A home with a door is a message.",
+      "  Something lives here.",
+      "  Something is staying.",
+      "",
+      "▶ Find The Art of Dwelling scroll [check]",
+      "▶ Build a permanent base with roof, walls, door, bed [check]",
+      "▶ Place 10 torches inside your home [check]",
+      "",
+      "◇ Flax must be planted and harvested before Sacks.",
+      "  It grows in meadows and temperate biomes.",
+      "  Ch03 covers Supplementaries storage in detail."
+    ],
+    "groups": {
+      "The Kindled Road": {
+        "position": [
+          600,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:oak_door",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

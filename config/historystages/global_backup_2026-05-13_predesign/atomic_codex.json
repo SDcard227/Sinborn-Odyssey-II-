@@ -1,0 +1,16 @@
+{
+  "display_name": "The Atomic Codex",
+  "research_time": 14400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "create_oppenheimered",
+    "createnukecannon",
+    "cannonnukes"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

@@ -1,0 +1,35 @@
+{
+  "display_name": "Tonic Alchemy",
+  "research_time": 5400,
+  "items": [
+    "desert:guertoufa_infusion",
+    "foragersinsight:forest_elixir",
+    "herbalbrews:herbal_infusion",
+    "infusedfoods:infusion_station",
+    "irons_spellbooks:evasion_elixir",
+    "irons_spellbooks:greater_evasion_elixir",
+    "irons_spellbooks:greater_invisibility_elixir",
+    "irons_spellbooks:greater_oakskin_elixir",
+    "irons_spellbooks:invisibility_elixir",
+    "irons_spellbooks:oakskin_elixir",
+    "twm:ancient_tonic",
+    "twm:flame_tonic",
+    "twm:fortitude_tonic",
+    "twm:legendary_tonic",
+    "twm:resilience_tonic",
+    "twm:spelunkers_tonic",
+    "twm:swiftness_tonic",
+    "twm:void_tonic",
+    "unusual_delight:soul_tonic"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

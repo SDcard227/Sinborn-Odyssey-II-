@@ -1,0 +1,65 @@
+{
+  "dependencies": ["ch12_scarlet"],
+  "tasks": {
+    "confront": {
+      "title": "Approach and confront the Wither Storm at X:0 Z:0 — survive the area",
+      "icon": {"item": {"id": "witherstormmod:withered_nether_star", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "wither_rose": {
+      "type": "heracles:item",
+      "item": "minecraft:wither_rose",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "wither_storm_survived": {
+      "title": "Survive the full Wither Storm confrontation and emerge alive",
+      "icon": {"item": {"id": "minecraft:wither_rose", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "withered_star": {
+      "item": {"id": "witherstormmod:withered_nether_star", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Storm at the Center"},
+    "subtitle": {"text": "The Wither Storm is at X:0 Z:0 because that is where the previous cycle chose to end."},
+    "description": [
+      "The Wither Storm absorbs blocks as it moves.",
+      "It is the previous civilization's final act.",
+      "They built it knowing what it would do.",
+      "They aimed it at the center of the world.",
+      "",
+      "Cracker's Wither Storm mod makes this unkillable until proper phase.",
+      "You need the withered_nether_star from the fight to complete the sequence.",
+      "Wither Roses drop in the area when the storm kills mobs.",
+      "",
+      "This is the chapter's climax.",
+      "The storm has been visible for twenty chapters of real time.",
+      "You walked toward it on the first day.",
+      "Now you are here.",
+      "",
+      "→ Confront the Wither Storm at X:0 Z:0 [check]",
+      "→ Collect 4 Wither Roses from the area (drop when Wither kills mobs)",
+      "→ Survive and emerge alive [check]"
+    ],
+    "groups": {"The Kingdom You Build": {"position": [0, 450]}},
+    "icon": {"item": {"id": "witherstormmod:withered_nether_star", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

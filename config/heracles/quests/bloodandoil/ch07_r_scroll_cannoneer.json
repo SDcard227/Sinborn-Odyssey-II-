@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Cannoneer scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Cannoneer scroll",
+      "icon": {
+        "item": {
+          "id": "companions:cannon_arm",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock cannoneer"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Cannoneer"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Found in the smoke of old forges.\"",
+      "",
+      "Create Big Cannons \u2014 cannons, charges, fuzes, breech, carriages.",
+      "",
+      "This scroll unlocks 166 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Ati Structures:Chests/Library",
+      "  \u00b7 Village/Village Weaponsmith",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Cannoneer] [auto]"
+    ],
+    "groups": {
+      "Blood and Oil": {
+        "position": [
+          900,
+          780
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "companions:cannon_arm",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

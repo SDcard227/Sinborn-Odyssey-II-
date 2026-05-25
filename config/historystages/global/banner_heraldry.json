@@ -1,0 +1,41 @@
+{
+  "display_name": "Banner Heraldry",
+  "research_time": 2700,
+  "items": [
+    "minecraft:black_banner",
+    "minecraft:blue_banner",
+    "minecraft:brown_banner",
+    "minecraft:creeper_banner_pattern",
+    "minecraft:cyan_banner",
+    "minecraft:flow_banner_pattern",
+    "minecraft:flower_banner_pattern",
+    "minecraft:globe_banner_pattern",
+    "minecraft:gray_banner",
+    "minecraft:green_banner",
+    "minecraft:guster_banner_pattern",
+    "minecraft:light_blue_banner",
+    "minecraft:light_gray_banner",
+    "minecraft:lime_banner",
+    "minecraft:loom",
+    "minecraft:magenta_banner",
+    "minecraft:mojang_banner_pattern",
+    "minecraft:orange_banner",
+    "minecraft:piglin_banner_pattern",
+    "minecraft:pink_banner",
+    "minecraft:purple_banner",
+    "minecraft:red_banner",
+    "minecraft:skull_banner_pattern",
+    "minecraft:white_banner",
+    "minecraft:yellow_banner"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

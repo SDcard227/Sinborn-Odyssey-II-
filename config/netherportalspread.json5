@@ -2,7 +2,7 @@
 	// When enabled, sends a message to players around the portal that the nether is spreading and that you can stop the spread with 'preventSpreadBlockAmountNeeded' of the 'preventSpreadBlockString' block.
 	"sendMessageOnPortalCreation": true,
 	// The message sent on portal creation.
-	"messageOnPortalCreation": "You feel a corrupted energy coming from the portal. The nether will slowly spread into the overworld unless %preventSpreadBlockAmountNeeded% %preventSpreadBlockString% are placed within a %portalSpreadRadius% block radius around the portal.",
+	"messageOnPortalCreation": "You feel a corrupted energy bleed through the portal. The Sealing weakens. Place %preventSpreadBlockAmountNeeded% Respawn Anchors within %portalSpreadRadius% blocks of the portal to mark the perimeter — bound territory the corruption will not cross.",
 	// When enabled, sends a message to players around the portal that the nether spread has stopped when the portal detects new 'preventSpreadBlockString' blocks.
 	"sendMessageOnPreventSpreadBlocksFound": true,
 	// The message sent on preventspread blocks found.
@@ -15,7 +15,7 @@
 	"prefixPortalCoordsInMessage": true,
 	// The radius around the portal to which the nether blocks can spread.
 	// min: 1, max: 100
-	"portalSpreadRadius": 30,
+	"portalSpreadRadius": 64,
 	// The delay in ticks in between the spread around the nether portal. 20 ticks = 1 second.
 	// min: 1, max: 72000
 	"spreadDelayTicks": 40,
@@ -27,6 +27,6 @@
 	// The amount of prevent-spread-blocks (defined) needed within the radius of the nether portal to prevent spread.
 	// min: 1, max: 100
 	"preventSpreadBlockAmountNeeded": 4,
-	// The block which prevents the nether portal from spreading. By default a coal block (minecraft:coal_block is the namespace ID).
-	"preventSpreadBlockString": "minecraft:coal_block"
+	// The block which prevents the nether portal from spreading. Sinborn override: 4 Respawn Anchors. Lore: the seal-lights of the Sealing era — 4 anchors mark the Sealing's perimeter; the corrupted Nether-energy reads them as bound territory and recedes.
+	"preventSpreadBlockString": "minecraft:respawn_anchor"
 }

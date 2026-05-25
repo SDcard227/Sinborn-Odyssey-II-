@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Dairy & Cheese scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Dairy & Cheese scroll",
+      "icon": {
+        "item": {
+          "id": "alexscaves:chocolate_ice_cream",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock dairy_and_cheese"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Dairy & Cheese"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"The Convent kept it clean. They kept it.\"",
+      "",
+      "Meadow rennet \u2192 cheese chain. Ice cream, butter.",
+      "",
+      "This scroll unlocks 40 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Stronghold Library",
+      "  \u00b7 Mowziesmobs:Chests/Monastery Chest",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Dairy & Cheese] [auto]"
+    ],
+    "groups": {
+      "The Kindled Road": {
+        "position": [
+          650,
+          780
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "alexscaves:chocolate_ice_cream",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

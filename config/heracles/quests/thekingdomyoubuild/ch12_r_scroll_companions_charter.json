@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Companions Charter scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Companions Charter scroll",
+      "icon": {
+        "item": {
+          "id": "irons_spellbooks:villager_spell_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock companions_charter"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Companions Charter"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"The Convent kept it clean. They kept it.\"",
+      "",
+      "Villager interaction basics \u2014 emeralds, trading, name tags.",
+      "",
+      "This scroll unlocks 210 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Stronghold Library",
+      "  \u00b7 Mowziesmobs:Chests/Monastery Chest",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Companions Charter] [auto]"
+    ],
+    "groups": {
+      "The Kingdom You Build": {
+        "position": [
+          1150,
+          900
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "irons_spellbooks:villager_spell_book",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

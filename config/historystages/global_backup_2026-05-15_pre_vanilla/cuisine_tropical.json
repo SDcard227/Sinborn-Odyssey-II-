@@ -1,0 +1,20 @@
+{
+  "display_name": "The Tropical Tide",
+  "research_time": 2700,
+  "items": [
+    "delightful:coconut_curry"
+  ],
+  "tags": [],
+  "mods": [
+    "beachparty",
+    "ecologics"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

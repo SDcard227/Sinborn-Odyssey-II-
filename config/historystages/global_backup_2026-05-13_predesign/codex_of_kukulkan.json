@@ -1,0 +1,20 @@
+{
+  "display_name": "The Codex of Kukulkan",
+  "research_time": 1800,
+  "items": [
+    "call_of_yucutan:ancient_gold_ingot",
+    "call_of_yucutan:fragment_of_rebirth",
+    "call_of_yucutan:fragment_of_death",
+    "call_of_yucutan:elder_bone"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": ["call_of_yucutan:kukulkan", "call_of_yucutan:ah_puch"],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch16_world"],
+  "tasks": {
+    "eiswein": {
+      "title": "Brew Eiswein (Vinery mod — the highest tier wine, full heal on consume, requires frozen grapes in winter)",
+      "icon": {"item": {"id": "vinery:eiswein", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "wine_rack": {
+      "title": "Build a wine rack in your settlement (Vinery — decorative + functional storage for aged wines)",
+      "icon": {"item": {"id": "vinery:wine_rack", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "wine": {
+      "item": {"id": "vinery:eiswein", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Eiswein"},
+    "subtitle": {"text": "The best wine in the world is made in winter. You have to wait for the freeze."},
+    "description": [
+      "Vinery adds 26 wines with different effects and production methods.",
+      "Eiswein is the pinnacle — it provides a full heal on consumption.",
+      "",
+      "Eiswein production:",
+      "- Requires frozen grapes (harvest grapes in winter when frozen)",
+      "- Serene Seasons winter is required",
+      "- Ferment in a Vinery barrel",
+      "- Aging time applies — longer barrel time may improve quality",
+      "",
+      "This is the intersection of Serene Seasons + Vinery:",
+      "The winter from Ch15's seasonal cycle is the same winter that enables Eiswein.",
+      "If you are in winter, freeze grapes.",
+      "The Eiswein will be ready by the time you need it in Ch17.",
+      "",
+      "Wine rack:",
+      "The settlement wine rack is both functional (stores wines) and a marker of civilization.",
+      "No previous civilization had a wine rack.",
+      "They were too busy collapsing.",
+      "",
+      "→ Brew Eiswein [check]",
+      "→ Build a wine rack in your settlement [check]"
+    ],
+    "groups": {"The Long Road Home": {"position": [-150, 0]}},
+    "icon": {"item": {"id": "vinery:eiswein", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

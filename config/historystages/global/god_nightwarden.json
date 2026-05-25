@@ -1,0 +1,20 @@
+{
+  "display_name": "On the Nightwarden",
+  "research_time": 28800,
+  "items": [
+    "traveloptics:aqua_echo",
+    "traveloptics:aqua_rune",
+    "traveloptics:aqua_upgrade_orb",
+    "traveloptics:music_disc_nightwarden"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

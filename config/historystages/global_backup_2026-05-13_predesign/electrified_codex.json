@@ -1,0 +1,19 @@
+{
+  "display_name": "The Electrified Codex",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "create_new_age",
+    "create_stuff_additions",
+    "create_power_loader",
+    "enderio",
+    "powergrid",
+    "extra_gauges"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

@@ -1,0 +1,18 @@
+{
+  "display_name": "Slaying Kukulkan & Ah Puch",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "call_of_yucutan:ah_puch",
+      "call_of_yucutan:kukulkan"
+    ],
+    "spawnlock": []
+  }
+}

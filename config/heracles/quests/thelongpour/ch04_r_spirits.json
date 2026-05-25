@@ -1,0 +1,114 @@
+{
+  "dependencies": [
+    "ch04_r_bnc2"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/veiled_spirits"
+    },
+    "brew_spirits": {
+      "title": "Brew a bottle of spirits using Brewin & Chewin's temperature-based system",
+      "icon": {
+        "item": {
+          "id": "minecraft:glass_bottle",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "bottles": {
+      "item": {
+        "id": "minecraft:glass_bottle",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 2
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Veiled Spirits"
+    },
+    "subtitle": {
+      "text": "Brewin & Chewin adds a temperature system. The ferment knows the difference."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.04 · THE VEILED SPIRITS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Brewin & Chewin is the distillery expansion.",
+      "  It adds spirits, ales, and the temperature system:",
+      "  the ambient temperature affects fermentation quality.",
+      "",
+      "◈ TEMPERATURE FERMENTATION SYSTEM",
+      "  └ Each brew has an ideal temperature range",
+      "  └ Too cold: fermentation stalls, poor quality",
+      "  └ Too hot: fermentation rushes, burns off flavor",
+      "  └ Exact temp: maximum quality, maximum effects",
+      "  └ Cold Sweat temperature = brewing temperature",
+      "    (the same system that tracks body warmth",
+      "    also tracks your fermentation room)",
+      "",
+      "◈ BREWIN & CHEWIN OUTPUTS",
+      "  └ Sweet Berry Jam — confirmed, not a drink",
+      "    (used in baking recipes, not brewing)",
+      "  └ Ales: grain-fermented, mild effects",
+      "  └ Spirits: distilled, strong effects, small quantity",
+      "  └ Cider: fruit-based, quick ferment",
+      "  └ Mead variant: honey spirits, higher potency",
+      "",
+      "◈ SCROLL: The Veiled Spirits",
+      "  └ Found in: tavern cellar chests, distillery ruins,",
+      "    smuggler caches, hidden cellar stashes",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: full Brewin & Chewin system,",
+      "    temperature fermentation awareness",
+      "",
+      "▸ The scroll smells like the contents.",
+      "  Someone kept it in the same crate as the bottles.",
+      "  For a long time.",
+      "",
+      "▶ Find The Veiled Spirits scroll [check]",
+      "▶ Brew a spirits bottle using Brewin & Chewin [check]",
+      "",
+      "◇ Brewin & Chewin + Cold Sweat integration:",
+      "  build your distillery in a biome with",
+      "  temperature near the target brew range."
+    ],
+    "groups": {
+      "The Long Pour": {
+        "position": [
+          -450,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:glass_bottle",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "dependencies": ["ch14_r_ender2"],
+  "tasks": {
+    "bolloom_crop": {
+      "title": "Harvest a full Bolloom crop from your Poise Forest farm — Bolloom Fruit for End food system integration",
+      "icon": {"item": {"id": "endergetic:puff_bug_wings", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "booflo_fur_uses": {
+      "title": "Use Booflo Fur in at least 2 End-tier crafting recipes — check JEI for endergetic: crafting uses",
+      "icon": {"item": {"id": "endergetic:booflo_fur", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "booflo_fur": {"item": {"id": "endergetic:booflo_fur", "count": 8}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Endergetic Materials"},
+    "subtitle": {"text": "Booflo Fur and Bolloom Fruit are not decoration drops. They have crafting uses. Check JEI and use them."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.14 · ENDERGETIC MATERIALS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Endergetic Expansion adds a passive resource biome",
+      "  to the End dimension.",
+      "  The Poise Forest drops Booflo Fur, Puff Bug Wings, Bolloom Fruit.",
+      "  All three have crafting uses beyond being curiosities.",
+      "  Ch14 is the point where you cash in what you farmed in Ch13.",
+      "",
+      "◈ BOOFLO FUR USES",
+      "  └ Booflo Vest: 6× End jump height (crafted in Ch13)",
+      "    If not already built: build now",
+      "  └ Additional crafting: check JEI for endergetic: recipes",
+      "    Booflo Fur appears in End-tier armor, tools, or bed equivalents",
+      "  └ Soft material: high crafting value in comfort/sleep items",
+      "    (Comforts mod: compatible beds may use End materials)",
+      "  └ Trade value: MCA Reborn villagers may have trades",
+      "    for unique End materials post-homecoming",
+      "",
+      "◈ BOLLOOM FRUIT USES",
+      "  └ Food: Bolloom Fruit is a direct food item",
+      "    Low hunger value but useful for Diet balance (fruit group)",
+      "  └ Crafting: Bolloom Fruit appears in Endergetic food recipes",
+      "    (check JEI: endergetic: food recipes)",
+      "  └ Farm integration: Bolloom Buds on End Stone → passive harvest",
+      "    No bonemeal needed — grows on own schedule",
+      "  └ Pair with End kitchen (Void Kitchen quest): Bolloom dish",
+      "    completes the 5-source End feast",
+      "",
+      "◈ PUFF BUG WINGS",
+      "  └ Puff Bug Wings: secondary material from Puff Bug kills",
+      "    Small creature — found same biome as Booflo",
+      "  └ Crafting uses: check JEI for endergetic: recipes",
+      "    May appear in decorative or mobility items",
+      "  └ Drop rate: Puff Bug is uncommon — farm via targeted biome hunting",
+      "    (search Poise Forest thoroughly, they are small and easy to miss)",
+      "",
+      "▸ The Poise Forest predates the civilizations.",
+      "  The Booflo grazed before anyone was there to observe it.",
+      "  The Bolloom grew before anyone planted it.",
+      "  The Puff Bug flew before anyone named it.",
+      "  You showed up, named everything, started farming everything.",
+      "  That is the colonist instinct.",
+      "  The biome does not notice.",
+      "",
+      "▶ Harvest a full Bolloom crop from your farm [check]",
+      "▶ Use Booflo Fur in 2+ crafting recipes [check]",
+      "",
+      "◇ Endergetic materials cycle into the End food system via",
+      "  Ender's Delight cross-recipes.",
+      "  Check JEI for: endersdelight: recipes that call for endergetic: inputs.",
+      "  The two mods are designed to interact."
+    ],
+    "groups": {"What the Void Remembers": {"position": [300, 300]}},
+    "icon": {"item": {"id": "endergetic:booflo_fur", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

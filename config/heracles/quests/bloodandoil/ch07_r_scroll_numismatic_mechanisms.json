@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Numismatic Mechanisms scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Numismatic Mechanisms scroll",
+      "icon": {
+        "item": {
+          "id": "createnumrec:incomplete_bevel",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock numismatic_mechanisms"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Numismatic Mechanisms"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Found in the smoke of old forges.\"",
+      "",
+      "Numismatics coins + cog economy.",
+      "",
+      "This scroll unlocks 36 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Ati Structures:Chests/Library",
+      "  \u00b7 Village/Village Weaponsmith",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Numismatic Mechanisms] [auto]"
+    ],
+    "groups": {
+      "Blood and Oil": {
+        "position": [
+          692,
+          1020
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "createnumrec:incomplete_bevel",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

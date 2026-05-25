@@ -1,0 +1,74 @@
+{
+  "dependencies": ["ch07_r_cbc2"],
+  "tasks": {
+    "shell": {
+      "title": "Craft a stack of Cannon Shells (Create Big Cannons — standard ballistic ammo)",
+      "icon": {"item": {"id": "bigcannons:cannon_shell", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "incendiary": {
+      "title": "Craft Incendiary Shot (CBC — fire-damage variant, useful against Nether mobs)",
+      "icon": {"item": {"id": "bigcannons:incendiary_shell", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "shell": {"item": {"id": "bigcannons:cannon_shell", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 4}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Armory"}  ,
+    "subtitle": {"text": "Create Big Cannons has 12 ammo types. Know them before you build the gun."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.07 · THE ARMORY",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Create Big Cannons adds functional siege weapons.",
+      "  Mechanical assembly. Real ballistics.",
+      "  The ammo type determines what you destroy.",
+      "",
+      "◈ CBC AMMO TYPES",
+      "  └ Cannon Shell: standard explosive, anti-structure",
+      "  └ Incendiary Shell: fire damage + block ignite",
+      "    best against mobs, slow against stone",
+      "  └ Shrapnel Shot: area damage, anti-mob cluster",
+      "  └ Armor Piercing: high penetration, less AoE",
+      "    best against heavily armored bosses",
+      "  └ Grape Shot: shotgun spread, close-range defense",
+      "  └ Nuclear Shell (Ch10): creates nuke strike zone",
+      "    (Create Nuclear Shell + Create Oppenheimered)",
+      "",
+      "◈ CANNON DESIGN",
+      "  └ Cannon Barrel: assembled from CBC Barrel blocks",
+      "  └ Firing Mechanism: Redstone or Create rotational",
+      "  └ Loading: automated via Deployer into breech",
+      "  └ Elevation: adjustable with Create bearing",
+      "  └ Range: depends on barrel length and charge",
+      "",
+      "▸ The armory scroll was found beside a cannon",
+      "  that had been fired once.",
+      "  At something.",
+      "  The something was not there anymore.",
+      "",
+      "▶ Craft a stack of Cannon Shells [check]",
+      "▶ Craft Incendiary Shot [check]",
+      "",
+      "◇ Nuclear Shell (Ch10) requires Create Teleporters",
+      "  quantum_mechanism chain to unlock.",
+      "  Plan that infrastructure now.",
+      "  The cannon is already built."
+    ],
+    "groups": {"Blood and Oil": {"position": [-450, 0]}},
+    "icon": {"item": {"id": "bigcannons:cannon_shell", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

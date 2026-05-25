@@ -1,0 +1,79 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Abyssal Chasm scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Abyssal Chasm scroll",
+      "icon": {
+        "item": {
+          "id": "alexscaves:abyssmarine",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock abyssal_chasm"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Abyssal Chasm"
+    },
+    "subtitle": {
+      "text": "Bioluminescence, pearl, and the deep-ones who never surfaced."
+    },
+    "description": [
+      "\"The sea found a way underground. It brought its appetite with it.\"",
+      "",
+      "This scroll unlocks 51 items.",
+      "",
+      "\u25c8 Found in: chests of the Abyssal Chasm biome",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Abyssal Chasm] [auto]"
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          1364,
+          900
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "alexscaves:abyssmarine",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

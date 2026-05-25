@@ -1,0 +1,68 @@
+{
+  "dependencies": ["ch07_r_expl1"],
+  "tasks": {
+    "cast_iron_barrel": {
+      "title": "Upgrade your cannon to a Cast Iron Barrel (requires TFMG cast iron ingots)",
+      "icon": {"item": {"id": "tfmg:cast_iron_ingot", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "shrapnel": {
+      "type": "heracles:item",
+      "item": "create_big_cannons:shrapnel_shell",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "delay_fuze": {
+      "type": "heracles:item",
+      "item": "create_big_cannons:delay_fuze",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ap_shell": {
+      "item": {"id": "create_big_cannons:ap_shell", "count": 8},
+      "type": "heracles:item"
+    },
+    "he_shell": {
+      "item": {"id": "create_big_cannons:he_shell", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Cast Iron Doctrine"},
+    "subtitle": {"text": "Longer barrel. Less recoil. More reason to use it."},
+    "description": [
+      "The Cast Iron Barrel requires TFMG Cast Iron.",
+      "Which requires the Industrial Blast Furnace path.",
+      "Which required building the oil chain first.",
+      "",
+      "The cannon improves because the factory improved.",
+      "Everything connects. The steam age made the factory.",
+      "The oil age makes the cannon viable at range.",
+      "",
+      "Delay Fuze sets a countdown before detonation.",
+      "Useful for arced shots where impact fuze would detonate on terrain.",
+      "AP Shell penetrates multiple blocks before detonating inside.",
+      "",
+      "→ Upgrade to a Cast Iron Barrel [check]",
+      "→ Craft 16 Shrapnel Shells",
+      "→ Craft 8 Delay Fuzes"
+    ],
+    "groups": {"Blood and Oil": {"position": [-300, 0]}},
+    "icon": {"item": {"id": "create_big_cannons:ap_shell", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

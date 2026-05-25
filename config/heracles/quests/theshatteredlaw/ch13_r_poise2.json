@@ -1,0 +1,65 @@
+{
+  "dependencies": ["ch13_r_poise1"],
+  "tasks": {
+    "booflo": {
+      "title": "Find and observe a Booflo (passive End creature — Endergetic Expansion, found in Poise Forest)",
+      "icon": {"item": {"id": "endergetic:booflo_fur", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "puff_bug": {
+      "title": "Find and observe a Puff Bug (small End insect — Endergetic Expansion)",
+      "icon": {"item": {"id": "endergetic:puff_bug_wings", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "booflo_fur": {
+      "title": "Collect Booflo Fur from the Booflo",
+      "icon": {"item": {"id": "endergetic:booflo_fur", "count": 4}, "type": "heracles:item"},
+      "amount": 4,
+      "collection": "AUTOMATIC",
+      "type": "heracles:item"
+    }
+  },
+  "rewards": {
+    "fur": {
+      "item": {"id": "endergetic:booflo_fur", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Booflo and the Puff Bug"},
+    "subtitle": {"text": "The End is not empty. It has never been empty. We called it empty because nothing in it wanted to eat us."},
+    "description": [
+      "The Booflo is a large passive creature native to the Poise Forest.",
+      "It does not attack. It grazes on End flora.",
+      "Booflo Fur drops on kill — soft, bioluminescent, used in end-tier crafting.",
+      "",
+      "The Puff Bug is smaller — an insect-like creature found in the same biome.",
+      "It has wings and a faint glow.",
+      "Both creatures have been in this dimension since before the civilizations arrived.",
+      "",
+      "This is the Dungeon Meshi principle in the End:",
+      "everything that lives here has adapted to the conditions.",
+      "The conditions are extreme. The creatures are not hostile.",
+      "The void selects for specific kinds of survival.",
+      "",
+      "→ Find and observe the Booflo [check]",
+      "→ Find and observe the Puff Bug [check]",
+      "→ Collect 4 Booflo Fur [collect]"
+    ],
+    "groups": {"The Shattered Law": {"position": [-300, 0]}},
+    "icon": {"item": {"id": "endergetic:booflo_fur", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

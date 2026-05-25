@@ -1,0 +1,88 @@
+{
+  "dependencies": ["ch12_world"],
+  "tasks": {
+    "lacrima_trigger": {
+      "title": "Obtain Lacrima (cataclysm:lacrima) from the Netherite Monstrosity — this triggers the Infernal Age transition",
+      "icon": {"item": {"id": "cataclysm:lacrima", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "infernal_recipe": {
+      "title": "Craft your first Infernal-tier item — check JEI for recipes unlocked after the Infernal Age transition",
+      "icon": {"item": {"id": "cataclysm:ignitium", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "lacrima": {"item": {"id": "cataclysm:lacrima", "count": 2}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Infernal Age"},
+    "subtitle": {"text": "Lacrima in hand. The age turns. The Nether did not name itself the Infernal — you did. Enter accordingly."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.12 · THE INFERNAL AGE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Lacrima from the Netherite Monstrosity",
+      "  is the Infernal Age trigger.",
+      "  Obtaining it shifts the History Stages age system.",
+      "  New recipes unlock. New materials become craftable.",
+      "  The Infernal Age is the Nether's answer",
+      "  to the nuclear age you built in Ch10.",
+      "",
+      "◈ INFERNAL AGE TRANSITION",
+      "  └ Trigger: obtain cataclysm:lacrima",
+      "    (from Netherite Monstrosity in Nether depths)",
+      "  └ Transition is PERMANENT — no undo",
+      "  └ New JEI recipes become visible after transition",
+      "  └ Check JEI immediately after obtaining Lacrima",
+      "    to see all unlocked Infernal recipes",
+      "  └ Age announcement: History Stages will display",
+      "    the age change notification in chat",
+      "",
+      "◈ LACRIMA MATERIAL USES",
+      "  └ Infernal crafting recipes: Lacrima as ingredient",
+      "  └ Likely uses: Infernal tools/weapons, Cataclysm gear",
+      "    upgrade paths, advanced Ch12 construction materials",
+      "  └ cataclysm:lacrima is also likely needed for Ch13+",
+      "    gear preparation — stockpile before advancing",
+      "  └ Farm 8+ Lacrima from Monstrosity before Ch13",
+      "",
+      "◈ INFERNAL AGE CONTENT",
+      "  └ Age-gated content: check KubeJS age_lock.js or",
+      "    historystages config for full Infernal unlock list",
+      "  └ The Infernal Age is the last age before divine",
+      "    (Path to Divinity is the final transition)",
+      "  └ Some Celestisynth recipes become accessible",
+      "    only after the Infernal Age transition",
+      "",
+      "▸ The Lacrima is the Nether's tear.",
+      "  The Nether cried once.",
+      "  It cried for the thing it lost",
+      "  when the Monstrosity was killed.",
+      "  The tear solidified into a material.",
+      "  You are holding it now.",
+      "  Use it accordingly.",
+      "",
+      "▶ Obtain Lacrima and trigger the Infernal Age [check]",
+      "▶ Craft your first Infernal-tier item [check]",
+      "",
+      "◇ Do not trigger the Infernal Age until you",
+      "  have completed all Ch11 Cataclysm bosses.",
+      "  The Monstrosity is the LAST kill in Ch11.",
+      "  Trigger the age only when ready to build Ch12."
+    ],
+    "groups": {"The Kingdom You Build": {"position": [-600, 150]}},
+    "icon": {"item": {"id": "cataclysm:lacrima", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

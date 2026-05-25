@@ -1,0 +1,86 @@
+{
+  "dependencies": [
+    "ch12_wither_storm"
+  ],
+  "tasks": {
+    "wither_rose_gate": {
+      "type": "heracles:item",
+      "item": "minecraft:wither_rose",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/command_ruin_studied"
+    }
+  },
+  "rewards": {
+    "scarlet_crown": {
+      "item": {
+        "id": "scarlet_king:scarlet_crown",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 10
+      },
+      "type": "heracles:item"
+    },
+    "age": {
+      "type": "heracles:command",
+      "command": "history unlock cursed_age"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Kingdom You Build"
+    },
+    "subtitle": {
+      "text": "The Cursed Eye was always the last one. This is not accidental."
+    },
+    "description": [
+      "The Wither Rose grows where the Wither kills.",
+      "It is the only evidence that something stood here.",
+      "",
+      "The Command Ruin scroll documents what happens",
+      "when command becomes ruin.",
+      "The previous civilization is documented in it.",
+      "You are now holding their evidence.",
+      "",
+      "The Cursed Eye was always the last custom eye.",
+      "Whoever designed this portal system knew what it would take.",
+      "They built it anyway.",
+      "So did you.",
+      "",
+      "→ Collect 4 Wither Roses (dropped when Wither kills mobs)",
+      "→ Research the Command Ruin scroll [check]"
+    ],
+    "groups": {
+      "The Kingdom You Build": {
+        "position": [
+          0,
+          600
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:wither_rose",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "display_name": "Leviathan Deep Feast",
+  "research_time": 7200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

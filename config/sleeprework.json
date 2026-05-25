@@ -11,7 +11,7 @@
     "color_3": 15430708,
     "color_4": 15412525,
     "do_recolor": true,
-    "show_tutorial": false,
+    "show_tutorial": true,
     "icon_x": 80,
     "icon_y": 10,
     "color_1": 16777215,
@@ -28,7 +28,7 @@
         "amplifier": 1
       }
     ],
-    "tiredness_increase_per_minute": 0.025,
+    "tiredness_increase_per_minute": 0.05,
     "max_tiredness": 5.0
   },
   "phantom": {

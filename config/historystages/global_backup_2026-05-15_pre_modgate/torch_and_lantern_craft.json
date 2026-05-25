@@ -1,0 +1,19 @@
+{
+  "display_name": "Torch & Lantern Craft",
+  "research_time": 1500,
+  "items": [
+    "alexscaves:bioluminescent_torch",
+    "minecraft:candle",
+    "minecraft:soul_torch"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

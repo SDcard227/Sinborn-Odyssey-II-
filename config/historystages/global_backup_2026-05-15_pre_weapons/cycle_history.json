@@ -1,0 +1,15 @@
+{
+  "display_name": "The Nine-Era Cycle History",
+  "research_time": 28800,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

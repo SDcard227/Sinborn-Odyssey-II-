@@ -1,0 +1,26 @@
+{
+  "display_name": "Beehive Logistics",
+  "research_time": 5400,
+  "items": [
+    "cbbees:incomplete_mechanical_beehive",
+    "cbbees:mechanical_beehive",
+    "cbbees:portable_beehive",
+    "endergetic:poise_beehive",
+    "minecraft:bee_nest",
+    "minecraft:beehive",
+    "minecraft:honey_block",
+    "minecraft:honeycomb_block",
+    "unusual_delight:empty_honeycomb_block",
+    "unusual_delight:enchanted_honeycomb"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

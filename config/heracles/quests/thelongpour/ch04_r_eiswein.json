@@ -1,0 +1,76 @@
+{
+  "dependencies": ["ch04_r_vine_brew"],
+  "tasks": {
+    "eiswein_craft": {
+      "title": "Craft Eiswein (Vinery — use frozen/ice grapes in the barrel process)",
+      "icon": {"item": {"id": "vinery:eiswein", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "pack_bottles": {
+      "title": "Pack at least 4 Eiswein bottles in your inventory before entering the Nether",
+      "icon": {"item": {"id": "vinery:eiswein", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "eiswein": {"item": {"id": "vinery:eiswein", "count": 2}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Ice Wine"},
+    "subtitle": {"text": "The grapes froze before they were harvested. That was not an accident."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.04 · THE ICE WINE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Eiswein is the rarest wine in Vinery.",
+      "  You need grapes that froze.",
+      "  You need winter. Or snow biome cultivation.",
+      "  You need patience.",
+      "",
+      "◈ EISWEIN PROPERTIES",
+      "  └ ★ FULLY RESTORES HEALTH on consumption",
+      "    (this is not a typo — full heart bar)",
+      "  └ Also provides: short Regeneration effect",
+      "  └ Also provides: minor warmth (Cold Sweat)",
+      "  └ Stack weight: glass bottle",
+      "  └ Best emergency heal in Ch04-Ch09",
+      "",
+      "◈ HOW TO CRAFT EISWEIN",
+      "  └ Grow grapes in a cold biome (tundra, snowy slopes)",
+      "    OR harvest grapes and expose to snow/ice",
+      "  └ Ferment ice-grapes in barrel — longer than regular",
+      "  └ Output: 1-2 bottles per barrel",
+      "  └ Slow to produce. Worth the time.",
+      "",
+      "◈ NETHER PREPARATION",
+      "  └ ▲ Ch06 Nether entry — pack Eiswein",
+      "  └ Fire Resistance potion blocks lava damage",
+      "  └ Eiswein restores health from non-lava damage",
+      "  └ Together: survive almost anything in the Nether",
+      "",
+      "▸ Someone left three bottles in a chest by the Nether portal.",
+      "  They never came back for them.",
+      "  You may as well take the lesson.",
+      "",
+      "▶ Craft Eiswein [check]",
+      "▶ Pack 4 Eiswein bottles for Nether entry [check]",
+      "",
+      "◇ Magma Gelatin (Nether's Delight) gives",
+      "  sustained fire immunity. Different from Eiswein.",
+      "  Bring both if you can. Ch06 will test you."
+    ],
+    "groups": {"The Long Pour": {"position": [600, 0]}},
+    "icon": {"item": {"id": "vinery:eiswein", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

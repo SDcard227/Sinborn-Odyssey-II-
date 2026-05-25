@@ -1,0 +1,37 @@
+{
+  "display_name": "Falconry & Advanced Whistlecraft",
+  "research_time": 5400,
+  "items": [
+    "alexscaves:galena_gauntlet",
+    "alexsmobs:falconry_glove",
+    "alexsmobs:falconry_glove_hand",
+    "alexsmobs:falconry_glove_inventory",
+    "alexsmobs:falconry_hood",
+    "alexsmobs:tarantula_hawk_elytra",
+    "alexsmobs:tarantula_hawk_wing",
+    "alexsmobs:tarantula_hawk_wing_fragment",
+    "cataclysm:gauntlet_of_bulwark",
+    "cataclysm:gauntlet_of_guard",
+    "cataclysm:gauntlet_of_maelstrom",
+    "gauntlets:diamond_gauntlet",
+    "gauntlets:gold_gauntlet",
+    "gauntlets:iron_gauntlet",
+    "gauntlets:netherite_gauntlet",
+    "iceandfire:deathworm_gauntlet_red",
+    "iceandfire:deathworm_gauntlet_white",
+    "iceandfire:deathworm_gauntlet_yellow",
+    "mowziesmobs:earthrend_gauntlet",
+    "mowziesmobs:geomancer_beads.text.0",
+    "traveloptics:gauntlet_of_extinction"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

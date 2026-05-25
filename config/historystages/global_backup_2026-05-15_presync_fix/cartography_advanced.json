@@ -1,0 +1,29 @@
+{
+  "display_name": "Advanced Cartography",
+  "research_time": 2700,
+  "items": [
+    "alexscaves:cave_map",
+    "alexscaves:underground_cabin_explorer_map",
+    "create_ltab:explorer_map",
+    "create_ltab:grot_map",
+    "dungeonnowloading:labyrinth_map",
+    "dungeonnowloading:temple_of_duality_map",
+    "irons_spellbooks:antiquated_compass",
+    "irons_spellbooks:furled_map",
+    "irons_spellbooks:furled_map_ancient",
+    "irons_spellbooks:wayward_compass",
+    "minecraft:ocean_explorer_map",
+    "minecraft:treasure_map",
+    "minecraft:woodland_explorer_map"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

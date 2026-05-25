@@ -1,0 +1,27 @@
+{
+  "display_name": "The Long Road",
+  "research_time": 900,
+  "items": [
+    "minecraft:carrot_on_a_stick",
+    "minecraft:cartography_table",
+    "minecraft:filled_map",
+    "minecraft:lead",
+    "minecraft:lodestone_compass",
+    "minecraft:map",
+    "minecraft:recovery_compass",
+    "minecraft:warped_fungus_on_a_stick"
+  ],
+  "tags": [],
+  "mods": [
+    "antique_atlas",
+    "create_ltab"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "dependencies": [
+    "ch09_portal"
+  ],
+  "tasks": {
+    "trigon_kill": {
+      "type": "heracles:kill_entity",
+      "entity": "endertrigon:ender_trigon",
+      "amount": 1
+    },
+    "baby_tame": {
+      "title": "Tame a Baby Ender Trigon — born from Trigon eggs left after the fight, bondable when young",
+      "icon": {
+        "item": {
+          "id": "minecraft:egg",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "dragon_breath": {
+      "item": {
+        "id": "minecraft:dragon_breath",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "obsidian": {
+      "item": {
+        "id": "minecraft:obsidian",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Ender Trigon"
+    },
+    "subtitle": {
+      "text": "Three heads. The original Ender Dragon had one. The Trigon is what the End made to fill the silence after."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.09 · THE ENDER TRIGON",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ After the Ender Dragon falls,",
+      "  the End does not become quiet.",
+      "  The Ender Trigon fills the void.",
+      "  It has three heads.",
+      "  It does not respawn on command.",
+      "  Find it in the outer End islands.",
+      "",
+      "◈ ENDER TRIGON ATTACKS",
+      "  └ Each head operates semi-independently",
+      "  └ ✦ Void Burst: mid-range AOE from center body",
+      "  └ ✦ Dragon Acid: ranged acid projectile, each head",
+      "  └ ✦ Grab + Slam: melee grab, vertical slam damage",
+      "  └ ✦ Head Detonate: if one head is killed, it detonates",
+      "    (do not kill heads in rapid succession)",
+      "  └ ✦ End Flight: unpredictable 3D movement in open space",
+      "  └ Phase shift at 50% HP — all three heads sync",
+      "",
+      "◈ FIGHT STRATEGY",
+      "  └ Engage from below — Trigon prefers altitude",
+      "  └ Elytra + Fireworks: essential for mobility",
+      "    (Trigon is fast; stationary fighting = death)",
+      "  └ Target one head at a time until 55% HP,",
+      "    then switch to body damage to skip detonation phase",
+      "  └ Dragon Breath potions: collect during fight",
+      "    (used in Lingering Potion crafting post-fight)",
+      "  └ Bring: Strength II potion + Healing II splash ×8",
+      "",
+      "◈ BABY TRIGON TAMING",
+      "  └ Ender Trigon leaves eggs after defeat",
+      "  └ Eggs hatch into Baby Ender Trigon after time",
+      "  └ Baby is tameable when young — use food or taming",
+      "    item during the bonding window",
+      "  └ Tamed Trigon: mountable, End-dimension flight",
+      "  └ Trigon adds no unique item drops beyond vanilla",
+      "    dragon rewards (Dragon Breath, XP, Elytra chance)",
+      "",
+      "▸ The Ender Dragon was the guardian.",
+      "  The Trigon was the successor.",
+      "  The civilizations who built the portal",
+      "  did not plan for there to be a next guardian.",
+      "  The End did not ask for permission.",
+      "",
+      "▶ Defeat the Ender Trigon [check]",
+      "▶ Tame a Baby Ender Trigon [check]",
+      "",
+      "◇ Tamed Trigon: useful for Ch13+ End exploration.",
+      "  The outer End islands are vast.",
+      "  Elytra gets you there. Trigon is the home base."
+    ],
+    "groups": {
+      "The Eleven-Eyed Hunt": {
+        "position": [
+          450,
+          450
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:dragon_breath",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

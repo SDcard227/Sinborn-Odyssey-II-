@@ -1,0 +1,98 @@
+{
+  "dependencies": [
+    "ch09_gate"
+  ],
+  "tasks": {
+    "ancient_debris": {
+      "type": "heracles:item",
+      "item": "minecraft:ancient_debris",
+      "amount": 12,
+      "collection": "AUTOMATIC"
+    },
+    "wither_prep": {
+      "title": "Gather 3 Wither Skeleton Skulls and choose your Wither arena location",
+      "icon": {
+        "item": {
+          "id": "minecraft:wither_skeleton_skull",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "netherite_scrap": {
+      "type": "heracles:item",
+      "item": "minecraft:netherite_scrap",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "netherite": {
+      "item": {
+        "id": "minecraft:netherite_ingot",
+        "count": 2
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 12
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "You have been collecting skulls since Ch06. Now you know why."
+    },
+    "description": [
+      "The nuclear age begins with a death.",
+      "The Wither yields the Nether Star.",
+      "The Nether Star is the key to what comes after.",
+      "",
+      "Ancient Debris spawns at Y: 8-22 in the Nether.",
+      "Smelt to Netherite Scrap. Four Scrap + four Gold = one Netherite Ingot.",
+      "You want Netherite before the Wither fight.",
+      "",
+      "Wither arena: choose a location with no structures nearby.",
+      "The Wither damages blocks within 20 blocks of its origin.",
+      "Underground works best — limits blast radius.",
+      "A bedrock-anchored position in the Nether limits it further.",
+      "",
+      "The three skulls you stored in Ch06 are ready.",
+      "",
+      "→ Collect 12 Ancient Debris (Nether Y: 8-22)",
+      "→ Smelt to 8 Netherite Scrap",
+      "→ Prepare your Wither arena [check]"
+    ],
+    "groups": {
+      "The Pale Shore": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:ancient_debris",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "The Pale Shore"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

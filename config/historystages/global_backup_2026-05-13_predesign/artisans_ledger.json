@@ -1,0 +1,25 @@
+{
+  "display_name": "The Artisan's Ledger",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "handcrafted",
+    "furniture",
+    "supplementaries",
+    "amendments",
+    "redeco",
+    "heirlooms",
+    "mcwdoors",
+    "mcwwindows",
+    "mcwtrpdoors",
+    "bits_n_bobs",
+    "fetzisdisplays",
+    "decorative_blocks"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

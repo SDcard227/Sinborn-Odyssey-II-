@@ -1,0 +1,17 @@
+{
+  "display_name": "The Combustion Codex",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "tfmg",
+    "createbigcannons",
+    "thermal",
+    "immersiveengineering"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

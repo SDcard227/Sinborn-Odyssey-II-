@@ -1,0 +1,93 @@
+{
+  "dependencies": ["ch12_manifestor"],
+  "tasks": {
+    "path_scroll": {
+      "title": "Find the Path to Divinity scroll — not a standard scroll. It gives a Corrupted Knowledge book. Do not discard it.",
+      "icon": {"item": {"id": "minecraft:knowledge_book", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "know_cost": {
+      "title": "Understand the cost — 999 souls via Mass Accumulate, Homunculus chain, Philosopher's Stone at the end",
+      "icon": {"item": {"id": "minecraft:nether_star", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "xp": {"item": {"id": "minecraft:experience_bottle", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Path to Divinity"},
+    "subtitle": {"text": "The scroll is corrupted. That is not a flaw. It was always going to look like this."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.12 · PATH TO DIVINITY",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Path to Divinity scroll is not a normal scroll.",
+      "  When researched, it gives a Corrupted Knowledge book",
+      "  called 'Path to Divinity'.",
+      "  The book says: 'Do not keep this.'",
+      "  Keep it.",
+      "",
+      "◈ WHAT PATH TO DIVINITY IS",
+      "  └ Divine mod (dvine: / ptd-1.0.5-forge-1.20.1.jar)",
+      "    adds the Philosopher's Stone mechanic",
+      "  └ The path to godhood requires:",
+      "    Step 1 — Brew the Homunculus",
+      "      Black Fluid + Eye of Ender (brewing stand)",
+      "      → Homunculus",
+      "    Step 2 — Activate the Soul Bar",
+      "      Use the Homunculus → soul HUD appears",
+      "      Kill mobs to fill the soul bar",
+      "    Step 3 — Manifest the Philosopher's Stone",
+      "      Press M when soul bar full (999 souls)",
+      "      → Philosopher's Stone manifested as armor skin",
+      "  └ Status: divine player has integrity bar",
+      "    0 integrity + any damage = divine status lost",
+      "",
+      "◈ MASS ACCUMULATE — THE COST",
+      "  └ To fill the soul bar quickly: Mass Accumulate ability",
+      "  └ This requires killing 999 villagers",
+      "  └ The pack does not prevent this",
+      "    It records it.",
+      "    Other mechanics respond to it.",
+      "  └ `/divinecheck` — check if a player is divine",
+      "",
+      "◈ DIVINE STATUS EFFECTS",
+      "  └ Philosopher's Stone active: stat buffs + glowing skin",
+      "  └ Force-counter: other divine player can press M to",
+      "    instantly drop your integrity to 0",
+      "  └ In multiplayer: divine players can counter each other",
+      "  └ In singleplayer: divine status is permanent until damage",
+      "    depletes integrity",
+      "",
+      "▸ The Corrupted Knowledge book says: 'Do not keep this.'",
+      "  You are reading the quest.",
+      "  You know what the book contains.",
+      "  The decision has already been made.",
+      "  Keep it or don't.",
+      "  The nine civilizations made the same choice.",
+      "  Look at what they built.",
+      "",
+      "▶ Find the Path to Divinity scroll [check]",
+      "▶ Understand what the 999 cost means [check]",
+      "",
+      "◇ The Manifestor Trap happened before you arrived.",
+      "  Path to Divinity is what happens after.",
+      "  Both are a transaction.",
+      "  The question is what you get and what gets you."
+    ],
+    "groups": {"The Kingdom You Build": {"position": [-450, 0]}},
+    "icon": {"item": {"id": "minecraft:knowledge_book", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "display_name": "Gunsmithing",
+  "research_time": 5400,
+  "items": [
+    "netherexp:firearm_pottery_sherd",
+    "netherexp:pump_charge_shotgun",
+    "netherexp:shotgun_barrel",
+    "netherexp:shotgun_core",
+    "netherexp:shotgun_fist",
+    "netherexp:smithing_template.pump_charge_upgrade.applies_to",
+    "netherexp:smithing_template.pump_charge_upgrade.base_slot_description"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

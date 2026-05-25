@@ -1,0 +1,65 @@
+{
+  "dependencies": ["ch06_r_enc2"],
+  "tasks": {
+    "max_level": {
+      "title": "Reach maximum power level in the Immersive Enchanting skill tree",
+      "icon": {"item": {"id": "minecraft:enchanting_table", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "full_bookshelves": {
+      "title": "Have 15 Chiseled Bookshelves with Ancient Books fully surrounding your table",
+      "icon": {"item": {"id": "minecraft:chiseled_bookshelf", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "master_enchant": {
+      "title": "Apply a Tier IV enchantment to a piece of gear",
+      "icon": {"item": {"id": "minecraft:diamond_chestplate", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "diamond": {
+      "item": {"id": "minecraft:diamond", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 3},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Mastery"},
+    "subtitle": {"text": "Not luck. Legacy."},
+    "description": [
+      "You are not using enchantments.",
+      "You are using knowledge accumulated by people who came before",
+      "and left it where you could find it.",
+      "",
+      "The Ancient Books did not generate randomly.",
+      "Someone wrote them. Someone placed them in those chests.",
+      "That was not chance — it was intent.",
+      "",
+      "Use the enchantments like they were intended.",
+      "Efficiency IV on the right tool. Protection IV on the right armor.",
+      "Do not waste what took someone else everything to know.",
+      "",
+      "This is the enchanting table the previous civilizations used.",
+      "It was waiting here. Now it's yours.",
+      "",
+      "→ Reach maximum power in the skill tree [check]",
+      "→ Place 15 Chiseled Bookshelves with Ancient Books [check]",
+      "→ Apply a Tier IV enchantment to a piece of gear [check]"
+    ],
+    "groups": {"The Scalded Earth": {"position": [450, 450]}},
+    "icon": {"item": {"id": "minecraft:diamond_chestplate", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

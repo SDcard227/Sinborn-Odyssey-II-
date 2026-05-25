@@ -1,0 +1,12 @@
+{
+  "display_name": "The Mastery Age",
+  "research_time": 0,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

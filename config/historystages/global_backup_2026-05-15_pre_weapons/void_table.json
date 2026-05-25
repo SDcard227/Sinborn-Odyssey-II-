@@ -1,0 +1,18 @@
+{
+  "display_name": "The Chorus Hearth",
+  "research_time": 1800,
+  "items": [
+    "minecraft:chorus_fruit",
+    "minecraft:popped_chorus_fruit"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

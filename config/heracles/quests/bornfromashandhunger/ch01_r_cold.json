@@ -1,0 +1,91 @@
+{
+  "dependencies": [
+    "ch01_shelter"
+  ],
+  "tasks": {
+    "cooked": {
+      "type": "heracles:item",
+      "item": "minecraft:cooked_beef",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "check": {
+      "title": "Understand Cold Sweat",
+      "icon": {
+        "item": {
+          "id": "minecraft:furnace",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coal": {
+      "item": {
+        "id": "minecraft:coal",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "food": {
+      "item": {
+        "id": "minecraft:cooked_chicken",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Against the Cold"
+    },
+    "subtitle": {
+      "text": "The world has temperature. You are part of it."
+    },
+    "description": [
+      "Cold is not just discomfort. It is a slow claim the world makes on your body.",
+      "",
+      "Check the Cold Sweat temperature bar — it is always running.",
+      "Cooked food raises your core. So does staying near fire.",
+      "",
+      "Heat was the first answer civilization gave.",
+      "Everything after — furnace, engine, reactor — is the same answer, scaled.",
+      "",
+      "→ Cook and collect 4 cooked beef",
+      "→ Acknowledge Cold Sweat [check]"
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          -150,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:cooked_beef",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

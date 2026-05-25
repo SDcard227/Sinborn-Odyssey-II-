@@ -1,0 +1,17 @@
+{
+  "display_name": "The Cursed Eye",
+  "research_time": 3600,
+  "items": [
+    "endrem:cursed_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

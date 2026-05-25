@@ -1,0 +1,19 @@
+{
+  "display_name": "Slaying the Scorched Sentinel",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "irons_spellbooks:citadel_keeper",
+      "irons_spellbooks:fire_boss",
+      "mythsandlegends:scorched_sentinel"
+    ],
+    "spawnlock": []
+  }
+}

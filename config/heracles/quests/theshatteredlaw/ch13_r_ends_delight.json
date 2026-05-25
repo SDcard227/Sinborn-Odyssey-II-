@@ -1,0 +1,92 @@
+{
+  "dependencies": ["ch13_outer"],
+  "tasks": {
+    "dragon_breath_stack": {
+      "type": "heracles:item",
+      "item": "minecraft:dragon_breath",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "popped_chorus_stack": {
+      "type": "heracles:item",
+      "item": "minecraft:popped_chorus_fruit",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "dragon_breath": {"item": {"id": "minecraft:dragon_breath", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "End's Delight Preview"},
+    "subtitle": {"text": "Dragon Breath and Chorus Fruit are End's Delight ingredients. Stockpile now. Ch14 needs both in bulk."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.13 · END'S DELIGHT PREVIEW",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ End's Delight is the End-dimension food mod.",
+      "  Its recipes use materials exclusive to the End.",
+      "  Dragon Breath is a primary ingredient in several dishes.",
+      "  Popped Chorus Fruit is a secondary ingredient in others.",
+      "  Both are farmable from Ch13 content.",
+      "  The full End's Delight system unlocks in Ch14.",
+      "  Build the stockpile now.",
+      "",
+      "◈ DRAGON BREATH FARMING",
+      "  └ Collect with glass bottle during Dragon's breath attack:",
+      "    Right-click the breath cloud while holding empty bottle",
+      "  └ Yields: 1 Dragon Breath per bottle per cloud",
+      "    (breath clouds persist 30+ seconds — farm multiple bottles)",
+      "  └ Re-summon farming: same fight, unlimited Dragon Breath runs",
+      "  └ Target: 64+ Dragon Breath before Ch14",
+      "    End's Delight uses it in multiple recipes",
+      "  └ Storage: Dragon Breath stacks to 64 in bottles",
+      "",
+      "◈ POPPED CHORUS FRUIT FARMING",
+      "  └ Smelt Chorus Fruit → Popped Chorus Fruit (1:1 ratio)",
+      "  └ Furnace or smoker (smoker = 2× speed)",
+      "  └ Uses in End's Delight: binding ingredient in End cuisine",
+      "  └ Uses in base game: Purpur Block crafting, End Rod crafting",
+      "  └ Chorus farm from Ch13 feeds directly into this pipeline",
+      "    (see Chorus Farm quest — link your farm to a connected smoker)",
+      "",
+      "◈ WHAT END'S DELIGHT DOES",
+      "  └ Full mod overview unlocks in Ch14",
+      "  └ Short version: Dragon Egg Research mechanic —",
+      "    use the Dragon Egg as a research trigger to unlock",
+      "    all dragon-tier food recipes in the mod",
+      "  └ Dragon-based foods: some of the best stat meals in the pack",
+      "    (combat healing, saturation, effect buffs)",
+      "  └ Do NOT smelt the Dragon Egg",
+      "    It is a research item, not a food ingredient",
+      "",
+      "▸ The civilizations in the End did not eat the dragon.",
+      "  They cooked with what it left behind.",
+      "  The breath. The bone. The crystals.",
+      "  The dragon was not prey.",
+      "  It was a kitchen ingredient that fought back.",
+      "  They cooked around that detail.",
+      "",
+      "▶ Collect 16 Dragon Breath",
+      "▶ Collect 16 Popped Chorus Fruit",
+      "",
+      "◇ Ch14 (What the Void Remembers) opens the full",
+      "  End's Delight system including Dragon Egg Research.",
+      "  Your dragon breath and chorus stockpile is the fuel.",
+      "  Build both farms before leaving Ch13."
+    ],
+    "groups": {"The Shattered Law": {"position": [150, 300]}},
+    "icon": {"item": {"id": "minecraft:dragon_breath", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

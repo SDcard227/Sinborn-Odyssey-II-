@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Distillery (Spirits) scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Distillery (Spirits) scroll",
+      "icon": {
+        "item": {
+          "id": "brewinandchewin:apple_jelly",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock distillery"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Distillery (Spirits)"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Found in the smoke of old forges.\"",
+      "",
+      "Brewin & Chewin spirits chain.",
+      "",
+      "This scroll unlocks 28 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Ati Structures:Chests/Library",
+      "  \u00b7 Village/Village Weaponsmith",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Distillery (Spirits)] [auto]"
+    ],
+    "groups": {
+      "The Kindled Road": {
+        "position": [
+          857,
+          780
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "brewinandchewin:apple_jelly",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

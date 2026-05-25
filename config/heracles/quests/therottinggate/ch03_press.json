@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch03_mill"],
+  "tasks": {
+    "press": {
+      "type": "heracles:item",
+      "item": "create:mechanical_press",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "basin": {
+      "type": "heracles:item",
+      "item": "create:basin",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "sheets": {
+      "type": "heracles:item",
+      "item": "create:iron_sheet",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "brass": {
+      "item": {"id": "create:brass_ingot", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 6},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Press"},
+    "subtitle": {"text": "Force applied in one direction. Permanently."},
+    "description": [
+      "The Mechanical Press compresses raw materials.",
+      "Iron nuggets → Iron sheets. Copper → Copper sheets.",
+      "It needs downward rotational force and a Basin below.",
+      "",
+      "The Basin catches output. Combine with a Chute or Funnel",
+      "to move processed materials automatically.",
+      "",
+      "Sheets are used in nearly every Create recipe from here forward.",
+      "Build this early. Build it right.",
+      "",
+      "→ Craft a Mechanical Press",
+      "→ Craft a Basin",
+      "→ Press 8 iron sheets"
+    ],
+    "groups": {"The Rotting Gate": {"position": [0, 300]}},
+    "icon": {"item": {"id": "create:mechanical_press", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "dependencies": ["ch08_gate"],
+  "tasks": {
+    "read_system": {
+      "title": "Read the Eye scroll (found in desert temples and ruins) — understand the portal system",
+      "icon": {"item": {"id": "historystages:research_scroll", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "stronghold": {
+      "title": "Locate a Stronghold using Eyes of Ender and find the End Portal room",
+      "icon": {"item": {"id": "minecraft:ender_eye", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "ender_eye": {
+      "type": "heracles:item",
+      "item": "minecraft:ender_eye",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ender_pearl": {
+      "item": {"id": "minecraft:ender_pearl", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Eleven-Eyed Hunt"},
+    "subtitle": {"text": "Twelve eyes. Twelve civilizations. Twelve confirmations that you were there."},
+    "description": [
+      "End Remastered replaces all 12 vanilla Eyes of Ender",
+      "with 12 unique custom eyes — each one the inheritance of a civilization.",
+      "",
+      "A key fits a lock. The relationship is mechanical.",
+      "The Eyes are confirmations.",
+      "Each one says: you have been where this required.",
+      "You have done what this costs.",
+      "Twelve confirmations. Then the gate believes you.",
+      "",
+      "The portal frame is in the Stronghold.",
+      "The frame slots accept any valid eye.",
+      "You need 12 unique ones. The hunt begins now.",
+      "",
+      "9 custom eyes. 3 anchor eyes.",
+      "12 civilizations. 12 inherited ends.",
+      "",
+      "→ Read the Eye scroll (found in desert temples, ruins) [check]",
+      "→ Locate the Stronghold and End Portal room [check]",
+      "→ Craft 4 vanilla Eyes of Ender for scouting"
+    ],
+    "groups": {"The Eleven-Eyed Hunt": {"position": [0, 0]}},
+    "icon": {"item": {"id": "minecraft:ender_eye", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "display_name": "Seafood Mastery",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "alexsmobsdelight",
+    "crittersandcompanions",
+    "oceanic_delight",
+    "oceansdelight",
+    "tidesdelight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

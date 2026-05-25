@@ -1,0 +1,60 @@
+{
+  "dependencies": ["ch14_dragon_eat"],
+  "tasks": {
+    "end_cities_cleared": {
+      "title": "Clear 3 End Cities — fully loot all chests including upper tower rooms",
+      "icon": {"item": {"id": "minecraft:purpur_pillar", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "totem_collected": {
+      "title": "Collect a Totem of Undying from an End City Evoker",
+      "icon": {"item": {"id": "minecraft:totem_of_undying", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "purpur": {
+      "item": {"id": "minecraft:purpur_block", "count": 64},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "City After City"},
+    "subtitle": {"text": "The End Cities are the last architecture. No civilization built here after the seal was placed."},
+    "description": [
+      "End Cities are the final frontier of conventional loot.",
+      "Three full clears will give you enchanted diamond/netherite armor,",
+      "stacks of gold and iron, and multiple Totems of Undying.",
+      "",
+      "Totems of Undying trigger on death — one free death per totem.",
+      "In Ch15-17, you will want several.",
+      "Do not hoard them as trophies. Use them as tools.",
+      "",
+      "End Cities also contain:",
+      "- Enchanted armor and weapons (random enchants, high tier)",
+      "- Shulker Boxes in loot rooms",
+      "- The Totem of Undying from Evoker mobs guarding upper floors",
+      "",
+      "After clearing 3 cities, you have extracted everything conventional from the End.",
+      "What remains is unconventional.",
+      "",
+      "→ Clear 3 End Cities [check]",
+      "→ Collect a Totem of Undying [check]"
+    ],
+    "groups": {"What the Void Remembers": {"position": [0, 450]}},
+    "icon": {"item": {"id": "minecraft:totem_of_undying", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "dependencies": ["ch13_enderman"],
+  "tasks": {
+    "place_eyes": {
+      "title": "Place all 12 eyes in the End Portal frame — activate the portal",
+      "icon": {"item": {"id": "endrem:cryptic_eye", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "obsidian_platform": {
+      "title": "Build an obsidian combat platform above or near the portal room (minimum 10x10)",
+      "icon": {"item": {"id": "minecraft:obsidian", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "anchor": {
+      "title": "Set a Respawn Anchor or bed respawn point near the stronghold",
+      "icon": {"item": {"id": "minecraft:respawn_anchor", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "ender_eye": {
+      "item": {"id": "minecraft:ender_eye", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Portal Opens"},
+    "subtitle": {"text": "Twelve eyes. Twelve civilizations. One door."},
+    "description": [
+      "End Remastered accepts any 12 unique eyes — one per slot.",
+      "The twelve custom eyes cover: the nine civilizations' legacies",
+      "plus the Wither (anchor), the Guardian (anchor), and the Nether (anchor).",
+      "",
+      "The eyes you carry:",
+      "Black, Lost, Cold, Rogue, Cryptic, Magical, Corrupted, Cursed, Old (custom eyes)",
+      "Wither Eye, Guardian Eye, Nether Eye (anchor eyes — boss drops)",
+      "",
+      "Place all twelve. The portal activates.",
+      "",
+      "Do not jump in immediately.",
+      "Build a platform in the stronghold room first.",
+      "Set a respawn point — the End does not have beds.",
+      "Dying in the End without a respawn anchor returns you to world spawn.",
+      "",
+      "→ Activate the End Portal with all 12 eyes [check]",
+      "→ Build a combat platform near the portal [check]",
+      "→ Set respawn anchor or nearby respawn [check]"
+    ],
+    "groups": {"The Shattered Law": {"position": [0, 300]}},
+    "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

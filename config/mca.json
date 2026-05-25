@@ -46,7 +46,7 @@
   "allowAnyNightOwl": false,
   "heartsForPardonHit": 30,
   "pardonPlayerTicks": 1200,
-  "guardsTargetMonsters": true,
+  "guardsTargetMonsters": false,
   "maleVillagerHeightFactor": 0.9,
   "femaleVillagerHeightFactor": 0.85,
   "maleVillagerWidthFactor": 1.0,
@@ -75,8 +75,8 @@
   "villagerChatAIModel": "default",
   "villagerChatAISystemPrompt": "",
   "villagerChatAIUseLongTermMemory": true,
-  "villagerChatAIUseSharedLongTermMemory": true,
-  "villagerChatAIIncludeSessionInformation": true,
+  "villagerChatAIUseSharedLongTermMemory": false,
+  "villagerChatAIIncludeSessionInformation": false,
   "inworldAIToken": "",
   "inworldAIResourceNames": {},
   "enableOnlineTTS": false,
@@ -143,17 +143,17 @@
     "minecraft:grass_block",
     "minecraft:dirt"
   ],
-  "launchIntoDestiny": false,
+  "launchIntoDestiny": true,
   "allowDestinyCommandOnce": false,
   "allowDestinyCommandMoreThanOnce": false,
   "allowDestinyTeleportation": true,
   "enablePlayerShaders": true,
   "enableVillagerPlayerModel": true,
   "forceVillagerPlayerModel": false,
-  "allowLimitedPlayerEditor": true,
-  "allowFullPlayerEditor": false,
+  "allowLimitedPlayerEditor": false,
+  "allowFullPlayerEditor": true,
   "allowPlayerSizeAdjustment": true,
-  "adjustPlayerEyesToHeight": false,
+  "adjustPlayerEyesToHeight": true,
   "useModernUSANamesOnly": false,
   "guardsTargetEntities": {
     "minecraft:creeper": -1,
@@ -187,7 +187,7 @@
   ],
   "structuresInRumors": [
     "minecraft:igloo",
-    "minecraft:pyramid",
+    "minecraft:desert_pyramid",
     "minecraft:ruined_portal_desert",
     "minecraft:ruined_portal_swamp",
     "minecraft:ruined_portal",
@@ -208,14 +208,7 @@
     "minecraft:ancient_city"
   ],
   "destinySpawnLocations": [
-    "somewhere",
-    "minecraft:shipwreck_beached",
-    "minecraft:village_desert",
-    "minecraft:village_taiga",
-    "minecraft:village_snowy",
-    "minecraft:village_plains",
-    "minecraft:village_savanna",
-    "minecraft:ancient_city"
+    "somewhere"
   ],
   "destinyLocationsToTranslationMap": {
     "minecraft:shipwreck_beached": "destiny.story.sailing",
@@ -227,9 +220,9 @@
     "color_blind": "minecraft:shaders/post/desaturate.json"
   },
   "playerRendererBlacklist": {
-    "morph": "arms",
-    "firstperson": "arms",
     "firstpersonmod": "arms",
+    "firstperson": "arms",
+    "morph": "arms",
     "epicfight": "all"
   },
   "enabledTraits": {
@@ -253,6 +246,6 @@
     "TOUGH": true
   },
   "taxesMap": {
-    "minecraft:emerald": 1.0
+    "numismatics:cog": 1.0
   }
 }

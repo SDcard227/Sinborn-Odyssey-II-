@@ -1,0 +1,115 @@
+{
+  "dependencies": [
+    "ch06_world"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/thermal_control"
+    },
+    "insulate": {
+      "title": "Maintain body temperature within the safe range for 10 minutes in an extreme biome (desert or tundra)",
+      "icon": {
+        "item": {
+          "id": "minecraft:leather_chestplate",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "fur": {
+      "item": {
+        "id": "minecraft:rabbit_hide",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Thermal Control"
+    },
+    "subtitle": {
+      "text": "Cold Sweat: your body temperature is a resource. Manage it like one."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.06 · THERMAL CONTROL",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Cold Sweat tracks your body temperature",
+      "  against the ambient temperature of the biome.",
+      "  The Nether is 120°F+ in the open.",
+      "  The tundra is near 0°F.",
+      "  Both extremes kill you if you're unprepared.",
+      "",
+      "◈ THERMAL MANAGEMENT TOOLS",
+      "  └ Warm: Fur armor, leather with fur lining,",
+      "    heating items, hot food (hot meals = warmth bonus)",
+      "  └ Cool: Water drinking, cooling food,",
+      "    stone/iron armor (metal = cold conduction — helps in heat)",
+      "  └ Insulation items: fur, silk, specific Cold Sweat items",
+      "  └ 30 unique Cold Sweat items confirmed",
+      "",
+      "◈ BIOME TEMPERATURE REFERENCE",
+      "  └ Desert: 120°F — needs cooling",
+      "  └ Tundra/Snowy: near 0°F — needs warming",
+      "  └ Ocean: cool and moderate",
+      "  └ Nether Wastes: 120°F ambient — same as desert",
+      "  └ Basalt Deltas: extremely hot",
+      "  └ Warped Forest: moderate for Nether",
+      "",
+      "◈ SCROLL: Thermal Control",
+      "  └ Found in: cold biome shelter chests,",
+      "    thermal engineering ruins, research camp loot",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: full Cold Sweat item list, biome temp chart",
+      "",
+      "▸ The scroll was found frozen into a glacier.",
+      "  The person who wrote it understood",
+      "  that surviving the cold required knowing the cold.",
+      "  They survived it. The glacier preserved the proof.",
+      "",
+      "▶ Find The Thermal Control scroll [check]",
+      "▶ Maintain temperature in an extreme biome for 10 min [check]",
+      "",
+      "◇ Freeze It & Heat It (Ch02 intro) and Cold Sweat",
+      "  both affect food — frozen biomes preserve food longer,",
+      "  hot biomes spoil it faster. Manage both simultaneously."
+    ],
+    "groups": {
+      "The Scalded Earth": {
+        "position": [
+          -150,
+          300
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:leather_chestplate",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

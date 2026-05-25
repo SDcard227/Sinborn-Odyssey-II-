@@ -1,0 +1,60 @@
+{
+  "dependencies": ["ch15_world"],
+  "tasks": {
+    "peak_stamina": {
+      "title": "Maximize Peak Stamina output — reach the highest stamina tier through consistent activity",
+      "icon": {"item": {"id": "minecraft:feather", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "puffish_skills": {
+      "title": "Invest in Puffish Skills skill tree — allocate points in at least 3 categories",
+      "icon": {"item": {"id": "minecraft:experience_bottle", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "xp": {
+      "item": {"id": "create:experience_nugget", "count": 32},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Trained Body"},
+    "subtitle": {"text": "Every chapter was also physical training. You are better at existing than you were at Ch01."},
+    "description": [
+      "Peak Stamina tracks physical output — running, sprinting, climbing.",
+      "Higher stamina tiers increase the duration and recovery rate.",
+      "By Ch15, you should be at or near maximum.",
+      "If not, spend time sprinting and climbing to push the meter.",
+      "",
+      "Puffish Skills adds a skill tree using experience points.",
+      "Categories include:",
+      "- Combat: damage bonuses, crit rates",
+      "- Defense: armor effectiveness, regeneration",
+      "- Utility: speed, reach, harvest rate",
+      "- Magic: spell-related bonuses if using Iron's Spellbooks",
+      "",
+      "These skills are permanent — they survive death.",
+      "Unlike Diet (which resets on death), skills compound.",
+      "Invest points in what you will use in Ch16-17.",
+      "",
+      "→ Reach maximum Peak Stamina tier [check]",
+      "→ Invest in at least 3 Puffish Skills categories [check]"
+    ],
+    "groups": {"After the Dragon": {"position": [150, 150]}},
+    "icon": {"item": {"id": "minecraft:experience_bottle", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

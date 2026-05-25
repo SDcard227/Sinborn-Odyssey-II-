@@ -1,0 +1,102 @@
+{
+  "dependencies": [
+    "ch13_r_dragon1"
+  ],
+  "tasks": {
+    "crystals_down": {
+      "title": "Destroy all End Crystals on the obsidian pillars before engaging the dragon",
+      "icon": {
+        "item": {
+          "id": "minecraft:end_crystal",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "dragon_defeated": {
+      "type": "heracles:kill_entity",
+      "entity": "minecraft:ender_dragon",
+      "amount": 1
+    },
+    "dragon_egg": {
+      "title": "Claim the Dragon Egg from the fountain (it only spawns once per world)",
+      "icon": {
+        "item": {
+          "id": "minecraft:dragon_egg",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "dragon_breath": {
+      "item": {
+        "id": "minecraft:dragon_breath",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 16
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Dragon Falls"
+    },
+    "subtitle": {
+      "text": "The dragon is the last guardian of a seal that has already been broken. It fights anyway."
+    },
+    "description": [
+      "The Ender Dragon has been waiting here since the civilization that locked the portal",
+      "placed it as a final deterrent.",
+      "",
+      "It is not malicious. It is an ancient mechanism.",
+      "It fights because it was built to fight.",
+      "Defeating it does not feel like a victory so much as completing a process.",
+      "",
+      "The Dragon Egg appears once. It is a trophy and a crafting ingredient.",
+      "In Ch14, End's Delight uses the Dragon Egg for the Dragon Egg Research mechanic.",
+      "Do not use it yet unless you know what you're doing.",
+      "",
+      "After the dragon falls, the exit gateway opens.",
+      "The outer islands are accessible.",
+      "The true End begins.",
+      "",
+      "→ Destroy all End Crystals [check]",
+      "→ Defeat the Ender Dragon [check]",
+      "→ Claim the Dragon Egg [check]"
+    ],
+    "groups": {
+      "The Shattered Law": {
+        "position": [
+          300,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:dragon_egg",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

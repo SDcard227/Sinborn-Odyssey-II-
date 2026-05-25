@@ -1,0 +1,91 @@
+{
+  "dependencies": ["ch15_r_skills1"],
+  "tasks": {
+    "cardiac_check": {
+      "title": "Audit your Cardiac health — ensure maximum HP is stable and no Sculk Sickness stage is active",
+      "icon": {"item": {"id": "minecraft:golden_apple", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "stamina_full": {
+      "title": "Reach full Peak Stamina capacity — train stamina to maximum via sustained sprint/swim/climb activity",
+      "icon": {"item": {"id": "minecraft:feather", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "golden_apple": {"item": {"id": "minecraft:golden_apple", "count": 4}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Body Audit"},
+    "subtitle": {"text": "Peak Stamina. Cardiac health. Sculk Sickness status. Pressure tolerance. Ch15 is when you check all systems."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.15 · BODY AUDIT",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Ch13-14 put your body through everything.",
+      "  The End dimensions strip health in specific ways.",
+      "  Sculk Sickness accumulates from Sculk proximity.",
+      "  Peak Stamina degrades if you went sedentary during long craft sessions.",
+      "  Cardiac health may have taken hits from boss fights.",
+      "  Ch15 is the homecoming maintenance window.",
+      "  Audit everything. Repair everything. Enter Ch16 at full capacity.",
+      "",
+      "◈ SCULK SICKNESS AUDIT",
+      "  └ Sculk Sickness accumulates in 5 stages from Sculk exposure",
+      "    (Ancient Cities, Sculk veins, Warden areas)",
+      "  └ Stage 1-2: minor debuffs (slightly reduced max HP, regen)",
+      "  └ Stage 3-5: severe debuffs (significant HP reduction, blindness)",
+      "  └ Cure: Ambrosia item — check JEI for craft recipe",
+      "    (Ambrosia removes 1 stage per use; multiple doses for high stage)",
+      "  └ Prevention: avoid Sculk blocks without Silk Touch / appropriate gear",
+      "  └ Vile Herb (Cursed Eye ingredient): involves Sculk — check your stage",
+      "    before any further Sculk-adjacent crafting",
+      "",
+      "◈ PEAK STAMINA TRAINING",
+      "  └ Peak Stamina (Peak Stamina mod) governs your max stamina bar",
+      "  └ Training: sprint, swim, and climb to increase max capacity",
+      "  └ Ch15 Elytra usage also trains stamina via sustained activity",
+      "  └ Full stamina: enables longer sprint chains + faster recovery",
+      "  └ Ch17 boss fights benefit from full stamina (dodge chains)",
+      "",
+      "◈ CARDIAC + PRESSURE",
+      "  └ Cardiac: heart rate mechanic — monitor via HUD indicator",
+      "    High-intensity boss fights spike rate, causing damage if prolonged",
+      "    Recovery: rest period after boss fight (stop sprinting, eat)",
+      "  └ Pressure: depth/environment pressure — relevant in ocean/cave",
+      "    Ch15 ocean exploration (Small Ships): watch Pressure HUD",
+      "    Pressure resistance gear: Aqua Affinity helmet + Depth Strider",
+      "",
+      "▸ The body you came back with from the End",
+      "  is not the same body you left with.",
+      "  You absorbed Sculk. You took boss hits.",
+      "  You pushed stamina to maintain flight.",
+      "  You ignored the Cardiac warning three times.",
+      "  Ch15 is the maintenance check.",
+      "  Frieren survived 1000 years by paying attention",
+      "  to what her body needed.",
+      "  Pay attention.",
+      "",
+      "▶ Audit Cardiac and confirm no Sculk Sickness [check]",
+      "▶ Reach full Peak Stamina capacity [check]",
+      "",
+      "◇ Ambrosia for Sculk Sickness cure: check JEI.",
+      "  The cure likely involves food/potion ingredients from existing mods.",
+      "  Farm the ingredients before they accumulate into Stage 3+.",
+      "  Stage 5 Sculk Sickness is an emergency — cure immediately."
+    ],
+    "groups": {"After the Dragon": {"position": [600, 150]}},
+    "icon": {"item": {"id": "minecraft:golden_apple", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

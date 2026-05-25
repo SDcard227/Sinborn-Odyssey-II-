@@ -1,0 +1,67 @@
+{
+  "dependencies": ["ch01_r_thirst"],
+  "tasks": {
+    "canteen": {
+      "title": "Craft a Canteen or Water Container (ThirstWasTaken — carry water as an item)",
+      "icon": {"item": {"id": "thirst:canteen", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "purify": {
+      "title": "Purify water to at least Clean tier (ThirstWasTaken purity system — avoid Dirty water debuffs)",
+      "icon": {"item": {"id": "thirst:canteen", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "water": {"item": {"id": "minecraft:potion", "count": 4}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:sprocket", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Thirst System"},
+    "subtitle": {"text": "ThirstWasTaken — 20 hydration points, draining constantly. The Nether triples drain rate."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.01 · THE THIRST SYSTEM",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ ThirstWasTaken adds a 20-point hydration bar.",
+      "  It drains at a constant rate.",
+      "  At zero: debuffs, slowness, eventually damage.",
+      "",
+      "◈ THIRST REFERENCE",
+      "  └ 20 hydration points total",
+      "  └ Nether: drain rate ×3",
+      "  └ Desert biome: increased drain",
+      "  └ Water source: refills bar (but may be impure)",
+      "",
+      "◈ WATER PURITY LEVELS",
+      "  └ Dirty — debuff on drink (nausea, weakness)",
+      "  └ Clean — safe to drink",
+      "  └ Pure — bonus hydration points",
+      "  └ Purify using: boiling (furnace), filtration,",
+      "    or Herbal Brews (The Herbal Arts scroll, Ch04)",
+      "",
+      "▸ The Nether tripling drain rate is the key design note:",
+      "  You must carry purified water into the Nether.",
+      "  Ch06 Nether entry without water prep is dangerous.",
+      "  Plan ahead.",
+      "",
+      "▶ Craft a Canteen to carry water [check]",
+      "▶ Purify water to Clean tier [check]",
+      "",
+      "◇ Meadow mod (Ch04) adds fresh springs with pure water.",
+      "  Locate a meadow biome for reliable clean water."
+    ],
+    "groups": {"Born from Ash and Hunger": {"position": [-150, 150]}},
+    "icon": {"item": {"id": "thirst:canteen", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

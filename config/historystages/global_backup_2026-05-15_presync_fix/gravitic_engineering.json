@@ -1,0 +1,28 @@
+{
+  "display_name": "Gravitic Engineering",
+  "research_time": 7200,
+  "items": [
+    "create_gravity:gravity_field_emitter",
+    "create_gravity:moon_anchor",
+    "echovoids:antigrav_engine",
+    "echovoids:gravity_boots",
+    "echovoids:gravity_chestplate",
+    "echovoids:gravity_fabric",
+    "echovoids:gravity_helmet",
+    "echovoids:gravity_leggings",
+    "echovoids:gravity_smithing_template",
+    "echovoids:gravity_string_block",
+    "echovoids:gravity_strings",
+    "echovoids:gravity_upgrade_template"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

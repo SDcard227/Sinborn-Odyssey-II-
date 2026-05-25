@@ -1,0 +1,60 @@
+{
+  "dependencies": ["ch02_gate"],
+  "tasks": {
+    "river": {
+      "title": "Find a river, waterfall, or lake",
+      "icon": {"item": {"id": "minecraft:water_bucket", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "gravel": {
+      "type": "heracles:item",
+      "item": "minecraft:gravel",
+      "amount": 32,
+      "collection": "AUTOMATIC"
+    },
+    "clay": {
+      "type": "heracles:item",
+      "item": "minecraft:clay_ball",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "flint": {
+      "item": {"id": "minecraft:flint", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 5},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The River Remembers"},
+    "subtitle": {"text": "Every civilization built near water."},
+    "description": [
+      "The river is not decoration.",
+      "It is where the wheel goes.",
+      "",
+      "Gravel beds hold flint. Clay banks hold bricks.",
+      "The land around water gives differently than stone.",
+      "",
+      "Follow it. See where it leads.",
+      "",
+      "→ Find a river, waterfall, or lake [check]",
+      "→ Collect 32 gravel",
+      "→ Collect 16 clay"
+    ],
+    "groups": {"The Rotting Gate": {"position": [0, 0]}},
+    "icon": {"item": {"id": "minecraft:water_bucket", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

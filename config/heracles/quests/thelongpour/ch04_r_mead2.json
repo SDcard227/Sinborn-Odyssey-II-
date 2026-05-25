@@ -1,0 +1,55 @@
+{
+  "dependencies": ["ch04_r_mead1"],
+  "tasks": {
+    "cheese": {
+      "type": "heracles:item",
+      "item": "meadow:plain_cheese",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "lavender_cheese": {
+      "type": "heracles:item",
+      "item": "meadow:lavender_cheese",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "oats": {
+      "item": {"id": "meadow:oats", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 5},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Cheese"},
+    "subtitle": {"text": "The oldest preserved food."},
+    "description": [
+      "Milk. Rennett. Salt. A cask in darkness. Time.",
+      "The cask from Hearth and Harvest doubles fermentation speed.",
+      "In darkness, cheese ages at twice the rate.",
+      "",
+      "Lavender Cheese requires Lavender — Meadow adds it as a crop.",
+      "Herb Cheese needs Yarrow. Juniper Cheese needs Juniper.",
+      "Each one a different growing requirement.",
+      "Each one a different flavor record.",
+      "",
+      "→ Make 2 Plain Cheese",
+      "→ Make 1 Lavender Cheese"
+    ],
+    "groups": {"The Long Pour": {"position": [-300, 150]}},
+    "icon": {"item": {"id": "meadow:plain_cheese", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

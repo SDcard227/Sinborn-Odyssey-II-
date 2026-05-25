@@ -1,0 +1,87 @@
+{
+  "dependencies": [
+    "ch16_world"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/path_divinity"
+    },
+    "philosophers_prep": {
+      "title": "Research the Philosopher's Stone recipe (Divine/PTD mod — requires the Path to Divinity scroll first)",
+      "icon": {
+        "item": {
+          "id": "divine:philosophers_stone",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 16
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Path to Divinity"
+    },
+    "subtitle": {
+      "text": "This quest does not tell you where the scroll is. If you want it, you will find it."
+    },
+    "description": [
+      "The Path to Divinity scroll is hidden.",
+      "It is not in a standard loot pool.",
+      "Finding it requires attention.",
+      "",
+      "The Philosopher's Stone (Divine/PTD mod) is what it leads to.",
+      "The Philosopher's Stone requires the Mass Accumulate mechanic:",
+      "999 villager souls accumulated through the Mass Accumulate ritual.",
+      "Then a Homunculus brewing chain.",
+      "Then the Stone.",
+      "",
+      "FMA reference:",
+      "The Philosopher's Stone in Fullmetal Alchemist is made from human souls.",
+      "It amplifies alchemy beyond natural limits.",
+      "The cost is souls. The gain is transcendence.",
+      "Whether this trade is worth making is left to the player.",
+      "",
+      "The Path to Divinity is the dark path.",
+      "It is not required for Ch17.",
+      "It is offered.",
+      "",
+      "→ Find the hidden Path to Divinity scroll [check]",
+      "→ Research the Philosopher's Stone recipe [check]"
+    ],
+    "groups": {
+      "The Long Road Home": {
+        "position": [
+          150,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "divine:philosophers_stone",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

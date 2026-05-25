@@ -1,0 +1,89 @@
+{
+  "dependencies": ["ch12_scarlet"],
+  "tasks": {
+    "sealing": {
+      "title": "Seal the Scarlet King using Banishing Chains — reduce Manifestation below 500 before attempting",
+      "icon": {"item": {"id": "minecraft:chain", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "manifestation_low": {
+      "title": "Manage Manifestation to below 500 — avoid Nether time and stop Scarlet Cultist chanting near your base",
+      "icon": {"item": {"id": "minecraft:nether_brick", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "chain": {"item": {"id": "minecraft:chain", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Banishing Chains"},
+    "subtitle": {"text": "The Scarlet King cannot be killed. Banishing Chains seal it. The seal requires Manifestation below 500. Time it correctly."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.12 · THE BANISHING CHAINS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Scarlet King cannot be damaged.",
+      "  This is not a bug.",
+      "  It is unkillable by design.",
+      "  The Banishing Chains are the solution.",
+      "  The Manifestation meter is the precondition.",
+      "  Get Manifestation below 500 before trying.",
+      "",
+      "◈ MANIFESTATION SYSTEM",
+      "  └ Manifestation meter: rises with Nether time,",
+      "    Scarlet Cultist activity, proximity to Storm",
+      "  └ High Manifestation: Scarlet King gains new abilities,",
+      "    Cultist spawn rate increases, bossbar intensifies",
+      "  └ Reduce Manifestation:",
+      "    → Leave the Nether (stops passive Nether accumulation)",
+      "    → Kill Scarlet Cultists before they finish chanting",
+      "    → Time your Banishing Chains use between Cultist waves",
+      "",
+      "◈ BANISHING CHAINS — HOW TO USE",
+      "  └ Craft Banishing Chains (check JEI for recipe)",
+      "  └ Manifestation must be below 500 when chains are used",
+      "  └ Attempt the seal: use chains on the Scarlet King",
+      "  └ Successful seal: the King is bound but not destroyed",
+      "    It remains bound until Ch17 resolution",
+      "  └ If Manifestation too high: chains break on contact",
+      "    Lower Manifestation and try again",
+      "",
+      "◈ SCARLET KING — UNKILLABLE LOGIC",
+      "  └ The King is a Manifestor that has become real",
+      "  └ Direct damage does not register",
+      "    (confirmed — not a difficulty setting)",
+      "  └ Banishing Chains don't destroy the idea",
+      "    They contain the physical presence",
+      "  └ The Cursed Eye requires the King's presence",
+      "    during the Manifestor Trap — bind AFTER the Eye",
+      "",
+      "▸ Banishing Chains are not a weapon.",
+      "  They are an argument that takes physical form.",
+      "  The argument is: you are real enough to hold.",
+      "  The Scarlet King did not expect to be held.",
+      "  That is the only vulnerability the chains needed.",
+      "",
+      "▶ Seal the Scarlet King with Banishing Chains [check]",
+      "▶ Reduce Manifestation below 500 first [check]",
+      "",
+      "◇ After sealing: Cultist spawns stop.",
+      "  The Storm is still at X:0 Z:0.",
+      "  The King is bound. The Storm is not.",
+      "  Destroy the Storm after the seal.",
+      "  In that order."
+    ],
+    "groups": {"The Kingdom You Build": {"position": [450, 300]}},
+    "icon": {"item": {"id": "minecraft:chain", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

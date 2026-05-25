@@ -1,0 +1,116 @@
+{
+  "dependencies": [
+    "ch05_trade"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/rec_yucatan"
+    },
+    "temple": {
+      "title": "Find a Call of Yucatan temple structure — Kukulkan shrine or Ah Puch ritual site",
+      "icon": {
+        "item": {
+          "id": "minecraft:chiseled_stone_bricks",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "obsidian": {
+      "item": {
+        "id": "minecraft:obsidian",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 3
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "On Yucatan"
+    },
+    "subtitle": {
+      "text": "Kukulkan was the feathered serpent. Ah Puch was the lord of death. Both are still here."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.05 · ON YUCATAN",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Call of Yucatan adds Mesoamerican mythology to the world.",
+      "  Temples. Gods. Guardians.",
+      "  Not all of them are dead.",
+      "",
+      "◈ CALL OF YUCATAN — BOSSES",
+      "  └ ✦ Kukulkan: the feathered serpent god",
+      "    found in jungle/savanna pyramid structures",
+      "    drops: feathered scales, Kukulkan trophy, rare items",
+      "    attack: wind blast, flight, lightning feathers",
+      "  └ ✦ Ah Puch: lord of death and decay",
+      "    found in underground ritual chambers",
+      "    drops: death fragments, bone relics, rare drops",
+      "    attack: death aura, skeletal summons, decay curse",
+      "",
+      "◈ WHY CULTURE CHAPTER",
+      "  └ The Yucatan civilization is one of the Nine Fallen",
+      "  └ Their temples are the most intact ruins",
+      "  └ Inside: best early-game unique loot tables",
+      "  └ Kukulkan drops feathers used in arrow crafting",
+      "  └ Ah Puch drops are used in late-game curse recipes",
+      "",
+      "◈ SCROLL: On Yucatan",
+      "  └ Found in: Mayan/Aztec ruin chests, jungle temple loot,",
+      "    hidden altar rooms",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: Kukulkan + Ah Puch awareness,",
+      "    temple structure loot knowledge",
+      "",
+      "▸ The scroll describes both gods in reverence.",
+      "  The writer respected them.",
+      "  You are going to fight them.",
+      "  Prepare accordingly.",
+      "",
+      "▶ Find the On Yucatan scroll [check]",
+      "▶ Find a Call of Yucatan temple structure [check]",
+      "",
+      "◇ ▲ DO NOT fight Kukulkan or Ah Puch",
+      "  until Ch09+ with full gear.",
+      "  Their damage output is high.",
+      "  Their drops are worth waiting for."
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          150,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:chiseled_stone_bricks",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "display_name": "The Deep Earth Kitchen",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "cavedelight",
+    "caves_delight",
+    "miners_delight",
+    "mineraldelight",
+    "alexs_caves_delight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

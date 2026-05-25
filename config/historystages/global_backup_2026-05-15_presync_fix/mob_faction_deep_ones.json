@@ -1,0 +1,20 @@
+{
+  "display_name": "The Deep Ones Faction",
+  "research_time": 10800,
+  "items": [
+    "alexscaves:gazing_pearl",
+    "alexscaves:magic_conch",
+    "alexscaves:ortholance",
+    "alexscaves:sea_staff"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

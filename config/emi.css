@@ -212,7 +212,7 @@
 	/**
 	 * How many columns and rows of ingredients to limit the right sidebar to
 	 */
-	right-sidebar-size: 6, 80;
+	right-sidebar-size: 10, 80;
 
 	/**
 	 * How much space to maintain between the right sidebar and obstructions, in pixels
@@ -282,7 +282,7 @@
 	/**
 	 * How many columns and rows of ingredients to limit the bottom sidebar to
 	 */
-	bottom-sidebar-size: 9, 9;
+	bottom-sidebar-size: 11, 9;
 
 	/**
 	 * How much space to maintain between the bottom sidebar and obstructions, in

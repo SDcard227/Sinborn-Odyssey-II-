@@ -1,0 +1,62 @@
+{
+  "dependencies": ["ch14_r_ender1"],
+  "tasks": {
+    "pearl_stack_large": {
+      "title": "Stockpile 64 Ender Pearls for late-game teleportation needs",
+      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 64}, "type": "heracles:item"},
+      "amount": 64,
+      "collection": "AUTOMATIC",
+      "type": "heracles:item"
+    },
+    "ender_overhaul_notes": {
+      "title": "Document your Enderman encounters — note which variants you have found and where",
+      "icon": {"item": {"id": "minecraft:book", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "pearls": {
+      "item": {"id": "minecraft:ender_pearl", "count": 16},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 16},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Enderman Field Guide"},
+    "subtitle": {"text": "The previous civilizations knew the Endermen. They stopped paying attention to them. That was a mistake."},
+    "description": [
+      "64 Ender Pearls is the deep-game logistics reserve.",
+      "In Ch15-17, you will be traveling large distances rapidly.",
+      "Pearls are emergency teleportation and void recovery.",
+      "",
+      "Use a book or Antique Atlas to record your Enderman variants:",
+      "Which biome. What behavior. What dropped.",
+      "The Magical Enderman especially — document it if found.",
+      "",
+      "This is the Exposure camera principle applied to biology:",
+      "observation is documentation.",
+      "Documentation is the thing that distinguishes this civilization from the previous eleven.",
+      "",
+      "The previous civilizations all reached the End.",
+      "None of them wrote down what they found here.",
+      "You are going to write it down.",
+      "",
+      "→ Stockpile 64 Ender Pearls [collect]",
+      "→ Document your Enderman observations [check]"
+    ],
+    "groups": {"What the Void Remembers": {"position": [-300, 150]}},
+    "icon": {"item": {"id": "minecraft:book", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

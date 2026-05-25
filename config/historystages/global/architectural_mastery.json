@@ -1,0 +1,32 @@
+{
+  "display_name": "Architectural Mastery",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "chalk",
+    "createadditionallogistics",
+    "createdeco",
+    "desert",
+    "echovoids",
+    "glow_sticks",
+    "luminousworld",
+    "netherexp",
+    "quark",
+    "snowrealmagic",
+    "supplementaries",
+    "verdant"
+  ],
+  "mod_exceptions": [
+    "chalk:chalk",
+    "quark:dyed_planks",
+    "quark:dyed_wood"
+  ],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

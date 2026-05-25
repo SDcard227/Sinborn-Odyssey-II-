@@ -1,0 +1,20 @@
+{
+  "display_name": "Ashenmouth Cuisine",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "mynethersdelight",
+    "jadensnetherexpansiondelight",
+    "nethersdelight",
+    "endersdelight",
+    "ends_delight",
+    "frightsdelight",
+    "witherstorm_delight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

@@ -1,0 +1,27 @@
+{
+  "display_name": "The Fire School",
+  "research_time": 2700,
+  "items": [
+    "irons_spellbooks:cinder_essence",
+    "irons_spellbooks:fire_rune",
+    "irons_spellbooks:scroll_ascension",
+    "irons_spellbooks:scroll_burning_dash",
+    "irons_spellbooks:scroll_fire_breath",
+    "irons_spellbooks:scroll_fireball",
+    "irons_spellbooks:scroll_firebolt",
+    "irons_spellbooks:scroll_flaming_strike",
+    "irons_spellbooks:scroll_magma_bomb",
+    "irons_spellbooks:scroll_ring_of_fire",
+    "irons_spellbooks:scroll_wall_of_fire"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

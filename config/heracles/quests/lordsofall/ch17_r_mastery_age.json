@@ -1,0 +1,90 @@
+{
+  "dependencies": ["ch17_teleporter"],
+  "tasks": {
+    "jei_audit": {
+      "title": "After Phase 17 Mastery Age transition — open JEI and audit all newly unlocked recipes",
+      "icon": {"item": {"id": "minecraft:book", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "age_craft": {
+      "title": "Craft one item from a newly unlocked Mastery Age recipe — prove the transition fired correctly",
+      "icon": {"item": {"id": "create:precision_mechanism", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "precision": {"item": {"id": "create:precision_mechanism", "count": 4}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 12}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Phase 17: Mastery Age"},
+    "subtitle": {"text": "The last age. Everything left in the pack unlocks. Check JEI. The list will be longer than you expect."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.17 · PHASE 17: MASTERY AGE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The quantum_mechanism triggers Phase 17: Mastery Age.',",
+      "  This is the final History Stages age transition.',",
+      "  There are 17 ages in this pack.',",
+      "  You have lived through all of them.',",
+      "  The Mastery Age is not a new age.',",
+      "  It is the age where all previous ages are simultaneously active.',",
+      "",
+      "◈ WHAT UNLOCKS IN MASTERY AGE",
+      "  └ All remaining age-locked recipes in KubeJS (age_lock.js)',",
+      "  └ Divine/PTD endgame recipes (if Stone was crafted)',",
+      "  └ Celestisynth final variants (if any age-gated)',",
+      "  └ T.O. Magic additional spells (void school extension)',",
+      "  └ Create Teleporters advanced mechanics',",
+      "  └ Any remaining TFMG/Create ecosystem recipes',",
+      "  └ Full ISS Eldritch school above-cap spells',",
+      "  └ Final nuclear chain (Cannon Nukes mass production)',",
+      "",
+      "◈ POST-TRANSITION AUDIT",
+      "  └ Open JEI immediately after age transition',",
+      "  └ Filter by: undefined / new / recently-unlocked if JEI supports it',",
+      "  └ Otherwise: check all major mod namespaces for new recipes:',",
+      "    celestisynth: | divine: | traveloptics: | canonnukes: | createteleporters:',",
+      "  └ Write down what you find — some recipes are time-limited by material supply',",
+      "    (if a recipe requires something you have only 1 of, plan before crafting)',",
+      "",
+      "◈ AGE CONFIRMATION",
+      "  └ History Stages age: check with command or HUD indicator',",
+      "  └ Chat notification: \"Phase 17 — Mastery Age\" on transition',",
+      "  └ If transition did not fire: verify quantum_mechanism was crafted',",
+      "    (not just components — the mechanism itself)',",
+      "  └ If still not firing: check KubeJS age_lock.js for trigger condition',",
+      "",
+      "▸ Every previous age had a trigger.',",
+      "  First stone tools. First fire. First netherite.',",
+      "  First portal. First dragon. First lacrima.',",
+      "  First quantum mechanism.',",
+      "  The Mastery Age is the last trigger.',",
+      "  After this: no more gates.',",
+      "  The world is fully open.',",
+      "  What you do with a fully open world',",
+      "  is the remainder of the story.',",
+      "",
+      "▶ Audit all Mastery Age JEI unlocks [check]",
+      "▶ Craft one item from a newly unlocked recipe [check]",
+      "",
+      "◇ The Mastery Age does not end the pack.',",
+      "  The pack has no forced ending.',",
+      "  The story ends when you decide it does.',",
+      "  The questbook ends at ch17_gate.',",
+      "  What comes after the gate is yours to define."
+    ],
+    "groups": {"Lords of All": {"position": [600, 150]}},
+    "icon": {"item": {"id": "historystages:scroll", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

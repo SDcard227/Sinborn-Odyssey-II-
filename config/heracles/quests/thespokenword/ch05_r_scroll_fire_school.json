@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Fire School scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Fire School scroll",
+      "icon": {
+        "item": {
+          "id": "irons_spellbooks:cinder_essence",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock fire_school"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Fire School"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Sun-cult records. Painted on bone.\"",
+      "",
+      "ISS fire spells. Already populated.",
+      "",
+      "This scroll unlocks 11 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Mowziesmobs:Chests/Umvuthana Grove Chest",
+      "  \u00b7 Jungle Temple",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Fire School] [auto]"
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          920,
+          692
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "irons_spellbooks:cinder_essence",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

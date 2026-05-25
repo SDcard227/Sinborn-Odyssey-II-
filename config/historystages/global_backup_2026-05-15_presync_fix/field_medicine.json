@@ -1,0 +1,23 @@
+{
+  "display_name": "Field Medicine",
+  "research_time": 2700,
+  "items": [
+    "cuffed:bandage",
+    "cuffed:bandage.desc",
+    "dungeons_and_combat:processed_antidote",
+    "minecraft:brewing_stand",
+    "netherexp:antidote",
+    "netherexp:grenade_antidote",
+    "twm:antidoto"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

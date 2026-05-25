@@ -1,0 +1,77 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Teleportation Arts (the Quantum Age) scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Teleportation Arts (the Quantum Age) scroll",
+      "icon": {
+        "item": {
+          "id": "createteleporters:adv_tplink",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock teleportation_arts"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Teleportation Arts (the Quantum Age)"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Copied between every civilization that touched it.\"",
+      "",
+      "This scroll unlocks 24 items.",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Teleportation Arts (the Quantum Age)] [auto]"
+    ],
+    "groups": {
+      "After the Dragon": {
+        "position": [
+          1196,
+          840
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "createteleporters:adv_tplink",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

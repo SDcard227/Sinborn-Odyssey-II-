@@ -1,0 +1,58 @@
+{
+  "dependencies": ["ch04_world"],
+  "tasks": {
+    "grapevine_pot": {
+      "type": "heracles:item",
+      "item": "vinery:grapevine_pot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "grapes": {
+      "type": "heracles:item",
+      "item": "vinery:white_grape",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "red_grape": {
+      "item": {"id": "vinery:red_grape", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Grape Varieties"},
+    "subtitle": {"text": "Eight grapes. Twenty-six wines. Each one different."},
+    "description": [
+      "Vinery has eight grape varieties across biomes:",
+      "Plains Red and White. Savanna Red and White.",
+      "Taiga Red and White — Winemaker villager trades.",
+      "Jungle Red and White — on climbing vines, Oak Lattice required.",
+      "",
+      "The Grapevine Pot is the starting point.",
+      "Fermentation Barrel takes juice (five minutes, locked once added).",
+      "Aging Barrel takes one year — twenty in-game days.",
+      "",
+      "Eiswein: White Taiga Juice plus Snowball.",
+      "Full heal on drink. Worth the wait.",
+      "",
+      "→ Craft a Grapevine Pot",
+      "→ Harvest 8 white grapes"
+    ],
+    "groups": {"The Long Pour": {"position": [-150, 0]}},
+    "icon": {"item": {"id": "vinery:white_grape", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

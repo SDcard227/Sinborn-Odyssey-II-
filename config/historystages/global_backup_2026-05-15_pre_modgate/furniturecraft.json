@@ -1,0 +1,26 @@
+{
+  "display_name": "Furniturecraft",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "amendments",
+    "bits_n_bobs",
+    "furniture",
+    "handcrafted",
+    "interiors",
+    "mcwdoors",
+    "mcwtrpdoors",
+    "mcwwindows",
+    "suppsquared",
+    "would"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

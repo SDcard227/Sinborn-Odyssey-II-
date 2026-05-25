@@ -1,0 +1,17 @@
+{
+  "display_name": "Slaying the Ballista Golem",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "dungeonnowloading:ballista_golem"
+    ],
+    "spawnlock": []
+  }
+}

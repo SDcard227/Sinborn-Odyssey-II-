@@ -1,0 +1,15 @@
+{
+  "display_name": "Sunleia Solar Bread",
+  "research_time": 7200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

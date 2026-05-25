@@ -1,0 +1,20 @@
+{
+  "display_name": "Boss Trophy Relics",
+  "research_time": 18000,
+  "items": [
+    "companions:relic_gold",
+    "minecraft:dragon_head",
+    "minecraft:nether_star",
+    "minecraft:wither_skeleton_skull"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

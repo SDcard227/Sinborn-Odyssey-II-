@@ -1,0 +1,88 @@
+{
+  "dependencies": [
+    "ch09_portal"
+  ],
+  "tasks": {
+    "black_eye_gate": {
+      "type": "heracles:item",
+      "item": "endrem:black_eye",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/eye_black_studied"
+    }
+  },
+  "rewards": {
+    "eye_bonus": {
+      "item": {
+        "id": "endrem:black_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 6
+      },
+      "type": "heracles:item"
+    },
+    "age": {
+      "type": "heracles:command",
+      "command": "history unlock eye_hunt_age"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Eye Hunt Begins"
+    },
+    "subtitle": {
+      "text": "The hunt has opened. The chapter has not closed."
+    },
+    "description": [
+      "The Black Eye is in the frame.",
+      "The age has turned. The Eye Hunt is officially open.",
+      "",
+      "Eleven more.",
+      "Some require bosses you have not yet fought.",
+      "Some require ingredients from chapters you have not yet reached.",
+      "The eye_hunt_age is not a chapter that ends.",
+      "It is the chapter that runs parallel to everything after it.",
+      "",
+      "The Black Eye scroll documents what the Desert civilization left.",
+      "Not what they built. What they understood.",
+      "That death has a shape. That the shape can be inherited.",
+      "",
+      "You are now the inheritor.",
+      "",
+      "→ Have a Black Eye ready for the portal",
+      "→ Research the Black Eye scroll [check]"
+    ],
+    "groups": {
+      "The Eleven-Eyed Hunt": {
+        "position": [
+          0,
+          600
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "endrem:black_eye",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "dependencies": ["ch16_r_ptd2"],
+  "tasks": {
+    "homunculus_brew": {
+      "title": "Brew the Homunculus — the PTD brewing chain that processes the 999 accumulated souls into the Stone precursor",
+      "icon": {"item": {"id": "divine:philosophers_stone", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "transmutation": {
+      "title": "Use the Philosopher's Stone for its first transmutation — convert a material using divine alchemy",
+      "icon": {"item": {"id": "divine:philosophers_stone", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "gold_ingot": {"item": {"id": "minecraft:gold_ingot", "count": 32}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 20}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Homunculus Chain"},
+    "subtitle": {"text": "After the souls come the Homunculus. After the Homunculus comes the Stone. After the Stone: transmutation."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.16 · THE HOMUNCULUS CHAIN",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ After 999 souls are accumulated,",
+      "  the Homunculus brew converts them into the Stone precursor.",
+      "  The Homunculus is the intermediate step — not the Stone itself.",
+      "  The chain: Mass Accumulate → Homunculus → Philosopher's Stone.",
+      "  Three steps. One direction. No return.",
+      "",
+      "◈ THE HOMUNCULUS BREW",
+      "  └ Source: divine: mod brewing mechanic",
+      "    Check JEI: divine:homunculus or similar",
+      "  └ Requires: accumulated souls (999) + specific alchemical ingredients",
+      "    (likely: Gold, Soul Sand, Nether materials — check JEI)",
+      "  └ Output: divine:homunculus or intermediate alchemical item",
+      "  └ Process: brew in a specialized vessel (check PTD mod guide)",
+      "    The brew takes time — not instant crafting",
+      "",
+      "◈ PHILOSOPHER'S STONE",
+      "  └ Crafted from: Homunculus + specific materials → Stone",
+      "    (check JEI: divine:philosophers_stone)",
+      "  └ Use: stone held in inventory or placed in crafting grid",
+      "    enables divine transmutation recipes",
+      "  └ Transmutation: convert materials at a ratio",
+      "    (stone → iron, iron → gold, coal → diamond — verify in JEI)",
+      "  └ The Stone does not run out (or has limited uses — check mod)",
+      "",
+      "◈ TRANSMUTATION APPLICATIONS",
+      "  └ Resource conversion: low-value materials → high-value",
+      "  └ Ch17 prep: transmute surplus into any Ch17 crafting materials",
+      "    that are hard to source in bulk",
+      "  └ Create Teleporters: Quantum Fluid is Chorus + Water",
+      "    (transmutation does not affect quantum recipes — those are fixed)",
+      "  └ The Stone is a backup supply chain for anything scarce",
+      "",
+      "▸ Hohenheim carried the stones of the Xerxians for 400 years.",
+      "  Every step he took, they spoke to him.",
+      "  He used them in the end to counter something worse.",
+      "  Your stone was made from a deliberate choice.",
+      "  Whether the choice was the same as Hohenheim's",
+      "  or different from it",
+      "  determines what the stone says to you.",
+      "  It is made now.",
+      "  Make use of it.",
+      "",
+      "▶ Brew the Homunculus [check]",
+      "▶ Use the Philosopher's Stone for first transmutation [check]",
+      "",
+      "◇ If you are at this quest, you chose the Stone path.",
+      "  The cost is already paid.",
+      "  The only question now is whether the Stone pays off in Ch17.",
+      "  It does — specific divine: recipes in Ch17 require the Stone.",
+      "  The path is complete."
+    ],
+    "groups": {"The Long Road Home": {"position": [-600, 0]}},
+    "icon": {"item": {"id": "divine:philosophers_stone", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "dependencies": [
+    "ch10_reactor"
+  ],
+  "tasks": {
+    "have_nether_star": {
+      "title": "Have the Nether Star",
+      "icon": {
+        "item": {
+          "id": "minecraft:nether_star",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_atomic_power": {
+      "title": "Research the Atomic Power scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_electrical_engineering": {
+      "title": "Research the Electrical Engineering scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "nether_star_reward": {
+      "item": {
+        "id": "minecraft:nether_star",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:crown",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "text": "The star is the only thing left after the storm. Start with that."
+    },
+    "description": [
+      "The Nether Star is the condensed output of destroying a Wither.",
+      "That is what it is, physically.",
+      "",
+      "What it represents is the first time the factory produces",
+      "more energy than you need for survival.",
+      "Everything before this was subsistence engineering.",
+      "The nuclear age is what comes when there is excess power",
+      "and the question becomes what to do with it.",
+      "",
+      "The Atomic Power scroll and the Electrical Engineering scroll",
+      "document what the Engineers learned.",
+      "The Rogue Eye is their result.",
+      "Their machines worked perfectly.",
+      "For the wrong purpose.",
+      "",
+      "→ Have the Nether Star",
+      "→ Research the Atomic Power scroll [check]",
+      "→ Research the Electrical Engineering scroll [check]"
+    ],
+    "groups": {
+      "The Pale Shore": {
+        "position": [
+          0,
+          600
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:nether_star",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+    "title": {
+      "translate": "The Pale Shore"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

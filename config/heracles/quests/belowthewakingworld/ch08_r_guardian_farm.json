@@ -1,0 +1,80 @@
+{
+  "dependencies": ["ch08_r_drowned_world"],
+  "tasks": {
+    "elder_guardian": {
+      "title": "Defeat an Elder Guardian (Ocean Monument boss — drops Sponge + unique Ocean Monument loot)",
+      "icon": {"item": {"id": "minecraft:sponge", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "sponge_stack": {
+      "type": "heracles:item",
+      "item": "minecraft:sponge",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "prismarine_brick": {"item": {"id": "minecraft:prismarine_bricks", "count": 32}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 4}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Monument"}  ,
+    "subtitle": {"text": "The Elder Guardian inflicts Mining Fatigue III. You cannot mine the Monument while it lives. Kill it first."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.08 · THE MONUMENT",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Ocean Monument is the oldest structure",
+      "  in the ocean biome.",
+      "  It was built before the age of tools.",
+      "  The Guardians are still protecting it",
+      "  from whatever it was protecting against.",
+      "",
+      "◈ OCEAN MONUMENT STRATEGY",
+      "  └ 3 Elder Guardians spawn inside — kill all 3",
+      "    Mining Fatigue III is removed after all 3 are dead",
+      "  └ Approach: Night Vision + Water Breathing potions",
+      "  └ Elder Guardian attack: laser beam (high damage),",
+      "    thorn spikes (melee retaliation)",
+      "  └ Counter: hit and swim back out of range,",
+      "    use crossbow/bow from medium distance",
+      "  └ Goldfish weakness: Milk cures Mining Fatigue",
+      "    (bring milk for the swim in)",
+      "",
+      "◈ MONUMENT LOOT",
+      "  └ Sponge: dry the interior for farming/building",
+      "  └ Gold Block: 8 blocks in central room",
+      "  └ Guardian scales: rare drop (alex's mobs variant)",
+      "  └ Architecture: build a base here — best ocean hub",
+      "",
+      "◈ END REMASTERED EYE",
+      "  └ One of the custom End Eyes comes from this area",
+      "  └ Eye of the Cold: found in cold ocean structures",
+      "  └ Monument may contain a cold eye variant",
+      "    (Ch09 Eye Hunt requires locating it)",
+      "",
+      "▸ The Monument was built to hide the gold.",
+      "  The Guardians were built to protect the gold.",
+      "  The gold does not know why any of this happened.",
+      "",
+      "▶ Defeat an Elder Guardian [check]",
+      "▶ Collect 8 Sponge",
+      "",
+      "◇ After clearing the Monument, drain it with Sponge.",
+      "  The interior becomes the best underwater base in the game.",
+      "  Build it out. Ch09 needs a staging point."
+    ],
+    "groups": {"Below the Waking World": {"position": [600, 0]}},
+    "icon": {"item": {"id": "minecraft:sponge", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

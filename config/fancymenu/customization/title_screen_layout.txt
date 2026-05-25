@@ -1039,3 +1039,51 @@ vanilla_button {
   automated_button_clicks = 0
 }
 
+
+image {
+  element_type = image
+  instance_identifier = sinborn_logo_title_image
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 996
+  sticky_anchor = false
+  anchor_point = top-centered
+  x = -300
+  y = 30
+  width = 600
+  height = 260
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = sinborn_logo_req-1770000000001
+  [loading_requirement_container_meta:sinborn_logo_req-1770000000001] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+  is_hidden = false
+  restart_animated_on_menu_load = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  repeat_texture = false
+  image_tint = none
+  resource = [source:local]config/fancymenu/assets/sinborn_logo.png
+}

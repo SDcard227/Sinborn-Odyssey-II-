@@ -1,0 +1,76 @@
+{
+  "dependencies": ["ch06_r_fort2"],
+  "tasks": {
+    "blaze_rod": {
+      "type": "heracles:item",
+      "item": "minecraft:blaze_rod",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "blaze_farm": {
+      "title": "Build a Blaze farming area in the Nether Fortress — sustained rod production",
+      "icon": {"item": {"id": "minecraft:blaze_rod", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "blaze_rod": {"item": {"id": "minecraft:blaze_rod", "count": 8}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Blaze Foundry"},
+    "subtitle": {"text": "Blaze Rods power the Brewing Stand. Blaze Powder powers the Boiler. They are the most important Nether resource."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.06 · THE BLAZE FOUNDRY",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Blazes spawn from Blaze Spawners in Nether Fortresses.",
+      "  Blaze Rods are the most important drop in the Nether.",
+      "  Everything downstream depends on a steady supply.",
+      "",
+      "◈ BLAZE ROD USES",
+      "  └ Brewing Stand fuel (Blaze Rod → Brewing Stand itself)",
+      "  └ Blaze Powder: potion-brewing fuel",
+      "  └ Blaze Cake: Boiler fuel (Create Steam Engine)",
+      "    Blaze Powder + Honey Bottle = Blaze Cake",
+      "  └ Eye of Ender: Blaze Powder + Ender Pearl",
+      "    needed for End portal activation",
+      "  └ ISS spell components: some spells require blaze items",
+      "",
+      "◈ BLAZE FARMING SETUP",
+      "  └ Locate Blaze Spawner in Nether Fortress",
+      "  └ Clear area — 16 block radius around spawner",
+      "  └ Block spawner with trapdoors during setup",
+      "  └ Build kill zone: drop 1 block platform,",
+      "    stand above spawner level to control range",
+      "  └ Wear Fire Resistance — Blazes fire randomly",
+      "  └ Output: 2-4 rods per Blaze (no Looting benefit)",
+      "    Looting DOES NOT affect rod drops",
+      "",
+      "▸ The Nether Fortress was built around the Blazes.",
+      "  Or the Blazes grew in the Fortress.",
+      "  The scroll does not know which came first.",
+      "  The rods are the same either way.",
+      "",
+      "▶ Collect 16 Blaze Rods",
+      "▶ Build a Blaze farming area [check]",
+      "",
+      "◇ Blaze Cakes are consumed by the Boiler.",
+      "  You need a sustained Blaze Rod supply",
+      "  to keep your Create steam factory running.",
+      "  This farm is not optional infrastructure."
+    ],
+    "groups": {"The Scalded Earth": {"position": [300, 300]}},
+    "icon": {"item": {"id": "minecraft:blaze_rod", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

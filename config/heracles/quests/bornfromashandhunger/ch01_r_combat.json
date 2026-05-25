@@ -1,0 +1,95 @@
+{
+  "dependencies": [
+    "ch01_world"
+  ],
+  "tasks": {
+    "zombies": {
+      "title": "Kill 10 Zombies",
+      "icon": {
+        "item": {
+          "id": "minecraft:rotten_flesh",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "skeletons": {
+      "title": "Kill 10 Skeletons",
+      "icon": {
+        "item": {
+          "id": "minecraft:bone",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "arrows": {
+      "item": {
+        "id": "minecraft:arrow",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "bone": {
+      "item": {
+        "id": "minecraft:bone",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Your First Blood"
+    },
+    "subtitle": {
+      "text": "The world was not empty when you arrived."
+    },
+    "description": [
+      "They were here before the fire. They will be here after.",
+      "",
+      "This is not about victory.",
+      "This is about learning what shares the dark with you.",
+      "",
+      "You came equipped. Use it.",
+      "",
+      "→ Kill 10 zombies",
+      "→ Kill 10 skeletons"
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          -150,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:bone",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

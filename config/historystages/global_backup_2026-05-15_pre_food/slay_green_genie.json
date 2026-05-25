@@ -1,0 +1,18 @@
+{
+  "display_name": "Slaying the Green Genie",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "as_you_wish:desert_spirit",
+      "as_you_wish:green_genie"
+    ],
+    "spawnlock": []
+  }
+}

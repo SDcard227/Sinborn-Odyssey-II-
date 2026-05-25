@@ -1,0 +1,27 @@
+{
+  "display_name": "The Pack Whistle",
+  "research_time": 1500,
+  "items": [
+    "alexsmobs:froststalker_horn",
+    "alexsmobs:gazelle_horn",
+    "create:steam_whistle",
+    "create:steam_whistle_extension",
+    "mca:whistle",
+    "minecraft:goat_horn",
+    "railways:conductor_whistle",
+    "sullysmod:death_whistle",
+    "supplementaries:flute",
+    "xercamusic:drum",
+    "xercamusic:flute"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

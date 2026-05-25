@@ -1,0 +1,17 @@
+{
+  "display_name": "On the Reaper",
+  "research_time": 7200,
+  "items": [
+    "mca:scythe"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

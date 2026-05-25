@@ -1,0 +1,15 @@
+{
+  "display_name": "The Family Hearth (MCA)",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

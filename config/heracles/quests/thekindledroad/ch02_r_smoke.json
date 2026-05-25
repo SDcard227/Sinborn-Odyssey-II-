@@ -1,0 +1,110 @@
+{
+  "dependencies": [
+    "ch02_cook"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/art_of_smoke"
+    },
+    "use_smoker": {
+      "title": "Use the Farmer's Delight Smoke Rack to smoke 4 pieces of meat",
+      "icon": {
+        "item": {
+          "id": "farmersdelight:smoked_ham",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "smoked_ham": {
+      "item": {
+        "id": "farmersdelight:smoked_ham",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Art of Smoke"
+    },
+    "subtitle": {
+      "text": "The oldest recipe in the world is: apply heat until it doesn't rot."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.02 · THE ART OF SMOKE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Smoke is the bridge between cooking and preservation.",
+      "  It changes the flavor.",
+      "  It changes the shelf life.",
+      "  It changes what the food means.",
+      "",
+      "◈ SMOKE RACK (FARMER'S DELIGHT)",
+      "  └ Place over a fire source",
+      "  └ Insert meat, fish, or other proteins",
+      "  └ Output: smoked variants with higher saturation",
+      "  └ Smoked Ham is a high-saturation Protein item",
+      "  └ Works on: pork, chicken, mutton, fish, beef",
+      "",
+      "◈ WHY SMOKE?",
+      "  └ Smoked food has higher saturation than raw cooked",
+      "  └ Smoked fish especially — great for ocean travel",
+      "  └ Combines with the Food Preservation system",
+      "    (see: Food Preservation scroll below)",
+      "",
+      "◈ SCROLL: The Art of Smoke",
+      "  └ Found in: smokehouse ruins, hunter's cabins,",
+      "    road camp chests, wilderness outpost loot",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: smoke rack recipe awareness,",
+      "    preservation food chain knowledge",
+      "",
+      "▸ The smoke rack runs while you work elsewhere.",
+      "  Load it. Come back.",
+      "  The road is fed.",
+      "",
+      "▶ Find The Art of Smoke scroll [check]",
+      "▶ Smoke 4 pieces of meat on the Smoke Rack [check]",
+      "",
+      "◇ Food Preservation scroll expands on this.",
+      "  Smoke + Salt = the Ch02 long-haul food strategy."
+    ],
+    "groups": {
+      "The Kindled Road": {
+        "position": [
+          150,
+          300
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "farmersdelight:smoked_ham",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

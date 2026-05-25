@@ -1,0 +1,20 @@
+{
+  "display_name": "Steam Engineering",
+  "research_time": 5400,
+  "items": [
+    "dungeons_and_combat:steel_block"
+  ],
+  "tags": [],
+  "mods": [
+    "extra_gauges",
+    "tfmg"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

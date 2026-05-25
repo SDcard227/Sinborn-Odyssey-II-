@@ -1,0 +1,11 @@
+{
+  "draugrEntityHealth": 30,
+  "draugrArcherEntityHealth": 30,
+  "draugrWightEntityHealth": 34,
+  "draugrScourgeEntityHealth": 38,
+  "draugrOverlordEntityHealth": 400,
+  "skeletonWarriorEntityHealth": 26,
+  "skeletonWarriorHeadEntityHealth": 8,
+  "flameAtronachEntityHealth": 32,
+  "infernalDraugrEntityHealth": 42
+}

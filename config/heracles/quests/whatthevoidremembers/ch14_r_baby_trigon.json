@@ -1,0 +1,89 @@
+{
+  "dependencies": ["ch14_r_trig2"],
+  "tasks": {
+    "trigon_hatch": {
+      "title": "Hatch the Baby Ender Trigon egg — follow the Ender Trigon mod hatch ritual conditions",
+      "icon": {"item": {"id": "minecraft:purple_dye", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "trigon_bond": {
+      "title": "Complete the Baby Trigon taming process — feed it to bond and begin growth phase",
+      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "ender_pearl": {"item": {"id": "minecraft:ender_pearl", "count": 32}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Baby Trigon"},
+    "subtitle": {"text": "Three heads. One parent. The parent is dead. The offspring chose you anyway. Raise it correctly."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.14 · THE BABY TRIGON",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Ender Trigon drops a baby dragon egg on defeat.",
+      "  This egg hatches into the only tameable dragon companion",
+      "  in the pack.",
+      "  The Dracolotl (Ch04) was a companion.",
+      "  The Baby Trigon is an heir.",
+      "  It will grow. It will fight.",
+      "  It will follow you into Ch15-17.",
+      "",
+      "◈ HATCH RITUAL",
+      "  └ Ender Trigon mod hatch conditions — check mod guide:",
+      "    Likely: specific biome (End), night or specific conditions,",
+      "    specific items nearby during hatch activation",
+      "  └ Activation: right-click egg with appropriate item",
+      "    (common pattern: Ender Pearl or End Stone nearby)",
+      "  └ Hatch location: outer End island recommended",
+      "    (hatchling is fragile at birth — do not hatch near void edge)",
+      "  └ If hatch fails: verify you are in the End dimension",
+      "",
+      "◈ TAMING AND GROWTH",
+      "  └ Feed hatchling: End-appropriate food (Ender Pearl, Enderman Meat,",
+      "    or mod-specific taming item — check Ender Trigon mod guide)",
+      "  └ Bond mechanic: multiple feeding sessions build trust",
+      "  └ Growth phases: baby → juvenile → full companion",
+      "    Growth time: varies by mod, may require specific foods",
+      "  └ Name tag: name your Trigon — it prevents despawn",
+      "    and makes it trackable if it wanders",
+      "",
+      "◈ COMPANION ABILITIES",
+      "  └ Flight: grown Trigon can carry the player in flight",
+      "  └ Combat: attacks enemies that attack the player",
+      "    Three-headed dragon: three attack patterns",
+      "  └ Void-adapted: no fall/void damage mechanics apply",
+      "  └ End biome bonus: Trigon is at full strength in End dimension",
+      "",
+      "▸ The baby Trigon has three heads.",
+      "  Each head inherited a different attack from the parent.",
+      "  The parent tried to kill you with all three.",
+      "  The baby looks at you with all three and decides: companion.",
+      "  That decision process is not documented.",
+      "  Accept it.",
+      "",
+      "▶ Hatch the Baby Ender Trigon egg [check]",
+      "▶ Complete the taming bonding process [check]",
+      "",
+      "◇ The grown Baby Trigon is your aerial combat companion",
+      "  for Ch15-17 outdoor boss encounters.",
+      "  It is particularly effective against",
+      "  non-void entities that appear post-End-game.",
+      "  Keep it named. Keep it fed. Keep it with you."
+    ],
+    "groups": {"What the Void Remembers": {"position": [-450, 150]}},
+    "icon": {"item": {"id": "minecraft:purple_dye", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

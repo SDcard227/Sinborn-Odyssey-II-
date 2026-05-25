@@ -1,0 +1,17 @@
+{
+  "display_name": "On the Temple and the Serpent",
+  "research_time": 3600,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "call_of_yucutan"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

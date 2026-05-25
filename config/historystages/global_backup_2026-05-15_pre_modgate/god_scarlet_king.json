@@ -1,0 +1,17 @@
+{
+  "display_name": "On the King Below",
+  "research_time": 10800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "scarlet_king"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

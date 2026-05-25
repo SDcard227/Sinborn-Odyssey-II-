@@ -1,0 +1,9 @@
+# IPLA config
+absSize = 1.0
+iSize = 1.0
+bSize = 1.0
+rotPower = 1
+blockScale = 0.0
+itemScale = 0.0
+oldRendering = false
+eatFood = false

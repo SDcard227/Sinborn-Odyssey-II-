@@ -1,0 +1,67 @@
+{
+  "dependencies": ["ch06_nether"],
+  "tasks": {
+    "enter_fortress": {
+      "title": "Locate and enter a Nether Fortress",
+      "icon": {"item": {"id": "minecraft:nether_brick", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "nether_brick": {
+      "type": "heracles:item",
+      "item": "minecraft:nether_brick",
+      "amount": 32,
+      "collection": "AUTOMATIC"
+    },
+    "wither_skull": {
+      "type": "heracles:item",
+      "item": "minecraft:wither_skeleton_skull",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "nether_brick_slab": {
+      "item": {"id": "minecraft:nether_brick_fence", "count": 16},
+      "type": "heracles:item"
+    },
+    "blaze_powder": {
+      "item": {"id": "minecraft:blaze_powder", "count": 8},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Black Keep"},
+    "subtitle": {"text": "Architecture that forgot what its builders wanted."},
+    "description": [
+      "Every culture that built here eventually built something like this.",
+      "A structure with no exits because the builders never planned to leave.",
+      "",
+      "Wither Skeletons are what remains of those who stayed.",
+      "They do not remember what they were.",
+      "They only remember that this place belongs to them.",
+      "",
+      "Navigate the corridors. The blaze spawners are in the lower bridges.",
+      "Wither Skeleton Skulls drop at low rate — patience required.",
+      "Nether Fortresses generate in all biomes; follow the X-axis if lost.",
+      "",
+      "→ Locate and enter a Nether Fortress [check]",
+      "→ Collect 32 Nether Bricks",
+      "→ Collect 1 Wither Skeleton Skull (rare drop, 2.5% base chance)"
+    ],
+    "groups": {"The Scalded Earth": {"position": [-150, 150]}},
+    "icon": {"item": {"id": "minecraft:wither_skeleton_skull", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

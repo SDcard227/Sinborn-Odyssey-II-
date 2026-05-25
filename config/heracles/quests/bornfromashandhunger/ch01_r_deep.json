@@ -1,0 +1,84 @@
+{
+  "dependencies": [
+    "ch01_descent"
+  ],
+  "tasks": {
+    "amethyst": {
+      "type": "heracles:item",
+      "item": "minecraft:amethyst_shard",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    },
+    "redstone": {
+      "type": "heracles:item",
+      "item": "minecraft:redstone",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "lapis": {
+      "type": "heracles:item",
+      "item": "minecraft:lapis_lazuli",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "diamonds": {
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Deeper Still"
+    },
+    "subtitle": {
+      "text": "The world goes further down than you think."
+    },
+    "description": [
+      "There are things down here that have never seen the surface.",
+      "Things that grew in pressure and dark for ten thousand years.",
+      "",
+      "The world is not just what you stand on.",
+      "It is everything beneath your feet.",
+      "",
+      "→ Find amethyst shards",
+      "→ Collect redstone",
+      "→ Collect lapis lazuli"
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          -150,
+          450
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:amethyst_shard",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

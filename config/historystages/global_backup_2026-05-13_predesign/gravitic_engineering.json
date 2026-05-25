@@ -1,0 +1,21 @@
+{
+  "display_name": "Gravitic Engineering",
+  "research_time": 7200,
+  "items": [
+    "echovoids:gravity_helmet",
+    "echovoids:gravity_chestplate",
+    "echovoids:gravity_leggings",
+    "echovoids:gravity_boots",
+    "echovoids:gravity_smithing_template",
+    "echovoids:antigrav_engine",
+    "create_gravity:moon_anchor",
+    "create_gravity:gravity_field_emitter"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

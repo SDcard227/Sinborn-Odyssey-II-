@@ -107,7 +107,7 @@
 		"Explosive Dragon Breath" = false
 		#How many blocks away can dragons spot potential prey. Note that increasing this could cause lag.
 		#Range: 1 ~ 10000
-		"Dragon Target Search Length" = 128
+		"Dragon Target Search Length" = 64
 		#How many blocks away can dragons wander from their defined "home" position.
 		#Range: 1 ~ 10000
 		"Dragon Wander From Home Distance" = 40
@@ -389,7 +389,7 @@
 	"Dragon Pathfinding Threads" = 3
 	#Maximum nodes for dragons/myrmex to path too. Decrease this is dragon pathfinding is super slow or intensive.
 	#Range: > 1
-	"Dragon Max Pathfinding Nodes" = 5000
+	"Dragon Max Pathfinding Nodes" = 3000
 	#Enables the option to draw the pathfinding nodes when enabled (use a stick on an entity)
 	"Debug Pathfinding Mode" = false
 

@@ -1,0 +1,119 @@
+{
+  "dependencies": [
+    "ch04_ferment"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/brewing_stand"
+    },
+    "brew_stand": {
+      "type": "heracles:item",
+      "item": "minecraft:brewing_stand",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "splash": {
+      "type": "heracles:item",
+      "item": "minecraft:splash_potion",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "blaze_rod": {
+      "item": {
+        "id": "minecraft:blaze_rod",
+        "count": 2
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Brewing Stand"
+    },
+    "subtitle": {
+      "text": "The blaze rod in the center was always the strangest part of the recipe."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.04 · THE BREWING STAND",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Brewing Stand is where fermentation meets magic.",
+      "  Blaze powder to fuel. Nether Wart to prime.",
+      "  Everything else builds on those two.",
+      "",
+      "◈ POTION PROGRESSION",
+      "  └ Awkward Potion: water bottle + nether wart",
+      "    (all effect potions require this base)",
+      "  └ Strength / Speed / Regeneration: common early",
+      "  └ Fire Resistance: essential for Nether prep",
+      "    (Ch06 — brew before entering)",
+      "  └ Slow Falling: critical for End descent (Ch13)",
+      "  └ Splash/Lingering: throw at enemies or allies",
+      "  └ Arrows of X: combine lingering with arrows",
+      "",
+      "◈ THIRST INTERACTION",
+      "  └ Drinking potions counts as hydration",
+      "  └ Water bottles fill ThirstWasTaken bar",
+      "  └ Awkward potions: neutral (slight hydration)",
+      "  └ Effect potions: small hydration bonus",
+      "  └ Nether survival: Fire Resistance + hydration potions",
+      "    together reduce Nether's triple drain burden",
+      "",
+      "◈ SCROLL: The Brewing Stand",
+      "  └ Found in: witch huts, alchemist workshop ruins,",
+      "    apothecary chests, old wizard tower loot",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: full potion tree awareness,",
+      "    thirst + potion interaction knowledge",
+      "",
+      "▸ Fire Resistance before the Nether.",
+      "  Slow Falling before the End.",
+      "  Water Breathing before the ocean floor.",
+      "  The scroll says: prepare correctly.",
+      "",
+      "▶ Find The Brewing Stand scroll [check]",
+      "▶ Craft a Brewing Stand",
+      "▶ Brew 2 splash potions",
+      "",
+      "◇ Herbal Brews (Ch02) provides the tea system.",
+      "  The Brewing Stand provides the power system.",
+      "  Different tools. Same principle: the right drink",
+      "  at the right time is the difference."
+    ],
+    "groups": {
+      "The Long Pour": {
+        "position": [
+          450,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:brewing_stand",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

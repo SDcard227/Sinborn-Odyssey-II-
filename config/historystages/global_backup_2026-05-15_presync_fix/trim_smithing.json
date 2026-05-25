@@ -1,0 +1,21 @@
+{
+  "display_name": "The Trim Smithing Arts",
+  "research_time": 2700,
+  "items": [
+    "luminous_nether:cultist_armor_trim",
+    "luminous_nether:haunt_armor_trim",
+    "netherexp:rift_armor_trim_smithing_template",
+    "netherexp:spirit_armor_trim_smithing_template",
+    "netherexp:valor_armor_trim_smithing_template"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

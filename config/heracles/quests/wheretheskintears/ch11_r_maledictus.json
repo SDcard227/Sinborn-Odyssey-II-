@@ -1,0 +1,120 @@
+{
+  "dependencies": [
+    "ch11_world"
+  ],
+  "tasks": {
+    "cursium_drop": {
+      "type": "heracles:item",
+      "item": "cataclysm:cursium",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "maledictus_kill": {
+      "type": "heracles:kill_entity",
+      "entity": "cataclysm:maledictus",
+      "amount": 1
+    }
+  },
+  "rewards": {
+    "cursium": {
+      "item": {
+        "id": "cataclysm:cursium",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Maledictus"
+    },
+    "subtitle": {
+      "text": "The Ancient Remnant was the door. Maledictus is the gate. Cursium is the key it drops. Get the key."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.11 · MALEDICTUS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Maledictus is the cursed form.",
+      "  It follows the Ancient Remnant.",
+      "  It drops Cursium.",
+      "  Cursium is the crafting gate to Ignis.",
+      "  Kill Maledictus. Get the Cursium.",
+      "  Then fight Ignis.",
+      "",
+      "◈ MALEDICTUS — FIGHT OVERVIEW",
+      "  └ Mid-tier Cataclysm boss — harder than Remnant",
+      "  └ The 'cursed form': corruption-type attacks",
+      "    AoE curse zones, phase-based corruption spread",
+      "  └ Priority: move out of curse zones immediately",
+      "    Curse status: reduces max HP temporarily",
+      "  └ Melee window: very limited, use ranged or ISS",
+      "  └ Recommended: Ignitium armor (if already farmed) OR",
+      "    full diamond/netherite with Protection IV",
+      "",
+      "◈ CURSIUM — GATE MATERIAL",
+      "  └ cataclysm:cursium: drops from Maledictus",
+      "  └ Used for: Cursium armor set (mid Cataclysm gear)",
+      "  └ Required: to craft/unlock Ignis fight access",
+      "  └ Needed quantity: check JEI for Cursium gear recipes",
+      "  └ Farm Maledictus repeatedly — get 16+ Cursium",
+      "    before attempting to progress to Ignis",
+      "",
+      "◈ FIGHT POSITIONING",
+      "  └ Maledictus arena: contained space, limited mobility",
+      "  └ ISS Ender school: Blink or Phase Step for",
+      "    curse zone escapes (fastest mobility option)",
+      "  └ Holy school: Sacred Ground heals inside curse zones",
+      "    (healing counters the curse damage per second)",
+      "  └ Strength II beacon active: reduce kill time below",
+      "    curse stack accumulation threshold",
+      "",
+      "▸ The word 'maledictus' means cursed.",
+      "  In the Old Language it means:",
+      "  'that which was spoken against.'",
+      "  Something was spoken against Maledictus",
+      "  before it became what it is.",
+      "  The scroll does not say what.",
+      "",
+      "▶ Collect 4 Cursium",
+      "▶ Defeat Maledictus [check]",
+      "",
+      "◇ Old Eye (endrem) requires Maledictus + Death Worm.",
+      "  If you are hunting the Old Eye,",
+      "  farm Maledictus and Death Worm in the same trip.",
+      "  They share the same cursed-zone biome logic."
+    ],
+    "groups": {
+      "Where the Skin Tears": {
+        "position": [
+          -450,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "cataclysm:cursium",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

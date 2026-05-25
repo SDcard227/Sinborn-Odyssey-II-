@@ -1,0 +1,17 @@
+{
+  "display_name": "Dwemer Observatory Looting",
+  "research_time": 18000,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "mebahelcreaturesdwarven"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "display_name": "On Infernal Passage",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [
+    "minecraft:the_nether"
+  ],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

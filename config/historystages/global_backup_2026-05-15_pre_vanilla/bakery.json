@@ -1,0 +1,40 @@
+{
+  "display_name": "The Bakery",
+  "research_time": 2700,
+  "items": [
+    "alexscaves:cookie_block",
+    "alexscaves:wafer_cookie_block",
+    "alexscaves:wafer_cookie_slab",
+    "alexscaves:wafer_cookie_stairs",
+    "alexscaves:wafer_cookie_wall",
+    "companions:croissant_dragon_chocolate_armor",
+    "companions:croissant_dragon_strawberry_armor",
+    "companions:croissant_dragon_vanilla_armor",
+    "companions:croissant_egg_block",
+    "delightful:glow_jam_cookie",
+    "delightful:glow_jam_cookie_tile_slab",
+    "delightful:glow_jam_cookie_tile_stairs",
+    "delightful:glow_jam_cookie_tile_wall",
+    "delightful:glow_jam_cookie_tiles",
+    "delightful:source_berry_cookie",
+    "delightful:source_berry_cookie_tile_slab",
+    "delightful:source_berry_cookie_tile_stairs",
+    "delightful:source_berry_cookie_tile_wall",
+    "delightful:source_berry_cookie_tiles",
+    "farmersdelight:honey_cookie",
+    "farmersdelight:sweet_berry_cookie",
+    "foragersinsight:acorn_cookie",
+    "foragersinsight:rose_cookie",
+    "foragersinsight:syrup_toast_stacks"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "dependencies": [
+    "ch10_reactor"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/atomic_power"
+    },
+    "fissile_core": {
+      "title": "Craft a Fissile Core — uranium automation via Create: Oppenheimered (5 Uranium + 1 Iron via Compactor)",
+      "icon": {
+        "item": {
+          "id": "alexscaves:radrock_uranium_ore",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "uranium": {
+      "item": {
+        "id": "alexscaves:radrock_uranium_ore",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 10
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Atomic Power"
+    },
+    "subtitle": {
+      "text": "Uranium into the Crusher. Fissile Cores out. The Reactor runs forever if you keep feeding it. Do not stop feeding it."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.10 · ATOMIC POWER",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Atomic Power scroll covers the full",
+      "  nuclear fuel chain from ore to reactor output.",
+      "  Create: Oppenheimered automates every step.",
+      "  The reactor never starves if you build the chain.",
+      "",
+      "◈ URANIUM FUEL CHAIN (Create: Oppenheimered)",
+      "  └ Step 1: Mine alexscaves:radrock_uranium_ore",
+      "    Found in Alex's Caves Radioactive biome",
+      "  └ Step 2: Crushing Wheels → Uranium (100%) +",
+      "    bonus Uranium (50%) + XP nugget (75%)",
+      "  └ Step 3: 5 Uranium + 1 Iron → Compactor (superheated)",
+      "    Output: 1-2x Fissile Core + 250 mB Acid",
+      "  └ Step 4: Feed Fissile Cores into CNA Nuclear Reactor",
+      "    Reactor outputs heat → Heat Pipes → Boiler → Steam",
+      "",
+      "◈ WASTE RECYCLING LOOP",
+      "  └ Fissile Core + Unrefined Waste →",
+      "    Compactor (superheated) → 3x Uranium + 250 mB Acid",
+      "  └ Close the loop: waste becomes fuel again",
+      "  └ Acid byproduct: pipe into storage or dispose safely",
+      "  └ Fully automated loop = infinite nuclear fuel cycle",
+      "",
+      "◈ REACTOR OPERATION",
+      "  └ CNA Nuclear Reactor generates heat (not SU directly)",
+      "  └ Heat → Heat Pipes → Fluid Boiler → Steam → Engine",
+      "  └ Alternatively: Reactor → Energiser for hybrid output",
+      "  └ Backup: Solar Panel array for daytime FE when",
+      "    reactor is offline for maintenance",
+      "",
+      "◈ SCROLL: Atomic Power",
+      "  └ Found in nuclear research structures,",
+      "    Alex's Caves deep biome loot chests",
+      "  └ Research time: 30 min",
+      "  └ Unlocks: full uranium → fissile → reactor chain,",
+      "    waste recycling loop, reactor safety protocols",
+      "",
+      "▸ The Engineers who built the first reactor",
+      "  left detailed notes.",
+      "  The notes are still in the ruins.",
+      "  Partially.",
+      "  The parts that survived are the scroll.",
+      "",
+      "▶ Find The Atomic Power scroll [check]",
+      "▶ Craft a Fissile Core [check]",
+      "",
+      "◇ Uranium ore also used in Nuclear Shell crafting.",
+      "  Mine more than you think you need.",
+      "  The fuel chain and the weapon chain overlap."
+    ],
+    "groups": {
+      "The Pale Shore": {
+        "position": [
+          450,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create_new_age:nuclear_reactor",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

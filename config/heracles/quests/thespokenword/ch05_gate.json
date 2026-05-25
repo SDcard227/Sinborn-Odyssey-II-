@@ -1,0 +1,93 @@
+{
+  "dependencies": [
+    "ch05_write"
+  ],
+  "tasks": {
+    "kindled_fire": {
+      "title": "Write a book and name it 'The Kindled Fire' — sign it",
+      "icon": {
+        "item": {
+          "id": "minecraft:written_book",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/many_tables_studied"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 10
+      },
+      "type": "heracles:item"
+    },
+    "enchanted_book": {
+      "item": {
+        "id": "minecraft:enchanted_book",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "age": {
+      "type": "heracles:command",
+      "command": "history unlock culture_age"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Spoken Word"
+    },
+    "subtitle": {
+      "text": "The title is the act."
+    },
+    "description": [
+      "The culture age does not make you powerful.",
+      "It makes you informed.",
+      "The distinction is everything.",
+      "",
+      "Write a book. Call it The Kindled Fire.",
+      "Put in it what the world cost you to learn.",
+      "Sign it. Leave it.",
+      "",
+      "Sixteen cultural food traditions exist in this world.",
+      "Each one an answer. Each one someone's way of asking",
+      "what your place offers that mine doesn't.",
+      "",
+      "The book is named for fire because fire was the first thing",
+      "you chose to keep alive.",
+      "",
+      "→ Write and name 'The Kindled Fire' [check]",
+      "→ Research the Many Tables scroll [check]"
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          0,
+          600
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:written_book",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

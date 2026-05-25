@@ -1,0 +1,64 @@
+{
+  "dependencies": ["ch07_steel"],
+  "tasks": {
+    "engine": {
+      "title": "Build a TFMG Diesel or Combustion Engine and connect it to your Create network",
+      "icon": {"item": {"id": "tfmg:large_cogwheel", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "lubrication": {
+      "type": "heracles:item",
+      "item": "tfmg:lubrication_oil_bucket",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    },
+    "powered_network": {
+      "title": "Power your entire workshop from combustion alone — no more windmills",
+      "icon": {"item": {"id": "create:rotation_speed_controller", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "steel_casing": {
+      "item": {"id": "tfmg:steel_casing", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Combustion"},
+    "subtitle": {"text": "Steam was water made violent. Oil is something older."},
+    "description": [
+      "Steam runs on water and heat.",
+      "The combustion engine runs on something that used to be alive.",
+      "This distinction is not philosophical.",
+      "It is the entire narrative of the age.",
+      "",
+      "TFMG Diesel/Combustion Engine: connects to your rotational network.",
+      "Lubrication Oil extends engine lifespan and efficiency.",
+      "Run diesel pipes from your distillation setup.",
+      "",
+      "The factory no longer depends on water wheels or wind.",
+      "It depends on extraction.",
+      "The difference is permanent.",
+      "",
+      "→ Build a Diesel or Combustion Engine [check]",
+      "→ Collect 2 buckets of Lubrication Oil (Distillation Tower advanced output)",
+      "→ Power your entire workshop from combustion [check]"
+    ],
+    "groups": {"Blood and Oil": {"position": [0, 450]}},
+    "icon": {"item": {"id": "tfmg:large_cogwheel", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

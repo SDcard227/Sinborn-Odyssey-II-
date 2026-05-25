@@ -1,0 +1,24 @@
+{
+  "display_name": "On Sculk Sickness",
+  "research_time": 5400,
+  "items": [
+    "sculksickness:vile_herb",
+    "sculksickness:ambrosia",
+    "sculksickness:cure_potion",
+    "sculksickness:warden_heart",
+    "sculksickness:remedy_book",
+    "minecraft:echo_shard",
+    "minecraft:sculk",
+    "minecraft:sculk_sensor",
+    "minecraft:sculk_catalyst",
+    "minecraft:sculk_shrieker",
+    "minecraft:sculk_vein"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

@@ -1,0 +1,61 @@
+{
+  "dependencies": ["ch14_deep"],
+  "tasks": {
+    "eye_holder_craft": {
+      "title": "Craft the Eye Holder (End Remastered — display stand for your collected eyes, found via End Remastered recipes)",
+      "icon": {"item": {"id": "endrem:eye_holder", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "eyes_displayed": {
+      "title": "Place the Eye Holder in your base — display the full collection of twelve civilization eyes",
+      "icon": {"item": {"id": "endrem:eye_holder", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "eye_holder": {
+      "item": {"id": "endrem:eye_holder", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Eye Holder"},
+    "subtitle": {"text": "You have carried twelve civilizations through the End. Now you can set them down."},
+    "description": [
+      "End Remastered includes the Eye Holder — a craftable display block",
+      "that holds and shows your collected eyes.",
+      "",
+      "This is not a gameplay mechanic. It is a documentation mechanic.",
+      "You have been collecting these eyes since Ch09.",
+      "Each eye is an inheritance from a civilization that failed.",
+      "The Eye Holder lets you look at them all at once.",
+      "",
+      "Black Eye — The Stricken. Lost Eye — The Sacrificed.",
+      "Cold Eye — The Frozen. Rogue Eye — The Collapsed.",
+      "Cryptic Eye — The Encrypted. Magical Eye — The Corrupted.",
+      "Corrupted Eye — The Infected. Cursed Eye — The Cursed.",
+      "Old Eye — The Oldest. Wither Eye — The Withered.",
+      "Guardian Eye — The Drowned. Nether Eye — The Burned.",
+      "",
+      "Twelve endings. You are the thirteenth option.",
+      "",
+      "→ Craft the Eye Holder [check]",
+      "→ Display the full collection in your base [check]"
+    ],
+    "groups": {"What the Void Remembers": {"position": [0, 600]}},
+    "icon": {"item": {"id": "endrem:eye_holder", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

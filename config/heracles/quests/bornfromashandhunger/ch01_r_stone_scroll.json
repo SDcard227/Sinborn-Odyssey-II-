@@ -1,0 +1,101 @@
+{
+  "dependencies": [
+    "ch01_world"
+  ],
+  "tasks": {
+    "stone_tools": {
+      "title": "Craft a full stone tool set — pickaxe, axe, shovel, hoe, sword",
+      "icon": {
+        "item": {
+          "id": "minecraft:stone_pickaxe",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/tools_stone"
+    }
+  },
+  "rewards": {
+    "stone_pick": {
+      "item": {
+        "id": "minecraft:stone_pickaxe",
+        "count": 2
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Tools of Stone"
+    },
+    "subtitle": {
+      "text": "Stone is not a compromise. It is the first lesson in what the world offers."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.01 · TOOLS OF STONE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Stone tools are not primitive.",
+      "  They are the first correct reading of available material.",
+      "  The world offers cobblestone. You offer labor.",
+      "  The result is function.",
+      "",
+      "◈ SCROLL: Tools of Stone",
+      "  └ Found in: cave chests, abandoned mineshafts,",
+      "    early dungeon loot tables",
+      "  └ Research time: varies",
+      "  └ Unlocks: tool progression awareness,",
+      "    early-game recipe recognition",
+      "",
+      "▸ The five tools:",
+      "  Pickaxe — stone and ore",
+      "  Axe — wood and shields",
+      "  Shovel — soil and sand",
+      "  Hoe — farmland prep",
+      "  Sword — everything that moves",
+      "",
+      "▶ Craft the full stone tool set [check]",
+      "▶ Find the Tools of Stone scroll [check]",
+      "",
+      "◇ Simply Swords adds 15 weapon types beyond the sword.",
+      "  The blade scroll in Ch06 covers those.",
+      "  For now: stone sword. It works."
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          450,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:stone_pickaxe",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

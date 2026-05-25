@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Ice School scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Ice School scroll",
+      "icon": {
+        "item": {
+          "id": "irons_spellbooks:ice_rune",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock ice_school"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Ice School"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Buried under what they froze themselves into.\"",
+      "",
+      "ISS ice spells. Already populated.",
+      "",
+      "This scroll unlocks 10 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Cataclysm:Chests/Frosted Prison Treasure",
+      "  \u00b7 Aquamirae:Chests/Ship 1",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Ice School] [auto]"
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          1154,
+          837
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "irons_spellbooks:ice_rune",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

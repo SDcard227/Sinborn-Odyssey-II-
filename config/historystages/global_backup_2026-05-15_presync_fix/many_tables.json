@@ -1,0 +1,35 @@
+{
+  "display_name": "Feast of the Wheel",
+  "research_time": 1800,
+  "items": [
+    "abnormals_delight:fairy_ring_mushroom_soup",
+    "casualness_delight:cheese_pie",
+    "casualness_delight:chocolate_cake",
+    "chefsdelight:cooking_pot",
+    "farmersdelight:apple_pie",
+    "farmersdelight:beef_stew",
+    "farmersdelight:cabbage_rolls",
+    "farmersdelight:chicken_soup",
+    "farmersdelight:dumplings",
+    "farmersdelight:fish_stew",
+    "farmersdelight:meat_pie",
+    "farmersdelight:mixed_salad",
+    "farmersdelight:roast_chicken",
+    "farmersdelight:vegetable_soup",
+    "lendersdelight:flatbread",
+    "moredelight:salmon_pancake",
+    "ratatouille:ratatouille",
+    "veggiesdelight:vegan_burger",
+    "veggiesdelight:vegetable_lasagna"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

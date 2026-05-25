@@ -1,0 +1,20 @@
+{
+  "display_name": "The Warrior's Codex",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "simplyswords",
+    "simplymore",
+    "cuffed",
+    "apotheosis",
+    "skilltree",
+    "fantasy_armor",
+    "dungeons_and_combat"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

@@ -1,0 +1,53 @@
+{
+  "dependencies": ["ch02_farm"],
+  "tasks": {
+    "find_board": {
+      "title": "Find a Bountiful bounty board in a village",
+      "icon": {"item": {"id": "minecraft:oak_sign", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "cog": {
+      "type": "heracles:item",
+      "item": "numismatics:cog",
+      "amount": 2,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "emerald": {
+      "item": {"id": "minecraft:emerald", "count": 4},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Bounty Board"},
+    "subtitle": {"text": "Every village needs work done. Some of it pays."},
+    "description": [
+      "Bountiful adds bounty boards to villages.",
+      "Boards post tasks: kill creatures, deliver items, explore locations.",
+      "Complete them for rewards — coin, gear, lore drops.",
+      "",
+      "The economy runs on numismatics: cogs, sprockets, crowns.",
+      "Emeralds in all villager trades are replaced with cogs.",
+      "1 Cog = 64 Spurs. Learn the exchange rates.",
+      "",
+      "→ Find a bounty board in a village [check]",
+      "→ Have 2 cogs ready to spend"
+    ],
+    "groups": {"The Kindled Road": {"position": [150, 150]}},
+    "icon": {"item": {"id": "numismatics:cog", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

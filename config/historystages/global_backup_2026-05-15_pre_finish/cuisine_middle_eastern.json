@@ -1,0 +1,21 @@
+{
+  "display_name": "The Hearth of the Crescent",
+  "research_time": 5400,
+  "items": [
+    "delightful:baklava",
+    "delightful:baklava_slice"
+  ],
+  "tags": [],
+  "mods": [
+    "frightsdelight",
+    "ramadandelight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

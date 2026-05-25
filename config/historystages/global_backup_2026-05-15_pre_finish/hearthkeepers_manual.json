@@ -1,0 +1,32 @@
+{
+  "display_name": "The Hearthkeeper's Manual",
+  "research_time": 900,
+  "items": [
+    "farmersdelight:cooking_pot",
+    "farmersdelight:cutting_board",
+    "farmersdelight:stove",
+    "minecraft:baked_potato",
+    "minecraft:beetroot_soup",
+    "minecraft:cooked_beef",
+    "minecraft:cooked_chicken",
+    "minecraft:cooked_cod",
+    "minecraft:cooked_mutton",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_rabbit",
+    "minecraft:cooked_salmon",
+    "minecraft:crafting_table",
+    "minecraft:mushroom_stew",
+    "minecraft:rabbit_stew",
+    "minecraft:suspicious_stew"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

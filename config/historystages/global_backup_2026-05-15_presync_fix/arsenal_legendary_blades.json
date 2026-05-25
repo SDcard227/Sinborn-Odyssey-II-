@@ -1,0 +1,19 @@
+{
+  "display_name": "The Legendary Arsenal: Named Blades",
+  "research_time": 18000,
+  "items": [
+    "dungeons_and_combat:cursed_steel_dagger",
+    "fetzisdisplays:katana_stand_crimson",
+    "redeco:crimson_sword_mount"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

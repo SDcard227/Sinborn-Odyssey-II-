@@ -1,0 +1,129 @@
+{
+  "dependencies": [
+    "ch10_r_new_age_scroll"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/electrical_engineering"
+    },
+    "laser_cutter": {
+      "title": "Build and use a Create: New Age Laser Cutter — precision FE-powered cutting for advanced recipes",
+      "icon": {
+        "item": {
+          "id": "create_new_age:laser_cutter",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "magnet": {
+      "item": {
+        "id": "create_new_age:magnet",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "carbon_brush": {
+      "item": {
+        "id": "create_new_age:carbon_brush",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Electrical Engineering"
+    },
+    "subtitle": {
+      "text": "The Laser Cutter shapes what the Crusher cannot. Precision manufacturing is the last frontier of the machine age."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.10 · ELECTRICAL ENGINEERING",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Electrical Engineering covers the advanced",
+      "  applications of Create: New Age.",
+      "  FE is not just a power source.",
+      "  It is a precision manufacturing tool.",
+      "",
+      "◈ LASER CUTTER",
+      "  └ FE-powered precision cutting station",
+      "  └ Cuts: glass, metal plates, specific circuit boards",
+      "  └ Required for: some nuclear-age crafting recipes",
+      "  └ Power requirement: ~400 FE/t sustained",
+      "  └ Place filter on cutter to automate specific cuts",
+      "",
+      "◈ ELECTRIC MOTOR APPLICATIONS",
+      "  └ Run Create machines off FE directly",
+      "    (no shaft connection needed — indirect via motor)",
+      "  └ Useful for: farms powered by solar array FE",
+      "    when rotational shafting would be impractical",
+      "  └ Stack multiple motors for higher SU output",
+      "  └ Best use: remote outpost machines powered via",
+      "    wire coil network from main base reactor",
+      "",
+      "◈ BATTERY BOX NETWORK",
+      "  └ CNA Battery Box: stores FE buffer",
+      "    Charge overnight (solar), discharge during build",
+      "  └ Chain multiple boxes for large FE reserves",
+      "  └ Essential for: Laser Cutter burst demand spikes",
+      "",
+      "◈ SCROLL: Electrical Engineering",
+      "  └ Found in advanced Create laboratory chests,",
+      "    engineer workshop structures (high tier)",
+      "  └ Research time: 30 min",
+      "  └ Unlocks: Laser Cutter operation, battery network,",
+      "    advanced Electric Motor applications",
+      "",
+      "▸ The machine age began with waterwheels.",
+      "  It ended with the Laser Cutter.",
+      "  Everything in between was infrastructure.",
+      "  The Cutter is where you stopped building toward",
+      "  and started building with.",
+      "",
+      "▶ Find The Electrical Engineering scroll [check]",
+      "▶ Build a Laser Cutter [check]",
+      "",
+      "◇ Laser Cutter + Nuclear Reactor FE feed",
+      "  = automated precision manufacturing.",
+      "  Set it up before Ch11 boss prep begins."
+    ],
+    "groups": {
+      "The Pale Shore": {
+        "position": [
+          600,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create_new_age:laser_cutter",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

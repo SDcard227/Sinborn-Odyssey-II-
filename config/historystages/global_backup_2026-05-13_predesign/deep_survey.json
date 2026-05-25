@@ -1,0 +1,22 @@
+{
+  "display_name": "The Deep Survey",
+  "research_time": 3600,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "alexscaves",
+    "alexs_caves_delight",
+    "cavedelight",
+    "caves_delight",
+    "miners_delight",
+    "mineraldelight"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": ["alexscaves:luxtructosaurus"],
+    "spawnlock": []
+  }
+}

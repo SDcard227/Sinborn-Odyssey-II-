@@ -1,0 +1,65 @@
+{
+  "dependencies": ["ch17_quantum2"],
+  "tasks": {
+    "quantum_mechanism": {
+      "title": "Craft the Quantum Mechanism (Create Teleporters step 5 — the final device, combines all previous quantum components)",
+      "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "teleporter_frame": {
+      "title": "Build the Create Teleporter frame — the physical structure that uses the Quantum Mechanism",
+      "icon": {"item": {"id": "createteleporters:teleporter_frame", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "quantum_mechanism": {
+      "item": {"id": "createteleporters:quantum_mechanism", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 14},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Quantum Mechanism"},
+    "subtitle": {"text": "Five steps to instant travel. The fifth step is the mechanism that makes the other four mean something."},
+    "description": [
+      "Step 5 — Quantum Mechanism:",
+      "The Quantum Mechanism combines all previous components into the final device.",
+      "It is the heart of the Create Teleporter.",
+      "Without it, the teleporter frame is inert.",
+      "",
+      "The Create Teleporter frame:",
+      "A physical multiblock structure built around the Quantum Mechanism.",
+      "Requires specific block placement — check the mod's JEI or documentation.",
+      "The frame creates the teleportation field.",
+      "",
+      "This is the Create ecosystem completing its arc:",
+      "Ch03 — first waterwheel, first rotational force",
+      "Ch06 — nether automation, boiler systems",
+      "Ch07 — TFMG oil chain, steam engines",
+      "Ch10 — Create New Age electricity",
+      "Ch11 — advanced Create integration",
+      "Ch17 — quantum teleportation",
+      "",
+      "One machine, seventeen chapters of upgrades.",
+      "The civilization runs on Create.",
+      "",
+      "→ Craft the Quantum Mechanism [check]",
+      "→ Build the Create Teleporter frame [check]"
+    ],
+    "groups": {"Lords of All": {"position": [0, 450]}},
+    "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

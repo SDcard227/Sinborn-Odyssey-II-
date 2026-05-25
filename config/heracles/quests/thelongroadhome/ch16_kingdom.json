@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch16_armor"],
+  "tasks": {
+    "distribute_gear": {
+      "title": "Craft additional celestial-tier or netherite weapons for your Villager Recruits army",
+      "icon": {"item": {"id": "minecraft:netherite_sword", "count": 4}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "kingdom_thriving": {
+      "title": "Check your settlement — confirm MCA villagers are healthy, bounty board is active, Via Romana roads are intact",
+      "icon": {"item": {"id": "bountiful:bounty_board", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "netherite_sword": {
+      "item": {"id": "minecraft:netherite_sword", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Kingdom Thrives"},
+    "subtitle": {"text": "You came back with the best materials the world can produce. The kingdom deserves them too."},
+    "description": [
+      "You have Celestial Netherite armor.",
+      "Your Villager Recruits army from Ch12 is still equipped with iron swords.",
+      "Fix that.",
+      "",
+      "Distribute netherite-tier weapons to your best soldiers.",
+      "The army is the kingdom's survival system.",
+      "You spent Ch12 building it for exactly this: the end-game period where threats are largest.",
+      "",
+      "Kingdom audit:",
+      "- MCA Reborn villagers: are relationships still active?",
+      "- Bounty Board: are contracts running?",
+      "- Via Romana: are roads connecting your key locations?",
+      "- Villager Recruits: are all 6 unit types still active?",
+      "- Antique Atlas: does it reflect your current territory?",
+      "",
+      "The kingdom was built in Ch12.",
+      "This is Ch16. It has been many chapters.",
+      "The kingdom needs maintenance, not just founding.",
+      "",
+      "→ Arm your Villager Recruits with upgraded weapons [check]",
+      "→ Confirm the settlement is still functioning [check]"
+    ],
+    "groups": {"The Long Road Home": {"position": [0, 600]}},
+    "icon": {"item": {"id": "minecraft:netherite_sword", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

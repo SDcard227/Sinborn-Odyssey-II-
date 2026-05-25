@@ -1,0 +1,327 @@
+
+[black_eye]
+	#亮度阈值，低于此值时效果生效。默认：10
+	#Range: 0 ~ 15
+	brightness_threshold = 10
+	#每低于阈值一级增加的伤害减免比例。默认：0.03 (3%)
+	#Range: 0.0 ~ 1.0
+	damage_reduction_per_level = 0.03
+	#每低于阈值一级增加的伤害加成比例。默认：0.05 (5%)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_bonus_per_level = 0.05
+
+[cold_eye]
+	#攻击时施加缓慢效果的持续时间（tick）。默认：60（3秒）
+	#Range: > 0
+	slowness_duration = 60
+	#攻击时施加缓慢效果的等级（0=I级，1=II级）。默认：1（II级）
+	#Range: 0 ~ 255
+	slowness_amplifier = 1
+	#攻击时施加虚弱效果的持续时间（tick）。默认：60（3秒）
+	#Range: > 0
+	weakness_duration = 60
+	#攻击时施加虚弱效果的等级（0=I级）。默认：0（I级）
+	#Range: 0 ~ 255
+	weakness_amplifier = 0
+	#是否免疫冰冻（细雪冻伤）。默认：true
+	immune_to_freezing = true
+
+[corrupted_eye]
+	#攻击时自身受到的额外伤害比例（基于自身最大生命值）。默认：0.05 (5%)
+	#Range: 0.0 ~ 1.0
+	self_damage_ratio = 0.05
+	#攻击时目标受到的额外伤害比例（基于目标最大生命值）。默认：0.05 (5%)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	target_damage_ratio = 0.05
+
+[cryptic_eye]
+	#每级附魔增加的伤害比例。默认：0.02 (2%)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_per_level = 0.02
+
+[cursed_eye]
+	#攻击者将受到的负面效果列表。格式："效果ID,持续时间(tick),等级"。等级：0=I级，1=II级，以此类推。默认：凋零II(1200tick)、剧毒II(1200tick)、缓慢II(1200tick)
+	effects = ["minecraft:wither,1200,1", "minecraft:poison,1200,1", "minecraft:slowness,1200,1"]
+
+[evil_eye]
+	#魔法伤害减免比例（即实际承受伤害的比例）。默认：0.4（减免60%）
+	#Range: 0.0 ~ 1.0
+	damage_reduction = 0.4
+
+[exotic_eye]
+	#获得加成的属性列表。格式：属性注册名（例如 minecraft:generic.max_health）。默认：最大生命、攻击伤害、护甲、盔甲韧性、移动速度、攻击速度、幸运、击退抗性、跟随范围
+	affected_attributes = ["minecraft:generic.max_health", "minecraft:generic.attack_damage", "minecraft:generic.armor", "minecraft:generic.armor_toughness", "minecraft:generic.movement_speed", "minecraft:generic.attack_speed", "minecraft:generic.luck", "minecraft:generic.knockback_resistance", "minecraft:generic.follow_range"]
+	#属性加成比例（基于基础值）。默认：0.10（10%）
+	#Range: 0.0 ~ 1.7976931348623157E308
+	bonus_percent = 0.1
+
+[guardian_eye]
+	#范围光环的半径（格）。默认：12
+	#Range: 1 ~ 64
+	effect_radius = 12
+	#光环触发间隔（tick）。默认：40（2秒）
+	#Range: > 1
+	damage_interval = 40
+	#施加挖掘疲劳的等级（0=I级，1=II级）。默认：1（II级）
+	#Range: 0 ~ 255
+	dig_slowdown_amplifier = 1
+	#施加缓慢的等级（0=I级，1=II级）。默认：0（I级）
+	#Range: 0 ~ 255
+	movement_slowdown_amplifier = 0
+	#每次造成的魔法伤害比例（基于玩家最大生命值）。默认：0.1（10%）
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_percent = 0.1
+	#在水中时是否获得水下呼吸效果。默认：true
+	water_breathing_enabled = true
+	#在水中时是否移除挖掘疲劳效果。默认：true
+	remove_dig_slowdown_enabled = true
+
+[lost_eye]
+	#近战伤害加成值（直接加算）。默认：2.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	attack_damage_bonus = 2.0
+	#耐久修复间隔（tick）。默认：20（每秒一次）
+	#Range: > 1
+	repair_interval = 20
+	#每次修复的比例（基于物品最大耐久）。默认：0.01（1%）
+	#Range: 0.0 ~ 1.0
+	repair_percent = 0.01
+	#每次最多修复的物品数量。默认：1
+	#Range: > 1
+	max_repair_items = 1
+
+[magical_eye]
+	#对灾厄村民（及额外生物）的伤害倍率。默认：2.0（+100% 伤害）
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_multiplier = 2.0
+	#受到灾厄村民（及额外生物）攻击时的伤害减免比例（即实际承受伤害的比例）。默认：0.5（减免50%）
+	#Range: 0.0 ~ 1.0
+	damage_reduction = 0.5
+	#击杀灾厄村民（及额外生物）时掉落不死图腾的概率。默认：0.3（30%）
+	#Range: 0.0 ~ 1.0
+	totem_drop_chance = 0.3
+	#额外享受上述效果的生物列表。格式：实体注册名（例如 minecraft:pillager）。默认：空列表
+	extra_entities = []
+
+[nether_eye]
+	#是否免疫火焰伤害。默认：true
+	immune_to_fire = true
+	#在主世界（及其他非下界维度）对燃烧目标的伤害倍率。默认：1.5（+50%）
+	#Range: 1.0 ~ 1.7976931348623157E308
+	damage_multiplier_overworld = 1.5
+	#在下界维度对燃烧目标的伤害倍率。默认：2.0（+100%）
+	#Range: 1.0 ~ 1.7976931348623157E308
+	damage_multiplier_nether = 2.0
+
+[old_eye]
+	#回复间隔（tick）。默认：10（每秒2次）
+	#Range: > 1
+	heal_interval = 10
+	#每次回复最大生命值的比例。默认：0.01（1%）
+	#Range: 0.0 ~ 1.0
+	heal_percent = 0.01
+	#每次回复的固定额外生命值。默认：1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	heal_flat = 1.0
+
+[rogue_eye]
+	#实体额外掉落映射表。格式："实体注册名,物品注册名,数量"。默认包含村民、铁傀儡、末影人、猪灵、猪灵蛮兵、凋灵骷髅、美西螈、猪、牛、羊、僵尸、骷髅、苦力怕等
+	entity_drops = ["minecraft:villager,minecraft:emerald,1", "minecraft:iron_golem,minecraft:iron_ingot,1", "minecraft:enderman,minecraft:ender_pearl,1", "minecraft:piglin,minecraft:gold_ingot,1", "minecraft:piglin_brute,minecraft:netherite_scrap,1", "minecraft:wither_skeleton,minecraft:wither_skeleton_skull,1", "minecraft:axolotl,minecraft:diamond,1", "minecraft:pig,minecraft:golden_carrot,1", "minecraft:cow,minecraft:milk_bucket,1", "minecraft:sheep,minecraft:white_wool,1", "minecraft:zombie,minecraft:iron_ingot,1", "minecraft:skeleton,minecraft:arrow,1", "minecraft:creeper,minecraft:tnt,1"]
+	#普通实体掉落概率。默认：0.25（25%）
+	#Range: 0.0 ~ 1.0
+	drop_chance = 0.25
+	#监守者掉落触发概率。默认：0.20（20%）
+	#Range: 0.0 ~ 1.0
+	warden_drop_chance = 0.2
+	#监守者额外掉落物列表。格式："物品注册名,数量,权重"。默认：附魔金苹果权重10（10%），金苹果权重90（90%）
+	warden_drops = ["minecraft:enchanted_golden_apple,1,10", "minecraft:golden_apple,1,90"]
+
+[undead_eye]
+	#触发后的冷却时间（秒）。默认：60
+	#Range: > 0
+	cooldown_seconds = 60
+	#触发后获得的无敌时间（tick）。默认：20（1秒）
+	#Range: > 0
+	invulnerable_ticks = 20
+
+[witch_eye]
+	#受伤时可获得的正面效果列表。格式：效果注册名（例如 minecraft:speed）。默认：速度、急迫、力量、跳跃提升、生命恢复、抗性提升、防火、水下呼吸、隐身、夜视、生命提升、伤害吸收、饱和、幸运
+	beneficial_effects = ["minecraft:speed", "minecraft:haste", "minecraft:strength", "minecraft:jump_boost", "minecraft:regeneration", "minecraft:resistance", "minecraft:fire_resistance", "minecraft:water_breathing", "minecraft:invisibility", "minecraft:night_vision", "minecraft:health_boost", "minecraft:absorption", "minecraft:saturation", "minecraft:luck"]
+	#获得效果的持续时间（tick）。默认：200（10秒）
+	#Range: > 1
+	effect_duration = 200
+	#受伤时触发效果的概率。默认：1.0（100%）
+	#Range: 0.0 ~ 1.0
+	trigger_chance = 1.0
+
+[wither_eye]
+	#被视为亡灵生物的实体列表。格式：实体注册名（例如 minecraft:zombie）。默认：僵尸、尸壳、溺尸、僵尸村民、僵尸猪灵、骷髅、流浪者、凋灵骷髅、幻翼、凋灵、骷髅马、僵尸马、僵尸疣猪兽
+	undead_entities = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:zombie_villager", "minecraft:zombified_piglin", "minecraft:skeleton", "minecraft:stray", "minecraft:wither_skeleton", "minecraft:phantom", "minecraft:wither", "minecraft:skeleton_horse", "minecraft:zombie_horse", "minecraft:zoglin"]
+	#反击光环的半径（格）。默认：32
+	#Range: 1 ~ 128
+	retaliation_radius = 32
+
+[environment_eye]
+	#（异国之眼）获得加成的属性列表。默认：最大生命、攻击伤害、护甲、盔甲韧性、移动速度、攻击速度、幸运、击退抗性、跟随范围
+	affected_attributes = ["minecraft:generic.max_health", "minecraft:generic.attack_damage", "minecraft:generic.armor", "minecraft:generic.armor_toughness", "minecraft:generic.movement_speed", "minecraft:generic.attack_speed", "minecraft:generic.luck", "minecraft:generic.knockback_resistance", "minecraft:generic.follow_range"]
+	#（异国之眼）属性加成比例。默认：0.15（15%）
+	#Range: 0.0 ~ 1.7976931348623157E308
+	bonus_percent = 0.15
+	#（下界之眼）是否免疫火焰伤害。默认：true
+	immune_to_fire = true
+	#（下界之眼）在主世界对燃烧目标的伤害倍率。默认：2.0（2倍）
+	#Range: 1.0 ~ 1.7976931348623157E308
+	damage_multiplier_overworld = 2.0
+	#（下界之眼）在下界对燃烧目标的伤害倍率。默认：3.0（3倍）
+	#Range: 1.0 ~ 1.7976931348623157E308
+	damage_multiplier_nether = 3.0
+	#（寒冰之眼）攻击时施加缓慢效果的持续时间（tick）。默认：60
+	#Range: > 0
+	slowness_duration = 60
+	#（寒冰之眼）攻击时施加缓慢效果的等级。默认：1（II级）
+	#Range: 0 ~ 255
+	slowness_amplifier = 1
+	#（寒冰之眼）攻击时施加虚弱效果的持续时间（tick）。默认：60
+	#Range: > 0
+	weakness_duration = 60
+	#（寒冰之眼）攻击时施加虚弱效果的等级。默认：1（II级）
+	#Range: 0 ~ 255
+	weakness_amplifier = 1
+	#（寒冰之眼）是否免疫冰冻。默认：true
+	immune_to_freezing = true
+	#攻击时无视目标护甲的比例。默认：0.2（20%）
+	#Range: 0.0 ~ 1.0
+	armor_penetration = 0.2
+
+[enhance_eye]
+	#（漆黑之眼）亮度阈值，低于此值时效果生效。默认：10
+	#Range: 0 ~ 15
+	brightness_threshold = 10
+	#（漆黑之眼）每低于阈值一级增加的伤害减免比例。默认：0.03 (3%)
+	#Range: 0.0 ~ 1.0
+	damage_reduction_per_level = 0.03
+	#（漆黑之眼）每低于阈值一级增加的伤害加成比例。默认：0.05 (5%)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_bonus_per_level = 0.05
+	#（腐化之眼）攻击时自身受到的额外伤害比例。默认：0.05 (5%)
+	#Range: 0.0 ~ 1.0
+	self_damage_ratio = 0.05
+	#（腐化之眼）攻击时目标受到的额外伤害比例。默认：0.05 (5%)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	target_damage_ratio = 0.05
+	#（无赖之眼）实体额外掉落映射表。格式同无赖之眼。默认与无赖之眼相同
+	entity_drops = ["minecraft:villager,minecraft:emerald,1", "minecraft:iron_golem,minecraft:iron_ingot,1", "minecraft:enderman,minecraft:ender_pearl,1", "minecraft:piglin,minecraft:gold_ingot,1", "minecraft:piglin_brute,minecraft:netherite_scrap,1", "minecraft:wither_skeleton,minecraft:wither_skeleton_skull,1", "minecraft:axolotl,minecraft:diamond,1", "minecraft:pig,minecraft:golden_carrot,1", "minecraft:cow,minecraft:milk_bucket,1", "minecraft:sheep,minecraft:white_wool,1", "minecraft:zombie,minecraft:iron_ingot,1", "minecraft:skeleton,minecraft:arrow,1", "minecraft:creeper,minecraft:tnt,1"]
+	#（无赖之眼）普通实体掉落概率。默认：0.25 (25%)
+	#Range: 0.0 ~ 1.0
+	drop_chance = 0.25
+	#（无赖之眼）监守者掉落触发概率。默认：0.20 (20%)
+	#Range: 0.0 ~ 1.0
+	warden_drop_chance = 0.2
+	#（无赖之眼）监守者额外掉落物列表。默认：附魔金苹果权重10，金苹果权重90
+	warden_drops = ["minecraft:enchanted_golden_apple,1,10", "minecraft:golden_apple,1,90"]
+	#额外增加的最大生命值。默认：20.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	max_health_bonus = 20.0
+
+[weird_eye]
+	#（诅咒之眼）攻击者将受到的负面效果列表。默认：凋零II、剧毒II、缓慢II（各60秒）
+	cursed_effects = ["minecraft:wither,1200,1", "minecraft:poison,1200,1", "minecraft:slowness,1200,1"]
+	#（守卫者之眼）范围光环的半径（格）。默认：12
+	#Range: 1 ~ 64
+	effect_radius = 12
+	#（守卫者之眼）光环触发间隔（tick）。默认：40（2秒）
+	#Range: > 1
+	damage_interval = 40
+	#（守卫者之眼）施加挖掘疲劳的等级。默认：1（II级）
+	#Range: 0 ~ 255
+	dig_slowdown_amplifier = 1
+	#（守卫者之眼）施加缓慢的等级。默认：0（I级）
+	#Range: 0 ~ 255
+	movement_slowdown_amplifier = 0
+	#（守卫者之眼）每次造成的魔法伤害比例。默认：0.1（10%）
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_percent = 0.1
+	#（守卫者之眼）是否获得水下呼吸。默认：true
+	water_breathing_enabled = true
+	#（守卫者之眼）是否移除挖掘疲劳。默认：true
+	remove_dig_slowdown_enabled = true
+	#（不死之眼）免死冷却时间（秒）。默认：60
+	#Range: > 0
+	cooldown_seconds = 60
+	#（不死之眼）触发后无敌时间（tick）。默认：20（1秒）
+	#Range: > 0
+	invulnerable_ticks = 20
+	#限伤：是否启用限伤机制。默认：true （百分比限伤与固定数值限伤可以共存，但不建议这么做，因为会取最低值导致其中一项无效）
+	damage_cap_enabled = true
+	#百分比限伤：单次伤害上限比例（基于玩家最大生命值）。0表示不限。默认：0.5（50%）
+	#Range: 0.0 ~ 1.0
+	damage_cap_percent = 0.5
+	#固定数值限伤：单次伤害固定上限值。0表示不限。默认：0.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_cap_flat = 0.0
+
+[arcane_eye]
+	#（神秘之眼）每级附魔增加的伤害比例。默认：0.02 (2%)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_per_level = 0.02
+	#（恶魔之眼）魔法伤害减免比例（即实际承受伤害的比例）。默认：0.4（减免60%）
+	#Range: 0.0 ~ 1.0
+	damage_reduction = 0.4
+	#（巫师之眼）受伤时可获得的正面效果列表。默认：速度、急迫、力量、跳跃提升、生命恢复、抗性提升、防火、水下呼吸、隐身、夜视、生命提升、伤害吸收、饱和、幸运
+	beneficial_effects = ["minecraft:speed", "minecraft:haste", "minecraft:strength", "minecraft:jump_boost", "minecraft:regeneration", "minecraft:resistance", "minecraft:fire_resistance", "minecraft:water_breathing", "minecraft:invisibility", "minecraft:night_vision", "minecraft:health_boost", "minecraft:absorption", "minecraft:saturation", "minecraft:luck"]
+	#（巫师之眼）获得效果的持续时间（tick）。默认：200（10秒）
+	#Range: > 1
+	effect_duration = 200
+	#（巫师之眼）受伤时触发效果的概率。默认：1.0（100%）
+	#Range: 0.0 ~ 1.0
+	trigger_chance = 1.0
+	#免疫的负面效果列表。格式：效果注册名（例如 minecraft:poison）。默认：中毒、凋零、缓慢、虚弱、挖掘疲劳、黑暗、反胃、失明、饥饿、漂浮、不祥之兆
+	immunity_effects = ["minecraft:poison", "minecraft:wither", "minecraft:slowness", "minecraft:weakness", "minecraft:mining_fatigue", "minecraft:darkness", "minecraft:nausea", "minecraft:blindness", "minecraft:hunger", "minecraft:levitation", "minecraft:bad_omen"]
+
+[ancient_eye]
+	#（失落之眼）近战伤害加成值（直接加算）。默认：2.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	attack_damage_bonus = 2.0
+	#（失落之眼）耐久修复间隔（tick）。默认：20（每秒一次）
+	#Range: > 1
+	repair_interval = 20
+	#（失落之眼）每次修复的比例（基于物品最大耐久）。默认：0.01（1%）
+	#Range: 0.0 ~ 1.0
+	repair_percent = 0.01
+	#（失落之眼）每次最多修复的物品数量。默认：1
+	#Range: > 1
+	max_repair_items = 1
+	#（魔力之眼）对灾厄村民（及额外生物）的伤害倍率。默认：2.0（+100% 伤害）
+	#Range: 0.0 ~ 1.7976931348623157E308
+	magical_damage_multiplier = 2.0
+	#（魔力之眼）受到灾厄村民（及额外生物）攻击时的伤害减免比例（即实际承受伤害的比例）。默认：0.5（减免50%）
+	#Range: 0.0 ~ 1.0
+	magical_damage_reduction = 0.5
+	#（魔力之眼）击杀灾厄村民（及额外生物）时掉落不死图腾的概率。默认：0.3（30%）
+	#Range: 0.0 ~ 1.0
+	magical_totem_drop_chance = 0.3
+	#（魔力之眼）额外享受上述效果的生物列表。格式：实体注册名（例如 minecraft:pillager）。默认：空列表
+	magical_extra_entities = []
+	#（远古之眼）回复间隔（tick）。默认：10（每秒2次）
+	#Range: > 1
+	heal_interval = 10
+	#（远古之眼）每次回复最大生命值的比例。默认：0.01（1%）
+	#Range: 0.0 ~ 1.0
+	heal_percent = 0.01
+	#（远古之眼）每次回复的固定额外生命值。默认：1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	heal_flat = 1.0
+	#攻击力修正阈值。当玩家攻击力大于此值时，应用上方加成；小于等于时，应用下方固定值。默认：10.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_threshold = 10.0
+	#攻击力高于阈值时的加成数值。默认：10.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_above_bonus = 10.0
+	#高于阈值时的加成是否为百分比（true=百分比，false=固定值）。默认：false
+	damage_above_is_percent = false
+	#攻击力低于或等于阈值时的固定数值。默认：10.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damage_below_fixed = 10.0
+	#低于阈值时的数值是否为百分比（true=百分比，false=固定值）。默认：false
+	damage_below_is_percent = false
+

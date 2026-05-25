@@ -1,0 +1,34 @@
+{
+  "display_name": "On the Nature of the Void",
+  "research_time": 7200,
+  "items": [],
+  "tags": [
+    "farmersdelight:dragon_chaos_steak",
+    "forge:cooked_sculk_meat",
+    "forge:crushed_enderium_shard",
+    "forge:elytra",
+    "forge:end_stones",
+    "forge:ender_pearls",
+    "forge:raw_dragon_meat",
+    "forge:roasted_dragon_meat",
+    "forge:sculk_meat",
+    "forge:shulker_meat",
+    "irons_spellbooks:ender_focus",
+    "lolenderite:enderite_upgrade_smithing_template",
+    "minecraft:shulker_boxes",
+    "phantasm:void_crystal_block",
+    "supplementaries:shulker_blacklist",
+    "witherstormmod:cannot_fall_in_void"
+  ],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [
+    "minecraft:the_end"
+  ],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

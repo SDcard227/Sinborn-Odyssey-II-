@@ -1,0 +1,18 @@
+{
+  "display_name": "Slaying the King Below",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "scarlet_king:manifestor",
+      "scarlet_king:scarlet_king"
+    ],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Lightning School scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Lightning School scroll",
+      "icon": {
+        "item": {
+          "id": "irons_spellbooks:lightning_rune",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock lightning_school"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Lightning School"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Charted, measured, decoded.\"",
+      "",
+      "ISS lightning. Already populated.",
+      "",
+      "This scroll unlocks 9 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Stronghold Library",
+      "  \u00b7 Village/Village Cartographer",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Lightning School] [auto]"
+    ],
+    "groups": {
+      "The Spoken Word": {
+        "position": [
+          1154,
+          962
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "irons_spellbooks:lightning_rune",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

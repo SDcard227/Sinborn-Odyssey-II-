@@ -1,0 +1,58 @@
+{
+  "dependencies": ["ch12_world"],
+  "tasks": {
+    "recruit_soldier": {
+      "title": "Recruit a Villager Recruit soldier unit (Villager Recruits mod — give them a weapon)",
+      "icon": {"item": {"id": "minecraft:iron_sword", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "recruit_squad": {
+      "title": "Build a squad of 6 Villager Recruits (all 6 unit types)",
+      "icon": {"item": {"id": "minecraft:shield", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "iron_sword": {
+      "item": {"id": "minecraft:iron_sword", "count": 6},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Army"},
+    "subtitle": {"text": "The kingdom you build needs defenders. You cannot defend it alone."},
+    "description": [
+      "Villager Recruits adds 6 unit types that can be commanded in squads.",
+      "Each unit needs a weapon to fight — give them what they need.",
+      "",
+      "Unit types: Soldiers, Archers, Cavalry, Medics, Mages, and Siege units.",
+      "Each has a specific combat role in the squad formation system.",
+      "",
+      "Ch12 is the governance chapter.",
+      "You have been surviving alone or in small groups since Ch01.",
+      "The kingdom is the answer to survival at scale.",
+      "The army is the answer to what that scale faces.",
+      "",
+      "The Wither Storm at X:0 Z:0 is not solved by one person.",
+      "It is survived by a collective that knows what it is.",
+      "",
+      "→ Recruit a Villager Recruit soldier [check]",
+      "→ Build a full squad of 6 units [check]"
+    ],
+    "groups": {"The Kingdom You Build": {"position": [-150, 0]}},
+    "icon": {"item": {"id": "minecraft:shield", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

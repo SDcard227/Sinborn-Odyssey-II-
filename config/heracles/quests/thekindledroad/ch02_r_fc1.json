@@ -1,0 +1,57 @@
+{
+  "dependencies": ["ch02_feast"],
+  "tasks": {
+    "stove": {
+      "type": "heracles:item",
+      "item": "farmandcharm:stove",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "cooking_pot": {
+      "type": "heracles:item",
+      "item": "farmandcharm:cooking_pot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "meal": {
+      "item": {"id": "farmandcharm:pasta", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:sprocket", "count": 4},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Farm and Charm"},
+    "subtitle": {"text": "Thirty-four recipes. Five stations."},
+    "description": [
+      "Farm and Charm expands cooking beyond Farmer's Delight.",
+      "",
+      "The Stove: coal-powered, cooks faster than furnace.",
+      "The Cooking Pot: slow meals, high saturation.",
+      "The Roaster: six slots, sixty seconds.",
+      "The Crafting Bowl: stir-based recipes, unique outputs.",
+      "The Silo: drying station.",
+      "",
+      "Cook all thirty-four meals.",
+      "The reward is a Scarecrow.",
+      "",
+      "→ Craft a Farm & Charm Stove",
+      "→ Craft a Farm & Charm Cooking Pot"
+    ],
+    "groups": {"The Kindled Road": {"position": [150, 450]}},
+    "icon": {"item": {"id": "farmandcharm:stove", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

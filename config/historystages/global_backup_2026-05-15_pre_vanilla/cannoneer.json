@@ -1,0 +1,19 @@
+{
+  "display_name": "Cannoneer",
+  "research_time": 5400,
+  "items": [
+    "companions:cannon_arm"
+  ],
+  "tags": [],
+  "mods": [
+    "createbigcannons"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

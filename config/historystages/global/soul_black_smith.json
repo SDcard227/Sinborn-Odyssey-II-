@@ -1,0 +1,19 @@
+{
+  "display_name": "The Soul Black Smith",
+  "research_time": 18000,
+  "items": [
+    "cataclysm:black_steel_block",
+    "cataclysm:infernal_forge",
+    "cataclysm:infernal_forge.desc2"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

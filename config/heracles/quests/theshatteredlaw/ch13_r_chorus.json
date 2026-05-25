@@ -1,0 +1,86 @@
+{
+  "dependencies": ["ch13_r_elytra1"],
+  "tasks": {
+    "chorus_farm": {
+      "title": "Build a Chorus Plant farm — collect Chorus Flowers, plant them in End Stone, grow full Chorus Trees",
+      "icon": {"item": {"id": "minecraft:chorus_flower", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "chorus_fruit_stack": {
+      "type": "heracles:item",
+      "item": "minecraft:chorus_fruit",
+      "amount": 32,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "popped_chorus": {"item": {"id": "minecraft:popped_chorus_fruit", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Chorus Farm"},
+    "subtitle": {"text": "Chorus Fruit teleports on eat. Popped Chorus is the key material for Purpur and End Rod. Farm both."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.13 · CHORUS FARM",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Chorus Plants are the only farmable crop in the End.",
+      "  They grow on End Stone.",
+      "  They drop Chorus Fruit and Chorus Flowers.",
+      "  Chorus Fruit teleports you on eat (ignores walls).",
+      "  Popped Chorus Fruit is a crafting material.",
+      "  Both are essential for Ch13-15 progression.",
+      "",
+      "◈ CHORUS FARM SETUP",
+      "  └ Collect Chorus Flowers from the tips of trees",
+      "    (the pink-white flower at the top of each branch)",
+      "  └ Plant Chorus Flower on End Stone (only surface)",
+      "  └ Grows: 1-4 blocks tall, multiple branches",
+      "  └ Break any block in the tree: all blocks above drop",
+      "  └ Farm design: plant in rows of 20+ for mass yield",
+      "  └ Bonemeal: does NOT work on Chorus Plants",
+      "",
+      "◈ CHORUS FRUIT USES",
+      "  └ Eat: teleports 8 blocks in random direction (ignores walls)",
+      "    Useful: End City navigation, escape from Shulker levitation",
+      "    Risky: can teleport into walls/off ledges",
+      "  └ Chorus Teleport: best mobility tool in End Cities",
+      "  └ Food value: 4 hunger, 2.4 saturation (mediocre)",
+      "",
+      "◈ POPPED CHORUS FRUIT",
+      "  └ Smelt Chorus Fruit → Popped Chorus Fruit",
+      "  └ Crafting uses:",
+      "    4 Popped Chorus + 4 Ender Stone → End Rod (×4)",
+      "    4 Popped Chorus + Purpur → Purpur Pillar, Bricks, Stairs",
+      "  └ End Rod: light source + decoration in End-themed builds",
+      "  └ Quantum Fluid: Chorus Fruit + Water (Mixer) → Quantum Fluid",
+      "    (Create Teleporters — use your farm for teleporter fuel)",
+      "",
+      "▸ The Chorus Plants grew before the End Cities.",
+      "  The cities were built around the plants.",
+      "  The Purpur blocks that make up the cities",
+      "  are made from what the plants produce.",
+      "  The plant is the city, one step back.",
+      "",
+      "▶ Build a Chorus Plant farm [check]",
+      "▶ Collect 32 Chorus Fruit",
+      "",
+      "◇ Chorus Fruit is the fuel for Create Teleporters",
+      "  (Quantum Fluid = Chorus + Water in heated Mixer).",
+      "  Your Chorus farm is your teleporter fuel supply.",
+      "  Grow it large enough to be passive income."
+    ],
+    "groups": {"The Shattered Law": {"position": [600, 150]}},
+    "icon": {"item": {"id": "minecraft:chorus_fruit", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

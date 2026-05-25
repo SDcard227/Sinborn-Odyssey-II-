@@ -1,0 +1,17 @@
+{
+  "display_name": "Slaying the Grave Watcher",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "dungeons_and_combat:the_grave_watcher"
+    ],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,34 @@
+
+[utility_features]
+	#Give configured starting items to first-time players.
+	enableStartingItems = true
+	#Teleport players to their stored logout location when joining.
+	enableLastLocationSpawnFix = true
+	#Scan loaded mods and log duplicate display names/IDs during server start.
+	enableDuplicateModScan = true
+	#Apply lightweight HUD offset to avoid common UI overlaps.
+	enableGuiOverlapFix = true
+	#Cancel low-priority client particles when camera is in heavy scenes.
+	enableParticleSoftCap = true
+	#Inject a pause-menu button that opens your boss list UI via command.
+	enableBossListButton = true
+	#Approximate particle cap before cancelling ambient particles.
+	#Range: 200 ~ 10000
+	particleSoftCap = 1500
+	#Base stamina tempo used by external integrations.
+	#Range: 0.1 ~ 10.0
+	staminaTempo = 1.0
+	#Correlates stamina tempo and magic regen multiplier. Exposed for KubeJS/other mods.
+	#Range: 0.0 ~ 5.0
+	staminaMagicCorrelation = 0.65
+	#Registry names of starting items to grant once.
+	startingItems = []
+	#Item ID for quest book integration points.
+	questBookItem = "heracles:quest_book"
+	#Item ID for class book integration points.
+	classBookItem = "minecraft:writable_book"
+	#Client command sent when quest button is pressed in the inventory screen.
+	inventoryQuestCommand = ""
+	#Client command sent when the pause-menu boss list button is pressed.
+	bossListCommand = ""
+

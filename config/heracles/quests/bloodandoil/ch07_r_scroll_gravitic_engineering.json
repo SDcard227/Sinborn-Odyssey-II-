@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Gravitic Engineering scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Gravitic Engineering scroll",
+      "icon": {
+        "item": {
+          "id": "echovoids:gravity_boots",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock gravitic_engineering"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:sun",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Gravitic Engineering"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"The dwemer left their brass. Nothing else.\"",
+      "",
+      "Already populated. EchoVoids gravity gear.",
+      "",
+      "This scroll unlocks 12 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Mebahelcreaturesdwarven:Chests/Dwemer Tower",
+      "  \u00b7 Mebahelcreaturesdwarven:Chests/Dwemer Ruin Epic",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Gravitic Engineering] [auto]"
+    ],
+    "groups": {
+      "Blood and Oil": {
+        "position": [
+          1140,
+          900
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "echovoids:gravity_boots",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

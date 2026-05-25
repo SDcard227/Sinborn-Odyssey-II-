@@ -1,0 +1,119 @@
+{
+  "dependencies": [
+    "ch02_r_tea2"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/hearth"
+    },
+    "tapper": {
+      "title": "Craft a Tapper (Hearth & Harvest — tap trees for maple syrup, resin, sap)",
+      "icon": {
+        "item": {
+          "id": "hearth_and_harvest:tapper",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "salt": {
+      "title": "Obtain Salt (Hearth & Harvest — mine salt deposits or craft from evaporation)",
+      "icon": {
+        "item": {
+          "id": "hearth_and_harvest:salt",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "syrup": {
+      "item": {
+        "id": "hearth_and_harvest:maple_syrup",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Hearth Keeper"
+    },
+    "subtitle": {
+      "text": "Salt preserves. Syrup sweetens. The cask remembers what you put inside."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.02 · THE HEARTH KEEPER",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Hearth & Harvest is the homestead expansion.",
+      "  It adds the things that keep a farm running",
+      "  after the planting is done.",
+      "",
+      "◈ HEARTH & HARVEST SYSTEMS",
+      "  └ Tapper: attach to trees → maple syrup, resin, sap",
+      "    each tree type yields different fluids",
+      "  └ Salt: mined from salt flats or crafted via evaporation",
+      "    used in food preservation and curing",
+      "  └ Cask: wooden barrel — ferments drinks over time",
+      "    Ch04 Fermentation uses this heavily",
+      "  └ Crows: functional scarecrow — protects crop radius",
+      "    also used in farm aesthetics",
+      "",
+      "◈ SCROLL: The Hearth Keeper",
+      "  └ Found in: homestead ruins, village cellars,",
+      "    abandoned farmhouses, old manor chests",
+      "  └ Research time: 20 min",
+      "  └ Unlocks: full H&H system awareness,",
+      "    fermentation (Ch04) prerequisite",
+      "",
+      "▸ The Tapper runs while you're away.",
+      "  Come back to a full bucket.",
+      "  That is what infrastructure means.",
+      "",
+      "▶ Find The Hearth Keeper scroll [check]",
+      "▶ Craft a Tapper [check]",
+      "▶ Obtain Salt [check]",
+      "",
+      "◇ The Cask is the foundation of the",
+      "  fermentation age (Ch04 gate scroll).",
+      "  Don't skip it."
+    ],
+    "groups": {
+      "The Kindled Road": {
+        "position": [
+          -450,
+          300
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "hearth_and_harvest:tapper",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "dependencies": ["ch11_r_corrupt1"],
+  "tasks": {
+    "soulshard": {
+      "type": "heracles:item",
+      "item": "irons_spellbooks:divine_soulshard",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "hemolymph": {
+      "type": "heracles:item",
+      "item": "alexsmobs:hemolymph_sac",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "corrupted_block": {"item": {"id": "minecraft:sculk", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Corrupted Eye"},
+    "subtitle": {"text": "Hemolymph Sac from the Warped Mosco. Divine Soulshard from the ISS Priest. The eye is a synthesis."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.11 · THE CORRUPTED EYE",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Corrupted Eye recipe spans three mod families.",
+      "  It is the most ingredient-intensive eye in the portal.",
+      "  It requires the Nether (for the Mosco),",
+      "  the magical dimension (for the Priest),",
+      "  and something from the Biological Civilization.",
+      "  Gather all three before attempting to craft.",
+      "",
+      "◈ CORRUPTED EYE INGREDIENTS",
+      "  └ ✦ Hemolymph Sac (alexsmobs:hemolymph_sac)",
+      "    Source: Warped Mosco — Alex's Mobs boss",
+      "    Found in: Warped Forest biome, Nether",
+      "    The Mosco is the mushroom-carapace entity",
+      "    that holds the Warped Forest biome memory",
+      "  └ ✦ Divine Soulshard (irons_spellbooks:divine_soulshard)",
+      "    Source: ISS Priests / Dead King area mobs",
+      "    Drops from: ISS holy-type enemy mobs",
+      "    Also found in: Dead King dungeon chests",
+      "  └ ✦ Third ingredient: check JEI for full recipe",
+      "    (involves Biological Civilization artifact or craft)",
+      "",
+      "◈ WARPED MOSCO FARMING",
+      "  └ Spawns in Warped Forest biome clusters",
+      "  └ Melee range: medium — manageable with Ignitium gear",
+      "  └ Hemolymph Sac: drop rate is moderate — expect",
+      "    2-4 Mosco kills per guaranteed sac",
+      "  └ Looting III: increases sac drop rate",
+      "  └ Note: Mosco is Alex's MOBS, not Alex's Caves",
+      "    (separate mod, `alexsmobs:` namespace)",
+      "",
+      "◈ ISS PRIEST FARMING",
+      "  └ Divine Soulshard: drops from ISS holy-type enemies",
+      "  └ Also used in: Magical Eye recipe",
+      "    (two different eyes need Soulshard — farm more than 1)",
+      "  └ Dead King dungeon: highest density ISS holy mob area",
+      "    Best source for both Soulshard and ISS drops",
+      "",
+      "▸ The Biological Civilization did not corrupt themselves.",
+      "  They were transformed by what they studied.",
+      "  The distinction mattered to them.",
+      "  It stopped mattering when the transformation finished.",
+      "",
+      "▶ Obtain a Hemolymph Sac",
+      "▶ Obtain a Divine Soulshard",
+      "",
+      "◇ Divine Soulshard is also used in the Magical Eye.",
+      "  Farm the Dead King area with both eyes in mind.",
+      "  Two eyes. One dungeon. One farm run."
+    ],
+    "groups": {"Where the Skin Tears": {"position": [150, 300]}},
+    "icon": {"item": {"id": "irons_spellbooks:divine_soulshard", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

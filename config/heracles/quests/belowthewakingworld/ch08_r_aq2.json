@@ -1,0 +1,57 @@
+{
+  "dependencies": ["ch08_r_aq1"],
+  "tasks": {
+    "cornelia": {
+      "title": "Defeat Captain Cornelia (Aquamirae — Frozen Ocean, requires Drowned World scroll researched)",
+      "icon": {"item": {"id": "minecraft:blue_ice", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "aquamirae_loot": {
+      "title": "Collect armor or weapon drops from Captain Cornelia",
+      "icon": {"item": {"id": "minecraft:iron_chestplate", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "prismarine": {
+      "item": {"id": "minecraft:prismarine", "count": 16},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Captain Cornelia"},
+    "subtitle": {"text": "She kept sailing after she should have stopped."},
+    "description": [
+      "Captain Cornelia is an Aquamirae boss in Frozen Ocean biomes.",
+      "She cannot be damaged until the Drowned World scroll is researched.",
+      "The boss lock system is intentional.",
+      "",
+      "She drops Aquamirae armor pieces and unique loot.",
+      "Her drops are the equipment tier for deep ocean exploration.",
+      "",
+      "Prepare: Water Breathing potions, fire resistance for the cold,",
+      "swift sneak from the Ancient City for repositioning.",
+      "",
+      "The ice is her territory. You are the visitor.",
+      "Respect that long enough to win.",
+      "",
+      "→ Defeat Captain Cornelia [check]",
+      "→ Collect her drops [check]"
+    ],
+    "groups": {"Below the Waking World": {"position": [-300, 0]}},
+    "icon": {"item": {"id": "minecraft:nautilus_shell", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "display_name": "On the Green Genie",
+  "research_time": 5400,
+  "items": [
+    "as_you_wish:heart_of_the_desert",
+    "as_you_wish:wishing_lamp"
+  ],
+  "tags": [],
+  "mods": [
+    "as_you_wish"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

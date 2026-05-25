@@ -1,0 +1,71 @@
+{
+  "dependencies": ["ch15_r_skills1"],
+  "tasks": {
+    "pressure_heart": {
+      "title": "Check Pressure mod heart status — monitor cardiovascular health after the intensity of Ch13-14",
+      "icon": {"item": {"id": "minecraft:red_dye", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "sculk_cured": {
+      "title": "Confirm Sculk Sickness is cured (Sculk Sickness mod — use Ambrosia if at Stage 2+)",
+      "icon": {"item": {"id": "minecraft:sculk", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "full_diet": {
+      "title": "Achieve maximum Diet mod coverage across all 5 food groups — the post-adventure nutritional baseline",
+      "icon": {"item": {"id": "minecraft:apple", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "ambrosia": {
+      "item": {"id": "sculksickness:ambrosia", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Full Health"},
+    "subtitle": {"text": "You are not invincible. You are prepared. Those are different things."},
+    "description": [
+      "After the intensity of the End chapters, run a full health audit.",
+      "",
+      "Pressure mod:",
+      "The heart health system tracks cardiovascular strain from combat and falls.",
+      "High-intensity periods (the dragon fight, Trigon, deep End) strain the heart.",
+      "Rest and normal activity allows recovery.",
+      "Check the Pressure UI to confirm you are in a safe range.",
+      "",
+      "Sculk Sickness:",
+      "5 stages of infection from Sculk exposure in Ch08.",
+      "Stage 1-2: Minor debuffs. Stage 3-4: Significant debuffs. Stage 5: Dangerous.",
+      "Ambrosia cures it. Sculk Sickness can be carried for many chapters unnoticed.",
+      "Vile Herb (used for Cursed Eye in Ch12) is also connected to this system.",
+      "Confirm you are at Stage 0 — cured.",
+      "",
+      "Diet:",
+      "5 groups: grain, protein, fruit, vegetable, dairy.",
+      "Maximum coverage gives permanent stat bonuses.",
+      "After the End, your diet may be heavy on End foods and light on basics.",
+      "Rebalance it before Ch16.",
+      "",
+      "→ Audit Pressure mod heart health [check]",
+      "→ Confirm Sculk Sickness is cured [check]",
+      "→ Achieve full 5-group Diet coverage [check]"
+    ],
+    "groups": {"After the Dragon": {"position": [300, 150]}},
+    "icon": {"item": {"id": "sculksickness:ambrosia", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

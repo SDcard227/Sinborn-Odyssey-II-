@@ -1,0 +1,62 @@
+{
+  "dependencies": ["ch15_world"],
+  "tasks": {
+    "check_season": {
+      "title": "Check the current Serene Seasons season — note what crops are currently fertile",
+      "icon": {"item": {"id": "minecraft:wheat", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "seasonal_farm": {
+      "title": "Plant a seasonal crop that is currently fertile according to Serene Seasons",
+      "icon": {"item": {"id": "minecraft:wheat_seeds", "count": 8}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "wheat": {
+      "item": {"id": "minecraft:wheat", "count": 32},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "What Season Is It"},
+    "subtitle": {"text": "The world continued while you were gone. Seasons changed. Crops grew and died."},
+    "description": [
+      "Serene Seasons adds four seasons to the Overworld.",
+      "Each season affects temperature, weather, and crop fertility.",
+      "",
+      "Seasons in Serene Seasons:",
+      "Spring — most crops fertile, moderate temperature",
+      "Summer — heat-tolerant crops fertile, high temperature (Cold Sweat overlap)",
+      "Autumn — harvest season, reduced fertility",
+      "Winter — most crops frozen, only cold-tolerant crops viable",
+      "",
+      "You have been in the End.",
+      "Seasons do not apply in the End.",
+      "When you return, the season has changed without you.",
+      "",
+      "This is the Frieren time-skip in mechanical form:",
+      "the world moved on while the adventure was happening.",
+      "Check what season you returned to.",
+      "Plant accordingly.",
+      "",
+      "→ Check the current season [check]",
+      "→ Plant a currently-fertile seasonal crop [check]"
+    ],
+    "groups": {"After the Dragon": {"position": [-150, 150]}},
+    "icon": {"item": {"id": "minecraft:wheat", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "dependencies": ["ch17_r_genie1"],
+  "tasks": {
+    "make_wish": {
+      "title": "Make a wish using the Genie (As You Wish mod — choose a wish that benefits your civilization)",
+      "icon": {"item": {"id": "asyouwish:magic_lamp", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "wish_used": {
+      "title": "Experience the outcome of your wish — the Genie delivers what was asked",
+      "icon": {"item": {"id": "minecraft:nether_star", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "nether_star": {
+      "item": {"id": "minecraft:nether_star", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 16},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Wish"},
+    "subtitle": {"text": "There are no wrong wishes at Ch17. You have done the hard part already."},
+    "description": [
+      "The Genie's wishes in As You Wish include various gameplay effects:",
+      "- Resources (materials, items)",
+      "- Abilities (effects, buffs)",
+      "- World changes (structure generation, mob changes)",
+      "",
+      "You have been earning things through work since Ch01.",
+      "This is the one time something is given to you.",
+      "Use it on something you actually want.",
+      "",
+      "In the lore context:",
+      "The Genie represents the one rule exception —",
+      "the universe acknowledging that you did everything correctly.",
+      "Every previous civilization fell. You didn't.",
+      "One wish is the universe's way of saying it noticed.",
+      "",
+      "The Goldcrown mod (goldcrownissb) may have related interactions.",
+      "The Scarlet Crown from the Manifestor Trap may have late-game effects.",
+      "The Philosopher's Stone from Ch16 (optional) amplifies this further.",
+      "",
+      "→ Make a wish [check]",
+      "→ Experience the outcome [check]"
+    ],
+    "groups": {"Lords of All": {"position": [300, 0]}},
+    "icon": {"item": {"id": "asyouwish:magic_lamp", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

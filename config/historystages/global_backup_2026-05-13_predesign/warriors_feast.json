@@ -1,0 +1,32 @@
+{
+  "display_name": "The Jade Kitchen",
+  "research_time": 1800,
+  "items": [
+    "culturaldelights:dumpling",
+    "culturaldelights:sushi",
+    "culturaldelights:tempura",
+    "culturaldelights:steamed_bun",
+    "culturaldelights:onigiri",
+    "culturaldelights:ramen",
+    "culturaldelights:teriyaki_rice",
+    "culturaldelights:chicken_satay",
+    "culturaldelights:matcha_dango",
+    "culturaldelights:bao",
+    "youkaisfeasts:rice_ball",
+    "youkaisfeasts:tofu",
+    "youkaisfeasts:miso_soup",
+    "youkaisfeasts:nigiri",
+    "youkaisfeasts:tempura",
+    "youkaisfeasts:dango",
+    "youkaisfeasts:senbei",
+    "youkaisfeasts:taiyaki",
+    "youkaisfeasts:gyoza"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

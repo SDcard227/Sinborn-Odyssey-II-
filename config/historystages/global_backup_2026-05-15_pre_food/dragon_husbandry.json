@@ -1,0 +1,22 @@
+{
+  "display_name": "Dragon Husbandry",
+  "research_time": 10800,
+  "items": [
+    "iceandfire:dragon_horn",
+    "iceandfire:dragon_whistle",
+    "iceandfire:hippogryph_egg",
+    "iceandfire:summoning_crystal_fire",
+    "iceandfire:summoning_crystal_ice",
+    "iceandfire:summoning_crystal_lightning"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

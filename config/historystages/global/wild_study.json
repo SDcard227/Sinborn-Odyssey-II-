@@ -1,0 +1,18 @@
+{
+  "display_name": "The Wild Study",
+  "research_time": 5400,
+  "items": [
+    "alexscaves:biome_treat",
+    "alexscaves:cave_compendium"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

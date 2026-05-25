@@ -1,0 +1,27 @@
+
+[chat]
+	#Local chat radius in blocks
+	#Range: 1 ~ 512
+	localChatRadius = 64
+	#/me chat radius in blocks
+	#Range: 1 ~ 512
+	meChatRadius = 64
+	#Prefix for global chat messages
+	globalPrefix = "§f✉§r §8|§r "
+	#Prefix for local chat messages
+	localPrefix = "§7L §8|§r "
+	#Enable global chat (!message). If false — global chat is disabled
+	globalEnabled = true
+	#Does global chat require a letter item?
+	globalRequiresLetter = true
+
+	[chat.censor]
+		#1 = no censor, 2 = replace, 3 = block
+		#Range: 1 ~ 3
+		global_mode = 2
+		#1 = no censor, 2 = replace, 3 = block
+		#Range: 1 ~ 3
+		local_mode = 1
+		#Banned words list
+		words = ["badword"]
+

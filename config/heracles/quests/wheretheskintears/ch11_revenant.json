@@ -1,0 +1,56 @@
+{
+  "dependencies": ["ch11_world"],
+  "tasks": {
+    "revenant": {
+      "title": "Defeat the Ignited Revenant (Cataclysm — fire-based boss, spawns after Ancient Remnant kill)",
+      "icon": {"item": {"id": "cataclysm:ignitium_ingot", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "fire_resistance": {
+      "type": "heracles:item",
+      "item": "minecraft:potion",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "ignitium": {
+      "item": {"id": "cataclysm:ignitium_ingot", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Ignited Revenant"},
+    "subtitle": {"text": "Fire as transformation, not destruction. Until it becomes destruction."},
+    "description": [
+      "The Ignited Revenant becomes available after the Ancient Remnant falls.",
+      "It is a fire-based Cataclysm boss — heavy fire damage output.",
+      "",
+      "Bring fire resistance potions.",
+      "The Magma Gelatin from Ch06 works here — 60 seconds per serving.",
+      "Netherite armor reduces fire damage but does not eliminate it.",
+      "",
+      "The Ignited Revenant is an intermediate step on the path to Ignis.",
+      "Each Cataclysm boss opens the next.",
+      "The chain does not offer shortcuts.",
+      "",
+      "→ Defeat the Ignited Revenant [check]",
+      "→ Have 4 Fire Resistance potions for this and subsequent fights"
+    ],
+    "groups": {"Where the Skin Tears": {"position": [0, 150]}},
+    "icon": {"item": {"id": "cataclysm:ignitium_ingot", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

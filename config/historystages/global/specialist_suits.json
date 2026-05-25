@@ -1,0 +1,24 @@
+{
+  "display_name": "Specialist Suits",
+  "research_time": 10800,
+  "items": [
+    "alexscaves:diving_boots",
+    "alexscaves:diving_chest",
+    "alexscaves:diving_helmet",
+    "alexscaves:diving_leggings",
+    "alexscaves:hazmat_boots",
+    "alexscaves:hazmat_chestplate",
+    "alexscaves:hazmat_leggings",
+    "alexscaves:hazmat_mask"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "dependencies": ["ch06_gate"],
+  "tasks": {
+    "setup_pumpjack": {
+      "title": "Assemble a TFMG Pumpjack over an oil deposit (7-block multiblock)",
+      "icon": {"item": {"id": "tfmg:drill_bit", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "crude_oil": {
+      "type": "heracles:item",
+      "item": "tfmg:crude_oil_bucket",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "drill": {
+      "item": {"id": "tfmg:drill_bit", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Black Blood"},
+    "subtitle": {"text": "The ground holds more than ore."},
+    "description": [
+      "Every civilization before you found it eventually.",
+      "The black seep near bedrock depth.",
+      "It looked like waste. It was the next age.",
+      "",
+      "TFMG Oil Deposits generate between Y: -60 and Y: -30.",
+      "Build the Pumpjack over the deposit — 7-block multiblock.",
+      "Connect fluid pipes. The crude oil flows up.",
+      "",
+      "Crude oil alone is not useful.",
+      "What you do with it is the chapter.",
+      "",
+      "→ Assemble a Pumpjack over an oil deposit [check]",
+      "→ Collect 4 buckets of Crude Oil"
+    ],
+    "groups": {"Blood and Oil": {"position": [0, 0]}},
+    "icon": {"item": {"id": "tfmg:drill_bit", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

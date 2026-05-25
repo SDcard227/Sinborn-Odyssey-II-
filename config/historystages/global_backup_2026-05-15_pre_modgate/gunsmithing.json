@@ -1,0 +1,15 @@
+{
+  "display_name": "Gunsmithing",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

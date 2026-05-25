@@ -1,0 +1,54 @@
+{
+  "dependencies": ["ch05_mca"],
+  "tasks": {
+    "rose_gold": {
+      "type": "heracles:item",
+      "item": "mca:rose_gold_ingot",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "rose": {
+      "title": "Give a rose to raise a villager's opinion of you",
+      "icon": {"item": {"id": "minecraft:rose_bush", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 4},
+      "type": "heracles:item"
+    },
+    "ring": {
+      "item": {"id": "mca:ring", "count": 1},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Rose"},
+    "subtitle": {"text": "Reputation is a currency too."},
+    "description": [
+      "Giving a rose raises an MCA villager's opinion of you.",
+      "This is how relationships begin: small gifts, consistently.",
+      "",
+      "Rose Gold is an MCA material — used in high-tier items.",
+      "Craft it from gold and rose quartz.",
+      "",
+      "The Ring is the next step.",
+      "Marriage requires a ring and maximum reputation.",
+      "",
+      "→ Collect 4 Rose Gold ingots",
+      "→ Give a rose to a villager [check]"
+    ],
+    "groups": {"The Spoken Word": {"position": [150, 300]}},
+    "icon": {"item": {"id": "mca:ring", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

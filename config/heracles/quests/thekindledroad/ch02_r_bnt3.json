@@ -1,0 +1,52 @@
+{
+  "dependencies": ["ch02_r_bnt2"],
+  "tasks": {
+    "bounties": {
+      "title": "Complete 3 more bounties",
+      "icon": {"item": {"id": "minecraft:paper", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "crown": {
+      "type": "heracles:item",
+      "item": "numismatics:crown",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 2},
+      "type": "heracles:item"
+    },
+    "diamond": {
+      "item": {"id": "minecraft:diamond", "count": 1},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Proven Hunter"},
+    "subtitle": {"text": "Reputation is a currency too."},
+    "description": [
+      "Three more contracts. Each one teaches you something.",
+      "How the board selects difficulty. What rewards are worth chasing.",
+      "Which bounties are traps.",
+      "",
+      "Accumulate a crown. It is worth 512 spurs.",
+      "The first time you hold one, you understand the economy.",
+      "",
+      "→ Complete 3 more bounties [check]",
+      "→ Earn and hold 1 crown"
+    ],
+    "groups": {"The Kindled Road": {"position": [450, 150]}},
+    "icon": {"item": {"id": "numismatics:crown", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

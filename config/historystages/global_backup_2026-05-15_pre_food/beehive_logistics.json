@@ -1,0 +1,22 @@
+{
+  "display_name": "Beehive Logistics",
+  "research_time": 5400,
+  "items": [
+    "minecraft:bee_nest",
+    "minecraft:beehive",
+    "minecraft:honey_block",
+    "minecraft:honeycomb_block"
+  ],
+  "tags": [],
+  "mods": [
+    "cbbees"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

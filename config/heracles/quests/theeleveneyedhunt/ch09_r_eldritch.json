@@ -1,0 +1,115 @@
+{
+  "dependencies": [
+    "ch09_portal"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/eldritch_theory"
+    },
+    "echo_shard": {
+      "type": "heracles:item",
+      "item": "minecraft:echo_shard",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "spell_scroll": {
+      "item": {
+        "id": "irons_spellbooks:scroll",
+        "count": 3
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 4
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Eldritch Theory"
+    },
+    "subtitle": {
+      "text": "The End Endermen know something. They drop the scroll at 5%. Farm enough of them and eventually they share it."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.09 · ELDRITCH THEORY",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Eldritch school of Iron's Spellbooks",
+      "  is the final school unlocked.",
+      "  It does not exist in overworld magic.",
+      "  It only exists in the End.",
+      "  The scroll confirms why.",
+      "",
+      "◈ ELDRITCH SCHOOL (ISS)",
+      "  └ Material: Echo Shard (harvested from Ancient Cities",
+      "    and End dimension loot)",
+      "  └ Spells include:",
+      "    ✦ Void Lasso: pull target toward you",
+      "    ✦ Ender Shriek: AoE stagger, silence nearby mobs",
+      "    ✦ Phase Step: short-range blink through walls",
+      "    ✦ Eldritch Blast: void-damage ranged projectile",
+      "  └ Level III Eldritch: requires high mana capacity,",
+      "    End-tier materials, arcane worktable",
+      "  └ Eldritch spells give bonus XP when cast",
+      "    (Puffish Skills — fastest way to level Eldritch tree)",
+      "",
+      "◈ ENDERMAN DROP CONTEXT",
+      "  └ 5% drop — requires Enderman farm to guarantee",
+      "  └ Best farm location: End island plateau above portal",
+      "  └ Enderman Overhaul adds 20+ variants in the End",
+      "    (different biomes yield different variant types)",
+      "  └ Looting III sword increases effective drop rate",
+      "",
+      "◈ SCROLL: Eldritch Theory",
+      "  └ 5% drop from Endermen in The End",
+      "  └ Research time: 30 min",
+      "  └ Unlocks: Eldritch school full spell list,",
+      "    Echo Shard as school reagent, void damage type",
+      "",
+      "▸ The End Endermen are not like overworld Endermen.",
+      "  They have been here longer.",
+      "  They carry something in them",
+      "  that the overworld versions left behind.",
+      "  The scroll is that something, written down.",
+      "",
+      "▶ Find the Eldritch Theory scroll [check]",
+      "▶ Collect 4 Echo Shards",
+      "",
+      "◇ Echo Shards also drop from Ancient City chests.",
+      "  Farm both zones — the Warden fight (Ch08)",
+      "  and the End Endermen — simultaneously."
+    ],
+    "groups": {
+      "The Eleven-Eyed Hunt": {
+        "position": [
+          -150,
+          300
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:echo_shard",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

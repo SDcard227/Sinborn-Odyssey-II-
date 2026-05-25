@@ -1,0 +1,85 @@
+{
+  "dependencies": ["ch10_reactor"],
+  "tasks": {
+    "solar_array": {
+      "title": "Build a Create: New Age Solar Panel array — daytime passive FE generation for supplemental power",
+      "icon": {"item": {"id": "create_new_age:solar_panel", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "battery_buffer": {
+      "title": "Set up a Battery Box buffer between solar array and consumers — store daytime FE for nighttime use",
+      "icon": {"item": {"id": "create_new_age:battery_box", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "solar_panel": {"item": {"id": "create_new_age:solar_panel", "count": 4}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 6}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "The Solar Array"},
+    "subtitle": {"text": "The reactor runs forever. The sun runs for free. Both are worth having. The battery connects them."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.10 · THE SOLAR ARRAY",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Nuclear Reactor generates heat round the clock.",
+      "  Solar Panels generate FE only in daylight.",
+      "  They are not competing systems.",
+      "  They are complementary:",
+      "  Solar covers the surplus. Reactor covers the baseline.",
+      "",
+      "◈ SOLAR PANEL SETUP",
+      "  └ Place on surface blocks with sky access",
+      "  └ No shading: adjacent blocks at same height",
+      "    will reduce output (place panels elevated)",
+      "  └ Array scaling: FE output multiplies linearly",
+      "    with panel count",
+      "  └ Peak output: noon (60 min game day midpoint)",
+      "  └ Zero output: night, rain, underground",
+      "",
+      "◈ BATTERY BOX BUFFERING",
+      "  └ CNA Battery Box: FE storage unit",
+      "  └ Chain multiple boxes in series for larger reserves",
+      "  └ Solar → Battery Box → Consumer (via wire coil)",
+      "  └ Battery maintains consumer power during night",
+      "    and overcast periods without reactor intervention",
+      "  └ Prioritize: charge battery fully before routing",
+      "    solar output directly to machines",
+      "",
+      "◈ HYBRID CONFIGURATION",
+      "  └ Recommended: Solar → Battery Bank → Laser Cutter",
+      "    (Laser Cutter benefits from battery smoothing)",
+      "  └ Reactor → Generator Coil → Main Grid",
+      "    (Reactor handles constant-demand machines)",
+      "  └ Grid balance: FE surplus from solar charges",
+      "    battery without overloading reactor output",
+      "",
+      "▸ The Engineers built the first solar array",
+      "  because they were afraid the reactor would fail.",
+      "  The reactor never failed.",
+      "  The solar array outlasted the civilization anyway.",
+      "  Redundancy is how things survive.",
+      "",
+      "▶ Build a Solar Panel array [check]",
+      "▶ Set up a Battery Box buffer [check]",
+      "",
+      "◇ Solar arrays are the best power setup for",
+      "  outpost machines (distant farms, mining camps).",
+      "  No shaft infrastructure needed.",
+      "  Wire coil from base or local panels — either works."
+    ],
+    "groups": {"The Pale Shore": {"position": [300, 300]}},
+    "icon": {"item": {"id": "create_new_age:solar_panel", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "display_name": "Eye Synthesis",
+  "research_time": 14400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "end_remastered_promax"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

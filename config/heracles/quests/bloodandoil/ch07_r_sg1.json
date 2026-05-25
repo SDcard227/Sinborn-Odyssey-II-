@@ -1,0 +1,57 @@
+{
+  "dependencies": ["ch07_steel"],
+  "tasks": {
+    "steel_chestplate": {
+      "title": "Craft a TFMG Steel Chestplate or full Steel armor set",
+      "icon": {"item": {"id": "tfmg:steel_chestplate", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "steel_ingot_stockpile": {
+      "type": "heracles:item",
+      "item": "tfmg:steel_ingot",
+      "amount": 32,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "steel_helmet": {
+      "item": {"id": "tfmg:steel_helmet", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Steel Body"},
+    "subtitle": {"text": "The factory makes armor. Wear what you make."},
+    "description": [
+      "TFMG Steel armor sits between iron and diamond.",
+      "Better protection. Requires the Industrial Blast Furnace path.",
+      "The engineering cost is the upgrade cost.",
+      "",
+      "Steel Chestplate, Leggings, Boots, Helmet.",
+      "Each one requires Steel Ingots from the IBF chain.",
+      "You have the factory. You have the ingots.",
+      "Dress accordingly for what comes after the oil age.",
+      "",
+      "The next chapters involve things that require more than iron.",
+      "Armor up before you go looking.",
+      "",
+      "→ Stockpile 32 Steel Ingots",
+      "→ Craft a TFMG Steel Chestplate or full armor set [check]"
+    ],
+    "groups": {"Blood and Oil": {"position": [150, 150]}},
+    "icon": {"item": {"id": "tfmg:steel_chestplate", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

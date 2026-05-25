@@ -1,0 +1,92 @@
+{
+  "dependencies": [
+    "ch09_r_kuku1"
+  ],
+  "tasks": {
+    "kukulkan": {
+      "type": "heracles:kill_entity",
+      "entity": "call_of_yucutan:kukulkan",
+      "amount": 1
+    },
+    "fragment": {
+      "type": "heracles:item",
+      "item": "call_of_yucutan:fragment_of_rebirth",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "ancient_gold_stack": {
+      "type": "heracles:item",
+      "item": "call_of_yucutan:ancient_gold_ingot",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "gold_reward": {
+      "item": {
+        "id": "call_of_yucutan:ancient_gold_ingot",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 12
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "Kukulkan"
+    },
+    "subtitle": {
+      "text": "It did not bury the Eye to protect you. It buried it to protect the sky."
+    },
+    "description": [
+      "Kukulkan drops the Fragment of Rebirth — guaranteed.",
+      "It also drops Ancient Gold Ingots x3-4.",
+      "",
+      "⚠️ Note: kukulkan_scale does NOT exist in this pack.",
+      "The real guaranteed drop is fragment_of_rebirth.",
+      "",
+      "The Fragment of Rebirth is the primary ingredient",
+      "in the Lost Eye recipe.",
+      "The Sky Civilization reached beyond what the world permitted.",
+      "Their Eye records that reaching. It also records the fall.",
+      "",
+      "Kukulkan is not a villain.",
+      "It is a caretaker of something it was asked to keep.",
+      "You asked it to stop.",
+      "",
+      "→ Kill Kukulkan [check]",
+      "→ Collect the Fragment of Rebirth (guaranteed drop)",
+      "→ Collect 4 Ancient Gold Ingots"
+    ],
+    "groups": {
+      "The Eleven-Eyed Hunt": {
+        "position": [
+          -300,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "call_of_yucutan:fragment_of_rebirth",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

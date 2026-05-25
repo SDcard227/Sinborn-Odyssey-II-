@@ -1,0 +1,85 @@
+{
+  "dependencies": [
+    "ch01_r_mine"
+  ],
+  "tasks": {
+    "backpack": {
+      "title": "Craft a Sophisticated Backpack (Sophisticated Backpacks — Tier 1, leather backpack)",
+      "icon": {
+        "item": {
+          "id": "sophisticatedbackpacks:backpack",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/survivor_codex"
+    }
+  },
+  "rewards": {
+    "leather": {
+      "item": {
+        "id": "minecraft:leather",
+        "count": 16
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:sprocket",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "On Organized Carrying"
+    },
+    "subtitle": {
+      "text": "Before civilization, someone learned to carry more than their hands could hold."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.01 · ORGANIZED CARRYING",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The backpack is the base unit of survival.",
+      "  Organize it. Label it in your mind.",
+      "  Everything you carry should have a reason.",
+      "",
+      "◈ Covered by: Survivor's Codex",
+      "  └ Granted in your starting pack",
+      "  └ Unlocks: Sophisticated Backpacks, Overpacked",
+      "",
+      "▶ Check: Survivor's Codex received [auto]"
+    ],
+    "groups": {
+      "Born from Ash and Hunger": {
+        "position": [
+          300,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "sophisticatedbackpacks:backpack",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

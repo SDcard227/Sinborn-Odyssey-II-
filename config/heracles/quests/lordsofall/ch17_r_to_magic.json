@@ -1,0 +1,87 @@
+{
+  "dependencies": ["ch17_r_spells1"],
+  "tasks": {
+    "leviathan_payoff": {
+      "title": "Use all T.O. Magic (traveloptics:) spells unlocked from the Leviathan materials in Ch11",
+      "icon": {"item": {"id": "irons_spellbooks:arcane_essence", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "void_school_max": {
+      "title": "Max out the Void/Ender school ISS spells — equip the highest tier Eldritch spells available",
+      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "arcane_essence": {"item": {"id": "irons_spellbooks:arcane_essence", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "T.O. Magic Payoff"},
+    "subtitle": {"text": "T.O. Magic is an ISS addon, not a travel mod. The namespace is traveloptics: — the spells are void-school payoffs."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.17 · T.O. MAGIC PAYOFF",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ T.O. Magic (traveloptics: namespace) is an ISS addon.',",
+      "  Common confusion: the name sounds like a travel mod.',",
+      "  It is not. It is a magic mod that extends ISS.',",
+      "  Its spells are unlocked through Leviathan kill materials (Ch11)',",
+      "  and are the highest tier void/ender school spells in the pack.',",
+      "",
+      "◈ T.O. MAGIC SPELL ACCESS",
+      "  └ Leviathan materials (Ch11): dropped items feed into',",
+      "    traveloptics: spell scroll recipes (check JEI: traveloptics:)',",
+      "  └ Spell tier: above base ISS school maximum',",
+      "  └ Key spells: void-school damage types, dimensional manipulation,',",
+      "    extended range attacks',",
+      "  └ Abyssal Beam: primary T.O. Magic payoff (see Archmage quest)',",
+      "  └ Secondary spells: check JEI for full traveloptics: spell list',",
+      "",
+      "◈ VOID/ENDER SCHOOL MAXIMIZATION",
+      "  └ ISS Eldritch school base spells: available since Ch09',",
+      "  └ T.O. Magic adds extensions above the base school ceiling',",
+      "  └ Full loadout: base Eldritch spells + T.O. Magic extensions',",
+      "  └ Ring of Mana: required for sustained void casting',",
+      "    (T.O. Magic spells have high mana cost)',",
+      "  └ Mana regeneration: Eldritch focus + Ring of Mana + skill tree',",
+      "    (Ch15 Puffish Magic skill tree should be maxed by now)',",
+      "",
+      "◈ AGAINST CH17 ENDGAME",
+      "  └ T.O. Magic spells vs Ch17 content:',",
+      "    Any remaining Cataclysm mobs (void type) → full void bonus',",
+      "    Any divine/PTD boss encounters → mixed damage types',",
+      "    Nuclear test witnesses → fire resistance + void beam',",
+      "  └ Combine with ISS Blood school for sustain during long fights',",
+      "",
+      "▸ The Leviathan was a deep-ocean creature.',",
+      "  It lived in a place where void and ocean overlap.',",
+      "  The magic it carried was neither fully ocean nor fully void.',",
+      "  T.O. Magic bottled that overlap.',",
+      "  The spells are the overlap applied.',",
+      "  You killed the Leviathan in Ch11.',",
+      "  The spell is the reason why it mattered.',",
+      "",
+      "▶ Use all T.O. Magic spells from Leviathan materials [check]",
+      "▶ Max out the Void/Ender ISS school loadout [check]",
+      "",
+      "◇ For other ISS addon mods in the pack:',",
+      "  check JEI filtered by school-adjacent namespaces.',",
+      "  T.O. Magic (traveloptics:) is the primary confirmed addon.',",
+      "  Others may exist — the Leviathan is not the only boss',",
+      "  that drops ISS school materials."
+    ],
+    "groups": {"Lords of All": {"position": [-600, 0]}},
+    "icon": {"item": {"id": "irons_spellbooks:arcane_essence", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

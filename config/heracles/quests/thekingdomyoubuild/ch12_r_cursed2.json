@@ -1,0 +1,62 @@
+{
+  "dependencies": ["ch12_r_cursed1"],
+  "tasks": {
+    "cursed_eye": {
+      "title": "Craft the Cursed Eye (center: Scarlet Crown + sandy diamond block + lava power cell + withered nether star + vile herb)",
+      "icon": {"item": {"id": "endrem:cursed_eye", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "place_cursed": {
+      "title": "Place the Cursed Eye in the final frame slot — the portal is nearly ready",
+      "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "cursed_eye_reward": {
+      "item": {"id": "endrem:cursed_eye", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 10},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Cursed Eye"},
+    "subtitle": {"text": "The last custom eye. The portal is now asking you the final question."},
+    "description": [
+      "The Cursed Eye is in the frame.",
+      "Nine custom eyes placed.",
+      "Three anchor eyes placed (Nether, Guardian, Wither).",
+      "",
+      "The Cursed Eye was always the last one.",
+      "This is not accidental.",
+      "Whoever designed this portal system knew what it would take.",
+      "They built it anyway.",
+      "So did you.",
+      "",
+      "The previous civilization made all the same discoveries.",
+      "Made all the same choices.",
+      "Chose the Manifestor fully.",
+      "Became the cycle's warning.",
+      "Became the Wither Storm you just survived.",
+      "",
+      "Twelve eyes placed. The portal is complete.",
+      "",
+      "→ Craft the Cursed Eye [check]",
+      "→ Place it in the portal frame [check]"
+    ],
+    "groups": {"The Kingdom You Build": {"position": [300, 0]}},
+    "icon": {"item": {"id": "endrem:cursed_eye", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

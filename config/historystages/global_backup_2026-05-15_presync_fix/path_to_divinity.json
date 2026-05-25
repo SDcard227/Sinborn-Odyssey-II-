@@ -1,0 +1,40 @@
+{
+  "display_name": "On the Path to Divinity",
+  "research_time": 28800,
+  "items": [
+    "ptd:philosophers_stone",
+    "ptd:homunculus",
+    "ptd:dark_essence",
+    "ptd:mass_accumulate",
+    "ptd:soul_jar",
+    "divine:philosophers_stone",
+    "divine:divine_book",
+    "divine:divine_essence",
+    "goldcrownissb:iron_crown",
+    "goldcrownissb:gold_crown",
+    "end_remastered_promax:vault_eye",
+    "celestisynth:keres",
+    "celestisynth:keres_sword",
+    "dungeons_and_combat:monarch_helmet",
+    "dungeons_and_combat:monarch_chestplate",
+    "dungeons_and_combat:monarch_leggings",
+    "dungeons_and_combat:monarch_boots",
+    "dungeons_and_combat:monarch_robe",
+    "dungeons_and_combat:crimson_sword",
+    "dungeons_and_combat:crimson_greatsword",
+    "dungeons_and_combat:crimson_dagger",
+    "traveloptics:cradle_of_will",
+    "traveloptics:stellothorn",
+    "traveloptics:withered_excrucis"
+  ],
+  "tags": [],
+  "mods": [
+    "ptd",
+    "divine"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

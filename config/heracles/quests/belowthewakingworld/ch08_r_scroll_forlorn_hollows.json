@@ -1,0 +1,79 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the The Forlorn Hollows scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the The Forlorn Hollows scroll",
+      "icon": {
+        "item": {
+          "id": "alexscaves:cloak_of_darkness",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock forlorn_hollows"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "The Forlorn Hollows"
+    },
+    "subtitle": {
+      "text": "Thornwood, shadow-silk, and the watchers who knit it."
+    },
+    "description": [
+      "\"The dark down here is not absence of light. It is presence of something else.\"",
+      "",
+      "This scroll unlocks 65 items.",
+      "",
+      "\u25c8 Found in: chests of the Forlorn Hollows biome",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [The Forlorn Hollows] [auto]"
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          1364,
+          780
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "alexscaves:cloak_of_darkness",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

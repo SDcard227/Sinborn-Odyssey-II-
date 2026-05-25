@@ -1,0 +1,87 @@
+{
+  "dependencies": ["ch11_r_the_wither"],
+  "tasks": {
+    "dim_bottle": {
+      "title": "Craft and use a Dimensional Bottle (Dimensional Tears mod) — replaces flint & steel for portal ignition",
+      "icon": {"item": {"id": "minecraft:glass_bottle", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "portal_network": {
+      "title": "Set up a 3-portal network with Dimensional Tears — Overworld, Nether, and one custom dimension link",
+      "icon": {"item": {"id": "minecraft:obsidian", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "obsidian": {"item": {"id": "minecraft:obsidian", "count": 16}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:cog", "count": 6}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "Dimensional Tears"},
+    "subtitle": {"text": "Flint and steel tears a hole. The bottle seals it before it tears further. Different philosophies. Same portal."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.11 · DIMENSIONAL TEARS",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Dimensional Tears replaces flint and steel",
+      "  as the portal ignition item.",
+      "  Instead of striking fire, you seal the tear",
+      "  between dimensions with a prepared bottle.",
+      "  The bottle controls where the tear opens.",
+      "  The steel did not.",
+      "",
+      "◈ HOW DIMENSIONAL TEARS WORKS",
+      "  └ Dimensional Bottle: crafted from glass bottle +",
+      "    dimension-specific material (varies by destination)",
+      "  └ Use on portal frame: ignites portal (replaces flint+steel)",
+      "  └ Bottle determines WHICH dimension the portal connects to",
+      "  └ Portal frame: standard obsidian frame (10 obsidian)",
+      "    or larger frame for wider portals",
+      "",
+      "◈ BOTTLE TYPES (DIMENSION-SPECIFIC)",
+      "  └ Nether Bottle: standard Nether portal ignition",
+      "  └ End Bottle: for direct End portal frame ignition",
+      "    (note: End portal still needs 12 eyes — bottle is",
+      "     for custom End-linked portal frames, not the stronghold)",
+      "  └ Custom dimension bottles: created from specific",
+      "    materials for modded dimensions (check JEI)",
+      "  └ True End (Beyond the Dream): requires specific bottle",
+      "    (post-portal Ch13+ content)",
+      "",
+      "◈ PORTAL NETWORK ADVANTAGE",
+      "  └ Dimensional Tears lets you build additional portals",
+      "    at specific locations without using flint+steel",
+      "  └ Home portal at base, Nether hub portal at fortress,",
+      "    and supplemental portal at End outpost",
+      "  └ Create Teleporters handles same-dimension fast travel",
+      "  └ Dimensional Tears handles cross-dimension links",
+      "  └ Combined: teleport network that spans all dimensions",
+      "",
+      "▸ The first civilization to tear a dimensional hole",
+      "  did not have a bottle.",
+      "  They had the steel and the urgency.",
+      "  The bottle is what you use when you have time",
+      "  to do it correctly.",
+      "",
+      "▶ Use a Dimensional Bottle to ignite a portal [check]",
+      "▶ Build a 3-portal dimensional network [check]",
+      "",
+      "◇ Dimensional Tears + Create Teleporters = complete",
+      "  transportation infrastructure.",
+      "  No more manual portal traversal.",
+      "  No more travel time in the late game."
+    ],
+    "groups": {"Where the Skin Tears": {"position": [-600, 150]}},
+    "icon": {"item": {"id": "minecraft:glass_bottle", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

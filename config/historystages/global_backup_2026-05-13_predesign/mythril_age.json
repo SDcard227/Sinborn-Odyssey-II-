@@ -1,0 +1,30 @@
+{
+  "display_name": "The Mythril Age",
+  "research_time": 7200,
+  "items": [
+    "echovoids:mythril_ingot",
+    "echovoids:mythril_block",
+    "echovoids:mythril_ore",
+    "echovoids:mythril_nugget",
+    "echovoids:mythril_sword",
+    "echovoids:mythril_pickaxe",
+    "echovoids:mythril_axe",
+    "echovoids:mythril_shovel",
+    "echovoids:mythril_hoe",
+    "echovoids:mythril_helmet",
+    "echovoids:mythril_chestplate",
+    "echovoids:mythril_leggings",
+    "echovoids:mythril_boots",
+    "echovoids:mythril_smithing_template"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

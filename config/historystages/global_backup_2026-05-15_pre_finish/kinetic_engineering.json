@@ -1,0 +1,25 @@
+{
+  "display_name": "Kinetic Engineering",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "create",
+    "create_aquatic_ambitions",
+    "create_enchantment_industry",
+    "create_factory_logistics",
+    "create_mobile_packages",
+    "create_power_loader",
+    "create_sa",
+    "create_wizardry",
+    "sliceanddice"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

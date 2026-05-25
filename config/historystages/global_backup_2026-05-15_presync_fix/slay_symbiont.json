@@ -1,0 +1,18 @@
+{
+  "display_name": "Slaying the Wither Storm Symbiont",
+  "research_time": 1200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [
+      "witherstormmod:wither_storm",
+      "witherstormmod:withered_symbiont"
+    ],
+    "spawnlock": []
+  }
+}

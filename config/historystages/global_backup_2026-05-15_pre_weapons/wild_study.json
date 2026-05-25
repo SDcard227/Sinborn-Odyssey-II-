@@ -1,0 +1,35 @@
+{
+  "display_name": "The Wild Study",
+  "research_time": 5400,
+  "items": [
+    "alexscaves:biome_treat",
+    "alexscaves:cave_compendium"
+  ],
+  "tags": [],
+  "mods": [
+    "creeperoverhaul",
+    "dracolotl",
+    "endermanoverhaul",
+    "golemoverhaul",
+    "mowzies_cataclysm",
+    "mowziesmobs",
+    "winteroverhaul"
+  ],
+  "mod_exceptions": [
+    "mowziesmobs:earthrend_gauntlet",
+    "mowziesmobs:geomancer_beads.text.0",
+    "mowziesmobs:music_disc_petiole",
+    "mowziesmobs:naga_fang.text.0",
+    "mowziesmobs:naga_fang_dagger",
+    "mowziesmobs:spear",
+    "mowziesmobs:spear.text.0",
+    "mowziesmobs:spear.text.1"
+  ],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

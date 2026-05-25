@@ -1,0 +1,70 @@
+{
+  "dependencies": ["ch08_ocean"],
+  "tasks": {
+    "find_city": {
+      "title": "Locate the Ancient City in the Deep Dark biome",
+      "icon": {"item": {"id": "minecraft:sculk_sensor", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "echo_shard": {
+      "type": "heracles:item",
+      "item": "minecraft:echo_shard",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "swift_sneak": {
+      "title": "Obtain the Swift Sneak enchantment from Ancient City loot",
+      "icon": {"item": {"id": "minecraft:enchanted_book", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "sculk_catalyst": {
+      "item": {"id": "minecraft:sculk_catalyst", "count": 2},
+      "type": "heracles:item"
+    },
+    "echo_shard": {
+      "item": {"id": "minecraft:echo_shard", "count": 2},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 12},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The City Below"},
+    "subtitle": {"text": "They built it. Then the sculk came. Then they came back. Wrong."},
+    "description": [
+      "The Ancient City predates this world's current cycle.",
+      "What built it is unclear. What lives there now is the Warden.",
+      "The sculk is not the city. The sculk is what the city became.",
+      "",
+      "Echo Shards hold positional memory.",
+      "The compass that finds where you last died was built from this material.",
+      "Whoever made the echo shard understood how memory can be stored in objects.",
+      "This connects to the Eye system in ways you will understand later.",
+      "",
+      "Swift Sneak is the unique enchantment from Ancient City chests.",
+      "It allows silent movement while crouching — essential Warden navigation.",
+      "",
+      "Move slow. Make no sound.",
+      "The Warden is not a fight. It is a consequence.",
+      "",
+      "→ Locate the Ancient City [check]",
+      "→ Collect 4 Echo Shards from city chests",
+      "→ Obtain Swift Sneak enchanted book [check]"
+    ],
+    "groups": {"Below the Waking World": {"position": [0, 300]}},
+    "icon": {"item": {"id": "minecraft:echo_shard", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -3,9 +3,9 @@
   "config_datetime": "2026-02-06_00-42-41",
   "general": {
     "disable_all_structures": false,
-    "prevent_structure_overlap": false,
-    "enable_global_spacing_and_separation_modifier": false,
-    "global_spacing_and_separation_modifier": 1.0
+    "prevent_structure_overlap": true,
+    "enable_global_spacing_and_separation_modifier": true,
+    "global_spacing_and_separation_modifier": 0.7
   },
   "structure_namespaces": [],
   "structures": [

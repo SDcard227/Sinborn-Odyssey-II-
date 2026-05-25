@@ -1,0 +1,22 @@
+{
+  "display_name": "Carnal Anatomy",
+  "research_time": 5400,
+  "items": [
+    "incision:flesh",
+    "incision:bone_meal",
+    "incision:dried_skin",
+    "incision:nerve_cluster",
+    "incision:organ",
+    "incision:carnal_block",
+    "incision:flesh_pile"
+  ],
+  "tags": [],
+  "mods": [
+    "incision"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

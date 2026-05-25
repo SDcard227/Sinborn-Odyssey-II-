@@ -1,0 +1,120 @@
+{
+  "dependencies": [
+    "ch08_r_warden1"
+  ],
+  "tasks": {
+    "warden_kill": {
+      "type": "heracles:kill_entity",
+      "entity": "minecraft:warden",
+      "amount": 1
+    },
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/sculk_warning"
+    }
+  },
+  "rewards": {
+    "echo": {
+      "item": {
+        "id": "minecraft:echo_shard",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "sculk": {
+      "item": {
+        "id": "minecraft:sculk_catalyst",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 5
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Warden"
+    },
+    "subtitle": {
+      "text": "You have been watching the Sculk since Ch01. The Warden has been watching you since the first shrieker."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.08 · THE WARDEN",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ The Ch01 Sculk Warning told you not to fight the Warden.",
+      "  This is Ch08.",
+      "  You're ready now.",
+      "  Or you're not. There's only one way to find out.",
+      "",
+      "◈ WARDEN COMBAT REFERENCE",
+      "  └ ▲ Highest HP of any non-boss mob",
+      "  └ Sonic Shriek: AoE damage through armor",
+      "    (armor penetrating — numbers don't help)",
+      "  └ Melee: extremely high damage, knockback",
+      "  └ Detection: vibration + darkness sense",
+      "    Sneak everywhere in the fight area",
+      "  └ Wool + Carpet: place to reduce vibration footprint",
+      "    during setup before summoning",
+      "",
+      "◈ FIGHT STRATEGY",
+      "  └ Approach: never sprint — sneak always",
+      "  └ Trigger: let Warden emerge from ground",
+      "  └ Hit and run: strike + retreat 20+ blocks",
+      "    (out of Sonic Shriek range)",
+      "  └ Bow/Crossbow: safest ranged approach",
+      "  └ Potion: Strength II if meleeing — reduce fight time",
+      "  └ Escape: have a prepared exit path",
+      "    (Warden can follow you up ladders — surprising)",
+      "",
+      "◈ DROP: SCULK WARNING SCROLL",
+      "  └ 40% drop chance from Warden",
+      "  └ Covers: full Sculk Sickness cure path,",
+      "    Ambrosia recipe, Vile Herb mitigation",
+      "  └ Research time: 20 min",
+      "  └ Required for late-game Deep Dark farm setup",
+      "",
+      "▸ The Warden was not born here.",
+      "  The Ancient City had people in it once.",
+      "  The Warden was made to keep something else out.",
+      "  The scroll does not say what.",
+      "",
+      "▶ Defeat the Warden [check]",
+      "▶ Retrieve the Sculk Warning scroll [check]",
+      "",
+      "◇ The Warden is farmable with patient setup.",
+      "  Wool floors, sneak lanes, prepared bows.",
+      "  At that scale, the 40% scroll rate becomes reliable."
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          -450,
+          150
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:sculk_catalyst",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "dependencies": [
+    "ch10_r_elec2"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/new_age_power"
+    },
+    "generator_full": {
+      "title": "Build a full CNA Generator Coil setup with Magnets, Carbon Brushes, and a connected Electric Motor",
+      "icon": {
+        "item": {
+          "id": "create_new_age:magnet",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "steel": {
+      "item": {
+        "id": "tfmg:steel_ingot",
+        "count": 8
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "New Age Power"
+    },
+    "subtitle": {
+      "text": "SU becomes FE. FE becomes SU. The scroll explains the full conversion. The factory is the proof."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.10 · NEW AGE POWER",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Create: New Age bridges the rotational world",
+      "  of Create (SU) with the electrical world (FE).",
+      "  The scroll covers the full conversion system.",
+      "  This is the foundation of the nuclear age.",
+      "",
+      "◈ CORE CONVERSION CHAIN",
+      "  └ ✦ Generator Coil: rotation (SU) → FE output",
+      "    24 SU base impact. Add Magnets to increase FE.",
+      "    Add Carbon Brushes for efficiency.",
+      "    Max: 12 Magnets + 12 Carbon Brushes per coil",
+      "  └ ✦ Electric Motor: FE → SU (reverses conversion)",
+      "    Useful for FE-heavy setups driving Create machines",
+      "    RPM output scales with FE input",
+      "  └ ✦ Energiser: uses BOTH rotation AND FE simultaneously",
+      "    Special applications only — not general power",
+      "",
+      "◈ WIRE COIL NETWORK",
+      "  └ FE transfers over wire coils (copper/iron/gold)",
+      "  └ Copper: lowest tier, short distance",
+      "  └ Iron: mid-distance, no FE loss over 64 blocks",
+      "  └ Gold: long distance, minimal loss",
+      "  └ Switches + Inductors: manage FE distribution",
+      "  └ Battery Box: FE buffer storage between machines",
+      "",
+      "◈ WHY CONVERT",
+      "  └ Many non-Create mods run on FE",
+      "  └ CNA lets your Create windmill or water wheel",
+      "    power those mods without a separate power source",
+      "  └ Nuclear Reactor → Boiler → Steam Engine → Coil → FE",
+      "    is the cleanest high-power setup",
+      "",
+      "◈ SCROLL: New Age Power",
+      "  └ Found in Create laboratory structures,",
+      "    engineer workshop chests, high-tier tech loot",
+      "  └ Research time: 30 min",
+      "  └ Unlocks: full CNA wire/coil/motor reference,",
+      "    FE-to-SU conversion ratios, Energiser applications",
+      "",
+      "▸ The first civilization to build a Generator Coil",
+      "  did not know what they had built.",
+      "  They called it the Pale Machine.",
+      "  They built more.",
+      "",
+      "▶ Find The New Age Power scroll [check]",
+      "▶ Build a full CNA Generator Coil setup [check]",
+      "",
+      "◇ Nuclear Reactor → Generator Coil is the endgame",
+      "  power infrastructure. Build the generator first.",
+      "  Reactor comes after."
+    ],
+    "groups": {
+      "The Pale Shore": {
+        "position": [
+          450,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "create_new_age:magnet",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

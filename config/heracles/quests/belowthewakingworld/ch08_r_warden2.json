@@ -1,0 +1,97 @@
+{
+  "dependencies": [
+    "ch08_r_warden1"
+  ],
+  "tasks": {
+    "kill_warden": {
+      "type": "heracles:kill_entity",
+      "entity": "minecraft:warden",
+      "amount": 1
+    },
+    "city_loot": {
+      "title": "Loot the full Ancient City chest network — including the main chamber",
+      "icon": {
+        "item": {
+          "id": "minecraft:chest",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "echo_shards_final": {
+      "type": "heracles:item",
+      "item": "minecraft:echo_shard",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "disc_5": {
+      "item": {
+        "id": "minecraft:music_disc_5",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 14
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "After the Warden"
+    },
+    "subtitle": {
+      "text": "It did not die defending the city. It died because you left it no other option."
+    },
+    "description": [
+      "Killing the Warden drops its reinforced carapace — the only source",
+      "of the Sonic Boom effect for player use.",
+      "It is 250 HP and fires Sonic Boom regardless of armor.",
+      "",
+      "If you fought it: milk removes Mining Fatigue.",
+      "The fight is manageable with maximum armor, resistance potions,",
+      "and the acceptance that you will take significant damage.",
+      "",
+      "The Ancient City main chamber holds the best non-boss loot",
+      "in the deep game. Music Disc 5 plays in the city when found.",
+      "Swift Sneak books. High-tier enchanted items.",
+      "This is the payoff for surviving the descent.",
+      "",
+      "The city is someone else's. The loot is yours now.",
+      "",
+      "→ Kill the Warden (optional but documented) [check]",
+      "→ Loot the complete Ancient City chest network [check]",
+      "→ Collect 4 more Echo Shards from main chamber"
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          300,
+          300
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:music_disc_5",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

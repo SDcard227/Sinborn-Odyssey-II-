@@ -1,0 +1,75 @@
+{
+  "dependencies": [
+    "ch12_scarlet"
+  ],
+  "tasks": {
+    "vile_herb": {
+      "type": "heracles:item",
+      "item": "sculksickness:vile_herb",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    },
+    "equip_crown": {
+      "title": "Equip the Scarlet Crown — trigger the Manifestor Trap to obtain the Cursed Eye",
+      "icon": {
+        "item": {
+          "id": "scarlet_king:scarlet_crown",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "No one forced you to put on the Crown. That is the point."
+    },
+    "description": [
+      "The Manifestor Trap is the Cursed Eye acquisition mechanic.",
+      "Equipping the Scarlet Crown triggers the event.",
+      "The Pack requires this. There is no alternative path.",
+      "",
+      "Cursed Eye recipe:",
+      "- scarlet_king:scarlet_crown (center — Scarlet King sealed drop ✓)",
+      "- desert:sandy_diamond_block (Desert mod blocks)",
+      "- cataclysm:lava_power_cell (Cataclysm loot)",
+      "- witherstormmod:withered_nether_star (Wither Storm fight drop)",
+      "- sculksickness:vile_herb (collected in Ch08 ✓)",
+      "",
+      "The moral question is not whether you use it.",
+      "It is what you build on that foundation in Ch16 and Ch17.",
+      "",
+      "→ Equip the Scarlet Crown — begin the Manifestor Trap event [check]",
+      "→ Collect 4 Vile Herb (from Ch08 if not already collected)"
+    ],
+    "groups": {
+      "The Kingdom You Build": {
+        "position": [
+          150,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "scarlet_king:scarlet_crown",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png",
+    "title": {
+      "translate": "The Trap"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

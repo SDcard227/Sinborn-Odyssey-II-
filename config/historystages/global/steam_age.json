@@ -1,0 +1,18 @@
+{
+  "display_name": "The Steam Age",
+  "research_time": 7200,
+  "items": [
+    "tfmg:turbine_blade",
+    "tfmg:turbine_engine"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

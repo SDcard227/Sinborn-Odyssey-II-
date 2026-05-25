@@ -1,0 +1,133 @@
+{
+  "dependencies": [
+    "ch11_ignis"
+  ],
+  "tasks": {
+    "scroll_found": {
+      "type": "heracles:advancement",
+      "advancement": "sinborn:scrolls/wizards_feast"
+    },
+    "eat_arcane_meal": {
+      "title": "Eat a meal made from magical reagents — dragon meat, chorus fruit, soul berry, ghast tear, or wither berry",
+      "icon": {
+        "item": {
+          "id": "ends_delight:fried_dragon_egg",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "enchanted_golden_apple": {
+      "item": {
+        "id": "minecraft:enchanted_golden_apple",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 8
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "translate": "The Wizard's Feast"
+    },
+    "subtitle": {
+      "text": "Foods made from magical reagents. Dragon meat, chorus fruit, soul berry, ghast tear — things the kitchen never should have touched."
+    },
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.11 · THE WIZARD'S FEAST",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ Most food is made from food.",
+      "  The Wizard's Feast is not.",
+      "  It is made from what magic leaves behind —",
+      "  dragon meat, chorus fruit, phantom membrane,",
+      "  soul berry, wither berry, ghast tear.",
+      "  The recipes look like cooking.",
+      "  They are closer to transmutation.",
+      "",
+      "◈ WIZARD FEAST CONTENTS",
+      "  └ End's Delight: dragon leg, dragon steak,",
+      "    chorus pie, chorus tea, bubble tea,",
+      "    dragon's breath soda, ender congee",
+      "  └ Ender's Delight: chorus stew, enderman sight,",
+      "    void pepper curry, ethereal saffron, uncanny cookies,",
+      "    strange eclair, amberveil stew",
+      "  └ Fright's Delight (reagent dishes only):",
+      "    soul berry pie/soup/cheesecake, wither berry dishes,",
+      "    ghast tear pies & punch, cobweb pie, monster mash",
+      "",
+      "◈ WHY THESE ARE WIZARD FOOD",
+      "  └ ✦ Dragon meat — concentrated dragon essence,",
+      "    eaten by mages to attune casting",
+      "  └ ✦ Chorus fruit — eats distance; in food form it",
+      "    becomes spatial magic you can chew",
+      "  └ ✦ Soul berry — grown on soul soil,",
+      "    the only edible thing the Nether grudgingly gave us",
+      "  └ ✦ Wither berry — radiation from the wither storm",
+      "    distilled into something that won't kill you",
+      "  └ ✦ Ghast tear — regeneration in food form,",
+      "    a mage's emergency ration",
+      "",
+      "◈ WIZARD ≠ WARRIOR ≠ CULTURAL",
+      "  └ Warrior's Feast = Youkai's Feasts,",
+      "    a whole cultural cuisine (Japanese folklore)",
+      "  └ Industrial / Infernal / Cave / Herbal / Vine —",
+      "    each a regional or biome-based kitchen",
+      "  └ Wizard's Feast = pan-mod, reagent-based.",
+      "    The ingredients come from magic, not a region.",
+      "",
+      "◈ SCROLL: The Wizard's Feast",
+      "  └ Found in stronghold libraries, end cities,",
+      "    woodland mansions — wherever mages kept kitchens",
+      "  └ Research time: 30 min",
+      "  └ Unlocks: End's Delight + Ender's Delight fully,",
+      "    plus the magical-reagent dishes of Fright's Delight",
+      "",
+      "▸ A mage who cannot feed themselves",
+      "  cannot cast for long.",
+      "  The kitchen is the first spellbook.",
+      "  The apron was a robe before it was an apron.",
+      "",
+      "▶ Find The Wizard's Feast scroll [check]",
+      "▶ Eat a meal made from magical reagents [check]",
+      "",
+      "◇ Dragon steak is not a trophy.",
+      "  It is the dragon's last lesson,",
+      "  consumed so it is not wasted."
+    ],
+    "groups": {
+      "Where the Skin Tears": {
+        "position": [
+          600,
+          200
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "ends_delight:fried_dragon_egg",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

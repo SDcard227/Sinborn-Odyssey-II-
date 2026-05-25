@@ -1,0 +1,59 @@
+{
+  "dependencies": ["ch12_world"],
+  "tasks": {
+    "chaotic_hexahedron": {
+      "title": "Find a Chaotic Hexahedron (Dungeon Now Loading — drops from Dungeon bosses, reward rooms)",
+      "icon": {"item": {"id": "dungeonnowloading:chaotic_hexahedron", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "spawner_blade": {
+      "title": "Collect a Spawner Blade (Dungeon Now Loading — drops in late-tier dungeon loot chests)",
+      "icon": {"item": {"id": "dungeonnowloading:spawner_blade", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {"id": "numismatics:crown", "count": 4},
+      "type": "heracles:item"
+    },
+    "xp": {
+      "item": {"id": "create:experience_nugget", "count": 16},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "The Cryptic Archive"},
+    "subtitle": {"text": "Some civilizations encrypted their knowledge. The Cryptic civilization encrypted themselves."},
+    "description": [
+      "The Cryptic Eye is not a memory or a wound.",
+      "It is a lock.",
+      "",
+      "The Cryptic civilization understood that knowledge could be destroyed",
+      "and so they encoded everything in structures — dungeons, vaults, mazes.",
+      "Their cities are still here. Their people are not.",
+      "What survives them is the architecture of their secrecy.",
+      "",
+      "Dungeon Now Loading generates these structures.",
+      "The Chaotic Hexahedron is found in boss reward rooms and late-tier chests.",
+      "The Spawner Blade is another Cryptic drop — a weapon that generates enemies from itself.",
+      "",
+      "The dungeons escalate in tier.",
+      "You will know you are in a Cryptic dungeon by the hexagonal geometry.",
+      "",
+      "→ Find a Chaotic Hexahedron from dungeon bosses [check]",
+      "→ Collect a Spawner Blade from dungeon loot [check]"
+    ],
+    "groups": {"The Kingdom You Build": {"position": [150, 150]}},
+    "icon": {"item": {"id": "dungeonnowloading:chaotic_hexahedron", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

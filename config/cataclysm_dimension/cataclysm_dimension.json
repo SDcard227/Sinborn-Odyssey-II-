@@ -1,0 +1,8 @@
+{
+  "disable_respawn": false,
+  "keep_structures_in_original_dimensions": false,
+  "slow_fall_when_enter_dimensions": true,
+  "random_spread_in_dimension": false,
+  "reset_dimension_if_no_player": false,
+  "enable_teleport_eye": true
+}

@@ -1,0 +1,84 @@
+{
+  "dependencies": [
+    "ch11_gate"
+  ],
+  "tasks": {
+    "tracker": {
+      "type": "heracles:item",
+      "item": "scarlet_king:manifestation_clock",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    },
+    "CB": {
+      "type": "heracles:item",
+      "item": "minecraft:command_block",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "chains": {
+      "item": {
+        "id": "scarlet_king:banishing_chains",
+        "count": 4
+      },
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {
+        "id": "numismatics:cog",
+        "count": 12
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "subtitle": {
+      "translate": "The Wither Storm has been visible for ten thousand blocks. You have been walking toward it this whole time."
+    },
+    "description": [
+      "The Wither Storm (Cracker's Wither Storm mod) Craft the Command block.",
+      "It has been visible for 10,000 blocks since early game.",
+      "It absorbs blocks and mobs as you approach.",
+      "Every chapter, it has been growing.",
+      "",
+      "The previous civilization created it.",
+      "It is their last act. Their final warning.",
+      "You have been walking toward it since Ch01.",
+      "",
+      "Banishing Chains seal the Manifestor — the Scarlet King.",
+      "They summon from the Scarlet King manifesting in the world.",
+      "You need them before approaching the Manifestor at 100+ Manifestation.",
+      "",
+      "→ Craft the Command Block and observe the Wither Storm [check]",
+      "→ Craft Manifestor Clock (Scarlet King mod) [check]"
+    ],
+    "groups": {
+      "The Kingdom You Build": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "witherstormmod:withered_nether_star",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png",
+    "title": {
+      "translate": "The Kingdom You Build"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  }
+}

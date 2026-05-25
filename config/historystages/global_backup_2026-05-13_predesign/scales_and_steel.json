@@ -1,0 +1,14 @@
+{
+  "display_name": "Scales and Steel",
+  "research_time": 1800,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "iceandfire"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": { "attacklock": [], "spawnlock": [] }
+}

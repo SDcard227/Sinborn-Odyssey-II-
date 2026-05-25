@@ -1,0 +1,24 @@
+{
+  "display_name": "On the Warborn Aegis",
+  "research_time": 7200,
+  "items": [
+    "mythsandlegends:infernum_ingot",
+    "mythsandlegends:infernum_block",
+    "mythsandlegends:cursed_core",
+    "mythsandlegends:infernum_upgrade_smithing_template",
+    "mythsandlegends:infernum_warplate_helmet",
+    "mythsandlegends:infernum_warplate_chestplate",
+    "mythsandlegends:infernum_warplate_leggings",
+    "mythsandlegends:infernum_warplate_boots"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

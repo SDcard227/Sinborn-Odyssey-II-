@@ -1,0 +1,81 @@
+{
+  "dependencies": ["ch13_outer"],
+  "tasks": {
+    "end_city_loot": {
+      "title": "Complete a full End City + End Ship clear — Elytra from Ship, Shulker Shells from city floors",
+      "icon": {"item": {"id": "minecraft:shulker_shell", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    },
+    "shulker_box_stack": {
+      "type": "heracles:item",
+      "item": "minecraft:shulker_box",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "shulker_box": {"item": {"id": "minecraft:shulker_box", "count": 2}, "type": "heracles:item"},
+    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
+  },
+  "display": {
+    "title": {"translate": "End City Sweep"},
+    "subtitle": {"text": "Every End City has a Ship. Every Ship has an Elytra. Clear them in order. Do not skip the chests."},
+    "description": [
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "  CH.13 · END CITY SWEEP",
+      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+      "",
+      "▸ End Cities are the primary loot source",
+      "  of the outer End islands.",
+      "  Each one has multiple floors of Shulker spawns,",
+      "  a loot chest on each floor,",
+      "  and an End Ship floating beside it.",
+      "  The Ship has the best loot in the End.",
+      "",
+      "◈ END CITY STRUCTURE",
+      "  └ Tower floors: Shulker spawns + floor chests",
+      "    Each floor: enchanted diamond/iron loot, saddles",
+      "  └ End Ship: floating beside the tower",
+      "    Contains: Elytra in item frame + 2 treasure chests",
+      "    Treasure chests: enchanted books, diamonds, rare loot",
+      "  └ Shulker Shells: 2 per kill at best, 0 at worst",
+      "    Farm 6+ Shulkers per visit for 2-4 shells",
+      "",
+      "◈ SHULKER BOX ECONOMY",
+      "  └ Shulker Box = most powerful inventory item in game",
+      "    27 stacks that count as 1 inventory slot",
+      "  └ Craft: 2 Shulker Shells + 1 Chest",
+      "  └ Priority: make 27 Shulker Boxes",
+      "    That is 27×27 = 729 additional inventory slots",
+      "  └ Use for: sorting resources, End City loot transport,",
+      "    boss preparation kits, travel packs",
+      "",
+      "◈ END SHIP APPROACH",
+      "  └ Careful: End Ship chest room has 2 Elder Guardians",
+      "    Wait — no, that's Ocean Monument. End Ship: no guardian.",
+      "  └ Careful: item frame Elytra will drop if frame is broken",
+      "    Destroy frame carefully to avoid Elytra falling into void",
+      "  └ Pillars: End Crystals on obsidian pillars on main island",
+      "    destroy them before Dragon fight to prevent healing",
+      "",
+      "▶ Complete a full End City + Ship clear [check]",
+      "▶ Craft 4 Shulker Boxes",
+      "",
+      "◇ Outer End islands stretch far. Use Elytra + Fireworks.",
+      "  Bring full stacks of Firework Rockets.",
+      "  You will need to travel 1000+ blocks between cities.",
+      "  The void is below the whole time."
+    ],
+    "groups": {"The Shattered Law": {"position": [450, 0]}},
+    "icon": {"item": {"id": "minecraft:shulker_box", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

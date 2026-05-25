@@ -1,0 +1,7 @@
+
+[Sounds]
+	#Determines the volume of the sound of a mob dieing.
+	Volume = 65.0
+	#Determines if the game will play a sound when a mob dies.
+	"Death Sound" = true
+

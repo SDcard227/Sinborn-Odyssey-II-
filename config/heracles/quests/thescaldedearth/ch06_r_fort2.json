@@ -1,0 +1,70 @@
+{
+  "dependencies": ["ch06_r_fort1"],
+  "tasks": {
+    "skulls": {
+      "type": "heracles:item",
+      "item": "minecraft:wither_skeleton_skull",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    },
+    "coal": {
+      "type": "heracles:item",
+      "item": "minecraft:coal",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    },
+    "store_skulls": {
+      "title": "Store all 3 Wither Skeleton Skulls in a chest — do not use them yet",
+      "icon": {"item": {"id": "minecraft:chest", "count": 1}, "type": "heracles:item"},
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "bone_block": {
+      "item": {"id": "minecraft:bone_block", "count": 8},
+      "type": "heracles:item"
+    },
+    "wither_skull_bonus": {
+      "item": {"id": "minecraft:wither_skeleton_skull", "count": 1},
+      "type": "heracles:item"
+    },
+    "coin": {
+      "item": {"id": "numismatics:cog", "count": 8},
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {"translate": "Bones and Powder"},
+    "subtitle": {"text": "Three skulls. One choice. Not yet."},
+    "description": [
+      "You know what the three skulls are for.",
+      "The question is whether you are ready to use them.",
+      "",
+      "The Wither is not a fight you take unprepared.",
+      "It flies. It fires projectiles. It causes Wither status.",
+      "Milk cures Wither. Golden apples help.",
+      "A boss lock scroll gates when you're allowed to try.",
+      "",
+      "Take the skulls. Store them.",
+      "That decision has its own chapter.",
+      "",
+      "Wither Skeletons also drop Coal — useful for smelting.",
+      "Looting enchantment significantly increases skull drop rates.",
+      "",
+      "→ Collect 3 Wither Skeleton Skulls",
+      "→ Collect 16 Coal (drops from Wither Skeletons)",
+      "→ Store the skulls safely — don't use them yet [check]"
+    ],
+    "groups": {"The Scalded Earth": {"position": [-300, 150]}},
+    "icon": {"item": {"id": "minecraft:wither_skeleton_skull", "count": 1}, "type": "heracles:item"},
+    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

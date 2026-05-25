@@ -1,0 +1,24 @@
+{
+  "display_name": "Music Speakers (the Broadcast Age)",
+  "research_time": 5400,
+  "items": [
+    "etched:boombox",
+    "etched:boombox.pause",
+    "etched:boombox.paused",
+    "etched:boombox.records",
+    "etched:portal_radio",
+    "etched:radio",
+    "simpleradio:radio",
+    "supplementaries:speaker_block"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

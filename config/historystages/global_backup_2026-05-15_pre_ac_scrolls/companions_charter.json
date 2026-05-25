@@ -1,0 +1,23 @@
+{
+  "display_name": "The Companions Charter",
+  "research_time": 900,
+  "items": [
+    "irons_spellbooks:villager_spell_book",
+    "minecraft:emerald",
+    "minecraft:music_disc_otherside",
+    "minecraft:name_tag"
+  ],
+  "tags": [],
+  "mods": [
+    "mca",
+    "recruits"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

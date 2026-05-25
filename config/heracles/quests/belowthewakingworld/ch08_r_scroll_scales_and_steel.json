@@ -1,0 +1,83 @@
+{
+  "dependencies": [],
+  "tasks": {
+    "find_scroll": {
+      "title": "Find the Scales and Steel scroll",
+      "icon": {
+        "item": {
+          "id": "historystages:research_scroll",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:check"
+    },
+    "research_scroll": {
+      "title": "Research the Scales and Steel scroll",
+      "icon": {
+        "item": {
+          "id": "iceandfire:armor_silver_metal_boots",
+          "count": 1
+        },
+        "type": "heracles:item"
+      },
+      "type": "heracles:command",
+      "command": "history unlock scales_and_steel"
+    }
+  },
+  "rewards": {
+    "coin": {
+      "item": {
+        "id": "numismatics:bevel",
+        "count": 6
+      },
+      "type": "heracles:item"
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Scales and Steel"
+    },
+    "subtitle": {
+      "text": "Knowledge waits where the dead left it."
+    },
+    "description": [
+      "\"Found in the smoke of old forges.\"",
+      "",
+      "I&F dragon parts + dragonsteel weapons/armor.",
+      "",
+      "This scroll unlocks 177 items.",
+      "",
+      "Look for it in:",
+      "  \u00b7 Ati Structures:Chests/Library",
+      "  \u00b7 Village/Village Weaponsmith",
+      "",
+      "\u2192 Find the scroll [discovery]",
+      "\u2192 Research [Scales and Steel] [auto]"
+    ],
+    "groups": {
+      "Below the Waking World": {
+        "position": [
+          950,
+          780
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "iceandfire:armor_silver_metal_boots",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": true,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

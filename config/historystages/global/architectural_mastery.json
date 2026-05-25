@@ -12,7 +12,8 @@
     "quark",
     "snowrealmagic",
     "supplementaries",
-    "verdant"
+    "verdant",
+    "via_romana"
   ],
   "mod_exceptions": [
     "chalk:chalk",

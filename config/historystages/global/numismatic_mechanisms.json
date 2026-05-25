@@ -11,7 +11,9 @@
     "numismatics_utils",
     "bountiful",
     "heirlooms",
-    "trade_cycling"
+    "trade_cycling",
+    "lootr",
+    "messenger_crows"
   ],
   "mod_exceptions": [],
   "recipes": [],

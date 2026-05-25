@@ -12,7 +12,8 @@
     "create_power_loader",
     "create_sa",
     "sliceanddice",
-    "createadditionallogistics"
+    "createadditionallogistics",
+    "create_stuff_additions"
   ],
   "mod_exceptions": [],
   "recipes": [],

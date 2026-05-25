@@ -6,7 +6,9 @@
   "mods": [
     "incision",
     "lifesteal",
-    "corpsebutbetter"
+    "corpsebutbetter",
+    "dontstarvecorpse",
+    "dstskeletonondeath"
   ],
   "mod_exceptions": [],
   "recipes": [],

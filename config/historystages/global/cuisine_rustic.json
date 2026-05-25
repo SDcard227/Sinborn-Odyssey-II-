@@ -18,7 +18,8 @@
     "rusticdelight",
     "witherstorm_delight",
     "chefsdelight",
-    "vintagedelight"
+    "vintagedelight",
+    "compatdelight"
   ],
   "mod_exceptions": [
     "delightful:adamantium_knife",

@@ -255,7 +255,10 @@
     "immersiveenchanting",
     "irons_spellbooks",
     "necronomicon",
-    "create_wizardry"
+    "create_wizardry",
+    "apotheosis",
+    "skilltree",
+    "magicmod"
   ],
   "mod_exceptions": [],
   "recipes": [],

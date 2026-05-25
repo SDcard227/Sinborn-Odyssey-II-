@@ -1,5 +1,5 @@
 {
-  "display_name": "Infernal Cuisine",
+  "display_name": "The Corrupted Hearth",
   "research_time": 10800,
   "items": [
     "minecraft:ghast_tear"
@@ -9,7 +9,9 @@
     "createnv",
     "lendersdelight",
     "mynethersdelight",
-    "nethervinery"
+    "nethervinery",
+    "witherstorm_delight",
+    "frightsdelight"
   ],
   "mod_exceptions": [],
   "recipes": [],

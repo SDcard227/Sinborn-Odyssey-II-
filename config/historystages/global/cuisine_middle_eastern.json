@@ -1,5 +1,5 @@
 {
-  "display_name": "The Spiced Vigil",
+  "display_name": "The Desert Hearth",
   "research_time": 5400,
   "items": [
     "delightful:baklava",
@@ -7,7 +7,6 @@
   ],
   "tags": [],
   "mods": [
-    "frightsdelight",
     "ramadandelight"
   ],
   "mod_exceptions": [],

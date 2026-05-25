@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "mowziesmobs:frostmaw", "required": false},
+    {"id": "aquamirae:captain_cornelia", "required": false},
+    {"id": "aquamirae:captain_poison", "required": false},
+    {"id": "aquamirae:of_the_deep", "required": false},
+    {"id": "aquamirae:eel", "required": false},
+    {"id": "cataclysm:scylla", "required": false},
+    {"id": "mythsandlegends:karakondjul", "required": false},
+    {"id": "mythsandlegends:amarok", "required": false}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "cataclysm:the_leviathan", "required": false},
+    {"id": "traveloptics:the_nightwarden", "required": false},
+    {"id": "irons_spellbooks:dead_king", "required": false},
+    {"id": "irons_spellbooks:citadel_keeper", "required": false},
+    {"id": "irons_spellbooks:archevoker", "required": false}
+  ]
+}

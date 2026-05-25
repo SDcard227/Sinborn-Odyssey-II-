@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "alexsmobs:void_worm", "required": false},
+    {"id": "cataclysm:ender_guardian", "required": false}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "mowziesmobs:ferrous_wroughtnaut", "required": false},
+    {"id": "mowziesmobs:umvuthi", "required": false},
+    {"id": "mowziesmobs:barako", "required": false},
+    {"id": "mowziesmobs:sculptor", "required": false},
+    {"id": "irons_spellbooks:fire_boss", "required": false}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "celestisynth:star_monolith", "required": false},
+    {"id": "celestisynth:traverser", "required": false},
+    {"id": "celestisynth:tempest", "required": false}
+  ]
+}

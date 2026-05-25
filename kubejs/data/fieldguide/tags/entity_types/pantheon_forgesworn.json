@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "mythsandlegends:warborn_aegis", "required": false},
+    {"id": "mythsandlegends:scorched_sentinel", "required": false},
+    {"id": "cataclysm:ignis", "required": false},
+    {"id": "cataclysm:the_harbinger", "required": false}
+  ]
+}

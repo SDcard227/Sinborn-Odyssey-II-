@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "dungeonnowloading:chaos_spawner", "required": false},
+    {"id": "dungeonnowloading:fairkeeper_boros", "required": false},
+    {"id": "dungeonnowloading:fairkeeper_ouros", "required": false},
+    {"id": "dungeonnowloading:garhold", "required": false},
+    {"id": "dungeonnowloading:ballista_golem", "required": false}
+  ]
+}

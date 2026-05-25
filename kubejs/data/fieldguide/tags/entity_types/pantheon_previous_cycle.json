@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "witherstormmod:wither_storm", "required": false},
+    {"id": "witherstormmod:withered_symbiont", "required": false}
+  ]
+}

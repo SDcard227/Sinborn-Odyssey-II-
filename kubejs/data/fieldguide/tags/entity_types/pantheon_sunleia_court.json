@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "cataclysm:maledictus", "required": false},
+    {"id": "cataclysm:ancient_remnant", "required": false},
+    {"id": "mythsandlegends:black_charro", "required": false},
+    {"id": "dungeons_and_combat:sunleia", "required": false},
+    {"id": "dungeons_and_combat:ammit", "required": false},
+    {"id": "dungeons_and_combat:horuso", "required": false},
+    {"id": "dungeons_and_combat:ernos", "required": false},
+    {"id": "dungeons_and_combat:high_priest", "required": false},
+    {"id": "dungeons_and_combat:kamath", "required": false},
+    {"id": "dungeons_and_combat:palehand", "required": false},
+    {"id": "dungeons_and_combat:the_grave_watcher", "required": false},
+    {"id": "dungeons_and_combat:the_aberrator", "required": false},
+    {"id": "dungeons_and_combat:infernus", "required": false}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "alexscaves:luxtructosaurus", "required": false},
+    {"id": "alexscaves:mine_guardian", "required": false},
+    {"id": "alexscaves:magnetron", "required": false},
+    {"id": "alexscaves:hullbreaker", "required": false},
+    {"id": "alexscaves:watcher", "required": false},
+    {"id": "alexscaves:brainiac", "required": false},
+    {"id": "cataclysm:netherite_monstrosity", "required": false}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "mythsandlegends:abaddon", "required": false},
+    {"id": "iceandfire:myrmex_queen", "required": false},
+    {"id": "iceandfire:dread_queen", "required": false},
+    {"id": "mebahelcreaturesdwarven:dwarven_centurion", "required": false},
+    {"id": "mebahelcreaturesdwarven:dwarven_spider_guardian", "required": false},
+    {"id": "incision:purger", "required": false},
+    {"id": "incision:seer", "required": false},
+    {"id": "mca:grim_reaper", "required": false},
+    {"id": "as_you_wish:green_genie_boss", "required": false}
+  ]
+}

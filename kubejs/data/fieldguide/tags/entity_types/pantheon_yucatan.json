@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "call_of_yucutan:kukulkan", "required": false},
+    {"id": "call_of_yucutan:ah_puch", "required": false}
+  ]
+}

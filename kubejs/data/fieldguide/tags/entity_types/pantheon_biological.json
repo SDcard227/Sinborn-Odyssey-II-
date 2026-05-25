@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "alexsmobs:warped_mosco", "required": false},
+    {"id": "luminous_nether:the_furnace", "required": false},
+    {"id": "luminous_nether:soul_furnace", "required": false},
+    {"id": "luminous_nether:mushlin_king", "required": false},
+    {"id": "luminous_nether:warped_spewer_king", "required": false},
+    {"id": "endergetic:brood_eetle", "required": false}
+  ]
+}

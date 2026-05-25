@@ -1,0 +1,30 @@
+{
+  "sort_index": 5,
+  "icon": "fieldguide:textures/gui/icons/wither.png",
+  "group_by": [
+    "=minecraft:ender_dragon",
+    "=minecraft:wither",
+    "=minecraft:elder_guardian",
+    "#fieldguide:pantheon_oldest",
+    "#fieldguide:pantheon_sunleia_court",
+    "#fieldguide:pantheon_yucatan",
+    "#fieldguide:pantheon_long_hour",
+    "#fieldguide:pantheon_ocean_mages",
+    "#fieldguide:pantheon_nightwardens_brood",
+    "#fieldguide:pantheon_biological",
+    "#fieldguide:pantheon_disappeared",
+    "#fieldguide:pantheon_forgesworn",
+    "#fieldguide:pantheon_engineers",
+    "#fieldguide:pantheon_previous_cycle",
+    "#fieldguide:pantheon_doctrine_substrate",
+    "#fieldguide:pantheon_celestial",
+    "#fieldguide:pantheon_final_seal",
+    "#fieldguide:pantheon_lower_threats"
+  ],
+  "contents": [
+    {
+      "type": "auto_populate",
+      "strategy": "tag:fieldguide:bosses"
+    }
+  ]
+}

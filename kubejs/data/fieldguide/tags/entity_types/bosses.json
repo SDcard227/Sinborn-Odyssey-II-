@@ -1,0 +1,105 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:elder_guardian",
+    "minecraft:wither",
+    "minecraft:ender_dragon",
+
+    "witherstormmod:wither_storm",
+    "witherstormmod:withered_symbiont",
+
+    "cataclysm:ancient_remnant",
+    "cataclysm:ender_guardian",
+    "cataclysm:maledictus",
+    "cataclysm:the_harbinger",
+    "cataclysm:ignis",
+    "cataclysm:netherite_monstrosity",
+    "cataclysm:the_leviathan",
+    "cataclysm:scylla",
+    "cataclysm:the_watcher",
+    "cataclysm:ender_golem",
+    "cataclysm:ignited_revenant",
+
+    "iceandfire:myrmex_queen",
+    "iceandfire:dread_queen",
+
+    "mowziesmobs:ferrous_wroughtnaut",
+    "mowziesmobs:frostmaw",
+    "mowziesmobs:barako",
+    "mowziesmobs:umvuthi",
+    "mowziesmobs:sculptor",
+
+    "aquamirae:captain_cornelia",
+    "aquamirae:captain_poison",
+    "aquamirae:of_the_deep",
+    "aquamirae:eel",
+
+    "call_of_yucutan:kukulkan",
+    "call_of_yucutan:ah_puch",
+
+    "dungeonnowloading:chaos_spawner",
+    "dungeonnowloading:fairkeeper_boros",
+    "dungeonnowloading:fairkeeper_ouros",
+    "dungeonnowloading:garhold",
+    "dungeonnowloading:ballista_golem",
+
+    "alexsmobs:warped_mosco",
+    "alexsmobs:void_worm",
+
+    "scarlet_king:scarlet_king",
+
+    "alexscaves:luxtructosaurus",
+    "alexscaves:mine_guardian",
+    "alexscaves:magnetron",
+    "alexscaves:hullbreaker",
+    "alexscaves:watcher",
+    "alexscaves:brainiac",
+
+    "irons_spellbooks:dead_king",
+    "irons_spellbooks:citadel_keeper",
+    "irons_spellbooks:archevoker",
+    "irons_spellbooks:fire_boss",
+
+    "celestisynth:star_monolith",
+    "celestisynth:traverser",
+    "celestisynth:tempest",
+
+    "mythsandlegends:warborn_aegis",
+    "mythsandlegends:scorched_sentinel",
+    "mythsandlegends:abaddon",
+    "mythsandlegends:black_charro",
+
+    "traveloptics:the_nightwarden",
+
+    "dungeons_and_combat:kamath",
+    "dungeons_and_combat:sunleia",
+    "dungeons_and_combat:palehand",
+    "dungeons_and_combat:infernus",
+    "dungeons_and_combat:the_grave_watcher",
+    "dungeons_and_combat:the_aberrator",
+    "dungeons_and_combat:high_priest",
+    "dungeons_and_combat:ammit",
+    "dungeons_and_combat:horuso",
+    "dungeons_and_combat:ernos",
+
+    "luminous_nether:the_furnace",
+    "luminous_nether:soul_furnace",
+    "luminous_nether:mushlin_king",
+    "luminous_nether:warped_spewer_king",
+
+    "incision:purger",
+    "incision:seer",
+
+    "mebahelcreaturesdwarven:dwarven_centurion",
+    "mebahelcreaturesdwarven:dwarven_spider_guardian",
+
+    "companions:sacred_pontiff",
+
+    "mca:grim_reaper",
+    "as_you_wish:green_genie_boss",
+
+    "endergetic:brood_eetle",
+    "mythsandlegends:karakondjul",
+    "mythsandlegends:amarok"
+  ]
+}

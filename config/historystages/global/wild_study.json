@@ -6,7 +6,9 @@
     "alexscaves:cave_compendium"
   ],
   "tags": [],
-  "mods": [],
+  "mods": [
+    "sullysmod"
+  ],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],

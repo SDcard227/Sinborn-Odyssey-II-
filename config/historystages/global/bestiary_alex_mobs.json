@@ -6,7 +6,9 @@
   "mods": [
     "alexsmobs",
     "mowziesmobs",
-    "endermanoverhaul"
+    "endermanoverhaul",
+    "endertrigon",
+    "alexscaves"
   ],
   "mod_exceptions": [],
   "recipes": [],

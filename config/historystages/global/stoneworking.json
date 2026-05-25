@@ -158,7 +158,9 @@
     "minecraft:tuff"
   ],
   "tags": [],
-  "mods": [],
+  "mods": [
+    "indestructible_blocks"
+  ],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],

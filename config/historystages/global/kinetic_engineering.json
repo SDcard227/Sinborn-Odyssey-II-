@@ -11,8 +11,8 @@
     "create_mobile_packages",
     "create_power_loader",
     "create_sa",
-    "create_wizardry",
-    "sliceanddice"
+    "sliceanddice",
+    "createadditionallogistics"
   ],
   "mod_exceptions": [],
   "recipes": [],

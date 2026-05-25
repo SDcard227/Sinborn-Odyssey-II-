@@ -254,7 +254,8 @@
     "dacxirons",
     "immersiveenchanting",
     "irons_spellbooks",
-    "necronomicon"
+    "necronomicon",
+    "create_wizardry"
   ],
   "mod_exceptions": [],
   "recipes": [],

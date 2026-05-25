@@ -41,7 +41,8 @@
   "tags": [],
   "mods": [
     "cataclysm",
-    "dungeons_and_combat"
+    "dungeons_and_combat",
+    "mowzies_cataclysm"
   ],
   "mod_exceptions": [
     "cataclysm:ancient_spear",

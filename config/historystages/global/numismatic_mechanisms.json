@@ -7,7 +7,8 @@
     "createnumrec",
     "numismatics",
     "create_numismatic_bounties",
-    "extrabounties"
+    "extrabounties",
+    "numismatics_utils"
   ],
   "mod_exceptions": [],
   "recipes": [],

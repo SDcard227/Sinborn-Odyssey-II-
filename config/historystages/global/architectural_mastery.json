@@ -16,7 +16,8 @@
     "via_romana",
     "mo_bubbles",
     "wither_spawn_animation",
-    "winteroverhaul"
+    "winteroverhaul",
+    "beachparty"
   ],
   "mod_exceptions": [
     "chalk:chalk",

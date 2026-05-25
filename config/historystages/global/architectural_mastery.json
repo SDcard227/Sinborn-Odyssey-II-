@@ -13,7 +13,9 @@
     "snowrealmagic",
     "supplementaries",
     "verdant",
-    "via_romana"
+    "via_romana",
+    "mo_bubbles",
+    "wither_spawn_animation"
   ],
   "mod_exceptions": [
     "chalk:chalk",

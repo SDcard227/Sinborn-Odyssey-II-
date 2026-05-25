@@ -258,7 +258,8 @@
     "create_wizardry",
     "apotheosis",
     "skilltree",
-    "magicmod"
+    "magicmod",
+    "obscure_api"
   ],
   "mod_exceptions": [],
   "recipes": [],

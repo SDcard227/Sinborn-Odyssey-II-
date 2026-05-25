@@ -44,7 +44,8 @@
     "dungeons_and_combat",
     "mowzies_cataclysm",
     "simplycataclysm",
-    "witherreincarnated"
+    "witherreincarnated",
+    "dungeonnowloading"
   ],
   "mod_exceptions": [
     "cataclysm:ancient_spear",

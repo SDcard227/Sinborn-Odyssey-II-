@@ -226,7 +226,9 @@
     "iceandfire:wither_shard"
   ],
   "tags": [],
-  "mods": [],
+  "mods": [
+    "iceandfire"
+  ],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],

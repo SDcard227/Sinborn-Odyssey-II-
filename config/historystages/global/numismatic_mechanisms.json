@@ -5,7 +5,9 @@
   "tags": [],
   "mods": [
     "createnumrec",
-    "numismatics"
+    "numismatics",
+    "create_numismatic_bounties",
+    "extrabounties"
   ],
   "mod_exceptions": [],
   "recipes": [],

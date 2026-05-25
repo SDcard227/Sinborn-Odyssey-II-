@@ -16,7 +16,9 @@
     "farmersdelight",
     "ratatouille_fried_delights",
     "rusticdelight",
-    "witherstorm_delight"
+    "witherstorm_delight",
+    "chefsdelight",
+    "vintagedelight"
   ],
   "mod_exceptions": [
     "delightful:adamantium_knife",

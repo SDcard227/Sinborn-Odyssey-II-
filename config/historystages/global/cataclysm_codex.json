@@ -40,7 +40,8 @@
   ],
   "tags": [],
   "mods": [
-    "cataclysm"
+    "cataclysm",
+    "dungeons_and_combat"
   ],
   "mod_exceptions": [
     "cataclysm:ancient_spear",

@@ -229,7 +229,11 @@
   ],
   "tags": [],
   "mods": [
-    "cwsm_ncbt"
+    "cwsm_ncbt",
+    "simplyswords",
+    "simplymore",
+    "weaponmaster_ydm",
+    "aquacombat"
   ],
   "mod_exceptions": [],
   "recipes": [],

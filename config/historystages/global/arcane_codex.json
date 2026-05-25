@@ -252,7 +252,9 @@
   "mods": [
     "arcaneessenceblock",
     "dacxirons",
-    "immersiveenchanting"
+    "immersiveenchanting",
+    "irons_spellbooks",
+    "necronomicon"
   ],
   "mod_exceptions": [],
   "recipes": [],

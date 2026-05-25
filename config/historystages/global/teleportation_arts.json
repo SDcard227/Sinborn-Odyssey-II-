@@ -4,7 +4,8 @@
   "items": [],
   "tags": [],
   "mods": [
-    "createteleporters"
+    "createteleporters",
+    "portal_fluid"
   ],
   "mod_exceptions": [],
   "recipes": [],

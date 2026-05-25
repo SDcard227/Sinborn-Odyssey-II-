@@ -42,7 +42,9 @@
   "mods": [
     "cataclysm",
     "dungeons_and_combat",
-    "mowzies_cataclysm"
+    "mowzies_cataclysm",
+    "simplycataclysm",
+    "witherreincarnated"
   ],
   "mod_exceptions": [
     "cataclysm:ancient_spear",

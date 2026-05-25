@@ -4,7 +4,8 @@
   "items": [],
   "tags": [],
   "mods": [
-    "exposure"
+    "exposure",
+    "exposure_polaroid"
   ],
   "mod_exceptions": [],
   "recipes": [],

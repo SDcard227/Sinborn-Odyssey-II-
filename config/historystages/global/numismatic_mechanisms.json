@@ -8,7 +8,10 @@
     "numismatics",
     "create_numismatic_bounties",
     "extrabounties",
-    "numismatics_utils"
+    "numismatics_utils",
+    "bountiful",
+    "heirlooms",
+    "trade_cycling"
   ],
   "mod_exceptions": [],
   "recipes": [],

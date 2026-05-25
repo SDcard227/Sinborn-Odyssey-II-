@@ -47,7 +47,9 @@
     "minecraft:yellow_stained_glass_pane"
   ],
   "tags": [],
-  "mods": [],
+  "mods": [
+    "usefulspyglass"
+  ],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],

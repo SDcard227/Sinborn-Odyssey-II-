@@ -1,7 +1,23 @@
 {
   "display_name": "Seafood Mastery",
   "research_time": 2700,
-  "items": [],
+  "items": [
+    "quark:crab_bucket",
+    "quark:crab_leg",
+    "quark:cooked_crab_leg",
+    "quark:crab_shell",
+    "quark:egg_parrot_red_blue",
+    "quark:egg_parrot_blue",
+    "quark:egg_parrot_green",
+    "quark:egg_parrot_yellow_blue",
+    "quark:egg_parrot_gray",
+    "aquamirae:cooked_spinefish",
+    "aquamirae:sea_stew",
+    "aquamirae:spinefish",
+    "aquamirae:spinefish_bucket",
+    "crittersandcompanions:koi_fish_bucket",
+    "crittersandcompanions:koi_fish"
+  ],
   "tags": [],
   "mods": [
     "oceanic_delight",

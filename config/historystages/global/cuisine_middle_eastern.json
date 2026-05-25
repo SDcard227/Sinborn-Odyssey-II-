@@ -3,7 +3,9 @@
   "research_time": 5400,
   "items": [
     "delightful:baklava",
-    "delightful:baklava_slice"
+    "delightful:baklava_slice",
+    "desert:jujube_cake",
+    "desert:barrel_cactus_fruit_jam"
   ],
   "tags": [],
   "mods": [

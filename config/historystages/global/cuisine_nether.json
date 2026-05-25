@@ -2,7 +2,15 @@
   "display_name": "The Seeped Gallery-Broth",
   "research_time": 10800,
   "items": [
-    "minecraft:ghast_tear"
+    "minecraft:ghast_tear",
+    "netherexp:cooked_hogham",
+    "netherexp:nether_pizza",
+    "netherexp:nether_pizza_slice",
+    "netherexp:roasted_bone",
+    "luminous_nether:cooked_mushroom_protein",
+    "luminous_nether:popshroom_juice",
+    "luminous_nether:raw_mushroom_protein",
+    "luminous_nether:golden_stew"
   ],
   "tags": [],
   "mods": [

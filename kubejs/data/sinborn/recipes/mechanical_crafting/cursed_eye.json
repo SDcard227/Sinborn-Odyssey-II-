@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "ANA",
+    "LKL",
+    "VIV"
+  ],
+  "key": {
+    "A": { "item": "mythsandlegends:core_of_abaddon" },
+    "N": { "item": "witherstormmod:withered_nether_star" },
+    "L": { "item": "cataclysm:lava_power_cell" },
+    "K": { "item": "scarlet_king:scarlet_crown" },
+    "V": { "item": "sculksickness:vile_herb" },
+    "I": { "item": "mythsandlegends:infernum_ingot" }
+  },
+  "result": {
+    "item": "endrem:cursed_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

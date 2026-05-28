@@ -2,11 +2,13 @@
   "display_name": "The Tea Ceremony",
   "research_time": 2700,
   "items": [
+    "create:builders_tea",
     "delightful:azalea_tea",
     "delightful:green_tea_leaf",
     "delightful:lavender_tea",
     "foragersinsight:dandelion_root_tea",
-    "irons_spellbooks:casters_tea"
+    "irons_spellbooks:casters_tea",
+    "minecraft:ghast_tear"
   ],
   "tags": [],
   "mods": [

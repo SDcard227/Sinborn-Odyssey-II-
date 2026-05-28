@@ -1,0 +1,197 @@
+{
+  "parent": "sinborn:archive/shelf3_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "title": "The Long Aftermath — Complete",
+    "description": "Every folio of The Long Aftermath, gathered. The shelf is whole.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sw3_f1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f1\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f2\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f3\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f4\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f5\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f6\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f7\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f8\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f9": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f9\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f10": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f10\"}"
+          }
+        ]
+      }
+    },
+    "sw3_f7b": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f7b\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sw3_f1"
+    ],
+    [
+      "sw3_f2"
+    ],
+    [
+      "sw3_f3"
+    ],
+    [
+      "sw3_f4"
+    ],
+    [
+      "sw3_f5"
+    ],
+    [
+      "sw3_f6"
+    ],
+    [
+      "sw3_f7"
+    ],
+    [
+      "sw3_f8"
+    ],
+    [
+      "sw3_f9"
+    ],
+    [
+      "sw3_f10"
+    ],
+    [
+      "sw3_f7b"
+    ]
+  ],
+  "rewards": {
+    "experience": 300
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "OAO",
+    "GBG",
+    "WEW"
+  ],
+  "key": {
+    "O": { "item": "alexscaves:ominous_catalyst" },
+    "A": { "item": "dungeons_and_combat:blessed_amulet" },
+    "G": { "item": "alexsmobs:guster_eye" },
+    "B": { "item": "dungeons_and_combat:blood_orb" },
+    "W": { "item": "dungeons_and_combat:cursed_silk" },
+    "E": { "item": "companions:eternal_lighter" }
+  },
+  "result": {
+    "item": "endrem:evil_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

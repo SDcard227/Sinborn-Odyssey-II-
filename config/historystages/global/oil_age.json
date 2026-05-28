@@ -2,6 +2,11 @@
   "display_name": "The Oil Age",
   "research_time": 7200,
   "items": [
+    "irons_spellbooks:pumpkin_boots",
+    "irons_spellbooks:pumpkin_chestplate",
+    "irons_spellbooks:pumpkin_helmet",
+    "irons_spellbooks:pumpkin_leggings",
+    "minecraft:pumpkin",
     "tfmg:crude_oil",
     "tfmg:crude_oil_bucket",
     "tfmg:diesel",

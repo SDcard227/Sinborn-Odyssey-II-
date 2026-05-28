@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "revampedvillages:plains_village",
+    "revampedvillages:desert_village",
+    "revampedvillages:savanna_village",
+    "revampedvillages:taiga_village",
+    "revampedvillages:snowy_village"
+  ]
+}

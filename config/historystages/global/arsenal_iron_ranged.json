@@ -3,11 +3,11 @@
   "research_time": 2700,
   "items": [
     "irons_spellbooks:autoloader_crossbow",
-    "minecraft:arrow",
     "minecraft:bow",
+    "minecraft:bowl",
     "minecraft:crossbow",
     "minecraft:crossbow.projectile",
-    "minecraft:spectral_arrow",
+    "netherexp:pump_charge_shotgun",
     "simplycataclysm:ancient_metal_chakram",
     "simplycataclysm:cursium_chakram",
     "simplycataclysm:ignitium_chakram",

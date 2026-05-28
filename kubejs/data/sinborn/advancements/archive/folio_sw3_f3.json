@@ -1,0 +1,29 @@
+{
+  "parent": "sinborn:archive/shelf3_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:written_book"
+    },
+    "title": "The Diaspora",
+    "description": "The Long Aftermath — Folio III: The Diaspora",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f3\"}"
+          }
+        ]
+      }
+    }
+  }
+}

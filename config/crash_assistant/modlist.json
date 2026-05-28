@@ -1575,6 +1575,13 @@
     "curseForgeHash": 1481151549,
     "modrinthHash": "48cdc22a0f6698c9059f437538e5546f74900541"
   },
+  "KeybindAtlas-v1.4.0-mc1.20.1-forge.jar": {
+    "jarName": "KeybindAtlas-v1.4.0-mc1.20.1-forge.jar",
+    "modId": "keybindatlas",
+    "version": "1.4.0",
+    "curseForgeHash": 3891909464,
+    "modrinthHash": "80815697da2daaae2bde5d9a7c55380b9ff930a9"
+  },
   "Kiwi-1.20.1-Forge-11.10.1.jar": {
     "jarName": "Kiwi-1.20.1-Forge-11.10.1.jar",
     "modId": "kiwi",
@@ -2521,6 +2528,13 @@
     "version": "1.0.10",
     "curseForgeHash": 2197810606,
     "modrinthHash": "7529fbf938787ed13a251cbf40936f8c29ec4b6c"
+  },
+  "softimprints-forge-1.20.1-0.0.21.jar": {
+    "jarName": "softimprints-forge-1.20.1-0.0.21.jar",
+    "modId": "softimprints",
+    "version": "0.0.21",
+    "curseForgeHash": 2618557571,
+    "modrinthHash": "7bd85839fc6b0568f92f797ef3b2badb2a110c2b"
   },
   "SoLOnion_FORGE_v1.4.5_mc1.20.1.jar": {
     "jarName": "SoLOnion_FORGE_v1.4.5_mc1.20.1.jar",

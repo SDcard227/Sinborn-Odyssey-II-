@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "IBI",
+    "BAB",
+    "IBI"
+  ],
+  "key": {
+    "I": { "item": "minecraft:iron_block" },
+    "B": { "item": "minecraft:stone_bricks" },
+    "A": { "item": "minecraft:anvil" }
+  },
+  "result": {
+    "item": "mowzies_cataclysm:wrought_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

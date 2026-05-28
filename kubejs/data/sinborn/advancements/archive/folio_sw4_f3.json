@@ -1,0 +1,29 @@
+{
+  "parent": "sinborn:archive/shelf4_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:written_book"
+    },
+    "title": "The Cathedral and the Nightwarden",
+    "description": "Apparatus & Apocrypha — Folio III: The Cathedral and the Nightwarden",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f3\"}"
+          }
+        ]
+      }
+    }
+  }
+}

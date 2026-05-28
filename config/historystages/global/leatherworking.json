@@ -1,13 +1,14 @@
 {
   "display_name": "Leatherworking",
-  "research_time": 3600,
+  "research_time": 1500,
   "items": [
+    "irons_spellbooks:furled_map.dimension_fail",
+    "irons_spellbooks:furled_map.guide",
+    "minecraft:blast_furnace",
     "minecraft:book",
-    "minecraft:bookshelf",
     "minecraft:bundle",
-    "minecraft:chiseled_bookshelf",
     "minecraft:enchanted_book",
-    "minecraft:glow_item_frame",
+    "minecraft:furnace",
     "minecraft:item_frame",
     "minecraft:leather",
     "minecraft:leather_boots",
@@ -18,8 +19,6 @@
     "minecraft:lectern",
     "minecraft:painting",
     "minecraft:rabbit_hide",
-    "minecraft:saddle",
-    "minecraft:writable_book",
     "minecraft:written_book"
   ],
   "tags": [],

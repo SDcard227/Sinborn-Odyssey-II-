@@ -1,0 +1,18 @@
+{
+  "parent": "sinborn:archive/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf"
+    },
+    "title": "Apparatus & Apocrypha",
+    "description": "Folios I-VIII: the deep readings, kept rarest.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "create:industrial_iron_block",
+      "required": false
+    },
+    {
+      "id": "cataclysm:black_steel_ingot",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:arcane_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:crystallized_coral",
+      "required": false
+    }
+  ]
+}

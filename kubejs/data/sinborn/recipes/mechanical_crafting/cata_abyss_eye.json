@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "OTO",
+    "THT",
+    "OTO"
+  ],
+  "key": {
+    "O": { "item": "minecraft:crying_obsidian" },
+    "T": { "item": "cataclysm:athame" },
+    "H": { "item": "minecraft:heart_of_the_sea" }
+  },
+  "result": {
+    "item": "cataclysm:abyss_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

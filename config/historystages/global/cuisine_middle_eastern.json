@@ -4,8 +4,13 @@
   "items": [
     "delightful:baklava",
     "delightful:baklava_slice",
-    "desert:jujube_cake",
-    "desert:barrel_cactus_fruit_jam"
+    "ramadandelight:cluster_of_dates",
+    "ramadandelight:date",
+    "ramadandelight:date_crate",
+    "ramadandelight:date_stuffed_cookie",
+    "ramadandelight:date_syrup",
+    "ramadandelight:dates_branch",
+    "ramadandelight:hummus_tahini"
   ],
   "tags": [],
   "mods": [

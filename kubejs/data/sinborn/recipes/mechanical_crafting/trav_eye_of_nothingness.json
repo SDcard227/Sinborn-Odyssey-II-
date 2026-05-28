@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "OAO",
+    "AGA",
+    "OAO"
+  ],
+  "key": {
+    "O": { "item": "cataclysm:obsidian_bricks" },
+    "A": { "item": "irons_spellbooks:ancient_knowledge_fragment" },
+    "G": { "item": "irons_spellbooks:divine_pearl" }
+  },
+  "result": {
+    "item": "traveloptics:eye_of_nothingness",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

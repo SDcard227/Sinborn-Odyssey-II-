@@ -1,0 +1,22 @@
+{
+  "gui.destiny.somewhere": "Awaken",
+  "destiny.story.somewhere/1": "The world does not announce where it places you. You wake far from any map you could have drawn — no village, no road, no name on the land. Wherever this is, it is yours to survive now.",
+
+  "gui.destiny.jungle_pyramid": "Jungle Temple",
+  "gui.destiny.pyramid": "Desert Pyramid",
+  "gui.destiny.ruined_portal": "Ruined Portal",
+  "gui.destiny.ruined_portal_desert": "Desert Portal",
+  "gui.destiny.ruined_portal_mountain": "Mountain Portal",
+  "gui.destiny.ruined_portal_swamp": "Swamp Portal",
+  "gui.destiny.swamp_hut": "Witch's Hut",
+  "gui.destiny.igloo": "Igloo",
+
+  "destiny.story.jungle_pyramid/1": "You push through dense vines to find the crumbling stones of an ancient temple. Whatever was worshipped here is long gone — but their traps are not.",
+  "destiny.story.pyramid/1": "The desert swallowed this structure long before you arrived. Sand pours from the ceilings and the hieroglyphs glow faintly in the dark.",
+  "destiny.story.ruined_portal/1": "A gateway to somewhere — or nowhere. The obsidian frame is shattered and overgrown. You wonder what passed through it last.",
+  "destiny.story.ruined_portal_desert/1": "Half-buried in sand, the obsidian arch still hums faintly. Whoever built it here was either brave or lost.",
+  "destiny.story.ruined_portal_mountain/1": "High in the peaks, the wind howls through a broken portal frame. The cold is sharp. The view is worth it.",
+  "destiny.story.ruined_portal_swamp/1": "The portal sank into the bog long ago. Frogs watch you from the mud. The frame still stands, barely.",
+  "destiny.story.swamp_hut/1": "A witch's hut tilts at the edge of a murky swamp. The door is open. The cauldron is still warm.",
+  "destiny.story.igloo/1": "You dig yourself out of a snowbank to find a small igloo, smoke drifting from a hole in the roof. Someone lived here once."
+}

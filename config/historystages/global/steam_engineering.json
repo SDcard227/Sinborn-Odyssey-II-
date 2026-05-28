@@ -2,7 +2,11 @@
   "display_name": "Steam Engineering",
   "research_time": 5400,
   "items": [
-    "dungeons_and_combat:steel_block"
+    "tfmg:aluminum_fluid_valve",
+    "tfmg:brass_fluid_valve",
+    "tfmg:cast_iron_fluid_valve",
+    "tfmg:pipe_bomb",
+    "tfmg:plastic_fluid_valve"
   ],
   "tags": [],
   "mods": [

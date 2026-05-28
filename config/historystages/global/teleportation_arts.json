@@ -1,7 +1,10 @@
 {
   "display_name": "Teleportation Arts (the Quantum Age)",
   "research_time": 10800,
-  "items": [],
+  "items": [
+    "createteleporters:teleporter",
+    "createteleporters:teleporter_enable"
+  ],
   "tags": [],
   "mods": [
     "createteleporters",

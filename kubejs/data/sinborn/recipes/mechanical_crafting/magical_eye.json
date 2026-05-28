@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "EUE",
+    "ALI",
+    "EPE"
+  ],
+  "key": {
+    "E": { "item": "irons_spellbooks:evocation_rune" },
+    "U": { "item": "dungeonnowloading:redstone_chip" },
+    "A": { "item": "traveloptics:abyssal_spellweave_ingot" },
+    "L": { "item": "cataclysm:lacrima" },
+    "I": { "item": "dungeons_and_combat:essence_of_kamath" },
+    "P": { "item": "mowziesmobs:geomancer_beads" }
+  },
+  "result": {
+    "item": "endrem:magical_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "BCR"
+  ],
+  "key": {
+    "B": { "item": "endrem:black_eye" },
+    "C": { "item": "endrem:corrupted_eye" },
+    "R": { "item": "endrem:rogue_eye" }
+  },
+  "result": {
+    "item": "end_remastered_promax:enhance_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

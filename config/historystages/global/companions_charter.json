@@ -2,9 +2,9 @@
   "display_name": "The Companions Charter",
   "research_time": 900,
   "items": [
-    "irons_spellbooks:villager_spell_book",
+    "companions:empty_puppet_block",
+    "companions:hostile_puppet_glove_spawn_egg",
     "minecraft:emerald",
-    "minecraft:music_disc_otherside",
     "minecraft:name_tag"
   ],
   "tags": [],

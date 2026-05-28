@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "LPL",
+    "PDP",
+    "LPL"
+  ],
+  "key": {
+    "L": { "item": "minecraft:lightning_rod" },
+    "P": { "item": "minecraft:copper_block" },
+    "D": { "item": "iceandfire:dragonsteel_lightning_ingot" }
+  },
+  "result": {
+    "item": "cataclysm:storm_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

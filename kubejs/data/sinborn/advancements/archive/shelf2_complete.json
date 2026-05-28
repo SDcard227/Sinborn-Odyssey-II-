@@ -1,0 +1,229 @@
+{
+  "parent": "sinborn:archive/shelf2_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "title": "The Crimson Reign — Complete",
+    "description": "Every folio of The Crimson Reign, gathered. The shelf is whole.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sw2_f1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f1\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f2\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f3\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f4\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f5\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f6\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f7\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f8\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f9": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f9\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f10": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f10\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f11": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f11\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f12": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f12\"}"
+          }
+        ]
+      }
+    },
+    "sw2_f9b": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f9b\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sw2_f1"
+    ],
+    [
+      "sw2_f2"
+    ],
+    [
+      "sw2_f3"
+    ],
+    [
+      "sw2_f4"
+    ],
+    [
+      "sw2_f5"
+    ],
+    [
+      "sw2_f6"
+    ],
+    [
+      "sw2_f7"
+    ],
+    [
+      "sw2_f8"
+    ],
+    [
+      "sw2_f9"
+    ],
+    [
+      "sw2_f10"
+    ],
+    [
+      "sw2_f11"
+    ],
+    [
+      "sw2_f12"
+    ],
+    [
+      "sw2_f9b"
+    ]
+  ],
+  "rewards": {
+    "experience": 300
+  }
+}

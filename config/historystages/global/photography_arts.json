@@ -1,7 +1,22 @@
 {
   "display_name": "The Photography Arts",
   "research_time": 2700,
-  "items": [],
+  "items": [
+    "exposure:aged_photograph",
+    "exposure:black_and_white_film",
+    "exposure:camera",
+    "exposure:camera_stand",
+    "exposure:color_film",
+    "exposure:developed_black_and_white_film",
+    "exposure:developed_color_film",
+    "exposure:glass_photograph_frame",
+    "exposure:high_sensitivity_black_and_white_film",
+    "exposure:high_sensitivity_color_film",
+    "exposure:photograph",
+    "exposure:photograph_frame",
+    "exposure:stacked_photographs",
+    "exposure_polaroid:instant_camera"
+  ],
   "tags": [],
   "mods": [
     "exposure",

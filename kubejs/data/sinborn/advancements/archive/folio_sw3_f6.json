@@ -1,0 +1,29 @@
+{
+  "parent": "sinborn:archive/shelf3_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:written_book"
+    },
+    "title": "The Fallen Adventurers",
+    "description": "The Long Aftermath — Folio VI: The Fallen Adventurers",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw3_f6\"}"
+          }
+        ]
+      }
+    }
+  }
+}

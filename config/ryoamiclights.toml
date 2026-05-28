@@ -689,6 +689,7 @@
 				fissure = true
 				fissure_piece = true
 				earth_spike = true
+				ice_ball = true
 
 			[light_sources.settings.entities.mutantmonsters]
 				mutant_skeleton = true

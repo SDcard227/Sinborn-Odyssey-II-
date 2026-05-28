@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "SBS",
+    "WUM",
+    "SES"
+  ],
+  "key": {
+    "S": { "item": "minecraft:soul_lantern" },
+    "B": { "item": "iceandfire:witherbone" },
+    "W": { "item": "mythsandlegends:umbras_whisper" },
+    "U": { "item": "endrem:undead_soul" },
+    "M": { "item": "mca:scythe" },
+    "E": { "item": "call_of_yucutan:elder_bone" }
+  },
+  "result": {
+    "item": "endrem:undead_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

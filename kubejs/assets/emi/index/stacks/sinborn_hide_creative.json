@@ -1,0 +1,32 @@
+{
+  "removed": [
+    "item:minecraft:command_block",
+    "item:minecraft:chain_command_block",
+    "item:minecraft:repeating_command_block",
+    "item:minecraft:command_block_minecart",
+    "item:minecraft:barrier",
+    "item:minecraft:light",
+    "item:minecraft:structure_block",
+    "item:minecraft:structure_void",
+    "item:minecraft:jigsaw",
+    "item:minecraft:debug_stick",
+    "item:minecraft:knowledge_book",
+    "item:citadel:debug",
+    "item:citadel:effect_item",
+    "item:citadel:fancy_item",
+    "item:citadel:icon_item",
+    "item:alexscaves:advancement_tab_icon",
+    "item:dungeonnowloading:dnl_logo",
+    "item:dungeonsdelight:logo_item",
+    "item:endergetic:feature_stick",
+    "item:fruitsdelight:dummy_cauldron",
+    "item:mowziesmobs:test_structure"
+  ],
+  "filters": [
+    "/.*_spawn_egg/",
+    "/.*:removed_item/",
+    "/creative_/",
+    "/debug/"
+  ],
+  "disable": false
+}

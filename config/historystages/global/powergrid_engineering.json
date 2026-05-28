@@ -1,7 +1,12 @@
 {
   "display_name": "Powergrid Engineering",
   "research_time": 5400,
-  "items": [],
+  "items": [
+    "powergrid:incomplete_transformer_core",
+    "powergrid:transformer_core",
+    "powergrid:transformer_medium",
+    "powergrid:transformer_small"
+  ],
   "tags": [],
   "mods": [
     "create_radar",

@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "create:zinc_ingot",
+      "required": false
+    },
+    {
+      "id": "create:brass_ingot",
+      "required": false
+    },
+    {
+      "id": "create:copper_nugget",
+      "required": false
+    },
+    {
+      "id": "create:experience_nugget",
+      "required": false
+    },
+    {
+      "id": "create:zinc_nugget",
+      "required": false
+    },
+    {
+      "id": "create:brass_nugget",
+      "required": false
+    }
+  ]
+}

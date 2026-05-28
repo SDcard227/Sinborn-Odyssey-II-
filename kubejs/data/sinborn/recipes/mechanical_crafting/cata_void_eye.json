@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "PSP",
+    "SCS",
+    "PSP"
+  ],
+  "key": {
+    "P": { "item": "minecraft:purpur_pillar" },
+    "S": { "item": "minecraft:shulker_shell" },
+    "C": { "item": "minecraft:chorus_fruit" }
+  },
+  "result": {
+    "item": "cataclysm:void_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

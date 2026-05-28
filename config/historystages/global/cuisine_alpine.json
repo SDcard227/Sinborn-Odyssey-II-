@@ -1,7 +1,15 @@
 {
   "display_name": "The Long Hour Hearth",
   "research_time": 2700,
-  "items": [],
+  "items": [
+    "iceandfire:frost_lily",
+    "irons_spellbooks:frosted_helve",
+    "irons_spellbooks:frostward_ring",
+    "irons_spellbooks:permafrost_shard",
+    "meadow:meadow_banner",
+    "simplymore:grandfrost",
+    "simplyswords:frostfall"
+  ],
   "tags": [],
   "mods": [
     "meadow",

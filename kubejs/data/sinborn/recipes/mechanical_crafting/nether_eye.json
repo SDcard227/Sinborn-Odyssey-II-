@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "IBI",
+    "SNR",
+    "ICI"
+  ],
+  "key": {
+    "I": { "item": "dungeonnowloading:redstone_suppressor" },
+    "B": { "item": "cataclysm:burning_ashes" },
+    "S": { "item": "mythsandlegends:scorched_bone" },
+    "N": { "item": "dungeons_and_combat:molten_bone" },
+    "R": { "item": "cataclysm:ignitium_ingot" },
+    "C": { "item": "irons_spellbooks:cinder_essence" }
+  },
+  "result": {
+    "item": "endrem:nether_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

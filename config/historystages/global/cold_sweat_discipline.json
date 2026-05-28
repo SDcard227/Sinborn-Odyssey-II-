@@ -1,7 +1,10 @@
 {
   "display_name": "Cold Sweat Discipline",
   "research_time": 2700,
-  "items": [],
+  "items": [
+    "cold_sweat:minecart_insulation",
+    "cold_sweat:thermometer"
+  ],
   "tags": [],
   "mods": [
     "cold_sweat",

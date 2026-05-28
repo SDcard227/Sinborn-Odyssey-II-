@@ -1,0 +1,165 @@
+// ============================================================
+// SINBORN ODYSSEY 2 — Dimension Gates
+//
+// The Nether and The End are hostile to those who enter
+// without knowledge. Players who enter without the matching
+// scroll take escalating supernatural damage and are warned.
+//
+// NETHER → requires: On Infernal Passage (infernal_passage)
+// END    → requires: On the Nature of the Void (nature_void)
+//
+// Damage applied every 2s via Wither effect (bypasses armor,
+// fire resistance, and most forms of protection).
+// Does NOT block entry — it pressures retreat or death.
+// Either outcome is correct: retreat = learn, die = learn.
+//
+// FLAG MODEL:
+//   sinborn_dimgate_<id> is set the moment a player picks up
+//   the matching historystages:research_scroll. This flag only
+//   serves the Wither pressure check. All other gating (crafting,
+//   combat, JEI) is handled by History Stages natively.
+//
+//   Pressure lifts on PICKUP, not research completion.
+//   Finding the scroll = earning the right to explore.
+// ============================================================
+
+var NETHER_SCROLL = 'infernal_passage'
+var END_SCROLL    = 'nature_void'
+// scroll_end_passage is a sibling End-gate scroll (locks chorus_fruit/purpur,
+// unlocks the End dimension itself in History Stages). If the player finds
+// THIS one before nature_void, they enter the End legitimately but
+// dimension_gates.js wouldn't know — Wither pressure would unmake them.
+// Either scroll grants End-recognition.
+var END_SCROLL_2  = 'scroll_end_passage'
+
+var NETHER_DIM = 'minecraft:the_nether'
+var END_DIM    = 'minecraft:the_end'
+
+// Vault Eye in inventory grants automatic End-recognition. Pickup-only
+// flag-setting fails for items that arrive via Mechanical Crafter or
+// other non-pickup paths; inventory scan in the dimension check is the
+// robust defense.
+var VAULT_EYE_ID = 'end_remastered_promax:vault_eye'
+
+// ─── SCROLL PICKUP → SET DIMENSION FLAG ─────────────────────
+// Lightweight handler: only fires on research scroll pickup.
+// Sets sinborn_dimgate_<stage> so the Wither pressure check
+// can detect it without polling History Stages internals.
+
+ItemEvents.pickedUp(function(event) {
+  var stack = event.item
+  var player = event.player
+
+  // \u2500\u2500 VAULT EYE: a fused End-Remastered Promax eye that contains the
+  // Nightwarden's distilled End-knowledge. Holding it = automatic End
+  // recognition; the dimension stops unmaking you on contact.
+  // (Lore: Vault Eye is one of the 6 fused ER:ProMax eyes \u2014 a synthesis
+  // of multiple sealed-god covenant fragments. Possessing it is proof of
+  // having walked the path far enough that the End cannot reject you.)
+  if (stack.id === 'end_remastered_promax:vault_eye') {
+    var endFlag = 'sinborn_dimgate_' + END_SCROLL
+    if (!player.persistentData.getBoolean(endFlag)) {
+      player.persistentData.putBoolean(endFlag, true)
+      player.tell('\u00a75The Vault Eye opens. The Void recognizes its bearer. The End will no longer reject you.')
+    }
+    return
+  }
+
+  if (stack.id !== 'historystages:research_scroll') return
+
+  var nbt = stack.nbt
+  if (!nbt) return
+  var stageId = nbt.getString('StageResearch')
+  if (!stageId || stageId.length === 0) return
+
+  // Only care about dimension gate scrolls (both End-gate scrolls + Nether)
+  if (stageId !== NETHER_SCROLL && stageId !== END_SCROLL && stageId !== END_SCROLL_2) return
+
+  var flagKey = 'sinborn_dimgate_' + stageId
+  if (player.persistentData.getBoolean(flagKey)) return
+
+  player.persistentData.putBoolean(flagKey, true)
+  var dimName = (stageId === NETHER_SCROLL) ? 'Nether' : 'End'
+  player.tell('\u00a7aYou feel the knowledge settle. The ' + dimName + ' will no longer reject you.')
+})
+
+// \u2500\u2500\u2500 INVENTORY SCAN HELPER: does the player have the Vault Eye? \u2500\u2500\u2500\u2500\u2500
+// Used in the tick handler below as defense-in-depth against pickup
+// event misses (Mechanical Crafter outputs, /give, mob-drop teleports, etc.)
+function hasVaultEye(player) {
+  var inv = player.inventory
+  if (!inv) return false
+  var size = inv.size
+  for (var i = 0; i < size; i++) {
+    var item = inv.getStackInSlot(i)
+    if (item && !item.isEmpty() && item.id === VAULT_EYE_ID) return true
+  }
+  return false
+}
+
+// ─── DIMENSION GATE CHECK ────────────────────────────────────
+// Runs every 2 seconds (40 ticks). Wither II/III applied for 3s
+// so effects stack slightly — ensures continuous pressure.
+// Message fires every 10 seconds to not spam chat.
+
+ServerEvents.tick(function(event) {
+  if (event.server.tickCount % 40 !== 0) return
+
+  var doMessage = (event.server.tickCount % 200 === 0)
+
+  event.server.players.forEach(function(player) {
+    var dim = '' + player.level.dimension
+
+    // ── NETHER ────────────────────────────────────────────────
+    if (dim === NETHER_DIM || dim.indexOf('the_nether') !== -1) {
+      // Check new flag OR legacy flags (for existing players who had old system)
+      var hasNether = player.persistentData.getBoolean('sinborn_dimgate_' + NETHER_SCROLL)
+                   || player.persistentData.getBoolean('sinborn_scroll_' + NETHER_SCROLL)
+                   || player.persistentData.getBoolean('sinborn_studied_' + NETHER_SCROLL)
+      if (!hasNether) {
+        // Wither II, 3 seconds, hide particles
+        player.server.runCommandSilent(
+          'effect give ' + player.username + ' minecraft:wither 3 1 true'
+        )
+        if (doMessage) {
+          player.tell('\u00a7cThe Nether is eroding you. You don\u2019t know how to survive here.')
+          player.tell('\u00a7eSomeone survived this place and wrote it down. Find the \u00a7fOn Infernal Passage\u00a7e scroll.')
+        }
+      }
+      return
+    }
+
+    // ── THE END ───────────────────────────────────────────────
+    if (dim === END_DIM || dim.indexOf('the_end') !== -1) {
+      var hasEnd = player.persistentData.getBoolean('sinborn_dimgate_' + END_SCROLL)
+               || player.persistentData.getBoolean('sinborn_scroll_' + END_SCROLL)
+               || player.persistentData.getBoolean('sinborn_studied_' + END_SCROLL)
+               // Sibling End-gate scroll (scroll_end_passage)
+               || player.persistentData.getBoolean('sinborn_dimgate_' + END_SCROLL_2)
+               || player.persistentData.getBoolean('sinborn_scroll_' + END_SCROLL_2)
+               || player.persistentData.getBoolean('sinborn_studied_' + END_SCROLL_2)
+               // Legacy: old system used 'void_gate' as End scroll ID
+               || player.persistentData.getBoolean('sinborn_scroll_void_gate')
+               || player.persistentData.getBoolean('sinborn_studied_void_gate')
+               // Defense-in-depth: Vault Eye in inventory grants recognition
+               // (covers Mechanical Crafter output / /give / non-pickup paths)
+               || hasVaultEye(player)
+      // If recognized (Vault Eye or scroll), persist the flag so recognition
+      // survives even if Vault Eye is dropped or stored later.
+      if (hasEnd && !player.persistentData.getBoolean('sinborn_dimgate_' + END_SCROLL)) {
+        player.persistentData.putBoolean('sinborn_dimgate_' + END_SCROLL, true)
+      }
+      if (!hasEnd) {
+        // Wither III, 3 seconds, hide particles
+        player.server.runCommandSilent(
+          'effect give ' + player.username + ' minecraft:wither 3 2 true'
+        )
+        if (doMessage) {
+          player.tell('\u00a7cThe End does not recognize you. It is unmaking you.')
+          player.tell('\u00a7eThe knowledge is sealed in the stronghold. Find the \u00a7fOn the Nature of the Void\u00a7e scroll.')
+        }
+      }
+      return
+    }
+  })
+})

@@ -2,9 +2,14 @@
   "display_name": "The Dragon Feast",
   "research_time": 10800,
   "items": [
+    "ends_delight:dragon_meat_stew",
+    "ends_delight:dragon_meat_stew_block",
+    "ends_delight:raw_dragon_meat",
+    "ends_delight:raw_dragon_meat_cuts",
+    "ends_delight:roasted_dragon_meat",
+    "ends_delight:roasted_dragon_meat_cuts",
     "minecraft:chorus_flower",
-    "minecraft:chorus_plant",
-    "minecraft:end_stone_bricks"
+    "minecraft:chorus_plant"
   ],
   "tags": [],
   "mods": [

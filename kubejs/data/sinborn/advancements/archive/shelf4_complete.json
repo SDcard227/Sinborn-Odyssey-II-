@@ -1,0 +1,149 @@
+{
+  "parent": "sinborn:archive/shelf4_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "title": "Apparatus & Apocrypha — Complete",
+    "description": "Every folio of Apparatus & Apocrypha, gathered. The shelf is whole.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sw4_f1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f1\"}"
+          }
+        ]
+      }
+    },
+    "sw4_f2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f2\"}"
+          }
+        ]
+      }
+    },
+    "sw4_f3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f3\"}"
+          }
+        ]
+      }
+    },
+    "sw4_f4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f4\"}"
+          }
+        ]
+      }
+    },
+    "sw4_f5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f5\"}"
+          }
+        ]
+      }
+    },
+    "sw4_f6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f6\"}"
+          }
+        ]
+      }
+    },
+    "sw4_f7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f7\"}"
+          }
+        ]
+      }
+    },
+    "sw4_f8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f8\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sw4_f1"
+    ],
+    [
+      "sw4_f2"
+    ],
+    [
+      "sw4_f3"
+    ],
+    [
+      "sw4_f4"
+    ],
+    [
+      "sw4_f5"
+    ],
+    [
+      "sw4_f6"
+    ],
+    [
+      "sw4_f7"
+    ],
+    [
+      "sw4_f8"
+    ]
+  ],
+  "rewards": {
+    "experience": 400
+  }
+}

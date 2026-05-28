@@ -1,0 +1,165 @@
+{
+  "parent": "sinborn:archive/shelf1_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "title": "The First World — Complete",
+    "description": "Every folio of The First World, gathered. The shelf is whole.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sw1_f1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f1\"}"
+          }
+        ]
+      }
+    },
+    "sw1_f2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f2\"}"
+          }
+        ]
+      }
+    },
+    "sw1_f3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f3\"}"
+          }
+        ]
+      }
+    },
+    "sw1_f4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f4\"}"
+          }
+        ]
+      }
+    },
+    "sw1_f5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f5\"}"
+          }
+        ]
+      }
+    },
+    "sw1_f6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f6\"}"
+          }
+        ]
+      }
+    },
+    "sw1_f7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f7\"}"
+          }
+        ]
+      }
+    },
+    "sw1_f8": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f8\"}"
+          }
+        ]
+      }
+    },
+    "sw1_f4b": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f4b\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sw1_f1"
+    ],
+    [
+      "sw1_f2"
+    ],
+    [
+      "sw1_f3"
+    ],
+    [
+      "sw1_f4"
+    ],
+    [
+      "sw1_f5"
+    ],
+    [
+      "sw1_f6"
+    ],
+    [
+      "sw1_f7"
+    ],
+    [
+      "sw1_f8"
+    ],
+    [
+      "sw1_f4b"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

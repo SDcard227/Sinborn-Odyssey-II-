@@ -1,0 +1,25 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "SRA",
+    "FKL",
+    "SCA"
+  ],
+  "key": {
+    "S": { "item": "alexscaves:scarlet_neodymium_ingot" },
+    "R": [
+      { "item": "dungeonnowloading:catalyzed_redstone" },
+      { "item": "dungeonnowloading:combustion_cell" }
+    ],
+    "A": { "item": "alexscaves:azure_neodymium_ingot" },
+    "F": { "item": "call_of_yucutan:fragment_of_death" },
+    "K": { "item": "alexscaves:fissile_core" },
+    "L": { "item": "traveloptics:last_glow" },
+    "C": { "item": "call_of_yucutan:fragment_of_rebirth" }
+  },
+  "result": {
+    "item": "endrem:rogue_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

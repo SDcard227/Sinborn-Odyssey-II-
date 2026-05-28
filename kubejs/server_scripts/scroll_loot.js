@@ -1,1081 +1,2716 @@
 // ============================================================
-// SINBORN ODYSSEY 2 — Scroll Chest Loot Injection (V2 rebuild 2026-05-13)
+// SINBORN ODYSSEY 2 — Scroll Chest Loot Injection (V6 BOOSTED 2026-05-26)
 //
-// Generated from SCROLL_REWORK_DESIGN_SPEC_2026-05-13. Every populated
-// scroll (118) wired to its owning civ's drop zones at tier-appropriate rates.
+// STRICT theme matching + BOOSTED rates. A scroll only drops in a chest if
+// the scroll's theme tags appear in the chest path. No fallback.
 //
-// Anthropological model: civs are material-culture drop zones, not knowledge
-// owners. Each scroll drops in its primary civ's structures (full rate) + 1
-// secondary contact deposit (half rate) + 1 cross-civ contact (half rate).
+// Tier rates (boosted for discoverability):
+//   T1=35% T2=25% T3=17% T4=11% T5=7% T6=4% (age = 2%)
 //
-// Tier rates: T1=22%, T2=17%, T3=12%, T4=8%, T5=6%, T6=4%
-// Survivor Codex is NOT here — spawns in starter backpack via starter_items.js.
+// Total chest types: 449
+// Chests covered: 428
+// Total entries: 1842
 // ============================================================
 
 var SCROLL_SOURCES = [
 
-  // agronomic_path
-  ['agronomic_path', 'ati_structures:chests/library', 17],
-  ['agronomic_path', 'minecraft:chests/stronghold_library', 17],
-
-  // arcane_codex
-  ['arcane_codex', 'minecraft:chests/stronghold_library', 12],
-  ['arcane_codex', 'minecraft:chests/woodland_mansion',  6],
-  ['arcane_codex', 'mowziesmobs:chests/monastery_chest', 12],
-
-  // archaeology_mastery
-  ['archaeology_mastery', 'ati_structures:chests/library', 22],
-  ['archaeology_mastery', 'minecraft:chests/stronghold_library', 22],
-
-  // architectural_mastery
-  ['architectural_mastery', 'ati_structures:chests/library', 12],
-  ['architectural_mastery', 'minecraft:chests/stronghold_library', 12],
-
-  // arsenal_iron_blades
-  ['arsenal_iron_blades', 'ati_structures:chests/library', 17],
-  ['arsenal_iron_blades', 'minecraft:chests/stronghold_library', 17],
-
-  // arsenal_iron_polearms
-  ['arsenal_iron_polearms', 'ati_structures:chests/library', 17],
-  ['arsenal_iron_polearms', 'minecraft:chests/stronghold_library', 17],
-
-  // arsenal_iron_ranged
-  ['arsenal_iron_ranged', 'ati_structures:chests/library', 17],
-  ['arsenal_iron_ranged', 'minecraft:chests/stronghold_library', 17],
-
-  // arsenal_legendary_blades
-  ['arsenal_legendary_blades', 'ati_structures:chests/library',  6],
-  ['arsenal_legendary_blades', 'minecraft:chests/stronghold_library',  6],
-
-  // arsenal_master_blades
-  ['arsenal_master_blades', 'ati_structures:chests/library', 12],
-  ['arsenal_master_blades', 'minecraft:chests/stronghold_library', 12],
-
-  // arsenal_master_polearms
-  ['arsenal_master_polearms', 'ati_structures:chests/library', 12],
-  ['arsenal_master_polearms', 'minecraft:chests/stronghold_library', 12],
-
-  // arsenal_master_ranged
-  ['arsenal_master_ranged', 'ati_structures:chests/library', 12],
-  ['arsenal_master_ranged', 'minecraft:chests/stronghold_library', 12],
-
-  // atomic_engineering
-  ['atomic_engineering', 'ati_structures:chests/library',  8],
-  ['atomic_engineering', 'dungeons_and_combat:chests/blazing_fortress_loot',  4],
-  ['atomic_engineering', 'minecraft:chests/village/village_weaponsmith',  8],
-
-  // backpackcraft
-  ['backpackcraft', 'ati_structures:chests/library', 17],
-  ['backpackcraft', 'dungeons_and_combat:chests/blazing_fortress_loot',  8],
-  ['backpackcraft', 'minecraft:chests/village/village_weaponsmith', 17],
-  ['backpackcraft', 'mowziesmobs:chests/umvuthana_grove_chest',  8],
-
-  // bakery
-  ['bakery', 'minecraft:chests/stronghold_library', 17],
-  ['bakery', 'minecraft:chests/woodland_mansion',  8],
-  ['bakery', 'mowziesmobs:chests/monastery_chest', 17],
-
-  // ballistics_engineering
-  ['ballistics_engineering', 'ati_structures:chests/library',  8],
-  ['ballistics_engineering', 'dungeons_and_combat:chests/blazing_fortress_loot',  4],
-  ['ballistics_engineering', 'minecraft:chests/village/village_weaponsmith',  8],
-
-  // banner_heraldry
-  ['banner_heraldry', 'minecraft:chests/stronghold_library', 17],
-  ['banner_heraldry', 'minecraft:chests/woodland_mansion',  8],
-  ['banner_heraldry', 'mowziesmobs:chests/monastery_chest', 17],
-
-  // beehive_logistics
-  ['beehive_logistics', 'ati_structures:chests/library',  6],
-  ['beehive_logistics', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['beehive_logistics', 'minecraft:chests/jungle_temple', 12],
-  ['beehive_logistics', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // bestiary_alex_mobs
-  ['bestiary_alex_mobs', 'ati_structures:chests/library', 12],
-  ['bestiary_alex_mobs', 'minecraft:chests/stronghold_library', 12],
-
-  // bestiary_iceandfire
-  ['bestiary_iceandfire', 'ati_structures:chests/library', 12],
-  ['bestiary_iceandfire', 'minecraft:chests/stronghold_library', 12],
-
-  // blood_school
-  ['blood_school', 'alexscaves:chests/witch_hut', 12],
-  ['blood_school', 'minecraft:chests/stronghold_library',  6],
-  ['blood_school', 'minecraft:chests/witch_hut', 12],
-
-  // bookshelf_mastery
-  ['bookshelf_mastery', 'minecraft:chests/stronghold_library', 12],
-  ['bookshelf_mastery', 'minecraft:chests/woodland_mansion',  6],
-  ['bookshelf_mastery', 'mowziesmobs:chests/monastery_chest', 12],
-
-  // boss_trophy_relics
-  ['boss_trophy_relics', 'minecraft:chests/ancient_city_ice_box',  6],
-  ['boss_trophy_relics', 'minecraft:chests/end_city_treasure',  6],
-  ['boss_trophy_relics', 'minecraft:chests/stronghold_corridor',  3],
-  ['boss_trophy_relics', 'minecraft:chests/stronghold_library',  3],
-
-  // butchery
-  ['butchery', 'ati_structures:chests/library', 17],
-  ['butchery', 'dungeons_and_combat:chests/blazing_fortress_loot',  8],
-  ['butchery', 'minecraft:chests/village/village_weaponsmith', 17],
-  ['butchery', 'mowziesmobs:chests/umvuthana_grove_chest',  8],
-
-  // cannoneer
-  ['cannoneer', 'ati_structures:chests/library', 12],
-  ['cannoneer', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['cannoneer', 'minecraft:chests/village/village_weaponsmith', 12],
-
-  // carnal_anatomy
-  ['carnal_anatomy', 'alexscaves:chests/witch_hut', 12],
-  ['carnal_anatomy', 'minecraft:chests/stronghold_library',  6],
-  ['carnal_anatomy', 'minecraft:chests/witch_hut', 12],
-
-  // cartography_advanced
-  ['cartography_advanced', 'minecraft:chests/stronghold_library', 17],
-  ['cartography_advanced', 'minecraft:chests/village/village_cartographer', 17],
-  ['cartography_advanced', 'traveloptics:chests/void_cathedral/library_higher_basic',  8],
-
-  // cataclysm_codex
-  ['cataclysm_codex', 'ati_structures:chests/library', 12],
-  ['cataclysm_codex', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['cataclysm_codex', 'minecraft:chests/village/village_weaponsmith', 12],
-  ['cataclysm_codex', 'minecraft:chests/witch_hut',  6],
-
-  // codex_of_kukulkan
-  ['codex_of_kukulkan', 'ati_structures:chests/library', 17],
-  ['codex_of_kukulkan', 'minecraft:chests/stronghold_library', 17],
-
-  // cold_sweat_discipline
-  ['cold_sweat_discipline', 'aquamirae:chests/ship_1', 17],
-  ['cold_sweat_discipline', 'ati_structures:chests/library',  8],
-  ['cold_sweat_discipline', 'cataclysm:chests/frosted_prison_treasure', 17],
-  ['cold_sweat_discipline', 'irons_spellbooks:chests/impaled_icebreaker/captain_quarters',  8],
-
-  // command_ruin
-  ['command_ruin', 'ati_structures:chests/library',  8],
-  ['command_ruin', 'minecraft:chests/stronghold_library',  8],
-
-  // companions_charter
-  ['companions_charter', 'minecraft:chests/stronghold_library', 22],
-  ['companions_charter', 'minecraft:chests/woodland_mansion', 11],
-  ['companions_charter', 'mowziesmobs:chests/monastery_chest', 22],
-
-  // cuisine_alpine
-  ['cuisine_alpine', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['cuisine_alpine', 'minecraft:chests/jungle_temple', 17],
-  ['cuisine_alpine', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // cuisine_cornelia
-  ['cuisine_cornelia', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['cuisine_cornelia', 'minecraft:chests/jungle_temple', 12],
-  ['cuisine_cornelia', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // cuisine_dragon
-  ['cuisine_dragon', 'dungeons_and_combat:chests/forgotten_sand',  4],
-  ['cuisine_dragon', 'minecraft:chests/jungle_temple',  8],
-  ['cuisine_dragon', 'mowziesmobs:chests/umvuthana_grove_chest',  8],
-
-  // cuisine_east_asian
-  ['cuisine_east_asian', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['cuisine_east_asian', 'minecraft:chests/jungle_temple', 12],
-  ['cuisine_east_asian', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // cuisine_mesoamerican
-  ['cuisine_mesoamerican', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['cuisine_mesoamerican', 'minecraft:chests/jungle_temple', 12],
-  ['cuisine_mesoamerican', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // cuisine_middle_eastern
-  ['cuisine_middle_eastern', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['cuisine_middle_eastern', 'minecraft:chests/jungle_temple', 12],
-  ['cuisine_middle_eastern', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // cuisine_nether
-  ['cuisine_nether', 'dungeons_and_combat:chests/forgotten_sand',  4],
-  ['cuisine_nether', 'minecraft:chests/jungle_temple',  8],
-  ['cuisine_nether', 'mowziesmobs:chests/umvuthana_grove_chest',  8],
-
-  // cuisine_pyromantic
-  ['cuisine_pyromantic', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['cuisine_pyromantic', 'minecraft:chests/jungle_temple', 12],
-  ['cuisine_pyromantic', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // cuisine_rustic
-  ['cuisine_rustic', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['cuisine_rustic', 'minecraft:chests/jungle_temple', 17],
-  ['cuisine_rustic', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // cuisine_subterranean
-  ['cuisine_subterranean', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['cuisine_subterranean', 'minecraft:chests/jungle_temple', 17],
-  ['cuisine_subterranean', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // cuisine_tropical
-  ['cuisine_tropical', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['cuisine_tropical', 'minecraft:chests/jungle_temple', 17],
-  ['cuisine_tropical', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // cuisine_western_holiday
-  ['cuisine_western_holiday', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['cuisine_western_holiday', 'minecraft:chests/jungle_temple', 17],
-  ['cuisine_western_holiday', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // dairy_and_cheese
-  ['dairy_and_cheese', 'cataclysm:chests/frosted_prison_treasure',  8],
-  ['dairy_and_cheese', 'minecraft:chests/stronghold_library', 17],
-  ['dairy_and_cheese', 'minecraft:chests/woodland_mansion',  8],
-  ['dairy_and_cheese', 'mowziesmobs:chests/monastery_chest', 17],
-
-  // distillery
-  ['distillery', 'ati_structures:chests/library', 12],
-  ['distillery', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['distillery', 'minecraft:chests/village/village_weaponsmith', 12],
-  ['distillery', 'minecraft:chests/witch_hut',  6],
-
-  // dnc_pantheon
-  ['dnc_pantheon', 'ati_structures:chests/library',  8],
-  ['dnc_pantheon', 'minecraft:chests/stronghold_library',  8],
-
-  // dragon_husbandry
-  ['dragon_husbandry', 'cataclysm:chests/frosted_prison_treasure',  4],
-  ['dragon_husbandry', 'dungeons_and_combat:chests/forgotten_sand',  4],
-  ['dragon_husbandry', 'minecraft:chests/jungle_temple',  8],
-  ['dragon_husbandry', 'mowziesmobs:chests/umvuthana_grove_chest',  8],
-
-  // dwemer_observatory
-  ['dwemer_observatory', 'mebahelcreaturesdwarven:chests/dwemer_ruin_epic',  6],
-  ['dwemer_observatory', 'mebahelcreaturesdwarven:chests/dwemer_tower',  6],
-  ['dwemer_observatory', 'minecraft:chests/ancient_city',  3],
-  ['dwemer_observatory', 'minecraft:chests/end_city_treasure',  3],
-
-  // dyecraft
-  ['dyecraft', 'ati_structures:chests/library', 17],
-  ['dyecraft', 'minecraft:chests/stronghold_library', 17],
-
-  // eldritch_school
-  ['eldritch_school', 'alexscaves:chests/witch_hut', 12],
-  ['eldritch_school', 'minecraft:chests/stronghold_library',  6],
-  ['eldritch_school', 'minecraft:chests/witch_hut', 12],
-
-  // electrical_engineering
-  ['electrical_engineering', 'ati_structures:chests/library',  8],
-  ['electrical_engineering', 'dungeons_and_combat:chests/blazing_fortress_loot',  4],
-  ['electrical_engineering', 'minecraft:chests/stronghold_library',  4],
-  ['electrical_engineering', 'minecraft:chests/village/village_weaponsmith',  8],
-
-  // ender_school
-  ['ender_school', 'minecraft:chests/stronghold_library', 17],
-  ['ender_school', 'minecraft:chests/village/village_cartographer', 17],
-  ['ender_school', 'traveloptics:chests/void_cathedral/library_higher_basic',  8],
-
-  // evocation_school
-  ['evocation_school', 'minecraft:chests/stronghold_library', 17],
-  ['evocation_school', 'minecraft:chests/witch_hut',  8],
-  ['evocation_school', 'minecraft:chests/woodland_mansion',  8],
-  ['evocation_school', 'mowziesmobs:chests/monastery_chest', 17],
-
-  // eye_black
-  ['eye_black', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_black', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_black', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_cold
-  ['eye_cold', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_cold', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_cold', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_corrupted
-  ['eye_corrupted', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_corrupted', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_corrupted', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_cryptic
-  ['eye_cryptic', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_cryptic', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_cryptic', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_cursed
-  ['eye_cursed', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_cursed', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_cursed', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_evil
-  ['eye_evil', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_evil', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_evil', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_exotic
-  ['eye_exotic', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_exotic', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_exotic', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_guardian
-  ['eye_guardian', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_guardian', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_guardian', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_lost
-  ['eye_lost', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_lost', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_lost', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_magical
-  ['eye_magical', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_magical', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_magical', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_nether
-  ['eye_nether', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_nether', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_nether', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_old
-  ['eye_old', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_old', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_old', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_rogue
-  ['eye_rogue', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_rogue', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_rogue', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_synthesis
-  ['eye_synthesis', 'minecraft:chests/ancient_city_ice_box',  6],
-  ['eye_synthesis', 'minecraft:chests/end_city_treasure',  6],
-  ['eye_synthesis', 'minecraft:chests/stronghold_corridor',  3],
-  ['eye_synthesis', 'minecraft:chests/stronghold_library',  3],
-
-  // eye_undead
-  ['eye_undead', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_undead', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_undead', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_witch
-  ['eye_witch', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_witch', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_witch', 'minecraft:chests/stronghold_corridor',  6],
-
-  // eye_wither
-  ['eye_wither', 'minecraft:chests/ancient_city_ice_box', 12],
-  ['eye_wither', 'minecraft:chests/end_city_treasure', 12],
-  ['eye_wither', 'minecraft:chests/stronghold_corridor',  6],
-
-  // falconry
-  ['falconry', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['falconry', 'minecraft:chests/jungle_temple', 12],
-  ['falconry', 'minecraft:chests/stronghold_library',  6],
-  ['falconry', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // field_medicine
-  ['field_medicine', 'minecraft:chests/stronghold_library', 17],
-  ['field_medicine', 'minecraft:chests/woodland_mansion',  8],
-  ['field_medicine', 'mowziesmobs:chests/monastery_chest', 17],
-  ['field_medicine', 'mowziesmobs:chests/umvuthana_grove_chest',  8],
-
-  // fire_school
-  ['fire_school', 'ati_structures:chests/library',  8],
-  ['fire_school', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['fire_school', 'minecraft:chests/jungle_temple', 17],
-  ['fire_school', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // fishing_arts
-  ['fishing_arts', 'ati_structures:chests/library', 17],
-  ['fishing_arts', 'minecraft:chests/stronghold_library', 17],
-
-  // foraging_almanac
-  ['foraging_almanac', 'cataclysm:chests/frosted_prison_treasure', 11],
-  ['foraging_almanac', 'dungeons_and_combat:chests/forgotten_sand', 11],
-  ['foraging_almanac', 'minecraft:chests/jungle_temple', 22],
-  ['foraging_almanac', 'mowziesmobs:chests/umvuthana_grove_chest', 22],
-
-  // furniturecraft
-  ['furniturecraft', 'ati_structures:chests/library', 17],
-  ['furniturecraft', 'minecraft:chests/stronghold_library', 17],
-
-  // glassworking
-  ['glassworking', 'ati_structures:chests/library',  8],
-  ['glassworking', 'minecraft:chests/stronghold_library', 17],
-  ['glassworking', 'minecraft:chests/village/village_cartographer', 17],
-  ['glassworking', 'traveloptics:chests/void_cathedral/library_higher_basic',  8],
-
-  // god_green_genie
-  ['god_green_genie', 'minecraft:chests/stronghold_library', 12],
-  ['god_green_genie', 'minecraft:chests/village/village_cartographer', 12],
-  ['god_green_genie', 'mowziesmobs:chests/umvuthana_grove_chest',  6],
-  ['god_green_genie', 'traveloptics:chests/void_cathedral/library_higher_basic',  6],
-
-  // god_pontiff
-  ['god_pontiff', 'minecraft:chests/stronghold_library',  8],
-  ['god_pontiff', 'minecraft:chests/woodland_mansion',  4],
-  ['god_pontiff', 'mowziesmobs:chests/monastery_chest',  8],
-
-  // god_scarlet_king
-  ['god_scarlet_king', 'alexscaves:chests/witch_hut',  8],
-  ['god_scarlet_king', 'minecraft:chests/end_city_treasure',  4],
-  ['god_scarlet_king', 'minecraft:chests/stronghold_library',  4],
-  ['god_scarlet_king', 'minecraft:chests/witch_hut',  8],
-
-  // god_sunleia
-  ['god_sunleia', 'dungeons_and_combat:chests/forgotten_sand',  4],
-  ['god_sunleia', 'minecraft:chests/end_city_treasure',  4],
-  ['god_sunleia', 'minecraft:chests/jungle_temple',  8],
-  ['god_sunleia', 'mowziesmobs:chests/umvuthana_grove_chest',  8],
-
-  // god_void_worm
-  ['god_void_worm', 'minecraft:chests/end_city_treasure',  3],
-  ['god_void_worm', 'minecraft:chests/stronghold_library',  6],
-  ['god_void_worm', 'minecraft:chests/village/village_cartographer',  6],
-  ['god_void_worm', 'traveloptics:chests/void_cathedral/library_higher_basic',  3],
-
-  // god_warborn
-  ['god_warborn', 'ati_structures:chests/library',  8],
-  ['god_warborn', 'dungeons_and_combat:chests/blazing_fortress_loot',  4],
-  ['god_warborn', 'minecraft:chests/village/village_weaponsmith',  8],
-  ['god_warborn', 'minecraft:chests/witch_hut',  4],
-
-  // gravitic_engineering
-  ['gravitic_engineering', 'mebahelcreaturesdwarven:chests/dwemer_ruin_epic',  8],
-  ['gravitic_engineering', 'mebahelcreaturesdwarven:chests/dwemer_tower',  8],
-  ['gravitic_engineering', 'minecraft:chests/ancient_city',  4],
-  ['gravitic_engineering', 'minecraft:chests/stronghold_library',  4],
-
-  // gunsmithing
-  ['gunsmithing', 'ati_structures:chests/library', 12],
-  ['gunsmithing', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['gunsmithing', 'minecraft:chests/village/village_weaponsmith', 12],
-
-  // hearthkeepers_manual
-  ['hearthkeepers_manual', 'minecraft:chests/stronghold_library', 22],
-  ['hearthkeepers_manual', 'minecraft:chests/woodland_mansion', 11],
-  ['hearthkeepers_manual', 'mowziesmobs:chests/monastery_chest', 22],
-  ['hearthkeepers_manual', 'mowziesmobs:chests/umvuthana_grove_chest', 11],
-
-  // heavy_plate_discipline
-  ['heavy_plate_discipline', 'ati_structures:chests/library', 12],
-  ['heavy_plate_discipline', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['heavy_plate_discipline', 'minecraft:chests/village/village_weaponsmith', 12],
-
-  // holy_school
-  ['holy_school', 'minecraft:chests/stronghold_library', 17],
-  ['holy_school', 'minecraft:chests/woodland_mansion',  8],
-  ['holy_school', 'mowziesmobs:chests/monastery_chest', 17],
-
-  // ice_school
-  ['ice_school', 'aquamirae:chests/ship_1', 17],
-  ['ice_school', 'cataclysm:chests/frosted_prison_treasure', 17],
-  ['ice_school', 'irons_spellbooks:chests/impaled_icebreaker/captain_quarters',  8],
-
-  // infernal_passage
-  ['infernal_passage', 'alexscaves:chests/witch_hut', 12],
-  ['infernal_passage', 'ati_structures:chests/library',  6],
-  ['infernal_passage', 'minecraft:chests/stronghold_library',  6],
-  ['infernal_passage', 'minecraft:chests/witch_hut', 12],
-
-  // kinetic_engineering
-  ['kinetic_engineering', 'ati_structures:chests/library', 12],
-  ['kinetic_engineering', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['kinetic_engineering', 'minecraft:chests/village/village_weaponsmith', 12],
-
-  // leatherworking
-  ['leatherworking', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['leatherworking', 'minecraft:chests/jungle_temple', 12],
-  ['leatherworking', 'minecraft:chests/stronghold_library',  6],
-  ['leatherworking', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // lightning_school
-  ['lightning_school', 'minecraft:chests/stronghold_library', 17],
-  ['lightning_school', 'minecraft:chests/village/village_cartographer', 17],
-  ['lightning_school', 'traveloptics:chests/void_cathedral/library_higher_basic',  8],
-
-  // long_road
-  ['long_road', 'minecraft:chests/stronghold_library', 22],
-  ['long_road', 'minecraft:chests/village/village_cartographer', 22],
-  ['long_road', 'traveloptics:chests/void_cathedral/library_higher_basic', 11],
-
-  // lost_void
-  ['lost_void', 'minecraft:chests/end_city_treasure',  4],
-  ['lost_void', 'minecraft:chests/stronghold_library',  8],
-  ['lost_void', 'minecraft:chests/village/village_cartographer',  8],
-  ['lost_void', 'traveloptics:chests/void_cathedral/library_higher_basic',  4],
-
-  // many_tables
-  ['many_tables', 'ati_structures:chests/library', 17],
-  ['many_tables', 'minecraft:chests/stronghold_library', 17],
-
-  // metalworking
-  ['metalworking', 'ati_structures:chests/library', 12],
-  ['metalworking', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['metalworking', 'mebahelcreaturesdwarven:chests/dwemer_tower',  6],
-  ['metalworking', 'minecraft:chests/village/village_weaponsmith', 12],
-
-  // mob_faction_deep_ones
-  ['mob_faction_deep_ones', 'cataclysm:chests/frosted_prison_treasure',  4],
-  ['mob_faction_deep_ones', 'minecraft:chests/stronghold_library',  8],
-  ['mob_faction_deep_ones', 'minecraft:chests/village/village_cartographer',  8],
-  ['mob_faction_deep_ones', 'traveloptics:chests/void_cathedral/library_higher_basic',  4],
-
-  // mounted_rail
-  ['mounted_rail', 'ati_structures:chests/library', 17],
-  ['mounted_rail', 'minecraft:chests/stronghold_library', 17],
-
-  // music_records
-  ['music_records', 'ati_structures:chests/library', 17],
-  ['music_records', 'minecraft:chests/stronghold_library', 17],
-
-  // music_screens
-  ['music_screens', 'ati_structures:chests/library',  8],
-  ['music_screens', 'minecraft:chests/stronghold_library',  8],
-
-  // music_speakers
-  ['music_speakers', 'ati_structures:chests/library', 12],
-  ['music_speakers', 'minecraft:chests/stronghold_library', 12],
-
-  // mythril_age
-  ['mythril_age', 'mebahelcreaturesdwarven:chests/dwemer_ruin_epic',  8],
-  ['mythril_age', 'mebahelcreaturesdwarven:chests/dwemer_tower',  8],
-  ['mythril_age', 'minecraft:chests/ancient_city',  4],
-  ['mythril_age', 'minecraft:chests/end_city_treasure',  4],
-
-  // naturalist_basics
-  ['naturalist_basics', 'ati_structures:chests/library', 22],
-  ['naturalist_basics', 'minecraft:chests/stronghold_library', 22],
-
-  // nature_school
-  ['nature_school', 'cataclysm:chests/frosted_prison_treasure',  8],
-  ['nature_school', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['nature_school', 'minecraft:chests/jungle_temple', 17],
-  ['nature_school', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // nature_void
-  ['nature_void', 'ati_structures:chests/library',  8],
-  ['nature_void', 'minecraft:chests/stronghold_library',  8],
-
-  // numismatic_mechanisms
-  ['numismatic_mechanisms', 'ati_structures:chests/library', 12],
-  ['numismatic_mechanisms', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['numismatic_mechanisms', 'minecraft:chests/stronghold_library',  6],
-  ['numismatic_mechanisms', 'minecraft:chests/village/village_weaponsmith', 12],
-
-  // path_to_divinity
-  ['path_to_divinity', 'minecraft:chests/ancient_city_ice_box',  4],
-  ['path_to_divinity', 'minecraft:chests/end_city_treasure',  4],
-  ['path_to_divinity', 'minecraft:chests/stronghold_corridor',  3],
-
-  // photography_arts
-  ['photography_arts', 'ati_structures:chests/library', 17],
-  ['photography_arts', 'minecraft:chests/stronghold_library', 17],
-
-  // powergrid_engineering
-  ['powergrid_engineering', 'ati_structures:chests/library', 12],
-  ['powergrid_engineering', 'minecraft:chests/stronghold_library', 12],
-
-  // redstone_principles
-  ['redstone_principles', 'ati_structures:chests/library', 12],
-  ['redstone_principles', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['redstone_principles', 'minecraft:chests/stronghold_library',  6],
-  ['redstone_principles', 'minecraft:chests/village/village_weaponsmith', 12],
-
-  // scales_and_steel
-  ['scales_and_steel', 'ati_structures:chests/library', 12],
-  ['scales_and_steel', 'cataclysm:chests/frosted_prison_treasure',  6],
-  ['scales_and_steel', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['scales_and_steel', 'minecraft:chests/village/village_weaponsmith', 12],
-
-  // scroll_end_passage
-  ['scroll_end_passage', 'ati_structures:chests/library', 17],
-  ['scroll_end_passage', 'minecraft:chests/stronghold_library', 17],
-
-  // scrollcasting
-  ['scrollcasting', 'minecraft:chests/stronghold_library', 12],
-  ['scrollcasting', 'minecraft:chests/witch_hut',  6],
-  ['scrollcasting', 'minecraft:chests/woodland_mansion',  6],
-  ['scrollcasting', 'mowziesmobs:chests/monastery_chest', 12],
-
-  // sculk_sickness
-  ['sculk_sickness', 'aquamirae:chests/ship_1', 12],
-  ['sculk_sickness', 'cataclysm:chests/frosted_prison_treasure', 12],
-  ['sculk_sickness', 'irons_spellbooks:chests/impaled_icebreaker/captain_quarters',  6],
-  ['sculk_sickness', 'minecraft:chests/stronghold_library',  6],
-
-  // seafood_mastery
-  ['seafood_mastery', 'aquamirae:chests/ship_1', 17],
-  ['seafood_mastery', 'cataclysm:chests/frosted_prison_treasure', 17],
-  ['seafood_mastery', 'irons_spellbooks:chests/impaled_icebreaker/captain_quarters',  8],
-  ['seafood_mastery', 'mowziesmobs:chests/umvuthana_grove_chest',  8],
-
-  // slay_abaddon
-  ['slay_abaddon', 'ati_structures:chests/library', 22],
-  ['slay_abaddon', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_amphithere
-  ['slay_amphithere', 'ati_structures:chests/library', 22],
-  ['slay_amphithere', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_ancient_remnant
-  ['slay_ancient_remnant', 'ati_structures:chests/library', 22],
-  ['slay_ancient_remnant', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_aptrgangr
-  ['slay_aptrgangr', 'ati_structures:chests/library', 22],
-  ['slay_aptrgangr', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_aqua_grandmaster
-  ['slay_aqua_grandmaster', 'ati_structures:chests/library', 22],
-  ['slay_aqua_grandmaster', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_atlatitan
-  ['slay_atlatitan', 'ati_structures:chests/library', 22],
-  ['slay_atlatitan', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_ballista_golem
-  ['slay_ballista_golem', 'ati_structures:chests/library', 22],
-  ['slay_ballista_golem', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_barako
-  ['slay_barako', 'ati_structures:chests/library', 22],
-  ['slay_barako', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_brainiac
-  ['slay_brainiac', 'ati_structures:chests/library', 22],
-  ['slay_brainiac', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_brood_eetle
-  ['slay_brood_eetle', 'ati_structures:chests/library', 22],
-  ['slay_brood_eetle', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_chaac
-  ['slay_chaac', 'ati_structures:chests/library', 22],
-  ['slay_chaac', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_chaos_spawner
-  ['slay_chaos_spawner', 'ati_structures:chests/library', 22],
-  ['slay_chaos_spawner', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_charro
-  ['slay_charro', 'ati_structures:chests/library', 22],
-  ['slay_charro', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_cockatrice
-  ['slay_cockatrice', 'ati_structures:chests/library', 22],
-  ['slay_cockatrice', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_coralssus
-  ['slay_coralssus', 'ati_structures:chests/library', 22],
-  ['slay_coralssus', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_cornelia_fleet
-  ['slay_cornelia_fleet', 'ati_structures:chests/library', 22],
-  ['slay_cornelia_fleet', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_cyclops
-  ['slay_cyclops', 'ati_structures:chests/library', 22],
-  ['slay_cyclops', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_death_worm
-  ['slay_death_worm', 'ati_structures:chests/library', 22],
-  ['slay_death_worm', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_ender_dragon
-  ['slay_ender_dragon', 'ati_structures:chests/library', 22],
-  ['slay_ender_dragon', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_ender_golem
-  ['slay_ender_golem', 'ati_structures:chests/library', 22],
-  ['slay_ender_golem', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_ender_guardian
-  ['slay_ender_guardian', 'ati_structures:chests/library', 22],
-  ['slay_ender_guardian', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_fairkeeper_boros
-  ['slay_fairkeeper_boros', 'ati_structures:chests/library', 22],
-  ['slay_fairkeeper_boros', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_fairkeeper_ouros
-  ['slay_fairkeeper_ouros', 'ati_structures:chests/library', 22],
-  ['slay_fairkeeper_ouros', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_ferrous_wroughtnaut
-  ['slay_ferrous_wroughtnaut', 'ati_structures:chests/library', 22],
-  ['slay_ferrous_wroughtnaut', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_fire_dragon
-  ['slay_fire_dragon', 'ati_structures:chests/library', 22],
-  ['slay_fire_dragon', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_forsaken
-  ['slay_forsaken', 'ati_structures:chests/library', 22],
-  ['slay_forsaken', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_frostmaw
-  ['slay_frostmaw', 'ati_structures:chests/library', 22],
-  ['slay_frostmaw', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_golden_guard
-  ['slay_golden_guard', 'ati_structures:chests/library', 22],
-  ['slay_golden_guard', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_grave_watcher
-  ['slay_grave_watcher', 'ati_structures:chests/library', 22],
-  ['slay_grave_watcher', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_green_genie
-  ['slay_green_genie', 'ati_structures:chests/library', 22],
-  ['slay_green_genie', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_grim_reaper
-  ['slay_grim_reaper', 'ati_structures:chests/library', 22],
-  ['slay_grim_reaper', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_gum_worm
-  ['slay_gum_worm', 'ati_structures:chests/library', 22],
-  ['slay_gum_worm', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_harbinger
-  ['slay_harbinger', 'ati_structures:chests/library', 22],
-  ['slay_harbinger', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_high_priest
-  ['slay_high_priest', 'ati_structures:chests/library', 22],
-  ['slay_high_priest', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_hippogryph
-  ['slay_hippogryph', 'ati_structures:chests/library', 22],
-  ['slay_hippogryph', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_hullbreaker
-  ['slay_hullbreaker', 'ati_structures:chests/library', 22],
-  ['slay_hullbreaker', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_hydra
-  ['slay_hydra', 'ati_structures:chests/library', 22],
-  ['slay_hydra', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_ice_dragon
-  ['slay_ice_dragon', 'ati_structures:chests/library', 22],
-  ['slay_ice_dragon', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_ignis
-  ['slay_ignis', 'ati_structures:chests/library', 22],
-  ['slay_ignis', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_kamath
-  ['slay_kamath', 'ati_structures:chests/library', 22],
-  ['slay_kamath', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_kukulkan
-  ['slay_kukulkan', 'ati_structures:chests/library', 22],
-  ['slay_kukulkan', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_leviathan
-  ['slay_leviathan', 'ati_structures:chests/library', 22],
-  ['slay_leviathan', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_licowitch
-  ['slay_licowitch', 'ati_structures:chests/library', 22],
-  ['slay_licowitch', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_lightning_dragon
-  ['slay_lightning_dragon', 'ati_structures:chests/library', 22],
-  ['slay_lightning_dragon', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_luxtructosaurus
-  ['slay_luxtructosaurus', 'ati_structures:chests/library', 22],
-  ['slay_luxtructosaurus', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_maledictus
-  ['slay_maledictus', 'ati_structures:chests/library', 22],
-  ['slay_maledictus', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_maze_mother
-  ['slay_maze_mother', 'ati_structures:chests/library', 22],
-  ['slay_maze_mother', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_mimy_chest
-  ['slay_mimy_chest', 'ati_structures:chests/library', 22],
-  ['slay_mimy_chest', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_mine_guardian
-  ['slay_mine_guardian', 'ati_structures:chests/library', 22],
-  ['slay_mine_guardian', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_myrmex_queen
-  ['slay_myrmex_queen', 'ati_structures:chests/library', 22],
-  ['slay_myrmex_queen', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_netherite_monstrosity
-  ['slay_netherite_monstrosity', 'ati_structures:chests/library', 22],
-  ['slay_netherite_monstrosity', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_nightwarden
-  ['slay_nightwarden', 'ati_structures:chests/library', 22],
-  ['slay_nightwarden', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_pontiff
-  ['slay_pontiff', 'ati_structures:chests/library', 22],
-  ['slay_pontiff', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_pyro_knight
-  ['slay_pyro_knight', 'ati_structures:chests/library', 22],
-  ['slay_pyro_knight', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_scarlet_king
-  ['slay_scarlet_king', 'ati_structures:chests/library', 22],
-  ['slay_scarlet_king', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_scorched_sentinel
-  ['slay_scorched_sentinel', 'ati_structures:chests/library', 22],
-  ['slay_scorched_sentinel', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_sculptor
-  ['slay_sculptor', 'ati_structures:chests/library', 22],
-  ['slay_sculptor', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_star_monolith
-  ['slay_star_monolith', 'ati_structures:chests/library', 22],
-  ['slay_star_monolith', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_sunleia
-  ['slay_sunleia', 'ati_structures:chests/library', 22],
-  ['slay_sunleia', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_symbiont
-  ['slay_symbiont', 'ati_structures:chests/library', 22],
-  ['slay_symbiont', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_tempest
-  ['slay_tempest', 'ati_structures:chests/library', 22],
-  ['slay_tempest', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_torture
-  ['slay_torture', 'ati_structures:chests/library', 22],
-  ['slay_torture', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_tremorzilla
-  ['slay_tremorzilla', 'ati_structures:chests/library', 22],
-  ['slay_tremorzilla', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_umvuthi
-  ['slay_umvuthi', 'ati_structures:chests/library', 22],
-  ['slay_umvuthi', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_veilguard
-  ['slay_veilguard', 'ati_structures:chests/library', 22],
-  ['slay_veilguard', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_void_worm
-  ['slay_void_worm', 'ati_structures:chests/library', 22],
-  ['slay_void_worm', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_warborn
-  ['slay_warborn', 'ati_structures:chests/library', 22],
-  ['slay_warborn', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_warden
-  ['slay_warden', 'ati_structures:chests/library', 22],
-  ['slay_warden', 'minecraft:chests/stronghold_library', 22],
-
-  // slay_wither
-  ['slay_wither', 'ati_structures:chests/library', 22],
-  ['slay_wither', 'minecraft:chests/stronghold_library', 22],
-
-  // small_ships
-  ['small_ships', 'aquamirae:chests/ship_1', 12],
-  ['small_ships', 'cataclysm:chests/frosted_prison_treasure', 12],
-  ['small_ships', 'irons_spellbooks:chests/impaled_icebreaker/captain_quarters',  6],
-  ['small_ships', 'minecraft:chests/stronghold_library',  6],
-
-  // soul_black_smith
-  ['soul_black_smith', 'ati_structures:chests/library',  6],
-  ['soul_black_smith', 'dungeons_and_combat:chests/blazing_fortress_loot',  3],
-  ['soul_black_smith', 'minecraft:chests/village/village_weaponsmith',  6],
-  ['soul_black_smith', 'minecraft:chests/witch_hut',  3],
-
-  // soups_and_stews
-  ['soups_and_stews', 'minecraft:chests/stronghold_library', 17],
-  ['soups_and_stews', 'minecraft:chests/woodland_mansion',  8],
-  ['soups_and_stews', 'mowziesmobs:chests/monastery_chest', 17],
-  ['soups_and_stews', 'mowziesmobs:chests/umvuthana_grove_chest',  8],
-
-  // specialist_suits
-  ['specialist_suits', 'ati_structures:chests/library',  8],
-  ['specialist_suits', 'dungeons_and_combat:chests/blazing_fortress_loot',  4],
-  ['specialist_suits', 'mebahelcreaturesdwarven:chests/dwemer_tower',  4],
-  ['specialist_suits', 'minecraft:chests/village/village_weaponsmith',  8],
-
-  // steam_engineering
-  ['steam_engineering', 'ati_structures:chests/library', 12],
-  ['steam_engineering', 'dungeons_and_combat:chests/blazing_fortress_loot',  6],
-  ['steam_engineering', 'minecraft:chests/village/village_weaponsmith', 12],
-
-  // stoneworking
-  ['stoneworking', 'ati_structures:chests/library', 17],
-  ['stoneworking', 'dungeons_and_combat:chests/blazing_fortress_loot',  8],
-  ['stoneworking', 'mebahelcreaturesdwarven:chests/dwemer_tower',  8],
-  ['stoneworking', 'minecraft:chests/village/village_weaponsmith', 17],
-
-  // sweets_and_confections
-  ['sweets_and_confections', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['sweets_and_confections', 'minecraft:chests/jungle_temple', 17],
-  ['sweets_and_confections', 'minecraft:chests/stronghold_library',  8],
-  ['sweets_and_confections', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // symbiont_pursuit
-  ['symbiont_pursuit', 'ati_structures:chests/library',  4],
-  ['symbiont_pursuit', 'minecraft:chests/ancient_city_ice_box',  8],
-  ['symbiont_pursuit', 'minecraft:chests/end_city_treasure',  8],
-  ['symbiont_pursuit', 'minecraft:chests/stronghold_corridor',  4],
-
-  // tea_ceremony
-  ['tea_ceremony', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['tea_ceremony', 'minecraft:chests/jungle_temple', 17],
-  ['tea_ceremony', 'minecraft:chests/stronghold_library',  8],
-  ['tea_ceremony', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // teleportation_arts
-  ['teleportation_arts', 'ati_structures:chests/library',  8],
-  ['teleportation_arts', 'minecraft:chests/stronghold_library',  8],
-
-  // tonic_alchemy
-  ['tonic_alchemy', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['tonic_alchemy', 'minecraft:chests/jungle_temple', 12],
-  ['tonic_alchemy', 'minecraft:chests/stronghold_library',  6],
-  ['tonic_alchemy', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // torch_and_lantern_craft
-  ['torch_and_lantern_craft', 'ati_structures:chests/library', 11],
-  ['torch_and_lantern_craft', 'minecraft:chests/stronghold_library', 22],
-  ['torch_and_lantern_craft', 'minecraft:chests/village/village_cartographer', 22],
-  ['torch_and_lantern_craft', 'traveloptics:chests/void_cathedral/library_higher_basic', 11],
-
-  // trim_smithing
-  ['trim_smithing', 'ati_structures:chests/library', 17],
-  ['trim_smithing', 'minecraft:chests/stronghold_library', 17],
-
-  // vinification
-  ['vinification', 'dungeons_and_combat:chests/forgotten_sand',  8],
-  ['vinification', 'minecraft:chests/jungle_temple', 17],
-  ['vinification', 'minecraft:chests/stronghold_library',  8],
-  ['vinification', 'mowziesmobs:chests/umvuthana_grove_chest', 17],
-
-  // void_table
-  ['void_table', 'ati_structures:chests/library', 17],
-  ['void_table', 'minecraft:chests/stronghold_library', 17],
-
-  // warriors_feast
-  ['warriors_feast', 'ati_structures:chests/library', 17],
-  ['warriors_feast', 'minecraft:chests/stronghold_library', 17],
-
-  // whistle_caller_basic
-  ['whistle_caller_basic', 'cataclysm:chests/frosted_prison_treasure', 11],
-  ['whistle_caller_basic', 'dungeons_and_combat:chests/forgotten_sand', 11],
-  ['whistle_caller_basic', 'minecraft:chests/jungle_temple', 22],
-  ['whistle_caller_basic', 'mowziesmobs:chests/umvuthana_grove_chest', 22],
-
-  // wild_study
-  ['wild_study', 'cataclysm:chests/frosted_prison_treasure',  6],
-  ['wild_study', 'dungeons_and_combat:chests/forgotten_sand',  6],
-  ['wild_study', 'minecraft:chests/jungle_temple', 12],
-  ['wild_study', 'mowziesmobs:chests/umvuthana_grove_chest', 12],
-
-  // wilderness_camping
-  ['wilderness_camping', 'ati_structures:chests/library', 17],
-  ['wilderness_camping', 'minecraft:chests/stronghold_library', 17],
-
-  // ── Alex's Caves biome scrolls (added 2026-05-15) ──
-  // Each found in its own biome's ruins + underground cabin, T3 rate.
-
-  // magnetic_deep
-  ['magnetic_deep', 'alexscaves:chests/magnetic_ruins', 12],
-  ['magnetic_deep', 'alexscaves:chests/underground_cabin_magnetic_caves', 6],
-  ['magnetic_deep', 'minecraft:chests/stronghold_library', 6],
-
-  // primordial_strata
-  ['primordial_strata', 'alexscaves:chests/caveman_house', 12],
-  ['primordial_strata', 'alexscaves:chests/underground_cabin_primordial_caves', 6],
-  ['primordial_strata', 'minecraft:chests/stronghold_library', 6],
-
-  // blighted_hollows
-  ['blighted_hollows', 'alexscaves:chests/toxic_ruins', 12],
-  ['blighted_hollows', 'alexscaves:chests/underground_cabin_toxic_caves', 6],
-  ['blighted_hollows', 'minecraft:chests/stronghold_library', 6],
-
-  // forlorn_hollows
-  ['forlorn_hollows', 'alexscaves:chests/forlorn_ruins', 12],
-  ['forlorn_hollows', 'alexscaves:chests/underground_cabin_forlorn_hollows', 6],
-  ['forlorn_hollows', 'minecraft:chests/stronghold_library', 6],
-
-  // abyssal_chasm
-  ['abyssal_chasm', 'alexscaves:chests/abyssal_ruins', 12],
-  ['abyssal_chasm', 'alexscaves:chests/underground_cabin_abyssal_chasm', 6],
-  ['abyssal_chasm', 'minecraft:chests/stronghold_library', 6],
-
-  // sugarstone_caverns
-  ['sugarstone_caverns', 'alexscaves:chests/gingerbread_town', 12],
-  ['sugarstone_caverns', 'alexscaves:chests/underground_cabin_candy_cavity', 6],
-  ['sugarstone_caverns', 'minecraft:chests/stronghold_library', 6],
-
-  // woodworking — early vanilla craft, T2 rate
-  ['woodworking', 'minecraft:chests/stronghold_library', 17],
-  ['woodworking', 'minecraft:chests/woodland_mansion', 8],
-  ['woodworking', 'minecraft:chests/village/village_plains_house', 17],
-
-  // alchemy — brewing discipline, T3 rate; witch hut is the thematic home
-  ['alchemy', 'minecraft:chests/witch_hut', 12],
-  ['alchemy', 'minecraft:chests/stronghold_library', 12],
-  ['alchemy', 'minecraft:chests/woodland_mansion', 6],
-
-  // runesmithing — Simply Swords rune subsystem, master tier (T4)
-  ['runesmithing', 'ati_structures:chests/library', 8],
-  ['runesmithing', 'minecraft:chests/stronghold_library', 8],
-  ['runesmithing', 'minecraft:chests/village/village_weaponsmith', 8],
-
-  // ── Legendary named-weapon peers (added 2026-05-25) ──
-  // arsenal_legendary_polearms — peer of legendary_blades at 6%
-  ['arsenal_legendary_polearms', 'ati_structures:chests/library',  6],
-  ['arsenal_legendary_polearms', 'minecraft:chests/stronghold_library',  6],
-
-  // arsenal_legendary_ranged — peer of legendary_blades at 6%
-  ['arsenal_legendary_ranged', 'ati_structures:chests/library',  6],
-  ['arsenal_legendary_ranged', 'minecraft:chests/stronghold_library',  6],
-
-  // five_vessels_apocrypha — rare apocrypha, 3% in libraries + 2% in deep ruins
-  ['five_vessels_apocrypha', 'ati_structures:chests/library',  3],
-  ['five_vessels_apocrypha', 'minecraft:chests/stronghold_library',  3],
-  ['five_vessels_apocrypha', 'minecraft:chests/end_city_treasure',  2],
-  ['five_vessels_apocrypha', 'traveloptics:chests/void_cathedral/library_higher_basic',  2],
-
-  // civ_scrollwright — the bootstrap meta-scroll, 12% in libraries
-  ['civ_scrollwright', 'ati_structures:chests/library', 12],
-  ['civ_scrollwright', 'minecraft:chests/stronghold_library', 12],
-
-  // ── Age scrolls (added 2026-05-25) ──
-  // Ultra-rare 1-2% in libraries. Alternate-route glimpse, not skip-the-chapter.
-  // Players who find one before earning it know what's coming, but the chapter
-  // still requires the quest. Per CANON_LOCK chapter progression.
-  ['abyssal_age',       'minecraft:chests/stronghold_library', 2],
-  ['abyssal_age',       'ati_structures:chests/library',       1],
-  ['culture_age',       'minecraft:chests/stronghold_library', 2],
-  ['culture_age',       'ati_structures:chests/library',       1],
-  ['cursed_age',        'minecraft:chests/stronghold_library', 2],
-  ['cursed_age',        'ati_structures:chests/library',       1],
-  ['eye_hunt_age',      'minecraft:chests/stronghold_library', 2],
-  ['eye_hunt_age',      'ati_structures:chests/library',       1],
-  ['fermentation_age',  'minecraft:chests/stronghold_library', 2],
-  ['fermentation_age',  'ati_structures:chests/library',       1],
-  ['hearth_age',        'minecraft:chests/stronghold_library', 2],
-  ['hearth_age',        'ati_structures:chests/library',       1],
-  ['infernal_age',      'minecraft:chests/stronghold_library', 2],
-  ['infernal_age',      'ati_structures:chests/library',       1],
-  ['kindled_age',       'minecraft:chests/stronghold_library', 2],
-  ['kindled_age',       'ati_structures:chests/library',       1],
-  ['oil_age',           'minecraft:chests/stronghold_library', 2],
-  ['oil_age',           'ati_structures:chests/library',       1],
-  ['steam_age',         'minecraft:chests/stronghold_library', 2],
-  ['steam_age',         'ati_structures:chests/library',       1],
-  ['water_age',         'minecraft:chests/stronghold_library', 2],
-  ['water_age',         'ati_structures:chests/library',       1],
+  // ── abridged:chests/badlands_mining ──
+  ['metalworking', 'abridged:chests/badlands_mining', 4],  // T6
+
+  // ── abridged:chests/pillager_bridge ──
+  ['arsenal_iron_blades', 'abridged:chests/pillager_bridge', 4],  // T6
+  ['arsenal_iron_polearms', 'abridged:chests/pillager_bridge', 4],  // T6
+  ['arsenal_iron_ranged', 'abridged:chests/pillager_bridge', 7],  // T5
+
+  // ── alexscaves:chests/abyssal_ruins ──
+  ['abyssal_chasm', 'alexscaves:chests/abyssal_ruins', 11],  // T4
+  ['cuisine_subterranean', 'alexscaves:chests/abyssal_ruins', 4],  // T6
+  ['sugarstone_caverns', 'alexscaves:chests/abyssal_ruins', 11],  // T4
+  ['archaeology_mastery', 'alexscaves:chests/abyssal_ruins', 35],  // T1
+  ['bestiary_alex_mobs', 'alexscaves:chests/abyssal_ruins', 4],  // T6
+
+  // ── alexscaves:chests/caveman_house ──
+  ['cuisine_subterranean', 'alexscaves:chests/caveman_house', 4],  // T6
+  ['sugarstone_caverns', 'alexscaves:chests/caveman_house', 11],  // T4
+  ['symbiont_pursuit', 'alexscaves:chests/caveman_house', 11],  // T4
+  ['agronomic_path', 'alexscaves:chests/caveman_house', 35],  // T1
+  ['bakery', 'alexscaves:chests/caveman_house', 35],  // T1
+
+  // ── alexscaves:chests/forlorn_ruins ──
+  ['cuisine_subterranean', 'alexscaves:chests/forlorn_ruins', 4],  // T6
+  ['forlorn_hollows', 'alexscaves:chests/forlorn_ruins', 11],  // T4
+  ['sugarstone_caverns', 'alexscaves:chests/forlorn_ruins', 11],  // T4
+  ['archaeology_mastery', 'alexscaves:chests/forlorn_ruins', 35],  // T1
+  ['bestiary_alex_mobs', 'alexscaves:chests/forlorn_ruins', 4],  // T6
+
+  // ── alexscaves:chests/gingerbread_town ──
+  ['cuisine_subterranean', 'alexscaves:chests/gingerbread_town', 4],  // T6
+  ['sugarstone_caverns', 'alexscaves:chests/gingerbread_town', 11],  // T4
+  ['symbiont_pursuit', 'alexscaves:chests/gingerbread_town', 11],  // T4
+  ['bestiary_alex_mobs', 'alexscaves:chests/gingerbread_town', 4],  // T6
+  ['torch_and_lantern_craft', 'alexscaves:chests/gingerbread_town', 35],  // T1
+
+  // ── alexscaves:chests/licowitch_tower ──
+  ['cuisine_subterranean', 'alexscaves:chests/licowitch_tower', 4],  // T6
+  ['sugarstone_caverns', 'alexscaves:chests/licowitch_tower', 11],  // T4
+  ['symbiont_pursuit', 'alexscaves:chests/licowitch_tower', 11],  // T4
+  ['arcane_codex', 'alexscaves:chests/licowitch_tower', 4],  // T6
+  ['lightning_school', 'alexscaves:chests/licowitch_tower', 7],  // T5
+
+  // ── alexscaves:chests/licowitch_tower_secret ──
+  ['cuisine_subterranean', 'alexscaves:chests/licowitch_tower_secret', 4],  // T6
+  ['sugarstone_caverns', 'alexscaves:chests/licowitch_tower_secret', 11],  // T4
+  ['symbiont_pursuit', 'alexscaves:chests/licowitch_tower_secret', 11],  // T4
+  ['arcane_codex', 'alexscaves:chests/licowitch_tower_secret', 4],  // T6
+  ['lightning_school', 'alexscaves:chests/licowitch_tower_secret', 7],  // T5
+
+  // ── alexscaves:chests/magnetic_ruins ──
+  ['cuisine_subterranean', 'alexscaves:chests/magnetic_ruins', 4],  // T6
+  ['magnetic_deep', 'alexscaves:chests/magnetic_ruins', 11],  // T4
+  ['sugarstone_caverns', 'alexscaves:chests/magnetic_ruins', 11],  // T4
+  ['archaeology_mastery', 'alexscaves:chests/magnetic_ruins', 35],  // T1
+  ['bestiary_alex_mobs', 'alexscaves:chests/magnetic_ruins', 4],  // T6
+
+  // ── alexscaves:chests/toxic_ruins ──
+  ['cuisine_subterranean', 'alexscaves:chests/toxic_ruins', 4],  // T6
+  ['sugarstone_caverns', 'alexscaves:chests/toxic_ruins', 11],  // T4
+  ['symbiont_pursuit', 'alexscaves:chests/toxic_ruins', 11],  // T4
+  ['archaeology_mastery', 'alexscaves:chests/toxic_ruins', 35],  // T1
+  ['bestiary_alex_mobs', 'alexscaves:chests/toxic_ruins', 4],  // T6
+
+  // ── alexscaves:chests/underground_cabin ──
+  ['cuisine_subterranean', 'alexscaves:chests/underground_cabin', 4],  // T6
+  ['abyssal_chasm', 'alexscaves:chests/underground_cabin', 11],  // T4
+  ['sugarstone_caverns', 'alexscaves:chests/underground_cabin', 11],  // T4
+  ['bestiary_alex_mobs', 'alexscaves:chests/underground_cabin', 4],  // T6
+  ['torch_and_lantern_craft', 'alexscaves:chests/underground_cabin', 35],  // T1
+
+  // ── alexscaves:chests/underground_cabin_abyssal_chasm ──
+  ['abyssal_chasm', 'alexscaves:chests/underground_cabin_abyssal_chasm', 11],  // T4
+  ['cuisine_subterranean', 'alexscaves:chests/underground_cabin_abyssal_chasm', 4],  // T6
+  ['sugarstone_caverns', 'alexscaves:chests/underground_cabin_abyssal_chasm', 11],  // T4
+  ['bestiary_alex_mobs', 'alexscaves:chests/underground_cabin_abyssal_chasm', 4],  // T6
+  ['torch_and_lantern_craft', 'alexscaves:chests/underground_cabin_abyssal_chasm', 35],  // T1
+
+  // ── alexscaves:chests/underground_cabin_candy_cavity ──
+  ['cuisine_subterranean', 'alexscaves:chests/underground_cabin_candy_cavity', 4],  // T6
+  ['sugarstone_caverns', 'alexscaves:chests/underground_cabin_candy_cavity', 11],  // T4
+  ['abyssal_chasm', 'alexscaves:chests/underground_cabin_candy_cavity', 11],  // T4
+  ['bestiary_alex_mobs', 'alexscaves:chests/underground_cabin_candy_cavity', 4],  // T6
+  ['torch_and_lantern_craft', 'alexscaves:chests/underground_cabin_candy_cavity', 35],  // T1
+
+  // ── alexscaves:chests/underground_cabin_forlorn_hollows ──
+  ['cuisine_subterranean', 'alexscaves:chests/underground_cabin_forlorn_hollows', 4],  // T6
+  ['abyssal_chasm', 'alexscaves:chests/underground_cabin_forlorn_hollows', 11],  // T4
+  ['forlorn_hollows', 'alexscaves:chests/underground_cabin_forlorn_hollows', 11],  // T4
+  ['bestiary_alex_mobs', 'alexscaves:chests/underground_cabin_forlorn_hollows', 4],  // T6
+  ['carnal_anatomy', 'alexscaves:chests/underground_cabin_forlorn_hollows', 17],  // T3
+
+  // ── alexscaves:chests/underground_cabin_magnetic_caves ──
+  ['cuisine_subterranean', 'alexscaves:chests/underground_cabin_magnetic_caves', 4],  // T6
+  ['abyssal_chasm', 'alexscaves:chests/underground_cabin_magnetic_caves', 11],  // T4
+  ['magnetic_deep', 'alexscaves:chests/underground_cabin_magnetic_caves', 11],  // T4
+  ['bestiary_alex_mobs', 'alexscaves:chests/underground_cabin_magnetic_caves', 4],  // T6
+  ['torch_and_lantern_craft', 'alexscaves:chests/underground_cabin_magnetic_caves', 35],  // T1
+
+  // ── alexscaves:chests/underground_cabin_primordial_caves ──
+  ['cuisine_subterranean', 'alexscaves:chests/underground_cabin_primordial_caves', 4],  // T6
+  ['abyssal_chasm', 'alexscaves:chests/underground_cabin_primordial_caves', 11],  // T4
+  ['primordial_strata', 'alexscaves:chests/underground_cabin_primordial_caves', 11],  // T4
+  ['bestiary_alex_mobs', 'alexscaves:chests/underground_cabin_primordial_caves', 4],  // T6
+  ['torch_and_lantern_craft', 'alexscaves:chests/underground_cabin_primordial_caves', 35],  // T1
+
+  // ── alexscaves:chests/underground_cabin_toxic_caves ──
+  ['cuisine_subterranean', 'alexscaves:chests/underground_cabin_toxic_caves', 4],  // T6
+  ['abyssal_chasm', 'alexscaves:chests/underground_cabin_toxic_caves', 11],  // T4
+  ['sugarstone_caverns', 'alexscaves:chests/underground_cabin_toxic_caves', 11],  // T4
+  ['bestiary_alex_mobs', 'alexscaves:chests/underground_cabin_toxic_caves', 4],  // T6
+  ['torch_and_lantern_craft', 'alexscaves:chests/underground_cabin_toxic_caves', 35],  // T1
+
+  // ── alexscaves:chests/witch_hut ──
+  ['cuisine_subterranean', 'alexscaves:chests/witch_hut', 4],  // T6
+  ['sugarstone_caverns', 'alexscaves:chests/witch_hut', 11],  // T4
+  ['symbiont_pursuit', 'alexscaves:chests/witch_hut', 11],  // T4
+  ['abyssal_age', 'alexscaves:chests/witch_hut', 2],  // T3
+  ['alchemy', 'alexscaves:chests/witch_hut', 7],  // T5
+
+  // ── aquamirae:chests/frozen_chest ──
+  ['cold_sweat_discipline', 'aquamirae:chests/frozen_chest', 25],  // T2
+  ['cuisine_alpine', 'aquamirae:chests/frozen_chest', 7],  // T5
+  ['cuisine_cornelia', 'aquamirae:chests/frozen_chest', 17],  // T3
+  ['fishing_arts', 'aquamirae:chests/frozen_chest', 7],  // T5
+  ['mob_faction_deep_ones', 'aquamirae:chests/frozen_chest', 11],  // T4
+
+  // ── aquamirae:chests/maze_camp_chest ──
+  ['cold_sweat_discipline', 'aquamirae:chests/maze_camp_chest', 25],  // T2
+  ['cuisine_alpine', 'aquamirae:chests/maze_camp_chest', 7],  // T5
+  ['cuisine_cornelia', 'aquamirae:chests/maze_camp_chest', 17],  // T3
+  ['fishing_arts', 'aquamirae:chests/maze_camp_chest', 7],  // T5
+  ['mob_faction_deep_ones', 'aquamirae:chests/maze_camp_chest', 11],  // T4
+
+  // ── aquamirae:chests/maze_common_chest ──
+  ['cold_sweat_discipline', 'aquamirae:chests/maze_common_chest', 25],  // T2
+  ['cuisine_alpine', 'aquamirae:chests/maze_common_chest', 7],  // T5
+  ['cuisine_cornelia', 'aquamirae:chests/maze_common_chest', 17],  // T3
+  ['fishing_arts', 'aquamirae:chests/maze_common_chest', 7],  // T5
+  ['mob_faction_deep_ones', 'aquamirae:chests/maze_common_chest', 11],  // T4
+
+  // ── aquamirae:chests/ship_1 ──
+  ['seafood_mastery', 'aquamirae:chests/ship_1', 11],  // T4
+  ['cartography_advanced', 'aquamirae:chests/ship_1', 7],  // T5
+  ['cold_sweat_discipline', 'aquamirae:chests/ship_1', 25],  // T2
+  ['cuisine_alpine', 'aquamirae:chests/ship_1', 7],  // T5
+  ['cuisine_cornelia', 'aquamirae:chests/ship_1', 17],  // T3
+
+  // ── aquamirae:chests/ship_2 ──
+  ['seafood_mastery', 'aquamirae:chests/ship_2', 11],  // T4
+  ['cartography_advanced', 'aquamirae:chests/ship_2', 7],  // T5
+  ['cold_sweat_discipline', 'aquamirae:chests/ship_2', 25],  // T2
+  ['cuisine_alpine', 'aquamirae:chests/ship_2', 7],  // T5
+  ['cuisine_cornelia', 'aquamirae:chests/ship_2', 17],  // T3
+
+  // ── ati_structures:chests/aqua ──
+  ['fishing_arts', 'ati_structures:chests/aqua', 7],  // T5
+  ['scrollcasting', 'ati_structures:chests/aqua', 7],  // T5
+  ['seafood_mastery', 'ati_structures:chests/aqua', 11],  // T4
+  ['water_age', 'ati_structures:chests/aqua', 2],  // T1
+
+  // ── ati_structures:chests/archer_chest ──
+  ['arsenal_iron_ranged', 'ati_structures:chests/archer_chest', 7],  // T5
+  ['arsenal_legendary_ranged', 'ati_structures:chests/archer_chest', 7],  // T5
+  ['arsenal_master_ranged', 'ati_structures:chests/archer_chest', 17],  // T3
+
+  // ── ati_structures:chests/archer_chest2 ──
+  ['arsenal_iron_ranged', 'ati_structures:chests/archer_chest2', 7],  // T5
+  ['arsenal_legendary_ranged', 'ati_structures:chests/archer_chest2', 7],  // T5
+  ['arsenal_master_ranged', 'ati_structures:chests/archer_chest2', 17],  // T3
+
+  // ── ati_structures:chests/armory ──
+  ['arsenal_iron_blades', 'ati_structures:chests/armory', 4],  // T6
+  ['arsenal_iron_polearms', 'ati_structures:chests/armory', 4],  // T6
+  ['arsenal_iron_ranged', 'ati_structures:chests/armory', 7],  // T5
+  ['ballistics_engineering', 'ati_structures:chests/armory', 11],  // T4
+  ['banner_heraldry', 'ati_structures:chests/armory', 11],  // T4
+
+  // ── ati_structures:chests/coal_storage ──
+  ['scrollcasting', 'ati_structures:chests/coal_storage', 7],  // T5
+
+  // ── ati_structures:chests/construction ──
+  ['glassworking', 'ati_structures:chests/construction', 35],  // T1
+  ['scrollcasting', 'ati_structures:chests/construction', 7],  // T5
+  ['stoneworking', 'ati_structures:chests/construction', 35],  // T1
+
+  // ── ati_structures:chests/copper_storage ──
+  ['metalworking', 'ati_structures:chests/copper_storage', 4],  // T6
+  ['scrollcasting', 'ati_structures:chests/copper_storage', 7],  // T5
+
+  // ── ati_structures:chests/crafting ──
+  ['scrollcasting', 'ati_structures:chests/crafting', 7],  // T5
+
+  // ── ati_structures:chests/food_storage ──
+  ['fermentation_age', 'ati_structures:chests/food_storage', 2],  // T5
+  ['bakery', 'ati_structures:chests/food_storage', 35],  // T1
+  ['butchery', 'ati_structures:chests/food_storage', 35],  // T1
+  ['cuisine_rustic', 'ati_structures:chests/food_storage', 7],  // T5
+  ['sweets_and_confections', 'ati_structures:chests/food_storage', 11],  // T4
+
+  // ── ati_structures:chests/gold_storage ──
+  ['metalworking', 'ati_structures:chests/gold_storage', 4],  // T6
+  ['scrollcasting', 'ati_structures:chests/gold_storage', 7],  // T5
+
+  // ── ati_structures:chests/ingredients ──
+  ['fermentation_age', 'ati_structures:chests/ingredients', 2],  // T5
+  ['scrollcasting', 'ati_structures:chests/ingredients', 7],  // T5
+
+  // ── ati_structures:chests/iron_storage ──
+  ['metalworking', 'ati_structures:chests/iron_storage', 4],  // T6
+  ['scrollcasting', 'ati_structures:chests/iron_storage', 7],  // T5
+
+  // ── ati_structures:chests/library ──
+  ['scrollcasting', 'ati_structures:chests/library', 7],  // T5
+  ['alchemy', 'ati_structures:chests/library', 7],  // T5
+  ['arcane_codex', 'ati_structures:chests/library', 4],  // T6
+  ['architectural_mastery', 'ati_structures:chests/library', 11],  // T4
+  ['bookshelf_mastery', 'ati_structures:chests/library', 11],  // T4
+
+  // ── ati_structures:chests/mechanism_storage ──
+  ['scrollcasting', 'ati_structures:chests/mechanism_storage', 7],  // T5
+
+  // ── ati_structures:chests/minerals ──
+  ['metalworking', 'ati_structures:chests/minerals', 4],  // T6
+  ['scrollcasting', 'ati_structures:chests/minerals', 7],  // T5
+  ['stoneworking', 'ati_structures:chests/minerals', 35],  // T1
+
+  // ── ati_structures:chests/potion_storage ──
+  ['archaeology_mastery', 'ati_structures:chests/potion_storage', 35],  // T1
+  ['scrollcasting', 'ati_structures:chests/potion_storage', 7],  // T5
+  ['tonic_alchemy', 'ati_structures:chests/potion_storage', 7],  // T5
+
+  // ── ati_structures:chests/resources ──
+  ['scrollcasting', 'ati_structures:chests/resources', 7],  // T5
+
+  // ── ati_structures:chests/slime ──
+  ['scrollcasting', 'ati_structures:chests/slime', 7],  // T5
+
+  // ── ati_structures:chests/stone_storage ──
+  ['stoneworking', 'ati_structures:chests/stone_storage', 35],  // T1
+  ['scrollcasting', 'ati_structures:chests/stone_storage', 7],  // T5
+
+  // ── ati_structures:chests/vegetation ──
+  ['scrollcasting', 'ati_structures:chests/vegetation', 7],  // T5
+
+  // ── ati_structures:chests/wood_storage ──
+  ['woodworking', 'ati_structures:chests/wood_storage', 35],  // T1
+  ['scrollcasting', 'ati_structures:chests/wood_storage', 7],  // T5
+
+  // ── beachparty:chests/buried_treasure ──
+  ['cartography_advanced', 'beachparty:chests/buried_treasure', 7],  // T5
+  ['numismatic_mechanisms', 'beachparty:chests/buried_treasure', 17],  // T3
+  ['seafood_mastery', 'beachparty:chests/buried_treasure', 11],  // T4
+
+  // ── beachparty:chests/desert_pyramid ──
+  ['archaeology_mastery', 'beachparty:chests/desert_pyramid', 35],  // T1
+  ['cuisine_middle_eastern', 'beachparty:chests/desert_pyramid', 17],  // T3
+  ['stoneworking', 'beachparty:chests/desert_pyramid', 35],  // T1
+
+  // ── beachparty:chests/shipwreck_supply ──
+  ['seafood_mastery', 'beachparty:chests/shipwreck_supply', 11],  // T4
+  ['cartography_advanced', 'beachparty:chests/shipwreck_supply', 7],  // T5
+  ['cuisine_cornelia', 'beachparty:chests/shipwreck_supply', 17],  // T3
+  ['fishing_arts', 'beachparty:chests/shipwreck_supply', 7],  // T5
+  ['mob_faction_deep_ones', 'beachparty:chests/shipwreck_supply', 11],  // T4
+
+  // ── beachparty:chests/shipwreck_treasure ──
+  ['seafood_mastery', 'beachparty:chests/shipwreck_treasure', 11],  // T4
+  ['cartography_advanced', 'beachparty:chests/shipwreck_treasure', 7],  // T5
+  ['cuisine_cornelia', 'beachparty:chests/shipwreck_treasure', 17],  // T3
+  ['fishing_arts', 'beachparty:chests/shipwreck_treasure', 7],  // T5
+  ['mob_faction_deep_ones', 'beachparty:chests/shipwreck_treasure', 11],  // T4
+
+  // ── beachparty:chests/simple_dungeon ──
+  ['arsenal_iron_blades', 'beachparty:chests/simple_dungeon', 4],  // T6
+  ['arsenal_iron_polearms', 'beachparty:chests/simple_dungeon', 4],  // T6
+  ['arsenal_master_polearms', 'beachparty:chests/simple_dungeon', 7],  // T5
+  ['arsenal_master_ranged', 'beachparty:chests/simple_dungeon', 17],  // T3
+  ['heavy_plate_discipline', 'beachparty:chests/simple_dungeon', 7],  // T5
+
+  // ── beachparty:chests/underwater_ruin_big ──
+  ['cuisine_cornelia', 'beachparty:chests/underwater_ruin_big', 17],  // T3
+  ['mob_faction_deep_ones', 'beachparty:chests/underwater_ruin_big', 11],  // T4
+  ['seafood_mastery', 'beachparty:chests/underwater_ruin_big', 11],  // T4
+  ['water_age', 'beachparty:chests/underwater_ruin_big', 2],  // T1
+
+  // ── beachparty:chests/underwater_ruin_small ──
+  ['cuisine_cornelia', 'beachparty:chests/underwater_ruin_small', 17],  // T3
+  ['mob_faction_deep_ones', 'beachparty:chests/underwater_ruin_small', 11],  // T4
+  ['seafood_mastery', 'beachparty:chests/underwater_ruin_small', 11],  // T4
+  ['water_age', 'beachparty:chests/underwater_ruin_small', 2],  // T1
+
+  // ── beachparty:chests/woodland_mansion ──
+  ['architectural_mastery', 'beachparty:chests/woodland_mansion', 11],  // T4
+  ['banner_heraldry', 'beachparty:chests/woodland_mansion', 11],  // T4
+  ['companions_charter', 'beachparty:chests/woodland_mansion', 35],  // T1
+  ['evocation_school', 'beachparty:chests/woodland_mansion', 7],  // T5
+  ['falconry', 'beachparty:chests/woodland_mansion', 4],  // T6
+
+  // ── betterdeserttemples:chests/food_storage ──
+  ['fermentation_age', 'betterdeserttemples:chests/food_storage', 2],  // T5
+  ['arcane_codex', 'betterdeserttemples:chests/food_storage', 4],  // T6
+  ['archaeology_mastery', 'betterdeserttemples:chests/food_storage', 35],  // T1
+  ['bakery', 'betterdeserttemples:chests/food_storage', 35],  // T1
+  ['cuisine_middle_eastern', 'betterdeserttemples:chests/food_storage', 17],  // T3
+
+  // ── betterdeserttemples:chests/lab ──
+  ['arcane_codex', 'betterdeserttemples:chests/lab', 4],  // T6
+  ['archaeology_mastery', 'betterdeserttemples:chests/lab', 35],  // T1
+  ['cuisine_middle_eastern', 'betterdeserttemples:chests/lab', 17],  // T3
+  ['holy_school', 'betterdeserttemples:chests/lab', 7],  // T5
+  ['music_records', 'betterdeserttemples:chests/lab', 4],  // T6
+
+  // ── betterdeserttemples:chests/library ──
+  ['arcane_codex', 'betterdeserttemples:chests/library', 4],  // T6
+  ['holy_school', 'betterdeserttemples:chests/library', 7],  // T5
+  ['music_records', 'betterdeserttemples:chests/library', 4],  // T6
+  ['runesmithing', 'betterdeserttemples:chests/library', 7],  // T5
+  ['archaeology_mastery', 'betterdeserttemples:chests/library', 35],  // T1
+
+  // ── betterdeserttemples:chests/pharaoh_hidden ──
+  ['arcane_codex', 'betterdeserttemples:chests/pharaoh_hidden', 4],  // T6
+  ['archaeology_mastery', 'betterdeserttemples:chests/pharaoh_hidden', 35],  // T1
+  ['cuisine_middle_eastern', 'betterdeserttemples:chests/pharaoh_hidden', 17],  // T3
+  ['holy_school', 'betterdeserttemples:chests/pharaoh_hidden', 7],  // T5
+  ['music_records', 'betterdeserttemples:chests/pharaoh_hidden', 4],  // T6
+
+  // ── betterdeserttemples:chests/pot ──
+  ['archaeology_mastery', 'betterdeserttemples:chests/pot', 35],  // T1
+  ['arcane_codex', 'betterdeserttemples:chests/pot', 4],  // T6
+  ['cuisine_middle_eastern', 'betterdeserttemples:chests/pot', 17],  // T3
+  ['holy_school', 'betterdeserttemples:chests/pot', 7],  // T5
+  ['music_records', 'betterdeserttemples:chests/pot', 4],  // T6
+
+  // ── betterdeserttemples:chests/statue ──
+  ['arcane_codex', 'betterdeserttemples:chests/statue', 4],  // T6
+  ['archaeology_mastery', 'betterdeserttemples:chests/statue', 35],  // T1
+  ['cuisine_middle_eastern', 'betterdeserttemples:chests/statue', 17],  // T3
+  ['holy_school', 'betterdeserttemples:chests/statue', 7],  // T5
+  ['music_records', 'betterdeserttemples:chests/statue', 4],  // T6
+
+  // ── betterdeserttemples:chests/storage ──
+  ['arcane_codex', 'betterdeserttemples:chests/storage', 4],  // T6
+  ['archaeology_mastery', 'betterdeserttemples:chests/storage', 35],  // T1
+  ['cuisine_middle_eastern', 'betterdeserttemples:chests/storage', 17],  // T3
+  ['holy_school', 'betterdeserttemples:chests/storage', 7],  // T5
+  ['music_records', 'betterdeserttemples:chests/storage', 4],  // T6
+
+  // ── betterdeserttemples:chests/tomb ──
+  ['archaeology_mastery', 'betterdeserttemples:chests/tomb', 35],  // T1
+  ['arcane_codex', 'betterdeserttemples:chests/tomb', 4],  // T6
+  ['cuisine_middle_eastern', 'betterdeserttemples:chests/tomb', 17],  // T3
+  ['holy_school', 'betterdeserttemples:chests/tomb', 7],  // T5
+  ['music_records', 'betterdeserttemples:chests/tomb', 4],  // T6
+
+  // ── betterdeserttemples:chests/tomb_pharaoh ──
+  ['archaeology_mastery', 'betterdeserttemples:chests/tomb_pharaoh', 35],  // T1
+  ['arcane_codex', 'betterdeserttemples:chests/tomb_pharaoh', 4],  // T6
+  ['cuisine_middle_eastern', 'betterdeserttemples:chests/tomb_pharaoh', 17],  // T3
+  ['holy_school', 'betterdeserttemples:chests/tomb_pharaoh', 7],  // T5
+  ['music_records', 'betterdeserttemples:chests/tomb_pharaoh', 4],  // T6
+
+  // ── betterdeserttemples:chests/wardrobe ──
+  ['arcane_codex', 'betterdeserttemples:chests/wardrobe', 4],  // T6
+  ['archaeology_mastery', 'betterdeserttemples:chests/wardrobe', 35],  // T1
+  ['cuisine_middle_eastern', 'betterdeserttemples:chests/wardrobe', 17],  // T3
+  ['holy_school', 'betterdeserttemples:chests/wardrobe', 7],  // T5
+  ['music_records', 'betterdeserttemples:chests/wardrobe', 4],  // T6
+
+  // ── betterjungletemples:chests/campsite ──
+  ['arcane_codex', 'betterjungletemples:chests/campsite', 4],  // T6
+  ['bestiary_alex_mobs', 'betterjungletemples:chests/campsite', 4],  // T6
+  ['cuisine_tropical', 'betterjungletemples:chests/campsite', 11],  // T4
+  ['foraging_almanac', 'betterjungletemples:chests/campsite', 35],  // T1
+  ['holy_school', 'betterjungletemples:chests/campsite', 7],  // T5
+
+  // ── betterjungletemples:chests/treasure ──
+  ['arcane_codex', 'betterjungletemples:chests/treasure', 4],  // T6
+  ['bestiary_alex_mobs', 'betterjungletemples:chests/treasure', 4],  // T6
+  ['cuisine_tropical', 'betterjungletemples:chests/treasure', 11],  // T4
+  ['foraging_almanac', 'betterjungletemples:chests/treasure', 35],  // T1
+  ['holy_school', 'betterjungletemples:chests/treasure', 7],  // T5
+
+  // ── betteroceanmonuments:chests/upper_side_chamber ──
+  ['cuisine_cornelia', 'betteroceanmonuments:chests/upper_side_chamber', 17],  // T3
+  ['fishing_arts', 'betteroceanmonuments:chests/upper_side_chamber', 7],  // T5
+  ['seafood_mastery', 'betteroceanmonuments:chests/upper_side_chamber', 11],  // T4
+
+  // ── cataclysm:chests/acropolis_treasure ──
+  ['arsenal_legendary_blades', 'cataclysm:chests/acropolis_treasure', 7],  // T5
+  ['arsenal_legendary_polearms', 'cataclysm:chests/acropolis_treasure', 7],  // T5
+  ['atomic_engineering', 'cataclysm:chests/acropolis_treasure', 11],  // T4
+  ['cataclysm_codex', 'cataclysm:chests/acropolis_treasure', 4],  // T6
+  ['electrical_engineering', 'cataclysm:chests/acropolis_treasure', 11],  // T4
+
+  // ── cataclysm:chests/frosted_prison_treasure ──
+  ['arsenal_legendary_blades', 'cataclysm:chests/frosted_prison_treasure', 7],  // T5
+  ['arsenal_legendary_polearms', 'cataclysm:chests/frosted_prison_treasure', 7],  // T5
+  ['atomic_engineering', 'cataclysm:chests/frosted_prison_treasure', 11],  // T4
+  ['cataclysm_codex', 'cataclysm:chests/frosted_prison_treasure', 4],  // T6
+  ['electrical_engineering', 'cataclysm:chests/frosted_prison_treasure', 11],  // T4
+
+  // ── celestisynth:chests/underground_dungeons ──
+  ['abyssal_chasm', 'celestisynth:chests/underground_dungeons', 11],  // T4
+  ['arsenal_iron_blades', 'celestisynth:chests/underground_dungeons', 4],  // T6
+  ['arsenal_iron_polearms', 'celestisynth:chests/underground_dungeons', 4],  // T6
+  ['arsenal_master_polearms', 'celestisynth:chests/underground_dungeons', 7],  // T5
+  ['arsenal_master_ranged', 'celestisynth:chests/underground_dungeons', 17],  // T3
+
+  // ── celestisynth:chests/vanilla_nether_structures ──
+  ['cuisine_nether', 'celestisynth:chests/vanilla_nether_structures', 11],  // T4
+  ['cuisine_pyromantic', 'celestisynth:chests/vanilla_nether_structures', 17],  // T3
+  ['fire_school', 'celestisynth:chests/vanilla_nether_structures', 7],  // T5
+  ['infernal_age', 'celestisynth:chests/vanilla_nether_structures', 2],  // T3
+  ['soul_black_smith', 'celestisynth:chests/vanilla_nether_structures', 7],  // T5
+
+  // ── chalk:chests/abandoned_mineshaft_chalk_loot ──
+  ['arsenal_iron_blades', 'chalk:chests/abandoned_mineshaft_chalk_loot', 4],  // T6
+  ['arsenal_iron_polearms', 'chalk:chests/abandoned_mineshaft_chalk_loot', 4],  // T6
+  ['bestiary_iceandfire', 'chalk:chests/abandoned_mineshaft_chalk_loot', 11],  // T4
+  ['kindled_age', 'chalk:chests/abandoned_mineshaft_chalk_loot', 2],  // T1
+  ['kinetic_engineering', 'chalk:chests/abandoned_mineshaft_chalk_loot', 17],  // T3
+
+  // ── chalk:chests/desert_pyramid_chalk_loot ──
+  ['archaeology_mastery', 'chalk:chests/desert_pyramid_chalk_loot', 35],  // T1
+  ['cuisine_middle_eastern', 'chalk:chests/desert_pyramid_chalk_loot', 17],  // T3
+  ['stoneworking', 'chalk:chests/desert_pyramid_chalk_loot', 35],  // T1
+
+  // ── chalk:chests/simple_dungeon_chalk_loot ──
+  ['arsenal_iron_blades', 'chalk:chests/simple_dungeon_chalk_loot', 4],  // T6
+  ['arsenal_iron_polearms', 'chalk:chests/simple_dungeon_chalk_loot', 4],  // T6
+  ['arsenal_master_polearms', 'chalk:chests/simple_dungeon_chalk_loot', 7],  // T5
+  ['arsenal_master_ranged', 'chalk:chests/simple_dungeon_chalk_loot', 17],  // T3
+  ['heavy_plate_discipline', 'chalk:chests/simple_dungeon_chalk_loot', 7],  // T5
+
+  // ── chalk:chests/village_chalk_loot ──
+  ['agronomic_path', 'chalk:chests/village_chalk_loot', 35],  // T1
+  ['bakery', 'chalk:chests/village_chalk_loot', 35],  // T1
+  ['dairy_and_cheese', 'chalk:chests/village_chalk_loot', 7],  // T5
+  ['fermentation_age', 'chalk:chests/village_chalk_loot', 2],  // T5
+  ['sweets_and_confections', 'chalk:chests/village_chalk_loot', 11],  // T4
+
+  // ── chefsdelight:chests/cooker ──
+  ['bakery', 'chefsdelight:chests/cooker', 35],  // T1
+  ['butchery', 'chefsdelight:chests/cooker', 35],  // T1
+  ['dairy_and_cheese', 'chefsdelight:chests/cooker', 7],  // T5
+  ['fermentation_age', 'chefsdelight:chests/cooker', 2],  // T5
+  ['sweets_and_confections', 'chefsdelight:chests/cooker', 11],  // T4
+
+  // ── ctov:chests/village/village_badlands_house ──
+  ['agronomic_path', 'ctov:chests/village/village_badlands_house', 35],  // T1
+  ['bakery', 'ctov:chests/village/village_badlands_house', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_badlands_house', 7],  // T5
+  ['soups_and_stews', 'ctov:chests/village/village_badlands_house', 7],  // T5
+  ['furniturecraft', 'ctov:chests/village/village_badlands_house', 25],  // T2
+
+  // ── ctov:chests/village/village_bakery ──
+  ['bakery', 'ctov:chests/village/village_bakery', 35],  // T1
+  ['sweets_and_confections', 'ctov:chests/village/village_bakery', 11],  // T4
+  ['hearthkeepers_manual', 'ctov:chests/village/village_bakery', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_bakery', 7],  // T5
+  ['fermentation_age', 'ctov:chests/village/village_bakery', 2],  // T5
+
+  // ── ctov:chests/village/village_beach_house ──
+  ['agronomic_path', 'ctov:chests/village/village_beach_house', 35],  // T1
+  ['bakery', 'ctov:chests/village/village_beach_house', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_beach_house', 7],  // T5
+  ['soups_and_stews', 'ctov:chests/village/village_beach_house', 7],  // T5
+  ['furniturecraft', 'ctov:chests/village/village_beach_house', 25],  // T2
+
+  // ── ctov:chests/village/village_dark_forest_house ──
+  ['woodworking', 'ctov:chests/village/village_dark_forest_house', 35],  // T1
+  ['agronomic_path', 'ctov:chests/village/village_dark_forest_house', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_dark_forest_house', 7],  // T5
+  ['soups_and_stews', 'ctov:chests/village/village_dark_forest_house', 7],  // T5
+  ['bestiary_alex_mobs', 'ctov:chests/village/village_dark_forest_house', 4],  // T6
+
+  // ── ctov:chests/village/village_farm ──
+  ['agronomic_path', 'ctov:chests/village/village_farm', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_farm', 7],  // T5
+  ['bakery', 'ctov:chests/village/village_farm', 35],  // T1
+  ['fermentation_age', 'ctov:chests/village/village_farm', 2],  // T5
+  ['sweets_and_confections', 'ctov:chests/village/village_farm', 11],  // T4
+
+  // ── ctov:chests/village/village_forager ──
+  ['agronomic_path', 'ctov:chests/village/village_forager', 35],  // T1
+  ['bakery', 'ctov:chests/village/village_forager', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_forager', 7],  // T5
+  ['fermentation_age', 'ctov:chests/village/village_forager', 2],  // T5
+  ['sweets_and_confections', 'ctov:chests/village/village_forager', 11],  // T4
+
+  // ── ctov:chests/village/village_jungle_house ──
+  ['woodworking', 'ctov:chests/village/village_jungle_house', 35],  // T1
+  ['agronomic_path', 'ctov:chests/village/village_jungle_house', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_jungle_house', 7],  // T5
+  ['soups_and_stews', 'ctov:chests/village/village_jungle_house', 7],  // T5
+  ['bestiary_alex_mobs', 'ctov:chests/village/village_jungle_house', 4],  // T6
+
+  // ── ctov:chests/village/village_library ──
+  ['glassworking', 'ctov:chests/village/village_library', 35],  // T1
+  ['agronomic_path', 'ctov:chests/village/village_library', 35],  // T1
+  ['alchemy', 'ctov:chests/village/village_library', 7],  // T5
+  ['arcane_codex', 'ctov:chests/village/village_library', 4],  // T6
+  ['architectural_mastery', 'ctov:chests/village/village_library', 11],  // T4
+
+  // ── ctov:chests/village/village_mountain_house ──
+  ['agronomic_path', 'ctov:chests/village/village_mountain_house', 35],  // T1
+  ['bakery', 'ctov:chests/village/village_mountain_house', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_mountain_house', 7],  // T5
+  ['soups_and_stews', 'ctov:chests/village/village_mountain_house', 7],  // T5
+  ['furniturecraft', 'ctov:chests/village/village_mountain_house', 25],  // T2
+
+  // ── ctov:chests/village/village_mushroom_house ──
+  ['agronomic_path', 'ctov:chests/village/village_mushroom_house', 35],  // T1
+  ['bakery', 'ctov:chests/village/village_mushroom_house', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_mushroom_house', 7],  // T5
+  ['soups_and_stews', 'ctov:chests/village/village_mushroom_house', 7],  // T5
+  ['furniturecraft', 'ctov:chests/village/village_mushroom_house', 25],  // T2
+
+  // ── ctov:chests/village/village_smith ──
+  ['agronomic_path', 'ctov:chests/village/village_smith', 35],  // T1
+  ['bakery', 'ctov:chests/village/village_smith', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_smith', 7],  // T5
+  ['fermentation_age', 'ctov:chests/village/village_smith', 2],  // T5
+  ['metalworking', 'ctov:chests/village/village_smith', 4],  // T6
+
+  // ── ctov:chests/village/village_swamp_house ──
+  ['agronomic_path', 'ctov:chests/village/village_swamp_house', 35],  // T1
+  ['bakery', 'ctov:chests/village/village_swamp_house', 35],  // T1
+  ['dairy_and_cheese', 'ctov:chests/village/village_swamp_house', 7],  // T5
+  ['soups_and_stews', 'ctov:chests/village/village_swamp_house', 7],  // T5
+  ['furniturecraft', 'ctov:chests/village/village_swamp_house', 25],  // T2
+
+  // ── dungeonnowloading:chests/labyrinth/arrows ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/arrows', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/arrows', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/arrows', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/arrows', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/arrows', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/enchantments/gigantism ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/enchantments/gigantism', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/gigantism', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/gigantism', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/enchantments/gigantism', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/enchantments/gigantism', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/enchantments/overworked ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/enchantments/overworked', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/overworked', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/overworked', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/enchantments/overworked', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/enchantments/overworked', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/enchantments/pack_blessing ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/enchantments/pack_blessing', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/pack_blessing', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/pack_blessing', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/enchantments/pack_blessing', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/enchantments/pack_blessing', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/enchantments/random ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/enchantments/random', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/random', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/random', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/enchantments/random', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/enchantments/random', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/enchantments/reckless ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/enchantments/reckless', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/reckless', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/reckless', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/enchantments/reckless', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/enchantments/reckless', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/enchantments/sacrifice ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/enchantments/sacrifice', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/sacrifice', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/enchantments/sacrifice', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/enchantments/sacrifice', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/enchantments/sacrifice', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/flame_bow ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/flame_bow', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/flame_bow', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/flame_bow', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/flame_bow', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/flame_bow', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/foods ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/foods', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/foods', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/foods', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/foods', 17],  // T3
+  ['bakery', 'dungeonnowloading:chests/labyrinth/foods', 35],  // T1
+
+  // ── dungeonnowloading:chests/labyrinth/horse_gears ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/horse_gears', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/horse_gears', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/horse_gears', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/horse_gears', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/horse_gears', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/potion_bow ──
+  ['archaeology_mastery', 'dungeonnowloading:chests/labyrinth/potion_bow', 35],  // T1
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/potion_bow', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/potion_bow', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/potion_bow', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/potion_bow', 17],  // T3
+
+  // ── dungeonnowloading:chests/labyrinth/reward ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/reward', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/reward', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/reward', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/reward', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/reward', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/rewards/enchantment_books ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/rewards/enchantment_books', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/rewards/enchantment_books', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/rewards/enchantment_books', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/rewards/enchantment_books', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/rewards/enchantment_books', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/rewards/gears ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/rewards/gears', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/rewards/gears', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/rewards/gears', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/rewards/gears', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/rewards/gears', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/rewards/materials ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/rewards/materials', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/rewards/materials', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/rewards/materials', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/rewards/materials', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/rewards/materials', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/rewards/music_discs ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/rewards/music_discs', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/rewards/music_discs', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/rewards/music_discs', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/rewards/music_discs', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/rewards/music_discs', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/rewards/potions ──
+  ['archaeology_mastery', 'dungeonnowloading:chests/labyrinth/rewards/potions', 35],  // T1
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/rewards/potions', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/rewards/potions', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/rewards/potions', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/rewards/potions', 17],  // T3
+
+  // ── dungeonnowloading:chests/labyrinth/suspicious_stew ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/suspicious_stew', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/suspicious_stew', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/suspicious_stew', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/suspicious_stew', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/suspicious_stew', 7],  // T5
+
+  // ── dungeonnowloading:chests/labyrinth/woods ──
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/labyrinth/woods', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonnowloading:chests/labyrinth/woods', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/labyrinth/woods', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/labyrinth/woods', 17],  // T3
+  ['heavy_plate_discipline', 'dungeonnowloading:chests/labyrinth/woods', 7],  // T5
+
+  // ── dungeonnowloading:chests/temple_of_duality/armor/easy_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/armor/easy_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/armor/easy_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/armor/easy_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/armor/easy_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/armor/easy_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/armor/easy_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/armor/easy_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/armor/easy_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/armor/easy_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/armor/easy_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/armor/easy_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/armor/hard_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/armor/hard_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/armor/hard_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/armor/hard_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/armor/hard_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/armor/hard_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/armor/hard_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/armor/hard_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/armor/hard_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/armor/hard_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/armor/hard_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/armor/hard_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/armor/normal_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/armor/normal_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/armor/normal_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/armor/normal_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/armor/normal_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/armor/normal_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/armor/normal_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/armor/normal_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/armor/normal_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/armor/normal_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/armor/normal_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/armor/normal_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/arrow/easy_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/arrow/easy_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/arrow/easy_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/arrow/hard_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/arrow/hard_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/arrow/hard_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/arrow/normal_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/arrow/normal_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/arrow/normal_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/book/easy_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/book/easy_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/book/easy_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/book/easy_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/book/easy_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/book/easy_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/book/easy_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/book/easy_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/book/easy_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/book/easy_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/book/easy_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/book/easy_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/book/hard_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/book/hard_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/book/hard_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/book/hard_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/book/hard_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/book/hard_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/book/hard_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/book/hard_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/book/hard_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/book/hard_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/book/hard_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/book/hard_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/book/normal_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/book/normal_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/book/normal_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/book/normal_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/book/normal_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/book/normal_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/book/normal_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/book/normal_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/book/normal_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/book/normal_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/book/normal_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/book/normal_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/equipment/easy_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/equipment/easy_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/equipment/easy_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/equipment/hard_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/equipment/hard_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/equipment/hard_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/equipment/normal_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/equipment/normal_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/equipment/normal_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/easy_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/hard_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/fairkeeper_chest/normal_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/food/easy_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/food/easy_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/food/easy_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/food/easy_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/food/easy_combat', 17],  // T3
+  ['bakery', 'dungeonnowloading:chests/temple_of_duality/food/easy_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/food/easy_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/food/easy_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/food/easy_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/food/easy_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/food/easy_puzzle', 17],  // T3
+  ['bakery', 'dungeonnowloading:chests/temple_of_duality/food/easy_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/food/hard_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/food/hard_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/food/hard_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/food/hard_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/food/hard_combat', 17],  // T3
+  ['bakery', 'dungeonnowloading:chests/temple_of_duality/food/hard_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/food/hard_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/food/hard_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/food/hard_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/food/hard_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/food/hard_puzzle', 17],  // T3
+  ['bakery', 'dungeonnowloading:chests/temple_of_duality/food/hard_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/food/normal_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/food/normal_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/food/normal_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/food/normal_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/food/normal_combat', 17],  // T3
+  ['bakery', 'dungeonnowloading:chests/temple_of_duality/food/normal_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/food/normal_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/food/normal_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/food/normal_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/food/normal_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/food/normal_puzzle', 17],  // T3
+  ['bakery', 'dungeonnowloading:chests/temple_of_duality/food/normal_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/garbage/easy_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/garbage/easy_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/garbage/easy_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/garbage/hard_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/garbage/hard_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/garbage/hard_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/garbage/normal_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/garbage/normal_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/garbage/normal_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/material/easy_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/material/easy_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/material/easy_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/material/easy_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/material/easy_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/material/easy_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/material/easy_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/material/easy_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/material/easy_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/material/easy_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/material/easy_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/material/easy_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/material/hard_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/material/hard_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/material/hard_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/material/hard_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/material/hard_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/material/hard_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/material/hard_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/material/hard_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/material/hard_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/material/hard_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/material/hard_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/material/hard_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/material/normal_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/material/normal_combat', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/material/normal_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/material/normal_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/material/normal_combat', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/material/normal_combat', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/material/normal_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/material/normal_puzzle', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/material/normal_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/material/normal_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/material/normal_puzzle', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/material/normal_puzzle', 35],  // T1
+
+  // ── dungeonnowloading:chests/temple_of_duality/potion/easy_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/potion/easy_combat', 4],  // T6
+  ['archaeology_mastery', 'dungeonnowloading:chests/temple_of_duality/potion/easy_combat', 35],  // T1
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/potion/easy_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/potion/easy_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/potion/easy_combat', 17],  // T3
+
+  // ── dungeonnowloading:chests/temple_of_duality/potion/easy_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/potion/easy_puzzle', 4],  // T6
+  ['archaeology_mastery', 'dungeonnowloading:chests/temple_of_duality/potion/easy_puzzle', 35],  // T1
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/potion/easy_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/potion/easy_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/potion/easy_puzzle', 17],  // T3
+
+  // ── dungeonnowloading:chests/temple_of_duality/potion/hard_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/potion/hard_combat', 4],  // T6
+  ['archaeology_mastery', 'dungeonnowloading:chests/temple_of_duality/potion/hard_combat', 35],  // T1
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/potion/hard_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/potion/hard_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/potion/hard_combat', 17],  // T3
+
+  // ── dungeonnowloading:chests/temple_of_duality/potion/hard_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/potion/hard_puzzle', 4],  // T6
+  ['archaeology_mastery', 'dungeonnowloading:chests/temple_of_duality/potion/hard_puzzle', 35],  // T1
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/potion/hard_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/potion/hard_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/potion/hard_puzzle', 17],  // T3
+
+  // ── dungeonnowloading:chests/temple_of_duality/potion/normal_combat ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/potion/normal_combat', 4],  // T6
+  ['archaeology_mastery', 'dungeonnowloading:chests/temple_of_duality/potion/normal_combat', 35],  // T1
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/potion/normal_combat', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/potion/normal_combat', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/potion/normal_combat', 17],  // T3
+
+  // ── dungeonnowloading:chests/temple_of_duality/potion/normal_puzzle ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/potion/normal_puzzle', 4],  // T6
+  ['archaeology_mastery', 'dungeonnowloading:chests/temple_of_duality/potion/normal_puzzle', 35],  // T1
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/potion/normal_puzzle', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/potion/normal_puzzle', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/potion/normal_puzzle', 17],  // T3
+
+  // ── dungeonnowloading:chests/temple_of_duality/wood/common ──
+  ['arcane_codex', 'dungeonnowloading:chests/temple_of_duality/wood/common', 4],  // T6
+  ['arsenal_iron_blades', 'dungeonnowloading:chests/temple_of_duality/wood/common', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonnowloading:chests/temple_of_duality/wood/common', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonnowloading:chests/temple_of_duality/wood/common', 17],  // T3
+  ['codex_of_kukulkan', 'dungeonnowloading:chests/temple_of_duality/wood/common', 35],  // T1
+
+  // ── dungeons_and_combat:chests/blacksmithy ──
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/blacksmithy', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeons_and_combat:chests/blacksmithy', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/blacksmithy', 7],  // T5
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/blacksmithy', 17],  // T3
+  ['dnc_pantheon', 'dungeons_and_combat:chests/blacksmithy', 11],  // T4
+
+  // ── dungeons_and_combat:chests/blazing_fortress_loot ──
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/blazing_fortress_loot', 4],  // T6
+  ['cuisine_nether', 'dungeons_and_combat:chests/blazing_fortress_loot', 11],  // T4
+  ['cuisine_pyromantic', 'dungeons_and_combat:chests/blazing_fortress_loot', 17],  // T3
+  ['dnc_pantheon', 'dungeons_and_combat:chests/blazing_fortress_loot', 11],  // T4
+  ['fire_school', 'dungeons_and_combat:chests/blazing_fortress_loot', 7],  // T5
+
+  // ── dungeons_and_combat:chests/catacumbs ──
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/catacumbs', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeons_and_combat:chests/catacumbs', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/catacumbs', 7],  // T5
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/catacumbs', 17],  // T3
+  ['dnc_pantheon', 'dungeons_and_combat:chests/catacumbs', 11],  // T4
+
+  // ── dungeons_and_combat:chests/ernos_cave_loot ──
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/ernos_cave_loot', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeons_and_combat:chests/ernos_cave_loot', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/ernos_cave_loot', 7],  // T5
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/ernos_cave_loot', 17],  // T3
+  ['dnc_pantheon', 'dungeons_and_combat:chests/ernos_cave_loot', 11],  // T4
+
+  // ── dungeons_and_combat:chests/forgotten_sand ──
+  ['arsenal_master_blades', 'dungeons_and_combat:chests/forgotten_sand', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/forgotten_sand', 7],  // T5
+  ['dnc_pantheon', 'dungeons_and_combat:chests/forgotten_sand', 11],  // T4
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/forgotten_sand', 4],  // T6
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/forgotten_sand', 17],  // T3
+
+  // ── dungeons_and_combat:chests/forgotten_sand_treasure ──
+  ['arsenal_master_blades', 'dungeons_and_combat:chests/forgotten_sand_treasure', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/forgotten_sand_treasure', 7],  // T5
+  ['dnc_pantheon', 'dungeons_and_combat:chests/forgotten_sand_treasure', 11],  // T4
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/forgotten_sand_treasure', 4],  // T6
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/forgotten_sand_treasure', 17],  // T3
+
+  // ── dungeons_and_combat:chests/hermit_house ──
+  ['agronomic_path', 'dungeons_and_combat:chests/hermit_house', 35],  // T1
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/hermit_house', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeons_and_combat:chests/hermit_house', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/hermit_house', 7],  // T5
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/hermit_house', 17],  // T3
+
+  // ── dungeons_and_combat:chests/infernal_fortress ──
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/infernal_fortress', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeons_and_combat:chests/infernal_fortress', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/infernal_fortress', 7],  // T5
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/infernal_fortress', 17],  // T3
+  ['ballistics_engineering', 'dungeons_and_combat:chests/infernal_fortress', 11],  // T4
+
+  // ── dungeons_and_combat:chests/remanent_camp ──
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/remanent_camp', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeons_and_combat:chests/remanent_camp', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/remanent_camp', 7],  // T5
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/remanent_camp', 17],  // T3
+  ['dnc_pantheon', 'dungeons_and_combat:chests/remanent_camp', 11],  // T4
+
+  // ── dungeons_and_combat:chests/tavern_loot ──
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/tavern_loot', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeons_and_combat:chests/tavern_loot', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/tavern_loot', 7],  // T5
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/tavern_loot', 17],  // T3
+  ['distillery', 'dungeons_and_combat:chests/tavern_loot', 17],  // T3
+
+  // ── dungeons_and_combat:chests/weak_cult ──
+  ['arsenal_iron_blades', 'dungeons_and_combat:chests/weak_cult', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeons_and_combat:chests/weak_cult', 4],  // T6
+  ['arsenal_master_polearms', 'dungeons_and_combat:chests/weak_cult', 7],  // T5
+  ['arsenal_master_ranged', 'dungeons_and_combat:chests/weak_cult', 17],  // T3
+  ['dnc_pantheon', 'dungeons_and_combat:chests/weak_cult', 11],  // T4
+
+  // ── dungeonsdelight:chests/rotten_dungeon ──
+  ['arsenal_iron_blades', 'dungeonsdelight:chests/rotten_dungeon', 4],  // T6
+  ['arsenal_iron_polearms', 'dungeonsdelight:chests/rotten_dungeon', 4],  // T6
+  ['arsenal_master_polearms', 'dungeonsdelight:chests/rotten_dungeon', 7],  // T5
+  ['arsenal_master_ranged', 'dungeonsdelight:chests/rotten_dungeon', 17],  // T3
+  ['bakery', 'dungeonsdelight:chests/rotten_dungeon', 35],  // T1
+
+  // ── exposure:chests/abandoned_mineshaft ──
+  ['arsenal_iron_blades', 'exposure:chests/abandoned_mineshaft', 4],  // T6
+  ['arsenal_iron_polearms', 'exposure:chests/abandoned_mineshaft', 4],  // T6
+  ['bestiary_iceandfire', 'exposure:chests/abandoned_mineshaft', 11],  // T4
+  ['kindled_age', 'exposure:chests/abandoned_mineshaft', 2],  // T1
+  ['kinetic_engineering', 'exposure:chests/abandoned_mineshaft', 17],  // T3
+
+  // ── exposure:chests/shipwreck_map ──
+  ['cartography_advanced', 'exposure:chests/shipwreck_map', 7],  // T5
+  ['seafood_mastery', 'exposure:chests/shipwreck_map', 11],  // T4
+  ['cuisine_cornelia', 'exposure:chests/shipwreck_map', 17],  // T3
+  ['fishing_arts', 'exposure:chests/shipwreck_map', 7],  // T5
+  ['mob_faction_deep_ones', 'exposure:chests/shipwreck_map', 11],  // T4
+
+  // ── exposure:chests/simple_dungeon ──
+  ['arsenal_iron_blades', 'exposure:chests/simple_dungeon', 4],  // T6
+  ['arsenal_iron_polearms', 'exposure:chests/simple_dungeon', 4],  // T6
+  ['arsenal_master_polearms', 'exposure:chests/simple_dungeon', 7],  // T5
+  ['arsenal_master_ranged', 'exposure:chests/simple_dungeon', 17],  // T3
+  ['heavy_plate_discipline', 'exposure:chests/simple_dungeon', 7],  // T5
+
+  // ── exposure:chests/stronghold_crossing ──
+  ['arcane_codex', 'exposure:chests/stronghold_crossing', 4],  // T6
+  ['arsenal_legendary_blades', 'exposure:chests/stronghold_crossing', 7],  // T5
+  ['arsenal_legendary_polearms', 'exposure:chests/stronghold_crossing', 7],  // T5
+  ['arsenal_master_blades', 'exposure:chests/stronghold_crossing', 4],  // T6
+  ['arsenal_master_ranged', 'exposure:chests/stronghold_crossing', 17],  // T3
+
+  // ── exposure:chests/village_plains_house ──
+  ['agronomic_path', 'exposure:chests/village_plains_house', 35],  // T1
+  ['bakery', 'exposure:chests/village_plains_house', 35],  // T1
+  ['dairy_and_cheese', 'exposure:chests/village_plains_house', 7],  // T5
+  ['soups_and_stews', 'exposure:chests/village_plains_house', 7],  // T5
+  ['furniturecraft', 'exposure:chests/village_plains_house', 25],  // T2
+
+  // ── farmersdelight:chests/fd_abandoned_mineshaft ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_abandoned_mineshaft', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_abandoned_mineshaft', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_abandoned_mineshaft', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_abandoned_mineshaft', 7],  // T5
+  ['arsenal_iron_blades', 'farmersdelight:chests/fd_abandoned_mineshaft', 4],  // T6
+
+  // ── farmersdelight:chests/fd_bastion_hoglin_stable ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_bastion_hoglin_stable', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_bastion_hoglin_stable', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_bastion_hoglin_stable', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_bastion_hoglin_stable', 7],  // T5
+  ['arsenal_iron_blades', 'farmersdelight:chests/fd_bastion_hoglin_stable', 4],  // T6
+
+  // ── farmersdelight:chests/fd_bastion_treasure ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_bastion_treasure', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_bastion_treasure', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_bastion_treasure', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_bastion_treasure', 7],  // T5
+  ['arsenal_iron_blades', 'farmersdelight:chests/fd_bastion_treasure', 4],  // T6
+
+  // ── farmersdelight:chests/fd_end_city_treasure ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_end_city_treasure', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_end_city_treasure', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_end_city_treasure', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_end_city_treasure', 7],  // T5
+  ['arsenal_master_blades', 'farmersdelight:chests/fd_end_city_treasure', 4],  // T6
+
+  // ── farmersdelight:chests/fd_pillager_outpost ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_pillager_outpost', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_pillager_outpost', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_pillager_outpost', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_pillager_outpost', 7],  // T5
+  ['arsenal_iron_blades', 'farmersdelight:chests/fd_pillager_outpost', 4],  // T6
+
+  // ── farmersdelight:chests/fd_ruined_portal ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_ruined_portal', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_ruined_portal', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_ruined_portal', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_ruined_portal', 7],  // T5
+  ['beehive_logistics', 'farmersdelight:chests/fd_ruined_portal', 17],  // T3
+
+  // ── farmersdelight:chests/fd_shipwreck_supply ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_shipwreck_supply', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_shipwreck_supply', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_shipwreck_supply', 35],  // T1
+  ['seafood_mastery', 'farmersdelight:chests/fd_shipwreck_supply', 11],  // T4
+  ['soups_and_stews', 'farmersdelight:chests/fd_shipwreck_supply', 7],  // T5
+
+  // ── farmersdelight:chests/fd_simple_dungeon ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_simple_dungeon', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_simple_dungeon', 35],  // T1
+  ['arsenal_iron_blades', 'farmersdelight:chests/fd_simple_dungeon', 4],  // T6
+  ['arsenal_iron_polearms', 'farmersdelight:chests/fd_simple_dungeon', 4],  // T6
+  ['bakery', 'farmersdelight:chests/fd_simple_dungeon', 35],  // T1
+
+  // ── farmersdelight:chests/fd_village_butcher ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_village_butcher', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_village_butcher', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_village_butcher', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_village_butcher', 7],  // T5
+  ['sweets_and_confections', 'farmersdelight:chests/fd_village_butcher', 11],  // T4
+
+  // ── farmersdelight:chests/fd_village_desert_house ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_village_desert_house', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_village_desert_house', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_village_desert_house', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_village_desert_house', 7],  // T5
+  ['cuisine_middle_eastern', 'farmersdelight:chests/fd_village_desert_house', 17],  // T3
+
+  // ── farmersdelight:chests/fd_village_plains_house ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_village_plains_house', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_village_plains_house', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_village_plains_house', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_village_plains_house', 7],  // T5
+  ['sweets_and_confections', 'farmersdelight:chests/fd_village_plains_house', 11],  // T4
+
+  // ── farmersdelight:chests/fd_village_savanna_house ──
+  ['agronomic_path', 'farmersdelight:chests/fd_village_savanna_house', 35],  // T1
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_village_savanna_house', 7],  // T5
+  ['bakery', 'farmersdelight:chests/fd_village_savanna_house', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_village_savanna_house', 7],  // T5
+  ['beehive_logistics', 'farmersdelight:chests/fd_village_savanna_house', 17],  // T3
+
+  // ── farmersdelight:chests/fd_village_snowy_house ──
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_village_snowy_house', 7],  // T5
+  ['agronomic_path', 'farmersdelight:chests/fd_village_snowy_house', 35],  // T1
+  ['bakery', 'farmersdelight:chests/fd_village_snowy_house', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_village_snowy_house', 7],  // T5
+  ['sweets_and_confections', 'farmersdelight:chests/fd_village_snowy_house', 11],  // T4
+
+  // ── farmersdelight:chests/fd_village_taiga_house ──
+  ['agronomic_path', 'farmersdelight:chests/fd_village_taiga_house', 35],  // T1
+  ['dairy_and_cheese', 'farmersdelight:chests/fd_village_taiga_house', 7],  // T5
+  ['bakery', 'farmersdelight:chests/fd_village_taiga_house', 35],  // T1
+  ['soups_and_stews', 'farmersdelight:chests/fd_village_taiga_house', 7],  // T5
+  ['furniturecraft', 'farmersdelight:chests/fd_village_taiga_house', 25],  // T2
+
+  // ── frightsdelight:chests/frd_bastion_bridge ──
+  ['arsenal_iron_blades', 'frightsdelight:chests/frd_bastion_bridge', 4],  // T6
+  ['arsenal_iron_polearms', 'frightsdelight:chests/frd_bastion_bridge', 4],  // T6
+  ['bakery', 'frightsdelight:chests/frd_bastion_bridge', 35],  // T1
+  ['ballistics_engineering', 'frightsdelight:chests/frd_bastion_bridge', 11],  // T4
+  ['butchery', 'frightsdelight:chests/frd_bastion_bridge', 35],  // T1
+
+  // ── frightsdelight:chests/frd_bastion_other ──
+  ['arsenal_iron_blades', 'frightsdelight:chests/frd_bastion_other', 4],  // T6
+  ['arsenal_iron_polearms', 'frightsdelight:chests/frd_bastion_other', 4],  // T6
+  ['bakery', 'frightsdelight:chests/frd_bastion_other', 35],  // T1
+  ['ballistics_engineering', 'frightsdelight:chests/frd_bastion_other', 11],  // T4
+  ['butchery', 'frightsdelight:chests/frd_bastion_other', 35],  // T1
+
+  // ── frightsdelight:chests/frd_bastion_treasure ──
+  ['arsenal_iron_blades', 'frightsdelight:chests/frd_bastion_treasure', 4],  // T6
+  ['arsenal_iron_polearms', 'frightsdelight:chests/frd_bastion_treasure', 4],  // T6
+  ['arsenal_legendary_blades', 'frightsdelight:chests/frd_bastion_treasure', 7],  // T5
+  ['arsenal_legendary_polearms', 'frightsdelight:chests/frd_bastion_treasure', 7],  // T5
+  ['bakery', 'frightsdelight:chests/frd_bastion_treasure', 35],  // T1
+
+  // ── ice_and_fire_spellbooks:chests/fodaan_mask ──
+  ['arcane_codex', 'ice_and_fire_spellbooks:chests/fodaan_mask', 4],  // T6
+  ['cuisine_pyromantic', 'ice_and_fire_spellbooks:chests/fodaan_mask', 17],  // T3
+
+  // ── ice_and_fire_spellbooks:chests/toornahkriin_mask ──
+  ['arcane_codex', 'ice_and_fire_spellbooks:chests/toornahkriin_mask', 4],  // T6
+  ['cuisine_pyromantic', 'ice_and_fire_spellbooks:chests/toornahkriin_mask', 17],  // T3
+
+  // ── ice_and_fire_spellbooks:chests/vulnilviir_mask ──
+  ['arcane_codex', 'ice_and_fire_spellbooks:chests/vulnilviir_mask', 4],  // T6
+  ['cuisine_pyromantic', 'ice_and_fire_spellbooks:chests/vulnilviir_mask', 17],  // T3
+
+  // ── ice_and_fire_spellbooks:chests/vulonqo_mask ──
+  ['arcane_codex', 'ice_and_fire_spellbooks:chests/vulonqo_mask', 4],  // T6
+  ['cuisine_pyromantic', 'ice_and_fire_spellbooks:chests/vulonqo_mask', 17],  // T3
+
+  // ── ice_and_fire_spellbooks:chests/vulsilah_mask ──
+  ['arcane_codex', 'ice_and_fire_spellbooks:chests/vulsilah_mask', 4],  // T6
+  ['cuisine_pyromantic', 'ice_and_fire_spellbooks:chests/vulsilah_mask', 17],  // T3
+
+  // ── integrated_stronghold:chests/armory ──
+  ['arcane_codex', 'integrated_stronghold:chests/armory', 4],  // T6
+  ['arsenal_iron_blades', 'integrated_stronghold:chests/armory', 4],  // T6
+  ['arsenal_iron_ranged', 'integrated_stronghold:chests/armory', 7],  // T5
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/armory', 7],  // T5
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/armory', 17],  // T3
+
+  // ── integrated_stronghold:chests/bedroom ──
+  ['arcane_codex', 'integrated_stronghold:chests/bedroom', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/bedroom', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/bedroom', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/bedroom', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/bedroom', 17],  // T3
+
+  // ── integrated_stronghold:chests/brewing ──
+  ['arcane_codex', 'integrated_stronghold:chests/brewing', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/brewing', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/brewing', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/brewing', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/brewing', 17],  // T3
+
+  // ── integrated_stronghold:chests/crypt ──
+  ['arcane_codex', 'integrated_stronghold:chests/crypt', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/crypt', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/crypt', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/crypt', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/crypt', 17],  // T3
+
+  // ── integrated_stronghold:chests/dining_hall ──
+  ['arcane_codex', 'integrated_stronghold:chests/dining_hall', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/dining_hall', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/dining_hall', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/dining_hall', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/dining_hall', 17],  // T3
+
+  // ── integrated_stronghold:chests/enchanting ──
+  ['arcane_codex', 'integrated_stronghold:chests/enchanting', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/enchanting', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/enchanting', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/enchanting', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/enchanting', 17],  // T3
+
+  // ── integrated_stronghold:chests/farm ──
+  ['agronomic_path', 'integrated_stronghold:chests/farm', 35],  // T1
+  ['arcane_codex', 'integrated_stronghold:chests/farm', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/farm', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/farm', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/farm', 4],  // T6
+
+  // ── integrated_stronghold:chests/grand_library ──
+  ['arcane_codex', 'integrated_stronghold:chests/grand_library', 4],  // T6
+  ['eye_synthesis', 'integrated_stronghold:chests/grand_library', 11],  // T4
+  ['runesmithing', 'integrated_stronghold:chests/grand_library', 7],  // T5
+  ['scrollcasting', 'integrated_stronghold:chests/grand_library', 7],  // T5
+  ['architectural_mastery', 'integrated_stronghold:chests/grand_library', 11],  // T4
+
+  // ── integrated_stronghold:chests/intersection ──
+  ['arcane_codex', 'integrated_stronghold:chests/intersection', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/intersection', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/intersection', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/intersection', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/intersection', 17],  // T3
+
+  // ── integrated_stronghold:chests/maze ──
+  ['arcane_codex', 'integrated_stronghold:chests/maze', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/maze', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/maze', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/maze', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/maze', 17],  // T3
+
+  // ── integrated_stronghold:chests/mine ──
+  ['arcane_codex', 'integrated_stronghold:chests/mine', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/mine', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/mine', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/mine', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/mine', 17],  // T3
+
+  // ── integrated_stronghold:chests/nether_portal ──
+  ['arcane_codex', 'integrated_stronghold:chests/nether_portal', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/nether_portal', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/nether_portal', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/nether_portal', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/nether_portal', 17],  // T3
+
+  // ── integrated_stronghold:chests/prison ──
+  ['arcane_codex', 'integrated_stronghold:chests/prison', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/prison', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/prison', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/prison', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/prison', 17],  // T3
+
+  // ── integrated_stronghold:chests/sanctorum ──
+  ['arcane_codex', 'integrated_stronghold:chests/sanctorum', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/sanctorum', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/sanctorum', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/sanctorum', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/sanctorum', 17],  // T3
+
+  // ── integrated_stronghold:chests/secret_lab ──
+  ['arcane_codex', 'integrated_stronghold:chests/secret_lab', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/secret_lab', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/secret_lab', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/secret_lab', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/secret_lab', 17],  // T3
+
+  // ── integrated_stronghold:chests/storage ──
+  ['arcane_codex', 'integrated_stronghold:chests/storage', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/storage', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/storage', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/storage', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/storage', 17],  // T3
+
+  // ── integrated_stronghold:chests/stronghold ──
+  ['arcane_codex', 'integrated_stronghold:chests/stronghold', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/stronghold', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/stronghold', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/stronghold', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/stronghold', 17],  // T3
+
+  // ── integrated_stronghold:chests/torture_chamber ──
+  ['arcane_codex', 'integrated_stronghold:chests/torture_chamber', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/torture_chamber', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/torture_chamber', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/torture_chamber', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/torture_chamber', 17],  // T3
+
+  // ── integrated_stronghold:chests/treasure ──
+  ['arcane_codex', 'integrated_stronghold:chests/treasure', 4],  // T6
+  ['arsenal_legendary_blades', 'integrated_stronghold:chests/treasure', 7],  // T5
+  ['arsenal_legendary_polearms', 'integrated_stronghold:chests/treasure', 7],  // T5
+  ['arsenal_master_blades', 'integrated_stronghold:chests/treasure', 4],  // T6
+  ['arsenal_master_ranged', 'integrated_stronghold:chests/treasure', 17],  // T3
+
+  // ── irons_spellbooks:chests/additional_ancient_city_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/additional_ancient_city_loot', 4],  // T6
+  ['abyssal_age', 'irons_spellbooks:chests/additional_ancient_city_loot', 2],  // T3
+  ['abyssal_chasm', 'irons_spellbooks:chests/additional_ancient_city_loot', 11],  // T4
+  ['archaeology_mastery', 'irons_spellbooks:chests/additional_ancient_city_loot', 35],  // T1
+  ['atomic_engineering', 'irons_spellbooks:chests/additional_ancient_city_loot', 11],  // T4
+
+  // ── irons_spellbooks:chests/additional_end_city_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/additional_end_city_loot', 4],  // T6
+  ['arsenal_legendary_blades', 'irons_spellbooks:chests/additional_end_city_loot', 7],  // T5
+  ['arsenal_legendary_polearms', 'irons_spellbooks:chests/additional_end_city_loot', 7],  // T5
+  ['arsenal_master_blades', 'irons_spellbooks:chests/additional_end_city_loot', 4],  // T6
+  ['arsenal_master_ranged', 'irons_spellbooks:chests/additional_end_city_loot', 17],  // T3
+
+  // ── irons_spellbooks:chests/additional_generic_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/additional_generic_loot', 4],  // T6
+
+  // ── irons_spellbooks:chests/additional_good_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/additional_good_loot', 4],  // T6
+
+  // ── irons_spellbooks:chests/additional_library_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/additional_library_loot', 4],  // T6
+  ['alchemy', 'irons_spellbooks:chests/additional_library_loot', 7],  // T5
+  ['architectural_mastery', 'irons_spellbooks:chests/additional_library_loot', 11],  // T4
+  ['bookshelf_mastery', 'irons_spellbooks:chests/additional_library_loot', 11],  // T4
+  ['cartography_advanced', 'irons_spellbooks:chests/additional_library_loot', 7],  // T5
+
+  // ── irons_spellbooks:chests/additional_nether_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/additional_nether_loot', 4],  // T6
+  ['cuisine_nether', 'irons_spellbooks:chests/additional_nether_loot', 11],  // T4
+  ['cuisine_pyromantic', 'irons_spellbooks:chests/additional_nether_loot', 17],  // T3
+  ['fire_school', 'irons_spellbooks:chests/additional_nether_loot', 7],  // T5
+  ['infernal_age', 'irons_spellbooks:chests/additional_nether_loot', 2],  // T3
+
+  // ── irons_spellbooks:chests/additional_treasure_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/additional_treasure_loot', 4],  // T6
+
+  // ── irons_spellbooks:chests/battleground/burial_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/battleground/burial_loot', 4],  // T6
+
+  // ── irons_spellbooks:chests/battleground/piglin_camp ──
+  ['arcane_codex', 'irons_spellbooks:chests/battleground/piglin_camp', 4],  // T6
+  ['alchemy', 'irons_spellbooks:chests/battleground/piglin_camp', 7],  // T5
+  ['cuisine_nether', 'irons_spellbooks:chests/battleground/piglin_camp', 11],  // T4
+
+  // ── irons_spellbooks:chests/bookshelf_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/bookshelf_loot', 4],  // T6
+  ['scrollcasting', 'irons_spellbooks:chests/bookshelf_loot', 7],  // T5
+
+  // ── irons_spellbooks:chests/catacombs/armory_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/catacombs/armory_loot', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/catacombs/armory_loot', 35],  // T1
+  ['arsenal_iron_blades', 'irons_spellbooks:chests/catacombs/armory_loot', 4],  // T6
+  ['arsenal_iron_ranged', 'irons_spellbooks:chests/catacombs/armory_loot', 7],  // T5
+  ['ballistics_engineering', 'irons_spellbooks:chests/catacombs/armory_loot', 11],  // T4
+
+  // ── irons_spellbooks:chests/catacombs/coffin_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/catacombs/coffin_loot', 4],  // T6
+  ['blood_school', 'irons_spellbooks:chests/catacombs/coffin_loot', 7],  // T5
+  ['archaeology_mastery', 'irons_spellbooks:chests/catacombs/coffin_loot', 35],  // T1
+  ['eldritch_school', 'irons_spellbooks:chests/catacombs/coffin_loot', 7],  // T5
+
+  // ── irons_spellbooks:chests/catacombs/crypt_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/catacombs/crypt_loot', 4],  // T6
+  ['blood_school', 'irons_spellbooks:chests/catacombs/crypt_loot', 7],  // T5
+  ['archaeology_mastery', 'irons_spellbooks:chests/catacombs/crypt_loot', 35],  // T1
+  ['eldritch_school', 'irons_spellbooks:chests/catacombs/crypt_loot', 7],  // T5
+
+  // ── irons_spellbooks:chests/catacombs/hidden_trough_treasure ──
+  ['arcane_codex', 'irons_spellbooks:chests/catacombs/hidden_trough_treasure', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/catacombs/hidden_trough_treasure', 35],  // T1
+  ['blood_school', 'irons_spellbooks:chests/catacombs/hidden_trough_treasure', 7],  // T5
+  ['eldritch_school', 'irons_spellbooks:chests/catacombs/hidden_trough_treasure', 7],  // T5
+
+  // ── irons_spellbooks:chests/catacombs/pot ──
+  ['arcane_codex', 'irons_spellbooks:chests/catacombs/pot', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/catacombs/pot', 35],  // T1
+  ['blood_school', 'irons_spellbooks:chests/catacombs/pot', 7],  // T5
+  ['eldritch_school', 'irons_spellbooks:chests/catacombs/pot', 7],  // T5
+
+  // ── irons_spellbooks:chests/catacombs/wall_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/catacombs/wall_loot', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/catacombs/wall_loot', 35],  // T1
+  ['blood_school', 'irons_spellbooks:chests/catacombs/wall_loot', 7],  // T5
+  ['eldritch_school', 'irons_spellbooks:chests/catacombs/wall_loot', 7],  // T5
+
+  // ── irons_spellbooks:chests/citadel/citadel_bookshelf ──
+  ['arcane_codex', 'irons_spellbooks:chests/citadel/citadel_bookshelf', 4],  // T6
+  ['scrollcasting', 'irons_spellbooks:chests/citadel/citadel_bookshelf', 7],  // T5
+  ['holy_school', 'irons_spellbooks:chests/citadel/citadel_bookshelf', 7],  // T5
+
+  // ── irons_spellbooks:chests/citadel/citadel_tomes ──
+  ['arcane_codex', 'irons_spellbooks:chests/citadel/citadel_tomes', 4],  // T6
+  ['scrollcasting', 'irons_spellbooks:chests/citadel/citadel_tomes', 7],  // T5
+  ['holy_school', 'irons_spellbooks:chests/citadel/citadel_tomes', 7],  // T5
+
+  // ── irons_spellbooks:chests/citadel/citadel_vault ──
+  ['arcane_codex', 'irons_spellbooks:chests/citadel/citadel_vault', 4],  // T6
+  ['holy_school', 'irons_spellbooks:chests/citadel/citadel_vault', 7],  // T5
+  ['scrollcasting', 'irons_spellbooks:chests/citadel/citadel_vault', 7],  // T5
+
+  // ── irons_spellbooks:chests/citadel/rampart_chest ──
+  ['arcane_codex', 'irons_spellbooks:chests/citadel/rampart_chest', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/citadel/rampart_chest', 35],  // T1
+  ['holy_school', 'irons_spellbooks:chests/citadel/rampart_chest', 7],  // T5
+  ['scrollcasting', 'irons_spellbooks:chests/citadel/rampart_chest', 7],  // T5
+
+  // ── irons_spellbooks:chests/citadel/rampart_supplies ──
+  ['arcane_codex', 'irons_spellbooks:chests/citadel/rampart_supplies', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/citadel/rampart_supplies', 35],  // T1
+  ['holy_school', 'irons_spellbooks:chests/citadel/rampart_supplies', 7],  // T5
+  ['scrollcasting', 'irons_spellbooks:chests/citadel/rampart_supplies', 7],  // T5
+
+  // ── irons_spellbooks:chests/citadel/spawner_reward ──
+  ['arcane_codex', 'irons_spellbooks:chests/citadel/spawner_reward', 4],  // T6
+  ['holy_school', 'irons_spellbooks:chests/citadel/spawner_reward', 7],  // T5
+  ['scrollcasting', 'irons_spellbooks:chests/citadel/spawner_reward', 7],  // T5
+
+  // ── irons_spellbooks:chests/component_storage ──
+  ['arcane_codex', 'irons_spellbooks:chests/component_storage', 4],  // T6
+  ['alchemy', 'irons_spellbooks:chests/component_storage', 7],  // T5
+  ['tonic_alchemy', 'irons_spellbooks:chests/component_storage', 7],  // T5
+
+  // ── irons_spellbooks:chests/evoker_fort ──
+  ['arcane_codex', 'irons_spellbooks:chests/evoker_fort', 4],  // T6
+  ['evocation_school', 'irons_spellbooks:chests/evoker_fort', 7],  // T5
+
+  // ── irons_spellbooks:chests/evoker_fort/guard_tower ──
+  ['arcane_codex', 'irons_spellbooks:chests/evoker_fort/guard_tower', 4],  // T6
+  ['evocation_school', 'irons_spellbooks:chests/evoker_fort/guard_tower', 7],  // T5
+  ['falconry', 'irons_spellbooks:chests/evoker_fort/guard_tower', 4],  // T6
+  ['lightning_school', 'irons_spellbooks:chests/evoker_fort/guard_tower', 7],  // T5
+  ['music_speakers', 'irons_spellbooks:chests/evoker_fort/guard_tower', 17],  // T3
+
+  // ── irons_spellbooks:chests/filler_storage_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/filler_storage_loot', 4],  // T6
+  ['alchemy', 'irons_spellbooks:chests/filler_storage_loot', 7],  // T5
+
+  // ── irons_spellbooks:chests/generic_magic_treasure ──
+  ['arcane_codex', 'irons_spellbooks:chests/generic_magic_treasure', 4],  // T6
+
+  // ── irons_spellbooks:chests/ice_spider_den/basement ──
+  ['arcane_codex', 'irons_spellbooks:chests/ice_spider_den/basement', 4],  // T6
+  ['cuisine_alpine', 'irons_spellbooks:chests/ice_spider_den/basement', 7],  // T5
+  ['ice_school', 'irons_spellbooks:chests/ice_spider_den/basement', 7],  // T5
+
+  // ── irons_spellbooks:chests/ice_spider_den/cask ──
+  ['arcane_codex', 'irons_spellbooks:chests/ice_spider_den/cask', 4],  // T6
+  ['cuisine_alpine', 'irons_spellbooks:chests/ice_spider_den/cask', 7],  // T5
+  ['ice_school', 'irons_spellbooks:chests/ice_spider_den/cask', 7],  // T5
+  ['vinification', 'irons_spellbooks:chests/ice_spider_den/cask', 35],  // T1
+
+  // ── irons_spellbooks:chests/ice_spider_den/dungeon ──
+  ['arcane_codex', 'irons_spellbooks:chests/ice_spider_den/dungeon', 4],  // T6
+  ['arsenal_iron_blades', 'irons_spellbooks:chests/ice_spider_den/dungeon', 4],  // T6
+  ['arsenal_master_polearms', 'irons_spellbooks:chests/ice_spider_den/dungeon', 7],  // T5
+  ['arsenal_master_ranged', 'irons_spellbooks:chests/ice_spider_den/dungeon', 17],  // T3
+  ['cuisine_alpine', 'irons_spellbooks:chests/ice_spider_den/dungeon', 7],  // T5
+
+  // ── irons_spellbooks:chests/ice_spider_den/pot ──
+  ['arcane_codex', 'irons_spellbooks:chests/ice_spider_den/pot', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/ice_spider_den/pot', 35],  // T1
+  ['cuisine_alpine', 'irons_spellbooks:chests/ice_spider_den/pot', 7],  // T5
+  ['ice_school', 'irons_spellbooks:chests/ice_spider_den/pot', 7],  // T5
+
+  // ── irons_spellbooks:chests/ice_spider_den/spawner_reward ──
+  ['arcane_codex', 'irons_spellbooks:chests/ice_spider_den/spawner_reward', 4],  // T6
+  ['cuisine_alpine', 'irons_spellbooks:chests/ice_spider_den/spawner_reward', 7],  // T5
+  ['ice_school', 'irons_spellbooks:chests/ice_spider_den/spawner_reward', 7],  // T5
+
+  // ── irons_spellbooks:chests/ice_spider_den/tower ──
+  ['arcane_codex', 'irons_spellbooks:chests/ice_spider_den/tower', 4],  // T6
+  ['cuisine_alpine', 'irons_spellbooks:chests/ice_spider_den/tower', 7],  // T5
+  ['falconry', 'irons_spellbooks:chests/ice_spider_den/tower', 4],  // T6
+  ['ice_school', 'irons_spellbooks:chests/ice_spider_den/tower', 7],  // T5
+  ['music_speakers', 'irons_spellbooks:chests/ice_spider_den/tower', 17],  // T3
+
+  // ── irons_spellbooks:chests/impaled_icebreaker/captain_quarters ──
+  ['arcane_codex', 'irons_spellbooks:chests/impaled_icebreaker/captain_quarters', 4],  // T6
+  ['cuisine_alpine', 'irons_spellbooks:chests/impaled_icebreaker/captain_quarters', 7],  // T5
+  ['ice_school', 'irons_spellbooks:chests/impaled_icebreaker/captain_quarters', 7],  // T5
+
+  // ── irons_spellbooks:chests/impaled_icebreaker/food_barrel ──
+  ['arcane_codex', 'irons_spellbooks:chests/impaled_icebreaker/food_barrel', 4],  // T6
+  ['bakery', 'irons_spellbooks:chests/impaled_icebreaker/food_barrel', 35],  // T1
+  ['butchery', 'irons_spellbooks:chests/impaled_icebreaker/food_barrel', 35],  // T1
+  ['cuisine_alpine', 'irons_spellbooks:chests/impaled_icebreaker/food_barrel', 7],  // T5
+  ['cuisine_rustic', 'irons_spellbooks:chests/impaled_icebreaker/food_barrel', 7],  // T5
+
+  // ── irons_spellbooks:chests/magic_bookshelf_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/magic_bookshelf_loot', 4],  // T6
+  ['scrollcasting', 'irons_spellbooks:chests/magic_bookshelf_loot', 7],  // T5
+  ['tonic_alchemy', 'irons_spellbooks:chests/magic_bookshelf_loot', 7],  // T5
+
+  // ── irons_spellbooks:chests/mangrove_hut ──
+  ['arcane_codex', 'irons_spellbooks:chests/mangrove_hut', 4],  // T6
+  ['nature_school', 'irons_spellbooks:chests/mangrove_hut', 7],  // T5
+
+  // ── irons_spellbooks:chests/mangrove_hut/hidden_potion_storage ──
+  ['arcane_codex', 'irons_spellbooks:chests/mangrove_hut/hidden_potion_storage', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/mangrove_hut/hidden_potion_storage', 35],  // T1
+  ['nature_school', 'irons_spellbooks:chests/mangrove_hut/hidden_potion_storage', 7],  // T5
+  ['tonic_alchemy', 'irons_spellbooks:chests/mangrove_hut/hidden_potion_storage', 7],  // T5
+
+  // ── irons_spellbooks:chests/mangrove_hut/potion_ingredient_storage ──
+  ['arcane_codex', 'irons_spellbooks:chests/mangrove_hut/potion_ingredient_storage', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/mangrove_hut/potion_ingredient_storage', 35],  // T1
+  ['nature_school', 'irons_spellbooks:chests/mangrove_hut/potion_ingredient_storage', 7],  // T5
+  ['tonic_alchemy', 'irons_spellbooks:chests/mangrove_hut/potion_ingredient_storage', 7],  // T5
+
+  // ── irons_spellbooks:chests/mountain_tower/ice_barrel ──
+  ['arcane_codex', 'irons_spellbooks:chests/mountain_tower/ice_barrel', 4],  // T6
+  ['cuisine_alpine', 'irons_spellbooks:chests/mountain_tower/ice_barrel', 7],  // T5
+  ['falconry', 'irons_spellbooks:chests/mountain_tower/ice_barrel', 4],  // T6
+  ['lightning_school', 'irons_spellbooks:chests/mountain_tower/ice_barrel', 7],  // T5
+  ['music_speakers', 'irons_spellbooks:chests/mountain_tower/ice_barrel', 17],  // T3
+
+  // ── irons_spellbooks:chests/mountain_tower/mountain_tower ──
+  ['arcane_codex', 'irons_spellbooks:chests/mountain_tower/mountain_tower', 4],  // T6
+  ['cuisine_alpine', 'irons_spellbooks:chests/mountain_tower/mountain_tower', 7],  // T5
+  ['falconry', 'irons_spellbooks:chests/mountain_tower/mountain_tower', 4],  // T6
+  ['lightning_school', 'irons_spellbooks:chests/mountain_tower/mountain_tower', 7],  // T5
+  ['music_speakers', 'irons_spellbooks:chests/mountain_tower/mountain_tower', 17],  // T3
+
+  // ── irons_spellbooks:chests/priest_house ──
+  ['arcane_codex', 'irons_spellbooks:chests/priest_house', 4],  // T6
+  ['agronomic_path', 'irons_spellbooks:chests/priest_house', 35],  // T1
+  ['bakery', 'irons_spellbooks:chests/priest_house', 35],  // T1
+  ['dairy_and_cheese', 'irons_spellbooks:chests/priest_house', 7],  // T5
+  ['furniturecraft', 'irons_spellbooks:chests/priest_house', 25],  // T2
+
+  // ── irons_spellbooks:chests/pyromancer_tower/burnt_chest ──
+  ['arcane_codex', 'irons_spellbooks:chests/pyromancer_tower/burnt_chest', 4],  // T6
+  ['falconry', 'irons_spellbooks:chests/pyromancer_tower/burnt_chest', 4],  // T6
+  ['fire_school', 'irons_spellbooks:chests/pyromancer_tower/burnt_chest', 7],  // T5
+  ['lightning_school', 'irons_spellbooks:chests/pyromancer_tower/burnt_chest', 7],  // T5
+  ['music_speakers', 'irons_spellbooks:chests/pyromancer_tower/burnt_chest', 17],  // T3
+
+  // ── irons_spellbooks:chests/pyromancer_tower/fire_ale_cask ──
+  ['arcane_codex', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_cask', 4],  // T6
+  ['cuisine_pyromantic', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_cask', 17],  // T3
+  ['falconry', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_cask', 4],  // T6
+  ['fire_school', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_cask', 7],  // T5
+  ['lightning_school', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_cask', 7],  // T5
+
+  // ── irons_spellbooks:chests/pyromancer_tower/fire_ale_trove ──
+  ['arcane_codex', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_trove', 4],  // T6
+  ['cuisine_pyromantic', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_trove', 17],  // T3
+  ['falconry', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_trove', 4],  // T6
+  ['fire_school', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_trove', 7],  // T5
+  ['lightning_school', 'irons_spellbooks:chests/pyromancer_tower/fire_ale_trove', 7],  // T5
+
+  // ── irons_spellbooks:chests/pyromancer_tower/old_cask ──
+  ['arcane_codex', 'irons_spellbooks:chests/pyromancer_tower/old_cask', 4],  // T6
+  ['falconry', 'irons_spellbooks:chests/pyromancer_tower/old_cask', 4],  // T6
+  ['fire_school', 'irons_spellbooks:chests/pyromancer_tower/old_cask', 7],  // T5
+  ['lightning_school', 'irons_spellbooks:chests/pyromancer_tower/old_cask', 7],  // T5
+  ['music_speakers', 'irons_spellbooks:chests/pyromancer_tower/old_cask', 17],  // T3
+
+  // ── irons_spellbooks:chests/pyromancer_tower/pot ──
+  ['arcane_codex', 'irons_spellbooks:chests/pyromancer_tower/pot', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/pyromancer_tower/pot', 35],  // T1
+  ['falconry', 'irons_spellbooks:chests/pyromancer_tower/pot', 4],  // T6
+  ['fire_school', 'irons_spellbooks:chests/pyromancer_tower/pot', 7],  // T5
+  ['lightning_school', 'irons_spellbooks:chests/pyromancer_tower/pot', 7],  // T5
+
+  // ── irons_spellbooks:chests/pyromancer_tower/pyromancer_basic_storage ──
+  ['arcane_codex', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_basic_storage', 4],  // T6
+  ['falconry', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_basic_storage', 4],  // T6
+  ['fire_school', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_basic_storage', 7],  // T5
+  ['lightning_school', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_basic_storage', 7],  // T5
+  ['music_speakers', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_basic_storage', 17],  // T3
+
+  // ── irons_spellbooks:chests/pyromancer_tower/pyromancer_supplies ──
+  ['arcane_codex', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_supplies', 4],  // T6
+  ['falconry', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_supplies', 4],  // T6
+  ['fire_school', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_supplies', 7],  // T5
+  ['lightning_school', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_supplies', 7],  // T5
+  ['music_speakers', 'irons_spellbooks:chests/pyromancer_tower/pyromancer_supplies', 17],  // T3
+
+  // ── irons_spellbooks:chests/sewer_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/sewer_loot', 4],  // T6
+
+  // ── irons_spellbooks:chests/trial_chambers/additional_ominous_spawner_consumable_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/trial_chambers/additional_ominous_spawner_consumable_loot', 4],  // T6
+  ['trim_smithing', 'irons_spellbooks:chests/trial_chambers/additional_ominous_spawner_consumable_loot', 25],  // T2
+
+  // ── irons_spellbooks:chests/trial_chambers/additional_ominous_vault_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/trial_chambers/additional_ominous_vault_loot', 4],  // T6
+  ['trim_smithing', 'irons_spellbooks:chests/trial_chambers/additional_ominous_vault_loot', 25],  // T2
+
+  // ── irons_spellbooks:chests/trial_chambers/additional_regular_spawner_consumable_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/trial_chambers/additional_regular_spawner_consumable_loot', 4],  // T6
+  ['trim_smithing', 'irons_spellbooks:chests/trial_chambers/additional_regular_spawner_consumable_loot', 25],  // T2
+
+  // ── irons_spellbooks:chests/trial_chambers/additional_regular_vault_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/trial_chambers/additional_regular_vault_loot', 4],  // T6
+  ['trim_smithing', 'irons_spellbooks:chests/trial_chambers/additional_regular_vault_loot', 25],  // T2
+
+  // ── irons_spellbooks:chests/trial_chambers/additional_trial_chest_loot ──
+  ['arcane_codex', 'irons_spellbooks:chests/trial_chambers/additional_trial_chest_loot', 4],  // T6
+  ['trim_smithing', 'irons_spellbooks:chests/trial_chambers/additional_trial_chest_loot', 25],  // T2
+
+  // ── irons_spellbooks:chests/trial_chambers/pot_replacement ──
+  ['arcane_codex', 'irons_spellbooks:chests/trial_chambers/pot_replacement', 4],  // T6
+  ['archaeology_mastery', 'irons_spellbooks:chests/trial_chambers/pot_replacement', 35],  // T1
+  ['trim_smithing', 'irons_spellbooks:chests/trial_chambers/pot_replacement', 25],  // T2
+
+  // ── irons_spellbooks:chests/wheat ──
+  ['arcane_codex', 'irons_spellbooks:chests/wheat', 4],  // T6
+
+  // ── letsdoaddon-structures:chests/barn ──
+  ['agronomic_path', 'letsdoaddon-structures:chests/barn', 35],  // T1
+
+  // ── letsdoaddon-structures:chests/barn_up ──
+  ['agronomic_path', 'letsdoaddon-structures:chests/barn_up', 35],  // T1
+
+  // ── letsdoaddon-structures:chests/crimson_vinery ──
+  ['vinification', 'letsdoaddon-structures:chests/crimson_vinery', 35],  // T1
+
+  // ── letsdoaddon-structures:chests/illager_camp_mine ──
+  ['arsenal_iron_blades', 'letsdoaddon-structures:chests/illager_camp_mine', 4],  // T6
+  ['arsenal_iron_polearms', 'letsdoaddon-structures:chests/illager_camp_mine', 4],  // T6
+  ['arsenal_iron_ranged', 'letsdoaddon-structures:chests/illager_camp_mine', 7],  // T5
+
+  // ── letsdoaddon-structures:chests/illager_camp_tent ──
+  ['arsenal_iron_blades', 'letsdoaddon-structures:chests/illager_camp_tent', 4],  // T6
+  ['arsenal_iron_polearms', 'letsdoaddon-structures:chests/illager_camp_tent', 4],  // T6
+  ['arsenal_iron_ranged', 'letsdoaddon-structures:chests/illager_camp_tent', 7],  // T5
+
+  // ── letsdoaddon-structures:chests/mangrove_hut ──
+  ['nature_school', 'letsdoaddon-structures:chests/mangrove_hut', 7],  // T5
+
+  // ── letsdoaddon-structures:chests/mangrove_hut_outpost/floor/1 ──
+  ['nature_school', 'letsdoaddon-structures:chests/mangrove_hut_outpost/floor/1', 7],  // T5
+
+  // ── letsdoaddon-structures:chests/mangrove_hut_outpost/floor/2 ──
+  ['nature_school', 'letsdoaddon-structures:chests/mangrove_hut_outpost/floor/2', 7],  // T5
+
+  // ── letsdoaddon-structures:chests/mangrove_hut_outpost/floor/3 ──
+  ['nature_school', 'letsdoaddon-structures:chests/mangrove_hut_outpost/floor/3', 7],  // T5
+
+  // ── letsdoaddon-structures:chests/vinery ──
+  ['vinification', 'letsdoaddon-structures:chests/vinery', 35],  // T1
+
+  // ── letsdoaddon-structures:chests/warped_vinery ──
+  ['vinification', 'letsdoaddon-structures:chests/warped_vinery', 35],  // T1
+
+  // ── luminousworld:chests/desertruin ──
+  ['archaeology_mastery', 'luminousworld:chests/desertruin', 35],  // T1
+  ['cuisine_middle_eastern', 'luminousworld:chests/desertruin', 17],  // T3
+
+  // ── mebahelcreaturesdwarven:chests/dwemer_ruin_common ──
+  ['dwemer_observatory', 'mebahelcreaturesdwarven:chests/dwemer_ruin_common', 7],  // T5
+  ['arsenal_legendary_blades', 'mebahelcreaturesdwarven:chests/dwemer_ruin_common', 7],  // T5
+  ['arsenal_master_blades', 'mebahelcreaturesdwarven:chests/dwemer_ruin_common', 4],  // T6
+  ['atomic_engineering', 'mebahelcreaturesdwarven:chests/dwemer_ruin_common', 11],  // T4
+  ['cataclysm_codex', 'mebahelcreaturesdwarven:chests/dwemer_ruin_common', 4],  // T6
+
+  // ── mebahelcreaturesdwarven:chests/dwemer_ruin_epic ──
+  ['dwemer_observatory', 'mebahelcreaturesdwarven:chests/dwemer_ruin_epic', 7],  // T5
+  ['arsenal_legendary_blades', 'mebahelcreaturesdwarven:chests/dwemer_ruin_epic', 7],  // T5
+  ['arsenal_master_blades', 'mebahelcreaturesdwarven:chests/dwemer_ruin_epic', 4],  // T6
+  ['atomic_engineering', 'mebahelcreaturesdwarven:chests/dwemer_ruin_epic', 11],  // T4
+  ['cataclysm_codex', 'mebahelcreaturesdwarven:chests/dwemer_ruin_epic', 4],  // T6
+
+  // ── mebahelcreaturesdwarven:chests/dwemer_ruin_rare ──
+  ['dwemer_observatory', 'mebahelcreaturesdwarven:chests/dwemer_ruin_rare', 7],  // T5
+  ['arsenal_legendary_blades', 'mebahelcreaturesdwarven:chests/dwemer_ruin_rare', 7],  // T5
+  ['arsenal_master_blades', 'mebahelcreaturesdwarven:chests/dwemer_ruin_rare', 4],  // T6
+  ['atomic_engineering', 'mebahelcreaturesdwarven:chests/dwemer_ruin_rare', 11],  // T4
+  ['cataclysm_codex', 'mebahelcreaturesdwarven:chests/dwemer_ruin_rare', 4],  // T6
+
+  // ── mebahelcreaturesdwarven:chests/dwemer_tower ──
+  ['dwemer_observatory', 'mebahelcreaturesdwarven:chests/dwemer_tower', 7],  // T5
+  ['arcane_codex', 'mebahelcreaturesdwarven:chests/dwemer_tower', 4],  // T6
+  ['arsenal_legendary_blades', 'mebahelcreaturesdwarven:chests/dwemer_tower', 7],  // T5
+  ['arsenal_master_blades', 'mebahelcreaturesdwarven:chests/dwemer_tower', 4],  // T6
+  ['atomic_engineering', 'mebahelcreaturesdwarven:chests/dwemer_tower', 11],  // T4
+
+  // ── minecraft:chests/abandoned_mineshaft ──
+  ['arsenal_iron_blades', 'minecraft:chests/abandoned_mineshaft', 4],  // T6
+  ['arsenal_iron_polearms', 'minecraft:chests/abandoned_mineshaft', 4],  // T6
+  ['bestiary_iceandfire', 'minecraft:chests/abandoned_mineshaft', 11],  // T4
+  ['kindled_age', 'minecraft:chests/abandoned_mineshaft', 2],  // T1
+  ['kinetic_engineering', 'minecraft:chests/abandoned_mineshaft', 17],  // T3
+
+  // ── minecraft:chests/ancient_city ──
+  ['abyssal_age', 'minecraft:chests/ancient_city', 2],  // T3
+  ['abyssal_chasm', 'minecraft:chests/ancient_city', 11],  // T4
+  ['archaeology_mastery', 'minecraft:chests/ancient_city', 35],  // T1
+  ['atomic_engineering', 'minecraft:chests/ancient_city', 11],  // T4
+  ['cuisine_subterranean', 'minecraft:chests/ancient_city', 4],  // T6
+
+  // ── minecraft:chests/ancient_city_ice_box ──
+  ['abyssal_age', 'minecraft:chests/ancient_city_ice_box', 2],  // T3
+  ['abyssal_chasm', 'minecraft:chests/ancient_city_ice_box', 11],  // T4
+  ['archaeology_mastery', 'minecraft:chests/ancient_city_ice_box', 35],  // T1
+  ['atomic_engineering', 'minecraft:chests/ancient_city_ice_box', 11],  // T4
+  ['cuisine_subterranean', 'minecraft:chests/ancient_city_ice_box', 4],  // T6
+
+  // ── minecraft:chests/bastion_bridge ──
+  ['arsenal_iron_blades', 'minecraft:chests/bastion_bridge', 4],  // T6
+  ['arsenal_iron_polearms', 'minecraft:chests/bastion_bridge', 4],  // T6
+  ['ballistics_engineering', 'minecraft:chests/bastion_bridge', 11],  // T4
+  ['cannoneer', 'minecraft:chests/bastion_bridge', 17],  // T3
+  ['cuisine_nether', 'minecraft:chests/bastion_bridge', 11],  // T4
+
+  // ── minecraft:chests/bastion_hoglin_stable ──
+  ['arsenal_iron_blades', 'minecraft:chests/bastion_hoglin_stable', 4],  // T6
+  ['arsenal_iron_polearms', 'minecraft:chests/bastion_hoglin_stable', 4],  // T6
+  ['ballistics_engineering', 'minecraft:chests/bastion_hoglin_stable', 11],  // T4
+  ['cannoneer', 'minecraft:chests/bastion_hoglin_stable', 17],  // T3
+  ['cuisine_nether', 'minecraft:chests/bastion_hoglin_stable', 11],  // T4
+
+  // ── minecraft:chests/bastion_other ──
+  ['arsenal_iron_blades', 'minecraft:chests/bastion_other', 4],  // T6
+  ['arsenal_iron_polearms', 'minecraft:chests/bastion_other', 4],  // T6
+  ['ballistics_engineering', 'minecraft:chests/bastion_other', 11],  // T4
+  ['cannoneer', 'minecraft:chests/bastion_other', 17],  // T3
+  ['cuisine_nether', 'minecraft:chests/bastion_other', 11],  // T4
+
+  // ── minecraft:chests/bastion_treasure ──
+  ['arsenal_iron_blades', 'minecraft:chests/bastion_treasure', 4],  // T6
+  ['arsenal_iron_polearms', 'minecraft:chests/bastion_treasure', 4],  // T6
+  ['arsenal_legendary_blades', 'minecraft:chests/bastion_treasure', 7],  // T5
+  ['arsenal_legendary_polearms', 'minecraft:chests/bastion_treasure', 7],  // T5
+  ['ballistics_engineering', 'minecraft:chests/bastion_treasure', 11],  // T4
+
+  // ── minecraft:chests/buried_treasure ──
+  ['cartography_advanced', 'minecraft:chests/buried_treasure', 7],  // T5
+  ['numismatic_mechanisms', 'minecraft:chests/buried_treasure', 17],  // T3
+  ['seafood_mastery', 'minecraft:chests/buried_treasure', 11],  // T4
+
+  // ── minecraft:chests/desert_pyramid ──
+  ['archaeology_mastery', 'minecraft:chests/desert_pyramid', 35],  // T1
+  ['cuisine_middle_eastern', 'minecraft:chests/desert_pyramid', 17],  // T3
+  ['stoneworking', 'minecraft:chests/desert_pyramid', 35],  // T1
+
+  // ── minecraft:chests/dye ──
+  ['dyecraft', 'minecraft:chests/dye', 35],  // T1
+
+  // ── minecraft:chests/end_city_treasure ──
+  ['arsenal_legendary_blades', 'minecraft:chests/end_city_treasure', 7],  // T5
+  ['arsenal_legendary_polearms', 'minecraft:chests/end_city_treasure', 7],  // T5
+  ['arsenal_master_blades', 'minecraft:chests/end_city_treasure', 4],  // T6
+  ['arsenal_master_ranged', 'minecraft:chests/end_city_treasure', 17],  // T3
+  ['cataclysm_codex', 'minecraft:chests/end_city_treasure', 4],  // T6
+
+  // ── minecraft:chests/igloo_chest ──
+  ['cold_sweat_discipline', 'minecraft:chests/igloo_chest', 25],  // T2
+  ['cuisine_alpine', 'minecraft:chests/igloo_chest', 7],  // T5
+  ['cuisine_western_holiday', 'minecraft:chests/igloo_chest', 11],  // T4
+  ['ice_school', 'minecraft:chests/igloo_chest', 7],  // T5
+
+  // ── minecraft:chests/jungle_temple ──
+  ['foraging_almanac', 'minecraft:chests/jungle_temple', 35],  // T1
+  ['arcane_codex', 'minecraft:chests/jungle_temple', 4],  // T6
+  ['archaeology_mastery', 'minecraft:chests/jungle_temple', 35],  // T1
+  ['beehive_logistics', 'minecraft:chests/jungle_temple', 17],  // T3
+  ['bestiary_alex_mobs', 'minecraft:chests/jungle_temple', 4],  // T6
+
+  // ── minecraft:chests/mineral ──
+  ['stoneworking', 'minecraft:chests/mineral', 35],  // T1
+
+  // ── minecraft:chests/miners_home ──
+  ['agronomic_path', 'minecraft:chests/miners_home', 35],  // T1
+  ['stoneworking', 'minecraft:chests/miners_home', 35],  // T1
+
+  // ── minecraft:chests/miners_ruined_shack ──
+  ['stoneworking', 'minecraft:chests/miners_ruined_shack', 35],  // T1
+
+  // ── minecraft:chests/nether_bridge ──
+  ['cuisine_nether', 'minecraft:chests/nether_bridge', 11],  // T4
+  ['cuisine_pyromantic', 'minecraft:chests/nether_bridge', 17],  // T3
+  ['fire_school', 'minecraft:chests/nether_bridge', 7],  // T5
+  ['infernal_age', 'minecraft:chests/nether_bridge', 2],  // T3
+  ['soul_black_smith', 'minecraft:chests/nether_bridge', 7],  // T5
+
+  // ── minecraft:chests/nether_totemloot ──
+  ['cuisine_nether', 'minecraft:chests/nether_totemloot', 11],  // T4
+  ['cuisine_pyromantic', 'minecraft:chests/nether_totemloot', 17],  // T3
+  ['fire_school', 'minecraft:chests/nether_totemloot', 7],  // T5
+  ['infernal_age', 'minecraft:chests/nether_totemloot', 2],  // T3
+  ['soul_black_smith', 'minecraft:chests/nether_totemloot', 7],  // T5
+
+  // ── minecraft:chests/pillager_outpost ──
+  ['arsenal_iron_blades', 'minecraft:chests/pillager_outpost', 4],  // T6
+  ['arsenal_iron_polearms', 'minecraft:chests/pillager_outpost', 4],  // T6
+  ['arsenal_iron_ranged', 'minecraft:chests/pillager_outpost', 7],  // T5
+  ['banner_heraldry', 'minecraft:chests/pillager_outpost', 11],  // T4
+  ['kinetic_engineering', 'minecraft:chests/pillager_outpost', 17],  // T3
+
+  // ── minecraft:chests/rich_cart ──
+  ['numismatic_mechanisms', 'minecraft:chests/rich_cart', 17],  // T3
+
+  // ── minecraft:chests/ruined_library ──
+  ['alchemy', 'minecraft:chests/ruined_library', 7],  // T5
+  ['arcane_codex', 'minecraft:chests/ruined_library', 4],  // T6
+  ['architectural_mastery', 'minecraft:chests/ruined_library', 11],  // T4
+  ['bookshelf_mastery', 'minecraft:chests/ruined_library', 11],  // T4
+  ['cartography_advanced', 'minecraft:chests/ruined_library', 7],  // T5
+
+  // ── minecraft:chests/ruined_portal ──
+  ['long_road', 'minecraft:chests/ruined_portal', 35],  // T1
+
+  // ── minecraft:chests/shipwreck_map ──
+  ['cartography_advanced', 'minecraft:chests/shipwreck_map', 7],  // T5
+  ['seafood_mastery', 'minecraft:chests/shipwreck_map', 11],  // T4
+  ['cuisine_cornelia', 'minecraft:chests/shipwreck_map', 17],  // T3
+  ['fishing_arts', 'minecraft:chests/shipwreck_map', 7],  // T5
+  ['mob_faction_deep_ones', 'minecraft:chests/shipwreck_map', 11],  // T4
+
+  // ── minecraft:chests/shipwreck_supply ──
+  ['seafood_mastery', 'minecraft:chests/shipwreck_supply', 11],  // T4
+  ['cartography_advanced', 'minecraft:chests/shipwreck_supply', 7],  // T5
+  ['cuisine_cornelia', 'minecraft:chests/shipwreck_supply', 17],  // T3
+  ['fishing_arts', 'minecraft:chests/shipwreck_supply', 7],  // T5
+  ['mob_faction_deep_ones', 'minecraft:chests/shipwreck_supply', 11],  // T4
+
+  // ── minecraft:chests/shipwreck_treasure ──
+  ['seafood_mastery', 'minecraft:chests/shipwreck_treasure', 11],  // T4
+  ['cartography_advanced', 'minecraft:chests/shipwreck_treasure', 7],  // T5
+  ['cuisine_cornelia', 'minecraft:chests/shipwreck_treasure', 17],  // T3
+  ['fishing_arts', 'minecraft:chests/shipwreck_treasure', 7],  // T5
+  ['mob_faction_deep_ones', 'minecraft:chests/shipwreck_treasure', 11],  // T4
+
+  // ── minecraft:chests/simple_dungeon ──
+  ['arsenal_iron_blades', 'minecraft:chests/simple_dungeon', 4],  // T6
+  ['arsenal_iron_polearms', 'minecraft:chests/simple_dungeon', 4],  // T6
+  ['arsenal_master_polearms', 'minecraft:chests/simple_dungeon', 7],  // T5
+  ['arsenal_master_ranged', 'minecraft:chests/simple_dungeon', 17],  // T3
+  ['heavy_plate_discipline', 'minecraft:chests/simple_dungeon', 7],  // T5
+
+  // ── minecraft:chests/stone ──
+  ['stoneworking', 'minecraft:chests/stone', 35],  // T1
+
+  // ── minecraft:chests/stronghold_corridor ──
+  ['arcane_codex', 'minecraft:chests/stronghold_corridor', 4],  // T6
+  ['arsenal_legendary_blades', 'minecraft:chests/stronghold_corridor', 7],  // T5
+  ['arsenal_legendary_polearms', 'minecraft:chests/stronghold_corridor', 7],  // T5
+  ['arsenal_master_blades', 'minecraft:chests/stronghold_corridor', 4],  // T6
+  ['arsenal_master_ranged', 'minecraft:chests/stronghold_corridor', 17],  // T3
+
+  // ── minecraft:chests/stronghold_crossing ──
+  ['arcane_codex', 'minecraft:chests/stronghold_crossing', 4],  // T6
+  ['arsenal_legendary_blades', 'minecraft:chests/stronghold_crossing', 7],  // T5
+  ['arsenal_legendary_polearms', 'minecraft:chests/stronghold_crossing', 7],  // T5
+  ['arsenal_master_blades', 'minecraft:chests/stronghold_crossing', 4],  // T6
+  ['arsenal_master_ranged', 'minecraft:chests/stronghold_crossing', 17],  // T3
+
+  // ── minecraft:chests/stronghold_library ──
+  ['arcane_codex', 'minecraft:chests/stronghold_library', 4],  // T6
+  ['eye_synthesis', 'minecraft:chests/stronghold_library', 11],  // T4
+  ['runesmithing', 'minecraft:chests/stronghold_library', 7],  // T5
+  ['scrollcasting', 'minecraft:chests/stronghold_library', 7],  // T5
+  ['architectural_mastery', 'minecraft:chests/stronghold_library', 11],  // T4
+
+  // ── minecraft:chests/trial_chambers/reward ──
+  ['trim_smithing', 'minecraft:chests/trial_chambers/reward', 25],  // T2
+
+  // ── minecraft:chests/trial_chambers/reward_ominous ──
+  ['trim_smithing', 'minecraft:chests/trial_chambers/reward_ominous', 25],  // T2
+
+  // ── minecraft:chests/trial_chambers/supply ──
+  ['trim_smithing', 'minecraft:chests/trial_chambers/supply', 25],  // T2
+
+  // ── minecraft:chests/underwater_ruin_big ──
+  ['cuisine_cornelia', 'minecraft:chests/underwater_ruin_big', 17],  // T3
+  ['mob_faction_deep_ones', 'minecraft:chests/underwater_ruin_big', 11],  // T4
+  ['seafood_mastery', 'minecraft:chests/underwater_ruin_big', 11],  // T4
+  ['water_age', 'minecraft:chests/underwater_ruin_big', 2],  // T1
+
+  // ── minecraft:chests/underwater_ruin_small ──
+  ['cuisine_cornelia', 'minecraft:chests/underwater_ruin_small', 17],  // T3
+  ['mob_faction_deep_ones', 'minecraft:chests/underwater_ruin_small', 11],  // T4
+  ['seafood_mastery', 'minecraft:chests/underwater_ruin_small', 11],  // T4
+  ['water_age', 'minecraft:chests/underwater_ruin_small', 2],  // T1
+
+  // ── minecraft:chests/village/village_armorer ──
+  ['dyecraft', 'minecraft:chests/village/village_armorer', 35],  // T1
+  ['agronomic_path', 'minecraft:chests/village/village_armorer', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_armorer', 7],  // T5
+  ['fermentation_age', 'minecraft:chests/village/village_armorer', 2],  // T5
+  ['metalworking', 'minecraft:chests/village/village_armorer', 4],  // T6
+
+  // ── minecraft:chests/village/village_butcher ──
+  ['agronomic_path', 'minecraft:chests/village/village_butcher', 35],  // T1
+  ['bakery', 'minecraft:chests/village/village_butcher', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_butcher', 7],  // T5
+  ['fermentation_age', 'minecraft:chests/village/village_butcher', 2],  // T5
+  ['distillery', 'minecraft:chests/village/village_butcher', 17],  // T3
+
+  // ── minecraft:chests/village/village_cartographer ──
+  ['agronomic_path', 'minecraft:chests/village/village_cartographer', 35],  // T1
+  ['backpackcraft', 'minecraft:chests/village/village_cartographer', 25],  // T2
+  ['bakery', 'minecraft:chests/village/village_cartographer', 35],  // T1
+  ['cartography_advanced', 'minecraft:chests/village/village_cartographer', 7],  // T5
+  ['dairy_and_cheese', 'minecraft:chests/village/village_cartographer', 7],  // T5
+
+  // ── minecraft:chests/village/village_desert_house ──
+  ['agronomic_path', 'minecraft:chests/village/village_desert_house', 35],  // T1
+  ['bakery', 'minecraft:chests/village/village_desert_house', 35],  // T1
+  ['cuisine_middle_eastern', 'minecraft:chests/village/village_desert_house', 17],  // T3
+  ['dairy_and_cheese', 'minecraft:chests/village/village_desert_house', 7],  // T5
+  ['soups_and_stews', 'minecraft:chests/village/village_desert_house', 7],  // T5
+
+  // ── minecraft:chests/village/village_fisher ──
+  ['hearthkeepers_manual', 'minecraft:chests/village/village_fisher', 35],  // T1
+  ['agronomic_path', 'minecraft:chests/village/village_fisher', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_fisher', 7],  // T5
+  ['fermentation_age', 'minecraft:chests/village/village_fisher', 2],  // T5
+  ['furniturecraft', 'minecraft:chests/village/village_fisher', 25],  // T2
+
+  // ── minecraft:chests/village/village_fletcher ──
+  ['dyecraft', 'minecraft:chests/village/village_fletcher', 35],  // T1
+  ['agronomic_path', 'minecraft:chests/village/village_fletcher', 35],  // T1
+  ['arsenal_iron_ranged', 'minecraft:chests/village/village_fletcher', 7],  // T5
+  ['arsenal_master_ranged', 'minecraft:chests/village/village_fletcher', 17],  // T3
+  ['backpackcraft', 'minecraft:chests/village/village_fletcher', 25],  // T2
+
+  // ── minecraft:chests/village/village_jungle_house ──
+  ['woodworking', 'minecraft:chests/village/village_jungle_house', 35],  // T1
+  ['agronomic_path', 'minecraft:chests/village/village_jungle_house', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_jungle_house', 7],  // T5
+  ['soups_and_stews', 'minecraft:chests/village/village_jungle_house', 7],  // T5
+  ['bestiary_alex_mobs', 'minecraft:chests/village/village_jungle_house', 4],  // T6
+
+  // ── minecraft:chests/village/village_mason ──
+  ['dyecraft', 'minecraft:chests/village/village_mason', 35],  // T1
+  ['stoneworking', 'minecraft:chests/village/village_mason', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_mason', 7],  // T5
+  ['fermentation_age', 'minecraft:chests/village/village_mason', 2],  // T5
+  ['sweets_and_confections', 'minecraft:chests/village/village_mason', 11],  // T4
+
+  // ── minecraft:chests/village/village_plains_house ──
+  ['agronomic_path', 'minecraft:chests/village/village_plains_house', 35],  // T1
+  ['bakery', 'minecraft:chests/village/village_plains_house', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_plains_house', 7],  // T5
+  ['soups_and_stews', 'minecraft:chests/village/village_plains_house', 7],  // T5
+  ['furniturecraft', 'minecraft:chests/village/village_plains_house', 25],  // T2
+
+  // ── minecraft:chests/village/village_savanna_house ──
+  ['agronomic_path', 'minecraft:chests/village/village_savanna_house', 35],  // T1
+  ['hearthkeepers_manual', 'minecraft:chests/village/village_savanna_house', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_savanna_house', 7],  // T5
+  ['soups_and_stews', 'minecraft:chests/village/village_savanna_house', 7],  // T5
+  ['beehive_logistics', 'minecraft:chests/village/village_savanna_house', 17],  // T3
+
+  // ── minecraft:chests/village/village_shepherd ──
+  ['agronomic_path', 'minecraft:chests/village/village_shepherd', 35],  // T1
+  ['butchery', 'minecraft:chests/village/village_shepherd', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_shepherd', 7],  // T5
+  ['fermentation_age', 'minecraft:chests/village/village_shepherd', 2],  // T5
+  ['sweets_and_confections', 'minecraft:chests/village/village_shepherd', 11],  // T4
+
+  // ── minecraft:chests/village/village_snowy_house ──
+  ['agronomic_path', 'minecraft:chests/village/village_snowy_house', 35],  // T1
+  ['bakery', 'minecraft:chests/village/village_snowy_house', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_snowy_house', 7],  // T5
+  ['soups_and_stews', 'minecraft:chests/village/village_snowy_house', 7],  // T5
+  ['cold_sweat_discipline', 'minecraft:chests/village/village_snowy_house', 25],  // T2
+
+  // ── minecraft:chests/village/village_taiga_house ──
+  ['agronomic_path', 'minecraft:chests/village/village_taiga_house', 35],  // T1
+  ['hearthkeepers_manual', 'minecraft:chests/village/village_taiga_house', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_taiga_house', 7],  // T5
+  ['furniturecraft', 'minecraft:chests/village/village_taiga_house', 25],  // T2
+  ['soups_and_stews', 'minecraft:chests/village/village_taiga_house', 7],  // T5
+
+  // ── minecraft:chests/village/village_tannery ──
+  ['butchery', 'minecraft:chests/village/village_tannery', 35],  // T1
+  ['leatherworking', 'minecraft:chests/village/village_tannery', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_tannery', 7],  // T5
+  ['fermentation_age', 'minecraft:chests/village/village_tannery', 2],  // T5
+  ['sweets_and_confections', 'minecraft:chests/village/village_tannery', 11],  // T4
+
+  // ── minecraft:chests/village/village_temple ──
+  ['agronomic_path', 'minecraft:chests/village/village_temple', 35],  // T1
+  ['arcane_codex', 'minecraft:chests/village/village_temple', 4],  // T6
+  ['bakery', 'minecraft:chests/village/village_temple', 35],  // T1
+  ['banner_heraldry', 'minecraft:chests/village/village_temple', 11],  // T4
+  ['dairy_and_cheese', 'minecraft:chests/village/village_temple', 7],  // T5
+
+  // ── minecraft:chests/village/village_toolsmith ──
+  ['metalworking', 'minecraft:chests/village/village_toolsmith', 4],  // T6
+  ['agronomic_path', 'minecraft:chests/village/village_toolsmith', 35],  // T1
+  ['bakery', 'minecraft:chests/village/village_toolsmith', 35],  // T1
+  ['dairy_and_cheese', 'minecraft:chests/village/village_toolsmith', 7],  // T5
+  ['fermentation_age', 'minecraft:chests/village/village_toolsmith', 2],  // T5
+
+  // ── minecraft:chests/village/village_weaponsmith ──
+  ['metalworking', 'minecraft:chests/village/village_weaponsmith', 4],  // T6
+  ['agronomic_path', 'minecraft:chests/village/village_weaponsmith', 35],  // T1
+  ['arsenal_iron_blades', 'minecraft:chests/village/village_weaponsmith', 4],  // T6
+  ['arsenal_iron_ranged', 'minecraft:chests/village/village_weaponsmith', 7],  // T5
+  ['bakery', 'minecraft:chests/village/village_weaponsmith', 35],  // T1
+
+  // ── minecraft:chests/wood ──
+  ['woodworking', 'minecraft:chests/wood', 35],  // T1
+
+  // ── minecraft:chests/woodland_mansion ──
+  ['architectural_mastery', 'minecraft:chests/woodland_mansion', 11],  // T4
+  ['banner_heraldry', 'minecraft:chests/woodland_mansion', 11],  // T4
+  ['companions_charter', 'minecraft:chests/woodland_mansion', 35],  // T1
+  ['evocation_school', 'minecraft:chests/woodland_mansion', 7],  // T5
+  ['falconry', 'minecraft:chests/woodland_mansion', 4],  // T6
+
+  // ── miners_delight:chests/md_abandoned_mineshaft ──
+  ['arsenal_iron_blades', 'miners_delight:chests/md_abandoned_mineshaft', 4],  // T6
+  ['arsenal_iron_polearms', 'miners_delight:chests/md_abandoned_mineshaft', 4],  // T6
+  ['bakery', 'miners_delight:chests/md_abandoned_mineshaft', 35],  // T1
+  ['bestiary_iceandfire', 'miners_delight:chests/md_abandoned_mineshaft', 11],  // T4
+  ['butchery', 'miners_delight:chests/md_abandoned_mineshaft', 35],  // T1
+
+  // ── mowziesmobs:chests/monastery_chest ──
+  ['alchemy', 'mowziesmobs:chests/monastery_chest', 7],  // T5
+  ['arcane_codex', 'mowziesmobs:chests/monastery_chest', 4],  // T6
+  ['architectural_mastery', 'mowziesmobs:chests/monastery_chest', 11],  // T4
+  ['arsenal_legendary_blades', 'mowziesmobs:chests/monastery_chest', 7],  // T5
+  ['arsenal_master_blades', 'mowziesmobs:chests/monastery_chest', 4],  // T6
+
+  // ── mowziesmobs:chests/umvuthana_grove_chest ──
+  ['arsenal_legendary_blades', 'mowziesmobs:chests/umvuthana_grove_chest', 7],  // T5
+  ['arsenal_legendary_polearms', 'mowziesmobs:chests/umvuthana_grove_chest', 7],  // T5
+  ['bestiary_alex_mobs', 'mowziesmobs:chests/umvuthana_grove_chest', 4],  // T6
+  ['cataclysm_codex', 'mowziesmobs:chests/umvuthana_grove_chest', 4],  // T6
+  ['codex_of_kukulkan', 'mowziesmobs:chests/umvuthana_grove_chest', 35],  // T1
+
+  // ── mynethersdelight:chests/mnd_bastion_hoglin_stable ──
+  ['cuisine_nether', 'mynethersdelight:chests/mnd_bastion_hoglin_stable', 11],  // T4
+  ['infernal_age', 'mynethersdelight:chests/mnd_bastion_hoglin_stable', 2],  // T3
+  ['soul_black_smith', 'mynethersdelight:chests/mnd_bastion_hoglin_stable', 7],  // T5
+  ['arsenal_iron_blades', 'mynethersdelight:chests/mnd_bastion_hoglin_stable', 4],  // T6
+  ['arsenal_iron_polearms', 'mynethersdelight:chests/mnd_bastion_hoglin_stable', 4],  // T6
+
+  // ── mynethersdelight:chests/mnd_bastion_treasure ──
+  ['cuisine_nether', 'mynethersdelight:chests/mnd_bastion_treasure', 11],  // T4
+  ['infernal_age', 'mynethersdelight:chests/mnd_bastion_treasure', 2],  // T3
+  ['soul_black_smith', 'mynethersdelight:chests/mnd_bastion_treasure', 7],  // T5
+  ['arsenal_iron_blades', 'mynethersdelight:chests/mnd_bastion_treasure', 4],  // T6
+  ['arsenal_iron_polearms', 'mynethersdelight:chests/mnd_bastion_treasure', 4],  // T6
+
+  // ── netherexp:chests/chapel ──
+  ['cuisine_nether', 'netherexp:chests/chapel', 11],  // T4
+  ['cuisine_pyromantic', 'netherexp:chests/chapel', 17],  // T3
+  ['fire_school', 'netherexp:chests/chapel', 7],  // T5
+  ['infernal_age', 'netherexp:chests/chapel', 2],  // T3
+  ['soul_black_smith', 'netherexp:chests/chapel', 7],  // T5
+
+  // ── netherexp:chests/sanctum_food ──
+  ['bakery', 'netherexp:chests/sanctum_food', 35],  // T1
+  ['butchery', 'netherexp:chests/sanctum_food', 35],  // T1
+  ['cuisine_nether', 'netherexp:chests/sanctum_food', 11],  // T4
+  ['cuisine_pyromantic', 'netherexp:chests/sanctum_food', 17],  // T3
+  ['cuisine_rustic', 'netherexp:chests/sanctum_food', 7],  // T5
+
+  // ── netherexp:chests/sanctum_supply ──
+  ['cuisine_nether', 'netherexp:chests/sanctum_supply', 11],  // T4
+  ['cuisine_pyromantic', 'netherexp:chests/sanctum_supply', 17],  // T3
+  ['fire_school', 'netherexp:chests/sanctum_supply', 7],  // T5
+  ['infernal_age', 'netherexp:chests/sanctum_supply', 2],  // T3
+  ['soul_black_smith', 'netherexp:chests/sanctum_supply', 7],  // T5
+
+  // ── nethervinery:chests/bastion_hoglin_stable ──
+  ['cuisine_nether', 'nethervinery:chests/bastion_hoglin_stable', 11],  // T4
+  ['infernal_age', 'nethervinery:chests/bastion_hoglin_stable', 2],  // T3
+  ['soul_black_smith', 'nethervinery:chests/bastion_hoglin_stable', 7],  // T5
+  ['arsenal_iron_blades', 'nethervinery:chests/bastion_hoglin_stable', 4],  // T6
+  ['arsenal_iron_polearms', 'nethervinery:chests/bastion_hoglin_stable', 4],  // T6
+
+  // ── nethervinery:chests/bastion_other ──
+  ['cuisine_nether', 'nethervinery:chests/bastion_other', 11],  // T4
+  ['infernal_age', 'nethervinery:chests/bastion_other', 2],  // T3
+  ['soul_black_smith', 'nethervinery:chests/bastion_other', 7],  // T5
+  ['arsenal_iron_blades', 'nethervinery:chests/bastion_other', 4],  // T6
+  ['arsenal_iron_polearms', 'nethervinery:chests/bastion_other', 4],  // T6
+
+  // ── nethervinery:chests/bastion_treasure ──
+  ['cuisine_nether', 'nethervinery:chests/bastion_treasure', 11],  // T4
+  ['infernal_age', 'nethervinery:chests/bastion_treasure', 2],  // T3
+  ['soul_black_smith', 'nethervinery:chests/bastion_treasure', 7],  // T5
+  ['arsenal_iron_blades', 'nethervinery:chests/bastion_treasure', 4],  // T6
+  ['arsenal_iron_polearms', 'nethervinery:chests/bastion_treasure', 4],  // T6
+
+  // ── nethervinery:chests/ruined_portal ──
+  ['cuisine_nether', 'nethervinery:chests/ruined_portal', 11],  // T4
+  ['cuisine_pyromantic', 'nethervinery:chests/ruined_portal', 17],  // T3
+  ['fire_school', 'nethervinery:chests/ruined_portal', 7],  // T5
+  ['infernal_age', 'nethervinery:chests/ruined_portal', 2],  // T3
+  ['long_road', 'nethervinery:chests/ruined_portal', 35],  // T1
+
+  // ── oceanic_delight:chests/ancient_fish_eggs_from_buried_treasure ──
+  ['seafood_mastery', 'oceanic_delight:chests/ancient_fish_eggs_from_buried_treasure', 11],  // T4
+  ['bakery', 'oceanic_delight:chests/ancient_fish_eggs_from_buried_treasure', 35],  // T1
+  ['butchery', 'oceanic_delight:chests/ancient_fish_eggs_from_buried_treasure', 35],  // T1
+  ['cartography_advanced', 'oceanic_delight:chests/ancient_fish_eggs_from_buried_treasure', 7],  // T5
+  ['cuisine_cornelia', 'oceanic_delight:chests/ancient_fish_eggs_from_buried_treasure', 17],  // T3
+
+  // ── ramadandelight:chests/rd_abandoned_mineshaft ──
+  ['sweets_and_confections', 'ramadandelight:chests/rd_abandoned_mineshaft', 11],  // T4
+  ['tea_ceremony', 'ramadandelight:chests/rd_abandoned_mineshaft', 7],  // T5
+  ['arsenal_iron_blades', 'ramadandelight:chests/rd_abandoned_mineshaft', 4],  // T6
+  ['arsenal_iron_polearms', 'ramadandelight:chests/rd_abandoned_mineshaft', 4],  // T6
+  ['bakery', 'ramadandelight:chests/rd_abandoned_mineshaft', 35],  // T1
+
+  // ── ramadandelight:chests/rd_desert_pyramid ──
+  ['cuisine_middle_eastern', 'ramadandelight:chests/rd_desert_pyramid', 17],  // T3
+  ['archaeology_mastery', 'ramadandelight:chests/rd_desert_pyramid', 35],  // T1
+  ['sweets_and_confections', 'ramadandelight:chests/rd_desert_pyramid', 11],  // T4
+  ['tea_ceremony', 'ramadandelight:chests/rd_desert_pyramid', 7],  // T5
+  ['bakery', 'ramadandelight:chests/rd_desert_pyramid', 35],  // T1
+
+  // ── ramadandelight:chests/rd_shipwreck_supply ──
+  ['seafood_mastery', 'ramadandelight:chests/rd_shipwreck_supply', 11],  // T4
+  ['sweets_and_confections', 'ramadandelight:chests/rd_shipwreck_supply', 11],  // T4
+  ['tea_ceremony', 'ramadandelight:chests/rd_shipwreck_supply', 7],  // T5
+  ['bakery', 'ramadandelight:chests/rd_shipwreck_supply', 35],  // T1
+  ['butchery', 'ramadandelight:chests/rd_shipwreck_supply', 35],  // T1
+
+  // ── ramadandelight:chests/rd_village_desert_house ──
+  ['bakery', 'ramadandelight:chests/rd_village_desert_house', 35],  // T1
+  ['butchery', 'ramadandelight:chests/rd_village_desert_house', 35],  // T1
+  ['cuisine_middle_eastern', 'ramadandelight:chests/rd_village_desert_house', 17],  // T3
+  ['dairy_and_cheese', 'ramadandelight:chests/rd_village_desert_house', 7],  // T5
+  ['soups_and_stews', 'ramadandelight:chests/rd_village_desert_house', 7],  // T5
+
+  // ── ramadandelight:chests/rd_village_plains_house ──
+  ['bakery', 'ramadandelight:chests/rd_village_plains_house', 35],  // T1
+  ['dairy_and_cheese', 'ramadandelight:chests/rd_village_plains_house', 7],  // T5
+  ['soups_and_stews', 'ramadandelight:chests/rd_village_plains_house', 7],  // T5
+  ['sweets_and_confections', 'ramadandelight:chests/rd_village_plains_house', 11],  // T4
+  ['agronomic_path', 'ramadandelight:chests/rd_village_plains_house', 35],  // T1
+
+  // ── ramadandelight:chests/rd_village_savanna_house ──
+  ['agronomic_path', 'ramadandelight:chests/rd_village_savanna_house', 35],  // T1
+  ['bakery', 'ramadandelight:chests/rd_village_savanna_house', 35],  // T1
+  ['dairy_and_cheese', 'ramadandelight:chests/rd_village_savanna_house', 7],  // T5
+  ['soups_and_stews', 'ramadandelight:chests/rd_village_savanna_house', 7],  // T5
+  ['sweets_and_confections', 'ramadandelight:chests/rd_village_savanna_house', 11],  // T4
+
+  // ── ramadandelight:chests/rd_village_snowy_house ──
+  ['bakery', 'ramadandelight:chests/rd_village_snowy_house', 35],  // T1
+  ['butchery', 'ramadandelight:chests/rd_village_snowy_house', 35],  // T1
+  ['dairy_and_cheese', 'ramadandelight:chests/rd_village_snowy_house', 7],  // T5
+  ['soups_and_stews', 'ramadandelight:chests/rd_village_snowy_house', 7],  // T5
+  ['sweets_and_confections', 'ramadandelight:chests/rd_village_snowy_house', 11],  // T4
+
+  // ── ramadandelight:chests/rd_village_taiga_house ──
+  ['agronomic_path', 'ramadandelight:chests/rd_village_taiga_house', 35],  // T1
+  ['bakery', 'ramadandelight:chests/rd_village_taiga_house', 35],  // T1
+  ['dairy_and_cheese', 'ramadandelight:chests/rd_village_taiga_house', 7],  // T5
+  ['soups_and_stews', 'ramadandelight:chests/rd_village_taiga_house', 7],  // T5
+  ['sweets_and_confections', 'ramadandelight:chests/rd_village_taiga_house', 11],  // T4
+
+  // ── rare-ice:chests/rare_ice ──
+  ['cuisine_alpine', 'rare-ice:chests/rare_ice', 7],  // T5
+
+  // ── roadweaver:chests/maid_house ──
+  ['agronomic_path', 'roadweaver:chests/maid_house', 35],  // T1
+  ['bakery', 'roadweaver:chests/maid_house', 35],  // T1
+  ['dairy_and_cheese', 'roadweaver:chests/maid_house', 7],  // T5
+  ['furniturecraft', 'roadweaver:chests/maid_house', 25],  // T2
+  ['soups_and_stews', 'roadweaver:chests/maid_house', 7],  // T5
+
+  // ── thirst:chests/abandoned_mineshaft ──
+  ['arsenal_iron_blades', 'thirst:chests/abandoned_mineshaft', 4],  // T6
+  ['arsenal_iron_polearms', 'thirst:chests/abandoned_mineshaft', 4],  // T6
+  ['bestiary_iceandfire', 'thirst:chests/abandoned_mineshaft', 11],  // T4
+  ['kindled_age', 'thirst:chests/abandoned_mineshaft', 2],  // T1
+  ['kinetic_engineering', 'thirst:chests/abandoned_mineshaft', 17],  // T3
+
+  // ── thirst:chests/abandoned_mineshaft_bc ──
+  ['arsenal_iron_blades', 'thirst:chests/abandoned_mineshaft_bc', 4],  // T6
+  ['arsenal_iron_polearms', 'thirst:chests/abandoned_mineshaft_bc', 4],  // T6
+  ['bestiary_iceandfire', 'thirst:chests/abandoned_mineshaft_bc', 11],  // T4
+  ['kindled_age', 'thirst:chests/abandoned_mineshaft_bc', 2],  // T1
+  ['kinetic_engineering', 'thirst:chests/abandoned_mineshaft_bc', 17],  // T3
+
+  // ── thirst:chests/abandoned_mineshaft_fr ──
+  ['arsenal_iron_blades', 'thirst:chests/abandoned_mineshaft_fr', 4],  // T6
+  ['arsenal_iron_polearms', 'thirst:chests/abandoned_mineshaft_fr', 4],  // T6
+  ['bestiary_iceandfire', 'thirst:chests/abandoned_mineshaft_fr', 11],  // T4
+  ['kindled_age', 'thirst:chests/abandoned_mineshaft_fr', 2],  // T1
+  ['kinetic_engineering', 'thirst:chests/abandoned_mineshaft_fr', 17],  // T3
+
+  // ── thirst:chests/bastion_other ──
+  ['arsenal_iron_blades', 'thirst:chests/bastion_other', 4],  // T6
+  ['arsenal_iron_polearms', 'thirst:chests/bastion_other', 4],  // T6
+  ['ballistics_engineering', 'thirst:chests/bastion_other', 11],  // T4
+  ['cannoneer', 'thirst:chests/bastion_other', 17],  // T3
+  ['cuisine_nether', 'thirst:chests/bastion_other', 11],  // T4
+
+  // ── thirst:chests/bastion_other_bc ──
+  ['arsenal_iron_blades', 'thirst:chests/bastion_other_bc', 4],  // T6
+  ['arsenal_iron_polearms', 'thirst:chests/bastion_other_bc', 4],  // T6
+  ['ballistics_engineering', 'thirst:chests/bastion_other_bc', 11],  // T4
+  ['cannoneer', 'thirst:chests/bastion_other_bc', 17],  // T3
+  ['cuisine_nether', 'thirst:chests/bastion_other_bc', 11],  // T4
+
+  // ── thirst:chests/bastion_other_fr ──
+  ['arsenal_iron_blades', 'thirst:chests/bastion_other_fr', 4],  // T6
+  ['arsenal_iron_polearms', 'thirst:chests/bastion_other_fr', 4],  // T6
+  ['ballistics_engineering', 'thirst:chests/bastion_other_fr', 11],  // T4
+  ['cannoneer', 'thirst:chests/bastion_other_fr', 17],  // T3
+  ['cuisine_nether', 'thirst:chests/bastion_other_fr', 11],  // T4
+
+  // ── thirst:chests/nether_bridge ──
+  ['cuisine_nether', 'thirst:chests/nether_bridge', 11],  // T4
+  ['cuisine_pyromantic', 'thirst:chests/nether_bridge', 17],  // T3
+  ['fire_school', 'thirst:chests/nether_bridge', 7],  // T5
+  ['infernal_age', 'thirst:chests/nether_bridge', 2],  // T3
+  ['soul_black_smith', 'thirst:chests/nether_bridge', 7],  // T5
+
+  // ── thirst:chests/nether_bridge_bc ──
+  ['cuisine_nether', 'thirst:chests/nether_bridge_bc', 11],  // T4
+  ['cuisine_pyromantic', 'thirst:chests/nether_bridge_bc', 17],  // T3
+  ['fire_school', 'thirst:chests/nether_bridge_bc', 7],  // T5
+  ['infernal_age', 'thirst:chests/nether_bridge_bc', 2],  // T3
+  ['soul_black_smith', 'thirst:chests/nether_bridge_bc', 7],  // T5
+
+  // ── thirst:chests/nether_bridge_fr ──
+  ['cuisine_nether', 'thirst:chests/nether_bridge_fr', 11],  // T4
+  ['cuisine_pyromantic', 'thirst:chests/nether_bridge_fr', 17],  // T3
+  ['fire_school', 'thirst:chests/nether_bridge_fr', 7],  // T5
+  ['infernal_age', 'thirst:chests/nether_bridge_fr', 2],  // T3
+  ['soul_black_smith', 'thirst:chests/nether_bridge_fr', 7],  // T5
+
+  // ── thirst:chests/shipwreck_supply ──
+  ['seafood_mastery', 'thirst:chests/shipwreck_supply', 11],  // T4
+  ['cartography_advanced', 'thirst:chests/shipwreck_supply', 7],  // T5
+  ['cuisine_cornelia', 'thirst:chests/shipwreck_supply', 17],  // T3
+  ['fishing_arts', 'thirst:chests/shipwreck_supply', 7],  // T5
+  ['mob_faction_deep_ones', 'thirst:chests/shipwreck_supply', 11],  // T4
+
+  // ── thirst:chests/shipwreck_supply_bc ──
+  ['seafood_mastery', 'thirst:chests/shipwreck_supply_bc', 11],  // T4
+  ['cartography_advanced', 'thirst:chests/shipwreck_supply_bc', 7],  // T5
+  ['cuisine_cornelia', 'thirst:chests/shipwreck_supply_bc', 17],  // T3
+  ['fishing_arts', 'thirst:chests/shipwreck_supply_bc', 7],  // T5
+  ['mob_faction_deep_ones', 'thirst:chests/shipwreck_supply_bc', 11],  // T4
+
+  // ── thirst:chests/shipwreck_supply_fr ──
+  ['seafood_mastery', 'thirst:chests/shipwreck_supply_fr', 11],  // T4
+  ['cartography_advanced', 'thirst:chests/shipwreck_supply_fr', 7],  // T5
+  ['cuisine_cornelia', 'thirst:chests/shipwreck_supply_fr', 17],  // T3
+  ['fishing_arts', 'thirst:chests/shipwreck_supply_fr', 7],  // T5
+  ['mob_faction_deep_ones', 'thirst:chests/shipwreck_supply_fr', 11],  // T4
+
+  // ── thirst:chests/simple_dungeon ──
+  ['arsenal_iron_blades', 'thirst:chests/simple_dungeon', 4],  // T6
+  ['arsenal_iron_polearms', 'thirst:chests/simple_dungeon', 4],  // T6
+  ['arsenal_master_polearms', 'thirst:chests/simple_dungeon', 7],  // T5
+  ['arsenal_master_ranged', 'thirst:chests/simple_dungeon', 17],  // T3
+  ['heavy_plate_discipline', 'thirst:chests/simple_dungeon', 7],  // T5
+
+  // ── thirst:chests/simple_dungeon_bc ──
+  ['arsenal_iron_blades', 'thirst:chests/simple_dungeon_bc', 4],  // T6
+  ['arsenal_iron_polearms', 'thirst:chests/simple_dungeon_bc', 4],  // T6
+  ['arsenal_master_polearms', 'thirst:chests/simple_dungeon_bc', 7],  // T5
+  ['arsenal_master_ranged', 'thirst:chests/simple_dungeon_bc', 17],  // T3
+  ['heavy_plate_discipline', 'thirst:chests/simple_dungeon_bc', 7],  // T5
+
+  // ── thirst:chests/simple_dungeon_fr ──
+  ['arsenal_iron_blades', 'thirst:chests/simple_dungeon_fr', 4],  // T6
+  ['arsenal_iron_polearms', 'thirst:chests/simple_dungeon_fr', 4],  // T6
+  ['arsenal_master_polearms', 'thirst:chests/simple_dungeon_fr', 7],  // T5
+  ['arsenal_master_ranged', 'thirst:chests/simple_dungeon_fr', 17],  // T3
+  ['heavy_plate_discipline', 'thirst:chests/simple_dungeon_fr', 7],  // T5
+
+  // ── tide:chests/crates/deep ──
+  ['cuisine_cornelia', 'tide:chests/crates/deep', 17],  // T3
+  ['fishing_arts', 'tide:chests/crates/deep', 7],  // T5
+  ['seafood_mastery', 'tide:chests/crates/deep', 11],  // T4
+  ['small_ships', 'tide:chests/crates/deep', 17],  // T3
+
+  // ── tide:chests/crates/deep_lava ──
+  ['cuisine_cornelia', 'tide:chests/crates/deep_lava', 17],  // T3
+  ['fishing_arts', 'tide:chests/crates/deep_lava', 7],  // T5
+  ['seafood_mastery', 'tide:chests/crates/deep_lava', 11],  // T4
+  ['small_ships', 'tide:chests/crates/deep_lava', 17],  // T3
+
+  // ── tide:chests/crates/end ──
+  ['cuisine_cornelia', 'tide:chests/crates/end', 17],  // T3
+  ['fishing_arts', 'tide:chests/crates/end', 7],  // T5
+  ['seafood_mastery', 'tide:chests/crates/end', 11],  // T4
+  ['small_ships', 'tide:chests/crates/end', 17],  // T3
+
+  // ── tide:chests/crates/nether ──
+  ['cuisine_cornelia', 'tide:chests/crates/nether', 17],  // T3
+  ['cuisine_nether', 'tide:chests/crates/nether', 11],  // T4
+  ['cuisine_pyromantic', 'tide:chests/crates/nether', 17],  // T3
+  ['fire_school', 'tide:chests/crates/nether', 7],  // T5
+  ['fishing_arts', 'tide:chests/crates/nether', 7],  // T5
+
+  // ── tide:chests/crates/surface_freshwater ──
+  ['cuisine_cornelia', 'tide:chests/crates/surface_freshwater', 17],  // T3
+  ['fishing_arts', 'tide:chests/crates/surface_freshwater', 7],  // T5
+  ['seafood_mastery', 'tide:chests/crates/surface_freshwater', 11],  // T4
+  ['small_ships', 'tide:chests/crates/surface_freshwater', 17],  // T3
+
+  // ── tide:chests/crates/surface_lava ──
+  ['cuisine_cornelia', 'tide:chests/crates/surface_lava', 17],  // T3
+  ['fishing_arts', 'tide:chests/crates/surface_lava', 7],  // T5
+  ['seafood_mastery', 'tide:chests/crates/surface_lava', 11],  // T4
+  ['small_ships', 'tide:chests/crates/surface_lava', 17],  // T3
+
+  // ── tide:chests/crates/surface_saltwater ──
+  ['cuisine_cornelia', 'tide:chests/crates/surface_saltwater', 17],  // T3
+  ['fishing_arts', 'tide:chests/crates/surface_saltwater', 7],  // T5
+  ['seafood_mastery', 'tide:chests/crates/surface_saltwater', 11],  // T4
+  ['small_ships', 'tide:chests/crates/surface_saltwater', 17],  // T3
+
+  // ── tide:chests/crates/underground ──
+  ['abyssal_chasm', 'tide:chests/crates/underground', 11],  // T4
+  ['cuisine_cornelia', 'tide:chests/crates/underground', 17],  // T3
+  ['cuisine_subterranean', 'tide:chests/crates/underground', 4],  // T6
+  ['fishing_arts', 'tide:chests/crates/underground', 7],  // T5
+  ['seafood_mastery', 'tide:chests/crates/underground', 11],  // T4
+
+  // ── tide:chests/crates/underground_lava ──
+  ['abyssal_chasm', 'tide:chests/crates/underground_lava', 11],  // T4
+  ['cuisine_cornelia', 'tide:chests/crates/underground_lava', 17],  // T3
+  ['cuisine_subterranean', 'tide:chests/crates/underground_lava', 4],  // T6
+  ['fishing_arts', 'tide:chests/crates/underground_lava', 7],  // T5
+  ['seafood_mastery', 'tide:chests/crates/underground_lava', 11],  // T4
+
+  // ── tide:chests/fishing_boat ──
+  ['cuisine_cornelia', 'tide:chests/fishing_boat', 17],  // T3
+  ['fishing_arts', 'tide:chests/fishing_boat', 7],  // T5
+  ['seafood_mastery', 'tide:chests/fishing_boat', 11],  // T4
+  ['small_ships', 'tide:chests/fishing_boat', 17],  // T3
+
+  // ── traveloptics:chests/abyssal_ruins_additions ──
+  ['abyssal_chasm', 'traveloptics:chests/abyssal_ruins_additions', 11],  // T4
+  ['archaeology_mastery', 'traveloptics:chests/abyssal_ruins_additions', 35],  // T1
+
+  // ── traveloptics:chests/ancient_city_additions ──
+  ['abyssal_age', 'traveloptics:chests/ancient_city_additions', 2],  // T3
+  ['abyssal_chasm', 'traveloptics:chests/ancient_city_additions', 11],  // T4
+  ['archaeology_mastery', 'traveloptics:chests/ancient_city_additions', 35],  // T1
+  ['atomic_engineering', 'traveloptics:chests/ancient_city_additions', 11],  // T4
+  ['cuisine_subterranean', 'traveloptics:chests/ancient_city_additions', 4],  // T6
+
+  // ── traveloptics:chests/ancient_city_ice_additions ──
+  ['abyssal_age', 'traveloptics:chests/ancient_city_ice_additions', 2],  // T3
+  ['abyssal_chasm', 'traveloptics:chests/ancient_city_ice_additions', 11],  // T4
+  ['archaeology_mastery', 'traveloptics:chests/ancient_city_ice_additions', 35],  // T1
+  ['atomic_engineering', 'traveloptics:chests/ancient_city_ice_additions', 11],  // T4
+  ['cuisine_subterranean', 'traveloptics:chests/ancient_city_ice_additions', 4],  // T6
+
+  // ── traveloptics:chests/aqua_mage_tower/aqua_mage_basic_storage ──
+  ['arcane_codex', 'traveloptics:chests/aqua_mage_tower/aqua_mage_basic_storage', 4],  // T6
+  ['falconry', 'traveloptics:chests/aqua_mage_tower/aqua_mage_basic_storage', 4],  // T6
+  ['fishing_arts', 'traveloptics:chests/aqua_mage_tower/aqua_mage_basic_storage', 7],  // T5
+  ['lightning_school', 'traveloptics:chests/aqua_mage_tower/aqua_mage_basic_storage', 7],  // T5
+  ['music_speakers', 'traveloptics:chests/aqua_mage_tower/aqua_mage_basic_storage', 17],  // T3
+
+  // ── traveloptics:chests/aqua_mage_tower/aqua_mage_treasure_storage ──
+  ['arcane_codex', 'traveloptics:chests/aqua_mage_tower/aqua_mage_treasure_storage', 4],  // T6
+  ['falconry', 'traveloptics:chests/aqua_mage_tower/aqua_mage_treasure_storage', 4],  // T6
+  ['fishing_arts', 'traveloptics:chests/aqua_mage_tower/aqua_mage_treasure_storage', 7],  // T5
+  ['lightning_school', 'traveloptics:chests/aqua_mage_tower/aqua_mage_treasure_storage', 7],  // T5
+  ['music_speakers', 'traveloptics:chests/aqua_mage_tower/aqua_mage_treasure_storage', 17],  // T3
+
+  // ── traveloptics:chests/catacombs_additions ──
+  ['archaeology_mastery', 'traveloptics:chests/catacombs_additions', 35],  // T1
+  ['blood_school', 'traveloptics:chests/catacombs_additions', 7],  // T5
+  ['eldritch_school', 'traveloptics:chests/catacombs_additions', 7],  // T5
+
+  // ── traveloptics:chests/caveman_house_additions_new ──
+  ['agronomic_path', 'traveloptics:chests/caveman_house_additions_new', 35],  // T1
+  ['bakery', 'traveloptics:chests/caveman_house_additions_new', 35],  // T1
+  ['bestiary_alex_mobs', 'traveloptics:chests/caveman_house_additions_new', 4],  // T6
+  ['cuisine_subterranean', 'traveloptics:chests/caveman_house_additions_new', 4],  // T6
+  ['dairy_and_cheese', 'traveloptics:chests/caveman_house_additions_new', 7],  // T5
+
+  // ── traveloptics:chests/forlorn_ruins_additions_new ──
+  ['archaeology_mastery', 'traveloptics:chests/forlorn_ruins_additions_new', 35],  // T1
+  ['blighted_hollows', 'traveloptics:chests/forlorn_ruins_additions_new', 11],  // T4
+  ['carnal_anatomy', 'traveloptics:chests/forlorn_ruins_additions_new', 17],  // T3
+  ['forlorn_hollows', 'traveloptics:chests/forlorn_ruins_additions_new', 11],  // T4
+
+  // ── traveloptics:chests/frosted_prison_treasure_additions ──
+  ['cuisine_alpine', 'traveloptics:chests/frosted_prison_treasure_additions', 7],  // T5
+
+  // ── traveloptics:chests/impaled_icebreaker_captain_quarters ──
+  ['cuisine_alpine', 'traveloptics:chests/impaled_icebreaker_captain_quarters', 7],  // T5
+  ['ice_school', 'traveloptics:chests/impaled_icebreaker_captain_quarters', 7],  // T5
+
+  // ── traveloptics:chests/magnetic_ruins_additions_new ──
+  ['archaeology_mastery', 'traveloptics:chests/magnetic_ruins_additions_new', 35],  // T1
+  ['magnetic_deep', 'traveloptics:chests/magnetic_ruins_additions_new', 11],  // T4
+
+  // ── traveloptics:chests/toxic_ruins_additions_new ──
+  ['archaeology_mastery', 'traveloptics:chests/toxic_ruins_additions_new', 35],  // T1
+
+  // ── traveloptics:chests/void_cathedral/hidden_sculk_room ──
+  ['abyssal_age', 'traveloptics:chests/void_cathedral/hidden_sculk_room', 2],  // T3
+  ['abyssal_chasm', 'traveloptics:chests/void_cathedral/hidden_sculk_room', 11],  // T4
+  ['arcane_codex', 'traveloptics:chests/void_cathedral/hidden_sculk_room', 4],  // T6
+  ['architectural_mastery', 'traveloptics:chests/void_cathedral/hidden_sculk_room', 11],  // T4
+  ['arsenal_master_blades', 'traveloptics:chests/void_cathedral/hidden_sculk_room', 4],  // T6
+
+  // ── traveloptics:chests/void_cathedral/hidden_treasure_place ──
+  ['arcane_codex', 'traveloptics:chests/void_cathedral/hidden_treasure_place', 4],  // T6
+  ['architectural_mastery', 'traveloptics:chests/void_cathedral/hidden_treasure_place', 11],  // T4
+  ['arsenal_master_blades', 'traveloptics:chests/void_cathedral/hidden_treasure_place', 4],  // T6
+  ['arsenal_master_ranged', 'traveloptics:chests/void_cathedral/hidden_treasure_place', 17],  // T3
+  ['banner_heraldry', 'traveloptics:chests/void_cathedral/hidden_treasure_place', 11],  // T4
+
+  // ── traveloptics:chests/void_cathedral/library_higher_basic ──
+  ['arcane_codex', 'traveloptics:chests/void_cathedral/library_higher_basic', 4],  // T6
+  ['architectural_mastery', 'traveloptics:chests/void_cathedral/library_higher_basic', 11],  // T4
+  ['bookshelf_mastery', 'traveloptics:chests/void_cathedral/library_higher_basic', 11],  // T4
+  ['culture_age', 'traveloptics:chests/void_cathedral/library_higher_basic', 2],  // T1
+  ['five_vessels_apocrypha', 'traveloptics:chests/void_cathedral/library_higher_basic', 4],  // T6
+
+  // ── traveloptics:chests/void_cathedral/library_higher_treasure ──
+  ['arcane_codex', 'traveloptics:chests/void_cathedral/library_higher_treasure', 4],  // T6
+  ['architectural_mastery', 'traveloptics:chests/void_cathedral/library_higher_treasure', 11],  // T4
+  ['bookshelf_mastery', 'traveloptics:chests/void_cathedral/library_higher_treasure', 11],  // T4
+  ['culture_age', 'traveloptics:chests/void_cathedral/library_higher_treasure', 2],  // T1
+  ['five_vessels_apocrypha', 'traveloptics:chests/void_cathedral/library_higher_treasure', 4],  // T6
+
+  // ── traveloptics:chests/void_cathedral/library_lower_basic ──
+  ['arcane_codex', 'traveloptics:chests/void_cathedral/library_lower_basic', 4],  // T6
+  ['architectural_mastery', 'traveloptics:chests/void_cathedral/library_lower_basic', 11],  // T4
+  ['bookshelf_mastery', 'traveloptics:chests/void_cathedral/library_lower_basic', 11],  // T4
+  ['culture_age', 'traveloptics:chests/void_cathedral/library_lower_basic', 2],  // T1
+  ['five_vessels_apocrypha', 'traveloptics:chests/void_cathedral/library_lower_basic', 4],  // T6
+
+  // ── traveloptics:chests/void_cathedral/library_lower_treasure ──
+  ['arcane_codex', 'traveloptics:chests/void_cathedral/library_lower_treasure', 4],  // T6
+  ['architectural_mastery', 'traveloptics:chests/void_cathedral/library_lower_treasure', 11],  // T4
+  ['bookshelf_mastery', 'traveloptics:chests/void_cathedral/library_lower_treasure', 11],  // T4
+  ['culture_age', 'traveloptics:chests/void_cathedral/library_lower_treasure', 2],  // T1
+  ['five_vessels_apocrypha', 'traveloptics:chests/void_cathedral/library_lower_treasure', 4],  // T6
+
+  // ── traveloptics:chests/void_cathedral/silly_treasure ──
+  ['arcane_codex', 'traveloptics:chests/void_cathedral/silly_treasure', 4],  // T6
+  ['architectural_mastery', 'traveloptics:chests/void_cathedral/silly_treasure', 11],  // T4
+  ['arsenal_master_blades', 'traveloptics:chests/void_cathedral/silly_treasure', 4],  // T6
+  ['arsenal_master_ranged', 'traveloptics:chests/void_cathedral/silly_treasure', 17],  // T3
+  ['banner_heraldry', 'traveloptics:chests/void_cathedral/silly_treasure', 11],  // T4
+
+  // ── true_end:chests/home_farming_chest ──
+  ['agronomic_path', 'true_end:chests/home_farming_chest', 35],  // T1
+  ['dairy_and_cheese', 'true_end:chests/home_farming_chest', 7],  // T5
+  ['naturalist_basics', 'true_end:chests/home_farming_chest', 35],  // T1
+
+  // ── vintagedelight:chests/mixed_seeds ──
+  ['bakery', 'vintagedelight:chests/mixed_seeds', 35],  // T1
+  ['butchery', 'vintagedelight:chests/mixed_seeds', 35],  // T1
+  ['dairy_and_cheese', 'vintagedelight:chests/mixed_seeds', 7],  // T5
+  ['fermentation_age', 'vintagedelight:chests/mixed_seeds', 2],  // T5
+  ['sweets_and_confections', 'vintagedelight:chests/mixed_seeds', 11],  // T4
+
+  // ── vintagedelight:chests/vd_bastion_hoglin_stable ──
+  ['arsenal_iron_blades', 'vintagedelight:chests/vd_bastion_hoglin_stable', 4],  // T6
+  ['arsenal_iron_polearms', 'vintagedelight:chests/vd_bastion_hoglin_stable', 4],  // T6
+  ['bakery', 'vintagedelight:chests/vd_bastion_hoglin_stable', 35],  // T1
+  ['ballistics_engineering', 'vintagedelight:chests/vd_bastion_hoglin_stable', 11],  // T4
+  ['butchery', 'vintagedelight:chests/vd_bastion_hoglin_stable', 35],  // T1
+
+  // ── vintagedelight:chests/vd_ruined_portal ──
+  ['bakery', 'vintagedelight:chests/vd_ruined_portal', 35],  // T1
+  ['butchery', 'vintagedelight:chests/vd_ruined_portal', 35],  // T1
+  ['dairy_and_cheese', 'vintagedelight:chests/vd_ruined_portal', 7],  // T5
+  ['fermentation_age', 'vintagedelight:chests/vd_ruined_portal', 2],  // T5
+  ['sweets_and_confections', 'vintagedelight:chests/vd_ruined_portal', 11],  // T4
+
+  // ── vintagedelight:chests/vd_village_desert_house ──
+  ['bakery', 'vintagedelight:chests/vd_village_desert_house', 35],  // T1
+  ['butchery', 'vintagedelight:chests/vd_village_desert_house', 35],  // T1
+  ['dairy_and_cheese', 'vintagedelight:chests/vd_village_desert_house', 7],  // T5
+  ['soups_and_stews', 'vintagedelight:chests/vd_village_desert_house', 7],  // T5
+  ['cuisine_middle_eastern', 'vintagedelight:chests/vd_village_desert_house', 17],  // T3
+
+  // ── vintagedelight:chests/vd_village_plains_house ──
+  ['bakery', 'vintagedelight:chests/vd_village_plains_house', 35],  // T1
+  ['dairy_and_cheese', 'vintagedelight:chests/vd_village_plains_house', 7],  // T5
+  ['soups_and_stews', 'vintagedelight:chests/vd_village_plains_house', 7],  // T5
+  ['agronomic_path', 'vintagedelight:chests/vd_village_plains_house', 35],  // T1
+  ['sweets_and_confections', 'vintagedelight:chests/vd_village_plains_house', 11],  // T4
+
+  // ── vintagedelight:chests/vd_village_savanna_house ──
+  ['agronomic_path', 'vintagedelight:chests/vd_village_savanna_house', 35],  // T1
+  ['bakery', 'vintagedelight:chests/vd_village_savanna_house', 35],  // T1
+  ['dairy_and_cheese', 'vintagedelight:chests/vd_village_savanna_house', 7],  // T5
+  ['soups_and_stews', 'vintagedelight:chests/vd_village_savanna_house', 7],  // T5
+  ['sweets_and_confections', 'vintagedelight:chests/vd_village_savanna_house', 11],  // T4
+
+  // ── vintagedelight:chests/vd_village_snowy_house ──
+  ['bakery', 'vintagedelight:chests/vd_village_snowy_house', 35],  // T1
+  ['butchery', 'vintagedelight:chests/vd_village_snowy_house', 35],  // T1
+  ['dairy_and_cheese', 'vintagedelight:chests/vd_village_snowy_house', 7],  // T5
+  ['soups_and_stews', 'vintagedelight:chests/vd_village_snowy_house', 7],  // T5
+  ['sweets_and_confections', 'vintagedelight:chests/vd_village_snowy_house', 11],  // T4
+
+  // ── vintagedelight:chests/vd_village_taiga_house ──
+  ['agronomic_path', 'vintagedelight:chests/vd_village_taiga_house', 35],  // T1
+  ['bakery', 'vintagedelight:chests/vd_village_taiga_house', 35],  // T1
+  ['dairy_and_cheese', 'vintagedelight:chests/vd_village_taiga_house', 7],  // T5
+  ['soups_and_stews', 'vintagedelight:chests/vd_village_taiga_house', 7],  // T5
+  ['furniturecraft', 'vintagedelight:chests/vd_village_taiga_house', 25],  // T2
+
+  // ── wares:chests/village/badlands_warehouse ──
+  ['agronomic_path', 'wares:chests/village/badlands_warehouse', 35],  // T1
+  ['bakery', 'wares:chests/village/badlands_warehouse', 35],  // T1
+  ['dairy_and_cheese', 'wares:chests/village/badlands_warehouse', 7],  // T5
+  ['furniturecraft', 'wares:chests/village/badlands_warehouse', 25],  // T2
+  ['soups_and_stews', 'wares:chests/village/badlands_warehouse', 7],  // T5
+
+  // ── wares:chests/village/beach_warehouse ──
+  ['agronomic_path', 'wares:chests/village/beach_warehouse', 35],  // T1
+  ['bakery', 'wares:chests/village/beach_warehouse', 35],  // T1
+  ['dairy_and_cheese', 'wares:chests/village/beach_warehouse', 7],  // T5
+  ['furniturecraft', 'wares:chests/village/beach_warehouse', 25],  // T2
+  ['soups_and_stews', 'wares:chests/village/beach_warehouse', 7],  // T5
+
+  // ── wares:chests/village/dark_forest_warehouse ──
+  ['woodworking', 'wares:chests/village/dark_forest_warehouse', 35],  // T1
+  ['foraging_almanac', 'wares:chests/village/dark_forest_warehouse', 35],  // T1
+  ['bestiary_alex_mobs', 'wares:chests/village/dark_forest_warehouse', 4],  // T6
+  ['dairy_and_cheese', 'wares:chests/village/dark_forest_warehouse', 7],  // T5
+  ['furniturecraft', 'wares:chests/village/dark_forest_warehouse', 25],  // T2
+
+  // ── wares:chests/village/jungle_warehouse ──
+  ['naturalist_basics', 'wares:chests/village/jungle_warehouse', 35],  // T1
+  ['woodworking', 'wares:chests/village/jungle_warehouse', 35],  // T1
+  ['bestiary_alex_mobs', 'wares:chests/village/jungle_warehouse', 4],  // T6
+  ['cuisine_tropical', 'wares:chests/village/jungle_warehouse', 11],  // T4
+  ['dairy_and_cheese', 'wares:chests/village/jungle_warehouse', 7],  // T5
+
+  // ── wares:chests/village/mountain_warehouse ──
+  ['agronomic_path', 'wares:chests/village/mountain_warehouse', 35],  // T1
+  ['bakery', 'wares:chests/village/mountain_warehouse', 35],  // T1
+  ['cuisine_alpine', 'wares:chests/village/mountain_warehouse', 7],  // T5
+  ['dairy_and_cheese', 'wares:chests/village/mountain_warehouse', 7],  // T5
+  ['furniturecraft', 'wares:chests/village/mountain_warehouse', 25],  // T2
+
+  // ── wares:chests/village/mushroom_warehouse ──
+  ['agronomic_path', 'wares:chests/village/mushroom_warehouse', 35],  // T1
+  ['bakery', 'wares:chests/village/mushroom_warehouse', 35],  // T1
+  ['dairy_and_cheese', 'wares:chests/village/mushroom_warehouse', 7],  // T5
+  ['furniturecraft', 'wares:chests/village/mushroom_warehouse', 25],  // T2
+  ['soups_and_stews', 'wares:chests/village/mushroom_warehouse', 7],  // T5
+
+  // ── wares:chests/village/swamp_warehouse ──
+  ['agronomic_path', 'wares:chests/village/swamp_warehouse', 35],  // T1
+  ['bakery', 'wares:chests/village/swamp_warehouse', 35],  // T1
+  ['dairy_and_cheese', 'wares:chests/village/swamp_warehouse', 7],  // T5
+  ['furniturecraft', 'wares:chests/village/swamp_warehouse', 25],  // T2
+  ['soups_and_stews', 'wares:chests/village/swamp_warehouse', 7],  // T5
 
 ]
 
@@ -1099,5 +2734,5 @@ ServerEvents.genericLootTables(function(event) {
     })(lootTable, scrollItem, pct)
   }
 
-  console.info('[Sinborn] Injected ' + SCROLL_SOURCES.length + ' scroll loot entries')
+  console.info('[Sinborn V5] Strict-matched ' + SCROLL_SOURCES.length + ' scroll entries across 428 chest types')
 })

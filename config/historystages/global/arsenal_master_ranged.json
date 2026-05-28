@@ -2,6 +2,8 @@
   "display_name": "The Master Arsenal: Ranged",
   "research_time": 5400,
   "items": [
+    "createbigcannons:guncotton",
+    "createbigcannons:packed_guncotton",
     "simplycataclysm:black_steel_chakram",
     "simplymore:mimicry_chakram",
     "simplyswords:diamond_chakram",

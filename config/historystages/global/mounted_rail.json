@@ -1,7 +1,13 @@
 {
   "display_name": "The Rail Age (Mounted & Cart)",
   "research_time": 2700,
-  "items": [],
+  "items": [
+    "minecraft:saddle",
+    "trotting_wagons:armored_wagon",
+    "trotting_wagons:conestoga_wagon",
+    "trotting_wagons:royal_wagon",
+    "trotting_wagons:wheel"
+  ],
   "tags": [],
   "mods": [
     "cmpackagecouriers",

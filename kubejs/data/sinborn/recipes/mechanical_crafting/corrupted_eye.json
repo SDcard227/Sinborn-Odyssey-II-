@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "WCW",
+    "MKM",
+    "GSG"
+  ],
+  "key": {
+    "W": { "item": "alexsmobs:warped_muscle" },
+    "C": { "item": "cataclysm:cursium_ingot" },
+    "M": { "item": "dungeons_and_combat:mimic_eye" },
+    "K": { "item": "dungeons_and_combat:cursed_soul" },
+    "G": { "item": "call_of_yucutan:ancient_gold_ingot" },
+    "S": { "item": "irons_spellbooks:divine_soulshard" }
+  },
+  "result": {
+    "item": "endrem:corrupted_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

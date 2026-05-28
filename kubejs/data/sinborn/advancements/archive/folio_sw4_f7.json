@@ -1,0 +1,29 @@
+{
+  "parent": "sinborn:archive/shelf4_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:written_book"
+    },
+    "title": "On the Three Traditions",
+    "description": "Apparatus & Apocrypha — Folio VII: On the Three Traditions",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw4_f7\"}"
+          }
+        ]
+      }
+    }
+  }
+}

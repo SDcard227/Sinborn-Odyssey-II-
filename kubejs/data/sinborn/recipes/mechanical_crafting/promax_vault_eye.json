@@ -1,0 +1,36 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "  A  ",
+    " BCD ",
+    "EFGHI",
+    "JKLMN",
+    "OPQRS"
+  ],
+  "key": {
+    "A": { "item": "traveloptics:eye_of_nothingness" },
+    "B": { "item": "end_remastered_promax:environment_eye" },
+    "C": { "item": "end_remastered_promax:ancient_eye" },
+    "D": { "item": "end_remastered_promax:arcane_eye" },
+    "E": { "item": "end_remastered_promax:enhance_eye" },
+    "F": { "item": "end_remastered_promax:weird_eye" },
+    "G": { "item": "endrem:wither_eye" },
+    "H": { "item": "cataclysm:abyss_eye" },
+    "I": { "item": "cataclysm:void_eye" },
+    "J": { "item": "cataclysm:cursed_eye" },
+    "K": { "item": "cataclysm:desert_eye" },
+    "L": { "item": "cataclysm:flame_eye" },
+    "M": { "item": "cataclysm:mech_eye" },
+    "N": { "item": "cataclysm:monstrous_eye" },
+    "O": { "item": "cataclysm:storm_eye" },
+    "P": { "item": "mowzies_cataclysm:frostmaw_eye" },
+    "Q": { "item": "mowzies_cataclysm:sun_eye" },
+    "R": { "item": "mowzies_cataclysm:tongbi_eye" },
+    "S": { "item": "mowzies_cataclysm:wrought_eye" }
+  },
+  "result": {
+    "item": "end_remastered_promax:vault_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

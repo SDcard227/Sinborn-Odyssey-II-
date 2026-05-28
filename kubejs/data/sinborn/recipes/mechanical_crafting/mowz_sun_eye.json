@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "GSG",
+    "STS",
+    "GSG"
+  ],
+  "key": {
+    "G": { "item": "minecraft:gold_block" },
+    "S": { "item": "minecraft:sunflower" },
+    "T": { "item": "minecraft:totem_of_undying" }
+  },
+  "result": {
+    "item": "mowzies_cataclysm:sun_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

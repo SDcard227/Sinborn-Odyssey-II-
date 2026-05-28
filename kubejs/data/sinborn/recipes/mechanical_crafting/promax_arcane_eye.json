@@ -1,0 +1,16 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "CEW"
+  ],
+  "key": {
+    "C": { "item": "endrem:cryptic_eye" },
+    "E": { "item": "endrem:evil_eye" },
+    "W": { "item": "endrem:witch_eye" }
+  },
+  "result": {
+    "item": "end_remastered_promax:arcane_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

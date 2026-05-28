@@ -1,0 +1,29 @@
+{
+  "parent": "sinborn:archive/shelf2_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:written_book"
+    },
+    "title": "Yucatan, the Sky-Reaching",
+    "description": "The Crimson Reign — Folio IV: Yucatan, the Sky-Reaching",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw2_f4\"}"
+          }
+        ]
+      }
+    }
+  }
+}

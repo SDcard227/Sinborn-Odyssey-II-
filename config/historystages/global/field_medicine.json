@@ -2,6 +2,7 @@
   "display_name": "Field Medicine",
   "research_time": 2700,
   "items": [
+    "cuffed:bandage",
     "dungeons_and_combat:processed_antidote",
     "minecraft:brewing_stand"
   ],

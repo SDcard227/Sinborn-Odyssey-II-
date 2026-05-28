@@ -1,0 +1,29 @@
+{
+  "parent": "sinborn:archive/shelf1_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:written_book"
+    },
+    "title": "The Weeping Mother",
+    "description": "The First World — Folio VI: The Weeping Mother",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sw1_f6\"}"
+          }
+        ]
+      }
+    }
+  }
+}

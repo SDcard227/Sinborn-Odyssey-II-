@@ -1,7 +1,16 @@
 {
   "display_name": "Music Speakers (the Broadcast Age)",
   "research_time": 5400,
-  "items": [],
+  "items": [
+    "etched:portal_radio",
+    "etched:radio",
+    "simpleradio:antenna",
+    "simpleradio:radio",
+    "simpleradio:radiosmither",
+    "simpleradio:speaker",
+    "simpleradio:speaker_module",
+    "simpleradio:transceiver"
+  ],
   "tags": [],
   "mods": [
     "simpleradio",

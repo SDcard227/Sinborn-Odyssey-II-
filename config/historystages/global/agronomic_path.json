@@ -1,7 +1,31 @@
 {
   "display_name": "The Agronomist Path",
-  "research_time": 2700,
-  "items": [],
+  "research_time": 1500,
+  "items": [
+    "cropcritters:seed_ball",
+    "cropcritters:seed_bar",
+    "cropcritters:soul_farmland",
+    "iceandfire:copper_hoe",
+    "iceandfire:sapphire_block",
+    "iceandfire:sapphire_gem",
+    "minecraft:diamond_hoe",
+    "minecraft:golden_hoe",
+    "minecraft:iron_hoe",
+    "minecraft:netherite_hoe",
+    "minecraft:pitcher_crop",
+    "minecraft:wheat_seeds",
+    "simplymore:the_blood_harvester",
+    "tfmg:aluminum_pipe",
+    "tfmg:aluminum_smart_fluid_pipe",
+    "tfmg:cast_iron_pipe",
+    "tfmg:cast_iron_smart_fluid_pipe",
+    "tfmg:copper_encased_aluminum_pipe",
+    "tfmg:copper_encased_cast_iron_pipe",
+    "tfmg:copper_encased_plastic_pipe",
+    "tfmg:industrial_pipe",
+    "tfmg:plastic_pipe",
+    "tfmg:plastic_smart_fluid_pipe"
+  ],
   "tags": [],
   "mods": [
     "cropcritters"

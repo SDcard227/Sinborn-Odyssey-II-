@@ -1,7 +1,18 @@
 {
   "display_name": "Small Ships & Sailing",
   "research_time": 5400,
-  "items": [],
+  "items": [
+    "smallships:acacia_rowboat",
+    "smallships:bamboo_rowboat",
+    "smallships:birch_rowboat",
+    "smallships:cherry_rowboat",
+    "smallships:dark_oak_rowboat",
+    "smallships:jungle_rowboat",
+    "smallships:mangrove_rowboat",
+    "smallships:oak_rowboat",
+    "smallships:sail",
+    "smallships:spruce_rowboat"
+  ],
   "tags": [],
   "mods": [
     "smallships"

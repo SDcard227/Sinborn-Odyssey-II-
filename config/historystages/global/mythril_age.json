@@ -21,7 +21,12 @@
     "echovoids:mythril_tiles",
     "echovoids:mythril_wart",
     "echovoids:pearl_lamp_mythril_slab",
-    "echovoids:pearl_lamp_mythril_stairs"
+    "echovoids:pearl_lamp_mythril_stairs",
+    "irons_spellbooks:mithril_scrap",
+    "irons_spellbooks:mithril_weave",
+    "irons_spellbooks:raw_mithril",
+    "simplymore:mythril_deer_horns",
+    "simplyswords:mythicmetals_compat.mythril.mythril_sai"
   ],
   "tags": [],
   "mods": [],

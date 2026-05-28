@@ -1,7 +1,11 @@
 {
   "display_name": "The Codex of Kukulkan",
   "research_time": 1800,
-  "items": [],
+  "items": [
+    "call_of_yucutan:jei_kukulkan",
+    "call_of_yucutan:kukulkan_idol",
+    "call_of_yucutan:kukulkan_spawn_egg"
+  ],
   "tags": [],
   "mods": [
     "call_of_yucutan"

@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "IRI",
+    "RPR",
+    "IRI"
+  ],
+  "key": {
+    "I": { "item": "create:brass_ingot" },
+    "R": { "item": "minecraft:redstone_block" },
+    "P": { "item": "create:precision_mechanism" }
+  },
+  "result": {
+    "item": "cataclysm:mech_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

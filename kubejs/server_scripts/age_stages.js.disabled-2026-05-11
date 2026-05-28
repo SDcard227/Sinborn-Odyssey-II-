@@ -1,0 +1,83 @@
+// ============================================================
+// SINBORN ODYSSEY 2 — History Stages Auto-Unlock
+//
+// Automatically grants History Stage unlocks when a player
+// obtains the milestone item for each age phase.
+// Fires immediately on item pickup — no reward claim needed.
+//
+// Stage names match filenames in config/historystages/
+// Phase → milestone item → stage name
+// ============================================================
+
+const ITEM_STAGES = {
+  // ph01 — The Kindled Age
+  'minecraft:flint_and_steel':               'kindled_age',
+  // ph02 — The Hearth Age
+  'farmersdelight:apple_pie':                'hearth_age',
+  // ph03 — The Water Age (iron pickaxe OR water wheel)
+  'minecraft:iron_pickaxe':                  'water_age',
+  'create:water_wheel':                      'water_age',
+  // ph04 — The Fermentation Age
+  'brewinandchewin:sweet_berry_jam':         'fermentation_age',
+  // ph06 — The Steam Age (diamond gear OR steam engine)
+  'minecraft:diamond_sword':                 'steam_age',
+  'minecraft:diamond_chestplate':            'steam_age',
+  'create:steam_engine':                     'steam_age',
+  // ph07 — The Oil Age (brewing stand OR bitumen)
+  'minecraft:brewing_stand':                 'oil_age',
+  'tfmg:bitumen':                            'oil_age',
+  // ph08 — The Abyssal Age
+  'minecraft:echo_shard':                    'abyssal_age',
+  // ph09 — The Eye Hunt Age
+  'endrem:black_eye':                        'eye_hunt_age',
+  // ph10 — The Nuclear Age
+  'minecraft:nether_star':                   'nuclear_age',
+  // ph11 — The Infernal Age
+  'cataclysm:lacrima':                       'infernal_age',
+  // ph12 — The Cursed Age
+  'minecraft:wither_rose':                   'cursed_age',
+  // ph13 — The Void Age
+  'endrem:cursed_eye':                       'void_age',
+  // ph14 — The Dragon Age
+  'endrem:eye_holder':                       'dragon_age',
+  // ph15 — The Lost Void
+  'lifesteal:revive_crystal':                'lost_void',
+  // ph16 — The Elder Age
+  'celestisynth:celestial_netherite_ingot':  'elder_age',
+  // ph17 — The Mastery Age
+  'createteleporters:quantum_mechanism':     'mastery_age',
+}
+
+// ph05 — The Culture Age unlocks when the Kindled Fire scroll is obtained.
+// The scroll is a written_book with a specific title.
+const SCROLL_STAGES = {
+  'The Kindled Fire': 'culture_age',
+}
+
+function grantStage(player, stage) {
+  const flagKey = 'sinborn_stage_' + stage
+  if (player.persistentData.getBoolean(flagKey)) return
+  player.persistentData.putBoolean(flagKey, true)
+  player.server.runCommandSilent(`execute as ${player.username} run history unlock ${stage}`)
+}
+
+ItemEvents.pickedUp(event => {
+  const player = event.player
+  const stack  = event.item
+
+  // Item-based stage unlock
+  const itemStage = ITEM_STAGES[stack.id]
+  if (itemStage) {
+    grantStage(player, itemStage)
+    return
+  }
+
+  // Scroll-based stage unlock (ph05 culture age)
+  if (stack.id !== 'minecraft:written_book') return
+  const nbt = stack.nbt
+  if (!nbt) return
+  const title = nbt.getString('title')
+  if (!title) return
+  const scrollStage = SCROLL_STAGES[title]
+  if (scrollStage) grantStage(player, scrollStage)
+})

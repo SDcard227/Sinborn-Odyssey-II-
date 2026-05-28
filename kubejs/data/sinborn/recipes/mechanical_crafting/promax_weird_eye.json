@@ -1,0 +1,16 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "CGU"
+  ],
+  "key": {
+    "C": { "item": "endrem:cursed_eye" },
+    "G": { "item": "endrem:guardian_eye" },
+    "U": { "item": "endrem:undead_eye" }
+  },
+  "result": {
+    "item": "end_remastered_promax:weird_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

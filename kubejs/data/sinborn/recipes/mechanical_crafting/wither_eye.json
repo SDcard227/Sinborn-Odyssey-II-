@@ -1,0 +1,20 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "SHS",
+    "WNW",
+    "SXS"
+  ],
+  "key": {
+    "S": { "item": "minecraft:wither_skeleton_skull" },
+    "H": { "item": "cataclysm:witherite_block" },
+    "W": { "item": "cataclysm:witherite_ingot" },
+    "N": { "item": "minecraft:nether_star" },
+    "X": { "item": "mythsandlegends:cursed_core" }
+  },
+  "result": {
+    "item": "endrem:wither_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

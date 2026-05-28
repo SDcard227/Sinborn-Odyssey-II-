@@ -1,0 +1,126 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:forest",
+    "minecraft:birch_forest",
+    "minecraft:old_growth_birch_forest",
+    {
+      "id": "biomesoplenty:flower_field",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:meadow",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:grove",
+      "required": false
+    },
+    {
+      "id": "byg:meadow",
+      "required": false
+    },
+    {
+      "id": "byg:temperate_meadows",
+      "required": false
+    },
+    {
+      "id": "byg:birch_forest_hills",
+      "required": false
+    },
+    {
+      "id": "byg:tropical_grove",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:flower_fields",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:temperate_grove",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:orchard",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:deciduous_forest",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:poppy_fields",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:shrubland",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:rocky_meadow",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:prairie",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:barley_fields",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:autumnal_maple_forest",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:clover_plains",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:highland_fields",
+      "required": false
+    },
+    {
+      "id": "terralith:highlands",
+      "required": false
+    },
+    {
+      "id": "terralith:highlands_forest",
+      "required": false
+    },
+    {
+      "id": "terralith:meadowlands",
+      "required": false
+    },
+    {
+      "id": "wythers:autumnal_plains",
+      "required": false
+    },
+    {
+      "id": "wythers:forest_edge",
+      "required": false
+    },
+    {
+      "id": "wythers:cold_plains",
+      "required": false
+    },
+    {
+      "id": "#forge:is_plains",
+      "required": false
+    },
+    {
+      "id": "#forge:is_plateau",
+      "required": false
+    },
+    {
+      "id": "#c:forest",
+      "required": false
+    },
+    {
+      "id": "#c:plains",
+      "required": false
+    }
+  ]
+}

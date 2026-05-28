@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "IPI",
+    "PTP",
+    "IPI"
+  ],
+  "key": {
+    "I": { "item": "minecraft:packed_ice" },
+    "P": { "item": "iceandfire:dragonscales_blue" },
+    "T": { "item": "aquamirae:captains_tusk" }
+  },
+  "result": {
+    "item": "mowzies_cataclysm:frostmaw_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cataclysm:enderite_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_ingot",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:infernum_ingot",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:divine_pearl",
+      "required": false
+    },
+    {
+      "id": "simplyswords:netherfused_gem",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:fire_heart",
+      "required": false
+    }
+  ]
+}

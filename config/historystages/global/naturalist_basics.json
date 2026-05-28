@@ -15,8 +15,9 @@
     "minecraft:mangrove_stairs",
     "minecraft:mangrove_trapdoor",
     "minecraft:mangrove_wood",
-    "minecraft:pitcher_crop",
-    "minecraft:torchflower"
+    "minecraft:ochre_froglight",
+    "minecraft:pearlescent_froglight",
+    "minecraft:verdant_froglight"
   ],
   "tags": [],
   "mods": [

@@ -4,10 +4,13 @@
   "items": [
     "iceandfire:dragon_horn",
     "iceandfire:dragon_whistle",
-    "iceandfire:hippogryph_egg",
     "iceandfire:summoning_crystal_fire",
     "iceandfire:summoning_crystal_ice",
-    "iceandfire:summoning_crystal_lightning"
+    "iceandfire:summoning_crystal_lightning",
+    "irons_spellbooks:dragonskin",
+    "irons_spellbooks:dragonskin.guide",
+    "minecraft:dragon_breath",
+    "minecraft:dragon_head"
   ],
   "tags": [],
   "mods": [],

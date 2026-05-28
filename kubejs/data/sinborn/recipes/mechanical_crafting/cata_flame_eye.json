@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "BIB",
+    "INI",
+    "BIB"
+  ],
+  "key": {
+    "B": { "item": "minecraft:blaze_rod" },
+    "I": { "item": "minecraft:magma_block" },
+    "N": { "item": "dungeons_and_combat:blazing_core" }
+  },
+  "result": {
+    "item": "cataclysm:flame_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

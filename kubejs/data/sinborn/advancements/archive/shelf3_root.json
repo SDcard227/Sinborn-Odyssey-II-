@@ -1,0 +1,18 @@
+{
+  "parent": "sinborn:archive/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf"
+    },
+    "title": "The Long Aftermath",
+    "description": "Folios I-X: the persecution, the diaspora, the settled world.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

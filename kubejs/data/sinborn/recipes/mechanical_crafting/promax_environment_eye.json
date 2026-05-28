@@ -1,0 +1,16 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "ENC"
+  ],
+  "key": {
+    "E": { "item": "endrem:exotic_eye" },
+    "N": { "item": "endrem:nether_eye" },
+    "C": { "item": "endrem:cold_eye" }
+  },
+  "result": {
+    "item": "end_remastered_promax:environment_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

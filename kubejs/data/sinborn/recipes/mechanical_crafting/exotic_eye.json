@@ -1,0 +1,20 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "TOT",
+    "OHO",
+    "BSB"
+  ],
+  "key": {
+    "T": { "item": "cataclysm:tidal_claws" },
+    "O": { "item": "aquamirae:oxygen_tank" },
+    "H": { "item": "aquamirae:three_bolt_helmet" },
+    "B": { "item": "aquamirae:sharp_bones" },
+    "S": { "item": "minecraft:nautilus_shell" }
+  },
+  "result": {
+    "item": "endrem:exotic_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

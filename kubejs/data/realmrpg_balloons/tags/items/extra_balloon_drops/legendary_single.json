@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cataclysm:ancient_metal_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:void_core",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:cursed_core",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:energized_core",
+      "required": false
+    },
+    {
+      "id": "simplyswords:righteous_relic",
+      "required": false
+    },
+    {
+      "id": "simplyswords:tainted_relic",
+      "required": false
+    },
+    {
+      "id": "simplyswords:hearthflame",
+      "required": false
+    }
+  ]
+}

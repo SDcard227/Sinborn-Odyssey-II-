@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "BNB",
+    "NHN",
+    "BNB"
+  ],
+  "key": {
+    "B": { "item": "minecraft:blackstone" },
+    "N": { "item": "minecraft:netherite_scrap" },
+    "H": { "item": "dungeons_and_combat:molten_dark_steel_nugget" }
+  },
+  "result": {
+    "item": "cataclysm:monstrous_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

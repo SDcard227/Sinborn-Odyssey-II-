@@ -2,6 +2,8 @@
   "display_name": "Scrollcasting",
   "research_time": 5400,
   "items": [
+    "irons_spellbooks:scroll",
+    "irons_spellbooks:scroll.unlearned",
     "irons_spellbooks:scroll_pouch"
   ],
   "tags": [],

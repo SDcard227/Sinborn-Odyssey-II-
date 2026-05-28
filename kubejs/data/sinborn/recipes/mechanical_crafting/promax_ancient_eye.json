@@ -1,0 +1,16 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "LMO"
+  ],
+  "key": {
+    "L": { "item": "endrem:lost_eye" },
+    "M": { "item": "endrem:magical_eye" },
+    "O": { "item": "endrem:old_eye" }
+  },
+  "result": {
+    "item": "end_remastered_promax:ancient_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

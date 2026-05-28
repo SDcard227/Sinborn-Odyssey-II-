@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "FEF",
+    "ELE",
+    "FEF"
+  ],
+  "key": {
+    "F": { "item": "minecraft:feather" },
+    "E": { "item": "minecraft:emerald" },
+    "L": { "item": "minecraft:dark_oak_log" }
+  },
+  "result": {
+    "item": "mowzies_cataclysm:tongbi_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

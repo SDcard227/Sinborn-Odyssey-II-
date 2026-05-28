@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "cataclysm:witherite_ingot",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:mithril_ingot",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:pyrium_ingot",
+      "required": false
+    },
+    {
+      "id": "mythsandlegends:bound_soul_ingot",
+      "required": false
+    },
+    {
+      "id": "simplyswords:runefused_gem",
+      "required": false
+    }
+  ]
+}

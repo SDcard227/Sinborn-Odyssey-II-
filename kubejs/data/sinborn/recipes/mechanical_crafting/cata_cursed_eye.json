@@ -1,0 +1,18 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "BPB",
+    "PWP",
+    "BPB"
+  ],
+  "key": {
+    "B": { "item": "dungeons_and_combat:ritual_bone" },
+    "P": { "item": "minecraft:phantom_membrane" },
+    "W": { "item": "cataclysm:black_steel_ingot" }
+  },
+  "result": {
+    "item": "cataclysm:cursed_eye",
+    "count": 1
+  },
+  "acceptMirrored": false
+}

@@ -1,0 +1,245 @@
+{
+  "parent": "sinborn:archive/shelf5_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "title": "The Bestiary of the Sealed — Complete",
+    "description": "Every folio of The Bestiary of the Sealed, gathered. The shelf is whole.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sb_maledictus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_maledictus\"}"
+          }
+        ]
+      }
+    },
+    "sb_frostmaw": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_frostmaw\"}"
+          }
+        ]
+      }
+    },
+    "sb_cornelia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_cornelia\"}"
+          }
+        ]
+      }
+    },
+    "sb_kukulkan": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_kukulkan\"}"
+          }
+        ]
+      }
+    },
+    "sb_ahpuch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_ahpuch\"}"
+          }
+        ]
+      }
+    },
+    "sb_umvuthi": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_umvuthi\"}"
+          }
+        ]
+      }
+    },
+    "sb_sunleia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_sunleia\"}"
+          }
+        ]
+      }
+    },
+    "sb_ammit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_ammit\"}"
+          }
+        ]
+      }
+    },
+    "sb_wroughtnaut": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_wroughtnaut\"}"
+          }
+        ]
+      }
+    },
+    "sb_witherstorm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_witherstorm\"}"
+          }
+        ]
+      }
+    },
+    "sb_ernos": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_ernos\"}"
+          }
+        ]
+      }
+    },
+    "sb_chaos": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_chaos\"}"
+          }
+        ]
+      }
+    },
+    "sb_deathworm": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_deathworm\"}"
+          }
+        ]
+      }
+    },
+    "sb_aberrator": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sb_aberrator\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sb_maledictus"
+    ],
+    [
+      "sb_frostmaw"
+    ],
+    [
+      "sb_cornelia"
+    ],
+    [
+      "sb_kukulkan"
+    ],
+    [
+      "sb_ahpuch"
+    ],
+    [
+      "sb_umvuthi"
+    ],
+    [
+      "sb_sunleia"
+    ],
+    [
+      "sb_ammit"
+    ],
+    [
+      "sb_wroughtnaut"
+    ],
+    [
+      "sb_witherstorm"
+    ],
+    [
+      "sb_ernos"
+    ],
+    [
+      "sb_chaos"
+    ],
+    [
+      "sb_deathworm"
+    ],
+    [
+      "sb_aberrator"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

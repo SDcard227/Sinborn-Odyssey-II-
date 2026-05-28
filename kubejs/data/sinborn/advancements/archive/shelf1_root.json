@@ -1,0 +1,18 @@
+{
+  "parent": "sinborn:archive/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:bookshelf"
+    },
+    "title": "The First World",
+    "description": "Folios I-VIII: the cosmos before it was broken.",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

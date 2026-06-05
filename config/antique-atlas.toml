@@ -40,7 +40,7 @@ chunkTickLimit = 100
 # How to handle biomes that aren't in any minecraft, conventional, or forge biome tags
 # options: TEST, MISSING, PLAINS, CRASH
 # default: MISSING
-fallbackFailHandling = "MISSING"
+fallbackFailHandling = "PLAINS"
 # How to display areas that aren't explored yet
 # options: CLOUDS, EMPTY
 # default: EMPTY

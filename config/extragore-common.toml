@@ -7,7 +7,7 @@
 	#Enable blood particle effect for both players and mobs, overriding other settings.
 	Both = true
 	#Entity list which will be blacklisted from getting blood particle effect.
-	Blacklisted_Entity = ["minecraft:ender_dragon", "minecraft:wither"]
+	Blacklisted_Entity = ["minecraft:ender_dragon", "minecraft:wither", "mo_bubbles:blown_bubble", "mo_bubbles:bomb_bubble", "mo_bubbles:bubble_pet", "mo_bubbles:chained_chest", "mo_bubbles:chest_bubble", "mo_bubbles:chest_nether_bubble", "mo_bubbles:nether_bubble", "mo_bubbles:water_bubble_e"]
 
 ["Blood Particle Configuration"]
 	#Max size value of the particle when hitting small entities.

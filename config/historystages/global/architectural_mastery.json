@@ -14,9 +14,6 @@
     "winteroverhaul"
   ],
   "mod_exceptions": [
-    "chalk:chalk",
-    "quark:dyed_planks",
-    "quark:dyed_wood"
   ],
   "recipes": [],
   "dimensions": [],

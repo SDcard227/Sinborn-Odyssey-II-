@@ -77,7 +77,7 @@
 	#Prevent using items locked by individual stages? (Blocks equipping armor, using weapons, eating food, etc.) [Default: true]
 	lockItemUsage = false
 	#Prevent opening the GUI of blocks locked by individual stages? (Chests, furnaces, crafting tables, etc.) [Default: true]
-	lockBlockInteraction = true
+	lockBlockInteraction = false
 	#Prevent applying enchantments locked by individual stages via anvil and enchanting table? [Default: true]
 	lockEnchanting = true
 	#Show individual stage unlock/lock messages in the chat for the player? [Default: true]

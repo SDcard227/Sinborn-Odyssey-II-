@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch03_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Lockwright's Irons at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:iron_bars",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock lockwrights_irons",
+   "title": "Discipline learned: The Lockwright's Irons",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Lockwright's Irons"
+  },
+  "subtitle": {
+   "text": "Some things are meant to be held."
+  },
+  "description": [
+   "What you cannot lock, you cannot keep. What you cannot bind, you cannot question.",
+   "The Forgesworn made irons for doors and for prisoners alike. The craft does not judge.",
+   "",
+   "→ Recover and study the Lockwright's Irons at a Research Pedestal."
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     460,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:iron_bars",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

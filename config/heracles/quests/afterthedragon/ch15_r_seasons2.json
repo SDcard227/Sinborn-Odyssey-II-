@@ -1,61 +1,98 @@
 {
-  "dependencies": ["ch15_r_seasons1"],
-  "tasks": {
-    "all_seasons_crop": {
-      "title": "Grow and harvest a crop from each of the four Serene Seasons (requires waiting across seasons)",
-      "icon": {"item": {"id": "minecraft:pumpkin", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_r_seasons1"
+ ],
+ "tasks": {
+  "all_seasons_crop": {
+   "title": "Grow and harvest a crop from each of the four Serene Seasons (requires waiting across seasons)",
+   "icon": {
+    "item": {
+     "id": "minecraft:pumpkin",
+     "count": 1
     },
-    "cask_brew": {
-      "title": "Use a Hearth & Harvest Cask to ferment a seasonal ingredient into a preservation item",
-      "icon": {"item": {"id": "hearthandharvest:cask", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "salt": {
-      "item": {"id": "hearthandharvest:salt", "count": 16},
-      "type": "heracles:item"
+  "cask_brew": {
+   "title": "Use a Hearth & Harvest Cask to ferment a seasonal ingredient into a preservation item",
+   "icon": {
+    "item": {
+     "id": "hearthandharvest:cask",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Full Cycle"},
-    "subtitle": {"text": "One crop from every season. The year is the smallest complete unit of time."},
-    "description": [
-      "Growing crops across all four seasons requires patience.",
-      "Serene Seasons makes the calendar meaningful — you must plan ahead.",
-      "Spring and Summer provide most of the crop volume.",
-      "Autumn is for harvest and preservation.",
-      "Winter is for planning and crafting.",
-      "",
-      "Hearth & Harvest adds preservation mechanics:",
-      "Casks ferment ingredients into preserved forms.",
-      "Salt is used for curing and preservation.",
-      "A Tapper on trees extracts sap for syrups.",
-      "These systems extend the shelf life of seasonal harvests.",
-      "",
-      "In the context of Ch15:",
-      "The previous civilizations did not plan across seasons.",
-      "They optimized for the present tense.",
-      "Preservation is the technical act of caring about the future.",
-      "",
-      "→ Grow and harvest crops from all 4 seasons [check]",
-      "→ Use a Hearth & Harvest Cask [check]"
-    ],
-    "groups": {"After the Dragon": {"position": [-300, 150]}},
-    "icon": {"item": {"id": "hearthandharvest:cask", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "salt": {
+   "item": {
+    "id": "hearthandharvest:salt",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Full Cycle"
+  },
+  "subtitle": {
+   "text": "One crop from every season. The year is the smallest complete unit of time."
+  },
+  "description": [
+   "Growing crops across all four seasons requires patience.",
+   "Serene Seasons makes the calendar meaningful — you must plan ahead.",
+   "Spring and Summer provide most of the crop volume.",
+   "Autumn is for harvest and preservation.",
+   "Winter is for planning and crafting.",
+   "",
+   "Hearth & Harvest adds preservation mechanics:",
+   "Casks ferment ingredients into preserved forms.",
+   "Salt is used for curing and preservation.",
+   "A Tapper on trees extracts sap for syrups.",
+   "These systems extend the shelf life of seasonal harvests.",
+   "",
+   "In the context of Ch15:",
+   "The previous civilizations did not plan across seasons.",
+   "They optimized for the present tense.",
+   "Preservation is the technical act of caring about the future.",
+   "",
+   "→ Grow and harvest crops from all 4 seasons [check]",
+   "→ Use a Hearth & Harvest Cask [check]"
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     920,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "hearthandharvest:cask",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

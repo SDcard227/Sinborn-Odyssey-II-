@@ -1,89 +1,132 @@
 {
-  "dependencies": ["ch12_manifestor"],
-  "tasks": {
-    "magic_lamp": {
-      "title": "Find a Magic Lamp in a Genie Tombstone structure (desert biome) — guarded by Zombies and Skeletons",
-      "icon": {"item": {"id": "minecraft:gold_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch12_manifestor"
+ ],
+ "tasks": {
+  "magic_lamp": {
+   "title": "Find a Magic Lamp in a Genie Tombstone structure (desert biome) — guarded by Zombies and Skeletons",
+   "icon": {
+    "item": {
+     "id": "minecraft:gold_ingot",
+     "count": 1
     },
-    "wish_made": {
-      "title": "Make a wish from the Genie — right-click the summoned Genie to receive the Gold Crown or other wish items",
-      "icon": {"item": {"id": "irons_spellbooks:gold_crown", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "gold": {"item": {"id": "minecraft:gold_ingot", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "As You Wish"},
-    "subtitle": {"text": "The Genie offers three wishes. The Gold Crown is one of them. Re-roll for 5 XP levels. The Genie cannot be dismissed."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.12 · AS YOU WISH",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ As You Wish adds the Genie system.",
-      "  Magic Lamp in a desert tomb.",
-      "  Summon the Genie. Make a wish.",
-      "  One of the wishes gives the Gold Crown.",
-      "  The Gold Crown is an Iron's Spellbooks item",
-      "  that requires the Genie to obtain in this pack.",
-      "  There is no other source.",
-      "",
-      "◈ MAGIC LAMP ACQUISITION",
-      "  └ Location: Genie Tombstone structure",
-      "    Spawns in desert biomes (surface structure)",
-      "  └ Guarded by: Zombies and Skeletons (standard mob spawn)",
-      "  └ Clear the structure, loot the tomb, find the Lamp",
-      "  └ Magic Lamp: single-use item per Lamp found",
-      "    Each new Lamp = new Genie summon + fresh wishes",
-      "",
-      "◈ GENIE WISHES",
-      "  └ Right-click the Lamp to summon the Genie entity",
-      "  └ Genie offers wish options (randomized per summon)",
-      "  └ Re-roll wishes: costs 5 XP levels",
-      "    Re-roll as many times as needed for the Gold Crown",
-      "  └ ▲ IMPORTANT: the Genie cannot be dismissed",
-      "    Once summoned, you MUST interact to proceed",
-      "    Do not summon in unsafe locations",
-      "  └ Gold Crown (`irons_spellbooks:gold_crown`): ISS headgear",
-      "    High mana capacity + ISS casting bonus",
-      "    This is the best ISS headgear available",
-      "",
-      "◈ GOLD CROWN (goldcrownissb mod)",
-      "  └ Adds a CRAFTING RECIPE for the Gold Crown",
-      "    that requires the Genie wish system",
-      "  └ Meaning: Gold Crown REQUIRES completing As You Wish",
-      "  └ You cannot obtain it through any other means",
-      "    in this pack (no JEI bypass, no shop purchase)",
-      "",
-      "▸ Every wish that has been made",
-      "  was made in a desert.",
-      "  The desert is where you find out",
-      "  what you actually need.",
-      "  The Genie already knew.",
-      "  It just waits for you to ask.",
-      "",
-      "▶ Find a Magic Lamp in a Genie Tombstone [check]",
-      "▶ Make a wish — obtain the Gold Crown [check]",
-      "",
-      "◇ Gold Crown = best ISS mana headgear.",
-      "  Pair with Ring of Mana × 2 + Ancient Codex.",
-      "  This is the full mana-capacity endgame setup.",
-      "  Do this before any Ch13 boss casting setup."
-    ],
-    "groups": {"The Kingdom You Build": {"position": [450, 150]}},
-    "icon": {"item": {"id": "irons_spellbooks:gold_crown", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "wish_made": {
+   "title": "Make a wish from the Genie — right-click the summoned Genie to receive the Gold Crown or other wish items",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:gold_crown",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "gold": {
+   "item": {
+    "id": "minecraft:gold_ingot",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "As You Wish"
+  },
+  "subtitle": {
+   "text": "The Genie offers three wishes. The Gold Crown is one of them. Re-roll for 5 XP levels. The Genie cannot be dismissed."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.12 · AS YOU WISH",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ As You Wish adds the Genie system.",
+   "  Magic Lamp in a desert tomb.",
+   "  Summon the Genie. Make a wish.",
+   "  One of the wishes gives the Gold Crown.",
+   "  The Gold Crown is an Iron's Spellbooks item",
+   "  that requires the Genie to obtain in this pack.",
+   "  There is no other source.",
+   "",
+   "◈ MAGIC LAMP ACQUISITION",
+   "  └ Location: Genie Tombstone structure",
+   "    Spawns in desert biomes (surface structure)",
+   "  └ Guarded by: Zombies and Skeletons (standard mob spawn)",
+   "  └ Clear the structure, loot the tomb, find the Lamp",
+   "  └ Magic Lamp: single-use item per Lamp found",
+   "    Each new Lamp = new Genie summon + fresh wishes",
+   "",
+   "◈ GENIE WISHES",
+   "  └ Right-click the Lamp to summon the Genie entity",
+   "  └ Genie offers wish options (randomized per summon)",
+   "  └ Re-roll wishes: costs 5 XP levels",
+   "    Re-roll as many times as needed for the Gold Crown",
+   "  └ ▲ IMPORTANT: the Genie cannot be dismissed",
+   "    Once summoned, you MUST interact to proceed",
+   "    Do not summon in unsafe locations",
+   "  └ Gold Crown (`irons_spellbooks:gold_crown`): ISS headgear",
+   "    High mana capacity + ISS casting bonus",
+   "    This is the best ISS headgear available",
+   "",
+   "◈ GOLD CROWN (goldcrownissb mod)",
+   "  └ Adds a CRAFTING RECIPE for the Gold Crown",
+   "    that requires the Genie wish system",
+   "  └ Meaning: Gold Crown REQUIRES completing As You Wish",
+   "  └ You cannot obtain it through any other means",
+   "    in this pack (no JEI bypass, no shop purchase)",
+   "",
+   "▸ Every wish that has been made",
+   "  was made in a desert.",
+   "  The desert is where you find out",
+   "  what you actually need.",
+   "  The Genie already knew.",
+   "  It just waits for you to ask.",
+   "",
+   "▶ Find a Magic Lamp in a Genie Tombstone [check]",
+   "▶ Make a wish — obtain the Gold Crown [check]",
+   "",
+   "◇ Gold Crown = best ISS mana headgear.",
+   "  Pair with Ring of Mana × 2 + Ancient Codex.",
+   "  This is the full mana-capacity endgame setup.",
+   "  Do this before any Ch13 boss casting setup."
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     920,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:gold_crown",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

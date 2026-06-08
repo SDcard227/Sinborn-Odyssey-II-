@@ -1,63 +1,100 @@
 {
-  "dependencies": ["ch16_forge"],
-  "tasks": {
-    "celestial_armor_set": {
-      "title": "Craft a full Celestial Netherite armor set (helmet, chestplate, leggings, boots)",
-      "icon": {"item": {"id": "celestisynth:celestial_netherite_chestplate", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_forge"
+ ],
+ "tasks": {
+  "celestial_armor_set": {
+   "title": "Craft a full Celestial Netherite armor set (helmet, chestplate, leggings, boots)",
+   "icon": {
+    "item": {
+     "id": "celestisynth:celestial_netherite_chestplate",
+     "count": 1
     },
-    "enchant_celestial": {
-      "title": "Fully enchant the Celestial Netherite armor set using Immersive Enchanting (Ancient Books required)",
-      "icon": {"item": {"id": "minecraft:enchanted_book", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "celestial_ingot_bonus": {
-      "item": {"id": "celestisynth:celestial_netherite_ingot", "count": 2},
-      "type": "heracles:item"
+  "enchant_celestial": {
+   "title": "Fully enchant the Celestial Netherite armor set using Immersive Enchanting (Ancient Books required)",
+   "icon": {
+    "item": {
+     "id": "minecraft:enchanted_book",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 14},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Celestial Armor"},
-    "subtitle": {"text": "You are wearing the synthesis of two dimensions. Walk accordingly."},
-    "description": [
-      "A full Celestial Netherite armor set requires four pieces:",
-      "Helmet, Chestplate, Leggings, Boots.",
-      "Each requires multiple Celestial Netherite Ingots.",
-      "Budget accordingly from your Ch16 gathering runs.",
-      "",
-      "Enchanting Celestial Netherite:",
-      "Immersive Enchanting uses Ancient Books placed in structures with Chiseled Bookshelves.",
-      "Standard bookshelves do NOT work.",
-      "Required enchants for Ch17:",
-      "- Protection IV (all pieces)",
-      "- Mending (all pieces — required for sustained use)",
-      "- Feather Falling IV (boots)",
-      "- Thorns III (chestplate)",
-      "",
-      "With fully enchanted Celestial Netherite:",
-      "You are the most durable entity in the overworld.",
-      "The void, the Wither, the Scarlet King — none of them have a version of this.",
-      "None of the previous civilizations had it.",
-      "",
-      "→ Craft full Celestial Netherite armor set [check]",
-      "→ Fully enchant the set [check]"
-    ],
-    "groups": {"The Long Road Home": {"position": [0, 450]}},
-    "icon": {"item": {"id": "celestisynth:celestial_netherite_chestplate", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "celestial_ingot_bonus": {
+   "item": {
+    "id": "celestisynth:celestial_netherite_ingot",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 14
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Celestial Armor"
+  },
+  "subtitle": {
+   "text": "You are wearing the synthesis of two dimensions. Walk accordingly."
+  },
+  "description": [
+   "A full Celestial Netherite armor set requires four pieces:",
+   "Helmet, Chestplate, Leggings, Boots.",
+   "Each requires multiple Celestial Netherite Ingots.",
+   "Budget accordingly from your Ch16 gathering runs.",
+   "",
+   "Enchanting Celestial Netherite:",
+   "Immersive Enchanting uses Ancient Books placed in structures with Chiseled Bookshelves.",
+   "Standard bookshelves do NOT work.",
+   "Required enchants for Ch17:",
+   "- Protection IV (all pieces)",
+   "- Mending (all pieces — required for sustained use)",
+   "- Feather Falling IV (boots)",
+   "- Thorns III (chestplate)",
+   "",
+   "With fully enchanted Celestial Netherite:",
+   "You are the most durable entity in the overworld.",
+   "The void, the Wither, the Scarlet King — none of them have a version of this.",
+   "None of the previous civilizations had it.",
+   "",
+   "→ Craft full Celestial Netherite armor set [check]",
+   "→ Fully enchant the set [check]"
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     1380,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "celestisynth:celestial_netherite_chestplate",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

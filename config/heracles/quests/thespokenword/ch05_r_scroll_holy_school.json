@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The Holy School scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Holy School scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The Holy School scroll",
-      "icon": {
-        "item": {
-          "id": "irons_spellbooks:holy_rune",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock holy_school"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The Holy School"
+  "research_scroll": {
+   "title": "Research the The Holy School scroll",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:holy_rune",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"The Convent kept it clean. They kept it.\"",
-      "",
-      "ISS holy. Already populated.",
-      "",
-      "This scroll unlocks 10 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Stronghold Library",
-      "  \u00b7 Mowziesmobs:Chests/Monastery Chest",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The Holy School] [auto]"
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          1111,
-          720
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "irons_spellbooks:holy_rune",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock holy_school"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Holy School"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"The Convent kept it clean. They kept it.\"",
+   "",
+   "ISS holy. Already populated.",
+   "",
+   "This scroll unlocks 10 items.",
+   "",
+   "Look for it in:",
+   "  · Stronghold Library",
+   "  · Mowziesmobs:Chests/Monastery Chest",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Holy School] [auto]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     300,
+     1350
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:holy_rune",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

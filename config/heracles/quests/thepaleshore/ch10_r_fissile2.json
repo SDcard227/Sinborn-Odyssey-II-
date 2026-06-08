@@ -1,57 +1,94 @@
 {
-  "dependencies": ["ch10_r_fissile1"],
-  "tasks": {
-    "rogue_eye": {
-      "title": "Craft the Rogue Eye when all ingredients are assembled (see eye_recipes.js for full recipe)",
-      "icon": {"item": {"id": "endrem:rogue_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch10_r_fissile1"
+ ],
+ "tasks": {
+  "rogue_eye": {
+   "title": "Craft the Rogue Eye when all ingredients are assembled (see eye_recipes.js for full recipe)",
+   "icon": {
+    "item": {
+     "id": "endrem:rogue_eye",
+     "count": 1
     },
-    "place_rogue": {
-      "title": "Place the Rogue Eye in the End Portal frame",
-      "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "rogue_eye_reward": {
-      "item": {"id": "endrem:rogue_eye", "count": 1},
-      "type": "heracles:item"
+  "place_rogue": {
+   "title": "Place the Rogue Eye in the End Portal frame",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_portal_frame",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 5},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Rogue Eye"},
-    "subtitle": {"text": "The fifth frame slot. Seven remaining. The portal is patient."},
-    "description": [
-      "The Rogue Eye is in the frame.",
-      "Five of twelve filled.",
-      "",
-      "The Engineers designed the portal system.",
-      "They knew what it cost. They built it anyway.",
-      "The Rogue Eye is their self-assessment:",
-      "not chaos — order that has been misapplied.",
-      "",
-      "Their inheritance is in your portal now.",
-      "You carry them forward whether you intended to or not.",
-      "",
-      "That is what inheritance means.",
-      "",
-      "→ Craft the Rogue Eye [check]",
-      "→ Place it in the End Portal frame [check]"
-    ],
-    "groups": {"The Pale Shore": {"position": [300, 450]}},
-    "icon": {"item": {"id": "endrem:rogue_eye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "rogue_eye_reward": {
+   "item": {
+    "id": "endrem:rogue_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Rogue Eye"
+  },
+  "subtitle": {
+   "text": "The fifth frame slot. Seven remaining. The portal is patient."
+  },
+  "description": [
+   "The Rogue Eye is in the frame.",
+   "Five of twelve filled.",
+   "",
+   "The Engineers designed the portal system.",
+   "They knew what it cost. They built it anyway.",
+   "The Rogue Eye is their self-assessment:",
+   "not chaos — order that has been misapplied.",
+   "",
+   "Their inheritance is in your portal now.",
+   "You carry them forward whether you intended to or not.",
+   "",
+   "That is what inheritance means.",
+   "",
+   "→ Craft the Rogue Eye [check]",
+   "→ Place it in the End Portal frame [check]"
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     2300,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "endrem:rogue_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

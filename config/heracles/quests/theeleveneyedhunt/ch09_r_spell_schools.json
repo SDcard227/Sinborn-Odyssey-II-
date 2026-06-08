@@ -1,119 +1,119 @@
 {
-  "dependencies": [
-    "ch09_r_rem2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/spell_schools"
-    },
-    "master_spell": {
-      "title": "Learn a Level III spell in any school (Iron's Spellbooks — the highest tier in most schools)",
-      "icon": {
-        "item": {
-          "id": "irons_spellbooks:spellbook",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch09_r_rem2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Spell Schools scroll at a Research Pedestal"
   },
-  "rewards": {
-    "spell": {
-      "item": {
-        "id": "irons_spellbooks:scroll",
-        "count": 4
-      },
-      "type": "heracles:item"
+  "master_spell": {
+   "title": "Learn a Level III spell in any school (Iron's Spellbooks — the highest tier in most schools)",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:spellbook",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Spell Schools"
-    },
-    "subtitle": {
-      "text": "Sixty spells across nine schools. At Level III, they reshape the fight."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.09 · THE SPELL SCHOOLS",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Spell Schools scroll is the full reference",
-      "  for Iron's Spellbooks magic system.",
-      "  After the Arcane scroll (Ch05) opened the door,",
-      "  this one shows you the full building.",
-      "",
-      "◈ COMBAT SCHOOLS (CH09 PRIORITY)",
-      "  └ ✦ Evocation: Fireball, Chain Lightning, Void Tentacles",
-      "    direct damage, area clear, boss DPS",
-      "  └ ✦ Holy: Divine Smite, Sacred Ground, Healing",
-      "    sustain + burst heal + undead damage",
-      "  └ ✦ Ender: Blink (teleport), Void Lasso, Ender Shriek",
-      "    mobility + utility in boss fights",
-      "",
-      "◈ SUPPORT SCHOOLS",
-      "  └ ✦ Abjuration: Magic Shield, Fortify",
-      "    spell-absorb barrier + armor buff",
-      "  └ ✦ Divination: Scry, True Sight, Detect Magic",
-      "    information advantage + field awareness",
-      "  └ ✦ Conjuration: Summon Ally, Spectral Wolf, Wisp",
-      "    distraction + tanking for boss encounters",
-      "",
-      "◈ SCALING",
-      "  └ Each spell has Level I, II, III",
-      "  └ Level III requires: high mana capacity,",
-      "    school-specific materials, arcane worktable",
-      "  └ Mana scales with: specific ISS items,",
-      "    school knowledge (research time reduces cost)",
-      "  └ T.O Magic 'n Extras: traveloptics namespace addon",
-      "    adds additional school-specific items",
-      "",
-      "◈ SCROLL: The Spell Schools",
-      "  └ Found in: ISS Arcane Shrine, high-tier spell loot,",
-      "    boss arcane drops",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: all 9 schools at full depth,",
-      "    Level III spell crafting awareness",
-      "",
-      "▶ Find The Spell Schools scroll [check]",
-      "▶ Learn a Level III spell [check]",
-      "",
-      "◇ The dacxirons scroll (ISS Wizard drops, 12%)",
-      "  contains rare T.O Magic 'n Extras item recipes.",
-      "  Farm ISS Wizards alongside the Eye Hunt."
-    ],
-    "groups": {
-      "The Eleven-Eyed Hunt": {
-        "position": [
-          450,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "irons_spellbooks:spellbook",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "spell": {
+   "item": {
+    "id": "irons_spellbooks:scroll",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Spell Schools"
+  },
+  "subtitle": {
+   "text": "Sixty spells across nine schools. At Level III, they reshape the fight."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.09 · THE SPELL SCHOOLS",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Spell Schools scroll is the full reference",
+   "  for Iron's Spellbooks magic system.",
+   "  After the Arcane scroll (Ch05) opened the door,",
+   "  this one shows you the full building.",
+   "",
+   "◈ COMBAT SCHOOLS (CH09 PRIORITY)",
+   "  └ ✦ Evocation: Fireball, Chain Lightning, Void Tentacles",
+   "    direct damage, area clear, boss DPS",
+   "  └ ✦ Holy: Divine Smite, Sacred Ground, Healing",
+   "    sustain + burst heal + undead damage",
+   "  └ ✦ Ender: Blink (teleport), Void Lasso, Ender Shriek",
+   "    mobility + utility in boss fights",
+   "",
+   "◈ SUPPORT SCHOOLS",
+   "  └ ✦ Abjuration: Magic Shield, Fortify",
+   "    spell-absorb barrier + armor buff",
+   "  └ ✦ Divination: Scry, True Sight, Detect Magic",
+   "    information advantage + field awareness",
+   "  └ ✦ Conjuration: Summon Ally, Spectral Wolf, Wisp",
+   "    distraction + tanking for boss encounters",
+   "",
+   "◈ SCALING",
+   "  └ Each spell has Level I, II, III",
+   "  └ Level III requires: high mana capacity,",
+   "    school-specific materials, arcane worktable",
+   "  └ Mana scales with: specific ISS items,",
+   "    school knowledge (research time reduces cost)",
+   "  └ T.O Magic 'n Extras: traveloptics namespace addon",
+   "    adds additional school-specific items",
+   "",
+   "◈ SCROLL: The Spell Schools",
+   "  └ Found in: ISS Arcane Shrine, high-tier spell loot,",
+   "    boss arcane drops",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: all 9 schools at full depth,",
+   "    Level III spell crafting awareness",
+   "",
+   "▶ Find The Spell Schools scroll [check]",
+   "▶ Learn a Level III spell [check]",
+   "",
+   "◇ The dacxirons scroll (ISS Wizard drops, 12%)",
+   "  contains rare T.O Magic 'n Extras item recipes.",
+   "  Farm ISS Wizards alongside the Eye Hunt."
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     4400,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:spellbook",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

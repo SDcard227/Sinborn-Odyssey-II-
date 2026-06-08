@@ -1,0 +1,22 @@
+{
+  "display_name": "Eye Synthesis",
+  "research_time": 14400,
+  "items": [
+    "endrem:ancient_portal_frame",
+    "endrem:lost_frame",
+    "endrem:undead_soul",
+    "endrem:witch_pupil"
+  ],
+  "tags": [],
+  "mods": [
+    "end_remastered_promax"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

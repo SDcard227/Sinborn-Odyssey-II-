@@ -1,79 +1,78 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Slaying Abaddon scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Slaying Abaddon scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Slaying Abaddon scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock slay_abaddon"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Slaying Abaddon"
+  "research_scroll": {
+   "title": "Research the Slaying Abaddon scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Copied between every civilization that touched it.\"",
-      "",
-      "Gates combat with 1 entity.",
-      "",
-      "→ Find the scroll [discovery]",
-      "→ Research [Slaying Abaddon] [auto]",
-      "",
-      "📜 A folio left by the dying god may guide your hunt."
-    ],
-    "groups": {
-      "The Eleven-Eyed Hunt": {
-        "position": [
-          1000,
-          660
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "historystages:research_scroll",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Slaying Abaddon"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Copied between every civilization that touched it.\"",
+   "",
+   "Gates combat with 1 entity.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Slaying Abaddon] [auto]",
+   "",
+   "📜 A folio left by the dying god may guide your hunt."
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     300,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "historystages:research_scroll",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

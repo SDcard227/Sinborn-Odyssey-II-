@@ -1,0 +1,19 @@
+{
+  "display_name": "The Scroll of the Rogue Eye",
+  "research_time": 3600,
+  "items": [
+    "endrem:rogue_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "sinborn:mechanical_crafting/rogue_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

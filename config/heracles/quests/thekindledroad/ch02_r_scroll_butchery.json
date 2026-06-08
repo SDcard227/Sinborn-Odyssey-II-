@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Butchery & Cured Meats scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Butchery & Cured Meats scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Butchery & Cured Meats scroll",
-      "icon": {
-        "item": {
-          "id": "alexscaves:cooked_dinosaur_chop",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock butchery"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Butchery & Cured Meats"
+  "research_scroll": {
+   "title": "Research the Butchery & Cured Meats scroll",
+   "icon": {
+    "item": {
+     "id": "alexscaves:cooked_dinosaur_chop",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Found in the smoke of old forges.\"",
-      "",
-      "Meat preservation, cured cuts, charcuterie.",
-      "",
-      "This scroll unlocks 45 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Ati Structures:Chests/Library",
-      "  \u00b7 Village/Village Weaponsmith",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Butchery & Cured Meats] [auto]"
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          546,
-          960
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexscaves:cooked_dinosaur_chop",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock the_pantry"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Butchery & Cured Meats"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Found in the smoke of old forges.\"",
+   "",
+   "Meat preservation, cured cuts, charcuterie.",
+   "",
+   "This scroll unlocks 45 items.",
+   "",
+   "Look for it in:",
+   "  · Ati Structures:Chests/Library",
+   "  · Village/Village Weaponsmith",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Butchery & Cured Meats] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     0,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexscaves:cooked_dinosaur_chop",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

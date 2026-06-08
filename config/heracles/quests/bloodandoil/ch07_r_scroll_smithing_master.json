@@ -1,0 +1,79 @@
+{
+ "dependencies": [
+  "ch07_r_scroll_metalworking"
+ ],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Master Forge scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "research_scroll": {
+   "title": "Research the The Master Forge scroll",
+   "icon": {
+    "item": {
+     "id": "minecraft:anvil",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock smithing_master"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Master Forge"
+  },
+  "subtitle": {
+   "text": "Beyond the village smith."
+  },
+  "description": [
+   "The plain anvil taught you the basics. The Master Forge is where dragon-plate and the cunning anvils are beaten.",
+   "",
+   "Unlocks 111 items. Requires Metalworking first.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Master Forge] [auto]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     600,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:anvil",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
+}

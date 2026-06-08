@@ -1,64 +1,95 @@
 {
-  "dependencies": ["ch09_blackeye"],
-  "tasks": {
-    "place_eye": {
-      "title": "Place the Black Eye in the End Portal frame — first slot filled",
-      "icon": {"item": {"id": "endrem:black_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch09_blackeye"
+ ],
+ "tasks": {
+  "place_eye": {
+   "title": "Place the Black Eye in the End Portal frame — first slot filled",
+   "icon": {
+    "item": {
+     "id": "endrem:black_eye",
+     "count": 1
     },
-    "ender_pearl_stack": {
-      "type": "heracles:item",
-      "item": "minecraft:ender_pearl",
-      "amount": 32,
-      "collection": "AUTOMATIC"
-    },
-    "nether_eye": {
-      "type": "heracles:item",
-      "item": "endrem:nether_eye",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ender_pearl": {
-      "item": {"id": "minecraft:ender_pearl", "count": 16},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
+  "ender_pearl_stack": {
+   "type": "heracles:item",
+   "item": "minecraft:ender_pearl",
+   "amount": 32,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The Frame"},
-    "subtitle": {"text": "Twelve slots. Two filled. Ten to go."},
-    "description": [
-      "The End Portal frame accepts custom eyes in each of its 12 slots.",
-      "Each eye is distinct — the portal checks identity, not count.",
-      "You cannot use two Black Eyes. Each slot requires a different eye.",
-      "",
-      "The Nether Eye is an anchor eye.",
-      "It drops from Nether Fortress chest loot — no boss fight required.",
-      "The Fortress chapter in the steam age (Ch06) is where you should have found it.",
-      "If you missed it, return to the Fortress now.",
-      "",
-      "Ender Pearls are the scouting material for the remaining eleven.",
-      "Each one thrown is the portal asking if you know where you're going.",
-      "",
-      "→ Place the Black Eye in the portal frame [check]",
-      "→ Collect 32 Ender Pearls (for scouting and Eye of Ender crafting)",
-      "→ Collect the Nether Eye from Nether Fortress loot [check]"
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [0, 450]}},
-    "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "nether_eye": {
+   "type": "heracles:item",
+   "item": "endrem:nether_eye",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "ender_pearl": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Frame"
+  },
+  "subtitle": {
+   "text": "Twelve slots. Two filled. Ten to go."
+  },
+  "description": [
+   "The End Portal frame accepts custom eyes in each of its 12 slots.",
+   "Each eye is distinct — the portal checks identity, not count.",
+   "You cannot use two Black Eyes. Each slot requires a different eye.",
+   "",
+   "The Nether Eye is an anchor eye.",
+   "It drops from Nether Fortress chest loot — no boss fight required.",
+   "The Fortress chapter in the steam age (Ch06) is where you should have found it.",
+   "If you missed it, return to the Fortress now.",
+   "",
+   "Ender Pearls are the scouting material for the remaining eleven.",
+   "Each one thrown is the portal asking if you know where you're going.",
+   "",
+   "→ Place the Black Eye in the portal frame [check]",
+   "→ Collect 32 Ender Pearls (for scouting and Eye of Ender crafting)",
+   "→ Collect the Nether Eye from Nether Fortress loot [check]"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     3480,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:end_portal_frame",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

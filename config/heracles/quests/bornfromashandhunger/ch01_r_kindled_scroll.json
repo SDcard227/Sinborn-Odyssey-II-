@@ -1,82 +1,82 @@
 {
-  "dependencies": [
-    "ch01_world"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/survivor_codex"
-    },
-    "scroll_studied": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/survivor_codex_studied"
-    }
+ "dependencies": [
+  "ch01_world"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Survivor Codex scroll at a Research Pedestal"
   },
-  "rewards": {
-    "torches": {
-      "item": {
-        "id": "minecraft:torch",
-        "count": 32
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Kindled Fire"
-    },
-    "subtitle": {
-      "text": "Someone learned fire before you. They wrote it down. You were handed it at birth."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.01 · THE KINDLED FIRE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Sleeping bags, hammocks, tents — the tools",
-      "  of shelter that kept people alive long before",
-      "  civilization had a name for warmth.",
-      "",
-      "◈ Covered by: Survivor's Codex",
-      "  └ Granted in your starting pack",
-      "  └ Unlocks: Comforts, Simply Tents",
-      "",
-      "▶ Check: Survivor's Codex received [auto]",
-      "▶ Check: Survivor's Codex studied [auto]",
-      "",
-      "◇ Both steps complete on first login.",
-      "  The knowledge was always yours to keep."
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          300,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:written_book",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "scroll_studied": {
+   "type": "heracles:check",
+   "title": "Research the Survivor Codex scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "torches": {
+   "item": {
+    "id": "minecraft:torch",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Kindled Fire"
+  },
+  "subtitle": {
+   "text": "Someone learned fire before you. They wrote it down. You were handed it at birth."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.01 · THE KINDLED FIRE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Sleeping bags, hammocks, tents — the tools",
+   "  of shelter that kept people alive long before",
+   "  civilization had a name for warmth.",
+   "",
+   "◈ Covered by: Survivor's Codex",
+   "  └ Granted in your starting pack",
+   "  └ Unlocks: Comforts, Simply Tents",
+   "",
+   "▶ Check: Survivor's Codex received [auto]",
+   "▶ Check: Survivor's Codex studied [auto]",
+   "",
+   "◇ Both steps complete on first login.",
+   "  The knowledge was always yours to keep."
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     460,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:written_book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

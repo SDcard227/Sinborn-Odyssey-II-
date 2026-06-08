@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Bookshelf Mastery scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Bookshelf Mastery scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Bookshelf Mastery scroll",
-      "icon": {
-        "item": {
-          "id": "minecraft:acacia_sign",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock bookshelf_mastery"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Bookshelf Mastery"
+  "research_scroll": {
+   "title": "Research the Bookshelf Mastery scroll",
+   "icon": {
+    "item": {
+     "id": "minecraft:acacia_sign",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"The Convent kept it clean. They kept it.\"",
-      "",
-      "Immersive Enchanting chiseled bookshelves + Quark ancient tomes.",
-      "",
-      "This scroll unlocks 28 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Stronghold Library",
-      "  \u00b7 Mowziesmobs:Chests/Monastery Chest",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Bookshelf Mastery] [auto]"
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          903,
-          960
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:acacia_sign",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock bookshelf_mastery"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Bookshelf Mastery"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"The Convent kept it clean. They kept it.\"",
+   "",
+   "Immersive Enchanting chiseled bookshelves + Quark ancient tomes.",
+   "",
+   "This scroll unlocks 28 items.",
+   "",
+   "Look for it in:",
+   "  · Stronghold Library",
+   "  · Mowziesmobs:Chests/Monastery Chest",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Bookshelf Mastery] [auto]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     0,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:acacia_sign",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

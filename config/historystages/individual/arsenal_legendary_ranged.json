@@ -1,0 +1,30 @@
+{
+  "display_name": "The Legendary Arsenal: Named Ranged",
+  "research_time": 18000,
+  "items": [
+    "cataclysm:astrape",
+    "cataclysm:astrape_throwing",
+    "cataclysm:ceraunus",
+    "cataclysm:ceraunus_throwing",
+    "cataclysm:laser_gatling",
+    "cataclysm:void_assault_shoulder_weapon",
+    "cataclysm:wither_assault_shoulder_weapon",
+    "traveloptics:abyssal_tidecaller"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "cataclysm:astrape",
+    "cataclysm:ceraunus",
+    "cataclysm:laser_gatling",
+    "cataclysm:weapon_infusion/void_assault_shoulder_weapon",
+    "cataclysm:wither_assault_shoulder_weapon"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

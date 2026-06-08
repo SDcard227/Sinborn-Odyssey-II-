@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the On the Warborn Aegis scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the On the Warborn Aegis scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the On the Warborn Aegis scroll",
-      "icon": {
-        "item": {
-          "id": "mythsandlegends:infernum_ingot",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock god_warborn"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "On the Warborn Aegis"
+  "research_scroll": {
+   "title": "Research the On the Warborn Aegis scroll",
+   "icon": {
+    "item": {
+     "id": "mythsandlegends:infernum_ingot",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Found in the smoke of old forges.\"",
-      "",
-      "M&L Warborn Aegis arc.",
-      "",
-      "This scroll unlocks 8 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Ati Structures:Chests/Library",
-      "  \u00b7 Village/Village Weaponsmith",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [On the Warborn Aegis] [auto]"
-    ],
-    "groups": {
-      "The Shattered Law": {
-        "position": [
-          1200,
-          1140
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "mythsandlegends:infernum_ingot",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock god_warborn"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sun",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "On the Warborn Aegis"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Found in the smoke of old forges.\"",
+   "",
+   "M&L Warborn Aegis arc.",
+   "",
+   "This scroll unlocks 8 items.",
+   "",
+   "Look for it in:",
+   "  · Ati Structures:Chests/Library",
+   "  · Village/Village Weaponsmith",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [On the Warborn Aegis] [auto]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     0,
+     1050
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "mythsandlegends:infernum_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

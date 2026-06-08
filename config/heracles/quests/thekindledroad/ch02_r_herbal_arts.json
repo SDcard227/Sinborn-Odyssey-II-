@@ -1,112 +1,112 @@
 {
-  "dependencies": [
-    "ch02_r_hearth_scroll"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/herbal_arts"
-    },
-    "brew_tea": {
-      "title": "Brew 3 different herbal teas (Herbal Brews — use Tea Kettle on Stove, dry herbs on Drying Rack)",
-      "icon": {
-        "item": {
-          "id": "herbalbrews:tea_kettle",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch02_r_hearth_scroll"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Herbal Arts scroll at a Research Pedestal"
   },
-  "rewards": {
-    "lavender": {
-      "item": {
-        "id": "minecraft:pink_petals",
-        "count": 16
-      },
-      "type": "heracles:item"
+  "brew_tea": {
+   "title": "Brew 3 different herbal teas (Herbal Brews — use Tea Kettle on Stove, dry herbs on Drying Rack)",
+   "icon": {
+    "item": {
+     "id": "herbalbrews:tea_kettle",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Herbal Arts"
-    },
-    "subtitle": {
-      "text": "Before medicine, there was tea. Some of it worked."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.02 · THE HERBAL ARTS",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Herbal Brews adds ten drinks brewed in the Tea Kettle.",
-      "  The Kettle sits on the Farm & Charm Stove.",
-      "  Herbs are dried on the Drying Rack first.",
-      "",
-      "◈ THE TEN BREWS",
-      "  └ ☕ Green Tea — mild warmth buff",
-      "  └ ☕ Black Tea — focus, mining speed",
-      "  └ ☕ Oolong Tea — balanced effects",
-      "  └ ☕ Hibiscus Tea — hydration bonus",
-      "  └ ☕ Lavender Tea — calm, sleep prep",
-      "  └ ☕ Rooibos Tea — iron stomach",
-      "  └ ☕ Mixed Tea — blended effects",
-      "  └ ☕ Yerba Mate — grants Bonding effect",
-      "  └ ☕ Coffee — speed + haste",
-      "  └ ☕ Milk Coffee — softens harsh effects",
-      "",
-      "◈ KEY EFFECT: BONDING",
-      "  └ Yerba Mate grants Bonding",
-      "  └ Bonding increases damage with a companion nearby",
-      "  └ Useful before boss fights with MCA companion",
-      "",
-      "◈ SCROLL: The Herbal Arts",
-      "  └ Found in: apothecary chests, witch huts,",
-      "    herb garden ruins, forest village chests",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: all 10 tea recipes, Bonding awareness",
-      "",
-      "▸ None of this is required.",
-      "  But a person who knows their herbs",
-      "  is harder to kill than one who doesn't.",
-      "",
-      "▶ Find The Herbal Arts scroll [check]",
-      "▶ Brew 3 different herbal teas [check]",
-      "",
-      "◇ Yerba Mate + a companion = the Ch02 power build.",
-      "  Bonding effect scales with relationship level."
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          -600,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "herbalbrews:tea_kettle",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "lavender": {
+   "item": {
+    "id": "minecraft:pink_petals",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Herbal Arts"
+  },
+  "subtitle": {
+   "text": "Before medicine, there was tea. Some of it worked."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.02 · THE HERBAL ARTS",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Herbal Brews adds ten drinks brewed in the Tea Kettle.",
+   "  The Kettle sits on the Farm & Charm Stove.",
+   "  Herbs are dried on the Drying Rack first.",
+   "",
+   "◈ THE TEN BREWS",
+   "  └ ☕ Green Tea — mild warmth buff",
+   "  └ ☕ Black Tea — focus, mining speed",
+   "  └ ☕ Oolong Tea — balanced effects",
+   "  └ ☕ Hibiscus Tea — hydration bonus",
+   "  └ ☕ Lavender Tea — calm, sleep prep",
+   "  └ ☕ Rooibos Tea — iron stomach",
+   "  └ ☕ Mixed Tea — blended effects",
+   "  └ ☕ Yerba Mate — grants Bonding effect",
+   "  └ ☕ Coffee — speed + haste",
+   "  └ ☕ Milk Coffee — softens harsh effects",
+   "",
+   "◈ KEY EFFECT: BONDING",
+   "  └ Yerba Mate grants Bonding",
+   "  └ Bonding increases damage with a companion nearby",
+   "  └ Useful before boss fights with MCA companion",
+   "",
+   "◈ SCROLL: The Herbal Arts",
+   "  └ Found in: apothecary chests, witch huts,",
+   "    herb garden ruins, forest village chests",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: all 10 tea recipes, Bonding awareness",
+   "",
+   "▸ None of this is required.",
+   "  But a person who knows their herbs",
+   "  is harder to kill than one who doesn't.",
+   "",
+   "▶ Find The Herbal Arts scroll [check]",
+   "▶ Brew 3 different herbal teas [check]",
+   "",
+   "◇ Yerba Mate + a companion = the Ch02 power build.",
+   "  Bonding effect scales with relationship level."
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     3060,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "herbalbrews:tea_kettle",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

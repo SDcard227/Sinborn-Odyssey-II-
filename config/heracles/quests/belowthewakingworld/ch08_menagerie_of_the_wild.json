@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch08_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Menagerie of the Wild at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:lead",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock menagerie_of_the_wild",
+   "title": "Discipline learned: The Menagerie of the Wild",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Menagerie of the Wild"
+  },
+  "subtitle": {
+   "text": "To tame is to understand."
+  },
+  "description": [
+   "The wild things are not enemies by nature. They are uncomprehended.",
+   "Learn the menagerie and the beast at the cave-mouth becomes a companion, a mount, a friend.",
+   "",
+   "→ Recover and study the Menagerie of the Wild at a Research Pedestal."
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     760,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:lead",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

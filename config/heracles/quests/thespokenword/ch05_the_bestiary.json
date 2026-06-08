@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch05_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Bestiary at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:writable_book",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock the_bestiary",
+   "title": "Discipline learned: The Bestiary",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Bestiary"
+  },
+  "subtitle": {
+   "text": "Know the beast before it knows you."
+  },
+  "description": [
+   "Every creature has a biology, a behavior, a place in the system.",
+   "The bestiary is the literacy that turns a hunt from luck into knowledge.",
+   "",
+   "→ Recover and study the Bestiary at a Research Pedestal."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1060,
+     1200
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:writable_book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

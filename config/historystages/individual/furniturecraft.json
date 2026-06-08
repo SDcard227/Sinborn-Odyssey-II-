@@ -1,0 +1,18 @@
+{
+  "display_name": "The Homestead's Comfort",
+  "research_time": 2700,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "mr_typewriter_daycounter",
+    "toomanypaintings"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

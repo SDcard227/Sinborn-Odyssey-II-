@@ -1,95 +1,138 @@
 {
-  "dependencies": ["ch13_outer"],
-  "tasks": {
-    "purpur_craft": {
-      "title": "Craft Purpur Blocks, Purpur Pillars, and End Stone Bricks — the End's primary building palette",
-      "icon": {"item": {"id": "minecraft:purpur_block", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_outer"
+ ],
+ "tasks": {
+  "purpur_craft": {
+   "title": "Craft Purpur Blocks, Purpur Pillars, and End Stone Bricks — the End's primary building palette",
+   "icon": {
+    "item": {
+     "id": "minecraft:purpur_block",
+     "count": 1
     },
-    "end_rod_craft": {
-      "title": "Craft 8 End Rods — the End's native light source, required for authentic End-tier builds",
-      "icon": {"item": {"id": "minecraft:end_rod", "count": 8}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "end_rod_craft": {
+   "title": "Craft 8 End Rods — the End's native light source, required for authentic End-tier builds",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_rod",
+     "count": 8
     },
-    "purpur_stack": {
-      "type": "heracles:item",
-      "item": "minecraft:purpur_block",
-      "amount": 32,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "end_rod": {"item": {"id": "minecraft:end_rod", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 16}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Purpur and End Stone"},
-    "subtitle": {"text": "The End Cities were built from Purpur. The material is the architecture is the civilization. Use it accordingly."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.13 · PURPUR AND END STONE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Every End City was built from two materials.",
-      "  Purpur Block — made from Popped Chorus Fruit.",
-      "  End Stone Brick — cut from the dimension itself.",
-      "  The End Rod holds it all in light.",
-      "  This is the complete End building palette.",
-      "  If you are building here, you build in this language.",
-      "",
-      "◈ PURPUR CRAFTING",
-      "  └ Purpur Block: 4 Popped Chorus Fruit (2×2 craft)",
-      "  └ Purpur Pillar: 2 Purpur Slabs stacked",
-      "  └ Purpur Stairs: 6 Purpur Blocks (standard stair recipe)",
-      "  └ Purpur Slab: 3 Purpur Blocks in a row",
-      "  └ All variants: crafted from base Purpur Block",
-      "    Stonecutter: converts Purpur into all variants cleanly",
-      "    (more efficient than crafting table for small quantities)",
-      "",
-      "◈ END STONE BRICKS",
-      "  └ End Stone Brick: 4 End Stone (2×2 craft)",
-      "  └ End Stone Brick variants: Slab, Stairs, Wall",
-      "    All via Stonecutter from End Stone Brick",
-      "  └ End Stone source: mine directly from outer island floors",
-      "  └ Fortune III pickaxe: no benefit (not a drop-affected block)",
-      "  └ Silk Touch: picks up exact block (same result either way)",
-      "",
-      "◈ END ROD",
-      "  └ End Rod: 1 Blaze Rod + 1 Popped Chorus Fruit (vertical)",
-      "  └ Light level 14: same as torch",
-      "  └ Unique property: can be placed in any direction",
-      "    (sideways, upside down, floor, ceiling — any axis)",
-      "  └ End City aesthetic: End Rods are the canonical lamp",
-      "  └ Build farms with End Rods as lighting — fire-proof,",
-      "    mob-proof (level 14 suppresses all spawns within 7 blocks)",
-      "",
-      "▸ The cities used only what the dimension grew.",
-      "  Popped Chorus made the walls.",
-      "  End Stone made the foundations.",
-      "  They did not import building materials.",
-      "  They built entirely from what was already there.",
-      "  That discipline is why the cities are still standing",
-      "  after the civilization that built them is not.",
-      "",
-      "▶ Craft Purpur Blocks, Pillars, and End Stone Bricks [check]",
-      "▶ Craft 8 End Rods [check]",
-      "▶ Collect 32 Purpur Blocks",
-      "",
-      "◇ End Stone Brick is aesthetically superior to raw End Stone",
-      "  for base building — same durability, cleaner texture.",
-      "  Purpur + End Stone Brick + End Rod is the complete palette.",
-      "  Use this for any End-dimension outpost or farm structure."
-    ],
-    "groups": {"The Shattered Law": {"position": [300, 300]}},
-    "icon": {"item": {"id": "minecraft:purpur_block", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "purpur_stack": {
+   "type": "heracles:item",
+   "item": "minecraft:purpur_block",
+   "amount": 32,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "end_rod": {
+   "item": {
+    "id": "minecraft:end_rod",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Purpur and End Stone"
+  },
+  "subtitle": {
+   "text": "The End Cities were built from Purpur. The material is the architecture is the civilization. Use it accordingly."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.13 · PURPUR AND END STONE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Every End City was built from two materials.",
+   "  Purpur Block — made from Popped Chorus Fruit.",
+   "  End Stone Brick — cut from the dimension itself.",
+   "  The End Rod holds it all in light.",
+   "  This is the complete End building palette.",
+   "  If you are building here, you build in this language.",
+   "",
+   "◈ PURPUR CRAFTING",
+   "  └ Purpur Block: 4 Popped Chorus Fruit (2×2 craft)",
+   "  └ Purpur Pillar: 2 Purpur Slabs stacked",
+   "  └ Purpur Stairs: 6 Purpur Blocks (standard stair recipe)",
+   "  └ Purpur Slab: 3 Purpur Blocks in a row",
+   "  └ All variants: crafted from base Purpur Block",
+   "    Stonecutter: converts Purpur into all variants cleanly",
+   "    (more efficient than crafting table for small quantities)",
+   "",
+   "◈ END STONE BRICKS",
+   "  └ End Stone Brick: 4 End Stone (2×2 craft)",
+   "  └ End Stone Brick variants: Slab, Stairs, Wall",
+   "    All via Stonecutter from End Stone Brick",
+   "  └ End Stone source: mine directly from outer island floors",
+   "  └ Fortune III pickaxe: no benefit (not a drop-affected block)",
+   "  └ Silk Touch: picks up exact block (same result either way)",
+   "",
+   "◈ END ROD",
+   "  └ End Rod: 1 Blaze Rod + 1 Popped Chorus Fruit (vertical)",
+   "  └ Light level 14: same as torch",
+   "  └ Unique property: can be placed in any direction",
+   "    (sideways, upside down, floor, ceiling — any axis)",
+   "  └ End City aesthetic: End Rods are the canonical lamp",
+   "  └ Build farms with End Rods as lighting — fire-proof,",
+   "    mob-proof (level 14 suppresses all spawns within 7 blocks)",
+   "",
+   "▸ The cities used only what the dimension grew.",
+   "  Popped Chorus made the walls.",
+   "  End Stone made the foundations.",
+   "  They did not import building materials.",
+   "  They built entirely from what was already there.",
+   "  That discipline is why the cities are still standing",
+   "  after the civilization that built them is not.",
+   "",
+   "▶ Craft Purpur Blocks, Pillars, and End Stone Bricks [check]",
+   "▶ Craft 8 End Rods [check]",
+   "▶ Collect 32 Purpur Blocks",
+   "",
+   "◇ End Stone Brick is aesthetically superior to raw End Stone",
+   "  for base building — same durability, cleaner texture.",
+   "  Purpur + End Stone Brick + End Rod is the complete palette.",
+   "  Use this for any End-dimension outpost or farm structure."
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     2300,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:purpur_block",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

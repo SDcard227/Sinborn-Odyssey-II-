@@ -1,113 +1,113 @@
 {
-  "dependencies": [
-    "ch04_r_spirits"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/night_table"
-    },
-    "night_feast": {
-      "title": "Eat 5 different foods and drink 1 brewed beverage during the nighttime hours (no sleep skipping)",
-      "icon": {
-        "item": {
-          "id": "minecraft:cake",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch04_r_spirits"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Night Table scroll at a Research Pedestal"
   },
-  "rewards": {
-    "candle": {
-      "item": {
-        "id": "minecraft:candle",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "night_feast": {
+   "title": "Eat 5 different foods and drink 1 brewed beverage during the nighttime hours (no sleep skipping)",
+   "icon": {
+    "item": {
+     "id": "minecraft:cake",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Night Table"
-    },
-    "subtitle": {
-      "text": "They didn't sleep through the dark. They ate through it."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.04 · THE NIGHT TABLE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The scroll describes a practice:",
-      "  a table set at dusk, not dawn.",
-      "  The best food was served when the sky went dark.",
-      "  It was a way of saying: we are still here.",
-      "",
-      "◈ NIGHT MECHANICS TO KNOW",
-      "  └ Sleep Hunger mod: sleeping skips time BUT",
-      "    costs hunger — you wake up hungry",
-      "  └ Comforts sleeping bags: rest without hunger cost",
-      "    (but doesn't set spawn point)",
-      "  └ The Night Table says: stay awake sometimes",
-      "    The nighttime food buffs are worth it",
-      "  └ Hardcore Torches run out at night too —",
-      "    keep lanterns lit",
-      "",
-      "◈ NIGHT TABLE TRADITION",
-      "  └ Set your cooking station near your bed",
-      "  └ Brew a drink before sleeping if you plan to skip",
-      "  └ The full diet bonuses carry into the next day",
-      "  └ A warm meal before sleep = better morning stats",
-      "",
-      "◈ SCROLL: The Night Table",
-      "  └ Found in: inn chests, tavern basement loot,",
-      "    nighttime camp caches, abandoned rest stops",
-      "  └ Research time: 10 min",
-      "  └ Unlocks: Sleep Hunger + Comforts interaction knowledge,",
-      "    nighttime meal awareness",
-      "",
-      "▸ The scroll was written by someone who never slept early.",
-      "  They outlived everyone who did.",
-      "",
-      "▶ Find The Night Table scroll [check]",
-      "▶ Eat 5 foods and drink 1 brewed beverage at night [check]",
-      "",
-      "◇ Comforts mod (Ch01 reference): sleeping bag",
-      "  skips night without setting spawn and",
-      "  without the Sleep Hunger cost."
-    ],
-    "groups": {
-      "The Long Pour": {
-        "position": [
-          -600,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:candle",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "candle": {
+   "item": {
+    "id": "minecraft:candle",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Night Table"
+  },
+  "subtitle": {
+   "text": "They didn't sleep through the dark. They ate through it."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.04 · THE NIGHT TABLE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The scroll describes a practice:",
+   "  a table set at dusk, not dawn.",
+   "  The best food was served when the sky went dark.",
+   "  It was a way of saying: we are still here.",
+   "",
+   "◈ NIGHT MECHANICS TO KNOW",
+   "  └ Sleep Hunger mod: sleeping skips time BUT",
+   "    costs hunger — you wake up hungry",
+   "  └ Comforts sleeping bags: rest without hunger cost",
+   "    (but doesn't set spawn point)",
+   "  └ The Night Table says: stay awake sometimes",
+   "    The nighttime food buffs are worth it",
+   "  └ Hardcore Torches run out at night too —",
+   "    keep lanterns lit",
+   "",
+   "◈ NIGHT TABLE TRADITION",
+   "  └ Set your cooking station near your bed",
+   "  └ Brew a drink before sleeping if you plan to skip",
+   "  └ The full diet bonuses carry into the next day",
+   "  └ A warm meal before sleep = better morning stats",
+   "",
+   "◈ SCROLL: The Night Table",
+   "  └ Found in: inn chests, tavern basement loot,",
+   "    nighttime camp caches, abandoned rest stops",
+   "  └ Research time: 10 min",
+   "  └ Unlocks: Sleep Hunger + Comforts interaction knowledge,",
+   "    nighttime meal awareness",
+   "",
+   "▸ The scroll was written by someone who never slept early.",
+   "  They outlived everyone who did.",
+   "",
+   "▶ Find The Night Table scroll [check]",
+   "▶ Eat 5 foods and drink 1 brewed beverage at night [check]",
+   "",
+   "◇ Comforts mod (Ch01 reference): sleeping bag",
+   "  skips night without setting spawn and",
+   "  without the Sleep Hunger cost."
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     2760,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:candle",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

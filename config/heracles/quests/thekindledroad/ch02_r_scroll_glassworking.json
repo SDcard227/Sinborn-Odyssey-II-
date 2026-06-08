@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Glassworking scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Glassworking scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Glassworking scroll",
-      "icon": {
-        "item": {
-          "id": "connectedglass:borderless_glass_amber",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock glassworking"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Glassworking"
+  "research_scroll": {
+   "title": "Research the Glassworking scroll",
+   "icon": {
+    "item": {
+     "id": "connectedglass:borderless_glass_amber",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Charted, measured, decoded.\"",
-      "",
-      "Already populated \u2014 vanilla + amendments stained variants.",
-      "",
-      "This scroll unlocks 131 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Stronghold Library",
-      "  \u00b7 Village/Village Cartographer",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Glassworking] [auto]"
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          890,
-          900
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "connectedglass:borderless_glass_amber",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock glassworking"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Glassworking"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Charted, measured, decoded.\"",
+   "",
+   "Already populated — vanilla + amendments stained variants.",
+   "",
+   "This scroll unlocks 131 items.",
+   "",
+   "Look for it in:",
+   "  · Stronghold Library",
+   "  · Village/Village Cartographer",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Glassworking] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     0,
+     1200
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "connectedglass:borderless_glass_amber",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

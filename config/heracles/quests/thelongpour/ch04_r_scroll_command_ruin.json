@@ -1,77 +1,77 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the On Command and Ruin scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the On Command and Ruin scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the On Command and Ruin scroll",
-      "icon": {
-        "item": {
-          "id": "witherstormmod:command_block_book",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock command_ruin"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "On Command and Ruin"
+  "research_scroll": {
+   "title": "Research the On Command and Ruin scroll",
+   "icon": {
+    "item": {
+     "id": "witherstormmod:command_block_book",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Copied between every civilization that touched it.\"",
-      "",
-      "This scroll unlocks 7 items.",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [On Command and Ruin] [auto]"
-    ],
-    "groups": {
-      "The Long Pour": {
-        "position": [
-          853,
-          960
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "witherstormmod:command_block_book",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock command_ruin"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sun",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "On Command and Ruin"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Copied between every civilization that touched it.\"",
+   "",
+   "This scroll unlocks 7 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [On Command and Ruin] [auto]"
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     0,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "witherstormmod:command_block_book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

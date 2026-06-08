@@ -1,0 +1,20 @@
+{
+  "display_name": "The Scroll of the Eye of Nothingness",
+  "research_time": 3600,
+  "items": [
+    "traveloptics:eye_of_nothingness"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "sinborn:mechanical_crafting/trav_eye_of_nothingness",
+    "traveloptics:eye_of_nothingness"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

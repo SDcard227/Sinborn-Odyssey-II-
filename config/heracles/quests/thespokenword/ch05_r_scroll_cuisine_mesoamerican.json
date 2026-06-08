@@ -1,77 +1,77 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The Codex of Sun-Maize scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Codex of Sun-Maize scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The Codex of Sun-Maize scroll",
-      "icon": {
-        "item": {
-          "id": "call_of_yucutan:ah_puch_idol",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock cuisine_mesoamerican"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The Codex of Sun-Maize"
+  "research_scroll": {
+   "title": "Research the The Codex of Sun-Maize scroll",
+   "icon": {
+    "item": {
+     "id": "call_of_yucutan:ah_puch_idol",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Copied between every civilization that touched it.\"",
-      "",
-      "This scroll unlocks 105 items.",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The Codex of Sun-Maize] [auto]"
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          1007,
-          780
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "call_of_yucutan:ah_puch_idol",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock maize_codex"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Codex of Sun-Maize"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Copied between every civilization that touched it.\"",
+   "",
+   "This scroll unlocks 105 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Codex of Sun-Maize] [auto]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     0,
+     1200
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "call_of_yucutan:ah_puch_idol",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

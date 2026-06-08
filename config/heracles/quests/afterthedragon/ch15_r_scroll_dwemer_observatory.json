@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Dwemer Observatory Looting scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Dwemer Observatory Looting scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Dwemer Observatory Looting scroll",
-      "icon": {
-        "item": {
-          "id": "mebahelcreaturesdwarven:dwarven_arrow",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock dwemer_observatory"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 2
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Dwemer Observatory Looting"
+  "research_scroll": {
+   "title": "Research the Dwemer Observatory Looting scroll",
+   "icon": {
+    "item": {
+     "id": "mebahelcreaturesdwarven:dwarven_arrow",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"The dwemer left their brass. Nothing else.\"",
-      "",
-      "end_dwarven_observatory full clear. T5 because requires End-tier survival.",
-      "",
-      "This scroll unlocks 15 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Mebahelcreaturesdwarven:Chests/Dwemer Tower",
-      "  \u00b7 Mebahelcreaturesdwarven:Chests/Dwemer Ruin Epic",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Dwemer Observatory Looting] [auto]"
-    ],
-    "groups": {
-      "After the Dragon": {
-        "position": [
-          1403,
-          960
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "mebahelcreaturesdwarven:dwarven_arrow",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock dwemer_observatory"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Dwemer Observatory Looting"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"The dwemer left their brass. Nothing else.\"",
+   "",
+   "end_dwarven_observatory full clear. T5 because requires End-tier survival.",
+   "",
+   "This scroll unlocks 15 items.",
+   "",
+   "Look for it in:",
+   "  · Mebahelcreaturesdwarven:Chests/Dwemer Tower",
+   "  · Mebahelcreaturesdwarven:Chests/Dwemer Ruin Epic",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Dwemer Observatory Looting] [auto]"
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     0,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "mebahelcreaturesdwarven:dwarven_arrow",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

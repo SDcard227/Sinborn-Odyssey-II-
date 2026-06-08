@@ -1,97 +1,97 @@
 {
-  "dependencies": [
-    "ch09_cockatrice"
-  ],
-  "tasks": {
-    "fire_dragon": {
-      "type": "heracles:kill_entity",
-      "entity": "iceandfire:fire_dragon",
-      "amount": 1
-    },
-    "fire_scale": {
-      "type": "heracles:item",
-      "item": "iceandfire:fire_dragon_scale",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "dragon_egg": {
-      "title": "Collect a Fire Dragon Egg from the dragon's cave lair",
-      "icon": {
-        "item": {
-          "id": "iceandfire:fire_dragon_egg",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch09_cockatrice"
+ ],
+ "tasks": {
+  "fire_dragon": {
+   "type": "heracles:kill_entity",
+   "entity": "iceandfire:fire_dragon",
+   "amount": 1
   },
-  "rewards": {
-    "scales": {
-      "item": {
-        "id": "iceandfire:fire_dragon_scale",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 14
-      },
-      "type": "heracles:item"
-    }
+  "fire_scale": {
+   "type": "heracles:item",
+   "item": "iceandfire:fire_dragon_scale",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {
-      "translate": "The Fire Hunt"
+  "dragon_egg": {
+   "title": "Collect a Fire Dragon Egg from the dragon's cave lair",
+   "icon": {
+    "item": {
+     "id": "iceandfire:fire_dragon_egg",
+     "count": 1
     },
-    "subtitle": {
-      "text": "They ruled the sky before you arrived. They will rule it after you're gone."
-    },
-    "description": [
-      "Ice & Fire dragons are the largest threats in this chapter.",
-      "They require the eye_black scroll before they can be damaged — boss locked.",
-      "",
-      "Fire Dragons spawn in caves at various tiers.",
-      "Tier 3+ is required for meaningful drops.",
-      "Fire Dragon Scales → Dragonsteel Fire Ingots → armor.",
-      "Dragon Blood and Dragon Hearts have brewing uses.",
-      "",
-      "The Fire Dragon cave also has a loot chest.",
-      "Dragon Eggs can be collected — they hatch into tameable dragons.",
-      "A tamed Tier 3+ dragon is one of the most powerful mounts.",
-      "",
-      "Dragonsteel armor requires Fire Dragon Scales → Dragonsteel Ingots.",
-      "The crafting chain is long. The result is worth it.",
-      "",
-      "→ Kill a Fire Dragon (Tier 3+) [check]",
-      "→ Collect 8 Fire Dragon Scales",
-      "→ Collect a Fire Dragon Egg from its lair [check]"
-    ],
-    "groups": {
-      "The Eleven-Eyed Hunt": {
-        "position": [
-          150,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "iceandfire:fire_dragon_scale",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "scales": {
+   "item": {
+    "id": "iceandfire:fire_dragon_scale",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 14
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Fire Hunt"
+  },
+  "subtitle": {
+   "text": "They ruled the sky before you arrived. They will rule it after you're gone."
+  },
+  "description": [
+   "Ice & Fire dragons are the largest threats in this chapter.",
+   "They require the eye_black scroll before they can be damaged — boss locked.",
+   "",
+   "Fire Dragons spawn in caves at various tiers.",
+   "Tier 3+ is required for meaningful drops.",
+   "Fire Dragon Scales → Dragonsteel Fire Ingots → armor.",
+   "Dragon Blood and Dragon Hearts have brewing uses.",
+   "",
+   "The Fire Dragon cave also has a loot chest.",
+   "Dragon Eggs can be collected — they hatch into tameable dragons.",
+   "A tamed Tier 3+ dragon is one of the most powerful mounts.",
+   "",
+   "Dragonsteel armor requires Fire Dragon Scales → Dragonsteel Ingots.",
+   "The crafting chain is long. The result is worth it.",
+   "",
+   "→ Kill a Fire Dragon (Tier 3+) [check]",
+   "→ Collect 8 Fire Dragon Scales",
+   "→ Collect a Fire Dragon Egg from its lair [check]"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     3020,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "iceandfire:fire_dragon_scale",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,0 +1,80 @@
+{
+ "dependencies": [
+  "ch05_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "mowziesmobs:naga",
+   "amount": 1,
+   "title": "Slay the beast and claim its body"
+  },
+  "harvest": {
+   "type": "heracles:item",
+   "item": "compatdelight:naga_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Harvest its meat , waste nothing"
+  },
+  "cook": {
+   "type": "heracles:item",
+   "item": "compatdelight:cooked_naga_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Cook it , and eat"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "dish": {
+   "item": {
+    "id": "compatdelight:cooked_naga_meat",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Naga at the Table"
+  },
+  "subtitle": {
+   "text": "Every part of the monster must be used."
+  },
+  "description": [
+   "The jungle serpent killed for sport. You kill for the table.",
+   "Render the naga, cook the heart, waste nothing. That is the respect Senshi spoke of.",
+   "",
+   "Eating is simply the privilege of the living."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1060,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "compatdelight:cooked_naga_meat",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

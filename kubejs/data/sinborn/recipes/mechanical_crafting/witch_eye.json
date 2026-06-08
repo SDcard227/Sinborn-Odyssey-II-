@@ -2,15 +2,25 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     "ATA",
-    "PWP",
+    "PWA",
     "ABA"
   ],
   "key": {
-    "A": { "item": "irons_spellbooks:arcane_essence" },
-    "T": { "item": "quark:ancient_tome" },
-    "P": { "item": "endrem:witch_pupil" },
-    "W": { "item": "irons_spellbooks:ashen_spellbook" },
-    "B": { "item": "mowziesmobs:barakos_brew" }
+    "A": {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    "T": {
+      "item": "quark:ancient_tome"
+    },
+    "P": {
+      "item": "endrem:witch_pupil"
+    },
+    "W": {
+      "item": "irons_spellbooks:ashen_spellbook"
+    },
+    "B": {
+      "item": "mowziesmobs:barakos_brew"
+    }
   },
   "result": {
     "item": "endrem:witch_eye",

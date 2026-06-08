@@ -1,56 +1,87 @@
 {
-  "dependencies": ["ch05_world"],
-  "tasks": {
-    "trade": {
-      "title": "Complete 5 trades with MCA villagers",
-      "icon": {"item": {"id": "numismatics:cog", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch05_world"
+ ],
+ "tasks": {
+  "trade": {
+   "title": "Complete 5 trades with MCA villagers",
+   "icon": {
+    "item": {
+     "id": "numismatics:cog",
+     "count": 1
     },
-    "crown": {
-      "type": "heracles:item",
-      "item": "numismatics:crown",
-      "amount": 2,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "iron": {
-      "item": {"id": "minecraft:iron_ingot", "count": 16},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 5},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Exchange"},
-    "subtitle": {"text": "Every culture answering: what does your place offer that mine doesn't?"},
-    "description": [
-      "Sixteen food traditions. Every civilization answered the same question.",
-      "What do you have that I don't?",
-      "",
-      "MCA villagers trade in cogs. One cog = 64 spurs.",
-      "Every emerald trade in every villager profession",
-      "has been replaced with cogs by the pack.",
-      "",
-      "Trade broadly. Different professions offer different goods.",
-      "The Cartographer will eventually give you a stronghold map.",
-      "The Librarian gives books. The Farmer gives seeds.",
-      "",
-      "→ Complete 5 trades with MCA villagers [check]",
-      "→ Have 2 crowns saved"
-    ],
-    "groups": {"The Spoken Word": {"position": [0, 150]}},
-    "icon": {"item": {"id": "numismatics:crown", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "crown": {
+   "type": "heracles:item",
+   "item": "numismatics:crown",
+   "amount": 2,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "iron": {
+   "item": {
+    "id": "minecraft:iron_ingot",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Exchange"
+  },
+  "subtitle": {
+   "text": "Every culture answering: what does your place offer that mine doesn't?"
+  },
+  "description": [
+   "Sixteen food traditions. Every civilization answered the same question.",
+   "What do you have that I don't?",
+   "",
+   "MCA villagers trade in cogs. One cog = 64 spurs.",
+   "Every emerald trade in every villager profession",
+   "has been replaced with cogs by the pack.",
+   "",
+   "Trade broadly. Different professions offer different goods.",
+   "The Cartographer will eventually give you a stronghold map.",
+   "The Librarian gives books. The Farmer gives seeds.",
+   "",
+   "→ Complete 5 trades with MCA villagers [check]",
+   "→ Have 2 crowns saved"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1060,
+     1350
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

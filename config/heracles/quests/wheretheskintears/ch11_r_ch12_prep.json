@@ -1,95 +1,138 @@
 {
-  "dependencies": ["ch11_monstrosity"],
-  "tasks": {
-    "lacrima_ready": {
-      "title": "Confirm readiness for Ch12 — have Lacrima, Emulator cleared, full Ignitium or better gear",
-      "icon": {"item": {"id": "cataclysm:lacrima", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch11_monstrosity"
+ ],
+ "tasks": {
+  "lacrima_ready": {
+   "title": "Confirm readiness for Ch12 — have Lacrima, Emulator cleared, full Ignitium or better gear",
+   "icon": {
+    "item": {
+     "id": "cataclysm:lacrima",
+     "count": 1
     },
-    "scarlet_read": {
-      "title": "Review the Scarlet King lore scroll (Ch05) before Ch12 — the Manifestor Trap for the Cursed Eye is ahead",
-      "icon": {"item": {"id": "historystages:scroll", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "netherite": {"item": {"id": "minecraft:netherite_ingot", "count": 2}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Before Ch12"},
-    "subtitle": {"text": "The Kingdom you build will be built on everything you gathered here. Bring all of it. Leave none of it behind."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.11 · BEFORE CH12",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Ch12 (The Kingdom You Build) is the construction chapter.",
-      "  It follows from everything assembled in Ch11.",
-      "  The Lacrima triggers the Infernal Age.",
-      "  The Cursed Eye is the final portal eye.",
-      "  The Manifestor Trap is the mechanic.",
-      "  None of these are optional. All of them have prerequisites.",
-      "  This quest is the checklist.",
-      "",
-      "◈ CH12 PREREQUISITES — VERIFY ALL",
-      "  └ ✦ Lacrima (cataclysm:lacrima) — in inventory",
-      "    DO NOT use until ready for Ch12 age transition",
-      "  └ ✦ Emulator cleared — full Cataclysm chain done",
-      "  └ ✦ Ignitium or Emulator gear — full set equipped",
-      "  └ ✦ Cataclysm Forge scroll researched — gear recipes known",
-      "  └ ✦ Cursium supply — have 16+ for Ch12 construction",
-      "  └ ✦ Nether Star × 3 — Wither Eye + Ch12 crafting",
-      "  └ ✦ Last Watch scroll researched — cursed age gate open",
-      "",
-      "◈ CURSED EYE WARNING",
-      "  └ The Cursed Eye (final portal eye, Ch12) uses the",
-      "    Manifestor Trap — a KubeJS mechanic tied to",
-      "    the Scarlet King fight sequence",
-      "  └ Read the Scarlet King scroll (Ch05) before Ch12",
-      "  └ The Wither Storm must be involved in the Manifestor Trap",
-      "  └ The Crown item is the center ingredient",
-      "    of the Cursed Eye recipe",
-      "  └ Full mechanic: lore_scrolls.js — check vault",
-      "",
-      "◈ VILE HERB STOCKPILE",
-      "  └ Cursed Eye recipe also needs Vile Herb",
-      "    (covered in Ch08 sculk cure path quest)",
-      "  └ Farm 8+ Vile Herbs before Ch12",
-      "  └ Vile Herb sources: cave flora, witch drops, brewing",
-      "",
-      "◈ BUILD INFRASTRUCTURE FIRST",
-      "  └ Ch12 is called 'The Kingdom You Build' for a reason",
-      "  └ Set up: Create automation base, nuclear power,",
-      "    portal network, and storage before age transition",
-      "  └ The Infernal Age changes available recipes",
-      "    — transition when your build is stable",
-      "",
-      "▸ The skin has been tearing since Ch01.",
-      "  The scars are the chapter titles.",
-      "  Ch12 is where you use them.",
-      "  Everything you broke made you harder.",
-      "  Everything you built made you ready.",
-      "  Walk in.",
-      "",
-      "▶ Confirm Ch12 readiness — Lacrima in hand [check]",
-      "▶ Review Scarlet King scroll before crossing [check]",
-      "",
-      "◇ Ch12 cannot be undone once Lacrima is obtained.",
-      "  The Infernal Age transition is permanent.",
-      "  Back up your world before triggering if uncertain.",
-      "  Then go."
-    ],
-    "groups": {"Where the Skin Tears": {"position": [450, 300]}},
-    "icon": {"item": {"id": "cataclysm:lacrima", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "scarlet_read": {
+   "title": "Review the Scarlet King lore scroll (Ch05) before Ch12 — the Manifestor Trap for the Cursed Eye is ahead",
+   "icon": {
+    "item": {
+     "id": "historystages:scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "netherite": {
+   "item": {
+    "id": "minecraft:netherite_ingot",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Before Ch12"
+  },
+  "subtitle": {
+   "text": "The Kingdom you build will be built on everything you gathered here. Bring all of it. Leave none of it behind."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.11 · BEFORE CH12",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Ch12 (The Kingdom You Build) is the construction chapter.",
+   "  It follows from everything assembled in Ch11.",
+   "  The Lacrima triggers the Infernal Age.",
+   "  The Cursed Eye is the final portal eye.",
+   "  The Manifestor Trap is the mechanic.",
+   "  None of these are optional. All of them have prerequisites.",
+   "  This quest is the checklist.",
+   "",
+   "◈ CH12 PREREQUISITES — VERIFY ALL",
+   "  └ ✦ Lacrima (cataclysm:lacrima) — in inventory",
+   "    DO NOT use until ready for Ch12 age transition",
+   "  └ ✦ Emulator cleared — full Cataclysm chain done",
+   "  └ ✦ Ignitium or Emulator gear — full set equipped",
+   "  └ ✦ Cataclysm Forge scroll researched — gear recipes known",
+   "  └ ✦ Cursium supply — have 16+ for Ch12 construction",
+   "  └ ✦ Nether Star × 3 — Wither Eye + Ch12 crafting",
+   "  └ ✦ Last Watch scroll researched — cursed age gate open",
+   "",
+   "◈ CURSED EYE WARNING",
+   "  └ The Cursed Eye (final portal eye, Ch12) uses the",
+   "    Manifestor Trap — a KubeJS mechanic tied to",
+   "    the Scarlet King fight sequence",
+   "  └ Read the Scarlet King scroll (Ch05) before Ch12",
+   "  └ The Wither Storm must be involved in the Manifestor Trap",
+   "  └ The Crown item is the center ingredient",
+   "    of the Cursed Eye recipe",
+   "  └ Full mechanic: lore_scrolls.js — check vault",
+   "",
+   "◈ VILE HERB STOCKPILE",
+   "  └ Cursed Eye recipe also needs Vile Herb",
+   "    (covered in Ch08 sculk cure path quest)",
+   "  └ Farm 8+ Vile Herbs before Ch12",
+   "  └ Vile Herb sources: cave flora, witch drops, brewing",
+   "",
+   "◈ BUILD INFRASTRUCTURE FIRST",
+   "  └ Ch12 is called 'The Kingdom You Build' for a reason",
+   "  └ Set up: Create automation base, nuclear power,",
+   "    portal network, and storage before age transition",
+   "  └ The Infernal Age changes available recipes",
+   "    — transition when your build is stable",
+   "",
+   "▸ The skin has been tearing since Ch01.",
+   "  The scars are the chapter titles.",
+   "  Ch12 is where you use them.",
+   "  Everything you broke made you harder.",
+   "  Everything you built made you ready.",
+   "  Walk in.",
+   "",
+   "▶ Confirm Ch12 readiness — Lacrima in hand [check]",
+   "▶ Review Scarlet King scroll before crossing [check]",
+   "",
+   "◇ Ch12 cannot be undone once Lacrima is obtained.",
+   "  The Infernal Age transition is permanent.",
+   "  Back up your world before triggering if uncertain.",
+   "  Then go."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1840,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:lacrima",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

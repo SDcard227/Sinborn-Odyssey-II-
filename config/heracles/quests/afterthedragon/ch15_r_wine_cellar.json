@@ -1,90 +1,133 @@
 {
-  "dependencies": ["ch15_r_seasons1"],
-  "tasks": {
-    "wine_collection": {
-      "title": "Brew 5 different Vinery wines — build a wine cellar with a minimum of 5 wine barrel types",
-      "icon": {"item": {"id": "minecraft:glass_bottle", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_r_seasons1"
+ ],
+ "tasks": {
+  "wine_collection": {
+   "title": "Brew 5 different Vinery wines — build a wine cellar with a minimum of 5 wine barrel types",
+   "icon": {
+    "item": {
+     "id": "minecraft:glass_bottle",
+     "count": 1
     },
-    "eiswein": {
-      "title": "Brew Eiswein (Vinery) — the full-heal wine that requires winter grapes frozen on the vine",
-      "icon": {"item": {"id": "minecraft:glass_bottle", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "glass_bottle": {"item": {"id": "minecraft:glass_bottle", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Wine Cellar"},
-    "subtitle": {"text": "Vinery has 26 wines. Eiswein heals to full HP on drink. Your cellar is a medical stockpile, not decoration."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.15 · THE WINE CELLAR",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Vinery adds 26 wines to the pack.",
-      "  Most are food/saturation items with minor effects.",
-      "  One is not: Eiswein heals to full HP on drink.",
-      "  One bottle of Eiswein = full heal, any HP amount.",
-      "  It requires winter grapes — frozen on the vine.",
-      "  You need Serene Seasons for winter to arrive.",
-      "  You need a vineyard for the grapes.",
-      "  Ch15 is when you have both.",
-      "",
-      "◈ VINERY WINE SYSTEM",
-      "  └ 26 wines: range from table wine to premium vintages",
-      "  └ All require: Grape varieties (planted from Grape Cuttings),",
-      "    Barrel for fermentation, specific climate conditions",
-      "  └ Wine barrel: fills over time, output depends on grape type",
-      "    and barrel age (longer age = better quality in some wines)",
-      "  └ Grape Cuttings: found in village trades or structure loot",
-      "    (Nether Vinery: archived mod — Overworld Vinery only active)",
-      "",
-      "◈ EISWEIN PRODUCTION",
-      "  └ Requirement: Vinery grapes harvested during WINTER season",
-      "    (Serene Seasons winter = frozen grapes on vine)",
-      "  └ Harvest: DO NOT harvest grapes before winter if targeting Eiswein",
-      "    Leave grapes on vine through autumn → harvest in winter",
-      "  └ Process: frozen grapes → barrel → Eiswein fermentation",
-      "    Fermentation time: longer than standard wines",
-      "  └ Effect: full HP restore on drink (best healing item in pack)",
-      "  └ Batch production: prepare 8+ bottles before Ch16-17 boss runs",
-      "",
-      "◈ WINE CELLAR BUILD",
-      "  └ Wine cellar: underground room with Barrel wall + wine storage",
-      "  └ Temperature: wine keeps better cold (Cold Sweat mod consideration)",
-      "    Store barrels underground for passive cooling",
-      "  └ Vinery decoratives: Wine Rack, Wine Press — aesthetic build items",
-      "    Build a proper cellar: it is one of the best Ch15 builds",
-      "",
-      "▸ The wine cellar is the kingdom's medicine cabinet.",
-      "  The 25 other wines are pleasant.",
-      "  The Eiswein is the insurance.",
-      "  You will use it exactly when everything goes wrong",
-      "  and you have one heart left.",
-      "  At that moment, the vineyard pays for itself.",
-      "",
-      "▶ Brew 5 different Vinery wines [check]",
-      "▶ Brew Eiswein (winter grapes required) [check]",
-      "",
-      "◇ Eiswein production timeline:",
-      "  Plant grapes in Spring → maintain through Summer + Autumn",
-      "  → DO NOT harvest → Winter arrives → harvest frozen grapes",
-      "  → brew → wait fermentation → bottle.",
-      "  Plan one season ahead. Start the vineyard now."
-    ],
-    "groups": {"After the Dragon": {"position": [-600, 0]}},
-    "icon": {"item": {"id": "minecraft:glass_bottle", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "eiswein": {
+   "title": "Brew Eiswein (Vinery) — the full-heal wine that requires winter grapes frozen on the vine",
+   "icon": {
+    "item": {
+     "id": "minecraft:glass_bottle",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "glass_bottle": {
+   "item": {
+    "id": "minecraft:glass_bottle",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Wine Cellar"
+  },
+  "subtitle": {
+   "text": "Vinery has 26 wines. Eiswein heals to full HP on drink. Your cellar is a medical stockpile, not decoration."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.15 · THE WINE CELLAR",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Vinery adds 26 wines to the pack.",
+   "  Most are food/saturation items with minor effects.",
+   "  One is not: Eiswein heals to full HP on drink.",
+   "  One bottle of Eiswein = full heal, any HP amount.",
+   "  It requires winter grapes — frozen on the vine.",
+   "  You need Serene Seasons for winter to arrive.",
+   "  You need a vineyard for the grapes.",
+   "  Ch15 is when you have both.",
+   "",
+   "◈ VINERY WINE SYSTEM",
+   "  └ 26 wines: range from table wine to premium vintages",
+   "  └ All require: Grape varieties (planted from Grape Cuttings),",
+   "    Barrel for fermentation, specific climate conditions",
+   "  └ Wine barrel: fills over time, output depends on grape type",
+   "    and barrel age (longer age = better quality in some wines)",
+   "  └ Grape Cuttings: found in village trades or structure loot",
+   "    (Nether Vinery: archived mod — Overworld Vinery only active)",
+   "",
+   "◈ EISWEIN PRODUCTION",
+   "  └ Requirement: Vinery grapes harvested during WINTER season",
+   "    (Serene Seasons winter = frozen grapes on vine)",
+   "  └ Harvest: DO NOT harvest grapes before winter if targeting Eiswein",
+   "    Leave grapes on vine through autumn → harvest in winter",
+   "  └ Process: frozen grapes → barrel → Eiswein fermentation",
+   "    Fermentation time: longer than standard wines",
+   "  └ Effect: full HP restore on drink (best healing item in pack)",
+   "  └ Batch production: prepare 8+ bottles before Ch16-17 boss runs",
+   "",
+   "◈ WINE CELLAR BUILD",
+   "  └ Wine cellar: underground room with Barrel wall + wine storage",
+   "  └ Temperature: wine keeps better cold (Cold Sweat mod consideration)",
+   "    Store barrels underground for passive cooling",
+   "  └ Vinery decoratives: Wine Rack, Wine Press — aesthetic build items",
+   "    Build a proper cellar: it is one of the best Ch15 builds",
+   "",
+   "▸ The wine cellar is the kingdom's medicine cabinet.",
+   "  The 25 other wines are pleasant.",
+   "  The Eiswein is the insurance.",
+   "  You will use it exactly when everything goes wrong",
+   "  and you have one heart left.",
+   "  At that moment, the vineyard pays for itself.",
+   "",
+   "▶ Brew 5 different Vinery wines [check]",
+   "▶ Brew Eiswein (winter grapes required) [check]",
+   "",
+   "◇ Eiswein production timeline:",
+   "  Plant grapes in Spring → maintain through Summer + Autumn",
+   "  → DO NOT harvest → Winter arrives → harvest frozen grapes",
+   "  → brew → wait fermentation → bottle.",
+   "  Plan one season ahead. Start the vineyard now."
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     920,
+     1050
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:glass_bottle",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

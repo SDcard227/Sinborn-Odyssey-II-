@@ -1,64 +1,101 @@
 {
-  "dependencies": ["ch14_dragon_eat"],
-  "tasks": {
-    "diet_end": {
-      "title": "Use Diet mod to check your End food group coverage — dragon, enderman, shulker, chorus",
-      "icon": {"item": {"id": "minecraft:chorus_fruit", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_dragon_eat"
+ ],
+ "tasks": {
+  "diet_end": {
+   "title": "Use Diet mod to check your End food group coverage — dragon, enderman, shulker, chorus",
+   "icon": {
+    "item": {
+     "id": "minecraft:chorus_fruit",
+     "count": 1
     },
-    "chorus_popped": {
-      "title": "Collect 32 Popped Chorus Fruit (smelt Chorus Fruit — used in End Stone Bricks and purpur crafting)",
-      "icon": {"item": {"id": "minecraft:popped_chorus_fruit", "count": 32}, "type": "heracles:item"},
-      "amount": 32,
-      "collection": "AUTOMATIC",
-      "type": "heracles:item"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "chorus": {
-      "item": {"id": "minecraft:chorus_fruit", "count": 16},
-      "type": "heracles:item"
+  "chorus_popped": {
+   "title": "Collect 32 Popped Chorus Fruit (smelt Chorus Fruit — used in End Stone Bricks and purpur crafting)",
+   "icon": {
+    "item": {
+     "id": "minecraft:popped_chorus_fruit",
+     "count": 32
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The End Food Chain"},
-    "subtitle": {"text": "Diet mod resets fully on death. The End is not a safe place to forget to eat."},
-    "description": [
-      "The End represents a unique food challenge for Diet mod.",
-      "You are in a dimension with no natural light cycle and no soil.",
-      "All food must be carried in or grown from chorus plants.",
-      "",
-      "End food groups:",
-      "- Dragon meat (End's Delight): covers protein + rare category",
-      "- Enderman steak (Ender's Delight): additional protein",
-      "- Shulker soup (Ender's Delight): covers fiber/vegetable",
-      "- Chorus fruit (vanilla): covers fruit group",
-      "",
-      "CRITICAL: Diet mod resets fully on death.",
-      "If you die in the End, your diet reverts to empty.",
-      "The stat penalties accumulate quickly.",
-      "Bring food from every group before entering the End dimension.",
-      "",
-      "Popped Chorus Fruit is the smelted form used in late-game crafting.",
-      "Collect extra chorus plants for purpur block production.",
-      "",
-      "→ Check Diet mod End food coverage [check]",
-      "→ Collect 32 Popped Chorus Fruit [collect]"
-    ],
-    "groups": {"What the Void Remembers": {"position": [150, 150]}},
-    "icon": {"item": {"id": "minecraft:popped_chorus_fruit", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "amount": 32,
+   "collection": "AUTOMATIC",
+   "type": "heracles:item"
   }
+ },
+ "rewards": {
+  "chorus": {
+   "item": {
+    "id": "minecraft:chorus_fruit",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The End Food Chain"
+  },
+  "subtitle": {
+   "text": "Diet mod resets fully on death. The End is not a safe place to forget to eat."
+  },
+  "description": [
+   "The End represents a unique food challenge for Diet mod.",
+   "You are in a dimension with no natural light cycle and no soil.",
+   "All food must be carried in or grown from chorus plants.",
+   "",
+   "End food groups:",
+   "- Dragon meat (End's Delight): covers protein + rare category",
+   "- Enderman steak (Ender's Delight): additional protein",
+   "- Shulker soup (Ender's Delight): covers fiber/vegetable",
+   "- Chorus fruit (vanilla): covers fruit group",
+   "",
+   "CRITICAL: Diet mod resets fully on death.",
+   "If you die in the End, your diet reverts to empty.",
+   "The stat penalties accumulate quickly.",
+   "Bring food from every group before entering the End dimension.",
+   "",
+   "Popped Chorus Fruit is the smelted form used in late-game crafting.",
+   "Collect extra chorus plants for purpur block production.",
+   "",
+   "→ Check Diet mod End food coverage [check]",
+   "→ Collect 32 Popped Chorus Fruit [collect]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     1380,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:popped_chorus_fruit",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

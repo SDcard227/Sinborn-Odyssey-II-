@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch02_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Larder's Methods at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:smoker",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock larder_methods",
+   "title": "Discipline learned: The Larder's Methods",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Larder's Methods"
+  },
+  "subtitle": {
+   "text": "Heat, salt, smoke, time."
+  },
+  "description": [
+   "A kill rots. A harvest spoils. The difference between a feast and a famine is method.",
+   "The cuts, the cures, the slow fire — this is the grammar under every cuisine.",
+   "",
+   "→ Recover and study the Larder's Methods at a Research Pedestal."
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     760,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:smoker",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

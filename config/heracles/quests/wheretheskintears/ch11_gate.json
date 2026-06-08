@@ -1,92 +1,88 @@
 {
-  "dependencies": [
-    "ch11_monstrosity"
-  ],
-  "tasks": {
-    "lacrima_gate": {
-      "type": "heracles:item",
-      "item": "cataclysm:lacrima",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/living_decay_studied"
-    },
-    "scroll_found_2": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/infernal_passage_studied"
-    }
+ "dependencies": [
+  "ch11_monstrosity"
+ ],
+ "tasks": {
+  "lacrima_gate": {
+   "type": "heracles:item",
+   "item": "cataclysm:lacrima",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "ignitium": {
-      "item": {
-        "id": "cataclysm:ignitium_ingot",
-        "count": 4
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "age": {
-      "type": "heracles:command",
-      "command": "history unlock infernal_age"
-    }
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Living Decay scroll at a Research Pedestal"
   },
-  "display": {
-    "title": {
-      "translate": "Where the Skin Tears"
-    },
-    "subtitle": {
-      "text": "The Cataclysm ends here. What remains is what it left behind."
-    },
-    "description": [
-      "Lacrima is the tear from the Nether's oldest thing.",
-      "The Netherite Monstrosity did not choose to become what it became.",
-      "It just stayed long enough.",
-      "",
-      "The Living Decay scroll documents the Biological Civilization:",
-      "what happens when life integrates with something that does not stop growing.",
-      "The Infernal Passage scroll documents the passage they used.",
-      "Both are records of decisions that cannot be undone.",
-      "",
-      "You are past the Cataclysm chain's main sequence.",
-      "The Emulator and The Leviathan remain as optional extensions.",
-      "The portal does not require them.",
-      "But the Magical Eye does.",
-      "",
-      "→ Have the Lacrima",
-      "→ Research the Living Decay scroll [check]",
-      "→ Research the Infernal Passage scroll [check]"
-    ],
-    "groups": {
-      "Where the Skin Tears": {
-        "position": [
-          0,
-          600
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "cataclysm:lacrima",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "scroll_found_2": {
+   "type": "heracles:check",
+   "title": "Research the Infernal Passage scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "ignitium": {
+   "item": {
+    "id": "cataclysm:ignitium_ingot",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Where the Skin Tears"
+  },
+  "subtitle": {
+   "text": "The Cataclysm ends here. What remains is what it left behind."
+  },
+  "description": [
+   "Lacrima is the tear from the Nether's oldest thing.",
+   "The Netherite Monstrosity did not choose to become what it became.",
+   "It just stayed long enough.",
+   "",
+   "The Living Decay scroll documents the Biological Civilization:",
+   "what happens when life integrates with something that does not stop growing.",
+   "The Infernal Passage scroll documents the passage they used.",
+   "Both are records of decisions that cannot be undone.",
+   "",
+   "You are past the Cataclysm chain's main sequence.",
+   "The Emulator and The Leviathan remain as optional extensions.",
+   "The portal does not require them.",
+   "But the Magical Eye does.",
+   "",
+   "→ Have the Lacrima",
+   "→ Research the Living Decay scroll [check]",
+   "→ Research the Infernal Passage scroll [check]"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1840,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:lacrima",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

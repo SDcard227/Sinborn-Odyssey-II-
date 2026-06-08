@@ -1,83 +1,79 @@
 {
-  "dependencies": [
-    "ch06_boiler"
-  ],
-  "tasks": {
-    "steam_engine": {
-      "type": "heracles:item",
-      "item": "create:steam_engine",
-      "amount": 2,
-      "collection": "AUTOMATIC"
-    },
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/steam_pressure_studied"
-    }
+ "dependencies": [
+  "ch06_boiler"
+ ],
+ "tasks": {
+  "steam_engine": {
+   "type": "heracles:item",
+   "item": "create:steam_engine",
+   "amount": 2,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 10
-      },
-      "type": "heracles:item"
-    },
-    "brass_ingot": {
-      "item": {
-        "id": "create:brass_ingot",
-        "count": 16
-      },
-      "type": "heracles:item"
-    },
-    "age": {
-      "type": "heracles:command",
-      "command": "history unlock steam_age"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Scalded Earth"
-    },
-    "subtitle": {
-      "text": "The factory floor is running. The question is what for."
-    },
-    "description": [
-      "Iron replaced bronze not because it was more available.",
-      "Bronze is more easily smelted.",
-      "Iron was harder. The upgrade required more effort.",
-      "The reward was worth it.",
-      "",
-      "Steam scales everything.",
-      "The factory floor produces more than anyone can eat.",
-      "The question of what to do with surplus",
-      "is about to become very complicated.",
-      "",
-      "→ Have 2 Steam Engines running",
-      "→ Research the Steam Pressure scroll [check]"
-    ],
-    "groups": {
-      "The Scalded Earth": {
-        "position": [
-          0,
-          600
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create:steam_engine",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Steam Pressure scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  },
+  "brass_ingot": {
+   "item": {
+    "id": "create:brass_ingot",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Scalded Earth"
+  },
+  "subtitle": {
+   "text": "The factory floor is running. The question is what for."
+  },
+  "description": [
+   "Iron replaced bronze not because it was more available.",
+   "Bronze is more easily smelted.",
+   "Iron was harder. The upgrade required more effort.",
+   "The reward was worth it.",
+   "",
+   "Steam scales everything.",
+   "The factory floor produces more than anyone can eat.",
+   "The question of what to do with surplus",
+   "is about to become very complicated.",
+   "",
+   "→ Have 2 Steam Engines running",
+   "→ Research the Steam Pressure scroll [check]"
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     1840,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:steam_engine",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

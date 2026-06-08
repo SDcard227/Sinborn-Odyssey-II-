@@ -1,90 +1,133 @@
 {
-  "dependencies": ["ch14_r_diet2"],
-  "tasks": {
-    "complete_end_menu": {
-      "title": "Cook one dish from every End food source — dragon, enderman, shulker, chorus, Endergetic (5 sources)",
-      "icon": {"item": {"id": "minecraft:cooked_chicken", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_r_diet2"
+ ],
+ "tasks": {
+  "complete_end_menu": {
+   "title": "Cook one dish from every End food source — dragon, enderman, shulker, chorus, Endergetic (5 sources)",
+   "icon": {
+    "item": {
+     "id": "minecraft:cooked_chicken",
+     "count": 1
     },
-    "chorus_smoker": {
-      "title": "Build a dedicated End kitchen — Smoker + Brewing Stand + storage in a base built on End Stone",
-      "icon": {"item": {"id": "minecraft:smoker", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "popped_chorus": {"item": {"id": "minecraft:popped_chorus_fruit", "count": 32}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Void Kitchen"},
-    "subtitle": {"text": "A kitchen built in the End. Every ingredient sourced from the dimension. Every dish made here, eaten here."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.14 · THE VOID KITCHEN",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The End has five distinct food sources.",
-      "  No Overworld ingredients required.",
-      "  The kitchen can run entirely on what the dimension produces.",
-      "  This is the Dungeon Meshi completion condition for the End:",
-      "  to source, cook, and eat entirely from the territory.",
-      "  Build the kitchen here. Cook here. Eat here.",
-      "",
-      "◈ THE FIVE END FOOD SOURCES",
-      "  └ 1. Dragon (End's Delight: ends_delight:)",
-      "    Raw/Cooked Dragon Meat, Dragon Steak, breath-infused dishes",
-      "    Unlock via: Dragon Egg Research",
-      "  └ 2. Enderman (Ender's Delight: endersdelight:)",
-      "    Enderman Steak, Enderman-based soups and stews",
-      "    Source: kill Endermen — Ender's Delight drops raw meat",
-      "  └ 3. Shulker (Ender's Delight: endersdelight:)",
-      "    Shulker Soup, Shulker-based End dishes",
-      "    Source: kill Shulkers in End Cities",
-      "  └ 4. Chorus Fruit (vanilla: minecraft:)",
-      "    Raw Chorus Fruit (teleport on eat), Popped Chorus (ingredient)",
-      "    Source: Chorus Plant farm (Ch13)",
-      "  └ 5. Endergetic (Endergetic Expansion: endergetic:)",
-      "    Bolloom Fruit from Bolloom plants in Poise Forest",
-      "    Source: Bolloom farm (Ch13 Endergetic Economy quest)",
-      "",
-      "◈ END KITCHEN BUILD",
-      "  └ Smoker: 2× cooking speed (End Dragon Meat + Enderman Meat)",
-      "  └ Brewing Stand: Dragon Breath potions, Lingering batch",
-      "  └ Chest wall: sorted by food type (dragon / enderman / chorus)",
-      "  └ End Stone base + Purpur walls: fully on-theme",
-      "  └ Place near Chorus farm and Enderman farm for ingredient supply",
-      "  └ Ender Chest: link to Overworld supply for blaze powder/nether wart",
-      "",
-      "▸ Falin's dungeon kitchen principle:",
-      "  every dungeon has a supply chain if you understand the ecology.",
-      "  The End's ecology is complete enough to support a full kitchen.",
-      "  The dragon provides the centerpiece.",
-      "  The enderman provides the everyday protein.",
-      "  The shulker provides the luxury item.",
-      "  The chorus provides the carbohydrate.",
-      "  The Bolloom provides the fruit course.",
-      "  This is a complete meal.",
-      "",
-      "▶ Cook one dish from all 5 End food sources [check]",
-      "▶ Build a dedicated End kitchen on End Stone [check]",
-      "",
-      "◇ Diet mod integration: End foods cover protein and fruit groups.",
-      "  If your Diet balance has been protein-heavy,",
-      "  Bolloom Fruit and Chorus Fruit fill the remaining groups.",
-      "  A diet reset on death means re-eating after each respawn.",
-      "  The End kitchen eliminates Overworld trips to rebalance."
-    ],
-    "groups": {"What the Void Remembers": {"position": [600, 150]}},
-    "icon": {"item": {"id": "minecraft:smoker", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "chorus_smoker": {
+   "title": "Build a dedicated End kitchen — Smoker + Brewing Stand + storage in a base built on End Stone",
+   "icon": {
+    "item": {
+     "id": "minecraft:smoker",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "popped_chorus": {
+   "item": {
+    "id": "minecraft:popped_chorus_fruit",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Void Kitchen"
+  },
+  "subtitle": {
+   "text": "A kitchen built in the End. Every ingredient sourced from the dimension. Every dish made here, eaten here."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.14 · THE VOID KITCHEN",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The End has five distinct food sources.",
+   "  No Overworld ingredients required.",
+   "  The kitchen can run entirely on what the dimension produces.",
+   "  This is the Dungeon Meshi completion condition for the End:",
+   "  to source, cook, and eat entirely from the territory.",
+   "  Build the kitchen here. Cook here. Eat here.",
+   "",
+   "◈ THE FIVE END FOOD SOURCES",
+   "  └ 1. Dragon (End's Delight: ends_delight:)",
+   "    Raw/Cooked Dragon Meat, Dragon Steak, breath-infused dishes",
+   "    Unlock via: Dragon Egg Research",
+   "  └ 2. Enderman (Ender's Delight: endersdelight:)",
+   "    Enderman Steak, Enderman-based soups and stews",
+   "    Source: kill Endermen — Ender's Delight drops raw meat",
+   "  └ 3. Shulker (Ender's Delight: endersdelight:)",
+   "    Shulker Soup, Shulker-based End dishes",
+   "    Source: kill Shulkers in End Cities",
+   "  └ 4. Chorus Fruit (vanilla: minecraft:)",
+   "    Raw Chorus Fruit (teleport on eat), Popped Chorus (ingredient)",
+   "    Source: Chorus Plant farm (Ch13)",
+   "  └ 5. Endergetic (Endergetic Expansion: endergetic:)",
+   "    Bolloom Fruit from Bolloom plants in Poise Forest",
+   "    Source: Bolloom farm (Ch13 Endergetic Economy quest)",
+   "",
+   "◈ END KITCHEN BUILD",
+   "  └ Smoker: 2× cooking speed (End Dragon Meat + Enderman Meat)",
+   "  └ Brewing Stand: Dragon Breath potions, Lingering batch",
+   "  └ Chest wall: sorted by food type (dragon / enderman / chorus)",
+   "  └ End Stone base + Purpur walls: fully on-theme",
+   "  └ Place near Chorus farm and Enderman farm for ingredient supply",
+   "  └ Ender Chest: link to Overworld supply for blaze powder/nether wart",
+   "",
+   "▸ Falin's dungeon kitchen principle:",
+   "  every dungeon has a supply chain if you understand the ecology.",
+   "  The End's ecology is complete enough to support a full kitchen.",
+   "  The dragon provides the centerpiece.",
+   "  The enderman provides the everyday protein.",
+   "  The shulker provides the luxury item.",
+   "  The chorus provides the carbohydrate.",
+   "  The Bolloom provides the fruit course.",
+   "  This is a complete meal.",
+   "",
+   "▶ Cook one dish from all 5 End food sources [check]",
+   "▶ Build a dedicated End kitchen on End Stone [check]",
+   "",
+   "◇ Diet mod integration: End foods cover protein and fruit groups.",
+   "  If your Diet balance has been protein-heavy,",
+   "  Bolloom Fruit and Chorus Fruit fill the remaining groups.",
+   "  A diet reset on death means re-eating after each respawn.",
+   "  The End kitchen eliminates Overworld trips to rebalance."
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     2300,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:smoker",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

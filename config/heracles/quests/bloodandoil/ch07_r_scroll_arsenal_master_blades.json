@@ -1,77 +1,77 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The Master Arsenal: Blades scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Master Arsenal: Blades scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The Master Arsenal: Blades scroll",
-      "icon": {
-        "item": {
-          "id": "cataclysm:black_steel_sword",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock arsenal_master_blades"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The Master Arsenal: Blades"
+  "research_scroll": {
+   "title": "Research the The Master Arsenal: Blades scroll",
+   "icon": {
+    "item": {
+     "id": "cataclysm:black_steel_sword",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Copied between every civilization that touched it.\"",
-      "",
-      "This scroll unlocks 130 items.",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The Master Arsenal: Blades] [auto]"
-    ],
-    "groups": {
-      "Blood and Oil": {
-        "position": [
-          900,
-          900
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "cataclysm:black_steel_sword",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock arsenal_master_blades"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Master Arsenal: Blades"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Copied between every civilization that touched it.\"",
+   "",
+   "This scroll unlocks 130 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Master Arsenal: Blades] [auto]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     0,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:black_steel_sword",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

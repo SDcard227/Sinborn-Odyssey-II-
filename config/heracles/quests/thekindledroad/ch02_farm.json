@@ -1,70 +1,104 @@
 {
-  "dependencies": ["ch02_world"],
-  "tasks": {
-    "hoe": {
-      "type": "heracles:item",
-      "item": "minecraft:iron_hoe",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "wheat": {
-      "type": "heracles:item",
-      "item": "minecraft:wheat",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    },
-    "potato": {
-      "type": "heracles:item",
-      "item": "minecraft:potato",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "tilled": {
-      "title": "Till at least 32 farmland blocks",
-      "icon": {"item": {"id": "minecraft:farmland", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch02_world"
+ ],
+ "tasks": {
+  "hoe": {
+   "type": "heracles:item",
+   "item": "minecraft:iron_hoe",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "pumpkin": {
-      "item": {"id": "minecraft:pumpkin_seeds", "count": 8},
-      "type": "heracles:item"
-    },
-    "melon": {
-      "item": {"id": "minecraft:melon_seeds", "count": 8},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 5},
-      "type": "heracles:item"
-    }
+  "wheat": {
+   "type": "heracles:item",
+   "item": "minecraft:wheat",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "Seeds in the Ground"},
-    "subtitle": {"text": "The hoe is older than the sword."},
-    "description": [
-      "The first deliberate act of civilization was not war.",
-      "It was pushing a seed into soil and returning to see what happened.",
-      "",
-      "Serene Seasons changes what grows and when.",
-      "Know your current season. Plant accordingly.",
-      "Some crops will not grow out of season.",
-      "",
-      "→ Craft an iron hoe",
-      "→ Harvest 16 wheat",
-      "→ Collect 8 potatoes",
-      "→ Till 32 farmland [check]"
-    ],
-    "groups": {"The Kindled Road": {"position": [0, 150]}},
-    "icon": {"item": {"id": "minecraft:iron_hoe", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+  "potato": {
+   "type": "heracles:item",
+   "item": "minecraft:potato",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "tilled": {
+   "title": "Till at least 32 farmland blocks",
+   "icon": {
+    "item": {
+     "id": "minecraft:farmland",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "pumpkin": {
+   "item": {
+    "id": "minecraft:pumpkin_seeds",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "melon": {
+   "item": {
+    "id": "minecraft:melon_seeds",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Seeds in the Ground"
+  },
+  "subtitle": {
+   "text": "The hoe is older than the sword."
+  },
+  "description": [
+   "The first deliberate act of civilization was not war.",
+   "It was pushing a seed into soil and returning to see what happened.",
+   "",
+   "Serene Seasons changes what grows and when.",
+   "Know your current season. Plant accordingly.",
+   "Some crops will not grow out of season.",
+   "",
+   "→ Craft an iron hoe",
+   "→ Harvest 16 wheat",
+   "→ Collect 8 potatoes",
+   "→ Till 32 farmland [check]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     760,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:iron_hoe",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

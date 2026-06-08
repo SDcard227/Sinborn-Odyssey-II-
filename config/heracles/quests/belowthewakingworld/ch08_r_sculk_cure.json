@@ -1,82 +1,125 @@
 {
-  "dependencies": ["ch08_r_decay"],
-  "tasks": {
-    "vile_herb": {
-      "title": "Find or craft a Vile Herb — the partial mitigation item for Sculk Sickness Stage progression",
-      "icon": {"item": {"id": "minecraft:grass", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch08_r_decay"
+ ],
+ "tasks": {
+  "vile_herb": {
+   "title": "Find or craft a Vile Herb — the partial mitigation item for Sculk Sickness Stage progression",
+   "icon": {
+    "item": {
+     "id": "minecraft:grass",
+     "count": 1
     },
-    "know_cure": {
-      "title": "Understand the full Sculk Sickness cure path: Vile Herb mitigates, Ambrosia (End materials) cures fully",
-      "icon": {"item": {"id": "minecraft:nether_star", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "golden_apple": {"item": {"id": "minecraft:golden_apple", "count": 4}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 3}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Cure Path"},
-    "subtitle": {"text": "The Vile Herb slows the decay. Ambrosia ends it. The Ambrosia needs the End. Plan accordingly."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.08 · THE CURE PATH",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Sculk Sickness accumulates silently.",
-      "  You don't notice Stage 1 until it's Stage 2.",
-      "  You don't notice Stage 2 until it's 3.",
-      "  You notice Stage 4. You notice it very clearly.",
-      "  This quest is about what you do before Stage 4.",
-      "",
-      "◈ CURE HIERARCHY",
-      "  └ ◆ Vile Herb: partial mitigation",
-      "    Slows stage progression — does not reverse it",
-      "    Used repeatedly to hold at current stage",
-      "    Also required ingredient: Cursed Eye recipe (Ch12)",
-      "  └ ◆ Ambrosia: FULL CURE",
-      "    Crafted from specific End dimension materials",
-      "    Requires Ch13 End access",
-      "    Reverses all stages immediately",
-      "  └ ◆ Prevention: always better than cure",
-      "    Don't mine Sculk. Sneak near it. Leave quickly.",
-      "",
-      "◈ VILE HERB SOURCES",
-      "  └ Found in: cave flora (rare), witch drops,",
-      "    deep biome plant generation",
-      "  └ Craft: brewing-adjacent recipe (check JEI/REI)",
-      "  └ Grow: farmable once obtained (replant seeds)",
-      "",
-      "◈ AMBROSIA RECIPE PREVIEW",
-      "  └ Requires: End material + Vile Herb +",
-      "    chorus flower variant + rare End drops",
-      "  └ Full recipe revealed by Sculk Warning scroll",
-      "    (the Warden drop — Ch08 fight above)",
-      "  └ Cannot be crafted without first having been to The End",
-      "",
-      "▸ Everyone who explored the Deep Dark too eagerly",
-      "  needed the Vile Herb.",
-      "  The ones who came back prepared",
-      "  already had a stack.",
-      "",
-      "▶ Find or craft a Vile Herb [check]",
-      "▶ Know the full cure path [check]",
-      "",
-      "◇ The Cursed Eye (Ch12) also needs Vile Herb",
-      "  as a recipe ingredient.",
-      "  Farm it now. You will need it twice."
-    ],
-    "groups": {"Below the Waking World": {"position": [-450, 300]}},
-    "icon": {"item": {"id": "minecraft:grass", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "know_cure": {
+   "title": "Understand the full Sculk Sickness cure path: Vile Herb mitigates, Ambrosia (End materials) cures fully",
+   "icon": {
+    "item": {
+     "id": "minecraft:nether_star",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "golden_apple": {
+   "item": {
+    "id": "minecraft:golden_apple",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Cure Path"
+  },
+  "subtitle": {
+   "text": "The Vile Herb slows the decay. Ambrosia ends it. The Ambrosia needs the End. Plan accordingly."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.08 · THE CURE PATH",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Sculk Sickness accumulates silently.",
+   "  You don't notice Stage 1 until it's Stage 2.",
+   "  You don't notice Stage 2 until it's 3.",
+   "  You notice Stage 4. You notice it very clearly.",
+   "  This quest is about what you do before Stage 4.",
+   "",
+   "◈ CURE HIERARCHY",
+   "  └ ◆ Vile Herb: partial mitigation",
+   "    Slows stage progression — does not reverse it",
+   "    Used repeatedly to hold at current stage",
+   "    Also required ingredient: Cursed Eye recipe (Ch12)",
+   "  └ ◆ Ambrosia: FULL CURE",
+   "    Crafted from specific End dimension materials",
+   "    Requires Ch13 End access",
+   "    Reverses all stages immediately",
+   "  └ ◆ Prevention: always better than cure",
+   "    Don't mine Sculk. Sneak near it. Leave quickly.",
+   "",
+   "◈ VILE HERB SOURCES",
+   "  └ Found in: cave flora (rare), witch drops,",
+   "    deep biome plant generation",
+   "  └ Craft: brewing-adjacent recipe (check JEI/REI)",
+   "  └ Grow: farmable once obtained (replant seeds)",
+   "",
+   "◈ AMBROSIA RECIPE PREVIEW",
+   "  └ Requires: End material + Vile Herb +",
+   "    chorus flower variant + rare End drops",
+   "  └ Full recipe revealed by Sculk Warning scroll",
+   "    (the Warden drop — Ch08 fight above)",
+   "  └ Cannot be crafted without first having been to The End",
+   "",
+   "▸ Everyone who explored the Deep Dark too eagerly",
+   "  needed the Vile Herb.",
+   "  The ones who came back prepared",
+   "  already had a stack.",
+   "",
+   "▶ Find or craft a Vile Herb [check]",
+   "▶ Know the full cure path [check]",
+   "",
+   "◇ The Cursed Eye (Ch12) also needs Vile Herb",
+   "  as a recipe ingredient.",
+   "  Farm it now. You will need it twice."
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     3060,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:grass",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

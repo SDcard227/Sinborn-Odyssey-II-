@@ -1,63 +1,94 @@
 {
-  "dependencies": ["ch03_gate"],
-  "tasks": {
-    "berries": {
-      "type": "heracles:item",
-      "item": "minecraft:sweet_berries",
-      "amount": 32,
-      "collection": "AUTOMATIC"
-    },
-    "sugar": {
-      "type": "heracles:item",
-      "item": "minecraft:sugar",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    },
-    "grape": {
-      "title": "Find wild grapevines or a Vinery vineyard",
-      "icon": {"item": {"id": "vinery:white_grape", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch03_gate"
+ ],
+ "tasks": {
+  "berries": {
+   "type": "heracles:item",
+   "item": "minecraft:sweet_berries",
+   "amount": 32,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "bottle": {
-      "item": {"id": "minecraft:glass_bottle", "count": 8},
-      "type": "heracles:item"
+  "sugar": {
+   "type": "heracles:item",
+   "item": "minecraft:sugar",
+   "amount": 16,
+   "collection": "AUTOMATIC"
+  },
+  "grape": {
+   "title": "Find wild grapevines or a Vinery vineyard",
+   "icon": {
+    "item": {
+     "id": "vinery:white_grape",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 5},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Invisible Process"},
-    "subtitle": {"text": "Fermentation is the first chemistry."},
-    "description": [
-      "The first proof that invisible processes are real:",
-      "you crush berries, you add sugar, you wait —",
-      "and the organisms you cannot see do something you cannot stop.",
-      "",
-      "The wine is not made by you. It is made by time.",
-      "You only make the conditions.",
-      "",
-      "This is the principle behind every potion,",
-      "every fermented food, every barrel that waits in darkness.",
-      "The chemistry happens whether you watch it or not.",
-      "",
-      "→ Collect 32 sweet berries",
-      "→ Collect 16 sugar",
-      "→ Find wild grapevines or a vineyard [check]"
-    ],
-    "groups": {"The Long Pour": {"position": [0, 0]}},
-    "icon": {"item": {"id": "minecraft:sweet_berries", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "bottle": {
+   "item": {
+    "id": "minecraft:glass_bottle",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Invisible Process"
+  },
+  "subtitle": {
+   "text": "Fermentation is the first chemistry."
+  },
+  "description": [
+   "The first proof that invisible processes are real:",
+   "you crush berries, you add sugar, you wait —",
+   "and the organisms you cannot see do something you cannot stop.",
+   "",
+   "The wine is not made by you. It is made by time.",
+   "You only make the conditions.",
+   "",
+   "This is the principle behind every potion,",
+   "every fermented food, every barrel that waits in darkness.",
+   "The chemistry happens whether you watch it or not.",
+   "",
+   "→ Collect 32 sweet berries",
+   "→ Collect 16 sugar",
+   "→ Find wild grapevines or a vineyard [check]"
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     0,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:sweet_berries",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

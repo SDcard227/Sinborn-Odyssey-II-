@@ -1,59 +1,90 @@
 {
-  "dependencies": ["ch07_refine"],
-  "tasks": {
-    "gasoline": {
-      "type": "heracles:item",
-      "item": "tfmg:gasoline_bucket",
-      "amount": 4,
-      "collection": "AUTOMATIC"
+ "dependencies": [
+  "ch07_refine"
+ ],
+ "tasks": {
+  "gasoline": {
+   "type": "heracles:item",
+   "item": "tfmg:gasoline_bucket",
+   "amount": 4,
+   "collection": "AUTOMATIC"
+  },
+  "chemical_vat": {
+   "title": "Build a TFMG Chemical Vat for advanced fluid processing",
+   "icon": {
+    "item": {
+     "id": "tfmg:steel_casing",
+     "count": 1
     },
-    "chemical_vat": {
-      "title": "Build a TFMG Chemical Vat for advanced fluid processing",
-      "icon": {"item": {"id": "tfmg:steel_casing", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "diesel": {
-      "item": {"id": "tfmg:diesel_bucket", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Refinery"},
-    "subtitle": {"text": "Every byproduct has a use. Find it."},
-    "description": [
-      "The Distillation Tower produces five distinct products.",
-      "Diesel for combustion engines.",
-      "Gasoline for higher-output generators.",
-      "Kerosene and Naphtha for specialized applications.",
-      "LPG for portable fuel systems.",
-      "",
-      "The Chemical Vat opens advanced processing.",
-      "Steel production alt-path. Advanced reagents.",
-      "Everything the basic furnace can't handle.",
-      "",
-      "Engineers waste nothing.",
-      "The oil age is the first time that stops being a philosophy",
-      "and becomes a requirement.",
-      "",
-      "→ Collect 4 buckets of Gasoline (Distillation Tower)",
-      "→ Build a TFMG Chemical Vat [check]"
-    ],
-    "groups": {"Blood and Oil": {"position": [-150, 150]}},
-    "icon": {"item": {"id": "tfmg:gasoline_bucket", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "diesel": {
+   "item": {
+    "id": "tfmg:diesel_bucket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Refinery"
+  },
+  "subtitle": {
+   "text": "Every byproduct has a use. Find it."
+  },
+  "description": [
+   "The Distillation Tower produces five distinct products.",
+   "Diesel for combustion engines.",
+   "Gasoline for higher-output generators.",
+   "Kerosene and Naphtha for specialized applications.",
+   "LPG for portable fuel systems.",
+   "",
+   "The Chemical Vat opens advanced processing.",
+   "Steel production alt-path. Advanced reagents.",
+   "Everything the basic furnace can't handle.",
+   "",
+   "Engineers waste nothing.",
+   "The oil age is the first time that stops being a philosophy",
+   "and becomes a requirement.",
+   "",
+   "→ Collect 4 buckets of Gasoline (Distillation Tower)",
+   "→ Build a TFMG Chemical Vat [check]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     1220,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "tfmg:gasoline_bucket",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

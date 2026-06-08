@@ -1,104 +1,92 @@
 {
-  "dependencies": [
-    "ch15_legacy"
-  ],
-  "tasks": {
-    "revive_ready": {
-      "title": "Confirm your Revive Crystal is crafted and ready",
-      "icon": {
-        "item": {
-          "id": "lifesteal:revive_crystal",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_legacy"
+ ],
+ "tasks": {
+  "revive_ready": {
+   "title": "Confirm your Revive Crystal is crafted and ready",
+   "icon": {
+    "item": {
+     "id": "lifesteal:revive_crystal",
+     "count": 1
     },
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/return_dominion_studied"
-    },
-    "age_advance": {
-      "title": "The aftermath ends. The long road home begins.",
-      "icon": {
-        "item": {
-          "id": "lifesteal:revive_crystal",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock lost_void"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "revive_crystal": {
-      "item": {
-        "id": "lifesteal:revive_crystal",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 16
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Return Dominion"
-    },
-    "subtitle": {
-      "text": "You are the thirteenth civilization. Act accordingly."
-    },
-    "description": [
-      "Ch15 is complete.",
-      "",
-      "You have returned from the End.",
-      "You have reconnected with the community you built.",
-      "You have explored the Lost Void.",
-      "You have crafted the symbol of return.",
-      "You have begun the first piece of Ch16 master crafting.",
-      "",
-      "The Return Dominion scroll marks the formalization of your civilization.",
-      "It is found in End City reward chests and deep True End structures.",
-      "Research it. It is the declaration that the thirteenth civilization has survived",
-      "what killed the previous twelve.",
-      "",
-      "The Lost Void age opens Ch16.",
-      "Ch16 is the long road home — Celestisynth mastery,",
-      "the highest tier crafting, and the return to community at scale.",
-      "",
-      "→ Confirm Revive Crystal is crafted [check]",
-      "→ Research the Return Dominion scroll [check]",
-      "→ The Lost Void age begins [command]"
-    ],
-    "groups": {
-      "After the Dragon": {
-        "position": [
-          0,
-          750
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "lifesteal:revive_crystal",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Return Dominion scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "revive_crystal": {
+   "item": {
+    "id": "lifesteal:revive_crystal",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Return Dominion"
+  },
+  "subtitle": {
+   "text": "You are the thirteenth civilization. Act accordingly."
+  },
+  "description": [
+   "Ch15 is complete.",
+   "",
+   "You have returned from the End.",
+   "You have reconnected with the community you built.",
+   "You have explored the Lost Void.",
+   "You have crafted the symbol of return.",
+   "You have begun the first piece of Ch16 master crafting.",
+   "",
+   "The Return Dominion scroll marks the formalization of your civilization.",
+   "It is found in End City reward chests and deep True End structures.",
+   "Research it. It is the declaration that the thirteenth civilization has survived",
+   "what killed the previous twelve.",
+   "",
+   "The Lost Void age opens Ch16.",
+   "Ch16 is the long road home — Celestisynth mastery,",
+   "the highest tier crafting, and the return to community at scale.",
+   "",
+   "→ Confirm Revive Crystal is crafted [check]",
+   "→ Research the Return Dominion scroll [check]",
+   "→ The Lost Void age begins [command]"
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     2300,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "lifesteal:revive_crystal",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

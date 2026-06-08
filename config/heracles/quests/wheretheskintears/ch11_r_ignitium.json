@@ -1,90 +1,127 @@
 {
-  "dependencies": ["ch11_r_cataclysm_forge"],
-  "tasks": {
-    "ignitium_set": {
-      "title": "Complete the Ignitium armor set — all four pieces for full set bonus (fire immunity passive)",
-      "icon": {"item": {"id": "cataclysm:ignitium", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch11_r_cataclysm_forge"
+ ],
+ "tasks": {
+  "ignitium_set": {
+   "title": "Complete the Ignitium armor set — all four pieces for full set bonus (fire immunity passive)",
+   "icon": {
+    "item": {
+     "id": "cataclysm:ignitium",
+     "count": 1
     },
-    "lacrima_drop": {
-      "type": "heracles:item",
-      "item": "cataclysm:lacrima",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ignitium_bonus": {"item": {"id": "cataclysm:ignitium", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Ignitium and Lacrima"},
-    "subtitle": {"text": "Ignis drops Ignitium. The Monstrosity drops Lacrima. Both materials. Both gates. One chapter."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.11 · IGNITIUM AND LACRIMA",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Ch11 drops two critical materials.",
-      "  Ignitium from Ignis: the fire armor set.",
-      "  Lacrima from the Netherite Monstrosity: the age trigger.",
-      "  Both have separate uses.",
-      "  Both require different bosses.",
-      "  Farm them in the correct order.",
-      "",
-      "◈ IGNITIUM ARMOR SET",
-      "  └ cataclysm:ignitium — material from Ignis fight",
-      "  └ Full set: Helmet, Chestplate, Leggings, Boots",
-      "  └ Set bonus (full 4 pieces): Fire Immunity passive",
-      "    No fire damage from any source while wearing all four",
-      "  └ Additional: strong Cataclysm-tier protection",
-      "  └ Upgrade path: Ignitium → Emulator gear (final tier)",
-      "",
-      "◈ IGNITIUM WEAPON",
-      "  └ Ignitium Sword: applies Ignite on hit",
-      "  └ Ignite: fire DOT that bypasses fire resistance",
-      "    (Ignitium armor does NOT protect against its own sword)",
-      "  └ Best against: non-fire enemies in Ch12+",
-      "  └ Check JEI for all Ignitium crafting recipes",
-      "",
-      "◈ LACRIMA — INFERNAL AGE TRIGGER",
-      "  └ cataclysm:lacrima — drops from Netherite Monstrosity",
-      "  └ Obtaining Lacrima triggers the Infernal Age (Ch12)",
-      "  └ DO NOT farm Monstrosity until you are ready for Ch12",
-      "    Lacrima triggers the age transition automatically",
-      "  └ If you are still mid-Ch11 progression: skip Monstrosity",
-      "  └ Lacrima is also a crafting ingredient for Ch12 recipes",
-      "",
-      "◈ FARMING ORDER",
-      "  └ Step 1: Kill Ignis (get Ignitium) → craft full set",
-      "  └ Step 2: Kill Annihilator (get Annihilator drops)",
-      "  └ Step 3: Fight Emulator in full Ignitium set",
-      "  └ Step 4: WHEN READY for Ch12 → kill Monstrosity",
-      "    (Lacrima = Ch12 gate trigger)",
-      "",
-      "▸ Ignitium was the fire that refused to burn out.",
-      "  Lacrima was the tear the Nether shed",
-      "  when something it valued was lost.",
-      "  The Monstrosity was the Nether trying to get it back.",
-      "  You are the reason it couldn't.",
-      "",
-      "▶ Complete the Ignitium armor set [check]",
-      "▶ Obtain Lacrima (when ready for Ch12)",
-      "",
-      "◇ Lacrima is the Ch12 gate — obtain LAST in Ch11.",
-      "  Clear all Cataclysm fights, build Emulator gear,",
-      "  then kill the Monstrosity as your Ch12 entry ticket."
-    ],
-    "groups": {"Where the Skin Tears": {"position": [600, 150]}},
-    "icon": {"item": {"id": "cataclysm:lacrima", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "lacrima_drop": {
+   "type": "heracles:item",
+   "item": "cataclysm:lacrima",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "ignitium_bonus": {
+   "item": {
+    "id": "cataclysm:ignitium",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Ignitium and Lacrima"
+  },
+  "subtitle": {
+   "text": "Ignis drops Ignitium. The Monstrosity drops Lacrima. Both materials. Both gates. One chapter."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.11 · IGNITIUM AND LACRIMA",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Ch11 drops two critical materials.",
+   "  Ignitium from Ignis: the fire armor set.",
+   "  Lacrima from the Netherite Monstrosity: the age trigger.",
+   "  Both have separate uses.",
+   "  Both require different bosses.",
+   "  Farm them in the correct order.",
+   "",
+   "◈ IGNITIUM ARMOR SET",
+   "  └ cataclysm:ignitium — material from Ignis fight",
+   "  └ Full set: Helmet, Chestplate, Leggings, Boots",
+   "  └ Set bonus (full 4 pieces): Fire Immunity passive",
+   "    No fire damage from any source while wearing all four",
+   "  └ Additional: strong Cataclysm-tier protection",
+   "  └ Upgrade path: Ignitium → Emulator gear (final tier)",
+   "",
+   "◈ IGNITIUM WEAPON",
+   "  └ Ignitium Sword: applies Ignite on hit",
+   "  └ Ignite: fire DOT that bypasses fire resistance",
+   "    (Ignitium armor does NOT protect against its own sword)",
+   "  └ Best against: non-fire enemies in Ch12+",
+   "  └ Check JEI for all Ignitium crafting recipes",
+   "",
+   "◈ LACRIMA — INFERNAL AGE TRIGGER",
+   "  └ cataclysm:lacrima — drops from Netherite Monstrosity",
+   "  └ Obtaining Lacrima triggers the Infernal Age (Ch12)",
+   "  └ DO NOT farm Monstrosity until you are ready for Ch12",
+   "    Lacrima triggers the age transition automatically",
+   "  └ If you are still mid-Ch11 progression: skip Monstrosity",
+   "  └ Lacrima is also a crafting ingredient for Ch12 recipes",
+   "",
+   "◈ FARMING ORDER",
+   "  └ Step 1: Kill Ignis (get Ignitium) → craft full set",
+   "  └ Step 2: Kill Annihilator (get Annihilator drops)",
+   "  └ Step 3: Fight Emulator in full Ignitium set",
+   "  └ Step 4: WHEN READY for Ch12 → kill Monstrosity",
+   "    (Lacrima = Ch12 gate trigger)",
+   "",
+   "▸ Ignitium was the fire that refused to burn out.",
+   "  Lacrima was the tear the Nether shed",
+   "  when something it valued was lost.",
+   "  The Monstrosity was the Nether trying to get it back.",
+   "  You are the reason it couldn't.",
+   "",
+   "▶ Complete the Ignitium armor set [check]",
+   "▶ Obtain Lacrima (when ready for Ch12)",
+   "",
+   "◇ Lacrima is the Ch12 gate — obtain LAST in Ch11.",
+   "  Clear all Cataclysm fights, build Emulator gear,",
+   "  then kill the Monstrosity as your Ch12 entry ticket."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1840,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:lacrima",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

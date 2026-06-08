@@ -1,64 +1,101 @@
 {
-  "dependencies": ["ch15_world"],
-  "tasks": {
-    "atlas_complete": {
-      "title": "Fill out your Antique Atlas — mark every major location you have visited across 17 chapters",
-      "icon": {"item": {"id": "antiqueatlas:antique_atlas", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_world"
+ ],
+ "tasks": {
+  "atlas_complete": {
+   "title": "Fill out your Antique Atlas — mark every major location you have visited across 17 chapters",
+   "icon": {
+    "item": {
+     "id": "antiqueatlas:antique_atlas",
+     "count": 1
     },
-    "atlas_markers": {
-      "title": "Place at least 20 custom markers on the Antique Atlas (bases, dungeons, boss locations, portals)",
-      "icon": {"item": {"id": "antiqueatlas:antique_atlas", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "atlas": {
-      "item": {"id": "antiqueatlas:antique_atlas", "count": 1},
-      "type": "heracles:item"
+  "atlas_markers": {
+   "title": "Place at least 20 custom markers on the Antique Atlas (bases, dungeons, boss locations, portals)",
+   "icon": {
+    "item": {
+     "id": "antiqueatlas:antique_atlas",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Atlas"},
-    "subtitle": {"text": "The previous civilizations did not make adequate maps. You are."},
-    "description": [
-      "Antique Atlas auto-generates maps as you travel.",
-      "Custom markers can be placed manually to record important locations.",
-      "",
-      "Recommended markers for 20+:",
-      "- Your main base (home)",
-      "- All village locations",
-      "- Stronghold location (End Portal)",
-      "- All boss fight locations",
-      "- All chapter gate locations",
-      "- Nether portal(s)",
-      "- End portal location",
-      "- Ocean Monument",
-      "- Wither fight location",
-      "- Major dungeon locations",
-      "- Via Romana road network key points",
-      "- Antique Atlas auto-marks some structures — verify",
-      "",
-      "The atlas is the record of your civilization's territory.",
-      "When future inheritors arrive, this is what survives.",
-      "",
-      "→ Fill out the atlas with visited locations [check]",
-      "→ Place 20+ custom markers [check]"
-    ],
-    "groups": {"After the Dragon": {"position": [150, 0]}},
-    "icon": {"item": {"id": "antiqueatlas:antique_atlas", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "atlas": {
+   "item": {
+    "id": "antiqueatlas:antique_atlas",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Atlas"
+  },
+  "subtitle": {
+   "text": "The previous civilizations did not make adequate maps. You are."
+  },
+  "description": [
+   "Antique Atlas auto-generates maps as you travel.",
+   "Custom markers can be placed manually to record important locations.",
+   "",
+   "Recommended markers for 20+:",
+   "- Your main base (home)",
+   "- All village locations",
+   "- Stronghold location (End Portal)",
+   "- All boss fight locations",
+   "- All chapter gate locations",
+   "- Nether portal(s)",
+   "- End portal location",
+   "- Ocean Monument",
+   "- Wither fight location",
+   "- Major dungeon locations",
+   "- Via Romana road network key points",
+   "- Antique Atlas auto-marks some structures — verify",
+   "",
+   "The atlas is the record of your civilization's territory.",
+   "When future inheritors arrive, this is what survives.",
+   "",
+   "→ Fill out the atlas with visited locations [check]",
+   "→ Place 20+ custom markers [check]"
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     460,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "antiqueatlas:antique_atlas",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

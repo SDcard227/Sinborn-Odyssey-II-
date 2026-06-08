@@ -1,0 +1,61 @@
+{
+ "dependencies": [
+  "ch16_world"
+ ],
+ "tasks": {
+  "craft": {
+   "type": "heracles:item",
+   "item": "ptd:philosopher_stone",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Brew the Philosopher's Stone (Mass Accumulate ritual)"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Creation Vessel"
+  },
+  "subtitle": {
+   "text": "To obtain, something of equal value must be lost."
+  },
+  "description": [
+   "The first Vessel. The Stone that breaks equivalent exchange , because its price is paid by souls that did not agree to pay.",
+   "The Path to Divinity scroll encodes the Homunculus chain, the 999-soul Mass Accumulate the Nightwarden's lineage left behind.",
+   "You know what it is. You know what paid for it. You make it anyway , because the alternative is not finishing the journey.",
+   "",
+   "Vessel 1 of 5: Creation."
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     460,
+     1200
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "ptd:philosopher_stone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

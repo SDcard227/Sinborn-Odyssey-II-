@@ -1,0 +1,81 @@
+{
+ "dependencies": [
+  "ch14_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "minecraft:ender_dragon",
+   "amount": 1,
+   "title": "Slay the beast and claim its body"
+  },
+  "harvest": {
+   "type": "heracles:item",
+   "item": "ends_delight:raw_dragon_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Harvest its meat , waste nothing"
+  },
+  "cook": {
+   "type": "heracles:item",
+   "item": "ends_delight:roasted_dragon_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Cook it , and eat"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "dish": {
+   "item": {
+    "id": "ends_delight:roasted_dragon_meat",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Feast at the World's Edge"
+  },
+  "subtitle": {
+   "text": "The apex hunt IS the apex meal."
+  },
+  "description": [
+   "Every civilization that entered the End was consumed by it. The Sinborn eat the Ender Dragon.",
+   "She is the Last True Dragon, the Nightwarden's one working prototype , and she is the final course.",
+   "Dragon leg with ender sauce. Roasted dragon meat. You take divinity into your body.",
+   "",
+   "Eating is simply the privilege of the living. Eat the world's edge."
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "ends_delight:roasted_dragon_meat",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

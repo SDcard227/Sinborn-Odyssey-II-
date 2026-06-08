@@ -1,0 +1,15 @@
+{
+  "display_name": "The Soul Black Smith",
+  "research_time": 18000,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

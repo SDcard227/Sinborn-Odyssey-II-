@@ -1,89 +1,126 @@
 {
-  "dependencies": ["ch13_r_trueend2"],
-  "tasks": {
-    "dream_chest": {
-      "title": "Loot 3 unique Beyond the Dream chests — collect rare materials exclusive to the dimension",
-      "icon": {"item": {"id": "minecraft:chest", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_r_trueend2"
+ ],
+ "tasks": {
+  "dream_chest": {
+   "title": "Loot 3 unique Beyond the Dream chests — collect rare materials exclusive to the dimension",
+   "icon": {
+    "item": {
+     "id": "minecraft:chest",
+     "count": 1
     },
-    "echo_shard_stack": {
-      "type": "heracles:item",
-      "item": "minecraft:echo_shard",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "echo_shard": {"item": {"id": "minecraft:echo_shard", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Dream Goes Deeper"},
-    "subtitle": {"text": "You thought Beyond the Dream was a destination. It is a direction. The loot is in the depth."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.13 · THE DREAM GOES DEEPER",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Beyond the Dream has depth.",
-      "  You passed through the initial layer in Ch13.",
-      "  The deeper structures hold materials not found elsewhere.",
-      "  Echo Shards — normally only in Ancient Cities —",
-      "  appear in True End structure chests.",
-      "  This is the only renewable Echo Shard source late-game.",
-      "",
-      "◈ DEEP LOOT STRATEGY",
-      "  └ True End structures generate in clusters",
-      "    (explore in spirals from entry point, not straight lines)",
-      "  └ Chest types: standard loot tables + True End exclusives",
-      "  └ Echo Shards: required for Recovery Compass + Ch14 recipes",
-      "  └ Unique drops: check JEI for True End exclusive item uses",
-      "  └ Mob difficulty scales with structure depth",
-      "    (surface structures = easier; deep clusters = full difficulty)",
-      "",
-      "◈ ECHO SHARD USES",
-      "  └ Recovery Compass: tracks your last death location",
-      "    (8 Echo Shards + Compass = Recovery Compass)",
-      "    Essential: End void deaths lose all inventory",
-      "    Recovery Compass tells you EXACTLY where you died",
-      "  └ Ch14 crafting: End's Delight Dragon Egg Research",
-      "    and advanced recipes may require Echo Shards",
-      "  └ ISS Eldritch school: ancienttome recipes use Shard",
-      "    (check Immersive Enchanting + Eldritch school interaction)",
-      "",
-      "◈ RECOVERY COMPASS PRIORITY",
-      "  └ If you die in the End: pearls, Elytra, and Chorus can be lost",
-      "  └ Recovery Compass locates your last death in same dimension",
-      "  └ Pair with a Shulker Box loadout near your farm base",
-      "    so you can resupply at the death site if you retrieve items",
-      "  └ Craft this before Ch14 deep-End expedition begins",
-      "",
-      "▸ The Echo Shard holds sound.",
-      "  The sounds of the dimension it was found in.",
-      "  In the Ancient City it holds screaming.",
-      "  In the True End it holds something quieter.",
-      "  Something that was said once, in the dark,",
-      "  by something that expected no one would ever find it.",
-      "",
-      "▶ Loot 3 unique Beyond the Dream chests [check]",
-      "▶ Collect 8 Echo Shards",
-      "",
-      "◇ Echo Shards feed directly into Ch14 progression.",
-      "  Recovery Compass is a life-insurance item for End players.",
-      "  Craft it before leaving the True End.",
-      "  Losing Elytra to a void death without it",
-      "  is the kind of setback that ends runs."
-    ],
-    "groups": {"The Shattered Law": {"position": [-450, 150]}},
-    "icon": {"item": {"id": "minecraft:echo_shard", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "echo_shard_stack": {
+   "type": "heracles:item",
+   "item": "minecraft:echo_shard",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "echo_shard": {
+   "item": {
+    "id": "minecraft:echo_shard",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Dream Goes Deeper"
+  },
+  "subtitle": {
+   "text": "You thought Beyond the Dream was a destination. It is a direction. The loot is in the depth."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.13 · THE DREAM GOES DEEPER",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Beyond the Dream has depth.",
+   "  You passed through the initial layer in Ch13.",
+   "  The deeper structures hold materials not found elsewhere.",
+   "  Echo Shards — normally only in Ancient Cities —",
+   "  appear in True End structure chests.",
+   "  This is the only renewable Echo Shard source late-game.",
+   "",
+   "◈ DEEP LOOT STRATEGY",
+   "  └ True End structures generate in clusters",
+   "    (explore in spirals from entry point, not straight lines)",
+   "  └ Chest types: standard loot tables + True End exclusives",
+   "  └ Echo Shards: required for Recovery Compass + Ch14 recipes",
+   "  └ Unique drops: check JEI for True End exclusive item uses",
+   "  └ Mob difficulty scales with structure depth",
+   "    (surface structures = easier; deep clusters = full difficulty)",
+   "",
+   "◈ ECHO SHARD USES",
+   "  └ Recovery Compass: tracks your last death location",
+   "    (8 Echo Shards + Compass = Recovery Compass)",
+   "    Essential: End void deaths lose all inventory",
+   "    Recovery Compass tells you EXACTLY where you died",
+   "  └ Ch14 crafting: End's Delight Dragon Egg Research",
+   "    and advanced recipes may require Echo Shards",
+   "  └ ISS Eldritch school: ancienttome recipes use Shard",
+   "    (check Immersive Enchanting + Eldritch school interaction)",
+   "",
+   "◈ RECOVERY COMPASS PRIORITY",
+   "  └ If you die in the End: pearls, Elytra, and Chorus can be lost",
+   "  └ Recovery Compass locates your last death in same dimension",
+   "  └ Pair with a Shulker Box loadout near your farm base",
+   "    so you can resupply at the death site if you retrieve items",
+   "  └ Craft this before Ch14 deep-End expedition begins",
+   "",
+   "▸ The Echo Shard holds sound.",
+   "  The sounds of the dimension it was found in.",
+   "  In the Ancient City it holds screaming.",
+   "  In the True End it holds something quieter.",
+   "  Something that was said once, in the dark,",
+   "  by something that expected no one would ever find it.",
+   "",
+   "▶ Loot 3 unique Beyond the Dream chests [check]",
+   "▶ Collect 8 Echo Shards",
+   "",
+   "◇ Echo Shards feed directly into Ch14 progression.",
+   "  Recovery Compass is a life-insurance item for End players.",
+   "  Craft it before leaving the True End.",
+   "  Losing Elytra to a void death without it",
+   "  is the kind of setback that ends runs."
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     1380,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:echo_shard",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

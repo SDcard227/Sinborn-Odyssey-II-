@@ -1,54 +1,85 @@
 {
-  "dependencies": ["ch03_world"],
-  "tasks": {
-    "find": {
-      "title": "Find a Stymphalian Bird nest",
-      "icon": {"item": {"id": "iceandfire:stymphalian_feather", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch03_world"
+ ],
+ "tasks": {
+  "find": {
+   "title": "Find a Stymphalian Bird nest",
+   "icon": {
+    "item": {
+     "id": "iceandfire:stymphalian_feather",
+     "count": 1
     },
-    "feather": {
-      "type": "heracles:item",
-      "item": "iceandfire:stymphalian_feather",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "arrow": {
-      "item": {"id": "minecraft:arrow", "count": 32},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 4},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Stymphalian Skies"},
-    "subtitle": {"text": "Bronze wings. Razor feathers. Nothing gentle about them."},
-    "description": [
-      "Ice and Fire's Stymphalian Birds nest in grasslands and savannas.",
-      "They are aggressive, airborne, and fast.",
-      "",
-      "Their feathers are bronze — sharper than you expect.",
-      "Collect them. They have uses.",
-      "",
-      "Keep moving. Keep your shield up.",
-      "They attack in groups.",
-      "",
-      "→ Find a Stymphalian Bird nest [check]",
-      "→ Collect 4 Stymphalian feathers"
-    ],
-    "groups": {"The Rotting Gate": {"position": [-150, 0]}},
-    "icon": {"item": {"id": "iceandfire:stymphalian_feather", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "feather": {
+   "type": "heracles:item",
+   "item": "iceandfire:stymphalian_feather",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "arrow": {
+   "item": {
+    "id": "minecraft:arrow",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Stymphalian Skies"
+  },
+  "subtitle": {
+   "text": "Bronze wings. Razor feathers. Nothing gentle about them."
+  },
+  "description": [
+   "Ice and Fire's Stymphalian Birds nest in grasslands and savannas.",
+   "They are aggressive, airborne, and fast.",
+   "",
+   "Their feathers are bronze — sharper than you expect.",
+   "Collect them. They have uses.",
+   "",
+   "Keep moving. Keep your shield up.",
+   "They attack in groups.",
+   "",
+   "→ Find a Stymphalian Bird nest [check]",
+   "→ Collect 4 Stymphalian feathers"
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     460,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "iceandfire:stymphalian_feather",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

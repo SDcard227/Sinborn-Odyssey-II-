@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Dragon Husbandry scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Dragon Husbandry scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Dragon Husbandry scroll",
-      "icon": {
-        "item": {
-          "id": "iceandfire:dragon_horn",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock dragon_husbandry"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Dragon Husbandry"
+  "research_scroll": {
+   "title": "Research the Dragon Husbandry scroll",
+   "icon": {
+    "item": {
+     "id": "iceandfire:dragon_horn",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Sun-cult records. Painted on bone.\"",
-      "",
-      "Ice & Fire dragon taming + breeding chain.",
-      "",
-      "This scroll unlocks 6 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Mowziesmobs:Chests/Umvuthana Grove Chest",
-      "  \u00b7 Jungle Temple",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Dragon Husbandry] [auto]"
-    ],
-    "groups": {
-      "Below the Waking World": {
-        "position": [
-          950,
-          1020
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "iceandfire:dragon_horn",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock dragon_husbandry"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sun",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Dragon Husbandry"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Sun-cult records. Painted on bone.\"",
+   "",
+   "Ice & Fire dragon taming + breeding chain.",
+   "",
+   "This scroll unlocks 6 items.",
+   "",
+   "Look for it in:",
+   "  · Mowziesmobs:Chests/Umvuthana Grove Chest",
+   "  · Jungle Temple",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Dragon Husbandry] [auto]"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     0,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "iceandfire:dragon_horn",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

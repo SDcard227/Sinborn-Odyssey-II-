@@ -1,97 +1,97 @@
 {
-  "dependencies": [
-    "ch10_world"
-  ],
-  "tasks": {
-    "kill_the_wither": {
-      "title": "Kill the Wither or Wither Reincarnated",
-      "icon": {
-        "item": {
-          "id": "minecraft:wither_skeleton_skull",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [
+  "ch10_world"
+ ],
+ "tasks": {
+  "kill_the_wither": {
+   "title": "Kill the Wither or Wither Reincarnated",
+   "icon": {
+    "item": {
+     "id": "minecraft:wither_skeleton_skull",
+     "count": 1
     },
-    "pickup_nether_star": {
-      "title": "Pick up the Nether Star",
-      "icon": {
-        "item": {
-          "id": "minecraft:nether_star",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "nether_star_bonus": {
-      "item": {
-        "id": "minecraft:nether_star",
-        "count": 1
-      },
-      "type": "heracles:item"
+  "pickup_nether_star": {
+   "title": "Pick up the Nether Star",
+   "icon": {
+    "item": {
+     "id": "minecraft:nether_star",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "subtitle": {
-      "translate": "The Wither is not the danger. The star it leaves behind is the beginning."
-    },
-    "description": [
-      "The Wither fight is a boss encounter.",
-      "It flies. It fires Wither skulls that cause the Wither status effect.",
-      "Milk removes Wither status. Golden apples help.",
-      "At half health, it gains damage immunity to projectiles.",
-      "Melee is required for the last half of the fight.",
-      "",
-      "Wither Reincarnated enhances the vanilla Wither fight",
-      "with additional phases and attacks.",
-      "The boss lock requires the Wither scroll before it can be damaged.",
-      "",
-      "The Nether Star is the power source for Beacons.",
-      "It is also the trigger item for nuclear_age.",
-      "Hold it and the factory's next chapter begins.",
-      "",
-      "The Wither Eye anchor is its drop chain — covered in the Ch12 ribs.",
-      "",
-      "→ Kill the Wither or Wither Reincarnated [check]",
-      "→ Pick up the Nether Star"
-    ],
-    "groups": {
-      "The Pale Shore": {
-        "position": [
-          1,
-          151
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:nether_star",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
-    "title": {
-      "translate": "The Pale Star"
-    }
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "nether_star_bonus": {
+   "item": {
+    "id": "minecraft:nether_star",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "subtitle": {
+   "translate": "The Wither is not the danger. The star it leaves behind is the beginning."
+  },
+  "description": [
+   "The Wither fight is a boss encounter.",
+   "It flies. It fires Wither skulls that cause the Wither status effect.",
+   "Milk removes Wither status. Golden apples help.",
+   "At half health, it gains damage immunity to projectiles.",
+   "Melee is required for the last half of the fight.",
+   "",
+   "Wither Reincarnated enhances the vanilla Wither fight",
+   "with additional phases and attacks.",
+   "The boss lock requires the Wither scroll before it can be damaged.",
+   "",
+   "The Nether Star is the power source for Beacons.",
+   "It is also the trigger item for nuclear_age.",
+   "Hold it and the factory's next chapter begins.",
+   "",
+   "The Wither Eye anchor is its drop chain — covered in the Ch12 ribs.",
+   "",
+   "→ Kill the Wither or Wither Reincarnated [check]",
+   "→ Pick up the Nether Star"
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     460,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:nether_star",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+  "title": {
+   "translate": "The Pale Star"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

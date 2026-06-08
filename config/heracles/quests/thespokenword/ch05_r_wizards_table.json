@@ -1,115 +1,115 @@
 {
-  "dependencies": [
-    "ch05_r_arcane"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/wizards_table"
-    },
-    "arcane_table": {
-      "title": "Craft or find an Arcane Worktable (Iron's Spellbooks — needed for advanced spell crafting)",
-      "icon": {
-        "item": {
-          "id": "irons_spellbooks:arcane_anvil",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch05_r_arcane"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Wizards Table scroll at a Research Pedestal"
   },
-  "rewards": {
-    "spell": {
-      "item": {
-        "id": "irons_spellbooks:scroll",
-        "count": 3
-      },
-      "type": "heracles:item"
+  "arcane_table": {
+   "title": "Craft or find an Arcane Worktable (Iron's Spellbooks — needed for advanced spell crafting)",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:arcane_anvil",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Wizard's Table"
-    },
-    "subtitle": {
-      "text": "The arcane worktable is where magic stops being discovered and starts being built."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.05 · THE WIZARD'S TABLE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Iron's Spellbooks Wizard mobs are the main source",
-      "  of rare spell scrolls and spell-crafting materials.",
-      "  The Wizard's Table scroll drops from them directly.",
-      "  Read it. Then find them.",
-      "",
-      "◈ ISS WIZARD MOB",
-      "  └ Spawns in: witch huts, mage towers,",
-      "    wizard camp structures (night spawns)",
-      "  └ Drops: dacxirons scroll (12%),",
-      "    random spell scrolls, mana-related items",
-      "  └ ▲ Wizards cast active spells — dodge their AoE",
-      "  └ ISS Wizard ≠ vanilla Witch (separate mob)",
-      "",
-      "◈ ARCANE WORKTABLE",
-      "  └ Crafts specific spells from components",
-      "  └ Allows upgrading spell level (I → II → III)",
-      "  └ Requires: mana crystals + school-specific materials",
-      "  └ T.O Magic 'n Extras (traveloptics namespace)",
-      "    is an ISS addon — adds additional items",
-      "",
-      "◈ SCROLL: The Wizard's Table",
-      "  └ Found in: ISS Wizard drops (12%),",
-      "    wizard tower loot, arcane workshop ruins",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: arcane worktable system, ISS Wizard awareness,",
-      "    spell upgrading knowledge",
-      "",
-      "▸ The scroll was written by a wizard",
-      "  explaining to non-wizards how wizards think.",
-      "  It is more useful to non-wizards than to wizards.",
-      "  The wizard knew that.",
-      "",
-      "▶ Find The Wizard's Table scroll [check]",
-      "▶ Craft or find an Arcane Worktable [check]",
-      "",
-      "◇ Spell Schools scroll (Ch09) covers the full",
-      "  casting system — mana, scaling, combat integration.",
-      "  The Wizard's Table is the workshop.",
-      "  The School is the curriculum."
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          300,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "irons_spellbooks:arcane_anvil",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "spell": {
+   "item": {
+    "id": "irons_spellbooks:scroll",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Wizard's Table"
+  },
+  "subtitle": {
+   "text": "The arcane worktable is where magic stops being discovered and starts being built."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.05 · THE WIZARD'S TABLE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Iron's Spellbooks Wizard mobs are the main source",
+   "  of rare spell scrolls and spell-crafting materials.",
+   "  The Wizard's Table scroll drops from them directly.",
+   "  Read it. Then find them.",
+   "",
+   "◈ ISS WIZARD MOB",
+   "  └ Spawns in: witch huts, mage towers,",
+   "    wizard camp structures (night spawns)",
+   "  └ Drops: dacxirons scroll (12%),",
+   "    random spell scrolls, mana-related items",
+   "  └ ▲ Wizards cast active spells — dodge their AoE",
+   "  └ ISS Wizard ≠ vanilla Witch (separate mob)",
+   "",
+   "◈ ARCANE WORKTABLE",
+   "  └ Crafts specific spells from components",
+   "  └ Allows upgrading spell level (I → II → III)",
+   "  └ Requires: mana crystals + school-specific materials",
+   "  └ T.O Magic 'n Extras (traveloptics namespace)",
+   "    is an ISS addon — adds additional items",
+   "",
+   "◈ SCROLL: The Wizard's Table",
+   "  └ Found in: ISS Wizard drops (12%),",
+   "    wizard tower loot, arcane workshop ruins",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: arcane worktable system, ISS Wizard awareness,",
+   "    spell upgrading knowledge",
+   "",
+   "▸ The scroll was written by a wizard",
+   "  explaining to non-wizards how wizards think.",
+   "  It is more useful to non-wizards than to wizards.",
+   "  The wizard knew that.",
+   "",
+   "▶ Find The Wizard's Table scroll [check]",
+   "▶ Craft or find an Arcane Worktable [check]",
+   "",
+   "◇ Spell Schools scroll (Ch09) covers the full",
+   "  casting system — mana, scaling, combat integration.",
+   "  The Wizard's Table is the workshop.",
+   "  The School is the curriculum."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     2900,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:arcane_anvil",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

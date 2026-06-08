@@ -1,0 +1,79 @@
+{
+ "dependencies": [
+  "ch02_r_scroll_cookware_forging"
+ ],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Master Kitchen scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "research_scroll": {
+   "title": "Research the The Master Kitchen scroll",
+   "icon": {
+    "item": {
+     "id": "farmersdelight:stove",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock cookware_advanced"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Master Kitchen"
+  },
+  "subtitle": {
+   "text": "Nether-stove and the fermenter’s art."
+  },
+  "description": [
+   "The advanced hearth: nether and end stoves, the confection oven, fermentation tanks and the evaporator.",
+   "",
+   "Unlocks 16 items. Requires the Coppersmith's Kitchen first.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Master Kitchen] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     600,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "farmersdelight:stove",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
+}

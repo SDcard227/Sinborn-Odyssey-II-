@@ -1,0 +1,20 @@
+{
+  "display_name": "The Scroll of the Tongbi Eye",
+  "research_time": 3600,
+  "items": [
+    "mowzies_cataclysm:tongbi_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "mowzies_cataclysm:tongbi_eye",
+    "sinborn:mechanical_crafting/mowz_tongbi_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

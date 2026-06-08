@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch12_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Codex of Kept Creatures at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:bone",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock kept_creatures",
+   "title": "Discipline learned: The Codex of Kept Creatures",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Codex of Kept Creatures"
+  },
+  "subtitle": {
+   "text": "The companions you choose to keep."
+  },
+  "description": [
+   "A kingdom is not only people. It is the creatures that share the hearth.",
+   "Pets, familiars, the kept companions — the proof that you are building a home, not just a fortress.",
+   "",
+   "→ Recover and study the Codex of Kept Creatures at a Research Pedestal."
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:bone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

@@ -1,77 +1,77 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The Trim Smithing Arts scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Trim Smithing Arts scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The Trim Smithing Arts scroll",
-      "icon": {
-        "item": {
-          "id": "luminous_nether:cultist_armor_trim",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock trim_smithing"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The Trim Smithing Arts"
+  "research_scroll": {
+   "title": "Research the The Trim Smithing Arts scroll",
+   "icon": {
+    "item": {
+     "id": "luminous_nether:cultist_armor_trim",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Copied between every civilization that touched it.\"",
-      "",
-      "This scroll unlocks 5 items.",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The Trim Smithing Arts] [auto]"
-    ],
-    "groups": {
-      "The Rotting Gate": {
-        "position": [
-          596,
-          840
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "luminous_nether:cultist_armor_trim",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock trim_smithing"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Trim Smithing Arts"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Copied between every civilization that touched it.\"",
+   "",
+   "This scroll unlocks 5 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Trim Smithing Arts] [auto]"
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     0,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "luminous_nether:cultist_armor_trim",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,91 +1,134 @@
 {
-  "dependencies": ["ch16_forge"],
-  "tasks": {
-    "ancient_books": {
-      "title": "Collect 5 Ancient Books from Chiseled Bookshelves (Immersive Enchanting) — dungeon/structure loot",
-      "icon": {"item": {"id": "minecraft:enchanted_book", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_forge"
+ ],
+ "tasks": {
+  "ancient_books": {
+   "title": "Collect 5 Ancient Books from Chiseled Bookshelves (Immersive Enchanting) — dungeon/structure loot",
+   "icon": {
+    "item": {
+     "id": "minecraft:enchanted_book",
+     "count": 1
     },
-    "immersive_enchant": {
-      "title": "Use Immersive Enchanting to apply a chosen enchantment without RNG — select exact enchant from Ancient Book",
-      "icon": {"item": {"id": "minecraft:bookshelf", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "enchanted_book": {"item": {"id": "minecraft:enchanted_book", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Immersive Enchanting"},
-    "subtitle": {"text": "No RNG. You choose the enchantment. Ancient Books are the currency. Chiseled Bookshelves are the source."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.16 · IMMERSIVE ENCHANTING",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Vanilla enchanting is RNG.",
-      "  Immersive Enchanting removes the RNG.",
-      "  You gather Ancient Books — the enchantment currency.",
-      "  You place them in Chiseled Bookshelves around your enchanting table.",
-      "  You choose exactly which enchantment to apply.",
-      "  The cost is the Ancient Book, not levels.",
-      "  This is the correct way to enchant in Ch16.",
-      "",
-      "◈ HOW IMMERSIVE ENCHANTING WORKS",
-      "  └ Ancient Books: found in Chiseled Bookshelves in structures",
-      "    (Ancient Cities: best source; Bastions, End Cities, Strongholds)",
-      "  └ Chiseled Bookshelf (vanilla): place near Enchanting Table",
-      "    Load with Ancient Books to power the table",
-      "  └ Enchanting table UI: with Ancient Books in bookshelves,",
-      "    you see the full enchantment list and can select exactly",
-      "  └ Material cost: each enchantment costs specific Ancient Books",
-      "    + standard experience levels (no level gambling)",
-      "",
-      "◈ ENCHANTMENT SELECTION STRATEGY",
-      "  └ Priority 1: Mending on all Celestial Netherite armor pieces",
-      "    (Mending = effectively infinite durability via XP)",
-      "  └ Priority 2: Protection IV on all armor (standard max)",
-      "  └ Priority 3: Sharpness V on sword (then upgrade to VI via Ancient Tome)",
-      "  └ Priority 4: Efficiency V on pickaxe (then VI via Ancient Tome)",
-      "  └ Use Immersive Enchanting for all Celestial gear enchants:",
-      "    the gear is too expensive to waste on RNG rolls",
-      "",
-      "◈ ANCIENT BOOK FARMING",
-      "  └ Best source: Ancient Cities (Skulk deep underground)",
-      "    Risk: Warden territory — sculk_warding scroll provides context",
-      "    (Ch09 Warden + Ch10 sculk content — you have this gear)",
-      "  └ Secondary source: Lootr dungeon loot",
-      "    (Lootr: per-player loot reset — revisit structures for more books)",
-      "  └ Tertiary: Bastion Remnants, Strongholds, End Cities",
-      "",
-      "▸ Every civilization chose enchanting differently.",
-      "  The first ones gambled with levels and hoped.",
-      "  The later ones found the library approach.",
-      "  Ancient Books are what the previous libraries left behind.",
-      "  The knowledge is already written.",
-      "  You are paying with found knowledge, not with luck.",
-      "  That is the correct approach at Ch16.",
-      "",
-      "▶ Collect 5 Ancient Books [check]",
-      "▶ Apply an Immersive Enchanting selection to a piece of gear [check]",
-      "",
-      "◇ Ancient Tomes (Quark) work differently from Ancient Books (Immersive).",
-      "  Ancient Tomes add +1 level to an existing enchantment above the vanilla cap.",
-      "  (Sharpness V + Ancient Tome = Sharpness VI)",
-      "  Stack: Immersive Enchanting first (to V), then Ancient Tome (to VI).",
-      "  Both are required for the true ceiling."
-    ],
-    "groups": {"The Long Road Home": {"position": [450, 150]}},
-    "icon": {"item": {"id": "minecraft:enchanted_book", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "immersive_enchant": {
+   "title": "Use Immersive Enchanting to apply a chosen enchantment without RNG — select exact enchant from Ancient Book",
+   "icon": {
+    "item": {
+     "id": "minecraft:bookshelf",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "enchanted_book": {
+   "item": {
+    "id": "minecraft:enchanted_book",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Immersive Enchanting"
+  },
+  "subtitle": {
+   "text": "No RNG. You choose the enchantment. Ancient Books are the currency. Chiseled Bookshelves are the source."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.16 · IMMERSIVE ENCHANTING",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Vanilla enchanting is RNG.",
+   "  Immersive Enchanting removes the RNG.",
+   "  You gather Ancient Books — the enchantment currency.",
+   "  You place them in Chiseled Bookshelves around your enchanting table.",
+   "  You choose exactly which enchantment to apply.",
+   "  The cost is the Ancient Book, not levels.",
+   "  This is the correct way to enchant in Ch16.",
+   "",
+   "◈ HOW IMMERSIVE ENCHANTING WORKS",
+   "  └ Ancient Books: found in Chiseled Bookshelves in structures",
+   "    (Ancient Cities: best source; Bastions, End Cities, Strongholds)",
+   "  └ Chiseled Bookshelf (vanilla): place near Enchanting Table",
+   "    Load with Ancient Books to power the table",
+   "  └ Enchanting table UI: with Ancient Books in bookshelves,",
+   "    you see the full enchantment list and can select exactly",
+   "  └ Material cost: each enchantment costs specific Ancient Books",
+   "    + standard experience levels (no level gambling)",
+   "",
+   "◈ ENCHANTMENT SELECTION STRATEGY",
+   "  └ Priority 1: Mending on all Celestial Netherite armor pieces",
+   "    (Mending = effectively infinite durability via XP)",
+   "  └ Priority 2: Protection IV on all armor (standard max)",
+   "  └ Priority 3: Sharpness V on sword (then upgrade to VI via Ancient Tome)",
+   "  └ Priority 4: Efficiency V on pickaxe (then VI via Ancient Tome)",
+   "  └ Use Immersive Enchanting for all Celestial gear enchants:",
+   "    the gear is too expensive to waste on RNG rolls",
+   "",
+   "◈ ANCIENT BOOK FARMING",
+   "  └ Best source: Ancient Cities (Skulk deep underground)",
+   "    Risk: Warden territory — sculk_warding scroll provides context",
+   "    (Ch09 Warden + Ch10 sculk content — you have this gear)",
+   "  └ Secondary source: Lootr dungeon loot",
+   "    (Lootr: per-player loot reset — revisit structures for more books)",
+   "  └ Tertiary: Bastion Remnants, Strongholds, End Cities",
+   "",
+   "▸ Every civilization chose enchanting differently.",
+   "  The first ones gambled with levels and hoped.",
+   "  The later ones found the library approach.",
+   "  Ancient Books are what the previous libraries left behind.",
+   "  The knowledge is already written.",
+   "  You are paying with found knowledge, not with luck.",
+   "  That is the correct approach at Ch16.",
+   "",
+   "▶ Collect 5 Ancient Books [check]",
+   "▶ Apply an Immersive Enchanting selection to a piece of gear [check]",
+   "",
+   "◇ Ancient Tomes (Quark) work differently from Ancient Books (Immersive).",
+   "  Ancient Tomes add +1 level to an existing enchantment above the vanilla cap.",
+   "  (Sharpness V + Ancient Tome = Sharpness VI)",
+   "  Stack: Immersive Enchanting first (to V), then Ancient Tome (to VI).",
+   "  Both are required for the true ceiling."
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     1380,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:enchanted_book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

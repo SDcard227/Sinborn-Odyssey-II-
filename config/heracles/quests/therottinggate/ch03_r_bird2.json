@@ -1,54 +1,85 @@
 {
-  "dependencies": ["ch03_r_bird1"],
-  "tasks": {
-    "kill": {
-      "title": "Kill 5 Stymphalian Birds",
-      "icon": {"item": {"id": "iceandfire:stymphalian_feather", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch03_r_bird1"
+ ],
+ "tasks": {
+  "kill": {
+   "title": "Kill 5 Stymphalian Birds",
+   "icon": {
+    "item": {
+     "id": "iceandfire:stymphalian_feather",
+     "count": 1
     },
-    "more_feathers": {
-      "type": "heracles:item",
-      "item": "iceandfire:stymphalian_feather",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "bow": {
-      "item": {"id": "minecraft:bow", "count": 1},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 5},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Birds Fall"},
-    "subtitle": {"text": "Everything that flies can be brought down."},
-    "description": [
-      "Five of them. That is enough to know how they fight.",
-      "",
-      "They dodge arrows. They rush. They flock.",
-      "A bow is better than a sword for airborne targets.",
-      "A shield saves you when they do reach you.",
-      "",
-      "The feathers have crafting uses in later Ice and Fire recipes.",
-      "Save them.",
-      "",
-      "→ Kill 5 Stymphalian Birds [check]",
-      "→ Collect 8 feathers total"
-    ],
-    "groups": {"The Rotting Gate": {"position": [-300, 0]}},
-    "icon": {"item": {"id": "minecraft:bow", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "more_feathers": {
+   "type": "heracles:item",
+   "item": "iceandfire:stymphalian_feather",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "bow": {
+   "item": {
+    "id": "minecraft:bow",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Birds Fall"
+  },
+  "subtitle": {
+   "text": "Everything that flies can be brought down."
+  },
+  "description": [
+   "Five of them. That is enough to know how they fight.",
+   "",
+   "They dodge arrows. They rush. They flock.",
+   "A bow is better than a sword for airborne targets.",
+   "A shield saves you when they do reach you.",
+   "",
+   "The feathers have crafting uses in later Ice and Fire recipes.",
+   "Save them.",
+   "",
+   "→ Kill 5 Stymphalian Birds [check]",
+   "→ Collect 8 feathers total"
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     920,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:bow",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

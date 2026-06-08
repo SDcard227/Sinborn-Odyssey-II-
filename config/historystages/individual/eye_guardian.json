@@ -1,0 +1,19 @@
+{
+  "display_name": "The Scroll of the Guardian Eye",
+  "research_time": 3600,
+  "items": [
+    "endrem:guardian_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "sinborn:mechanical_crafting/guardian_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

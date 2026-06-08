@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch07_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study Oddments & Devices at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:redstone",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock oddments_and_devices",
+   "title": "Discipline learned: Oddments & Devices",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Oddments & Devices"
+  },
+  "subtitle": {
+   "text": "The clever little things."
+  },
+  "description": [
+   "Not every invention is a weapon or an engine. Some are merely useful.",
+   "Latches, lamps, contraptions, gadgets — the oddments that make a workshop a workshop.",
+   "",
+   "→ Recover and study Oddments & Devices at a Research Pedestal."
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     760,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:redstone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

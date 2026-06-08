@@ -1,68 +1,108 @@
 {
-  "dependencies": ["ch07_world"],
-  "tasks": {
-    "find_desert": {
-      "title": "Travel to a Desert biome and locate signs of Death Worm activity (burrowing tunnels)",
-      "icon": {"item": {"id": "minecraft:sand", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch07_world"
+ ],
+ "tasks": {
+  "find_desert": {
+   "title": "Travel to a Desert biome and locate signs of Death Worm activity (burrowing tunnels)",
+   "icon": {
+    "item": {
+     "id": "minecraft:sand",
+     "count": 1
     },
-    "sand": {
-      "type": "heracles:item",
-      "item": "minecraft:sand",
-      "amount": 64,
-      "collection": "AUTOMATIC"
-    },
-    "kill_death_worm": {
-      "title": "Kill a Death Worm (Ice & Fire — spawns burrowing in desert biomes)",
-      "icon": {"item": {"id": "iceandfire:death_worm_powder", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "death_worm_powder": {
-      "item": {"id": "iceandfire:death_worm_powder", "count": 4},
-      "type": "heracles:item"
-    },
-    "sandstone": {
-      "item": {"id": "minecraft:smooth_sandstone", "count": 32},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 10},
-      "type": "heracles:item"
-    }
+  "sand": {
+   "type": "heracles:item",
+   "item": "minecraft:sand",
+   "amount": 64,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The Desert and Its Things"},
-    "subtitle": {"text": "The oil deposits run under the desert. So does something else."},
-    "description": [
-      "Death Worms burrow beneath desert sands.",
-      "They do not wait to be found.",
-      "They find you.",
-      "",
-      "Ice & Fire Death Worms are aggressive, burrowing creatures.",
-      "They emerge from sand to attack and retreat to burrow again.",
-      "Watch for disturbed sand patterns and the burrowing sound.",
-      "",
-      "Death Worm Powder drops on kill.",
-      "It is a crafting component — note it for later.",
-      "The Desert civilization mastered death.",
-      "This worm is a remnant of that mastery.",
-      "",
-      "→ Travel to a Desert biome [check]",
-      "→ Collect 64 Sand (you'll need it)",
-      "→ Kill a Death Worm [check]"
-    ],
-    "groups": {"Blood and Oil": {"position": [150, 0]}},
-    "icon": {"item": {"id": "iceandfire:death_worm_powder", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "kill_death_worm": {
+   "title": "Kill a Death Worm (Ice & Fire — spawns burrowing in desert biomes)",
+   "icon": {
+    "item": {
+     "id": "iceandfire:death_worm_powder",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "death_worm_powder": {
+   "item": {
+    "id": "iceandfire:death_worm_powder",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "sandstone": {
+   "item": {
+    "id": "minecraft:smooth_sandstone",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Desert and Its Things"
+  },
+  "subtitle": {
+   "text": "The oil deposits run under the desert. So does something else."
+  },
+  "description": [
+   "Death Worms burrow beneath desert sands.",
+   "They do not wait to be found.",
+   "They find you.",
+   "",
+   "Ice & Fire Death Worms are aggressive, burrowing creatures.",
+   "They emerge from sand to attack and retreat to burrow again.",
+   "Watch for disturbed sand patterns and the burrowing sound.",
+   "",
+   "Death Worm Powder drops on kill.",
+   "It is a crafting component — note it for later.",
+   "The Desert civilization mastered death.",
+   "This worm is a remnant of that mastery.",
+   "",
+   "→ Travel to a Desert biome [check]",
+   "→ Collect 64 Sand (you'll need it)",
+   "→ Kill a Death Worm [check]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     760,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "iceandfire:death_worm_powder",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

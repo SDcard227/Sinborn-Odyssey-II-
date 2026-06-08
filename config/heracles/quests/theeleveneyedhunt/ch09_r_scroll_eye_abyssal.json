@@ -1,0 +1,77 @@
+{
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Abyssal Eye scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "research_scroll": {
+   "title": "Research the The Abyssal Eye scroll",
+   "icon": {
+    "item": {
+     "id": "cataclysm:abyss_eye",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock eye_abyssal"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Abyssal Eye"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"An eye the Vault demands. Forge it on the Mechanical Crafter.\"",
+   "",
+   "This scroll unlocks 1 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Abyssal Eye] [auto]"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     0,
+     1650
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:abyss_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
+}

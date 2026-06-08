@@ -1,59 +1,96 @@
 {
-  "dependencies": ["ch10_r_wit1"],
-  "tasks": {
-    "wither_reincarnated": {
-      "title": "Encounter the Wither Reincarnated enhanced fight (Wither Reincarnated mod — multiple phases)",
-      "icon": {"item": {"id": "minecraft:wither_skeleton_skull", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch10_r_wit1"
+ ],
+ "tasks": {
+  "wither_reincarnated": {
+   "title": "Encounter the Wither Reincarnated enhanced fight (Wither Reincarnated mod — multiple phases)",
+   "icon": {
+    "item": {
+     "id": "minecraft:wither_skeleton_skull",
+     "count": 1
     },
-    "wither_eye_prep": {
-      "title": "Collect the Wither Eye after the Wither kill (dropped from Wither/Wither Reincarnated kill)",
-      "icon": {"item": {"id": "endrem:wither_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "wither_eye": {
-      "item": {"id": "endrem:wither_eye", "count": 1},
-      "type": "heracles:item"
+  "wither_eye_prep": {
+   "title": "Collect the Wither Eye after the Wither kill (dropped from Wither/Wither Reincarnated kill)",
+   "icon": {
+    "item": {
+     "id": "endrem:wither_eye",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 6},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Wither Reincarnated"},
-    "subtitle": {"text": "The Wither fights in phases. You stay until the star drops."},
-    "description": [
-      "Wither Reincarnated mod enhances the vanilla Wither fight",
-      "with new attack phases, projectile patterns, and movement behaviors.",
-      "",
-      "The Wither Eye is an anchor eye — a direct drop from the Wither kill.",
-      "No custom recipe needed. The boss drops it.",
-      "It anchors the Nether dimension — every dimension the Wither crossed.",
-      "",
-      "Place the Wither Eye in the portal frame.",
-      "That is three anchors accounted for:",
-      "Guardian Eye (ocean), Nether Eye (fortress), Wither Eye (void).",
-      "",
-      "The three anchor eyes are the oldest confirmations.",
-      "They do not require civilization-scale boss chains.",
-      "They require presence at the places that pre-date civilization.",
-      "",
-      "→ Survive the Wither Reincarnated fight [check]",
-      "→ Collect the Wither Eye (anchor eye — direct drop) [check]"
-    ],
-    "groups": {"The Pale Shore": {"position": [-300, 0]}},
-    "icon": {"item": {"id": "endrem:wither_eye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "wither_eye": {
+   "item": {
+    "id": "endrem:wither_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Wither Reincarnated"
+  },
+  "subtitle": {
+   "text": "The Wither fights in phases. You stay until the star drops."
+  },
+  "description": [
+   "Wither Reincarnated mod enhances the vanilla Wither fight",
+   "with new attack phases, projectile patterns, and movement behaviors.",
+   "",
+   "The Wither Eye is an anchor eye — a direct drop from the Wither kill.",
+   "No custom recipe needed. The boss drops it.",
+   "It anchors the Nether dimension — every dimension the Wither crossed.",
+   "",
+   "Place the Wither Eye in the portal frame.",
+   "That is three anchors accounted for:",
+   "Guardian Eye (ocean), Nether Eye (fortress), Wither Eye (void).",
+   "",
+   "The three anchor eyes are the oldest confirmations.",
+   "They do not require civilization-scale boss chains.",
+   "They require presence at the places that pre-date civilization.",
+   "",
+   "→ Survive the Wither Reincarnated fight [check]",
+   "→ Collect the Wither Eye (anchor eye — direct drop) [check]"
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     920,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "endrem:wither_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

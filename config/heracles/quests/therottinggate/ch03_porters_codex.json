@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch03_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Porter's Codex at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:chest",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock porters_codex",
+   "title": "Discipline learned: The Porter's Codex",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Porter's Codex"
+  },
+  "subtitle": {
+   "text": "Carry more, walk farther."
+  },
+  "description": [
+   "A people that cannot move its goods cannot move at all.",
+   "The pack, the crate, the portable hold — the road becomes possible the day you can carry your life on your back.",
+   "",
+   "→ Recover and study the Porter's Codex at a Research Pedestal."
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     460,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:chest",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

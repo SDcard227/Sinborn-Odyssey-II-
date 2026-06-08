@@ -1,59 +1,90 @@
 {
-  "dependencies": ["ch02_r_sea1"],
-  "tasks": {
-    "pumpkin": {
-      "type": "heracles:item",
-      "item": "minecraft:pumpkin",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "beet": {
-      "type": "heracles:item",
-      "item": "minecraft:beetroot",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    },
-    "seasonal_farm": {
-      "title": "Plant a dedicated seasonal crop row",
-      "icon": {"item": {"id": "minecraft:farmland", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch02_r_sea1"
+ ],
+ "tasks": {
+  "pumpkin": {
+   "type": "heracles:item",
+   "item": "minecraft:pumpkin",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "bonemeal": {
-      "item": {"id": "minecraft:bone_meal", "count": 16},
-      "type": "heracles:item"
+  "beet": {
+   "type": "heracles:item",
+   "item": "minecraft:beetroot",
+   "amount": 16,
+   "collection": "AUTOMATIC"
+  },
+  "seasonal_farm": {
+   "title": "Plant a dedicated seasonal crop row",
+   "icon": {
+    "item": {
+     "id": "minecraft:farmland",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 4},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Seasonal Harvest"},
-    "subtitle": {"text": "The patient farmer doesn't fight the season."},
-    "description": [
-      "Pumpkins and beets grow through autumn.",
-      "Potatoes survive winter better than wheat.",
-      "The land will tell you what it wants — if you listen.",
-      "",
-      "Bonemeal works in all seasons.",
-      "But it's a debt against the future. Use it carefully.",
-      "",
-      "→ Harvest 8 pumpkins",
-      "→ Harvest 16 beetroot",
-      "→ Plant a seasonal crop row [check]"
-    ],
-    "groups": {"The Kindled Road": {"position": [300, 0]}},
-    "icon": {"item": {"id": "minecraft:pumpkin", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "bonemeal": {
+   "item": {
+    "id": "minecraft:bone_meal",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Seasonal Harvest"
+  },
+  "subtitle": {
+   "text": "The patient farmer doesn't fight the season."
+  },
+  "description": [
+   "Pumpkins and beets grow through autumn.",
+   "Potatoes survive winter better than wheat.",
+   "The land will tell you what it wants — if you listen.",
+   "",
+   "Bonemeal works in all seasons.",
+   "But it's a debt against the future. Use it carefully.",
+   "",
+   "→ Harvest 8 pumpkins",
+   "→ Harvest 16 beetroot",
+   "→ Plant a seasonal crop row [check]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     1220,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:pumpkin",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

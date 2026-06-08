@@ -1,61 +1,98 @@
 {
-  "dependencies": ["ch13_world"],
-  "tasks": {
-    "pearl_biomes": {
-      "title": "Collect Ender Pearls from 8 different Enderman Overhaul biome variants (each biome gives different behavior)",
-      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 8}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_world"
+ ],
+ "tasks": {
+  "pearl_biomes": {
+   "title": "Collect Ender Pearls from 8 different Enderman Overhaul biome variants (each biome gives different behavior)",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_pearl",
+     "count": 8
     },
-    "pearl_stack": {
-      "title": "Stockpile 32 Ender Pearls before entering the End",
-      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 32}, "type": "heracles:item"},
-      "amount": 32,
-      "collection": "AUTOMATIC",
-      "type": "heracles:item"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "pearls": {
-      "item": {"id": "minecraft:ender_pearl", "count": 16},
-      "type": "heracles:item"
+  "pearl_stack": {
+   "title": "Stockpile 32 Ender Pearls before entering the End",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_pearl",
+     "count": 32
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 16},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Endermen"},
-    "subtitle": {"text": "They were here before the portal existed. They will be here after you go through."},
-    "description": [
-      "Enderman Overhaul adds 20+ biome-specific Enderman variants.",
-      "Each biome variant has different behaviors, appearances, and sometimes drops.",
-      "They are not enemies — they are the natives.",
-      "",
-      "Collect pearls from endermen in at least 8 different biomes:",
-      "Forest, Desert, Swamp, Jungle, Mesa/Badlands, Frozen, Warped Forest, Mushroom Island.",
-      "The Warped Forest variant is particularly relevant — it lives nearest to the portal energy.",
-      "",
-      "32 pearls before entering is the minimum safe carry.",
-      "You will use them for mobility on the central island.",
-      "The Ender Dragon fights dirty and has a large arena.",
-      "",
-      "The Magical Enderman variant remains unclassified.",
-      "If you encounter one, observe before engaging.",
-      "",
-      "→ Collect pearls from 8 different biome Endermen [check]",
-      "→ Stockpile 32 pearls [collect]"
-    ],
-    "groups": {"The Shattered Law": {"position": [0, 150]}},
-    "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "amount": 32,
+   "collection": "AUTOMATIC",
+   "type": "heracles:item"
   }
+ },
+ "rewards": {
+  "pearls": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Endermen"
+  },
+  "subtitle": {
+   "text": "They were here before the portal existed. They will be here after you go through."
+  },
+  "description": [
+   "Enderman Overhaul adds 20+ biome-specific Enderman variants.",
+   "Each biome variant has different behaviors, appearances, and sometimes drops.",
+   "They are not enemies — they are the natives.",
+   "",
+   "Collect pearls from endermen in at least 8 different biomes:",
+   "Forest, Desert, Swamp, Jungle, Mesa/Badlands, Frozen, Warped Forest, Mushroom Island.",
+   "The Warped Forest variant is particularly relevant — it lives nearest to the portal energy.",
+   "",
+   "32 pearls before entering is the minimum safe carry.",
+   "You will use them for mobility on the central island.",
+   "The Ender Dragon fights dirty and has a large arena.",
+   "",
+   "The Magical Enderman variant remains unclassified.",
+   "If you encounter one, observe before engaging.",
+   "",
+   "→ Collect pearls from 8 different biome Endermen [check]",
+   "→ Stockpile 32 pearls [collect]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     460,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

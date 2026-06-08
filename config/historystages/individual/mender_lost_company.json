@@ -1,0 +1,44 @@
+{
+  "display_name": "The Mender of the Lost Company",
+  "research_time": 2400,
+  "items": [
+    "companions:antlion_fur",
+    "companions:blade_arm",
+    "companions:book_black_hole",
+    "companions:book_brace",
+    "companions:book_fire_mark",
+    "companions:book_ice_shard",
+    "companions:book_ice_tornado",
+    "companions:book_magic_ray",
+    "companions:book_stone_spikes",
+    "companions:cannon_arm",
+    "companions:copper_coin",
+    "companions:croissant_egg_block",
+    "companions:demon_flesh",
+    "companions:end_coin",
+    "companions:eternal_fire",
+    "companions:mutant_arm",
+    "companions:mutant_flesh",
+    "companions:nether_coin",
+    "companions:old_cloth",
+    "companions:relic_gold",
+    "companions:saint_klimt_music_disc",
+    "companions:soul_gem",
+    "companions:whip_arm"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "companions:arm_blade",
+    "companions:arm_cannon",
+    "companions:arm_mutant",
+    "companions:arm_whip"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

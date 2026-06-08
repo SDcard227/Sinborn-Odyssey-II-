@@ -1,67 +1,104 @@
 {
-  "dependencies": ["ch08_deep"],
-  "tasks": {
-    "sculk_sickness": {
-      "title": "Contract Sculk Sickness (stage 1) by spending time in sculk-infected areas",
-      "icon": {"item": {"id": "minecraft:sculk", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch08_deep"
+ ],
+ "tasks": {
+  "sculk_sickness": {
+   "title": "Contract Sculk Sickness (stage 1) by spending time in sculk-infected areas",
+   "icon": {
+    "item": {
+     "id": "minecraft:sculk",
+     "count": 1
     },
-    "ambrosia": {
-      "title": "Craft and consume Ambrosia to cure Sculk Sickness before reaching Stage 3",
-      "icon": {"item": {"id": "sculksickness:ambrosia", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "ambrosia": {
+   "title": "Craft and consume Ambrosia to cure Sculk Sickness before reaching Stage 3",
+   "icon": {
+    "item": {
+     "id": "sculksickness:ambrosia",
+     "count": 1
     },
-    "vile_herb": {
-      "type": "heracles:item",
-      "item": "sculksickness:vile_herb",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ambrosia_reward": {
-      "item": {"id": "sculksickness:ambrosia", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Infection"},
-    "subtitle": {"text": "Stage 1 is a warning. Stage 5 is the conversion."},
-    "description": [
-      "Sculk Sickness advances in 5 stages.",
-      "You contract it from sculk blocks and Sculk-infected mobs.",
-      "At Stage 5: -1 max heart permanently.",
-      "",
-      "Stage 1: Minor visual distortion.",
-      "Stage 2: Hunger drain.",
-      "Stage 3: Slowness and weakness.",
-      "Stage 4: Severe debuffs.",
-      "Stage 5: -1 max heart. Irreversible.",
-      "",
-      "Ambrosia cures any stage before conversion.",
-      "It is brewed from specific Nether herbs and the Vile Herb.",
-      "Vile Herb grows in sculk-rich environments.",
-      "Know this: Vile Herb is also an ingredient in the Cursed Eye recipe.",
-      "Collect it now. You will need it in Ch13.",
-      "",
-      "→ Contract Sculk Sickness Stage 1 [check]",
-      "→ Cure yourself with Ambrosia before Stage 3 [check]",
-      "→ Collect 4 Vile Herb (grows near sculk)"
-    ],
-    "groups": {"Below the Waking World": {"position": [0, 450]}},
-    "icon": {"item": {"id": "sculksickness:vile_herb", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "vile_herb": {
+   "type": "heracles:item",
+   "item": "sculksickness:vile_herb",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "ambrosia_reward": {
+   "item": {
+    "id": "sculksickness:ambrosia",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Infection"
+  },
+  "subtitle": {
+   "text": "Stage 1 is a warning. Stage 5 is the conversion."
+  },
+  "description": [
+   "Sculk Sickness advances in 5 stages.",
+   "You contract it from sculk blocks and Sculk-infected mobs.",
+   "At Stage 5: -1 max heart permanently.",
+   "",
+   "Stage 1: Minor visual distortion.",
+   "Stage 2: Hunger drain.",
+   "Stage 3: Slowness and weakness.",
+   "Stage 4: Severe debuffs.",
+   "Stage 5: -1 max heart. Irreversible.",
+   "",
+   "Ambrosia cures any stage before conversion.",
+   "It is brewed from specific Nether herbs and the Vile Herb.",
+   "Vile Herb grows in sculk-rich environments.",
+   "Know this: Vile Herb is also an ingredient in the Cursed Eye recipe.",
+   "Collect it now. You will need it in Ch13.",
+   "",
+   "→ Contract Sculk Sickness Stage 1 [check]",
+   "→ Cure yourself with Ambrosia before Stage 3 [check]",
+   "→ Collect 4 Vile Herb (grows near sculk)"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     1680,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "sculksickness:vile_herb",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

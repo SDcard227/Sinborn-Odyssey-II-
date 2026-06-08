@@ -1,59 +1,90 @@
 {
-  "dependencies": ["ch05_mca"],
-  "tasks": {
-    "book": {
-      "type": "heracles:item",
-      "item": "minecraft:writable_book",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+ "dependencies": [
+  "ch05_mca"
+ ],
+ "tasks": {
+  "book": {
+   "type": "heracles:item",
+   "item": "minecraft:writable_book",
+   "amount": 1,
+   "collection": "AUTOMATIC"
+  },
+  "written": {
+   "title": "Write and sign a book about what you've learned",
+   "icon": {
+    "item": {
+     "id": "minecraft:written_book",
+     "count": 1
     },
-    "written": {
-      "title": "Write and sign a book about what you've learned",
-      "icon": {"item": {"id": "minecraft:written_book", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "quill": {
-      "item": {"id": "minecraft:feather", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 4},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Putting It to Paper"},
-    "subtitle": {"text": "The first act of leaving something for the next one."},
-    "description": [
-      "You write down what you have learned.",
-      "The way the farm works. The way the wheel turns.",
-      "The recipes. The temperatures. The fights.",
-      "",
-      "You write it in ordinary language",
-      "and somewhere later someone finds it",
-      "and they know something they didn't know before.",
-      "",
-      "You are not there to see it.",
-      "This is what every scroll you've found was.",
-      "Someone who paid to learn something, leaving it for you.",
-      "",
-      "You are the next author.",
-      "",
-      "→ Get a writable book",
-      "→ Write and sign a book [check]"
-    ],
-    "groups": {"The Spoken Word": {"position": [0, 450]}},
-    "icon": {"item": {"id": "minecraft:written_book", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "quill": {
+   "item": {
+    "id": "minecraft:feather",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Putting It to Paper"
+  },
+  "subtitle": {
+   "text": "The first act of leaving something for the next one."
+  },
+  "description": [
+   "You write down what you have learned.",
+   "The way the farm works. The way the wheel turns.",
+   "The recipes. The temperatures. The fights.",
+   "",
+   "You write it in ordinary language",
+   "and somewhere later someone finds it",
+   "and they know something they didn't know before.",
+   "",
+   "You are not there to see it.",
+   "This is what every scroll you've found was.",
+   "Someone who paid to learn something, leaving it for you.",
+   "",
+   "You are the next author.",
+   "",
+   "→ Get a writable book",
+   "→ Write and sign a book [check]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1980,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:written_book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

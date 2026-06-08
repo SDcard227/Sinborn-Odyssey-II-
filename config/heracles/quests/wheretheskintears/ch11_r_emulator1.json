@@ -1,59 +1,96 @@
 {
-  "dependencies": ["ch11_ignis"],
-  "tasks": {
-    "emulator": {
-      "title": "Defeat the Cataclysm Emulator — the final boss of the Cataclysm chain",
-      "icon": {"item": {"id": "cataclysm:ignitium_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch11_ignis"
+ ],
+ "tasks": {
+  "emulator": {
+   "title": "Defeat the Cataclysm Emulator — the final boss of the Cataclysm chain",
+   "icon": {
+    "item": {
+     "id": "cataclysm:ignitium_ingot",
+     "count": 1
     },
-    "emulator_drops": {
-      "title": "Collect the Emulator's rare drops — Cataclysm culmination loot",
-      "icon": {"item": {"id": "minecraft:netherite_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ignitium": {
-      "item": {"id": "cataclysm:ignitium_ingot", "count": 8},
-      "type": "heracles:item"
+  "emulator_drops": {
+   "title": "Collect the Emulator's rare drops — Cataclysm culmination loot",
+   "icon": {
+    "item": {
+     "id": "minecraft:netherite_ingot",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Emulator"},
-    "subtitle": {"text": "The end of the Cataclysm chain. What it emulates is the question."},
-    "description": [
-      "The Emulator is the final boss of L Ender's Cataclysm.",
-      "Ancient Remnant → Maledictus → Revenant → Ignis + Annihilator → Emulator.",
-      "",
-      "The Cataclysm chain is now complete.",
-      "Every boss in the sequence has been cleared.",
-      "",
-      "What the Emulator 'emulates' is deliberately ambiguous.",
-      "Its fight style mimics previous Cataclysm boss patterns",
-      "combined into a single encounter.",
-      "",
-      "The lore implication: it is the final form of what happens",
-      "when pure mechanical mastery achieves its own continuation.",
-      "The Engineers' inheritance, applied perfectly.",
-      "The Rogue Eye in combat form.",
-      "",
-      "→ Defeat the Emulator [check]",
-      "→ Collect its drops [check]"
-    ],
-    "groups": {"Where the Skin Tears": {"position": [300, 0]}},
-    "icon": {"item": {"id": "cataclysm:ignitium_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "ignitium": {
+   "item": {
+    "id": "cataclysm:ignitium_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Emulator"
+  },
+  "subtitle": {
+   "text": "The end of the Cataclysm chain. What it emulates is the question."
+  },
+  "description": [
+   "The Emulator is the final boss of L Ender's Cataclysm.",
+   "Ancient Remnant → Maledictus → Revenant → Ignis + Annihilator → Emulator.",
+   "",
+   "The Cataclysm chain is now complete.",
+   "Every boss in the sequence has been cleared.",
+   "",
+   "What the Emulator 'emulates' is deliberately ambiguous.",
+   "Its fight style mimics previous Cataclysm boss patterns",
+   "combined into a single encounter.",
+   "",
+   "The lore implication: it is the final form of what happens",
+   "when pure mechanical mastery achieves its own continuation.",
+   "The Engineers' inheritance, applied perfectly.",
+   "The Rogue Eye in combat form.",
+   "",
+   "→ Defeat the Emulator [check]",
+   "→ Collect its drops [check]"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1380,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:ignitium_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

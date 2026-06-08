@@ -1,92 +1,135 @@
 {
-  "dependencies": ["ch17_r_genie2"],
-  "tasks": {
-    "gold_crown": {
-      "title": "Obtain the Gold Crown from the Genie (As You Wish) — only source in the pack, not craftable, not droppable",
-      "icon": {"item": {"id": "irons_spellbooks:gold_crown", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_r_genie2"
+ ],
+ "tasks": {
+  "gold_crown": {
+   "title": "Obtain the Gold Crown from the Genie (As You Wish) — only source in the pack, not craftable, not droppable",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:gold_crown",
+     "count": 1
     },
-    "three_wishes": {
-      "title": "Use all 3 Genie wishes on the Magic Lamp (As You Wish) — choose the final wish carefully",
-      "icon": {"item": {"id": "minecraft:gold_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "gold_ingot": {"item": {"id": "minecraft:gold_ingot", "count": 32}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 20}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Genie's Final Wishes"},
-    "subtitle": {"text": "3 wishes. The Gold Crown comes from the Genie and nowhere else. The final wish is permanent. Choose correctly."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.17 · THE GENIE'S FINAL WISHES",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ As You Wish gives the player 3 wishes.',",
-      "  The Magic Lamp holds them.',",
-      "  The Gold Crown is obtained exclusively from the Genie —',",
-      "  it is not in any craft recipe or loot table.',",
-      "  Wishing for the Crown is the recommended use of wish 1.',",
-      "  Wishes 2 and 3 are yours to define.',",
-      "",
-      "◈ GENIE SOURCE + MAGIC LAMP",
-      "  └ Genie: found in Genie Tombstone (desert biome structure)',",
-      "    Tombstone appears in desert — survey with Elytra',",
-      "  └ Magic Lamp: item dropped/given by the Genie',",
-      "    (check As You Wish mod mechanics for exact acquisition)',",
-      "  └ Lamp holds 3 wishes total — consumable, not repeatable',",
-      "    (one Genie = one lamp = three wishes)',",
-      "",
-      "◈ THE GOLD CROWN",
-      "  └ Gold Crown (irons_spellbooks:gold_crown): ISS equipment item',",
-      "    Provides ISS bonuses — check JEI for exact effect',",
-      "  └ ONLY obtainable from the Genie wish',",
-      "    Not craftable. Not in any loot table. Genie exclusive.',",
-      "  └ Recommended: use Wish 1 to obtain the Gold Crown',",
-      "    before wishing for anything else',",
-      "  └ Equip: head slot (replaces helmet OR as separate slot)',",
-      "    (check mod compatibility with armor slots)',",
-      "",
-      "◈ WISH RECOMMENDATIONS",
-      "  └ Wish 1: Gold Crown (ISS equipment, unique item)',",
-      "  └ Wish 2: Large material grant OR unique item you cannot obtain elsewhere',",
-      "    (check As You Wish wish options in-game — what can be wished for)',",
-      "  └ Wish 3: Final wish — permanent mechanical benefit',",
-      "    (some As You Wish options are permanent effects)',",
-      "  └ Do not wish for random items you can craft',",
-      "    Reserve wishes for: unique items, permanent effects, large grants',",
-      "",
-      "▸ Every civilization that encountered the Genie',",
-      "  used one wish on the wrong thing.',",
-      "  One wished for safety.',",
-      "  One wished for more wishes (it did not work).',",
-      "  One wished for the dragon to stop.',",
-      "  None of them wished for the Gold Crown.',",
-      "  Because none of them had spent 9 chapters studying ISS magic.',",
-      "  You have.',",
-      "  First wish: the Crown.',",
-      "",
-      "▶ Obtain the Gold Crown from the Genie [check]",
-      "▶ Use all 3 wishes from the Magic Lamp [check]",
-      "",
-      "◇ If a second Genie Tombstone exists in the world:',",
-      "  explore for it before finalizing your wish strategy.',",
-      "  Each Tombstone is one Genie is one Lamp is three wishes.',",
-      "  The world generates Genie Tombstones at a fixed rate.',",
-      "  Antique Atlas + Elytra: survey all deserts before committing."
-    ],
-    "groups": {"Lords of All": {"position": [300, 300]}},
-    "icon": {"item": {"id": "irons_spellbooks:gold_crown", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "three_wishes": {
+   "title": "Use all 3 Genie wishes on the Magic Lamp (As You Wish) — choose the final wish carefully",
+   "icon": {
+    "item": {
+     "id": "minecraft:gold_ingot",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "gold_ingot": {
+   "item": {
+    "id": "minecraft:gold_ingot",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 20
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Genie's Final Wishes"
+  },
+  "subtitle": {
+   "text": "3 wishes. The Gold Crown comes from the Genie and nowhere else. The final wish is permanent. Choose correctly."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.17 · THE GENIE'S FINAL WISHES",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ As You Wish gives the player 3 wishes.',",
+   "  The Magic Lamp holds them.',",
+   "  The Gold Crown is obtained exclusively from the Genie —',",
+   "  it is not in any craft recipe or loot table.',",
+   "  Wishing for the Crown is the recommended use of wish 1.',",
+   "  Wishes 2 and 3 are yours to define.',",
+   "",
+   "◈ GENIE SOURCE + MAGIC LAMP",
+   "  └ Genie: found in Genie Tombstone (desert biome structure)',",
+   "    Tombstone appears in desert — survey with Elytra',",
+   "  └ Magic Lamp: item dropped/given by the Genie',",
+   "    (check As You Wish mod mechanics for exact acquisition)',",
+   "  └ Lamp holds 3 wishes total — consumable, not repeatable',",
+   "    (one Genie = one lamp = three wishes)',",
+   "",
+   "◈ THE GOLD CROWN",
+   "  └ Gold Crown (irons_spellbooks:gold_crown): ISS equipment item',",
+   "    Provides ISS bonuses — check JEI for exact effect',",
+   "  └ ONLY obtainable from the Genie wish',",
+   "    Not craftable. Not in any loot table. Genie exclusive.',",
+   "  └ Recommended: use Wish 1 to obtain the Gold Crown',",
+   "    before wishing for anything else',",
+   "  └ Equip: head slot (replaces helmet OR as separate slot)',",
+   "    (check mod compatibility with armor slots)',",
+   "",
+   "◈ WISH RECOMMENDATIONS",
+   "  └ Wish 1: Gold Crown (ISS equipment, unique item)',",
+   "  └ Wish 2: Large material grant OR unique item you cannot obtain elsewhere',",
+   "    (check As You Wish wish options in-game — what can be wished for)',",
+   "  └ Wish 3: Final wish — permanent mechanical benefit',",
+   "    (some As You Wish options are permanent effects)',",
+   "  └ Do not wish for random items you can craft',",
+   "    Reserve wishes for: unique items, permanent effects, large grants',",
+   "",
+   "▸ Every civilization that encountered the Genie',",
+   "  used one wish on the wrong thing.',",
+   "  One wished for safety.',",
+   "  One wished for more wishes (it did not work).',",
+   "  One wished for the dragon to stop.',",
+   "  None of them wished for the Gold Crown.',",
+   "  Because none of them had spent 9 chapters studying ISS magic.',",
+   "  You have.',",
+   "  First wish: the Crown.',",
+   "",
+   "▶ Obtain the Gold Crown from the Genie [check]",
+   "▶ Use all 3 wishes from the Magic Lamp [check]",
+   "",
+   "◇ If a second Genie Tombstone exists in the world:',",
+   "  explore for it before finalizing your wish strategy.',",
+   "  Each Tombstone is one Genie is one Lamp is three wishes.',",
+   "  The world generates Genie Tombstones at a fixed rate.',",
+   "  Antique Atlas + Elytra: survey all deserts before committing."
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     1380,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:gold_crown",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

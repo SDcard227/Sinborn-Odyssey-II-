@@ -1,90 +1,133 @@
 {
-  "dependencies": ["ch13_r_poise2"],
-  "tasks": {
-    "booflo_vest": {
-      "title": "Craft the Booflo Vest — made from Booflo Fur, grants 6× jump height in the End dimension",
-      "icon": {"item": {"id": "endergetic:booflo_fur", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_r_poise2"
+ ],
+ "tasks": {
+  "booflo_vest": {
+   "title": "Craft the Booflo Vest — made from Booflo Fur, grants 6× jump height in the End dimension",
+   "icon": {
+    "item": {
+     "id": "endergetic:booflo_fur",
+     "count": 1
     },
-    "bolloom_farm": {
-      "title": "Build a Bolloom farm in the Poise Forest — Bolloom Buds grow on End Stone and yield Bolloom Fruit",
-      "icon": {"item": {"id": "endergetic:puff_bug_wings", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "bolloom_farm": {
+   "title": "Build a Bolloom farm in the Poise Forest — Bolloom Buds grow on End Stone and yield Bolloom Fruit",
+   "icon": {
+    "item": {
+     "id": "endergetic:puff_bug_wings",
+     "count": 1
     },
-    "booflo_fur_stack": {
-      "type": "heracles:item",
-      "item": "endergetic:booflo_fur",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "booflo_fur": {"item": {"id": "endergetic:booflo_fur", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Endergetic Economy"},
-    "subtitle": {"text": "The Poise Forest is not just scenery. It is a resource biome. Farm it properly and it pays indefinitely."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.13 · ENDERGETIC ECONOMY",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Poise Forest is not decoration.",
-      "  It is a parallel resource system exclusive to the End.",
-      "  The Booflo and Bolloom plants are its primary outputs.",
-      "  Both can be farmed. Neither requires combat.",
-      "  This is the End's version of a passive income biome.",
-      "",
-      "◈ BOOFLO VEST",
-      "  └ Craft: Booflo Fur (from Booflo kills) → Booflo Vest",
-      "  └ Effect: grants 6× jump height while in the End dimension",
-      "  └ This is your primary vertical mobility tool in End City towers",
-      "    (replaces multiple Ender Pearl throws for floor traversal)",
-      "  └ Stack with Elytra: Vest for vertical, Elytra for horizontal",
-      "  └ Combines well with ISS Eldritch levitation spells",
-      "",
-      "◈ BOLLOOM FARM",
-      "  └ Bolloom Buds grow on End Stone in the Poise Forest",
-      "  └ Bolloom Fruit: food source unique to the End dimension",
-      "  └ Farm design: plant Bolloom Buds on flat End Stone platforms",
-      "    near or within the Poise Forest biome boundary",
-      "  └ Yield: passive food income for long End expeditions",
-      "    (reduces hunger pressure during extended outer island sweeps)",
-      "  └ Puff Bug Wings: secondary Endergetic material, used in crafting",
-      "",
-      "◈ BOOFLO FUR FARMING",
-      "  └ Booflo is passive — does not aggro",
-      "  └ Farm: build enclosed pen in Poise Forest, pen Boflos",
-      "  └ Kill cycle for fur (same as cow leather farming)",
-      "  └ Fur uses: Booflo Vest, End-tier crafting material",
-      "  └ Keep 2 Boflos alive for breeding if Endergetic supports it",
-      "",
-      "▸ The Booflo grazed here when the civilizations arrived.",
-      "  It grazed while they built the cities.",
-      "  It is still grazing now.",
-      "  It has never once cared about the portal.",
-      "  That is the most End creature thing possible.",
-      "",
-      "▶ Craft the Booflo Vest [check]",
-      "▶ Build a Bolloom farm [check]",
-      "▶ Collect 8 Booflo Fur",
-      "",
-      "◇ The Booflo Vest jump boost is most useful",
-      "  in End City tower floors — each floor is 4+ blocks tall.",
-      "  With the Vest, you can skip floors entirely.",
-      "  Combined with Elytra: the city becomes trivial to navigate."
-    ],
-    "groups": {"The Shattered Law": {"position": [-450, 0]}},
-    "icon": {"item": {"id": "endergetic:booflo_fur", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "booflo_fur_stack": {
+   "type": "heracles:item",
+   "item": "endergetic:booflo_fur",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "booflo_fur": {
+   "item": {
+    "id": "endergetic:booflo_fur",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Endergetic Economy"
+  },
+  "subtitle": {
+   "text": "The Poise Forest is not just scenery. It is a resource biome. Farm it properly and it pays indefinitely."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.13 · ENDERGETIC ECONOMY",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Poise Forest is not decoration.",
+   "  It is a parallel resource system exclusive to the End.",
+   "  The Booflo and Bolloom plants are its primary outputs.",
+   "  Both can be farmed. Neither requires combat.",
+   "  This is the End's version of a passive income biome.",
+   "",
+   "◈ BOOFLO VEST",
+   "  └ Craft: Booflo Fur (from Booflo kills) → Booflo Vest",
+   "  └ Effect: grants 6× jump height while in the End dimension",
+   "  └ This is your primary vertical mobility tool in End City towers",
+   "    (replaces multiple Ender Pearl throws for floor traversal)",
+   "  └ Stack with Elytra: Vest for vertical, Elytra for horizontal",
+   "  └ Combines well with ISS Eldritch levitation spells",
+   "",
+   "◈ BOLLOOM FARM",
+   "  └ Bolloom Buds grow on End Stone in the Poise Forest",
+   "  └ Bolloom Fruit: food source unique to the End dimension",
+   "  └ Farm design: plant Bolloom Buds on flat End Stone platforms",
+   "    near or within the Poise Forest biome boundary",
+   "  └ Yield: passive food income for long End expeditions",
+   "    (reduces hunger pressure during extended outer island sweeps)",
+   "  └ Puff Bug Wings: secondary Endergetic material, used in crafting",
+   "",
+   "◈ BOOFLO FUR FARMING",
+   "  └ Booflo is passive — does not aggro",
+   "  └ Farm: build enclosed pen in Poise Forest, pen Boflos",
+   "  └ Kill cycle for fur (same as cow leather farming)",
+   "  └ Fur uses: Booflo Vest, End-tier crafting material",
+   "  └ Keep 2 Boflos alive for breeding if Endergetic supports it",
+   "",
+   "▸ The Booflo grazed here when the civilizations arrived.",
+   "  It grazed while they built the cities.",
+   "  It is still grazing now.",
+   "  It has never once cared about the portal.",
+   "  That is the most End creature thing possible.",
+   "",
+   "▶ Craft the Booflo Vest [check]",
+   "▶ Build a Bolloom farm [check]",
+   "▶ Collect 8 Booflo Fur",
+   "",
+   "◇ The Booflo Vest jump boost is most useful",
+   "  in End City tower floors — each floor is 4+ blocks tall.",
+   "  With the Vest, you can skip floors entirely.",
+   "  Combined with Elytra: the city becomes trivial to navigate."
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     1380,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "endergetic:booflo_fur",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

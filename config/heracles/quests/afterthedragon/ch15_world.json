@@ -1,64 +1,101 @@
 {
-  "dependencies": ["ch14_gate"],
-  "tasks": {
-    "return_overworld": {
-      "title": "Return to the Overworld after completing your End expedition",
-      "icon": {"item": {"id": "minecraft:grass_block", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_gate"
+ ],
+ "tasks": {
+  "return_overworld": {
+   "title": "Return to the Overworld after completing your End expedition",
+   "icon": {
+    "item": {
+     "id": "minecraft:grass_block",
+     "count": 1
     },
-    "journal": {
-      "title": "Write down what you found in the End — a Book and Quill record of your expedition",
-      "icon": {"item": {"id": "minecraft:writable_book", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "book": {
-      "item": {"id": "minecraft:book", "count": 4},
-      "type": "heracles:item"
+  "journal": {
+   "title": "Write down what you found in the End — a Book and Quill record of your expedition",
+   "icon": {
+    "item": {
+     "id": "minecraft:writable_book",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "After the Dragon"},
-    "subtitle": {"text": "The adventure is over. This is not the ending. This is what the ending reveals."},
-    "description": [
-      "Frieren: Beyond Journey's End — the entire manga/anime is about the aftermath.",
-      "The hero party defeated the demon lord. The adventure ended.",
-      "The story continues for centuries after.",
-      "What matters is not the climax. It is what you do when the climax is behind you.",
-      "",
-      "You have:",
-      "- Defeated the Ender Dragon",
-      "- Tamed the baby Trigon",
-      "- Eaten the dragon",
-      "- Displayed the inheritance",
-      "- Crossed the void",
-      "",
-      "None of that was the point.",
-      "The point is what you build in the world you return to.",
-      "",
-      "Record what you found in the End.",
-      "It happened. It should be documented.",
-      "The previous civilizations did not document themselves.",
-      "You are the thirteenth option. Write it down.",
-      "",
-      "→ Return to the Overworld [check]",
-      "→ Write a Book and Quill record of your expedition [check]"
-    ],
-    "groups": {"After the Dragon": {"position": [0, 0]}},
-    "icon": {"item": {"id": "minecraft:grass_block", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "NEVER",
-    "unlockNotification": true
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "book": {
+   "item": {
+    "id": "minecraft:book",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "After the Dragon"
+  },
+  "subtitle": {
+   "text": "The adventure is over. This is not the ending. This is what the ending reveals."
+  },
+  "description": [
+   "Frieren: Beyond Journey's End — the entire manga/anime is about the aftermath.",
+   "The hero party defeated the demon lord. The adventure ended.",
+   "The story continues for centuries after.",
+   "What matters is not the climax. It is what you do when the climax is behind you.",
+   "",
+   "You have:",
+   "- Defeated the Ender Dragon",
+   "- Tamed the baby Trigon",
+   "- Eaten the dragon",
+   "- Displayed the inheritance",
+   "- Crossed the void",
+   "",
+   "None of that was the point.",
+   "The point is what you build in the world you return to.",
+   "",
+   "Record what you found in the End.",
+   "It happened. It should be documented.",
+   "The previous civilizations did not document themselves.",
+   "You are the thirteenth option. Write it down.",
+   "",
+   "→ Return to the Overworld [check]",
+   "→ Write a Book and Quill record of your expedition [check]"
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     0,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:grass_block",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "NEVER",
+  "unlockNotification": true
+ }
 }

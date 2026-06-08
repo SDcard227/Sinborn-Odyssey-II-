@@ -1,60 +1,97 @@
 {
-  "dependencies": ["ch16_gather"],
-  "tasks": {
-    "celestial_netherite": {
-      "title": "Craft a Celestial Netherite Ingot (Celestisynth — combines netherite + celestial materials, check JEI for exact recipe)",
-      "icon": {"item": {"id": "celestisynth:celestial_netherite_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_gather"
+ ],
+ "tasks": {
+  "celestial_netherite": {
+   "title": "Craft a Celestial Netherite Ingot (Celestisynth — combines netherite + celestial materials, check JEI for exact recipe)",
+   "icon": {
+    "item": {
+     "id": "celestisynth:celestial_netherite_ingot",
+     "count": 1
     },
-    "celestial_sword": {
-      "title": "Craft a Celestial weapon using Celestial Netherite (the highest base damage weapon in this pack)",
-      "icon": {"item": {"id": "celestisynth:celestial_netherite_sword", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "celestial_ingot": {
-      "item": {"id": "celestisynth:celestial_netherite_ingot", "count": 2},
-      "type": "heracles:item"
+  "celestial_sword": {
+   "title": "Craft a Celestial weapon using Celestial Netherite (the highest base damage weapon in this pack)",
+   "icon": {
+    "item": {
+     "id": "celestisynth:celestial_netherite_sword",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Celestial Forge"},
-    "subtitle": {"text": "Netherite from the deep earth. Celestial material from beyond the sky. One ingot."},
-    "description": [
-      "Celestial Netherite is the synthesis of:",
-      "- Netherite: mined from Ancient Debris in the Nether (Ch10)",
-      "- Celestial material: gathered from the End (Ch13-16)",
-      "",
-      "Two dimensions. Two extremes of the game's physical limits.",
-      "Combined into a single alloy.",
-      "",
-      "The recipe is in JEI — check Celestisynth mod recipes.",
-      "It likely requires a specialized crafting station from Celestisynth.",
-      "The station itself may require celestial materials to build.",
-      "Follow the JEI tree from Celestial Dust upward.",
-      "",
-      "The sword is the starting point.",
-      "Craft the sword first — it is the fastest and confirms the recipe chain.",
-      "Full armor follows in ch16_armor.",
-      "",
-      "→ Craft a Celestial Netherite Ingot [check]",
-      "→ Craft your first Celestial weapon [check]"
-    ],
-    "groups": {"The Long Road Home": {"position": [0, 300]}},
-    "icon": {"item": {"id": "celestisynth:celestial_netherite_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "celestial_ingot": {
+   "item": {
+    "id": "celestisynth:celestial_netherite_ingot",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Celestial Forge"
+  },
+  "subtitle": {
+   "text": "Netherite from the deep earth. Celestial material from beyond the sky. One ingot."
+  },
+  "description": [
+   "Celestial Netherite is the synthesis of:",
+   "- Netherite: mined from Ancient Debris in the Nether (Ch10)",
+   "- Celestial material: gathered from the End (Ch13-16)",
+   "",
+   "Two dimensions. Two extremes of the game's physical limits.",
+   "Combined into a single alloy.",
+   "",
+   "The recipe is in JEI — check Celestisynth mod recipes.",
+   "It likely requires a specialized crafting station from Celestisynth.",
+   "The station itself may require celestial materials to build.",
+   "Follow the JEI tree from Celestial Dust upward.",
+   "",
+   "The sword is the starting point.",
+   "Craft the sword first — it is the fastest and confirms the recipe chain.",
+   "Full armor follows in ch16_armor.",
+   "",
+   "→ Craft a Celestial Netherite Ingot [check]",
+   "→ Craft your first Celestial weapon [check]"
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     920,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "celestisynth:celestial_netherite_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

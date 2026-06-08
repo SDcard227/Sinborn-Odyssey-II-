@@ -1,66 +1,94 @@
 {
-  "dependencies": ["ch01_gate"],
-  "tasks": {
-    "berries": {
-      "type": "heracles:item",
-      "item": "minecraft:sweet_berries",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    },
-    "apple": {
-      "type": "heracles:item",
-      "item": "minecraft:apple",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "mushroom": {
-      "type": "heracles:item",
-      "item": "minecraft:brown_mushroom",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch01_gate"
+ ],
+ "tasks": {
+  "berries": {
+   "type": "heracles:item",
+   "item": "minecraft:sweet_berries",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "seeds": {
-      "item": {"id": "minecraft:wheat_seeds", "count": 16},
-      "type": "heracles:item"
-    },
-    "carrot": {
-      "item": {"id": "minecraft:carrot", "count": 8},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 5},
-      "type": "heracles:item"
-    }
+  "apple": {
+   "type": "heracles:item",
+   "item": "minecraft:apple",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The World Provides"},
-    "subtitle": {"text": "Before the farm, there was foraging."},
-    "description": [
-      "Every civilization began here.",
-      "Not with seeds. With noticing.",
-      "",
-      "Berries on the hillside. Apples from the branch.",
-      "Mushrooms in the shadow of dead wood.",
-      "",
-      "The land gives freely if you know where to look.",
-      "Learn to look.",
-      "",
-      "→ Collect 16 sweet berries",
-      "→ Collect 8 apples",
-      "→ Find 4 brown mushrooms"
-    ],
-    "groups": {"The Kindled Road": {"position": [0, 0]}},
-    "icon": {"item": {"id": "minecraft:apple", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "mushroom": {
+   "type": "heracles:item",
+   "item": "minecraft:brown_mushroom",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "seeds": {
+   "item": {
+    "id": "minecraft:wheat_seeds",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "carrot": {
+   "item": {
+    "id": "minecraft:carrot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The World Provides"
+  },
+  "subtitle": {
+   "text": "Before the farm, there was foraging."
+  },
+  "description": [
+   "Every civilization began here.",
+   "Not with seeds. With noticing.",
+   "",
+   "Berries on the hillside. Apples from the branch.",
+   "Mushrooms in the shadow of dead wood.",
+   "",
+   "The land gives freely if you know where to look.",
+   "Learn to look.",
+   "",
+   "→ Collect 16 sweet berries",
+   "→ Collect 8 apples",
+   "→ Find 4 brown mushrooms"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     300,
+     1500
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:apple",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

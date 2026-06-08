@@ -1,60 +1,88 @@
 {
-  "dependencies": ["ch03_r_smith2"],
-  "tasks": {
-    "shield": {
-      "type": "heracles:item",
-      "item": "minecraft:shield",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "diamond": {
-      "type": "heracles:item",
-      "item": "minecraft:diamond",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch03_r_smith2"
+ ],
+ "tasks": {
+  "shield": {
+   "type": "heracles:item",
+   "item": "minecraft:shield",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "diamond_extra": {
-      "item": {"id": "minecraft:diamond", "count": 2},
-      "type": "heracles:item"
-    },
-    "anvil": {
-      "item": {"id": "minecraft:anvil", "count": 1},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 3},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Diamond Prospects"},
-    "subtitle": {"text": "The future gear is already underground."},
-    "description": [
-      "The shield is the most undervalued piece of gear.",
-      "It blocks 100% of damage from the blocked direction.",
-      "Use it. It changes every fight.",
-      "",
-      "Four diamonds means you found the layer.",
-      "Y: -58 is the densest diamond zone.",
-      "Mine in branches. Keep the pickaxe enchanted.",
-      "",
-      "Diamond armor comes later. The diamonds come now.",
-      "",
-      "→ Craft a Shield",
-      "→ Find 4 diamonds"
-    ],
-    "groups": {"The Rotting Gate": {"position": [-450, 300]}},
-    "icon": {"item": {"id": "minecraft:diamond", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "diamond": {
+   "type": "heracles:item",
+   "item": "minecraft:diamond",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "diamond_extra": {
+   "item": {
+    "id": "minecraft:diamond",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "anvil": {
+   "item": {
+    "id": "minecraft:anvil",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Diamond Prospects"
+  },
+  "subtitle": {
+   "text": "The future gear is already underground."
+  },
+  "description": [
+   "The shield is the most undervalued piece of gear.",
+   "It blocks 100% of damage from the blocked direction.",
+   "Use it. It changes every fight.",
+   "",
+   "Four diamonds means you found the layer.",
+   "Y: -58 is the densest diamond zone.",
+   "Mine in branches. Keep the pickaxe enchanted.",
+   "",
+   "Diamond armor comes later. The diamonds come now.",
+   "",
+   "→ Craft a Shield",
+   "→ Find 4 diamonds"
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     2300,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:diamond",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

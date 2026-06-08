@@ -1,0 +1,24 @@
+{
+  "display_name": "Field Medicine",
+  "research_time": 2700,
+  "items": [
+    "food_desire:diet_book",
+    "food_desire:magic_appetizer",
+    "wd:medical_potato"
+  ],
+  "tags": [],
+  "mods": [
+    "food_desire"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "food_desire:diet_book",
+    "food_desire:diet_book_recipe"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

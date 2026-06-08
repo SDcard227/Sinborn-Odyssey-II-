@@ -1,17 +1,29 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    "WCW",
-    "DTD",
-    "HLH"
+    "WCL",
+    "DTL",
+    "HLL"
   ],
   "key": {
-    "W": { "item": "witherstormmod:withered_spider_eye" },
-    "C": { "item": "iceandfire:cockatrice_eye" },
-    "D": { "item": "iceandfire:dragonbone" },
-    "T": { "item": "aquamirae:treasure_pouch" },
-    "H": { "item": "aquamirae:shell_horn" },
-    "L": { "item": "mythsandlegends:umbras_whisper" }
+    "W": {
+      "item": "witherstormmod:withered_spider_eye"
+    },
+    "C": {
+      "item": "iceandfire:cockatrice_eye"
+    },
+    "D": {
+      "item": "iceandfire:dragonbone"
+    },
+    "T": {
+      "item": "aquamirae:treasure_pouch"
+    },
+    "H": {
+      "item": "aquamirae:shell_horn"
+    },
+    "L": {
+      "item": "mythsandlegends:umbras_whisper"
+    }
   },
   "result": {
     "item": "endrem:black_eye",

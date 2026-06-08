@@ -1,0 +1,20 @@
+{
+  "display_name": "The Long Road",
+  "research_time": 900,
+  "items": [
+    "antique_atlas:atlas"
+  ],
+  "tags": [],
+  "mods": [
+    "antique_atlas",
+    "create_ltab"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

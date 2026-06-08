@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch05_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Curator's Vitrine at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:glass",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock curators_vitrine",
+   "title": "Discipline learned: The Curator's Vitrine",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Curator's Vitrine"
+  },
+  "subtitle": {
+   "text": "What is displayed is remembered."
+  },
+  "description": [
+   "A civilization that records begins to display — to set a thing behind glass and say: this mattered.",
+   "The vitrine is the first museum, the first claim that the past is worth keeping.",
+   "",
+   "→ Recover and study the Curator's Vitrine at a Research Pedestal."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1060,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:glass",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

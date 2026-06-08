@@ -1,0 +1,52 @@
+{
+  "display_name": "The Codex of Kept Creatures",
+  "research_time": 2400,
+  "items": [
+    "crittersandcompanions:clam",
+    "crittersandcompanions:dragonfly_wing",
+    "crittersandcompanions:dumbo_octopus_bucket",
+    "crittersandcompanions:dumbo_octopus_bucket_1",
+    "crittersandcompanions:dumbo_octopus_bucket_2",
+    "crittersandcompanions:dumbo_octopus_bucket_3",
+    "crittersandcompanions:koi_fish",
+    "crittersandcompanions:koi_fish_bucket",
+    "crittersandcompanions:pearl",
+    "crittersandcompanions:sea_bunny_bucket",
+    "crittersandcompanions:sea_bunny_bucket_1",
+    "crittersandcompanions:sea_bunny_bucket_2",
+    "crittersandcompanions:sea_bunny_slime_block",
+    "crittersandcompanions:sea_bunny_slime_bottle",
+    "crittersandcompanions:silk",
+    "crittersandcompanions:silk_cocoon",
+    "crittersandcompanions:silk_lead",
+    "farm_and_charm:chicken_coop",
+    "farm_and_charm:chicken_feed",
+    "farm_and_charm:chicken_nest",
+    "farm_and_charm:feeding_trough",
+    "farm_and_charm:horse_fodder"
+  ],
+  "tags": [],
+  "mods": [
+    "crittersandcompanions"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "crittersandcompanions:ender_pearl_from_pearl",
+    "crittersandcompanions:grappling_hook",
+    "crittersandcompanions:sea_bunny_slime_block",
+    "crittersandcompanions:silk_lead",
+    "crittersandcompanions:slime_ball_from_sea_bunny_slime",
+    "crittersandcompanions:string_from_silk",
+    "farm_and_charm:chicken_coop",
+    "farm_and_charm:chicken_feed",
+    "farm_and_charm:chicken_nest",
+    "farm_and_charm:feeding_trough",
+    "farm_and_charm:horse_fodder"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

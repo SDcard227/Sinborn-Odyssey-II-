@@ -1,58 +1,95 @@
 {
-  "dependencies": ["ch08_world"],
-  "tasks": {
-    "find_cave_biome": {
-      "title": "Discover an Alex's Caves underground biome (Primordial Caves, Toxic Caves, Magnetic Caves, etc.)",
-      "icon": {"item": {"id": "minecraft:pointed_dripstone", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch08_world"
+ ],
+ "tasks": {
+  "find_cave_biome": {
+   "title": "Discover an Alex's Caves underground biome (Primordial Caves, Toxic Caves, Magnetic Caves, etc.)",
+   "icon": {
+    "item": {
+     "id": "minecraft:pointed_dripstone",
+     "count": 1
     },
-    "cave_material": {
-      "title": "Collect unique materials from an Alex's Caves biome (crystals, toxic blocks, etc.)",
-      "icon": {"item": {"id": "minecraft:amethyst_shard", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "amethyst": {
-      "item": {"id": "minecraft:amethyst_shard", "count": 16},
-      "type": "heracles:item"
+  "cave_material": {
+   "title": "Collect unique materials from an Alex's Caves biome (crystals, toxic blocks, etc.)",
+   "icon": {
+    "item": {
+     "id": "minecraft:amethyst_shard",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "What the Ground Keeps"},
-    "subtitle": {"text": "Six cave biomes. Each one a different kind of wrong."},
-    "description": [
-      "Alex's Caves adds 6 underground biome types.",
-      "Each one is unique in aesthetic, mob set, and resource profile.",
-      "",
-      "Primordial Caves: ancient life. Living rock.",
-      "Toxic Caves: Chemical vents. Poisonous atmosphere.",
-      "Magnetic Caves: Gravitational anomalies. Crystal formations.",
-      "Abyssal Chasm: The deepest point. Dark and dimensional.",
-      "Mushroom Caverns: Bioluminescent fungi. Strange mobs.",
-      "Forsaken Hollow: Skeletal remains. Something ancient died here.",
-      "",
-      "Each biome has unique mobs. Entity IDs start with `alexscaves:`.",
-      "The Nucleeper (alexscaves:nucleeper) appears in toxic variants.",
-      "Its eye ingredient is tied to the Cryptic civilization — Ch13.",
-      "",
-      "→ Discover an Alex's Caves biome [check]",
-      "→ Collect unique cave biome materials [check]"
-    ],
-    "groups": {"Below the Waking World": {"position": [150, 0]}},
-    "icon": {"item": {"id": "minecraft:pointed_dripstone", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "amethyst": {
+   "item": {
+    "id": "minecraft:amethyst_shard",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "What the Ground Keeps"
+  },
+  "subtitle": {
+   "text": "Six cave biomes. Each one a different kind of wrong."
+  },
+  "description": [
+   "Alex's Caves adds 6 underground biome types.",
+   "Each one is unique in aesthetic, mob set, and resource profile.",
+   "",
+   "Primordial Caves: ancient life. Living rock.",
+   "Toxic Caves: Chemical vents. Poisonous atmosphere.",
+   "Magnetic Caves: Gravitational anomalies. Crystal formations.",
+   "Abyssal Chasm: The deepest point. Dark and dimensional.",
+   "Mushroom Caverns: Bioluminescent fungi. Strange mobs.",
+   "Forsaken Hollow: Skeletal remains. Something ancient died here.",
+   "",
+   "Each biome has unique mobs. Entity IDs start with `alexscaves:`.",
+   "The Nucleeper (alexscaves:nucleeper) appears in toxic variants.",
+   "Its eye ingredient is tied to the Cryptic civilization — Ch13.",
+   "",
+   "→ Discover an Alex's Caves biome [check]",
+   "→ Collect unique cave biome materials [check]"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     760,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:pointed_dripstone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

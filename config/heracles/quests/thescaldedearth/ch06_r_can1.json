@@ -1,70 +1,104 @@
 {
-  "dependencies": ["ch06_world"],
-  "tasks": {
-    "powder_charge": {
-      "type": "heracles:item",
-      "item": "create_big_cannons:powder_charge",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "impact_fuze": {
-      "type": "heracles:item",
-      "item": "create_big_cannons:impact_fuze",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "build_cannon": {
-      "title": "Build a functional cannon barrel and mount it on a Create contraption",
-      "icon": {"item": {"id": "create_big_cannons:powder_charge", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch06_world"
+ ],
+ "tasks": {
+  "powder_charge": {
+   "type": "heracles:item",
+   "item": "create_big_cannons:powder_charge",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "he_shell": {
-      "item": {"id": "create_big_cannons:he_shell", "count": 8},
-      "type": "heracles:item"
-    },
-    "solid_shot": {
-      "item": {"id": "create_big_cannons:solid_shot", "count": 16},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 8},
-      "type": "heracles:item"
-    }
+  "impact_fuze": {
+   "type": "heracles:item",
+   "item": "create_big_cannons:impact_fuze",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "Artillery"},
-    "subtitle": {"text": "The factory floor can make anything. Including this."},
-    "description": [
-      "The steam engine is not only for production.",
-      "It can drive machinery that has nothing to do with trade.",
-      "",
-      "The Create: Big Cannons mod gives you a barrel,",
-      "a powder charge, a fuze, and a choice about what to point it at.",
-      "",
-      "Cannon barrel tiers: Log → Bronze → Cast Iron → Steel → Nethersteel.",
-      "Longer barrel = less recoil. Rifled barrel = less spread.",
-      "Start with a Log Barrel — functional and craftable now.",
-      "",
-      "Powder Charges are the propellant.",
-      "Impact Fuze detonates on contact.",
-      "HE shells deal area damage. AP shot pierces.",
-      "",
-      "→ Craft 8 Powder Charges",
-      "→ Craft 4 Impact Fuzes",
-      "→ Build a functional cannon [check]"
-    ],
-    "groups": {"The Scalded Earth": {"position": [150, 0]}},
-    "icon": {"item": {"id": "create_big_cannons:impact_fuze", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "build_cannon": {
+   "title": "Build a functional cannon barrel and mount it on a Create contraption",
+   "icon": {
+    "item": {
+     "id": "create_big_cannons:powder_charge",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "he_shell": {
+   "item": {
+    "id": "create_big_cannons:he_shell",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "solid_shot": {
+   "item": {
+    "id": "create_big_cannons:solid_shot",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Artillery"
+  },
+  "subtitle": {
+   "text": "The factory floor can make anything. Including this."
+  },
+  "description": [
+   "The steam engine is not only for production.",
+   "It can drive machinery that has nothing to do with trade.",
+   "",
+   "The Create: Big Cannons mod gives you a barrel,",
+   "a powder charge, a fuze, and a choice about what to point it at.",
+   "",
+   "Cannon barrel tiers: Log → Bronze → Cast Iron → Steel → Nethersteel.",
+   "Longer barrel = less recoil. Rifled barrel = less spread.",
+   "Start with a Log Barrel — functional and craftable now.",
+   "",
+   "Powder Charges are the propellant.",
+   "Impact Fuze detonates on contact.",
+   "HE shells deal area damage. AP shot pierces.",
+   "",
+   "→ Craft 8 Powder Charges",
+   "→ Craft 4 Impact Fuzes",
+   "→ Build a functional cannon [check]"
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     460,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create_big_cannons:impact_fuze",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

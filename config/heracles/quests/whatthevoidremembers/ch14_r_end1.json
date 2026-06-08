@@ -1,60 +1,97 @@
 {
-  "dependencies": ["ch14_world"],
-  "tasks": {
-    "dragon_steak": {
-      "title": "Craft Dragon Steak (End's Delight — cooked dragon meat in a specific recipe)",
-      "icon": {"item": {"id": "ends_delight:dragon_steak", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_world"
+ ],
+ "tasks": {
+  "dragon_steak": {
+   "title": "Craft Dragon Steak (End's Delight — cooked dragon meat in a specific recipe)",
+   "icon": {
+    "item": {
+     "id": "ends_delight:dragon_steak",
+     "count": 1
     },
-    "void_broth": {
-      "title": "Craft Void Broth (End's Delight — combines dragon breath and End materials)",
-      "icon": {"item": {"id": "ends_delight:void_broth", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "dragon_steak": {
-      "item": {"id": "ends_delight:dragon_steak", "count": 4},
-      "type": "heracles:item"
+  "void_broth": {
+   "title": "Craft Void Broth (End's Delight — combines dragon breath and End materials)",
+   "icon": {
+    "item": {
+     "id": "ends_delight:void_broth",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Dragon Cuisine"},
-    "subtitle": {"text": "You are eating a god's guardian. Season appropriately."},
-    "description": [
-      "End's Delight expands the dragon into a full food system.",
-      "Dragon Steak is the baseline — cooked dragon meat processed further.",
-      "Void Broth is the dragon's essence in liquid form — dragon breath + End stone materials.",
-      "",
-      "The End is a complete ecosystem if you treat it like one:",
-      "- Dragon meat from the boss",
-      "- Dragon Breath collected from acid clouds",
-      "- Chorus Fruit from the outer islands",
-      "- End Stone as a cooking vessel material",
-      "",
-      "Dungeon Meshi:",
-      "Laios's thesis was that to understand a monster,",
-      "you must eat it. Not just kill it.",
-      "The killing is easy. The cooking requires knowledge.",
-      "The eating requires acceptance.",
-      "",
-      "→ Craft Dragon Steak [check]",
-      "→ Craft Void Broth [check]"
-    ],
-    "groups": {"What the Void Remembers": {"position": [-150, 0]}},
-    "icon": {"item": {"id": "ends_delight:dragon_steak", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "dragon_steak": {
+   "item": {
+    "id": "ends_delight:dragon_steak",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Dragon Cuisine"
+  },
+  "subtitle": {
+   "text": "You are eating a god's guardian. Season appropriately."
+  },
+  "description": [
+   "End's Delight expands the dragon into a full food system.",
+   "Dragon Steak is the baseline — cooked dragon meat processed further.",
+   "Void Broth is the dragon's essence in liquid form — dragon breath + End stone materials.",
+   "",
+   "The End is a complete ecosystem if you treat it like one:",
+   "- Dragon meat from the boss",
+   "- Dragon Breath collected from acid clouds",
+   "- Chorus Fruit from the outer islands",
+   "- End Stone as a cooking vessel material",
+   "",
+   "Dungeon Meshi:",
+   "Laios's thesis was that to understand a monster,",
+   "you must eat it. Not just kill it.",
+   "The killing is easy. The cooking requires knowledge.",
+   "The eating requires acceptance.",
+   "",
+   "→ Craft Dragon Steak [check]",
+   "→ Craft Void Broth [check]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     460,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "ends_delight:dragon_steak",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,124 +1,124 @@
 {
-  "dependencies": [
-    "ch12_wither_storm"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/void_gate"
-    },
-    "portal_complete": {
-      "title": "Confirm End Remastered portal complete — all 12 eyes placed, portal open",
-      "icon": {
-        "item": {
-          "id": "minecraft:end_portal_frame",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch12_wither_storm"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Void Gate scroll at a Research Pedestal"
   },
-  "rewards": {
-    "ender_eye": {
-      "item": {
-        "id": "minecraft:ender_eye",
-        "count": 6
-      },
-      "type": "heracles:item"
+  "portal_complete": {
+   "title": "Confirm End Remastered portal complete — all 12 eyes placed, portal open",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_portal_frame",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Void Gate"
-    },
-    "subtitle": {
-      "text": "12 eyes. 12 civilizations. One gate. The portal does not open until you have carried all of them."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.12 · THE VOID GATE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Void Gate scroll is the last record",
-      "  of what the portal system was designed to do.",
-      "  It does not describe where the portal goes.",
-      "  It describes why it was built.",
-      "  Read it after you open the gate.",
-      "  Not before.",
-      "",
-      "◈ PORTAL COMPLETION CHECKLIST",
-      "  └ 9 custom eyes: all civilization bosses defeated",
-      "    Black / Lost / Old / Cold / Rogue / Cryptic /",
-      "    Magical / Corrupted / Cursed",
-      "  └ 3 anchor eyes: Wither Eye + Guardian Eye + Nether Eye",
-      "  └ Portal frame: 12 active frames in stronghold",
-      "  └ 20-minute re-entry timer: honored between placements",
-      "    (do not place all eyes in one session unless",
-      "     you have been stockpiling for 20+ minutes each)",
-      "",
-      "◈ POST-PORTAL CONTENT (END REMASTERED)",
-      "  └ The End dimension: expanded via End Remastered",
-      "  └ True End / Beyond the Dream: separate dimension",
-      "    accessible post-dragon via Dimensional Tears bottle",
-      "  └ Ender Guardian + Harbinger + Primordial:",
-      "    Cataclysm bosses that only spawn post-portal",
-      "  └ Eldritch Theory scroll: End Endermen at 5%",
-      "  └ Boundless scroll: Shulkers at 15%",
-      "",
-      "◈ SCROLL: The Void Gate",
-      "  └ Found in End-adjacent ruin structures,",
-      "    post-Wither Storm loot caches, End stronghold",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: full post-portal End lore,",
-      "    Cataclysm post-portal boss access, void exploration guide",
-      "",
-      "▸ The gate was built by people who knew",
-      "  they would never use it.",
-      "  They built it for whoever came after.",
-      "  The scroll is addressed to you.",
-      "  It says: 'The void is not empty.",
-      "  We left everything we knew inside it.",
-      "  Take it.'",
-      "",
-      "▶ Find The Void Gate scroll [check]",
-      "▶ Complete the End Remastered portal [check]",
-      "",
-      "◇ Beyond the Dream (True End) is Ch13+ content.",
-      "  Open the main End portal first.",
-      "  The Dimensional Tears bottle for True End",
-      "  is crafted from End-dimension materials."
-    ],
-    "groups": {
-      "The Kingdom You Build": {
-        "position": [
-          450,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:ender_eye",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "ender_eye": {
+   "item": {
+    "id": "minecraft:ender_eye",
+    "count": 6
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Void Gate"
+  },
+  "subtitle": {
+   "text": "12 eyes. 12 civilizations. One gate. The portal does not open until you have carried all of them."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.12 · THE VOID GATE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Void Gate scroll is the last record",
+   "  of what the portal system was designed to do.",
+   "  It does not describe where the portal goes.",
+   "  It describes why it was built.",
+   "  Read it after you open the gate.",
+   "  Not before.",
+   "",
+   "◈ PORTAL COMPLETION CHECKLIST",
+   "  └ 9 custom eyes: all civilization bosses defeated",
+   "    Black / Lost / Old / Cold / Rogue / Cryptic /",
+   "    Magical / Corrupted / Cursed",
+   "  └ 3 anchor eyes: Wither Eye + Guardian Eye + Nether Eye",
+   "  └ Portal frame: 12 active frames in stronghold",
+   "  └ 20-minute re-entry timer: honored between placements",
+   "    (do not place all eyes in one session unless",
+   "     you have been stockpiling for 20+ minutes each)",
+   "",
+   "◈ POST-PORTAL CONTENT (END REMASTERED)",
+   "  └ The End dimension: expanded via End Remastered",
+   "  └ True End / Beyond the Dream: separate dimension",
+   "    accessible post-dragon via Dimensional Tears bottle",
+   "  └ Ender Guardian + Harbinger + Primordial:",
+   "    Cataclysm bosses that only spawn post-portal",
+   "  └ Eldritch Theory scroll: End Endermen at 5%",
+   "  └ Boundless scroll: Shulkers at 15%",
+   "",
+   "◈ SCROLL: The Void Gate",
+   "  └ Found in End-adjacent ruin structures,",
+   "    post-Wither Storm loot caches, End stronghold",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: full post-portal End lore,",
+   "    Cataclysm post-portal boss access, void exploration guide",
+   "",
+   "▸ The gate was built by people who knew",
+   "  they would never use it.",
+   "  They built it for whoever came after.",
+   "  The scroll is addressed to you.",
+   "  It says: 'The void is not empty.",
+   "  We left everything we knew inside it.",
+   "  Take it.'",
+   "",
+   "▶ Find The Void Gate scroll [check]",
+   "▶ Complete the End Remastered portal [check]",
+   "",
+   "◇ Beyond the Dream (True End) is Ch13+ content.",
+   "  Open the main End portal first.",
+   "  The Dimensional Tears bottle for True End",
+   "  is crafted from End-dimension materials."
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     1840,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

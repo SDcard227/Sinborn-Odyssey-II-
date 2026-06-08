@@ -1,64 +1,101 @@
 {
-  "dependencies": ["ch16_gate"],
-  "tasks": {
-    "quantum_research": {
-      "title": "Study the Create Teleporters quantum chain — review JEI for the 5-step Quantum Mechanism recipe",
-      "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_gate"
+ ],
+ "tasks": {
+  "quantum_research": {
+   "title": "Study the Create Teleporters quantum chain — review JEI for the 5-step Quantum Mechanism recipe",
+   "icon": {
+    "item": {
+     "id": "createteleporters:quantum_mechanism",
+     "count": 1
     },
-    "create_advanced": {
-      "title": "Confirm your Create network can supply the quantum chain — brass, precision, encased components available",
-      "icon": {"item": {"id": "create:precision_mechanism", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "precision": {
-      "item": {"id": "create:precision_mechanism", "count": 4},
-      "type": "heracles:item"
+  "create_advanced": {
+   "title": "Confirm your Create network can supply the quantum chain — brass, precision, encased components available",
+   "icon": {
+    "item": {
+     "id": "create:precision_mechanism",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Lords of All"},
-    "subtitle": {"text": "You have built a civilization. You have crossed the void. You have survived every mechanism designed to stop you. One thing remains."},
-    "description": [
-      "Ch17 is the final chapter.",
-      "",
-      "The Create Teleporters mod adds instant dimensional travel.",
-      "The Quantum Mechanism is the capstone — a five-step chain of processed quantum materials.",
-      "When installed in a Create Teleporter, it enables teleportation to any registered location.",
-      "",
-      "The 5-step chain:",
-      "1. Redstone Pearl — base quantum material",
-      "2. Quantum Fluid — processed liquid quantum",
-      "3. Quantum Casing — the structural housing",
-      "4. Advanced Quantum Component — precision integration",
-      "5. Quantum Mechanism — the finished device",
-      "",
-      "Each step requires Create processing.",
-      "Your Create network from Ch06-07 should handle this.",
-      "If your network needs expansion, this is the time.",
-      "",
-      "The Lords of All are not those who conquered everything.",
-      "They are those who built the infrastructure for everyone.",
-      "",
-      "→ Study the quantum chain in JEI [check]",
-      "→ Confirm your Create network is ready [check]"
-    ],
-    "groups": {"Lords of All": {"position": [0, 0]}},
-    "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "NEVER",
-    "unlockNotification": true
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "precision": {
+   "item": {
+    "id": "create:precision_mechanism",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Lords of All"
+  },
+  "subtitle": {
+   "text": "You have built a civilization. You have crossed the void. You have survived every mechanism designed to stop you. One thing remains."
+  },
+  "description": [
+   "Ch17 is the final chapter.",
+   "",
+   "The Create Teleporters mod adds instant dimensional travel.",
+   "The Quantum Mechanism is the capstone — a five-step chain of processed quantum materials.",
+   "When installed in a Create Teleporter, it enables teleportation to any registered location.",
+   "",
+   "The 5-step chain:",
+   "1. Redstone Pearl — base quantum material",
+   "2. Quantum Fluid — processed liquid quantum",
+   "3. Quantum Casing — the structural housing",
+   "4. Advanced Quantum Component — precision integration",
+   "5. Quantum Mechanism — the finished device",
+   "",
+   "Each step requires Create processing.",
+   "Your Create network from Ch06-07 should handle this.",
+   "If your network needs expansion, this is the time.",
+   "",
+   "The Lords of All are not those who conquered everything.",
+   "They are those who built the infrastructure for everyone.",
+   "",
+   "→ Study the quantum chain in JEI [check]",
+   "→ Confirm your Create network is ready [check]"
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     0,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "createteleporters:quantum_mechanism",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "NEVER",
+  "unlockNotification": true
+ }
 }

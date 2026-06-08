@@ -1,94 +1,131 @@
 {
-  "dependencies": ["ch10_r_netherite1"],
-  "tasks": {
-    "debris_stack": {
-      "type": "heracles:item",
-      "item": "minecraft:ancient_debris",
-      "amount": 20,
-      "collection": "AUTOMATIC"
+ "dependencies": [
+  "ch10_r_netherite1"
+ ],
+ "tasks": {
+  "debris_stack": {
+   "type": "heracles:item",
+   "item": "minecraft:ancient_debris",
+   "amount": 20,
+   "collection": "AUTOMATIC"
+  },
+  "bed_mine": {
+   "title": "Use the bed mining technique at Y:8-22 in the Nether — beds explode there, exposing Ancient Debris efficiently",
+   "icon": {
+    "item": {
+     "id": "minecraft:red_bed",
+     "count": 1
     },
-    "bed_mine": {
-      "title": "Use the bed mining technique at Y:8-22 in the Nether — beds explode there, exposing Ancient Debris efficiently",
-      "icon": {"item": {"id": "minecraft:red_bed", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "netherite_scrap": {"item": {"id": "minecraft:netherite_scrap", "count": 4}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Debris Field"},
-    "subtitle": {"text": "Y:8-22. Beds explode in the Nether. That is a feature, not a flaw. Bring beds, not pickaxes."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.10 · THE DEBRIS FIELD",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Ancient Debris is the rarest ore by weight.",
-      "  It spawns only in the Nether at Y:8-22.",
-      "  The bed mining technique finds more per hour",
-      "  than any other method.",
-      "  Learn it once. Use it for all netherite farming.",
-      "",
-      "◈ BED MINING TECHNIQUE",
-      "  └ Strip mine at Y:15 in the Nether",
-      "  └ Place a bed in a pocket 1 block ahead",
-      "  └ Right-click bed: it detonates (beds explode in Nether)",
-      "  └ Explosion radius exposes Ancient Debris",
-      "    that would take 30+ seconds to pickaxe manually",
-      "  └ Ancient Debris is blast-resistant — the explosion",
-      "    destroys Netherrack but leaves Debris intact",
-      "  └ Bring 64 beds. One per pocket.",
-      "",
-      "◈ YIELD MATH",
-      "  └ Ancient Debris spawns in blobs of 1-3",
-      "  └ Average: 2-3 blobs per chunk at Y:15",
-      "  └ One full netherite set: ~40 Debris → 40 Scrap →",
-      "    10 Netherite Ingots (4 scrap + 4 gold each)",
-      "  └ Upgrade diamond tools: 1 Ingot each",
-      "  └ Budget: 80 Debris minimum for full set + tools",
-      "",
-      "◈ CANONNUKES URANIUM OVERLAP",
-      "  └ Alex's Caves Radioactive biome has radrock_uranium_ore",
-      "    at similar Y levels in the Nether",
-      "  └ If you pass through radioactive Nether terrain,",
-      "    strip mine that zone too — uranium for the reactor",
-      "  └ Hazmat armor recommended in radioactive biomes",
-      "    (Cold Sweat interaction: heat + radiation stacks)",
-      "",
-      "◈ SAFETY NOTES",
-      "  └ Y:8-22 is lava lake territory",
-      "    Fireproof potion: mandatory",
-      "  └ Wither Skeleton patrol range: fortress proximity",
-      "    Mine far from fortresses for cleaner runs",
-      "  └ Bed explosion: does NOT damage the miner if placed",
-      "    correctly in a pocket (stand back 2+ blocks)",
-      "",
-      "▸ Netherite was forged at the start of the age.",
-      "  The beds were an accident.",
-      "  The technique was discovered by someone",
-      "  who did not die from the first explosion.",
-      "  That person deserves credit.",
-      "",
-      "▶ Collect 20 Ancient Debris",
-      "▶ Use the bed mining technique [check]",
-      "",
-      "◇ Fortune III does NOT increase Debris drop.",
-      "  Debris always drops 1:1 regardless of enchant.",
-      "  Use a Silk Touch pick for raw ore mining",
-      "  if you prefer smelting over direct harvest."
-    ],
-    "groups": {"The Pale Shore": {"position": [-450, 150]}},
-    "icon": {"item": {"id": "minecraft:ancient_debris", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "netherite_scrap": {
+   "item": {
+    "id": "minecraft:netherite_scrap",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Debris Field"
+  },
+  "subtitle": {
+   "text": "Y:8-22. Beds explode in the Nether. That is a feature, not a flaw. Bring beds, not pickaxes."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.10 · THE DEBRIS FIELD",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Ancient Debris is the rarest ore by weight.",
+   "  It spawns only in the Nether at Y:8-22.",
+   "  The bed mining technique finds more per hour",
+   "  than any other method.",
+   "  Learn it once. Use it for all netherite farming.",
+   "",
+   "◈ BED MINING TECHNIQUE",
+   "  └ Strip mine at Y:15 in the Nether",
+   "  └ Place a bed in a pocket 1 block ahead",
+   "  └ Right-click bed: it detonates (beds explode in Nether)",
+   "  └ Explosion radius exposes Ancient Debris",
+   "    that would take 30+ seconds to pickaxe manually",
+   "  └ Ancient Debris is blast-resistant — the explosion",
+   "    destroys Netherrack but leaves Debris intact",
+   "  └ Bring 64 beds. One per pocket.",
+   "",
+   "◈ YIELD MATH",
+   "  └ Ancient Debris spawns in blobs of 1-3",
+   "  └ Average: 2-3 blobs per chunk at Y:15",
+   "  └ One full netherite set: ~40 Debris → 40 Scrap →",
+   "    10 Netherite Ingots (4 scrap + 4 gold each)",
+   "  └ Upgrade diamond tools: 1 Ingot each",
+   "  └ Budget: 80 Debris minimum for full set + tools",
+   "",
+   "◈ CANONNUKES URANIUM OVERLAP",
+   "  └ Alex's Caves Radioactive biome has radrock_uranium_ore",
+   "    at similar Y levels in the Nether",
+   "  └ If you pass through radioactive Nether terrain,",
+   "    strip mine that zone too — uranium for the reactor",
+   "  └ Hazmat armor recommended in radioactive biomes",
+   "    (Cold Sweat interaction: heat + radiation stacks)",
+   "",
+   "◈ SAFETY NOTES",
+   "  └ Y:8-22 is lava lake territory",
+   "    Fireproof potion: mandatory",
+   "  └ Wither Skeleton patrol range: fortress proximity",
+   "    Mine far from fortresses for cleaner runs",
+   "  └ Bed explosion: does NOT damage the miner if placed",
+   "    correctly in a pocket (stand back 2+ blocks)",
+   "",
+   "▸ Netherite was forged at the start of the age.",
+   "  The beds were an accident.",
+   "  The technique was discovered by someone",
+   "  who did not die from the first explosion.",
+   "  That person deserves credit.",
+   "",
+   "▶ Collect 20 Ancient Debris",
+   "▶ Use the bed mining technique [check]",
+   "",
+   "◇ Fortune III does NOT increase Debris drop.",
+   "  Debris always drops 1:1 regardless of enchant.",
+   "  Use a Silk Touch pick for raw ore mining",
+   "  if you prefer smelting over direct harvest."
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     920,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ancient_debris",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

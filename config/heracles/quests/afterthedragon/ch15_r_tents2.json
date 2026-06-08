@@ -1,60 +1,97 @@
 {
-  "dependencies": ["ch15_r_tents1"],
-  "tasks": {
-    "large_tent": {
-      "title": "Upgrade to a Simply Tents large tent — the maximum camp size for extended expeditions",
-      "icon": {"item": {"id": "simplytents:large_tent", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_r_tents1"
+ ],
+ "tasks": {
+  "large_tent": {
+   "title": "Upgrade to a Simply Tents large tent — the maximum camp size for extended expeditions",
+   "icon": {
+    "item": {
+     "id": "simplytents:large_tent",
+     "count": 1
     },
-    "camp_outpost": {
-      "title": "Establish a tent outpost near a dungeon or far-away location — create a forward base",
-      "icon": {"item": {"id": "simplytents:medium_tent", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "large_tent": {
-      "item": {"id": "simplytents:large_tent", "count": 1},
-      "type": "heracles:item"
+  "camp_outpost": {
+   "title": "Establish a tent outpost near a dungeon or far-away location — create a forward base",
+   "icon": {
+    "item": {
+     "id": "simplytents:medium_tent",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Forward Base"},
-    "subtitle": {"text": "The kingdom does not stop at your walls. It goes as far as you can reliably return from."},
-    "description": [
-      "The large tent expands the portable camp system significantly.",
-      "It takes longer to set up but provides more protection and storage.",
-      "",
-      "A forward base outpost near Ch16's Celestisynth gathering zones",
-      "will reduce travel time significantly.",
-      "Celestisynth materials may require specific dimension or biome access.",
-      "Setting up a tent outpost near those zones is efficient logistics.",
-      "",
-      "Simply Tents works well with the Via Romana road system from Ch12:",
-      "Road → Outpost tent → Gather → Return along road.",
-      "This is the infrastructure the kingdom runs on.",
-      "",
-      "The people of Ch12 are using these roads and tents.",
-      "The army from Ch12 might be maintaining them.",
-      "The kingdom is alive.",
-      "",
-      "→ Upgrade to a large Simply Tent [check]",
-      "→ Establish a forward base outpost [check]"
-    ],
-    "groups": {"After the Dragon": {"position": [-300, 0]}},
-    "icon": {"item": {"id": "simplytents:large_tent", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "large_tent": {
+   "item": {
+    "id": "simplytents:large_tent",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Forward Base"
+  },
+  "subtitle": {
+   "text": "The kingdom does not stop at your walls. It goes as far as you can reliably return from."
+  },
+  "description": [
+   "The large tent expands the portable camp system significantly.",
+   "It takes longer to set up but provides more protection and storage.",
+   "",
+   "A forward base outpost near Ch16's Celestisynth gathering zones",
+   "will reduce travel time significantly.",
+   "Celestisynth materials may require specific dimension or biome access.",
+   "Setting up a tent outpost near those zones is efficient logistics.",
+   "",
+   "Simply Tents works well with the Via Romana road system from Ch12:",
+   "Road → Outpost tent → Gather → Return along road.",
+   "This is the infrastructure the kingdom runs on.",
+   "",
+   "The people of Ch12 are using these roads and tents.",
+   "The army from Ch12 might be maintaining them.",
+   "The kingdom is alive.",
+   "",
+   "→ Upgrade to a large Simply Tent [check]",
+   "→ Establish a forward base outpost [check]"
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     920,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "simplytents:large_tent",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

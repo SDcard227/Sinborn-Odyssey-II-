@@ -1,118 +1,118 @@
 {
-  "dependencies": [
-    "ch07_r_food3"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/engineered_cuisine"
-    },
-    "auto_farm": {
-      "title": "Build a fully automated crop farm using Create (Deployer harvests, Funnel/Belt collects, auto-deposits)",
-      "icon": {
-        "item": {
-          "id": "create:deployer",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch07_r_food3"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Engineered Cuisine scroll at a Research Pedestal"
   },
-  "rewards": {
-    "food": {
-      "item": {
-        "id": "farmersdelight:roasted_mutton_chops",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "auto_farm": {
+   "title": "Build a fully automated crop farm using Create (Deployer harvests, Funnel/Belt collects, auto-deposits)",
+   "icon": {
+    "item": {
+     "id": "create:deployer",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Engineered Cuisine"
-    },
-    "subtitle": {
-      "text": "The farm doesn't need you anymore. That's the point."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.07 · ENGINEERED CUISINE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Engineered Cuisine is the scroll that describes",
-      "  food production at industrial scale.",
-      "  The farm feeds a city.",
-      "  The factory feeds the farm.",
-      "  You just design it and step back.",
-      "",
-      "◈ AUTOMATED FOOD CHAIN",
-      "  └ Crop Farm: Deployer with Bone Meal + Deployer harvest",
-      "    → Belt collection → Funnel to Cooking Pot input",
-      "  └ Animal Farm: Deployer feeds, harvests drops",
-      "    → Belt to Cutting Board Deployer → components",
-      "    → Cooking Pot auto-fills with water + meat",
-      "  └ Brewing Automation: Spout fills bottles,",
-      "    Deployer puts items in Brewing Stand",
-      "  └ Output Chest: sorted by Funnel filter chains",
-      "",
-      "◈ DIET AT SCALE",
-      "  └ Automated farms cover all 5 diet groups",
-      "  └ Grain: wheat/rice auto-farm",
-      "  └ Protein: automated meat processing",
-      "  └ Fruit: automated berry/melon harvester",
-      "  └ Vegetable: carrot/potato auto-farm",
-      "  └ Dairy: automated honey/milk collection",
-      "",
-      "◈ SCROLL: Engineered Cuisine",
-      "  └ Found in: Create food factory ruins,",
-      "    automated kitchen chests, industrial farm outpost loot",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: full food automation design guide,",
-      "    diet-group automation knowledge",
-      "",
-      "▸ The scroll was found in the output chest.",
-      "  The factory was still running.",
-      "  The storage was full.",
-      "  No one was home to eat it.",
-      "",
-      "▶ Find The Engineered Cuisine scroll [check]",
-      "▶ Build an automated crop farm with Create [check]",
-      "",
-      "◇ With automated food + mead + wine production,",
-      "  your settlement is self-sufficient.",
-      "  Ch08 (deep dark) doesn't care. But you'll be fed."
-    ],
-    "groups": {
-      "Blood and Oil": {
-        "position": [
-          150,
-          600
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create:deployer",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "food": {
+   "item": {
+    "id": "farmersdelight:roasted_mutton_chops",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Engineered Cuisine"
+  },
+  "subtitle": {
+   "text": "The farm doesn't need you anymore. That's the point."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.07 · ENGINEERED CUISINE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Engineered Cuisine is the scroll that describes",
+   "  food production at industrial scale.",
+   "  The farm feeds a city.",
+   "  The factory feeds the farm.",
+   "  You just design it and step back.",
+   "",
+   "◈ AUTOMATED FOOD CHAIN",
+   "  └ Crop Farm: Deployer with Bone Meal + Deployer harvest",
+   "    → Belt collection → Funnel to Cooking Pot input",
+   "  └ Animal Farm: Deployer feeds, harvests drops",
+   "    → Belt to Cutting Board Deployer → components",
+   "    → Cooking Pot auto-fills with water + meat",
+   "  └ Brewing Automation: Spout fills bottles,",
+   "    Deployer puts items in Brewing Stand",
+   "  └ Output Chest: sorted by Funnel filter chains",
+   "",
+   "◈ DIET AT SCALE",
+   "  └ Automated farms cover all 5 diet groups",
+   "  └ Grain: wheat/rice auto-farm",
+   "  └ Protein: automated meat processing",
+   "  └ Fruit: automated berry/melon harvester",
+   "  └ Vegetable: carrot/potato auto-farm",
+   "  └ Dairy: automated honey/milk collection",
+   "",
+   "◈ SCROLL: Engineered Cuisine",
+   "  └ Found in: Create food factory ruins,",
+   "    automated kitchen chests, industrial farm outpost loot",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: full food automation design guide,",
+   "    diet-group automation knowledge",
+   "",
+   "▸ The scroll was found in the output chest.",
+   "  The factory was still running.",
+   "  The storage was full.",
+   "  No one was home to eat it.",
+   "",
+   "▶ Find The Engineered Cuisine scroll [check]",
+   "▶ Build an automated crop farm with Create [check]",
+   "",
+   "◇ With automated food + mead + wine production,",
+   "  your settlement is self-sufficient.",
+   "  Ch08 (deep dark) doesn't care. But you'll be fed."
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     2600,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:deployer",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

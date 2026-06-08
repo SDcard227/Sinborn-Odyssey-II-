@@ -1,48 +1,79 @@
 {
-  "dependencies": ["ch02_r_bnt1"],
-  "tasks": {
-    "bounty": {
-      "title": "Complete 1 bounty from a bounty board",
-      "icon": {"item": {"id": "minecraft:paper", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "iron": {
-      "item": {"id": "minecraft:iron_ingot", "count": 8},
-      "type": "heracles:item"
+ "dependencies": [
+  "ch02_r_bnt1"
+ ],
+ "tasks": {
+  "bounty": {
+   "title": "Complete 1 bounty from a bounty board",
+   "icon": {
+    "item": {
+     "id": "minecraft:paper",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 3},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "First Contract"},
-    "subtitle": {"text": "Work and payment. The oldest agreement."},
-    "description": [
-      "Take the paper from the board.",
-      "Read the terms. Do the work. Return.",
-      "",
-      "Bounties scale with difficulty.",
-      "Early ones: deliver food, kill ten mobs.",
-      "Later ones: seek out named locations, rare items.",
-      "",
-      "The economy is not optional. It is part of the world.",
-      "Learn to earn in it.",
-      "",
-      "→ Complete 1 bounty [check]"
-    ],
-    "groups": {"The Kindled Road": {"position": [300, 150]}},
-    "icon": {"item": {"id": "minecraft:paper", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "iron": {
+   "item": {
+    "id": "minecraft:iron_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "First Contract"
+  },
+  "subtitle": {
+   "text": "Work and payment. The oldest agreement."
+  },
+  "description": [
+   "Take the paper from the board.",
+   "Read the terms. Do the work. Return.",
+   "",
+   "Bounties scale with difficulty.",
+   "Early ones: deliver food, kill ten mobs.",
+   "Later ones: seek out named locations, rare items.",
+   "",
+   "The economy is not optional. It is part of the world.",
+   "Learn to earn in it.",
+   "",
+   "→ Complete 1 bounty [check]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     1680,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:paper",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,100 +1,143 @@
 {
-  "dependencies": ["ch17_gate"],
-  "tasks": {
-    "all_systems": {
-      "title": "Confirm all systems are running — teleporter network active, Create SU online, farms passive, Chorus fuel supply",
-      "icon": {"item": {"id": "create:precision_mechanism", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_gate"
+ ],
+ "tasks": {
+  "all_systems": {
+   "title": "Confirm all systems are running — teleporter network active, Create SU online, farms passive, Chorus fuel supply",
+   "icon": {
+    "item": {
+     "id": "create:precision_mechanism",
+     "count": 1
     },
-    "the_record": {
-      "title": "Write a final Book and Quill record — document what you built, what it cost, and what it was for",
-      "icon": {"item": {"id": "minecraft:writable_book", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "crown": {"item": {"id": "numismatics:crown", "count": 64}, "type": "heracles:item"},
-    "book": {"item": {"id": "minecraft:book", "count": 4}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Final Build"},
-    "subtitle": {"text": "This is not the end. The questbook ends. The world continues. Write down what you built. Leave the record behind."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.17 · THE FINAL BUILD",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The questbook ends here.',",
-      "  Not the world.',",
-      "  The questbook is a guide through the first 17 chapters.',",
-      "  The world continues after the guide ends.',",
-      "  What you do after this page',",
-      "  is not written by anyone.',",
-      "  That is the point.',",
-      "",
-      "◈ WHAT YOU BUILT",
-      "  └ Ch01-05: survival systems, early tools, first companions',",
-      "  └ Ch06-08: Create automation, oil chain, ISS magic foundation',",
-      "  └ Ch09: End portal, 12 eye chain, dragon preparation',",
-      "  └ Ch10: nuclear age, Create Teleporters prep, quantum chain start',",
-      "  └ Ch11: Cataclysm chain complete, Emulator gear, Nether cleared',",
-      "  └ Ch12: kingdom foundation, Wither Storm, Scarlet King, Manifestor',",
-      "  └ Ch13-14: End cleared, farmed, mapped — void is supply chain now',",
-      "  └ Ch15-16: homecoming, Celestial Netherite, music hall, wine cellar',",
-      "  └ Ch17: teleporter network, quantum age, archmage, nuclear test',",
-      "",
-      "◈ SYSTEMS CHECK",
-      "  └ Create SU network: main factory running at sufficient SU',",
-      "  └ Quantum Fluid pipeline: Chorus farm → Mixer → Teleporter tanks',",
-      "  └ Passive farms: Enderman (pearls), Chorus (fruit), Shulker (shells)',",
-      "  └ Food supply: seasonal farm + End kitchen + Vinery cellar',",
-      "  └ Lifesteal: 20 hearts + Revive Crystal in Ender Chest',",
-      "  └ Nuclear: Steel Reactor running + 4 shells in storage',",
-      "  └ Companions: Dracolotl + Baby Trigon at base',",
-      "  └ Documentation: Atlas filled + photographs taken + journals written',",
-      "",
-      "◈ THE RECORD",
-      "  └ Write a final Book and Quill entry — what the run was',",
-      "  └ Include: what you built, what was hardest, what surprised you',",
-      "  └ Place it in an item frame in your base',",
-      "    (or in a Bookshelf: vanilla bookshelves are storage too)',",
-      "  └ This is the record the previous civilizations did not leave.',",
-      "    You are leaving it.',",
-      "    Someone will come after you.',",
-      "    This is what they will find.',",
-      "",
-      "▸ Frieren returned to Himmel's grave after 80 years.',",
-      "  She cried.',",
-      "  She had not cried at the funeral.',",
-      "  She needed 80 years to understand what she had lost.',",
-      "  You do not have 80 years.',",
-      "  But you have the journal.',",
-      "  Write it before the understanding fades.',",
-      "  The next Sinborn player will thank you for it.',",
-      "",
-      "▶ Confirm all systems are running [check]",
-      "▶ Write the final Book and Quill record [check]",
-      "",
-      "◇ The questbook is complete.',",
-      "  The world is not.',",
-      "  There are no more gates.',",
-      "  There are no more chapters.',",
-      "  There is only the world you built',",
-      "  and what you choose to do with it',",
-      "  now that no one is telling you what to do next.",
-      "  That is the actual ending.",
-      "  You made it."
-    ],
-    "groups": {"Lords of All": {"position": [450, 300]}},
-    "icon": {"item": {"id": "minecraft:writable_book", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "the_record": {
+   "title": "Write a final Book and Quill record — document what you built, what it cost, and what it was for",
+   "icon": {
+    "item": {
+     "id": "minecraft:writable_book",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "crown": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 64
+   },
+   "type": "heracles:item"
+  },
+  "book": {
+   "item": {
+    "id": "minecraft:book",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Final Build"
+  },
+  "subtitle": {
+   "text": "This is not the end. The questbook ends. The world continues. Write down what you built. Leave the record behind."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.17 · THE FINAL BUILD",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The questbook ends here.',",
+   "  Not the world.',",
+   "  The questbook is a guide through the first 17 chapters.',",
+   "  The world continues after the guide ends.',",
+   "  What you do after this page',",
+   "  is not written by anyone.',",
+   "  That is the point.',",
+   "",
+   "◈ WHAT YOU BUILT",
+   "  └ Ch01-05: survival systems, early tools, first companions',",
+   "  └ Ch06-08: Create automation, oil chain, ISS magic foundation',",
+   "  └ Ch09: End portal, 12 eye chain, dragon preparation',",
+   "  └ Ch10: nuclear age, Create Teleporters prep, quantum chain start',",
+   "  └ Ch11: Cataclysm chain complete, Emulator gear, Nether cleared',",
+   "  └ Ch12: kingdom foundation, Wither Storm, Scarlet King, Manifestor',",
+   "  └ Ch13-14: End cleared, farmed, mapped — void is supply chain now',",
+   "  └ Ch15-16: homecoming, Celestial Netherite, music hall, wine cellar',",
+   "  └ Ch17: teleporter network, quantum age, archmage, nuclear test',",
+   "",
+   "◈ SYSTEMS CHECK",
+   "  └ Create SU network: main factory running at sufficient SU',",
+   "  └ Quantum Fluid pipeline: Chorus farm → Mixer → Teleporter tanks',",
+   "  └ Passive farms: Enderman (pearls), Chorus (fruit), Shulker (shells)',",
+   "  └ Food supply: seasonal farm + End kitchen + Vinery cellar',",
+   "  └ Lifesteal: 20 hearts + Revive Crystal in Ender Chest',",
+   "  └ Nuclear: Steel Reactor running + 4 shells in storage',",
+   "  └ Companions: Dracolotl + Baby Trigon at base',",
+   "  └ Documentation: Atlas filled + photographs taken + journals written',",
+   "",
+   "◈ THE RECORD",
+   "  └ Write a final Book and Quill entry — what the run was',",
+   "  └ Include: what you built, what was hardest, what surprised you',",
+   "  └ Place it in an item frame in your base',",
+   "    (or in a Bookshelf: vanilla bookshelves are storage too)',",
+   "  └ This is the record the previous civilizations did not leave.',",
+   "    You are leaving it.',",
+   "    Someone will come after you.',",
+   "    This is what they will find.',",
+   "",
+   "▸ Frieren returned to Himmel's grave after 80 years.',",
+   "  She cried.',",
+   "  She had not cried at the funeral.',",
+   "  She needed 80 years to understand what she had lost.',",
+   "  You do not have 80 years.',",
+   "  But you have the journal.',",
+   "  Write it before the understanding fades.',",
+   "  The next Sinborn player will thank you for it.',",
+   "",
+   "▶ Confirm all systems are running [check]",
+   "▶ Write the final Book and Quill record [check]",
+   "",
+   "◇ The questbook is complete.',",
+   "  The world is not.',",
+   "  There are no more gates.',",
+   "  There are no more chapters.',",
+   "  There is only the world you built',",
+   "  and what you choose to do with it',",
+   "  now that no one is telling you what to do next.",
+   "  That is the actual ending.",
+   "  You made it."
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     2760,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:writable_book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

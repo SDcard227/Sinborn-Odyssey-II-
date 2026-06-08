@@ -1,124 +1,124 @@
 {
-  "dependencies": [
-    "ch11_r_warped2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/the_wither"
-    },
-    "wither_star": {
-      "type": "heracles:item",
-      "item": "minecraft:nether_star",
-      "amount": 2,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch11_r_warped2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the The Wither scroll at a Research Pedestal"
   },
-  "rewards": {
-    "skulls": {
-      "item": {
-        "id": "minecraft:wither_skeleton_skull",
-        "count": 3
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Wither"
-    },
-    "subtitle": {
-      "text": "Three skulls on four soul sand. You have done this before. Wither Reincarnated has seen it before too."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.11 · THE WITHER",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Wither scroll is the lore record of the Wither.",
-      "  Where it came from. What it represents.",
-      "  The Eye Hunt has a Wither Eye (nether anchor).",
-      "  Every Nether-born thing the Wither passed through",
-      "  is in that eye.",
-      "  Read the scroll. Then build the Eye.",
-      "",
-      "◈ WITHER REINCARNATED PHASES",
-      "  └ Phase 1: standard Wither behavior",
-      "    Skull projectiles, Wither status, flying movement",
-      "    Health: +50% over vanilla baseline",
-      "  └ Phase 2 (at 60% HP): enhanced mode",
-      "    Dash attack, skull rain, shield charge",
-      "    Projectile immunity ends — keep melee pressure",
-      "  └ Phase 3 (at 30% HP): final form",
-      "    All attacks active simultaneously",
-      "    Area denial skulls + dash + accelerated rate",
-      "    Milk removes Wither status — keep milk in inventory",
-      "",
-      "◈ FIGHT SETUP",
-      "  └ Location: underground chamber (Wither breaks blocks)",
-      "    Build fight room: obsidian walls, 20×10 minimum",
-      "  └ Strength II + Resistance I from beacon active",
-      "  └ Melee sword + shield for skull deflection (Phase 1)",
-      "  └ Golden apples × 8 minimum — Wither status stacks",
-      "  └ Milk buckets × 4 — emergency Wither status cleanse",
-      "",
-      "◈ WITHER EYE (End Remastered)",
-      "  └ Wither Eye = Nether anchor in the 9+3 portal",
-      "  └ Recipe requires Nether Star + specific materials",
-      "  └ Farm 2+ Withers before Ch12 for recipe coverage",
-      "  └ Wither Reincarnated drops standard Nether Star",
-      "    (same as vanilla — confirmed guaranteed drop)",
-      "",
-      "◈ SCROLL: The Wither",
-      "  └ Found in Wither shrine structures,",
-      "    deep Nether fortress loot, End stronghold chests",
-      "  └ Research time: 25 min",
-      "  └ Unlocks: Wither lore, Wither Eye recipe awareness,",
-      "    Nether anchor mechanic in portal sequence",
-      "",
-      "▸ The Wither was not born in the Nether.",
-      "  It was built there.",
-      "  The soul sand holds the memory of what was placed",
-      "  against its will.",
-      "  The Wither is the result of that argument.",
-      "",
-      "▶ Find The Wither scroll [check]",
-      "▶ Hold 2 Nether Stars (farm 2 Withers)",
-      "",
-      "◇ Wither Eye recipe: check after researching scroll.",
-      "  The recipe requires End material + Nether Star.",
-      "  Farm Withers before End access to stockpile stars."
-    ],
-    "groups": {
-      "Where the Skin Tears": {
-        "position": [
-          -450,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:nether_star",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "wither_star": {
+   "type": "heracles:item",
+   "item": "minecraft:nether_star",
+   "amount": 2,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "skulls": {
+   "item": {
+    "id": "minecraft:wither_skeleton_skull",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Wither"
+  },
+  "subtitle": {
+   "text": "Three skulls on four soul sand. You have done this before. Wither Reincarnated has seen it before too."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.11 · THE WITHER",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Wither scroll is the lore record of the Wither.",
+   "  Where it came from. What it represents.",
+   "  The Eye Hunt has a Wither Eye (nether anchor).",
+   "  Every Nether-born thing the Wither passed through",
+   "  is in that eye.",
+   "  Read the scroll. Then build the Eye.",
+   "",
+   "◈ WITHER REINCARNATED PHASES",
+   "  └ Phase 1: standard Wither behavior",
+   "    Skull projectiles, Wither status, flying movement",
+   "    Health: +50% over vanilla baseline",
+   "  └ Phase 2 (at 60% HP): enhanced mode",
+   "    Dash attack, skull rain, shield charge",
+   "    Projectile immunity ends — keep melee pressure",
+   "  └ Phase 3 (at 30% HP): final form",
+   "    All attacks active simultaneously",
+   "    Area denial skulls + dash + accelerated rate",
+   "    Milk removes Wither status — keep milk in inventory",
+   "",
+   "◈ FIGHT SETUP",
+   "  └ Location: underground chamber (Wither breaks blocks)",
+   "    Build fight room: obsidian walls, 20×10 minimum",
+   "  └ Strength II + Resistance I from beacon active",
+   "  └ Melee sword + shield for skull deflection (Phase 1)",
+   "  └ Golden apples × 8 minimum — Wither status stacks",
+   "  └ Milk buckets × 4 — emergency Wither status cleanse",
+   "",
+   "◈ WITHER EYE (End Remastered)",
+   "  └ Wither Eye = Nether anchor in the 9+3 portal",
+   "  └ Recipe requires Nether Star + specific materials",
+   "  └ Farm 2+ Withers before Ch12 for recipe coverage",
+   "  └ Wither Reincarnated drops standard Nether Star",
+   "    (same as vanilla — confirmed guaranteed drop)",
+   "",
+   "◈ SCROLL: The Wither",
+   "  └ Found in Wither shrine structures,",
+   "    deep Nether fortress loot, End stronghold chests",
+   "  └ Research time: 25 min",
+   "  └ Unlocks: Wither lore, Wither Eye recipe awareness,",
+   "    Nether anchor mechanic in portal sequence",
+   "",
+   "▸ The Wither was not born in the Nether.",
+   "  It was built there.",
+   "  The soul sand holds the memory of what was placed",
+   "  against its will.",
+   "  The Wither is the result of that argument.",
+   "",
+   "▶ Find The Wither scroll [check]",
+   "▶ Hold 2 Nether Stars (farm 2 Withers)",
+   "",
+   "◇ Wither Eye recipe: check after researching scroll.",
+   "  The recipe requires End material + Nether Star.",
+   "  Farm Withers before End access to stockpile stars."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1380,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:nether_star",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

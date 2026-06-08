@@ -1,57 +1,94 @@
 {
-  "dependencies": ["ch05_trade"],
-  "tasks": {
-    "relationship": {
-      "title": "Build a relationship with an MCA villager (gift items)",
-      "icon": {"item": {"id": "minecraft:rose_bush", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch05_trade"
+ ],
+ "tasks": {
+  "relationship": {
+   "title": "Build a relationship with an MCA villager (gift items)",
+   "icon": {
+    "item": {
+     "id": "minecraft:rose_bush",
+     "count": 1
     },
-    "companion": {
-      "title": "Recruit an MCA villager as a companion",
-      "icon": {"item": {"id": "minecraft:paper", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "rose_gold": {
-      "item": {"id": "mca:rose_gold_ingot", "count": 4},
-      "type": "heracles:item"
+  "companion": {
+   "title": "Recruit an MCA villager as a companion",
+   "icon": {
+    "item": {
+     "id": "minecraft:paper",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 4},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "A Familiar Face"},
-    "subtitle": {"text": "The culture age does not make you powerful. It makes you known."},
-    "description": [
-      "MCA Reborn villagers have a full relationship system.",
-      "Gift items to raise reputation. Talk regularly.",
-      "When reputation is high enough: recruit as companion.",
-      "",
-      "Companions follow, fight, trade, and remember.",
-      "Marry to produce children who grow into villagers.",
-      "",
-      "Rose Gold is an MCA Reborn material — used in",
-      "relationship items and high-tier MCA recipes.",
-      "",
-      "The culture age does not make you powerful.",
-      "It makes you informed. And it makes you remembered.",
-      "",
-      "→ Build a relationship with a villager [check]",
-      "→ Recruit a companion [check]"
-    ],
-    "groups": {"The Spoken Word": {"position": [0, 300]}},
-    "icon": {"item": {"id": "mca:rose_gold_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "rose_gold": {
+   "item": {
+    "id": "mca:rose_gold_ingot",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "A Familiar Face"
+  },
+  "subtitle": {
+   "text": "The culture age does not make you powerful. It makes you known."
+  },
+  "description": [
+   "MCA Reborn villagers have a full relationship system.",
+   "Gift items to raise reputation. Talk regularly.",
+   "When reputation is high enough: recruit as companion.",
+   "",
+   "Companions follow, fight, trade, and remember.",
+   "Marry to produce children who grow into villagers.",
+   "",
+   "Rose Gold is an MCA Reborn material — used in",
+   "relationship items and high-tier MCA recipes.",
+   "",
+   "The culture age does not make you powerful.",
+   "It makes you informed. And it makes you remembered.",
+   "",
+   "→ Build a relationship with a villager [check]",
+   "→ Recruit a companion [check]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1520,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "mca:rose_gold_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

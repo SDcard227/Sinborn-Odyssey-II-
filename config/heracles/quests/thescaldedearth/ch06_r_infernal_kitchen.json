@@ -1,116 +1,116 @@
 {
-  "dependencies": [
-    "ch06_r_nf2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/infernal_kitchen"
-    },
-    "magma_gelatin": {
-      "title": "Craft Magma Gelatin (Nether's Delight — the best fire immunity food in the game)",
-      "icon": {
-        "item": {
-          "id": "nethersdelight:magma_gelatin",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch06_r_nf2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Infernal Kitchen scroll at a Research Pedestal"
   },
-  "rewards": {
-    "gelatin": {
-      "item": {
-        "id": "nethersdelight:magma_gelatin",
-        "count": 4
-      },
-      "type": "heracles:item"
+  "magma_gelatin": {
+   "title": "Craft Magma Gelatin (Nether's Delight — the best fire immunity food in the game)",
+   "icon": {
+    "item": {
+     "id": "nethersdelight:magma_gelatin",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Infernal Kitchen"
-    },
-    "subtitle": {
-      "text": "Magma Gelatin gives sustained fire immunity. Better than Fire Resistance in extended fights."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.06 · THE INFERNAL KITCHEN",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Infernal civilization ate what was available.",
-      "  Magma cream. Nether fungi. Blaze powder.",
-      "  They built a cuisine from ingredients that burn.",
-      "  The food they made grants fire immunity.",
-      "  Not protection. Immunity.",
-      "",
-      "◈ MAGMA GELATIN",
-      "  └ ★ BEST FIRE IMMUNITY FOOD IN THE GAME",
-      "  └ Grants: Fire Resistance effect (food-based,",
-      "    not potion — stacks differently)",
-      "  └ Duration: sustained while the food effect lasts",
-      "  └ Recipe: magma cream + gelatin base + Nether fungi",
-      "    (crafted in FD Cooking Pot)",
-      "  └ Stackable: bring multiple for extended Nether runs",
-      "",
-      "◈ NETHER'S DELIGHT OVERVIEW",
-      "  └ Full Farmer's Delight addon for Nether biomes",
-      "  └ Uses native Nether materials: fungi, flesh,",
-      "    magma cream, blaze powder",
-      "  └ Magma Gelatin = the crown recipe",
-      "  └ Other dishes cover protein + grain groups",
-      "  └ Nether Stew: high saturation, Nether biome sourced",
-      "",
-      "◈ SCROLL: The Infernal Kitchen",
-      "  └ Found in: Nether fortress cooking areas,",
-      "    bastion food caches, Nether exploration chests",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: full Nether's Delight recipe list,",
-      "    Magma Gelatin awareness",
-      "",
-      "▸ The scroll was written in a language",
-      "  that uses fire-resistant ink.",
-      "  Of course it was.",
-      "",
-      "▶ Find The Infernal Kitchen scroll [check]",
-      "▶ Craft Magma Gelatin [check]",
-      "",
-      "◇ Magma Gelatin + Eiswein = the Nether survival kit.",
-      "  One prevents damage. One undoes it.",
-      "  Both together make the Nether traversable."
-    ],
-    "groups": {
-      "The Scalded Earth": {
-        "position": [
-          -600,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "nethersdelight:magma_gelatin",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "gelatin": {
+   "item": {
+    "id": "nethersdelight:magma_gelatin",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Infernal Kitchen"
+  },
+  "subtitle": {
+   "text": "Magma Gelatin gives sustained fire immunity. Better than Fire Resistance in extended fights."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.06 · THE INFERNAL KITCHEN",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Infernal civilization ate what was available.",
+   "  Magma cream. Nether fungi. Blaze powder.",
+   "  They built a cuisine from ingredients that burn.",
+   "  The food they made grants fire immunity.",
+   "  Not protection. Immunity.",
+   "",
+   "◈ MAGMA GELATIN",
+   "  └ ★ BEST FIRE IMMUNITY FOOD IN THE GAME",
+   "  └ Grants: Fire Resistance effect (food-based,",
+   "    not potion — stacks differently)",
+   "  └ Duration: sustained while the food effect lasts",
+   "  └ Recipe: magma cream + gelatin base + Nether fungi",
+   "    (crafted in FD Cooking Pot)",
+   "  └ Stackable: bring multiple for extended Nether runs",
+   "",
+   "◈ NETHER'S DELIGHT OVERVIEW",
+   "  └ Full Farmer's Delight addon for Nether biomes",
+   "  └ Uses native Nether materials: fungi, flesh,",
+   "    magma cream, blaze powder",
+   "  └ Magma Gelatin = the crown recipe",
+   "  └ Other dishes cover protein + grain groups",
+   "  └ Nether Stew: high saturation, Nether biome sourced",
+   "",
+   "◈ SCROLL: The Infernal Kitchen",
+   "  └ Found in: Nether fortress cooking areas,",
+   "    bastion food caches, Nether exploration chests",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: full Nether's Delight recipe list,",
+   "    Magma Gelatin awareness",
+   "",
+   "▸ The scroll was written in a language",
+   "  that uses fire-resistant ink.",
+   "  Of course it was.",
+   "",
+   "▶ Find The Infernal Kitchen scroll [check]",
+   "▶ Craft Magma Gelatin [check]",
+   "",
+   "◇ Magma Gelatin + Eiswein = the Nether survival kit.",
+   "  One prevents damage. One undoes it.",
+   "  Both together make the Nether traversable."
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     1840,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "nethersdelight:magma_gelatin",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

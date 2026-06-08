@@ -1,0 +1,19 @@
+{
+  "display_name": "The Scroll of the Wither Eye",
+  "research_time": 3600,
+  "items": [
+    "endrem:wither_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "sinborn:mechanical_crafting/wither_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

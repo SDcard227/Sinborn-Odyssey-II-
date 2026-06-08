@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch02_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Memory of the Baobab at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:bread",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock memory_of_the_baobab",
+   "title": "Discipline learned: The Memory of the Baobab",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Memory of the Baobab"
+  },
+  "subtitle": {
+   "text": "The Umvuthana kept their dead in their cooking."
+  },
+  "description": [
+   "The archive-people did not write their history. They cooked it.",
+   "Each dish is a name remembered. To eat it is to carry someone forward.",
+   "",
+   "→ Recover and study the Memory of the Baobab at a Research Pedestal."
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     760,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:bread",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

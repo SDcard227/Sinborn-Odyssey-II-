@@ -1,91 +1,134 @@
 {
-  "dependencies": ["ch15_legacy"],
-  "tasks": {
-    "lunar_stone": {
-      "title": "Find and mine Lunar Stone from underground meteor craters — rare Celestisynth ore source",
-      "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_legacy"
+ ],
+ "tasks": {
+  "lunar_stone": {
+   "title": "Find and mine Lunar Stone from underground meteor craters — rare Celestisynth ore source",
+   "icon": {
+    "item": {
+     "id": "celestisynth:lunar_scrap",
+     "count": 1
     },
-    "zephyr_deposit": {
-      "title": "Locate a Zephyr Deposit at Y≥130 in mountain biomes — Celestisynth sky-ore, requires Y=130+ elevation",
-      "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "lunar_scrap": {"item": {"id": "celestisynth:lunar_scrap", "count": 4}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Celestisynth: First Contact"},
-    "subtitle": {"text": "Lunar Stone below the earth. Zephyr Deposits above it. Solar Crystal in the Nether. Three sources. One chain."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.15 · CELESTISYNTH: FIRST CONTACT",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Celestisynth is a late-game material chain",
-      "  that produces Celestial Netherite — the highest tier metal.",
-      "  It requires three ore types from three different locations:",
-      "  Lunar Stone (deep underground), Zephyr Deposit (high mountains),",
-      "  Solar Crystal (Nether dimension).",
-      "  Ch15 is first contact. Ch16 completes the chain.",
-      "",
-      "◈ LUNAR STONE",
-      "  └ Location: underground crater formations",
-      "    (look for unusual circular cave structures — meteor impact sites)",
-      "  └ Depth: mid-to-deep Y levels (Y=0 to Y=40 range)",
-      "  └ Appearance: dark metallic ore in crater floor/walls",
-      "  └ Drop: celestisynth:lunar_scrap (raw material for chain)",
-      "  └ Fortune III: increases scrap yield per ore",
-      "  └ Crater tip: check surrounding stone for signs of impact",
-      "    (craters have a signature rounded burn/blast radius in stone)",
-      "",
-      "◈ ZEPHYR DEPOSIT",
-      "  └ Location: Y≥130 in mountain biomes (Terralith: Stony Peaks,",
-      "    Alpine, and high Terralith mountain variants)",
-      "  └ Appearance: light crystalline ore, pale blue/white",
-      "  └ Spawn: generates in exposed cliff faces and peak formations",
-      "  └ Elytra approach: fly to peak, scan cliff faces for deposits",
-      "  └ Drop: celestisynth:zephyr_fragment (or similar — check JEI)",
-      "  └ Height requirement is strict: below Y=130 it does not generate",
-      "",
-      "◈ SOLAR CRYSTAL (NETHER)",
-      "  └ Location: Nether dimension — Basalt Deltas and high lava areas",
-      "  └ Third input for the Celestisynth chain (Ch16 deep dive)",
-      "  └ Prep: stock fire resistance potions before Nether Celestisynth run",
-      "  └ Full chain: all 3 inputs → Celestial Netherite Ingot (Ch16)",
-      "",
-      "▸ The materials fell from space.",
-      "  The Lunar Stone arrived in a crater.",
-      "  The Zephyr Deposit formed where sky meets stone.",
-      "  The Solar Crystal crystallized from Nether heat.",
-      "  Three kinds of extreme environment,",
-      "  three materials that survived them.",
-      "  The chain that comes from combining them",
-      "  is called Celestial Netherite.",
-      "  The name is accurate.",
-      "",
-      "▶ Find and mine Lunar Stone from a crater [check]",
-      "▶ Locate a Zephyr Deposit at Y≥130 [check]",
-      "",
-      "◇ Ch16 (The Long Road Home) covers the full Celestisynth forge:",
-      "  all three inputs combined → Celestial Netherite Ingot,",
-      "  then armor/tool set and enchantment.",
-      "  Start sourcing all three materials in Ch15.",
-      "  The chain requires specific quantities per piece.",
-      "  More is better — over-farm in Ch15 to enable Ch16 fast."
-    ],
-    "groups": {"After the Dragon": {"position": [150, 300]}},
-    "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "zephyr_deposit": {
+   "title": "Locate a Zephyr Deposit at Y≥130 in mountain biomes — Celestisynth sky-ore, requires Y=130+ elevation",
+   "icon": {
+    "item": {
+     "id": "celestisynth:lunar_scrap",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "lunar_scrap": {
+   "item": {
+    "id": "celestisynth:lunar_scrap",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Celestisynth: First Contact"
+  },
+  "subtitle": {
+   "text": "Lunar Stone below the earth. Zephyr Deposits above it. Solar Crystal in the Nether. Three sources. One chain."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.15 · CELESTISYNTH: FIRST CONTACT",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Celestisynth is a late-game material chain",
+   "  that produces Celestial Netherite — the highest tier metal.",
+   "  It requires three ore types from three different locations:",
+   "  Lunar Stone (deep underground), Zephyr Deposit (high mountains),",
+   "  Solar Crystal (Nether dimension).",
+   "  Ch15 is first contact. Ch16 completes the chain.",
+   "",
+   "◈ LUNAR STONE",
+   "  └ Location: underground crater formations",
+   "    (look for unusual circular cave structures — meteor impact sites)",
+   "  └ Depth: mid-to-deep Y levels (Y=0 to Y=40 range)",
+   "  └ Appearance: dark metallic ore in crater floor/walls",
+   "  └ Drop: celestisynth:lunar_scrap (raw material for chain)",
+   "  └ Fortune III: increases scrap yield per ore",
+   "  └ Crater tip: check surrounding stone for signs of impact",
+   "    (craters have a signature rounded burn/blast radius in stone)",
+   "",
+   "◈ ZEPHYR DEPOSIT",
+   "  └ Location: Y≥130 in mountain biomes (Terralith: Stony Peaks,",
+   "    Alpine, and high Terralith mountain variants)",
+   "  └ Appearance: light crystalline ore, pale blue/white",
+   "  └ Spawn: generates in exposed cliff faces and peak formations",
+   "  └ Elytra approach: fly to peak, scan cliff faces for deposits",
+   "  └ Drop: celestisynth:zephyr_fragment (or similar — check JEI)",
+   "  └ Height requirement is strict: below Y=130 it does not generate",
+   "",
+   "◈ SOLAR CRYSTAL (NETHER)",
+   "  └ Location: Nether dimension — Basalt Deltas and high lava areas",
+   "  └ Third input for the Celestisynth chain (Ch16 deep dive)",
+   "  └ Prep: stock fire resistance potions before Nether Celestisynth run",
+   "  └ Full chain: all 3 inputs → Celestial Netherite Ingot (Ch16)",
+   "",
+   "▸ The materials fell from space.",
+   "  The Lunar Stone arrived in a crater.",
+   "  The Zephyr Deposit formed where sky meets stone.",
+   "  The Solar Crystal crystallized from Nether heat.",
+   "  Three kinds of extreme environment,",
+   "  three materials that survived them.",
+   "  The chain that comes from combining them",
+   "  is called Celestial Netherite.",
+   "  The name is accurate.",
+   "",
+   "▶ Find and mine Lunar Stone from a crater [check]",
+   "▶ Locate a Zephyr Deposit at Y≥130 [check]",
+   "",
+   "◇ Ch16 (The Long Road Home) covers the full Celestisynth forge:",
+   "  all three inputs combined → Celestial Netherite Ingot,",
+   "  then armor/tool set and enchantment.",
+   "  Start sourcing all three materials in Ch15.",
+   "  The chain requires specific quantities per piece.",
+   "  More is better — over-farm in Ch15 to enable Ch16 fast."
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     2300,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "celestisynth:lunar_scrap",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

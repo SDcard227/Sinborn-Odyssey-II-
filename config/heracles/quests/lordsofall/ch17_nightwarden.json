@@ -1,0 +1,60 @@
+{
+ "dependencies": [
+  "ch17_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "traveloptics:the_nightwarden",
+   "amount": 1,
+   "title": "Survive the Excrucis , slay the Nightwarden"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 32
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Excrucis"
+  },
+  "subtitle": {
+   "text": "He grew a pantheon and none of them worked but one. You are the experiment he never finished."
+  },
+  "description": [
+   "The terminal trial. The Nightwarden , the god-maker whose failed prototypes you have been hunting since the End portal opened.",
+   "Two-stage gate: you slew his one working dragon to open the deep End; now you survive his Excrucis ritual.",
+   "On his death he drops the Path to Divinity , the scroll the Convent would not let into the Stoneborn curriculum.",
+   "",
+   "Kill him, and the last knowledge in the world is yours."
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "traveloptics:the_nightwarden_spawn_egg",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
+}

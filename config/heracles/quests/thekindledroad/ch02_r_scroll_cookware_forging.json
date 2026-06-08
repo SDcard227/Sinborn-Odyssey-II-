@@ -1,0 +1,77 @@
+{
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Coppersmith's Kitchen scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "research_scroll": {
+   "title": "Research the The Coppersmith's Kitchen scroll",
+   "icon": {
+    "item": {
+     "id": "farmersdelight:skillet",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock cookware_forging"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Coppersmith's Kitchen"
+  },
+  "subtitle": {
+   "text": "Pots, pans, and a place to set the table."
+  },
+  "description": [
+   "Forged cookware and the dressed table — pots, skillets, stoves, and every plate, cup and utensil.",
+   "",
+   "Unlocks 210 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Coppersmith's Kitchen] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     600,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "farmersdelight:skillet",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
+}

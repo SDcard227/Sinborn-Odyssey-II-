@@ -1,58 +1,95 @@
 {
-  "dependencies": ["ch09_blackeye"],
-  "tasks": {
-    "find_remnant": {
-      "title": "Locate an Ancient Remnant (L Ender's Cataclysm — spawns as a world structure or boss arena)",
-      "icon": {"item": {"id": "cataclysm:remnant_core", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch09_blackeye"
+ ],
+ "tasks": {
+  "find_remnant": {
+   "title": "Locate an Ancient Remnant (L Ender's Cataclysm — spawns as a world structure or boss arena)",
+   "icon": {
+    "item": {
+     "id": "cataclysm:remnant_core",
+     "count": 1
     },
-    "remnant": {
-      "title": "Defeat the Ancient Remnant (Cataclysm — pre-Maledictus boss)",
-      "icon": {"item": {"id": "cataclysm:cursium_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
+  "remnant": {
+   "title": "Defeat the Ancient Remnant (Cataclysm — pre-Maledictus boss)",
+   "icon": {
+    "item": {
+     "id": "cataclysm:cursium_ingot",
+     "count": 1
     },
-    "diamond": {
-      "item": {"id": "minecraft:diamond", "count": 4},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Ancient Remnant"},
-    "subtitle": {"text": "It is not the hardest thing Cataclysm adds. It is the first."},
-    "description": [
-      "L Ender's Cataclysm adds a boss chain:",
-      "Ancient Remnant → Maledictus → Annihilator + Ignis → Emulator",
-      "",
-      "The Ancient Remnant is the entry point.",
-      "It must be defeated before Maledictus becomes available.",
-      "Maledictus drops Cursium — the key ingredient for the deeper chain.",
-      "",
-      "The Cataclysm chain spans Ch09, Ch11, and Ch13.",
-      "The Ancient Remnant is the first step of that long path.",
-      "",
-      "The Black Eye from the Desert civilization is one inheritance.",
-      "The Cataclysm chain is the pathway to the Magical Eye — another.",
-      "Both paths converge at the portal.",
-      "",
-      "→ Find the Ancient Remnant [check]",
-      "→ Defeat the Ancient Remnant [check]"
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [150, 450]}},
-    "icon": {"item": {"id": "minecraft:netherite_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  },
+  "diamond": {
+   "item": {
+    "id": "minecraft:diamond",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Ancient Remnant"
+  },
+  "subtitle": {
+   "text": "It is not the hardest thing Cataclysm adds. It is the first."
+  },
+  "description": [
+   "L Ender's Cataclysm adds a boss chain:",
+   "Ancient Remnant → Maledictus → Annihilator + Ignis → Emulator",
+   "",
+   "The Ancient Remnant is the entry point.",
+   "It must be defeated before Maledictus becomes available.",
+   "Maledictus drops Cursium — the key ingredient for the deeper chain.",
+   "",
+   "The Cataclysm chain spans Ch09, Ch11, and Ch13.",
+   "The Ancient Remnant is the first step of that long path.",
+   "",
+   "The Black Eye from the Desert civilization is one inheritance.",
+   "The Cataclysm chain is the pathway to the Magical Eye — another.",
+   "Both paths converge at the portal.",
+   "",
+   "→ Find the Ancient Remnant [check]",
+   "→ Defeat the Ancient Remnant [check]"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     3480,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:netherite_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

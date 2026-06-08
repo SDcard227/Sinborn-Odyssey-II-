@@ -1,87 +1,130 @@
 {
-  "dependencies": ["ch14_r_ender2"],
-  "tasks": {
-    "enderman_steak": {
-      "title": "Cook and eat Enderman Steak (Ender's Delight — endersdelight: namespace, NOT End's Delight)",
-      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_r_ender2"
+ ],
+ "tasks": {
+  "enderman_steak": {
+   "title": "Cook and eat Enderman Steak (Ender's Delight — endersdelight: namespace, NOT End's Delight)",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_pearl",
+     "count": 1
     },
-    "shulker_soup": {
-      "title": "Cook and eat Shulker Soup from Ender's Delight",
-      "icon": {"item": {"id": "minecraft:shulker_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ender_pearl": {"item": {"id": "minecraft:ender_pearl", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Ender's Delight"},
-    "subtitle": {"text": "Ender's Delight is NOT End's Delight. Different mod. Different ingredients. Endermen and Shulkers — not the dragon."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.14 · ENDER'S DELIGHT",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Two End food mods. Two namespaces. Common confusion.",
-      "  End's Delight (ends_delight:) = dragon food.",
-      "  Ender's Delight (endersdelight:) = enderman and shulker food.",
-      "  Both are in this pack. Both have separate recipe trees.",
-      "  This quest covers Ender's Delight.",
-      "  The dragon quests are right of the spine. This is left.",
-      "",
-      "◈ ENDER'S DELIGHT INGREDIENTS",
-      "  └ Enderman Raw Meat: drops from Endermen via Ender's Delight",
-      "    (Ender's Delight adds a meat drop to vanilla Endermen)",
-      "  └ Shulker ingredients: drops from Shulkers (End Cities)",
-      "    Shulker Shell is vanilla; Ender's Delight adds food items",
-      "  └ Ender Pearl: secondary ingredient in several recipes",
-      "    (used as flavor/binding component in Enderman dishes)",
-      "",
-      "◈ KEY ENDER'S DELIGHT DISHES",
-      "  └ Enderman Steak: high protein, high saturation",
-      "    Best everyday End protein source (Endermen are renewable)",
-      "  └ Shulker Soup: unique buff food from End City combat",
-      "    Shulker drop frequency makes this a luxury item",
-      "  └ Ender's Delight soups/stews: combine Enderman + Chorus",
-      "    for hybrid End dishes with dual-group Diet coverage",
-      "",
-      "◈ ENDERMAN FARM INTEGRATION",
-      "  └ Pearl farm (Ch13) doubles as Enderman Steak farm",
-      "    Every kill: chance of pearl + chance of raw meat",
-      "  └ Smoker setup: 1 Smoker dedicated to End protein",
-      "    (Enderman Steak cooks fast — minimal fuel cost)",
-      "  └ Batch cycle: farm session → cook batch → store in End kitchen",
-      "  └ Diet benefit: covers protein group without Overworld farming",
-      "",
-      "▸ The Endermen are not empty creatures.",
-      "  They carry things. They build things.",
-      "  In death they yield what they carried.",
-      "  Ender's Delight takes that literally.",
-      "  The pearl is the eye. The meat is the body.",
-      "  You have been collecting the eye for teleportation.",
-      "  The body has been there the whole time.",
-      "  Ender's Delight is the mod that noticed.",
-      "",
-      "▶ Cook and eat Enderman Steak (Ender's Delight) [check]",
-      "▶ Cook and eat Shulker Soup (Ender's Delight) [check]",
-      "",
-      "◇ Ender's Delight vs End's Delight — do not confuse in JEI.",
-      "  Filter by namespace: endersdelight: = this mod.",
-      "  Filter by namespace: ends_delight: = dragon food.",
-      "  Both trees are worth completing for the full End food system."
-    ],
-    "groups": {"What the Void Remembers": {"position": [-450, 0]}},
-    "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "shulker_soup": {
+   "title": "Cook and eat Shulker Soup from Ender's Delight",
+   "icon": {
+    "item": {
+     "id": "minecraft:shulker_shell",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "ender_pearl": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Ender's Delight"
+  },
+  "subtitle": {
+   "text": "Ender's Delight is NOT End's Delight. Different mod. Different ingredients. Endermen and Shulkers — not the dragon."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.14 · ENDER'S DELIGHT",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Two End food mods. Two namespaces. Common confusion.",
+   "  End's Delight (ends_delight:) = dragon food.",
+   "  Ender's Delight (endersdelight:) = enderman and shulker food.",
+   "  Both are in this pack. Both have separate recipe trees.",
+   "  This quest covers Ender's Delight.",
+   "  The dragon quests are right of the spine. This is left.",
+   "",
+   "◈ ENDER'S DELIGHT INGREDIENTS",
+   "  └ Enderman Raw Meat: drops from Endermen via Ender's Delight",
+   "    (Ender's Delight adds a meat drop to vanilla Endermen)",
+   "  └ Shulker ingredients: drops from Shulkers (End Cities)",
+   "    Shulker Shell is vanilla; Ender's Delight adds food items",
+   "  └ Ender Pearl: secondary ingredient in several recipes",
+   "    (used as flavor/binding component in Enderman dishes)",
+   "",
+   "◈ KEY ENDER'S DELIGHT DISHES",
+   "  └ Enderman Steak: high protein, high saturation",
+   "    Best everyday End protein source (Endermen are renewable)",
+   "  └ Shulker Soup: unique buff food from End City combat",
+   "    Shulker drop frequency makes this a luxury item",
+   "  └ Ender's Delight soups/stews: combine Enderman + Chorus",
+   "    for hybrid End dishes with dual-group Diet coverage",
+   "",
+   "◈ ENDERMAN FARM INTEGRATION",
+   "  └ Pearl farm (Ch13) doubles as Enderman Steak farm",
+   "    Every kill: chance of pearl + chance of raw meat",
+   "  └ Smoker setup: 1 Smoker dedicated to End protein",
+   "    (Enderman Steak cooks fast — minimal fuel cost)",
+   "  └ Batch cycle: farm session → cook batch → store in End kitchen",
+   "  └ Diet benefit: covers protein group without Overworld farming",
+   "",
+   "▸ The Endermen are not empty creatures.",
+   "  They carry things. They build things.",
+   "  In death they yield what they carried.",
+   "  Ender's Delight takes that literally.",
+   "  The pearl is the eye. The meat is the body.",
+   "  You have been collecting the eye for teleportation.",
+   "  The body has been there the whole time.",
+   "  Ender's Delight is the mod that noticed.",
+   "",
+   "▶ Cook and eat Enderman Steak (Ender's Delight) [check]",
+   "▶ Cook and eat Shulker Soup (Ender's Delight) [check]",
+   "",
+   "◇ Ender's Delight vs End's Delight — do not confuse in JEI.",
+   "  Filter by namespace: endersdelight: = this mod.",
+   "  Filter by namespace: ends_delight: = dragon food.",
+   "  Both trees are worth completing for the full End food system."
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     1380,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

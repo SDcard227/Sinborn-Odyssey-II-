@@ -1,115 +1,115 @@
 {
-  "dependencies": [
-    "ch04_r_hh2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/many_tables"
-    },
-    "brewing_station": {
-      "title": "Set up a complete fermentation room: barrel, brewing stand, Hearth & Harvest cask, and tea kettle",
-      "icon": {
-        "item": {
-          "id": "minecraft:barrel",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch04_r_hh2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Many Tables scroll at a Research Pedestal"
   },
-  "rewards": {
-    "barrel": {
-      "item": {
-        "id": "minecraft:barrel",
-        "count": 4
-      },
-      "type": "heracles:item"
+  "brewing_station": {
+   "title": "Set up a complete fermentation room: barrel, brewing stand, Hearth & Harvest cask, and tea kettle",
+   "icon": {
+    "item": {
+     "id": "minecraft:barrel",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Many Tables"
-    },
-    "subtitle": {
-      "text": "A civilization that eats well together lasts longer than one that doesn't."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.04 · THE MANY TABLES",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The scroll catalogs a civilization's culinary stations.",
-      "  Not a house. A system.",
-      "  Barrels for grain. Casks for honey.",
-      "  Stand for potions. Kettle for morning tea.",
-      "  Everything in its place. Always running.",
-      "",
-      "◈ THE COMPLETE FERMENTATION SETUP",
-      "  └ Barrel (vanilla): grain storage, general ferment",
-      "  └ Brewing Stand: potions, powered by blaze",
-      "  └ Hearth & Harvest Cask: honey mead, fruit wine,",
-      "    long-ferment beverages — aged for better quality",
-      "  └ Tea Kettle (Herbal Brews on F&C Stove): daily teas,",
-      "    buff drinks, quick-use ferments",
-      "  └ Vinery Barrel: wine-specific fermentation",
-      "  └ Brewin & Chewin Station: temperature-based spirits",
-      "",
-      "◈ AUTOMATION POTENTIAL",
-      "  └ Create can fill barrels via Spout + Fluid Pipe",
-      "  └ Automate: grape juice → barrel input",
-      "  └ Automate: barrel output → chest storage",
-      "  └ Ch07 oil refinery uses same fluid pipe logic",
-      "",
-      "◈ SCROLL: The Many Tables",
-      "  └ Found in: feast hall ruins, village communal house,",
-      "    banquet hall loot, old brewery archives",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: full brewing station awareness,",
-      "    Create automation + fermentation crossover knowledge",
-      "",
-      "▸ The many tables were the last thing they left standing.",
-      "  Everything else burned. The fermentation room survived.",
-      "  The barrels were still full.",
-      "",
-      "▶ Find The Many Tables scroll [check]",
-      "▶ Set up a complete fermentation room [check]",
-      "",
-      "◇ A full fermentation room qualifies as the",
-      "  'culture_age' milestone pre-req.",
-      "  Ch05 opens directly after you have one running."
-    ],
-    "groups": {
-      "The Long Pour": {
-        "position": [
-          -300,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:barrel",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "barrel": {
+   "item": {
+    "id": "minecraft:barrel",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Many Tables"
+  },
+  "subtitle": {
+   "text": "A civilization that eats well together lasts longer than one that doesn't."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.04 · THE MANY TABLES",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The scroll catalogs a civilization's culinary stations.",
+   "  Not a house. A system.",
+   "  Barrels for grain. Casks for honey.",
+   "  Stand for potions. Kettle for morning tea.",
+   "  Everything in its place. Always running.",
+   "",
+   "◈ THE COMPLETE FERMENTATION SETUP",
+   "  └ Barrel (vanilla): grain storage, general ferment",
+   "  └ Brewing Stand: potions, powered by blaze",
+   "  └ Hearth & Harvest Cask: honey mead, fruit wine,",
+   "    long-ferment beverages — aged for better quality",
+   "  └ Tea Kettle (Herbal Brews on F&C Stove): daily teas,",
+   "    buff drinks, quick-use ferments",
+   "  └ Vinery Barrel: wine-specific fermentation",
+   "  └ Brewin & Chewin Station: temperature-based spirits",
+   "",
+   "◈ AUTOMATION POTENTIAL",
+   "  └ Create can fill barrels via Spout + Fluid Pipe",
+   "  └ Automate: grape juice → barrel input",
+   "  └ Automate: barrel output → chest storage",
+   "  └ Ch07 oil refinery uses same fluid pipe logic",
+   "",
+   "◈ SCROLL: The Many Tables",
+   "  └ Found in: feast hall ruins, village communal house,",
+   "    banquet hall loot, old brewery archives",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: full brewing station awareness,",
+   "    Create automation + fermentation crossover knowledge",
+   "",
+   "▸ The many tables were the last thing they left standing.",
+   "  Everything else burned. The fermentation room survived.",
+   "  The barrels were still full.",
+   "",
+   "▶ Find The Many Tables scroll [check]",
+   "▶ Set up a complete fermentation room [check]",
+   "",
+   "◇ A full fermentation room qualifies as the",
+   "  'the Cultural chapter' milestone pre-req.",
+   "  Ch05 opens directly after you have one running."
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     1380,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:barrel",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

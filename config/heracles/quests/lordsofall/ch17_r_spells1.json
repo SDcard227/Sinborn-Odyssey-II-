@@ -1,63 +1,100 @@
 {
-  "dependencies": ["ch17_world"],
-  "tasks": {
-    "arcane_mastery": {
-      "title": "Achieve mastery in 3 Iron's Spellbooks spell schools (9 schools available: evocation, holy, ice, lightning, blood, ender, fire, nature, necromancy)",
-      "icon": {"item": {"id": "irons_spellbooks:ironbound_tome", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_world"
+ ],
+ "tasks": {
+  "arcane_mastery": {
+   "title": "Achieve mastery in 3 Iron's Spellbooks spell schools (9 schools available: evocation, holy, ice, lightning, blood, ender, fire, nature, necromancy)",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:ironbound_tome",
+     "count": 1
     },
-    "max_ring": {
-      "title": "Equip a fully upgraded Ring of Recovery and Ring of Mana (Iron's Spellbooks — maximum regeneration rates)",
-      "icon": {"item": {"id": "irons_spellbooks:ring_of_recovery", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "arcane_essence": {
-      "item": {"id": "irons_spellbooks:arcane_essence", "count": 32},
-      "type": "heracles:item"
+  "max_ring": {
+   "title": "Equip a fully upgraded Ring of Recovery and Ring of Mana (Iron's Spellbooks — maximum regeneration rates)",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:ring_of_recovery",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Arcane Mastery"},
-    "subtitle": {"text": "The spellbook is a continuation of every tool you have ever used. It is just faster."},
-    "description": [
-      "Iron's Spellbooks has 9 schools of magic:",
-      "- Evocation: pure force, arcane projectiles",
-      "- Holy: healing, radiance, divine smite",
-      "- Ice: crowd control, slowing",
-      "- Lightning: AOE, chain damage",
-      "- Blood: life steal, sacrifice mechanics",
-      "- Ender: teleportation, void damage",
-      "- Fire: burning, explosions (synergy with Ch06 boiler theme)",
-      "- Nature: growth, summoning",
-      "- Necromancy: undead summoning, drain",
-      "",
-      "The Ironbound Tome is the master spell carrier — holds your active spells.",
-      "Ring of Recovery: health regeneration between spells.",
-      "Ring of Mana: mana regeneration for sustained casting.",
-      "",
-      "By Ch17, three schools at mastery is the minimum.",
-      "Your Ch06 investment in the Fire school pays off here.",
-      "The Ender school synergizes with your End traversal training.",
-      "",
-      "→ Master 3 ISS spell schools [check]",
-      "→ Equip max Ring of Recovery + Ring of Mana [check]"
-    ],
-    "groups": {"Lords of All": {"position": [150, 150]}},
-    "icon": {"item": {"id": "irons_spellbooks:ironbound_tome", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "arcane_essence": {
+   "item": {
+    "id": "irons_spellbooks:arcane_essence",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Arcane Mastery"
+  },
+  "subtitle": {
+   "text": "The spellbook is a continuation of every tool you have ever used. It is just faster."
+  },
+  "description": [
+   "Iron's Spellbooks has 9 schools of magic:",
+   "- Evocation: pure force, arcane projectiles",
+   "- Holy: healing, radiance, divine smite",
+   "- Ice: crowd control, slowing",
+   "- Lightning: AOE, chain damage",
+   "- Blood: life steal, sacrifice mechanics",
+   "- Ender: teleportation, void damage",
+   "- Fire: burning, explosions (synergy with Ch06 boiler theme)",
+   "- Nature: growth, summoning",
+   "- Necromancy: undead summoning, drain",
+   "",
+   "The Ironbound Tome is the master spell carrier — holds your active spells.",
+   "Ring of Recovery: health regeneration between spells.",
+   "Ring of Mana: mana regeneration for sustained casting.",
+   "",
+   "By Ch17, three schools at mastery is the minimum.",
+   "Your Ch06 investment in the Fire school pays off here.",
+   "The Ender school synergizes with your End traversal training.",
+   "",
+   "→ Master 3 ISS spell schools [check]",
+   "→ Equip max Ring of Recovery + Ring of Mana [check]"
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     460,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:ironbound_tome",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

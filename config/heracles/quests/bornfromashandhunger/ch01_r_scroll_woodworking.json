@@ -1,79 +1,79 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Woodworking scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Woodworking scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Woodworking scroll",
-      "icon": {
-        "item": {
-          "id": "minecraft:oak_planks",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock woodworking"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Woodworking"
+  "research_scroll": {
+   "title": "Research the Woodworking scroll",
+   "icon": {
+    "item": {
+     "id": "minecraft:oak_planks",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Joinery, framing, and every shaped thing the forest can become."
-    },
-    "description": [
-      "\"A log is a beginning. A plank is a decision.\"",
-      "",
-      "This scroll unlocks 130 items.",
-      "",
-      "\u25c8 Found in: carpenters' cabins, village chests, woodland loot",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Woodworking] [auto]"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          497,
-          960
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:oak_planks",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock woodworking"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Woodworking"
+  },
+  "subtitle": {
+   "text": "Joinery, framing, and every shaped thing the forest can become."
+  },
+  "description": [
+   "\"A log is a beginning. A plank is a decision.\"",
+   "",
+   "This scroll unlocks 130 items.",
+   "",
+   "◈ Found in: carpenters' cabins, village chests, woodland loot",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Woodworking] [auto]"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     0,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:oak_planks",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

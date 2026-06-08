@@ -1,92 +1,135 @@
 {
-  "dependencies": ["ch14_dragon_eat"],
-  "tasks": {
-    "egg_research": {
-      "title": "Perform the Dragon Egg Research ritual (End's Delight) — examine the egg to unlock the full recipe tree",
-      "icon": {"item": {"id": "minecraft:dragon_egg", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_dragon_eat"
+ ],
+ "tasks": {
+  "egg_research": {
+   "title": "Perform the Dragon Egg Research ritual (End's Delight) — examine the egg to unlock the full recipe tree",
+   "icon": {
+    "item": {
+     "id": "minecraft:dragon_egg",
+     "count": 1
     },
-    "dragon_breath_cook": {
-      "title": "Use Dragon Breath as a cooking ingredient in an End's Delight recipe",
-      "icon": {"item": {"id": "minecraft:dragon_breath", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "dragon_breath": {"item": {"id": "minecraft:dragon_breath", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Dragon Egg Research"},
-    "subtitle": {"text": "The egg does not hatch. It teaches. One interaction unlocks everything the dragon knew about food."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.14 · DRAGON EGG RESEARCH",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Dragon Egg Research mechanic is End's Delight's",
-      "  primary unlock system.",
-      "  The egg is not food. It is not decoration.",
-      "  It is the research trigger for the entire dragon food tree.",
-      "  One interaction. Full unlock.",
-      "  Do not place it. Do not smelt it.",
-      "  Use it as a research item exactly once.",
-      "",
-      "◈ HOW DRAGON EGG RESEARCH WORKS",
-      "  └ Hold the Dragon Egg and interact with the research station",
-      "    (End's Delight specific mechanic — check JEI or mod guide)",
-      "  └ Alternative: the egg may function as a crafting ingredient",
-      "    that is returned after use (consumed: no; catalyst: yes)",
-      "  └ What it unlocks: all dragon-tier cooking recipes",
-      "    — Dragon Meat preparations, Dragon Breath dishes,",
-      "    — End Stone soup bases, Chorus-infused cooking",
-      "  └ The egg remains in your inventory after research",
-      "    (do not lose it — it is a display item for Ch15+)",
-      "",
-      "◈ DRAGON BREATH IN COOKING",
-      "  └ Dragon Breath (minecraft:dragon_breath) = glass bottle + cloud",
-      "  └ End's Delight uses it as a flavor catalyst in recipes",
-      "    similar to how fire charge is used in Nether cooking mods",
-      "  └ Collect via: right-click breath cloud during Dragon fight",
-      "  └ Stack: 64 per session minimum for full recipe coverage",
-      "  └ Pipeline: re-summon Dragon → batch collect Dragon Breath",
-      "    → cook End's Delight recipes → repeat as needed",
-      "",
-      "◈ WHY THE EGG DOES NOT HATCH",
-      "  └ In-lore: no civilization ever figured out the hatch condition",
-      "  └ Ch12's PTD scroll mentions the egg in Philosopher's Stone context",
-      "  └ End's Delight interpretation: the egg stores accumulated",
-      "    knowledge of the dragon — research = reading that knowledge",
-      "  └ The Dragon Egg Research mechanic is the mod's answer",
-      "    to what the egg is for. It is a library.",
-      "",
-      "▸ Every civilization kept the egg.",
-      "  None of them hatched it.",
-      "  They put it in their most protected room",
-      "  and studied it.",
-      "  What they learned from studying it",
-      "  was different for each civilization.",
-      "  You are going to use it to learn recipes.",
-      "  That is not the worst use.",
-      "",
-      "▶ Perform Dragon Egg Research (End's Delight) [check]",
-      "▶ Use Dragon Breath as a cooking ingredient [check]",
-      "",
-      "◇ After Dragon Egg Research: check JEI under ends_delight:",
-      "  for the full unlocked recipe tree.",
-      "  Many recipes require both Dragon Breath AND Popped Chorus.",
-      "  Your Ch13 Chorus farm is the long-term supply for both."
-    ],
-    "groups": {"What the Void Remembers": {"position": [600, 0]}},
-    "icon": {"item": {"id": "minecraft:dragon_egg", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "dragon_breath_cook": {
+   "title": "Use Dragon Breath as a cooking ingredient in an End's Delight recipe",
+   "icon": {
+    "item": {
+     "id": "minecraft:dragon_breath",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "dragon_breath": {
+   "item": {
+    "id": "minecraft:dragon_breath",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Dragon Egg Research"
+  },
+  "subtitle": {
+   "text": "The egg does not hatch. It teaches. One interaction unlocks everything the dragon knew about food."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.14 · DRAGON EGG RESEARCH",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Dragon Egg Research mechanic is End's Delight's",
+   "  primary unlock system.",
+   "  The egg is not food. It is not decoration.",
+   "  It is the research trigger for the entire dragon food tree.",
+   "  One interaction. Full unlock.",
+   "  Do not place it. Do not smelt it.",
+   "  Use it as a research item exactly once.",
+   "",
+   "◈ HOW DRAGON EGG RESEARCH WORKS",
+   "  └ Hold the Dragon Egg and interact with the research station",
+   "    (End's Delight specific mechanic — check JEI or mod guide)",
+   "  └ Alternative: the egg may function as a crafting ingredient",
+   "    that is returned after use (consumed: no; catalyst: yes)",
+   "  └ What it unlocks: all dragon-tier cooking recipes",
+   "    — Dragon Meat preparations, Dragon Breath dishes,",
+   "    — End Stone soup bases, Chorus-infused cooking",
+   "  └ The egg remains in your inventory after research",
+   "    (do not lose it — it is a display item for Ch15+)",
+   "",
+   "◈ DRAGON BREATH IN COOKING",
+   "  └ Dragon Breath (minecraft:dragon_breath) = glass bottle + cloud",
+   "  └ End's Delight uses it as a flavor catalyst in recipes",
+   "    similar to how fire charge is used in Nether cooking mods",
+   "  └ Collect via: right-click breath cloud during Dragon fight",
+   "  └ Stack: 64 per session minimum for full recipe coverage",
+   "  └ Pipeline: re-summon Dragon → batch collect Dragon Breath",
+   "    → cook End's Delight recipes → repeat as needed",
+   "",
+   "◈ WHY THE EGG DOES NOT HATCH",
+   "  └ In-lore: no civilization ever figured out the hatch condition",
+   "  └ Ch12's PTD scroll mentions the egg in Philosopher's Stone context",
+   "  └ End's Delight interpretation: the egg stores accumulated",
+   "    knowledge of the dragon — research = reading that knowledge",
+   "  └ The Dragon Egg Research mechanic is the mod's answer",
+   "    to what the egg is for. It is a library.",
+   "",
+   "▸ Every civilization kept the egg.",
+   "  None of them hatched it.",
+   "  They put it in their most protected room",
+   "  and studied it.",
+   "  What they learned from studying it",
+   "  was different for each civilization.",
+   "  You are going to use it to learn recipes.",
+   "  That is not the worst use.",
+   "",
+   "▶ Perform Dragon Egg Research (End's Delight) [check]",
+   "▶ Use Dragon Breath as a cooking ingredient [check]",
+   "",
+   "◇ After Dragon Egg Research: check JEI under ends_delight:",
+   "  for the full unlocked recipe tree.",
+   "  Many recipes require both Dragon Breath AND Popped Chorus.",
+   "  Your Ch13 Chorus farm is the long-term supply for both."
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     1380,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:dragon_egg",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

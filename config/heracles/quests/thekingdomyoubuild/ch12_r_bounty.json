@@ -1,92 +1,135 @@
 {
-  "dependencies": ["ch12_r_vil1"],
-  "tasks": {
-    "bounty_scroll": {
-      "title": "Find The Rec Bounty scroll (found in Bountiful bounty board structures, village raid loot chests)",
-      "icon": {"item": {"id": "historystages:scroll", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch12_r_vil1"
+ ],
+ "tasks": {
+  "bounty_scroll": {
+   "title": "Find The Rec Bounty scroll (found in Bountiful bounty board structures, village raid loot chests)",
+   "icon": {
+    "item": {
+     "id": "historystages:scroll",
+     "count": 1
     },
-    "decree": {
-      "title": "Post a Decree on a Bountiful Bounty Board — set a high-tier bounty for resource collection or boss kill",
-      "icon": {"item": {"id": "minecraft:paper", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "emerald": {"item": {"id": "minecraft:emerald", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Bounty Board"},
-    "subtitle": {"text": "Post a Decree. Collect a Bounty. The Kingdom You Build runs on contracts. Start writing them."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.12 · THE BOUNTY BOARD",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Bountiful adds the Bounty Board system.",
-      "  Bounties: tasks the world posts for you to complete.",
-      "  Decrees: tasks you post for your kingdom to fulfill.",
-      "  In Ch12, the economy of the Kingdom runs on these.",
-      "  The scroll teaches you to read the board.",
-      "",
-      "◈ BOUNTIFUL SYSTEM",
-      "  └ Bounty Board: placed in villages or player bases",
-      "  └ Bounties: auto-generated tasks (kill X, collect Y)",
-      "    Reward: emeralds, rare items, experience, coins",
-      "  └ Bounties refresh over time — check the board daily",
-      "  └ High-tier bounties: Cataclysm boss kills, rare item",
-      "    collection — worth significant reward",
-      "",
-      "◈ DECREES",
-      "  └ Decree: player-posted bounty for others",
-      "    In multiplayer: other players can complete your decrees",
-      "  └ In singleplayer: Villager Recruits fulfill Decrees",
-      "    (configured via Bountiful + Recruits integration)",
-      "  └ Decree types: resource gathering, combat, crafting",
-      "  └ Post Decrees for: Ancient Debris, rare boss loot,",
-      "    Cataclysm materials you need farmed passively",
-      "",
-      "◈ ECONOMY INTEGRATION",
-      "  └ Numismatics coins: used in bounty board rewards",
-      "    and as Decree payment currency",
-      "  └ Cog → Ring → Crown → Diamond value chain",
-      "  └ High-value Decrees pay in Crowns",
-      "    (numismatics:crown = highest denomination)",
-      "  └ Via Romana merchants: bounty adjacent trade economy",
-      "",
-      "◈ SCROLL: Rec Bounty",
-      "  └ Found in Bountiful bounty board structures,",
-      "    village raid loot, military outpost chests",
-      "  └ Research time: 15 min",
-      "  └ Unlocks: full Bountiful board system,",
-      "    Decree mechanics, economy integration guide",
-      "",
-      "▸ The first bounty board was a rock with",
-      "  scratched marks on it.",
-      "  The second was a board with nails.",
-      "  The Kingdom started when the board had more",
-      "  bounties than one person could complete.",
-      "  That is when it needed more than one person.",
-      "",
-      "▶ Find The Rec Bounty scroll [check]",
-      "▶ Post a Decree on a Bounty Board [check]",
-      "",
-      "◇ Bounty Board + Villager Recruits + MCA Reborn =",
-      "  a functioning economy in singleplayer.",
-      "  The Kingdom has three institutions.",
-      "  Build all three before Ch13."
-    ],
-    "groups": {"The Kingdom You Build": {"position": [-600, 0]}},
-    "icon": {"item": {"id": "minecraft:paper", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "decree": {
+   "title": "Post a Decree on a Bountiful Bounty Board — set a high-tier bounty for resource collection or boss kill",
+   "icon": {
+    "item": {
+     "id": "minecraft:paper",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "emerald": {
+   "item": {
+    "id": "minecraft:emerald",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Bounty Board"
+  },
+  "subtitle": {
+   "text": "Post a Decree. Collect a Bounty. The Kingdom You Build runs on contracts. Start writing them."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.12 · THE BOUNTY BOARD",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Bountiful adds the Bounty Board system.",
+   "  Bounties: tasks the world posts for you to complete.",
+   "  Decrees: tasks you post for your kingdom to fulfill.",
+   "  In Ch12, the economy of the Kingdom runs on these.",
+   "  The scroll teaches you to read the board.",
+   "",
+   "◈ BOUNTIFUL SYSTEM",
+   "  └ Bounty Board: placed in villages or player bases",
+   "  └ Bounties: auto-generated tasks (kill X, collect Y)",
+   "    Reward: emeralds, rare items, experience, coins",
+   "  └ Bounties refresh over time — check the board daily",
+   "  └ High-tier bounties: Cataclysm boss kills, rare item",
+   "    collection — worth significant reward",
+   "",
+   "◈ DECREES",
+   "  └ Decree: player-posted bounty for others",
+   "    In multiplayer: other players can complete your decrees",
+   "  └ In singleplayer: Villager Recruits fulfill Decrees",
+   "    (configured via Bountiful + Recruits integration)",
+   "  └ Decree types: resource gathering, combat, crafting",
+   "  └ Post Decrees for: Ancient Debris, rare boss loot,",
+   "    Cataclysm materials you need farmed passively",
+   "",
+   "◈ ECONOMY INTEGRATION",
+   "  └ Numismatics coins: used in bounty board rewards",
+   "    and as Decree payment currency",
+   "  └ Cog → Ring → Crown → Diamond value chain",
+   "  └ High-value Decrees pay in Crowns",
+   "    (numismatics:crown = highest denomination)",
+   "  └ Via Romana merchants: bounty adjacent trade economy",
+   "",
+   "◈ SCROLL: Rec Bounty",
+   "  └ Found in Bountiful bounty board structures,",
+   "    village raid loot, military outpost chests",
+   "  └ Research time: 15 min",
+   "  └ Unlocks: full Bountiful board system,",
+   "    Decree mechanics, economy integration guide",
+   "",
+   "▸ The first bounty board was a rock with",
+   "  scratched marks on it.",
+   "  The second was a board with nails.",
+   "  The Kingdom started when the board had more",
+   "  bounties than one person could complete.",
+   "  That is when it needed more than one person.",
+   "",
+   "▶ Find The Rec Bounty scroll [check]",
+   "▶ Post a Decree on a Bounty Board [check]",
+   "",
+   "◇ Bounty Board + Villager Recruits + MCA Reborn =",
+   "  a functioning economy in singleplayer.",
+   "  The Kingdom has three institutions.",
+   "  Build all three before Ch13."
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     920,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:paper",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

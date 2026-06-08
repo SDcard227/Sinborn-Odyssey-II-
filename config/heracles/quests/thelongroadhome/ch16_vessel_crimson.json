@@ -1,0 +1,68 @@
+{
+ "dependencies": [
+  "ch16_world"
+ ],
+ "tasks": {
+  "craft": {
+   "type": "heracles:item",
+   "item": "dungeons_and_combat:monarch_chestplate",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Craft the Monarch Robe via the Philosopher's Stone"
+  },
+  "arms": {
+   "type": "heracles:item",
+   "item": "dungeons_and_combat:crimson_bloodweave_sword",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Forge the Crimson Weapons (the sidearm regalia)"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Recognition Vessel , the Robe of Divinity"
+  },
+  "subtitle": {
+   "text": "The King's own raiment, reforged from a Stone."
+  },
+  "description": [
+   "The fifth Vessel. The Monarch armor , a creative-tier set the world will not let you craft by ordinary means.",
+   "Only the Philosopher's Stone opens it: the Stone IS the key to the Robe of Divinity. The 3-piece Monarch (chest, legs, boots) worn WITH Iron's Crown is the canonical Unification regalia , 'Sealing Recognition,' Resistance III.",
+   "The Crimson Weapons are its sidearms. To wear this is to be seen by the Seal as the Crimson King returned. That is the danger, and the point.",
+   "",
+   "Vessel 5 of 5: Recognition. (Mobility , the Vault Eye , was claimed at the Dragon's table.)"
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     460,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "dungeons_and_combat:monarch_chestplate",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

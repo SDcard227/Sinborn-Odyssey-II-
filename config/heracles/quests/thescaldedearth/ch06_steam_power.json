@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch06_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study Steam Power at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:blast_furnace",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock steam_power",
+   "title": "Discipline learned: Steam Power",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Steam Power"
+  },
+  "subtitle": {
+   "text": "Water and fire, made to push."
+  },
+  "description": [
+   "The Forgesworn reverse-engineered the gods' domains as machines. This is where it began.",
+   "Heat the water, trap the breath, and the world starts doing your labor for you.",
+   "",
+   "→ Recover and study Steam Power at a Research Pedestal."
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     460,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:blast_furnace",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

@@ -2,13 +2,19 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     "OTO",
-    "THT",
-    "OTO"
+    "OHO",
+    "OOO"
   ],
   "key": {
-    "O": { "item": "minecraft:crying_obsidian" },
-    "T": { "item": "cataclysm:athame" },
-    "H": { "item": "minecraft:heart_of_the_sea" }
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "T": {
+      "item": "cataclysm:athame"
+    },
+    "H": {
+      "item": "minecraft:heart_of_the_sea"
+    }
   },
   "result": {
     "item": "cataclysm:abyss_eye",

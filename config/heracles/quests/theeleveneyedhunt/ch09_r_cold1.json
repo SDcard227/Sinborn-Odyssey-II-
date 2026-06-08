@@ -1,59 +1,90 @@
 {
-  "dependencies": ["ch09_world"],
-  "tasks": {
-    "frostmaw_trophy": {
-      "title": "Return to your Frostmaw trophy from Ch03 — the Cold Eye chain begins with Frostmaw",
-      "icon": {"item": {"id": "mowziesmobs:ice_crystal", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch09_world"
+ ],
+ "tasks": {
+  "frostmaw_trophy": {
+   "title": "Return to your Frostmaw trophy from Ch03 — the Cold Eye chain begins with Frostmaw",
+   "icon": {
+    "item": {
+     "id": "mowziesmobs:ice_crystal",
+     "count": 1
     },
-    "ice_crystal": {
-      "type": "heracles:item",
-      "item": "mowziesmobs:ice_crystal",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ice": {
-      "item": {"id": "minecraft:packed_ice", "count": 16},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Cold Eye Chain"},
-    "subtitle": {"text": "True cold. The kind that preserves. The Ice Civilization fell preserving the wrong things."},
-    "description": [
-      "The Cold Eye requires two Mowzie's Mobs boss drops.",
-      "Frostmaw's Ice Crystal is the center ingredient.",
-      "The Abyssal Eel's Fin is also required.",
-      "",
-      "Frostmaw was in Ch03 — The Rotting Gate.",
-      "If you have the Ice Crystal from that fight, you are prepared.",
-      "If you did not collect it then, return to Frostmaw now.",
-      "",
-      "The Ice Civilization mastered preservation.",
-      "They fell after preserving the wrong things —",
-      "stopping the world from changing to keep what they had.",
-      "",
-      "The Cold Eye does not feel the world. It remembers it.",
-      "",
-      "→ Confirm you have a Frostmaw Ice Crystal [check]",
-      "→ Collect 1 Ice Crystal from Frostmaw (Mowzie's Mobs — frozen biomes)"
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [-150, 150]}},
-    "icon": {"item": {"id": "mowziesmobs:ice_crystal", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "ice_crystal": {
+   "type": "heracles:item",
+   "item": "mowziesmobs:ice_crystal",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "ice": {
+   "item": {
+    "id": "minecraft:packed_ice",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Cold Eye Chain"
+  },
+  "subtitle": {
+   "text": "True cold. The kind that preserves. The Ice Civilization fell preserving the wrong things."
+  },
+  "description": [
+   "The Cold Eye requires two Mowzie's Mobs boss drops.",
+   "Frostmaw's Ice Crystal is the center ingredient.",
+   "The Abyssal Eel's Fin is also required.",
+   "",
+   "Frostmaw was in Ch03 — The Rotting Gate.",
+   "If you have the Ice Crystal from that fight, you are prepared.",
+   "If you did not collect it then, return to Frostmaw now.",
+   "",
+   "The Ice Civilization mastered preservation.",
+   "They fell after preserving the wrong things —",
+   "stopping the world from changing to keep what they had.",
+   "",
+   "The Cold Eye does not feel the world. It remembers it.",
+   "",
+   "→ Confirm you have a Frostmaw Ice Crystal [check]",
+   "→ Collect 1 Ice Crystal from Frostmaw (Mowzie's Mobs — frozen biomes)"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     2560,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "mowziesmobs:ice_crystal",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

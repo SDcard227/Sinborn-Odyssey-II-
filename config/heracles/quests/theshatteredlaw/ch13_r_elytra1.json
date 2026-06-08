@@ -1,61 +1,98 @@
 {
-  "dependencies": ["ch13_outer"],
-  "tasks": {
-    "end_ship": {
-      "title": "Locate an End Ship attached to an End City",
-      "icon": {"item": {"id": "minecraft:purpur_block", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_outer"
+ ],
+ "tasks": {
+  "end_ship": {
+   "title": "Locate an End Ship attached to an End City",
+   "icon": {
+    "item": {
+     "id": "minecraft:purpur_block",
+     "count": 1
     },
-    "elytra": {
-      "title": "Retrieve the Elytra from the End Ship's item frame",
-      "icon": {"item": {"id": "minecraft:elytra", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "fireworks": {
-      "item": {"id": "minecraft:firework_rocket", "count": 32},
-      "type": "heracles:item"
+  "elytra": {
+   "title": "Retrieve the Elytra from the End Ship's item frame",
+   "icon": {
+    "item": {
+     "id": "minecraft:elytra",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Elytra"},
-    "subtitle": {"text": "The previous civilization built ships. This is what they left behind on the last one."},
-    "description": [
-      "End Cities are towers of purpur blocks and End Rods.",
-      "Some End Cities have an End Ship floating beside them.",
-      "The ship contains a levitation potion, two chests of loot, and a single Elytra in an item frame.",
-      "",
-      "The Elytra is the defining movement upgrade of the late game.",
-      "Combined with firework rockets, it enables sustained flight across any terrain.",
-      "In the End's outer islands, it is essential — the islands are separated by void.",
-      "",
-      "To reach the End Ship:",
-      "- Use ender pearls to bridge to it",
-      "- Or build with blocks you've collected",
-      "- The levitation potion inside can also boost you if you're careful",
-      "",
-      "You have been walking and climbing since Ch01.",
-      "The last civilization flew.",
-      "Now you can too.",
-      "",
-      "→ Locate an End Ship [check]",
-      "→ Retrieve the Elytra [check]"
-    ],
-    "groups": {"The Shattered Law": {"position": [150, 150]}},
-    "icon": {"item": {"id": "minecraft:elytra", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "fireworks": {
+   "item": {
+    "id": "minecraft:firework_rocket",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Elytra"
+  },
+  "subtitle": {
+   "text": "The previous civilization built ships. This is what they left behind on the last one."
+  },
+  "description": [
+   "End Cities are towers of purpur blocks and End Rods.",
+   "Some End Cities have an End Ship floating beside them.",
+   "The ship contains a levitation potion, two chests of loot, and a single Elytra in an item frame.",
+   "",
+   "The Elytra is the defining movement upgrade of the late game.",
+   "Combined with firework rockets, it enables sustained flight across any terrain.",
+   "In the End's outer islands, it is essential — the islands are separated by void.",
+   "",
+   "To reach the End Ship:",
+   "- Use ender pearls to bridge to it",
+   "- Or build with blocks you've collected",
+   "- The levitation potion inside can also boost you if you're careful",
+   "",
+   "You have been walking and climbing since Ch01.",
+   "The last civilization flew.",
+   "Now you can too.",
+   "",
+   "→ Locate an End Ship [check]",
+   "→ Retrieve the Elytra [check]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     2300,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:elytra",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

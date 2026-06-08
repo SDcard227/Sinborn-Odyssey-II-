@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch05_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Apothecary's Tonic at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:glass_bottle",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock apothecarys_tonic",
+   "title": "Discipline learned: The Apothecary's Tonic",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Apothecary's Tonic"
+  },
+  "subtitle": {
+   "text": "Cure and poison share a shelf."
+  },
+  "description": [
+   "The first arcane lessons taught that a draught can mend or end.",
+   "Tonics, elixirs, the purification of foul water — the apothecary stands between the sick and the grave.",
+   "",
+   "→ Recover and study the Apothecary's Tonic at a Research Pedestal."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1060,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:glass_bottle",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

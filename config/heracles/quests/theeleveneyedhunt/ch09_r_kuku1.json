@@ -1,59 +1,96 @@
 {
-  "dependencies": ["ch09_world"],
-  "tasks": {
-    "jungle": {
-      "title": "Travel to a Jungle biome and locate a Jungle Temple or Call of Yucatan temple structure",
-      "icon": {"item": {"id": "minecraft:jungle_wood", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch09_world"
+ ],
+ "tasks": {
+  "jungle": {
+   "title": "Travel to a Jungle biome and locate a Jungle Temple or Call of Yucatan temple structure",
+   "icon": {
+    "item": {
+     "id": "minecraft:jungle_wood",
+     "count": 1
     },
-    "ancient_gold": {
-      "title": "Find Ancient Gold Ingots in jungle temple loot (Call of Yucatan drops)",
-      "icon": {"item": {"id": "call_of_yucutan:ancient_gold_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "gold": {
-      "item": {"id": "minecraft:gold_ingot", "count": 16},
-      "type": "heracles:item"
+  "ancient_gold": {
+   "title": "Find Ancient Gold Ingots in jungle temple loot (Call of Yucatan drops)",
+   "icon": {
+    "item": {
+     "id": "call_of_yucutan:ancient_gold_ingot",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Sky Temple"},
-    "subtitle": {"text": "The Sky Civilization reached toward stars. They buried the Eye when they got there."},
-    "description": [
-      "Kukulkan is the Sky Civilization's guardian.",
-      "Call of Yucatan adds the Kukulkan boss in jungle temple structures.",
-      "",
-      "It fights because you found what it was guarding.",
-      "Not because you threaten it.",
-      "It remembers the Sky Civilization reaching too high.",
-      "It guards against you doing the same.",
-      "",
-      "Ancient Gold Ingots are in the temple loot.",
-      "They are also an ingredient in the Lost Eye chain.",
-      "Collect them. The Kukulkan kill yields more.",
-      "",
-      "The Lost Eye was not lost. It was buried.",
-      "This is what the Sky Civilization did with things they feared.",
-      "",
-      "→ Locate a Jungle Temple or Call of Yucatan structure [check]",
-      "→ Find Ancient Gold Ingots in the loot [check]"
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [-150, 0]}},
-    "icon": {"item": {"id": "call_of_yucutan:ancient_gold_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "gold": {
+   "item": {
+    "id": "minecraft:gold_ingot",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Sky Temple"
+  },
+  "subtitle": {
+   "text": "The Sky Civilization reached toward stars. They buried the Eye when they got there."
+  },
+  "description": [
+   "Kukulkan is the Sky Civilization's guardian.",
+   "Call of Yucatan adds the Kukulkan boss in jungle temple structures.",
+   "",
+   "It fights because you found what it was guarding.",
+   "Not because you threaten it.",
+   "It remembers the Sky Civilization reaching too high.",
+   "It guards against you doing the same.",
+   "",
+   "Ancient Gold Ingots are in the temple loot.",
+   "They are also an ingredient in the Lost Eye chain.",
+   "Collect them. The Kukulkan kill yields more.",
+   "",
+   "The Lost Eye was not lost. It was buried.",
+   "This is what the Sky Civilization did with things they feared.",
+   "",
+   "→ Locate a Jungle Temple or Call of Yucatan structure [check]",
+   "→ Find Ancient Gold Ingots in the loot [check]"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     2560,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "call_of_yucutan:ancient_gold_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

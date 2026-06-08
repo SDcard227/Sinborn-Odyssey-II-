@@ -1,0 +1,17 @@
+{
+  "display_name": "The Bestiary of Myth & Monster",
+  "research_time": 2400,
+  "items": [],
+  "tags": [],
+  "mods": [
+    "fieldguide"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

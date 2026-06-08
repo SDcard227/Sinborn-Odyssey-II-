@@ -1,122 +1,122 @@
 {
-  "dependencies": [
-    "ch11_ignis"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/cataclysm_forge"
-    },
-    "ignitium_gear": {
-      "title": "Craft an Ignitium armor piece — requires Ignitium from Ignis, highest Cataclysm gear tier below Emulator",
-      "icon": {
-        "item": {
-          "id": "cataclysm:ignitium",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch11_ignis"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Cataclysm Forge scroll at a Research Pedestal"
   },
-  "rewards": {
-    "ignitium": {
-      "item": {
-        "id": "cataclysm:ignitium",
-        "count": 4
-      },
-      "type": "heracles:item"
+  "ignitium_gear": {
+   "title": "Craft an Ignitium armor piece — requires Ignitium from Ignis, highest Cataclysm gear tier below Emulator",
+   "icon": {
+    "item": {
+     "id": "cataclysm:ignitium",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Cataclysm Forge"
-    },
-    "subtitle": {
-      "text": "Cursium gates the forge. Ignitium is the output. The Emulator drops the last tier. Work in order."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.11 · THE CATACLYSM FORGE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Cataclysm Forge scroll covers",
-      "  the full gear crafting chain from the boss drops.",
-      "  Each boss unlocks the next tier.",
-      "  Work in order. There are no shortcuts.",
-      "",
-      "◈ CATACLYSM GEAR TIERS",
-      "  └ ✦ Tier 1 — Cursium (from Maledictus)",
-      "    cataclysm:cursium → first gear gate",
-      "    Armor: base Cataclysm set, high protection",
-      "    Required to access: Ignis fight entrance",
-      "  └ ✦ Tier 2 — Ignitium (from Ignis)",
-      "    cataclysm:ignitium → second gear gate",
-      "    Armor: Ignitium set, fire immunity passive",
-      "    Weapons: Ignitium sword — applies Ignite on hit",
-      "  └ ✦ Tier 3 — Lacrima (from Netherite Monstrosity)",
-      "    cataclysm:lacrima → triggers Infernal Age (Ch12)",
-      "    Used in: Infernal crafting recipes post-Ch12 gate",
-      "  └ ✦ Tier 4 — Emulator drops (post-Emulator fight)",
-      "    Highest Cataclysm gear tier",
-      "    Check JEI after Emulator defeat for full recipes",
-      "",
-      "◈ CURSIUM CRAFTING GATE",
-      "  └ Maledictus (Ch09-10 boss) drops Cursium",
-      "  └ Cursium required to BUILD the Ignis arena structure",
-      "    or access its spawn point (mod-dependent)",
-      "  └ Farm Maledictus until you have enough for full",
-      "    Cursium set before attempting Ignis",
-      "",
-      "◈ SCROLL: The Cataclysm Forge",
-      "  └ Found in Cataclysm boss loot chests,",
-      "    post-Ignis structure loot tables",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: full Cataclysm gear tier recipes,",
-      "    boss material crafting tree, Ignitium set stats",
-      "",
-      "▸ The Cataclysm was not a weapon.",
-      "  It was a manufacturing process.",
-      "  The bosses are the quality control.",
-      "  The armor is the finished product.",
-      "",
-      "▶ Find The Cataclysm Forge scroll [check]",
-      "▶ Craft an Ignitium armor piece [check]",
-      "",
-      "◇ Ignitium fire immunity: passive when wearing full set.",
-      "  This is the counter to the Ignited Revenant fight.",
-      "  Get the set before the Revenant, not after."
-    ],
-    "groups": {
-      "Where the Skin Tears": {
-        "position": [
-          450,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "cataclysm:ignitium",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "ignitium": {
+   "item": {
+    "id": "cataclysm:ignitium",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Cataclysm Forge"
+  },
+  "subtitle": {
+   "text": "Cursium gates the forge. Ignitium is the output. The Emulator drops the last tier. Work in order."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.11 · THE CATACLYSM FORGE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Cataclysm Forge scroll covers",
+   "  the full gear crafting chain from the boss drops.",
+   "  Each boss unlocks the next tier.",
+   "  Work in order. There are no shortcuts.",
+   "",
+   "◈ CATACLYSM GEAR TIERS",
+   "  └ ✦ Tier 1 — Cursium (from Maledictus)",
+   "    cataclysm:cursium → first gear gate",
+   "    Armor: base Cataclysm set, high protection",
+   "    Required to access: Ignis fight entrance",
+   "  └ ✦ Tier 2 — Ignitium (from Ignis)",
+   "    cataclysm:ignitium → second gear gate",
+   "    Armor: Ignitium set, fire immunity passive",
+   "    Weapons: Ignitium sword — applies Ignite on hit",
+   "  └ ✦ Tier 3 — Lacrima (from Netherite Monstrosity)",
+   "    cataclysm:lacrima → triggers Infernal Age (Ch12)",
+   "    Used in: Infernal crafting recipes post-Ch12 gate",
+   "  └ ✦ Tier 4 — Emulator drops (post-Emulator fight)",
+   "    Highest Cataclysm gear tier",
+   "    Check JEI after Emulator defeat for full recipes",
+   "",
+   "◈ CURSIUM CRAFTING GATE",
+   "  └ Maledictus (Ch09-10 boss) drops Cursium",
+   "  └ Cursium required to BUILD the Ignis arena structure",
+   "    or access its spawn point (mod-dependent)",
+   "  └ Farm Maledictus until you have enough for full",
+   "    Cursium set before attempting Ignis",
+   "",
+   "◈ SCROLL: The Cataclysm Forge",
+   "  └ Found in Cataclysm boss loot chests,",
+   "    post-Ignis structure loot tables",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: full Cataclysm gear tier recipes,",
+   "    boss material crafting tree, Ignitium set stats",
+   "",
+   "▸ The Cataclysm was not a weapon.",
+   "  It was a manufacturing process.",
+   "  The bosses are the quality control.",
+   "  The armor is the finished product.",
+   "",
+   "▶ Find The Cataclysm Forge scroll [check]",
+   "▶ Craft an Ignitium armor piece [check]",
+   "",
+   "◇ Ignitium fire immunity: passive when wearing full set.",
+   "  This is the counter to the Ignited Revenant fight.",
+   "  Get the set before the Revenant, not after."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1380,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:ignitium",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the On the Sacred Pontiff scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the On the Sacred Pontiff scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the On the Sacred Pontiff scroll",
-      "icon": {
-        "item": {
-          "id": "companions:eternal_lighter",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock god_pontiff"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "On the Sacred Pontiff"
+  "research_scroll": {
+   "title": "Research the On the Sacred Pontiff scroll",
+   "icon": {
+    "item": {
+     "id": "companions:eternal_lighter",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"The Convent kept it clean. They kept it.\"",
-      "",
-      "Companions Sacred Pontiff arc.",
-      "",
-      "This scroll unlocks 1 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Stronghold Library",
-      "  \u00b7 Mowziesmobs:Chests/Monastery Chest",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [On the Sacred Pontiff] [auto]"
-    ],
-    "groups": {
-      "The Shattered Law": {
-        "position": [
-          1200,
-          780
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "companions:eternal_lighter",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock god_pontiff"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sun",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "On the Sacred Pontiff"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"The Convent kept it clean. They kept it.\"",
+   "",
+   "Companions Sacred Pontiff arc.",
+   "",
+   "This scroll unlocks 1 items.",
+   "",
+   "Look for it in:",
+   "  · Stronghold Library",
+   "  · Mowziesmobs:Chests/Monastery Chest",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [On the Sacred Pontiff] [auto]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     0,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "companions:eternal_lighter",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

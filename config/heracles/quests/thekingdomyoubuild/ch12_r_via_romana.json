@@ -1,85 +1,128 @@
 {
-  "dependencies": ["ch12_r_settle1"],
-  "tasks": {
-    "road_built": {
-      "title": "Build a Via Romana road between two settlements — the speed bonus activates on consecutive road blocks",
-      "icon": {"item": {"id": "minecraft:stone_bricks", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch12_r_settle1"
+ ],
+ "tasks": {
+  "road_built": {
+   "title": "Build a Via Romana road between two settlements — the speed bonus activates on consecutive road blocks",
+   "icon": {
+    "item": {
+     "id": "minecraft:stone_bricks",
+     "count": 1
     },
-    "merchant_trade": {
-      "title": "Use a Via Romana merchant trade route — exchange goods between two connected points via road system",
-      "icon": {"item": {"id": "minecraft:emerald", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "stone_bricks": {"item": {"id": "minecraft:stone_bricks", "count": 32}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 6}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Long Road Home"},
-    "subtitle": {"text": "Via Romana: walk the road, gain the speed. The road is not infrastructure. The road is the kingdom."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.12 · THE LONG ROAD HOME",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Via Romana adds Roman road construction.",
-      "  Roads built from Via Romana blocks give a",
-      "  speed bonus when you walk on consecutive tiles.",
-      "  The longer the road, the faster you travel.",
-      "  In Ch12, the Kingdom has two settlements.",
-      "  They should be connected.",
-      "",
-      "◈ VIA ROMANA ROAD SYSTEM",
-      "  └ Build roads from Via Romana stone/brick blocks",
-      "    (check JEI for craftable road block types)",
-      "  └ Speed bonus: activates after walking on",
-      "    4+ consecutive road blocks",
-      "  └ Bonus scales with road length traveled",
-      "  └ Maximum: significant speed multiplier on long roads",
-      "  └ Roads work in any dimension — Nether highway compatible",
-      "",
-      "◈ MERCHANT TRADE ROUTES",
-      "  └ Via Romana adds merchant NPC at road endpoints",
-      "  └ Merchant trades: exchange goods between connected",
-      "    settlements via trade menu",
-      "  └ Road connection between two points = active trade",
-      "  └ Trade items: food, resources, rare materials",
-      "    (improves as your settlement reputation increases)",
-      "",
-      "◈ ROAD DESIGN GUIDE",
-      "  └ Base → Nether portal: connect via road for speed",
-      "  └ Base → Village: trade route via Via Romana = passive",
-      "    resource exchange without travel",
-      "  └ Underground roads: work same as surface",
-      "    Build cave highway between base and mine entrance",
-      "  └ Via Romana + Create Teleporters: road to teleporter pad",
-      "    = fastest long-distance travel system",
-      "",
-      "▸ All empires are roads.",
-      "  The buildings are just the reason to build them.",
-      "  The road connects what already existed.",
-      "  The empire emerges from the connection.",
-      "",
-      "▶ Build a Via Romana road between two points [check]",
-      "▶ Complete a merchant trade via road [check]",
-      "",
-      "◇ Nether road at 1:8 scale. Build Nether highways.",
-      "  1 block of Nether road = 8 overworld blocks traveled.",
-      "  With Via Romana speed bonus: fastest base travel",
-      "  system available outside of teleporters."
-    ],
-    "groups": {"The Kingdom You Build": {"position": [150, 300]}},
-    "icon": {"item": {"id": "minecraft:stone_bricks", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "merchant_trade": {
+   "title": "Use a Via Romana merchant trade route — exchange goods between two connected points via road system",
+   "icon": {
+    "item": {
+     "id": "minecraft:emerald",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "stone_bricks": {
+   "item": {
+    "id": "minecraft:stone_bricks",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Long Road Home"
+  },
+  "subtitle": {
+   "text": "Via Romana: walk the road, gain the speed. The road is not infrastructure. The road is the kingdom."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.12 · THE LONG ROAD HOME",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Via Romana adds Roman road construction.",
+   "  Roads built from Via Romana blocks give a",
+   "  speed bonus when you walk on consecutive tiles.",
+   "  The longer the road, the faster you travel.",
+   "  In Ch12, the Kingdom has two settlements.",
+   "  They should be connected.",
+   "",
+   "◈ VIA ROMANA ROAD SYSTEM",
+   "  └ Build roads from Via Romana stone/brick blocks",
+   "    (check JEI for craftable road block types)",
+   "  └ Speed bonus: activates after walking on",
+   "    4+ consecutive road blocks",
+   "  └ Bonus scales with road length traveled",
+   "  └ Maximum: significant speed multiplier on long roads",
+   "  └ Roads work in any dimension — Nether highway compatible",
+   "",
+   "◈ MERCHANT TRADE ROUTES",
+   "  └ Via Romana adds merchant NPC at road endpoints",
+   "  └ Merchant trades: exchange goods between connected",
+   "    settlements via trade menu",
+   "  └ Road connection between two points = active trade",
+   "  └ Trade items: food, resources, rare materials",
+   "    (improves as your settlement reputation increases)",
+   "",
+   "◈ ROAD DESIGN GUIDE",
+   "  └ Base → Nether portal: connect via road for speed",
+   "  └ Base → Village: trade route via Via Romana = passive",
+   "    resource exchange without travel",
+   "  └ Underground roads: work same as surface",
+   "    Build cave highway between base and mine entrance",
+   "  └ Via Romana + Create Teleporters: road to teleporter pad",
+   "    = fastest long-distance travel system",
+   "",
+   "▸ All empires are roads.",
+   "  The buildings are just the reason to build them.",
+   "  The road connects what already existed.",
+   "  The empire emerges from the connection.",
+   "",
+   "▶ Build a Via Romana road between two points [check]",
+   "▶ Complete a merchant trade via road [check]",
+   "",
+   "◇ Nether road at 1:8 scale. Build Nether highways.",
+   "  1 block of Nether road = 8 overworld blocks traveled.",
+   "  With Via Romana speed bonus: fastest base travel",
+   "  system available outside of teleporters."
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     920,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:stone_bricks",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

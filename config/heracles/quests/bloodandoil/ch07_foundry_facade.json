@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch07_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Foundry Facade at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:iron_block",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock foundry_facade",
+   "title": "Discipline learned: The Foundry Facade",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Foundry Facade"
+  },
+  "subtitle": {
+   "text": "Industry, dressed for show."
+  },
+  "description": [
+   "When the steel came cheap, the Forgesworn clad their cities in it — plate, beam, rivet, and grille.",
+   "The foundry facade is the face industry wears once it stops apologizing.",
+   "",
+   "→ Recover and study the Foundry Facade at a Research Pedestal."
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     760,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:iron_block",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

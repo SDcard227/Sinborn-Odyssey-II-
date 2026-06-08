@@ -1,56 +1,93 @@
 {
-  "dependencies": ["ch13_world"],
-  "tasks": {
-    "trueend_access": {
-      "title": "Find the access point to the True End — Beyond the Dream dimension (look for unusual End structures)",
-      "icon": {"item": {"id": "minecraft:obsidian", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_world"
+ ],
+ "tasks": {
+  "trueend_access": {
+   "title": "Find the access point to the True End — Beyond the Dream dimension (look for unusual End structures)",
+   "icon": {
+    "item": {
+     "id": "minecraft:obsidian",
+     "count": 1
     },
-    "trueend_enter": {
-      "title": "Enter the True End — Beyond the Dream dimension",
-      "icon": {"item": {"id": "minecraft:end_stone", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "obsidian": {
-      "item": {"id": "minecraft:obsidian", "count": 16},
-      "type": "heracles:item"
+  "trueend_enter": {
+   "title": "Enter the True End — Beyond the Dream dimension",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_stone",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 6},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Beyond the Dream"},
-    "subtitle": {"text": "The End is a threshold. Beyond the Dream is what lies past it."},
-    "description": [
-      "True End adds a dimension beyond the End — Beyond the Dream.",
-      "It is accessed through a specific structure or ritual that generates in the End's outer islands.",
-      "Look for unusual geometric structures that don't match vanilla End City architecture.",
-      "",
-      "The dimension is surreal, void-adjacent, and contains unique loot and enemies.",
-      "It is not the final destination. It is the space between destinations.",
-      "",
-      "This aligns with the Frieren theme of Ch13-15:",
-      "the journey continues past the point where most stories end.",
-      "You have defeated the dragon. The world continues.",
-      "What lies beyond the dream is not the ending — it is another beginning.",
-      "",
-      "→ Find the access point to Beyond the Dream [check]",
-      "→ Enter the True End dimension [check]"
-    ],
-    "groups": {"The Shattered Law": {"position": [-150, 150]}},
-    "icon": {"item": {"id": "minecraft:ender_eye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "obsidian": {
+   "item": {
+    "id": "minecraft:obsidian",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Beyond the Dream"
+  },
+  "subtitle": {
+   "text": "The End is a threshold. Beyond the Dream is what lies past it."
+  },
+  "description": [
+   "True End adds a dimension beyond the End — Beyond the Dream.",
+   "It is accessed through a specific structure or ritual that generates in the End's outer islands.",
+   "Look for unusual geometric structures that don't match vanilla End City architecture.",
+   "",
+   "The dimension is surreal, void-adjacent, and contains unique loot and enemies.",
+   "It is not the final destination. It is the space between destinations.",
+   "",
+   "This aligns with the Frieren theme of Ch13-15:",
+   "the journey continues past the point where most stories end.",
+   "You have defeated the dragon. The world continues.",
+   "What lies beyond the dream is not the ending — it is another beginning.",
+   "",
+   "→ Find the access point to Beyond the Dream [check]",
+   "→ Enter the True End dimension [check]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     460,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

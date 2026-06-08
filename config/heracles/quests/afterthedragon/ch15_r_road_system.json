@@ -1,93 +1,136 @@
 {
-  "dependencies": ["ch15_r_tents2"],
-  "tasks": {
-    "road_network": {
-      "title": "Build a Via Romana road network connecting your base to 3 major locations — road blocks give travel speed bonus",
-      "icon": {"item": {"id": "minecraft:stone_brick_slab", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_r_tents2"
+ ],
+ "tasks": {
+  "road_network": {
+   "title": "Build a Via Romana road network connecting your base to 3 major locations — road blocks give travel speed bonus",
+   "icon": {
+    "item": {
+     "id": "minecraft:stone_brick_slab",
+     "count": 1
     },
-    "merchant_trade": {
-      "title": "Complete a Via Romana merchant trade at a roadside waypoint — road merchants sell unique items",
-      "icon": {"item": {"id": "minecraft:emerald", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "stone_bricks": {"item": {"id": "minecraft:stone_bricks", "count": 64}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Road System"},
-    "subtitle": {"text": "Via Romana roads give a movement speed bonus. Build roads. Build a kingdom. The roads are the kingdom's arteries."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.15 · THE ROAD SYSTEM",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Via Romana adds road blocks that increase player movement speed.",
-      "  Build roads between locations and ground travel becomes fast.",
-      "  This complements Elytra (sky) with a ground network.",
-      "  Villager Recruits (your army) uses ground movement.",
-      "  Roads make your army faster too.",
-      "  The kingdom's arteries are its roads.",
-      "",
-      "◈ VIA ROMANA ROAD BLOCKS",
-      "  └ Road blocks: crafted from stone/gravel/stone brick variants",
-      "    Check JEI for viaromana: recipes",
-      "  └ Speed bonus: player moves faster on Via Romana road blocks",
-      "    Bonus stacks with Sprint (not with Elytra — ground only)",
-      "  └ Road types: different materials give different bonuses",
-      "    Higher quality road = higher speed multiplier",
-      "  └ Road width: 3 blocks minimum for mounted travel",
-      "    (horses, llamas, and Villager Recruits all benefit from width)",
-      "",
-      "◈ ROAD NETWORK DESIGN",
-      "  └ Priority connections:",
-      "    Base → nearest village (trade route)",
-      "    Base → End portal (emergency resupply route)",
-      "    Base → major farm sites (Chorus, Enderman farm entrance)",
-      "  └ Waypoints: Via Romana adds waypoint/merchant stops on roads",
-      "    Place at road intersections for merchant trade access",
-      "  └ Integration with Via Romana merchants: road merchants",
-      "    sell unique items not available from vanilla villagers",
-      "  └ Bountiful courier bounties: complete delivery bounties",
-      "    by walking the road network between waypoints",
-      "",
-      "◈ VILLAGER RECRUITS ON ROADS",
-      "  └ 6 unit types (from Ch11 warlord quest): all use ground movement",
-      "  └ Faster roads = faster deployment to defense locations",
-      "  └ Road garrison: place guard units along road networks",
-      "    for protection between base and village",
-      "  └ Siege tactics: roads allow mass unit movement for outpost builds",
-      "",
-      "▸ The Roman legions built roads first.",
-      "  Then they conquered.",
-      "  The roads were the conquest.",
-      "  The territory that had roads was the territory you held.",
-      "  Via Romana is not decoration.",
-      "  It is a claim of permanence.",
-      "  Build roads. The land becomes yours.",
-      "",
-      "▶ Build a road network to 3+ locations [check]",
-      "▶ Complete a Via Romana merchant trade [check]",
-      "",
-      "◇ Via Romana + Elytra = complete kingdom logistics.",
-      "  You fly above the roads for fast solo travel.",
-      "  Your recruits march the roads below.",
-      "  Merchants travel the roads for trade.",
-      "  The kingdom has ground, sky, and sea (Small Ships in Ch16).",
-      "  Build the ground layer here."
-    ],
-    "groups": {"After the Dragon": {"position": [-450, 150]}},
-    "icon": {"item": {"id": "minecraft:stone_bricks", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "merchant_trade": {
+   "title": "Complete a Via Romana merchant trade at a roadside waypoint — road merchants sell unique items",
+   "icon": {
+    "item": {
+     "id": "minecraft:emerald",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "stone_bricks": {
+   "item": {
+    "id": "minecraft:stone_bricks",
+    "count": 64
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Road System"
+  },
+  "subtitle": {
+   "text": "Via Romana roads give a movement speed bonus. Build roads. Build a kingdom. The roads are the kingdom's arteries."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.15 · THE ROAD SYSTEM",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Via Romana adds road blocks that increase player movement speed.",
+   "  Build roads between locations and ground travel becomes fast.",
+   "  This complements Elytra (sky) with a ground network.",
+   "  Villager Recruits (your army) uses ground movement.",
+   "  Roads make your army faster too.",
+   "  The kingdom's arteries are its roads.",
+   "",
+   "◈ VIA ROMANA ROAD BLOCKS",
+   "  └ Road blocks: crafted from stone/gravel/stone brick variants",
+   "    Check JEI for viaromana: recipes",
+   "  └ Speed bonus: player moves faster on Via Romana road blocks",
+   "    Bonus stacks with Sprint (not with Elytra — ground only)",
+   "  └ Road types: different materials give different bonuses",
+   "    Higher quality road = higher speed multiplier",
+   "  └ Road width: 3 blocks minimum for mounted travel",
+   "    (horses, llamas, and Villager Recruits all benefit from width)",
+   "",
+   "◈ ROAD NETWORK DESIGN",
+   "  └ Priority connections:",
+   "    Base → nearest village (trade route)",
+   "    Base → End portal (emergency resupply route)",
+   "    Base → major farm sites (Chorus, Enderman farm entrance)",
+   "  └ Waypoints: Via Romana adds waypoint/merchant stops on roads",
+   "    Place at road intersections for merchant trade access",
+   "  └ Integration with Via Romana merchants: road merchants",
+   "    sell unique items not available from vanilla villagers",
+   "  └ Bountiful courier bounties: complete delivery bounties",
+   "    by walking the road network between waypoints",
+   "",
+   "◈ VILLAGER RECRUITS ON ROADS",
+   "  └ 6 unit types (from Ch11 warlord quest): all use ground movement",
+   "  └ Faster roads = faster deployment to defense locations",
+   "  └ Road garrison: place guard units along road networks",
+   "    for protection between base and village",
+   "  └ Siege tactics: roads allow mass unit movement for outpost builds",
+   "",
+   "▸ The Roman legions built roads first.",
+   "  Then they conquered.",
+   "  The roads were the conquest.",
+   "  The territory that had roads was the territory you held.",
+   "  Via Romana is not decoration.",
+   "  It is a claim of permanence.",
+   "  Build roads. The land becomes yours.",
+   "",
+   "▶ Build a road network to 3+ locations [check]",
+   "▶ Complete a Via Romana merchant trade [check]",
+   "",
+   "◇ Via Romana + Elytra = complete kingdom logistics.",
+   "  You fly above the roads for fast solo travel.",
+   "  Your recruits march the roads below.",
+   "  Merchants travel the roads for trade.",
+   "  The kingdom has ground, sky, and sea (Small Ships in Ch16).",
+   "  Build the ground layer here."
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     1380,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:stone_bricks",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

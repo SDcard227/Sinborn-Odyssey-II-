@@ -1,45 +1,80 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Alchemy scroll",
-      "icon": {"item": {"id": "historystages:research_scroll", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Alchemy scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Alchemy scroll",
-      "icon": {"item": {"id": "minecraft:brewing_stand", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:command",
-      "command": "history unlock alchemy"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {"item": {"id": "numismatics:bevel", "count": 6}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"text": "Alchemy"},
-    "subtitle": {"text": "The art of coaxing change out of bottled things."},
-    "description": [
-      "\"Heat, water, and patience — and the world rearranges itself.\"",
-      "",
-      "This scroll unlocks brewing: potions, splash and lingering",
-      "draughts, tipped arrows, and the infusion of food with effect.",
-      "",
-      "◈ Found in: witch huts, stronghold libraries, deep dungeon loot",
-      "",
-      "→ Find the scroll [discovery]",
-      "→ Research [Alchemy] [auto]"
-    ],
-    "groups": {"The Spoken Word": {"position": [450, 1175]}},
-    "icon": {"item": {"id": "minecraft:brewing_stand", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "research_scroll": {
+   "title": "Research the Alchemy scroll",
+   "icon": {
+    "item": {
+     "id": "minecraft:brewing_stand",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock alchemy"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Alchemy"
+  },
+  "subtitle": {
+   "text": "The art of coaxing change out of bottled things."
+  },
+  "description": [
+   "\"Heat, water, and patience — and the world rearranges itself.\"",
+   "",
+   "This scroll unlocks brewing: potions, splash and lingering",
+   "draughts, tipped arrows, and the infusion of food with effect.",
+   "",
+   "◈ Found in: witch huts, stronghold libraries, deep dungeon loot",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Alchemy] [auto]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     0,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:brewing_stand",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

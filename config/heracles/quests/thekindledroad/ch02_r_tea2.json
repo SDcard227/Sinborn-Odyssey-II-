@@ -1,56 +1,81 @@
 {
-  "dependencies": ["ch02_r_tea1"],
-  "tasks": {
-    "green_tea": {
-      "type": "heracles:item",
-      "item": "herbalbrews:green_tea",
-      "amount": 2,
-      "collection": "AUTOMATIC"
-    },
-    "coffee": {
-      "type": "heracles:item",
-      "item": "herbalbrews:coffee",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch02_r_tea1"
+ ],
+ "tasks": {
+  "green_tea": {
+   "type": "heracles:item",
+   "item": "herbalbrews:green_tea",
+   "amount": 2,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "rooibos": {
-      "item": {"id": "herbalbrews:rooibos_tea", "count": 2},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 4},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "First Brew"},
-    "subtitle": {"text": "Every culture that learned to brew, kept brewing."},
-    "description": [
-      "Green tea from dried leaves on the rack.",
-      "Coffee from beans — the long chain.",
-      "",
-      "Each drink in Herbal Brews does something.",
-      "Green tea: mild focus. Coffee: speed and saturation.",
-      "Yerba Mate's Bonding effect is worth finding.",
-      "",
-      "The kettle on the stove. Four ingredients.",
-      "Learn what you have. Brew what you can.",
-      "",
-      "→ Brew 2 Green Tea",
-      "→ Brew 1 Coffee"
-    ],
-    "groups": {"The Kindled Road": {"position": [-300, 300]}},
-    "icon": {"item": {"id": "herbalbrews:green_tea", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "coffee": {
+   "type": "heracles:item",
+   "item": "herbalbrews:coffee",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "rooibos": {
+   "item": {
+    "id": "herbalbrews:rooibos_tea",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "First Brew"
+  },
+  "subtitle": {
+   "text": "Every culture that learned to brew, kept brewing."
+  },
+  "description": [
+   "Green tea from dried leaves on the rack.",
+   "Coffee from beans — the long chain.",
+   "",
+   "Each drink in Herbal Brews does something.",
+   "Green tea: mild focus. Coffee: speed and saturation.",
+   "Yerba Mate's Bonding effect is worth finding.",
+   "",
+   "The kettle on the stove. Four ingredients.",
+   "Learn what you have. Brew what you can.",
+   "",
+   "→ Brew 2 Green Tea",
+   "→ Brew 1 Coffee"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     2140,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "herbalbrews:green_tea",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

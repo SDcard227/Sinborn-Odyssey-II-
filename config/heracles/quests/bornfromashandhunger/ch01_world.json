@@ -1,82 +1,82 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "logs": {
-      "type": "heracles:item",
-      "item": "minecraft:oak_log",
-      "amount": 32,
-      "collection": "AUTOMATIC"
-    },
-    "stone": {
-      "type": "heracles:item",
-      "item": "minecraft:cobblestone",
-      "amount": 32,
-      "collection": "AUTOMATIC"
-    },
-    "coal": {
-      "type": "heracles:item",
-      "item": "minecraft:coal",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [],
+ "tasks": {
+  "logs": {
+   "type": "heracles:item",
+   "item": "minecraft:oak_log",
+   "amount": 32,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "sticks": {
-      "item": {
-        "id": "minecraft:bread",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
+  "stone": {
+   "type": "heracles:item",
+   "item": "minecraft:cobblestone",
+   "amount": 32,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {
-      "translate": "The World Before You"
-    },
-    "subtitle": {
-      "text": "Everything you will ever build starts here."
-    },
-    "description": [
-      "The world is not generous. But it is full.",
-      "",
-      "Wood for structure. Stone for shaping. Coal to hold the dark back.",
-      "",
-      "The first civilization gathered before it built. So do you.",
-      "",
-      "→ Collect 32 logs",
-      "→ Collect 32 cobblestone",
-      "→ Find 16 coal"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          0,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:oak_log",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "NEVER",
-    "unlockNotification": false
+  "coal": {
+   "type": "heracles:item",
+   "item": "minecraft:coal",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "sticks": {
+   "item": {
+    "id": "minecraft:bread",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The World Before You"
+  },
+  "subtitle": {
+   "text": "Everything you will ever build starts here."
+  },
+  "description": [
+   "The world is not generous. But it is full.",
+   "",
+   "Wood for structure. Stone for shaping. Coal to hold the dark back.",
+   "",
+   "The first civilization gathered before it built. So do you.",
+   "",
+   "→ Collect 32 logs",
+   "→ Collect 32 cobblestone",
+   "→ Find 16 coal"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     0,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:oak_log",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "NEVER",
+  "unlockNotification": false
+ }
 }

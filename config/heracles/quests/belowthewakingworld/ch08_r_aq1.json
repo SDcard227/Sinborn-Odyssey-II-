@@ -1,66 +1,103 @@
 {
-  "dependencies": ["ch08_world"],
-  "tasks": {
-    "frozen_ocean": {
-      "title": "Travel to a Frozen Ocean or Deep Frozen Ocean biome",
-      "icon": {"item": {"id": "minecraft:blue_ice", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch08_world"
+ ],
+ "tasks": {
+  "frozen_ocean": {
+   "title": "Travel to a Frozen Ocean or Deep Frozen Ocean biome",
+   "icon": {
+    "item": {
+     "id": "minecraft:blue_ice",
+     "count": 1
     },
-    "blue_ice": {
-      "type": "heracles:item",
-      "item": "minecraft:blue_ice",
-      "amount": 16,
-      "collection": "AUTOMATIC"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "blue_ice": {
+   "type": "heracles:item",
+   "item": "minecraft:blue_ice",
+   "amount": 16,
+   "collection": "AUTOMATIC"
+  },
+  "aquamirae_prep": {
+   "title": "Read the lore: Aquamirae creatures spawn in Frozen and Deep Cold Ocean biomes",
+   "icon": {
+    "item": {
+     "id": "minecraft:nautilus_shell",
+     "count": 1
     },
-    "aquamirae_prep": {
-      "title": "Read the lore: Aquamirae creatures spawn in Frozen and Deep Cold Ocean biomes",
-      "icon": {"item": {"id": "minecraft:nautilus_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "blue_ice_reward": {
-      "item": {"id": "minecraft:blue_ice", "count": 8},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Cold Water"},
-    "subtitle": {"text": "Aquamirae does not hunt you. It waits where the cold keeps everything still."},
-    "description": [
-      "Aquamirae adds two major bosses to cold ocean biomes.",
-      "Captain Cornelia and the Mother of the Maze.",
-      "",
-      "They require the Drowned World scroll to be researched",
-      "before they can be damaged — the boss lock system gates them.",
-      "Do not try them unresearched.",
-      "",
-      "Blue Ice marks frozen ocean depth.",
-      "It is also one of the fastest surface travel options in the game.",
-      "A blue ice road with Iceboat or just a boat",
-      "is faster than any horse before elytra.",
-      "",
-      "The Frozen Chest entity (Aquamirae) spawns in frozen ocean floors.",
-      "It is not a block. It is a creature disguised as loot.",
-      "",
-      "→ Travel to a Frozen or Deep Frozen Ocean [check]",
-      "→ Collect 16 Blue Ice",
-      "→ Note the Aquamirae boss locations [check]"
-    ],
-    "groups": {"Below the Waking World": {"position": [-150, 0]}},
-    "icon": {"item": {"id": "minecraft:blue_ice", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "blue_ice_reward": {
+   "item": {
+    "id": "minecraft:blue_ice",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Cold Water"
+  },
+  "subtitle": {
+   "text": "Aquamirae does not hunt you. It waits where the cold keeps everything still."
+  },
+  "description": [
+   "Aquamirae adds two major bosses to cold ocean biomes.",
+   "Captain Cornelia and the Mother of the Maze.",
+   "",
+   "They require the Drowned World scroll to be researched",
+   "before they can be damaged — the boss lock system gates them.",
+   "Do not try them unresearched.",
+   "",
+   "Blue Ice marks frozen ocean depth.",
+   "It is also one of the fastest surface travel options in the game.",
+   "A blue ice road with Iceboat or just a boat",
+   "is faster than any horse before elytra.",
+   "",
+   "The Frozen Chest entity (Aquamirae) spawns in frozen ocean floors.",
+   "It is not a block. It is a creature disguised as loot.",
+   "",
+   "→ Travel to a Frozen or Deep Frozen Ocean [check]",
+   "→ Collect 16 Blue Ice",
+   "→ Note the Aquamirae boss locations [check]"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     760,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:blue_ice",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

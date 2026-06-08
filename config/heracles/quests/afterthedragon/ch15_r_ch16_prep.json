@@ -1,96 +1,139 @@
 {
-  "dependencies": ["ch15_gate"],
-  "tasks": {
-    "celestisynth_stock": {
-      "title": "Stockpile all 3 Celestisynth inputs — Lunar Stone, Zephyr Deposit, Solar Crystal (from Nether)",
-      "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_gate"
+ ],
+ "tasks": {
+  "celestisynth_stock": {
+   "title": "Stockpile all 3 Celestisynth inputs — Lunar Stone, Zephyr Deposit, Solar Crystal (from Nether)",
+   "icon": {
+    "item": {
+     "id": "celestisynth:lunar_scrap",
+     "count": 1
     },
-    "music_plan": {
-      "title": "Collect 3 Etched music discs or Xerca instruments — the foundation for your Ch16 music hall",
-      "icon": {"item": {"id": "minecraft:music_disc_13", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "fireworks": {"item": {"id": "minecraft:firework_rocket", "count": 64}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Ready for Ch16"},
-    "subtitle": {"text": "Ch16 is Celestisynth mastery and the music hall. Come with all three ores. Come with a music plan."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.15 · READY FOR CH16",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Ch16 (The Long Road Home) has two major pillars:",
-      "  Celestisynth mastery — full armor + tool set from the chain,",
-      "  and the music hall — Etched + Xerca music system build.",
-      "  Both require prep that happens in Ch15.",
-      "  Do not enter Ch16 without the ores stockpiled",
-      "  and the music system seeded.",
-      "",
-      "◈ CELESTISYNTH PREP CHECKLIST",
-      "  └ ✦ Lunar Stone / Lunar Scrap: 32+ (deep underground craters)",
-      "  └ ✦ Zephyr Deposit material: 16+ (Y≥130 mountain peaks)",
-      "  └ ✦ Solar Crystal: 16+ (Nether dimension — fire resist potion req.)",
-      "  └ ✦ Celestisynth forge setup: check JEI for celestisynth: crafting",
-      "    (likely requires specific forge multiblock or crafting station)",
-      "  └ Target: enough for a full armor set + tools",
-      "    Celestial Netherite has the highest durability + enchantability",
-      "    in the pack — this is the Ch16 material payoff",
-      "",
-      "◈ ETCHED + XERCA MUSIC SYSTEM",
-      "  └ Etched: custom music disc creation mod",
-      "    Records audio, encodes onto custom discs",
-      "    Music Note Block → Disc → Jukebox playback",
-      "  └ Xerca: instruments mod — playable instruments in-world",
-      "    Guitar, Lute, Flute, and others",
-      "  └ Music Hall build (Ch16): dedicated building with",
-      "    Jukeboxes, instruments, seating, recording setup",
-      "  └ Start collecting: Etched discs from dungeon loot,",
-      "    Xerca instruments from craft or villager trades",
-      "",
-      "◈ PATH TO DIVINITY AWARENESS",
-      "  └ Ch16 also covers the Path to Divinity (PTD) dark path",
-      "    Philosopher's Stone requires 999 villager soul consumption",
-      "    via Mass Accumulate mechanic (scroll: path_divinity)",
-      "  └ If pursuing PTD: DO NOT spend villager reputation in Ch15",
-      "    building trades — you need a large villager population",
-      "    for the Ch16-17 Mass Accumulate sequence",
-      "  └ If not pursuing: ignore PTD entirely — it is optional",
-      "  └ PTD gives: unlimited item transmutation (FMA reference)",
-      "    Only relevant if you want the divine craft finale",
-      "",
-      "▸ The Long Road Home is the chapter about",
-      "  building the things that last.",
-      "  The sword rusts. The armor breaks.",
-      "  The music hall stands.",
-      "  The wine cellar ages.",
-      "  The road connects cities that outlive the builder.",
-      "  Ch16 is the chapter where permanence becomes the goal.",
-      "  Come with the materials to make something permanent.",
-      "",
-      "▶ Stockpile all 3 Celestisynth ore types [check]",
-      "▶ Collect 3 Etched discs or Xerca instruments [check]",
-      "",
-      "◇ Ch16 tab: The Long Road Home.",
-      "  Celestisynth armor + Eiswein cellar + music hall + Small Ships.",
-      "  These are the four Ch16 build projects.",
-      "  All four are large. All four require Ch15 prep.",
-      "  The chapter rewards are proportional to the preparation."
-    ],
-    "groups": {"After the Dragon": {"position": [450, 300]}},
-    "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "music_plan": {
+   "title": "Collect 3 Etched music discs or Xerca instruments — the foundation for your Ch16 music hall",
+   "icon": {
+    "item": {
+     "id": "minecraft:music_disc_13",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "fireworks": {
+   "item": {
+    "id": "minecraft:firework_rocket",
+    "count": 64
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Ready for Ch16"
+  },
+  "subtitle": {
+   "text": "Ch16 is Celestisynth mastery and the music hall. Come with all three ores. Come with a music plan."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.15 · READY FOR CH16",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Ch16 (The Long Road Home) has two major pillars:",
+   "  Celestisynth mastery — full armor + tool set from the chain,",
+   "  and the music hall — Etched + Xerca music system build.",
+   "  Both require prep that happens in Ch15.",
+   "  Do not enter Ch16 without the ores stockpiled",
+   "  and the music system seeded.",
+   "",
+   "◈ CELESTISYNTH PREP CHECKLIST",
+   "  └ ✦ Lunar Stone / Lunar Scrap: 32+ (deep underground craters)",
+   "  └ ✦ Zephyr Deposit material: 16+ (Y≥130 mountain peaks)",
+   "  └ ✦ Solar Crystal: 16+ (Nether dimension — fire resist potion req.)",
+   "  └ ✦ Celestisynth forge setup: check JEI for celestisynth: crafting",
+   "    (likely requires specific forge multiblock or crafting station)",
+   "  └ Target: enough for a full armor set + tools",
+   "    Celestial Netherite has the highest durability + enchantability",
+   "    in the pack — this is the Ch16 material payoff",
+   "",
+   "◈ ETCHED + XERCA MUSIC SYSTEM",
+   "  └ Etched: custom music disc creation mod",
+   "    Records audio, encodes onto custom discs",
+   "    Music Note Block → Disc → Jukebox playback",
+   "  └ Xerca: instruments mod — playable instruments in-world",
+   "    Guitar, Lute, Flute, and others",
+   "  └ Music Hall build (Ch16): dedicated building with",
+   "    Jukeboxes, instruments, seating, recording setup",
+   "  └ Start collecting: Etched discs from dungeon loot,",
+   "    Xerca instruments from craft or villager trades",
+   "",
+   "◈ PATH TO DIVINITY AWARENESS",
+   "  └ Ch16 also covers the Path to Divinity (PTD) dark path",
+   "    Philosopher's Stone requires 999 villager soul consumption",
+   "    via Mass Accumulate mechanic (scroll: path_divinity)",
+   "  └ If pursuing PTD: DO NOT spend villager reputation in Ch15",
+   "    building trades — you need a large villager population",
+   "    for the Ch16-17 Mass Accumulate sequence",
+   "  └ If not pursuing: ignore PTD entirely — it is optional",
+   "  └ PTD gives: unlimited item transmutation (FMA reference)",
+   "    Only relevant if you want the divine craft finale",
+   "",
+   "▸ The Long Road Home is the chapter about",
+   "  building the things that last.",
+   "  The sword rusts. The armor breaks.",
+   "  The music hall stands.",
+   "  The wine cellar ages.",
+   "  The road connects cities that outlive the builder.",
+   "  Ch16 is the chapter where permanence becomes the goal.",
+   "  Come with the materials to make something permanent.",
+   "",
+   "▶ Stockpile all 3 Celestisynth ore types [check]",
+   "▶ Collect 3 Etched discs or Xerca instruments [check]",
+   "",
+   "◇ Ch16 tab: The Long Road Home.",
+   "  Celestisynth armor + Eiswein cellar + music hall + Small Ships.",
+   "  These are the four Ch16 build projects.",
+   "  All four are large. All four require Ch15 prep.",
+   "  The chapter rewards are proportional to the preparation."
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     2760,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "celestisynth:lunar_scrap",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,0 +1,27 @@
+{
+  "display_name": "On the King Below",
+  "research_time": 10800,
+  "items": [
+    "scarlet_king:banishing_chains",
+    "scarlet_king:manifestation_clock",
+    "scarlet_king:scarlet_block",
+    "scarlet_king:scarlet_block_stage",
+    "scarlet_king:scarlet_bricks",
+    "scarlet_king:scarlet_crown",
+    "scarlet_king:scarlet_king_trigger_item"
+  ],
+  "tags": [],
+  "mods": [
+    "scarlet_king"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "scarlet_king:manifestation_clock_recipe"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

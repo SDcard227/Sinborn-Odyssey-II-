@@ -1,0 +1,83 @@
+{
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Lumen Metallurgy scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "research_scroll": {
+   "title": "Research the Lumen Metallurgy scroll",
+   "icon": {
+    "item": {
+     "id": "echovoids:block_of_mythril",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock lumen_metallurgy"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sun",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Lumen Metallurgy"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"The dwemer left their brass. Nothing else.\"",
+   "",
+   "Already populated. EchoVoids post-Dragon metal tier.",
+   "",
+   "This scroll unlocks 33 items.",
+   "",
+   "Look for it in:",
+   "  · Mebahelcreaturesdwarven:Chests/Dwemer Tower",
+   "  · Mebahelcreaturesdwarven:Chests/Dwemer Ruin Epic",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Lumen Metallurgy] [auto]"
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     0,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "echovoids:block_of_mythril",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch11_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Dragonslayer's Codex at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:netherite_sword",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock dragonslayer_codex",
+   "title": "Discipline learned: The Dragonslayer's Codex",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Dragonslayer's Codex"
+  },
+  "subtitle": {
+   "text": "Dragons are not gods. They can be killed."
+  },
+  "description": [
+   "The only thing in this world that demands a license to slay is the dragon — the Nightwarden's working prototype.",
+   "This codex is the combat-knowledge the lineage carried up to the Last True Dragon. Carry it well.",
+   "",
+   "→ Recover and study the Dragonslayer's Codex at a Research Pedestal."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:netherite_sword",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

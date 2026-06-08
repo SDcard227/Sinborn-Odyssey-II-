@@ -1,73 +1,110 @@
 {
-  "dependencies": ["ch01_r_deep"],
-  "tasks": {
-    "sculk_found": {
-      "title": "Find Sculk blocks in the deep cave (below Y=0) — do not mine them yet, just observe",
-      "icon": {"item": {"id": "minecraft:sculk", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch01_r_deep"
+ ],
+ "tasks": {
+  "sculk_found": {
+   "title": "Find Sculk blocks in the deep cave (below Y=0) — do not mine them yet, just observe",
+   "icon": {
+    "item": {
+     "id": "minecraft:sculk",
+     "count": 1
     },
-    "sculk_scroll_note": {
-      "title": "Note: the Sculk Sickness scroll drops from the Warden (40% chance) — do NOT fight the Warden yet",
-      "icon": {"item": {"id": "minecraft:sculk_sensor", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {"item": {"id": "numismatics:sprocket", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Sculk Warning"},
-    "subtitle": {"text": "The Sculk Sickness has five stages. You do not want to learn them by experience."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.01 · THE SCULK WARNING",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Sculk Sickness is a 5-stage infection.",
-      "  It comes from prolonged Sculk exposure.",
-      "  It accumulates silently until the symptoms are obvious.",
-      "",
-      "◈ SCULK SICKNESS STAGES",
-      "  └ Stage 1: Minor debuff (mining fatigue)",
-      "  └ Stage 2: Worsening — weakness added",
-      "  └ Stage 3: Significant — slowness stack",
-      "  └ Stage 4: Dangerous — vision effects",
-      "  └ Stage 5: Critical — full debuff suite",
-      "",
-      "◈ CURE",
-      "  └ Ambrosia — crafted from specific End materials",
-      "  └ The Vile Herb (also used in Cursed Eye recipe, Ch12)",
-      "    partially mitigates progression",
-      "  └ Sculk Warding scroll (from Warden, Ch08) teaches",
-      "    full cure and prevention",
-      "",
-      "◈ SCROLL: On Sculk Sickness",
-      "  └ Found in: Warden drops — 40% chance",
-      "  └ Research time: 10 min",
-      "  └ ▲ DO NOT FIGHT THE WARDEN YET",
-      "  └ Wait for Ch08. The Warden fight is gated.",
-      "",
-      "▸ For now: note the sculk locations. Do not mine.",
-      "  The Sculk vibration system wakes the Warden.",
-      "  Sneak. Stay quiet. Leave.",
-      "",
-      "▶ Find Sculk blocks in the deep cave [check]",
-      "▶ Note the Warden + scroll drop relationship [check]",
-      "",
-      "◇ The Deep Dark biome (Ancient City) contains",
-      "  the best early loot in the game.",
-      "  Ch08 will send you there properly."
-    ],
-    "groups": {"Born from Ash and Hunger": {"position": [150, 150]}},
-    "icon": {"item": {"id": "minecraft:sculk", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "sculk_scroll_note": {
+   "title": "Note: the Sculk Sickness scroll drops from the Warden (40% chance) — do NOT fight the Warden yet",
+   "icon": {
+    "item": {
+     "id": "minecraft:sculk_sensor",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Sculk Warning"
+  },
+  "subtitle": {
+   "text": "The Sculk Sickness has five stages. You do not want to learn them by experience."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.01 · THE SCULK WARNING",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Sculk Sickness is a 5-stage infection.",
+   "  It comes from prolonged Sculk exposure.",
+   "  It accumulates silently until the symptoms are obvious.",
+   "",
+   "◈ SCULK SICKNESS STAGES",
+   "  └ Stage 1: Minor debuff (mining fatigue)",
+   "  └ Stage 2: Worsening — weakness added",
+   "  └ Stage 3: Significant — slowness stack",
+   "  └ Stage 4: Dangerous — vision effects",
+   "  └ Stage 5: Critical — full debuff suite",
+   "",
+   "◈ CURE",
+   "  └ Ambrosia — crafted from specific End materials",
+   "  └ The Vile Herb (also used in Cursed Eye recipe, Ch12)",
+   "    partially mitigates progression",
+   "  └ Sculk Warding scroll (from Warden, Ch08) teaches",
+   "    full cure and prevention",
+   "",
+   "◈ SCROLL: On Sculk Sickness",
+   "  └ Found in: Warden drops — 40% chance",
+   "  └ Research time: 10 min",
+   "  └ ▲ DO NOT FIGHT THE WARDEN YET",
+   "  └ Wait for Ch08. The Warden fight is gated.",
+   "",
+   "▸ For now: note the sculk locations. Do not mine.",
+   "  The Sculk vibration system wakes the Warden.",
+   "  Sneak. Stay quiet. Leave.",
+   "",
+   "▶ Find Sculk blocks in the deep cave [check]",
+   "▶ Note the Warden + scroll drop relationship [check]",
+   "",
+   "◇ The Deep Dark biome (Ancient City) contains",
+   "  the best early loot in the game.",
+   "  Ch08 will send you there properly."
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     2300,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:sculk",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

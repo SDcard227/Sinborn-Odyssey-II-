@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Soups & Stews scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Soups & Stews scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Soups & Stews scroll",
-      "icon": {
-        "item": {
-          "id": "alexscaves:vesper_stew",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock soups_and_stews"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Soups & Stews"
+  "research_scroll": {
+   "title": "Research the Soups & Stews scroll",
+   "icon": {
+    "item": {
+     "id": "alexscaves:vesper_stew",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"The Convent kept it clean. They kept it.\"",
-      "",
-      "Liquid hot foods. Most basic comfort cuisine.",
-      "",
-      "This scroll unlocks 348 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Stronghold Library",
-      "  \u00b7 Mowziesmobs:Chests/Monastery Chest",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Soups & Stews] [auto]"
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          442,
-          1020
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexscaves:vesper_stew",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock the_pantry"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Soups & Stews"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"The Convent kept it clean. They kept it.\"",
+   "",
+   "Liquid hot foods. Most basic comfort cuisine.",
+   "",
+   "This scroll unlocks 348 items.",
+   "",
+   "Look for it in:",
+   "  · Stronghold Library",
+   "  · Mowziesmobs:Chests/Monastery Chest",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Soups & Stews] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     300,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexscaves:vesper_stew",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

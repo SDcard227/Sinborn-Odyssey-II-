@@ -1,64 +1,89 @@
 {
-  "dependencies": ["ch04_barrel"],
-  "tasks": {
-    "brewing_stand": {
-      "type": "heracles:item",
-      "item": "minecraft:brewing_stand",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "nether_wart": {
-      "type": "heracles:item",
-      "item": "minecraft:nether_wart",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "awkward": {
-      "type": "heracles:item",
-      "item": "minecraft:potion",
-      "amount": 3,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch04_barrel"
+ ],
+ "tasks": {
+  "brewing_stand": {
+   "type": "heracles:item",
+   "item": "minecraft:brewing_stand",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "blaze_powder": {
-      "item": {"id": "minecraft:blaze_powder", "count": 8},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 6},
-      "type": "heracles:item"
-    }
+  "nether_wart": {
+   "type": "heracles:item",
+   "item": "minecraft:nether_wart",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The Standing Stone"},
-    "subtitle": {"text": "The awkward potion is blank. The foundation is built."},
-    "description": [
-      "The awkward potion is not useless.",
-      "It is the proof that the foundation has been laid.",
-      "",
-      "Water bottle. Blaze powder. Nether wart.",
-      "Three ingredients, specific heat, exact timing.",
-      "You cannot write on a page that has no surface.",
-      "",
-      "The brewing stand came from the Nether.",
-      "Everything that alters the body came from there.",
-      "This is not coincidence.",
-      "",
-      "→ Craft a Brewing Stand",
-      "→ Find 8 nether wart",
-      "→ Brew 3 awkward potions"
-    ],
-    "groups": {"The Long Pour": {"position": [0, 300]}},
-    "icon": {"item": {"id": "minecraft:brewing_stand", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "awkward": {
+   "type": "heracles:item",
+   "item": "minecraft:potion",
+   "amount": 3,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "blaze_powder": {
+   "item": {
+    "id": "minecraft:blaze_powder",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Standing Stone"
+  },
+  "subtitle": {
+   "text": "The awkward potion is blank. The foundation is built."
+  },
+  "description": [
+   "The awkward potion is not useless.",
+   "It is the proof that the foundation has been laid.",
+   "",
+   "Water bottle. Blaze powder. Nether wart.",
+   "Three ingredients, specific heat, exact timing.",
+   "You cannot write on a page that has no surface.",
+   "",
+   "The brewing stand came from the Nether.",
+   "Everything that alters the body came from there.",
+   "This is not coincidence.",
+   "",
+   "→ Craft a Brewing Stand",
+   "→ Find 8 nether wart",
+   "→ Brew 3 awkward potions"
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     920,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:brewing_stand",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

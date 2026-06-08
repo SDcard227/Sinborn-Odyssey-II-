@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch04_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Architect's Codex at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:bricks",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock architects_codex",
+   "title": "Discipline learned: The Architect's Codex",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Architect's Codex"
+  },
+  "subtitle": {
+   "text": "Stone learns to mean something."
+  },
+  "description": [
+   "A wall keeps weather out. A FACADE says who you are.",
+   "The codex is the difference between shelter and a place worth defending.",
+   "",
+   "→ Recover and study the Architect's Codex at a Research Pedestal."
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:bricks",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

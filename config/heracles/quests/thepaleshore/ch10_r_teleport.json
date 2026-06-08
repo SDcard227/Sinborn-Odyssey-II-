@@ -1,97 +1,140 @@
 {
-  "dependencies": ["ch10_reactor"],
-  "tasks": {
-    "quantum_mech": {
-      "title": "Craft a Quantum Mechanism — the 5-step sequenced assembly chain at the heart of Create: Teleporters",
-      "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch10_reactor"
+ ],
+ "tasks": {
+  "quantum_mech": {
+   "title": "Craft a Quantum Mechanism — the 5-step sequenced assembly chain at the heart of Create: Teleporters",
+   "icon": {
+    "item": {
+     "id": "createteleporters:quantum_mechanism",
+     "count": 1
     },
-    "teleporter_built": {
-      "title": "Place and activate a Teleporter pad — register destination with TP Link and supply Quantum Fluid",
-      "icon": {"item": {"id": "createteleporters:teleporter", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ender_pearl": {"item": {"id": "minecraft:ender_pearl", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Teleporters"},
-    "subtitle": {"text": "Five steps. Redstone Pearl. Quantum Fluid. Advanced Component. Quantum Mechanism. Then: anywhere, instantly."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.10 · TELEPORTERS",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Create: Teleporters uses the quantum_mechanism",
-      "  as its Phase 17 Mastery Age trigger.",
-      "  Crafting one advances the pack's age system.",
-      "  It also lets you teleport.",
-      "  Both are worth doing.",
-      "",
-      "◈ QUANTUM MECHANISM — CRAFT CHAIN (5 Steps)",
-      "  └ Step 1: Redstone Pearl",
-      "    Create Mixer (heated): Ender Pearl + Rose Quartz",
-      "  └ Step 2: Quantum Fluid",
-      "    Create Mixer (heated): Chorus Fruit + Water",
-      "    → 250 mB Quantum Fluid",
-      "  └ Step 3: Quantum Casing",
-      "    Item Application: Railway Casing + Quantum Fluid Bucket",
-      "  └ Step 4: Advanced Component",
-      "    Sequenced Assembly (base: Diamond):",
-      "    deploy Sturdy Sheet → deploy Redstone Pearl → press",
-      "  └ Step 5: Quantum Mechanism",
-      "    Sequenced Assembly (base: Sturdy Sheet):",
-      "    fill 250 mB Quantum Fluid → deploy Advanced Component → press",
-      "",
-      "◈ TELEPORTER OPERATION",
-      "  └ Place Entity Teleporter pad at source",
-      "  └ Register destination with TP Link item",
-      "  └ Supply Quantum Fluid via pipe (continuous feed)",
-      "  └ Connect rotational shaft for power",
-      "  └ Entity walks on pad = teleport to registered destination",
-      "",
-      "◈ ADVANCED VARIANTS",
-      "  └ TP Link: basic point-to-point teleporter",
-      "  └ Advanced TP Link: multi-destination network",
-      "  └ Custom Portal: 7×7 Stargate multiblock",
-      "    Full cross-dimensional travel (not just same-dim)",
-      "  └ Pocket Dimension Remote: personal dimension",
-      "    (storage room, farm, base — instanced per player)",
-      "  └ Block Teleporter: teleport specific block ranges",
-      "",
-      "◈ PROGRESSION NOTE",
-      "  └ quantum_mechanism = Phase 17 (Mastery Age) trigger",
-      "  └ Build it to unlock late-game age advancements",
-      "  └ Infrastructure cost: Quantum Fluid supply must be",
-      "    ongoing — set up automated Chorus Fruit + water mixer",
-      "",
-      "▸ The Engineers built the portal system",
-      "  to reach the Eye.",
-      "  They built the Teleporters",
-      "  to reach each other.",
-      "  The Eye Hunt was not their primary project.",
-      "  It was the deadline.",
-      "",
-      "▶ Craft a Quantum Mechanism [check]",
-      "▶ Build and activate a Teleporter [check]",
-      "",
-      "◇ Custom Portal (Stargate) needs quantum_mechanism",
-      "  and a 7×7 frame of specific blocks.",
-      "  Build this before Ch13 End exploration.",
-      "  Cross-dimensional travel without boats."
-    ],
-    "groups": {"The Pale Shore": {"position": [150, 300]}},
-    "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "teleporter_built": {
+   "title": "Place and activate a Teleporter pad — register destination with TP Link and supply Quantum Fluid",
+   "icon": {
+    "item": {
+     "id": "createteleporters:teleporter",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "ender_pearl": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Teleporters"
+  },
+  "subtitle": {
+   "text": "Five steps. Redstone Pearl. Quantum Fluid. Advanced Component. Quantum Mechanism. Then: anywhere, instantly."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.10 · TELEPORTERS",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Create: Teleporters uses the quantum_mechanism",
+   "  as its Phase 17 Mastery Age trigger.",
+   "  Crafting one advances the pack's age system.",
+   "  It also lets you teleport.",
+   "  Both are worth doing.",
+   "",
+   "◈ QUANTUM MECHANISM — CRAFT CHAIN (5 Steps)",
+   "  └ Step 1: Redstone Pearl",
+   "    Create Mixer (heated): Ender Pearl + Rose Quartz",
+   "  └ Step 2: Quantum Fluid",
+   "    Create Mixer (heated): Chorus Fruit + Water",
+   "    → 250 mB Quantum Fluid",
+   "  └ Step 3: Quantum Casing",
+   "    Item Application: Railway Casing + Quantum Fluid Bucket",
+   "  └ Step 4: Advanced Component",
+   "    Sequenced Assembly (base: Diamond):",
+   "    deploy Sturdy Sheet → deploy Redstone Pearl → press",
+   "  └ Step 5: Quantum Mechanism",
+   "    Sequenced Assembly (base: Sturdy Sheet):",
+   "    fill 250 mB Quantum Fluid → deploy Advanced Component → press",
+   "",
+   "◈ TELEPORTER OPERATION",
+   "  └ Place Entity Teleporter pad at source",
+   "  └ Register destination with TP Link item",
+   "  └ Supply Quantum Fluid via pipe (continuous feed)",
+   "  └ Connect rotational shaft for power",
+   "  └ Entity walks on pad = teleport to registered destination",
+   "",
+   "◈ ADVANCED VARIANTS",
+   "  └ TP Link: basic point-to-point teleporter",
+   "  └ Advanced TP Link: multi-destination network",
+   "  └ Custom Portal: 7×7 Stargate multiblock",
+   "    Full cross-dimensional travel (not just same-dim)",
+   "  └ Pocket Dimension Remote: personal dimension",
+   "    (storage room, farm, base — instanced per player)",
+   "  └ Block Teleporter: teleport specific block ranges",
+   "",
+   "◈ PROGRESSION NOTE",
+   "  └ quantum_mechanism = Phase 17 (Mastery Age) trigger",
+   "  └ Build it to unlock late-game age advancements",
+   "  └ Infrastructure cost: Quantum Fluid supply must be",
+   "    ongoing — set up automated Chorus Fruit + water mixer",
+   "",
+   "▸ The Engineers built the portal system",
+   "  to reach the Eye.",
+   "  They built the Teleporters",
+   "  to reach each other.",
+   "  The Eye Hunt was not their primary project.",
+   "  It was the deadline.",
+   "",
+   "▶ Craft a Quantum Mechanism [check]",
+   "▶ Build and activate a Teleporter [check]",
+   "",
+   "◇ Custom Portal (Stargate) needs quantum_mechanism",
+   "  and a 7×7 frame of specific blocks.",
+   "  Build this before Ch13 End exploration.",
+   "  Cross-dimensional travel without boats."
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     1840,
+     1050
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "createteleporters:quantum_mechanism",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

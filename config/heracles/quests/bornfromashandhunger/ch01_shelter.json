@@ -1,92 +1,92 @@
 {
-  "dependencies": [
-    "ch01_world"
-  ],
-  "tasks": {
-    "bed": {
-      "type": "heracles:item",
-      "item": "minecraft:white_bed",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "chest": {
-      "type": "heracles:item",
-      "item": "minecraft:chest",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "table": {
-      "type": "heracles:item",
-      "item": "minecraft:crafting_table",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch01_world"
+ ],
+ "tasks": {
+  "bed": {
+   "type": "heracles:item",
+   "item": "minecraft:white_bed",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "wool": {
-      "item": {
-        "id": "minecraft:wool",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "planks": {
-      "item": {
-        "id": "minecraft:oak_planks",
-        "count": 16
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
+  "chest": {
+   "type": "heracles:item",
+   "item": "minecraft:chest",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {
-      "translate": "Four Walls and a Roof"
-    },
-    "subtitle": {
-      "text": "Before the bed, you were surviving. After it, you are building."
-    },
-    "description": [
-      "Three wool. Three planks.",
-      "",
-      "The oldest boundary in the world: outside and in.",
-      "Dark and lit. Lost and found.",
-      "",
-      "You will not die here. Not tonight.",
-      "",
-      "→ Craft a bed",
-      "→ Place a chest",
-      "→ Place a crafting table"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          0,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:white_bed",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "table": {
+   "type": "heracles:item",
+   "item": "minecraft:crafting_table",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "wool": {
+   "item": {
+    "id": "minecraft:wool",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "planks": {
+   "item": {
+    "id": "minecraft:oak_planks",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Four Walls and a Roof"
+  },
+  "subtitle": {
+   "text": "Before the bed, you were surviving. After it, you are building."
+  },
+  "description": [
+   "Three wool. Three planks.",
+   "",
+   "The oldest boundary in the world: outside and in.",
+   "Dark and lit. Lost and found.",
+   "",
+   "You will not die here. Not tonight.",
+   "",
+   "→ Craft a bed",
+   "→ Place a chest",
+   "→ Place a crafting table"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     460,
+     1050
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:white_bed",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

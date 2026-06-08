@@ -1,0 +1,20 @@
+{
+  "display_name": "The Scroll of the Storm Eye",
+  "research_time": 3600,
+  "items": [
+    "cataclysm:storm_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "cataclysm:storm_eye",
+    "sinborn:mechanical_crafting/cata_storm_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

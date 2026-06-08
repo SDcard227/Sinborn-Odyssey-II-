@@ -1,65 +1,96 @@
 {
-  "dependencies": ["ch06_world"],
-  "tasks": {
-    "enter": {
-      "title": "Enter the Nether and survive 5 minutes",
-      "icon": {"item": {"id": "minecraft:blaze_rod", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch06_world"
+ ],
+ "tasks": {
+  "enter": {
+   "title": "Enter the Nether and survive 5 minutes",
+   "icon": {
+    "item": {
+     "id": "minecraft:blaze_rod",
+     "count": 1
     },
-    "blaze_rods": {
-      "type": "heracles:item",
-      "item": "minecraft:blaze_rod",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "nether_quartz": {
-      "type": "heracles:item",
-      "item": "minecraft:quartz",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "blaze_powder": {
-      "item": {"id": "minecraft:blaze_powder", "count": 16},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 8},
-      "type": "heracles:item"
-    }
+  "blaze_rods": {
+   "type": "heracles:item",
+   "item": "minecraft:blaze_rod",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "Where Fire Lives"},
-    "subtitle": {"text": "The Nether is not a destination. It is a resource."},
-    "description": [
-      "The Nether treats you like a foreign body. This is accurate.",
-      "You are a foreign body. You extract what you came for and leave.",
-      "",
-      "Blaze rods fuel the brewing stand. Quartz has Create uses.",
-      "Both are worth the exposure.",
-      "",
-      "Jaden's Nether Expansion adds new mobs to the Soul Sand Valley.",
-      "Nether Vinery grapes grow in Crimson and Warped forests.",
-      "The Nether has depth if you look for it.",
-      "",
-      "But every portal frame you light here is open in the Overworld.",
-      "Note that.",
-      "",
-      "→ Enter the Nether [check]",
-      "→ Collect 8 blaze rods",
-      "→ Collect 16 nether quartz"
-    ],
-    "groups": {"The Scalded Earth": {"position": [0, 150]}},
-    "icon": {"item": {"id": "minecraft:blaze_rod", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "nether_quartz": {
+   "type": "heracles:item",
+   "item": "minecraft:quartz",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "blaze_powder": {
+   "item": {
+    "id": "minecraft:blaze_powder",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Where Fire Lives"
+  },
+  "subtitle": {
+   "text": "The Nether is not a destination. It is a resource."
+  },
+  "description": [
+   "The Nether treats you like a foreign body. This is accurate.",
+   "You are a foreign body. You extract what you came for and leave.",
+   "",
+   "Blaze rods fuel the brewing stand. Quartz has Create uses.",
+   "Both are worth the exposure.",
+   "",
+   "Jaden's Nether Expansion adds new mobs to the Soul Sand Valley.",
+   "Nether Vinery grapes grow in Crimson and Warped forests.",
+   "The Nether has depth if you look for it.",
+   "",
+   "But every portal frame you light here is open in the Overworld.",
+   "Note that.",
+   "",
+   "→ Enter the Nether [check]",
+   "→ Collect 8 blaze rods",
+   "→ Collect 16 nether quartz"
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:blaze_rod",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

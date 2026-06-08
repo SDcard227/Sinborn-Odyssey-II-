@@ -1,69 +1,112 @@
 {
-  "dependencies": ["ch13_world"],
-  "tasks": {
-    "fire_resist": {
-      "title": "Brew Fire Resistance potions (minimum 4) for the Ender Dragon fight",
-      "icon": {"item": {"id": "minecraft:potion", "count": 4}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_world"
+ ],
+ "tasks": {
+  "fire_resist": {
+   "title": "Brew Fire Resistance potions (minimum 4) for the Ender Dragon fight",
+   "icon": {
+    "item": {
+     "id": "minecraft:potion",
+     "count": 4
     },
-    "power_bow": {
-      "title": "Enchant a bow with Power IV or higher for End Crystal destruction from range",
-      "icon": {"item": {"id": "minecraft:bow", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "power_bow": {
+   "title": "Enchant a bow with Power IV or higher for End Crystal destruction from range",
+   "icon": {
+    "item": {
+     "id": "minecraft:bow",
+     "count": 1
     },
-    "drag_food": {
-      "title": "Prepare high-tier food for the dragon fight — the battle drains hunger rapidly",
-      "icon": {"item": {"id": "farmersdelight:honey_glazed_ham", "count": 4}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "arrows": {
-      "item": {"id": "minecraft:arrow", "count": 64},
-      "type": "heracles:item"
+  "drag_food": {
+   "title": "Prepare high-tier food for the dragon fight — the battle drains hunger rapidly",
+   "icon": {
+    "item": {
+     "id": "farmersdelight:honey_glazed_ham",
+     "count": 4
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 16},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Dragon Preparation"},
-    "subtitle": {"text": "You have been preparing for this since Ch01. That doesn't make it less dangerous."},
-    "description": [
-      "The Ender Dragon fight has three phases: approach, crystal destruction, and direct combat.",
-      "",
-      "Crystal destruction:",
-      "- Bow with Power IV minimum for range shots",
-      "- Beds explode in the End — place and activate near crystal bases",
-      "- TNT is an option but slower",
-      "- Caged crystals require climbing or grappling up the pillar",
-      "",
-      "Combat phase:",
-      "- Dragon breath leaves acid clouds — do not stand in them",
-      "- The dragon charges at the portal fountain — position to avoid",
-      "- Sweep attacks from the sides",
-      "- Fire Resistance negates breath damage",
-      "",
-      "Food:",
-      "- The fight takes several minutes minimum",
-      "- Hunger depletes from damage taken",
-      "- Bring at least 4 high-saturation meals",
-      "",
-      "→ Brew 4 Fire Resistance potions [check]",
-      "→ Enchant a Power IV+ bow [check]",
-      "→ Prepare high-saturation food [check]"
-    ],
-    "groups": {"The Shattered Law": {"position": [150, 0]}},
-    "icon": {"item": {"id": "minecraft:bow", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "arrows": {
+   "item": {
+    "id": "minecraft:arrow",
+    "count": 64
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Dragon Preparation"
+  },
+  "subtitle": {
+   "text": "You have been preparing for this since Ch01. That doesn't make it less dangerous."
+  },
+  "description": [
+   "The Ender Dragon fight has three phases: approach, crystal destruction, and direct combat.",
+   "",
+   "Crystal destruction:",
+   "- Bow with Power IV minimum for range shots",
+   "- Beds explode in the End — place and activate near crystal bases",
+   "- TNT is an option but slower",
+   "- Caged crystals require climbing or grappling up the pillar",
+   "",
+   "Combat phase:",
+   "- Dragon breath leaves acid clouds — do not stand in them",
+   "- The dragon charges at the portal fountain — position to avoid",
+   "- Sweep attacks from the sides",
+   "- Fire Resistance negates breath damage",
+   "",
+   "Food:",
+   "- The fight takes several minutes minimum",
+   "- Hunger depletes from damage taken",
+   "- Bring at least 4 high-saturation meals",
+   "",
+   "→ Brew 4 Fire Resistance potions [check]",
+   "→ Enchant a Power IV+ bow [check]",
+   "→ Prepare high-saturation food [check]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     460,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:bow",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

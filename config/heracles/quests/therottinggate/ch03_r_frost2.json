@@ -1,80 +1,80 @@
 {
-  "dependencies": [
-    "ch03_r_frost1"
-  ],
-  "tasks": {
-    "kill_frostmaw": {
-      "type": "heracles:kill_entity",
-      "entity": "mowziesmobs:frostmaw",
-      "amount": 1
-    },
-    "ice_crystal": {
-      "type": "heracles:item",
-      "item": "mowziesmobs:ice_crystal",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch03_r_frost1"
+ ],
+ "tasks": {
+  "kill_frostmaw": {
+   "type": "heracles:kill_entity",
+   "entity": "mowziesmobs:frostmaw",
+   "amount": 1
   },
-  "rewards": {
-    "diamond": {
-      "item": {
-        "id": "minecraft:diamond",
-        "count": 3
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Frostmaw"
-    },
-    "subtitle": {
-      "text": "Some things are made of cold the way other things are made of bone."
-    },
-    "description": [
-      "The Frostmaw is a Mowzie's Mobs boss.",
-      "It sits at the peak and launches ice projectiles.",
-      "Attack its back — the front is protected.",
-      "",
-      "The Ice Crystal it drops is a Cold Eye ingredient.",
-      "Save it. You will need it much later.",
-      "",
-      "Ice Cold will also be in effect up here.",
-      "Bring a waterskin. Bring fire resistance.",
-      "",
-      "→ Kill the Frostmaw [check]",
-      "→ Collect the Ice Crystal"
-    ],
-    "groups": {
-      "The Rotting Gate": {
-        "position": [
-          300,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "mowziesmobs:ice_crystal",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "ice_crystal": {
+   "type": "heracles:item",
+   "item": "mowziesmobs:ice_crystal",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "diamond": {
+   "item": {
+    "id": "minecraft:diamond",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Frostmaw"
+  },
+  "subtitle": {
+   "text": "Some things are made of cold the way other things are made of bone."
+  },
+  "description": [
+   "The Frostmaw is a Mowzie's Mobs boss.",
+   "It sits at the peak and launches ice projectiles.",
+   "Attack its back — the front is protected.",
+   "",
+   "The Ice Crystal it drops is a Cold Eye ingredient.",
+   "Save it. You will need it much later.",
+   "",
+   "Ice Cold will also be in effect up here.",
+   "Bring a waterskin. Bring fire resistance.",
+   "",
+   "→ Kill the Frostmaw [check]",
+   "→ Collect the Ice Crystal"
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     920,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "mowziesmobs:ice_crystal",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

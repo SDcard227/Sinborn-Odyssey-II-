@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch04_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Furnisher's Hand at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:crafting_table",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock furnishers_hand",
+   "title": "Discipline learned: The Furnisher's Hand",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Furnisher's Hand"
+  },
+  "subtitle": {
+   "text": "A house is not a home until you sit in it."
+  },
+  "description": [
+   "The fallen Nine left chairs, tables, beds — the furniture of lives that ended.",
+   "Learn the furnisher's hand and the rooms you build stop echoing.",
+   "",
+   "→ Recover and study the Furnisher's Hand at a Research Pedestal."
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     460,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:crafting_table",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

@@ -1,116 +1,116 @@
 {
-  "dependencies": [
-    "ch03_belt"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/rotational_force"
-    },
-    "cogwheel": {
-      "type": "heracles:item",
-      "item": "create:cogwheel",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "shaft": {
-      "type": "heracles:item",
-      "item": "create:shaft",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch03_belt"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Rotational Force scroll at a Research Pedestal"
   },
-  "rewards": {
-    "iron": {
-      "item": {
-        "id": "minecraft:iron_ingot",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 2
-      },
-      "type": "heracles:item"
-    }
+  "cogwheel": {
+   "type": "heracles:item",
+   "item": "create:cogwheel",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {
-      "translate": "The Rotational Force"
-    },
-    "subtitle": {
-      "text": "Every machine in Create runs on rotation. Learn what that means."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.03 · THE ROTATIONAL FORCE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Create's entire system runs on one concept:",
-      "  rotational force flows through connected machines.",
-      "  Everything else is just what you do with it.",
-      "",
-      "◈ CORE CONCEPTS",
-      "  └ RPM (Rotations Per Minute): how fast rotation flows",
-      "    Higher RPM = faster machines (some cap out)",
-      "  └ Stress Capacity: how much a source can power",
-      "    Every machine costs stress. Sources provide it.",
-      "  └ Cogwheels: transfer rotation between axes",
-      "    Small cogwheel = speed up. Large = slow down.",
-      "  └ Shafts: extend rotation along an axis",
-      "  └ Gearboxes: change rotation direction",
-      "",
-      "◈ POWER SOURCES (early)",
-      "  └ Water Wheel: 4 SU at base RPM (needs flowing water)",
-      "  └ Hand Crank: 0 SU (manual, slows you)",
-      "  └ Windmill Bearing: scales with sail count",
-      "    Maximum 64 sails = high RPM",
-      "  └ Steam Engine (Ch06): significant upgrade",
-      "",
-      "◈ SCROLL: The Rotational Force",
-      "  └ Found in: mechanical workshop ruins,",
-      "    old factory floor notes, engineer camp chests",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: full Create rotation system, stress calc knowledge",
-      "",
-      "▸ The wheel turns. The shaft carries it.",
-      "  The cogwheel changes its speed.",
-      "  The machine does the work.",
-      "  You built all of it.",
-      "",
-      "▶ Find The Rotational Force scroll [check]",
-      "▶ Craft 8 Cogwheels",
-      "▶ Craft 4 Shafts",
-      "",
-      "◇ Ch06 Steam adds the Boiler + Steam Engine.",
-      "  That's where Create gets serious power.",
-      "  Water wheels are early infrastructure only."
-    ],
-    "groups": {
-      "The Rotting Gate": {
-        "position": [
-          150,
-          600
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create:cogwheel",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "shaft": {
+   "type": "heracles:item",
+   "item": "create:shaft",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "iron": {
+   "item": {
+    "id": "minecraft:iron_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Rotational Force"
+  },
+  "subtitle": {
+   "text": "Every machine in Create runs on rotation. Learn what that means."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.03 · THE ROTATIONAL FORCE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Create's entire system runs on one concept:",
+   "  rotational force flows through connected machines.",
+   "  Everything else is just what you do with it.",
+   "",
+   "◈ CORE CONCEPTS",
+   "  └ RPM (Rotations Per Minute): how fast rotation flows",
+   "    Higher RPM = faster machines (some cap out)",
+   "  └ Stress Capacity: how much a source can power",
+   "    Every machine costs stress. Sources provide it.",
+   "  └ Cogwheels: transfer rotation between axes",
+   "    Small cogwheel = speed up. Large = slow down.",
+   "  └ Shafts: extend rotation along an axis",
+   "  └ Gearboxes: change rotation direction",
+   "",
+   "◈ POWER SOURCES (early)",
+   "  └ Water Wheel: 4 SU at base RPM (needs flowing water)",
+   "  └ Hand Crank: 0 SU (manual, slows you)",
+   "  └ Windmill Bearing: scales with sail count",
+   "    Maximum 64 sails = high RPM",
+   "  └ Steam Engine (Ch06): significant upgrade",
+   "",
+   "◈ SCROLL: The Rotational Force",
+   "  └ Found in: mechanical workshop ruins,",
+   "    old factory floor notes, engineer camp chests",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: full Create rotation system, stress calc knowledge",
+   "",
+   "▸ The wheel turns. The shaft carries it.",
+   "  The cogwheel changes its speed.",
+   "  The machine does the work.",
+   "  You built all of it.",
+   "",
+   "▶ Find The Rotational Force scroll [check]",
+   "▶ Craft 8 Cogwheels",
+   "▶ Craft 4 Shafts",
+   "",
+   "◇ Ch06 Steam adds the Boiler + Steam Engine.",
+   "  That's where Create gets serious power.",
+   "  Water wheels are early infrastructure only."
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     1840,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:cogwheel",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

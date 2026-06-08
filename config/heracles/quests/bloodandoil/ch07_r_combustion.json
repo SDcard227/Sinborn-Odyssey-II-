@@ -1,115 +1,115 @@
 {
-  "dependencies": [
-    "ch07_r_diesel2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/combustion"
-    },
-    "diesel_engine": {
-      "title": "Build a functioning Diesel Engine setup (TFMG — burns refined diesel fuel for high SU output)",
-      "icon": {
-        "item": {
-          "id": "createtfmg:diesel_engine",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch07_r_diesel2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Combustion scroll at a Research Pedestal"
   },
-  "rewards": {
-    "diesel": {
-      "item": {
-        "id": "createtfmg:diesel_bucket",
-        "count": 2
-      },
-      "type": "heracles:item"
+  "diesel_engine": {
+   "title": "Build a functioning Diesel Engine setup (TFMG — burns refined diesel fuel for high SU output)",
+   "icon": {
+    "item": {
+     "id": "createtfmg:diesel_engine",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Combustion"
-    },
-    "subtitle": {
-      "text": "Diesel burns once and gives back twenty times what steam could. That is what changed the age."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.07 · COMBUSTION",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Diesel Engine is the step change.",
-      "  Steam was a breakthrough. Diesel is a revolution.",
-      "  The same infrastructure. Dramatically more power.",
-      "",
-      "◈ TFMG DIESEL SYSTEM",
-      "  └ Oil: pumped from oil deposits underground",
-      "    (TFMG oil drill or manual pipeline from deposit)",
-      "  └ Distillation Tower: separates oil into",
-      "    → Diesel (high-power engine fuel)",
-      "    → Bitumen (triggers oil_age milestone)",
-      "    → Lubricant (faster Create machine speeds)",
-      "  └ Diesel Engine: high SU output, burns diesel",
-      "  └ ▲ Bitumen (specific TFMG product) triggers",
-      "    the oil_age History Stages milestone",
-      "    Don't process oil without noting this",
-      "",
-      "◈ POWER COMPARISON",
-      "  └ Steam Engine (Ch06): hundreds of SU",
-      "  └ Diesel Engine (Ch07): thousands to tens of thousands SU",
-      "  └ Scale: one diesel setup = multiple steam setups",
-      "  └ Next step: New Age Power (Ch10) = electric",
-      "",
-      "◈ SCROLL: Combustion",
-      "  └ Found in: TFMG workshop ruins, diesel engine",
-      "    camp chests, oil refinery outpost loot",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: full TFMG diesel chain,",
-      "    oil processing awareness, Bitumen trigger knowledge",
-      "",
-      "▸ The scroll was written while the engine was running.",
-      "  The handwriting is unsteady from the vibration.",
-      "  The author was very pleased with themselves.",
-      "",
-      "▶ Find The Combustion scroll [check]",
-      "▶ Build a functioning Diesel Engine setup [check]",
-      "",
-      "◇ The Distillation Tower also produces Lubricant.",
-      "  Apply Lubricant to Create machines via Spout.",
-      "  Lubricated machines run faster."
-    ],
-    "groups": {
-      "Blood and Oil": {
-        "position": [
-          450,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "createtfmg:diesel_engine",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "diesel": {
+   "item": {
+    "id": "createtfmg:diesel_bucket",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Combustion"
+  },
+  "subtitle": {
+   "text": "Diesel burns once and gives back twenty times what steam could. That is what changed the age."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.07 · COMBUSTION",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Diesel Engine is the step change.",
+   "  Steam was a breakthrough. Diesel is a revolution.",
+   "  The same infrastructure. Dramatically more power.",
+   "",
+   "◈ TFMG DIESEL SYSTEM",
+   "  └ Oil: pumped from oil deposits underground",
+   "    (TFMG oil drill or manual pipeline from deposit)",
+   "  └ Distillation Tower: separates oil into",
+   "    → Diesel (high-power engine fuel)",
+   "    → Bitumen (triggers Blood and Oil milestone)",
+   "    → Lubricant (faster Create machine speeds)",
+   "  └ Diesel Engine: high SU output, burns diesel",
+   "  └ ▲ Bitumen (specific TFMG product) triggers",
+   "    the Blood and Oil History Stages milestone",
+   "    Don't process oil without noting this",
+   "",
+   "◈ POWER COMPARISON",
+   "  └ Steam Engine (Ch06): hundreds of SU",
+   "  └ Diesel Engine (Ch07): thousands to tens of thousands SU",
+   "  └ Scale: one diesel setup = multiple steam setups",
+   "  └ Next step: New Age Power (Ch10) = electric",
+   "",
+   "◈ SCROLL: Combustion",
+   "  └ Found in: TFMG workshop ruins, diesel engine",
+   "    camp chests, oil refinery outpost loot",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: full TFMG diesel chain,",
+   "    oil processing awareness, Bitumen trigger knowledge",
+   "",
+   "▸ The scroll was written while the engine was running.",
+   "  The handwriting is unsteady from the vibration.",
+   "  The author was very pleased with themselves.",
+   "",
+   "▶ Find The Combustion scroll [check]",
+   "▶ Build a functioning Diesel Engine setup [check]",
+   "",
+   "◇ The Distillation Tower also produces Lubricant.",
+   "  Apply Lubricant to Create machines via Spout.",
+   "  Lubricated machines run faster."
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     2140,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "createtfmg:diesel_engine",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The Five Vessels Apocrypha scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Five Vessels Apocrypha scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The Five Vessels Apocrypha scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock five_vessels_apocrypha"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The Five Vessels Apocrypha"
+  "research_scroll": {
+   "title": "Research the The Five Vessels Apocrypha scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"The Heir line carries this. Only the Heir line.\"",
-      "",
-      "Five Vessels deep lore \u2014 Convent + Heir restricted text.",
-      "",
-      "Lore scroll \u2014 opens a cultural thread.",
-      "",
-      "Look for it in:",
-      "  \u00b7 End City Treasure",
-      "  \u00b7 Ancient City Ice Box",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The Five Vessels Apocrypha] [auto]"
-    ],
-    "groups": {
-      "Lords of All": {
-        "position": [
-          1520,
-          1107
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "historystages:research_scroll",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock five_vessels_apocrypha"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Five Vessels Apocrypha"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"The Heir line carries this. Only the Heir line.\"",
+   "",
+   "Five Vessels deep lore — Convent + Heir restricted text.",
+   "",
+   "Lore scroll — opens a cultural thread.",
+   "",
+   "Look for it in:",
+   "  · End City Treasure",
+   "  · Ancient City Ice Box",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Five Vessels Apocrypha] [auto]"
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     0,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "historystages:research_scroll",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

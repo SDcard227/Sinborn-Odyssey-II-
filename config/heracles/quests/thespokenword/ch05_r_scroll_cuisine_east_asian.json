@@ -1,77 +1,77 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The East Asian Banquet scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The East Asian Banquet scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The East Asian Banquet scroll",
-      "icon": {
-        "item": {
-          "id": "alexs_caves_delight:dinosaursushi",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock cuisine_east_asian"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The East Asian Banquet"
+  "research_scroll": {
+   "title": "Research the The East Asian Banquet scroll",
+   "icon": {
+    "item": {
+     "id": "alexs_caves_delight:dinosaursushi",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Copied between every civilization that touched it.\"",
-      "",
-      "This scroll unlocks 209 items.",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The East Asian Banquet] [auto]"
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          800,
-          780
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexs_caves_delight:dinosaursushi",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock gardened_wash"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The East Asian Banquet"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Copied between every civilization that touched it.\"",
+   "",
+   "This scroll unlocks 209 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The East Asian Banquet] [auto]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     0,
+     1050
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexs_caves_delight:dinosaursushi",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

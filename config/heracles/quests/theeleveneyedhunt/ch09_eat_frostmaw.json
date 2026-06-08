@@ -1,0 +1,73 @@
+{
+ "dependencies": [
+  "ch09_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "mowziesmobs:frostmaw",
+   "amount": 1,
+   "title": "Slay the beast and claim its body"
+  },
+  "harvest": {
+   "type": "heracles:item",
+   "item": "compatdelight:frostmaw_steak",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Harvest its meat , waste nothing"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "dish": {
+   "item": {
+    "id": "compatdelight:frostmaw_steak",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Frostmaw Steak"
+  },
+  "subtitle": {
+   "text": "A gaze forged in cold, seared over fire."
+  },
+  "description": [
+   "The Frostmaw guards the cold center of the world. You make it dinner.",
+   "Steak from a beast that froze the unworthy , thaw it, salt it, eat.",
+   "",
+   "Eating is simply the privilege of the living."
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     2560,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "compatdelight:frostmaw_steak",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

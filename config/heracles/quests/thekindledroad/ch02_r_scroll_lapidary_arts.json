@@ -1,0 +1,77 @@
+{
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Lapidary Arts scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "research_scroll": {
+   "title": "Research the The Lapidary Arts scroll",
+   "icon": {
+    "item": {
+     "id": "call_of_yucutan:jade_amulet",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock lapidary_arts"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:spur",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Lapidary Arts"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Rings, amulets, charms - the jeweler's craft, mundane and magical alike.\"",
+   "",
+   "This scroll unlocks 1 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Lapidary Arts] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     0,
+     1650
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "call_of_yucutan:jade_amulet",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
+}

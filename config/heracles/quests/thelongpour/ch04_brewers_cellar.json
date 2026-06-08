@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch04_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Brewer's Cellar at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:brewing_stand",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock brewers_cellar",
+   "title": "Discipline learned: The Brewer's Cellar",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Brewer's Cellar"
+  },
+  "subtitle": {
+   "text": "To preserve is to refuse change."
+  },
+  "description": [
+   "The Hoarfrost tried to hold one hour forever. They failed, but they left us the cellar.",
+   "Ferment, age, bottle. Time, made to work for you instead of against you.",
+   "",
+   "→ Recover and study the Brewer's Cellar at a Research Pedestal."
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     460,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:brewing_stand",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

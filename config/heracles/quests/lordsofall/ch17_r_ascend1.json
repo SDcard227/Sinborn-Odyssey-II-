@@ -1,63 +1,100 @@
 {
-  "dependencies": ["ch17_world"],
-  "tasks": {
-    "max_hearts": {
-      "title": "Reach maximum Lifesteal heart count (Lifesteal mod — PvP heart economy, floor 3 hearts)",
-      "icon": {"item": {"id": "lifesteal:heart", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_world"
+ ],
+ "tasks": {
+  "max_hearts": {
+   "title": "Reach maximum Lifesteal heart count (Lifesteal mod — PvP heart economy, floor 3 hearts)",
+   "icon": {
+    "item": {
+     "id": "lifesteal:heart",
+     "count": 1
     },
-    "puffish_max": {
-      "title": "Invest in every Puffish Skills category — reach maximum skill investment across all trees",
-      "icon": {"item": {"id": "minecraft:experience_bottle", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "heart": {
-      "item": {"id": "lifesteal:heart", "count": 4},
-      "type": "heracles:item"
+  "puffish_max": {
+   "title": "Invest in every Puffish Skills category — reach maximum skill investment across all trees",
+   "icon": {
+    "item": {
+     "id": "minecraft:experience_bottle",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Ascended Body"},
-    "subtitle": {"text": "Your body is not what it was at Ch01. It has been trained, broken, rebuilt, and trained again."},
-    "description": [
-      "The Lifesteal heart system:",
-      "Each heart collected from PvP adds 1 max HP.",
-      "In Ch17, maximize your heart count — every extra heart is a buffer",
-      "for the final challenges.",
-      "The Revive Crystal from Ch15 is your safety net.",
-      "",
-      "Puffish Skills final build:",
-      "By Ch17 you have invested in three categories (Ch15 requirement).",
-      "Now invest in all remaining ones.",
-      "Recommended final allocation:",
-      "- Combat: maximum crit rate + base damage",
-      "- Defense: maximum resistance + regen",
-      "- Utility: speed + reach for teleporter activation during combat",
-      "- Magic: maximum if using Iron's Spellbooks",
-      "",
-      "You started this game as a survivor.",
-      "You are ending it as the strongest entity in the world.",
-      "The difference is seventeen chapters of consistent investment.",
-      "",
-      "→ Reach maximum Lifesteal heart count [check]",
-      "→ Invest in all Puffish Skills categories [check]"
-    ],
-    "groups": {"Lords of All": {"position": [-150, 0]}},
-    "icon": {"item": {"id": "lifesteal:heart", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "heart": {
+   "item": {
+    "id": "lifesteal:heart",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Ascended Body"
+  },
+  "subtitle": {
+   "text": "Your body is not what it was at Ch01. It has been trained, broken, rebuilt, and trained again."
+  },
+  "description": [
+   "The Lifesteal heart system:",
+   "Each heart collected from PvP adds 1 max HP.",
+   "In Ch17, maximize your heart count — every extra heart is a buffer",
+   "for the final challenges.",
+   "The Revive Crystal from Ch15 is your safety net.",
+   "",
+   "Puffish Skills final build:",
+   "By Ch17 you have invested in three categories (Ch15 requirement).",
+   "Now invest in all remaining ones.",
+   "Recommended final allocation:",
+   "- Combat: maximum crit rate + base damage",
+   "- Defense: maximum resistance + regen",
+   "- Utility: speed + reach for teleporter activation during combat",
+   "- Magic: maximum if using Iron's Spellbooks",
+   "",
+   "You started this game as a survivor.",
+   "You are ending it as the strongest entity in the world.",
+   "The difference is seventeen chapters of consistent investment.",
+   "",
+   "→ Reach maximum Lifesteal heart count [check]",
+   "→ Invest in all Puffish Skills categories [check]"
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     460,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "lifesteal:heart",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

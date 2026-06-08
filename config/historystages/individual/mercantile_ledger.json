@@ -1,0 +1,25 @@
+{
+  "display_name": "The Mercantile Ledger",
+  "research_time": 2400,
+  "items": [
+    "bountiful:bounty",
+    "bountiful:bountyboard",
+    "bountiful:decree"
+  ],
+  "tags": [],
+  "mods": [
+    "bountiful",
+    "numismatics_utils"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "bountiful:crafting/bountyboard",
+    "bountiful:crafting/decree"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

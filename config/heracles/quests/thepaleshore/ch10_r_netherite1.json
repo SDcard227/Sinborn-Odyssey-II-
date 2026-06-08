@@ -1,59 +1,84 @@
 {
-  "dependencies": ["ch10_world"],
-  "tasks": {
-    "ancient_debris_full": {
-      "type": "heracles:item",
-      "item": "minecraft:ancient_debris",
-      "amount": 24,
-      "collection": "AUTOMATIC"
-    },
-    "netherite_ingot": {
-      "type": "heracles:item",
-      "item": "minecraft:netherite_ingot",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch10_world"
+ ],
+ "tasks": {
+  "ancient_debris_full": {
+   "type": "heracles:item",
+   "item": "minecraft:ancient_debris",
+   "amount": 24,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "netherite_bonus": {
-      "item": {"id": "minecraft:netherite_ingot", "count": 2},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Ancient Debris"},
-    "subtitle": {"text": "The most durable material in the world is found in the most dangerous dimension."},
-    "description": [
-      "Ancient Debris is the ore that never fully burns.",
-      "It spawns at Y: 8-22 in the Nether.",
-      "Peak concentration at Y: 15.",
-      "",
-      "Mining strategy: bed explosion (beds explode in the Nether).",
-      "Place and activate a bed at Y:15 to clear large areas quickly.",
-      "Stand back. Far back.",
-      "",
-      "4 Ancient Debris → smelt to 4 Netherite Scrap.",
-      "4 Netherite Scrap + 4 Gold Ingots = 1 Netherite Ingot.",
-      "1 Netherite Ingot upgrades diamond armor at a Smithing Table.",
-      "Full set = 24 Ancient Debris minimum.",
-      "",
-      "→ Collect 24 Ancient Debris",
-      "→ Smelt and alloy to 4 Netherite Ingots"
-    ],
-    "groups": {"The Pale Shore": {"position": [150, 150]}},
-    "icon": {"item": {"id": "minecraft:ancient_debris", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "netherite_ingot": {
+   "type": "heracles:item",
+   "item": "minecraft:netherite_ingot",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "netherite_bonus": {
+   "item": {
+    "id": "minecraft:netherite_ingot",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Ancient Debris"
+  },
+  "subtitle": {
+   "text": "The most durable material in the world is found in the most dangerous dimension."
+  },
+  "description": [
+   "Ancient Debris is the ore that never fully burns.",
+   "It spawns at Y: 8-22 in the Nether.",
+   "Peak concentration at Y: 15.",
+   "",
+   "Mining strategy: bed explosion (beds explode in the Nether).",
+   "Place and activate a bed at Y:15 to clear large areas quickly.",
+   "Stand back. Far back.",
+   "",
+   "4 Ancient Debris → smelt to 4 Netherite Scrap.",
+   "4 Netherite Scrap + 4 Gold Ingots = 1 Netherite Ingot.",
+   "1 Netherite Ingot upgrades diamond armor at a Smithing Table.",
+   "Full set = 24 Ancient Debris minimum.",
+   "",
+   "→ Collect 24 Ancient Debris",
+   "→ Smelt and alloy to 4 Netherite Ingots"
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     460,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ancient_debris",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

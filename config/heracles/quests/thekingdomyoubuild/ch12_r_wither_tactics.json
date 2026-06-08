@@ -1,90 +1,139 @@
 {
-  "dependencies": ["ch12_wither_storm"],
-  "tasks": {
-    "wither_dead": {
-      "title": "Defeat the Wither Storm — approach the center mass at X:0 Z:0 and destroy the command block within",
-      "icon": {"item": {"id": "minecraft:command_block", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch12_wither_storm"
+ ],
+ "tasks": {
+  "wither_dead": {
+   "title": "Defeat the Wither Storm — approach the center mass at X:0 Z:0 and destroy the command block within",
+   "icon": {
+    "item": {
+     "id": "minecraft:command_block",
+     "count": 1
     },
-    "survived": {
-      "title": "Survive the Wither Storm fight with full inventory intact — plan the escape route before engagement",
-      "icon": {"item": {"id": "minecraft:totem_of_undying", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "obsidian": {"item": {"id": "minecraft:obsidian", "count": 16}, "type": "heracles:item"},
-    "nether_star": {"item": {"id": "minecraft:nether_star", "count": 1}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Storm at Zero"},
-    "subtitle": {"text": "X:0 Z:0. It has been there since the world loaded. Every chapter, it has been waiting. This is the chapter."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.12 · THE STORM AT ZERO",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Cracker's Wither Storm has been at X:0 Z:0",
-      "  since the world generated.",
-      "  Every chapter, it absorbed blocks.",
-      "  Every mob near it was absorbed.",
-      "  Every player who approached too close",
-      "  learned the absorption range the hard way.",
-      "  This is Ch12. Go to X:0 Z:0.",
-      "",
-      "◈ WITHER STORM MECHANICS",
-      "  └ Absorption field: pulls mobs and blocks inward",
-      "    Radius increases as it absorbs more material",
-      "  └ The command block is at the center of the mass",
-      "    It is the core. Destroy it to kill the Storm.",
-      "  └ Getting to the core: requires fighting through",
-      "    the outer mass of absorbed material",
-      "  └ Direct combat: the Storm entity itself",
-      "    is extremely high HP — target the command block",
-      "",
-      "◈ FIGHT PREPARATION",
-      "  └ Armor: Full Ignitium or Emulator gear minimum",
-      "  └ Potions: Strength II + Resistance II + Fire Resistance",
-      "  └ Totem of Undying × 2 (off-hand swap on first death)",
-      "  └ Revive Crystal: keep in inventory",
-      "  └ ISS spells: Ender Blink for escape from absorption",
-      "    (Blink ignores pull — critical mobility)",
-      "  └ Entry vector: approach from above (Storm primarily",
-      "    pulls horizontally — vertical approach reduces risk)",
-      "",
-      "◈ THE CURSED EYE CONNECTION",
-      "  └ Wither Storm + Scarlet King = Manifestor Trap",
-      "  └ The Cursed Eye requires the Storm's presence",
-      "    as part of the Manifestor Trap mechanic",
-      "  └ Do not destroy the Storm until AFTER the Cursed Eye",
-      "    has been acquired (Manifestor Trap must complete first)",
-      "",
-      "▸ The previous civilization aimed it at the center",
-      "  because they wanted something at the center.",
-      "  They wanted to break it.",
-      "  They did not break it.",
-      "  You are at the center.",
-      "  The Storm is aimed at you.",
-      "",
-      "▶ Defeat the Wither Storm [check]",
-      "▶ Survive the fight with inventory intact [check]",
-      "",
-      "◇ Complete the Cursed Eye (Manifestor Trap) FIRST.",
-      "  Then destroy the Wither Storm.",
-      "  Order matters — the Storm's destruction ends",
-      "  the Manifestor cycle that produces the Eye."
-    ],
-    "groups": {"The Kingdom You Build": {"position": [300, 300]}},
-    "icon": {"item": {"id": "minecraft:command_block", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "survived": {
+   "title": "Survive the Wither Storm fight with full inventory intact — plan the escape route before engagement",
+   "icon": {
+    "item": {
+     "id": "minecraft:totem_of_undying",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "obsidian": {
+   "item": {
+    "id": "minecraft:obsidian",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "nether_star": {
+   "item": {
+    "id": "minecraft:nether_star",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Storm at Zero"
+  },
+  "subtitle": {
+   "text": "X:0 Z:0. It has been there since the world loaded. Every chapter, it has been waiting. This is the chapter."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.12 · THE STORM AT ZERO",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Cracker's Wither Storm has been at X:0 Z:0",
+   "  since the world generated.",
+   "  Every chapter, it absorbed blocks.",
+   "  Every mob near it was absorbed.",
+   "  Every player who approached too close",
+   "  learned the absorption range the hard way.",
+   "  This is Ch12. Go to X:0 Z:0.",
+   "",
+   "◈ WITHER STORM MECHANICS",
+   "  └ Absorption field: pulls mobs and blocks inward",
+   "    Radius increases as it absorbs more material",
+   "  └ The command block is at the center of the mass",
+   "    It is the core. Destroy it to kill the Storm.",
+   "  └ Getting to the core: requires fighting through",
+   "    the outer mass of absorbed material",
+   "  └ Direct combat: the Storm entity itself",
+   "    is extremely high HP — target the command block",
+   "",
+   "◈ FIGHT PREPARATION",
+   "  └ Armor: Full Ignitium or Emulator gear minimum",
+   "  └ Potions: Strength II + Resistance II + Fire Resistance",
+   "  └ Totem of Undying × 2 (off-hand swap on first death)",
+   "  └ Revive Crystal: keep in inventory",
+   "  └ ISS spells: Ender Blink for escape from absorption",
+   "    (Blink ignores pull — critical mobility)",
+   "  └ Entry vector: approach from above (Storm primarily",
+   "    pulls horizontally — vertical approach reduces risk)",
+   "",
+   "◈ THE CURSED EYE CONNECTION",
+   "  └ Wither Storm + Scarlet King = Manifestor Trap",
+   "  └ The Cursed Eye requires the Storm's presence",
+   "    as part of the Manifestor Trap mechanic",
+   "  └ Do not destroy the Storm until AFTER the Cursed Eye",
+   "    has been acquired (Manifestor Trap must complete first)",
+   "",
+   "▸ The previous civilization aimed it at the center",
+   "  because they wanted something at the center.",
+   "  They wanted to break it.",
+   "  They did not break it.",
+   "  You are at the center.",
+   "  The Storm is aimed at you.",
+   "",
+   "▶ Defeat the Wither Storm [check]",
+   "▶ Survive the fight with inventory intact [check]",
+   "",
+   "◇ Complete the Cursed Eye (Manifestor Trap) FIRST.",
+   "  Then destroy the Wither Storm.",
+   "  Order matters — the Storm's destruction ends",
+   "  the Manifestor cycle that produces the Eye."
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     1840,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:command_block",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

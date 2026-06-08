@@ -1,119 +1,119 @@
 {
-  "dependencies": [
-    "ch09_r_drag2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/ice_fire_spells"
-    },
-    "dragon_eye": {
-      "title": "Obtain a Dragon Eye (Ice & Fire — drop from corresponding dragon type, used in End Remastered portal)",
-      "icon": {
-        "item": {
-          "id": "iceandfire:dragon_eye",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch09_r_drag2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Ice Fire Spells scroll at a Research Pedestal"
   },
-  "rewards": {
-    "dragon_scale": {
-      "item": {
-        "id": "iceandfire:fire_dragon_scale",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "dragon_eye": {
+   "title": "Obtain a Dragon Eye (Ice & Fire — drop from corresponding dragon type, used in End Remastered portal)",
+   "icon": {
+    "item": {
+     "id": "iceandfire:dragon_eye",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Ice & Fire Spells"
-    },
-    "subtitle": {
-      "text": "The Ice Dragon drops 10% of the time. The Fire Dragon drops 10% of the time. The Lightning Dragon drops 10%. Kill all three."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.09 · ICE & FIRE SPELLS",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Ice & Fire adds three dragon species.",
-      "  Each one drops a spell scroll at 10%.",
-      "  Each one also drops an Eye variant.",
-      "  The Eye Hunt and the Spell Hunt are the same hunt.",
-      "",
-      "◈ ICE & FIRE DRAGON TYPES",
-      "  └ ✦ Fire Dragon: spawns in hot/desert biomes",
-      "    Stages 1-5 (1 = small, 5 = massive)",
-      "    Stage 5 fire dragon = raid-tier encounter",
-      "    Drops: Fire Dragon Scales (armor), Dragon Blood,",
-      "    Fire Dragon Skull, Ice & Fire Spells scroll (10%)",
-      "  └ ✦ Ice Dragon: spawns in cold/tundra biomes",
-      "    Similar stage system to Fire",
-      "    Drops: Ice Dragon Scales, Freeze Blood,",
-      "    Ice Dragon Skull, Ice & Fire Spells scroll (10%)",
-      "  └ ✦ Lightning Dragon: rarer, mountable once tamed",
-      "    Spawns in mountain/highland biomes",
-      "    Drops: Lightning Dragon Scales, Shock abilities",
-      "",
-      "◈ ▲ KNOWN BUG",
-      "  └ Cockatrice: the spawn egg crashes the game",
-      "  └ DO NOT use Cockatrice spawn egg in any context",
-      "  └ The mob itself is safe to fight in the world",
-      "  └ The Eye Hunt has an alternative for its eye",
-      "",
-      "◈ END REMASTERED EYES FROM DRAGONS",
-      "  └ Ice Dragon → Eye of the Cold (custom eye)",
-      "  └ Fire Dragon → standard eye drop recipe",
-      "  └ Lightning Dragon → Eye of the Rogue variant",
-      "  └ All eyes needed for the 9+3 portal setup",
-      "",
-      "◈ SCROLL: Ice & Fire Spells",
-      "  └ 10% drop from each dragon type",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: dragon spell school (dragon-specific ISS),",
-      "    dragon item knowledge",
-      "",
-      "▶ Find The Ice & Fire Spells scroll [check]",
-      "▶ Obtain a Dragon Eye [check]",
-      "",
-      "◇ Dragon Armor (Ice & Fire scales): crafted from",
-      "  the scales of the corresponding dragon.",
-      "  Best pre-End armor in terms of raw protection."
-    ],
-    "groups": {
-      "The Eleven-Eyed Hunt": {
-        "position": [
-          600,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "iceandfire:dragon_eye",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "dragon_scale": {
+   "item": {
+    "id": "iceandfire:fire_dragon_scale",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Ice & Fire Spells"
+  },
+  "subtitle": {
+   "text": "The Ice Dragon drops 10% of the time. The Fire Dragon drops 10% of the time. The Lightning Dragon drops 10%. Kill all three."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.09 · ICE & FIRE SPELLS",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Ice & Fire adds three dragon species.",
+   "  Each one drops a spell scroll at 10%.",
+   "  Each one also drops an Eye variant.",
+   "  The Eye Hunt and the Spell Hunt are the same hunt.",
+   "",
+   "◈ ICE & FIRE DRAGON TYPES",
+   "  └ ✦ Fire Dragon: spawns in hot/desert biomes",
+   "    Stages 1-5 (1 = small, 5 = massive)",
+   "    Stage 5 fire dragon = raid-tier encounter",
+   "    Drops: Fire Dragon Scales (armor), Dragon Blood,",
+   "    Fire Dragon Skull, Ice & Fire Spells scroll (10%)",
+   "  └ ✦ Ice Dragon: spawns in cold/tundra biomes",
+   "    Similar stage system to Fire",
+   "    Drops: Ice Dragon Scales, Freeze Blood,",
+   "    Ice Dragon Skull, Ice & Fire Spells scroll (10%)",
+   "  └ ✦ Lightning Dragon: rarer, mountable once tamed",
+   "    Spawns in mountain/highland biomes",
+   "    Drops: Lightning Dragon Scales, Shock abilities",
+   "",
+   "◈ ▲ KNOWN BUG",
+   "  └ Cockatrice: the spawn egg crashes the game",
+   "  └ DO NOT use Cockatrice spawn egg in any context",
+   "  └ The mob itself is safe to fight in the world",
+   "  └ The Eye Hunt has an alternative for its eye",
+   "",
+   "◈ END REMASTERED EYES FROM DRAGONS",
+   "  └ Ice Dragon → Eye of the Cold (custom eye)",
+   "  └ Fire Dragon → standard eye drop recipe",
+   "  └ Lightning Dragon → Eye of the Rogue variant",
+   "  └ All eyes needed for the 9+3 portal setup",
+   "",
+   "◈ SCROLL: Ice & Fire Spells",
+   "  └ 10% drop from each dragon type",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: dragon spell school (dragon-specific ISS),",
+   "    dragon item knowledge",
+   "",
+   "▶ Find The Ice & Fire Spells scroll [check]",
+   "▶ Obtain a Dragon Eye [check]",
+   "",
+   "◇ Dragon Armor (Ice & Fire scales): crafted from",
+   "  the scales of the corresponding dragon.",
+   "  Best pre-End armor in terms of raw protection."
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     3940,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "iceandfire:dragon_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

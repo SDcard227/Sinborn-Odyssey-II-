@@ -1,85 +1,85 @@
 {
-  "dependencies": [
-    "ch11_ignis"
-  ],
-  "tasks": {
-    "monstrosity": {
-      "type": "heracles:kill_entity",
-      "entity": "cataclysm:netherite_monstrosity",
-      "amount": 1
-    },
-    "lacrima": {
-      "type": "heracles:item",
-      "item": "cataclysm:lacrima",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch11_ignis"
+ ],
+ "tasks": {
+  "monstrosity": {
+   "type": "heracles:kill_entity",
+   "entity": "cataclysm:netherite_monstrosity",
+   "amount": 1
   },
-  "rewards": {
-    "lacrima_reward": {
-      "item": {
-        "id": "cataclysm:lacrima",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Netherite Monstrosity"
-    },
-    "subtitle": {
-      "text": "Corruption is transformation without consent. This is what the Nether does to things that stay too long."
-    },
-    "description": [
-      "The Netherite Monstrosity is a Nether depth boss (Cataclysm).",
-      "It is the boss that drops lacrima — the infernal age trigger.",
-      "It is also part of the Corrupted Eye ingredient chain.",
-      "",
-      "The Biological Civilization merged with life.",
-      "The Netherite Monstrosity is what merging with the Nether looks like.",
-      "Not deliberate. Not designed.",
-      "Transformation without consent.",
-      "",
-      "Lacrima is also the center ingredient in the Magical Eye recipe.",
-      "The ocean mages' inheritance requires what the Nether's worst produced.",
-      "That connection is intentional.",
-      "",
-      "Hold the lacrima. The infernal age begins.",
-      "",
-      "→ Defeat the Netherite Monstrosity [check]",
-      "→ Pick up the Lacrima it drops"
-    ],
-    "groups": {
-      "Where the Skin Tears": {
-        "position": [
-          0,
-          450
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "cataclysm:lacrima",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "lacrima": {
+   "type": "heracles:item",
+   "item": "cataclysm:lacrima",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "lacrima_reward": {
+   "item": {
+    "id": "cataclysm:lacrima",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Netherite Monstrosity"
+  },
+  "subtitle": {
+   "text": "Corruption is transformation without consent. This is what the Nether does to things that stay too long."
+  },
+  "description": [
+   "The Netherite Monstrosity is a Nether depth boss (Cataclysm).",
+   "It is the boss that drops lacrima — the infernal age trigger.",
+   "It is also part of the Corrupted Eye ingredient chain.",
+   "",
+   "The Biological Civilization merged with life.",
+   "The Netherite Monstrosity is what merging with the Nether looks like.",
+   "Not deliberate. Not designed.",
+   "Transformation without consent.",
+   "",
+   "Lacrima is also the center ingredient in the Magical Eye recipe.",
+   "The ocean mages' inheritance requires what the Nether's worst produced.",
+   "That connection is intentional.",
+   "",
+   "Hold the lacrima. The infernal age begins.",
+   "",
+   "→ Defeat the Netherite Monstrosity [check]",
+   "→ Pick up the Lacrima it drops"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1380,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:lacrima",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

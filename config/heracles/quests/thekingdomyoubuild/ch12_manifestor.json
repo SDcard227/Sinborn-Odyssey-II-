@@ -1,59 +1,96 @@
 {
-  "dependencies": ["ch12_world"],
-  "tasks": {
-    "nether_time": {
-      "title": "Spend time in the Nether to raise the Manifestation meter above 100 — watch for Scarlet Cultists",
-      "icon": {"item": {"id": "minecraft:netherrack", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch12_world"
+ ],
+ "tasks": {
+  "nether_time": {
+   "title": "Spend time in the Nether to raise the Manifestation meter above 100 — watch for Scarlet Cultists",
+   "icon": {
+    "item": {
+     "id": "minecraft:netherrack",
+     "count": 1
     },
-    "manifestor_appears": {
-      "title": "Observe the Manifestor appear in the Overworld (Scarlet King at Manifestation 100+)",
-      "icon": {"item": {"id": "scarlet_king:banishing_chains", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "chains": {
-      "item": {"id": "scarlet_king:banishing_chains", "count": 2},
-      "type": "heracles:item"
+  "manifestor_appears": {
+   "title": "Observe the Manifestor appear in the Overworld (Scarlet King at Manifestation 100+)",
+   "icon": {
+    "item": {
+     "id": "scarlet_king:banishing_chains",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Manifestor"},
-    "subtitle": {"text": "It does not attack. It offers. What it offers: the idea that your way is the right way."},
-    "description": [
-      "The Manifestor is not a creature.",
-      "It is an idea that achieves physical presence.",
-      "",
-      "Spend time in the Nether → the Manifestation meter rises.",
-      "Scarlet Cultists spawn on the surface, chanting → it accelerates.",
-      "At 100+ Manifestation → the Manifestor appears in the Overworld.",
-      "",
-      "What it offers: the idea that your power should be the power.",
-      "That unification under your will is the same as peace.",
-      "You must use it. The Cursed Eye recipe requires the Scarlet Crown.",
-      "There is no clean path.",
-      "",
-      "This is the FMA mechanic. You knew this was coming.",
-      "Every Nether portal you opened contributed to this.",
-      "",
-      "→ Raise Manifestation above 100 (spend time in the Nether) [check]",
-      "→ Observe the Manifestor appear in the Overworld [check]"
-    ],
-    "groups": {"The Kingdom You Build": {"position": [0, 150]}},
-    "icon": {"item": {"id": "scarlet_king:scarlet_crown", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "chains": {
+   "item": {
+    "id": "scarlet_king:banishing_chains",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Manifestor"
+  },
+  "subtitle": {
+   "text": "It does not attack. It offers. What it offers: the idea that your way is the right way."
+  },
+  "description": [
+   "The Manifestor is not a creature.",
+   "It is an idea that achieves physical presence.",
+   "",
+   "Spend time in the Nether → the Manifestation meter rises.",
+   "Scarlet Cultists spawn on the surface, chanting → it accelerates.",
+   "At 100+ Manifestation → the Manifestor appears in the Overworld.",
+   "",
+   "What it offers: the idea that your power should be the power.",
+   "That unification under your will is the same as peace.",
+   "You must use it. The Cursed Eye recipe requires the Scarlet Crown.",
+   "There is no clean path.",
+   "",
+   "This is the FMA mechanic. You knew this was coming.",
+   "Every Nether portal you opened contributed to this.",
+   "",
+   "→ Raise Manifestation above 100 (spend time in the Nether) [check]",
+   "→ Observe the Manifestor appear in the Overworld [check]"
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     460,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "scarlet_king:scarlet_crown",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,46 +1,81 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Runesmithing scroll",
-      "icon": {"item": {"id": "historystages:research_scroll", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Runesmithing scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Runesmithing scroll",
-      "icon": {"item": {"id": "simplyswords:runic_tablet", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:command",
-      "command": "history unlock runesmithing"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {"item": {"id": "numismatics:bevel", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"text": "Runesmithing"},
-    "subtitle": {"text": "A blade is only the question. The rune is the answer."},
-    "description": [
-      "\"The old smiths did not sharpen steel. They taught it.\"",
-      "",
-      "This scroll unlocks the rune subsystem — runic tablets,",
-      "gem-slotting, remnants, relics, and the idols that bind",
-      "power into a finished weapon.",
-      "",
-      "◈ Found in: stronghold libraries, deep weapon-hoards",
-      "",
-      "→ Find the scroll [discovery]",
-      "→ Research [Runesmithing] [auto]"
-    ],
-    "groups": {"Blood and Oil": {"position": [1020, 660]}},
-    "icon": {"item": {"id": "simplyswords:runic_tablet", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "research_scroll": {
+   "title": "Research the Runesmithing scroll",
+   "icon": {
+    "item": {
+     "id": "simplyswords:runic_tablet",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock runesmithing"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Runesmithing"
+  },
+  "subtitle": {
+   "text": "A blade is only the question. The rune is the answer."
+  },
+  "description": [
+   "\"The old smiths did not sharpen steel. They taught it.\"",
+   "",
+   "This scroll unlocks the rune subsystem — runic tablets,",
+   "gem-slotting, remnants, relics, and the idols that bind",
+   "power into a finished weapon.",
+   "",
+   "◈ Found in: stronghold libraries, deep weapon-hoards",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Runesmithing] [auto]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     300,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "simplyswords:runic_tablet",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

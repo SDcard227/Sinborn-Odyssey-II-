@@ -1,0 +1,79 @@
+{
+ "dependencies": [
+  "ch07_r_scroll_smithing_master"
+ ],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Legendary Forge scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "research_scroll": {
+   "title": "Research the The Legendary Forge scroll",
+   "icon": {
+    "item": {
+     "id": "minecraft:netherite_ingot",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock smithing_legendary"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Legendary Forge"
+  },
+  "subtitle": {
+   "text": "Dragonsteel answers only to a master."
+  },
+  "description": [
+   "The dragonforges, the void-forge, the fusion anvil — and dragonsteel itself. The forge-work of legends.",
+   "",
+   "Unlocks 39 items. Requires the Master Forge first.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Legendary Forge] [auto]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     600,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:netherite_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
+}

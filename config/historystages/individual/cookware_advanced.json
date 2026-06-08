@@ -1,0 +1,51 @@
+{
+  "display_name": "The Master Kitchen",
+  "research_time": 5400,
+  "items": [
+    "alexscaves:confection_oven",
+    "endersdelight:endstone_stove",
+    "ends_delight:end_stove",
+    "luminous_nether:netherrack_fire_pit",
+    "luminous_nether:soul_soul_fire_pit",
+    "mynethersdelight:blackstone_cooking_pot",
+    "mynethersdelight:nether_bricks_soul_stove",
+    "mynethersdelight:nether_bricks_stove",
+    "mynethersdelight:nether_stove",
+    "vintagedelight:evaporator",
+    "vintagedelight:fermenting_jar",
+    "witherstorm_delight:wither_stove",
+    "witherstorm_delight:wither_stove_on",
+    "youkaisfeasts:copper_faucet",
+    "youkaisfeasts:copper_tank",
+    "youkaisfeasts:fermentation_tank"
+  ],
+  "tags": [],
+  "mods": [
+    "createmetalwork",
+    "molten_metals"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "alexscaves:confection_oven",
+    "endersdelight:endstone_stove",
+    "ends_delight:end_stove",
+    "luminous_nether:soulcauldronrec_2",
+    "luminous_nether:soulcauldronrecipe_1",
+    "mynethersdelight:crafting/nethers_stove",
+    "mynethersdelight:crafting/nethers_stove_alt0",
+    "mynethersdelight:crafting/soul_nethers_stove",
+    "mynethersdelight:crafting/soul_nethers_stove_alt0",
+    "vintagedelight:evaporator",
+    "vintagedelight:fermenting_jar",
+    "witherstorm_delight:wither_stove_anvil",
+    "youkaisfeasts:copper_faucet_from_copper_ingot_stonecutting",
+    "youkaisfeasts:copper_tank_from_copper_block_stonecutting",
+    "youkaisfeasts:fermentation_tank"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

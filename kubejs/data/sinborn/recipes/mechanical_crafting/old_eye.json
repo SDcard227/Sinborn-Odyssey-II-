@@ -1,21 +1,37 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    "WEW",
+    "WEP",
     "SVG",
-    "WPW"
+    "PPP"
   ],
   "key": {
     "W": [
-      { "item": "iceandfire:deathworm_chitin_white" },
-      { "item": "iceandfire:deathworm_chitin_yellow" },
-      { "item": "iceandfire:deathworm_chitin_red" }
+      {
+        "item": "iceandfire:deathworm_chitin_white"
+      },
+      {
+        "item": "iceandfire:deathworm_chitin_yellow"
+      },
+      {
+        "item": "iceandfire:deathworm_chitin_red"
+      }
     ],
-    "E": { "item": "dungeons_and_combat:essence_of_sunleia" },
-    "S": { "item": "as_you_wish:heart_of_the_desert" },
-    "V": { "item": "mowziesmobs:sol_visage" },
-    "G": { "item": "dungeons_and_combat:divine_blood_vial" },
-    "P": { "item": "cataclysm:ancient_metal_block" }
+    "E": {
+      "item": "dungeons_and_combat:essence_of_sunleia"
+    },
+    "S": {
+      "item": "as_you_wish:heart_of_the_desert"
+    },
+    "V": {
+      "item": "mowziesmobs:sol_visage"
+    },
+    "G": {
+      "item": "dungeons_and_combat:divine_blood_vial"
+    },
+    "P": {
+      "item": "cataclysm:ancient_metal_block"
+    }
   },
   "result": {
     "item": "endrem:old_eye",

@@ -1,57 +1,94 @@
 {
-  "dependencies": ["ch11_ignis"],
-  "tasks": {
-    "find_leviathan": {
-      "title": "Locate the Cataclysm Leviathan in a deep ocean or underwater biome",
-      "icon": {"item": {"id": "minecraft:heart_of_the_sea", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch11_ignis"
+ ],
+ "tasks": {
+  "find_leviathan": {
+   "title": "Locate the Cataclysm Leviathan in a deep ocean or underwater biome",
+   "icon": {
+    "item": {
+     "id": "minecraft:heart_of_the_sea",
+     "count": 1
     },
-    "leviathan": {
-      "title": "Defeat the Leviathan (Cataclysm — drops guaranteed abyssal_spellweave_ingot)",
-      "icon": {"item": {"id": "traveloptics:abyssal_spellweave_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "abyssal_spellweave": {
-      "item": {"id": "traveloptics:abyssal_spellweave_ingot", "count": 1},
-      "type": "heracles:item"
+  "leviathan": {
+   "title": "Defeat the Leviathan (Cataclysm — drops guaranteed abyssal_spellweave_ingot)",
+   "icon": {
+    "item": {
+     "id": "traveloptics:abyssal_spellweave_ingot",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Leviathan"},
-    "subtitle": {"text": "Magic that was forced to be still. It carries the weight of that compression."},
-    "description": [
-      "The Leviathan (L Ender's Cataclysm) is an ocean-based boss",
-      "from the Cataclysm chain — fought in underwater environments.",
-      "",
-      "It drops the Abyssal Spellweave Ingot — a guaranteed drop.",
-      "This is from T.O Magic 'n Extras (traveloptics: namespace),",
-      "an Iron's Spellbooks addon that integrates with Cataclysm.",
-      "",
-      "The Abyssal Spellweave Ingot is required for the Magical Eye.",
-      "The Leviathan is the Ocean Mages' final remnant.",
-      "Magic that merged with the ocean completely until it had mass.",
-      "",
-      "Killing the Leviathan is the Ocean Mages' consent to be inherited.",
-      "",
-      "→ Find the Leviathan [check]",
-      "→ Defeat the Leviathan [check]"
-    ],
-    "groups": {"Where the Skin Tears": {"position": [-150, 150]}},
-    "icon": {"item": {"id": "traveloptics:abyssal_spellweave_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "abyssal_spellweave": {
+   "item": {
+    "id": "traveloptics:abyssal_spellweave_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Leviathan"
+  },
+  "subtitle": {
+   "text": "Magic that was forced to be still. It carries the weight of that compression."
+  },
+  "description": [
+   "The Leviathan (L Ender's Cataclysm) is an ocean-based boss",
+   "from the Cataclysm chain — fought in underwater environments.",
+   "",
+   "It drops the Abyssal Spellweave Ingot — a guaranteed drop.",
+   "This is from T.O Magic 'n Extras (traveloptics: namespace),",
+   "an Iron's Spellbooks addon that integrates with Cataclysm.",
+   "",
+   "The Abyssal Spellweave Ingot is required for the Magical Eye.",
+   "The Leviathan is the Ocean Mages' final remnant.",
+   "Magic that merged with the ocean completely until it had mass.",
+   "",
+   "Killing the Leviathan is the Ocean Mages' consent to be inherited.",
+   "",
+   "→ Find the Leviathan [check]",
+   "→ Defeat the Leviathan [check]"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1380,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "traveloptics:abyssal_spellweave_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

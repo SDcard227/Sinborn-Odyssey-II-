@@ -1,117 +1,117 @@
 {
-  "dependencies": [
-    "ch03_r_weapon_forms"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/on_the_blade"
-    },
-    "kill_100": {
-      "title": "Kill 100 hostile mobs with a melee weapon — build your combat foundation",
-      "icon": {
-        "item": {
-          "id": "minecraft:diamond_sword",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch03_r_weapon_forms"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the On The Blade scroll at a Research Pedestal"
   },
-  "rewards": {
-    "xp": {
-      "item": {
-        "id": "minecraft:experience_bottle",
-        "count": 12
-      },
-      "type": "heracles:item"
+  "kill_100": {
+   "title": "Kill 100 hostile mobs with a melee weapon — build your combat foundation",
+   "icon": {
+    "item": {
+     "id": "minecraft:diamond_sword",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 2
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "On The Blade"
-    },
-    "subtitle": {
-      "text": "The weapon is just the ending. Everything before the swing is the craft."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.03 · ON THE BLADE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ This is a lore scroll.",
-      "  Not a crafting guide. Not a stat sheet.",
-      "  It was written by someone who lived long enough",
-      "  to write it down.",
-      "",
-      "◈ COMBAT PHILOSOPHY",
-      "  └ The sword does not decide. You decide.",
-      "    The sword just executes the decision faster.",
-      "  └ Speed vs Power: most of this world rewards speed",
-      "    You cannot outswing a Warden. You can outrun it.",
-      "  └ Range: spears and halberds keep you alive",
-      "    longer than daggers in boss fights",
-      "  └ Crowd Control: knockback weapons vs fast mobs",
-      "    Scythe sweep clears rooms. Use it.",
-      "",
-      "◈ PRACTICAL NOTES FROM THE SCROLL",
-      "  └ Always enchant before a boss — unenchanted weapons",
-      "    on Cataclysm bosses is a death sentence",
-      "  └ Food buffs are not optional in Ch11+",
-      "  └ Shields block more than you think they do",
-      "  └ The Forgotten Knight who wrote this died fighting",
-      "    something larger than what you've seen yet.",
-      "    Be ready.",
-      "",
-      "◈ SCROLL: On The Blade",
-      "  └ Found in: warrior graves, dojo ruins,",
-      "    honored dead tombs, battle camp remnants",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: combat philosophy awareness,",
-      "    boss-readiness mental framework",
-      "",
-      "▸ They found the scroll beside the body.",
-      "  The body had won.",
-      "  The scroll explains how.",
-      "",
-      "▶ Find The On The Blade scroll [check]",
-      "▶ Kill 100 hostile mobs with melee [check]",
-      "",
-      "◇ Peak Stamina and Pressure (Ch03 already covers)",
-      "  affect how long you can maintain combat.",
-      "  Don't forget them when prepping for Ch11."
-    ],
-    "groups": {
-      "The Rotting Gate": {
-        "position": [
-          -450,
-          600
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:diamond_sword",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "xp": {
+   "item": {
+    "id": "minecraft:experience_bottle",
+    "count": 12
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "On The Blade"
+  },
+  "subtitle": {
+   "text": "The weapon is just the ending. Everything before the swing is the craft."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.03 · ON THE BLADE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ This is a lore scroll.",
+   "  Not a crafting guide. Not a stat sheet.",
+   "  It was written by someone who lived long enough",
+   "  to write it down.",
+   "",
+   "◈ COMBAT PHILOSOPHY",
+   "  └ The sword does not decide. You decide.",
+   "    The sword just executes the decision faster.",
+   "  └ Speed vs Power: most of this world rewards speed",
+   "    You cannot outswing a Warden. You can outrun it.",
+   "  └ Range: spears and halberds keep you alive",
+   "    longer than daggers in boss fights",
+   "  └ Crowd Control: knockback weapons vs fast mobs",
+   "    Scythe sweep clears rooms. Use it.",
+   "",
+   "◈ PRACTICAL NOTES FROM THE SCROLL",
+   "  └ Always enchant before a boss — unenchanted weapons",
+   "    on Cataclysm bosses is a death sentence",
+   "  └ Food buffs are not optional in Ch11+",
+   "  └ Shields block more than you think they do",
+   "  └ The Forgotten Knight who wrote this died fighting",
+   "    something larger than what you've seen yet.",
+   "    Be ready.",
+   "",
+   "◈ SCROLL: On The Blade",
+   "  └ Found in: warrior graves, dojo ruins,",
+   "    honored dead tombs, battle camp remnants",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: combat philosophy awareness,",
+   "    boss-readiness mental framework",
+   "",
+   "▸ They found the scroll beside the body.",
+   "  The body had won.",
+   "  The scroll explains how.",
+   "",
+   "▶ Find The On The Blade scroll [check]",
+   "▶ Kill 100 hostile mobs with melee [check]",
+   "",
+   "◇ Peak Stamina and Pressure (Ch03 already covers)",
+   "  affect how long you can maintain combat.",
+   "  Don't forget them when prepping for Ch11."
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     2760,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:diamond_sword",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

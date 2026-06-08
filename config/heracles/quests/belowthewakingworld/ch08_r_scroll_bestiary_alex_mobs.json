@@ -1,77 +1,77 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Beasts of the Wide World scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Beasts of the Wide World scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Beasts of the Wide World scroll",
-      "icon": {
-        "item": {
-          "id": "alexsmobs:acacia_blossom",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock bestiary_alex_mobs"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Beasts of the Wide World"
+  "research_scroll": {
+   "title": "Research the Beasts of the Wide World scroll",
+   "icon": {
+    "item": {
+     "id": "alexsmobs:acacia_blossom",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Copied between every civilization that touched it.\"",
-      "",
-      "This scroll unlocks 267 items.",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Beasts of the Wide World] [auto]"
-    ],
-    "groups": {
-      "Below the Waking World": {
-        "position": [
-          1053,
-          840
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexsmobs:acacia_blossom",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock bestiary_alex_mobs"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Beasts of the Wide World"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Copied between every civilization that touched it.\"",
+   "",
+   "This scroll unlocks 267 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Beasts of the Wide World] [auto]"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     0,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexsmobs:acacia_blossom",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

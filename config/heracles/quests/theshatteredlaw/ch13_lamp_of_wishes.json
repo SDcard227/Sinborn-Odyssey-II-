@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch13_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Lamp of Wishes at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:lantern",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock lamp_of_wishes",
+   "title": "Discipline learned: The Lamp of Wishes",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Lamp of Wishes"
+  },
+  "subtitle": {
+   "text": "Be careful what you ask the void."
+  },
+  "description": [
+   "In the wreckage of cosmic law, a wish can be granted — by something that does not love you.",
+   "The genie's lamp is the Atlas in miniature: it offers, it does not threaten, and the cost is yours.",
+   "",
+   "→ Recover and study the Lamp of Wishes at a Research Pedestal."
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     460,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:lantern",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

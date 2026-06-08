@@ -1,94 +1,94 @@
 {
-  "dependencies": [
-    "ch14_world"
-  ],
-  "tasks": {
-    "trigon_defeated": {
-      "type": "heracles:kill_entity",
-      "entity": "endertrigon:ender_trigon",
-      "amount": 1
-    },
-    "trigon_drop": {
-      "title": "Collect a unique drop from the Ender Trigon (boss-specific loot from the Ender Trigon mod)",
-      "icon": {
-        "item": {
-          "id": "minecraft:purple_dye",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch14_world"
+ ],
+ "tasks": {
+  "trigon_defeated": {
+   "type": "heracles:kill_entity",
+   "entity": "minecraft:ender_dragon",
+   "amount": 1
   },
-  "rewards": {
-    "totem": {
-      "item": {
-        "id": "minecraft:totem_of_undying",
-        "count": 2
-      },
-      "type": "heracles:item"
+  "trigon_drop": {
+   "title": "Collect a unique drop from the Ender Trigon (boss-specific loot from the Ender Trigon mod)",
+   "icon": {
+    "item": {
+     "id": "minecraft:purple_dye",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 16
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Three Heads Down"
-    },
-    "subtitle": {
-      "text": "The Ender Trigon was not the dragon's child. It was what came before the dragon."
-    },
-    "description": [
-      "The Ender Trigon fight requires sequential head targeting.",
-      "",
-      "STRATEGY:",
-      "Phase 1 — All three heads active. Do not focus one head until you have",
-      "reduced all three to roughly equal health. Burning one head early",
-      "sends the other two into enrage mode.",
-      "",
-      "Phase 2 — With one head fallen, the remaining two begin special combos:",
-      "Void + Lightning creates chain void bolts.",
-      "Ice + Void creates slow-then-teleport traps.",
-      "Keep moving. Do not hold still.",
-      "",
-      "Phase 3 — Final head. Fully enraged. Maximum damage output.",
-      "This is a burn phase. Use your highest damage output.",
-      "Keep a Totem of Undying equipped.",
-      "",
-      "The Trigon drops the Baby Ender Trigon egg on first kill.",
-      "It also drops unique materials for Ch14 crafting.",
-      "",
-      "→ Defeat the Ender Trigon [check]",
-      "→ Collect a unique Trigon drop [check]"
-    ],
-    "groups": {
-      "What the Void Remembers": {
-        "position": [
-          150,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:totem_of_undying",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "totem": {
+   "item": {
+    "id": "minecraft:totem_of_undying",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Three Heads Down"
+  },
+  "subtitle": {
+   "text": "The Ender Trigon was not the dragon's child. It was what came before the dragon."
+  },
+  "description": [
+   "The Ender Trigon fight requires sequential head targeting.",
+   "",
+   "STRATEGY:",
+   "Phase 1 — All three heads active. Do not focus one head until you have",
+   "reduced all three to roughly equal health. Burning one head early",
+   "sends the other two into enrage mode.",
+   "",
+   "Phase 2 — With one head fallen, the remaining two begin special combos:",
+   "Void + Lightning creates chain void bolts.",
+   "Ice + Void creates slow-then-teleport traps.",
+   "Keep moving. Do not hold still.",
+   "",
+   "Phase 3 — Final head. Fully enraged. Maximum damage output.",
+   "This is a burn phase. Use your highest damage output.",
+   "Keep a Totem of Undying equipped.",
+   "",
+   "The Trigon drops the Baby Ender Trigon egg on first kill.",
+   "It also drops unique materials for Ch14 crafting.",
+   "",
+   "→ Defeat the Ender Trigon [check]",
+   "→ Collect a unique Trigon drop [check]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     460,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:totem_of_undying",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

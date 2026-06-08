@@ -1,57 +1,82 @@
 {
-  "dependencies": ["ch02_cook"],
-  "tasks": {
-    "kettle": {
-      "type": "heracles:item",
-      "item": "herbalbrews:tea_kettle",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "rack": {
-      "type": "heracles:item",
-      "item": "herbalbrews:drying_rack",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch02_cook"
+ ],
+ "tasks": {
+  "kettle": {
+   "type": "heracles:item",
+   "item": "herbalbrews:tea_kettle",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "tea_leaves": {
-      "item": {"id": "minecraft:dried_kelp", "count": 8},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 4},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Tea Kettle"},
-    "subtitle": {"text": "Water and leaves and patience."},
-    "description": [
-      "Herbal Brews adds ten drinks.",
-      "Green, Black, Oolong, Hibiscus, Lavender, Rooibos, Mixed Tea.",
-      "Yerba Mate — grants the Bonding effect.",
-      "Coffee. Milk Coffee.",
-      "",
-      "The Tea Kettle sits on the Stove.",
-      "Four ingredient slots. Drying Rack for leaves.",
-      "",
-      "You do not need any of these.",
-      "But they are there. And they are good.",
-      "",
-      "→ Craft a Tea Kettle",
-      "→ Craft a Drying Rack"
-    ],
-    "groups": {"The Kindled Road": {"position": [-150, 300]}},
-    "icon": {"item": {"id": "herbalbrews:tea_kettle", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "rack": {
+   "type": "heracles:item",
+   "item": "herbalbrews:drying_rack",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "tea_leaves": {
+   "item": {
+    "id": "minecraft:dried_kelp",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Tea Kettle"
+  },
+  "subtitle": {
+   "text": "Water and leaves and patience."
+  },
+  "description": [
+   "Herbal Brews adds ten drinks.",
+   "Green, Black, Oolong, Hibiscus, Lavender, Rooibos, Mixed Tea.",
+   "Yerba Mate — grants the Bonding effect.",
+   "Coffee. Milk Coffee.",
+   "",
+   "The Tea Kettle sits on the Stove.",
+   "Four ingredient slots. Drying Rack for leaves.",
+   "",
+   "You do not need any of these.",
+   "But they are there. And they are good.",
+   "",
+   "→ Craft a Tea Kettle",
+   "→ Craft a Drying Rack"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     1680,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "herbalbrews:tea_kettle",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

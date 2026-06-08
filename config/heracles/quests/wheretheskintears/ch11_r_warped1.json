@@ -1,60 +1,91 @@
 {
-  "dependencies": ["ch11_world"],
-  "tasks": {
-    "warped_mosco": {
-      "title": "Kill a Warped Mosco (Alex's Mobs — spawns in Warped Forest biomes in the Nether)",
-      "icon": {"item": {"id": "alexsmobs:hemolymph_sac", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch11_world"
+ ],
+ "tasks": {
+  "warped_mosco": {
+   "title": "Kill a Warped Mosco (Alex's Mobs — spawns in Warped Forest biomes in the Nether)",
+   "icon": {
+    "item": {
+     "id": "alexsmobs:hemolymph_sac",
+     "count": 1
     },
-    "hemolymph_sac": {
-      "type": "heracles:item",
-      "item": "alexsmobs:hemolymph_sac",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    },
-    "blaze_powder": {
-      "item": {"id": "minecraft:blaze_powder", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Warped Mosco"},
-    "subtitle": {"text": "The Biological Civilization merged with life. This is what the Nether's life looks like now."},
-    "description": [
-      "The Warped Mosco (Alex's Mobs) spawns in Warped Forest biomes",
-      "in the Nether — the mushroom-themed biome.",
-      "",
-      "It drops the Hemolymph Sac — a critical ingredient",
-      "for the Corrupted Eye recipe.",
-      "",
-      "The Biological Civilization merged with life intentionally.",
-      "They were transformed without consent by what they studied.",
-      "The Corrupted Eye is their inheritance:",
-      "not destruction, but transformation.",
-      "",
-      "Alex's Mobs entity ID: `alexsmobs:warped_mosco`.",
-      "The Warped Forest is clearly distinct from the Crimson Forest.",
-      "Blue-green haze, warped fungi, Endermen presence.",
-      "",
-      "→ Kill a Warped Mosco [check]",
-      "→ Collect its Hemolymph Sac"
-    ],
-    "groups": {"Where the Skin Tears": {"position": [-150, 0]}},
-    "icon": {"item": {"id": "alexsmobs:hemolymph_sac", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "hemolymph_sac": {
+   "type": "heracles:item",
+   "item": "alexsmobs:hemolymph_sac",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  },
+  "blaze_powder": {
+   "item": {
+    "id": "minecraft:blaze_powder",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Warped Mosco"
+  },
+  "subtitle": {
+   "text": "The Biological Civilization merged with life. This is what the Nether's life looks like now."
+  },
+  "description": [
+   "The Warped Mosco (Alex's Mobs) spawns in Warped Forest biomes",
+   "in the Nether — the mushroom-themed biome.",
+   "",
+   "It drops the Hemolymph Sac — a critical ingredient",
+   "for the Corrupted Eye recipe.",
+   "",
+   "The Biological Civilization merged with life intentionally.",
+   "They were transformed without consent by what they studied.",
+   "The Corrupted Eye is their inheritance:",
+   "not destruction, but transformation.",
+   "",
+   "Alex's Mobs entity ID: `alexsmobs:warped_mosco`.",
+   "The Warped Forest is clearly distinct from the Crimson Forest.",
+   "Blue-green haze, warped fungi, Endermen presence.",
+   "",
+   "→ Kill a Warped Mosco [check]",
+   "→ Collect its Hemolymph Sac"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     460,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexsmobs:hemolymph_sac",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

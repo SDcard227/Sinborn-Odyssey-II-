@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch03_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Wayhouse Logistics at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:rail",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock wayhouse_logistics",
+   "title": "Discipline learned: The Wayhouse Logistics",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Wayhouse Logistics"
+  },
+  "subtitle": {
+   "text": "The road remembers every cart."
+  },
+  "description": [
+   "The Forgesworn laid roads like the gods laid law — straight, certain, unceasing.",
+   "Move the package without the hand. The first automation is the road that carries for you.",
+   "",
+   "→ Recover and study the Wayhouse Logistics at a Research Pedestal."
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     460,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:rail",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

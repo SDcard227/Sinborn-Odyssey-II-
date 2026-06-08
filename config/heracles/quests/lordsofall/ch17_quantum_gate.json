@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch17_teleporter"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Quantum Gate at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_pearl",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock quantum_gate",
+   "title": "Discipline learned: The Quantum Gate",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Quantum Gate"
+  },
+  "subtitle": {
+   "text": "Be elsewhere, instantly , the apex of the Storm-Builders' forbidden physics."
+  },
+  "description": [
+   "The same physics that folded a nuke folds the distance between two points.",
+   "An endgame mastery , the Create teleporter network. The world stops being a place you walk and becomes a place you arrive.",
+   "",
+   "→ Recover and study The Quantum Gate at a Research Pedestal."
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     2300,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

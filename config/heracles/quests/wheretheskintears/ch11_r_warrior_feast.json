@@ -1,130 +1,130 @@
 {
-  "dependencies": [
-    "ch11_ignis"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/warrior_feast"
-    },
-    "eat_before_boss": {
-      "title": "Eat a full combat meal before a boss fight — use Youkai's Feasts or FD warrior meals for combat buffs",
-      "icon": {
-        "item": {
-          "id": "youkaisfeasts:oni_rice_ball",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch11_ignis"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Warrior Feast scroll at a Research Pedestal"
   },
-  "rewards": {
-    "golden_carrot": {
-      "item": {
-        "id": "minecraft:golden_carrot",
-        "count": 16
-      },
-      "type": "heracles:item"
+  "eat_before_boss": {
+   "title": "Eat a full combat meal before a boss fight — use Youkai's Feasts or FD warrior meals for combat buffs",
+   "icon": {
+    "item": {
+     "id": "youkaisfeasts:oni_rice_ball",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Warrior Feast"
-    },
-    "subtitle": {
-      "text": "143 items. Youkai's Feasts treats food as ritual. The boss fight starts at the cooking fire, not the arena."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.11 · THE WARRIOR FEAST",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Youkai's Feasts adds 143+ food items",
-      "  themed around Japanese youkai cuisine.",
-      "  Several of them provide combat-specific buffs",
-      "  stronger than any vanilla food.",
-      "  The Warrior Feast scroll covers the full list",
-      "  and identifies the pre-boss priority items.",
-      "",
-      "◈ YOUKAI'S FEASTS COMBAT PRIORITY",
-      "  └ The mod's food items cover the five Diet groups",
-      "    (fruits, grains, proteins, vegetables, sugars)",
-      "  └ High-saturation meals: hold hunger for full boss fights",
-      "    without needing to eat mid-combat",
-      "  └ Stat buffs: specific recipes grant",
-      "    temporary Strength, Speed, Resistance, or Regeneration",
-      "  └ Check JEI under youkaisfeasts: for full recipe list",
-      "    after studying the scroll",
-      "  └ Cooking station: Youkai cooking vessels + FD surfaces",
-      "    (compatible with Farm & Charm and Cultural Delights)",
-      "",
-      "◈ PRE-BOSS MEAL PROTOCOL",
-      "  └ ✦ Ignis fight: fire resistance food + high saturation",
-      "    Magma Gelatin (Nether's Delight) + warrior rice ball",
-      "  └ ✦ Monstrosity fight: Resistance buff food + healing",
-      "    Two golden apples in inventory as emergency backup",
-      "  └ ✦ Emulator fight: max saturation + Regeneration buff",
-      "    Full Diet balance before fight for passive recovery",
-      "",
-      "◈ DIET INTEGRATION",
-      "  └ Diet groups track over time (does NOT reset on death",
-      "    in standard config — CHECK your pack settings)",
-      "  └ Actually: Diet DOES reset on death in Sinborn",
-      "    (configured in diet.toml) — rebuild before every boss",
-      "  └ Youkai's Feasts covers all five groups if planned",
-      "",
-      "◈ SCROLL: The Warrior Feast",
-      "  └ Found in Youkai shrine structures,",
-      "    battlefield loot, high-tier food mod chests",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: full Youkai's Feasts combat recipe list,",
-      "    pre-boss meal planning guide, Diet synergy",
-      "",
-      "▸ The warriors who built the shrine ate before battle.",
-      "  Not out of tradition.",
-      "  Out of strategy.",
-      "  The ritual was the acknowledgment",
-      "  that preparation ends at the first bite.",
-      "",
-      "▶ Find The Warrior Feast scroll [check]",
-      "▶ Eat a full combat meal before a boss fight [check]",
-      "",
-      "◇ Nether's Delight: Magma Gelatin = best fire immunity.",
-      "  Make a stack before Ignis.",
-      "  Eat one at the arena entrance.",
-      "  Your armor does not cover what your stomach can."
-    ],
-    "groups": {
-      "Where the Skin Tears": {
-        "position": [
-          600,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:cooked_porkchop",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "golden_carrot": {
+   "item": {
+    "id": "minecraft:golden_carrot",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Warrior Feast"
+  },
+  "subtitle": {
+   "text": "143 items. Youkai's Feasts treats food as ritual. The boss fight starts at the cooking fire, not the arena."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.11 · THE WARRIOR FEAST",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Youkai's Feasts adds 143+ food items",
+   "  themed around Japanese youkai cuisine.",
+   "  Several of them provide combat-specific buffs",
+   "  stronger than any vanilla food.",
+   "  The Warrior Feast scroll covers the full list",
+   "  and identifies the pre-boss priority items.",
+   "",
+   "◈ YOUKAI'S FEASTS COMBAT PRIORITY",
+   "  └ The mod's food items cover the five Diet groups",
+   "    (fruits, grains, proteins, vegetables, sugars)",
+   "  └ High-saturation meals: hold hunger for full boss fights",
+   "    without needing to eat mid-combat",
+   "  └ Stat buffs: specific recipes grant",
+   "    temporary Strength, Speed, Resistance, or Regeneration",
+   "  └ Check JEI under youkaisfeasts: for full recipe list",
+   "    after studying the scroll",
+   "  └ Cooking station: Youkai cooking vessels + FD surfaces",
+   "    (compatible with Farm & Charm and Cultural Delights)",
+   "",
+   "◈ PRE-BOSS MEAL PROTOCOL",
+   "  └ ✦ Ignis fight: fire resistance food + high saturation",
+   "    Magma Gelatin (Nether's Delight) + warrior rice ball",
+   "  └ ✦ Monstrosity fight: Resistance buff food + healing",
+   "    Two golden apples in inventory as emergency backup",
+   "  └ ✦ Emulator fight: max saturation + Regeneration buff",
+   "    Full Diet balance before fight for passive recovery",
+   "",
+   "◈ DIET INTEGRATION",
+   "  └ Diet groups track over time (does NOT reset on death",
+   "    in standard config — CHECK your pack settings)",
+   "  └ Actually: Diet DOES reset on death in Sinborn",
+   "    (configured in diet.toml) — rebuild before every boss",
+   "  └ Youkai's Feasts covers all five groups if planned",
+   "",
+   "◈ SCROLL: The Warrior Feast",
+   "  └ Found in Youkai shrine structures,",
+   "    battlefield loot, high-tier food mod chests",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: full Youkai's Feasts combat recipe list,",
+   "    pre-boss meal planning guide, Diet synergy",
+   "",
+   "▸ The warriors who built the shrine ate before battle.",
+   "  Not out of tradition.",
+   "  Out of strategy.",
+   "  The ritual was the acknowledgment",
+   "  that preparation ends at the first bite.",
+   "",
+   "▶ Find The Warrior Feast scroll [check]",
+   "▶ Eat a full combat meal before a boss fight [check]",
+   "",
+   "◇ Nether's Delight: Magma Gelatin = best fire immunity.",
+   "  Make a stack before Ignis.",
+   "  Eat one at the arena entrance.",
+   "  Your armor does not cover what your stomach can."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1380,
+     1050
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:cooked_porkchop",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

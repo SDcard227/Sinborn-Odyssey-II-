@@ -1,66 +1,103 @@
 {
-  "dependencies": ["ch16_r_ptd1"],
-  "tasks": {
-    "philosophers_stone": {
-      "title": "Craft the Philosopher's Stone (Divine/PTD — Mass Accumulate 999 souls → Homunculus chain → Stone)",
-      "icon": {"item": {"id": "divine:philosophers_stone", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_r_ptd1"
+ ],
+ "tasks": {
+  "philosophers_stone": {
+   "title": "Craft the Philosopher's Stone (Divine/PTD — Mass Accumulate 999 souls → Homunculus chain → Stone)",
+   "icon": {
+    "item": {
+     "id": "divine:philosophers_stone",
+     "count": 1
     },
-    "stone_choice": {
-      "title": "Decide what you will do with it — the Philosopher's Stone amplifies alchemy beyond natural limits",
-      "icon": {"item": {"id": "divine:philosophers_stone", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "philosophers_stone": {
-      "item": {"id": "divine:philosophers_stone", "count": 1},
-      "type": "heracles:item"
+  "stone_choice": {
+   "title": "Decide what you will do with it — the Philosopher's Stone amplifies alchemy beyond natural limits",
+   "icon": {
+    "item": {
+     "id": "divine:philosophers_stone",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 20},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Stone"},
-    "subtitle": {"text": "Edward Elric refused to use it. You have to make your own choice."},
-    "description": [
-      "The Philosopher's Stone is complete.",
-      "",
-      "The cost:",
-      "999 villager souls. Each soul is a person.",
-      "The MCA Reborn villagers in your settlement are people.",
-      "The 999 souls are not abstract — they are the kind of people you spent Ch12-16 building a world for.",
-      "",
-      "The gain:",
-      "Amplified alchemy. Access to processes that are otherwise impossible.",
-      "The Stone is required for certain Divine/PTD endgame recipes.",
-      "",
-      "FMA's answer:",
-      "Scar destroyed his brother's research.",
-      "Edward refused the stone when offered.",
-      "Hohenheim used the stones he carried to counter Father.",
-      "Three different answers to the same object.",
-      "",
-      "Sinborn does not judge your answer.",
-      "The mechanics are available.",
-      "The stone is real in this world.",
-      "What you do with it is your civilization's first truly defining choice.",
-      "",
-      "→ Craft the Philosopher's Stone [check]",
-      "→ Make your choice [check]"
-    ],
-    "groups": {"The Long Road Home": {"position": [300, 0]}},
-    "icon": {"item": {"id": "divine:philosophers_stone", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "philosophers_stone": {
+   "item": {
+    "id": "divine:philosophers_stone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 20
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Stone"
+  },
+  "subtitle": {
+   "text": "Edward Elric refused to use it. You have to make your own choice."
+  },
+  "description": [
+   "The Philosopher's Stone is complete.",
+   "",
+   "The cost:",
+   "999 villager souls. Each soul is a person.",
+   "The MCA Reborn villagers in your settlement are people.",
+   "The 999 souls are not abstract — they are the kind of people you spent Ch12-16 building a world for.",
+   "",
+   "The gain:",
+   "Amplified alchemy. Access to processes that are otherwise impossible.",
+   "The Stone is required for certain Divine/PTD endgame recipes.",
+   "",
+   "FMA's answer:",
+   "Scar destroyed his brother's research.",
+   "Edward refused the stone when offered.",
+   "Hohenheim used the stones he carried to counter Father.",
+   "Three different answers to the same object.",
+   "",
+   "Sinborn does not judge your answer.",
+   "The mechanics are available.",
+   "The stone is real in this world.",
+   "What you do with it is your civilization's first truly defining choice.",
+   "",
+   "→ Craft the Philosopher's Stone [check]",
+   "→ Make your choice [check]"
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     920,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "divine:philosophers_stone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,85 +1,85 @@
 {
-  "dependencies": [
-    "ch05_r_cult2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/survivor_codex"
-    },
-    "fish_variety": {
-      "title": "Catch 5 different types of fish — Tide mod expands the aquatic food chain significantly",
-      "icon": {
-        "item": {
-          "id": "minecraft:cod",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch05_r_cult2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Survivor Codex scroll at a Research Pedestal"
   },
-  "rewards": {
-    "fish": {
-      "item": {
-        "id": "minecraft:salmon",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "fish_variety": {
+   "title": "Catch 5 different types of fish — Tide mod expands the aquatic food chain significantly",
+   "icon": {
+    "item": {
+     "id": "minecraft:cod",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Feasts of the Tidal Shore"
-    },
-    "subtitle": {
-      "text": "The sea feeds those who learn to ask it properly."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.05 · FEASTS OF THE TIDAL SHORE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Fishing is older than farming.",
-      "  The Tide system gives it depth:",
-      "  rods, baits, conditions, catches.",
-      "",
-      "◈ Covered by: Survivor's Codex",
-      "  └ Granted in your starting pack",
-      "  └ Unlocks: Tide fishing system, Tide's Delight",
-      "",
-      "▶ Check: Survivor's Codex studied [auto]"
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          450,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:fishing_rod",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "fish": {
+   "item": {
+    "id": "minecraft:salmon",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Feasts of the Tidal Shore"
+  },
+  "subtitle": {
+   "text": "The sea feeds those who learn to ask it properly."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.05 · FEASTS OF THE TIDAL SHORE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Fishing is older than farming.",
+   "  The Tide system gives it depth:",
+   "  rods, baits, conditions, catches.",
+   "",
+   "◈ Covered by: Survivor's Codex",
+   "  └ Granted in your starting pack",
+   "  └ Unlocks: Tide fishing system, Tide's Delight",
+   "",
+   "▶ Check: Survivor's Codex studied [auto]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     3360,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:fishing_rod",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

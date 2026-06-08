@@ -1,66 +1,100 @@
 {
-  "dependencies": ["ch03_world"],
-  "tasks": {
-    "water_wheel": {
-      "type": "heracles:item",
-      "item": "create:water_wheel",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "shaft": {
-      "type": "heracles:item",
-      "item": "create:shaft",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "placed": {
-      "title": "Place and power a water wheel in a river",
-      "icon": {"item": {"id": "create:water_wheel", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch03_world"
+ ],
+ "tasks": {
+  "water_wheel": {
+   "type": "heracles:item",
+   "item": "create:water_wheel",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "cogwheel": {
-      "item": {"id": "create:cogwheel", "count": 8},
-      "type": "heracles:item"
-    },
-    "andesite": {
-      "item": {"id": "create:andesite_alloy", "count": 8},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 6},
-      "type": "heracles:item"
-    }
+  "shaft": {
+   "type": "heracles:item",
+   "item": "create:shaft",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "Rotational Force"},
-    "subtitle": {"text": "The wheel turns because the water moves."},
-    "description": [
-      "Create's first principle: rotational force.",
-      "Everything runs on stress units.",
-      "The water wheel is the first generator.",
-      "",
-      "Bigger water = more stress capacity.",
-      "Position the wheel in flowing water for maximum output.",
-      "Shafts carry force. Cogwheels redirect it.",
-      "",
-      "This is the engine of everything that comes after.",
-      "",
-      "→ Craft a water wheel",
-      "→ Craft 4 shafts",
-      "→ Place and power it in a river [check]"
-    ],
-    "groups": {"The Rotting Gate": {"position": [0, 150]}},
-    "icon": {"item": {"id": "create:water_wheel", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "placed": {
+   "title": "Place and power a water wheel in a river",
+   "icon": {
+    "item": {
+     "id": "create:water_wheel",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "cogwheel": {
+   "item": {
+    "id": "create:cogwheel",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "andesite": {
+   "item": {
+    "id": "create:andesite_alloy",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Rotational Force"
+  },
+  "subtitle": {
+   "text": "The wheel turns because the water moves."
+  },
+  "description": [
+   "Create's first principle: rotational force.",
+   "Everything runs on stress units.",
+   "The water wheel is the first generator.",
+   "",
+   "Bigger water = more stress capacity.",
+   "Position the wheel in flowing water for maximum output.",
+   "Shafts carry force. Cogwheels redirect it.",
+   "",
+   "This is the engine of everything that comes after.",
+   "",
+   "→ Craft a water wheel",
+   "→ Craft 4 shafts",
+   "→ Place and power it in a river [check]"
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     460,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:water_wheel",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

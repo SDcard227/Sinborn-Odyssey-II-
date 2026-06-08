@@ -1,64 +1,107 @@
 {
-  "dependencies": ["ch10_r_netherite1"],
-  "tasks": {
-    "netherite_chestplate": {
-      "title": "Upgrade a Diamond Chestplate to Netherite at the Smithing Table",
-      "icon": {"item": {"id": "minecraft:netherite_chestplate", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch10_r_netherite1"
+ ],
+ "tasks": {
+  "netherite_chestplate": {
+   "title": "Upgrade a Diamond Chestplate to Netherite at the Smithing Table",
+   "icon": {
+    "item": {
+     "id": "minecraft:netherite_chestplate",
+     "count": 1
     },
-    "netherite_sword": {
-      "title": "Upgrade a Diamond Sword to Netherite",
-      "icon": {"item": {"id": "minecraft:netherite_sword", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "netherite_sword": {
+   "title": "Upgrade a Diamond Sword to Netherite",
+   "icon": {
+    "item": {
+     "id": "minecraft:netherite_sword",
+     "count": 1
     },
-    "glider_upgrade": {
-      "title": "Craft a Netherite Glider (Gliders mod — fire-resistant, longest glide, survive thunderstorms)",
-      "icon": {"item": {"id": "gliders:netherite_glider", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "netherite_ingot": {
-      "item": {"id": "minecraft:netherite_ingot", "count": 2},
-      "type": "heracles:item"
+  "glider_upgrade": {
+   "title": "Craft a Netherite Glider (Gliders mod — fire-resistant, longest glide, survive thunderstorms)",
+   "icon": {
+    "item": {
+     "id": "gliders:netherite_glider",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 6},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Netherite Tier"},
-    "subtitle": {"text": "You are now wearing what the Nether tried to destroy. It failed."},
-    "description": [
-      "Netherite is the armor ceiling before End-tier gear.",
-      "It is fire-resistant — lava does not damage it while equipped.",
-      "It knocks back harder. It lasts longer.",
-      "",
-      "The Netherite Glider (Gliders mod) is also fire-resistant.",
-      "Unlike lower tiers, lightning does not destroy it in thunderstorms.",
-      "It has the longest glide time of any tier.",
-      "This is the glider you want before infernal chapters.",
-      "",
-      "Ch11 (Where the Skin Tears) involves Cataclysm bosses.",
-      "Ch12 involves the Wither Storm at X:0 Z:0.",
-      "Netherite armor before those chapters is not optional.",
-      "It is the correct preparation.",
-      "",
-      "→ Upgrade to a Netherite Chestplate [check]",
-      "→ Upgrade to a Netherite Sword [check]",
-      "→ Craft a Netherite Glider [check]"
-    ],
-    "groups": {"The Pale Shore": {"position": [300, 150]}},
-    "icon": {"item": {"id": "minecraft:netherite_chestplate", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "netherite_ingot": {
+   "item": {
+    "id": "minecraft:netherite_ingot",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Netherite Tier"
+  },
+  "subtitle": {
+   "text": "You are now wearing what the Nether tried to destroy. It failed."
+  },
+  "description": [
+   "Netherite is the armor ceiling before End-tier gear.",
+   "It is fire-resistant — lava does not damage it while equipped.",
+   "It knocks back harder. It lasts longer.",
+   "",
+   "The Netherite Glider (Gliders mod) is also fire-resistant.",
+   "Unlike lower tiers, lightning does not destroy it in thunderstorms.",
+   "It has the longest glide time of any tier.",
+   "This is the glider you want before infernal chapters.",
+   "",
+   "Ch11 (Where the Skin Tears) involves Cataclysm bosses.",
+   "Ch12 involves the Wither Storm at X:0 Z:0.",
+   "Netherite armor before those chapters is not optional.",
+   "It is the correct preparation.",
+   "",
+   "→ Upgrade to a Netherite Chestplate [check]",
+   "→ Upgrade to a Netherite Sword [check]",
+   "→ Craft a Netherite Glider [check]"
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     920,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:netherite_chestplate",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

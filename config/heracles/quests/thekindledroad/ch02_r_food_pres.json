@@ -1,125 +1,125 @@
 {
-  "dependencies": [
-    "ch02_r_smoke"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/food_preservation"
-    },
-    "preserve_food": {
-      "title": "Preserve 5 food items using Salt or the Smoke Rack — prevent food rot",
-      "icon": {
-        "item": {
-          "id": "hearth_and_harvest:salt",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    },
-    "know_the_system": {
-      "title": "Learn: food rots if left in warm conditions (Freeze It & Heat It mod). Cold biomes, ice boxes, and smoking slow the process.",
-      "icon": {
-        "item": {
-          "id": "minecraft:ice",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch02_r_smoke"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Food Preservation scroll at a Research Pedestal"
   },
-  "rewards": {
-    "salt": {
-      "item": {
-        "id": "hearth_and_harvest:salt",
-        "count": 16
-      },
-      "type": "heracles:item"
+  "preserve_food": {
+   "title": "Preserve 5 food items using Salt or the Smoke Rack — prevent food rot",
+   "icon": {
+    "item": {
+     "id": "hearth_and_harvest:salt",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "display": {
-    "title": {
-      "translate": "Food Preservation"
+  "know_the_system": {
+   "title": "Learn: food rots if left in warm conditions (Freeze It & Heat It mod). Cold biomes, ice boxes, and smoking slow the process.",
+   "icon": {
+    "item": {
+     "id": "minecraft:ice",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Freeze It & Heat It — food has a lifespan. Plan accordingly."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.02 · FOOD PRESERVATION",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Freeze It & Heat It adds food spoilage.",
-      "  Food left in warm or neutral conditions rots over time.",
-      "  Rotten food gives debuffs instead of nutrition.",
-      "  Preservation extends food lifetime significantly.",
-      "",
-      "◈ PRESERVATION METHODS",
-      "  └ ❄ Cold Storage: ice boxes, snow biomes,",
-      "    underground cellars — slows rot dramatically",
-      "  └ 🧂 Salt Curing (Hearth & Harvest): apply salt",
-      "    to raw meat/fish — extends shelf life",
-      "  └ 🔥 Smoking (FD Smoke Rack): smoked food rots",
-      "    much slower than cooked-only food",
-      "  └ 🌡 Heat: hot food kept warm on stove stays",
-      "    at peak saturation longer",
-      "",
-      "◈ PRIORITY ORDER",
-      "  └ Immediate use: eat fresh, no preservation needed",
-      "  └ Short journey (2-3 days): smoke or salt",
-      "  └ Long journey / Nether: smoke + cold carry",
-      "  └ Base storage: cold cellar + salt reserves",
-      "",
-      "◈ SCROLL: Food Preservation",
-      "  └ Found in: cellar chests, storage ruins,",
-      "    old pantry loot, underground vault chests",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: full rot system awareness, cold storage tips",
-      "",
-      "▸ The Nether (Ch06) has no cold.",
-      "  Everything you bring will be racing the clock.",
-      "  Pack smoked. Pack salted. Pack enough.",
-      "",
-      "▶ Find the Food Preservation scroll [check]",
-      "▶ Preserve 5 food items using Salt or Smoke Rack [check]",
-      "▶ Learn the food rot system (read this) [check]",
-      "",
-      "◇ Cold Sweat temperature (Ch01) and food rot interact.",
-      "  Cold biomes = slower rot + higher thirst drain.",
-      "  Balance them."
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          300,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:ice",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "salt": {
+   "item": {
+    "id": "hearth_and_harvest:salt",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Food Preservation"
+  },
+  "subtitle": {
+   "text": "Freeze It & Heat It — food has a lifespan. Plan accordingly."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.02 · FOOD PRESERVATION",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Freeze It & Heat It adds food spoilage.",
+   "  Food left in warm or neutral conditions rots over time.",
+   "  Rotten food gives debuffs instead of nutrition.",
+   "  Preservation extends food lifetime significantly.",
+   "",
+   "◈ PRESERVATION METHODS",
+   "  └ ❄ Cold Storage: ice boxes, snow biomes,",
+   "    underground cellars — slows rot dramatically",
+   "  └ 🧂 Salt Curing (Hearth & Harvest): apply salt",
+   "    to raw meat/fish — extends shelf life",
+   "  └ 🔥 Smoking (FD Smoke Rack): smoked food rots",
+   "    much slower than cooked-only food",
+   "  └ 🌡 Heat: hot food kept warm on stove stays",
+   "    at peak saturation longer",
+   "",
+   "◈ PRIORITY ORDER",
+   "  └ Immediate use: eat fresh, no preservation needed",
+   "  └ Short journey (2-3 days): smoke or salt",
+   "  └ Long journey / Nether: smoke + cold carry",
+   "  └ Base storage: cold cellar + salt reserves",
+   "",
+   "◈ SCROLL: Food Preservation",
+   "  └ Found in: cellar chests, storage ruins,",
+   "    old pantry loot, underground vault chests",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: full rot system awareness, cold storage tips",
+   "",
+   "▸ The Nether (Ch06) has no cold.",
+   "  Everything you bring will be racing the clock.",
+   "  Pack smoked. Pack salted. Pack enough.",
+   "",
+   "▶ Find the Food Preservation scroll [check]",
+   "▶ Preserve 5 food items using Salt or Smoke Rack [check]",
+   "▶ Learn the food rot system (read this) [check]",
+   "",
+   "◇ Cold Sweat temperature (Ch01) and food rot interact.",
+   "  Cold biomes = slower rot + higher thirst drain.",
+   "  Balance them."
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     2140,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ice",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

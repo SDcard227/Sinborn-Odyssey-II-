@@ -1,116 +1,116 @@
 {
-  "dependencies": [
-    "ch05_r_beasts"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/lore_scarlet_king"
-    },
-    "red_stone": {
-      "title": "Find a naturally-generated red stone or corrupted structure (crimson, netherrack-contaminated, or red-tinted ruin)",
-      "icon": {
-        "item": {
-          "id": "minecraft:crimson_nylium",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch05_r_beasts"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Lore Scarlet King scroll at a Research Pedestal"
   },
-  "rewards": {
-    "book": {
-      "item": {
-        "id": "minecraft:written_book",
-        "count": 1
-      },
-      "type": "heracles:item"
+  "red_stone": {
+   "title": "Find a naturally-generated red stone or corrupted structure (crimson, netherrack-contaminated, or red-tinted ruin)",
+   "icon": {
+    "item": {
+     "id": "minecraft:crimson_nylium",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Lore of the Scarlet King"
-    },
-    "subtitle": {
-      "text": "The Eye-Holders didn't fail. The Scarlet King didn't win. Neither is true. Both are true."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.05 · LORE OF THE SCARLET KING",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ This scroll is older than the others.",
-      "  The ink is a different color.",
-      "  No civilization claimed authorship.",
-      "  Someone left it where civilizations go to die.",
-      "",
-      "◈ THE SCARLET KING",
-      "  └ Not a monster. A principle.",
-      "    Something that exists between worlds",
-      "    in the space where light doesn't reach.",
-      "  └ Trigger: the Wither Storm (mod) — summoning",
-      "    the wrong configuration of Wither calls something",
-      "    that is not the Wither into the world",
-      "  └ ▲ DO NOT summon the Wither Storm carelessly",
-      "  └ Ch12 is the Scarlet King confrontation chapter",
-      "    It requires specific preparation (Manifestor Trap)",
-      "",
-      "◈ WHAT THE SCROLL SAYS",
-      "  └ 'It was here before the first civilization.'",
-      "  └ 'The Eye-Holders found it and tried to seal it.'",
-      "  └ 'The Nine Eyes were not for the portal.'",
-      "  └ 'They were for the prison.'",
-      "  └ 'The prison is broken. You are the new lock.'",
-      "",
-      "◈ SCROLL: Lore of the Scarlet King",
-      "  └ Found in: red stone structures, corrupted ruins,",
-      "    ominous chests, stronghold alcoves",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: Scarlet King narrative, Ch12 foreshadowing,",
-      "    Wither Storm warning knowledge",
-      "",
-      "▸ Read this before Ch12.",
-      "  Not because it helps you fight.",
-      "  Because it explains what you're walking into.",
-      "",
-      "▶ Find The Lore of the Scarlet King scroll [check]",
-      "▶ Find a corrupted or red-tinted ruin structure [check]",
-      "",
-      "◇ The Scarlet King is defeated in Ch12",
-      "  via the Manifestor Trap mechanic.",
-      "  Direct combat is not possible — and is not the point."
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          -600,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:crimson_nylium",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "book": {
+   "item": {
+    "id": "minecraft:written_book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Lore of the Scarlet King"
+  },
+  "subtitle": {
+   "text": "The Eye-Holders didn't fail. The Scarlet King didn't win. Neither is true. Both are true."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.05 · LORE OF THE SCARLET KING",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ This scroll is older than the others.",
+   "  The ink is a different color.",
+   "  No civilization claimed authorship.",
+   "  Someone left it where civilizations go to die.",
+   "",
+   "◈ THE SCARLET KING",
+   "  └ Not a monster. A principle.",
+   "    Something that exists between worlds",
+   "    in the space where light doesn't reach.",
+   "  └ Trigger: the Wither Storm (mod) — summoning",
+   "    the wrong configuration of Wither calls something",
+   "    that is not the Wither into the world",
+   "  └ ▲ DO NOT summon the Wither Storm carelessly",
+   "  └ Ch12 is the Scarlet King confrontation chapter",
+   "    It requires specific preparation (Manifestor Trap)",
+   "",
+   "◈ WHAT THE SCROLL SAYS",
+   "  └ 'It was here before the first civilization.'",
+   "  └ 'The Eye-Holders found it and tried to seal it.'",
+   "  └ 'The Nine Eyes were not for the portal.'",
+   "  └ 'They were for the prison.'",
+   "  └ 'The prison is broken. You are the new lock.'",
+   "",
+   "◈ SCROLL: Lore of the Scarlet King",
+   "  └ Found in: red stone structures, corrupted ruins,",
+   "    ominous chests, stronghold alcoves",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: Scarlet King narrative, Ch12 foreshadowing,",
+   "    Wither Storm warning knowledge",
+   "",
+   "▸ Read this before Ch12.",
+   "  Not because it helps you fight.",
+   "  Because it explains what you're walking into.",
+   "",
+   "▶ Find The Lore of the Scarlet King scroll [check]",
+   "▶ Find a corrupted or red-tinted ruin structure [check]",
+   "",
+   "◇ The Scarlet King is defeated in Ch12",
+   "  via the Manifestor Trap mechanic.",
+   "  Direct combat is not possible — and is not the point."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     3360,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:crimson_nylium",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

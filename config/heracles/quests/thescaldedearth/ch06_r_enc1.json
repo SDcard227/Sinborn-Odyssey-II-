@@ -1,63 +1,97 @@
 {
-  "dependencies": ["ch06_boiler"],
-  "tasks": {
-    "chiseled_bookshelves": {
-      "type": "heracles:item",
-      "item": "minecraft:chiseled_bookshelf",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "ancient_book": {
-      "title": "Find an Ancient Book in a structure chest (ruins, strongholds, temples)",
-      "icon": {"item": {"id": "minecraft:book", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch06_boiler"
+ ],
+ "tasks": {
+  "chiseled_bookshelves": {
+   "type": "heracles:item",
+   "item": "minecraft:chiseled_bookshelf",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "paper": {
-      "item": {"id": "minecraft:paper", "count": 16},
-      "type": "heracles:item"
+  "ancient_book": {
+   "title": "Find an Ancient Book in a structure chest (ruins, strongholds, temples)",
+   "icon": {
+    "item": {
+     "id": "minecraft:book",
+     "count": 1
     },
-    "lapis": {
-      "item": {"id": "minecraft:lapis_lazuli", "count": 16},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Ancient Knowledge"},
-    "subtitle": {"text": "Someone wrote this. You can read it."},
-    "description": [
-      "Vanilla enchanting is randomized.",
-      "What you get depends on what the system feels like giving you.",
-      "",
-      "Ancient Books are different.",
-      "Someone wrote this enchantment down deliberately.",
-      "You extract knowledge from the page, not from chance.",
-      "",
-      "Immersive Enchanting completely replaces the enchanting table GUI",
-      "with a skill-tree system. XP cost eliminated.",
-      "Ancient Books go into Chiseled Bookshelves around the table.",
-      "The table reads the books. You unlock the branch.",
-      "",
-      "Vanilla bookshelves do nothing — only Chiseled Bookshelves work.",
-      "",
-      "→ Craft 4 Chiseled Bookshelves",
-      "→ Find an Ancient Book in a structure chest [check]"
-    ],
-    "groups": {"The Scalded Earth": {"position": [150, 450]}},
-    "icon": {"item": {"id": "minecraft:chiseled_bookshelf", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "paper": {
+   "item": {
+    "id": "minecraft:paper",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "lapis": {
+   "item": {
+    "id": "minecraft:lapis_lazuli",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Ancient Knowledge"
+  },
+  "subtitle": {
+   "text": "Someone wrote this. You can read it."
+  },
+  "description": [
+   "Vanilla enchanting is randomized.",
+   "What you get depends on what the system feels like giving you.",
+   "",
+   "Ancient Books are different.",
+   "Someone wrote this enchantment down deliberately.",
+   "You extract knowledge from the page, not from chance.",
+   "",
+   "Immersive Enchanting completely replaces the enchanting table GUI",
+   "with a skill-tree system. XP cost eliminated.",
+   "Ancient Books go into Chiseled Bookshelves around the table.",
+   "The table reads the books. You unlock the branch.",
+   "",
+   "Vanilla bookshelves do nothing — only Chiseled Bookshelves work.",
+   "",
+   "→ Craft 4 Chiseled Bookshelves",
+   "→ Find an Ancient Book in a structure chest [check]"
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     1840,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:chiseled_bookshelf",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

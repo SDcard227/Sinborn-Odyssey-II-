@@ -1,62 +1,99 @@
 {
-  "dependencies": ["ch14_trigon"],
-  "tasks": {
-    "dragon_research": {
-      "title": "Use Dragon Egg Research mechanic (End's Delight) — examine the Dragon Egg to unlock dragon food recipes",
-      "icon": {"item": {"id": "minecraft:dragon_egg", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_trigon"
+ ],
+ "tasks": {
+  "dragon_research": {
+   "title": "Use Dragon Egg Research mechanic (End's Delight) — examine the Dragon Egg to unlock dragon food recipes",
+   "icon": {
+    "item": {
+     "id": "minecraft:dragon_egg",
+     "count": 1
     },
-    "dragon_meat": {
-      "title": "Cook and eat Ender Dragon Meat (End's Delight — raw dragon meat drops from the Ender Dragon)",
-      "icon": {"item": {"id": "ends_delight:cooked_ender_dragon_meat", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "dragon_meat": {
-      "item": {"id": "ends_delight:raw_ender_dragon_meat", "count": 4},
-      "type": "heracles:item"
+  "dragon_meat": {
+   "title": "Cook and eat Ender Dragon Meat (End's Delight — raw dragon meat drops from the Ender Dragon)",
+   "icon": {
+    "item": {
+     "id": "ends_delight:cooked_ender_dragon_meat",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Eat the Dragon"},
-    "subtitle": {"text": "Dungeon Meshi principle: if you fight it, you should understand it. Understanding starts with eating it."},
-    "description": [
-      "End's Delight adds a full Ender Dragon food chain.",
-      "",
-      "Dragon Egg Research:",
-      "The Dragon Egg unlocks additional End recipes when interacted with.",
-      "This is a unique mechanic in End's Delight — the egg is a research catalyst.",
-      "Do not place it on the fountain portal. Use it for research first.",
-      "",
-      "Dragon Meat:",
-      "Raw Ender Dragon Meat drops from the Ender Dragon on kill.",
-      "It cooks into Cooked Ender Dragon Meat in a furnace or smoker.",
-      "The meat provides high saturation and unique buffs.",
-      "",
-      "The Dungeon Meshi thesis:",
-      "To understand something fully, you must consume it.",
-      "Not metaphorically. Literally.",
-      "The dragon was a guardian. Now it is food.",
-      "This is not disrespect. This is comprehension.",
-      "",
-      "→ Perform Dragon Egg Research (End's Delight) [check]",
-      "→ Cook and eat Ender Dragon Meat [check]"
-    ],
-    "groups": {"What the Void Remembers": {"position": [0, 300]}},
-    "icon": {"item": {"id": "ends_delight:cooked_ender_dragon_meat", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "dragon_meat": {
+   "item": {
+    "id": "ends_delight:raw_ender_dragon_meat",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Eat the Dragon"
+  },
+  "subtitle": {
+   "text": "Dungeon Meshi principle: if you fight it, you should understand it. Understanding starts with eating it."
+  },
+  "description": [
+   "End's Delight adds a full Ender Dragon food chain.",
+   "",
+   "Dragon Egg Research:",
+   "The Dragon Egg unlocks additional End recipes when interacted with.",
+   "This is a unique mechanic in End's Delight — the egg is a research catalyst.",
+   "Do not place it on the fountain portal. Use it for research first.",
+   "",
+   "Dragon Meat:",
+   "Raw Ender Dragon Meat drops from the Ender Dragon on kill.",
+   "It cooks into Cooked Ender Dragon Meat in a furnace or smoker.",
+   "The meat provides high saturation and unique buffs.",
+   "",
+   "The Dungeon Meshi thesis:",
+   "To understand something fully, you must consume it.",
+   "Not metaphorically. Literally.",
+   "The dragon was a guardian. Now it is food.",
+   "This is not disrespect. This is comprehension.",
+   "",
+   "→ Perform Dragon Egg Research (End's Delight) [check]",
+   "→ Cook and eat Ender Dragon Meat [check]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     920,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "ends_delight:cooked_ender_dragon_meat",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

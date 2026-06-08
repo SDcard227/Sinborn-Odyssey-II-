@@ -1,0 +1,24 @@
+{
+  "display_name": "The Wild Study",
+  "research_time": 5400,
+  "items": [
+    "dracolotl:bucket_of_dracolotl",
+    "luminousworld:butterfly_encyclopedia",
+    "luminousworld:butterfly_net",
+    "luminousworld:butterfly_net_0"
+  ],
+  "tags": [],
+  "mods": [
+    "dracolotl"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "luminousworld:butterfly_net_recipe"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

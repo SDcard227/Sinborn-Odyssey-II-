@@ -1,105 +1,105 @@
 {
-  "dependencies": [
-    "ch02_r_ani2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/rec_companions"
-    },
-    "greet": {
-      "title": "Introduce yourself to 3 MCA Reborn villagers — build relationship through dialogue",
-      "icon": {
-        "item": {
-          "id": "minecraft:emerald",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch02_r_ani2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Rec Companions scroll at a Research Pedestal"
   },
-  "rewards": {
-    "emerald": {
-      "item": {
-        "id": "minecraft:emerald",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "greet": {
+   "title": "Introduce yourself to 3 MCA Reborn villagers — build relationship through dialogue",
+   "icon": {
+    "item": {
+     "id": "minecraft:emerald",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 1
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "On Companions"
-    },
-    "subtitle": {
-      "text": "You didn't survive this long by being alone. But you have been."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.02 · ON COMPANIONS",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ MCA Reborn replaces default villagers.",
-      "  They have names. They talk. They remember.",
-      "  They can follow you, trade with you,",
-      "  and in time — stay with you.",
-      "",
-      "◈ MCA REBORN MECHANICS",
-      "  └ Talk to villagers using right-click",
-      "  └ Build relationship through gifts and dialogue",
-      "  └ Hire as a Guard, Archer, or Farmer companion",
-      "  └ Marriage requires a Rose Gold Ring",
-      "  └ Married companions share your respawn point",
-      "  └ Children can be born — they grow up over time",
-      "",
-      "◈ SCROLL: On Companions",
-      "  └ Found in: village gift chests, abandoned homes,",
-      "    traveler road loot, inn chests",
-      "  └ Research time: 10 min",
-      "  └ Unlocks: relationship mechanics awareness,",
-      "    companion hiring knowledge",
-      "",
-      "▸ The Wanderer's Notes said: give the map to someone.",
-      "  The Companion's scroll says: bring someone who can read it.",
-      "",
-      "▶ Find the On Companions scroll [check]",
-      "▶ Introduce yourself to 3 MCA villagers [check]",
-      "",
-      "◇ Rose Gold is a Numismatics ore alloy.",
-      "  Find it in mesa biomes and cave deposits.",
-      "  Ch02 → Ch05 is where relationships solidify."
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          -450,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:emerald",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "emerald": {
+   "item": {
+    "id": "minecraft:emerald",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "On Companions"
+  },
+  "subtitle": {
+   "text": "You didn't survive this long by being alone. But you have been."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.02 · ON COMPANIONS",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ MCA Reborn replaces default villagers.",
+   "  They have names. They talk. They remember.",
+   "  They can follow you, trade with you,",
+   "  and in time — stay with you.",
+   "",
+   "◈ MCA REBORN MECHANICS",
+   "  └ Talk to villagers using right-click",
+   "  └ Build relationship through gifts and dialogue",
+   "  └ Hire as a Guard, Archer, or Farmer companion",
+   "  └ Marriage requires a Rose Gold Ring",
+   "  └ Married companions share your respawn point",
+   "  └ Children can be born — they grow up over time",
+   "",
+   "◈ SCROLL: On Companions",
+   "  └ Found in: village gift chests, abandoned homes,",
+   "    traveler road loot, inn chests",
+   "  └ Research time: 10 min",
+   "  └ Unlocks: relationship mechanics awareness,",
+   "    companion hiring knowledge",
+   "",
+   "▸ The Wanderer's Notes said: give the map to someone.",
+   "  The Companion's scroll says: bring someone who can read it.",
+   "",
+   "▶ Find the On Companions scroll [check]",
+   "▶ Introduce yourself to 3 MCA villagers [check]",
+   "",
+   "◇ Rose Gold is a Numismatics ore alloy.",
+   "  Find it in mesa biomes and cave deposits.",
+   "  Ch02 → Ch05 is where relationships solidify."
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     2140,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:emerald",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

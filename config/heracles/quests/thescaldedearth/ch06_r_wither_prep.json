@@ -1,83 +1,120 @@
 {
-  "dependencies": ["ch06_r_long_road"],
-  "tasks": {
-    "wither_skulls": {
-      "type": "heracles:item",
-      "item": "minecraft:wither_skeleton_skull",
-      "amount": 3,
-      "collection": "AUTOMATIC"
+ "dependencies": [
+  "ch06_r_long_road"
+ ],
+ "tasks": {
+  "wither_skulls": {
+   "type": "heracles:item",
+   "item": "minecraft:wither_skeleton_skull",
+   "amount": 3,
+   "collection": "AUTOMATIC"
+  },
+  "last_watch_note": {
+   "title": "Note: The Last Watch scroll drops from Wither Skeletons (8% chance) — farm skulls, watch for the scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:scroll",
+     "count": 1
     },
-    "last_watch_note": {
-      "title": "Note: The Last Watch scroll drops from Wither Skeletons (8% chance) — farm skulls, watch for the scroll",
-      "icon": {"item": {"id": "historystages:scroll", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "coal": {"item": {"id": "minecraft:coal", "count": 32}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 4}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Wither Preparation"},
-    "subtitle": {"text": "Three Wither Skeleton skulls. One Wither. The Last Watch scroll drops from the skeleton, not the Wither."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.06 · THE WITHER PREPARATION",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Wither Skeletons patrol Nether Fortresses.",
-      "  They carry two things of value:",
-      "  Skulls (for summoning the Wither)",
-      "  and the Last Watch scroll (8% chance).",
-      "  You're here for both.",
-      "",
-      "◈ THE LAST WATCH SCROLL",
-      "  └ 8% drop chance from Wither Skeletons",
-      "  └ Not from the Wither itself — from the skeletons",
-      "  └ Research time: 30 min",
-      "  └ Content: the vigil tradition — standing watch",
-      "    over the dying and the dead,",
-      "    what the last observers recorded",
-      "  └ Lore: the Wither is not a creature,",
-      "    it is a failed resurrection",
-      "  └ Ch11 The Wither is a separate, harder fight",
-      "    (Wither Reincarnated mod — multiple phases)",
-      "",
-      "◈ WITHER SKELETON FARMING",
-      "  └ Spawns inside Nether Fortresses only",
-      "  └ Slow fire rate — manageable with shield",
-      "  └ Wither Effect on hit: drains health over time",
-      "    → Milk cures Wither effect",
-      "    → Golden Apple also works",
-      "  └ Skull drop rate: 2.5% base, improves with Looting",
-      "  └ Last Watch: 8% — better than skull drop rate",
-      "",
-      "◈ WITHER SUMMONING (CH11 ONLY)",
-      "  └ ▲ DO NOT summon the Wither yet",
-      "  └ The Wither in this pack is Wither Reincarnated",
-      "  └ Multiple phases, AoE attacks, high damage",
-      "  └ Wait for Ch11 preparation",
-      "",
-      "▸ The skull is the key. The scroll is the reason.",
-      "  Kill enough of them that you get both.",
-      "",
-      "▶ Collect 3 Wither Skeleton Skulls",
-      "▶ Note the Last Watch scroll drop [check]",
-      "",
-      "◇ The 3 skulls stay in inventory until Ch11.",
-      "  Don't accidentally summon the Wither.",
-      "  It will not go well."
-    ],
-    "groups": {"The Scalded Earth": {"position": [-450, 300]}},
-    "icon": {"item": {"id": "minecraft:wither_skeleton_skull", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "coal": {
+   "item": {
+    "id": "minecraft:coal",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Wither Preparation"
+  },
+  "subtitle": {
+   "text": "Three Wither Skeleton skulls. One Wither. The Last Watch scroll drops from the skeleton, not the Wither."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.06 · THE WITHER PREPARATION",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Wither Skeletons patrol Nether Fortresses.",
+   "  They carry two things of value:",
+   "  Skulls (for summoning the Wither)",
+   "  and the Last Watch scroll (8% chance).",
+   "  You're here for both.",
+   "",
+   "◈ THE LAST WATCH SCROLL",
+   "  └ 8% drop chance from Wither Skeletons",
+   "  └ Not from the Wither itself — from the skeletons",
+   "  └ Research time: 30 min",
+   "  └ Content: the vigil tradition — standing watch",
+   "    over the dying and the dead,",
+   "    what the last observers recorded",
+   "  └ Lore: the Wither is not a creature,",
+   "    it is a failed resurrection",
+   "  └ Ch11 The Wither is a separate, harder fight",
+   "    (Wither Reincarnated mod — multiple phases)",
+   "",
+   "◈ WITHER SKELETON FARMING",
+   "  └ Spawns inside Nether Fortresses only",
+   "  └ Slow fire rate — manageable with shield",
+   "  └ Wither Effect on hit: drains health over time",
+   "    → Milk cures Wither effect",
+   "    → Golden Apple also works",
+   "  └ Skull drop rate: 2.5% base, improves with Looting",
+   "  └ Last Watch: 8% — better than skull drop rate",
+   "",
+   "◈ WITHER SUMMONING (CH11 ONLY)",
+   "  └ ▲ DO NOT summon the Wither yet",
+   "  └ The Wither in this pack is Wither Reincarnated",
+   "  └ Multiple phases, AoE attacks, high damage",
+   "  └ Wait for Ch11 preparation",
+   "",
+   "▸ The skull is the key. The scroll is the reason.",
+   "  Kill enough of them that you get both.",
+   "",
+   "▶ Collect 3 Wither Skeleton Skulls",
+   "▶ Note the Last Watch scroll drop [check]",
+   "",
+   "◇ The 3 skulls stay in inventory until Ch11.",
+   "  Don't accidentally summon the Wither.",
+   "  It will not go well."
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     2300,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:wither_skeleton_skull",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

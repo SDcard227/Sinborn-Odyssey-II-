@@ -1,0 +1,77 @@
+{
+ "dependencies": [
+  "ch01_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Forager's Almanac at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:sweet_berries",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock foragers_almanac",
+   "title": "Discipline learned: The Forager's Almanac",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Forager's Almanac"
+  },
+  "subtitle": {
+   "text": "What the land gives before you ask."
+  },
+  "description": [
+   "Before the first field, there was the first forage.",
+   "Someone walked this ground starving and learned which leaf feeds and which leaf lies.",
+   "They wrote it down so you would not have to learn it the same way.",
+   "",
+   "→ Recover and study the Forager's Almanac at a Research Pedestal."
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:sweet_berries",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

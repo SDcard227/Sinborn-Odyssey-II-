@@ -1,0 +1,60 @@
+{
+ "dependencies": [
+  "ch16_world"
+ ],
+ "tasks": {
+  "craft": {
+   "type": "heracles:item",
+   "item": "irons_spellbooks:gold_crown",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Forge Iron's Crown"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Magic Vessel , Iron's Crown"
+  },
+  "subtitle": {
+   "text": "The crown that is the magic-axis itself."
+  },
+  "description": [
+   "The second Vessel. Iron's Crown , not a symbol of rule, but the literal magic axis of the world worn on a mortal head.",
+   "Gate: five_vessels_apocrypha. The Convent's most-sealed knowledge, recovered.",
+   "",
+   "Vessel 2 of 5: Magic."
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     460,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:gold_crown",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

@@ -1,116 +1,116 @@
 {
-  "dependencies": [
-    "ch03_r_rotforce"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/mechanical_processing"
-    },
-    "millstone": {
-      "type": "heracles:item",
-      "item": "create:millstone",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "basin": {
-      "type": "heracles:item",
-      "item": "create:basin",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch03_r_rotforce"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Mechanical Processing scroll at a Research Pedestal"
   },
-  "rewards": {
-    "andesite": {
-      "item": {
-        "id": "create:andesite_alloy",
-        "count": 16
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
+  "millstone": {
+   "type": "heracles:item",
+   "item": "create:millstone",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {
-      "translate": "Mechanical Processing"
-    },
-    "subtitle": {
-      "text": "The Millstone grinds. The Press compresses. The Mixer blends. All of them run on rotation."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.03 · MECHANICAL PROCESSING",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Create's processors are the factories of the early game.",
-      "  Each one takes inputs. Each one produces outputs",
-      "  that nothing else can make.",
-      "",
-      "◈ THE PROCESSOR CHAIN",
-      "  └ Millstone: grinds items into dust/nuggets",
-      "    ore → crushed ore → 2x smelting output",
-      "  └ Mechanical Press: compresses with force",
-      "    used for sheet metal, compact items",
-      "  └ Mixer (+ Basin): stirs materials together",
-      "    blaze powder + zinc = brass alloy",
-      "  └ Crushing Wheels: extreme grinding",
-      "    pair of wheels = very fine dust, rare drops",
-      "  └ Encased Fan: pushes items through processes",
-      "    fan over fire = cooking; fan over water = washing",
-      "  └ Spout: fills containers with fluids",
-      "    used for bucket automation, tanning",
-      "",
-      "◈ THE PRIORITY UPGRADE",
-      "  └ Millstone → Crushing Wheels ASAP",
-      "  └ Double ore output transforms resource economy",
-      "  └ Copper + Zinc = Brass (Ch06 requirement)",
-      "",
-      "◈ SCROLL: Mechanical Processing",
-      "  └ Found in: Create workshop ruins, factory floor chests,",
-      "    old mechanical guild notes",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: full processor chain awareness, Brass path",
-      "",
-      "▸ Every ore you smelt without Crushing Wheels",
-      "  is half the ingots you could have had.",
-      "  Build the mill. Build it first.",
-      "",
-      "▶ Find The Mechanical Processing scroll [check]",
-      "▶ Craft a Millstone",
-      "▶ Craft a Basin",
-      "",
-      "◇ Brass alloy (Mixer recipe) is required for",
-      "  Ch06 steam systems. Begin the zinc hunt early."
-    ],
-    "groups": {
-      "The Rotting Gate": {
-        "position": [
-          300,
-          600
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create:millstone",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "basin": {
+   "type": "heracles:item",
+   "item": "create:basin",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "andesite": {
+   "item": {
+    "id": "create:andesite_alloy",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Mechanical Processing"
+  },
+  "subtitle": {
+   "text": "The Millstone grinds. The Press compresses. The Mixer blends. All of them run on rotation."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.03 · MECHANICAL PROCESSING",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Create's processors are the factories of the early game.",
+   "  Each one takes inputs. Each one produces outputs",
+   "  that nothing else can make.",
+   "",
+   "◈ THE PROCESSOR CHAIN",
+   "  └ Millstone: grinds items into dust/nuggets",
+   "    ore → crushed ore → 2x smelting output",
+   "  └ Mechanical Press: compresses with force",
+   "    used for sheet metal, compact items",
+   "  └ Mixer (+ Basin): stirs materials together",
+   "    blaze powder + zinc = brass alloy",
+   "  └ Crushing Wheels: extreme grinding",
+   "    pair of wheels = very fine dust, rare drops",
+   "  └ Encased Fan: pushes items through processes",
+   "    fan over fire = cooking; fan over water = washing",
+   "  └ Spout: fills containers with fluids",
+   "    used for bucket automation, tanning",
+   "",
+   "◈ THE PRIORITY UPGRADE",
+   "  └ Millstone → Crushing Wheels ASAP",
+   "  └ Double ore output transforms resource economy",
+   "  └ Copper + Zinc = Brass (Ch06 requirement)",
+   "",
+   "◈ SCROLL: Mechanical Processing",
+   "  └ Found in: Create workshop ruins, factory floor chests,",
+   "    old mechanical guild notes",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: full processor chain awareness, Brass path",
+   "",
+   "▸ Every ore you smelt without Crushing Wheels",
+   "  is half the ingots you could have had.",
+   "  Build the mill. Build it first.",
+   "",
+   "▶ Find The Mechanical Processing scroll [check]",
+   "▶ Craft a Millstone",
+   "▶ Craft a Basin",
+   "",
+   "◇ Brass alloy (Mixer recipe) is required for",
+   "  Ch06 steam systems. Begin the zinc hunt early."
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     2300,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:millstone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

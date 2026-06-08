@@ -1,0 +1,73 @@
+{
+ "dependencies": [
+  "ch11_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "cataclysm:ignis",
+   "amount": 1,
+   "title": "Slay the beast and claim its body"
+  },
+  "harvest": {
+   "type": "heracles:item",
+   "item": "lendersdelight:ignis",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Harvest its meat , waste nothing"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "dish": {
+   "item": {
+    "id": "lendersdelight:ignis",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Cinder Course"
+  },
+  "subtitle": {
+   "text": "Cook the thing that is already fire."
+  },
+  "description": [
+   "Ignis is a furnace with a will. You put out the will and keep the heat.",
+   "The infernal kitchen reaches its apex: a course made of a fire-god's body.",
+   "",
+   "Render Ignis. Serve the cinder course."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     460,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "lendersdelight:ignis",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

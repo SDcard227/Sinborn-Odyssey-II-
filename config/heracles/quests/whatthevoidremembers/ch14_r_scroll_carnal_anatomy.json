@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Carnal Anatomy scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Carnal Anatomy scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Carnal Anatomy scroll",
-      "icon": {
-        "item": {
-          "id": "incision:flesh",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock carnal_anatomy"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Carnal Anatomy"
+  "research_scroll": {
+   "title": "Research the Carnal Anatomy scroll",
+   "icon": {
+    "item": {
+     "id": "incision:flesh",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Hidden in the margin of approved books.\"",
-      "",
-      "Already populated. Incision body-horror Nether flesh biome.",
-      "",
-      "This scroll unlocks 7 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Witch Hut",
-      "  \u00b7 Alexscaves:Chests/Witch Hut",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Carnal Anatomy] [auto]"
-    ],
-    "groups": {
-      "What the Void Remembers": {
-        "position": [
-          1250,
-          1020
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "incision:flesh",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock carnal_anatomy"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Carnal Anatomy"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Hidden in the margin of approved books.\"",
+   "",
+   "Already populated. Incision body-horror Nether flesh biome.",
+   "",
+   "This scroll unlocks 7 items.",
+   "",
+   "Look for it in:",
+   "  · Witch Hut",
+   "  · Alexscaves:Chests/Witch Hut",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Carnal Anatomy] [auto]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     0,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "incision:flesh",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

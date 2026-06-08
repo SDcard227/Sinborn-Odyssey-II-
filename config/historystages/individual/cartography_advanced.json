@@ -1,0 +1,52 @@
+{
+  "display_name": "Advanced Cartography",
+  "research_time": 2700,
+  "items": [
+    "alexscaves:natures_compass_warning",
+    "alexscaves:underground_cabin_explorer_map",
+    "create_ltab:explorer_map",
+    "create_ltab:grot_map",
+    "dungeonnowloading:labyrinth_map",
+    "dungeonnowloading:temple_of_duality_map",
+    "irons_spellbooks:ancient_battleground_map",
+    "irons_spellbooks:citadel_map",
+    "irons_spellbooks:failed_arctic_voyage_map",
+    "irons_spellbooks:ice_spider_den_map",
+    "minecraft:antique_map",
+    "quark:biome_map",
+    "quark:black_frame_map",
+    "quark:blue_frame_map",
+    "quark:brown_frame_map",
+    "quark:colored_frame_map",
+    "quark:cyan_frame_map",
+    "quark:extra/dyed_item_frame_map",
+    "quark:gray_frame_map",
+    "quark:green_frame_map",
+    "quark:light_blue_frame_map",
+    "quark:light_gray_frame_map",
+    "quark:lime_frame_map",
+    "quark:magenta_frame_map",
+    "quark:orange_frame_map",
+    "quark:pink_frame_map",
+    "quark:purple_frame_map",
+    "quark:red_frame_map",
+    "quark:white_frame_map",
+    "quark:yellow_frame_map",
+    "via_romana:charting_compass",
+    "via_romana:charting_map"
+  ],
+  "tags": [],
+  "mods": [
+    "via_romana"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "via_romana:charting_map"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

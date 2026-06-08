@@ -1,86 +1,91 @@
 {
-  "dependencies": ["ch01_world"],
-  "tasks": {
-    "find": {
-      "title": "Find and enter a village",
-      "icon": {
-        "item": {
-          "id": "minecraft:village_and_pillage",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [
+  "ch01_world"
+ ],
+ "tasks": {
+  "find": {
+   "title": "Find and enter a village",
+   "icon": {
+    "item": {
+     "id": "minecraft:village_and_pillage",
+     "count": 1
     },
-    "emerald": {
-      "type": "heracles:item",
-      "item": "minecraft:emerald",
-      "amount": 3,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "emeralds": {
-      "item": {
-        "id": "minecraft:emerald",
-        "count": 5
-      },
-      "type": "heracles:item"
-    },
-    "bread": {
-      "item": {
-        "id": "minecraft:bread",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The First Settlement"
-    },
-    "subtitle": {
-      "text": "You are not the only one who survived."
-    },
-    "description": [
-      "Villages are not obstacles. They are not scenery.",
-      "",
-      "They are people who made different choices than you.",
-      "They built walls instead of traveling.",
-      "They stayed.",
-      "",
-      "Trade with them. They have things you don't.",
-      "",
-      "→ Find and enter a village [check]",
-      "→ Obtain 3 emeralds through trade"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [150, 0]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:emerald",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "emerald": {
+   "type": "heracles:item",
+   "item": "minecraft:emerald",
+   "amount": 3,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "emeralds": {
+   "item": {
+    "id": "minecraft:emerald",
+    "count": 5
+   },
+   "type": "heracles:item"
+  },
+  "bread": {
+   "item": {
+    "id": "minecraft:bread",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The First Settlement"
+  },
+  "subtitle": {
+   "text": "You are not the only one who survived."
+  },
+  "description": [
+   "Villages are not obstacles. They are not scenery.",
+   "",
+   "They are people who made different choices than you.",
+   "They built walls instead of traveling.",
+   "They stayed.",
+   "",
+   "Trade with them. They have things you don't.",
+   "",
+   "→ Find and enter a village [check]",
+   "→ Obtain 3 emeralds through trade"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     460,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:emerald",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Sweets & Confections scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Sweets & Confections scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Sweets & Confections scroll",
-      "icon": {
-        "item": {
-          "id": "alexscaves:block_of_chiseled_chocolate",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock sweets_and_confections"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Sweets & Confections"
+  "research_scroll": {
+   "title": "Research the Sweets & Confections scroll",
+   "icon": {
+    "item": {
+     "id": "alexscaves:block_of_chiseled_chocolate",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Sun-cult records. Painted on bone.\"",
-      "",
-      "Desserts, candy, Alex's Caves Candy Cavity foods.",
-      "",
-      "This scroll unlocks 66 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Mowziesmobs:Chests/Umvuthana Grove Chest",
-      "  \u00b7 Jungle Temple",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Sweets & Confections] [auto]"
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          442,
-          780
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexscaves:block_of_chiseled_chocolate",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock confectioners_hollow"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Sweets & Confections"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Sun-cult records. Painted on bone.\"",
+   "",
+   "Desserts, candy, Alex's Caves Candy Cavity foods.",
+   "",
+   "This scroll unlocks 66 items.",
+   "",
+   "Look for it in:",
+   "  · Mowziesmobs:Chests/Umvuthana Grove Chest",
+   "  · Jungle Temple",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Sweets & Confections] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     300,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexscaves:block_of_chiseled_chocolate",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

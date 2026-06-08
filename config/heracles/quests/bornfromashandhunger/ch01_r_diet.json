@@ -1,97 +1,99 @@
 {
-  "dependencies": ["ch01_furnace"],
-  "tasks": {
-    "food1": {
-      "title": "Eat 5 different foods",
-      "icon": {
-        "item": {
-          "id": "minecraft:apple",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [
+  "ch01_furnace"
+ ],
+ "tasks": {
+  "food1": {
+   "title": "Eat 5 different foods",
+   "icon": {
+    "item": {
+     "id": "minecraft:apple",
+     "count": 1
     },
-    "cooked": {
-      "type": "heracles:item",
-      "item": "minecraft:cooked_porkchop",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "bread": {
-      "type": "heracles:item",
-      "item": "minecraft:bread",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "apple": {
-      "item": {
-        "id": "minecraft:golden_apple",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "melon": {
-      "item": {
-        "id": "minecraft:melon_slice",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
+  "cooked": {
+   "type": "heracles:item",
+   "item": "minecraft:cooked_porkchop",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {
-      "translate": "What You Eat Shapes You"
-    },
-    "subtitle": {
-      "text": "The body remembers every meal."
-    },
-    "description": [
-      "The Diet system tracks five food groups.",
-      "Grains. Proteins. Fruits. Vegetables. Sugars.",
-      "",
-      "Balance grants you buffs.",
-      "Neglect one group long enough and the debuffs begin.",
-      "",
-      "Death resets everything. Start over.",
-      "So eat widely. Eat often.",
-      "",
-      "→ Eat 5 different foods [check]",
-      "→ Cook and eat 4 porkchops",
-      "→ Eat 4 bread"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          150,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:bread",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "bread": {
+   "type": "heracles:item",
+   "item": "minecraft:bread",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "apple": {
+   "item": {
+    "id": "minecraft:golden_apple",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "melon": {
+   "item": {
+    "id": "minecraft:melon_slice",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "What You Eat Shapes You"
+  },
+  "subtitle": {
+   "text": "The body remembers every meal."
+  },
+  "description": [
+   "The Diet system tracks five food groups.",
+   "Grains. Proteins. Fruits. Vegetables. Sugars.",
+   "",
+   "Balance grants you buffs.",
+   "Neglect one group long enough and the debuffs begin.",
+   "",
+   "Death resets everything. Start over.",
+   "So eat widely. Eat often.",
+   "",
+   "→ Eat 5 different foods [check]",
+   "→ Cook and eat 4 porkchops",
+   "→ Eat 4 bread"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     1380,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:bread",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

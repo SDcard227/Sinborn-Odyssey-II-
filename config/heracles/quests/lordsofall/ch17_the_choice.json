@@ -1,0 +1,61 @@
+{
+ "dependencies": [
+  "ch17_convergence"
+ ],
+ "tasks": {
+  "decide": {
+   "type": "heracles:check",
+   "title": "Make the choice the Convent would not write for you"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 64
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Lords of All"
+  },
+  "subtitle": {
+   "text": "The cycle's gene-encoded trap. Or the place it finally breaks."
+  },
+  "description": [
+   "You hold the Five Vessels. The Unification ritual waits. The Sealing would name you Sovereign , Resistance III, suspended only by your own mortality.",
+   "Four paths open, all of them finishing what the Nightwarden could not:",
+   "  → Ascend, and become the next Crimson King , the cycle, unbroken.",
+   "  → Ascend, and REFUSE the pattern , the thing no Heir has done.",
+   "  → Take off the collar by becoming the crime, the Mass Accumulate.",
+   "  → Walk away. Let the cycle end with you, content to have understood it.",
+   "",
+   "The Convent does not write the next chapter. You do."
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     1380,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "ptd:philosopher_stone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
+}

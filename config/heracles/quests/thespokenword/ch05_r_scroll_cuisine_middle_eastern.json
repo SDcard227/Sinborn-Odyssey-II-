@@ -1,77 +1,77 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The Hearth of the Crescent scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Hearth of the Crescent scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The Hearth of the Crescent scroll",
-      "icon": {
-        "item": {
-          "id": "aquamirae_delight:angled_kebab",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock cuisine_middle_eastern"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The Hearth of the Crescent"
+  "research_scroll": {
+   "title": "Research the The Hearth of the Crescent scroll",
+   "icon": {
+    "item": {
+     "id": "aquamirae_delight:angled_kebab",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Copied between every civilization that touched it.\"",
-      "",
-      "This scroll unlocks 81 items.",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The Hearth of the Crescent] [auto]"
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          1040,
-          900
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "aquamirae_delight:angled_kebab",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock bread_of_the_black_land"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Hearth of the Crescent"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Copied between every civilization that touched it.\"",
+   "",
+   "This scroll unlocks 81 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Hearth of the Crescent] [auto]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     0,
+     1350
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "aquamirae_delight:angled_kebab",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

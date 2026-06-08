@@ -1,85 +1,81 @@
 {
-  "dependencies": [
-    "ch01_descent"
-  ],
-  "tasks": {
-    "campfire": {
-      "type": "heracles:item",
-      "item": "minecraft:campfire",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "flint": {
-      "type": "heracles:item",
-      "item": "minecraft:flint_and_steel",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch01_descent"
+ ],
+ "tasks": {
+  "campfire": {
+   "type": "heracles:item",
+   "item": "minecraft:campfire",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "torches": {
-      "item": {
-        "id": "minecraft:torch",
-        "count": 32
-      },
-      "type": "heracles:item"
-    },
-    "age": {
-      "command": "history unlock kindled_age",
-      "type": "heracles:command"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "subtitle": {
-      "translate": "You were not chosen. You were simply born."
-    },
-    "description": [
-      "\"You were not chosen. You were not summoned.",
-      "You were simply born into a world that does not care whether you survive.\"",
-      "",
-      "This is your story now.",
-      "",
-      "Make fire. Learn what cold costs.",
-      "",
-      "→ Craft a flint and steel",
-      "→ Build a campfire"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          0,
-          600
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:flint_and_steel",
-        "count": 1,
-        "nbt": {
-          "Damage": 0
-        }
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
-    "title": {
-      "translate": "The Kindled Age"
-    }
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "flint": {
+   "type": "heracles:item",
+   "item": "minecraft:flint_and_steel",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "torches": {
+   "item": {
+    "id": "minecraft:torch",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "subtitle": {
+   "translate": "You were not chosen. You were simply born."
+  },
+  "description": [
+   "\"You were not chosen. You were not summoned.",
+   "You were simply born into a world that does not care whether you survive.\"",
+   "",
+   "This is your story now.",
+   "",
+   "Make fire. Learn what cold costs.",
+   "",
+   "→ Craft a flint and steel",
+   "→ Build a campfire"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     1840,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:flint_and_steel",
+    "count": 1,
+    "nbt": {
+     "Damage": 0
+    }
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+  "title": {
+   "translate": "The Kindled Age"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

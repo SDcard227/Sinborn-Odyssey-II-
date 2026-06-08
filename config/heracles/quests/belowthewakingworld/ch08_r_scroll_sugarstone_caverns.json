@@ -1,79 +1,79 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The Sugarstone Caverns scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Sugarstone Caverns scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The Sugarstone Caverns scroll",
-      "icon": {
-        "item": {
-          "id": "alexscaves:candy_cane_block",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock sugarstone_caverns"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The Sugarstone Caverns"
+  "research_scroll": {
+   "title": "Research the The Sugarstone Caverns scroll",
+   "icon": {
+    "item": {
+     "id": "alexscaves:candy_cane_block",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Chocolate bedrock, gumdrop bloom, and a sweetness that bites back."
-    },
-    "description": [
-      "\"Everything here is edible. Almost nothing here is safe.\"",
-      "",
-      "This scroll unlocks 78 items.",
-      "",
-      "\u25c8 Found in: chests of the Candy Cavity biome",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The Sugarstone Caverns] [auto]"
-    ],
-    "groups": {
-      "Below the Waking World": {
-        "position": [
-          1364,
-          1020
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexscaves:candy_cane_block",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock confectioners_hollow"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Sugarstone Caverns"
+  },
+  "subtitle": {
+   "text": "Chocolate bedrock, gumdrop bloom, and a sweetness that bites back."
+  },
+  "description": [
+   "\"Everything here is edible. Almost nothing here is safe.\"",
+   "",
+   "This scroll unlocks 78 items.",
+   "",
+   "◈ Found in: chests of the Candy Cavity biome",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Sugarstone Caverns] [auto]"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     300,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexscaves:candy_cane_block",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

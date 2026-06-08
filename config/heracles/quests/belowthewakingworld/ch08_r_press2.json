@@ -1,64 +1,95 @@
 {
-  "dependencies": ["ch08_r_press1"],
-  "tasks": {
-    "full_descent": {
-      "title": "Reach Y:-50 or below while keeping Sculk Sickness in check and Pressure managed",
-      "icon": {"item": {"id": "minecraft:deepslate", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch08_r_press1"
+ ],
+ "tasks": {
+  "full_descent": {
+   "title": "Reach Y:-50 or below while keeping Sculk Sickness in check and Pressure managed",
+   "icon": {
+    "item": {
+     "id": "minecraft:deepslate",
+     "count": 1
     },
-    "deepslate_stack": {
-      "type": "heracles:item",
-      "item": "minecraft:deepslate",
-      "amount": 128,
-      "collection": "AUTOMATIC"
-    },
-    "echo_shard_deep": {
-      "type": "heracles:item",
-      "item": "minecraft:echo_shard",
-      "amount": 3,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "diamond": {
-      "item": {"id": "minecraft:diamond", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
+  "deepslate_stack": {
+   "type": "heracles:item",
+   "item": "minecraft:deepslate",
+   "amount": 128,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The Deepest Cut"},
-    "subtitle": {"text": "Y:-50. The bedrock layer replaced by deepslate. You are all the way down."},
-    "description": [
-      "The world below Y:0 is deepslate.",
-      "Below Y:-40 is the territory of the Ancient City and ancient things.",
-      "",
-      "Pressure. Sculk Sickness. The Warden.",
-      "The abyssal age is not just an age unlock.",
-      "It is a proof of competence — that you can manage all three",
-      "at the same time, at the bottom of the world.",
-      "",
-      "Y:-50 is where diamond veins are most concentrated.",
-      "It is also where you are furthest from anything safe.",
-      "Both of these facts are equally true.",
-      "",
-      "→ Reach Y:-50 with Pressure and Sculk managed [check]",
-      "→ Collect 128 Deepslate (for future building and crafting)",
-      "→ Collect 3 more Echo Shards from deep city loot"
-    ],
-    "groups": {"Below the Waking World": {"position": [300, 150]}},
-    "icon": {"item": {"id": "minecraft:deepslate", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "echo_shard_deep": {
+   "type": "heracles:item",
+   "item": "minecraft:echo_shard",
+   "amount": 3,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "diamond": {
+   "item": {
+    "id": "minecraft:diamond",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Deepest Cut"
+  },
+  "subtitle": {
+   "text": "Y:-50. The bedrock layer replaced by deepslate. You are all the way down."
+  },
+  "description": [
+   "The world below Y:0 is deepslate.",
+   "Below Y:-40 is the territory of the Ancient City and ancient things.",
+   "",
+   "Pressure. Sculk Sickness. The Warden.",
+   "The abyssal age is not just an age unlock.",
+   "It is a proof of competence — that you can manage all three",
+   "at the same time, at the bottom of the world.",
+   "",
+   "Y:-50 is where diamond veins are most concentrated.",
+   "It is also where you are furthest from anything safe.",
+   "Both of these facts are equally true.",
+   "",
+   "→ Reach Y:-50 with Pressure and Sculk managed [check]",
+   "→ Collect 128 Deepslate (for future building and crafting)",
+   "→ Collect 3 more Echo Shards from deep city loot"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     1680,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:deepslate",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

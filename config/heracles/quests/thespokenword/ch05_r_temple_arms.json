@@ -1,117 +1,117 @@
 {
-  "dependencies": [
-    "ch05_r_fallen"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/temple_arms"
-    },
-    "exotic_weapon": {
-      "title": "Obtain a weapon from a dungeon loot table — not crafted, found in the world",
-      "icon": {
-        "item": {
-          "id": "minecraft:golden_sword",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch05_r_fallen"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Temple Arms scroll at a Research Pedestal"
   },
-  "rewards": {
-    "gold": {
-      "item": {
-        "id": "minecraft:gold_ingot",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "exotic_weapon": {
+   "title": "Obtain a weapon from a dungeon loot table — not crafted, found in the world",
+   "icon": {
+    "item": {
+     "id": "minecraft:golden_sword",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Temple Arms"
-    },
-    "subtitle": {
-      "text": "The fallen civilizations left their weapons where the living would find them. They wanted someone to pick them up."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.05 · THE TEMPLE ARMS",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Every civilization armed itself differently.",
-      "  The weapons they left in their temples",
-      "  are better than what you can craft right now.",
-      "  They were designed for the things that killed them.",
-      "  Some of those things are still alive.",
-      "",
-      "◈ DUNGEON LOOT WEAPONS",
-      "  └ Dungeon Now Loading: structured dungeons with",
-      "    boss rooms containing unique weapon chests",
-      "  └ RealmRPG Fallen Adventurers: adventurer bodies",
-      "    carry weapons they died holding",
-      "  └ Cataclysm: Ignis/Netherite Monstrosity rooms",
-      "    have pre-fight weapon caches",
-      "  └ Strongholds: ancient armory rooms with pre-enchanted",
-      "    weapons from the Scholar civilization",
-      "",
-      "◈ SIMPLY SWORDS + DUNGEON WEAPONS",
-      "  └ Dungeons Now Loading drops Simply Swords weapons",
-      "  └ Gem-socketed variants are dungeon-exclusive",
-      "  └ Some boss rooms drop class-specific weapons",
-      "    (Forgotten Knight sword, Oni Slayer blade)",
-      "",
-      "◈ SCROLL: The Temple Arms",
-      "  └ Found in: temple treasure rooms, ancient armory ruins,",
-      "    crypt weapon caches, boss pre-rooms",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: dungeon weapon loot table awareness,",
-      "    fallen civilization weapon lore",
-      "",
-      "▸ The last warrior of the Craftsmen civilization",
-      "  placed their weapon in the temple armory",
-      "  instead of taking it with them.",
-      "  They wanted it found by the right person.",
-      "  Pick it up. Try to be the right person.",
-      "",
-      "▶ Find The Temple Arms scroll [check]",
-      "▶ Obtain a weapon from dungeon loot [check]",
-      "",
-      "◇ RealmRPG Fallen Adventurers spawn as world mobs.",
-      "  They carry gear their previous owner brought.",
-      "  Fight them carefully — they use it."
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          -300,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:golden_sword",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "gold": {
+   "item": {
+    "id": "minecraft:gold_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Temple Arms"
+  },
+  "subtitle": {
+   "text": "The fallen civilizations left their weapons where the living would find them. They wanted someone to pick them up."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.05 · THE TEMPLE ARMS",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Every civilization armed itself differently.",
+   "  The weapons they left in their temples",
+   "  are better than what you can craft right now.",
+   "  They were designed for the things that killed them.",
+   "  Some of those things are still alive.",
+   "",
+   "◈ DUNGEON LOOT WEAPONS",
+   "  └ Dungeon Now Loading: structured dungeons with",
+   "    boss rooms containing unique weapon chests",
+   "  └ RealmRPG Fallen Adventurers: adventurer bodies",
+   "    carry weapons they died holding",
+   "  └ Cataclysm: Ignis/Netherite Monstrosity rooms",
+   "    have pre-fight weapon caches",
+   "  └ Strongholds: ancient armory rooms with pre-enchanted",
+   "    weapons from the Scholar civilization",
+   "",
+   "◈ SIMPLY SWORDS + DUNGEON WEAPONS",
+   "  └ Dungeons Now Loading drops Simply Swords weapons",
+   "  └ Gem-socketed variants are dungeon-exclusive",
+   "  └ Some boss rooms drop class-specific weapons",
+   "    (Forgotten Knight sword, Oni Slayer blade)",
+   "",
+   "◈ SCROLL: The Temple Arms",
+   "  └ Found in: temple treasure rooms, ancient armory ruins,",
+   "    crypt weapon caches, boss pre-rooms",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: dungeon weapon loot table awareness,",
+   "    fallen civilization weapon lore",
+   "",
+   "▸ The last warrior of the Craftsmen civilization",
+   "  placed their weapon in the temple armory",
+   "  instead of taking it with them.",
+   "  They wanted it found by the right person.",
+   "  Pick it up. Try to be the right person.",
+   "",
+   "▶ Find The Temple Arms scroll [check]",
+   "▶ Obtain a weapon from dungeon loot [check]",
+   "",
+   "◇ RealmRPG Fallen Adventurers spawn as world mobs.",
+   "  They carry gear their previous owner brought.",
+   "  Fight them carefully — they use it."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1520,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:golden_sword",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

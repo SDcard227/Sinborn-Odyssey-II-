@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Falconry & Advanced Whistlecraft scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Falconry & Advanced Whistlecraft scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Falconry & Advanced Whistlecraft scroll",
-      "icon": {
-        "item": {
-          "id": "alexscaves:galena_gauntlet",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock falconry"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Falconry & Advanced Whistlecraft"
+  "research_scroll": {
+   "title": "Research the Falconry & Advanced Whistlecraft scroll",
+   "icon": {
+    "item": {
+     "id": "alexscaves:galena_gauntlet",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Sun-cult records. Painted on bone.\"",
-      "",
-      "Alex's Mobs falcon training kit.",
-      "",
-      "This scroll unlocks 21 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Mowziesmobs:Chests/Umvuthana Grove Chest",
-      "  \u00b7 Jungle Temple",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Falconry & Advanced Whistlecraft] [auto]"
-    ],
-    "groups": {
-      "Below the Waking World": {
-        "position": [
-          846,
-          960
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexscaves:galena_gauntlet",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock falconry"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Falconry & Advanced Whistlecraft"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Sun-cult records. Painted on bone.\"",
+   "",
+   "Alex's Mobs falcon training kit.",
+   "",
+   "This scroll unlocks 21 items.",
+   "",
+   "Look for it in:",
+   "  · Mowziesmobs:Chests/Umvuthana Grove Chest",
+   "  · Jungle Temple",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Falconry & Advanced Whistlecraft] [auto]"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     0,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexscaves:galena_gauntlet",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

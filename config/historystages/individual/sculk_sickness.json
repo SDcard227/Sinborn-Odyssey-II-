@@ -1,0 +1,27 @@
+{
+  "display_name": "On Sculk Sickness",
+  "research_time": 5400,
+  "items": [
+    "minecraft:echo_shard",
+    "minecraft:recovery_compass",
+    "minecraft:sculk",
+    "minecraft:sculk_catalyst",
+    "minecraft:sculk_shrieker",
+    "minecraft:sculk_vein",
+    "sculksickness:ambrosia_herb",
+    "sculksickness:bloom_fruit",
+    "sculksickness:sculk_blossom",
+    "sculksickness:shrieker_bone",
+    "sculksickness:vile_herb"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

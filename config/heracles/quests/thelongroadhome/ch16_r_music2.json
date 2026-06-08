@@ -1,66 +1,103 @@
 {
-  "dependencies": ["ch16_r_music1"],
-  "tasks": {
-    "music_hall": {
-      "title": "Build a music hall in your settlement — a dedicated space with jukebox, instruments, and seating",
-      "icon": {"item": {"id": "minecraft:jukebox", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_r_music1"
+ ],
+ "tasks": {
+  "music_hall": {
+   "title": "Build a music hall in your settlement — a dedicated space with jukebox, instruments, and seating",
+   "icon": {
+    "item": {
+     "id": "minecraft:jukebox",
+     "count": 1
     },
-    "etched_collection": {
-      "title": "Engrave 5 different Etched music discs — give the settlement a full music rotation",
-      "icon": {"item": {"id": "etched:music_disc", "count": 5}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "jukebox": {
-      "item": {"id": "minecraft:jukebox", "count": 1},
-      "type": "heracles:item"
+  "etched_collection": {
+   "title": "Engrave 5 different Etched music discs — give the settlement a full music rotation",
+   "icon": {
+    "item": {
+     "id": "etched:music_disc",
+     "count": 5
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Music Hall"},
-    "subtitle": {"text": "A music hall is permanent. It says: we intend to stay, and we intend to have music while we do."},
-    "description": [
-      "The music hall is the cultural center of your settlement.",
-      "It does not need to be large — it needs to be intentional.",
-      "",
-      "Recommended design:",
-      "- Ground floor: jukebox with disc selection, seating from vanilla blocks",
-      "- Instrument stands: Xerca instruments for manual play",
-      "- Wall display: Exposure photographs of the adventure",
-      "- Adjacent wine rack: Vinery wine storage",
-      "",
-      "5 Etched discs give the settlement a full rotation.",
-      "The Etched engraving system lets you source any audio.",
-      "Choose music that fits the chapter you are in.",
-      "",
-      "The kingdom you built in Ch12 now has:",
-      "An army (Villager Recruits).",
-      "A road network (Via Romana).",
-      "An economy (Numismatics + Bountiful).",
-      "A wine cellar (Vinery).",
-      "A music hall (Etched + Xerca).",
-      "This is not a survival base anymore.",
-      "This is a civilization.",
-      "",
-      "→ Build a dedicated music hall [check]",
-      "→ Engrave 5 Etched discs [check]"
-    ],
-    "groups": {"The Long Road Home": {"position": [-300, 150]}},
-    "icon": {"item": {"id": "minecraft:jukebox", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "jukebox": {
+   "item": {
+    "id": "minecraft:jukebox",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Music Hall"
+  },
+  "subtitle": {
+   "text": "A music hall is permanent. It says: we intend to stay, and we intend to have music while we do."
+  },
+  "description": [
+   "The music hall is the cultural center of your settlement.",
+   "It does not need to be large — it needs to be intentional.",
+   "",
+   "Recommended design:",
+   "- Ground floor: jukebox with disc selection, seating from vanilla blocks",
+   "- Instrument stands: Xerca instruments for manual play",
+   "- Wall display: Exposure photographs of the adventure",
+   "- Adjacent wine rack: Vinery wine storage",
+   "",
+   "5 Etched discs give the settlement a full rotation.",
+   "The Etched engraving system lets you source any audio.",
+   "Choose music that fits the chapter you are in.",
+   "",
+   "The kingdom you built in Ch12 now has:",
+   "An army (Villager Recruits).",
+   "A road network (Via Romana).",
+   "An economy (Numismatics + Bountiful).",
+   "A wine cellar (Vinery).",
+   "A music hall (Etched + Xerca).",
+   "This is not a survival base anymore.",
+   "This is a civilization.",
+   "",
+   "→ Build a dedicated music hall [check]",
+   "→ Engrave 5 Etched discs [check]"
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     920,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:jukebox",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

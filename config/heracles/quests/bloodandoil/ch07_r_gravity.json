@@ -1,77 +1,120 @@
 {
-  "dependencies": ["ch07_r_expl2"],
-  "tasks": {
-    "gravity_note": {
-      "title": "Learn: Create Gravity mod makes The End behave like the Moon (no oxygen, low gravity) — prepare before entry",
-      "icon": {"item": {"id": "minecraft:ender_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch07_r_expl2"
+ ],
+ "tasks": {
+  "gravity_note": {
+   "title": "Learn: Create Gravity mod makes The End behave like the Moon (no oxygen, low gravity) — prepare before entry",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_eye",
+     "count": 1
     },
-    "oxygen_prep": {
-      "title": "Research oxygen supply options for Moon/End environments (potions, helmets, or environment mods)",
-      "icon": {"item": {"id": "minecraft:glass_bottle", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ender_pearl": {"item": {"id": "minecraft:ender_pearl", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 3}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Gravity Warning"},
-    "subtitle": {"text": "Create: Gravity makes The End the Moon. No oxygen. Low gravity. The explosion radius triples."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.07 · THE GRAVITY WARNING",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Create: Gravity changes the End dimension.",
-      "  It becomes the Moon.",
-      "  No oxygen: you suffocate without protection.",
-      "  Low gravity: jumps carry you much farther.",
-      "  Explosions: blast radius triples.",
-      "  The End Dragon fight is a different experience.",
-      "",
-      "◈ CREATE: GRAVITY EFFECTS",
-      "  └ End = Moon: no breathable air",
-      "    → You need oxygen supply on entry",
-      "  └ Low gravity: movement is floaty",
-      "    → Learn the new jump arc before combat",
-      "  └ Explosion radius ×3: Ghast fireballs in End?",
-      "    (Ghasts don't spawn there, but End Crystal",
-      "    explosions are devastating — destroy them first)",
-      "  └ The Dragon fight: same mechanics, different arena",
-      "    crystals explode harder, platform movement changed",
-      "",
-      "◈ END ENTRY PREPARATION",
-      "  └ Ch13 is the End chapter — full prep listed there",
-      "  └ For Ch07 awareness: note the Gravity mod exists",
-      "  └ Oxygen: Water Breathing potion does NOT help",
-      "    (that's underwater — End is vacuum)",
-      "  └ Slow Falling + low gravity = very high jumps",
-      "    (useful for reaching the pillars)",
-      "",
-      "▸ The scroll was written by the first engineer",
-      "  who flew a cannon ball into The End to test it.",
-      "  The blast radius was notably larger than expected.",
-      "  They noted it and came home.",
-      "",
-      "▶ Learn the Create: Gravity End warning [check]",
-      "▶ Research oxygen supply options [check]",
-      "",
-      "◇ Ch13 (The Shattered Law) is the End chapter.",
-      "  The Gravity warning is preview information.",
-      "  Do not enter The End until Ch13 prep is complete."
-    ],
-    "groups": {"Blood and Oil": {"position": [300, 600]}},
-    "icon": {"item": {"id": "minecraft:ender_eye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "oxygen_prep": {
+   "title": "Research oxygen supply options for Moon/End environments (potions, helmets, or environment mods)",
+   "icon": {
+    "item": {
+     "id": "minecraft:glass_bottle",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "ender_pearl": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Gravity Warning"
+  },
+  "subtitle": {
+   "text": "Create: Gravity makes The End the Moon. No oxygen. Low gravity. The explosion radius triples."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.07 · THE GRAVITY WARNING",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Create: Gravity changes the End dimension.",
+   "  It becomes the Moon.",
+   "  No oxygen: you suffocate without protection.",
+   "  Low gravity: jumps carry you much farther.",
+   "  Explosions: blast radius triples.",
+   "  The End Dragon fight is a different experience.",
+   "",
+   "◈ CREATE: GRAVITY EFFECTS",
+   "  └ End = Moon: no breathable air",
+   "    → You need oxygen supply on entry",
+   "  └ Low gravity: movement is floaty",
+   "    → Learn the new jump arc before combat",
+   "  └ Explosion radius ×3: Ghast fireballs in End?",
+   "    (Ghasts don't spawn there, but End Crystal",
+   "    explosions are devastating — destroy them first)",
+   "  └ The Dragon fight: same mechanics, different arena",
+   "    crystals explode harder, platform movement changed",
+   "",
+   "◈ END ENTRY PREPARATION",
+   "  └ Ch13 is the End chapter — full prep listed there",
+   "  └ For Ch07 awareness: note the Gravity mod exists",
+   "  └ Oxygen: Water Breathing potion does NOT help",
+   "    (that's underwater — End is vacuum)",
+   "  └ Slow Falling + low gravity = very high jumps",
+   "    (useful for reaching the pillars)",
+   "",
+   "▸ The scroll was written by the first engineer",
+   "  who flew a cannon ball into The End to test it.",
+   "  The blast radius was notably larger than expected.",
+   "  They noted it and came home.",
+   "",
+   "▶ Learn the Create: Gravity End warning [check]",
+   "▶ Research oxygen supply options [check]",
+   "",
+   "◇ Ch13 (The Shattered Law) is the End chapter.",
+   "  The Gravity warning is preview information.",
+   "  Do not enter The End until Ch13 prep is complete."
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     1680,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

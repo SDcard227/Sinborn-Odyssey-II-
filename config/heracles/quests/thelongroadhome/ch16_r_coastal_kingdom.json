@@ -1,90 +1,133 @@
 {
-  "dependencies": ["ch16_r_ships1"],
-  "tasks": {
-    "coastal_outpost": {
-      "title": "Build a coastal outpost with a ship dock — stone pier + mooring post + supply chest",
-      "icon": {"item": {"id": "minecraft:stone_bricks", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_r_ships1"
+ ],
+ "tasks": {
+  "coastal_outpost": {
+   "title": "Build a coastal outpost with a ship dock — stone pier + mooring post + supply chest",
+   "icon": {
+    "item": {
+     "id": "minecraft:stone_bricks",
+     "count": 1
     },
-    "ocean_biome": {
-      "title": "Explore 3 distinct ocean biomes by ship — Warm Ocean, Cold Ocean, Deep Ocean",
-      "icon": {"item": {"id": "minecraft:cod", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "cooked_cod": {"item": {"id": "minecraft:cooked_cod", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Coastal Kingdom"},
-    "subtitle": {"text": "The kingdom has coastlines. The coastlines have resources. The sea has biomes. Map them by ship."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.16 · THE COASTAL KINGDOM",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Overworld has coastlines.",
-      "  Every biome that touches water has unique resources.",
-      "  Warm Ocean: Coral, Tropical Fish, Treasure Maps.",
-      "  Cold Ocean: Cod, Salmon, underwater ruins.",
-      "  Deep Ocean: Ocean Monuments, Elder Guardian, Sponge.",
-      "  The Antique Atlas fills in your ocean biome coverage.",
-      "  The ship makes the difference between a survey and a journey.",
-      "",
-      "◈ OCEAN BIOME RESOURCES",
-      "  └ Warm Ocean: Coral Blocks (decoration, bone meal source),",
-      "    Tropical Fish, Sea Pickles (light source)",
-      "    Aquamirae adds warm ocean exclusive content",
-      "  └ Cold/Lukewarm Ocean: Cod + Salmon (fishing, Farmer's Delight),",
-      "    Kelp (fuel, food), Sea Grass",
-      "  └ Deep Ocean: Ocean Monument (Sponge + Gold Blocks, Elder Guardian),",
-      "    Buried Treasure (Heart of the Sea → Conduit build)",
-      "    Aquamirae structures may generate in deep ocean",
-      "",
-      "◈ CONDUIT BUILD",
-      "  └ Heart of the Sea: found in Buried Treasure (map from Shipwreck)",
-      "  └ Conduit: Heart of the Sea + 8 Nautilus Shell → Conduit",
-      "    Places in ocean: gives Conduit Power (water breathing +",
-      "    night vision + haste) to nearby players",
-      "  └ Conduit range: 32-96 blocks depending on activation prism size",
-      "  └ Prism materials: Prismarine (Ocean Monument drops)",
-      "    Full Conduit activation requires Ocean Monument clear",
-      "",
-      "◈ COASTAL OUTPOST BUILD",
-      "  └ Stone pier extending into water (8-12 blocks long)",
-      "  └ Mooring post (any fence post): ties ship when docked",
-      "  └ Supply chest: restocking stop for sea voyages",
-      "  └ Torch/End Rod lighting: mark dock location at night",
-      "  └ Antique Atlas marker: mark all coastal outpost locations",
-      "",
-      "▸ The previous civilizations built inland.",
-      "  They watched the ocean from their walls.",
-      "  You are building the first coastal outpost",
-      "  in this world's recorded history.",
-      "  The Antique Atlas will show a marker at the coast.",
-      "  That marker means: we went there.",
-      "  We went there by ship.",
-      "  We built something when we arrived.",
-      "",
-      "▶ Build a coastal outpost with ship dock [check]",
-      "▶ Explore 3 distinct ocean biomes by ship [check]",
-      "",
-      "◇ Tide/TidesDelight (fishing content mod): fishing in ocean biomes",
-      "  yields Tide-specific fish with unique food stat profiles.',",
-      "  Midas Touch fish (Tide): gold-related mechanic — check mod guide.",
-      "  Coastal outpost near Warm Ocean is optimal for Tide fishing."
-    ],
-    "groups": {"The Long Road Home": {"position": [-600, 150]}},
-    "icon": {"item": {"id": "minecraft:cod", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "ocean_biome": {
+   "title": "Explore 3 distinct ocean biomes by ship — Warm Ocean, Cold Ocean, Deep Ocean",
+   "icon": {
+    "item": {
+     "id": "minecraft:cod",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "cooked_cod": {
+   "item": {
+    "id": "minecraft:cooked_cod",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Coastal Kingdom"
+  },
+  "subtitle": {
+   "text": "The kingdom has coastlines. The coastlines have resources. The sea has biomes. Map them by ship."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.16 · THE COASTAL KINGDOM",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Overworld has coastlines.",
+   "  Every biome that touches water has unique resources.",
+   "  Warm Ocean: Coral, Tropical Fish, Treasure Maps.",
+   "  Cold Ocean: Cod, Salmon, underwater ruins.",
+   "  Deep Ocean: Ocean Monuments, Elder Guardian, Sponge.",
+   "  The Antique Atlas fills in your ocean biome coverage.",
+   "  The ship makes the difference between a survey and a journey.",
+   "",
+   "◈ OCEAN BIOME RESOURCES",
+   "  └ Warm Ocean: Coral Blocks (decoration, bone meal source),",
+   "    Tropical Fish, Sea Pickles (light source)",
+   "    Aquamirae adds warm ocean exclusive content",
+   "  └ Cold/Lukewarm Ocean: Cod + Salmon (fishing, Farmer's Delight),",
+   "    Kelp (fuel, food), Sea Grass",
+   "  └ Deep Ocean: Ocean Monument (Sponge + Gold Blocks, Elder Guardian),",
+   "    Buried Treasure (Heart of the Sea → Conduit build)",
+   "    Aquamirae structures may generate in deep ocean",
+   "",
+   "◈ CONDUIT BUILD",
+   "  └ Heart of the Sea: found in Buried Treasure (map from Shipwreck)",
+   "  └ Conduit: Heart of the Sea + 8 Nautilus Shell → Conduit",
+   "    Places in ocean: gives Conduit Power (water breathing +",
+   "    night vision + haste) to nearby players",
+   "  └ Conduit range: 32-96 blocks depending on activation prism size",
+   "  └ Prism materials: Prismarine (Ocean Monument drops)",
+   "    Full Conduit activation requires Ocean Monument clear",
+   "",
+   "◈ COASTAL OUTPOST BUILD",
+   "  └ Stone pier extending into water (8-12 blocks long)",
+   "  └ Mooring post (any fence post): ties ship when docked",
+   "  └ Supply chest: restocking stop for sea voyages",
+   "  └ Torch/End Rod lighting: mark dock location at night",
+   "  └ Antique Atlas marker: mark all coastal outpost locations",
+   "",
+   "▸ The previous civilizations built inland.",
+   "  They watched the ocean from their walls.",
+   "  You are building the first coastal outpost",
+   "  in this world's recorded history.",
+   "  The Antique Atlas will show a marker at the coast.",
+   "  That marker means: we went there.",
+   "  We went there by ship.",
+   "  We built something when we arrived.",
+   "",
+   "▶ Build a coastal outpost with ship dock [check]",
+   "▶ Explore 3 distinct ocean biomes by ship [check]",
+   "",
+   "◇ Tide/TidesDelight (fishing content mod): fishing in ocean biomes",
+   "  yields Tide-specific fish with unique food stat profiles.',",
+   "  Midas Touch fish (Tide): gold-related mechanic — check mod guide.",
+   "  Coastal outpost near Warm Ocean is optimal for Tide fishing."
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     920,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:cod",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

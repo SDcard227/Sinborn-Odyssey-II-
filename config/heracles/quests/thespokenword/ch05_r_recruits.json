@@ -1,77 +1,120 @@
 {
-  "dependencies": ["ch05_r_rec3"],
-  "tasks": {
-    "siege_unit": {
-      "title": "Recruit a Siege Crossbowman unit (Villager Recruits — ranged defense for your settlement)",
-      "icon": {"item": {"id": "minecraft:crossbow", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch05_r_rec3"
+ ],
+ "tasks": {
+  "siege_unit": {
+   "title": "Recruit a Siege Crossbowman unit (Villager Recruits — ranged defense for your settlement)",
+   "icon": {
+    "item": {
+     "id": "minecraft:crossbow",
+     "count": 1
     },
-    "patrol": {
-      "title": "Assign 3 Villager Recruits to patrol your base perimeter",
-      "icon": {"item": {"id": "minecraft:iron_sword", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "iron": {"item": {"id": "minecraft:iron_ingot", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 3}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Garrison"},
-    "subtitle": {"text": "A village without guards is just a list of things for raiders to take."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.05 · THE GARRISON",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Villager Recruits adds 6 unit types",
-      "  you can hire from villages and deploy.",
-      "  They patrol. They guard. They follow.",
-      "  They die protecting what you've built.",
-      "",
-      "◈ THE 6 UNIT TYPES",
-      "  └ ⚔ Infantry: melee ground unit, iron sword",
-      "    good for close defense, cheap to hire",
-      "  └ ⚔ Archer: ranged, bow, medium range",
-      "    stand-and-fire defense",
-      "  └ ⚔ Crossbowman: longer range than archer,",
-      "    higher per-shot damage",
-      "  └ ⚔ Cavalry: mounted fighter, mobile patrol",
-      "    best for perimeter coverage",
-      "  └ ⚔ Knight: heavy armor, high HP, slow",
-      "    ideal for chokepoint defense",
-      "  └ ⚔ Siege Crossbowman: high-power ranged,",
-      "    anti-boss, best single-target DPS unit",
-      "",
-      "◈ VILLAGE DEFENSE STRATEGY",
-      "  └ Perimeter: cavalry patrol around outer wall",
-      "  └ Gate: 2 knights + 2 crossbowmen at entry",
-      "  └ Towers: archers on elevated positions",
-      "  └ Boss rooms: bring 4-6 siege crossbowmen",
-      "    They can solo most Ch08-Ch11 encounters",
-      "",
-      "▸ The garrison does not replace your presence.",
-      "  It buys you time to come back.",
-      "  Set it up before the raids start.",
-      "",
-      "▶ Recruit a Siege Crossbowman [check]",
-      "▶ Assign 3 Villager Recruits to patrol [check]",
-      "",
-      "◇ Siege Crossbowmen cost more to hire.",
-      "  The economy to support a full garrison",
-      "  is the main driver of Ch05 currency need.",
-      "  Do bounty boards to fund it."
-    ],
-    "groups": {"The Spoken Word": {"position": [450, 300]}},
-    "icon": {"item": {"id": "minecraft:crossbow", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "patrol": {
+   "title": "Assign 3 Villager Recruits to patrol your base perimeter",
+   "icon": {
+    "item": {
+     "id": "minecraft:iron_sword",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "iron": {
+   "item": {
+    "id": "minecraft:iron_ingot",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Garrison"
+  },
+  "subtitle": {
+   "text": "A village without guards is just a list of things for raiders to take."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.05 · THE GARRISON",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Villager Recruits adds 6 unit types",
+   "  you can hire from villages and deploy.",
+   "  They patrol. They guard. They follow.",
+   "  They die protecting what you've built.",
+   "",
+   "◈ THE 6 UNIT TYPES",
+   "  └ ⚔ Infantry: melee ground unit, iron sword",
+   "    good for close defense, cheap to hire",
+   "  └ ⚔ Archer: ranged, bow, medium range",
+   "    stand-and-fire defense",
+   "  └ ⚔ Crossbowman: longer range than archer,",
+   "    higher per-shot damage",
+   "  └ ⚔ Cavalry: mounted fighter, mobile patrol",
+   "    best for perimeter coverage",
+   "  └ ⚔ Knight: heavy armor, high HP, slow",
+   "    ideal for chokepoint defense",
+   "  └ ⚔ Siege Crossbowman: high-power ranged,",
+   "    anti-boss, best single-target DPS unit",
+   "",
+   "◈ VILLAGE DEFENSE STRATEGY",
+   "  └ Perimeter: cavalry patrol around outer wall",
+   "  └ Gate: 2 knights + 2 crossbowmen at entry",
+   "  └ Towers: archers on elevated positions",
+   "  └ Boss rooms: bring 4-6 siege crossbowmen",
+   "    They can solo most Ch08-Ch11 encounters",
+   "",
+   "▸ The garrison does not replace your presence.",
+   "  It buys you time to come back.",
+   "  Set it up before the raids start.",
+   "",
+   "▶ Recruit a Siege Crossbowman [check]",
+   "▶ Assign 3 Villager Recruits to patrol [check]",
+   "",
+   "◇ Siege Crossbowmen cost more to hire.",
+   "  The economy to support a full garrison",
+   "  is the main driver of Ch05 currency need.",
+   "  Do bounty boards to fund it."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     2440,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:crossbow",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

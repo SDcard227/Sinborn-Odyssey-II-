@@ -1,63 +1,106 @@
 {
-  "dependencies": ["ch08_r_alex1"],
-  "tasks": {
-    "all_six": {
-      "title": "Discover at least 3 distinct Alex's Caves biome types",
-      "icon": {"item": {"id": "minecraft:calcite", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch08_r_alex1"
+ ],
+ "tasks": {
+  "all_six": {
+   "title": "Discover at least 3 distinct Alex's Caves biome types",
+   "icon": {
+    "item": {
+     "id": "minecraft:calcite",
+     "count": 1
     },
-    "boss_cave": {
-      "title": "Find a boss chamber or unique structure inside Alex's Caves",
-      "icon": {"item": {"id": "minecraft:bone_block", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "boss_cave": {
+   "title": "Find a boss chamber or unique structure inside Alex's Caves",
+   "icon": {
+    "item": {
+     "id": "minecraft:bone_block",
+     "count": 1
     },
-    "cave_mob_kill": {
-      "title": "Kill at least one unique Alex's Caves creature (alexscaves: entity)",
-      "icon": {"item": {"id": "minecraft:bone", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "calcite": {
-      "item": {"id": "minecraft:calcite", "count": 32},
-      "type": "heracles:item"
+  "cave_mob_kill": {
+   "title": "Kill at least one unique Alex's Caves creature (alexscaves: entity)",
+   "icon": {
+    "item": {
+     "id": "minecraft:bone",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Deep Biomes"},
-    "subtitle": {"text": "Not all caves are empty. Most of them are angry."},
-    "description": [
-      "Alex's Caves biome mobs are unique to their environment.",
-      "They do not follow vanilla rules for aggression or behavior.",
-      "Approach each new biome type as if it is hostile until proven otherwise.",
-      "",
-      "The Nucleeper (alexscaves:nucleeper) is in the Cryptic Eye chain.",
-      "Remember this. You will come back for it.",
-      "",
-      "Boss chambers and unique structures appear in cave biomes.",
-      "They hold Alex's Caves loot tables — unique items per biome.",
-      "",
-      "The cave system and the ocean system overlap at depth.",
-      "The Abyssal Chasm biome connects to the abyssal age narrative.",
-      "",
-      "→ Discover 3 distinct cave biome types [check]",
-      "→ Find a boss chamber or unique structure [check]",
-      "→ Kill a unique Alex's Caves creature [check]"
-    ],
-    "groups": {"Below the Waking World": {"position": [300, 0]}},
-    "icon": {"item": {"id": "minecraft:calcite", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "calcite": {
+   "item": {
+    "id": "minecraft:calcite",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Deep Biomes"
+  },
+  "subtitle": {
+   "text": "Not all caves are empty. Most of them are angry."
+  },
+  "description": [
+   "Alex's Caves biome mobs are unique to their environment.",
+   "They do not follow vanilla rules for aggression or behavior.",
+   "Approach each new biome type as if it is hostile until proven otherwise.",
+   "",
+   "The Nucleeper (alexscaves:nucleeper) is in the Cryptic Eye chain.",
+   "Remember this. You will come back for it.",
+   "",
+   "Boss chambers and unique structures appear in cave biomes.",
+   "They hold Alex's Caves loot tables — unique items per biome.",
+   "",
+   "The cave system and the ocean system overlap at depth.",
+   "The Abyssal Chasm biome connects to the abyssal age narrative.",
+   "",
+   "→ Discover 3 distinct cave biome types [check]",
+   "→ Find a boss chamber or unique structure [check]",
+   "→ Kill a unique Alex's Caves creature [check]"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     1220,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:calcite",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

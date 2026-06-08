@@ -1,97 +1,97 @@
 {
-  "dependencies": [
-    "ch13_outer"
-  ],
-  "tasks": {
-    "chorus_ready": {
-      "title": "Stockpile 16 Chorus Fruit (void mobility for the deep End)",
-      "icon": {
-        "item": {
-          "id": "minecraft:chorus_fruit",
-          "count": 16
-        },
-        "type": "heracles:item"
-      },
-      "amount": 16,
-      "collection": "AUTOMATIC",
-      "type": "heracles:item"
+ "dependencies": [
+  "ch13_outer"
+ ],
+ "tasks": {
+  "chorus_ready": {
+   "title": "Stockpile 16 Chorus Fruit (void mobility for the deep End)",
+   "icon": {
+    "item": {
+     "id": "minecraft:chorus_fruit",
+     "count": 16
     },
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/void_gate_studied"
-    }
+    "type": "heracles:item"
+   },
+   "amount": 16,
+   "collection": "AUTOMATIC",
+   "type": "heracles:item"
   },
-  "rewards": {
-    "end_stone": {
-      "item": {
-        "id": "minecraft:end_stone_bricks",
-        "count": 64
-      },
-      "type": "heracles:item"
-    },
-    "purpur": {
-      "item": {
-        "id": "minecraft:purpur_block",
-        "count": 32
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 12
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Void Age"
-    },
-    "subtitle": {
-      "text": "You are on the other side now. The old laws no longer apply."
-    },
-    "description": [
-      "The Shattered Law ends here.",
-      "You have broken the seal, entered the End, and reached the outer islands.",
-      "The void is no longer a threat. It is a territory.",
-      "",
-      "The Void Gate scroll unlocks the deep End \u2014 the structures and enemies that exist",
-      "further from the central island than most players ever travel.",
-      "Find it in End City loot chests during your outer island exploration.",
-      "",
-      "The void age is the age of inheritance completed.",
-      "You carry twelve civilizations' worth of knowledge.",
-      "You carry the record of every mistake they made.",
-      "The question now is what you do with it.",
-      "",
-      "\u2192 Stockpile Chorus Fruit for deep End mobility [collect]",
-      "\u2192 Research the Void Gate scroll (End City loot) [check]",
-      "\u2192 The Void Age begins [command]"
-    ],
-    "groups": {
-      "The Shattered Law": {
-        "position": [
-          0,
-          750
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:chorus_fruit",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Void Gate scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "end_stone": {
+   "item": {
+    "id": "minecraft:end_stone_bricks",
+    "count": 64
+   },
+   "type": "heracles:item"
+  },
+  "purpur": {
+   "item": {
+    "id": "minecraft:purpur_block",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Void Age"
+  },
+  "subtitle": {
+   "text": "You are on the other side now. The old laws no longer apply."
+  },
+  "description": [
+   "The Shattered Law ends here.",
+   "You have broken the seal, entered the End, and reached the outer islands.",
+   "The void is no longer a threat. It is a territory.",
+   "",
+   "The Void Gate scroll unlocks the deep End — the structures and enemies that exist",
+   "further from the central island than most players ever travel.",
+   "Find it in End City loot chests during your outer island exploration.",
+   "",
+   "The void age is the age of inheritance completed.",
+   "You carry twelve civilizations' worth of knowledge.",
+   "You carry the record of every mistake they made.",
+   "The question now is what you do with it.",
+   "",
+   "→ Stockpile Chorus Fruit for deep End mobility [collect]",
+   "→ Research the Void Gate scroll (End City loot) [check]",
+   "→ The Void Age begins [command]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     2300,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:chorus_fruit",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

@@ -1,91 +1,134 @@
 {
-  "dependencies": ["ch16_forge"],
-  "tasks": {
-    "ancient_tome": {
-      "title": "Obtain an Ancient Tome (Quark) from dungeon loot — use it to upgrade an enchantment above the vanilla cap",
-      "icon": {"item": {"id": "minecraft:enchanted_book", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_forge"
+ ],
+ "tasks": {
+  "ancient_tome": {
+   "title": "Obtain an Ancient Tome (Quark) from dungeon loot — use it to upgrade an enchantment above the vanilla cap",
+   "icon": {
+    "item": {
+     "id": "minecraft:enchanted_book",
+     "count": 1
     },
-    "matrix_enchanting": {
-      "title": "Use Quark Matrix Enchanting to apply multiple enchantments in one session",
-      "icon": {"item": {"id": "minecraft:lapis_lazuli", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "lapis": {"item": {"id": "minecraft:lapis_lazuli", "count": 32}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Ancient Tomes"},
-    "subtitle": {"text": "Ancient Tomes push enchantments one level past the cap. Sharpness V becomes VI. Efficiency V becomes VI. That is the ceiling."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.16 · ANCIENT TOMES",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Quark adds Ancient Tomes to dungeon loot.",
-      "  An Ancient Tome applied to an item at its enchantment cap",
-      "  increases that enchantment by 1 level beyond the vanilla maximum.",
-      "  Sharpness V → Sharpness VI.",
-      "  Efficiency V → Efficiency VI.",
-      "  Protection IV → Protection V.",
-      "  This is the enchanting ceiling. Ch16 is where you reach it.",
-      "",
-      "◈ ANCIENT TOME MECHANICS",
-      "  └ Source: rare dungeon loot (Strongholds, Bastions, Ancient Cities)",
-      "    Also found in: Lootr structure chests (per-player loot reset)",
-      "  └ Usage: apply to an item that already has the enchantment at cap",
-      "    (the item must have Sharpness V before you can apply Sharpness Tome)",
-      "  └ Stacking: each Tome upgrades one enchantment by one level",
-      "    Multiple Tomes on same enchantment: does NOT stack past VI",
-      "  └ Rarity: rare — collect over multiple dungeon runs",
-      "    Budget Tomes carefully — use on Celestial Netherite only",
-      "",
-      "◈ QUARK MATRIX ENCHANTING",
-      "  └ Matrix Enchanting (Quark): allows applying enchantments",
-      "    in a specific pattern on the enchanting table grid",
-      "  └ Effect: more control over which enchants are offered",
-      "    (reduces RNG by pattern manipulation)",
-      "  └ Works alongside Immersive Enchanting for layered control",
-      "  └ Most useful for: multi-enchant sessions where you want",
-      "    specific combinations not typically offered together",
-      "",
-      "◈ TARGET ENCHANTMENTS FOR ANCIENT TOMES",
-      "  └ Sword: Sharpness VI (from V → VI)",
-      "  └ Pickaxe: Efficiency VI (from V → VI)",
-      "  └ Bow: Power VI (from V → VI)",
-      "  └ Armor: Protection V (from IV → V) — only if tomes are surplus",
-      "    (Protection V yields diminishing returns vs Celestial base armor)",
-      "",
-      "▸ The knowledge in an Ancient Tome",
-      "  was written before the current age.",
-      "  The enchanting systems of previous civilizations",
-      "  were slightly better than yours.",
-      "  They left the knowledge in dungeons",
-      "  for whoever came next.",
-      "  That is you.",
-      "  Use it.",
-      "",
-      "▶ Obtain and use an Ancient Tome [check]",
-      "▶ Use Quark Matrix Enchanting for a multi-enchant session [check]",
-      "",
-      "◇ Ancient Tomes are rare enough that you should plan which",
-      "  three enchantments to upgrade first.",
-      "  Recommended: Sharpness VI sword + Efficiency VI pick + Power VI bow.",
-      "  These three cover the three primary activities of Ch17.",
-      "  Save spare Tomes for any new weapons that drop in Ch17."
-    ],
-    "groups": {"The Long Road Home": {"position": [600, 150]}},
-    "icon": {"item": {"id": "minecraft:enchanted_book", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "matrix_enchanting": {
+   "title": "Use Quark Matrix Enchanting to apply multiple enchantments in one session",
+   "icon": {
+    "item": {
+     "id": "minecraft:lapis_lazuli",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "lapis": {
+   "item": {
+    "id": "minecraft:lapis_lazuli",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Ancient Tomes"
+  },
+  "subtitle": {
+   "text": "Ancient Tomes push enchantments one level past the cap. Sharpness V becomes VI. Efficiency V becomes VI. That is the ceiling."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.16 · ANCIENT TOMES",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Quark adds Ancient Tomes to dungeon loot.",
+   "  An Ancient Tome applied to an item at its enchantment cap",
+   "  increases that enchantment by 1 level beyond the vanilla maximum.",
+   "  Sharpness V → Sharpness VI.",
+   "  Efficiency V → Efficiency VI.",
+   "  Protection IV → Protection V.",
+   "  This is the enchanting ceiling. Ch16 is where you reach it.",
+   "",
+   "◈ ANCIENT TOME MECHANICS",
+   "  └ Source: rare dungeon loot (Strongholds, Bastions, Ancient Cities)",
+   "    Also found in: Lootr structure chests (per-player loot reset)",
+   "  └ Usage: apply to an item that already has the enchantment at cap",
+   "    (the item must have Sharpness V before you can apply Sharpness Tome)",
+   "  └ Stacking: each Tome upgrades one enchantment by one level",
+   "    Multiple Tomes on same enchantment: does NOT stack past VI",
+   "  └ Rarity: rare — collect over multiple dungeon runs",
+   "    Budget Tomes carefully — use on Celestial Netherite only",
+   "",
+   "◈ QUARK MATRIX ENCHANTING",
+   "  └ Matrix Enchanting (Quark): allows applying enchantments",
+   "    in a specific pattern on the enchanting table grid",
+   "  └ Effect: more control over which enchants are offered",
+   "    (reduces RNG by pattern manipulation)",
+   "  └ Works alongside Immersive Enchanting for layered control",
+   "  └ Most useful for: multi-enchant sessions where you want",
+   "    specific combinations not typically offered together",
+   "",
+   "◈ TARGET ENCHANTMENTS FOR ANCIENT TOMES",
+   "  └ Sword: Sharpness VI (from V → VI)",
+   "  └ Pickaxe: Efficiency VI (from V → VI)",
+   "  └ Bow: Power VI (from V → VI)",
+   "  └ Armor: Protection V (from IV → V) — only if tomes are surplus",
+   "    (Protection V yields diminishing returns vs Celestial base armor)",
+   "",
+   "▸ The knowledge in an Ancient Tome",
+   "  was written before the current age.",
+   "  The enchanting systems of previous civilizations",
+   "  were slightly better than yours.",
+   "  They left the knowledge in dungeons",
+   "  for whoever came next.",
+   "  That is you.",
+   "  Use it.",
+   "",
+   "▶ Obtain and use an Ancient Tome [check]",
+   "▶ Use Quark Matrix Enchanting for a multi-enchant session [check]",
+   "",
+   "◇ Ancient Tomes are rare enough that you should plan which",
+   "  three enchantments to upgrade first.",
+   "  Recommended: Sharpness VI sword + Efficiency VI pick + Power VI bow.",
+   "  These three cover the three primary activities of Ch17.",
+   "  Save spare Tomes for any new weapons that drop in Ch17."
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     1380,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:enchanted_book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

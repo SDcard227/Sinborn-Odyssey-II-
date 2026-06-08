@@ -1,91 +1,134 @@
 {
-  "dependencies": ["ch15_world"],
-  "tasks": {
-    "dracolotl_check": {
-      "title": "Find your Dracolotl companion (Ch04) — confirm it still lives, bring it to your base",
-      "icon": {"item": {"id": "minecraft:water_bucket", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_world"
+ ],
+ "tasks": {
+  "dracolotl_check": {
+   "title": "Find your Dracolotl companion (Ch04) — confirm it still lives, bring it to your base",
+   "icon": {
+    "item": {
+     "id": "minecraft:water_bucket",
+     "count": 1
     },
-    "trigon_home": {
-      "title": "Bring your tamed Baby Trigon to the Overworld — your End companion returns with you",
-      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "salmon": {"item": {"id": "minecraft:cooked_salmon", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Companions Return"},
-    "subtitle": {"text": "You left the Dracolotl behind in Ch04. You tamed the Trigon in Ch14. The homecoming includes them both."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.15 · THE COMPANIONS RETURN",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The companions thread is the Frieren thread.",
-      "  Frieren traveled for 1000 years.",
-      "  She kept finding the people and places she had left behind.",
-      "  You tamed the Dracolotl in Ch04.",
-      "  You tamed the Baby Trigon in Ch14.",
-      "  The homecoming is not complete until both are home.",
-      "",
-      "◈ THE DRACOLOTL",
-      "  └ Hatched in Ch04 from an egg found in ocean biomes",
-      "  └ Dracolotl abilities: swims, flies short distances,",
-      "    expels water jet, scales walls",
-      "  └ Left behind: likely at Ch04 base or somewhere in the Overworld",
-      "  └ Find it: if you built a home for it (water tank, base pond),",
-      "    check there first",
-      "  └ If lost: Dracolotl can be re-tamed with a new egg from ocean",
-      "    (Ocean Monument adjacent biome — Drowned/warm ocean floors)",
-      "  └ Bring it to your Ch15 base: build a dedicated Dracolotl habitat",
-      "    (stone + water pool + enclosed swim area)",
-      "",
-      "◈ THE BABY TRIGON",
-      "  └ Tamed in Ch14 (The Baby Trigon quest)",
-      "  └ Crossing dimensions: tamed mobs can return through End portal",
-      "    Lead the Trigon to the End portal → they follow through",
-      "  └ If Trigon is too large for portal: check mod behavior",
-      "    (some dragon mods have a 'call' mechanic for cross-dimension)",
-      "  └ Overworld behavior: Trigon adapts to Overworld after End",
-      "    (no longer gets the End dimension bonus — but still fights)",
-      "",
-      "◈ COMPANION HOUSING",
-      "  └ Build dedicated areas at your main base for each companion",
-      "    Dracolotl: water feature with swim space",
-      "    Baby Trigon: large outdoor pen or stable with End Stone decor",
-      "  └ Feed them regularly: companion mobs may have hunger mechanics",
-      "  └ Name tags: both should be named to prevent despawn",
-      "  └ The base that houses both companions is the kingdom proper",
-      "",
-      "▸ Fern (Frieren's apprentice) never understood why Frieren",
-      "  went back to look for things she had left behind.",
-      "  The companions were left in Ch04.",
-      "  It is Ch15.",
-      "  You went back.",
-      "  That is the answer Fern needed.",
-      "",
-      "▶ Find your Dracolotl and bring it home [check]",
-      "▶ Bring the Baby Trigon to the Overworld [check]",
-      "",
-      "◇ The Companions quest is primarily narrative.",
-      "  The reward is not the items — it is the completion.",
-      "  A home with a Dracolotl in the pond and a Trigon in the yard",
-      "  is the Ch15 aesthetic.",
-      "  Build it that way."
-    ],
-    "groups": {"After the Dragon": {"position": [300, 300]}},
-    "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "trigon_home": {
+   "title": "Bring your tamed Baby Trigon to the Overworld — your End companion returns with you",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_pearl",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "salmon": {
+   "item": {
+    "id": "minecraft:cooked_salmon",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Companions Return"
+  },
+  "subtitle": {
+   "text": "You left the Dracolotl behind in Ch04. You tamed the Trigon in Ch14. The homecoming includes them both."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.15 · THE COMPANIONS RETURN",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The companions thread is the Frieren thread.",
+   "  Frieren traveled for 1000 years.",
+   "  She kept finding the people and places she had left behind.",
+   "  You tamed the Dracolotl in Ch04.",
+   "  You tamed the Baby Trigon in Ch14.",
+   "  The homecoming is not complete until both are home.",
+   "",
+   "◈ THE DRACOLOTL",
+   "  └ Hatched in Ch04 from an egg found in ocean biomes",
+   "  └ Dracolotl abilities: swims, flies short distances,",
+   "    expels water jet, scales walls",
+   "  └ Left behind: likely at Ch04 base or somewhere in the Overworld",
+   "  └ Find it: if you built a home for it (water tank, base pond),",
+   "    check there first",
+   "  └ If lost: Dracolotl can be re-tamed with a new egg from ocean",
+   "    (Ocean Monument adjacent biome — Drowned/warm ocean floors)",
+   "  └ Bring it to your Ch15 base: build a dedicated Dracolotl habitat",
+   "    (stone + water pool + enclosed swim area)",
+   "",
+   "◈ THE BABY TRIGON",
+   "  └ Tamed in Ch14 (The Baby Trigon quest)",
+   "  └ Crossing dimensions: tamed mobs can return through End portal",
+   "    Lead the Trigon to the End portal → they follow through",
+   "  └ If Trigon is too large for portal: check mod behavior",
+   "    (some dragon mods have a 'call' mechanic for cross-dimension)",
+   "  └ Overworld behavior: Trigon adapts to Overworld after End",
+   "    (no longer gets the End dimension bonus — but still fights)",
+   "",
+   "◈ COMPANION HOUSING",
+   "  └ Build dedicated areas at your main base for each companion",
+   "    Dracolotl: water feature with swim space",
+   "    Baby Trigon: large outdoor pen or stable with End Stone decor",
+   "  └ Feed them regularly: companion mobs may have hunger mechanics",
+   "  └ Name tags: both should be named to prevent despawn",
+   "  └ The base that houses both companions is the kingdom proper",
+   "",
+   "▸ Fern (Frieren's apprentice) never understood why Frieren",
+   "  went back to look for things she had left behind.",
+   "  The companions were left in Ch04.",
+   "  It is Ch15.",
+   "  You went back.",
+   "  That is the answer Fern needed.",
+   "",
+   "▶ Find your Dracolotl and bring it home [check]",
+   "▶ Bring the Baby Trigon to the Overworld [check]",
+   "",
+   "◇ The Companions quest is primarily narrative.",
+   "  The reward is not the items — it is the completion.",
+   "  A home with a Dracolotl in the pond and a Trigon in the yard",
+   "  is the Ch15 aesthetic.",
+   "  Build it that way."
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     460,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

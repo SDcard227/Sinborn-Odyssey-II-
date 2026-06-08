@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Vinification (Wines) scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Vinification (Wines) scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Vinification (Wines) scroll",
-      "icon": {
-        "item": {
-          "id": "brewinandchewin:beer",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock vinification"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Vinification (Wines)"
+  "research_scroll": {
+   "title": "Research the Vinification (Wines) scroll",
+   "icon": {
+    "item": {
+     "id": "brewinandchewin:beer",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Sun-cult records. Painted on bone.\"",
-      "",
-      "Letsdo Vinery, Nether Vinery, Create Vinery \u2014 all grape wines.",
-      "",
-      "This scroll unlocks 40 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Mowziesmobs:Chests/Umvuthana Grove Chest",
-      "  \u00b7 Jungle Temple",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Vinification (Wines)] [auto]"
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          650,
-          660
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "brewinandchewin:beer",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock spoils_of_the_sea_roads"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Vinification (Wines)"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Sun-cult records. Painted on bone.\"",
+   "",
+   "Letsdo Vinery, Nether Vinery, Create Vinery — all grape wines.",
+   "",
+   "This scroll unlocks 40 items.",
+   "",
+   "Look for it in:",
+   "  · Mowziesmobs:Chests/Umvuthana Grove Chest",
+   "  · Jungle Temple",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Vinification (Wines)] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     300,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "brewinandchewin:beer",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

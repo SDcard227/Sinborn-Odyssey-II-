@@ -1,77 +1,77 @@
 {
-  "dependencies": [
-    "ch01_furnace"
-  ],
-  "tasks": {
-    "iron": {
-      "type": "heracles:item",
-      "item": "minecraft:raw_iron",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    },
-    "copper": {
-      "type": "heracles:item",
-      "item": "minecraft:raw_copper",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch01_furnace"
+ ],
+ "tasks": {
+  "iron": {
+   "type": "heracles:item",
+   "item": "minecraft:raw_iron",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "pick": {
-      "item": {
-        "id": "minecraft:iron_ingot",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "What the Mountain Gives"
-    },
-    "subtitle": {
-      "text": "Iron is where civilizations begin to differ."
-    },
-    "description": [
-      "Some civilizations found iron and built machines.",
-      "Some found it and built weapons.",
-      "Some found it and traded it away.",
-      "",
-      "You found it. What you do with it is the question.",
-      "",
-      "→ Mine 16 raw iron",
-      "→ Mine 8 raw copper"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          -150,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:raw_iron",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "copper": {
+   "type": "heracles:item",
+   "item": "minecraft:raw_copper",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "pick": {
+   "item": {
+    "id": "minecraft:iron_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "What the Mountain Gives"
+  },
+  "subtitle": {
+   "text": "Iron is where civilizations begin to differ."
+  },
+  "description": [
+   "Some civilizations found iron and built machines.",
+   "Some found it and built weapons.",
+   "Some found it and traded it away.",
+   "",
+   "You found it. What you do with it is the question.",
+   "",
+   "→ Mine 16 raw iron",
+   "→ Mine 8 raw copper"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     1380,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:raw_iron",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

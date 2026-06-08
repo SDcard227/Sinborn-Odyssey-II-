@@ -1,0 +1,24 @@
+{
+  "display_name": "Dragon Husbandry",
+  "research_time": 10800,
+  "items": [
+    "endertrigon:baby_dragon_egg",
+    "endertrigon:dragon_horn",
+    "endertrigon:tooting_dragon_horn"
+  ],
+  "tags": [],
+  "mods": [
+    "endertrigon"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "endertrigon:dragon_horn",
+    "endertrigon:tools/dragon_horn"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

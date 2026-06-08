@@ -1,0 +1,19 @@
+{
+  "display_name": "The Scroll of the Old Eye",
+  "research_time": 3600,
+  "items": [
+    "endrem:old_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "sinborn:mechanical_crafting/old_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

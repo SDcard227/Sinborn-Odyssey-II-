@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the On Infernal Passage scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the On Infernal Passage scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the On Infernal Passage scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock infernal_passage"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "On Infernal Passage"
+  "research_scroll": {
+   "title": "Research the On Infernal Passage scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Hidden in the margin of approved books.\"",
-      "",
-      "Already populated. Nether dimension gate.",
-      "",
-      "Opens 1 dimension. Gates 16 tags.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Witch Hut",
-      "  \u00b7 Alexscaves:Chests/Witch Hut",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [On Infernal Passage] [auto]"
-    ],
-    "groups": {
-      "Where the Skin Tears": {
-        "position": [
-          1203,
-          840
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "historystages:research_scroll",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock infernal_passage"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "On Infernal Passage"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Hidden in the margin of approved books.\"",
+   "",
+   "Already populated. Nether dimension gate.",
+   "",
+   "Opens 1 dimension. Gates 16 tags.",
+   "",
+   "Look for it in:",
+   "  · Witch Hut",
+   "  · Alexscaves:Chests/Witch Hut",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [On Infernal Passage] [auto]"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     0,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "historystages:research_scroll",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

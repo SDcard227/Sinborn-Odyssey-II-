@@ -1,78 +1,115 @@
 {
-  "dependencies": ["ch06_r_steam_pressure"],
-  "tasks": {
-    "rail": {
-      "type": "heracles:item",
-      "item": "minecraft:rail",
-      "amount": 64,
-      "collection": "AUTOMATIC"
+ "dependencies": [
+  "ch06_r_steam_pressure"
+ ],
+ "tasks": {
+  "rail": {
+   "type": "heracles:item",
+   "item": "minecraft:rail",
+   "amount": 64,
+   "collection": "AUTOMATIC"
+  },
+  "minecart": {
+   "title": "Build a Nether rail line connecting at least 2 Nether locations — 1 block in Nether = 8 blocks overworld",
+   "icon": {
+    "item": {
+     "id": "minecraft:minecart",
+     "count": 1
     },
-    "minecart": {
-      "title": "Build a Nether rail line connecting at least 2 Nether locations — 1 block in Nether = 8 blocks overworld",
-      "icon": {"item": {"id": "minecraft:minecart", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "powered_rail": {"item": {"id": "minecraft:powered_rail", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 4}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Nether Rail"},
-    "subtitle": {"text": "1 block in the Nether = 8 blocks in the Overworld. Build the highway here."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.06 · THE NETHER RAIL",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Nether ceiling at Y=128 is the highway.",
-      "  1 block of travel in the Nether",
-      "  = 8 blocks in the Overworld.",
-      "  A 1,000-block Nether rail = 8,000 blocks surface.",
-      "  The road builders knew this.",
-      "  They built the highways underground first.",
-      "",
-      "◈ NETHER HIGHWAY DESIGN",
-      "  └ Build at Y=122-126 (just below ceiling)",
-      "  └ Full enclosure: blocks on all sides to stop Ghasts",
-      "  └ Powered Rails every 32 blocks minimum",
-      "  └ Minecart: basic fast travel",
-      "  └ Steam 'n Rails (Ch07): adds train network on rails",
-      "    faster than minecarts, carries passengers/cargo",
-      "",
-      "◈ PORTAL NETWORK DESIGN",
-      "  └ Link portals: build portal at exact Nether coordinates",
-      "    = Nether X/8, Nether Z/8 of Overworld destination",
-      "  └ Label portals with item frames + named items",
-      "  └ Rail to each portal node = entire world accessible",
-      "",
-      "◈ STEAM 'N RAILS PREVIEW",
-      "  └ Ch07 unlocks steam-powered trains",
-      "  └ Trains run on existing rail networks",
-      "  └ Train + Nether highway = fastest overworld travel",
-      "  └ Build the rail now, add the train in Ch07",
-      "",
-      "▸ The highway is the civilization's circulatory system.",
-      "  Build it before you need it.",
-      "  You always need it before you know you need it.",
-      "",
-      "▶ Collect 64 Rails",
-      "▶ Build a Nether rail line between 2 locations [check]",
-      "",
-      "◇ Via Romana roads (Ch03 rib) gave speed on the surface.",
-      "  The Nether highway gives scale.",
-      "  Both together = full continental movement capability."
-    ],
-    "groups": {"The Scalded Earth": {"position": [450, 300]}},
-    "icon": {"item": {"id": "minecraft:rail", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "powered_rail": {
+   "item": {
+    "id": "minecraft:powered_rail",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Nether Rail"
+  },
+  "subtitle": {
+   "text": "1 block in the Nether = 8 blocks in the Overworld. Build the highway here."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.06 · THE NETHER RAIL",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Nether ceiling at Y=128 is the highway.",
+   "  1 block of travel in the Nether",
+   "  = 8 blocks in the Overworld.",
+   "  A 1,000-block Nether rail = 8,000 blocks surface.",
+   "  The road builders knew this.",
+   "  They built the highways underground first.",
+   "",
+   "◈ NETHER HIGHWAY DESIGN",
+   "  └ Build at Y=122-126 (just below ceiling)",
+   "  └ Full enclosure: blocks on all sides to stop Ghasts",
+   "  └ Powered Rails every 32 blocks minimum",
+   "  └ Minecart: basic fast travel",
+   "  └ Steam 'n Rails (Ch07): adds train network on rails",
+   "    faster than minecarts, carries passengers/cargo",
+   "",
+   "◈ PORTAL NETWORK DESIGN",
+   "  └ Link portals: build portal at exact Nether coordinates",
+   "    = Nether X/8, Nether Z/8 of Overworld destination",
+   "  └ Label portals with item frames + named items",
+   "  └ Rail to each portal node = entire world accessible",
+   "",
+   "◈ STEAM 'N RAILS PREVIEW",
+   "  └ Ch07 unlocks steam-powered trains",
+   "  └ Trains run on existing rail networks",
+   "  └ Train + Nether highway = fastest overworld travel",
+   "  └ Build the rail now, add the train in Ch07",
+   "",
+   "▸ The highway is the civilization's circulatory system.",
+   "  Build it before you need it.",
+   "  You always need it before you know you need it.",
+   "",
+   "▶ Collect 64 Rails",
+   "▶ Build a Nether rail line between 2 locations [check]",
+   "",
+   "◇ Via Romana roads (Ch03 rib) gave speed on the surface.",
+   "  The Nether highway gives scale.",
+   "  Both together = full continental movement capability."
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     2300,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:rail",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

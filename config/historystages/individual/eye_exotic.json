@@ -1,0 +1,20 @@
+{
+  "display_name": "The Scroll of the Exotic Eye",
+  "research_time": 3600,
+  "items": [
+    "endrem:exotic_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "endrem:exotic_eye",
+    "sinborn:mechanical_crafting/exotic_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

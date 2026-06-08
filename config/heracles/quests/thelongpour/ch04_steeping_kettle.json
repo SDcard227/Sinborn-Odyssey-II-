@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch04_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Steeping Kettle at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:cauldron",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock steeping_kettle",
+   "title": "Discipline learned: The Steeping Kettle",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Steeping Kettle"
+  },
+  "subtitle": {
+   "text": "A hot cup is a small civilization."
+  },
+  "description": [
+   "Tea, coffee, the slow infusion. No one fights over a kettle.",
+   "Of all the arts of the long pour, this is the one that asks you to sit down.",
+   "",
+   "→ Recover and study the Steeping Kettle at a Research Pedestal."
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     460,
+     1200
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:cauldron",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

@@ -1,58 +1,95 @@
 {
-  "dependencies": ["ch09_r_hip1"],
-  "tasks": {
-    "tame_hippogryph": {
-      "title": "Tame a Hippogryph and equip it with a saddle",
-      "icon": {"item": {"id": "minecraft:saddle", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch09_r_hip1"
+ ],
+ "tasks": {
+  "tame_hippogryph": {
+   "title": "Tame a Hippogryph and equip it with a saddle",
+   "icon": {
+    "item": {
+     "id": "minecraft:saddle",
+     "count": 1
     },
-    "fly_distance": {
-      "title": "Fly 1000+ blocks on the tamed Hippogryph during an Eye Hunt scouting run",
-      "icon": {"item": {"id": "iceandfire:hippogryph_feather", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "saddle": {
-      "item": {"id": "minecraft:saddle", "count": 1},
-      "type": "heracles:item"
+  "fly_distance": {
+   "title": "Fly 1000+ blocks on the tamed Hippogryph during an Eye Hunt scouting run",
+   "icon": {
+    "item": {
+     "id": "iceandfire:hippogryph_feather",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Aerial Reconnaissance"},
-    "subtitle": {"text": "The hunt is faster with altitude."},
-    "description": [
-      "A tamed Hippogryph with saddle is one of the fastest",
-      "overworld travel options available before elytra.",
-      "",
-      "The Eye Hunt requires covering jungle temples, desert dungeons,",
-      "ocean monuments, frozen oceans, and eventually the Nether.",
-      "Ground travel for this is slow.",
-      "The Hippogryph is the answer to that problem.",
-      "",
-      "Aerial view also helps locate structures.",
-      "Jungle temples are easier to spot from above.",
-      "Desert ruins, Alex's Mobs structures, Dungeon Now Loading dungeons.",
-      "",
-      "Use it. The Eye Hunt is about to require it.",
-      "",
-      "→ Tame a Hippogryph and saddle it [check]",
-      "→ Fly 1000+ blocks on a scouting run [check]"
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [300, 0]}},
-    "icon": {"item": {"id": "minecraft:saddle", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "saddle": {
+   "item": {
+    "id": "minecraft:saddle",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Aerial Reconnaissance"
+  },
+  "subtitle": {
+   "text": "The hunt is faster with altitude."
+  },
+  "description": [
+   "A tamed Hippogryph with saddle is one of the fastest",
+   "overworld travel options available before elytra.",
+   "",
+   "The Eye Hunt requires covering jungle temples, desert dungeons,",
+   "ocean monuments, frozen oceans, and eventually the Nether.",
+   "Ground travel for this is slow.",
+   "The Hippogryph is the answer to that problem.",
+   "",
+   "Aerial view also helps locate structures.",
+   "Jungle temples are easier to spot from above.",
+   "Desert ruins, Alex's Mobs structures, Dungeon Now Loading dungeons.",
+   "",
+   "Use it. The Eye Hunt is about to require it.",
+   "",
+   "→ Tame a Hippogryph and saddle it [check]",
+   "→ Fly 1000+ blocks on a scouting run [check]"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     3020,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:saddle",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

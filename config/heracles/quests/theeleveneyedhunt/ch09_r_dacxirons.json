@@ -1,135 +1,135 @@
 {
-  "dependencies": [
-    "ch09_r_spell_schools"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/dacxirons"
-    },
-    "arcane_book": {
-      "title": "Obtain an Arcane Tome from an ISS Wizard — the rare drop that contains bonus spell recipes",
-      "icon": {
-        "item": {
-          "id": "irons_spellbooks:arcane_essence",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch09_r_spell_schools"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Dacxirons scroll at a Research Pedestal"
   },
-  "rewards": {
-    "spell_scroll": {
-      "item": {
-        "id": "irons_spellbooks:scroll",
-        "count": 5
-      },
-      "type": "heracles:item"
+  "arcane_book": {
+   "title": "Obtain an Arcane Tome from an ISS Wizard — the rare drop that contains bonus spell recipes",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:arcane_essence",
+     "count": 1
     },
-    "ring_of_mana": {
-      "item": {
-        "id": "irons_spellbooks:ring_of_mana",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Dacxirons"
-    },
-    "subtitle": {
-      "text": "The ISS Wizards carry something the Arcane Shrines don't. Farm them alongside the Eye Hunt. They share a hunt."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.09 · THE DACXIRONS",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Dacxirons scroll is the art of dark fire.",
-      "  It comes from the ISS Wizards —",
-      "  the wandering mage enemies that spawn",
-      "  in strongholds and magical structures.",
-      "  They carry T.O Magic 'n Extras recipes.",
-      "  You cannot get those elsewhere.",
-      "",
-      "◈ T.O MAGIC 'N EXTRAS (traveloptics:)",
-      "  └ This is an ISS addon — NOT a travel mod",
-      "    despite the namespace name",
-      "  └ Adds school-specific items that boost",
-      "    individual ISS schools beyond base capability",
-      "  └ Items include: extra reagents, school-specific",
-      "    wands, ritual components, mana storage variants",
-      "  └ All T.O. recipes are in the Dacxirons scroll",
-      "    — they do not appear in base JEI ISS tabs",
-      "  └ Check JEI under traveloptics: namespace after",
-      "    researching the scroll for full item list",
-      "",
-      "◈ ISS WIZARD FARMING",
-      "  └ ISS Wizards spawn in: Wizard Towers,",
-      "    stronghold-adjacent structures, dungeon complexes",
-      "  └ Drops: ISS Scrolls, Arcane Scrolls, mana items,",
-      "    school-specific loot, Dacxirons scroll (12%)",
-      "  └ Fight: ranged magic, shield burst, teleport",
-      "    — bring high-mobility build or ranged weapon",
-      "  └ Looting III increases drop rate meaningfully",
-      "",
-      "◈ MANA CAPACITY NOTE",
-      "  └ T.O. items can increase effective mana pool",
-      "  └ Priority upgrade before attempting Level III",
-      "    spells in Evocation, Holy, or Eldritch",
-      "  └ Mana regeneration: ISS-specific gear + Puffish",
-      "    Skills mage track + research bonuses from scrolls",
-      "",
-      "◈ SCROLL: The Dacxirons",
-      "  └ 12% drop from any irons_spellbooks: mob",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: T.O. Magic 'n Extras full recipe list,",
-      "    advanced ISS school items, dark fire school lore",
-      "",
-      "▸ The Wizards learned from something older than schools.",
-      "  The scroll calls it the Dacxirons.",
-      "  The name is not in any other record.",
-      "  Neither is what the Dacxirons was.",
-      "",
-      "▶ Find The Dacxirons scroll [check]",
-      "▶ Obtain an Arcane Tome from an ISS Wizard [check]",
-      "",
-      "◇ Farm ISS Wizards during the Eye Hunt.",
-      "  The same areas contain Eye drops and Wizard spawns.",
-      "  One farm covers both objectives."
-    ],
-    "groups": {
-      "The Eleven-Eyed Hunt": {
-        "position": [
-          450,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "irons_spellbooks:arcane_essence",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "spell_scroll": {
+   "item": {
+    "id": "irons_spellbooks:scroll",
+    "count": 5
+   },
+   "type": "heracles:item"
+  },
+  "ring_of_mana": {
+   "item": {
+    "id": "irons_spellbooks:ring_of_mana",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Dacxirons"
+  },
+  "subtitle": {
+   "text": "The ISS Wizards carry something the Arcane Shrines don't. Farm them alongside the Eye Hunt. They share a hunt."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.09 · THE DACXIRONS",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Dacxirons scroll is the art of dark fire.",
+   "  It comes from the ISS Wizards —",
+   "  the wandering mage enemies that spawn",
+   "  in strongholds and magical structures.",
+   "  They carry T.O Magic 'n Extras recipes.",
+   "  You cannot get those elsewhere.",
+   "",
+   "◈ T.O MAGIC 'N EXTRAS (traveloptics:)",
+   "  └ This is an ISS addon — NOT a travel mod",
+   "    despite the namespace name",
+   "  └ Adds school-specific items that boost",
+   "    individual ISS schools beyond base capability",
+   "  └ Items include: extra reagents, school-specific",
+   "    wands, ritual components, mana storage variants",
+   "  └ All T.O. recipes are in the Dacxirons scroll",
+   "    — they do not appear in base JEI ISS tabs",
+   "  └ Check JEI under traveloptics: namespace after",
+   "    researching the scroll for full item list",
+   "",
+   "◈ ISS WIZARD FARMING",
+   "  └ ISS Wizards spawn in: Wizard Towers,",
+   "    stronghold-adjacent structures, dungeon complexes",
+   "  └ Drops: ISS Scrolls, Arcane Scrolls, mana items,",
+   "    school-specific loot, Dacxirons scroll (12%)",
+   "  └ Fight: ranged magic, shield burst, teleport",
+   "    — bring high-mobility build or ranged weapon",
+   "  └ Looting III increases drop rate meaningfully",
+   "",
+   "◈ MANA CAPACITY NOTE",
+   "  └ T.O. items can increase effective mana pool",
+   "  └ Priority upgrade before attempting Level III",
+   "    spells in Evocation, Holy, or Eldritch",
+   "  └ Mana regeneration: ISS-specific gear + Puffish",
+   "    Skills mage track + research bonuses from scrolls",
+   "",
+   "◈ SCROLL: The Dacxirons",
+   "  └ 12% drop from any irons_spellbooks: mob",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: T.O. Magic 'n Extras full recipe list,",
+   "    advanced ISS school items, dark fire school lore",
+   "",
+   "▸ The Wizards learned from something older than schools.",
+   "  The scroll calls it the Dacxirons.",
+   "  The name is not in any other record.",
+   "  Neither is what the Dacxirons was.",
+   "",
+   "▶ Find The Dacxirons scroll [check]",
+   "▶ Obtain an Arcane Tome from an ISS Wizard [check]",
+   "",
+   "◇ Farm ISS Wizards during the Eye Hunt.",
+   "  The same areas contain Eye drops and Wizard spawns.",
+   "  One farm covers both objectives."
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     4860,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:arcane_essence",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

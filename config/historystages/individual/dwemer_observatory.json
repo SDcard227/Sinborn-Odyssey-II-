@@ -1,0 +1,37 @@
+{
+  "display_name": "Dwemer Observatory Looting",
+  "research_time": 18000,
+  "items": [
+    "mebahelcreaturesdwarven:dwarven_arrow",
+    "mebahelcreaturesdwarven:dwarven_spider_block",
+    "mebahelcreaturesdwarven:dwemer_chest",
+    "mebahelcreaturesdwarven:dwemer_metal_block",
+    "mebahelcreaturesdwarven:dwemer_metal_gear",
+    "mebahelcreaturesdwarven:dwemer_metal_ingot",
+    "mebahelcreaturesdwarven:dwemer_metal_pipe",
+    "mebahelcreaturesdwarven:dwemer_metal_pipe_gear",
+    "mebahelcreaturesdwarven:dwemer_metal_scrap"
+  ],
+  "tags": [],
+  "mods": [
+    "mebahelcreaturesdwarven"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "mebahelcreaturesdwarven:dwarven_arrow",
+    "mebahelcreaturesdwarven:dwemer_axe",
+    "mebahelcreaturesdwarven:dwemer_chest",
+    "mebahelcreaturesdwarven:dwemer_dagger",
+    "mebahelcreaturesdwarven:dwemer_mace",
+    "mebahelcreaturesdwarven:dwemer_metal_ingot_furnace",
+    "mebahelcreaturesdwarven:dwemer_sword",
+    "mebahelcreaturesdwarven:dwemer_war_axe",
+    "mebahelcreaturesdwarven:dwemer_warhammer"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

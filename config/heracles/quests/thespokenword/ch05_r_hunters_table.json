@@ -1,128 +1,128 @@
 {
-  "dependencies": [
-    "ch05_world"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/hunters_table"
-    },
-    "butcher": {
-      "title": "Use a Cutting Board to butcher a large animal into component parts — don't waste the carcass",
-      "icon": {
-        "item": {
-          "id": "farmersdelight:cutting_board",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    },
-    "trophy": {
-      "title": "Collect 5 different mob heads or trophy drops — hunting culture begins with keeping record",
-      "icon": {
-        "item": {
-          "id": "minecraft:creeper_head",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch05_world"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Hunters Table scroll at a Research Pedestal"
   },
-  "rewards": {
-    "meat": {
-      "item": {
-        "id": "farmersdelight:bacon",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "butcher": {
+   "title": "Use a Cutting Board to butcher a large animal into component parts — don't waste the carcass",
+   "icon": {
+    "item": {
+     "id": "farmersdelight:cutting_board",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 2
-      },
-      "type": "heracles:item"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "display": {
-    "title": {
-      "translate": "The Hunter's Table"
+  "trophy": {
+   "title": "Collect 5 different mob heads or trophy drops — hunting culture begins with keeping record",
+   "icon": {
+    "item": {
+     "id": "minecraft:creeper_head",
+     "count": 1
     },
-    "subtitle": {
-      "text": "The hunters ate first. Then they came back to teach the village how to follow them."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.05 · THE HUNTER'S TABLE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Hunter's Table scroll describes a tradition.",
-      "  After the hunt, nothing is wasted.",
-      "  The carcass is processed completely.",
-      "  The meal is shared completely.",
-      "  The trophies are kept.",
-      "  The knowledge is passed on.",
-      "",
-      "◈ BUTCHERING WITH FARMER'S DELIGHT",
-      "  └ Cutting Board + Knife: break down raw animal",
-      "    into component parts",
-      "  └ Pig → pork chop + pork pieces + fat",
-      "  └ Cow → steak + beef patty + leather scraps",
-      "  └ Chicken → chicken pieces + feathers",
-      "  └ More components = more recipes possible",
-      "  └ Nothing wasted = more diet coverage",
-      "",
-      "◈ HUNTING CULTURE",
-      "  └ Alex's Mobs adds 89 unique creatures",
-      "  └ Many drop unique materials — leather variants,",
-      "    special bones, rare drops",
-      "  └ Ecologics adds 24+ animal variants with unique drops",
-      "  └ Villager Recruits: Hunter unit type — assigns",
-      "    auto-hunting to your village",
-      "",
-      "◈ SCROLL: The Hunter's Table",
-      "  └ Found in: hunter's cabin chests, trophy rooms,",
-      "    wilderness camps, ranger outpost loot",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: full butchering system, hunting culture knowledge",
-      "",
-      "▸ The last entry in the scroll is a tally.",
-      "  One mark per kill. Hundreds of marks.",
-      "  The last mark is unfinished.",
-      "",
-      "▶ Find The Hunter's Table scroll [check]",
-      "▶ Use Cutting Board to butcher an animal [check]",
-      "▶ Collect 5 different mob trophy drops [check]",
-      "",
-      "◇ The Beasts scroll (this chapter, next chain)",
-      "  covers Alex's Mobs specifically —",
-      "  what each creature drops and where to find them."
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          150,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "farmersdelight:cutting_board",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "meat": {
+   "item": {
+    "id": "farmersdelight:bacon",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Hunter's Table"
+  },
+  "subtitle": {
+   "text": "The hunters ate first. Then they came back to teach the village how to follow them."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.05 · THE HUNTER'S TABLE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Hunter's Table scroll describes a tradition.",
+   "  After the hunt, nothing is wasted.",
+   "  The carcass is processed completely.",
+   "  The meal is shared completely.",
+   "  The trophies are kept.",
+   "  The knowledge is passed on.",
+   "",
+   "◈ BUTCHERING WITH FARMER'S DELIGHT",
+   "  └ Cutting Board + Knife: break down raw animal",
+   "    into component parts",
+   "  └ Pig → pork chop + pork pieces + fat",
+   "  └ Cow → steak + beef patty + leather scraps",
+   "  └ Chicken → chicken pieces + feathers",
+   "  └ More components = more recipes possible",
+   "  └ Nothing wasted = more diet coverage",
+   "",
+   "◈ HUNTING CULTURE",
+   "  └ Alex's Mobs adds 89 unique creatures",
+   "  └ Many drop unique materials — leather variants,",
+   "    special bones, rare drops",
+   "  └ Ecologics adds 24+ animal variants with unique drops",
+   "  └ Villager Recruits: Hunter unit type — assigns",
+   "    auto-hunting to your village",
+   "",
+   "◈ SCROLL: The Hunter's Table",
+   "  └ Found in: hunter's cabin chests, trophy rooms,",
+   "    wilderness camps, ranger outpost loot",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: full butchering system, hunting culture knowledge",
+   "",
+   "▸ The last entry in the scroll is a tally.",
+   "  One mark per kill. Hundreds of marks.",
+   "  The last mark is unfinished.",
+   "",
+   "▶ Find The Hunter's Table scroll [check]",
+   "▶ Use Cutting Board to butcher an animal [check]",
+   "▶ Collect 5 different mob trophy drops [check]",
+   "",
+   "◇ The Beasts scroll (this chapter, next chain)",
+   "  covers Alex's Mobs specifically —",
+   "  what each creature drops and where to find them."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1060,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "farmersdelight:cutting_board",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

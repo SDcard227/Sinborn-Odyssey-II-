@@ -1,66 +1,97 @@
 {
-  "dependencies": ["ch07_refine"],
-  "tasks": {
-    "ibf": {
-      "title": "Build an Industrial Blast Furnace (IBF) and smelt your first steel",
-      "icon": {"item": {"id": "tfmg:ibf_brick", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch07_refine"
+ ],
+ "tasks": {
+  "ibf": {
+   "title": "Build an Industrial Blast Furnace (IBF) and smelt your first steel",
+   "icon": {
+    "item": {
+     "id": "tfmg:ibf_brick",
+     "count": 1
     },
-    "steel_ingot": {
-      "type": "heracles:item",
-      "item": "tfmg:steel_ingot",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    },
-    "cast_iron": {
-      "type": "heracles:item",
-      "item": "tfmg:cast_iron_ingot",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "steel_ingot_bonus": {
-      "item": {"id": "tfmg:steel_ingot", "count": 8},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
+  "steel_ingot": {
+   "type": "heracles:item",
+   "item": "tfmg:steel_ingot",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The Iron Bed"},
-    "subtitle": {"text": "Iron is finished. Steel is what's next."},
-    "description": [
-      "Iron replaced bronze because it was harder.",
-      "Steel replaces iron for the same reason.",
-      "Each upgrade requires more effort.",
-      "The reward is worth it.",
-      "",
-      "Industrial Blast Furnace (IBF):",
-      "Raw Iron + Limesand + Coal Coke Dust → Steel.",
-      "Cast Iron: Coal + Iron Ingot in a Heated Basin.",
-      "Or use the Chemical Vat for an alternate steel path.",
-      "",
-      "Steel unlocks the next tier of Create Big Cannons barrels.",
-      "Steel unlocks TFMG armor and tools.",
-      "Steel changes what the factory produces.",
-      "",
-      "→ Build an Industrial Blast Furnace [check]",
-      "→ Smelt 16 Steel Ingots",
-      "→ Smelt 16 Cast Iron Ingots"
-    ],
-    "groups": {"Blood and Oil": {"position": [0, 300]}},
-    "icon": {"item": {"id": "tfmg:steel_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "cast_iron": {
+   "type": "heracles:item",
+   "item": "tfmg:cast_iron_ingot",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "steel_ingot_bonus": {
+   "item": {
+    "id": "tfmg:steel_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Iron Bed"
+  },
+  "subtitle": {
+   "text": "Iron is finished. Steel is what's next."
+  },
+  "description": [
+   "Iron replaced bronze because it was harder.",
+   "Steel replaces iron for the same reason.",
+   "Each upgrade requires more effort.",
+   "The reward is worth it.",
+   "",
+   "Industrial Blast Furnace (IBF):",
+   "Raw Iron + Limesand + Coal Coke Dust → Steel.",
+   "Cast Iron: Coal + Iron Ingot in a Heated Basin.",
+   "Or use the Chemical Vat for an alternate steel path.",
+   "",
+   "Steel unlocks the next tier of Create Big Cannons barrels.",
+   "Steel unlocks TFMG armor and tools.",
+   "Steel changes what the factory produces.",
+   "",
+   "→ Build an Industrial Blast Furnace [check]",
+   "→ Smelt 16 Steel Ingots",
+   "→ Smelt 16 Cast Iron Ingots"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     1220,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "tfmg:steel_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,0 +1,18 @@
+{
+  "display_name": "The Sound System",
+  "research_time": 5400,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "etched:decorations/radio",
+    "etched:misc/boombox"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

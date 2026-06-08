@@ -1,68 +1,117 @@
 {
-  "dependencies": ["ch01_r_diet"],
-  "tasks": {
-    "five_groups": {
-      "title": "Eat food from at least 3 of the 5 Diet mod groups — start building your nutrition profile",
-      "icon": {"item": {"id": "minecraft:apple", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch01_r_diet"
+ ],
+ "tasks": {
+  "five_groups": {
+   "title": "Eat food from at least 3 of the 5 Diet mod groups — start building your nutrition profile",
+   "icon": {
+    "item": {
+     "id": "minecraft:apple",
+     "count": 1
     },
-    "diet_warning": {
-      "title": "Learn the death reset rule — Diet resets FULLY on death. Keep your diet active.",
-      "icon": {"item": {"id": "minecraft:cooked_beef", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "apple": {"item": {"id": "minecraft:apple", "count": 8}, "type": "heracles:item"},
-    "bread": {"item": {"id": "minecraft:bread", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:sprocket", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Diet System"},
-    "subtitle": {"text": "Diet resets fully on death. This is not a punishment. It is a reminder that the body has a record too."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.01 · THE DIET SYSTEM",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Diet mod tracks what you eat across 5 food groups.",
-      "  Maximum coverage gives permanent stat bonuses.",
-      "  The bonuses compound — every group adds to the previous.",
-      "",
-      "◈ THE 5 FOOD GROUPS",
-      "  └ ▸ Grain — bread, wheat products, pasta",
-      "  └ ▸ Protein — meat, fish, eggs, beans",
-      "  └ ▸ Fruit — apples, berries, melons, chorus",
-      "  └ ▸ Vegetable — carrots, potatoes, greens",
-      "  └ ▸ Dairy — milk, cheese (Meadow mod), butter",
-      "",
-      "◈ CRITICAL RULE",
-      "  └ ▲ Diet resets FULLY on death",
-      "  └ ▲ Farmer's Delight (and addons) is the primary",
-      "       engine for covering all 5 groups efficiently",
-      "  └ ▲ Youkai's Feasts adds 143+ items — Ch05+ coverage",
-      "",
-      "▸ Start eating variety now.",
-      "  Even with limited food, try to hit grain + protein + fruit.",
-      "  The bonuses are immediate and significant.",
-      "  Dying and restarting from zero hurts more the longer you wait.",
-      "",
-      "▶ Eat food from 3 diet groups [check]",
-      "▶ Note the death-reset rule [check]",
-      "",
-      "◇ Farmer's Delight (Ch02) makes diet coverage trivial.",
-      "  Get there fast."
-    ],
-    "groups": {"Born from Ash and Hunger": {"position": [-300, 150]}},
-    "icon": {"item": {"id": "minecraft:apple", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "diet_warning": {
+   "title": "Learn the death reset rule — Diet resets FULLY on death. Keep your diet active.",
+   "icon": {
+    "item": {
+     "id": "minecraft:cooked_beef",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "apple": {
+   "item": {
+    "id": "minecraft:apple",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "bread": {
+   "item": {
+    "id": "minecraft:bread",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Diet System"
+  },
+  "subtitle": {
+   "text": "Diet resets fully on death. This is not a punishment. It is a reminder that the body has a record too."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.01 · THE DIET SYSTEM",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Diet mod tracks what you eat across 5 food groups.",
+   "  Maximum coverage gives permanent stat bonuses.",
+   "  The bonuses compound — every group adds to the previous.",
+   "",
+   "◈ THE 5 FOOD GROUPS",
+   "  └ ▸ Grain — bread, wheat products, pasta",
+   "  └ ▸ Protein — meat, fish, eggs, beans",
+   "  └ ▸ Fruit — apples, berries, melons, chorus",
+   "  └ ▸ Vegetable — carrots, potatoes, greens",
+   "  └ ▸ Dairy — milk, cheese (Meadow mod), butter",
+   "",
+   "◈ CRITICAL RULE",
+   "  └ ▲ Diet resets FULLY on death",
+   "  └ ▲ Farmer's Delight (and addons) is the primary",
+   "       engine for covering all 5 groups efficiently",
+   "  └ ▲ Youkai's Feasts adds 143+ items — Ch05+ coverage",
+   "",
+   "▸ Start eating variety now.",
+   "  Even with limited food, try to hit grain + protein + fruit.",
+   "  The bonuses are immediate and significant.",
+   "  Dying and restarting from zero hurts more the longer you wait.",
+   "",
+   "▶ Eat food from 3 diet groups [check]",
+   "▶ Note the death-reset rule [check]",
+   "",
+   "◇ Farmer's Delight (Ch02) makes diet coverage trivial.",
+   "  Get there fast."
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     1840,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:apple",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

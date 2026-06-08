@@ -1,62 +1,99 @@
 {
-  "dependencies": ["ch17_world"],
-  "tasks": {
-    "nuke_shell": {
-      "title": "Craft a Nuclear Shell (Create Nuclear Shell / Cannon Nukes mod — requires steel reactor components)",
-      "icon": {"item": {"id": "cannonukes:nuclear_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_world"
+ ],
+ "tasks": {
+  "nuke_shell": {
+   "title": "Craft a Nuclear Shell (Create Nuclear Shell / Cannon Nukes mod — requires steel reactor components)",
+   "icon": {
+    "item": {
+     "id": "cannonukes:nuclear_shell",
+     "count": 1
     },
-    "steel_reactor": {
-      "title": "Build a Steel Reactor (Create Nuclear Shell — enables nuclear processing, required for nuke shell crafting)",
-      "icon": {"item": {"id": "cannonukes:steel_reactor", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "steel": {
-      "item": {"id": "tfmg:steel_ingot", "count": 32},
-      "type": "heracles:item"
+  "steel_reactor": {
+   "title": "Build a Steel Reactor (Create Nuclear Shell — enables nuclear processing, required for nuke shell crafting)",
+   "icon": {
+    "item": {
+     "id": "cannonukes:steel_reactor",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Nuclear Option"},
-    "subtitle": {"text": "Create Big Cannons can fire nuclear shells. You do not have to use this knowledge. You just have it now."},
-    "description": [
-      "The Create nuclear weapons chain:",
-      "Create Big Cannons (Ch06-07) → Create Nuclear Shell → Nuclear Shell ammunition",
-      "",
-      "Nuclear Shell:",
-      "Requires the Steel Reactor multiblock from Create Nuclear Shell mod.",
-      "The Steel Reactor processes uranium/advanced materials into nuclear components.",
-      "Uranium is available through Create Oppenheimered (Ch10 automation chain).",
-      "",
-      "The Nuclear Shell fires from a Create Big Cannon.",
-      "The explosion radius is significant.",
-      "It is the most destructive single-fire weapon in the modpack.",
-      "",
-      "Oppenheimer note:",
-      "After the first Trinity test, Oppenheimer quoted the Bhagavad Gita:",
-      "'Now I am become Death, the destroyer of worlds.'",
-      "He also spent the rest of his life trying to prevent the weapons from being used.",
-      "Both things are true.",
-      "",
-      "→ Build the Steel Reactor [check]",
-      "→ Craft a Nuclear Shell [check]"
-    ],
-    "groups": {"Lords of All": {"position": [-150, 150]}},
-    "icon": {"item": {"id": "cannonukes:nuclear_shell", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "steel": {
+   "item": {
+    "id": "tfmg:steel_ingot",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Nuclear Option"
+  },
+  "subtitle": {
+   "text": "Create Big Cannons can fire nuclear shells. You do not have to use this knowledge. You just have it now."
+  },
+  "description": [
+   "The Create nuclear weapons chain:",
+   "Create Big Cannons (Ch06-07) → Create Nuclear Shell → Nuclear Shell ammunition",
+   "",
+   "Nuclear Shell:",
+   "Requires the Steel Reactor multiblock from Create Nuclear Shell mod.",
+   "The Steel Reactor processes uranium/advanced materials into nuclear components.",
+   "Uranium is available through Create Oppenheimered (Ch10 automation chain).",
+   "",
+   "The Nuclear Shell fires from a Create Big Cannon.",
+   "The explosion radius is significant.",
+   "It is the most destructive single-fire weapon in the modpack.",
+   "",
+   "Oppenheimer note:",
+   "After the first Trinity test, Oppenheimer quoted the Bhagavad Gita:",
+   "'Now I am become Death, the destroyer of worlds.'",
+   "He also spent the rest of his life trying to prevent the weapons from being used.",
+   "Both things are true.",
+   "",
+   "→ Build the Steel Reactor [check]",
+   "→ Craft a Nuclear Shell [check]"
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     460,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cannonukes:nuclear_shell",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

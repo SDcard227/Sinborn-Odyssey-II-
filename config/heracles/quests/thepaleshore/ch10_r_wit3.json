@@ -1,61 +1,92 @@
 {
-  "dependencies": ["ch10_r_wit2"],
-  "tasks": {
-    "beacon": {
-      "type": "heracles:item",
-      "item": "minecraft:beacon",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+ "dependencies": [
+  "ch10_r_wit2"
+ ],
+ "tasks": {
+  "beacon": {
+   "type": "heracles:item",
+   "item": "minecraft:beacon",
+   "amount": 1,
+   "collection": "AUTOMATIC"
+  },
+  "place_beacon": {
+   "title": "Build a full beacon pyramid (base: iron, gold, diamond, or netherite blocks) and activate it",
+   "icon": {
+    "item": {
+     "id": "minecraft:beacon",
+     "count": 1
     },
-    "place_beacon": {
-      "title": "Build a full beacon pyramid (base: iron, gold, diamond, or netherite blocks) and activate it",
-      "icon": {"item": {"id": "minecraft:beacon", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "iron_blocks": {
-      "item": {"id": "minecraft:iron_block", "count": 9},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 5},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Beacon"},
-    "subtitle": {"text": "The star makes the pyramid. The pyramid makes the light. The light changes everything in range."},
-    "description": [
-      "The Beacon is the Nether Star's primary use case.",
-      "Craft it: Nether Star + 3 Obsidian + 5 Glass.",
-      "",
-      "Pyramid tiers (mineral blocks required):",
-      "Tier 1: 9 blocks — one effect (Speed, Haste, Resistance, Jump, Strength)",
-      "Tier 2: 25 blocks — two effects",
-      "Tier 3: 49 blocks — two effects + amplifier",
-      "Tier 4: 81 blocks — max effects + secondary effect",
-      "",
-      "Haste II + Speed II is the mining and exploration setup.",
-      "Strength II is the combat setup.",
-      "Resistance + Regeneration is the survival setup.",
-      "",
-      "The factory produces what you need to build the pyramid.",
-      "The pyramid then amplifies the factory worker.",
-      "",
-      "→ Craft a Beacon",
-      "→ Build a full pyramid and activate it [check]"
-    ],
-    "groups": {"The Pale Shore": {"position": [-450, 0]}},
-    "icon": {"item": {"id": "minecraft:beacon", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "iron_blocks": {
+   "item": {
+    "id": "minecraft:iron_block",
+    "count": 9
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Beacon"
+  },
+  "subtitle": {
+   "text": "The star makes the pyramid. The pyramid makes the light. The light changes everything in range."
+  },
+  "description": [
+   "The Beacon is the Nether Star's primary use case.",
+   "Craft it: Nether Star + 3 Obsidian + 5 Glass.",
+   "",
+   "Pyramid tiers (mineral blocks required):",
+   "Tier 1: 9 blocks — one effect (Speed, Haste, Resistance, Jump, Strength)",
+   "Tier 2: 25 blocks — two effects",
+   "Tier 3: 49 blocks — two effects + amplifier",
+   "Tier 4: 81 blocks — max effects + secondary effect",
+   "",
+   "Haste II + Speed II is the mining and exploration setup.",
+   "Strength II is the combat setup.",
+   "Resistance + Regeneration is the survival setup.",
+   "",
+   "The factory produces what you need to build the pyramid.",
+   "The pyramid then amplifies the factory worker.",
+   "",
+   "→ Craft a Beacon",
+   "→ Build a full pyramid and activate it [check]"
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     1380,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:beacon",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

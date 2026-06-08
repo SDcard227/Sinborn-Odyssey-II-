@@ -2,16 +2,28 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     "GFE",
-    "FIF",
-    "PFS"
+    "III",
+    "PIS"
   ],
   "key": {
-    "G": { "item": "alexscaves:gazing_pearl" },
-    "F": { "item": "aquamirae:fin" },
-    "E": { "item": "aquamirae:ship_graveyard_echo" },
-    "I": { "item": "mowziesmobs:ice_crystal" },
-    "P": { "item": "endermanoverhaul:icy_pearl" },
-    "S": { "item": "cataclysm:essence_of_the_storm" }
+    "G": {
+      "item": "alexscaves:gazing_pearl"
+    },
+    "F": {
+      "item": "aquamirae:fin"
+    },
+    "E": {
+      "item": "aquamirae:ship_graveyard_echo"
+    },
+    "I": {
+      "item": "mowziesmobs:ice_crystal"
+    },
+    "P": {
+      "item": "endermanoverhaul:icy_pearl"
+    },
+    "S": {
+      "item": "cataclysm:essence_of_the_storm"
+    }
   },
   "result": {
     "item": "endrem:cold_eye",

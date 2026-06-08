@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the On the King Below scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the On the King Below scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the On the King Below scroll",
-      "icon": {
-        "item": {
-          "id": "scarlet_king:scarlet_crown",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock god_scarlet_king"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "On the King Below"
+  "research_scroll": {
+   "title": "Research the On the King Below scroll",
+   "icon": {
+    "item": {
+     "id": "scarlet_king:scarlet_crown",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Hidden in the margin of approved books.\"",
-      "",
-      "Scarlet King corruption arc.",
-      "",
-      "This scroll unlocks 3 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Witch Hut",
-      "  \u00b7 Alexscaves:Chests/Witch Hut",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [On the King Below] [auto]"
-    ],
-    "groups": {
-      "The Shattered Law": {
-        "position": [
-          1407,
-          780
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "scarlet_king:scarlet_crown",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock god_scarlet_king"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sun",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "On the King Below"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Hidden in the margin of approved books.\"",
+   "",
+   "Scarlet King corruption arc.",
+   "",
+   "This scroll unlocks 3 items.",
+   "",
+   "Look for it in:",
+   "  · Witch Hut",
+   "  · Alexscaves:Chests/Witch Hut",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [On the King Below] [auto]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     0,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "scarlet_king:scarlet_crown",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

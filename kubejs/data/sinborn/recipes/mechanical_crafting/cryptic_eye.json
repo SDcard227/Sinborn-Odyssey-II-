@@ -1,18 +1,32 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    "DAD",
+    "DAA",
     "GHB",
     "CRC"
   ],
   "key": {
-    "D": { "item": "mebahelcreaturesdwarven:dwemer_metal_gear" },
-    "A": { "item": "irons_spellbooks:legendary_ink" },
-    "G": { "item": "dungeons_and_combat:armor_plate" },
-    "H": { "item": "dungeonnowloading:chaotic_hexahedron" },
-    "B": { "item": "dungeonnowloading:spawner_blade" },
-    "C": { "item": "witherstormmod:command_block_book" },
-    "R": { "item": "irons_spellbooks:blank_rune" }
+    "D": {
+      "item": "mebahelcreaturesdwarven:dwemer_metal_gear"
+    },
+    "A": {
+      "item": "irons_spellbooks:legendary_ink"
+    },
+    "G": {
+      "item": "dungeons_and_combat:armor_plate"
+    },
+    "H": {
+      "item": "dungeonnowloading:chaotic_hexahedron"
+    },
+    "B": {
+      "item": "dungeonnowloading:spawner_blade"
+    },
+    "C": {
+      "item": "witherstormmod:command_block_book"
+    },
+    "R": {
+      "item": "irons_spellbooks:blank_rune"
+    }
   },
   "result": {
     "item": "endrem:cryptic_eye",

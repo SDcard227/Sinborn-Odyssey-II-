@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Cold Sweat Discipline scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Cold Sweat Discipline scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Cold Sweat Discipline scroll",
-      "icon": {
-        "item": {
-          "id": "alexsmobs:bison_fur",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock cold_sweat_discipline"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Cold Sweat Discipline"
+  "research_scroll": {
+   "title": "Research the Cold Sweat Discipline scroll",
+   "icon": {
+    "item": {
+     "id": "alexsmobs:bison_fur",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Buried under what they froze themselves into.\"",
-      "",
-      "Cold Sweat kit: insulation, warming charms, cooling charms, waterskins.",
-      "",
-      "This scroll unlocks 30 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Cataclysm:Chests/Frosted Prison Treasure",
-      "  \u00b7 Aquamirae:Chests/Ship 1",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Cold Sweat Discipline] [auto]"
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          546,
-          840
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexsmobs:bison_fur",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock cold_sweat_discipline"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Cold Sweat Discipline"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Buried under what they froze themselves into.\"",
+   "",
+   "Cold Sweat kit: insulation, warming charms, cooling charms, waterskins.",
+   "",
+   "This scroll unlocks 30 items.",
+   "",
+   "Look for it in:",
+   "  · Cataclysm:Chests/Frosted Prison Treasure",
+   "  · Aquamirae:Chests/Ship 1",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Cold Sweat Discipline] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     0,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexsmobs:bison_fur",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

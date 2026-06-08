@@ -2,15 +2,25 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     "PSP",
-    "CHC",
+    "CHP",
     "PTP"
   ],
   "key": {
-    "P": { "item": "minecraft:prismarine_crystals" },
-    "S": { "item": "minecraft:prismarine_shard" },
-    "C": { "item": "iceandfire:cyclops_eye" },
-    "H": { "item": "aquamirae:abyssal_amethyst" },
-    "T": { "item": "minecraft:scute" }
+    "P": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "S": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "C": {
+      "item": "iceandfire:cyclops_eye"
+    },
+    "H": {
+      "item": "aquamirae:abyssal_amethyst"
+    },
+    "T": {
+      "item": "minecraft:scute"
+    }
   },
   "result": {
     "item": "endrem:guardian_eye",

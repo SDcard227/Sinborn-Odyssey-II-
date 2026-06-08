@@ -1,14 +1,20 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    "RSR",
+    "RSS",
     "SIS",
-    "RSR"
+    "SSS"
   ],
   "key": {
-    "R": { "item": "desert:rift" },
-    "S": { "item": "minecraft:chiseled_sandstone" },
-    "I": { "item": "cataclysm:remnant_skull" }
+    "R": {
+      "item": "desert:rift"
+    },
+    "S": {
+      "item": "minecraft:chiseled_sandstone"
+    },
+    "I": {
+      "item": "cataclysm:remnant_skull"
+    }
   },
   "result": {
     "item": "cataclysm:desert_eye",

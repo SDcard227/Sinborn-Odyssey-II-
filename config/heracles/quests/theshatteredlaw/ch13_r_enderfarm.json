@@ -1,87 +1,124 @@
 {
-  "dependencies": ["ch13_enderman"],
-  "tasks": {
-    "farm_platform": {
-      "title": "Build an Enderman XP farm — construct a Y=128+ kill platform on the main End island for mass Enderman spawning",
-      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_enderman"
+ ],
+ "tasks": {
+  "farm_platform": {
+   "title": "Build an Enderman XP farm — construct a Y=128+ kill platform on the main End island for mass Enderman spawning",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_pearl",
+     "count": 1
     },
-    "pearl_farm": {
-      "type": "heracles:item",
-      "item": "minecraft:ender_pearl",
-      "amount": 64,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "pearls": {"item": {"id": "minecraft:ender_pearl", "count": 32}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 3}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Pearl Farm"},
-    "subtitle": {"text": "Endermen are the most renewable resource in the End. Build the farm and the pearls never run out."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.13 · THE PEARL FARM",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Ender Pearls are the currency of the End.",
-      "  Every teleport costs one.",
-      "  Eye of Ender requires one.",
-      "  Void mobility is built on pearls.",
-      "  The main End island has the highest Enderman density",
-      "  in the game. Build the farm here, not in the Overworld.",
-      "",
-      "◈ ENDERMAN FARM DESIGN",
-      "  └ Platform height: Y=128+ (above natural island elevation)",
-      "  └ Platform size: 30×30 minimum — larger = more spawns",
-      "  └ Material: any solid block (End Stone is on-theme and free)",
-      "  └ Endermite bait: trap an Endermite in a minecart",
-      "    (Endermen target Endermites — funnel them into kill zone)",
-      "  └ Kill zone: 3-block fall drop + player AFK spot",
-      "    OR: water elevator down to ground kill platform",
-      "  └ XP rate: some of the best XP per hour in the game",
-      "",
-      "◈ ENDERMAN OVERHAUL VARIANTS IN END",
-      "  └ Enderman Overhaul variants spawn in End based on biome",
-      "  └ End-specific variants may have different pearl drop rates",
-      "  └ Magical Enderman: rare variant, anomalous drop behavior",
-      "    Do not build the farm specifically around it",
-      "  └ All variants count toward pearl collection",
-      "",
-      "◈ PEARL USES IN CH13+",
-      "  └ Ender Chest: 8 Obsidian + 1 Eye of Ender (= pearl + blaze)",
-      "  └ Throwing pearls: void escape if falling, End City traversal",
-      "  └ Ch14: Echo Shard recipes may require pearls as ingredient",
-      "  └ Quantum Fluid prep: Chorus + Water, but pearls fuel portal hops",
-      "  └ End Crystal respawn: 4 per re-summon (not pearl-based)",
-      "",
-      "▸ Every civilization that reached the End built a pearl farm.",
-      "  It is one of the first things they did after clearing the dragon.",
-      "  The farm on the main island is how you know someone was here.",
-      "  The platform at Y=128. The trapdoors. The kill zone.",
-      "  They all built the same design.",
-      "  You will too.",
-      "",
-      "▶ Build a Y=128+ Enderman farm platform [check]",
-      "▶ Farm 64 Ender Pearls",
-      "",
-      "◇ Endermite bait trick: throw a pearl to spawn Endermite,",
-      "  immediately trap it in a minecart before it despawns.",
-      "  (Endermites despawn after 2 minutes unless named.)",
-      "  Name tag the Endermite to prevent despawn.",
-      "  The farm works passively once built."
-    ],
-    "groups": {"The Shattered Law": {"position": [-600, 0]}},
-    "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "pearl_farm": {
+   "type": "heracles:item",
+   "item": "minecraft:ender_pearl",
+   "amount": 64,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "pearls": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Pearl Farm"
+  },
+  "subtitle": {
+   "text": "Endermen are the most renewable resource in the End. Build the farm and the pearls never run out."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.13 · THE PEARL FARM",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Ender Pearls are the currency of the End.",
+   "  Every teleport costs one.",
+   "  Eye of Ender requires one.",
+   "  Void mobility is built on pearls.",
+   "  The main End island has the highest Enderman density",
+   "  in the game. Build the farm here, not in the Overworld.",
+   "",
+   "◈ ENDERMAN FARM DESIGN",
+   "  └ Platform height: Y=128+ (above natural island elevation)",
+   "  └ Platform size: 30×30 minimum — larger = more spawns",
+   "  └ Material: any solid block (End Stone is on-theme and free)",
+   "  └ Endermite bait: trap an Endermite in a minecart",
+   "    (Endermen target Endermites — funnel them into kill zone)",
+   "  └ Kill zone: 3-block fall drop + player AFK spot",
+   "    OR: water elevator down to ground kill platform",
+   "  └ XP rate: some of the best XP per hour in the game",
+   "",
+   "◈ ENDERMAN OVERHAUL VARIANTS IN END",
+   "  └ Enderman Overhaul variants spawn in End based on biome",
+   "  └ End-specific variants may have different pearl drop rates",
+   "  └ Magical Enderman: rare variant, anomalous drop behavior",
+   "    Do not build the farm specifically around it",
+   "  └ All variants count toward pearl collection",
+   "",
+   "◈ PEARL USES IN CH13+",
+   "  └ Ender Chest: 8 Obsidian + 1 Eye of Ender (= pearl + blaze)",
+   "  └ Throwing pearls: void escape if falling, End City traversal",
+   "  └ Ch14: Echo Shard recipes may require pearls as ingredient",
+   "  └ Quantum Fluid prep: Chorus + Water, but pearls fuel portal hops",
+   "  └ End Crystal respawn: 4 per re-summon (not pearl-based)",
+   "",
+   "▸ Every civilization that reached the End built a pearl farm.",
+   "  It is one of the first things they did after clearing the dragon.",
+   "  The farm on the main island is how you know someone was here.",
+   "  The platform at Y=128. The trapdoors. The kill zone.",
+   "  They all built the same design.",
+   "  You will too.",
+   "",
+   "▶ Build a Y=128+ Enderman farm platform [check]",
+   "▶ Farm 64 Ender Pearls",
+   "",
+   "◇ Endermite bait trick: throw a pearl to spawn Endermite,",
+   "  immediately trap it in a minecart before it despawns.",
+   "  (Endermites despawn after 2 minutes unless named.)",
+   "  Name tag the Endermite to prevent despawn.",
+   "  The farm works passively once built."
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     920,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

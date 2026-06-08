@@ -1,61 +1,92 @@
 {
-  "dependencies": ["ch09_r_rem1"],
-  "tasks": {
-    "maledictus": {
-      "title": "Locate and defeat Maledictus (Cataclysm — unlocks after Ancient Remnant kill)",
-      "icon": {"item": {"id": "cataclysm:cursium_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch09_r_rem1"
+ ],
+ "tasks": {
+  "maledictus": {
+   "title": "Locate and defeat Maledictus (Cataclysm — unlocks after Ancient Remnant kill)",
+   "icon": {
+    "item": {
+     "id": "cataclysm:cursium_ingot",
+     "count": 1
     },
-    "cursium": {
-      "type": "heracles:item",
-      "item": "cataclysm:cursium_ingot",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "cursium": {
-      "item": {"id": "cataclysm:cursium_ingot", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 5},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Maledictus"},
-    "subtitle": {"text": "The Cataclysm chain has a direction. Maledictus is the second step."},
-    "description": [
-      "Maledictus becomes available after the Ancient Remnant is dead.",
-      "It drops Cursium — a critical material for the Cataclysm equipment chain.",
-      "",
-      "Cursium enables the Annihilator and Ignis bosses.",
-      "Those enable the Emulator — the final Cataclysm boss.",
-      "",
-      "The Magical Eye requires Cataclysm boss drops:",
-      "- cataclysm:lacrima (Netherite Monstrosity drop)",
-      "- cataclysm:cursium_ingot and ignitium_ingot",
-      "The chain must be completed to craft the Magical Eye.",
-      "",
-      "The Netherite Monstrosity also drops lacrima —",
-      "the trigger item for infernal_age (Ch11).",
-      "The Cataclysm chain unlocks the next chapter AND an eye.",
-      "Every step counts twice.",
-      "",
-      "→ Kill Maledictus [check]",
-      "→ Collect 4 Cursium Ingots"
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [300, 450]}},
-    "icon": {"item": {"id": "cataclysm:cursium_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "cursium": {
+   "type": "heracles:item",
+   "item": "cataclysm:cursium_ingot",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "cursium": {
+   "item": {
+    "id": "cataclysm:cursium_ingot",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Maledictus"
+  },
+  "subtitle": {
+   "text": "The Cataclysm chain has a direction. Maledictus is the second step."
+  },
+  "description": [
+   "Maledictus becomes available after the Ancient Remnant is dead.",
+   "It drops Cursium — a critical material for the Cataclysm equipment chain.",
+   "",
+   "Cursium enables the Annihilator and Ignis bosses.",
+   "Those enable the Emulator — the final Cataclysm boss.",
+   "",
+   "The Magical Eye requires Cataclysm boss drops:",
+   "- cataclysm:lacrima (Netherite Monstrosity drop)",
+   "- cataclysm:cursium_ingot and ignitium_ingot",
+   "The chain must be completed to craft the Magical Eye.",
+   "",
+   "The Netherite Monstrosity also drops lacrima —",
+   "the trigger item for the Infernal chapter (Ch11).",
+   "The Cataclysm chain unlocks the next chapter AND an eye.",
+   "Every step counts twice.",
+   "",
+   "→ Kill Maledictus [check]",
+   "→ Collect 4 Cursium Ingots"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     3940,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:cursium_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,61 +1,98 @@
 {
-  "dependencies": ["ch13_portal"],
-  "tasks": {
-    "enter_end": {
-      "title": "Enter the End through the activated portal",
-      "icon": {"item": {"id": "minecraft:end_stone", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_portal"
+ ],
+ "tasks": {
+  "enter_end": {
+   "title": "Enter the End through the activated portal",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_stone",
+     "count": 1
     },
-    "dragon_observe": {
-      "title": "Locate and observe the Ender Dragon — identify crystal positions before engaging",
-      "icon": {"item": {"id": "minecraft:end_crystal", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "end_stone": {
-      "item": {"id": "minecraft:end_stone", "count": 32},
-      "type": "heracles:item"
+  "dragon_observe": {
+   "title": "Locate and observe the Ender Dragon — identify crystal positions before engaging",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_crystal",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Central Island"},
-    "subtitle": {"text": "The End is not an ending. It is a starting point that was placed here to test you."},
-    "description": [
-      "You have arrived.",
-      "",
-      "The central island is 64 blocks wide.",
-      "The obsidian pillars are spaced around the perimeter.",
-      "End Crystals sit atop most pillars — some have iron cages.",
-      "The dragon heals at crystals. Destroy them first.",
-      "",
-      "The Ender Dragon is guarded by a boss lock.",
-      "Check your scroll progression before engaging.",
-      "The eye_hunt scroll unlocks the boss fight — verify it is researched.",
-      "",
-      "Do not rush. Observe first.",
-      "Count the crystals. Note the cages. Plan the approach.",
-      "This is not a dungeon boss. This is the first true sequence-break fight.",
-      "",
-      "The void is not a floor. Do not fall.",
-      "",
-      "→ Enter the End [check]",
-      "→ Observe the dragon and identify crystal positions [check]"
-    ],
-    "groups": {"The Shattered Law": {"position": [0, 450]}},
-    "icon": {"item": {"id": "minecraft:end_stone", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "end_stone": {
+   "item": {
+    "id": "minecraft:end_stone",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Central Island"
+  },
+  "subtitle": {
+   "text": "The End is not an ending. It is a starting point that was placed here to test you."
+  },
+  "description": [
+   "You have arrived.",
+   "",
+   "The central island is 64 blocks wide.",
+   "The obsidian pillars are spaced around the perimeter.",
+   "End Crystals sit atop most pillars — some have iron cages.",
+   "The dragon heals at crystals. Destroy them first.",
+   "",
+   "The Ender Dragon is guarded by a boss lock.",
+   "Check your scroll progression before engaging.",
+   "The eye_hunt scroll unlocks the boss fight — verify it is researched.",
+   "",
+   "Do not rush. Observe first.",
+   "Count the crystals. Note the cages. Plan the approach.",
+   "This is not a dungeon boss. This is the first true sequence-break fight.",
+   "",
+   "The void is not a floor. Do not fall.",
+   "",
+   "→ Enter the End [check]",
+   "→ Observe the dragon and identify crystal positions [check]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     1380,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:end_stone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

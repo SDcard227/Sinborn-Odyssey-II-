@@ -1,63 +1,94 @@
 {
-  "dependencies": ["ch07_r_diesel1"],
-  "tasks": {
-    "kerosene": {
-      "type": "heracles:item",
-      "item": "tfmg:kerosene_bucket",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "lpg": {
-      "type": "heracles:item",
-      "item": "tfmg:lpg_bucket",
-      "amount": 2,
-      "collection": "AUTOMATIC"
-    },
-    "full_chain": {
-      "title": "Have all 5 distillation products piped and stored simultaneously",
-      "icon": {"item": {"id": "create:fluid_pipe", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch07_r_diesel1"
+ ],
+ "tasks": {
+  "kerosene": {
+   "type": "heracles:item",
+   "item": "tfmg:kerosene_bucket",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "steel_casing": {
-      "item": {"id": "tfmg:steel_casing", "count": 8},
-      "type": "heracles:item"
+  "lpg": {
+   "type": "heracles:item",
+   "item": "tfmg:lpg_bucket",
+   "amount": 2,
+   "collection": "AUTOMATIC"
+  },
+  "full_chain": {
+   "title": "Have all 5 distillation products piped and stored simultaneously",
+   "icon": {
+    "item": {
+     "id": "create:fluid_pipe",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Full Refinery"},
-    "subtitle": {"text": "The whole barrel. Nothing lost."},
-    "description": [
-      "A full refinery wastes nothing from the crude oil barrel.",
-      "Diesel → combustion engines.",
-      "Gasoline → high-output generation.",
-      "Kerosene → jet fuel applications (and some Create Big Cannons uses).",
-      "LPG → portable high-heat applications.",
-      "Bitumen → the age trigger you already collected.",
-      "",
-      "Five outputs. Five use cases.",
-      "The factory that runs all five simultaneously",
-      "is the factory ready for the next chapter.",
-      "",
-      "→ Collect 4 Kerosene (Distillation Tower)",
-      "→ Collect 2 LPG (Distillation Tower)",
-      "→ Have all 5 distillation products stored simultaneously [check]"
-    ],
-    "groups": {"Blood and Oil": {"position": [-300, 150]}},
-    "icon": {"item": {"id": "tfmg:kerosene_bucket", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "steel_casing": {
+   "item": {
+    "id": "tfmg:steel_casing",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Full Refinery"
+  },
+  "subtitle": {
+   "text": "The whole barrel. Nothing lost."
+  },
+  "description": [
+   "A full refinery wastes nothing from the crude oil barrel.",
+   "Diesel → combustion engines.",
+   "Gasoline → high-output generation.",
+   "Kerosene → jet fuel applications (and some Create Big Cannons uses).",
+   "LPG → portable high-heat applications.",
+   "Bitumen → the age trigger you already collected.",
+   "",
+   "Five outputs. Five use cases.",
+   "The factory that runs all five simultaneously",
+   "is the factory ready for the next chapter.",
+   "",
+   "→ Collect 4 Kerosene (Distillation Tower)",
+   "→ Collect 2 LPG (Distillation Tower)",
+   "→ Have all 5 distillation products stored simultaneously [check]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     1680,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "tfmg:kerosene_bucket",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

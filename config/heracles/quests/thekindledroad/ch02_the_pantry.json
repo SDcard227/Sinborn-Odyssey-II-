@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch02_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Pantry at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:barrel",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock the_pantry",
+   "title": "Discipline learned: The Pantry",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Pantry"
+  },
+  "subtitle": {
+   "text": "Raw things, kept honest."
+  },
+  "description": [
+   "The staples ask nothing of culture. Grain, root, water, salt.",
+   "Master the keeping of plain things, and no winter finds you empty.",
+   "",
+   "→ Recover and study The Pantry at a Research Pedestal."
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     760,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:barrel",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

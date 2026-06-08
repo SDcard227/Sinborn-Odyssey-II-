@@ -1,0 +1,80 @@
+{
+ "dependencies": [
+  "ch08_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "cataclysm:the_leviathan",
+   "amount": 1,
+   "title": "Slay the beast and claim its body"
+  },
+  "harvest": {
+   "type": "heracles:item",
+   "item": "lendersdelight:leviathan",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Harvest its meat , waste nothing"
+  },
+  "cook": {
+   "type": "heracles:item",
+   "item": "lendersdelight:cooked_leviathan",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Cook it , and eat"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "dish": {
+   "item": {
+    "id": "lendersdelight:cooked_leviathan",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Drowned Feast"
+  },
+  "subtitle": {
+   "text": "The sea kept a god. The sea sets a table."
+  },
+  "description": [
+   "Captain Cornelia drowned chasing the Leviathan. You drag it up and cook it.",
+   "Every part of the monster must be used , the drowned admiral would understand.",
+   "",
+   "Harvest the leviathan. Cook the drowned feast."
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     760,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "lendersdelight:cooked_leviathan",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

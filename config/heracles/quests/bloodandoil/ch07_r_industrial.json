@@ -1,116 +1,116 @@
 {
-  "dependencies": [
-    "ch07_r_sg2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/industrial"
-    },
-    "factory_running": {
-      "title": "Run a full automated Create production line for at least 5 minutes without manual input",
-      "icon": {
-        "item": {
-          "id": "create:belt",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch07_r_sg2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Industrial scroll at a Research Pedestal"
   },
-  "rewards": {
-    "brass": {
-      "item": {
-        "id": "create:brass_casing",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "factory_running": {
+   "title": "Run a full automated Create production line for at least 5 minutes without manual input",
+   "icon": {
+    "item": {
+     "id": "create:belt",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Industrial"
-    },
-    "subtitle": {
-      "text": "The scroll describes the age change from craft to production. You're living through the same transition."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.07 · THE INDUSTRIAL",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Industrial scroll describes the moment",
-      "  a civilization stops making things by hand.",
-      "  It does not romanticize it.",
-      "  It says: this is necessary.",
-      "  What comes next requires this.",
-      "",
-      "◈ THE INDUSTRIAL AGE PROGRESSION",
-      "  └ Water Wheel → Steam → Diesel → Electric (Ch10)",
-      "  └ Each step: same infrastructure, more power",
-      "  └ Each step: same components, better materials",
-      "  └ The factory that ran on water wheels",
-      "    still runs on the same belts when you swap the engine",
-      "",
-      "◈ WHAT THE SCROLL WARNS",
-      "  └ 'The factory that runs itself also breaks itself.'",
-      "  └ Automated farms can overflow → voiding upgrades",
-      "  └ Stress overloads stop all machines",
-      "  └ Oil runs out — keep refinery topped up",
-      "  └ The history of civilizations is also the history",
-      "    of what they forgot to maintain",
-      "",
-      "◈ SCROLL: The Industrial",
-      "  └ Found in: large factory ruins, industrial guild archives,",
-      "    Create workshop chests",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: industrial age lore, automation failure awareness",
-      "",
-      "▸ The scroll's author watched their civilization",
-      "  build faster and faster.",
-      "  Then one day the factory stopped.",
-      "  The scroll explains why.",
-      "  Learn from it.",
-      "",
-      "▶ Find The Industrial scroll [check]",
-      "▶ Run an automated production line 5 min without input [check]",
-      "",
-      "◇ The oil_age History Stages milestone triggers",
-      "  when TFMG Bitumen is first processed.",
-      "  If you haven't gotten that milestone yet,",
-      "  process oil through the Distillation Tower."
-    ],
-    "groups": {
-      "Blood and Oil": {
-        "position": [
-          -450,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create:belt",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "brass": {
+   "item": {
+    "id": "create:brass_casing",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Industrial"
+  },
+  "subtitle": {
+   "text": "The scroll describes the age change from craft to production. You're living through the same transition."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.07 · THE INDUSTRIAL",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Industrial scroll describes the moment",
+   "  a civilization stops making things by hand.",
+   "  It does not romanticize it.",
+   "  It says: this is necessary.",
+   "  What comes next requires this.",
+   "",
+   "◈ THE INDUSTRIAL AGE PROGRESSION",
+   "  └ Water Wheel → Steam → Diesel → Electric (Ch10)",
+   "  └ Each step: same infrastructure, more power",
+   "  └ Each step: same components, better materials",
+   "  └ The factory that ran on water wheels",
+   "    still runs on the same belts when you swap the engine",
+   "",
+   "◈ WHAT THE SCROLL WARNS",
+   "  └ 'The factory that runs itself also breaks itself.'",
+   "  └ Automated farms can overflow → voiding upgrades",
+   "  └ Stress overloads stop all machines",
+   "  └ Oil runs out — keep refinery topped up",
+   "  └ The history of civilizations is also the history",
+   "    of what they forgot to maintain",
+   "",
+   "◈ SCROLL: The Industrial",
+   "  └ Found in: large factory ruins, industrial guild archives,",
+   "    Create workshop chests",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: industrial age lore, automation failure awareness",
+   "",
+   "▸ The scroll's author watched their civilization",
+   "  build faster and faster.",
+   "  Then one day the factory stopped.",
+   "  The scroll explains why.",
+   "  Learn from it.",
+   "",
+   "▶ Find The Industrial scroll [check]",
+   "▶ Run an automated production line 5 min without input [check]",
+   "",
+   "◇ The Blood and Oil History Stages milestone triggers",
+   "  when TFMG Bitumen is first processed.",
+   "  If you haven't gotten that milestone yet,",
+   "  process oil through the Distillation Tower."
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     2600,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:belt",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

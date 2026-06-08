@@ -1,59 +1,90 @@
 {
-  "dependencies": ["ch09_world"],
-  "tasks": {
-    "find_hippogryph": {
-      "title": "Find a Hippogryph (Ice & Fire — spawns in Forest, Savanna, Plains biomes)",
-      "icon": {"item": {"id": "iceandfire:hippogryph_feather", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch09_world"
+ ],
+ "tasks": {
+  "find_hippogryph": {
+   "title": "Find a Hippogryph (Ice & Fire — spawns in Forest, Savanna, Plains biomes)",
+   "icon": {
+    "item": {
+     "id": "iceandfire:hippogryph_feather",
+     "count": 1
     },
-    "feathers": {
-      "type": "heracles:item",
-      "item": "iceandfire:hippogryph_feather",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "feather_reward": {
-      "item": {"id": "iceandfire:hippogryph_feather", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Hippogryph"},
-    "subtitle": {"text": "It is not a tool. It is a creature that chose to trust you."},
-    "description": [
-      "The Hippogryph is an Ice & Fire flying creature.",
-      "Tameable. Rideable. One of the few mounts with aerial capability",
-      "before elytra or late-game transport options.",
-      "",
-      "Hippogryphs spawn in Forest, Savanna, and Plains biomes.",
-      "Taming requires patience and appropriate food.",
-      "A tamed hippogryph can be equipped with a saddle for riding.",
-      "",
-      "In Ch09, aerial scouting massively speeds up Eye ingredient hunting.",
-      "You are about to cover enormous amounts of terrain.",
-      "A flying mount changes everything.",
-      "",
-      "Hippogryph Feathers are also crafting materials for Ice & Fire items.",
-      "",
-      "→ Find a Hippogryph [check]",
-      "→ Collect 4 Hippogryph Feathers"
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [150, 0]}},
-    "icon": {"item": {"id": "iceandfire:hippogryph_feather", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "feathers": {
+   "type": "heracles:item",
+   "item": "iceandfire:hippogryph_feather",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "feather_reward": {
+   "item": {
+    "id": "iceandfire:hippogryph_feather",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Hippogryph"
+  },
+  "subtitle": {
+   "text": "It is not a tool. It is a creature that chose to trust you."
+  },
+  "description": [
+   "The Hippogryph is an Ice & Fire flying creature.",
+   "Tameable. Rideable. One of the few mounts with aerial capability",
+   "before elytra or late-game transport options.",
+   "",
+   "Hippogryphs spawn in Forest, Savanna, and Plains biomes.",
+   "Taming requires patience and appropriate food.",
+   "A tamed hippogryph can be equipped with a saddle for riding.",
+   "",
+   "In Ch09, aerial scouting massively speeds up Eye ingredient hunting.",
+   "You are about to cover enormous amounts of terrain.",
+   "A flying mount changes everything.",
+   "",
+   "Hippogryph Feathers are also crafting materials for Ice & Fire items.",
+   "",
+   "→ Find a Hippogryph [check]",
+   "→ Collect 4 Hippogryph Feathers"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     2560,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "iceandfire:hippogryph_feather",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

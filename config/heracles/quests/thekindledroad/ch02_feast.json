@@ -1,65 +1,99 @@
 {
-  "dependencies": ["ch02_cook"],
-  "tasks": {
-    "variety": {
-      "title": "Eat 10 different foods",
-      "icon": {"item": {"id": "minecraft:golden_apple", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch02_cook"
+ ],
+ "tasks": {
+  "variety": {
+   "title": "Eat 10 different foods",
+   "icon": {
+    "item": {
+     "id": "minecraft:golden_apple",
+     "count": 1
     },
-    "porkchop": {
-      "type": "heracles:item",
-      "item": "minecraft:cooked_porkchop",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "cake": {
-      "type": "heracles:item",
-      "item": "minecraft:cake",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "apple": {
-      "item": {"id": "minecraft:golden_apple", "count": 2},
-      "type": "heracles:item"
-    },
-    "sugar": {
-      "item": {"id": "minecraft:sugar", "count": 16},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 8},
-      "type": "heracles:item"
-    }
+  "porkchop": {
+   "type": "heracles:item",
+   "item": "minecraft:cooked_porkchop",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The Communal Table"},
-    "subtitle": {"text": "Culture begins with the shared meal."},
-    "description": [
-      "The first civilizations built tables before they built temples.",
-      "",
-      "Diet tracks what you eat. Not just how much — what.",
-      "Grains. Proteins. Fruits. Vegetables. Sugars.",
-      "Balance all five and the body rewards you.",
-      "Let one fall behind long enough and you pay for it.",
-      "",
-      "Death resets everything. Start again.",
-      "",
-      "→ Eat 10 different foods [check]",
-      "→ Cook and eat 4 porkchops",
-      "→ Bake a cake"
-    ],
-    "groups": {"The Kindled Road": {"position": [0, 450]}},
-    "icon": {"item": {"id": "minecraft:cake", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "cake": {
+   "type": "heracles:item",
+   "item": "minecraft:cake",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "apple": {
+   "item": {
+    "id": "minecraft:golden_apple",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "sugar": {
+   "item": {
+    "id": "minecraft:sugar",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Communal Table"
+  },
+  "subtitle": {
+   "text": "Culture begins with the shared meal."
+  },
+  "description": [
+   "The first civilizations built tables before they built temples.",
+   "",
+   "Diet tracks what you eat. Not just how much — what.",
+   "Grains. Proteins. Fruits. Vegetables. Sugars.",
+   "Balance all five and the body rewards you.",
+   "Let one fall behind long enough and you pay for it.",
+   "",
+   "Death resets everything. Start again.",
+   "",
+   "→ Eat 10 different foods [check]",
+   "→ Cook and eat 4 porkchops",
+   "→ Bake a cake"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     1680,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:cake",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

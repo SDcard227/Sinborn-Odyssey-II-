@@ -1,89 +1,132 @@
 {
-  "dependencies": ["ch13_r_trueend2"],
-  "tasks": {
-    "eldritch_loadout": {
-      "title": "Equip a full ISS Eldritch school spellcasting loadout for the End dimension — focus + spell book + mana ring",
-      "icon": {"item": {"id": "irons_spellbooks:arcane_essence", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_r_trueend2"
+ ],
+ "tasks": {
+  "eldritch_loadout": {
+   "title": "Equip a full ISS Eldritch school spellcasting loadout for the End dimension — focus + spell book + mana ring",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:arcane_essence",
+     "count": 1
     },
-    "eldritch_cast": {
-      "title": "Cast 10 Eldritch school spells in the End dimension — exploit the void-entity damage bonus",
-      "icon": {"item": {"id": "minecraft:echo_shard", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ring_of_mana": {"item": {"id": "irons_spellbooks:ring_of_mana", "count": 1}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Eldritch in the Void"},
-    "subtitle": {"text": "The Eldritch school was made for this dimension. The void entities resist everything else. They do not resist this."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.13 · ELDRITCH IN THE VOID",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Iron's Spellbooks has 9 magic schools.",
-      "  The Eldritch school is the End school.",
-      "  It receives a damage bonus against void-type entities",
-      "  — which includes every mob in the End dimension.",
-      "  The Cataclysm End bosses (Harbinger, Primordial) are void-type.",
-      "  Build the Eldritch loadout before fighting them.",
-      "",
-      "◈ ELDRITCH SCHOOL SPELLS",
-      "  └ Eldritch spells draw from void energy mechanics",
-      "  └ Key spells for End combat:",
-      "    Void Tendril — pulls enemies toward you (Shulker control)",
-      "    Wither Skull — debuff on contact (wither effect stack)",
-      "    Eldritch Blast — ranged void damage (Enderman-effective)",
-      "  └ School synergy: Eldritch + Blood magic for sustain",
-      "    (Blood school has life-leech — useful in End regeneration gap)",
-      "  └ Full school list in ISS JEI — Eldritch books in End loot",
-      "",
-      "◈ ELDRITCH LOADOUT SETUP",
-      "  └ Focus: ISS casting implement (held in offhand)",
-      "  └ Spell Book: equip Eldritch school spells (Main/School filter)",
-      "  └ Ring of Mana: increases mana pool for extended casting",
-      "  └ Casting armor: prioritize mana regen pieces",
-      "    (combat-heavy End has no regeneration — mana regen = sustain)",
-      "  └ Ancient Tomes (Quark): upgrade Eldritch spells above vanilla cap",
-      "    (from Immersive Enchanting Ancient Tome interaction)",
-      "",
-      "◈ END ENTITY VOID BONUS",
-      "  └ Void damage bonus applies to: Endermen, Shulkers,",
-      "    Endermites, Phantoms, all Cataclysm End bosses",
-      "  └ Ender Dragon: partial bonus (boss-type modifier stacks)",
-      "  └ The Trigon (Ender Trigon mod): full void bonus applies",
-      "  └ True End mobs: void-type, full bonus",
-      "",
-      "▸ The first spellcasters who reached the End",
-      "  did not bring Eldritch magic.",
-      "  They brought fire and lightning.",
-      "  The void absorbed it.",
-      "  The ones who came back",
-      "  came back speaking in a different school.",
-      "  They had learned it from the dimension itself.",
-      "  The Eldritch school is that lesson, codified.",
-      "",
-      "▶ Equip a full Eldritch school ISS loadout [check]",
-      "▶ Cast 10 Eldritch spells against End entities [check]",
-      "",
-      "◇ Ring of Mana is the most impactful single piece",
-      "  for sustained Eldritch casting in the End.",
-      "  Without it, you run dry mid-fight.",
-      "  Craft or find one before the Cataclysm End chain."
-    ],
-    "groups": {"The Shattered Law": {"position": [-600, 150]}},
-    "icon": {"item": {"id": "irons_spellbooks:arcane_essence", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "eldritch_cast": {
+   "title": "Cast 10 Eldritch school spells in the End dimension — exploit the void-entity damage bonus",
+   "icon": {
+    "item": {
+     "id": "minecraft:echo_shard",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "ring_of_mana": {
+   "item": {
+    "id": "irons_spellbooks:ring_of_mana",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Eldritch in the Void"
+  },
+  "subtitle": {
+   "text": "The Eldritch school was made for this dimension. The void entities resist everything else. They do not resist this."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.13 · ELDRITCH IN THE VOID",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Iron's Spellbooks has 9 magic schools.",
+   "  The Eldritch school is the End school.",
+   "  It receives a damage bonus against void-type entities",
+   "  — which includes every mob in the End dimension.",
+   "  The Cataclysm End bosses (Harbinger, Primordial) are void-type.",
+   "  Build the Eldritch loadout before fighting them.",
+   "",
+   "◈ ELDRITCH SCHOOL SPELLS",
+   "  └ Eldritch spells draw from void energy mechanics",
+   "  └ Key spells for End combat:",
+   "    Void Tendril — pulls enemies toward you (Shulker control)",
+   "    Wither Skull — debuff on contact (wither effect stack)",
+   "    Eldritch Blast — ranged void damage (Enderman-effective)",
+   "  └ School synergy: Eldritch + Blood magic for sustain",
+   "    (Blood school has life-leech — useful in End regeneration gap)",
+   "  └ Full school list in ISS JEI — Eldritch books in End loot",
+   "",
+   "◈ ELDRITCH LOADOUT SETUP",
+   "  └ Focus: ISS casting implement (held in offhand)",
+   "  └ Spell Book: equip Eldritch school spells (Main/School filter)",
+   "  └ Ring of Mana: increases mana pool for extended casting",
+   "  └ Casting armor: prioritize mana regen pieces",
+   "    (combat-heavy End has no regeneration — mana regen = sustain)",
+   "  └ Ancient Tomes (Quark): upgrade Eldritch spells above vanilla cap",
+   "    (from Immersive Enchanting Ancient Tome interaction)",
+   "",
+   "◈ END ENTITY VOID BONUS",
+   "  └ Void damage bonus applies to: Endermen, Shulkers,",
+   "    Endermites, Phantoms, all Cataclysm End bosses",
+   "  └ Ender Dragon: partial bonus (boss-type modifier stacks)",
+   "  └ The Trigon (Ender Trigon mod): full void bonus applies",
+   "  └ True End mobs: void-type, full bonus",
+   "",
+   "▸ The first spellcasters who reached the End",
+   "  did not bring Eldritch magic.",
+   "  They brought fire and lightning.",
+   "  The void absorbed it.",
+   "  The ones who came back",
+   "  came back speaking in a different school.",
+   "  They had learned it from the dimension itself.",
+   "  The Eldritch school is that lesson, codified.",
+   "",
+   "▶ Equip a full Eldritch school ISS loadout [check]",
+   "▶ Cast 10 Eldritch spells against End entities [check]",
+   "",
+   "◇ Ring of Mana is the most impactful single piece",
+   "  for sustained Eldritch casting in the End.",
+   "  Without it, you run dry mid-fight.",
+   "  Craft or find one before the Cataclysm End chain."
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     1380,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:arcane_essence",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,0 +1,73 @@
+{
+ "dependencies": [
+  "ch08_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "minecraft:warden",
+   "amount": 1,
+   "title": "Slay the beast and claim its body"
+  },
+  "harvest": {
+   "type": "heracles:item",
+   "item": "compatdelight:warden_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Harvest its meat , waste nothing"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "dish": {
+   "item": {
+    "id": "compatdelight:warden_meat",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Sculk Table"
+  },
+  "subtitle": {
+   "text": "Deeper means older means stranger , and edible."
+  },
+  "description": [
+   "The Warden is a thing of the deep dark, flesh-joined and ancient.",
+   "To eat it is to take the deep into yourself. The dungeon provides for those who respect it.",
+   "",
+   "Slay it. Render it. Sit at the sculk table."
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     760,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "compatdelight:warden_meat",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

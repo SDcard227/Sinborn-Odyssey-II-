@@ -1,0 +1,80 @@
+{
+ "dependencies": [
+  "ch11_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "cataclysm:netherite_monstrosity",
+   "amount": 1,
+   "title": "Slay the beast and claim its body"
+  },
+  "harvest": {
+   "type": "heracles:item",
+   "item": "lendersdelight:netherite_monstrosity_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Harvest its meat , waste nothing"
+  },
+  "cook": {
+   "type": "heracles:item",
+   "item": "lendersdelight:cooked_netherite_monstrosity_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Cook it , and eat"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "dish": {
+   "item": {
+    "id": "lendersdelight:cooked_netherite_monstrosity_meat",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Forged Roast"
+  },
+  "subtitle": {
+   "text": "Meat under metal."
+  },
+  "description": [
+   "The Netherite Monstrosity is flesh fused to the hardest metal there is.",
+   "Crack the forge-shell, harvest the roast within. The monster fed itself on miners; now it feeds you.",
+   "",
+   "Cook the forged roast. Every part used."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     460,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "lendersdelight:cooked_netherite_monstrosity_meat",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

@@ -1,0 +1,21 @@
+{
+  "display_name": "Carnal Anatomy",
+  "research_time": 5400,
+  "items": [
+    "cardiac:life_bottle",
+    "corpsebutbetter:curios_inventory"
+  ],
+  "tags": [],
+  "mods": [
+    "corpsebutbetter",
+    "cardiac"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

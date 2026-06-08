@@ -1,92 +1,135 @@
 {
-  "dependencies": ["ch17_r_nuclear2"],
-  "tasks": {
-    "nuclear_shell_batch": {
-      "title": "Produce a batch of 4 Create Nuclear Shells — uses alexscaves:nuclear_bomb in Mechanical Crafter",
-      "icon": {"item": {"id": "canonnukes:nuke_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_r_nuclear2"
+ ],
+ "tasks": {
+  "nuclear_shell_batch": {
+   "title": "Produce a batch of 4 Create Nuclear Shells — uses alexscaves:nuclear_bomb in Mechanical Crafter",
+   "icon": {
+    "item": {
+     "id": "canonnukes:nuke_shell",
+     "count": 1
     },
-    "trinity_test": {
-      "title": "Fire a Create Nuclear Shell from a Big Cannon at a designated test site — the Trinity moment",
-      "icon": {"item": {"id": "canonnukes:nuke_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "nuke_shell": {"item": {"id": "canonnukes:nuke_shell", "count": 2}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 20}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Nuclear Trinity"},
-    "subtitle": {"text": "Ch10 built the reactor. Ch17 fires the shell. Oppie said: now I am become death. You already know what that means."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.17 · NUCLEAR TRINITY",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The nuclear chain started in Ch10.',",
-      "  The reactor was built.',",
-      "  The uranium processed.',",
-      "  The Steel Reactor came online.',",
-      "  Ch17 is where the shell is fired.',",
-      "  The Trinity test: the first nuclear detonation.',",
-      "  Find an empty biome. Set up the cannon. Fire.',",
-      "",
-      "◈ NUCLEAR SHELL PRODUCTION",
-      "  └ Create Nuclear Shell (canonnukes:nuke_shell):',",
-      "    Requires alexscaves:nuclear_bomb in Mechanical Crafter',",
-      "    Nuclear Bomb: crafted from uranium materials (Create: Oppenheimered)',",
-      "    Mechanical Crafter: 3×3 or 5×5 arrangement for the recipe',",
-      "  └ Create Big Cannons: the firing platform',",
-      "    Cannon barrel: 3-7 block length',",
-      "    Fuze type: impacts detonation timing',",
-      "    Elevation: angle barrel for range control',",
-      "  └ Batch target: 4 shells minimum (1 test + 3 operational)',",
-      "",
-      "◈ TRINITY TEST SETUP",
-      "  └ Designate a test site: empty biome, away from base',",
-      "    (nuclear explosion destroys terrain in radius)',",
-      "  └ Safe distance: position yourself 100+ blocks from impact point',",
-      "  └ Create Teleporter: place a teleporter at test site',",
-      "    (instant evacuation if explosion radius estimate is wrong)',",
-      "  └ Fire: load shell → set fuze → ignite → observe',",
-      "  └ Document: Exposure camera photograph of the mushroom cloud',",
-      "    (for the Antique Atlas + museum documentation)',",
-      "",
-      "◈ STEEL REACTOR INTEGRATION",
-      "  └ Steel Reactor (canonnukes:) produces SU for your Create network',",
-      "  └ Running reactor: passive power generation',",
-      "  └ Nuclear Shell + Reactor: dual-use of uranium supply chain',",
-      "    (reactor for power, shells for kinetic yield)',",
-      "",
-      "▸ Oppenheimer said: now I am become death, the destroyer of worlds.',",
-      "  He was quoting a text about war.',",
-      "  You have been through 17 chapters of building.',",
-      "  The nuclear shell is the moment the builder',",
-      "  acknowledges what they can destroy.',",
-      "  Fire it at an empty biome.',",
-      "  Take the photograph.',",
-      "  Then go home.',",
-      "",
-      "▶ Produce a batch of 4 Nuclear Shells [check]",
-      "▶ Fire a Nuclear Shell at the Trinity test site [check]",
-      "",
-      "◇ Nuclear Shell blast radius: check canonnukes: mod docs.',",
-      "  Build the test site at minimum 200 blocks from your base.',",
-      "  Your teleporter network makes evacuation instant.',",
-      "  Register the test site as a teleporter destination beforehand.',",
-      "  Fire. Photograph. Return."
-    ],
-    "groups": {"Lords of All": {"position": [150, 300]}},
-    "icon": {"item": {"id": "canonnukes:nuke_shell", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "trinity_test": {
+   "title": "Fire a Create Nuclear Shell from a Big Cannon at a designated test site — the Trinity moment",
+   "icon": {
+    "item": {
+     "id": "canonnukes:nuke_shell",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "nuke_shell": {
+   "item": {
+    "id": "canonnukes:nuke_shell",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 20
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Nuclear Trinity"
+  },
+  "subtitle": {
+   "text": "Ch10 built the reactor. Ch17 fires the shell. Oppie said: now I am become death. You already know what that means."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.17 · NUCLEAR TRINITY",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The nuclear chain started in Ch10.',",
+   "  The reactor was built.',",
+   "  The uranium processed.',",
+   "  The Steel Reactor came online.',",
+   "  Ch17 is where the shell is fired.',",
+   "  The Trinity test: the first nuclear detonation.',",
+   "  Find an empty biome. Set up the cannon. Fire.',",
+   "",
+   "◈ NUCLEAR SHELL PRODUCTION",
+   "  └ Create Nuclear Shell (canonnukes:nuke_shell):',",
+   "    Requires alexscaves:nuclear_bomb in Mechanical Crafter',",
+   "    Nuclear Bomb: crafted from uranium materials (Create: Oppenheimered)',",
+   "    Mechanical Crafter: 3×3 or 5×5 arrangement for the recipe',",
+   "  └ Create Big Cannons: the firing platform',",
+   "    Cannon barrel: 3-7 block length',",
+   "    Fuze type: impacts detonation timing',",
+   "    Elevation: angle barrel for range control',",
+   "  └ Batch target: 4 shells minimum (1 test + 3 operational)',",
+   "",
+   "◈ TRINITY TEST SETUP",
+   "  └ Designate a test site: empty biome, away from base',",
+   "    (nuclear explosion destroys terrain in radius)',",
+   "  └ Safe distance: position yourself 100+ blocks from impact point',",
+   "  └ Create Teleporter: place a teleporter at test site',",
+   "    (instant evacuation if explosion radius estimate is wrong)',",
+   "  └ Fire: load shell → set fuze → ignite → observe',",
+   "  └ Document: Exposure camera photograph of the mushroom cloud',",
+   "    (for the Antique Atlas + museum documentation)',",
+   "",
+   "◈ STEEL REACTOR INTEGRATION",
+   "  └ Steel Reactor (canonnukes:) produces SU for your Create network',",
+   "  └ Running reactor: passive power generation',",
+   "  └ Nuclear Shell + Reactor: dual-use of uranium supply chain',",
+   "    (reactor for power, shells for kinetic yield)',",
+   "",
+   "▸ Oppenheimer said: now I am become death, the destroyer of worlds.',",
+   "  He was quoting a text about war.',",
+   "  You have been through 17 chapters of building.',",
+   "  The nuclear shell is the moment the builder',",
+   "  acknowledges what they can destroy.',",
+   "  Fire it at an empty biome.',",
+   "  Take the photograph.',",
+   "  Then go home.',",
+   "",
+   "▶ Produce a batch of 4 Nuclear Shells [check]",
+   "▶ Fire a Nuclear Shell at the Trinity test site [check]",
+   "",
+   "◇ Nuclear Shell blast radius: check canonnukes: mod docs.',",
+   "  Build the test site at minimum 200 blocks from your base.',",
+   "  Your teleporter network makes evacuation instant.',",
+   "  Register the test site as a teleporter destination beforehand.',",
+   "  Fire. Photograph. Return."
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     1380,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "canonnukes:nuke_shell",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

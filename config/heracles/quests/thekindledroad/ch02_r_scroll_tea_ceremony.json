@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The Tea Ceremony scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Tea Ceremony scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The Tea Ceremony scroll",
-      "icon": {
-        "item": {
-          "id": "create:builders_tea",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock tea_ceremony"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The Tea Ceremony"
+  "research_scroll": {
+   "title": "Research the The Tea Ceremony scroll",
+   "icon": {
+    "item": {
+     "id": "create:builders_tea",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Sun-cult records. Painted on bone.\"",
-      "",
-      "Herbal Brews tea kettles, ratatouille compost tea, Create builders tea.",
-      "",
-      "This scroll unlocks 33 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Mowziesmobs:Chests/Umvuthana Grove Chest",
-      "  \u00b7 Jungle Temple",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The Tea Ceremony] [auto]"
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          529,
-          692
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create:builders_tea",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock gardened_wash"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Tea Ceremony"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Sun-cult records. Painted on bone.\"",
+   "",
+   "Herbal Brews tea kettles, ratatouille compost tea, Create builders tea.",
+   "",
+   "This scroll unlocks 33 items.",
+   "",
+   "Look for it in:",
+   "  · Mowziesmobs:Chests/Umvuthana Grove Chest",
+   "  · Jungle Temple",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Tea Ceremony] [auto]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     300,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:builders_tea",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

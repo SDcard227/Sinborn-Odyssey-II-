@@ -1,95 +1,138 @@
 {
-  "dependencies": ["ch17_r_ascend1"],
-  "tasks": {
-    "netherite_glider": {
-      "title": "Craft the Netherite Glider (Gliders mod) — the highest tier glider, better glide ratio than Elytra in flat flight",
-      "icon": {"item": {"id": "minecraft:netherite_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_r_ascend1"
+ ],
+ "tasks": {
+  "netherite_glider": {
+   "title": "Craft the Netherite Glider (Gliders mod) — the highest tier glider, better glide ratio than Elytra in flat flight",
+   "icon": {
+    "item": {
+     "id": "minecraft:netherite_ingot",
+     "count": 1
     },
-    "lightning_warning": {
-      "title": "Survive a thunderstorm while wearing the Netherite Glider — lightning destroys Gliders permanently (no repair)",
-      "icon": {"item": {"id": "minecraft:lightning_rod", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "netherite": {"item": {"id": "minecraft:netherite_ingot", "count": 2}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Netherite Glider"},
-    "subtitle": {"text": "The highest tier glider. Better flat-flight than Elytra. And if lightning hits it, it is gone permanently — no repair."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.17 · THE NETHERITE GLIDER",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Gliders mod adds tier-based gliders from wood through Netherite.',",
-      "  Each tier glides further and falls slower.',",
-      "  The Netherite Glider is the final tier.',",
-      "  It has a better flat-flight glide ratio than Elytra in a straight line.',",
-      "  It does not need Firework Rockets for sustained horizontal travel.',",
-      "  But: if lightning strikes it, the Glider is destroyed permanently.',",
-      "  No Mending. No repair. It is gone.',",
-      "",
-      "◈ NETHERITE GLIDER",
-      "  └ Recipe: check JEI for gliders: netherite variant',",
-      "    Likely: previous tier glider + Netherite Ingot upgrade',",
-      "  └ Equip: placed in Chest armor slot (replaces Elytra slot)',",
-      "    Choose: Elytra (rocket-powered) OR Glider (unpowered, glide only)',",
-      "    Most players keep both and swap situationally',",
-      "  └ Glide ratio: Netherite Glider maintains altitude longer per fall',",
-      "    Better for: crossing flat terrain, safe landing from height',",
-      "    Worse than Elytra for: long-distance speed travel, void crossing',",
-      "",
-      "◈ LIGHTNING DESTRUCTION — CRITICAL WARNING",
-      "  └ Lightning strike on player while wearing Glider: DESTROYS GLIDER',",
-      "    No repair mechanic. No Mending. The item is deleted.',",
-      "  └ Risk factor: thunderstorms happen in Serene Seasons',",
-      "    and Immersive Weathering adds additional weather events',",
-      "  └ Prevention:',",
-      "    1. Lightning Rod on base roof — attracts lightning away from you',",
-      "    2. Stay indoors during thunderstorms with Glider equipped',",
-      "    3. Swap to Elytra during thunderstorms (Elytra is not destroyed)',",
-      "    4. Totem of Undying: does NOT protect Glider (item durability, not HP)',",
-      "  └ Cost of replacement: another Netherite Ingot + craft chain',",
-      "    Not devastating, but inconvenient at the worst times',",
-      "",
-      "◈ ELYTRA VS GLIDER USE CASES",
-      "  └ Elytra: long-range speed travel, void crossing, combat',",
-      "  └ Netherite Glider: short hops, safe descent from mountains,',",
-      "    terrain traversal without rocket fuel cost',",
-      "  └ Keep both: swap based on weather and activity',",
-      "",
-      "▸ The previous civilizations fell from the sky.',",
-      "  Not because they had no wings.',",
-      "  Because their wings were not made from the right material.',",
-      "  The Netherite Glider is as tough as the dimension it is named for.',",
-      "  It survives everything except lightning.',",
-      "  That is one specific threat.',",
-      "  Build a Lightning Rod.',",
-      "  Survive the rest.',",
-      "",
-      "▶ Craft the Netherite Glider [check]",
-      "▶ Survive a thunderstorm safely (land, shelter, or Lightning Rod) [check]",
-      "",
-      "◇ Lightning Rod placement: highest point of your base roof.',",
-      "  One rod covers a 16-block radius against lightning strikes.',",
-      "  Multiple rods for larger builds.',",
-      "  The rod is vanilla — no modded requirement.',",
-      "  1 Copper Ingot × 3 stacked = Lightning Rod.",
-      "  Build it now."
-    ],
-    "groups": {"Lords of All": {"position": [-600, 150]}},
-    "icon": {"item": {"id": "minecraft:netherite_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "lightning_warning": {
+   "title": "Survive a thunderstorm while wearing the Netherite Glider — lightning destroys Gliders permanently (no repair)",
+   "icon": {
+    "item": {
+     "id": "minecraft:lightning_rod",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "netherite": {
+   "item": {
+    "id": "minecraft:netherite_ingot",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Netherite Glider"
+  },
+  "subtitle": {
+   "text": "The highest tier glider. Better flat-flight than Elytra. And if lightning hits it, it is gone permanently — no repair."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.17 · THE NETHERITE GLIDER",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Gliders mod adds tier-based gliders from wood through Netherite.',",
+   "  Each tier glides further and falls slower.',",
+   "  The Netherite Glider is the final tier.',",
+   "  It has a better flat-flight glide ratio than Elytra in a straight line.',",
+   "  It does not need Firework Rockets for sustained horizontal travel.',",
+   "  But: if lightning strikes it, the Glider is destroyed permanently.',",
+   "  No Mending. No repair. It is gone.',",
+   "",
+   "◈ NETHERITE GLIDER",
+   "  └ Recipe: check JEI for gliders: netherite variant',",
+   "    Likely: previous tier glider + Netherite Ingot upgrade',",
+   "  └ Equip: placed in Chest armor slot (replaces Elytra slot)',",
+   "    Choose: Elytra (rocket-powered) OR Glider (unpowered, glide only)',",
+   "    Most players keep both and swap situationally',",
+   "  └ Glide ratio: Netherite Glider maintains altitude longer per fall',",
+   "    Better for: crossing flat terrain, safe landing from height',",
+   "    Worse than Elytra for: long-distance speed travel, void crossing',",
+   "",
+   "◈ LIGHTNING DESTRUCTION — CRITICAL WARNING",
+   "  └ Lightning strike on player while wearing Glider: DESTROYS GLIDER',",
+   "    No repair mechanic. No Mending. The item is deleted.',",
+   "  └ Risk factor: thunderstorms happen in Serene Seasons',",
+   "    and Immersive Weathering adds additional weather events',",
+   "  └ Prevention:',",
+   "    1. Lightning Rod on base roof — attracts lightning away from you',",
+   "    2. Stay indoors during thunderstorms with Glider equipped',",
+   "    3. Swap to Elytra during thunderstorms (Elytra is not destroyed)',",
+   "    4. Totem of Undying: does NOT protect Glider (item durability, not HP)',",
+   "  └ Cost of replacement: another Netherite Ingot + craft chain',",
+   "    Not devastating, but inconvenient at the worst times',",
+   "",
+   "◈ ELYTRA VS GLIDER USE CASES",
+   "  └ Elytra: long-range speed travel, void crossing, combat',",
+   "  └ Netherite Glider: short hops, safe descent from mountains,',",
+   "    terrain traversal without rocket fuel cost',",
+   "  └ Keep both: swap based on weather and activity',",
+   "",
+   "▸ The previous civilizations fell from the sky.',",
+   "  Not because they had no wings.',",
+   "  Because their wings were not made from the right material.',",
+   "  The Netherite Glider is as tough as the dimension it is named for.',",
+   "  It survives everything except lightning.',",
+   "  That is one specific threat.',",
+   "  Build a Lightning Rod.',",
+   "  Survive the rest.',",
+   "",
+   "▶ Craft the Netherite Glider [check]",
+   "▶ Survive a thunderstorm safely (land, shelter, or Lightning Rod) [check]",
+   "",
+   "◇ Lightning Rod placement: highest point of your base roof.',",
+   "  One rod covers a 16-block radius against lightning strikes.',",
+   "  Multiple rods for larger builds.',",
+   "  The rod is vanilla — no modded requirement.',",
+   "  1 Copper Ingot × 3 stacked = Lightning Rod.",
+   "  Build it now."
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     920,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:netherite_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

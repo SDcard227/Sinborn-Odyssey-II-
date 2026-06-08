@@ -1,133 +1,133 @@
 {
-  "dependencies": [
-    "ch12_world"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/revive_crystal"
-    },
-    "revive_crystal": {
-      "title": "Craft a Revive Crystal — requires Heart Crystal + Crystal Core + Ghast Tear + Netherite + Totem",
-      "icon": {
-        "item": {
-          "id": "lifesteal:revive_crystal",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch12_world"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Revive Crystal scroll at a Research Pedestal"
   },
-  "rewards": {
-    "crystal_core": {
-      "item": {
-        "id": "lifesteal:crystal_core",
-        "count": 2
-      },
-      "type": "heracles:item"
+  "revive_crystal": {
+   "title": "Craft a Revive Crystal — requires Heart Crystal + Crystal Core + Ghast Tear + Netherite + Totem",
+   "icon": {
+    "item": {
+     "id": "lifesteal:revive_crystal",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Revive Crystal"
-    },
-    "subtitle": {
-      "text": "The Crystal Core heals 33%. The Revive Crystal heals everything. The cost is the difference between them."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.12 · THE REVIVE CRYSTAL",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Revive Crystal is the Lifesteal mod's",
-      "  ultimate item.",
-      "  On multiplayer: revives a dead player,",
-      "  restoring their lost hearts.",
-      "  On singleplayer: full heal + respawn anchor.",
-      "  The scroll explains what each crystal type does",
-      "  and how to build the chain.",
-      "",
-      "◈ LIFESTEAL CRYSTAL CHAIN",
-      "  └ lifesteal:crystal_fragment",
-      "    Source: Heart Ore (Y -50 to 70 overworld, Nether below roof)",
-      "    Basic component — 4 per recipe",
-      "  └ 4 crystal_fragment → lifesteal:crystal_core",
-      "    Heals 33% max HP on use",
-      "    Instant use item (hotbar click)",
-      "  └ 4 crystal_core + diamond → lifesteal:heart_crystal",
-      "    +1 permanent heart (stackable)",
-      "    Permanent HP increase — does not deplete",
-      "  └ heart_crystal + crystal_core + ghast_tear +",
-      "    netherite_ingot + totem_of_undying",
-      "    → lifesteal:revive_crystal",
-      "    Full HP restore + respawn functionality",
-      "",
-      "◈ REVIVE CRYSTAL IN MULTIPLAYER",
-      "  └ Use on dead player's ghost/body: revives them",
-      "    restores hearts lost from Lifesteal PvP deaths",
-      "  └ This is the counter to heart loss in PvP servers",
-      "  └ Crafting one is considered a peace offering",
-      "    in competitive server contexts",
-      "",
-      "◈ SINGLEPLAYER USE",
-      "  └ In singleplayer: no PvP, so hearts only go up",
-      "    (or down from Sculk Sickness death)",
-      "  └ Crystal still useful: full heal in boss fights",
-      "  └ Use as emergency healing in the Cataclysm chain",
-      "  └ Keep one in inventory during Emulator fight",
-      "",
-      "◈ SCROLL: Revive Crystal",
-      "  └ Found in Lifesteal Heart Ore structures,",
-      "    post-boss loot caches, high-tier dungeon chests",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: full Lifesteal crystal chain,",
-      "    Revive Crystal recipe, multiplayer heart mechanics",
-      "",
-      "▸ The Crystal does not undo what happened.",
-      "  It starts from where things are,",
-      "  not from where they were.",
-      "  That is not forgiveness.",
-      "  That is continuation.",
-      "",
-      "▶ Find The Revive Crystal scroll [check]",
-      "▶ Craft a Revive Crystal [check]",
-      "",
-      "◇ Totem of Undying + Revive Crystal in inventory:",
-      "  Double death protection during the Wither Storm fight.",
-      "  The Storm is the most dangerous encounter in Ch12.",
-      "  Bring both."
-    ],
-    "groups": {
-      "The Kingdom You Build": {
-        "position": [
-          600,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "lifesteal:revive_crystal",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "crystal_core": {
+   "item": {
+    "id": "lifesteal:crystal_core",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Revive Crystal"
+  },
+  "subtitle": {
+   "text": "The Crystal Core heals 33%. The Revive Crystal heals everything. The cost is the difference between them."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.12 · THE REVIVE CRYSTAL",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Revive Crystal is the Lifesteal mod's",
+   "  ultimate item.",
+   "  On multiplayer: revives a dead player,",
+   "  restoring their lost hearts.",
+   "  On singleplayer: full heal + respawn anchor.",
+   "  The scroll explains what each crystal type does",
+   "  and how to build the chain.",
+   "",
+   "◈ LIFESTEAL CRYSTAL CHAIN",
+   "  └ lifesteal:crystal_fragment",
+   "    Source: Heart Ore (Y -50 to 70 overworld, Nether below roof)",
+   "    Basic component — 4 per recipe",
+   "  └ 4 crystal_fragment → lifesteal:crystal_core",
+   "    Heals 33% max HP on use",
+   "    Instant use item (hotbar click)",
+   "  └ 4 crystal_core + diamond → lifesteal:heart_crystal",
+   "    +1 permanent heart (stackable)",
+   "    Permanent HP increase — does not deplete",
+   "  └ heart_crystal + crystal_core + ghast_tear +",
+   "    netherite_ingot + totem_of_undying",
+   "    → lifesteal:revive_crystal",
+   "    Full HP restore + respawn functionality",
+   "",
+   "◈ REVIVE CRYSTAL IN MULTIPLAYER",
+   "  └ Use on dead player's ghost/body: revives them",
+   "    restores hearts lost from Lifesteal PvP deaths",
+   "  └ This is the counter to heart loss in PvP servers",
+   "  └ Crafting one is considered a peace offering",
+   "    in competitive server contexts",
+   "",
+   "◈ SINGLEPLAYER USE",
+   "  └ In singleplayer: no PvP, so hearts only go up",
+   "    (or down from Sculk Sickness death)",
+   "  └ Crystal still useful: full heal in boss fights",
+   "  └ Use as emergency healing in the Cataclysm chain",
+   "  └ Keep one in inventory during Emulator fight",
+   "",
+   "◈ SCROLL: Revive Crystal",
+   "  └ Found in Lifesteal Heart Ore structures,",
+   "    post-boss loot caches, high-tier dungeon chests",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: full Lifesteal crystal chain,",
+   "    Revive Crystal recipe, multiplayer heart mechanics",
+   "",
+   "▸ The Crystal does not undo what happened.",
+   "  It starts from where things are,",
+   "  not from where they were.",
+   "  That is not forgiveness.",
+   "  That is continuation.",
+   "",
+   "▶ Find The Revive Crystal scroll [check]",
+   "▶ Craft a Revive Crystal [check]",
+   "",
+   "◇ Totem of Undying + Revive Crystal in inventory:",
+   "  Double death protection during the Wither Storm fight.",
+   "  The Storm is the most dangerous encounter in Ch12.",
+   "  Bring both."
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     460,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "lifesteal:revive_crystal",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

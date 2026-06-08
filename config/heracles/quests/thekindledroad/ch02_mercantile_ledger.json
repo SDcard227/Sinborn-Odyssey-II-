@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch02_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Mercantile Ledger at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "numismatics:crown",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock mercantile_ledger",
+   "title": "Discipline learned: The Mercantile Ledger",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Mercantile Ledger"
+  },
+  "subtitle": {
+   "text": "A coin is a promise written in metal."
+  },
+  "description": [
+   "The scattered survivors trade because no one survives alone.",
+   "Learn the ledger, the mint, the weight of a fair exchange — the first machine of a settled people.",
+   "",
+   "→ Recover and study the Mercantile Ledger at a Research Pedestal."
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     760,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

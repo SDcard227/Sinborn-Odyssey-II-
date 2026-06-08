@@ -1,60 +1,97 @@
 {
-  "dependencies": ["ch14_world"],
-  "tasks": {
-    "find_trigon": {
-      "title": "Locate the Ender Trigon in the End (three-headed dragon — look for its structure in deep outer islands)",
-      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_world"
+ ],
+ "tasks": {
+  "find_trigon": {
+   "title": "Locate the Ender Trigon in the End (three-headed dragon — look for its structure in deep outer islands)",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_pearl",
+     "count": 1
     },
-    "trigon_prep": {
-      "title": "Prepare for the Ender Trigon — it has three heads with different attack types (void, ice, lightning)",
-      "icon": {"item": {"id": "minecraft:shield", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
+  "trigon_prep": {
+   "title": "Prepare for the Ender Trigon — it has three heads with different attack types (void, ice, lightning)",
+   "icon": {
+    "item": {
+     "id": "minecraft:shield",
+     "count": 1
     },
-    "ender_pearl": {
-      "item": {"id": "minecraft:ender_pearl", "count": 16},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Ender Trigon"},
-    "subtitle": {"text": "The Ender Dragon was the guard. The Ender Trigon is what the guard was guarding against."},
-    "description": [
-      "The Ender Trigon is a three-headed dragon boss added by the Ender Trigon mod.",
-      "It spawns in the deep outer islands — past the Poise Forest, past the End Cities.",
-      "Look for its summoning structure: a ring of End pillars with a central altar.",
-      "",
-      "The three heads operate independently:",
-      "- Void Head: fires void beams that deal massive damage through armor",
-      "- Ice Head: fires ice bolts that inflict slowness and freeze",
-      "- Lightning Head: fires lightning arcs that chain across platforms",
-      "",
-      "Each head must be individually targeted and defeated.",
-      "When one head falls, the others become more aggressive.",
-      "The Trigon is a significantly harder fight than the standard Ender Dragon.",
-      "",
-      "On defeat, the Trigon drops unique materials and a Baby Ender Trigon egg.",
-      "The baby can be tamed. It is a dragon companion.",
-      "",
-      "→ Locate the Ender Trigon's summoning structure [check]",
-      "→ Prepare your loadout for three-head mechanics [check]"
-    ],
-    "groups": {"What the Void Remembers": {"position": [0, 150]}},
-    "icon": {"item": {"id": "minecraft:purple_dye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "ender_pearl": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Ender Trigon"
+  },
+  "subtitle": {
+   "text": "The Ender Dragon was the guard. The Ender Trigon is what the guard was guarding against."
+  },
+  "description": [
+   "The Ender Trigon is a three-headed dragon boss added by the Ender Trigon mod.",
+   "It spawns in the deep outer islands — past the Poise Forest, past the End Cities.",
+   "Look for its summoning structure: a ring of End pillars with a central altar.",
+   "",
+   "The three heads operate independently:",
+   "- Void Head: fires void beams that deal massive damage through armor",
+   "- Ice Head: fires ice bolts that inflict slowness and freeze",
+   "- Lightning Head: fires lightning arcs that chain across platforms",
+   "",
+   "Each head must be individually targeted and defeated.",
+   "When one head falls, the others become more aggressive.",
+   "The Trigon is a significantly harder fight than the standard Ender Dragon.",
+   "",
+   "On defeat, the Trigon drops unique materials and a Baby Ender Trigon egg.",
+   "The baby can be tamed. It is a dragon companion.",
+   "",
+   "→ Locate the Ender Trigon's summoning structure [check]",
+   "→ Prepare your loadout for three-head mechanics [check]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     460,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:purple_dye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

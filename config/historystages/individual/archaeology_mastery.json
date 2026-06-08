@@ -1,0 +1,25 @@
+{
+  "display_name": "Archaeology Mastery",
+  "research_time": 1500,
+  "items": [
+    "minecraft:pottery_shard_skull",
+    "minecraft:skull_pottery_shard",
+    "minecraft:skull_pottery_sherd",
+    "sullysmod:fossilised_bone",
+    "supplementaries:suspicious_gravel_bricks"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "supplementaries:sus_bricks",
+    "supplementaries:sus_gravel",
+    "supplementaries:sus_sand"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

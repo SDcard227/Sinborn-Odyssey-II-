@@ -1,59 +1,93 @@
 {
-  "dependencies": ["ch02_r_fc1"],
-  "tasks": {
-    "fc_meal": {
-      "title": "Cook 5 unique Farm and Charm recipes",
-      "icon": {"item": {"id": "farmandcharm:stove", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch02_r_fc1"
+ ],
+ "tasks": {
+  "fc_meal": {
+   "title": "Cook 5 unique Farm and Charm recipes",
+   "icon": {
+    "item": {
+     "id": "farmandcharm:stove",
+     "count": 1
     },
-    "roaster": {
-      "type": "heracles:item",
-      "item": "farmandcharm:roaster",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "scarecrow_hint": {
-      "item": {"id": "minecraft:stick", "count": 4},
-      "type": "heracles:item"
-    },
-    "golden_carrot": {
-      "item": {"id": "minecraft:golden_carrot", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 6},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Roaster"},
-    "subtitle": {"text": "The more stations you build, the more recipes open."},
-    "description": [
-      "The Roaster opens slow meals.",
-      "Six ingredient slots, sixty seconds per batch.",
-      "Roasted lamb. Smoked fish. Glazed vegetables.",
-      "",
-      "Cook all thirty-four Farm and Charm dishes",
-      "and the mod rewards you with a Scarecrow.",
-      "The Scarecrow keeps mobs from trampling your crops.",
-      "",
-      "It is the best reason to cook.",
-      "",
-      "→ Cook 5 unique F&C recipes [check]",
-      "→ Craft a Roaster"
-    ],
-    "groups": {"The Kindled Road": {"position": [300, 450]}},
-    "icon": {"item": {"id": "farmandcharm:roaster", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "roaster": {
+   "type": "heracles:item",
+   "item": "farmandcharm:roaster",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "scarecrow_hint": {
+   "item": {
+    "id": "minecraft:stick",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "golden_carrot": {
+   "item": {
+    "id": "minecraft:golden_carrot",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Roaster"
+  },
+  "subtitle": {
+   "text": "The more stations you build, the more recipes open."
+  },
+  "description": [
+   "The Roaster opens slow meals.",
+   "Six ingredient slots, sixty seconds per batch.",
+   "Roasted lamb. Smoked fish. Glazed vegetables.",
+   "",
+   "Cook all thirty-four Farm and Charm dishes",
+   "and the mod rewards you with a Scarecrow.",
+   "The Scarecrow keeps mobs from trampling your crops.",
+   "",
+   "It is the best reason to cook.",
+   "",
+   "→ Cook 5 unique F&C recipes [check]",
+   "→ Craft a Roaster"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     2600,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "farmandcharm:roaster",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

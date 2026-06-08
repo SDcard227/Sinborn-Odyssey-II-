@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the The Eldritch School scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the The Eldritch School scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the The Eldritch School scroll",
-      "icon": {
-        "item": {
-          "id": "irons_spellbooks:necronomicon_spell_book",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock eldritch_school"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "The Eldritch School"
+  "research_scroll": {
+   "title": "Research the The Eldritch School scroll",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:necronomicon_spell_book",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Hidden in the margin of approved books.\"",
-      "",
-      "ISS eldritch. Already populated.",
-      "",
-      "This scroll unlocks 9 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Witch Hut",
-      "  \u00b7 Alexscaves:Chests/Witch Hut",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [The Eldritch School] [auto]"
-    ],
-    "groups": {
-      "The Spoken Word": {
-        "position": [
-          592,
-          780
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "irons_spellbooks:necronomicon_spell_book",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock eldritch_school"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Eldritch School"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Hidden in the margin of approved books.\"",
+   "",
+   "ISS eldritch. Already populated.",
+   "",
+   "This scroll unlocks 9 items.",
+   "",
+   "Look for it in:",
+   "  · Witch Hut",
+   "  · Alexscaves:Chests/Witch Hut",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [The Eldritch School] [auto]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     300,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:necronomicon_spell_book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

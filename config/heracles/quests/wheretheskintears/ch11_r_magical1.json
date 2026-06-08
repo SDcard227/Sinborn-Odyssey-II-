@@ -1,55 +1,92 @@
 {
-  "dependencies": ["ch11_r_leviathan2"],
-  "tasks": {
-    "magical_eye": {
-      "title": "Craft the Magical Eye (center: lacrima + cursium + ignitium + spellweave variants + divine_pearl)",
-      "icon": {"item": {"id": "endrem:magical_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch11_r_leviathan2"
+ ],
+ "tasks": {
+  "magical_eye": {
+   "title": "Craft the Magical Eye (center: lacrima + cursium + ignitium + spellweave variants + divine_pearl)",
+   "icon": {
+    "item": {
+     "id": "endrem:magical_eye",
+     "count": 1
     },
-    "place_magical": {
-      "title": "Place the Magical Eye in the End Portal frame",
-      "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "magical_eye_reward": {
-      "item": {"id": "endrem:magical_eye", "count": 1},
-      "type": "heracles:item"
+  "place_magical": {
+   "title": "Place the Magical Eye in the End Portal frame",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_portal_frame",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 7},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Magical Eye"},
-    "subtitle": {"text": "Magic that was forced to be still. Now it moves again, in the frame."},
-    "description": [
-      "The Magical Eye is the Ocean Mages' inheritance.",
-      "They merged magic with the ocean at scale.",
-      "The Leviathan is what remained when the civilization dissolved completely.",
-      "",
-      "The recipe requires the Leviathan's spellweave (confirmed drop),",
-      "the Netherite Monstrosity's lacrima (ch11_monstrosity ✓),",
-      "and the full Cataclysm chain's ignitium and cursium.",
-      "",
-      "Seven or more frame slots filled, depending on your progress.",
-      "The portal is beginning to feel like a gate.",
-      "",
-      "→ Craft the Magical Eye [check]",
-      "→ Place it in the End Portal frame [check]"
-    ],
-    "groups": {"Where the Skin Tears": {"position": [150, 150]}},
-    "icon": {"item": {"id": "endrem:magical_eye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "magical_eye_reward": {
+   "item": {
+    "id": "endrem:magical_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 7
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Magical Eye"
+  },
+  "subtitle": {
+   "text": "Magic that was forced to be still. Now it moves again, in the frame."
+  },
+  "description": [
+   "The Magical Eye is the Ocean Mages' inheritance.",
+   "They merged magic with the ocean at scale.",
+   "The Leviathan is what remained when the civilization dissolved completely.",
+   "",
+   "The recipe requires the Leviathan's spellweave (confirmed drop),",
+   "the Netherite Monstrosity's lacrima (ch11_monstrosity ✓),",
+   "and the full Cataclysm chain's ignitium and cursium.",
+   "",
+   "Seven or more frame slots filled, depending on your progress.",
+   "The portal is beginning to feel like a gate.",
+   "",
+   "→ Craft the Magical Eye [check]",
+   "→ Place it in the End Portal frame [check]"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     2300,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "endrem:magical_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

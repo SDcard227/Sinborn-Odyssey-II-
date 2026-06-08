@@ -1,66 +1,109 @@
 {
-  "dependencies": ["ch13_r_elytra1"],
-  "tasks": {
-    "shulker_box": {
-      "title": "Craft a Shulker Box for portable persistent storage",
-      "icon": {"item": {"id": "minecraft:shulker_box", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_r_elytra1"
+ ],
+ "tasks": {
+  "shulker_box": {
+   "title": "Craft a Shulker Box for portable persistent storage",
+   "icon": {
+    "item": {
+     "id": "minecraft:shulker_box",
+     "count": 1
     },
-    "void_fly": {
-      "title": "Fly across the void between three separate outer island clusters using the Elytra",
-      "icon": {"item": {"id": "minecraft:elytra", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "void_fly": {
+   "title": "Fly across the void between three separate outer island clusters using the Elytra",
+   "icon": {
+    "item": {
+     "id": "minecraft:elytra",
+     "count": 1
     },
-    "mending_elytra": {
-      "title": "Apply Mending to your Elytra (use Immersive Enchanting — requires Ancient Books, NOT vanilla bookshelves)",
-      "icon": {"item": {"id": "minecraft:enchanted_book", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "shulker_box": {
-      "item": {"id": "minecraft:shulker_box", "count": 1},
-      "type": "heracles:item"
+  "mending_elytra": {
+   "title": "Apply Mending to your Elytra (use Immersive Enchanting — requires Ancient Books, NOT vanilla bookshelves)",
+   "icon": {
+    "item": {
+     "id": "minecraft:enchanted_book",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Void Sailing"},
-    "subtitle": {"text": "The void is not a floor. It is a medium. Navigate accordingly."},
-    "description": [
-      "The Elytra + firework rockets make the outer islands traversable.",
-      "Without them, island-hopping requires massive amounts of bridging material.",
-      "",
-      "Shulker Boxes are portable — they keep their contents when broken.",
-      "Bring several. The End has loot in every City chest.",
-      "You cannot carry it all in inventory.",
-      "",
-      "Mending on the Elytra is critical for long expeditions.",
-      "Immersive Enchanting uses Ancient Books found in structures with Chiseled Bookshelves.",
-      "Standard vanilla bookshelves do not work with Immersive Enchanting.",
-      "Look for Chiseled Bookshelf clusters in dungeons and advanced structures.",
-      "",
-      "Fly between island clusters — not just one jump.",
-      "Get used to the void as a medium, not a hazard.",
-      "Ch14 requires sustained void navigation.",
-      "",
-      "→ Craft a Shulker Box [check]",
-      "→ Fly across void between three island clusters [check]",
-      "→ Apply Mending to your Elytra [check]"
-    ],
-    "groups": {"The Shattered Law": {"position": [300, 150]}},
-    "icon": {"item": {"id": "minecraft:shulker_box", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "shulker_box": {
+   "item": {
+    "id": "minecraft:shulker_box",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Void Sailing"
+  },
+  "subtitle": {
+   "text": "The void is not a floor. It is a medium. Navigate accordingly."
+  },
+  "description": [
+   "The Elytra + firework rockets make the outer islands traversable.",
+   "Without them, island-hopping requires massive amounts of bridging material.",
+   "",
+   "Shulker Boxes are portable — they keep their contents when broken.",
+   "Bring several. The End has loot in every City chest.",
+   "You cannot carry it all in inventory.",
+   "",
+   "Mending on the Elytra is critical for long expeditions.",
+   "Immersive Enchanting uses Ancient Books found in structures with Chiseled Bookshelves.",
+   "Standard vanilla bookshelves do not work with Immersive Enchanting.",
+   "Look for Chiseled Bookshelf clusters in dungeons and advanced structures.",
+   "",
+   "Fly between island clusters — not just one jump.",
+   "Get used to the void as a medium, not a hazard.",
+   "Ch14 requires sustained void navigation.",
+   "",
+   "→ Craft a Shulker Box [check]",
+   "→ Fly across void between three island clusters [check]",
+   "→ Apply Mending to your Elytra [check]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     2760,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:shulker_box",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

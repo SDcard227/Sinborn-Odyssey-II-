@@ -1,57 +1,94 @@
 {
-  "dependencies": ["ch11_r_warped1"],
-  "tasks": {
-    "divine_soulshard": {
-      "title": "Collect a Divine Soulshard (Iron's Spellbooks — drops from Priests and Dead King in Catacombs)",
-      "icon": {"item": {"id": "irons_spellbooks:divine_soulshard", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch11_r_warped1"
+ ],
+ "tasks": {
+  "divine_soulshard": {
+   "title": "Collect a Divine Soulshard (Iron's Spellbooks — drops from Priests and Dead King in Catacombs)",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:divine_soulshard",
+     "count": 1
     },
-    "dead_sea_scroll": {
-      "title": "Collect an Aquamirae Dead Sea Scroll (drops from Captain Cornelia or Mother of the Maze — Ch08)",
-      "icon": {"item": {"id": "minecraft:nautilus_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
+  "dead_sea_scroll": {
+   "title": "Collect an Aquamirae Dead Sea Scroll (drops from Captain Cornelia or Mother of the Maze — Ch08)",
+   "icon": {
+    "item": {
+     "id": "minecraft:nautilus_shell",
+     "count": 1
     },
-    "diamond": {
-      "item": {"id": "minecraft:diamond", "count": 2},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Corrupted Eye Ingredients"},
-    "subtitle": {"text": "The Biological Eye needs what each civilization's worst left behind."},
-    "description": [
-      "The Corrupted Eye recipe requires:",
-      "- alexsmobs:hemolymph_sac (center — Warped Mosco drop ✓)",
-      "- irons_spellbooks:divine_soulshard (Priests/Dead King drop in ISS Catacombs)",
-      "- traveloptics:verdant_spellweave_ingot (T.O Magic 'n Extras — verdant boss drop)",
-      "- aquamirae:dead_sea_scroll (Aquamirae boss drop — Captain Cornelia/Mother of Maze)",
-      "",
-      "Divine Soulshard: The Iron's Spellbooks Catacombs dungeon holds the Dead King boss.",
-      "Priests in the approach area also drop it.",
-      "The Dead King drops Blood Staff + legendary spells + divine_soulshard.",
-      "",
-      "Dead Sea Scroll: return to the Aquamirae frozen ocean content (Ch08).",
-      "Captain Cornelia and the Mother of the Maze carry this drop.",
-      "",
-      "→ Collect a Divine Soulshard (ISS Dead King/Priests) [check]",
-      "→ Collect an Aquamirae Dead Sea Scroll [check]"
-    ],
-    "groups": {"Where the Skin Tears": {"position": [-300, 0]}},
-    "icon": {"item": {"id": "irons_spellbooks:divine_soulshard", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  },
+  "diamond": {
+   "item": {
+    "id": "minecraft:diamond",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Corrupted Eye Ingredients"
+  },
+  "subtitle": {
+   "text": "The Biological Eye needs what each civilization's worst left behind."
+  },
+  "description": [
+   "The Corrupted Eye recipe requires:",
+   "- alexsmobs:hemolymph_sac (center — Warped Mosco drop ✓)",
+   "- irons_spellbooks:divine_soulshard (Priests/Dead King drop in ISS Catacombs)",
+   "- traveloptics:verdant_spellweave_ingot (T.O Magic 'n Extras — verdant boss drop)",
+   "- aquamirae:dead_sea_scroll (Aquamirae boss drop — Captain Cornelia/Mother of Maze)",
+   "",
+   "Divine Soulshard: The Iron's Spellbooks Catacombs dungeon holds the Dead King boss.",
+   "Priests in the approach area also drop it.",
+   "The Dead King drops Blood Staff + legendary spells + divine_soulshard.",
+   "",
+   "Dead Sea Scroll: return to the Aquamirae frozen ocean content (Ch08).",
+   "Captain Cornelia and the Mother of the Maze carry this drop.",
+   "",
+   "→ Collect a Divine Soulshard (ISS Dead King/Priests) [check]",
+   "→ Collect an Aquamirae Dead Sea Scroll [check]"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     920,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:divine_soulshard",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

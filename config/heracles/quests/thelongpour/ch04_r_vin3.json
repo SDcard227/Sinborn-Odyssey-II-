@@ -1,55 +1,92 @@
 {
-  "dependencies": ["ch04_r_vin2"],
-  "tasks": {
-    "wine": {
-      "title": "Age a wine to completion (20 in-game days)",
-      "icon": {"item": {"id": "vinery:red_wine", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch04_r_vin2"
+ ],
+ "tasks": {
+  "wine": {
+   "title": "Age a wine to completion (20 in-game days)",
+   "icon": {
+    "item": {
+     "id": "vinery:red_wine",
+     "count": 1
     },
-    "five_wines": {
-      "title": "Have 5 different wine types in storage",
-      "icon": {"item": {"id": "vinery:white_wine", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "eiswein_hint": {
-      "item": {"id": "vinery:mead", "count": 4},
-      "type": "heracles:item"
+  "five_wines": {
+   "title": "Have 5 different wine types in storage",
+   "icon": {
+    "item": {
+     "id": "vinery:white_wine",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 3},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The First Wine"},
-    "subtitle": {"text": "Twenty-six wines. Each one a choice the world made for you."},
-    "description": [
-      "The goal of the winery is the cellar.",
-      "Not just one type — all of them.",
-      "Each wine has a different potion effect. Each one has a use.",
-      "",
-      "The Winemaker armor set grants infinite bone meal when full.",
-      "Worth building toward.",
-      "",
-      "Eiswein is the summit: White Taiga Juice plus Snowball.",
-      "Full heal on drink. The most expensive glass of water you will ever make.",
-      "Make it anyway.",
-      "",
-      "→ Age a wine to completion [check]",
-      "→ Have 5 wine types in storage [check]"
-    ],
-    "groups": {"The Long Pour": {"position": [-450, 0]}},
-    "icon": {"item": {"id": "vinery:red_wine", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "eiswein_hint": {
+   "item": {
+    "id": "vinery:mead",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The First Wine"
+  },
+  "subtitle": {
+   "text": "Twenty-six wines. Each one a choice the world made for you."
+  },
+  "description": [
+   "The goal of the winery is the cellar.",
+   "Not just one type — all of them.",
+   "Each wine has a different potion effect. Each one has a use.",
+   "",
+   "The Winemaker armor set grants infinite bone meal when full.",
+   "Worth building toward.",
+   "",
+   "Eiswein is the summit: White Taiga Juice plus Snowball.",
+   "Full heal on drink. The most expensive glass of water you will ever make.",
+   "Make it anyway.",
+   "",
+   "→ Age a wine to completion [check]",
+   "→ Have 5 wine types in storage [check]"
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     1380,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "vinery:red_wine",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

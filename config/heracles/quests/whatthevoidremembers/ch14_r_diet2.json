@@ -1,62 +1,99 @@
 {
-  "dependencies": ["ch14_r_diet1"],
-  "tasks": {
-    "lingering_potion": {
-      "title": "Brew a Lingering Potion of Regeneration (requires Dragon Breath — the first unique potion in the game)",
-      "icon": {"item": {"id": "minecraft:lingering_potion", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_r_diet1"
+ ],
+ "tasks": {
+  "lingering_potion": {
+   "title": "Brew a Lingering Potion of Regeneration (requires Dragon Breath — the first unique potion in the game)",
+   "icon": {
+    "item": {
+     "id": "minecraft:lingering_potion",
+     "count": 1
     },
-    "complete_feast": {
-      "title": "Eat one meal from every End-dimension food source in a single session (dragon, enderman, shulker, chorus)",
-      "icon": {"item": {"id": "minecraft:chorus_fruit", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "lingering": {
-      "item": {"id": "minecraft:lingering_potion", "count": 4},
-      "type": "heracles:item"
+  "complete_feast": {
+   "title": "Eat one meal from every End-dimension food source in a single session (dragon, enderman, shulker, chorus)",
+   "icon": {
+    "item": {
+     "id": "minecraft:chorus_fruit",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Complete End Feast"},
-    "subtitle": {"text": "One of every source. That is the Dungeon Meshi completion condition."},
-    "description": [
-      "Lingering Potions require Dragon Breath to brew.",
-      "They are throwable potions that leave a cloud effect on the ground.",
-      "For regeneration: an area of healing that affects you and allies.",
-      "They are useful in the extended boss fights of Ch15-17.",
-      "",
-      "The complete End feast:",
-      "1. Ender Dragon Meat / Dragon Steak (End's Delight)",
-      "2. Enderman Steak (Ender's Delight)",
-      "3. Shulker Soup (Ender's Delight)",
-      "4. Chorus Fruit (vanilla)",
-      "",
-      "Eating all four is the Dungeon Meshi proof-of-completion for the End.",
-      "You have not merely visited this dimension.",
-      "You have lived in it — hunted in it, cooked in it, eaten in it.",
-      "",
-      "The End is territory now.",
-      "Not a dungeon. Not a boss arena. Territory.",
-      "",
-      "→ Brew a Lingering Potion using Dragon Breath [check]",
-      "→ Eat one meal from every End food source in a session [check]"
-    ],
-    "groups": {"What the Void Remembers": {"position": [300, 150]}},
-    "icon": {"item": {"id": "minecraft:lingering_potion", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "lingering": {
+   "item": {
+    "id": "minecraft:lingering_potion",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Complete End Feast"
+  },
+  "subtitle": {
+   "text": "One of every source. That is the Dungeon Meshi completion condition."
+  },
+  "description": [
+   "Lingering Potions require Dragon Breath to brew.",
+   "They are throwable potions that leave a cloud effect on the ground.",
+   "For regeneration: an area of healing that affects you and allies.",
+   "They are useful in the extended boss fights of Ch15-17.",
+   "",
+   "The complete End feast:",
+   "1. Ender Dragon Meat / Dragon Steak (End's Delight)",
+   "2. Enderman Steak (Ender's Delight)",
+   "3. Shulker Soup (Ender's Delight)",
+   "4. Chorus Fruit (vanilla)",
+   "",
+   "Eating all four is the Dungeon Meshi proof-of-completion for the End.",
+   "You have not merely visited this dimension.",
+   "You have lived in it — hunted in it, cooked in it, eaten in it.",
+   "",
+   "The End is territory now.",
+   "Not a dungeon. Not a boss arena. Territory.",
+   "",
+   "→ Brew a Lingering Potion using Dragon Breath [check]",
+   "→ Eat one meal from every End food source in a session [check]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     1840,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:lingering_potion",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

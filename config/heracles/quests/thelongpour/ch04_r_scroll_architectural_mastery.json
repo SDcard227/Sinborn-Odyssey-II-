@@ -1,77 +1,77 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Architectural Mastery scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Architectural Mastery scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Architectural Mastery scroll",
-      "icon": {
-        "item": {
-          "id": "createadditionallogistics:andesite_encased_black_flexible_shaft",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock architectural_mastery"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Architectural Mastery"
+  "research_scroll": {
+   "title": "Research the Architectural Mastery scroll",
+   "icon": {
+    "item": {
+     "id": "createadditionallogistics:andesite_encased_black_flexible_shaft",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Copied between every civilization that touched it.\"",
-      "",
-      "This scroll unlocks 2737 items.",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Architectural Mastery] [auto]"
-    ],
-    "groups": {
-      "The Long Pour": {
-        "position": [
-          750,
-          900
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "createadditionallogistics:andesite_encased_black_flexible_shaft",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock architectural_mastery"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Architectural Mastery"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Copied between every civilization that touched it.\"",
+   "",
+   "This scroll unlocks 2737 items.",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Architectural Mastery] [auto]"
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     0,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "createadditionallogistics:andesite_encased_black_flexible_shaft",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

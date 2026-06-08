@@ -1,56 +1,87 @@
 {
-  "dependencies": ["ch04_r_vin1"],
-  "tasks": {
-    "aging_barrel": {
-      "type": "heracles:item",
-      "item": "vinery:aging_barrel",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+ "dependencies": [
+  "ch04_r_vin1"
+ ],
+ "tasks": {
+  "aging_barrel": {
+   "type": "heracles:item",
+   "item": "vinery:aging_barrel",
+   "amount": 1,
+   "collection": "AUTOMATIC"
+  },
+  "ferment": {
+   "title": "Ferment a batch of grape juice (5 minutes in barrel)",
+   "icon": {
+    "item": {
+     "id": "vinery:fermentation_barrel",
+     "count": 1
     },
-    "ferment": {
-      "title": "Ferment a batch of grape juice (5 minutes in barrel)",
-      "icon": {"item": {"id": "vinery:fermentation_barrel", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "mead": {
-      "item": {"id": "vinery:mead", "count": 2},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 4},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Aging Barrel"},
-    "subtitle": {"text": "The longer it waits, the more it remembers."},
-    "description": [
-      "Fermentation Barrel: five minutes. Add juice. Wait.",
-      "Aging Barrel: twenty in-game days. Then it becomes wine.",
-      "",
-      "The wine from the first pressing tastes of where it came from.",
-      "Which grapes. Which biome. Which season.",
-      "The barrel does not lie.",
-      "",
-      "Mead gives Regeneration. Cider adds four max hearts.",
-      "Eiswein heals completely — the rarest and the best.",
-      "Learn what each wine does. Build a cellar.",
-      "",
-      "→ Craft an Aging Barrel",
-      "→ Ferment a batch of grape juice [check]"
-    ],
-    "groups": {"The Long Pour": {"position": [-300, 0]}},
-    "icon": {"item": {"id": "vinery:aging_barrel", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "mead": {
+   "item": {
+    "id": "vinery:mead",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Aging Barrel"
+  },
+  "subtitle": {
+   "text": "The longer it waits, the more it remembers."
+  },
+  "description": [
+   "Fermentation Barrel: five minutes. Add juice. Wait.",
+   "Aging Barrel: twenty in-game days. Then it becomes wine.",
+   "",
+   "The wine from the first pressing tastes of where it came from.",
+   "Which grapes. Which biome. Which season.",
+   "The barrel does not lie.",
+   "",
+   "Mead gives Regeneration. Cider adds four max hearts.",
+   "Eiswein heals completely — the rarest and the best.",
+   "Learn what each wine does. Build a cellar.",
+   "",
+   "→ Craft an Aging Barrel",
+   "→ Ferment a batch of grape juice [check]"
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     920,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "vinery:aging_barrel",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

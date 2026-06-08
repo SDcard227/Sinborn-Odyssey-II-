@@ -1,113 +1,113 @@
 {
-  "dependencies": [
-    "ch01_r_torch"
-  ],
-  "tasks": {
-    "torch_scroll": {
-      "title": "Find the On the Burning Torch scroll (drops from cave chest loot, dungeon reward rooms)",
-      "icon": {
-        "item": {
-          "id": "historystages:scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [
+  "ch01_r_torch"
+ ],
+ "tasks": {
+  "torch_scroll": {
+   "title": "Find the On the Burning Torch scroll (drops from cave chest loot, dungeon reward rooms)",
+   "icon": {
+    "item": {
+     "id": "historystages:scroll",
+     "count": 1
     },
-    "torch_stockpile": {
-      "type": "heracles:item",
-      "item": "minecraft:torch",
-      "amount": 64,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "torches": {
-      "item": {
-        "id": "minecraft:torch",
-        "count": 64
-      },
-      "type": "heracles:item"
-    },
-    "coal": {
-      "item": {
-        "id": "minecraft:coal",
-        "count": 32
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Burning Torch"
-    },
-    "subtitle": {
-      "text": "Hardcore Torches burn out. The darkness does not wait for you to craft more."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.01 · THE BURNING TORCH",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Hardcore Torches changes the rules:",
-      "  Placed torches burn for approximately 40 minutes.",
-      "  When they expire, the darkness returns.",
-      "  You must replace them.",
-      "",
-      "◈ TORCH LOGISTICS",
-      "  └ 40 min burntime per torch",
-      "  └ Lanterns and candles last longer",
-      "  └ Soul Torches (blue) burn longer than standard",
-      "  └ Torch flowers (Supplementaries) are permanent",
-      "  └ Carry minimum 64 — caves eat torches fast",
-      "",
-      "◈ SCROLL: On the Burning Torch",
-      "  └ Found in: cave chests, dungeon reward rooms",
-      "  └ Research time: instant (1 sec)",
-      "  └ Unlocks: lighting progression awareness,",
-      "    lantern tech preview",
-      "",
-      "▸ The light system is a resource management game:",
-      "  Coal → Torches → Lanterns → Glowstone → Shroomlights.",
-      "  Each tier burns longer or is permanent.",
-      "  Plan your cave lighting accordingly.",
-      "",
-      "▶ Find the Burning Torch scroll [check]",
-      "▶ Carry 64 torches [collect]",
-      "",
-      "◇ Candles (vanilla) never burn out when placed.",
-      "  Limited light radius but permanent."
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          150,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:torch",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "torch_stockpile": {
+   "type": "heracles:item",
+   "item": "minecraft:torch",
+   "amount": 64,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "torches": {
+   "item": {
+    "id": "minecraft:torch",
+    "count": 64
+   },
+   "type": "heracles:item"
+  },
+  "coal": {
+   "item": {
+    "id": "minecraft:coal",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Burning Torch"
+  },
+  "subtitle": {
+   "text": "Hardcore Torches burn out. The darkness does not wait for you to craft more."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.01 · THE BURNING TORCH",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Hardcore Torches changes the rules:",
+   "  Placed torches burn for approximately 40 minutes.",
+   "  When they expire, the darkness returns.",
+   "  You must replace them.",
+   "",
+   "◈ TORCH LOGISTICS",
+   "  └ 40 min burntime per torch",
+   "  └ Lanterns and candles last longer",
+   "  └ Soul Torches (blue) burn longer than standard",
+   "  └ Torch flowers (Supplementaries) are permanent",
+   "  └ Carry minimum 64 — caves eat torches fast",
+   "",
+   "◈ SCROLL: On the Burning Torch",
+   "  └ Found in: cave chests, dungeon reward rooms",
+   "  └ Research time: instant (1 sec)",
+   "  └ Unlocks: lighting progression awareness,",
+   "    lantern tech preview",
+   "",
+   "▸ The light system is a resource management game:",
+   "  Coal → Torches → Lanterns → Glowstone → Shroomlights.",
+   "  Each tier burns longer or is permanent.",
+   "  Plan your cave lighting accordingly.",
+   "",
+   "▶ Find the Burning Torch scroll [check]",
+   "▶ Carry 64 torches [collect]",
+   "",
+   "◇ Candles (vanilla) never burn out when placed.",
+   "  Limited light radius but permanent."
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     1380,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:torch",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,121 +1,121 @@
 {
-  "dependencies": [
-    "ch08_r_warden2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/living_decay"
-    },
-    "ancient_city_loot": {
-      "title": "Loot the deep chests in an Ancient City — retrieve the hidden items without waking more Wardens",
-      "icon": {
-        "item": {
-          "id": "minecraft:sculk_shrieker",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch08_r_warden2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Living Decay scroll at a Research Pedestal"
   },
-  "rewards": {
-    "echo": {
-      "item": {
-        "id": "minecraft:echo_shard",
-        "count": 4
-      },
-      "type": "heracles:item"
+  "ancient_city_loot": {
+   "title": "Loot the deep chests in an Ancient City — retrieve the hidden items without waking more Wardens",
+   "icon": {
+    "item": {
+     "id": "minecraft:sculk_shrieker",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Living Decay"
-    },
-    "subtitle": {
-      "text": "The Sculk Sickness has five stages. Stage 5 is not recoverable without the cure. The cure is in The End."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.08 · THE LIVING DECAY",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Living Decay scroll describes Sculk Sickness",
-      "  from the perspective of someone who survived Stage 4.",
-      "  They barely survived Stage 4.",
-      "  They describe what Stage 5 looks like from the outside.",
-      "  They don't describe it from the inside.",
-      "  No one has.",
-      "",
-      "◈ SCULK SICKNESS — FULL REFERENCE",
-      "  └ Stage 1: Mining Fatigue — annoying",
-      "  └ Stage 2: Weakness added — now affecting combat",
-      "  └ Stage 3: Slowness stack — movement impaired",
-      "  └ Stage 4: Vision effects — dangerous in combat",
-      "  └ Stage 5: Full debuff suite — nearly incapacitated",
-      "",
-      "◈ CURE PATH",
-      "  └ Ambrosia: crafted from specific End materials",
-      "    (requires End dimension access — Ch13)",
-      "  └ Vile Herb: partially mitigates progression",
-      "    also used in Cursed Eye recipe (Ch12)",
-      "  └ Prevention: don't mine Sculk, don't trigger Shriekers,",
-      "    don't linger in Deep Dark biome",
-      "",
-      "◈ ANCIENT CITY LOOT",
-      "  └ Best pre-End loot in the game",
-      "  └ Contains: Swift Sneak enchant books,",
-      "    Echo Shards (for Compass of Recovery),",
-      "    unique armor pieces, ISS spell scrolls",
-      "  └ Strategy: Sneak everywhere. Never sprint.",
-      "    Wool blocks muffle vibrations.",
-      "    Enter at night or with Cat/Cloak potion.",
-      "",
-      "◈ SCROLL: The Living Decay",
-      "  └ Found in: Ancient City deep loot chests,",
-      "    Warden chamber relics, sculk ruin deposits",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: full Sculk Sickness stage guide,",
-      "    Ambrosia cure path, Ancient City strategy",
-      "",
-      "▶ Find The Living Decay scroll [check]",
-      "▶ Loot Ancient City deep chests without waking Wardens [check]",
-      "",
-      "◇ Ambrosia (End materials) is the only cure for Stage 5.",
-      "  If you hit Stage 5 before Ch13,",
-      "  use Vile Herb repeatedly to slow progression.",
-      "  Do not fight the Warden at Stage 4+."
-    ],
-    "groups": {
-      "Below the Waking World": {
-        "position": [
-          -600,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:sculk_shrieker",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "echo": {
+   "item": {
+    "id": "minecraft:echo_shard",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Living Decay"
+  },
+  "subtitle": {
+   "text": "The Sculk Sickness has five stages. Stage 5 is not recoverable without the cure. The cure is in The End."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.08 · THE LIVING DECAY",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Living Decay scroll describes Sculk Sickness",
+   "  from the perspective of someone who survived Stage 4.",
+   "  They barely survived Stage 4.",
+   "  They describe what Stage 5 looks like from the outside.",
+   "  They don't describe it from the inside.",
+   "  No one has.",
+   "",
+   "◈ SCULK SICKNESS — FULL REFERENCE",
+   "  └ Stage 1: Mining Fatigue — annoying",
+   "  └ Stage 2: Weakness added — now affecting combat",
+   "  └ Stage 3: Slowness stack — movement impaired",
+   "  └ Stage 4: Vision effects — dangerous in combat",
+   "  └ Stage 5: Full debuff suite — nearly incapacitated",
+   "",
+   "◈ CURE PATH",
+   "  └ Ambrosia: crafted from specific End materials",
+   "    (requires End dimension access — Ch13)",
+   "  └ Vile Herb: partially mitigates progression",
+   "    also used in Cursed Eye recipe (Ch12)",
+   "  └ Prevention: don't mine Sculk, don't trigger Shriekers,",
+   "    don't linger in Deep Dark biome",
+   "",
+   "◈ ANCIENT CITY LOOT",
+   "  └ Best pre-End loot in the game",
+   "  └ Contains: Swift Sneak enchant books,",
+   "    Echo Shards (for Compass of Recovery),",
+   "    unique armor pieces, ISS spell scrolls",
+   "  └ Strategy: Sneak everywhere. Never sprint.",
+   "    Wool blocks muffle vibrations.",
+   "    Enter at night or with Cat/Cloak potion.",
+   "",
+   "◈ SCROLL: The Living Decay",
+   "  └ Found in: Ancient City deep loot chests,",
+   "    Warden chamber relics, sculk ruin deposits",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: full Sculk Sickness stage guide,",
+   "    Ambrosia cure path, Ancient City strategy",
+   "",
+   "▶ Find The Living Decay scroll [check]",
+   "▶ Loot Ancient City deep chests without waking Wardens [check]",
+   "",
+   "◇ Ambrosia (End materials) is the only cure for Stage 5.",
+   "  If you hit Stage 5 before Ch13,",
+   "  use Vile Herb repeatedly to slow progression.",
+   "  Do not fight the Warden at Stage 4+."
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     2600,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:sculk_shrieker",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

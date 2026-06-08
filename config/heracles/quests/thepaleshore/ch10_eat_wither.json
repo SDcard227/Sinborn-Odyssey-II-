@@ -1,0 +1,73 @@
+{
+ "dependencies": [
+  "ch10_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "minecraft:wither",
+   "amount": 1,
+   "title": "Slay the beast and claim its body"
+  },
+  "harvest": {
+   "type": "heracles:item",
+   "item": "compatdelight:wither_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Harvest its meat , waste nothing"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "dish": {
+   "item": {
+    "id": "compatdelight:wither_meat",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Withered Meal"
+  },
+  "subtitle": {
+   "text": "Even the unmade can be eaten."
+  },
+  "description": [
+   "The Wither is summoned grief given form , a thing built to destroy.",
+   "You unbuild it, and from the wreckage, a meal. Waste is disrespect, even here.",
+   "",
+   "Slay the Wither. Make the withered meal."
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "compatdelight:wither_meat",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

@@ -1,90 +1,90 @@
 {
-  "dependencies": [
-    "ch16_kingdom"
-  ],
-  "tasks": {
-    "celestial_ingot_gate": {
-      "type": "heracles:item",
-      "item": "celestisynth:celestial_netherite_ingot",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "elder_mastery_scroll": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/celestisynth_studied"
-    }
+ "dependencies": [
+  "ch16_kingdom"
+ ],
+ "tasks": {
+  "celestial_ingot_gate": {
+   "type": "heracles:item",
+   "item": "celestisynth:celestial_netherite_ingot",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "celestial_netherite": {
-      "item": {
-        "id": "celestisynth:celestial_netherite_ingot",
-        "count": 4
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 20
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Elder Age"
-    },
-    "subtitle": {
-      "text": "You have been to the end of the world and come back with something the world had never seen. You are an elder now."
-    },
-    "description": [
-      "Ch16 ends here.",
-      "",
-      "You have:",
-      "- Mastered Celestisynth processing (the pack's highest craft tier)",
-      "- Forged Celestial Netherite (synthesis of two extreme dimensions)",
-      "- Armed yourself with the pack's best equipment",
-      "- Strengthened your kingdom's defenses",
-      "- Returned to community after the adventure's end",
-      "",
-      "The Elder Mastery scroll is found in End City vault rooms",
-      "or drops during advanced Celestisynth material processing.",
-      "It formalizes the transition \u2014 you have mastered what was available.",
-      "",
-      "Ch17 is not about survival.",
-      "Ch17 is about transcendence.",
-      "The quantum mechanism. The instant travel.",
-      "The path to divinity.",
-      "",
-      "You are ready.",
-      "",
-      "\u2192 Confirm Celestial Netherite Ingot [check]",
-      "\u2192 Research the Elder Mastery scroll [check]",
-      "\u2192 The Elder Age begins [command]"
-    ],
-    "groups": {
-      "The Long Road Home": {
-        "position": [
-          0,
-          750
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "celestisynth:celestial_netherite_ingot",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "elder_mastery_scroll": {
+   "type": "heracles:check",
+   "title": "Research the Celestisynth scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "celestial_netherite": {
+   "item": {
+    "id": "celestisynth:celestial_netherite_ingot",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 20
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Elder Age"
+  },
+  "subtitle": {
+   "text": "You have been to the end of the world and come back with something the world had never seen. You are an elder now."
+  },
+  "description": [
+   "Ch16 ends here.",
+   "",
+   "You have:",
+   "- Mastered Celestisynth processing (the pack's highest craft tier)",
+   "- Forged Celestial Netherite (synthesis of two extreme dimensions)",
+   "- Armed yourself with the pack's best equipment",
+   "- Strengthened your kingdom's defenses",
+   "- Returned to community after the adventure's end",
+   "",
+   "The Elder Mastery scroll is found in End City vault rooms",
+   "or drops during advanced Celestisynth material processing.",
+   "It formalizes the transition — you have mastered what was available.",
+   "",
+   "Ch17 is not about survival.",
+   "Ch17 is about transcendence.",
+   "The quantum mechanism. The instant travel.",
+   "The path to divinity.",
+   "",
+   "You are ready.",
+   "",
+   "→ Confirm Celestial Netherite Ingot [check]",
+   "→ Research the Elder Mastery scroll [check]",
+   "→ The Elder Age begins [command]"
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     2300,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "celestisynth:celestial_netherite_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

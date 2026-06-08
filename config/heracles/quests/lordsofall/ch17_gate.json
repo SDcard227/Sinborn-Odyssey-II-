@@ -1,99 +1,99 @@
 {
-  "dependencies": [
-    "ch17_teleporter"
-  ],
-  "tasks": {
-    "quantum_mechanism_gate": {
-      "title": "Confirm your Quantum Mechanism network is installed and operational",
-      "icon": {
-        "item": {
-          "id": "createteleporters:quantum_mechanism",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_teleporter"
+ ],
+ "tasks": {
+  "quantum_mechanism_gate": {
+   "title": "Confirm your Quantum Mechanism network is installed and operational",
+   "icon": {
+    "item": {
+     "id": "createteleporters:quantum_mechanism",
+     "count": 1
     },
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/instant_travel_studied"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "quantum_mechanism": {
-      "item": {
-        "id": "createteleporters:quantum_mechanism",
-        "count": 2
-      },
-      "type": "heracles:item"
-    },
-    "crown": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 64
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Lords of All"
-    },
-    "subtitle": {
-      "text": "The previous twelve civilizations built monuments. You built something that works."
-    },
-    "description": [
-      "Ch17 is complete. The game is complete.",
-      "",
-      "You have:",
-      "- Survived the world's survival mechanics (Cold Sweat, Thirst, Diet, Sculk, Pressure)",
-      "- Explored every dimension (Overworld, Nether, End, True End)",
-      "- Defeated every major boss (Barako, Kukulkan, Elder Guardian, Wither, Ender Dragon, Ender Trigon, Scarlet King sealed)",
-      "- Built a civilization (MCA, Bountiful, Via Romana, Villager Recruits)",
-      "- Mastered every major technology tier (Create, TFMG, Create New Age, Create Teleporters)",
-      "- Crafted twelve civilization eyes and opened the portal",
-      "- Mastered the highest material tier (Celestisynth Netherite)",
-      "- Built instant travel infrastructure",
-      "",
-      "The thirteenth civilization did not fall.",
-      "It endured, expanded, and transcended.",
-      "",
-      "The Instant Travel scroll is found in Create Teleporters structure loot",
-      "or as a Celestisynth end-tier processing output.",
-      "Research it. It is the final formal declaration:",
-      "you go where you choose, when you choose.",
-      "",
-      "The mastery age does not end the game.",
-      "It ends the guided portion.",
-      "Everything after this is yours.",
-      "",
-      "\u2192 Confirm quantum teleporter network is active [check]",
-      "\u2192 Research the Instant Travel scroll [check]",
-      "\u2192 The Mastery Age begins [command]"
-    ],
-    "groups": {
-      "Lords of All": {
-        "position": [
-          0,
-          750
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "createteleporters:quantum_mechanism",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Instant Travel scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "quantum_mechanism": {
+   "item": {
+    "id": "createteleporters:quantum_mechanism",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "crown": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 64
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Lords of All"
+  },
+  "subtitle": {
+   "text": "The previous twelve civilizations built monuments. You built something that works."
+  },
+  "description": [
+   "Ch17 is complete. The game is complete.",
+   "",
+   "You have:",
+   "- Survived the world's survival mechanics (Cold Sweat, Thirst, Diet, Sculk, Pressure)",
+   "- Explored every dimension (Overworld, Nether, End, True End)",
+   "- Defeated every major boss (Barako, Kukulkan, Elder Guardian, Wither, Ender Dragon, Ender Trigon, Scarlet King sealed)",
+   "- Built a civilization (MCA, Bountiful, Via Romana, Villager Recruits)",
+   "- Mastered every major technology tier (Create, TFMG, Create New Age, Create Teleporters)",
+   "- Crafted twelve civilization eyes and opened the portal",
+   "- Mastered the highest material tier (Celestisynth Netherite)",
+   "- Built instant travel infrastructure",
+   "",
+   "The thirteenth civilization did not fall.",
+   "It endured, expanded, and transcended.",
+   "",
+   "The Instant Travel scroll is found in Create Teleporters structure loot",
+   "or as a Celestisynth end-tier processing output.",
+   "Research it. It is the final formal declaration:",
+   "you go where you choose, when you choose.",
+   "",
+   "The mastery age does not end the game.",
+   "It ends the guided portion.",
+   "Everything after this is yours.",
+   "",
+   "→ Confirm quantum teleporter network is active [check]",
+   "→ Research the Instant Travel scroll [check]",
+   "→ The Mastery Age begins [command]"
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     2300,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "createteleporters:quantum_mechanism",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

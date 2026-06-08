@@ -1,60 +1,91 @@
 {
-  "dependencies": ["ch02_r_fd2"],
-  "tasks": {
-    "roast": {
-      "type": "heracles:item",
-      "item": "farmersdelight:roasted_mutton_chops",
-      "amount": 2,
-      "collection": "AUTOMATIC"
-    },
-    "rice": {
-      "type": "heracles:item",
-      "item": "farmersdelight:fried_rice",
-      "amount": 2,
-      "collection": "AUTOMATIC"
-    },
-    "complex_meal": {
-      "title": "Cook 5 unique Farmer's Delight dishes",
-      "icon": {"item": {"id": "farmersdelight:chicken_soup", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch02_r_fd2"
+ ],
+ "tasks": {
+  "roast": {
+   "type": "heracles:item",
+   "item": "farmersdelight:roasted_mutton_chops",
+   "amount": 2,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "noodles": {
-      "item": {"id": "farmersdelight:noodle_soup", "count": 2},
-      "type": "heracles:item"
+  "rice": {
+   "type": "heracles:item",
+   "item": "farmersdelight:fried_rice",
+   "amount": 2,
+   "collection": "AUTOMATIC"
+  },
+  "complex_meal": {
+   "title": "Cook 5 unique Farmer's Delight dishes",
+   "icon": {
+    "item": {
+     "id": "farmersdelight:chicken_soup",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 2},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "A Proper Meal"},
-    "subtitle": {"text": "The body remembers every meal. So does culture."},
-    "description": [
-      "There are sixty-four unique Farmer's Delight recipes.",
-      "Each one covers a different food group.",
-      "Each one demands something from you — preparation, ingredients, patience.",
-      "",
-      "The food desire system rewards variety.",
-      "The wider you cook, the better your body performs.",
-      "The narrower you eat, the smaller your margin gets.",
-      "",
-      "→ Cook Roasted Mutton Chops",
-      "→ Cook Fried Rice",
-      "→ Cook 5 unique FD dishes [check]"
-    ],
-    "groups": {"The Kindled Road": {"position": [-450, 0]}},
-    "icon": {"item": {"id": "farmersdelight:roasted_mutton_chops", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "noodles": {
+   "item": {
+    "id": "farmersdelight:noodle_soup",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "A Proper Meal"
+  },
+  "subtitle": {
+   "text": "The body remembers every meal. So does culture."
+  },
+  "description": [
+   "There are sixty-four unique Farmer's Delight recipes.",
+   "Each one covers a different food group.",
+   "Each one demands something from you — preparation, ingredients, patience.",
+   "",
+   "The food desire system rewards variety.",
+   "The wider you cook, the better your body performs.",
+   "The narrower you eat, the smaller your margin gets.",
+   "",
+   "→ Cook Roasted Mutton Chops",
+   "→ Cook Fried Rice",
+   "→ Cook 5 unique FD dishes [check]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     1680,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "farmersdelight:roasted_mutton_chops",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

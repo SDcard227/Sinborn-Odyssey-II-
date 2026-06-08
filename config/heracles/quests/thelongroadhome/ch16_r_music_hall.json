@@ -1,89 +1,132 @@
 {
-  "dependencies": ["ch16_r_music2"],
-  "tasks": {
-    "music_hall_build": {
-      "title": "Build a dedicated music hall — minimum 10×10 structure with Jukeboxes, Note Blocks, and Xerca instruments",
-      "icon": {"item": {"id": "minecraft:jukebox", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_r_music2"
+ ],
+ "tasks": {
+  "music_hall_build": {
+   "title": "Build a dedicated music hall — minimum 10×10 structure with Jukeboxes, Note Blocks, and Xerca instruments",
+   "icon": {
+    "item": {
+     "id": "minecraft:jukebox",
+     "count": 1
     },
-    "etched_disc": {
-      "title": "Record a custom Etched disc — use the Etched mod recording mechanic to create a unique music disc",
-      "icon": {"item": {"id": "minecraft:music_disc_13", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "note_block": {"item": {"id": "minecraft:note_block", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Music Hall"},
-    "subtitle": {"text": "Etched records. Xerca plays. The hall is the space between the recording and the listening. Build it properly."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.16 · THE MUSIC HALL",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The kingdom builds music halls for the same reason",
-      "  it builds roads and farms.",
-      "  Function: cultural anchor, morale, documentation.",
-      "  The music hall is the kingdom's memory of sound.",
-      "  Etched records the sound. Xerca plays it live.",
-      "  The hall is where both happen.",
-      "",
-      "◈ ETCHED: CUSTOM MUSIC DISCS",
-      "  └ Etched mod: allows recording audio as custom music discs",
-      "  └ Recording mechanic: Etched adds a recording device/block",
-      "    that captures sounds from the environment or Note Blocks",
-      "  └ Disc creation: recorded audio → pressed onto blank disc",
-      "    (blank disc likely requires iron/gold + paper — check JEI: etched:)",
-      "  └ Playback: custom discs play in vanilla Jukeboxes",
-      "  └ Storage: disc wall (item frames + Jukeboxes) in the hall",
-      "",
-      "◈ XERCA: PLAYABLE INSTRUMENTS",
-      "  └ Instruments: Guitar, Lute, Flute, and others",
-      "    (check JEI for xerca: instrument recipes)",
-      "  └ Play mechanic: hold instrument + right-click to play notes",
-      "    WASD/keys map to musical notes (varies by instrument)",
-      "  └ Multiplayer: multiple players on instruments = ensemble",
-      "  └ Display: place instruments on item frames or stands in hall",
-      "",
-      "◈ MUSIC HALL DESIGN",
-      "  └ Minimum: 10×10 interior with raised stage area",
-      "  └ Stage: Note Block array + Xerca instruments + Etched recorder",
-      "  └ Seating: stairs or slabs arranged as audience seats",
-      "  └ Disc wall: item frames with all custom discs + vanilla discs",
-      "  └ Lighting: End Rods (thematic) or lanterns for warm tone",
-      "  └ Material: Oak + Stripped Logs + Bookshelf wall = acoustic room",
-      "",
-      "▸ The kingdom does not remember only its wars.",
-      "  It remembers its music.",
-      "  Every civilization in Sinborn documented technology.",
-      "  None of them documented music.",
-      "  You are the first to build a music hall.",
-      "  The hall says: we were here, and we played.",
-      "  That is different from the other things that say we were here.',",
-      "",
-      "▶ Build a dedicated music hall [check]",
-      "▶ Record a custom Etched disc [check]",
-      "",
-      "◇ Xerca instruments can be played on horseback or while standing.",
-      "  Build a performance stage with all four instrument types.",
-      "  One player can cycle through them during a session.",
-      "  The music hall is a roleplaying anchor for the kingdom.",
-      "  Not a mechanical requirement.",
-      "  The most important buildings rarely are."
-    ],
-    "groups": {"The Long Road Home": {"position": [150, 300]}},
-    "icon": {"item": {"id": "minecraft:jukebox", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "etched_disc": {
+   "title": "Record a custom Etched disc — use the Etched mod recording mechanic to create a unique music disc",
+   "icon": {
+    "item": {
+     "id": "minecraft:music_disc_13",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "note_block": {
+   "item": {
+    "id": "minecraft:note_block",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Music Hall"
+  },
+  "subtitle": {
+   "text": "Etched records. Xerca plays. The hall is the space between the recording and the listening. Build it properly."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.16 · THE MUSIC HALL",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The kingdom builds music halls for the same reason",
+   "  it builds roads and farms.",
+   "  Function: cultural anchor, morale, documentation.",
+   "  The music hall is the kingdom's memory of sound.",
+   "  Etched records the sound. Xerca plays it live.",
+   "  The hall is where both happen.",
+   "",
+   "◈ ETCHED: CUSTOM MUSIC DISCS",
+   "  └ Etched mod: allows recording audio as custom music discs",
+   "  └ Recording mechanic: Etched adds a recording device/block",
+   "    that captures sounds from the environment or Note Blocks",
+   "  └ Disc creation: recorded audio → pressed onto blank disc",
+   "    (blank disc likely requires iron/gold + paper — check JEI: etched:)",
+   "  └ Playback: custom discs play in vanilla Jukeboxes",
+   "  └ Storage: disc wall (item frames + Jukeboxes) in the hall",
+   "",
+   "◈ XERCA: PLAYABLE INSTRUMENTS",
+   "  └ Instruments: Guitar, Lute, Flute, and others",
+   "    (check JEI for xerca: instrument recipes)",
+   "  └ Play mechanic: hold instrument + right-click to play notes",
+   "    WASD/keys map to musical notes (varies by instrument)",
+   "  └ Multiplayer: multiple players on instruments = ensemble",
+   "  └ Display: place instruments on item frames or stands in hall",
+   "",
+   "◈ MUSIC HALL DESIGN",
+   "  └ Minimum: 10×10 interior with raised stage area",
+   "  └ Stage: Note Block array + Xerca instruments + Etched recorder",
+   "  └ Seating: stairs or slabs arranged as audience seats",
+   "  └ Disc wall: item frames with all custom discs + vanilla discs",
+   "  └ Lighting: End Rods (thematic) or lanterns for warm tone",
+   "  └ Material: Oak + Stripped Logs + Bookshelf wall = acoustic room",
+   "",
+   "▸ The kingdom does not remember only its wars.",
+   "  It remembers its music.",
+   "  Every civilization in Sinborn documented technology.",
+   "  None of them documented music.",
+   "  You are the first to build a music hall.",
+   "  The hall says: we were here, and we played.",
+   "  That is different from the other things that say we were here.',",
+   "",
+   "▶ Build a dedicated music hall [check]",
+   "▶ Record a custom Etched disc [check]",
+   "",
+   "◇ Xerca instruments can be played on horseback or while standing.",
+   "  Build a performance stage with all four instrument types.",
+   "  One player can cycle through them during a session.",
+   "  The music hall is a roleplaying anchor for the kingdom.",
+   "  Not a mechanical requirement.",
+   "  The most important buildings rarely are."
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     1380,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:jukebox",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

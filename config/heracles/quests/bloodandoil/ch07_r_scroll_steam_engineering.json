@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Steam Engineering scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Steam Engineering scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Steam Engineering scroll",
-      "icon": {
-        "item": {
-          "id": "create:steam_engine",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock steam_engineering"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Steam Engineering"
+  "research_scroll": {
+   "title": "Research the Steam Engineering scroll",
+   "icon": {
+    "item": {
+     "id": "create:steam_engine",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Found in the smoke of old forges.\"",
-      "",
-      "TFMG steam stack \u2014 boilers, steel chain, industrial machines.",
-      "",
-      "This scroll unlocks 653 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Ati Structures:Chests/Library",
-      "  \u00b7 Village/Village Weaponsmith",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Steam Engineering] [auto]"
-    ],
-    "groups": {
-      "Blood and Oil": {
-        "position": [
-          779,
-          692
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create:steam_engine",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock steam_engineering"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Steam Engineering"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Found in the smoke of old forges.\"",
+   "",
+   "TFMG steam stack — boilers, steel chain, industrial machines.",
+   "",
+   "This scroll unlocks 653 items.",
+   "",
+   "Look for it in:",
+   "  · Ati Structures:Chests/Library",
+   "  · Village/Village Weaponsmith",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Steam Engineering] [auto]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     300,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:steam_engine",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

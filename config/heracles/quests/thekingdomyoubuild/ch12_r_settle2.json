@@ -1,67 +1,110 @@
 {
-  "dependencies": ["ch12_r_settle1"],
-  "tasks": {
-    "via_romana": {
-      "title": "Build a Via Romana road connecting two settlements (minimum 100 blocks)",
-      "icon": {"item": {"id": "viaromana:stone_road", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch12_r_settle1"
+ ],
+ "tasks": {
+  "via_romana": {
+   "title": "Build a Via Romana road connecting two settlements (minimum 100 blocks)",
+   "icon": {
+    "item": {
+     "id": "viaromana:stone_road",
+     "count": 1
     },
-    "fast_travel": {
-      "title": "Use Via Romana fast travel to move between two road-connected points",
-      "icon": {"item": {"id": "viaromana:road_marker", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "fast_travel": {
+   "title": "Use Via Romana fast travel to move between two road-connected points",
+   "icon": {
+    "item": {
+     "id": "viaromana:road_marker",
+     "count": 1
     },
-    "exposure": {
-      "title": "Photograph your settlement with the Exposure camera — document what you built",
-      "icon": {"item": {"id": "exposure:camera", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "stone_road": {
-      "item": {"id": "viaromana:stone_road", "count": 64},
-      "type": "heracles:item"
+  "exposure": {
+   "title": "Photograph your settlement with the Exposure camera — document what you built",
+   "icon": {
+    "item": {
+     "id": "exposure:camera",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Road Network"},
-    "subtitle": {"text": "Every civilization that lasted long enough built roads. None of the ones that didn't are remembered."},
-    "description": [
-      "Via Romana adds craftable road blocks that enable fast travel between connected points.",
-      "The road must be continuous — no gaps.",
-      "Connect your base to another location: a dungeon, a village, a mine.",
-      "",
-      "Roads serve a practical function in the late game.",
-      "The Wither Storm is at X:0 Z:0.",
-      "Your preparation locations are scattered across the world.",
-      "Fast travel is not comfort — it is logistics.",
-      "",
-      "The Exposure camera records what you have built.",
-      "The photograph exists as an in-game item.",
-      "This is documentation. The world will end.",
-      "You are choosing to record it before it does.",
-      "",
-      "The previous civilizations did not document themselves adequately.",
-      "You are doing this differently.",
-      "",
-      "→ Build a Via Romana road between settlements [check]",
-      "→ Use fast travel on the road network [check]",
-      "→ Photograph your settlement [check]"
-    ],
-    "groups": {"The Kingdom You Build": {"position": [-300, 300]}},
-    "icon": {"item": {"id": "viaromana:stone_road", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "stone_road": {
+   "item": {
+    "id": "viaromana:stone_road",
+    "count": 64
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Road Network"
+  },
+  "subtitle": {
+   "text": "Every civilization that lasted long enough built roads. None of the ones that didn't are remembered."
+  },
+  "description": [
+   "Via Romana adds craftable road blocks that enable fast travel between connected points.",
+   "The road must be continuous — no gaps.",
+   "Connect your base to another location: a dungeon, a village, a mine.",
+   "",
+   "Roads serve a practical function in the late game.",
+   "The Wither Storm is at X:0 Z:0.",
+   "Your preparation locations are scattered across the world.",
+   "Fast travel is not comfort — it is logistics.",
+   "",
+   "The Exposure camera records what you have built.",
+   "The photograph exists as an in-game item.",
+   "This is documentation. The world will end.",
+   "You are choosing to record it before it does.",
+   "",
+   "The previous civilizations did not document themselves adequately.",
+   "You are doing this differently.",
+   "",
+   "→ Build a Via Romana road between settlements [check]",
+   "→ Use fast travel on the road network [check]",
+   "→ Photograph your settlement [check]"
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     920,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "viaromana:stone_road",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

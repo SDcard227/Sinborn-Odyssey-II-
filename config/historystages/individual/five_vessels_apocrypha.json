@@ -1,0 +1,38 @@
+{
+  "display_name": "The Five Vessels Apocrypha",
+  "research_time": 28800,
+  "items": [
+    "celestisynth:keres",
+    "dungeons_and_combat:crimson_bloodweave_sword",
+    "dungeons_and_combat:crimson_sovereign_sword",
+    "dungeons_and_combat:monarch_boots",
+    "dungeons_and_combat:monarch_chestplate",
+    "dungeons_and_combat:monarch_helmet",
+    "dungeons_and_combat:monarch_leggings",
+    "end_remastered_promax:vault_eye",
+    "irons_spellbooks:gold_crown",
+    "ptd:black_liquid",
+    "ptd:bloodbottle",
+    "ptd:matter",
+    "ptd:mysteriousfluid",
+    "ptd:philosopher_stone",
+    "ptd:shattered_philosopher_stone",
+    "ptd:soul_keeper"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "celestisynth:keres",
+    "end_remastered_promax:vault_eye",
+    "goldcrownissb:gold_crown",
+    "ptd:stone_repair",
+    "sinborn:mechanical_crafting/promax_vault_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

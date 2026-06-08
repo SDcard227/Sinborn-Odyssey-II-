@@ -1,90 +1,127 @@
 {
-  "dependencies": ["ch09_r_ice_fire"],
-  "tasks": {
-    "pearl_farm": {
-      "type": "heracles:item",
-      "item": "minecraft:ender_pearl",
-      "amount": 16,
-      "collection": "AUTOMATIC"
+ "dependencies": [
+  "ch09_r_ice_fire"
+ ],
+ "tasks": {
+  "pearl_farm": {
+   "type": "heracles:item",
+   "item": "minecraft:ender_pearl",
+   "amount": 16,
+   "collection": "AUTOMATIC"
+  },
+  "overhaul_note": {
+   "title": "Understand Enderman Overhaul — 20+ variants across biomes, each drops a standard ender pearl",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_pearl",
+     "count": 1
     },
-    "overhaul_note": {
-      "title": "Understand Enderman Overhaul — 20+ variants across biomes, each drops a standard ender pearl",
-      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "pearls": {"item": {"id": "minecraft:ender_pearl", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 3}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Pearl Farm"},
-    "subtitle": {"text": "Twenty variants. One drop. The Enderman Overhaul does not change the farm — it changes the farm's scenery."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.09 · THE PEARL FARM",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Ender Pearls are the infrastructure of the Eye Hunt.",
-      "  The Eye of Ender recipe requires them.",
-      "  So does most End Remastered custom eye crafting.",
-      "  So does your escape plan when the farm goes wrong.",
-      "  Farm early. Farm a lot.",
-      "",
-      "◈ ENDERMAN OVERHAUL VARIANTS",
-      "  └ 20+ variants — each biome has its own Enderman type",
-      "  └ All variants drop standard Ender Pearl (vanilla drop)",
-      "  └ Notable variants:",
-      "    ✦ Jungle Enderman: leafy texture, smaller hitbox",
-      "    ✦ Badlands Enderman: red-striped, aggressive faster",
-      "    ✦ Desert Enderman: sandstone tones, larger",
-      "    ✦ End Enderman: classic look + eldritch variant",
-      "    ✦ Magical Enderman: unique glow, rare spawn",
-      "      (Magical Enderman behavior: unresolved — treat",
-      "       as a boss encounter until confirmed otherwise)",
-      "  └ Looting III: increases pearl drop rate",
-      "  └ Farm tip: any biome works — pick the biome",
-      "    where you have an AFK farm setup already",
-      "",
-      "◈ PEARL ECONOMY",
-      "  └ Eye of Ender craft: Pearl + Blaze Powder",
-      "  └ End Remastered custom eyes: require pearls +",
-      "    specific boss drops per eye type",
-      "  └ Ender Chest: 1 Pearl + 8 Obsidian",
-      "  └ Chorus Teleport: Ender Pearl throw = safe gap-close",
-      "    in End Cities (2.5 heart fall damage, manageable)",
-      "",
-      "◈ ENDERMAN FARM SETUP",
-      "  └ Platform at Y=128+ over the End main island",
-      "    (post-portal) = highest density Enderman farm",
-      "  └ Endermite bait: place Endermite in minecart",
-      "    Endermen aggro on Endermites passively",
-      "  └ Looting III + Silk Touch on separate swords",
-      "    (don't combine — you'll need both)",
-      "",
-      "▸ Every pearl in your hand",
-      "  was a teleport that did not happen.",
-      "  Hold them carefully.",
-      "  Use them deliberately.",
-      "",
-      "▶ Collect 16 Ender Pearls",
-      "▶ Learn the Enderman Overhaul variants [check]",
-      "",
-      "◇ The Magical Enderman is flagged unresolved.",
-      "  If it spawns, do not engage assuming standard AI.",
-      "  Treat it as you would treat any unique mob:",
-      "  observe first."
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [600, 150]}},
-    "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "pearls": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Pearl Farm"
+  },
+  "subtitle": {
+   "text": "Twenty variants. One drop. The Enderman Overhaul does not change the farm — it changes the farm's scenery."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.09 · THE PEARL FARM",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Ender Pearls are the infrastructure of the Eye Hunt.",
+   "  The Eye of Ender recipe requires them.",
+   "  So does most End Remastered custom eye crafting.",
+   "  So does your escape plan when the farm goes wrong.",
+   "  Farm early. Farm a lot.",
+   "",
+   "◈ ENDERMAN OVERHAUL VARIANTS",
+   "  └ 20+ variants — each biome has its own Enderman type",
+   "  └ All variants drop standard Ender Pearl (vanilla drop)",
+   "  └ Notable variants:",
+   "    ✦ Jungle Enderman: leafy texture, smaller hitbox",
+   "    ✦ Badlands Enderman: red-striped, aggressive faster",
+   "    ✦ Desert Enderman: sandstone tones, larger",
+   "    ✦ End Enderman: classic look + eldritch variant",
+   "    ✦ Magical Enderman: unique glow, rare spawn",
+   "      (Magical Enderman behavior: unresolved — treat",
+   "       as a boss encounter until confirmed otherwise)",
+   "  └ Looting III: increases pearl drop rate",
+   "  └ Farm tip: any biome works — pick the biome",
+   "    where you have an AFK farm setup already",
+   "",
+   "◈ PEARL ECONOMY",
+   "  └ Eye of Ender craft: Pearl + Blaze Powder",
+   "  └ End Remastered custom eyes: require pearls +",
+   "    specific boss drops per eye type",
+   "  └ Ender Chest: 1 Pearl + 8 Obsidian",
+   "  └ Chorus Teleport: Ender Pearl throw = safe gap-close",
+   "    in End Cities (2.5 heart fall damage, manageable)",
+   "",
+   "◈ ENDERMAN FARM SETUP",
+   "  └ Platform at Y=128+ over the End main island",
+   "    (post-portal) = highest density Enderman farm",
+   "  └ Endermite bait: place Endermite in minecart",
+   "    Endermen aggro on Endermites passively",
+   "  └ Looting III + Silk Touch on separate swords",
+   "    (don't combine — you'll need both)",
+   "",
+   "▸ Every pearl in your hand",
+   "  was a teleport that did not happen.",
+   "  Hold them carefully.",
+   "  Use them deliberately.",
+   "",
+   "▶ Collect 16 Ender Pearls",
+   "▶ Learn the Enderman Overhaul variants [check]",
+   "",
+   "◇ The Magical Enderman is flagged unresolved.",
+   "  If it spawns, do not engage assuming standard AI.",
+   "  Treat it as you would treat any unique mob:",
+   "  observe first."
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     4400,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_pearl",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

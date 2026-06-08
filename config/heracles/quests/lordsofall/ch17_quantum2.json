@@ -1,64 +1,101 @@
 {
-  "dependencies": ["ch17_quantum1"],
-  "tasks": {
-    "quantum_casing": {
-      "title": "Craft Quantum Casings (Create Teleporters step 3 — structural housing from Quantum Fluid + Create metals)",
-      "icon": {"item": {"id": "createteleporters:quantum_casing", "count": 4}, "type": "heracles:item"},
-      "amount": 4,
-      "collection": "AUTOMATIC",
-      "type": "heracles:item"
+ "dependencies": [
+  "ch17_quantum1"
+ ],
+ "tasks": {
+  "quantum_casing": {
+   "title": "Craft Quantum Casings (Create Teleporters step 3 — structural housing from Quantum Fluid + Create metals)",
+   "icon": {
+    "item": {
+     "id": "createteleporters:quantum_casing",
+     "count": 4
     },
-    "advanced_component": {
-      "title": "Craft Advanced Quantum Components (Create Teleporters step 4 — combines Quantum Casing + Precision Mechanisms)",
-      "icon": {"item": {"id": "createteleporters:advanced_quantum_component", "count": 2}, "type": "heracles:item"},
-      "amount": 2,
-      "collection": "AUTOMATIC",
-      "type": "heracles:item"
-    }
+    "type": "heracles:item"
+   },
+   "amount": 4,
+   "collection": "AUTOMATIC",
+   "type": "heracles:item"
   },
-  "rewards": {
-    "quantum_casing": {
-      "item": {"id": "createteleporters:quantum_casing", "count": 4},
-      "type": "heracles:item"
+  "advanced_component": {
+   "title": "Craft Advanced Quantum Components (Create Teleporters step 4 — combines Quantum Casing + Precision Mechanisms)",
+   "icon": {
+    "item": {
+     "id": "createteleporters:advanced_quantum_component",
+     "count": 2
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Quantum Processing — Phase Two"},
-    "subtitle": {"text": "The casing holds the quantum fluid in a stable state. Without structure, the fluid dissipates."},
-    "description": [
-      "Step 3 — Quantum Casing:",
-      "Quantum Fluid combined with Create metals (brass or refined) in a mold.",
-      "The casing is the structural component — it contains the quantum properties",
-      "and makes them usable in a physical device.",
-      "4 casings minimum for a single teleporter installation.",
-      "",
-      "Step 4 — Advanced Quantum Component:",
-      "Quantum Casing + Create Precision Mechanisms combined.",
-      "Precision Mechanisms require the Create sequence: Andesite Alloy → Brass → Precision.",
-      "If your Create automation is running, this step is fast.",
-      "If not, craft the Precision Mechanisms manually (gear + shaft + rotor recipe).",
-      "",
-      "You are building a device that instantaneously moves matter across space.",
-      "The precision component is not optional.",
-      "Create's accuracy is what makes this possible.",
-      "",
-      "→ Craft 4 Quantum Casings [collect]",
-      "→ Craft 2 Advanced Quantum Components [collect]"
-    ],
-    "groups": {"Lords of All": {"position": [0, 300]}},
-    "icon": {"item": {"id": "createteleporters:quantum_casing", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "amount": 2,
+   "collection": "AUTOMATIC",
+   "type": "heracles:item"
   }
+ },
+ "rewards": {
+  "quantum_casing": {
+   "item": {
+    "id": "createteleporters:quantum_casing",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Quantum Processing — Phase Two"
+  },
+  "subtitle": {
+   "text": "The casing holds the quantum fluid in a stable state. Without structure, the fluid dissipates."
+  },
+  "description": [
+   "Step 3 — Quantum Casing:",
+   "Quantum Fluid combined with Create metals (brass or refined) in a mold.",
+   "The casing is the structural component — it contains the quantum properties",
+   "and makes them usable in a physical device.",
+   "4 casings minimum for a single teleporter installation.",
+   "",
+   "Step 4 — Advanced Quantum Component:",
+   "Quantum Casing + Create Precision Mechanisms combined.",
+   "Precision Mechanisms require the Create sequence: Andesite Alloy → Brass → Precision.",
+   "If your Create automation is running, this step is fast.",
+   "If not, craft the Precision Mechanisms manually (gear + shaft + rotor recipe).",
+   "",
+   "You are building a device that instantaneously moves matter across space.",
+   "The precision component is not optional.",
+   "Create's accuracy is what makes this possible.",
+   "",
+   "→ Craft 4 Quantum Casings [collect]",
+   "→ Craft 2 Advanced Quantum Components [collect]"
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     920,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "createteleporters:quantum_casing",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

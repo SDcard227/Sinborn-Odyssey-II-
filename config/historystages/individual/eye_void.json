@@ -1,0 +1,20 @@
+{
+  "display_name": "The Scroll of the Void Eye",
+  "research_time": 3600,
+  "items": [
+    "cataclysm:void_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "cataclysm:void_eye",
+    "sinborn:mechanical_crafting/cata_void_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

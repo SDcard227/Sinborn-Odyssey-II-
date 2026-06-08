@@ -1,0 +1,27 @@
+{
+  "display_name": "The Lamp of Wishes",
+  "research_time": 2400,
+  "items": [
+    "as_you_wish:copper_lamp",
+    "as_you_wish:excalibur",
+    "as_you_wish:fast_lamp",
+    "as_you_wish:heart_of_the_desert",
+    "as_you_wish:instant_wish",
+    "as_you_wish:magic_lamp"
+  ],
+  "tags": [],
+  "mods": [
+    "as_you_wish"
+  ],
+  "mod_exceptions": [],
+  "recipes": [
+    "as_you_wish:copper_lamp_recipe",
+    "as_you_wish:fast_lamp_recipe"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

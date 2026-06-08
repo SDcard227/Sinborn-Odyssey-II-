@@ -1,49 +1,80 @@
 {
-  "dependencies": ["ch05_r_mca1"],
-  "tasks": {
-    "marriage": {
-      "title": "Marry an MCA Reborn villager",
-      "icon": {"item": {"id": "mca:ring", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 2},
-      "type": "heracles:item"
+ "dependencies": [
+  "ch05_r_mca1"
+ ],
+ "tasks": {
+  "marriage": {
+   "title": "Marry an MCA Reborn villager",
+   "icon": {
+    "item": {
+     "id": "mca:ring",
+     "count": 1
     },
-    "golden_apple": {
-      "item": {"id": "minecraft:golden_apple", "count": 2},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Covenant"},
-    "subtitle": {"text": "Culture is just agreements made permanent."},
-    "description": [
-      "Marriage in MCA Reborn requires maximum relationship",
-      "and a ring crafted from rose gold.",
-      "",
-      "Your partner produces children who grow into villagers.",
-      "Those villagers become companions, soldiers, or traders.",
-      "The civilization you build has a family now.",
-      "",
-      "Settlement creates ownership.",
-      "Ownership creates responsibility.",
-      "The covenant means: you are staying.",
-      "",
-      "→ Marry an MCA villager [check]"
-    ],
-    "groups": {"The Spoken Word": {"position": [300, 300]}},
-    "icon": {"item": {"id": "mca:ring", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "golden_apple": {
+   "item": {
+    "id": "minecraft:golden_apple",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Covenant"
+  },
+  "subtitle": {
+   "text": "Culture is just agreements made permanent."
+  },
+  "description": [
+   "Marriage in MCA Reborn requires maximum relationship",
+   "and a ring crafted from rose gold.",
+   "",
+   "Your partner produces children who grow into villagers.",
+   "Those villagers become companions, soldiers, or traders.",
+   "The civilization you build has a family now.",
+   "",
+   "Settlement creates ownership.",
+   "Ownership creates responsibility.",
+   "The covenant means: you are staying.",
+   "",
+   "→ Marry an MCA villager [check]"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     2440,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "mca:ring",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

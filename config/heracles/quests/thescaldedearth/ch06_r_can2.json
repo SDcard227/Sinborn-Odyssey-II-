@@ -1,68 +1,108 @@
 {
-  "dependencies": ["ch06_r_can1"],
-  "tasks": {
-    "fire_cannon": {
-      "title": "Fire the cannon and observe the impact",
-      "icon": {"item": {"id": "create_big_cannons:he_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch06_r_can1"
+ ],
+ "tasks": {
+  "fire_cannon": {
+   "title": "Fire the cannon and observe the impact",
+   "icon": {
+    "item": {
+     "id": "create_big_cannons:he_shell",
+     "count": 1
     },
-    "ap_shot": {
-      "type": "heracles:item",
-      "item": "create_big_cannons:ap_shot",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    },
-    "brass_barrel": {
-      "title": "Upgrade to a Bronze or Cast Iron barrel for reduced recoil",
-      "icon": {"item": {"id": "create:brass_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "shrapnel": {
-      "item": {"id": "create_big_cannons:shrapnel_shell", "count": 8},
-      "type": "heracles:item"
-    },
-    "proximity_fuze": {
-      "item": {"id": "create_big_cannons:proximity_fuze", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
+  "ap_shot": {
+   "type": "heracles:item",
+   "item": "create_big_cannons:ap_shot",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "Fire for Effect"},
-    "subtitle": {"text": "The argument that ends arguments."},
-    "description": [
-      "One shell changes the math of a settlement.",
-      "The cannon is not your sword.",
-      "It is your argument — and arguments are most useful",
-      "when the other side knows you have one.",
-      "",
-      "AP Shot punches through armor and structure.",
-      "Shrapnel clears groups. HE demolishes terrain.",
-      "Proximity Fuze detonates at close range — useful for arcing shots.",
-      "",
-      "The cannon scales with barrel quality.",
-      "Bronze reduces recoil. Cast Iron (TFMG) reduces it further.",
-      "You'll need TFMG oil infrastructure for Steel and above.",
-      "",
-      "→ Fire the cannon — observe what it does [check]",
-      "→ Craft 16 AP Shot",
-      "→ Upgrade to Bronze or Cast Iron barrel [check]"
-    ],
-    "groups": {"The Scalded Earth": {"position": [300, 0]}},
-    "icon": {"item": {"id": "create_big_cannons:shrapnel_shell", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "brass_barrel": {
+   "title": "Upgrade to a Bronze or Cast Iron barrel for reduced recoil",
+   "icon": {
+    "item": {
+     "id": "create:brass_ingot",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "shrapnel": {
+   "item": {
+    "id": "create_big_cannons:shrapnel_shell",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "proximity_fuze": {
+   "item": {
+    "id": "create_big_cannons:proximity_fuze",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Fire for Effect"
+  },
+  "subtitle": {
+   "text": "The argument that ends arguments."
+  },
+  "description": [
+   "One shell changes the math of a settlement.",
+   "The cannon is not your sword.",
+   "It is your argument — and arguments are most useful",
+   "when the other side knows you have one.",
+   "",
+   "AP Shot punches through armor and structure.",
+   "Shrapnel clears groups. HE demolishes terrain.",
+   "Proximity Fuze detonates at close range — useful for arcing shots.",
+   "",
+   "The cannon scales with barrel quality.",
+   "Bronze reduces recoil. Cast Iron (TFMG) reduces it further.",
+   "You'll need TFMG oil infrastructure for Steel and above.",
+   "",
+   "→ Fire the cannon — observe what it does [check]",
+   "→ Craft 16 AP Shot",
+   "→ Upgrade to Bronze or Cast Iron barrel [check]"
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     920,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create_big_cannons:shrapnel_shell",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

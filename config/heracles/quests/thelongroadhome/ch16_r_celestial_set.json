@@ -1,89 +1,132 @@
 {
-  "dependencies": ["ch16_armor"],
-  "tasks": {
-    "full_set": {
-      "title": "Complete the full Celestial Netherite armor set — Helmet, Chestplate, Leggings, Boots",
-      "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch16_armor"
+ ],
+ "tasks": {
+  "full_set": {
+   "title": "Complete the full Celestial Netherite armor set — Helmet, Chestplate, Leggings, Boots",
+   "icon": {
+    "item": {
+     "id": "celestisynth:lunar_scrap",
+     "count": 1
     },
-    "enchant_set": {
-      "title": "Fully enchant the Celestial Netherite armor set — all 4 pieces at their maximum enchantment",
-      "icon": {"item": {"id": "minecraft:enchanted_book", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "enchanted_book": {"item": {"id": "minecraft:enchanted_book", "count": 4}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Celestial Set"},
-    "subtitle": {"text": "Three ores. One chain. The highest-tier armor in the pack. Fully enchanted. This is the final armor upgrade."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.16 · THE CELESTIAL SET",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Celestial Netherite is the final armor tier.",
-      "  It exceeds Netherite base stats.",
-      "  It enchants to a higher ceiling.",
-      "  The three-input chain (Lunar + Zephyr + Solar) produces",
-      "  Celestial Netherite Ingots, which upgrade Netherite gear",
-      "  in the same way Netherite upgrades Diamond.",
-      "  The full set fully enchanted is Ch16's culmination.",
-      "",
-      "◈ CELESTISYNTH FORGE CHAIN",
-      "  └ Step 1: Refine Lunar Stone → Lunar Ingot (smelting)",
-      "  └ Step 2: Process Zephyr Deposit → Zephyr Ingot",
-      "    (may require specialized forge block — check JEI: celestisynth:)",
-      "  └ Step 3: Cut Solar Crystal → Solar Shard",
-      "    (Nether origin — may require heat processing)",
-      "  └ Step 4: Combine 3 ingots/shards → Celestial Netherite Ingot",
-      "    (alloy process — Smithing Table or Celestisynth Forge)",
-      "  └ Step 5: Celestial Netherite Ingot + Netherite Armor → Upgrade",
-      "    (Smithing Template may be required — check JEI)",
-      "",
-      "◈ ENCHANTMENT PRIORITY FOR CELESTIAL SET",
-      "  └ Helmet: Aqua Affinity, Respiration III, Protection IV",
-      "  └ Chestplate: Protection IV, Unbreaking III, Mending",
-      "  └ Leggings: Protection IV, Swift Sneak III (for dungeon movement)",
-      "  └ Boots: Depth Strider III, Feather Falling IV, Protection IV",
-      "  └ Global: Mending on all 4 pieces if possible",
-      "    (Mending on Celestial Netherite = effectively unbreakable)",
-      "",
-      "◈ IMMERSIVE ENCHANTING ADVANTAGE",
-      "  └ Immersive Enchanting: no RNG — choose exact enchantments",
-      "    (uses Ancient Books + material costs instead of level gambling)",
-      "  └ Source: Ancient Books from Chiseled Bookshelves in structures",
-      "    (Ancient Cities, Bastions, End Cities)",
-      "  └ Enchant the full set through Immersive Enchanting for predictable results",
-      "",
-      "▸ Netherite was the hardest material.",
-      "  Then three rocks fell from space.",
-      "  The chain that combines them is Celestial Netherite.",
-      "  The armor that comes from it is what the endgame body wears.",
-      "  Ch17 bosses require it.",
-      "  Ch17 will not wait for you to finish farming.",
-      "  Finish now.",
-      "",
-      "▶ Complete the full Celestial Netherite armor set [check]",
-      "▶ Fully enchant all 4 pieces [check]",
-      "",
-      "◇ Celestial Netherite tools: companion quest below.",
-      "  The armor is the body. The tools are the hand.",
-      "  Both are required for Ch17 readiness.",
-      "  Finish armor first. Then tools."
-    ],
-    "groups": {"The Long Road Home": {"position": [450, 0]}},
-    "icon": {"item": {"id": "celestisynth:lunar_scrap", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "enchant_set": {
+   "title": "Fully enchant the Celestial Netherite armor set — all 4 pieces at their maximum enchantment",
+   "icon": {
+    "item": {
+     "id": "minecraft:enchanted_book",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "enchanted_book": {
+   "item": {
+    "id": "minecraft:enchanted_book",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Celestial Set"
+  },
+  "subtitle": {
+   "text": "Three ores. One chain. The highest-tier armor in the pack. Fully enchanted. This is the final armor upgrade."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.16 · THE CELESTIAL SET",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Celestial Netherite is the final armor tier.",
+   "  It exceeds Netherite base stats.",
+   "  It enchants to a higher ceiling.",
+   "  The three-input chain (Lunar + Zephyr + Solar) produces",
+   "  Celestial Netherite Ingots, which upgrade Netherite gear",
+   "  in the same way Netherite upgrades Diamond.",
+   "  The full set fully enchanted is Ch16's culmination.",
+   "",
+   "◈ CELESTISYNTH FORGE CHAIN",
+   "  └ Step 1: Refine Lunar Stone → Lunar Ingot (smelting)",
+   "  └ Step 2: Process Zephyr Deposit → Zephyr Ingot",
+   "    (may require specialized forge block — check JEI: celestisynth:)",
+   "  └ Step 3: Cut Solar Crystal → Solar Shard",
+   "    (Nether origin — may require heat processing)",
+   "  └ Step 4: Combine 3 ingots/shards → Celestial Netherite Ingot",
+   "    (alloy process — Smithing Table or Celestisynth Forge)",
+   "  └ Step 5: Celestial Netherite Ingot + Netherite Armor → Upgrade",
+   "    (Smithing Template may be required — check JEI)",
+   "",
+   "◈ ENCHANTMENT PRIORITY FOR CELESTIAL SET",
+   "  └ Helmet: Aqua Affinity, Respiration III, Protection IV",
+   "  └ Chestplate: Protection IV, Unbreaking III, Mending",
+   "  └ Leggings: Protection IV, Swift Sneak III (for dungeon movement)",
+   "  └ Boots: Depth Strider III, Feather Falling IV, Protection IV",
+   "  └ Global: Mending on all 4 pieces if possible",
+   "    (Mending on Celestial Netherite = effectively unbreakable)",
+   "",
+   "◈ IMMERSIVE ENCHANTING ADVANTAGE",
+   "  └ Immersive Enchanting: no RNG — choose exact enchantments",
+   "    (uses Ancient Books + material costs instead of level gambling)",
+   "  └ Source: Ancient Books from Chiseled Bookshelves in structures",
+   "    (Ancient Cities, Bastions, End Cities)",
+   "  └ Enchant the full set through Immersive Enchanting for predictable results",
+   "",
+   "▸ Netherite was the hardest material.",
+   "  Then three rocks fell from space.",
+   "  The chain that combines them is Celestial Netherite.",
+   "  The armor that comes from it is what the endgame body wears.",
+   "  Ch17 bosses require it.",
+   "  Ch17 will not wait for you to finish farming.",
+   "  Finish now.",
+   "",
+   "▶ Complete the full Celestial Netherite armor set [check]",
+   "▶ Fully enchant all 4 pieces [check]",
+   "",
+   "◇ Celestial Netherite tools: companion quest below.",
+   "  The armor is the body. The tools are the hand.",
+   "  Both are required for Ch17 readiness.",
+   "  Finish armor first. Then tools."
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     1840,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "celestisynth:lunar_scrap",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

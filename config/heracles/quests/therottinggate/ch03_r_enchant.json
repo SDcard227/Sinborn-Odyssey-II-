@@ -1,126 +1,126 @@
 {
-  "dependencies": [
-    "ch03_r_smith3"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/enchantment_theory"
-    },
-    "bookshelf": {
-      "type": "heracles:item",
-      "item": "minecraft:chiseled_bookshelf",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "enchant_table": {
-      "type": "heracles:item",
-      "item": "minecraft:enchanting_table",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch03_r_smith3"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Enchantment Theory scroll at a Research Pedestal"
   },
-  "rewards": {
-    "xp": {
-      "item": {
-        "id": "minecraft:experience_bottle",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "book": {
-      "item": {
-        "id": "minecraft:book",
-        "count": 16
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 10
-      },
-      "type": "heracles:item"
-    }
+  "bookshelf": {
+   "type": "heracles:item",
+   "item": "minecraft:chiseled_bookshelf",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {
-      "translate": "Enchantment Theory"
-    },
-    "subtitle": {
-      "text": "Immersive Enchanting replaces randomness with cost. Pay the price. Get what you want."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.03 · ENCHANTMENT THEORY",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Immersive Enchanting replaces vanilla's RNG system.",
-      "  You choose the enchantment.",
-      "  You pay the material cost.",
-      "  You get exactly what you paid for.",
-      "",
-      "◈ IMMERSIVE ENCHANTING MECHANICS",
-      "  └ Enchanting Table: still the core block",
-      "  └ Chiseled Bookshelves: enhances the table power",
-      "    place books in them to increase max enchantment level",
-      "  └ Ancient Books: contain specific enchantments",
-      "    found in dungeons, strongholds, buried treasure",
-      "    apply directly to gear — no RNG",
-      "  └ Material Cost: XP + specific materials per enchant",
-      "    better enchants cost more XP and rarer materials",
-      "  └ No random rolls: you see all available enchants",
-      "    and their costs before committing",
-      "",
-      "◈ EARLY ENCHANT PRIORITY",
-      "  └ 1. Mending — essential if you have an XP farm",
-      "  └ 2. Unbreaking III — reduces durability loss",
-      "  └ 3. Efficiency IV+ — speeds up mining",
-      "  └ 4. Protection III+ — reduces armor damage",
-      "  └ 5. Sharpness/Power — combat output",
-      "",
-      "◈ SCROLL: Enchantment Theory",
-      "  └ Found in: library chests, enchanter's workshop,",
-      "    scholar ruins, dungeon bookshelves",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: full Immersive Enchanting system,",
-      "    Ancient Books source awareness",
-      "",
-      "▸ The old world had enchanters who knew the price",
-      "  of every word of power.",
-      "  This scroll is their catalog.",
-      "",
-      "▶ Find The Enchantment Theory scroll [check]",
-      "▶ Craft 4 Chiseled Bookshelves",
-      "▶ Craft an Enchanting Table",
-      "",
-      "◇ Ch08 Deep Dark and Ch09 Eye Hunt drop Ancient Books",
-      "  in abundance. Enchanting gets much stronger",
-      "  once you have consistent dungeon access."
-    ],
-    "groups": {
-      "The Rotting Gate": {
-        "position": [
-          -600,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:enchanting_table",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "enchant_table": {
+   "type": "heracles:item",
+   "item": "minecraft:enchanting_table",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "xp": {
+   "item": {
+    "id": "minecraft:experience_bottle",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "book": {
+   "item": {
+    "id": "minecraft:book",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Enchantment Theory"
+  },
+  "subtitle": {
+   "text": "Immersive Enchanting replaces randomness with cost. Pay the price. Get what you want."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.03 · ENCHANTMENT THEORY",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Immersive Enchanting replaces vanilla's RNG system.",
+   "  You choose the enchantment.",
+   "  You pay the material cost.",
+   "  You get exactly what you paid for.",
+   "",
+   "◈ IMMERSIVE ENCHANTING MECHANICS",
+   "  └ Enchanting Table: still the core block",
+   "  └ Chiseled Bookshelves: enhances the table power",
+   "    place books in them to increase max enchantment level",
+   "  └ Ancient Books: contain specific enchantments",
+   "    found in dungeons, strongholds, buried treasure",
+   "    apply directly to gear — no RNG",
+   "  └ Material Cost: XP + specific materials per enchant",
+   "    better enchants cost more XP and rarer materials",
+   "  └ No random rolls: you see all available enchants",
+   "    and their costs before committing",
+   "",
+   "◈ EARLY ENCHANT PRIORITY",
+   "  └ 1. Mending — essential if you have an XP farm",
+   "  └ 2. Unbreaking III — reduces durability loss",
+   "  └ 3. Efficiency IV+ — speeds up mining",
+   "  └ 4. Protection III+ — reduces armor damage",
+   "  └ 5. Sharpness/Power — combat output",
+   "",
+   "◈ SCROLL: Enchantment Theory",
+   "  └ Found in: library chests, enchanter's workshop,",
+   "    scholar ruins, dungeon bookshelves",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: full Immersive Enchanting system,",
+   "    Ancient Books source awareness",
+   "",
+   "▸ The old world had enchanters who knew the price",
+   "  of every word of power.",
+   "  This scroll is their catalog.",
+   "",
+   "▶ Find The Enchantment Theory scroll [check]",
+   "▶ Craft 4 Chiseled Bookshelves",
+   "▶ Craft an Enchanting Table",
+   "",
+   "◇ Ch08 Deep Dark and Ch09 Eye Hunt drop Ancient Books",
+   "  in abundance. Enchanting gets much stronger",
+   "  once you have consistent dungeon access."
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     2760,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:enchanting_table",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

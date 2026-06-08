@@ -1,63 +1,94 @@
 {
-  "dependencies": ["ch06_brass"],
-  "tasks": {
-    "boiler": {
-      "type": "heracles:item",
-      "item": "create:steam_engine",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "blaze_burner": {
-      "type": "heracles:item",
-      "item": "create:blaze_burner",
-      "amount": 2,
-      "collection": "AUTOMATIC"
-    },
-    "fluid": {
-      "title": "Set up a working fluid pipe system",
-      "icon": {"item": {"id": "create:fluid_pipe", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch06_brass"
+ ],
+ "tasks": {
+  "boiler": {
+   "type": "heracles:item",
+   "item": "create:steam_engine",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "copper_casing": {
-      "item": {"id": "create:copper_casing", "count": 8},
-      "type": "heracles:item"
+  "blaze_burner": {
+   "type": "heracles:item",
+   "item": "create:blaze_burner",
+   "amount": 2,
+   "collection": "AUTOMATIC"
+  },
+  "fluid": {
+   "title": "Set up a working fluid pipe system",
+   "icon": {
+    "item": {
+     "id": "create:fluid_pipe",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 5},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Boiler"},
-    "subtitle": {"text": "Enough heat, applied to enough water, will move the world."},
-    "description": [
-      "The steam engine is not just power.",
-      "It is the announcement of a principle.",
-      "",
-      "Blaze Burner as heat source. Water pipe feeding the boiler.",
-      "Steam output connects to the rotational network.",
-      "This is the most powerful generator available before late-game.",
-      "",
-      "The principle scales. More burners, more heat.",
-      "More water, more steam. More steam, more stress capacity.",
-      "The factory floor is almost ready.",
-      "",
-      "→ Craft a Steam Engine",
-      "→ Craft 2 Blaze Burners",
-      "→ Set up a fluid pipe system [check]"
-    ],
-    "groups": {"The Scalded Earth": {"position": [0, 450]}},
-    "icon": {"item": {"id": "create:blaze_burner", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "copper_casing": {
+   "item": {
+    "id": "create:copper_casing",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Boiler"
+  },
+  "subtitle": {
+   "text": "Enough heat, applied to enough water, will move the world."
+  },
+  "description": [
+   "The steam engine is not just power.",
+   "It is the announcement of a principle.",
+   "",
+   "Blaze Burner as heat source. Water pipe feeding the boiler.",
+   "Steam output connects to the rotational network.",
+   "This is the most powerful generator available before late-game.",
+   "",
+   "The principle scales. More burners, more heat.",
+   "More water, more steam. More steam, more stress capacity.",
+   "The factory floor is almost ready.",
+   "",
+   "→ Craft a Steam Engine",
+   "→ Craft 2 Blaze Burners",
+   "→ Set up a fluid pipe system [check]"
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     1380,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:blaze_burner",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

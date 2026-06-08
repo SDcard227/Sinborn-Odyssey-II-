@@ -1,67 +1,98 @@
 {
-  "dependencies": ["ch08_r_ser1"],
-  "tasks": {
-    "grottol": {
-      "title": "Find and defeat the Grottol (Mowzie's Mobs — deep ocean caves, requires Drowned World scroll)",
-      "icon": {"item": {"id": "minecraft:prismarine", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch08_r_ser1"
+ ],
+ "tasks": {
+  "grottol": {
+   "title": "Find and defeat the Grottol (Mowzie's Mobs — deep ocean caves, requires Drowned World scroll)",
+   "icon": {
+    "item": {
+     "id": "minecraft:prismarine",
+     "count": 1
     },
-    "sea_serpent_heart": {
-      "type": "heracles:item",
-      "item": "iceandfire:sea_serpent_heart",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "scales_stack": {
-      "type": "heracles:item",
-      "item": "iceandfire:sea_serpent_scale",
-      "amount": 24,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "scale_reward": {
-      "item": {"id": "iceandfire:sea_serpent_scale", "count": 16},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 14},
-      "type": "heracles:item"
-    }
+  "sea_serpent_heart": {
+   "type": "heracles:item",
+   "item": "iceandfire:sea_serpent_heart",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "What Lives Below the Serpent"},
-    "subtitle": {"text": "The Grottol does not prey on things. It outlasts them."},
-    "description": [
-      "The Grottol (Mowzie's Mobs) lives in deep ocean caves.",
-      "It is not an aggressive predator.",
-      "It is simply very patient and very dangerous.",
-      "",
-      "Collecting Sea Serpent Scales in quantity unlocks crafting recipes",
-      "for Ice & Fire sea serpent armor — one of the mid-game water sets.",
-      "The Sea Serpent Heart has brewing uses worth noting.",
-      "",
-      "The deep ocean has three layers of threat:",
-      "Surface: Guardian patrols.",
-      "Mid-depth: Sea Serpents and Aquamirae.",
-      "Cave systems: The Grottol.",
-      "",
-      "You have now navigated all three.",
-      "",
-      "→ Kill the Grottol [check]",
-      "→ Collect a Sea Serpent Heart [check]",
-      "→ Collect 24 Sea Serpent Scales total"
-    ],
-    "groups": {"Below the Waking World": {"position": [-300, 300]}},
-    "icon": {"item": {"id": "iceandfire:sea_serpent_scale", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "scales_stack": {
+   "type": "heracles:item",
+   "item": "iceandfire:sea_serpent_scale",
+   "amount": 24,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "scale_reward": {
+   "item": {
+    "id": "iceandfire:sea_serpent_scale",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 14
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "What Lives Below the Serpent"
+  },
+  "subtitle": {
+   "text": "The Grottol does not prey on things. It outlasts them."
+  },
+  "description": [
+   "The Grottol (Mowzie's Mobs) lives in deep ocean caves.",
+   "It is not an aggressive predator.",
+   "It is simply very patient and very dangerous.",
+   "",
+   "Collecting Sea Serpent Scales in quantity unlocks crafting recipes",
+   "for Ice & Fire sea serpent armor — one of the mid-game water sets.",
+   "The Sea Serpent Heart has brewing uses worth noting.",
+   "",
+   "The deep ocean has three layers of threat:",
+   "Surface: Guardian patrols.",
+   "Mid-depth: Sea Serpents and Aquamirae.",
+   "Cave systems: The Grottol.",
+   "",
+   "You have now navigated all three.",
+   "",
+   "→ Kill the Grottol [check]",
+   "→ Collect a Sea Serpent Heart [check]",
+   "→ Collect 24 Sea Serpent Scales total"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     1680,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "iceandfire:sea_serpent_scale",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

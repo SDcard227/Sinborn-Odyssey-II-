@@ -1,63 +1,100 @@
 {
-  "dependencies": ["ch07_r_sg1"],
-  "tasks": {
-    "steel_barrel": {
-      "title": "Upgrade your Create Big Cannons barrel to Steel (requires TFMG steel ingots)",
-      "icon": {"item": {"id": "tfmg:steel_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch07_r_sg1"
+ ],
+ "tasks": {
+  "steel_barrel": {
+   "title": "Upgrade your Create Big Cannons barrel to Steel (requires TFMG steel ingots)",
+   "icon": {
+    "item": {
+     "id": "tfmg:steel_ingot",
+     "count": 1
     },
-    "big_cartridge": {
-      "type": "heracles:item",
-      "item": "create_big_cannons:big_cartridge",
-      "amount": 8,
-      "collection": "AUTOMATIC"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "big_cartridge": {
+   "type": "heracles:item",
+   "item": "create_big_cannons:big_cartridge",
+   "amount": 8,
+   "collection": "AUTOMATIC"
+  },
+  "mortar": {
+   "title": "Set up a mortar position using Create Big Cannons for vertical arc fire",
+   "icon": {
+    "item": {
+     "id": "create_big_cannons:mortar_stone",
+     "count": 1
     },
-    "mortar": {
-      "title": "Set up a mortar position using Create Big Cannons for vertical arc fire",
-      "icon": {"item": {"id": "create_big_cannons:mortar_stone", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "mortar_stone": {
-      "item": {"id": "create_big_cannons:mortar_stone", "count": 16},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Steel Artillery"},
-    "subtitle": {"text": "The biggest cannon that doesn't require Nethersteel."},
-    "description": [
-      "Steel Barrel is the penultimate cannon tier.",
-      "Above Cast Iron. Below Nethersteel (which requires the End).",
-      "For now: this is the ceiling.",
-      "",
-      "Big Cartridge is a larger powder charge — more power, more recoil.",
-      "Mortar Stone fires in high arc trajectories.",
-      "A mortar position covers terrain that a direct-fire cannon cannot.",
-      "",
-      "You are building the most capable weapon available",
-      "before the infernal chapters begin.",
-      "This is the correct order of operations.",
-      "",
-      "→ Upgrade to a Steel Barrel [check]",
-      "→ Craft 8 Big Cartridges (large powder charges)",
-      "→ Set up a mortar position for arc fire [check]"
-    ],
-    "groups": {"Blood and Oil": {"position": [300, 150]}},
-    "icon": {"item": {"id": "create_big_cannons:mortar_stone", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "mortar_stone": {
+   "item": {
+    "id": "create_big_cannons:mortar_stone",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Steel Artillery"
+  },
+  "subtitle": {
+   "text": "The biggest cannon that doesn't require Nethersteel."
+  },
+  "description": [
+   "Steel Barrel is the penultimate cannon tier.",
+   "Above Cast Iron. Below Nethersteel (which requires the End).",
+   "For now: this is the ceiling.",
+   "",
+   "Big Cartridge is a larger powder charge — more power, more recoil.",
+   "Mortar Stone fires in high arc trajectories.",
+   "A mortar position covers terrain that a direct-fire cannon cannot.",
+   "",
+   "You are building the most capable weapon available",
+   "before the infernal chapters begin.",
+   "This is the correct order of operations.",
+   "",
+   "→ Upgrade to a Steel Barrel [check]",
+   "→ Craft 8 Big Cartridges (large powder charges)",
+   "→ Set up a mortar position for arc fire [check]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     2140,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create_big_cannons:mortar_stone",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

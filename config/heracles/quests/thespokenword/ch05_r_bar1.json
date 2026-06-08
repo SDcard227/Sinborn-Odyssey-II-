@@ -1,55 +1,86 @@
 {
-  "dependencies": ["ch05_trade"],
-  "tasks": {
-    "jungle": {
-      "title": "Reach the jungle and find Barako's territory",
-      "icon": {"item": {"id": "minecraft:jungle_log", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch05_trade"
+ ],
+ "tasks": {
+  "jungle": {
+   "title": "Reach the jungle and find Barako's territory",
+   "icon": {
+    "item": {
+     "id": "minecraft:jungle_log",
+     "count": 1
     },
-    "totem": {
-      "type": "heracles:item",
-      "item": "minecraft:totem_of_undying",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "golden_apple": {
-      "item": {"id": "minecraft:golden_apple", "count": 2},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 3},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Sun Chief's Domain"},
-    "subtitle": {"text": "The jungle holds things older than the village."},
-    "description": [
-      "Barako the Sun Chief is a Mowzie's Mobs boss.",
-      "He lives in the jungle, in a structure with his followers.",
-      "",
-      "He summons fire pillars. He has multiple phases.",
-      "His totem drop — the Barako Totem — gives fire resistance",
-      "and regeneration on use.",
-      "",
-      "Find his domain. Learn the terrain before you fight.",
-      "The jungle slows movement. Plan accordingly.",
-      "",
-      "→ Reach the jungle and find Barako's domain [check]",
-      "→ Have a Totem of Undying ready"
-    ],
-    "groups": {"The Spoken Word": {"position": [-150, 150]}},
-    "icon": {"item": {"id": "minecraft:jungle_log", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "totem": {
+   "type": "heracles:item",
+   "item": "minecraft:totem_of_undying",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "golden_apple": {
+   "item": {
+    "id": "minecraft:golden_apple",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Sun Chief's Domain"
+  },
+  "subtitle": {
+   "text": "The jungle holds things older than the village."
+  },
+  "description": [
+   "Barako the Sun Chief is a Mowzie's Mobs boss.",
+   "He lives in the jungle, in a structure with his followers.",
+   "",
+   "He summons fire pillars. He has multiple phases.",
+   "His totem drop — the Barako Totem — gives fire resistance",
+   "and regeneration on use.",
+   "",
+   "Find his domain. Learn the terrain before you fight.",
+   "The jungle slows movement. Plan accordingly.",
+   "",
+   "→ Reach the jungle and find Barako's domain [check]",
+   "→ Have a Totem of Undying ready"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1520,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:jungle_log",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

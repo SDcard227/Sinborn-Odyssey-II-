@@ -27,7 +27,7 @@
 	#Prevent opening the GUI of locked blocks? (Chests, furnaces, crafting tables, etc.) [Default: true]
 	lockBlockInteraction = false
 	#Prevent moving individually-locked items in containers? (Blocks taking items from chests, machines, etc.) [Default: true]
-	lockContainerInteraction = true
+	lockContainerInteraction = false
 	#Prevent applying locked enchantments via anvil (locked enchanted books) and enchanting table? [Default: true]
 	lockEnchanting = true
 
@@ -66,16 +66,16 @@
 #Individual Stage Settings (per-player stages)
 [individual_stages]
 	#Prevent players from picking up items locked by individual stages? [Default: true]
-	lockItemPickup = true
+	lockItemPickup = false
 	#Drop locked items from a player's inventory when their individual stage is revoked? [Default: true]
 	dropOnRevoke = true
 	#Make blocks locked by individual stages much harder to break and prevent their drops? [Default: true]
-	lockBlockBreaking = true
+	lockBlockBreaking = false
 	#Break speed multiplier for blocks locked by individual stages. Lower = slower. 0.05 = 20x slower. [Default: 0.05]
 	#Range: 0.001 ~ 1.0
 	lockedBlockBreakSpeedMultiplier = 0.05
 	#Prevent using items locked by individual stages? (Blocks equipping armor, using weapons, eating food, etc.) [Default: true]
-	lockItemUsage = true
+	lockItemUsage = false
 	#Prevent opening the GUI of blocks locked by individual stages? (Chests, furnaces, crafting tables, etc.) [Default: true]
 	lockBlockInteraction = true
 	#Prevent applying enchantments locked by individual stages via anvil and enchanting table? [Default: true]

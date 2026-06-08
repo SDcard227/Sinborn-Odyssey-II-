@@ -1,0 +1,20 @@
+{
+  "display_name": "The Quantum Gate",
+  "research_time": 2400,
+  "items": [
+    "portal_fluid:portal_fluid_bottle",
+    "portal_fluid:portal_fluid_bucket"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "portal_fluid:filling/portal_fluid"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

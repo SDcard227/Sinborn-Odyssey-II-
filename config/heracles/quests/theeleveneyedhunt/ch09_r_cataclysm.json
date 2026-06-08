@@ -1,120 +1,120 @@
 {
-  "dependencies": [
-    "ch09_r_kuku3"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/cataclysm_codex"
-    },
-    "remnant_kill": {
-      "type": "heracles:kill_entity",
-      "entity": "cataclysm:ancient_remnant",
-      "amount": 1
-    }
+ "dependencies": [
+  "ch09_r_kuku3"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Cataclysm Codex scroll at a Research Pedestal"
   },
-  "rewards": {
-    "cursium": {
-      "item": {
-        "id": "cataclysm:cursium",
-        "count": 4
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Cataclysm Codex"
-    },
-    "subtitle": {
-      "text": "Ancient Remnant. Maledictus. Ignis. The Leviathan. Each one is a door. The Codex is the key."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.09 · THE CATACLYSM CODEX",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Cataclysm mod adds a boss chain",
-      "  that begins before the End and ends",
-      "  deep inside it.",
-      "  The Codex scroll maps the whole chain.",
-      "  Get it early. The chain is long.",
-      "",
-      "◈ CATACLYSM BOSS SEQUENCE",
-      "  └ ✦ Ancient Remnant: first gate",
-      "    Found in dimensional ruin structures",
-      "    Drops: Remnant Eye, Cataclysm armor fragments",
-      "    Required to progress to Maledictus",
-      "  └ ✦ Maledictus: the cursed form",
-      "    Intermediate boss, drops Cursium",
-      "    Cursium = crafting gate for Ignis/Annihilator tier",
-      "  └ ✦ Ignited Revenant: follows Maledictus",
-      "    Fire-phase variant, drops Revenant materials",
-      "  └ ✦ Ignis: full fire boss, post-Cursium",
-      "    Major loot gate, drops Ignitium",
-      "    Ignitium = high-tier Cataclysm crafting material",
-      "  └ ✦ Netherite Monstrosity: Nether depth boss",
-      "    Drops Lacrima (triggers Infernal Age in Ch12)",
-      "  └ ✦ The Leviathan: ocean/deep variant",
-      "    Ch09-10 accessible, drops end-tier loot",
-      "  └ ✦ Ender Guardian + Harbinger + Primordial",
-      "    Post-portal (Ch13) — require End access",
-      "",
-      "◈ SCROLL: The Cataclysm Codex",
-      "  └ 20% drop from: Ignis, Ancient Remnant,",
-      "    The Leviathan",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: full Cataclysm boss chain knowledge,",
-      "    crafting pathway for Ignitium tier",
-      "",
-      "◈ CURSIUM ALERT",
-      "  └ Maledictus → Cursium",
-      "  └ Cursium is the crafting gate for the",
-      "    strongest Cataclysm gear (Ch11+)",
-      "  └ Farm Maledictus before Ch11 progression",
-      "",
-      "▸ The Ancient Remnant was not created by the Ender.",
-      "  It predates the End itself.",
-      "  The Cataclysm began somewhere else.",
-      "  The scroll does not say where.",
-      "",
-      "▶ Find The Cataclysm Codex scroll [check]",
-      "▶ Defeat the Ancient Remnant [check]",
-      "",
-      "◇ Netherite Monstrosity drops Lacrima.",
-      "  Lacrima triggers the Infernal Age (Ch12).",
-      "  Do not farm it until you are ready for Ch12."
-    ],
-    "groups": {
-      "The Eleven-Eyed Hunt": {
-        "position": [
-          -600,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:ender_eye",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "remnant_kill": {
+   "type": "heracles:kill_entity",
+   "entity": "cataclysm:ancient_remnant",
+   "amount": 1
   }
+ },
+ "rewards": {
+  "cursium": {
+   "item": {
+    "id": "cataclysm:cursium",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Cataclysm Codex"
+  },
+  "subtitle": {
+   "text": "Ancient Remnant. Maledictus. Ignis. The Leviathan. Each one is a door. The Codex is the key."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.09 · THE CATACLYSM CODEX",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Cataclysm mod adds a boss chain",
+   "  that begins before the End and ends",
+   "  deep inside it.",
+   "  The Codex scroll maps the whole chain.",
+   "  Get it early. The chain is long.",
+   "",
+   "◈ CATACLYSM BOSS SEQUENCE",
+   "  └ ✦ Ancient Remnant: first gate",
+   "    Found in dimensional ruin structures",
+   "    Drops: Remnant Eye, Cataclysm armor fragments",
+   "    Required to progress to Maledictus",
+   "  └ ✦ Maledictus: the cursed form",
+   "    Intermediate boss, drops Cursium",
+   "    Cursium = crafting gate for Ignis/Annihilator tier",
+   "  └ ✦ Ignited Revenant: follows Maledictus",
+   "    Fire-phase variant, drops Revenant materials",
+   "  └ ✦ Ignis: full fire boss, post-Cursium",
+   "    Major loot gate, drops Ignitium",
+   "    Ignitium = high-tier Cataclysm crafting material",
+   "  └ ✦ Netherite Monstrosity: Nether depth boss",
+   "    Drops Lacrima (triggers Infernal Age in Ch12)",
+   "  └ ✦ The Leviathan: ocean/deep variant",
+   "    Ch09-10 accessible, drops end-tier loot",
+   "  └ ✦ Ender Guardian + Harbinger + Primordial",
+   "    Post-portal (Ch13) — require End access",
+   "",
+   "◈ SCROLL: The Cataclysm Codex",
+   "  └ 20% drop from: Ignis, Ancient Remnant,",
+   "    The Leviathan",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: full Cataclysm boss chain knowledge,",
+   "    crafting pathway for Ignitium tier",
+   "",
+   "◈ CURSIUM ALERT",
+   "  └ Maledictus → Cursium",
+   "  └ Cursium is the crafting gate for the",
+   "    strongest Cataclysm gear (Ch11+)",
+   "  └ Farm Maledictus before Ch11 progression",
+   "",
+   "▸ The Ancient Remnant was not created by the Ender.",
+   "  It predates the End itself.",
+   "  The Cataclysm began somewhere else.",
+   "  The scroll does not say where.",
+   "",
+   "▶ Find The Cataclysm Codex scroll [check]",
+   "▶ Defeat the Ancient Remnant [check]",
+   "",
+   "◇ Netherite Monstrosity drops Lacrima.",
+   "  Lacrima triggers the Infernal Age (Ch12).",
+   "  Do not farm it until you are ready for Ch12."
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     3940,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

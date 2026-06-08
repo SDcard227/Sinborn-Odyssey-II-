@@ -1,62 +1,99 @@
 {
-  "dependencies": ["ch17_r_spells1"],
-  "tasks": {
-    "abyssal_mastery": {
-      "title": "Use the Abyssal Beam spell (T.O. Magic 'n Extras / traveloptics: — the ISS addon from Leviathan fight, Ch11)",
-      "icon": {"item": {"id": "traveloptics:abyssal_spellweave_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_r_spells1"
+ ],
+ "tasks": {
+  "abyssal_mastery": {
+   "title": "Use the Abyssal Beam spell (T.O. Magic 'n Extras / traveloptics: — the ISS addon from Leviathan fight, Ch11)",
+   "icon": {
+    "item": {
+     "id": "traveloptics:abyssal_spellweave_ingot",
+     "count": 1
     },
-    "spell_loadout": {
-      "title": "Assemble a complete 5-spell combat loadout using spells from at least 3 different ISS schools",
-      "icon": {"item": {"id": "irons_spellbooks:ironbound_tome", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "abyssal_ingot": {
-      "item": {"id": "traveloptics:abyssal_spellweave_ingot", "count": 2},
-      "type": "heracles:item"
+  "spell_loadout": {
+   "title": "Assemble a complete 5-spell combat loadout using spells from at least 3 different ISS schools",
+   "icon": {
+    "item": {
+     "id": "irons_spellbooks:ironbound_tome",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 14},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Complete Spellcaster"},
-    "subtitle": {"text": "The Leviathan's gift was not the ingot. The ingot enabled the beam. The beam is the gift."},
-    "description": [
-      "T.O. Magic 'n Extras (namespace: traveloptics:) is an ISS addon that adds the Abyssal Beam.",
-      "The Abyssal Spellweave Ingot is a guaranteed drop from the Leviathan (Ch11 fight).",
-      "The ingot unlocks the Abyssal Beam spell — a deep-ocean focused destruction spell.",
-      "",
-      "The Abyssal Beam is one of the most powerful spells in the pack.",
-      "Using it in Ch17 completes the arc from killing the Leviathan in Ch11",
-      "to weaponizing what it taught you.",
-      "",
-      "5-spell combat loadout example:",
-      "1. Abyssal Beam (T.O. Magic / traveloptics — destruction)",
-      "2. Fireball or Explode (Fire school — area damage)",
-      "3. Heal (Holy school — sustain)",
-      "4. Ender Slash or Void Tentacles (Ender school — mobility + gap close)",
-      "5. Chain Lightning or Thunderstorm (Lightning school — AOE)",
-      "",
-      "This is the culmination of Ch06's Iron's Spellbooks introduction.",
-      "Seventeen chapters later, you are an archmage.",
-      "",
-      "→ Use the Abyssal Beam spell [check]",
-      "→ Assemble a 5-spell combat loadout [check]"
-    ],
-    "groups": {"Lords of All": {"position": [300, 150]}},
-    "icon": {"item": {"id": "irons_spellbooks:ironbound_tome", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "abyssal_ingot": {
+   "item": {
+    "id": "traveloptics:abyssal_spellweave_ingot",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 14
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Complete Spellcaster"
+  },
+  "subtitle": {
+   "text": "The Leviathan's gift was not the ingot. The ingot enabled the beam. The beam is the gift."
+  },
+  "description": [
+   "T.O. Magic 'n Extras (namespace: traveloptics:) is an ISS addon that adds the Abyssal Beam.",
+   "The Abyssal Spellweave Ingot is a guaranteed drop from the Leviathan (Ch11 fight).",
+   "The ingot unlocks the Abyssal Beam spell — a deep-ocean focused destruction spell.",
+   "",
+   "The Abyssal Beam is one of the most powerful spells in the pack.",
+   "Using it in Ch17 completes the arc from killing the Leviathan in Ch11",
+   "to weaponizing what it taught you.",
+   "",
+   "5-spell combat loadout example:",
+   "1. Abyssal Beam (T.O. Magic / traveloptics — destruction)",
+   "2. Fireball or Explode (Fire school — area damage)",
+   "3. Heal (Holy school — sustain)",
+   "4. Ender Slash or Void Tentacles (Ender school — mobility + gap close)",
+   "5. Chain Lightning or Thunderstorm (Lightning school — AOE)",
+   "",
+   "This is the culmination of Ch06's Iron's Spellbooks introduction.",
+   "Seventeen chapters later, you are an archmage.",
+   "",
+   "→ Use the Abyssal Beam spell [check]",
+   "→ Assemble a 5-spell combat loadout [check]"
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     920,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:ironbound_tome",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,58 +1,95 @@
 {
-  "dependencies": ["ch09_r_cold1"],
-  "tasks": {
-    "cold_eye": {
-      "title": "Craft the Cold Eye (center: Ice Crystal + Aquamirae fin, gazing pearl, icy pearl, storm essence)",
-      "icon": {"item": {"id": "endrem:cold_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch09_r_cold1"
+ ],
+ "tasks": {
+  "cold_eye": {
+   "title": "Craft the Cold Eye (center: Ice Crystal + Aquamirae fin, gazing pearl, icy pearl, storm essence)",
+   "icon": {
+    "item": {
+     "id": "endrem:cold_eye",
+     "count": 1
     },
-    "place_cold": {
-      "title": "Place the Cold Eye in the End Portal frame",
-      "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "cold_eye_reward": {
-      "item": {"id": "endrem:cold_eye", "count": 1},
-      "type": "heracles:item"
+  "place_cold": {
+   "title": "Place the Cold Eye in the End Portal frame",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_portal_frame",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 4},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Cold Eye"},
-    "subtitle": {"text": "Three frames. The portal is beginning to understand you."},
-    "description": [
-      "The Cold Eye recipe requires:",
-      "- mowziesmobs:ice_crystal (center — Frostmaw drop)",
-      "- aquamirae:fin (Captain Cornelia or sea creature drop)",
-      "- alexscaves:gazing_pearl (Alex's Caves biome loot)",
-      "- icy_pearl (frozen ocean creatures)",
-      "- cataclysm:essence_of_the_storm (Cataclysm boss chain)",
-      "",
-      "The Cataclysm essence comes from Ch11 boss chains.",
-      "Gather what is available now.",
-      "The Cold Eye may not be craftable until Ch11 ingredients are collected.",
-      "",
-      "This is normal. The Eye Hunt spans multiple chapters.",
-      "The portal is not rushed. The inheritance is not conditional on speed.",
-      "",
-      "→ Craft the Cold Eye when all ingredients are ready [check]",
-      "→ Place the Cold Eye in the frame [check]"
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [-300, 150]}},
-    "icon": {"item": {"id": "endrem:cold_eye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "cold_eye_reward": {
+   "item": {
+    "id": "endrem:cold_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Cold Eye"
+  },
+  "subtitle": {
+   "text": "Three frames. The portal is beginning to understand you."
+  },
+  "description": [
+   "The Cold Eye recipe requires:",
+   "- mowziesmobs:ice_crystal (center — Frostmaw drop)",
+   "- aquamirae:fin (Captain Cornelia or sea creature drop)",
+   "- alexscaves:gazing_pearl (Alex's Caves biome loot)",
+   "- icy_pearl (frozen ocean creatures)",
+   "- cataclysm:essence_of_the_storm (Cataclysm boss chain)",
+   "",
+   "The Cataclysm essence comes from Ch11 boss chains.",
+   "Gather what is available now.",
+   "The Cold Eye may not be craftable until Ch11 ingredients are collected.",
+   "",
+   "This is normal. The Eye Hunt spans multiple chapters.",
+   "The portal is not rushed. The inheritance is not conditional on speed.",
+   "",
+   "→ Craft the Cold Eye when all ingredients are ready [check]",
+   "→ Place the Cold Eye in the frame [check]"
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     3020,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "endrem:cold_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

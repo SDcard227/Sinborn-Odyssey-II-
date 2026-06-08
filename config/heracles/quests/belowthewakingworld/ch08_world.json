@@ -1,67 +1,98 @@
 {
-  "dependencies": ["ch07_gate"],
-  "tasks": {
-    "depth_prep": {
-      "title": "Craft a Netherite Glider (fire-resistant) or Iron Glider for deep-sea descent",
-      "icon": {"item": {"id": "gliders:iron_glider", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch07_gate"
+ ],
+ "tasks": {
+  "depth_prep": {
+   "title": "Craft a Netherite Glider (fire-resistant) or Iron Glider for deep-sea descent",
+   "icon": {
+    "item": {
+     "id": "gliders:iron_glider",
+     "count": 1
     },
-    "kelp": {
-      "type": "heracles:item",
-      "item": "minecraft:dried_kelp",
-      "amount": 32,
-      "collection": "AUTOMATIC"
-    },
-    "turtle_helmet": {
-      "type": "heracles:item",
-      "item": "minecraft:turtle_helmet",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "potion": {
-      "item": {"id": "minecraft:potion", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
+  "kelp": {
+   "type": "heracles:item",
+   "item": "minecraft:dried_kelp",
+   "amount": 32,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "Below the Surface"},
-    "subtitle": {"text": "The ocean floor has been waiting longer than the land."},
-    "description": [
-      "The oil age ends at the shore.",
-      "What comes next is below it.",
-      "",
-      "The Pressure mod causes increasing damage",
-      "proportional to vertical distance from the nearest air block above.",
-      "An air pocket — even 3 blocks directly above you — resets the counter.",
-      "Plan your descent with air pockets marked.",
-      "",
-      "Turtle Helmet extends breath underwater.",
-      "Dried Kelp restores hunger in ocean biomes without full inventory stops.",
-      "Water Breathing potions from the brewing stand extend safe operating time.",
-      "",
-      "The Glider mod's Netherite tier is fire-resistant for Nether dives.",
-      "Iron tier is sufficient for ocean descent.",
-      "",
-      "→ Craft a Glider for controlled descent [check]",
-      "→ Collect 32 Dried Kelp",
-      "→ Craft a Turtle Helmet (scute from baby turtles maturing)"
-    ],
-    "groups": {"Below the Waking World": {"position": [0, 0]}},
-    "icon": {"item": {"id": "minecraft:turtle_helmet", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "turtle_helmet": {
+   "type": "heracles:item",
+   "item": "minecraft:turtle_helmet",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "potion": {
+   "item": {
+    "id": "minecraft:potion",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Below the Surface"
+  },
+  "subtitle": {
+   "text": "The ocean floor has been waiting longer than the land."
+  },
+  "description": [
+   "The oil age ends at the shore.",
+   "What comes next is below it.",
+   "",
+   "The Pressure mod causes increasing damage",
+   "proportional to vertical distance from the nearest air block above.",
+   "An air pocket — even 3 blocks directly above you — resets the counter.",
+   "Plan your descent with air pockets marked.",
+   "",
+   "Turtle Helmet extends breath underwater.",
+   "Dried Kelp restores hunger in ocean biomes without full inventory stops.",
+   "Water Breathing potions from the brewing stand extend safe operating time.",
+   "",
+   "The Glider mod's Netherite tier is fire-resistant for Nether dives.",
+   "Iron tier is sufficient for ocean descent.",
+   "",
+   "→ Craft a Glider for controlled descent [check]",
+   "→ Collect 32 Dried Kelp",
+   "→ Craft a Turtle Helmet (scute from baby turtles maturing)"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     300,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:turtle_helmet",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

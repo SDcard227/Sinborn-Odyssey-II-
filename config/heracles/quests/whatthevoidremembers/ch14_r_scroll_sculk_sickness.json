@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the On Sculk Sickness scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the On Sculk Sickness scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the On Sculk Sickness scroll",
-      "icon": {
-        "item": {
-          "id": "iceandfire:ambrosia",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock sculk_sickness"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "On Sculk Sickness"
+  "research_scroll": {
+   "title": "Research the On Sculk Sickness scroll",
+   "icon": {
+    "item": {
+     "id": "iceandfire:ambrosia",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Buried under what they froze themselves into.\"",
-      "",
-      "Already populated. 5-stage progression + ambrosia cure.",
-      "",
-      "This scroll unlocks 12 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Cataclysm:Chests/Frosted Prison Treasure",
-      "  \u00b7 Aquamirae:Chests/Ship 1",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [On Sculk Sickness] [auto]"
-    ],
-    "groups": {
-      "What the Void Remembers": {
-        "position": [
-          1146,
-          960
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "iceandfire:ambrosia",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock sculk_sickness"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "On Sculk Sickness"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Buried under what they froze themselves into.\"",
+   "",
+   "Already populated. 5-stage progression + ambrosia cure.",
+   "",
+   "This scroll unlocks 12 items.",
+   "",
+   "Look for it in:",
+   "  · Cataclysm:Chests/Frosted Prison Treasure",
+   "  · Aquamirae:Chests/Ship 1",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [On Sculk Sickness] [auto]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     0,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "iceandfire:ambrosia",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

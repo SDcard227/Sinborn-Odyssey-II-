@@ -1,62 +1,99 @@
 {
-  "dependencies": ["ch15_gate"],
-  "tasks": {
-    "celestial_touch": {
-      "title": "Obtain 4 Celestial Dust (Celestisynth mod — found in End structures or crafted from End materials)",
-      "icon": {"item": {"id": "celestisynth:celestial_dust", "count": 4}, "type": "heracles:item"},
-      "amount": 4,
-      "collection": "AUTOMATIC",
-      "type": "heracles:item"
+ "dependencies": [
+  "ch15_gate"
+ ],
+ "tasks": {
+  "celestial_touch": {
+   "title": "Obtain 4 Celestial Dust (Celestisynth mod — found in End structures or crafted from End materials)",
+   "icon": {
+    "item": {
+     "id": "celestisynth:celestial_dust",
+     "count": 4
     },
-    "celestial_ingot_first": {
-      "title": "Craft your first Celestial Ingot (Celestisynth — entry-tier celestial metal)",
-      "icon": {"item": {"id": "celestisynth:celestial_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "amount": 4,
+   "collection": "AUTOMATIC",
+   "type": "heracles:item"
   },
-  "rewards": {
-    "celestial_dust": {
-      "item": {"id": "celestisynth:celestial_dust", "count": 8},
-      "type": "heracles:item"
+  "celestial_ingot_first": {
+   "title": "Craft your first Celestial Ingot (Celestisynth — entry-tier celestial metal)",
+   "icon": {
+    "item": {
+     "id": "celestisynth:celestial_ingot",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Long Road Home"},
-    "subtitle": {"text": "The road home is not shorter than the road out. It is the same road walked differently."},
-    "description": [
-      "Celestisynth is the highest crafting tier in Sinborn Odyssey 2.",
-      "It begins with Celestial Dust — gathered from End structures or processed from End materials.",
-      "",
-      "The Celestisynth progression:",
-      "Celestial Dust → Celestial Ingot → Celestial Netherite Ingot → Celestial tools and armor",
-      "",
-      "The celestial_netherite_ingot combines two peak materials:",
-      "Netherite (the hardest natural material) + Celestial (post-End synthetic material).",
-      "It is the material you bring back to the Overworld from the End.",
-      "It is what the journey made possible.",
-      "",
-      "No civilization before you synthesized Celestial Netherite.",
-      "The Oldest Civilization came closest.",
-      "They were missing the thing you have:",
-      "everything that happened after they fell.",
-      "",
-      "→ Collect 4 Celestial Dust [collect]",
-      "→ Craft your first Celestial Ingot [check]"
-    ],
-    "groups": {"The Long Road Home": {"position": [0, 0]}},
-    "icon": {"item": {"id": "celestisynth:celestial_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "NEVER",
-    "unlockNotification": true
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "celestial_dust": {
+   "item": {
+    "id": "celestisynth:celestial_dust",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Long Road Home"
+  },
+  "subtitle": {
+   "text": "The road home is not shorter than the road out. It is the same road walked differently."
+  },
+  "description": [
+   "Celestisynth is the highest crafting tier in Sinborn Odyssey 2.",
+   "It begins with Celestial Dust — gathered from End structures or processed from End materials.",
+   "",
+   "The Celestisynth progression:",
+   "Celestial Dust → Celestial Ingot → Celestial Netherite Ingot → Celestial tools and armor",
+   "",
+   "The celestial_netherite_ingot combines two peak materials:",
+   "Netherite (the hardest natural material) + Celestial (post-End synthetic material).",
+   "It is the material you bring back to the Overworld from the End.",
+   "It is what the journey made possible.",
+   "",
+   "No civilization before you synthesized Celestial Netherite.",
+   "The Oldest Civilization came closest.",
+   "They were missing the thing you have:",
+   "everything that happened after they fell.",
+   "",
+   "→ Collect 4 Celestial Dust [collect]",
+   "→ Craft your first Celestial Ingot [check]"
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     0,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "celestisynth:celestial_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "NEVER",
+  "unlockNotification": true
+ }
 }

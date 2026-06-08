@@ -1,93 +1,93 @@
 {
-  "dependencies": [
-    "ch07_r_food2"
-  ],
-  "tasks": {
-    "honey_glazed_ham": {
-      "type": "heracles:item",
-      "item": "farmersdelight:honey_glazed_ham",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "feast_block": {
-      "title": "Place and share a Farmer's Delight feast block (Roast Chicken, Ham, Ratatouille, etc.)",
-      "icon": {
-        "item": {
-          "id": "farmersdelight:roast_chicken",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    },
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/engineered_cuisine"
-    }
+ "dependencies": [
+  "ch07_r_food2"
+ ],
+ "tasks": {
+  "honey_glazed_ham": {
+   "type": "heracles:item",
+   "item": "farmersdelight:honey_glazed_ham",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "feast": {
-      "item": {
-        "id": "farmersdelight:honey_glazed_ham",
-        "count": 4
-      },
-      "type": "heracles:item"
+  "feast_block": {
+   "title": "Place and share a Farmer's Delight feast block (Roast Chicken, Ham, Ratatouille, etc.)",
+   "icon": {
+    "item": {
+     "id": "farmersdelight:roast_chicken",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 10
-      },
-      "type": "heracles:item"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "display": {
-    "title": {
-      "translate": "Engineered Cuisine"
-    },
-    "subtitle": {
-      "text": "The feast is the goal. The factory is how you feed enough people."
-    },
-    "description": [
-      "The food system was never just about survival.",
-      "It was about what you eat with, and who you eat with.",
-      "The feast block feeds everyone at the table.",
-      "",
-      "Farmer's Delight feast blocks (Roast Chicken, Honey Glazed Ham)",
-      "place like a cake and can be eaten by multiple players.",
-      "In multiplayer, this is the reason you built the kitchen.",
-      "",
-      "The Engineered Cuisine scroll records what happens",
-      "when industrial capacity meets the kitchen.",
-      "Someone took notes. You are reading them.",
-      "",
-      "→ Cook 4 Honey Glazed Hams (FD cooking chain)",
-      "→ Place and share a feast block [check]",
-      "→ Research the Engineered Cuisine scroll [check]"
-    ],
-    "groups": {
-      "Blood and Oil": {
-        "position": [
-          -450,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "farmersdelight:honey_glazed_ham",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Engineered Cuisine scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "feast": {
+   "item": {
+    "id": "farmersdelight:honey_glazed_ham",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Engineered Cuisine"
+  },
+  "subtitle": {
+   "text": "The feast is the goal. The factory is how you feed enough people."
+  },
+  "description": [
+   "The food system was never just about survival.",
+   "It was about what you eat with, and who you eat with.",
+   "The feast block feeds everyone at the table.",
+   "",
+   "Farmer's Delight feast blocks (Roast Chicken, Honey Glazed Ham)",
+   "place like a cake and can be eaten by multiple players.",
+   "In multiplayer, this is the reason you built the kitchen.",
+   "",
+   "The Engineered Cuisine scroll records what happens",
+   "when industrial capacity meets the kitchen.",
+   "Someone took notes. You are reading them.",
+   "",
+   "→ Cook 4 Honey Glazed Hams (FD cooking chain)",
+   "→ Place and share a feast block [check]",
+   "→ Research the Engineered Cuisine scroll [check]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     2140,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "farmersdelight:honey_glazed_ham",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

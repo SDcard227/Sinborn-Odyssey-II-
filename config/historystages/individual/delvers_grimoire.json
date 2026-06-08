@@ -1,0 +1,41 @@
+{
+  "display_name": "The Delver's Grimoire",
+  "research_time": 2400,
+  "items": [
+    "dungeonnowloading:dueling_stone_emblem",
+    "dungeonnowloading:puzzling_stone_emblem",
+    "dungeonnowloading:scepter_of_sealed_chaos",
+    "dungeonnowloading:scorcher",
+    "dungeonnowloading:signaling_stone_emblem",
+    "dungeonnowloading:skull_of_chaos",
+    "dungeonnowloading:soul_scorcher",
+    "dungeonnowloading:soul_silk"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "dungeonnowloading:building_blocks/dueling_stone_emblem",
+    "dungeonnowloading:building_blocks/puzzling_stone_emblem",
+    "dungeonnowloading:building_blocks/signaling_stone_emblem",
+    "dungeonnowloading:combat/scepter_of_sealed_chaos",
+    "dungeonnowloading:combat/scorcher",
+    "dungeonnowloading:combat/soul_scorcher",
+    "dungeonnowloading:dueling_stone_emblem",
+    "dungeonnowloading:misc/skull_of_chaos",
+    "dungeonnowloading:misc/soul_silk",
+    "dungeonnowloading:puzzling_stone_emblem",
+    "dungeonnowloading:scepter_of_sealed_chaos",
+    "dungeonnowloading:scorcher",
+    "dungeonnowloading:signaling_stone_emblem",
+    "dungeonnowloading:skull_of_chaos",
+    "dungeonnowloading:soul_scorcher",
+    "dungeonnowloading:soul_silk"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

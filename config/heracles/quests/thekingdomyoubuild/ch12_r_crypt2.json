@@ -1,59 +1,96 @@
 {
-  "dependencies": ["ch12_r_crypt1"],
-  "tasks": {
-    "cryptic_eye": {
-      "title": "Craft the Cryptic Eye (center: Chaotic Hexahedron + spawner blade + experience nuggets + dungeon materials)",
-      "icon": {"item": {"id": "endrem:cryptic_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch12_r_crypt1"
+ ],
+ "tasks": {
+  "cryptic_eye": {
+   "title": "Craft the Cryptic Eye (center: Chaotic Hexahedron + spawner blade + experience nuggets + dungeon materials)",
+   "icon": {
+    "item": {
+     "id": "endrem:cryptic_eye",
+     "count": 1
     },
-    "place_cryptic": {
-      "title": "Place the Cryptic Eye in the End Portal frame",
-      "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "cryptic_eye_reward": {
-      "item": {"id": "endrem:cryptic_eye", "count": 1},
-      "type": "heracles:item"
+  "place_cryptic": {
+   "title": "Place the Cryptic Eye in the End Portal frame",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_portal_frame",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 6},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Cryptic Eye"},
-    "subtitle": {"text": "A lock placed in a doorway. Who was it keeping out?"},
-    "description": [
-      "The Cryptic Eye slots into the End Portal frame.",
-      "Eleven eyes placed (if all previous eyes collected).",
-      "One remaining.",
-      "",
-      "The Cryptic civilization built their inheritance as a series of puzzles.",
-      "Everything they knew was hidden inside a structure designed to resist being known.",
-      "It was elegant and it was catastrophic:",
-      "when their civilization fell, no one could read the archive.",
-      "",
-      "The Cryptic Eye is their most honest artifact.",
-      "It is a lock. It does not claim to be anything else.",
-      "",
-      "You are placing it in the frame alongside memory, wounds, cold, calculation.",
-      "The portal is assembling itself from everything that came before you.",
-      "",
-      "→ Craft the Cryptic Eye [check]",
-      "→ Place it in the frame [check]"
-    ],
-    "groups": {"The Kingdom You Build": {"position": [300, 150]}},
-    "icon": {"item": {"id": "endrem:cryptic_eye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "cryptic_eye_reward": {
+   "item": {
+    "id": "endrem:cryptic_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Cryptic Eye"
+  },
+  "subtitle": {
+   "text": "A lock placed in a doorway. Who was it keeping out?"
+  },
+  "description": [
+   "The Cryptic Eye slots into the End Portal frame.",
+   "Eleven eyes placed (if all previous eyes collected).",
+   "One remaining.",
+   "",
+   "The Cryptic civilization built their inheritance as a series of puzzles.",
+   "Everything they knew was hidden inside a structure designed to resist being known.",
+   "It was elegant and it was catastrophic:",
+   "when their civilization fell, no one could read the archive.",
+   "",
+   "The Cryptic Eye is their most honest artifact.",
+   "It is a lock. It does not claim to be anything else.",
+   "",
+   "You are placing it in the frame alongside memory, wounds, cold, calculation.",
+   "The portal is assembling itself from everything that came before you.",
+   "",
+   "→ Craft the Cryptic Eye [check]",
+   "→ Place it in the frame [check]"
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     920,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "endrem:cryptic_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

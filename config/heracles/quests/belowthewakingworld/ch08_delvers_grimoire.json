@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch08_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Delver's Grimoire at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:book",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock delvers_grimoire",
+   "title": "Discipline learned: The Delver's Grimoire",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Delver's Grimoire"
+  },
+  "subtitle": {
+   "text": "Deeper means older means stranger."
+  },
+  "description": [
+   "Below the waking world, the rules thin. The deep keeps what the surface forgot.",
+   "The grimoire is the field-notes of those who went down and came back — and of some who only sent notes.",
+   "",
+   "→ Recover and study the Delver's Grimoire at a Research Pedestal."
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     760,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:book",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

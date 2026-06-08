@@ -1,0 +1,60 @@
+{
+ "dependencies": [
+  "ch16_world"
+ ],
+ "tasks": {
+  "craft": {
+   "type": "heracles:item",
+   "item": "celestisynth:keres",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Master-craft Keres"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Destruction Vessel , Keres"
+  },
+  "subtitle": {
+   "text": "The death-bringer, made by your hand."
+  },
+  "description": [
+   "The fourth Vessel. Keres , the embodiment of violent death, forged from celestial materials at the top of the tech tree.",
+   "Gate: path_to_divinity. The scroll the Nightwarden carries to his grave.",
+   "",
+   "Vessel 4 of 5: Destruction."
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     460,
+     1050
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "celestisynth:keres",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

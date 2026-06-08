@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch04_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Joiner's Frame at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:oak_door",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock joiners_frame",
+   "title": "Discipline learned: The Joiner's Frame",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Joiner's Frame"
+  },
+  "subtitle": {
+   "text": "Doors, windows, the seams of a building."
+  },
+  "description": [
+   "A frame decides what passes and what is kept out — light, cold, a knock at night.",
+   "The joiner's craft is the quiet skeleton beneath every standing wall.",
+   "",
+   "→ Recover and study the Joiner's Frame at a Research Pedestal."
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     460,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:oak_door",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

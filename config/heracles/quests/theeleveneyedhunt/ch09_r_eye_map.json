@@ -1,104 +1,147 @@
 {
-  "dependencies": ["ch09_blackeye"],
-  "tasks": {
-    "six_eyes": {
-      "title": "Collect 6 or more of the 12 custom eyes — the midpoint of the Eye Hunt (check when reached)",
-      "icon": {"item": {"id": "minecraft:ender_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch09_blackeye"
+ ],
+ "tasks": {
+  "six_eyes": {
+   "title": "Collect 6 or more of the 12 custom eyes — the midpoint of the Eye Hunt (check when reached)",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_eye",
+     "count": 1
     },
-    "know_portal": {
-      "title": "Understand the 9+3 portal structure — 9 custom eyes + 3 anchor eyes = 12 total for activation",
-      "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "ender_eye": {"item": {"id": "minecraft:ender_eye", "count": 4}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Eye Map"},
-    "subtitle": {"text": "Nine civilizations. Three anchors. Twelve eyes. One portal. This is the full map of the hunt."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.09 · THE EYE MAP",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ End Remastered replaces all 12 vanilla Eye of Ender",
-      "  with 12 unique custom eyes.",
-      "  The portal requires any 12 unique eyes placed.",
-      "  This quest is the complete reference for all 12.",
-      "  Pin this. Come back to it.",
-      "",
-      "◈ THE 9 CUSTOM EYES (Civilization Eyes)",
-      "  └ ✦ Black Eye (Desert Civilization)",
-      "    Ancient Remnant + Cockatrice (Ice & Fire)",
-      "    'It sees nothing. Not darkness. Not blindness.'",
-      "  └ ✦ Lost Eye (Sky Civilization)",
-      "    Kukulkan (Call of Yucatan) — drops Fragment of Rebirth",
-      "    'It was not lost. It was buried.'",
-      "  └ ✦ Old Eye (The Oldest Civilization)",
-      "    Maledictus + Death Worm (Ice & Fire)",
-      "    'Objects that are very old remember being old.'",
-      "  └ ✦ Cold Eye (Ice Civilization)",
-      "    Abyssal Eel + Frostmaw (Mowzie's Mobs)",
-      "    'True cold. The kind that preserves.'",
-      "  └ ✦ Rogue Eye (The Engineers)",
-      "    Chaos Construct",
-      "    'It is order that has been misapplied.'",
-      "  └ ✦ Cryptic Eye (Disappeared Civilization)",
-      "    Nucleeper (Alex's Caves)",
-      "    'The text was redacted by the academy.'",
-      "  └ ✦ Magical Eye (Ocean Mages)",
-      "    The Leviathan (Cataclysm)",
-      "    'Magic that was forced to be still.'",
-      "  └ ✦ Corrupted Eye (Biological Civilization)",
-      "    Plague Queen",
-      "    'Corruption is transformation without consent.'",
-      "  └ ✦ Cursed Eye (Previous Cycle)",
-      "    Wither Storm + Scarlet King (Manifestor Trap)",
-      "    'The Cursed Eye was always the last one.'",
-      "",
-      "◈ THE 3 ANCHOR EYES",
-      "  └ ✦ Wither Eye — Wither / Wither Reincarnated",
-      "    Custom recipe (Nether anchor)",
-      "  └ ✦ Guardian Eye — Elder Guardian",
-      "    Custom recipe (Ocean anchor)",
-      "  └ ✦ Nether Eye — Ignited Revenant (Cataclysm)",
-      "    Guaranteed drop — also Nether fortress loot fallback",
-      "    (Fire anchor — the Revenant is the thermal record)",
-      "",
-      "◈ PORTAL RULES",
-      "  └ 12 unique eyes required — no duplicates",
-      "  └ Eyes placed in portal frame (any order)",
-      "  └ 20-minute re-entry delay after placing an eye",
-      "    (avoid placing until you have all 12 ready)",
-      "  └ Stronghold portal frame: use Antique Atlas to locate",
-      "",
-      "▸ Every eye is one civilization.",
-      "  The portal does not open when you find a place.",
-      "  It opens when you find all the people",
-      "  who were here before you.",
-      "  The hunt is not archaeological.",
-      "  It is inheritance.",
-      "",
-      "▶ Collect 6+ custom eyes (halfway) [check]",
-      "▶ Understand the 9+3 portal structure [check]",
-      "",
-      "◇ The Cursed Eye (Ch12) uses the Manifestor Trap.",
-      "  Read the Scarlet King scroll (Ch05) before Ch12.",
-      "  The mechanic is intentional. Plan for it."
-    ],
-    "groups": {"The Eleven-Eyed Hunt": {"position": [300, 300]}},
-    "icon": {"item": {"id": "minecraft:ender_eye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "know_portal": {
+   "title": "Understand the 9+3 portal structure — 9 custom eyes + 3 anchor eyes = 12 total for activation",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_portal_frame",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "ender_eye": {
+   "item": {
+    "id": "minecraft:ender_eye",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Eye Map"
+  },
+  "subtitle": {
+   "text": "Nine civilizations. Three anchors. Twelve eyes. One portal. This is the full map of the hunt."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.09 · THE EYE MAP",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ End Remastered replaces all 12 vanilla Eye of Ender",
+   "  with 12 unique custom eyes.",
+   "  The portal requires any 12 unique eyes placed.",
+   "  This quest is the complete reference for all 12.",
+   "  Pin this. Come back to it.",
+   "",
+   "◈ THE 9 CUSTOM EYES (Civilization Eyes)",
+   "  └ ✦ Black Eye (Desert Civilization)",
+   "    Ancient Remnant + Cockatrice (Ice & Fire)",
+   "    'It sees nothing. Not darkness. Not blindness.'",
+   "  └ ✦ Lost Eye (Sky Civilization)",
+   "    Kukulkan (Call of Yucatan) — drops Fragment of Rebirth",
+   "    'It was not lost. It was buried.'",
+   "  └ ✦ Old Eye (The Oldest Civilization)",
+   "    Maledictus + Death Worm (Ice & Fire)",
+   "    'Objects that are very old remember being old.'",
+   "  └ ✦ Cold Eye (Ice Civilization)",
+   "    Abyssal Eel + Frostmaw (Mowzie's Mobs)",
+   "    'True cold. The kind that preserves.'",
+   "  └ ✦ Rogue Eye (The Engineers)",
+   "    Chaos Construct",
+   "    'It is order that has been misapplied.'",
+   "  └ ✦ Cryptic Eye (Disappeared Civilization)",
+   "    Nucleeper (Alex's Caves)",
+   "    'The text was redacted by the academy.'",
+   "  └ ✦ Magical Eye (Ocean Mages)",
+   "    The Leviathan (Cataclysm)",
+   "    'Magic that was forced to be still.'",
+   "  └ ✦ Corrupted Eye (Biological Civilization)",
+   "    Plague Queen",
+   "    'Corruption is transformation without consent.'",
+   "  └ ✦ Cursed Eye (Previous Cycle)",
+   "    Wither Storm + Scarlet King (Manifestor Trap)",
+   "    'The Cursed Eye was always the last one.'",
+   "",
+   "◈ THE 3 ANCHOR EYES",
+   "  └ ✦ Wither Eye — Wither / Wither Reincarnated",
+   "    Custom recipe (Nether anchor)",
+   "  └ ✦ Guardian Eye — Elder Guardian",
+   "    Custom recipe (Ocean anchor)",
+   "  └ ✦ Nether Eye — Ignited Revenant (Cataclysm)",
+   "    Guaranteed drop — also Nether fortress loot fallback",
+   "    (Fire anchor — the Revenant is the thermal record)",
+   "",
+   "◈ PORTAL RULES",
+   "  └ 12 unique eyes required — no duplicates",
+   "  └ Eyes placed in portal frame (any order)",
+   "  └ 20-minute re-entry delay after placing an eye",
+   "    (avoid placing until you have all 12 ready)",
+   "  └ Stronghold portal frame: use Antique Atlas to locate",
+   "",
+   "▸ Every eye is one civilization.",
+   "  The portal does not open when you find a place.",
+   "  It opens when you find all the people",
+   "  who were here before you.",
+   "  The hunt is not archaeological.",
+   "  It is inheritance.",
+   "",
+   "▶ Collect 6+ custom eyes (halfway) [check]",
+   "▶ Understand the 9+3 portal structure [check]",
+   "",
+   "◇ The Cursed Eye (Ch12) uses the Manifestor Trap.",
+   "  Read the Scarlet King scroll (Ch05) before Ch12.",
+   "  The mechanic is intentional. Plan for it."
+  ],
+  "groups": {
+   "The Eleven-Eyed Hunt": {
+    "position": [
+     3480,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

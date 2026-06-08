@@ -1,0 +1,20 @@
+{
+  "display_name": "The Scroll of the Wrought Eye",
+  "research_time": 3600,
+  "items": [
+    "mowzies_cataclysm:wrought_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "mowzies_cataclysm:wrought_eye",
+    "sinborn:mechanical_crafting/mowz_wrought_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

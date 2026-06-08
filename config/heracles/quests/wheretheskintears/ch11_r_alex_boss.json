@@ -1,89 +1,132 @@
 {
-  "dependencies": ["ch11_r_warped2"],
-  "tasks": {
-    "alex_encounter": {
-      "title": "Encounter and defeat a Ch11-relevant Alex's Mobs boss — Cachalot Whale, Void Worm, or Crimson Mosquito",
-      "icon": {"item": {"id": "minecraft:nautilus_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch11_r_warped2"
+ ],
+ "tasks": {
+  "alex_encounter": {
+   "title": "Encounter and defeat a Ch11-relevant Alex's Mobs boss — Cachalot Whale, Void Worm, or Crimson Mosquito",
+   "icon": {
+    "item": {
+     "id": "minecraft:nautilus_shell",
+     "count": 1
     },
-    "alex_loot": {
-      "title": "Collect rare Alex's Mobs loot from a boss fight — unique drops for crafting or decoration",
-      "icon": {"item": {"id": "minecraft:prismarine_shard", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "prismarine": {"item": {"id": "minecraft:prismarine_shard", "count": 16}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "Alex's Bosses"},
-    "subtitle": {"text": "89 mobs. The ones that matter in Ch11 live in warped forests, deep oceans, and the void edge."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.11 · ALEX'S BOSSES",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Alex's Mobs adds 89 creatures.",
-      "  Most are ambient. Several are boss-tier.",
-      "  The ones that matter for Ch11 loot",
-      "  are in the biomes you are already traveling through:",
-      "  warped forest, deep ocean, and void-adjacent zones.",
-      "",
-      "◈ CH11-ACCESSIBLE ALEX'S MOBS BOSSES",
-      "  └ ✦ Cachalot Whale: ocean boss-tier mob",
-      "    Found in deep ocean biomes (Y -30 or lower)",
-      "    Drops: whale-specific loot, high HP + ram attack",
-      "    Worth farming: unique decorative and material drops",
-      "  └ ✦ Void Worm: void-adjacent biome boss",
-      "    Spawns in terrain with void exposure (mountains, cliffs)",
-      "    Tunnels through terrain — burst out of ground attack",
-      "    Drops: worm-specific materials used in ISS constructs",
-      "  └ ✦ Crimson Mosquito: large parasite mob",
-      "    Crimson Forest biome in Nether",
-      "    Drains HP over time — treat as DoT boss",
-      "    Drops: mosquito-specific material (immune to Crimson)",
-      "",
-      "◈ WARPED MOSCO NOTES",
-      "  └ Already covered in ch11_r_warped1/2 quests",
-      "  └ The Mosco provides Hemolymph Sac for Corrupted Eye",
-      "  └ After the Hemolymph farm, the Warped Forest still",
-      "    has ambient Alex's Mobs worth fighting",
-      "",
-      "◈ ALEX'S MOBS NOTABLE DROPS (CH11 ZONE)",
-      "  └ Most drops are decorative or armor supplements",
-      "  └ Some materials feed into ISS constructs and T.O. Magic",
-      "  └ Check JEI under alexsmobs: for any new recipes",
-      "    unlocked by Ch11 scroll research",
-      "  └ ▲ NOTE: plague_doctor and spreader are NOT in",
-      "    Alex's Mobs (confirmed absent from mod source)",
-      "    Do not look for them in the mod files",
-      "",
-      "▸ The Worm came from underground.",
-      "  The Whale came from the deep.",
-      "  The Mosco came from the rot.",
-      "  All three are the world looking back at you",
-      "  from the dimensions you've already been through.",
-      "",
-      "▶ Defeat a Ch11-zone Alex's Mobs boss [check]",
-      "▶ Collect rare Alex's Mobs boss loot [check]",
-      "",
-      "◇ Alex's Mobs (alexsmobs:) ≠ Alex's Caves (alexscaves:).",
-      "  Different mods. Different namespaces.",
-      "  The Nucleeper (alexscaves:) is not in Alex's Mobs.",
-      "  The Void Worm (alexsmobs:) is not in Alex's Caves.",
-      "  Check the namespace before mining or farming."
-    ],
-    "groups": {"Where the Skin Tears": {"position": [300, 300]}},
-    "icon": {"item": {"id": "minecraft:nautilus_shell", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "alex_loot": {
+   "title": "Collect rare Alex's Mobs loot from a boss fight — unique drops for crafting or decoration",
+   "icon": {
+    "item": {
+     "id": "minecraft:prismarine_shard",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "prismarine": {
+   "item": {
+    "id": "minecraft:prismarine_shard",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Alex's Bosses"
+  },
+  "subtitle": {
+   "text": "89 mobs. The ones that matter in Ch11 live in warped forests, deep oceans, and the void edge."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.11 · ALEX'S BOSSES",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Alex's Mobs adds 89 creatures.",
+   "  Most are ambient. Several are boss-tier.",
+   "  The ones that matter for Ch11 loot",
+   "  are in the biomes you are already traveling through:",
+   "  warped forest, deep ocean, and void-adjacent zones.",
+   "",
+   "◈ CH11-ACCESSIBLE ALEX'S MOBS BOSSES",
+   "  └ ✦ Cachalot Whale: ocean boss-tier mob",
+   "    Found in deep ocean biomes (Y -30 or lower)",
+   "    Drops: whale-specific loot, high HP + ram attack",
+   "    Worth farming: unique decorative and material drops",
+   "  └ ✦ Void Worm: void-adjacent biome boss",
+   "    Spawns in terrain with void exposure (mountains, cliffs)",
+   "    Tunnels through terrain — burst out of ground attack",
+   "    Drops: worm-specific materials used in ISS constructs",
+   "  └ ✦ Crimson Mosquito: large parasite mob",
+   "    Crimson Forest biome in Nether",
+   "    Drains HP over time — treat as DoT boss",
+   "    Drops: mosquito-specific material (immune to Crimson)",
+   "",
+   "◈ WARPED MOSCO NOTES",
+   "  └ Already covered in ch11_r_warped1/2 quests",
+   "  └ The Mosco provides Hemolymph Sac for Corrupted Eye",
+   "  └ After the Hemolymph farm, the Warped Forest still",
+   "    has ambient Alex's Mobs worth fighting",
+   "",
+   "◈ ALEX'S MOBS NOTABLE DROPS (CH11 ZONE)",
+   "  └ Most drops are decorative or armor supplements",
+   "  └ Some materials feed into ISS constructs and T.O. Magic",
+   "  └ Check JEI under alexsmobs: for any new recipes",
+   "    unlocked by Ch11 scroll research",
+   "  └ ▲ NOTE: plague_doctor and spreader are NOT in",
+   "    Alex's Mobs (confirmed absent from mod source)",
+   "    Do not look for them in the mod files",
+   "",
+   "▸ The Worm came from underground.",
+   "  The Whale came from the deep.",
+   "  The Mosco came from the rot.",
+   "  All three are the world looking back at you",
+   "  from the dimensions you've already been through.",
+   "",
+   "▶ Defeat a Ch11-zone Alex's Mobs boss [check]",
+   "▶ Collect rare Alex's Mobs boss loot [check]",
+   "",
+   "◇ Alex's Mobs (alexsmobs:) ≠ Alex's Caves (alexscaves:).",
+   "  Different mods. Different namespaces.",
+   "  The Nucleeper (alexscaves:) is not in Alex's Mobs.",
+   "  The Void Worm (alexsmobs:) is not in Alex's Caves.",
+   "  Check the namespace before mining or farming."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1380,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:nautilus_shell",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

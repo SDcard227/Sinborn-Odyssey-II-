@@ -1,55 +1,86 @@
 {
-  "dependencies": ["ch05_world"],
-  "tasks": {
-    "hire": {
-      "title": "Hire a Scout from Villager Recruits",
-      "icon": {"item": {"id": "minecraft:iron_sword", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch05_world"
+ ],
+ "tasks": {
+  "hire": {
+   "title": "Hire a Scout from Villager Recruits",
+   "icon": {
+    "item": {
+     "id": "minecraft:iron_sword",
+     "count": 1
     },
-    "coin_pay": {
-      "type": "heracles:item",
-      "item": "numismatics:cog",
-      "amount": 3,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 5},
-      "type": "heracles:item"
-    },
-    "iron": {
-      "item": {"id": "minecraft:iron_sword", "count": 1},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Hire a Scout"},
-    "subtitle": {"text": "The first soldier is also the first institutional investment."},
-    "description": [
-      "Villager Recruits adds six unit types:",
-      "Scout, Archer, Swordsman, Crossbowman, Spearman, Knight.",
-      "",
-      "Hire them from village barracks or by trading with villagers.",
-      "Scouts are cheap and mobile — start there.",
-      "",
-      "Units follow orders. They protect your position.",
-      "In later chapters, you will send armies against enemies.",
-      "Every army begins with one hire.",
-      "",
-      "→ Hire a Scout [check]",
-      "→ Have 3 cogs for payment"
-    ],
-    "groups": {"The Spoken Word": {"position": [-150, 0]}},
-    "icon": {"item": {"id": "minecraft:iron_sword", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "coin_pay": {
+   "type": "heracles:item",
+   "item": "numismatics:cog",
+   "amount": 3,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 5
+   },
+   "type": "heracles:item"
+  },
+  "iron": {
+   "item": {
+    "id": "minecraft:iron_sword",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Hire a Scout"
+  },
+  "subtitle": {
+   "text": "The first soldier is also the first institutional investment."
+  },
+  "description": [
+   "Villager Recruits adds six unit types:",
+   "Scout, Archer, Swordsman, Crossbowman, Spearman, Knight.",
+   "",
+   "Hire them from village barracks or by trading with villagers.",
+   "Scouts are cheap and mobile — start there.",
+   "",
+   "Units follow orders. They protect your position.",
+   "In later chapters, you will send armies against enemies.",
+   "Every army begins with one hire.",
+   "",
+   "→ Hire a Scout [check]",
+   "→ Have 3 cogs for payment"
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1060,
+     1050
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:iron_sword",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

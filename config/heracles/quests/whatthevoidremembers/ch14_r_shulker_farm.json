@@ -1,88 +1,125 @@
 {
-  "dependencies": ["ch14_deep"],
-  "tasks": {
-    "shulker_farm_build": {
-      "title": "Build an automated Shulker Shell farm — enclosed End City structure with spawn control and item collection",
-      "icon": {"item": {"id": "minecraft:shulker_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_deep"
+ ],
+ "tasks": {
+  "shulker_farm_build": {
+   "title": "Build an automated Shulker Shell farm — enclosed End City structure with spawn control and item collection",
+   "icon": {
+    "item": {
+     "id": "minecraft:shulker_shell",
+     "count": 1
     },
-    "shell_stack": {
-      "type": "heracles:item",
-      "item": "minecraft:shulker_shell",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "shulker_box": {"item": {"id": "minecraft:shulker_box", "count": 4}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Shulker Farm"},
-    "subtitle": {"text": "Shulker Shells are the most valuable item in the End. Two shells. One chest. One Shulker Box. Build a factory."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.14 · THE SHULKER FARM",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Shulker Shells craft Shulker Boxes.",
-      "  Shulker Boxes are the most powerful inventory item in the game.",
-      "  27 stacks that function as a single inventory slot.",
-      "  The target is 27 Shulker Boxes — 729 additional inventory slots.",
-      "  To reach 27 boxes you need 54 shells.",
-      "  To reach 54 shells you need a farm.",
-      "",
-      "◈ SHULKER FARMING — BASE APPROACH",
-      "  └ Natural spawn: Shulkers only in End Cities (fixed locations)",
-      "    Limited supply — kill all Shulkers in a city, they do not respawn",
-      "  └ Farm approach: transport Shulkers to your base",
-      "    Shulker in a boat: pick up with boat, transport via Elytra",
-      "    Requires: patience + boat + clear flight path over void",
-      "",
-      "◈ SHULKER FARM DESIGN",
-      "  └ Spawn containment: glass enclosure (Shulkers teleport but",
-      "    cannot teleport to non-solid blocks)",
-      "  └ Spawn condition: Shulkers do not naturally respawn",
-      "    — your farm is a kill chamber for transported Shulkers",
-      "  └ Transport pipeline: End City → boat capture → base chamber",
-      "  └ Item collection: Hopper + Chest below kill platform",
-      "  └ Projectile management: glass walls deflect Shulker bullets",
-      "    (Shulker bullets bounce off glass — kill safely through gaps)",
-      "",
-      "◈ SHELL ECONOMY MATH",
-      "  └ Shell drop rate: 0-2 per Shulker (avg 1)",
-      "    (Fortune III pickaxe: does NOT affect Shulker shell drops)",
-      "  └ 2 Shells + 1 Chest = 1 Shulker Box",
-      "  └ Target: 54 shells = 27 Shulker Boxes",
-      "  └ With farm: 10-20 Shulkers per city × multiple cities",
-      "    = realistic 54-shell collection in 3-5 city clears",
-      "",
-      "▸ The Shulker Box is what makes the End worth the trip.",
-      "  Not the dragon. Not the cities.",
-      "  The ability to carry 729 stacks as 27 items.",
-      "  Every civilization that reached the End",
-      "  built its logistics on Shulker Boxes.",
-      "  The farm is just recognizing that the shells are the point.",
-      "",
-      "▶ Build a Shulker containment farm [check]",
-      "▶ Collect 16 Shulker Shells",
-      "",
-      "◇ Shulker Box color: dyeable with any dye (right-click with dye).",
-      "  Color-code your boxes by category:",
-      "  purple = combat, green = farming, red = potions, yellow = building.",
-      "  A well-organized Shulker Box system is one of the highest",
-      "  quality-of-life upgrades in the entire pack."
-    ],
-    "groups": {"What the Void Remembers": {"position": [150, 300]}},
-    "icon": {"item": {"id": "minecraft:shulker_shell", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "shell_stack": {
+   "type": "heracles:item",
+   "item": "minecraft:shulker_shell",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "shulker_box": {
+   "item": {
+    "id": "minecraft:shulker_box",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Shulker Farm"
+  },
+  "subtitle": {
+   "text": "Shulker Shells are the most valuable item in the End. Two shells. One chest. One Shulker Box. Build a factory."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.14 · THE SHULKER FARM",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Shulker Shells craft Shulker Boxes.",
+   "  Shulker Boxes are the most powerful inventory item in the game.",
+   "  27 stacks that function as a single inventory slot.",
+   "  The target is 27 Shulker Boxes — 729 additional inventory slots.",
+   "  To reach 27 boxes you need 54 shells.",
+   "  To reach 54 shells you need a farm.",
+   "",
+   "◈ SHULKER FARMING — BASE APPROACH",
+   "  └ Natural spawn: Shulkers only in End Cities (fixed locations)",
+   "    Limited supply — kill all Shulkers in a city, they do not respawn",
+   "  └ Farm approach: transport Shulkers to your base",
+   "    Shulker in a boat: pick up with boat, transport via Elytra",
+   "    Requires: patience + boat + clear flight path over void",
+   "",
+   "◈ SHULKER FARM DESIGN",
+   "  └ Spawn containment: glass enclosure (Shulkers teleport but",
+   "    cannot teleport to non-solid blocks)",
+   "  └ Spawn condition: Shulkers do not naturally respawn",
+   "    — your farm is a kill chamber for transported Shulkers",
+   "  └ Transport pipeline: End City → boat capture → base chamber",
+   "  └ Item collection: Hopper + Chest below kill platform",
+   "  └ Projectile management: glass walls deflect Shulker bullets",
+   "    (Shulker bullets bounce off glass — kill safely through gaps)",
+   "",
+   "◈ SHELL ECONOMY MATH",
+   "  └ Shell drop rate: 0-2 per Shulker (avg 1)",
+   "    (Fortune III pickaxe: does NOT affect Shulker shell drops)",
+   "  └ 2 Shells + 1 Chest = 1 Shulker Box",
+   "  └ Target: 54 shells = 27 Shulker Boxes",
+   "  └ With farm: 10-20 Shulkers per city × multiple cities",
+   "    = realistic 54-shell collection in 3-5 city clears",
+   "",
+   "▸ The Shulker Box is what makes the End worth the trip.",
+   "  Not the dragon. Not the cities.",
+   "  The ability to carry 729 stacks as 27 items.",
+   "  Every civilization that reached the End",
+   "  built its logistics on Shulker Boxes.",
+   "  The farm is just recognizing that the shells are the point.",
+   "",
+   "▶ Build a Shulker containment farm [check]",
+   "▶ Collect 16 Shulker Shells",
+   "",
+   "◇ Shulker Box color: dyeable with any dye (right-click with dye).",
+   "  Color-code your boxes by category:",
+   "  purple = combat, green = farming, red = potions, yellow = building.",
+   "  A well-organized Shulker Box system is one of the highest",
+   "  quality-of-life upgrades in the entire pack."
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     1840,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:shulker_shell",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

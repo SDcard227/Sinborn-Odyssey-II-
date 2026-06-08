@@ -1,0 +1,93 @@
+{
+ "dependencies": [
+  "ch16_vessel_stone",
+  "ch16_vessel_crown",
+  "ch16_vessel_keres",
+  "ch16_vessel_crimson",
+  "ch17_nightwarden"
+ ],
+ "tasks": {
+  "stone": {
+   "type": "heracles:item",
+   "item": "ptd:philosopher_stone",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Hold the Creation Vessel"
+  },
+  "crown": {
+   "type": "heracles:item",
+   "item": "irons_spellbooks:gold_crown",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Hold the Magic Vessel"
+  },
+  "vault": {
+   "type": "heracles:item",
+   "item": "end_remastered_promax:vault_eye",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Hold the Mobility Vessel (Vault Eye)"
+  },
+  "keres": {
+   "type": "heracles:item",
+   "item": "celestisynth:keres",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Hold the Destruction Vessel"
+  },
+  "crimson": {
+   "type": "heracles:item",
+   "item": "dungeons_and_combat:monarch_chestplate",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Hold the Recognition Vessel (Robe of Divinity)"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 48
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Five Vessels Converge"
+  },
+  "subtitle": {
+   "text": "Stone. Crown. Eye. Keres. Crimson. All five, in one pair of hands."
+  },
+  "description": [
+   "Creation, Magic, Mobility, Destruction, Recognition. The Five Vessels of Divinity, assembled for the first time in a thousand years of failed cycles.",
+   "Every Heir before you reached this threshold. Most who crossed it ascended , and TURNED, becoming the next Crimson King.",
+   "The whole Convent archive was written so that THIS Heir might be the one who ascends and refuses the pattern.",
+   "",
+   "The Vessels are yours. The choice is next."
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     920,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "irons_spellbooks:gold_crown",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
+}

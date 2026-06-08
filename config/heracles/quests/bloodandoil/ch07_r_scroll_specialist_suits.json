@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Specialist Suits scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Specialist Suits scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Specialist Suits scroll",
-      "icon": {
-        "item": {
-          "id": "alexscaves:diving_boots",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock specialist_suits"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sun",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Specialist Suits"
+  "research_scroll": {
+   "title": "Research the Specialist Suits scroll",
+   "icon": {
+    "item": {
+     "id": "alexscaves:diving_boots",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Found in the smoke of old forges.\"",
-      "",
-      "Hazmat (Alex Caves) + Diving (Alex Caves) + Gravity (EchoVoids).",
-      "",
-      "This scroll unlocks 8 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Ati Structures:Chests/Library",
-      "  \u00b7 Village/Village Weaponsmith",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Specialist Suits] [auto]"
-    ],
-    "groups": {
-      "Blood and Oil": {
-        "position": [
-          692,
-          780
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexscaves:diving_boots",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock specialist_suits"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sun",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Specialist Suits"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Found in the smoke of old forges.\"",
+   "",
+   "Hazmat (Alex Caves) + Diving (Alex Caves) + Gravity (EchoVoids).",
+   "",
+   "This scroll unlocks 8 items.",
+   "",
+   "Look for it in:",
+   "  · Ati Structures:Chests/Library",
+   "  · Village/Village Weaponsmith",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Specialist Suits] [auto]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     300,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexscaves:diving_boots",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

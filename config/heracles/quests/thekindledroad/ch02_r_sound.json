@@ -1,113 +1,113 @@
 {
-  "dependencies": [
-    "ch02_r_fc2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/sound_archive"
-    },
-    "etched_disc": {
-      "title": "Craft an Etched recording disc (Etched mod — blank disc + etching table to record music)",
-      "icon": {
-        "item": {
-          "id": "minecraft:music_disc_13",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch02_r_fc2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Sound Archive scroll at a Research Pedestal"
   },
-  "rewards": {
-    "disc": {
-      "item": {
-        "id": "minecraft:music_disc_cat",
-        "count": 1
-      },
-      "type": "heracles:item"
+  "etched_disc": {
+   "title": "Craft an Etched recording disc (Etched mod — blank disc + etching table to record music)",
+   "icon": {
+    "item": {
+     "id": "minecraft:music_disc_13",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Sound Archive"
-    },
-    "subtitle": {
-      "text": "Every civilization kept music. Even the ones that didn't survive."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.02 · THE SOUND ARCHIVE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Etched and Xerca add a full music recording",
-      "  and playback system to the modpack.",
-      "  Blank discs. Etching tables. Speakers.",
-      "  Record ambient sounds. Share them.",
-      "  Build a jukebox corner in your base.",
-      "",
-      "◈ ETCHED + XERCA SYSTEM",
-      "  └ Blank Disc: crafted from iron + quartz",
-      "  └ Etching Table: records nearby sound into disc",
-      "  └ Xerca Speaker: plays disc with range + volume control",
-      "  └ Discs can be shared: same sound, different world",
-      "  └ Custom ambient: record a cave, a waterfall, a battle",
-      "",
-      "◈ WHY IT MATTERS",
-      "  └ The lore says: civilizations left records",
-      "  └ The Sound Archive scroll is one of those records",
-      "  └ Someone recorded the last fire before their city fell",
-      "  └ You found it",
-      "  └ You can do the same",
-      "",
-      "◈ SCROLL: The Sound Archive",
-      "  └ Found in: music box ruins, village library chests,",
-      "    bard camp loot, road amphitheater ruins",
-      "  └ Research time: 10 min",
-      "  └ Unlocks: Etched system awareness, Xerca speaker knowledge",
-      "",
-      "▸ Culture is what a civilization leaves behind.",
-      "  The farms rot. The roads crack.",
-      "  But the music, if you've recorded it —",
-      "  plays on.",
-      "",
-      "▶ Find The Sound Archive scroll [check]",
-      "▶ Craft an Etched recording disc [check]",
-      "",
-      "◇ Ch05 The Culture Age goes deeper into Etched",
-      "  and its relationship with Villager Recruits.",
-      "  A bard follower can generate disc recordings."
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          450,
-          450
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:music_disc_13",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "disc": {
+   "item": {
+    "id": "minecraft:music_disc_cat",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Sound Archive"
+  },
+  "subtitle": {
+   "text": "Every civilization kept music. Even the ones that didn't survive."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.02 · THE SOUND ARCHIVE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Etched and Xerca add a full music recording",
+   "  and playback system to the modpack.",
+   "  Blank discs. Etching tables. Speakers.",
+   "  Record ambient sounds. Share them.",
+   "  Build a jukebox corner in your base.",
+   "",
+   "◈ ETCHED + XERCA SYSTEM",
+   "  └ Blank Disc: crafted from iron + quartz",
+   "  └ Etching Table: records nearby sound into disc",
+   "  └ Xerca Speaker: plays disc with range + volume control",
+   "  └ Discs can be shared: same sound, different world",
+   "  └ Custom ambient: record a cave, a waterfall, a battle",
+   "",
+   "◈ WHY IT MATTERS",
+   "  └ The lore says: civilizations left records",
+   "  └ The Sound Archive scroll is one of those records",
+   "  └ Someone recorded the last fire before their city fell",
+   "  └ You found it",
+   "  └ You can do the same",
+   "",
+   "◈ SCROLL: The Sound Archive",
+   "  └ Found in: music box ruins, village library chests,",
+   "    bard camp loot, road amphitheater ruins",
+   "  └ Research time: 10 min",
+   "  └ Unlocks: Etched system awareness, Xerca speaker knowledge",
+   "",
+   "▸ Culture is what a civilization leaves behind.",
+   "  The farms rot. The roads crack.",
+   "  But the music, if you've recorded it —",
+   "  plays on.",
+   "",
+   "▶ Find The Sound Archive scroll [check]",
+   "▶ Craft an Etched recording disc [check]",
+   "",
+   "◇ Ch05 The Culture Age goes deeper into Etched",
+   "  and its relationship with Villager Recruits.",
+   "  A bard follower can generate disc recordings."
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     3060,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:music_disc_13",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

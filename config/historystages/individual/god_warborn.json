@@ -1,0 +1,15 @@
+{
+  "display_name": "On the Warborn Aegis",
+  "research_time": 7200,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

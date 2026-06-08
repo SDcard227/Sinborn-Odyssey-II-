@@ -1,57 +1,88 @@
 {
-  "dependencies": ["ch05_gate"],
-  "tasks": {
-    "obsidian": {
-      "type": "heracles:item",
-      "item": "minecraft:obsidian",
-      "amount": 10,
-      "collection": "AUTOMATIC"
+ "dependencies": [
+  "ch05_gate"
+ ],
+ "tasks": {
+  "obsidian": {
+   "type": "heracles:item",
+   "item": "minecraft:obsidian",
+   "amount": 10,
+   "collection": "AUTOMATIC"
+  },
+  "portal": {
+   "title": "Build and ignite a Nether portal",
+   "icon": {
+    "item": {
+     "id": "minecraft:flint_and_steel",
+     "count": 1
     },
-    "portal": {
-      "title": "Build and ignite a Nether portal",
-      "icon": {"item": {"id": "minecraft:flint_and_steel", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "fire_res": {
-      "item": {"id": "minecraft:potion", "count": 2},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 6},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Portal"},
-    "subtitle": {"text": "Every civilization opened the Nether. None asked why it was available."},
-    "description": [
-      "The Nether portal has been waiting since before you arrived.",
-      "The previous cycle built them. Left them open.",
-      "Every open frame is a door that goes both ways.",
-      "",
-      "Fire resistance before you enter. Bring a waterskin.",
-      "The Nether drains thirst three times faster than the Overworld.",
-      "Bring cooked food. Bring coal.",
-      "",
-      "What you extract from the Nether is useful.",
-      "What you leave open is a different kind of cost.",
-      "You will understand it later.",
-      "",
-      "→ Collect 10 obsidian",
-      "→ Build and ignite a Nether portal [check]"
-    ],
-    "groups": {"The Scalded Earth": {"position": [0, 0]}},
-    "icon": {"item": {"id": "minecraft:obsidian", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "fire_res": {
+   "item": {
+    "id": "minecraft:potion",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Portal"
+  },
+  "subtitle": {
+   "text": "Every civilization opened the Nether. None asked why it was available."
+  },
+  "description": [
+   "The Nether portal has been waiting since before you arrived.",
+   "The previous cycle built them. Left them open.",
+   "Every open frame is a door that goes both ways.",
+   "",
+   "Fire resistance before you enter. Bring a waterskin.",
+   "The Nether drains thirst three times faster than the Overworld.",
+   "Bring cooked food. Bring coal.",
+   "",
+   "What you extract from the Nether is useful.",
+   "What you leave open is a different kind of cost.",
+   "You will understand it later.",
+   "",
+   "→ Collect 10 obsidian",
+   "→ Build and ignite a Nether portal [check]"
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     0,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:obsidian",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

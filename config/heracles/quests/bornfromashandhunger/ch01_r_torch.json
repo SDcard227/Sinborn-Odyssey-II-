@@ -1,84 +1,84 @@
 {
-  "dependencies": [
-    "ch01_shelter"
-  ],
-  "tasks": {
-    "torches": {
-      "type": "heracles:item",
-      "item": "hardcore_torches:lit_torch",
-      "amount": 16,
-      "collection": "AUTOMATIC"
-    },
-    "check": {
-      "title": "Light up your base — no dark corners",
-      "icon": {
-        "item": {
-          "id": "minecraft:torch",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch01_shelter"
+ ],
+ "tasks": {
+  "torches": {
+   "type": "heracles:item",
+   "item": "hardcore_torches:lit_torch",
+   "amount": 16,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "torches": {
-      "item": {
-        "id": "minecraft:lantern",
-        "count": 4
-      },
-      "type": "heracles:item"
+  "check": {
+   "title": "Light up your base — no dark corners",
+   "icon": {
+    "item": {
+     "id": "minecraft:torch",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "subtitle": {
-      "text": "Dark is not the enemy. Unprepared dark is."
-    },
-    "description": [
-      "Hostile mobs spawn where light does not reach.",
-      "This is not a threat. It is a design principle.",
-      "",
-      "Light is territory. Every torch you place is a claim.",
-      "",
-      "Hardcore torches burn out in 40 minutes.",
-      "Keep coal on hand. Keep placing.",
-      "",
-      "→ Craft 16 torches",
-      "→ Light up your base [check]"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          150,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:torch",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
-    "title": {
-      "translate": "First Light"
-    }
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "torches": {
+   "item": {
+    "id": "minecraft:lantern",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "subtitle": {
+   "text": "Dark is not the enemy. Unprepared dark is."
+  },
+  "description": [
+   "Hostile mobs spawn where light does not reach.",
+   "This is not a threat. It is a design principle.",
+   "",
+   "Light is territory. Every torch you place is a claim.",
+   "",
+   "Hardcore torches burn out in 40 minutes.",
+   "Keep coal on hand. Keep placing.",
+   "",
+   "→ Craft 16 torches",
+   "→ Light up your base [check]"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     920,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:torch",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+  "title": {
+   "translate": "First Light"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,57 +1,94 @@
 {
-  "dependencies": ["ch13_r_trueend1"],
-  "tasks": {
-    "trueend_loot": {
-      "title": "Find and loot a unique structure in Beyond the Dream",
-      "icon": {"item": {"id": "minecraft:purpur_block", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch13_r_trueend1"
+ ],
+ "tasks": {
+  "trueend_loot": {
+   "title": "Find and loot a unique structure in Beyond the Dream",
+   "icon": {
+    "item": {
+     "id": "minecraft:purpur_block",
+     "count": 1
     },
-    "trueend_survive": {
-      "title": "Survive the True End — defeat or evade its unique hostile inhabitants",
-      "icon": {"item": {"id": "minecraft:ender_pearl", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "purpur": {
-      "item": {"id": "minecraft:purpur_pillar", "count": 16},
-      "type": "heracles:item"
+  "trueend_survive": {
+   "title": "Survive the True End — defeat or evade its unique hostile inhabitants",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_pearl",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "What Lies Past the Dream"},
-    "subtitle": {"text": "Everything you thought was the end was a threshold. The dreaming goes deeper than you planned."},
-    "description": [
-      "Beyond the Dream has structures that do not follow standard dungeon rules.",
-      "They are older than the End Cities.",
-      "They are possibly older than the central island.",
-      "",
-      "The hostile mobs here are unique to the dimension.",
-      "They do not drop conventional loot.",
-      "What they drop is worth the expedition.",
-      "",
-      "This is the last true frontier before Ch14.",
-      "Ch14 is about what the void remembers — the accumulated meaning of everything.",
-      "To understand what the void remembers, you must first have traveled far enough into it",
-      "that you remember it too.",
-      "",
-      "→ Loot a unique True End structure [check]",
-      "→ Survive the dimension's inhabitants [check]"
-    ],
-    "groups": {"The Shattered Law": {"position": [-300, 150]}},
-    "icon": {"item": {"id": "minecraft:purpur_pillar", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "purpur": {
+   "item": {
+    "id": "minecraft:purpur_pillar",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "What Lies Past the Dream"
+  },
+  "subtitle": {
+   "text": "Everything you thought was the end was a threshold. The dreaming goes deeper than you planned."
+  },
+  "description": [
+   "Beyond the Dream has structures that do not follow standard dungeon rules.",
+   "They are older than the End Cities.",
+   "They are possibly older than the central island.",
+   "",
+   "The hostile mobs here are unique to the dimension.",
+   "They do not drop conventional loot.",
+   "What they drop is worth the expedition.",
+   "",
+   "This is the last true frontier before Ch14.",
+   "Ch14 is about what the void remembers — the accumulated meaning of everything.",
+   "To understand what the void remembers, you must first have traveled far enough into it",
+   "that you remember it too.",
+   "",
+   "→ Loot a unique True End structure [check]",
+   "→ Survive the dimension's inhabitants [check]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     920,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:purpur_pillar",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

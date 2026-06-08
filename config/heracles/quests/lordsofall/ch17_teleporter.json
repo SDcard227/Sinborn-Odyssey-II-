@@ -1,70 +1,113 @@
 {
-  "dependencies": ["ch17_quantum3"],
-  "tasks": {
-    "teleporter_active": {
-      "title": "Activate your Create Teleporter — link two locations and confirm teleportation works",
-      "icon": {"item": {"id": "createteleporters:quantum_mechanism", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch17_quantum3"
+ ],
+ "tasks": {
+  "teleporter_active": {
+   "title": "Activate your Create Teleporter — link two locations and confirm teleportation works",
+   "icon": {
+    "item": {
+     "id": "createteleporters:quantum_mechanism",
+     "count": 1
     },
-    "network_built": {
-      "title": "Build a second teleporter at a different location — establish a two-point teleporter network",
-      "icon": {"item": {"id": "createteleporters:teleporter_frame", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
+  },
+  "network_built": {
+   "title": "Build a second teleporter at a different location — establish a two-point teleporter network",
+   "icon": {
+    "item": {
+     "id": "createteleporters:teleporter_frame",
+     "count": 1
     },
-    "teleport_base_to_end": {
-      "title": "Install a teleporter at your base AND at the End portal stronghold — instant access to the End",
-      "icon": {"item": {"id": "minecraft:end_stone", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "quantum_mechanism": {
-      "item": {"id": "createteleporters:quantum_mechanism", "count": 1},
-      "type": "heracles:item"
+  "teleport_base_to_end": {
+   "title": "Install a teleporter at your base AND at the End portal stronghold — instant access to the End",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_stone",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 16},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Teleporter Network"},
-    "subtitle": {"text": "You built a road in Ch12. You built a ship route in Ch16. Now you build a network that makes both obsolete."},
-    "description": [
-      "The Create Teleporter network requires at least two linked teleporters.",
-      "Each teleporter uses a Quantum Mechanism and a registered location name.",
-      "Teleportation is instant — no travel time, no path.",
-      "",
-      "Recommended first network:",
-      "- Teleporter 1: Your main base",
-      "- Teleporter 2: The End portal stronghold",
-      "",
-      "The End portal stronghold is the pivot point of the entire game.",
-      "Instant access to it from your base collapses seventeen chapters of distance",
-      "into a single block interaction.",
-      "",
-      "Expand the network:",
-      "- Overworld base ↔ End portal stronghold",
-      "- Overworld base ↔ Nether fortress (if needed)",
-      "- Overworld base ↔ Celestisynth gathering zone",
-      "",
-      "The Via Romana roads from Ch12 are still useful for aesthetics and low-cost travel.",
-      "The teleporter network is for when time matters.",
-      "",
-      "→ Activate the first teleporter [check]",
-      "→ Build a second teleporter and link them [check]",
-      "→ Connect your base to the End portal stronghold [check]"
-    ],
-    "groups": {"Lords of All": {"position": [0, 600]}},
-    "icon": {"item": {"id": "createteleporters:teleporter_frame", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "quantum_mechanism": {
+   "item": {
+    "id": "createteleporters:quantum_mechanism",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Teleporter Network"
+  },
+  "subtitle": {
+   "text": "You built a road in Ch12. You built a ship route in Ch16. Now you build a network that makes both obsolete."
+  },
+  "description": [
+   "The Create Teleporter network requires at least two linked teleporters.",
+   "Each teleporter uses a Quantum Mechanism and a registered location name.",
+   "Teleportation is instant — no travel time, no path.",
+   "",
+   "Recommended first network:",
+   "- Teleporter 1: Your main base",
+   "- Teleporter 2: The End portal stronghold",
+   "",
+   "The End portal stronghold is the pivot point of the entire game.",
+   "Instant access to it from your base collapses seventeen chapters of distance",
+   "into a single block interaction.",
+   "",
+   "Expand the network:",
+   "- Overworld base ↔ End portal stronghold",
+   "- Overworld base ↔ Nether fortress (if needed)",
+   "- Overworld base ↔ Celestisynth gathering zone",
+   "",
+   "The Via Romana roads from Ch12 are still useful for aesthetics and low-cost travel.",
+   "The teleporter network is for when time matters.",
+   "",
+   "→ Activate the first teleporter [check]",
+   "→ Build a second teleporter and link them [check]",
+   "→ Connect your base to the End portal stronghold [check]"
+  ],
+  "groups": {
+   "Lords of All": {
+    "position": [
+     1840,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "createteleporters:teleporter_frame",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/circles.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

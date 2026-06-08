@@ -1,108 +1,108 @@
 {
-  "dependencies": [
-    "ch04_r_vin3"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/vine_brew"
-    },
-    "bottles": {
-      "type": "heracles:item",
-      "item": "vinery:bottle_of_wine",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch04_r_vin3"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Vine Brew scroll at a Research Pedestal"
   },
-  "rewards": {
-    "grapes": {
-      "item": {
-        "id": "vinery:cherry",
-        "count": 16
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 2
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Vine Brew"
-    },
-    "subtitle": {
-      "text": "26 wines. One heals fully. Find it before the Nether."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.04 · THE VINE BREW",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Vinery adds 26 unique wines.",
-      "  Each one has different saturation, effects, and lore.",
-      "  One of them is different from all the rest.",
-      "",
-      "◈ VINERY OVERVIEW",
-      "  └ Grapes: found in temperate biomes,",
-      "    cultivated on trellis blocks",
-      "  └ Pressing: grape stomping box → grape juice",
-      "  └ Fermentation: juice locked in barrel over time",
-      "    different varieties ferment to different wines",
-      "  └ Aging: longer barrel time = better quality",
-      "  └ Juice → Wine is time-gated, not craft-gated",
-      "",
-      "◈ ★ EISWEIN",
-      "  └ Crafted from ice-frozen grapes",
-      "  └ ▲ FULLY RESTORES HEALTH on consumption",
-      "  └ Rare — requires specific conditions",
-      "  └ Ch06 Nether prep: bring several bottles",
-      "  └ The scroll says: 'the coldest winter made the best wine'",
-      "",
-      "◈ SCROLL: The Vine Brew",
-      "  └ Found in: vineyard ruins, wine cellar chests,",
-      "    old manor basements, winery loot tables",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: all 26 Vinery wines, Eiswein recipe knowledge",
-      "",
-      "▸ The winery was one of the first things they built.",
-      "  Then the wall. Then the road.",
-      "  The wine was still there when the road crumbled.",
-      "",
-      "▶ Find The Vine Brew scroll [check]",
-      "▶ Brew 4 bottles of wine",
-      "",
-      "◇ Nether Vinery (Ch06) adds nether-fruit wines.",
-      "  Different flavors. Same system.",
-      "  Magma Gelatin (Nether's Delight) is better than",
-      "  wine for fire immunity — but wine tastes better."
-    ],
-    "groups": {
-      "The Long Pour": {
-        "position": [
-          -600,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "vinery:bottle_of_wine",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "bottles": {
+   "type": "heracles:item",
+   "item": "vinery:bottle_of_wine",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "grapes": {
+   "item": {
+    "id": "vinery:cherry",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Vine Brew"
+  },
+  "subtitle": {
+   "text": "26 wines. One heals fully. Find it before the Nether."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.04 · THE VINE BREW",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Vinery adds 26 unique wines.",
+   "  Each one has different saturation, effects, and lore.",
+   "  One of them is different from all the rest.",
+   "",
+   "◈ VINERY OVERVIEW",
+   "  └ Grapes: found in temperate biomes,",
+   "    cultivated on trellis blocks",
+   "  └ Pressing: grape stomping box → grape juice",
+   "  └ Fermentation: juice locked in barrel over time",
+   "    different varieties ferment to different wines",
+   "  └ Aging: longer barrel time = better quality",
+   "  └ Juice → Wine is time-gated, not craft-gated",
+   "",
+   "◈ ★ EISWEIN",
+   "  └ Crafted from ice-frozen grapes",
+   "  └ ▲ FULLY RESTORES HEALTH on consumption",
+   "  └ Rare — requires specific conditions",
+   "  └ Ch06 Nether prep: bring several bottles",
+   "  └ The scroll says: 'the coldest winter made the best wine'",
+   "",
+   "◈ SCROLL: The Vine Brew",
+   "  └ Found in: vineyard ruins, wine cellar chests,",
+   "    old manor basements, winery loot tables",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: all 26 Vinery wines, Eiswein recipe knowledge",
+   "",
+   "▸ The winery was one of the first things they built.",
+   "  Then the wall. Then the road.",
+   "  The wine was still there when the road crumbled.",
+   "",
+   "▶ Find The Vine Brew scroll [check]",
+   "▶ Brew 4 bottles of wine",
+   "",
+   "◇ Nether Vinery (Ch06) adds nether-fruit wines.",
+   "  Different flavors. Same system.",
+   "  Magma Gelatin (Nether's Delight) is better than",
+   "  wine for fire immunity — but wine tastes better."
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     1840,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "vinery:bottle_of_wine",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,0 +1,32 @@
+{
+  "display_name": "The Codex of Kukulkan",
+  "research_time": 1800,
+  "items": [
+    "call_of_yucutan:ah_puch_idol",
+    "call_of_yucutan:fragment_of_death",
+    "call_of_yucutan:fragment_of_rebirth",
+    "call_of_yucutan:kukulkan_idol",
+    "call_of_yucutan:mayan_calendar",
+    "call_of_yucutan:mayan_calendar_0",
+    "call_of_yucutan:mayan_calendar_1"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "call_of_yucutan:ah_puch_fragment_recipe",
+    "call_of_yucutan:ah_puch_idol_recipe",
+    "call_of_yucutan:ah_puch_sacrifice",
+    "call_of_yucutan:kukulkan_fragment_recipe",
+    "call_of_yucutan:kukulkan_idol_recipe",
+    "call_of_yucutan:kukulkan_sacrifice",
+    "call_of_yucutan:mayan_calendar_recipe",
+    "call_of_yucutan:totem_of_undying_recipe"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

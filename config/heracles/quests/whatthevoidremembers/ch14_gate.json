@@ -1,91 +1,91 @@
 {
-  "dependencies": [
-    "ch14_eye_holder"
-  ],
-  "tasks": {
-    "eye_holder_ready": {
-      "title": "Confirm the Eye Holder is placed with all 12 eyes displayed",
-      "icon": {
-        "item": {
-          "id": "endrem:eye_holder",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [
+  "ch14_eye_holder"
+ ],
+ "tasks": {
+  "eye_holder_ready": {
+   "title": "Confirm the Eye Holder is placed with all 12 eyes displayed",
+   "icon": {
+    "item": {
+     "id": "end_remastered_promax:vault_eye",
+     "count": 1
     },
-    "dragon_void_scroll": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/void_table_studied"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "eye_holder": {
-      "item": {
-        "id": "endrem:eye_holder",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 16
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Dragon Age"
-    },
-    "subtitle": {
-      "text": "You have eaten the dragon and displayed its inheritance. You understand this place now. You may leave."
-    },
-    "description": [
-      "Ch14 ends here.",
-      "",
-      "You have:",
-      "- Eaten the dragon (Dungeon Meshi \u2014 comprehension through consumption)",
-      "- Defeated the Ender Trigon (the thing that was never supposed to be found)",
-      "- Looted the End Cities (extracted everything they contained)",
-      "- Displayed twelve civilizations' eyes (documented what came before)",
-      "",
-      "The Dragon Void scroll is found in End City loot chests and on the Ender Trigon.",
-      "It formalizes your claim to this territory.",
-      "",
-      "The dragon age is the age of completion.",
-      "Everything that the End was supposed to contain, you have now addressed.",
-      "Ch15 is the aftermath. The Frieren chapter.",
-      "The adventure is over. Now comes the long walk home.",
-      "",
-      "\u2192 Display the Eye Holder with all 12 eyes [check]",
-      "\u2192 Research the Dragon Void scroll [check]",
-      "\u2192 The Dragon Age begins [command]"
-    ],
-    "groups": {
-      "What the Void Remembers": {
-        "position": [
-          0,
-          750
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:dragon_egg",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "dragon_void_scroll": {
+   "type": "heracles:check",
+   "title": "Research the Void Table scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "eye_holder": {
+   "item": {
+    "id": "end_remastered_promax:vault_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 16
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Dragon Age"
+  },
+  "subtitle": {
+   "text": "You have eaten the dragon and displayed its inheritance. You understand this place now. You may leave."
+  },
+  "description": [
+   "Ch14 ends here.",
+   "",
+   "You have:",
+   "- Eaten the dragon (Dungeon Meshi — comprehension through consumption)",
+   "- Defeated the Ender Trigon (the thing that was never supposed to be found)",
+   "- Looted the End Cities (extracted everything they contained)",
+   "- Displayed twelve civilizations' eyes (documented what came before)",
+   "",
+   "The Dragon Void scroll is found in End City loot chests and on the Ender Trigon.",
+   "It formalizes your claim to this territory.",
+   "",
+   "The dragon age is the age of completion.",
+   "Everything that the End was supposed to contain, you have now addressed.",
+   "Ch15 is the aftermath. The Frieren chapter.",
+   "The adventure is over. Now comes the long walk home.",
+   "",
+   "→ Display the Eye Holder with all 12 eyes [check]",
+   "→ Research the Dragon Void scroll [check]",
+   "→ The Dragon Age begins [command]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     2300,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:dragon_egg",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

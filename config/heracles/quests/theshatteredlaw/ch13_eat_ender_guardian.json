@@ -1,0 +1,80 @@
+{
+ "dependencies": [
+  "ch13_world"
+ ],
+ "tasks": {
+  "slay": {
+   "type": "heracles:kill_entity",
+   "entity": "cataclysm:ender_guardian",
+   "amount": 1,
+   "title": "Slay the beast and claim its body"
+  },
+  "harvest": {
+   "type": "heracles:item",
+   "item": "lendersdelight:ender_golem_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Harvest its meat , waste nothing"
+  },
+  "cook": {
+   "type": "heracles:item",
+   "item": "lendersdelight:cooked_ender_golem_meat",
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Cook it , and eat"
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 3
+   },
+   "type": "heracles:item"
+  },
+  "dish": {
+   "item": {
+    "id": "lendersdelight:cooked_ender_golem_meat",
+    "count": 2
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Guardian's Last Course"
+  },
+  "subtitle": {
+   "text": "The End keeps a cook's pantry too."
+  },
+  "description": [
+   "The Ender Guardian wards the Vault. You ward your hunger.",
+   "In the corpse-fragment of the First World, even the constructs carry meat. Take it.",
+   "",
+   "Cook the guardian's last course."
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "lendersdelight:cooked_ender_golem_meat",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

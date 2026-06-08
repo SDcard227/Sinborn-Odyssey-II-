@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Gunsmithing scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Gunsmithing scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Gunsmithing scroll",
-      "icon": {
-        "item": {
-          "id": "netherexp:firearm_pottery_sherd",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock gunsmithing"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:bevel",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Gunsmithing"
+  "research_scroll": {
+   "title": "Research the Gunsmithing scroll",
+   "icon": {
+    "item": {
+     "id": "netherexp:firearm_pottery_sherd",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Found in the smoke of old forges.\"",
-      "",
-      "TFMG firearms + Cataclysm guns.",
-      "",
-      "This scroll unlocks 7 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Ati Structures:Chests/Library",
-      "  \u00b7 Village/Village Weaponsmith",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Gunsmithing] [auto]"
-    ],
-    "groups": {
-      "Blood and Oil": {
-        "position": [
-          1107,
-          1020
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "netherexp:firearm_pottery_sherd",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock gunsmithing"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:bevel",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Gunsmithing"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Found in the smoke of old forges.\"",
+   "",
+   "TFMG firearms + Cataclysm guns.",
+   "",
+   "This scroll unlocks 7 items.",
+   "",
+   "Look for it in:",
+   "  · Ati Structures:Chests/Library",
+   "  · Village/Village Weaponsmith",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Gunsmithing] [auto]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     0,
+     1350
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "netherexp:firearm_pottery_sherd",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

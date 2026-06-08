@@ -1,62 +1,99 @@
 {
-  "dependencies": ["ch13_gate"],
-  "tasks": {
-    "dragon_breath": {
-      "title": "Collect Dragon Breath from the Ender Dragon's acid clouds (right-click with glass bottles)",
-      "icon": {"item": {"id": "minecraft:dragon_breath", "count": 4}, "type": "heracles:item"},
-      "amount": 4,
-      "collection": "AUTOMATIC",
-      "type": "heracles:item"
+ "dependencies": [
+  "ch13_gate"
+ ],
+ "tasks": {
+  "dragon_breath": {
+   "title": "Collect Dragon Breath from the Ender Dragon's acid clouds (right-click with glass bottles)",
+   "icon": {
+    "item": {
+     "id": "minecraft:dragon_breath",
+     "count": 4
     },
-    "void_statement": {
-      "title": "Look into the void from the edge of an outer island — hold for five seconds",
-      "icon": {"item": {"id": "minecraft:obsidian", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "amount": 4,
+   "collection": "AUTOMATIC",
+   "type": "heracles:item"
   },
-  "rewards": {
-    "dragon_breath": {
-      "item": {"id": "minecraft:dragon_breath", "count": 4},
-      "type": "heracles:item"
+  "void_statement": {
+   "title": "Look into the void from the edge of an outer island — hold for five seconds",
+   "icon": {
+    "item": {
+     "id": "minecraft:obsidian",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "What the Void Remembers"},
-    "subtitle": {"text": "The void does not forget. It simply cannot tell you what it knows."},
-    "description": [
-      "The dragon is dead. The portal is open.",
-      "You are standing in the End and none of the things that were supposed to stop you",
-      "have stopped you.",
-      "",
-      "What the void remembers:",
-      "Every civilization that came before you entered this space.",
-      "The Oldest Civilization. The Corrupted. The Cryptic. The Cold.",
-      "All of them reached the End. All of them fell before Ch14.",
-      "",
-      "You are the first inheritor to reach this chapter.",
-      "That is not a metaphor. That is the design of the modpack.",
-      "",
-      "Dragon Breath is collected by right-clicking acid cloud particles with glass bottles.",
-      "Hold the bottle in the cloud before it dissipates.",
-      "You need 4 bottles minimum for lingering potions and End's Delight recipes.",
-      "",
-      "→ Collect 4 Dragon Breath bottles [collect]",
-      "→ Look into the void (the real one) [check]"
-    ],
-    "groups": {"What the Void Remembers": {"position": [0, 0]}},
-    "icon": {"item": {"id": "minecraft:dragon_breath", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "NEVER",
-    "unlockNotification": true
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "dragon_breath": {
+   "item": {
+    "id": "minecraft:dragon_breath",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "What the Void Remembers"
+  },
+  "subtitle": {
+   "text": "The void does not forget. It simply cannot tell you what it knows."
+  },
+  "description": [
+   "The dragon is dead. The portal is open.",
+   "You are standing in the End and none of the things that were supposed to stop you",
+   "have stopped you.",
+   "",
+   "What the void remembers:",
+   "Every civilization that came before you entered this space.",
+   "The Oldest Civilization. The Corrupted. The Cryptic. The Cold.",
+   "All of them reached the End. All of them fell before Ch14.",
+   "",
+   "You are the first inheritor to reach this chapter.",
+   "That is not a metaphor. That is the design of the modpack.",
+   "",
+   "Dragon Breath is collected by right-clicking acid cloud particles with glass bottles.",
+   "Hold the bottle in the cloud before it dissipates.",
+   "You need 4 bottles minimum for lingering potions and End's Delight recipes.",
+   "",
+   "→ Collect 4 Dragon Breath bottles [collect]",
+   "→ Look into the void (the real one) [check]"
+  ],
+  "groups": {
+   "What the Void Remembers": {
+    "position": [
+     0,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:dragon_breath",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "NEVER",
+  "unlockNotification": true
+ }
 }

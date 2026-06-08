@@ -1,113 +1,113 @@
 {
-  "dependencies": [
-    "ch01_r_village"
-  ],
-  "tasks": {
-    "aats": {
-      "type": "heracles:item",
-      "item": "minecraft:book",
-      "nbt": {
-        "display": {
-          "Name": "{\"italic\":false,\"translate\":\"item.antique_atlas.atlas\"}",
-          "Lore": [
-            "{\"italic\":false,\"color\":\"gray\",\"translate\":\"item.antique_atlas.atlas.lore\"}",
-            "{\"italic\":false,\"color\":\"gray\",\"translate\":\"item.antique_atlas.atlas.hint\",\"with\":[{\"translate\":\"item.antique_atlas.atlas\"}]}"
-          ]
-        }
-      },
-      "amount": 1,
-      "collection": "AUTOMATIC",
-      "title": "Craft an Atlas"
-    },
-    "wander_scroll": {
-      "title": "Find The Wanderer's Field Notes scroll (drops from wandering traders, abandoned campsites, road loot)",
-      "type": "heracles:check"
+ "dependencies": [
+  "ch01_r_village"
+ ],
+ "tasks": {
+  "aats": {
+   "type": "heracles:item",
+   "item": "minecraft:book",
+   "nbt": {
+    "display": {
+     "Name": "{\"italic\":false,\"translate\":\"item.antique_atlas.atlas\"}",
+     "Lore": [
+      "{\"italic\":false,\"color\":\"gray\",\"translate\":\"item.antique_atlas.atlas.lore\"}",
+      "{\"italic\":false,\"color\":\"gray\",\"translate\":\"item.antique_atlas.atlas.hint\",\"with\":[{\"translate\":\"item.antique_atlas.atlas\"}]}"
+     ]
     }
+   },
+   "amount": 1,
+   "collection": "AUTOMATIC",
+   "title": "Craft an Atlas"
   },
-  "rewards": {
-    "paper": {
-      "item": {
-        "id": "minecraft:paper",
-        "count": 16
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "subtitle": {
-      "text": "The Atlas fills as you walk. Whoever finds it after you will know where you went."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.01 · THE WANDERER'S FIELD NOTES",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Antique Atlas is one of the most important early crafts.",
-      "  It auto-records every biome you walk through.",
-      "  It places icons for structures it detects.",
-      "  It never runs out of paper.",
-      "",
-      "◈ ANTIQUE ATLAS FEATURES",
-      "  └ Auto-maps biomes as you explore",
-      "  └ Detects and marks structures automatically",
-      "  └ Supports custom markers (place by hand)",
-      "  └ Works across dimensions (separate Nether/End maps)",
-      "  └ Shares map data with other players if given same atlas",
-      "",
-      "◈ SCROLL: The Wanderer's Field Notes",
-      "  └ Found in: wandering traders, campsite ruins,",
-      "    road loot tables, first village chests",
-      "  └ Research time: instant (1 sec)",
-      "  └ Unlocks: cartography progression awareness",
-      "",
-      "▸ The Cartographer's Mark scroll (Ch02) goes deeper.",
-      "  The Wanderer's Notes is the introduction:",
-      "  observe the world, write it down, give it to someone else.",
-      "",
-      "▸ Scroll usage parallel:",
-      "  Scrolls ARE the Wanderer's Field Notes of the modpack.",
-      "  Someone learned it. They wrote it down.",
-      "  You're reading it now.",
-      "",
-      "▶ Find the Wanderer's Field Notes scroll [check]",
-      "▶ Craft an Antique Atlas [check]",
-      "",
-      "◇ The Antique Atlas saves its data to the world file.",
-      "  It survives death. Your map is permanent."
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          300,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:air",
-        "count": 0
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
-    "title": {
-      "translate": "The Wanderer's Field Notes"
-    }
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "wander_scroll": {
+   "title": "Find The Wanderer's Field Notes scroll (drops from wandering traders, abandoned campsites, road loot)",
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "paper": {
+   "item": {
+    "id": "minecraft:paper",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "subtitle": {
+   "text": "The Atlas fills as you walk. Whoever finds it after you will know where you went."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.01 · THE WANDERER'S FIELD NOTES",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Antique Atlas is one of the most important early crafts.",
+   "  It auto-records every biome you walk through.",
+   "  It places icons for structures it detects.",
+   "  It never runs out of paper.",
+   "",
+   "◈ ANTIQUE ATLAS FEATURES",
+   "  └ Auto-maps biomes as you explore",
+   "  └ Detects and marks structures automatically",
+   "  └ Supports custom markers (place by hand)",
+   "  └ Works across dimensions (separate Nether/End maps)",
+   "  └ Shares map data with other players if given same atlas",
+   "",
+   "◈ SCROLL: The Wanderer's Field Notes",
+   "  └ Found in: wandering traders, campsite ruins,",
+   "    road loot tables, first village chests",
+   "  └ Research time: instant (1 sec)",
+   "  └ Unlocks: cartography progression awareness",
+   "",
+   "▸ The Cartographer's Mark scroll (Ch02) goes deeper.",
+   "  The Wanderer's Notes is the introduction:",
+   "  observe the world, write it down, give it to someone else.",
+   "",
+   "▸ Scroll usage parallel:",
+   "  Scrolls ARE the Wanderer's Field Notes of the modpack.",
+   "  Someone learned it. They wrote it down.",
+   "  You're reading it now.",
+   "",
+   "▶ Find the Wanderer's Field Notes scroll [check]",
+   "▶ Craft an Antique Atlas [check]",
+   "",
+   "◇ The Antique Atlas saves its data to the world file.",
+   "  It survives death. Your map is permanent."
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     920,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:air",
+    "count": 0
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png",
+  "title": {
+   "translate": "The Wanderer's Field Notes"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

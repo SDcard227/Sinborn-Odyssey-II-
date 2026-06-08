@@ -1,67 +1,110 @@
 {
-  "dependencies": ["ch13_enter"],
-  "tasks": {
-    "chorus_fruit": {
-      "title": "Collect Chorus Fruit from the outer islands",
-      "icon": {"item": {"id": "minecraft:chorus_fruit", "count": 8}, "type": "heracles:item"},
-      "amount": 8,
-      "collection": "AUTOMATIC",
-      "type": "heracles:item"
+ "dependencies": [
+  "ch13_enter"
+ ],
+ "tasks": {
+  "chorus_fruit": {
+   "title": "Collect Chorus Fruit from the outer islands",
+   "icon": {
+    "item": {
+     "id": "minecraft:chorus_fruit",
+     "count": 8
     },
-    "end_city_found": {
-      "title": "Locate an End City on the outer islands",
-      "icon": {"item": {"id": "minecraft:purpur_block", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+    "type": "heracles:item"
+   },
+   "amount": 8,
+   "collection": "AUTOMATIC",
+   "type": "heracles:item"
+  },
+  "end_city_found": {
+   "title": "Locate an End City on the outer islands",
+   "icon": {
+    "item": {
+     "id": "minecraft:purpur_block",
+     "count": 1
     },
-    "shulker_shell": {
-      "title": "Kill a Shulker and collect a Shulker Shell for portable storage",
-      "icon": {"item": {"id": "minecraft:shulker_shell", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "popped_chorus": {
-      "item": {"id": "minecraft:popped_chorus_fruit", "count": 16},
-      "type": "heracles:item"
+  "shulker_shell": {
+   "title": "Kill a Shulker and collect a Shulker Shell for portable storage",
+   "icon": {
+    "item": {
+     "id": "minecraft:shulker_shell",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Outer Islands"},
-    "subtitle": {"text": "The outer islands exist outside the dragon's territory. They remember a different version of the End."},
-    "description": [
-      "After defeating the dragon, the outer gateway opens.",
-      "Throw an Ender Pearl through the gateway to reach the outer islands.",
-      "",
-      "Chorus Fruit grows in tall branching trees on the outer islands.",
-      "Eating raw Chorus Fruit teleports you randomly — useful for void survival.",
-      "Popped Chorus Fruit is used in crafting End-tier materials.",
-      "",
-      "End Cities are generated randomly across the outer islands.",
-      "They contain some of the best loot in the game.",
-      "End Ships are attached to some End Cities — the Elytra is on the ship.",
-      "",
-      "Shulkers hide in End City walls and shoot levitating projectiles.",
-      "Shulker Shells craft Shulker Boxes — portable chests that keep contents when broken.",
-      "You will need them for the deep End expeditions ahead.",
-      "",
-      "→ Collect 8 Chorus Fruit [collect]",
-      "→ Locate an End City [check]",
-      "→ Kill a Shulker and get a Shulker Shell [check]"
-    ],
-    "groups": {"The Shattered Law": {"position": [0, 600]}},
-    "icon": {"item": {"id": "minecraft:chorus_fruit", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "popped_chorus": {
+   "item": {
+    "id": "minecraft:popped_chorus_fruit",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Outer Islands"
+  },
+  "subtitle": {
+   "text": "The outer islands exist outside the dragon's territory. They remember a different version of the End."
+  },
+  "description": [
+   "After defeating the dragon, the outer gateway opens.",
+   "Throw an Ender Pearl through the gateway to reach the outer islands.",
+   "",
+   "Chorus Fruit grows in tall branching trees on the outer islands.",
+   "Eating raw Chorus Fruit teleports you randomly — useful for void survival.",
+   "Popped Chorus Fruit is used in crafting End-tier materials.",
+   "",
+   "End Cities are generated randomly across the outer islands.",
+   "They contain some of the best loot in the game.",
+   "End Ships are attached to some End Cities — the Elytra is on the ship.",
+   "",
+   "Shulkers hide in End City walls and shoot levitating projectiles.",
+   "Shulker Shells craft Shulker Boxes — portable chests that keep contents when broken.",
+   "You will need them for the deep End expeditions ahead.",
+   "",
+   "→ Collect 8 Chorus Fruit [collect]",
+   "→ Locate an End City [check]",
+   "→ Kill a Shulker and get a Shulker Shell [check]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     1840,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:chorus_fruit",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

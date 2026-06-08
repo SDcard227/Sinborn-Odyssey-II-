@@ -1,129 +1,129 @@
 {
-  "dependencies": [
-    "ch10_r_atomic"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/industrial_thermo"
-    },
-    "heat_network": {
-      "title": "Build a complete heat network: Nuclear Reactor → Heat Pipes → Fluid Boiler → Steam Engine",
-      "icon": {
-        "item": {
-          "id": "create_new_age:heat_pipe",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch10_r_atomic"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Industrial Thermo scroll at a Research Pedestal"
   },
-  "rewards": {
-    "heat_pipe": {
-      "item": {
-        "id": "create_new_age:heat_pipe",
-        "count": 16
-      },
-      "type": "heracles:item"
+  "heat_network": {
+   "title": "Build a complete heat network: Nuclear Reactor → Heat Pipes → Fluid Boiler → Steam Engine",
+   "icon": {
+    "item": {
+     "id": "create_new_age:heat_pipe",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Industrial Thermo"
-    },
-    "subtitle": {
-      "text": "Heat travels. The pipe is the argument. The boiler is the conclusion. The turbine is the proof."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.10 · INDUSTRIAL THERMO",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Industrial Thermo scroll covers",
-      "  the heat pipe network system in full.",
-      "  Heat Pipes are the arteries of the nuclear base.",
-      "  They carry reactor output to boilers.",
-      "  They carry boiler output to steam engines.",
-      "  Build them correctly or lose efficiency at every step.",
-      "",
-      "◈ HEAT PIPE NETWORK",
-      "  └ CNA Heat Pipes carry thermal energy between blocks",
-      "  └ Connection rule: Heat Pipes must be adjacent to",
-      "    both heat source and heat consumer",
-      "  └ No length limit — pipe across the factory",
-      "  └ Insulated variants: prevent ambient heat loss",
-      "    (critical for long runs through cold biomes)",
-      "  └ Branch splitter: divide heat to multiple boilers",
-      "    simultaneously (parallel boiler banks)",
-      "",
-      "◈ BOILER OPTIMIZATION",
-      "  └ Nuclear heat: most efficient boiler fuel source",
-      "  └ Superheated boiler: outputs 800°C steam (max tier)",
-      "  └ Stack 2×2 boilers for maximum steam output",
-      "  └ Steam Engine RPM scales with steam quality",
-      "    (nuclear steam >> blaze cake steam >> charcoal)",
-      "  └ Buffer tank between boiler and engine",
-      "    smooths output during reactor reload cycles",
-      "",
-      "◈ WASTE HEAT APPLICATIONS",
-      "  └ Excess reactor heat: redirect to heating ovens,",
-      "    smelters, Blaze Burner equivalent heating",
-      "  └ Cold Sweat base temp: nuclear heat raises",
-      "    ambient base temperature (natural insulation)",
-      "  └ Freeze It & Heat It: use reactor heat pipes to",
-      "    maintain food storage at optimal temperature",
-      "",
-      "◈ SCROLL: Industrial Thermo",
-      "  └ Found in Create laboratory structures,",
-      "    boiler-adjacent dungeon and workshop loot",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: heat pipe routing, boiler stack efficiency,",
-      "    waste heat applications, insulated pipe variants",
-      "",
-      "▸ The Pale Shore gets its name from the heat haze.",
-      "  The boilers run day and night.",
-      "  The steam never stops.",
-      "  The machines never sleep.",
-      "  The shore is pale because the light never changes.",
-      "",
-      "▶ Find The Industrial Thermo scroll [check]",
-      "▶ Build a full heat network from reactor to engine [check]",
-      "",
-      "◇ Insulate your longest pipe runs.",
-      "  Heat loss over distance is invisible until you",
-      "  notice the output drop and trace it back 80 blocks."
-    ],
-    "groups": {
-      "The Pale Shore": {
-        "position": [
-          600,
-          150
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create_new_age:heat_pipe",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "heat_pipe": {
+   "item": {
+    "id": "create_new_age:heat_pipe",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Industrial Thermo"
+  },
+  "subtitle": {
+   "text": "Heat travels. The pipe is the argument. The boiler is the conclusion. The turbine is the proof."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.10 · INDUSTRIAL THERMO",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Industrial Thermo scroll covers",
+   "  the heat pipe network system in full.",
+   "  Heat Pipes are the arteries of the nuclear base.",
+   "  They carry reactor output to boilers.",
+   "  They carry boiler output to steam engines.",
+   "  Build them correctly or lose efficiency at every step.",
+   "",
+   "◈ HEAT PIPE NETWORK",
+   "  └ CNA Heat Pipes carry thermal energy between blocks",
+   "  └ Connection rule: Heat Pipes must be adjacent to",
+   "    both heat source and heat consumer",
+   "  └ No length limit — pipe across the factory",
+   "  └ Insulated variants: prevent ambient heat loss",
+   "    (critical for long runs through cold biomes)",
+   "  └ Branch splitter: divide heat to multiple boilers",
+   "    simultaneously (parallel boiler banks)",
+   "",
+   "◈ BOILER OPTIMIZATION",
+   "  └ Nuclear heat: most efficient boiler fuel source",
+   "  └ Superheated boiler: outputs 800°C steam (max tier)",
+   "  └ Stack 2×2 boilers for maximum steam output",
+   "  └ Steam Engine RPM scales with steam quality",
+   "    (nuclear steam >> blaze cake steam >> charcoal)",
+   "  └ Buffer tank between boiler and engine",
+   "    smooths output during reactor reload cycles",
+   "",
+   "◈ WASTE HEAT APPLICATIONS",
+   "  └ Excess reactor heat: redirect to heating ovens,",
+   "    smelters, Blaze Burner equivalent heating",
+   "  └ Cold Sweat base temp: nuclear heat raises",
+   "    ambient base temperature (natural insulation)",
+   "  └ Freeze It & Heat It: use reactor heat pipes to",
+   "    maintain food storage at optimal temperature",
+   "",
+   "◈ SCROLL: Industrial Thermo",
+   "  └ Found in Create laboratory structures,",
+   "    boiler-adjacent dungeon and workshop loot",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: heat pipe routing, boiler stack efficiency,",
+   "    waste heat applications, insulated pipe variants",
+   "",
+   "▸ The Pale Shore gets its name from the heat haze.",
+   "  The boilers run day and night.",
+   "  The steam never stops.",
+   "  The machines never sleep.",
+   "  The shore is pale because the light never changes.",
+   "",
+   "▶ Find The Industrial Thermo scroll [check]",
+   "▶ Build a full heat network from reactor to engine [check]",
+   "",
+   "◇ Insulate your longest pipe runs.",
+   "  Heat loss over distance is invisible until you",
+   "  notice the output drop and trace it back 80 blocks."
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     2300,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create_new_age:heat_pipe",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

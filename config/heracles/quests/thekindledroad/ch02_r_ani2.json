@@ -1,66 +1,100 @@
 {
-  "dependencies": ["ch02_r_ani1"],
-  "tasks": {
-    "milk": {
-      "type": "heracles:item",
-      "item": "minecraft:milk_bucket",
-      "amount": 3,
-      "collection": "AUTOMATIC"
-    },
-    "leather": {
-      "type": "heracles:item",
-      "item": "minecraft:leather",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "honey": {
-      "title": "Find and harvest a beehive",
-      "icon": {"item": {"id": "minecraft:honey_bottle", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch02_r_ani1"
+ ],
+ "tasks": {
+  "milk": {
+   "type": "heracles:item",
+   "item": "minecraft:milk_bucket",
+   "amount": 3,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "cheese": {
-      "item": {"id": "meadow:plain_cheese", "count": 2},
-      "type": "heracles:item"
-    },
-    "honey_bottle": {
-      "item": {"id": "minecraft:honey_bottle", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 5},
-      "type": "heracles:item"
-    }
+  "leather": {
+   "type": "heracles:item",
+   "item": "minecraft:leather",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The Dairy"},
-    "subtitle": {"text": "Milk is a relationship with an animal."},
-    "description": [
-      "Meadow adds seven cheeses. All require Rennett to curdle.",
-      "Rennett drops from wild rabbits.",
-      "",
-      "Milk. Rennett. Salt. Time.",
-      "That is all cheese has ever been.",
-      "",
-      "Bees are part of the food system too.",
-      "Honey heals. Honey bottles satisfy sweet cravings.",
-      "A beehive near your farm is an investment.",
-      "",
-      "→ Collect 3 milk buckets",
-      "→ Collect 8 leather",
-      "→ Harvest a beehive [check]"
-    ],
-    "groups": {"The Kindled Road": {"position": [-300, 150]}},
-    "icon": {"item": {"id": "minecraft:milk_bucket", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "honey": {
+   "title": "Find and harvest a beehive",
+   "icon": {
+    "item": {
+     "id": "minecraft:honey_bottle",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "cheese": {
+   "item": {
+    "id": "meadow:plain_cheese",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "honey_bottle": {
+   "item": {
+    "id": "minecraft:honey_bottle",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Dairy"
+  },
+  "subtitle": {
+   "text": "Milk is a relationship with an animal."
+  },
+  "description": [
+   "Meadow adds seven cheeses. All require Rennett to curdle.",
+   "Rennett drops from wild rabbits.",
+   "",
+   "Milk. Rennett. Salt. Time.",
+   "That is all cheese has ever been.",
+   "",
+   "Bees are part of the food system too.",
+   "Honey heals. Honey bottles satisfy sweet cravings.",
+   "A beehive near your farm is an investment.",
+   "",
+   "→ Collect 3 milk buckets",
+   "→ Collect 8 leather",
+   "→ Harvest a beehive [check]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     1680,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:milk_bucket",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

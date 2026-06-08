@@ -1,61 +1,92 @@
 {
-  "dependencies": ["ch07_world"],
-  "tasks": {
-    "gunpowder": {
-      "type": "heracles:item",
-      "item": "minecraft:gunpowder",
-      "amount": 32,
-      "collection": "AUTOMATIC"
-    },
-    "tnt": {
-      "type": "heracles:item",
-      "item": "minecraft:tnt",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    },
-    "detonate": {
-      "title": "Detonate TNT to clear a mining area or oil deposit access tunnel",
-      "icon": {"item": {"id": "minecraft:tnt", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch07_world"
+ ],
+ "tasks": {
+  "gunpowder": {
+   "type": "heracles:item",
+   "item": "minecraft:gunpowder",
+   "amount": 32,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "gunpowder": {
-      "item": {"id": "minecraft:gunpowder", "count": 16},
-      "type": "heracles:item"
+  "tnt": {
+   "type": "heracles:item",
+   "item": "minecraft:tnt",
+   "amount": 8,
+   "collection": "AUTOMATIC"
+  },
+  "detonate": {
+   "title": "Detonate TNT to clear a mining area or oil deposit access tunnel",
+   "icon": {
+    "item": {
+     "id": "minecraft:tnt",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Black Powder"},
-    "subtitle": {"text": "Controlled detonation is a skill. Uncontrolled is a lesson."},
-    "description": [
-      "Before oil, before steam, humans found gunpowder.",
-      "They used it first for war.",
-      "Then for mining. Then they forgot which came first.",
-      "",
-      "Gunpowder is creeper drops, and creepers are everywhere.",
-      "Creeper Overhaul adds 16 biome variants — they still drop the same powder.",
-      "TNT clears tunnels, breaks access to deep oil deposits,",
-      "and makes mining less meditative.",
-      "",
-      "→ Collect 32 Gunpowder (creeper drops)",
-      "→ Craft 8 TNT",
-      "→ Detonate TNT for a practical purpose [check]"
-    ],
-    "groups": {"Blood and Oil": {"position": [-150, 0]}},
-    "icon": {"item": {"id": "minecraft:tnt", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "gunpowder": {
+   "item": {
+    "id": "minecraft:gunpowder",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Black Powder"
+  },
+  "subtitle": {
+   "text": "Controlled detonation is a skill. Uncontrolled is a lesson."
+  },
+  "description": [
+   "Before oil, before steam, humans found gunpowder.",
+   "They used it first for war.",
+   "Then for mining. Then they forgot which came first.",
+   "",
+   "Gunpowder is creeper drops, and creepers are everywhere.",
+   "Creeper Overhaul adds 16 biome variants — they still drop the same powder.",
+   "TNT clears tunnels, breaks access to deep oil deposits,",
+   "and makes mining less meditative.",
+   "",
+   "→ Collect 32 Gunpowder (creeper drops)",
+   "→ Craft 8 TNT",
+   "→ Detonate TNT for a practical purpose [check]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     760,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:tnt",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch05_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Long Meal Before the Firing at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:cooked_beef",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock long_meal_before_firing",
+   "title": "Discipline learned: The Long Meal Before the Firing",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Long Meal Before the Firing"
+  },
+  "subtitle": {
+   "text": "Eat well. Tomorrow is uncertain."
+  },
+  "description": [
+   "The Storm-Builders ate together before every dangerous thing.",
+   "The long meal is not indulgence — it is the ritual that lets people walk toward danger fed.",
+   "",
+   "→ Recover and study the Long Meal Before the Firing at a Research Pedestal."
+  ],
+  "groups": {
+   "The Spoken Word": {
+    "position": [
+     1060,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:cooked_beef",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

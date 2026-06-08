@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the On the Nightwarden scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the On the Nightwarden scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the On the Nightwarden scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock god_nightwarden"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "On the Nightwarden"
+  "research_scroll": {
+   "title": "Research the On the Nightwarden scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Hidden in the margin of approved books.\"",
-      "",
-      "Traveloptics Ocean Mages apex deity. Drops path_to_divinity on kill.",
-      "",
-      "Lore scroll \u2014 opens a cultural thread.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Witch Hut",
-      "  \u00b7 Alexscaves:Chests/Witch Hut",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [On the Nightwarden] [auto]"
-    ],
-    "groups": {
-      "The Shattered Law": {
-        "position": [
-          1096,
-          840
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "historystages:research_scroll",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock god_nightwarden"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "On the Nightwarden"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Hidden in the margin of approved books.\"",
+   "",
+   "Traveloptics Ocean Mages apex deity. Drops path_to_divinity on kill.",
+   "",
+   "Lore scroll — opens a cultural thread.",
+   "",
+   "Look for it in:",
+   "  · Witch Hut",
+   "  · Alexscaves:Chests/Witch Hut",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [On the Nightwarden] [auto]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     0,
+     300
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "historystages:research_scroll",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,63 +1,94 @@
 {
-  "dependencies": ["ch15_lost_void"],
-  "tasks": {
-    "heart_collection": {
-      "title": "Use the Lifesteal system to collect hearts from PvP victories — build to maximum heart count",
-      "icon": {"item": {"id": "lifesteal:heart", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_lost_void"
+ ],
+ "tasks": {
+  "heart_collection": {
+   "title": "Use the Lifesteal system to collect hearts from PvP victories — build to maximum heart count",
+   "icon": {
+    "item": {
+     "id": "lifesteal:heart",
+     "count": 1
     },
-    "revive_crystal": {
-      "type": "heracles:item",
-      "item": "lifesteal:revive_crystal",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "heart": {
-      "item": {"id": "lifesteal:heart", "count": 2},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Revive Crystal"},
-    "subtitle": {"text": "You have been through the void. You understand now that some things can come back from it."},
-    "description": [
-      "The Lifesteal mod operates on a PvP economy of hearts.",
-      "Defeating another player takes a heart from them and adds it to yours.",
-      "The floor is 3 hearts — you cannot be reduced below 3.",
-      "The ceiling is theoretically infinite.",
-      "",
-      "The Revive Crystal:",
-      "Crafted from Lifesteal materials, it restores a player who has hit 0 hearts.",
-      "In the context of Ch15, it is a symbol:",
-      "you went into the void and came back.",
-      "You now understand what it means to return from that place.",
-      "The crystal is proof that return is possible.",
-      "",
-      "Lore connection:",
-      "The Scarlet King tries to manifest through players with 100+ Manifestation.",
-      "The Revive Crystal is the counter-mechanism.",
-      "If someone falls to the void, you can bring them back.",
-      "This is the difference between the twelfth civilization and the thirteenth.",
-      "",
-      "→ Collect hearts using the Lifesteal system [check]",
-      "→ Craft a Revive Crystal [check]"
-    ],
-    "groups": {"After the Dragon": {"position": [0, 450]}},
-    "icon": {"item": {"id": "lifesteal:revive_crystal", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "revive_crystal": {
+   "type": "heracles:item",
+   "item": "lifesteal:revive_crystal",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "heart": {
+   "item": {
+    "id": "lifesteal:heart",
+    "count": 2
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Revive Crystal"
+  },
+  "subtitle": {
+   "text": "You have been through the void. You understand now that some things can come back from it."
+  },
+  "description": [
+   "The Lifesteal mod operates on a PvP economy of hearts.",
+   "Defeating another player takes a heart from them and adds it to yours.",
+   "The floor is 3 hearts — you cannot be reduced below 3.",
+   "The ceiling is theoretically infinite.",
+   "",
+   "The Revive Crystal:",
+   "Crafted from Lifesteal materials, it restores a player who has hit 0 hearts.",
+   "In the context of Ch15, it is a symbol:",
+   "you went into the void and came back.",
+   "You now understand what it means to return from that place.",
+   "The crystal is proof that return is possible.",
+   "",
+   "Lore connection:",
+   "The Scarlet King tries to manifest through players with 100+ Manifestation.",
+   "The Revive Crystal is the counter-mechanism.",
+   "If someone falls to the void, you can bring them back.",
+   "This is the difference between the twelfth civilization and the thirteenth.",
+   "",
+   "→ Collect hearts using the Lifesteal system [check]",
+   "→ Craft a Revive Crystal [check]"
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     1380,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "lifesteal:revive_crystal",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

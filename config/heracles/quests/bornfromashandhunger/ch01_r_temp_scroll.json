@@ -1,86 +1,86 @@
 {
-  "dependencies": [
-    "ch01_r_cold"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/survivor_codex"
-    },
-    "temp_armor": {
-      "title": "Equip at least 2 pieces of Cold Sweat thermal armor or clothing to manage temperature",
-      "icon": {
-        "item": {
-          "id": "minecraft:leather_chestplate",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch01_r_cold"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Survivor Codex scroll at a Research Pedestal"
   },
-  "rewards": {
-    "leather": {
-      "item": {
-        "id": "minecraft:leather",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "temp_armor": {
+   "title": "Equip at least 2 pieces of Cold Sweat thermal armor or clothing to manage temperature",
+   "icon": {
+    "item": {
+     "id": "minecraft:leather_chestplate",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "On Temperature and the Body"
-    },
-    "subtitle": {
-      "text": "Cold kills before anything else. Heat follows close behind."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.01 · TEMPERATURE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Your body temperature is real.",
-      "  Dress for the biome. Build fires.",
-      "  Drink enough water.",
-      "",
-      "◈ Covered by: Survivor's Codex",
-      "  └ Granted in your starting pack",
-      "  └ Unlocks: Cold Sweat gear, ThirstWasTaken",
-      "",
-      "▶ Check: Survivor's Codex received [auto]",
-      "▶ Equip temperature-appropriate armor"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          -150,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:leather_chestplate",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "leather": {
+   "item": {
+    "id": "minecraft:leather",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "On Temperature and the Body"
+  },
+  "subtitle": {
+   "text": "Cold kills before anything else. Heat follows close behind."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.01 · TEMPERATURE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Your body temperature is real.",
+   "  Dress for the biome. Build fires.",
+   "  Drink enough water.",
+   "",
+   "◈ Covered by: Survivor's Codex",
+   "  └ Granted in your starting pack",
+   "  └ Unlocks: Cold Sweat gear, ThirstWasTaken",
+   "",
+   "▶ Check: Survivor's Codex received [auto]",
+   "▶ Equip temperature-appropriate armor"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     1380,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:leather_chestplate",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

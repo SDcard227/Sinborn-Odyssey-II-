@@ -1,92 +1,129 @@
 {
-  "dependencies": ["ch11_world"],
-  "tasks": {
-    "warlord_scroll": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/rec_companions"
+ "dependencies": [
+  "ch11_world"
+ ],
+ "tasks": {
+  "warlord_scroll": {
+   "type": "heracles:check",
+   "title": "Research the Rec Companions scroll at a Research Pedestal"
+  },
+  "recruit_army": {
+   "title": "Field a combat unit of 6+ Villager Recruits — deploy them before a Cataclysm boss fight as distractions",
+   "icon": {
+    "item": {
+     "id": "minecraft:crossbow",
+     "count": 1
     },
-    "recruit_army": {
-      "title": "Field a combat unit of 6+ Villager Recruits — deploy them before a Cataclysm boss fight as distractions",
-      "icon": {"item": {"id": "minecraft:crossbow", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
-  },
-  "rewards": {
-    "iron_ingot": {"item": {"id": "minecraft:iron_ingot", "count": 24}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 6}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Warlord Compact"},
-    "subtitle": {"text": "The Recruits do not survive the Monstrosity. They are not supposed to. They are supposed to draw its attention."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.11 · THE WARLORD COMPACT",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Warlord Compact covers Villager Recruits",
-      "  as a combat support tool.",
-      "  Not as allies. As tactical assets.",
-      "  In Ch11 boss fights, they are distraction units.",
-      "  They die. That is their function.",
-      "",
-      "◈ VILLAGER RECRUITS — 6 UNIT TYPES",
-      "  └ ✦ Footman: melee, sword + shield, 20 HP",
-      "    Use in: Revenant fight (melee distraction)",
-      "  └ ✦ Crossbowman: ranged, 24 blocks range",
-      "    Use in: Ignis fight (ranged DPS from safe position)",
-      "  └ ✦ Knight: heavy melee, 30 HP, slower",
-      "    Use in: Monstrosity (tank hits while you damage)",
-      "  └ ✦ Archer: bow, mobile, lower HP than crossbowman",
-      "  └ ✦ Cavalry: mounted, fastest, flanking role",
-      "  └ ✦ Siege Crossbowman: long range, stationary",
-      "    Set up before Emulator fight for sustained fire",
-      "",
-      "◈ BOSS FIGHT DEPLOYMENT",
-      "  └ Monstrosity: 4 Knights + 4 Crossbowmen",
-      "    Knights absorb melee attacks; crossbowmen DPS",
-      "  └ Ignis: 6 Crossbowmen at maximum range",
-      "    Ignis priority targets: you first, then ranged",
-      "    Use Recruits to split aggro",
-      "  └ Emulator: Siege setup — deploy before entering arena",
-      "    Emulator AI targets nearest entity — spread units",
-      "",
-      "◈ GARRISON MANAGEMENT",
-      "  └ Recruit base: requires Villager Recruits barracks block",
-      "  └ Feed/pay recruits with emeralds or items (MCA trades)",
-      "  └ Recall ability: /recruit recall (or check mod hotkey)",
-      "  └ Recruits do NOT respawn after death — replace them",
-      "",
-      "◈ SCROLL: The Warlord Compact",
-      "  └ Found in Villager Recruits barracks structures,",
-      "    military outpost loot, garrison chest loot",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: Recruit unit type reference,",
-      "    siege crossbowman deployment guide, garrison design",
-      "",
-      "▸ The Compact is between the Warlord and the Recruits.",
-      "  The Warlord survives.",
-      "  The Recruits fulfill their contract.",
-      "  Nobody in the Compact believes this is unfair.",
-      "  That is the compact.",
-      "",
-      "▶ Find The Warlord Compact scroll [check]",
-      "▶ Field 6+ Villager Recruits before a boss fight [check]",
-      "",
-      "◇ Recruits work even in singleplayer.",
-      "  The Monstrosity fight is measurably easier with",
-      "  4 knights drawing its attention.",
-      "  Measure the difference before dismissing it."
-    ],
-    "groups": {"Where the Skin Tears": {"position": [-600, 0]}},
-    "icon": {"item": {"id": "minecraft:crossbow", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "iron_ingot": {
+   "item": {
+    "id": "minecraft:iron_ingot",
+    "count": 24
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Warlord Compact"
+  },
+  "subtitle": {
+   "text": "The Recruits do not survive the Monstrosity. They are not supposed to. They are supposed to draw its attention."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.11 · THE WARLORD COMPACT",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Warlord Compact covers Villager Recruits",
+   "  as a combat support tool.",
+   "  Not as allies. As tactical assets.",
+   "  In Ch11 boss fights, they are distraction units.",
+   "  They die. That is their function.",
+   "",
+   "◈ VILLAGER RECRUITS — 6 UNIT TYPES",
+   "  └ ✦ Footman: melee, sword + shield, 20 HP",
+   "    Use in: Revenant fight (melee distraction)",
+   "  └ ✦ Crossbowman: ranged, 24 blocks range",
+   "    Use in: Ignis fight (ranged DPS from safe position)",
+   "  └ ✦ Knight: heavy melee, 30 HP, slower",
+   "    Use in: Monstrosity (tank hits while you damage)",
+   "  └ ✦ Archer: bow, mobile, lower HP than crossbowman",
+   "  └ ✦ Cavalry: mounted, fastest, flanking role",
+   "  └ ✦ Siege Crossbowman: long range, stationary",
+   "    Set up before Emulator fight for sustained fire",
+   "",
+   "◈ BOSS FIGHT DEPLOYMENT",
+   "  └ Monstrosity: 4 Knights + 4 Crossbowmen",
+   "    Knights absorb melee attacks; crossbowmen DPS",
+   "  └ Ignis: 6 Crossbowmen at maximum range",
+   "    Ignis priority targets: you first, then ranged",
+   "    Use Recruits to split aggro",
+   "  └ Emulator: Siege setup — deploy before entering arena",
+   "    Emulator AI targets nearest entity — spread units",
+   "",
+   "◈ GARRISON MANAGEMENT",
+   "  └ Recruit base: requires Villager Recruits barracks block",
+   "  └ Feed/pay recruits with emeralds or items (MCA trades)",
+   "  └ Recall ability: /recruit recall (or check mod hotkey)",
+   "  └ Recruits do NOT respawn after death — replace them",
+   "",
+   "◈ SCROLL: The Warlord Compact",
+   "  └ Found in Villager Recruits barracks structures,",
+   "    military outpost loot, garrison chest loot",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: Recruit unit type reference,",
+   "    siege crossbowman deployment guide, garrison design",
+   "",
+   "▸ The Compact is between the Warlord and the Recruits.",
+   "  The Warlord survives.",
+   "  The Recruits fulfill their contract.",
+   "  Nobody in the Compact believes this is unfair.",
+   "  That is the compact.",
+   "",
+   "▶ Find The Warlord Compact scroll [check]",
+   "▶ Field 6+ Villager Recruits before a boss fight [check]",
+   "",
+   "◇ Recruits work even in singleplayer.",
+   "  The Monstrosity fight is measurably easier with",
+   "  4 knights drawing its attention.",
+   "  Measure the difference before dismissing it."
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     460,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:crossbow",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,0 +1,25 @@
+{
+  "display_name": "Architectural Mastery",
+  "research_time": 5400,
+  "items": [
+    "snowrealmagic:fence",
+    "snowrealmagic:fence2",
+    "snowrealmagic:fence_gate",
+    "snowrealmagic:slab",
+    "snowrealmagic:snow",
+    "snowrealmagic:stairs",
+    "snowrealmagic:wall"
+  ],
+  "tags": [],
+  "mods": [
+    "snowrealmagic"
+  ],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

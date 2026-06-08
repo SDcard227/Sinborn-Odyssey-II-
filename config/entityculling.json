@@ -62,7 +62,7 @@
     "voidscape:corrupted_pawn"
   ],
   "disableF3": false,
-  "skipEntityCulling": false,
+  "skipEntityCulling": true,
   "skipBlockEntityCulling": false,
   "blockEntityFrustumCulling": true,
   "forceDisplayCulling": false

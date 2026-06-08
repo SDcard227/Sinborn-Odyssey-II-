@@ -1,0 +1,19 @@
+{
+  "display_name": "The Scroll of the Cold Eye",
+  "research_time": 3600,
+  "items": [
+    "endrem:cold_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "sinborn:mechanical_crafting/cold_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

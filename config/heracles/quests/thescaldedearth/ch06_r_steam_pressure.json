@@ -1,124 +1,124 @@
 {
-  "dependencies": [
-    "ch06_boiler"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/steam_pressure"
-    },
-    "steam_engine": {
-      "type": "heracles:item",
-      "item": "create:steam_engine",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "boiler_setup": {
-      "title": "Build a functioning Steam Boiler setup — Boiler + Water inputs + Blaze Burner",
-      "icon": {
-        "item": {
-          "id": "create:steam_engine",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch06_boiler"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Steam Pressure scroll at a Research Pedestal"
   },
-  "rewards": {
-    "brass": {
-      "item": {
-        "id": "create:brass_ingot",
-        "count": 16
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 4
-      },
-      "type": "heracles:item"
-    }
+  "steam_engine": {
+   "type": "heracles:item",
+   "item": "create:steam_engine",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {
-      "translate": "Steam Pressure"
+  "boiler_setup": {
+   "title": "Build a functioning Steam Boiler setup — Boiler + Water inputs + Blaze Burner",
+   "icon": {
+    "item": {
+     "id": "create:steam_engine",
+     "count": 1
     },
-    "subtitle": {
-      "text": "The Boiler is where water meets fire and becomes force."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.06 · STEAM PRESSURE",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Steam Engine changes everything.",
-      "  Water Wheels gave you dozens of SU.",
-      "  The Boiler gives you hundreds.",
-      "  With enough, you run anything.",
-      "",
-      "◈ BOILER SYSTEM (CREATE)",
-      "  └ Steam Boiler: multiblock structure",
-      "    needs: Boiler blocks + Blaze Burner + water input",
-      "  └ Blaze Burner: powered by Blaze Cakes",
-      "    (from Blaze Powder + Honey Bottle)",
-      "  └ Water input: fluid pipe from water source",
-      "    or pump from lake/river",
-      "  └ Output: Steam Engine block converts steam → SU",
-      "  └ Scalable: bigger boiler = more SU",
-      "    Maximum: hundreds of thousands of SU",
-      "",
-      "◈ STRESS CAPACITY UPGRADES",
-      "  └ Water Wheel: 4 SU (base)",
-      "  └ Windmill Bearing (64 sails): ~1,792 SU",
-      "  └ Small Steam Setup: 16,000+ SU",
-      "  └ Large Steam Setup: 200,000+ SU",
-      "  └ Ch10 New Age Power: electrical generation",
-      "",
-      "◈ SCROLL: Steam Pressure",
-      "  └ Found in: boiler room ruins, steam engine",
-      "    workshop chests, Create guild archives",
-      "  └ Research time: 30 min",
-      "  └ Unlocks: full Boiler system, Blaze Cake recipe,",
-      "    stress capacity understanding",
-      "",
-      "▸ The scroll is water-stained.",
-      "  Someone spilled condensate on it",
-      "  the first time they ran the boiler.",
-      "  They kept it anyway.",
-      "",
-      "▶ Find The Steam Pressure scroll [check]",
-      "▶ Craft a Steam Engine",
-      "▶ Build a functioning Steam Boiler setup [check]",
-      "",
-      "◇ Brass is required for Boiler components.",
-      "  Brass = Copper + Zinc in Mixer.",
-      "  Mine zinc in the world (orange-veined stone)."
-    ],
-    "groups": {
-      "The Scalded Earth": {
-        "position": [
-          150,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create:steam_engine",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "brass": {
+   "item": {
+    "id": "create:brass_ingot",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Steam Pressure"
+  },
+  "subtitle": {
+   "text": "The Boiler is where water meets fire and becomes force."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.06 · STEAM PRESSURE",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Steam Engine changes everything.",
+   "  Water Wheels gave you dozens of SU.",
+   "  The Boiler gives you hundreds.",
+   "  With enough, you run anything.",
+   "",
+   "◈ BOILER SYSTEM (CREATE)",
+   "  └ Steam Boiler: multiblock structure",
+   "    needs: Boiler blocks + Blaze Burner + water input",
+   "  └ Blaze Burner: powered by Blaze Cakes",
+   "    (from Blaze Powder + Honey Bottle)",
+   "  └ Water input: fluid pipe from water source",
+   "    or pump from lake/river",
+   "  └ Output: Steam Engine block converts steam → SU",
+   "  └ Scalable: bigger boiler = more SU",
+   "    Maximum: hundreds of thousands of SU",
+   "",
+   "◈ STRESS CAPACITY UPGRADES",
+   "  └ Water Wheel: 4 SU (base)",
+   "  └ Windmill Bearing (64 sails): ~1,792 SU",
+   "  └ Small Steam Setup: 16,000+ SU",
+   "  └ Large Steam Setup: 200,000+ SU",
+   "  └ Ch10 New Age Power: electrical generation",
+   "",
+   "◈ SCROLL: Steam Pressure",
+   "  └ Found in: boiler room ruins, steam engine",
+   "    workshop chests, Create guild archives",
+   "  └ Research time: 30 min",
+   "  └ Unlocks: full Boiler system, Blaze Cake recipe,",
+   "    stress capacity understanding",
+   "",
+   "▸ The scroll is water-stained.",
+   "  Someone spilled condensate on it",
+   "  the first time they ran the boiler.",
+   "  They kept it anyway.",
+   "",
+   "▶ Find The Steam Pressure scroll [check]",
+   "▶ Craft a Steam Engine",
+   "▶ Build a functioning Steam Boiler setup [check]",
+   "",
+   "◇ Brass is required for Boiler components.",
+   "  Brass = Copper + Zinc in Mixer.",
+   "  Mine zinc in the world (orange-veined stone)."
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     1840,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:steam_engine",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

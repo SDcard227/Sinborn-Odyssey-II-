@@ -1,122 +1,122 @@
 {
-  "dependencies": [
-    "ch10_r_wit3"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/last_watch"
-    },
-    "skull_farm": {
-      "type": "heracles:item",
-      "item": "minecraft:wither_skeleton_skull",
-      "amount": 9,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch10_r_wit3"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Last Watch scroll at a Research Pedestal"
   },
-  "rewards": {
-    "coal": {
-      "item": {
-        "id": "minecraft:coal_block",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Last Watch"
-    },
-    "subtitle": {
-      "text": "The Wither Skeleton held the watch at the end of the last age. The scroll is what they wrote down before it ended."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.10 · THE LAST WATCH",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Last Watch scroll is the cursed age gate.",
-      "  It unlocks specific Ch12 content that cannot",
-      "  be accessed without it.",
-      "  You get it from the same farm you run",
-      "  to summon the Wither in the first place.",
-      "  One farm. Two objectives. Build it properly.",
-      "",
-      "◈ WITHER SKELETON FARMING",
-      "  └ Spawn location: Nether Fortress corridors",
-      "    and bridge sections (NOT open Nether)",
-      "  └ Drop: Wither Skeleton Skull (~2.5% base rate)",
-      "    Looting III: raises to ~5.5% — mandatory",
-      "  └ Coal: guaranteed. Farm for Blaze Cakes too.",
-      "  └ Last Watch scroll: 8% drop rate",
-      "    Drops alongside standard loot — same farm",
-      "",
-      "◈ FORTRESS FARM DESIGN",
-      "  └ Light up all non-target corridors (prevents",
-      "    skeletons spawning outside kill zone)",
-      "  └ Spawning platform: 30+ blocks, slab-floored",
-      "    (slabs prevent Blazes from spawning there)",
-      "  └ Water funnel system: wash Wither Skeletons",
-      "    into a 1-block kill chamber",
-      "  └ Sword + Looting III: melee required for heads",
-      "    (Looting does not apply to projectile kills)",
-      "  └ Expected rate with farm: ~1 skull per 5 min",
-      "",
-      "◈ SKULL MATH",
-      "  └ 3 skulls: one Wither summon",
-      "  └ 9 skulls: three Wither summons (one per Ch10/11/12",
-      "    progression milestone)",
-      "  └ Farm 9 skulls now. Do not come back here.",
-      "",
-      "◈ SCROLL: The Last Watch",
-      "  └ 8% drop from Wither Skeletons",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: cursed age content gate,",
-      "    Ch12 specific research pathways",
-      "",
-      "▸ They called it the Last Watch",
-      "  because nobody believed there would be another.",
-      "  The scroll proves them wrong.",
-      "  You are the next watch.",
-      "",
-      "▶ Find The Last Watch scroll [check]",
-      "▶ Collect 9 Wither Skeleton Skulls",
-      "",
-      "◇ 9 skulls takes ~45 minutes with a proper farm.",
-      "  Build the farm right the first time.",
-      "  You will also need this fortress for Blaze farming.",
-      "  The fortresses share the same infrastructure."
-    ],
-    "groups": {
-      "The Pale Shore": {
-        "position": [
-          -600,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:wither_skeleton_skull",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "skull_farm": {
+   "type": "heracles:item",
+   "item": "minecraft:wither_skeleton_skull",
+   "amount": 9,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "coal": {
+   "item": {
+    "id": "minecraft:coal_block",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Last Watch"
+  },
+  "subtitle": {
+   "text": "The Wither Skeleton held the watch at the end of the last age. The scroll is what they wrote down before it ended."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.10 · THE LAST WATCH",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Last Watch scroll is the cursed age gate.",
+   "  It unlocks specific Ch12 content that cannot",
+   "  be accessed without it.",
+   "  You get it from the same farm you run",
+   "  to summon the Wither in the first place.",
+   "  One farm. Two objectives. Build it properly.",
+   "",
+   "◈ WITHER SKELETON FARMING",
+   "  └ Spawn location: Nether Fortress corridors",
+   "    and bridge sections (NOT open Nether)",
+   "  └ Drop: Wither Skeleton Skull (~2.5% base rate)",
+   "    Looting III: raises to ~5.5% — mandatory",
+   "  └ Coal: guaranteed. Farm for Blaze Cakes too.",
+   "  └ Last Watch scroll: 8% drop rate",
+   "    Drops alongside standard loot — same farm",
+   "",
+   "◈ FORTRESS FARM DESIGN",
+   "  └ Light up all non-target corridors (prevents",
+   "    skeletons spawning outside kill zone)",
+   "  └ Spawning platform: 30+ blocks, slab-floored",
+   "    (slabs prevent Blazes from spawning there)",
+   "  └ Water funnel system: wash Wither Skeletons",
+   "    into a 1-block kill chamber",
+   "  └ Sword + Looting III: melee required for heads",
+   "    (Looting does not apply to projectile kills)",
+   "  └ Expected rate with farm: ~1 skull per 5 min",
+   "",
+   "◈ SKULL MATH",
+   "  └ 3 skulls: one Wither summon",
+   "  └ 9 skulls: three Wither summons (one per Ch10/11/12",
+   "    progression milestone)",
+   "  └ Farm 9 skulls now. Do not come back here.",
+   "",
+   "◈ SCROLL: The Last Watch",
+   "  └ 8% drop from Wither Skeletons",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: cursed age content gate,",
+   "    Ch12 specific research pathways",
+   "",
+   "▸ They called it the Last Watch",
+   "  because nobody believed there would be another.",
+   "  The scroll proves them wrong.",
+   "  You are the next watch.",
+   "",
+   "▶ Find The Last Watch scroll [check]",
+   "▶ Collect 9 Wither Skeleton Skulls",
+   "",
+   "◇ 9 skulls takes ~45 minutes with a proper farm.",
+   "  Build the farm right the first time.",
+   "  You will also need this fortress for Blaze farming.",
+   "  The fortresses share the same infrastructure."
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     1840,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:wither_skeleton_skull",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

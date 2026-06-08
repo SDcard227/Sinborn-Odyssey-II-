@@ -1,111 +1,111 @@
 {
-  "dependencies": [
-    "ch06_r_fort2"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/long_road"
-    },
-    "ghast_tear": {
-      "type": "heracles:item",
-      "item": "minecraft:ghast_tear",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch06_r_fort2"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Long Road scroll at a Research Pedestal"
   },
-  "rewards": {
-    "gold": {
-      "item": {
-        "id": "minecraft:gold_ingot",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 3
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Long Road"
-    },
-    "subtitle": {
-      "text": "The Long Road scroll drops from Ghasts. Kill them here. Read it when you're home."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.06 · THE LONG ROAD",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Ghasts carry the Long Road scroll.",
-      "  12% chance. Not guaranteed.",
-      "  Kill enough of them and it will drop.",
-      "",
-      "◈ GHAST HUNTING",
-      "  └ Ghasts float over open Nether biomes",
-      "  └ They spawn in: Nether Wastes, Soul Sand Valley,",
-      "    Basalt Deltas — anywhere with space",
-      "  └ Attack: fireball (block damage + knockback)",
-      "  └ Counter: deflect fireball back with sword hit",
-      "    (aim for the fireball mid-flight)",
-      "  └ Range: hit them from distance with bow",
-      "    Ghasts have low health despite size",
-      "  └ Drops: Ghast Tear (Regeneration potions),",
-      "    Ghast Membrane, Long Road scroll (12%)",
-      "",
-      "◈ LONG ROAD SCROLL CONTENT",
-      "  └ The Long Road is about journey culture",
-      "  └ Via Romana roads, waypoints, landmarks",
-      "  └ Horse travel tips, distance management",
-      "  └ 'The road is the civilization.',",
-      "    'Everything else is built beside it.'",
-      "  └ Research time: 20 min",
-      "",
-      "◈ GHAST TEAR USE",
-      "  └ Potion of Regeneration: water + nether wart + ghast tear",
-      "  └ Regeneration II: extended health-over-time",
-      "  └ Critical for high-difficulty boss fights",
-      "",
-      "▸ The scroll fell from a Ghast.",
-      "  How did it get inside the Ghast?",
-      "  The scroll does not say.",
-      "  The Scholars who recovered it didn't ask.",
-      "",
-      "▶ Find The Long Road scroll from a Ghast [check]",
-      "▶ Collect 4 Ghast Tears",
-      "",
-      "◇ Ghast Tears enable Regeneration potions.",
-      "  Brew a supply before Ch09 Eye Hunt.",
-      "  Boss fights with no Regen = worse odds."
-    ],
-    "groups": {
-      "The Scalded Earth": {
-        "position": [
-          -300,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:ghast_tear",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "ghast_tear": {
+   "type": "heracles:item",
+   "item": "minecraft:ghast_tear",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "gold": {
+   "item": {
+    "id": "minecraft:gold_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 3
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Long Road"
+  },
+  "subtitle": {
+   "text": "The Long Road scroll drops from Ghasts. Kill them here. Read it when you're home."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.06 · THE LONG ROAD",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Ghasts carry the Long Road scroll.",
+   "  12% chance. Not guaranteed.",
+   "  Kill enough of them and it will drop.",
+   "",
+   "◈ GHAST HUNTING",
+   "  └ Ghasts float over open Nether biomes",
+   "  └ They spawn in: Nether Wastes, Soul Sand Valley,",
+   "    Basalt Deltas — anywhere with space",
+   "  └ Attack: fireball (block damage + knockback)",
+   "  └ Counter: deflect fireball back with sword hit",
+   "    (aim for the fireball mid-flight)",
+   "  └ Range: hit them from distance with bow",
+   "    Ghasts have low health despite size",
+   "  └ Drops: Ghast Tear (Regeneration potions),",
+   "    Ghast Membrane, Long Road scroll (12%)",
+   "",
+   "◈ LONG ROAD SCROLL CONTENT",
+   "  └ The Long Road is about journey culture",
+   "  └ Via Romana roads, waypoints, landmarks",
+   "  └ Horse travel tips, distance management",
+   "  └ 'The road is the civilization.',",
+   "    'Everything else is built beside it.'",
+   "  └ Research time: 20 min",
+   "",
+   "◈ GHAST TEAR USE",
+   "  └ Potion of Regeneration: water + nether wart + ghast tear",
+   "  └ Regeneration II: extended health-over-time",
+   "  └ Critical for high-difficulty boss fights",
+   "",
+   "▸ The scroll fell from a Ghast.",
+   "  How did it get inside the Ghast?",
+   "  The scroll does not say.",
+   "  The Scholars who recovered it didn't ask.",
+   "",
+   "▶ Find The Long Road scroll from a Ghast [check]",
+   "▶ Collect 4 Ghast Tears",
+   "",
+   "◇ Ghast Tears enable Regeneration potions.",
+   "  Brew a supply before Ch09 Eye Hunt.",
+   "  Boss fights with no Regen = worse odds."
+  ],
+  "groups": {
+   "The Scalded Earth": {
+    "position": [
+     1840,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ghast_tear",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

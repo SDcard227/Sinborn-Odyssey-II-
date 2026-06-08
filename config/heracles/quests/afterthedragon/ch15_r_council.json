@@ -1,91 +1,134 @@
 {
-  "dependencies": ["ch15_community"],
-  "tasks": {
-    "rose_gold_ring": {
-      "title": "Craft a Rose Gold Ring (MCA Reborn) — required for the marriage system, Rose Gold = Gold + Copper alloy",
-      "icon": {"item": {"id": "minecraft:gold_ingot", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_community"
+ ],
+ "tasks": {
+  "rose_gold_ring": {
+   "title": "Craft a Rose Gold Ring (MCA Reborn) — required for the marriage system, Rose Gold = Gold + Copper alloy",
+   "icon": {
+    "item": {
+     "id": "minecraft:gold_ingot",
+     "count": 1
     },
-    "village_reputation": {
-      "title": "Reach positive village reputation with at least 2 villages (MCA Reborn council + gift system)",
-      "icon": {"item": {"id": "minecraft:emerald", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "gold_ingot": {"item": {"id": "minecraft:gold_ingot", "count": 8}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Council"},
-    "subtitle": {"text": "MCA Reborn gives villagers personality, relationships, and needs. The village council is the game within the game."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.15 · THE COUNCIL",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ MCA Reborn (My Character Arcane) replaces vanilla villager AI",
-      "  with named villagers that have personalities, skills, and relationships.",
-      "  They can be befriended, gifted, married.",
-      "  The village has a council system for community decisions.",
-      "  Ch15 is the homecoming chapter — you return to the community",
-      "  you left when you entered the End.",
-      "",
-      "◈ MCA REBORN CORE SYSTEMS",
-      "  └ Named villagers: each has a name, profession, personality",
-      "    Interact to build relationship over time",
-      "  └ Gift system: give items to increase relationship score",
-      "    Higher relationship = better trades + unique dialogue",
-      "  └ Village reputation: all villagers contribute to reputation",
-      "    High reputation = council approval + protection from attacks",
-      "  └ Council: village decision-making body",
-      "    Complete council tasks for reputation gains and rewards",
-      "",
-      "◈ ROSE GOLD RING",
-      "  └ Rose Gold = crafted from Gold + Copper (MCA Reborn recipe)",
-      "    Check JEI for mca: or mca_reborn: ring recipe",
-      "  └ Rose Gold Ring: required item to initiate marriage proposal",
-      "  └ Marriage: permanent companion NPC, follows player, provides buffs",
-      "  └ MCA companion buffs: varies by partner's profession/skills",
-      "  └ Marriage is optional — the Ring crafting quest is milestone",
-      "    (symbolic: you have built enough to consider permanence)",
-      "",
-      "◈ VILLAGE COUNCIL TASKS",
-      "  └ Council quests: given by council NPC in village",
-      "  └ Types: supply delivery, protection, exploration, crafting",
-      "  └ Completion: reputation increase + Numismatics rewards",
-      "  └ Priority targets: villages with Bountiful board + MCA council",
-      "    (stacking task types = maximum efficiency per village visit)",
-      "",
-      "▸ The village was here while you were in the End.",
-      "  The council met without you.",
-      "  The villagers had seasons without you.",
-      "  You return with dragon food and Shulker Boxes",
-      "  and they look at you and ask:",
-      "  where have you been?",
-      "  The answer is 14 chapters.",
-      "  The village just wants to know you are back.",
-      "",
-      "▶ Craft a Rose Gold Ring (MCA Reborn) [check]",
-      "▶ Reach positive reputation with 2 villages [check]",
-      "",
-      "◇ MCA Reborn marriage companion benefits:",
-      "  the companion can be assigned a home,",
-      "  will defend it, and provides daily resource gifts.",
-      "  The resource type depends on their profession.",
-      "  Marry a farmer for passive food. A blacksmith for materials.",
-      "  Choose based on what your Ch16 supply chain needs."
-    ],
-    "groups": {"After the Dragon": {"position": [-600, 150]}},
-    "icon": {"item": {"id": "minecraft:gold_ingot", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "village_reputation": {
+   "title": "Reach positive village reputation with at least 2 villages (MCA Reborn council + gift system)",
+   "icon": {
+    "item": {
+     "id": "minecraft:emerald",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "gold_ingot": {
+   "item": {
+    "id": "minecraft:gold_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Council"
+  },
+  "subtitle": {
+   "text": "MCA Reborn gives villagers personality, relationships, and needs. The village council is the game within the game."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.15 · THE COUNCIL",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ MCA Reborn (My Character Arcane) replaces vanilla villager AI",
+   "  with named villagers that have personalities, skills, and relationships.",
+   "  They can be befriended, gifted, married.",
+   "  The village has a council system for community decisions.",
+   "  Ch15 is the homecoming chapter — you return to the community",
+   "  you left when you entered the End.",
+   "",
+   "◈ MCA REBORN CORE SYSTEMS",
+   "  └ Named villagers: each has a name, profession, personality",
+   "    Interact to build relationship over time",
+   "  └ Gift system: give items to increase relationship score",
+   "    Higher relationship = better trades + unique dialogue",
+   "  └ Village reputation: all villagers contribute to reputation",
+   "    High reputation = council approval + protection from attacks",
+   "  └ Council: village decision-making body",
+   "    Complete council tasks for reputation gains and rewards",
+   "",
+   "◈ ROSE GOLD RING",
+   "  └ Rose Gold = crafted from Gold + Copper (MCA Reborn recipe)",
+   "    Check JEI for mca: or mca_reborn: ring recipe",
+   "  └ Rose Gold Ring: required item to initiate marriage proposal",
+   "  └ Marriage: permanent companion NPC, follows player, provides buffs",
+   "  └ MCA companion buffs: varies by partner's profession/skills",
+   "  └ Marriage is optional — the Ring crafting quest is milestone",
+   "    (symbolic: you have built enough to consider permanence)",
+   "",
+   "◈ VILLAGE COUNCIL TASKS",
+   "  └ Council quests: given by council NPC in village",
+   "  └ Types: supply delivery, protection, exploration, crafting",
+   "  └ Completion: reputation increase + Numismatics rewards",
+   "  └ Priority targets: villages with Bountiful board + MCA council",
+   "    (stacking task types = maximum efficiency per village visit)",
+   "",
+   "▸ The village was here while you were in the End.",
+   "  The council met without you.",
+   "  The villagers had seasons without you.",
+   "  You return with dragon food and Shulker Boxes",
+   "  and they look at you and ask:",
+   "  where have you been?",
+   "  The answer is 14 chapters.",
+   "  The village just wants to know you are back.",
+   "",
+   "▶ Craft a Rose Gold Ring (MCA Reborn) [check]",
+   "▶ Reach positive reputation with 2 villages [check]",
+   "",
+   "◇ MCA Reborn marriage companion benefits:",
+   "  the companion can be assigned a home,",
+   "  will defend it, and provides daily resource gifts.",
+   "  The resource type depends on their profession.",
+   "  Marry a farmer for passive food. A blacksmith for materials.",
+   "  Choose based on what your Ch16 supply chain needs."
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     920,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:gold_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

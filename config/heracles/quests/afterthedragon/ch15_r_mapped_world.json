@@ -1,92 +1,135 @@
 {
-  "dependencies": ["ch15_r_atlas2"],
-  "tasks": {
-    "atlas_complete": {
-      "title": "Complete your Antique Atlas — fill in all major biomes and structures you visited",
-      "icon": {"item": {"id": "antique_atlas:atlas", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch15_r_atlas2"
+ ],
+ "tasks": {
+  "atlas_complete": {
+   "title": "Complete your Antique Atlas — fill in all major biomes and structures you visited",
+   "icon": {
+    "item": {
+     "id": "antique_atlas:atlas",
+     "count": 1
     },
-    "exposure_history": {
-      "title": "Take 5 photographs with the Exposure camera — document major locations from your journey",
-      "icon": {"item": {"id": "exposure:viewfinder", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "book": {"item": {"id": "minecraft:book", "count": 4}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:crown", "count": 5}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Mapped World"},
-    "subtitle": {"text": "You traveled the whole map. Now you record it. The atlas is a record of where you have been. Fill it in."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.15 · THE MAPPED WORLD",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ Antique Atlas + Exposure: the documentation tools.",
-      "  You traveled 17 chapters worth of territory.",
-      "  The atlas should show it.",
-      "  The photographs should document it.",
-      "  History is what survives the traveler.",
-      "  Make sure yours survives you.",
-      "",
-      "◈ ANTIQUE ATLAS COMPLETION",
-      "  └ Atlas fills as you walk — no active interaction needed",
-      "    (keep atlas in inventory to record explored territory)",
-      "  └ Custom markers: right-click on atlas to place named markers",
-      "    Mark: your base, village, End portal, key farm sites,",
-      "    dungeon locations, boss encounter sites",
-      "  └ Sharing: atlases can be copied (Atlas + empty Atlas = copy)",
-      "    Useful for multiplayer: share the full map with others",
-      "  └ Atlas does NOT auto-mark structures — manual markers only",
-      "    Mark every significant structure you want to find again",
-      "",
-      "◈ EXPOSURE FILM CAMERA",
-      "  └ Viewfinder: early camera — shows you what you are shooting",
-      "  └ Camera: requires film (iron/paper construction)",
-      "  └ Film roll: loads into camera, takes ~12 exposures per roll",
-      "  └ Development: Darkroom block required to develop photos",
-      "  └ Developed photos: display on item frames as photographs",
-      "    (place in item frame on wall = wall photography display)",
-      "",
-      "◈ DOCUMENTATION PRIORITY",
-      "  └ Photograph: End portal room, Dragon fight site,",
-      "    first End City, your base at each chapter milestone",
-      "  └ Atlas markers: End portal location, all boss sites,",
-      "    Poise Forest, True End entry point, resource farms",
-      "  └ Book and Quill: written expedition journal (ch15_world task)",
-      "    Pair with atlas and photos for full documentation set",
-      "",
-      "▸ Antique Atlas used to say: here be dragons.",
-      "  That was metaphor.",
-      "  Your atlas says: here was the dragon.",
-      "  Specific coordinates. Past tense.",
-      "  You have been there. You have the photographs.",
-      "  You have the journal entry.",
-      "  That is the difference between legend and history.",
-      "  You are making history.",
-      "",
-      "▶ Complete your Antique Atlas with all major locations [check]",
-      "▶ Take 5 photographs to document your journey [check]",
-      "",
-      "◇ Exposure photographs can be hung in frames in your base.",
-      "  A gallery wall of the expedition is a Ch15 building project.",
-      "  Recommended gallery contents: End portal, Dragon fight,",
-      "  first city, outer island view, dragon egg on display.",
-      "  This is what the previous civilizations did not leave behind.",
-      "  Leave it behind."
-    ],
-    "groups": {"After the Dragon": {"position": [600, 0]}},
-    "icon": {"item": {"id": "antique_atlas:atlas", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "exposure_history": {
+   "title": "Take 5 photographs with the Exposure camera — document major locations from your journey",
+   "icon": {
+    "item": {
+     "id": "exposure:viewfinder",
+     "count": 1
+    },
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "book": {
+   "item": {
+    "id": "minecraft:book",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Mapped World"
+  },
+  "subtitle": {
+   "text": "You traveled the whole map. Now you record it. The atlas is a record of where you have been. Fill it in."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.15 · THE MAPPED WORLD",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ Antique Atlas + Exposure: the documentation tools.",
+   "  You traveled 17 chapters worth of territory.",
+   "  The atlas should show it.",
+   "  The photographs should document it.",
+   "  History is what survives the traveler.",
+   "  Make sure yours survives you.",
+   "",
+   "◈ ANTIQUE ATLAS COMPLETION",
+   "  └ Atlas fills as you walk — no active interaction needed",
+   "    (keep atlas in inventory to record explored territory)",
+   "  └ Custom markers: right-click on atlas to place named markers",
+   "    Mark: your base, village, End portal, key farm sites,",
+   "    dungeon locations, boss encounter sites",
+   "  └ Sharing: atlases can be copied (Atlas + empty Atlas = copy)",
+   "    Useful for multiplayer: share the full map with others",
+   "  └ Atlas does NOT auto-mark structures — manual markers only",
+   "    Mark every significant structure you want to find again",
+   "",
+   "◈ EXPOSURE FILM CAMERA",
+   "  └ Viewfinder: early camera — shows you what you are shooting",
+   "  └ Camera: requires film (iron/paper construction)",
+   "  └ Film roll: loads into camera, takes ~12 exposures per roll",
+   "  └ Development: Darkroom block required to develop photos",
+   "  └ Developed photos: display on item frames as photographs",
+   "    (place in item frame on wall = wall photography display)",
+   "",
+   "◈ DOCUMENTATION PRIORITY",
+   "  └ Photograph: End portal room, Dragon fight site,",
+   "    first End City, your base at each chapter milestone",
+   "  └ Atlas markers: End portal location, all boss sites,",
+   "    Poise Forest, True End entry point, resource farms",
+   "  └ Book and Quill: written expedition journal (ch15_world task)",
+   "    Pair with atlas and photos for full documentation set",
+   "",
+   "▸ Antique Atlas used to say: here be dragons.",
+   "  That was metaphor.",
+   "  Your atlas says: here was the dragon.",
+   "  Specific coordinates. Past tense.",
+   "  You have been there. You have the photographs.",
+   "  You have the journal entry.",
+   "  That is the difference between legend and history.",
+   "  You are making history.",
+   "",
+   "▶ Complete your Antique Atlas with all major locations [check]",
+   "▶ Take 5 photographs to document your journey [check]",
+   "",
+   "◇ Exposure photographs can be hung in frames in your base.",
+   "  A gallery wall of the expedition is a Ch15 building project.",
+   "  Recommended gallery contents: End portal, Dragon fight,",
+   "  first city, outer island view, dragon egg on display.",
+   "  This is what the previous civilizations did not leave behind.",
+   "  Leave it behind."
+  ],
+  "groups": {
+   "After the Dragon": {
+    "position": [
+     1380,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "antique_atlas:atlas",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/pentagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

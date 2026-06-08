@@ -1,123 +1,123 @@
 {
-  "dependencies": [
-    "ch04_world"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/deep_waters"
-    },
-    "dive": {
-      "title": "Dive below Y=40 underwater — reach the ocean floor or a river basin",
-      "icon": {
-        "item": {
-          "id": "minecraft:water_bucket",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    },
-    "prismarine": {
-      "type": "heracles:item",
-      "item": "minecraft:prismarine_shard",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch04_world"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Deep Waters scroll at a Research Pedestal"
   },
-  "rewards": {
-    "kelp": {
-      "item": {
-        "id": "minecraft:dried_kelp",
-        "count": 16
-      },
-      "type": "heracles:item"
+  "dive": {
+   "title": "Dive below Y=40 underwater — reach the ocean floor or a river basin",
+   "icon": {
+    "item": {
+     "id": "minecraft:water_bucket",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 8
-      },
-      "type": "heracles:item"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "display": {
-    "title": {
-      "translate": "The Deep Waters"
-    },
-    "subtitle": {
-      "text": "Water feeds the farm, fills the barrel, and hides everything worth finding."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.04 · THE DEEP WATERS",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Long Pour began at a river.",
-      "  But the river flows somewhere.",
-      "  Follow it far enough and you reach the ocean.",
-      "  Follow that down and you find what's underneath.",
-      "",
-      "◈ WATER RESOURCES",
-      "  └ River: gravel, clay, flint, fresh water",
-      "    ThirstWasTaken: rivers = Clean water",
-      "  └ Ocean Shore: kelp, coral, aquatic mobs",
-      "  └ Ocean Floor: prismarine, buried treasure,",
-      "    shipwrecks with loot tables",
-      "  └ Ruins: Ocean Ruins contain important scrolls",
-      "    (The Drowned World scroll — Ch13 preview)",
-      "  └ Deep Ocean: Sea Guardians, Elder Guardian loot",
-      "",
-      "◈ AQUAMIRAE (CH08 PREVIEW)",
-      "  └ The deep ocean is not empty",
-      "  └ Aquamirae adds: Gates of the Drowned City,",
-      "    Eel and Orca variants, Thalassophobia fuel",
-      "  └ ▲ DO NOT explore deep ocean alone in Ch04",
-      "  └ Wait for Ch08 — proper prep, Water Breathing potions",
-      "",
-      "◈ SCROLL: The Deep Waters",
-      "  └ Found in: shipwreck chests, underwater ruins,",
-      "    well structures, drowned mob drops (5%)",
-      "  └ Research time: 20 min",
-      "  └ Unlocks: ocean resource map, Aquamirae warning,",
-      "    deep water structure awareness",
-      "",
-      "▸ The scroll was sealed in wax.",
-      "  Something wrote a note on the outside:",
-      "  'Do not open this until you can breathe down there.'",
-      "  Open it anyway. Read it above the surface.",
-      "",
-      "▶ Find The Deep Waters scroll [check]",
-      "▶ Dive to Y=40 underwater [check]",
-      "▶ Collect 8 Prismarine Shards",
-      "",
-      "◇ Water Breathing potion = prismarine shards + pufferfish.",
-      "  Brew several before the first deep dive.",
-      "  Ch08 (Below the Waking World) is the ocean chapter."
-    ],
-    "groups": {
-      "The Long Pour": {
-        "position": [
-          -150,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:prismarine_shard",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "prismarine": {
+   "type": "heracles:item",
+   "item": "minecraft:prismarine_shard",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "kelp": {
+   "item": {
+    "id": "minecraft:dried_kelp",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Deep Waters"
+  },
+  "subtitle": {
+   "text": "Water feeds the farm, fills the barrel, and hides everything worth finding."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.04 · THE DEEP WATERS",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Long Pour began at a river.",
+   "  But the river flows somewhere.",
+   "  Follow it far enough and you reach the ocean.",
+   "  Follow that down and you find what's underneath.",
+   "",
+   "◈ WATER RESOURCES",
+   "  └ River: gravel, clay, flint, fresh water",
+   "    ThirstWasTaken: rivers = Clean water",
+   "  └ Ocean Shore: kelp, coral, aquatic mobs",
+   "  └ Ocean Floor: prismarine, buried treasure,",
+   "    shipwrecks with loot tables",
+   "  └ Ruins: Ocean Ruins contain important scrolls",
+   "    (The Drowned World scroll — Ch13 preview)",
+   "  └ Deep Ocean: Sea Guardians, Elder Guardian loot",
+   "",
+   "◈ AQUAMIRAE (CH08 PREVIEW)",
+   "  └ The deep ocean is not empty",
+   "  └ Aquamirae adds: Gates of the Drowned City,",
+   "    Eel and Orca variants, Thalassophobia fuel",
+   "  └ ▲ DO NOT explore deep ocean alone in Ch04",
+   "  └ Wait for Ch08 — proper prep, Water Breathing potions",
+   "",
+   "◈ SCROLL: The Deep Waters",
+   "  └ Found in: shipwreck chests, underwater ruins,",
+   "    well structures, drowned mob drops (5%)",
+   "  └ Research time: 20 min",
+   "  └ Unlocks: ocean resource map, Aquamirae warning,",
+   "    deep water structure awareness",
+   "",
+   "▸ The scroll was sealed in wax.",
+   "  Something wrote a note on the outside:",
+   "  'Do not open this until you can breathe down there.'",
+   "  Open it anyway. Read it above the surface.",
+   "",
+   "▶ Find The Deep Waters scroll [check]",
+   "▶ Dive to Y=40 underwater [check]",
+   "▶ Collect 8 Prismarine Shards",
+   "",
+   "◇ Water Breathing potion = prismarine shards + pufferfish.",
+   "  Brew several before the first deep dive.",
+   "  Ch08 (Below the Waking World) is the ocean chapter."
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     460,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:prismarine_shard",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

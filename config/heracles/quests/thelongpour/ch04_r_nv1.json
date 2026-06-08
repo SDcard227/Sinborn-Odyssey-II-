@@ -1,53 +1,90 @@
 {
-  "dependencies": ["ch04_ferment"],
-  "tasks": {
-    "crimson_grape": {
-      "title": "Find Crimson grapes in the Crimson Forest",
-      "icon": {"item": {"id": "nethervinery:crimson_grape", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch04_ferment"
+ ],
+ "tasks": {
+  "crimson_grape": {
+   "title": "Find Crimson grapes in the Crimson Forest",
+   "icon": {
+    "item": {
+     "id": "nethervinery:crimson_grape",
+     "count": 1
     },
-    "nether_visit": {
-      "title": "Brew with Nether grapes in a standard Fermentation Barrel",
-      "icon": {"item": {"id": "vinery:fermentation_barrel", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "warped_grape": {
-      "item": {"id": "nethervinery:warped_grape", "count": 4},
-      "type": "heracles:item"
+  "nether_visit": {
+   "title": "Brew with Nether grapes in a standard Fermentation Barrel",
+   "icon": {
+    "item": {
+     "id": "vinery:fermentation_barrel",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 5},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Crimson Grapes"},
-    "subtitle": {"text": "The Nether grows things the Overworld cannot."},
-    "description": [
-      "Nether Vinery is unsupported but functional.",
-      "Two grape types: Crimson (Crimson Forest) and Warped (Warped Forest).",
-      "Also found in Nether structure loot.",
-      "",
-      "Important: the Nether Vinery barrel and press are decorative only.",
-      "Brew Nether grapes in a standard Vinery Fermentation Barrel.",
-      "",
-      "The Nether's food is different. Harder to reach. Worth having.",
-      "",
-      "→ Find Crimson grapes in Crimson Forest [check]",
-      "→ Brew with Nether grapes in Fermentation Barrel [check]"
-    ],
-    "groups": {"The Long Pour": {"position": [150, 450]}},
-    "icon": {"item": {"id": "nethervinery:crimson_grape", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "warped_grape": {
+   "item": {
+    "id": "nethervinery:warped_grape",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Crimson Grapes"
+  },
+  "subtitle": {
+   "text": "The Nether grows things the Overworld cannot."
+  },
+  "description": [
+   "Nether Vinery is unsupported but functional.",
+   "Two grape types: Crimson (Crimson Forest) and Warped (Warped Forest).",
+   "Also found in Nether structure loot.",
+   "",
+   "Important: the Nether Vinery barrel and press are decorative only.",
+   "Brew Nether grapes in a standard Vinery Fermentation Barrel.",
+   "",
+   "The Nether's food is different. Harder to reach. Worth having.",
+   "",
+   "→ Find Crimson grapes in Crimson Forest [check]",
+   "→ Brew with Nether grapes in Fermentation Barrel [check]"
+  ],
+  "groups": {
+   "The Long Pour": {
+    "position": [
+     1840,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "nethervinery:crimson_grape",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

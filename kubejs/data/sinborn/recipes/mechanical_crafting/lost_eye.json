@@ -1,17 +1,29 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    "TWT",
+    "TWN",
     "ONR",
-    "TPT"
+    "NPN"
   ],
   "key": {
-    "T": { "item": "alexscaves:tectonic_shard" },
-    "W": { "item": "mowziesmobs:wrought_helm" },
-    "O": { "item": "dungeons_and_combat:champion_belt" },
-    "N": { "item": "celestisynth:celestial_netherite_ingot" },
-    "R": { "item": "lifesteal:revive_crystal" },
-    "P": { "item": "endermanoverhaul:crimson_pearl" }
+    "T": {
+      "item": "alexscaves:tectonic_shard"
+    },
+    "W": {
+      "item": "mowziesmobs:wrought_helm"
+    },
+    "O": {
+      "item": "dungeons_and_combat:champion_belt"
+    },
+    "N": {
+      "item": "celestisynth:celestial_netherite_ingot"
+    },
+    "R": {
+      "item": "lifesteal:revive_crystal"
+    },
+    "P": {
+      "item": "endermanoverhaul:crimson_pearl"
+    }
   },
   "result": {
     "item": "endrem:lost_eye",

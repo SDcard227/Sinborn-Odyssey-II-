@@ -1,91 +1,91 @@
 {
-  "dependencies": [
-    "ch10_wither"
-  ],
-  "tasks": {
-    "energiser": {
-      "title": "Build a Create: New Age Energiser (rotation + FE → specialized power)",
-      "type": "heracles:check"
-    },
-    "generator_coil": {
-      "title": "Build a Create: New Age Generator Coil connected to your rotational network",
-      "icon": {
-        "item": {
-          "id": "create_new_age:generator_coil",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    },
-    "electric_motor": {
-      "title": "Build a Create: New Age Electric Motor (FE → rotation conversion)",
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch10_wither"
+ ],
+ "tasks": {
+  "energiser": {
+   "title": "Build a Create: New Age Energiser (rotation + FE → specialized power)",
+   "type": "heracles:check"
   },
-  "rewards": {
-    "steel": {
-      "item": {
-        "id": "tfmg:steel_ingot",
-        "count": 8
-      },
-      "type": "heracles:item"
+  "generator_coil": {
+   "title": "Build a Create: New Age Generator Coil connected to your rotational network",
+   "icon": {
+    "item": {
+     "id": "create_new_age:generator_coil",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 12
-      },
-      "type": "heracles:item"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "display": {
-    "subtitle": {
-      "translate": "Rotation into electricity. Electricity back to rotation. The loop is closed."
-    },
-    "description": [
-      "Create: New Age bridges Create's SU rotation system with FE electricity.",
-      "",
-      "Generator Coil: rotation → FE. 24 SU base impact.",
-      "Add up to 12 Magnets and Carbon Brushes to increase output.",
-      "Electric Motor: FE → rotation (reverses the conversion).",
-      "Energiser: uses rotation AND FE simultaneously for special applications.",
-      "",
-      "This is the grid that powers the nuclear path.",
-      "Solar Panels → heat → boilers.",
-      "Nuclear Reactor → heat → boilers.",
-      "Both alternative paths to the Steam Engine without Blaze Burners.",
-      "",
-      "→ Build a Generator Coil [check]",
-      "→ Build an Electric Motor [check]",
-      "→ Build an Energiser [check]"
-    ],
-    "groups": {
-      "The Pale Shore": {
-        "position": [
-          0,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create_new_age:generator_coil",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
-    "title": {
-      "translate": "The Electric Grid"
-    }
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "electric_motor": {
+   "title": "Build a Create: New Age Electric Motor (FE → rotation conversion)",
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "steel": {
+   "item": {
+    "id": "tfmg:steel_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "subtitle": {
+   "translate": "Rotation into electricity. Electricity back to rotation. The loop is closed."
+  },
+  "description": [
+   "Create: New Age bridges Create's SU rotation system with FE electricity.",
+   "",
+   "Generator Coil: rotation → FE. 24 SU base impact.",
+   "Add up to 12 Magnets and Carbon Brushes to increase output.",
+   "Electric Motor: FE → rotation (reverses the conversion).",
+   "Energiser: uses rotation AND FE simultaneously for special applications.",
+   "",
+   "This is the grid that powers the nuclear path.",
+   "Solar Panels → heat → boilers.",
+   "Nuclear Reactor → heat → boilers.",
+   "Both alternative paths to the Steam Engine without Blaze Burners.",
+   "",
+   "→ Build a Generator Coil [check]",
+   "→ Build an Electric Motor [check]",
+   "→ Build an Energiser [check]"
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     920,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create_new_age:generator_coil",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png",
+  "title": {
+   "translate": "The Electric Grid"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

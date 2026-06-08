@@ -1,56 +1,93 @@
 {
-  "dependencies": ["ch11_r_warped2"],
-  "tasks": {
-    "corrupted_eye": {
-      "title": "Craft the Corrupted Eye (center: hemolymph_sac + divine_soulshard + verdant_spellweave + dead_sea_scroll)",
-      "icon": {"item": {"id": "endrem:corrupted_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch11_r_warped2"
+ ],
+ "tasks": {
+  "corrupted_eye": {
+   "title": "Craft the Corrupted Eye (center: hemolymph_sac + divine_soulshard + verdant_spellweave + dead_sea_scroll)",
+   "icon": {
+    "item": {
+     "id": "endrem:corrupted_eye",
+     "count": 1
     },
-    "place_corrupted": {
-      "title": "Place the Corrupted Eye in the End Portal frame",
-      "icon": {"item": {"id": "minecraft:end_portal_frame", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "corrupted_eye_reward": {
-      "item": {"id": "endrem:corrupted_eye", "count": 1},
-      "type": "heracles:item"
+  "place_corrupted": {
+   "title": "Place the Corrupted Eye in the End Portal frame",
+   "icon": {
+    "item": {
+     "id": "minecraft:end_portal_frame",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 6},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Corrupted Eye"},
-    "subtitle": {"text": "Corruption is not destruction. Corruption is transformation without consent."},
-    "description": [
-      "The Corrupted Eye is the Biological Civilization's inheritance.",
-      "They studied life. Life transformed them.",
-      "They became what they studied without choosing to.",
-      "",
-      "The recipe spans three different mod families:",
-      "Alex's Mobs (hemolymph_sac), Iron's Spellbooks (divine_soulshard),",
-      "T.O Magic 'n Extras (verdant_spellweave), Aquamirae (dead_sea_scroll).",
-      "",
-      "Every ingredient is from a creature or system that represents",
-      "a different kind of biological transformation.",
-      "The eye that results is what that transformation feels like from outside.",
-      "",
-      "→ Craft the Corrupted Eye [check]",
-      "→ Place it in the End Portal frame [check]"
-    ],
-    "groups": {"Where the Skin Tears": {"position": [150, 0]}},
-    "icon": {"item": {"id": "endrem:corrupted_eye", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "corrupted_eye_reward": {
+   "item": {
+    "id": "endrem:corrupted_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Corrupted Eye"
+  },
+  "subtitle": {
+   "text": "Corruption is not destruction. Corruption is transformation without consent."
+  },
+  "description": [
+   "The Corrupted Eye is the Biological Civilization's inheritance.",
+   "They studied life. Life transformed them.",
+   "They became what they studied without choosing to.",
+   "",
+   "The recipe spans three different mod families:",
+   "Alex's Mobs (hemolymph_sac), Iron's Spellbooks (divine_soulshard),",
+   "T.O Magic 'n Extras (verdant_spellweave), Aquamirae (dead_sea_scroll).",
+   "",
+   "Every ingredient is from a creature or system that represents",
+   "a different kind of biological transformation.",
+   "The eye that results is what that transformation feels like from outside.",
+   "",
+   "→ Craft the Corrupted Eye [check]",
+   "→ Place it in the End Portal frame [check]"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     1380,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "endrem:corrupted_eye",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

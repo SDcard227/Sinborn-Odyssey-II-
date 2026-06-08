@@ -1,86 +1,86 @@
 {
-  "dependencies": [
-    "ch01_world"
-  ],
-  "tasks": {
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/survivor_codex"
-    },
-    "move_far": {
-      "title": "Travel 500+ blocks from your starting location — leave the spawn area",
-      "icon": {
-        "item": {
-          "id": "minecraft:compass",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
-    }
+ "dependencies": [
+  "ch01_world"
+ ],
+ "tasks": {
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Survivor Codex scroll at a Research Pedestal"
   },
-  "rewards": {
-    "food": {
-      "item": {
-        "id": "minecraft:bread",
-        "count": 16
-      },
-      "type": "heracles:item"
+  "move_far": {
+   "title": "Travel 500+ blocks from your starting location — leave the spawn area",
+   "icon": {
+    "item": {
+     "id": "minecraft:compass",
+     "count": 1
     },
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "On Nomadic Living"
-    },
-    "subtitle": {
-      "text": "The world is large. Mark what matters. Move when you must."
-    },
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.01 · NOMADIC LIVING",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The atlas records where you have been.",
-      "  Mark everything you find.",
-      "  The world is large and it forgets nothing.",
-      "",
-      "◈ Covered by: Survivor's Codex",
-      "  └ Granted in your starting pack",
-      "  └ Unlocks: Antique Atlas",
-      "",
-      "▶ Check: Survivor's Codex received [auto]",
-      "▶ Travel a significant distance"
-    ],
-    "groups": {
-      "Born from Ash and Hunger": {
-        "position": [
-          -300,
-          0
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "minecraft:compass",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "food": {
+   "item": {
+    "id": "minecraft:bread",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "On Nomadic Living"
+  },
+  "subtitle": {
+   "text": "The world is large. Mark what matters. Move when you must."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.01 · NOMADIC LIVING",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The atlas records where you have been.",
+   "  Mark everything you find.",
+   "  The world is large and it forgets nothing.",
+   "",
+   "◈ Covered by: Survivor's Codex",
+   "  └ Granted in your starting pack",
+   "  └ Unlocks: Antique Atlas",
+   "",
+   "▶ Check: Survivor's Codex received [auto]",
+   "▶ Travel a significant distance"
+  ],
+  "groups": {
+   "Born from Ash and Hunger": {
+    "position": [
+     460,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:compass",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/diamonds.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

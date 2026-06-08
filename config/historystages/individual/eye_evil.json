@@ -1,0 +1,19 @@
+{
+  "display_name": "The Scroll of the Evil Eye",
+  "research_time": 3600,
+  "items": [
+    "endrem:evil_eye"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "sinborn:mechanical_crafting/evil_eye"
+  ],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

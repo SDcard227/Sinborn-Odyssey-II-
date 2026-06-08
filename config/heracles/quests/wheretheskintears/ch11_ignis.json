@@ -1,83 +1,83 @@
 {
-  "dependencies": [
-    "ch11_revenant"
-  ],
-  "tasks": {
-    "ignis": {
-      "type": "heracles:kill_entity",
-      "entity": "cataclysm:ignis",
-      "amount": 1
-    },
-    "ignitium": {
-      "type": "heracles:item",
-      "item": "cataclysm:ignitium_ingot",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+ "dependencies": [
+  "ch11_revenant"
+ ],
+ "tasks": {
+  "ignis": {
+   "type": "heracles:kill_entity",
+   "entity": "cataclysm:ignis",
+   "amount": 1
   },
-  "rewards": {
-    "ignitium_reward": {
-      "item": {
-        "id": "cataclysm:ignitium_ingot",
-        "count": 4
-      },
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {
-        "id": "numismatics:crown",
-        "count": 6
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "Ignis"
-    },
-    "subtitle": {
-      "text": "The hottest thing in the Cataclysm chain. That is not a compliment."
-    },
-    "description": [
-      "Ignis is one of the dual bosses after the Revenant stage.",
-      "Alongside the Annihilator, they form the second-to-last Cataclysm tier.",
-      "",
-      "Cursium Ingots (from Maledictus) are required to access the Ignis fight.",
-      "You collected them in Ch09. Use them now.",
-      "",
-      "Ignis drops Ignitium — a critical material for:",
-      "- The Magical Eye recipe (cataclysm:lacrima + cursium + ignitium required)",
-      "- Cataclysm late-game equipment",
-      "",
-      "Ignitium also appears in the portal. Every boss you kill",
-      "moves an eye component closer to finished.",
-      "",
-      "→ Defeat Ignis [check]",
-      "→ Collect 4 Ignitium Ingots"
-    ],
-    "groups": {
-      "Where the Skin Tears": {
-        "position": [
-          0,
-          300
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "cataclysm:ignitium_ingot",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "ignitium": {
+   "type": "heracles:item",
+   "item": "cataclysm:ignitium_ingot",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "ignitium_reward": {
+   "item": {
+    "id": "cataclysm:ignitium_ingot",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 6
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Ignis"
+  },
+  "subtitle": {
+   "text": "The hottest thing in the Cataclysm chain. That is not a compliment."
+  },
+  "description": [
+   "Ignis is one of the dual bosses after the Revenant stage.",
+   "Alongside the Annihilator, they form the second-to-last Cataclysm tier.",
+   "",
+   "Cursium Ingots (from Maledictus) are required to access the Ignis fight.",
+   "You collected them in Ch09. Use them now.",
+   "",
+   "Ignis drops Ignitium — a critical material for:",
+   "- The Magical Eye recipe (cataclysm:lacrima + cursium + ignitium required)",
+   "- Cataclysm late-game equipment",
+   "",
+   "Ignitium also appears in the portal. Every boss you kill",
+   "moves an eye component closer to finished.",
+   "",
+   "→ Defeat Ignis [check]",
+   "→ Collect 4 Ignitium Ingots"
+  ],
+  "groups": {
+   "Where the Skin Tears": {
+    "position": [
+     920,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "cataclysm:ignitium_ingot",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

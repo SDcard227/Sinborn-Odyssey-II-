@@ -1,60 +1,97 @@
 {
-  "dependencies": ["ch12_gate"],
-  "tasks": {
-    "eyes_ready": {
-      "title": "Confirm all 12 eyes are crafted and ready for the End Portal frame",
-      "icon": {"item": {"id": "endrem:old_eye", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch12_gate"
+ ],
+ "tasks": {
+  "eyes_ready": {
+   "title": "Confirm all 12 eyes are crafted and ready for the End Portal frame",
+   "icon": {
+    "item": {
+     "id": "endrem:old_eye",
+     "count": 1
     },
-    "ender_chest": {
-      "title": "Craft an Ender Chest for portable void storage",
-      "icon": {"item": {"id": "minecraft:ender_chest", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "obsidian": {
-      "item": {"id": "minecraft:obsidian", "count": 32},
-      "type": "heracles:item"
+  "ender_chest": {
+   "title": "Craft an Ender Chest for portable void storage",
+   "icon": {
+    "item": {
+     "id": "minecraft:ender_chest",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:crown", "count": 8},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Shattered Law"},
-    "subtitle": {"text": "The portal was sealed by the law of the last civilization. You have broken every piece of that law."},
-    "description": [
-      "Every chapter was a fragment of the old world's design.",
-      "The Wither Storm. The Scarlet King. The nine civilizations' eyes.",
-      "All of it was a lock.",
-      "",
-      "You have collected twelve eyes from twelve civilizations and twelve traditions.",
-      "Each eye is an inheritance — memory, wound, cold, secrecy, faith, corruption.",
-      "You carry the entire record of what came before.",
-      "",
-      "The End Portal frame has been waiting since before you arrived.",
-      "The stronghold was built by the last civilization",
-      "for the specific purpose of keeping the portal closed",
-      "until the inheritor arrived with every eye.",
-      "",
-      "You are the inheritor.",
-      "The law that kept it shut is shattered.",
-      "",
-      "→ Confirm all 12 eyes are ready [check]",
-      "→ Craft an Ender Chest (portable vault for what you carry) [check]"
-    ],
-    "groups": {"The Shattered Law": {"position": [0, 0]}},
-    "icon": {"item": {"id": "minecraft:ender_chest", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "NEVER",
-    "unlockNotification": true
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "obsidian": {
+   "item": {
+    "id": "minecraft:obsidian",
+    "count": 32
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:crown",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Shattered Law"
+  },
+  "subtitle": {
+   "text": "The portal was sealed by the law of the last civilization. You have broken every piece of that law."
+  },
+  "description": [
+   "Every chapter was a fragment of the old world's design.",
+   "The Wither Storm. The Scarlet King. The nine civilizations' eyes.",
+   "All of it was a lock.",
+   "",
+   "You have collected twelve eyes from twelve civilizations and twelve traditions.",
+   "Each eye is an inheritance — memory, wound, cold, secrecy, faith, corruption.",
+   "You carry the entire record of what came before.",
+   "",
+   "The End Portal frame has been waiting since before you arrived.",
+   "The stronghold was built by the last civilization",
+   "for the specific purpose of keeping the portal closed",
+   "until the inheritor arrived with every eye.",
+   "",
+   "You are the inheritor.",
+   "The law that kept it shut is shattered.",
+   "",
+   "→ Confirm all 12 eyes are ready [check]",
+   "→ Craft an Ender Chest (portable vault for what you carry) [check]"
+  ],
+  "groups": {
+   "The Shattered Law": {
+    "position": [
+     0,
+     1200
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:ender_chest",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "NEVER",
+  "unlockNotification": true
+ }
 }

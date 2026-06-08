@@ -1,66 +1,97 @@
 {
-  "dependencies": ["ch07_world"],
-  "tasks": {
-    "distillation_tower": {
-      "title": "Build and operate a Distillation Tower",
-      "icon": {"item": {"id": "tfmg:steel_casing", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch07_world"
+ ],
+ "tasks": {
+  "distillation_tower": {
+   "title": "Build and operate a Distillation Tower",
+   "icon": {
+    "item": {
+     "id": "tfmg:steel_casing",
+     "count": 1
     },
-    "diesel": {
-      "type": "heracles:item",
-      "item": "tfmg:diesel_bucket",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "bitumen": {
-      "type": "heracles:item",
-      "item": "tfmg:bitumen",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "crude_oil": {
-      "item": {"id": "tfmg:crude_oil_bucket", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
+  "diesel": {
+   "type": "heracles:item",
+   "item": "tfmg:diesel_bucket",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The Distillation Tower"},
-    "subtitle": {"text": "Crude in. Everything else out."},
-    "description": [
-      "The Distillation Tower separates crude oil into its parts.",
-      "Diesel. Gasoline. Kerosene. Naphtha. LPG.",
-      "And at the very bottom of the tower: Bitumen.",
-      "",
-      "Bitumen is the waste product.",
-      "The stuff that won't burn clean.",
-      "The solid residue when everything useful has been extracted.",
-      "",
-      "It is also what unlocks the next chapter.",
-      "The age is named for the leftover.",
-      "",
-      "Crude → Distillation Tower → Diesel (top), Bitumen (bottom).",
-      "Run fluid pipes from the pumpjack into the tower input.",
-      "",
-      "→ Build and operate a Distillation Tower [check]",
-      "→ Collect 4 buckets of Diesel",
-      "→ Collect 4 Bitumen (solid output from tower bottom)"
-    ],
-    "groups": {"Blood and Oil": {"position": [0, 150]}},
-    "icon": {"item": {"id": "tfmg:bitumen", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "bitumen": {
+   "type": "heracles:item",
+   "item": "tfmg:bitumen",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "crude_oil": {
+   "item": {
+    "id": "tfmg:crude_oil_bucket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Distillation Tower"
+  },
+  "subtitle": {
+   "text": "Crude in. Everything else out."
+  },
+  "description": [
+   "The Distillation Tower separates crude oil into its parts.",
+   "Diesel. Gasoline. Kerosene. Naphtha. LPG.",
+   "And at the very bottom of the tower: Bitumen.",
+   "",
+   "Bitumen is the waste product.",
+   "The stuff that won't burn clean.",
+   "The solid residue when everything useful has been extracted.",
+   "",
+   "It is also what unlocks the next chapter.",
+   "The age is named for the leftover.",
+   "",
+   "Crude → Distillation Tower → Diesel (top), Bitumen (bottom).",
+   "Run fluid pipes from the pumpjack into the tower input.",
+   "",
+   "→ Build and operate a Distillation Tower [check]",
+   "→ Collect 4 buckets of Diesel",
+   "→ Collect 4 Bitumen (solid output from tower bottom)"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     760,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "tfmg:bitumen",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

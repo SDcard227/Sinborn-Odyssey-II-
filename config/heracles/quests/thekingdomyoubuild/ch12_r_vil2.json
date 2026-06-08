@@ -1,55 +1,92 @@
 {
-  "dependencies": ["ch12_r_vil1"],
-  "tasks": {
-    "siege": {
-      "title": "Lead a Villager Recruits siege — assault a pillager outpost or enemy structure",
-      "icon": {"item": {"id": "minecraft:crossbow", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch12_r_vil1"
+ ],
+ "tasks": {
+  "siege": {
+   "title": "Lead a Villager Recruits siege — assault a pillager outpost or enemy structure",
+   "icon": {
+    "item": {
+     "id": "minecraft:crossbow",
+     "count": 1
     },
-    "outpost": {
-      "title": "Clear a Pillager Outpost using your Villager Recruits squad",
-      "icon": {"item": {"id": "minecraft:banner", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "emerald": {
-      "item": {"id": "minecraft:emerald", "count": 16},
-      "type": "heracles:item"
+  "outpost": {
+   "title": "Clear a Pillager Outpost using your Villager Recruits squad",
+   "icon": {
+    "item": {
+     "id": "minecraft:banner",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "Siege Warfare"},
-    "subtitle": {"text": "The army is most useful when it does what you alone cannot."},
-    "description": [
-      "A Villager Recruits squad following orders can clear structures",
-      "that would be difficult or impossible alone.",
-      "Pillager outposts are the logical first target.",
-      "",
-      "The siege system lets you set formation, route, and target.",
-      "Assign units. Mark the objective. Advance.",
-      "",
-      "The Wither Storm at X:0 Z:0 has been affecting Overworld creatures.",
-      "Pillager activity is elevated near its range.",
-      "Clearing outposts in the approach zone is practical preparation.",
-      "",
-      "→ Lead a siege on a pillager outpost [check]",
-      "→ Clear the outpost with Villager Recruits [check]"
-    ],
-    "groups": {"The Kingdom You Build": {"position": [-300, 0]}},
-    "icon": {"item": {"id": "minecraft:crossbow", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "emerald": {
+   "item": {
+    "id": "minecraft:emerald",
+    "count": 16
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Siege Warfare"
+  },
+  "subtitle": {
+   "text": "The army is most useful when it does what you alone cannot."
+  },
+  "description": [
+   "A Villager Recruits squad following orders can clear structures",
+   "that would be difficult or impossible alone.",
+   "Pillager outposts are the logical first target.",
+   "",
+   "The siege system lets you set formation, route, and target.",
+   "Assign units. Mark the objective. Advance.",
+   "",
+   "The Wither Storm at X:0 Z:0 has been affecting Overworld creatures.",
+   "Pillager activity is elevated near its range.",
+   "Clearing outposts in the approach zone is practical preparation.",
+   "",
+   "→ Lead a siege on a pillager outpost [check]",
+   "→ Clear the outpost with Villager Recruits [check]"
+  ],
+  "groups": {
+   "The Kingdom You Build": {
+    "position": [
+     920,
+     1050
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:crossbow",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

@@ -1,59 +1,96 @@
 {
-  "dependencies": ["ch07_engine"],
-  "tasks": {
-    "train_track": {
-      "title": "Build a Steam 'n' Rails train line connecting two locations at least 200 blocks apart",
-      "icon": {"item": {"id": "railways:track", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch07_engine"
+ ],
+ "tasks": {
+  "train_track": {
+   "title": "Build a Steam 'n' Rails train line connecting two locations at least 200 blocks apart",
+   "icon": {
+    "item": {
+     "id": "railways:track",
+     "count": 1
     },
-    "conductor": {
-      "title": "Create a Conductor mob to automate your train (Steam 'n' Rails Conductor's Cap)",
-      "icon": {"item": {"id": "railways:conductor_cap", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "track": {
-      "item": {"id": "railways:track", "count": 64},
-      "type": "heracles:item"
+  "conductor": {
+   "title": "Create a Conductor mob to automate your train (Steam 'n' Rails Conductor's Cap)",
+   "icon": {
+    "item": {
+     "id": "railways:conductor_cap",
+     "count": 1
     },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 10},
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {"translate": "The Iron Road"},
-    "subtitle": {"text": "The train does not care about the distance. That is why you built it."},
-    "description": [
-      "Steam 'n' Rails extends Create trains into a full rail network.",
-      "Wide gauge for cargo. Narrow gauge for tight tunnels.",
-      "Monorail for elevated lines.",
-      "",
-      "A Conductor mob manages train automation.",
-      "Craft the Conductor's Cap and place it on an Andesite Alloy Casing.",
-      "The Conductor holds the schedule.",
-      "",
-      "Train networks change the logistics of the base.",
-      "Oil runs through pipes. Goods run on rail.",
-      "The factory connects to the mine connects to the farm.",
-      "",
-      "Controls: R = toggle sails, I = inventory.",
-      "Coupling Block for automated assembly.",
-      "",
-      "→ Build a train line 200+ blocks long [check]",
-      "→ Create a Conductor for automated train routing [check]"
-    ],
-    "groups": {"Blood and Oil": {"position": [150, 450]}},
-    "icon": {"item": {"id": "railways:track", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   }
+ },
+ "rewards": {
+  "track": {
+   "item": {
+    "id": "railways:track",
+    "count": 64
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Iron Road"
+  },
+  "subtitle": {
+   "text": "The train does not care about the distance. That is why you built it."
+  },
+  "description": [
+   "Steam 'n' Rails extends Create trains into a full rail network.",
+   "Wide gauge for cargo. Narrow gauge for tight tunnels.",
+   "Monorail for elevated lines.",
+   "",
+   "A Conductor mob manages train automation.",
+   "Craft the Conductor's Cap and place it on an Andesite Alloy Casing.",
+   "The Conductor holds the schedule.",
+   "",
+   "Train networks change the logistics of the base.",
+   "Oil runs through pipes. Goods run on rail.",
+   "The factory connects to the mine connects to the farm.",
+   "",
+   "Controls: R = toggle sails, I = inventory.",
+   "Coupling Block for automated assembly.",
+   "",
+   "→ Build a train line 200+ blocks long [check]",
+   "→ Create a Conductor for automated train routing [check]"
+  ],
+  "groups": {
+   "Blood and Oil": {
+    "position": [
+     2140,
+     150
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "railways:track",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

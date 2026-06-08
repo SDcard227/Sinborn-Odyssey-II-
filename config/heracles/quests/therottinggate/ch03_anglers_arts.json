@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch03_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study The Angler's Arts at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:fishing_rod",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock anglers_arts",
+   "title": "Discipline learned: The Angler's Arts",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "The Angler's Arts"
+  },
+  "subtitle": {
+   "text": "Patience, on a line."
+  },
+  "description": [
+   "The deep waters held a god once. They still hold dinner.",
+   "Rod, hook, net, and the reading of water — the angler eats where others only drown.",
+   "",
+   "→ Recover and study the Angler's Arts at a Research Pedestal."
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     460,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:fishing_rod",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

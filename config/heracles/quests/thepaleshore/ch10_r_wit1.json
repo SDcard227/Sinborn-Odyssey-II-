@@ -1,65 +1,96 @@
 {
-  "dependencies": ["ch10_world"],
-  "tasks": {
-    "skulls_check": {
-      "title": "Confirm you have 3 Wither Skeleton Skulls in inventory",
-      "icon": {"item": {"id": "minecraft:wither_skeleton_skull", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch10_world"
+ ],
+ "tasks": {
+  "skulls_check": {
+   "title": "Confirm you have 3 Wither Skeleton Skulls in inventory",
+   "icon": {
+    "item": {
+     "id": "minecraft:wither_skeleton_skull",
+     "count": 1
     },
-    "milk": {
-      "type": "heracles:item",
-      "item": "minecraft:milk_bucket",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "golden_apple": {
-      "type": "heracles:item",
-      "item": "minecraft:golden_apple",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "golden_apple_bonus": {
-      "item": {"id": "minecraft:golden_apple", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:sprocket", "count": 12},
-      "type": "heracles:item"
-    }
+  "milk": {
+   "type": "heracles:item",
+   "item": "minecraft:milk_bucket",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "Before the Skulls"},
-    "subtitle": {"text": "You built toward this in Ch06. Now you use it."},
-    "description": [
-      "The Wither is summoned by placing 3 Wither Skeleton Skulls",
-      "on 4 Soul Sand/Soil in a T-shape.",
-      "Once summoned, the Wither immediately damages everything nearby.",
-      "Have your arena clear before you place the last skull.",
-      "",
-      "Milk removes Wither status effect.",
-      "Carry 4 buckets. The fight lasts long enough to need them.",
-      "Golden Apples provide absorption hearts and regeneration.",
-      "",
-      "The Wither Scroll gates the fight.",
-      "Without it, the Wither cannot be damaged.",
-      "Confirm you've researched the relevant scroll before summoning.",
-      "",
-      "→ Confirm 3 Wither Skeleton Skulls ready [check]",
-      "→ Collect 4 Milk Buckets",
-      "→ Collect 4 Golden Apples"
-    ],
-    "groups": {"The Pale Shore": {"position": [-150, 0]}},
-    "icon": {"item": {"id": "minecraft:wither_skeleton_skull", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "golden_apple": {
+   "type": "heracles:item",
+   "item": "minecraft:golden_apple",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "golden_apple_bonus": {
+   "item": {
+    "id": "minecraft:golden_apple",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "Before the Skulls"
+  },
+  "subtitle": {
+   "text": "You built toward this in Ch06. Now you use it."
+  },
+  "description": [
+   "The Wither is summoned by placing 3 Wither Skeleton Skulls",
+   "on 4 Soul Sand/Soil in a T-shape.",
+   "Once summoned, the Wither immediately damages everything nearby.",
+   "Have your arena clear before you place the last skull.",
+   "",
+   "Milk removes Wither status effect.",
+   "Carry 4 buckets. The fight lasts long enough to need them.",
+   "Golden Apples provide absorption hearts and regeneration.",
+   "",
+   "The Wither Scroll gates the fight.",
+   "Without it, the Wither cannot be damaged.",
+   "Confirm you've researched the relevant scroll before summoning.",
+   "",
+   "→ Confirm 3 Wither Skeleton Skulls ready [check]",
+   "→ Collect 4 Milk Buckets",
+   "→ Collect 4 Golden Apples"
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     460,
+     450
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:wither_skeleton_skull",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/hexagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

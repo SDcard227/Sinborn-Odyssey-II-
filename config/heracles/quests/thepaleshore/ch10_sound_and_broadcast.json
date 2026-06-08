@@ -1,0 +1,76 @@
+{
+ "dependencies": [
+  "ch10_world"
+ ],
+ "tasks": {
+  "study": {
+   "type": "heracles:check",
+   "title": "Recover and study Sound & Broadcast at a Research Pedestal",
+   "icon": {
+    "item": {
+     "id": "minecraft:note_block",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  },
+  "grant": {
+   "type": "heracles:command",
+   "command": "history unlock sound_and_broadcast",
+   "title": "Discipline learned: Sound & Broadcast",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
+    },
+    "type": "heracles:item"
+   }
+  }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 4
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Sound & Broadcast"
+  },
+  "subtitle": {
+   "text": "A voice across the dead air."
+  },
+  "description": [
+   "The Storm-Builders strung wire and threw their voices for miles.",
+   "Radio, record, broadcast — the lonely apparatus of a people who needed to know they were not the last.",
+   "",
+   "→ Recover and study Sound & Broadcast at a Research Pedestal."
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     460,
+     600
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:note_block",
+    "count": 1
+   },
+   "type": "heracles:item"
+  }
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "HIDDEN",
+  "unlockNotification": false
+ }
+}

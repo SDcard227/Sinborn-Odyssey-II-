@@ -1,84 +1,80 @@
 {
-  "dependencies": [
-    "ch02_feast"
-  ],
-  "tasks": {
-    "pie": {
-      "type": "heracles:item",
-      "item": "farmersdelight:apple_pie",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    },
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/hearth_studied"
-    }
+ "dependencies": [
+  "ch02_feast"
+ ],
+ "tasks": {
+  "pie": {
+   "type": "heracles:item",
+   "item": "farmersdelight:apple_pie",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 10
-      },
-      "type": "heracles:item"
-    },
-    "iron": {
-      "item": {
-        "id": "minecraft:iron_ingot",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "age": {
-      "type": "heracles:command",
-      "command": "history unlock hearth_age"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Hearth Age"
-    },
-    "subtitle": {
-      "text": "The road is long. You have only begun."
-    },
-    "description": [
-      "Every civilization that lasted built a kitchen.",
-      "Not an armory. Not a throne room.",
-      "A place where things were transformed.",
-      "",
-      "You made an apple pie.",
-      "It sounds small. It is not small.",
-      "It required a farm, a harvest, a recipe, a fire.",
-      "It required time.",
-      "",
-      "The road ahead is longer. Walk it.",
-      "",
-      "→ Bake an apple pie",
-      "→ Research the Hearth scroll [check]"
-    ],
-    "groups": {
-      "The Kindled Road": {
-        "position": [
-          0,
-          600
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "farmersdelight:apple_pie",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Hearth scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  },
+  "iron": {
+   "item": {
+    "id": "minecraft:iron_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Hearth Age"
+  },
+  "subtitle": {
+   "text": "The road is long. You have only begun."
+  },
+  "description": [
+   "Every civilization that lasted built a kitchen.",
+   "Not an armory. Not a throne room.",
+   "A place where things were transformed.",
+   "",
+   "You made an apple pie.",
+   "It sounds small. It is not small.",
+   "It required a farm, a harvest, a recipe, a fire.",
+   "It required time.",
+   "",
+   "The road ahead is longer. Walk it.",
+   "",
+   "→ Bake an apple pie",
+   "→ Research the Hearth scroll [check]"
+  ],
+  "groups": {
+   "The Kindled Road": {
+    "position": [
+     2140,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "farmersdelight:apple_pie",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/rounded_squares.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

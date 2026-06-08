@@ -1,95 +1,132 @@
 {
-  "dependencies": ["ch10_r_wit3"],
-  "tasks": {
-    "beacon_effects": {
-      "title": "Activate a full Beacon pyramid with a secondary effect — the Nether Star's endgame use",
-      "icon": {"item": {"id": "minecraft:beacon", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch10_r_wit3"
+ ],
+ "tasks": {
+  "beacon_effects": {
+   "title": "Activate a full Beacon pyramid with a secondary effect — the Nether Star's endgame use",
+   "icon": {
+    "item": {
+     "id": "minecraft:beacon",
+     "count": 1
     },
-    "nether_star_use": {
-      "type": "heracles:item",
-      "item": "minecraft:nether_star",
-      "amount": 1,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "iron_block": {"item": {"id": "minecraft:iron_block", "count": 9}, "type": "heracles:item"},
-    "coin": {"item": {"id": "numismatics:cog", "count": 8}, "type": "heracles:item"}
-  },
-  "display": {
-    "title": {"translate": "The Nether Star"},
-    "subtitle": {"text": "One guaranteed per Wither. The Beacon is the intended use. The Ch10 crafting recipes are the other use."},
-    "description": [
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "  CH.10 · THE NETHER STAR",
-      "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
-      "",
-      "▸ The Wither drops one Nether Star.",
-      "  The Beacon requires one Nether Star.",
-      "  This is the primary intended use.",
-      "  The secondary uses are in Ch12+ crafting chains.",
-      "  Farm multiple Withers before Ch12.",
-      "  The spawn rate is intentional.",
-      "",
-      "◈ BEACON PYRAMID TIERS",
-      "  └ Tier 1: 9 blocks (3×3) — one primary effect",
-      "    Speed I / Haste I / Resistance I / Jump Boost I",
-      "  └ Tier 2: 34 blocks (5×5 + 9) — secondary effect",
-      "  └ Tier 3: 83 blocks (7×7 + 5×5 + 9) — Strength II",
-      "  └ Tier 4: 164 blocks — max, all secondaries unlocked",
-      "  └ Materials: iron, gold, diamond, or netherite blocks",
-      "  └ Radius: 20-50 blocks depending on tier",
-      "",
-      "◈ BEACON PRIORITY EFFECTS",
-      "  └ ✦ Haste II (Tier 4): breaks stone instantly",
-      "    with Efficiency V diamond — essential for mining",
-      "  └ ✦ Resistance I (Tier 1): significant damage reduction",
-      "    active while building in combat zones",
-      "  └ ✦ Regeneration I (secondary): passive healing",
-      "    pairs with Lifesteal for PvP builds",
-      "  └ ✦ Strength II (Tier 4): doubles melee damage",
-      "    boss fight prep — activate before entering",
-      "",
-      "◈ PYRAMID MATERIAL NOTE",
-      "  └ 164 blocks for Tier 4 = 9×2 + 25×2 + 49×2 + ...",
-      "    Use iron blocks (cheapest) unless aesthetics matter",
-      "  └ Mixed blocks work: each layer can be a different",
-      "    valid material",
-      "  └ Build pyramid UNDER ground level to protect it",
-      "    (surface beacons can be destroyed by explosions)",
-      "",
-      "◈ NETHER STAR OTHER USES",
-      "  └ Some Ch12+ recipes require Nether Star",
-      "    (check JEI after Last Watch scroll research)",
-      "  └ Farm 3+ Withers before Ch12 begins",
-      "  └ Wither Reincarnated: same guaranteed drop,",
-      "    harder fight — plan accordingly",
-      "",
-      "▸ The Nether Star does not come from the Nether.",
-      "  It comes from what the Wither does to things.",
-      "  Condensed destruction, crystallized.",
-      "  The civilizations thought it was divine.",
-      "  They were not entirely wrong.",
-      "",
-      "▶ Activate a full Beacon with secondary effect [check]",
-      "▶ Hold a Nether Star",
-      "",
-      "◇ Haste II + Efficiency V + Aqua Affinity in a",
-      "  Beacon radius = no mining friction anywhere.",
-      "  This is the endgame base upgrade that changes",
-      "  how resource gathering feels."
-    ],
-    "groups": {"The Pale Shore": {"position": [-600, 150]}},
-    "icon": {"item": {"id": "minecraft:nether_star", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "nether_star_use": {
+   "type": "heracles:item",
+   "item": "minecraft:nether_star",
+   "amount": 1,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "iron_block": {
+   "item": {
+    "id": "minecraft:iron_block",
+    "count": 9
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Nether Star"
+  },
+  "subtitle": {
+   "text": "One guaranteed per Wither. The Beacon is the intended use. The Ch10 crafting recipes are the other use."
+  },
+  "description": [
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "  CH.10 · THE NETHER STAR",
+   "◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆",
+   "",
+   "▸ The Wither drops one Nether Star.",
+   "  The Beacon requires one Nether Star.",
+   "  This is the primary intended use.",
+   "  The secondary uses are in Ch12+ crafting chains.",
+   "  Farm multiple Withers before Ch12.",
+   "  The spawn rate is intentional.",
+   "",
+   "◈ BEACON PYRAMID TIERS",
+   "  └ Tier 1: 9 blocks (3×3) — one primary effect",
+   "    Speed I / Haste I / Resistance I / Jump Boost I",
+   "  └ Tier 2: 34 blocks (5×5 + 9) — secondary effect",
+   "  └ Tier 3: 83 blocks (7×7 + 5×5 + 9) — Strength II",
+   "  └ Tier 4: 164 blocks — max, all secondaries unlocked",
+   "  └ Materials: iron, gold, diamond, or netherite blocks",
+   "  └ Radius: 20-50 blocks depending on tier",
+   "",
+   "◈ BEACON PRIORITY EFFECTS",
+   "  └ ✦ Haste II (Tier 4): breaks stone instantly",
+   "    with Efficiency V diamond — essential for mining",
+   "  └ ✦ Resistance I (Tier 1): significant damage reduction",
+   "    active while building in combat zones",
+   "  └ ✦ Regeneration I (secondary): passive healing",
+   "    pairs with Lifesteal for PvP builds",
+   "  └ ✦ Strength II (Tier 4): doubles melee damage",
+   "    boss fight prep — activate before entering",
+   "",
+   "◈ PYRAMID MATERIAL NOTE",
+   "  └ 164 blocks for Tier 4 = 9×2 + 25×2 + 49×2 + ...",
+   "    Use iron blocks (cheapest) unless aesthetics matter",
+   "  └ Mixed blocks work: each layer can be a different",
+   "    valid material",
+   "  └ Build pyramid UNDER ground level to protect it",
+   "    (surface beacons can be destroyed by explosions)",
+   "",
+   "◈ NETHER STAR OTHER USES",
+   "  └ Some Ch12+ recipes require Nether Star",
+   "    (check JEI after Last Watch scroll research)",
+   "  └ Farm 3+ Withers before Ch12 begins",
+   "  └ Wither Reincarnated: same guaranteed drop,",
+   "    harder fight — plan accordingly",
+   "",
+   "▸ The Nether Star does not come from the Nether.",
+   "  It comes from what the Wither does to things.",
+   "  Condensed destruction, crystallized.",
+   "  The civilizations thought it was divine.",
+   "  They were not entirely wrong.",
+   "",
+   "▶ Activate a full Beacon with secondary effect [check]",
+   "▶ Hold a Nether Star",
+   "",
+   "◇ Haste II + Efficiency V + Aqua Affinity in a",
+   "  Beacon radius = no mining friction anywhere.",
+   "  This is the endgame base upgrade that changes",
+   "  how resource gathering feels."
+  ],
+  "groups": {
+   "The Pale Shore": {
+    "position": [
+     1840,
+     900
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:nether_star",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

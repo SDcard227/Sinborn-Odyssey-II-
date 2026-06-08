@@ -1,68 +1,99 @@
 {
-  "dependencies": ["ch08_deep"],
-  "tasks": {
-    "warden_encounter": {
-      "title": "Encounter the Warden — observe its behavior without dying",
-      "icon": {"item": {"id": "minecraft:sculk_shrieker", "count": 1}, "type": "heracles:item"},
-      "type": "heracles:check"
+ "dependencies": [
+  "ch08_deep"
+ ],
+ "tasks": {
+  "warden_encounter": {
+   "title": "Encounter the Warden — observe its behavior without dying",
+   "icon": {
+    "item": {
+     "id": "minecraft:sculk_shrieker",
+     "count": 1
     },
-    "sculk_shrieker": {
-      "type": "heracles:item",
-      "item": "minecraft:sculk_shrieker",
-      "amount": 4,
-      "collection": "AUTOMATIC"
-    },
-    "sculk_sensor": {
-      "type": "heracles:item",
-      "item": "minecraft:sculk_sensor",
-      "amount": 8,
-      "collection": "AUTOMATIC"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "sculk_catalyst": {
-      "item": {"id": "minecraft:sculk_catalyst", "count": 4},
-      "type": "heracles:item"
-    },
-    "coin": {
-      "item": {"id": "numismatics:cog", "count": 12},
-      "type": "heracles:item"
-    }
+  "sculk_shrieker": {
+   "type": "heracles:item",
+   "item": "minecraft:sculk_shrieker",
+   "amount": 4,
+   "collection": "AUTOMATIC"
   },
-  "display": {
-    "title": {"translate": "The Warden"},
-    "subtitle": {"text": "You cannot win this fight. That is not the test."},
-    "description": [
-      "The Warden spawns when the Sculk Shrieker activates four times.",
-      "It is blind. It hunts by sound and vibration.",
-      "It cannot be outrun, but it can be lost.",
-      "",
-      "Swift Sneak from the Ancient City removes footstep vibrations while crouching.",
-      "Wool blocks vibrations between the player and the Warden.",
-      "Snowballs and arrows distract it — throw them in the opposite direction.",
-      "",
-      "The test is not killing the Warden.",
-      "The test is navigating the city it lives in.",
-      "The loot is behind it. The exit is past it.",
-      "",
-      "Sculk Sensors detect vibrations and emit redstone signals.",
-      "Sculk Catalysts convert death drops into sculk growth.",
-      "Both have unique technical uses in automation.",
-      "",
-      "→ Encounter the Warden and survive [check]",
-      "→ Collect 4 Sculk Shriekers (with Silk Touch)",
-      "→ Collect 8 Sculk Sensors"
-    ],
-    "groups": {"Below the Waking World": {"position": [150, 300]}},
-    "icon": {"item": {"id": "minecraft:sculk_shrieker", "count": 1}, "type": "heracles:item"},
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+  "sculk_sensor": {
+   "type": "heracles:item",
+   "item": "minecraft:sculk_sensor",
+   "amount": 8,
+   "collection": "AUTOMATIC"
   }
+ },
+ "rewards": {
+  "sculk_catalyst": {
+   "item": {
+    "id": "minecraft:sculk_catalyst",
+    "count": 4
+   },
+   "type": "heracles:item"
+  },
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 12
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Warden"
+  },
+  "subtitle": {
+   "text": "You cannot win this fight. That is not the test."
+  },
+  "description": [
+   "The Warden spawns when the Sculk Shrieker activates four times.",
+   "It is blind. It hunts by sound and vibration.",
+   "It cannot be outrun, but it can be lost.",
+   "",
+   "Swift Sneak from the Ancient City removes footstep vibrations while crouching.",
+   "Wool blocks vibrations between the player and the Warden.",
+   "Snowballs and arrows distract it — throw them in the opposite direction.",
+   "",
+   "The test is not killing the Warden.",
+   "The test is navigating the city it lives in.",
+   "The loot is behind it. The exit is past it.",
+   "",
+   "Sculk Sensors detect vibrations and emit redstone signals.",
+   "Sculk Catalysts convert death drops into sculk growth.",
+   "Both have unique technical uses in automation.",
+   "",
+   "→ Encounter the Warden and survive [check]",
+   "→ Collect 4 Sculk Shriekers (with Silk Touch)",
+   "→ Collect 8 Sculk Sensors"
+  ],
+  "groups": {
+   "Below the Waking World": {
+    "position": [
+     1680,
+     750
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "minecraft:sculk_shrieker",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

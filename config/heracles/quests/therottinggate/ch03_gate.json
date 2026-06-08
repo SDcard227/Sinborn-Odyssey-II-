@@ -1,81 +1,77 @@
 {
-  "dependencies": [
-    "ch03_belt"
-  ],
-  "tasks": {
-    "water_wheel_collect": {
-      "type": "heracles:item",
-      "item": "create:water_wheel",
-      "amount": 2,
-      "collection": "AUTOMATIC"
-    },
-    "scroll_found": {
-      "type": "heracles:advancement",
-      "advancement": "sinborn:scrolls/rotational_force_studied"
-    }
+ "dependencies": [
+  "ch03_belt"
+ ],
+ "tasks": {
+  "water_wheel_collect": {
+   "type": "heracles:item",
+   "item": "create:water_wheel",
+   "amount": 2,
+   "collection": "AUTOMATIC"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:cog",
-        "count": 10
-      },
-      "type": "heracles:item"
-    },
-    "brass": {
-      "item": {
-        "id": "create:brass_ingot",
-        "count": 8
-      },
-      "type": "heracles:item"
-    },
-    "age": {
-      "type": "heracles:command",
-      "command": "history unlock water_age"
-    }
-  },
-  "display": {
-    "title": {
-      "translate": "The Rotational Age"
-    },
-    "subtitle": {
-      "text": "The wheel turns. The world changes with it."
-    },
-    "description": [
-      "The water wheel is older than the steam engine.",
-      "The Romans used them for grain mills.",
-      "The same principle runs your entire factory now.",
-      "",
-      "Every civilization that industrialized",
-      "started with something turning in water.",
-      "You are not the first. But you are next.",
-      "",
-      "→ Have 2 water wheels",
-      "→ Research the Rotational Force scroll [check]"
-    ],
-    "groups": {
-      "The Rotting Gate": {
-        "position": [
-          0,
-          600
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "create:cogwheel",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": true
+  "scroll_found": {
+   "type": "heracles:check",
+   "title": "Research the Rotational Force scroll at a Research Pedestal"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:cog",
+    "count": 10
+   },
+   "type": "heracles:item"
+  },
+  "brass": {
+   "item": {
+    "id": "create:brass_ingot",
+    "count": 8
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "translate": "The Rotational Age"
+  },
+  "subtitle": {
+   "text": "The wheel turns. The world changes with it."
+  },
+  "description": [
+   "The water wheel is older than the steam engine.",
+   "The Romans used them for grain mills.",
+   "The same principle runs your entire factory now.",
+   "",
+   "Every civilization that industrialized",
+   "started with something turning in water.",
+   "You are not the first. But you are next.",
+   "",
+   "→ Have 2 water wheels",
+   "→ Research the Rotational Force scroll [check]"
+  ],
+  "groups": {
+   "The Rotting Gate": {
+    "position": [
+     1840,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "create:cogwheel",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/gears.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": true
+ }
 }

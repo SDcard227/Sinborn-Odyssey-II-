@@ -1,0 +1,32 @@
+{
+  "display_name": "The Forager's Almanac",
+  "research_time": 1500,
+  "items": [],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [
+    "foragersinsight:acorn_cookie",
+    "foragersinsight:auspicious_stew",
+    "foragersinsight:carrot_poppy_chowder",
+    "foragersinsight:cod_and_pumpkin_stew",
+    "foragersinsight:dandelion_root_tea",
+    "foragersinsight:diamond_mallet",
+    "foragersinsight:flint_mallet",
+    "foragersinsight:forest_elixir",
+    "foragersinsight:gold_mallet",
+    "foragersinsight:iron_mallet",
+    "foragersinsight:netherite_mallet",
+    "foragersinsight:rose_cookie",
+    "foragersinsight:rose_hip_soup",
+    "foragersinsight:seed_butter",
+    "foragersinsight:seed_butter_jamwich",
+    "foragersinsight:syrup_toast_stacks"
+  ],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

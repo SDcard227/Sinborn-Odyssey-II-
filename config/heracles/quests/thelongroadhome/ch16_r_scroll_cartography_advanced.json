@@ -1,83 +1,83 @@
 {
-  "dependencies": [],
-  "tasks": {
-    "find_scroll": {
-      "title": "Find the Advanced Cartography scroll",
-      "icon": {
-        "item": {
-          "id": "historystages:research_scroll",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:check"
+ "dependencies": [],
+ "tasks": {
+  "find_scroll": {
+   "title": "Find the Advanced Cartography scroll",
+   "icon": {
+    "item": {
+     "id": "historystages:research_scroll",
+     "count": 1
     },
-    "research_scroll": {
-      "title": "Research the Advanced Cartography scroll",
-      "icon": {
-        "item": {
-          "id": "alexscaves:cave_map",
-          "count": 1
-        },
-        "type": "heracles:item"
-      },
-      "type": "heracles:command",
-      "command": "history unlock cartography_advanced"
-    }
+    "type": "heracles:item"
+   },
+   "type": "heracles:check"
   },
-  "rewards": {
-    "coin": {
-      "item": {
-        "id": "numismatics:sprocket",
-        "count": 5
-      },
-      "type": "heracles:item"
-    }
-  },
-  "display": {
-    "title": {
-      "text": "Advanced Cartography"
+  "research_scroll": {
+   "title": "Research the Advanced Cartography scroll",
+   "icon": {
+    "item": {
+     "id": "alexscaves:cave_map",
+     "count": 1
     },
-    "subtitle": {
-      "text": "Knowledge waits where the dead left it."
-    },
-    "description": [
-      "\"Charted, measured, decoded.\"",
-      "",
-      "Beyond vanilla maps: cave maps, antique atlas, dungeon explorer maps.",
-      "",
-      "This scroll unlocks 13 items.",
-      "",
-      "Look for it in:",
-      "  \u00b7 Stronghold Library",
-      "  \u00b7 Village/Village Cartographer",
-      "",
-      "\u2192 Find the scroll [discovery]",
-      "\u2192 Research [Advanced Cartography] [auto]"
-    ],
-    "groups": {
-      "The Long Road Home": {
-        "position": [
-          1350,
-          900
-        ]
-      }
-    },
-    "icon": {
-      "item": {
-        "id": "alexscaves:cave_map",
-        "count": 1
-      },
-      "type": "heracles:item"
-    },
-    "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
-  },
-  "settings": {
-    "showDependencyArrow": true,
-    "repeatable": false,
-    "autoClaimRewards": false,
-    "individual_progress": true,
-    "hidden": "LOCKED",
-    "unlockNotification": false
+    "type": "heracles:item"
+   },
+   "type": "heracles:command",
+   "command": "history unlock cartography_advanced"
   }
+ },
+ "rewards": {
+  "coin": {
+   "item": {
+    "id": "numismatics:sprocket",
+    "count": 5
+   },
+   "type": "heracles:item"
+  }
+ },
+ "display": {
+  "title": {
+   "text": "Advanced Cartography"
+  },
+  "subtitle": {
+   "text": "Knowledge waits where the dead left it."
+  },
+  "description": [
+   "\"Charted, measured, decoded.\"",
+   "",
+   "Beyond vanilla maps: cave maps, antique atlas, dungeon explorer maps.",
+   "",
+   "This scroll unlocks 13 items.",
+   "",
+   "Look for it in:",
+   "  · Stronghold Library",
+   "  · Village/Village Cartographer",
+   "",
+   "→ Find the scroll [discovery]",
+   "→ Research [Advanced Cartography] [auto]"
+  ],
+  "groups": {
+   "The Long Road Home": {
+    "position": [
+     0,
+     0
+    ]
+   }
+  },
+  "icon": {
+   "item": {
+    "id": "alexscaves:cave_map",
+    "count": 1
+   },
+   "type": "heracles:item"
+  },
+  "icon_background": "heracles:textures/gui/quest_backgrounds/octagons.png"
+ },
+ "settings": {
+  "showDependencyArrow": true,
+  "repeatable": false,
+  "autoClaimRewards": false,
+  "individual_progress": true,
+  "hidden": "LOCKED",
+  "unlockNotification": false
+ }
 }

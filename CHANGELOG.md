@@ -11,7 +11,27 @@ tags: [sinborn-dev]
 > A polish + content update. Starter backpacks finally dye properly. Clouds stay
 > up between launches. The scroll system is the cleanest it's been (zero empty
 > scrolls, zero junk, zero double-gates). Plus a new aerial-loot mod, a
-> rendering tier upgrade, and two real worldgen crash fixes.
+> rendering tier upgrade, and two real worldgen crash fixes. And the headline:
+> the pack finally runs on dedicated and multiplayer servers.
+
+### 🌐 Server / multiplayer compatibility (the headline)
+- **The pack runs on dedicated servers now.** HistoryStages syncs every stage's
+  full item + recipe data to each player on join. With the scroll system fully
+  built out, that payload had grown to ~368 KB gzipped, past Minecraft's 262 KB
+  packet ceiling, so anyone connecting got booted at login with "Root tag must
+  be a named compound tag."
+- **Fix: dropped the redundant recipe lists.** HistoryStages already auto-locks
+  any recipe whose output is a gated item, so listing the 40,420 recipes too was
+  dead weight. Cleared them all and promoted 471 edge-case outputs into their
+  item lists, so gating behaves exactly the same. The synced payload is now
+  ~189 KB, well under the ceiling. Single-player is unaffected, and gating is
+  verified intact (the crafting table is still locked behind survivor_codex).
+- **Server mod list aligned to the client:** ColdSweat 2.4.1, Recruits 1.15.0,
+  Puddleflood 1.1.4, and MoreMobVariants pulled (it was the worldgen-deadlock
+  mod, and the client never had it anyway).
+- **Smoother first joins:** Surveyor's terrain sync now spreads over more ticks
+  (terrainTicks 20 to 60) instead of bursting ~8 regions at once, so the server
+  thread doesn't spike you off the "loading terrain" screen.
 
 ### ðŸ’¥ Crashes fixed
 - **Formations dep installed** â€” Echovoids' structure JSONs reference

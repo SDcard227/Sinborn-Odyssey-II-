@@ -27,8 +27,14 @@ tags: [sinborn-dev]
   ~189 KB, well under the ceiling. Single-player is unaffected, and gating is
   verified intact (the crafting table is still locked behind survivor_codex).
 - **Server mod list aligned to the client:** ColdSweat 2.4.1, Recruits 1.15.0,
-  Puddleflood 1.1.4, and MoreMobVariants pulled (it was the worldgen-deadlock
-  mod, and the client never had it anyway).
+  Puddleflood 1.1.4.
+- **MoreMobVariants restored, and the freeze it caused is fixed.** The extra-mob-skins
+  mod had been pulled because it deadlocked world generation at "Preparing spawn area":
+  Sully's Mod swaps zombies into vanilla dungeon spawners, which made MoreMobVariants
+  run a blocking biome lookup on a worldgen thread and freeze. Rather than lose the
+  variants, we disabled just that one Sully's behavior (a tiny zombie-swap in vanilla
+  dungeons); the trigger is gone and variants are back on both client and server with
+  no freeze. The rest of Sully's Mod is untouched.
 - **Smoother first joins:** Surveyor's terrain sync now spreads over more ticks
   (terrainTicks 20 to 60) instead of bursting ~8 regions at once, so the server
   thread doesn't spike you off the "loading terrain" screen.

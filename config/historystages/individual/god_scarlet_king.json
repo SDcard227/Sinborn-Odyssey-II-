@@ -15,9 +15,7 @@
     "scarlet_king"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "scarlet_king:manifestation_clock_recipe"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

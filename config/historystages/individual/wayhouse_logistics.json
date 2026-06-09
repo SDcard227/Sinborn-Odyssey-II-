@@ -20,19 +20,7 @@
     "cmpackagecouriers"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "cmpackagecouriers:cardboard_plane_parts",
-    "cmpackagecouriers:cutting/dissasemble_plane",
-    "cmpackagecouriers:deploying/cardboard_plane",
-    "cmpackagecouriers:deploying/jar_plane",
-    "cmpackagecouriers:deploying/preopened_package_plane",
-    "cmpackagecouriers:location_transmitter",
-    "cmpackagecouriers:portable_stock_ticker",
-    "cmpackagecouriers:portable_stock_ticker_clear",
-    "create_mobile_packages:mobile_packager",
-    "create_mobile_packages:portable_stock_ticker",
-    "create_mobile_packages:portable_stock_ticker_clear"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

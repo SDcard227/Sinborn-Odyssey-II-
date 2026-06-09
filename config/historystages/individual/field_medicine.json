@@ -11,10 +11,7 @@
     "food_desire"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "food_desire:diet_book",
-    "food_desire:diet_book_recipe"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

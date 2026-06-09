@@ -23,22 +23,7 @@
     "canonnukes"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "alexscaves:nuclear_furnace_component",
-    "canonnukes:nuke_shell",
-    "create_new_age:crushing/radioactive_thorium",
-    "create_new_age:mechanical_crafting/reactor_rod",
-    "create_new_age:misc/shaped/reactor_fuel_acceptor",
-    "create_new_age:misc/shaped/reactor_glass",
-    "create_new_age:misc/shapeless/reactor_heat_vent",
-    "create_new_age:mixing/thorium",
-    "create_new_age:sequenced_assembly/nuclear_fuel",
-    "create_new_age:sequenced_assembly/reactor_casing",
-    "create_new_age:shaped/heat_pump",
-    "create_new_age:shaped/reactor_fuel_acceptor",
-    "create_new_age:shaped/reactor_glass",
-    "create_new_age:shapeless/reactor_heat_vent"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

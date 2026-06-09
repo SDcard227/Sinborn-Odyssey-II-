@@ -7,10 +7,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "sinborn:mechanical_crafting/trav_eye_of_nothingness",
-    "traveloptics:eye_of_nothingness"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

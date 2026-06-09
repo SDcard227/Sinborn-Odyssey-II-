@@ -11,10 +11,7 @@
     "endertrigon"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "endertrigon:dragon_horn",
-    "endertrigon:tools/dragon_horn"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

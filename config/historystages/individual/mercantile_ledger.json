@@ -12,10 +12,7 @@
     "numismatics_utils"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "bountiful:crafting/bountyboard",
-    "bountiful:crafting/decree"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

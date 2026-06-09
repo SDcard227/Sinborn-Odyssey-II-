@@ -22,13 +22,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "celestisynth:keres",
-    "end_remastered_promax:vault_eye",
-    "goldcrownissb:gold_crown",
-    "ptd:stone_repair",
-    "sinborn:mechanical_crafting/promax_vault_eye"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

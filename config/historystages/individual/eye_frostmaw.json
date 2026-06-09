@@ -7,10 +7,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "mowzies_cataclysm:frostmaw_eye",
-    "sinborn:mechanical_crafting/mowz_frostmaw_eye"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

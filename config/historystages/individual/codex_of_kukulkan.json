@@ -13,16 +13,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "call_of_yucutan:ah_puch_fragment_recipe",
-    "call_of_yucutan:ah_puch_idol_recipe",
-    "call_of_yucutan:ah_puch_sacrifice",
-    "call_of_yucutan:kukulkan_fragment_recipe",
-    "call_of_yucutan:kukulkan_idol_recipe",
-    "call_of_yucutan:kukulkan_sacrifice",
-    "call_of_yucutan:mayan_calendar_recipe",
-    "call_of_yucutan:totem_of_undying_recipe"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

@@ -7,10 +7,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "endrem:witch_eye",
-    "sinborn:mechanical_crafting/witch_eye"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

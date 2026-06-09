@@ -7,10 +7,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "endrem:undead_eye",
-    "sinborn:mechanical_crafting/undead_eye"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

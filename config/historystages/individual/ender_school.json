@@ -24,12 +24,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "irons_spellbooks:ender_rune",
-    "irons_spellbooks:ender_upgrade_orb",
-    "traveloptics:echo_salvage/ender_echo",
-    "traveloptics:spectral_spell_slot_upgrade"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

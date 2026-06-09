@@ -79,17 +79,7 @@
     "cataclysm:music_disc_the_harbinger",
     "cataclysm:music_disc_the_leviathan"
   ],
-  "recipes": [
-    "cataclysm:abyssal_sacrifice",
-    "cataclysm:abyssal_sacrifice2",
-    "cataclysm:black_steel_fence",
-    "cataclysm:black_steel_wall",
-    "cataclysm:cursed_eye",
-    "cataclysm:obsidian_explosion_trap_bricks",
-    "cataclysm:void_scatter_arrow",
-    "cataclysm:witherite_block",
-    "cataclysm:witherite_ingot"
-  ],
+  "recipes": [],
   "entities": {
     "spawnlock": []
   }

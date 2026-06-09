@@ -17,19 +17,7 @@
     "golemoverhaul"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "golemoverhaul:building_blocks/candle_golem_block",
-    "golemoverhaul:building_blocks/clay_golem_statue",
-    "golemoverhaul:candle_golem_block",
-    "golemoverhaul:clay_golem_statue",
-    "golemoverhaul:coal_golem",
-    "golemoverhaul:golem_construction/candle_golem",
-    "golemoverhaul:golem_construction/hay_golem",
-    "golemoverhaul:golem_construction/kelp_golem",
-    "golemoverhaul:golem_construction/netherite_golem",
-    "golemoverhaul:golem_construction/terracotta_golem",
-    "golemoverhaul:misc/coal_golem"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

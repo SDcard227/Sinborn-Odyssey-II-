@@ -7,10 +7,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "mowzies_cataclysm:tongbi_eye",
-    "sinborn:mechanical_crafting/mowz_tongbi_eye"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

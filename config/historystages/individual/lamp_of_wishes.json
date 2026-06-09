@@ -14,10 +14,7 @@
     "as_you_wish"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "as_you_wish:copper_lamp_recipe",
-    "as_you_wish:fast_lamp_recipe"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

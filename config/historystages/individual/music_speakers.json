@@ -5,10 +5,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "etched:decorations/radio",
-    "etched:misc/boombox"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

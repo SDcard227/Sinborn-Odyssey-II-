@@ -15,16 +15,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "create:crafting/materials/mechanical_conduit",
-    "create:crafting/materials/prismarine_alloy",
-    "create:crafting/materials/prismarine_alloy_block",
-    "create:crafting/materials/prismarine_alloy_from_block",
-    "create:crafting/materials/prismarine_alloy_rod",
-    "create_aquatic_ambitions:channeling/suspicious_rock",
-    "create_aquatic_ambitions:milling/limestone",
-    "create_aquatic_ambitions:mixing/prismarine_alloy"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

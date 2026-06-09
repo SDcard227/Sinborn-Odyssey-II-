@@ -11,11 +11,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "supplementaries:sus_bricks",
-    "supplementaries:sus_gravel",
-    "supplementaries:sus_sand"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

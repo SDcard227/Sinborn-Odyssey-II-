@@ -54,14 +54,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "minecraft:building_blocks/red_nether_bricks",
-    "minecraft:filling/crying_obsidian",
-    "minecraft:magma_block",
-    "minecraft:red_nether_bricks",
-    "minecraft:soul_torch",
-    "netherexp:shroomlight"
-  ],
+  "recipes": [],
   "entities": {
     "spawnlock": []
   }

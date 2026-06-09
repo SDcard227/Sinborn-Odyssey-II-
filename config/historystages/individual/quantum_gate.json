@@ -8,9 +8,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "portal_fluid:filling/portal_fluid"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

@@ -14,13 +14,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "cataclysm:astrape",
-    "cataclysm:ceraunus",
-    "cataclysm:laser_gatling",
-    "cataclysm:weapon_infusion/void_assault_shoulder_weapon",
-    "cataclysm:wither_assault_shoulder_weapon"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

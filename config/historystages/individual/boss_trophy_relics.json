@@ -105,12 +105,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "alexsmobs:void_worm_effigy",
-    "cataclysm:netherite_effigy",
-    "irons_spellbooks:music_disc_flame_still_burns",
-    "traveloptics:echo_salvage/aqua_echo"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

@@ -30,19 +30,7 @@
     "crittersandcompanions"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "crittersandcompanions:ender_pearl_from_pearl",
-    "crittersandcompanions:grappling_hook",
-    "crittersandcompanions:sea_bunny_slime_block",
-    "crittersandcompanions:silk_lead",
-    "crittersandcompanions:slime_ball_from_sea_bunny_slime",
-    "crittersandcompanions:string_from_silk",
-    "farm_and_charm:chicken_coop",
-    "farm_and_charm:chicken_feed",
-    "farm_and_charm:chicken_nest",
-    "farm_and_charm:feeding_trough",
-    "farm_and_charm:horse_fodder"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

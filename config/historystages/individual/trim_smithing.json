@@ -22,20 +22,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "cataclysm:cursium_upgrade_smithing_template",
-    "cataclysm:ignitium_upgrade_smithing_template",
-    "dungeons_and_combat:blessed_smithing_table_recipe",
-    "dungeons_and_combat:crimson_smithing_template_recipe",
-    "dungeons_and_combat:light_upgrade_recipe",
-    "dungeons_and_combat:molten_smithing_template_recipe",
-    "dungeons_and_combat:tohi_smithing_template_recipe",
-    "mythsandlegends:misc/infernum_upgrade_smithing_template",
-    "traveloptics:abyssal_upgrade_smithing_template",
-    "traveloptics:abyssal_upgrade_smithing_template2",
-    "traveloptics:tectonic_upgrade_smithing_template",
-    "traveloptics:witherite_upgrade_smithing_template"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

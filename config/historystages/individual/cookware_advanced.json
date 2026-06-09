@@ -25,23 +25,7 @@
     "molten_metals"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "alexscaves:confection_oven",
-    "endersdelight:endstone_stove",
-    "ends_delight:end_stove",
-    "luminous_nether:soulcauldronrec_2",
-    "luminous_nether:soulcauldronrecipe_1",
-    "mynethersdelight:crafting/nethers_stove",
-    "mynethersdelight:crafting/nethers_stove_alt0",
-    "mynethersdelight:crafting/soul_nethers_stove",
-    "mynethersdelight:crafting/soul_nethers_stove_alt0",
-    "vintagedelight:evaporator",
-    "vintagedelight:fermenting_jar",
-    "witherstorm_delight:wither_stove_anvil",
-    "youkaisfeasts:copper_faucet_from_copper_ingot_stonecutting",
-    "youkaisfeasts:copper_tank_from_copper_block_stonecutting",
-    "youkaisfeasts:fermentation_tank"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

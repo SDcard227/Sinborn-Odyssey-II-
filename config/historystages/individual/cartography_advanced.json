@@ -40,9 +40,7 @@
     "via_romana"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "via_romana:charting_map"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

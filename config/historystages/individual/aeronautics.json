@@ -34,19 +34,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "breezy:hot_air_balloon",
-    "create_sa:andesite_jetpack_recipe",
-    "create_sa:brass_jetpack_recipe",
-    "create_sa:copper_propeler_recipe",
-    "create_sa:netherite_jetpack_recipe",
-    "traveloptics:elytra_jetpack_component",
-    "vc_gliders:paraglider_diamond",
-    "vc_gliders:paraglider_gold",
-    "vc_gliders:paraglider_iron",
-    "vc_gliders:paraglider_netherite",
-    "vc_gliders:paraglider_wood"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

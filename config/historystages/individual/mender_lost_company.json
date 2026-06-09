@@ -29,12 +29,7 @@
   "tags": [],
   "mods": [],
   "mod_exceptions": [],
-  "recipes": [
-    "companions:arm_blade",
-    "companions:arm_cannon",
-    "companions:arm_mutant",
-    "companions:arm_whip"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

@@ -12,9 +12,7 @@
     "dracolotl"
   ],
   "mod_exceptions": [],
-  "recipes": [
-    "luminousworld:butterfly_net_recipe"
-  ],
+  "recipes": [],
   "dimensions": [],
   "structures": [],
   "entities": {

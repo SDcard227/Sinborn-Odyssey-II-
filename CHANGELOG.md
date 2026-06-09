@@ -137,6 +137,40 @@ tags: [sinborn-dev]
 - **3 scrolls renamed to in-world titles:** The Wayfarer's Endurance, The Wanderer's Pack,
   The Homestead's Comfort (no more scrolls named after the mod they gate).
 
+### 🔒 Pack-wide gating, finished
+- **Every content mod is gated now.** Several item-level scan passes hunted down the
+  stragglers, 21 ungated item-adding mods slotted in one pass, then 9 more, then 11 more on a
+  final triage, so nothing with craftable content sneaks in ungated anymore. If a mod adds
+  stuff you make, it lives behind a scroll.
+- **Every food item belongs to a culture.** A pack-wide food pass put every edible into its
+  cuisine scroll, then a scrub kicked out non-food items that had crept in, so the cuisine
+  scrolls read like clean cookbooks instead of junk drawers.
+- **Sorted by actually reading the items, not guessing.** Scrolls were realigned by inspecting
+  each mod's real contents, and a group-by-group thematic audit fixed 14 misplacements, so
+  things sit in the scroll that matches what they actually are.
+- **Cuisine scrolls renamed to the pack's own civilizations** instead of real-world labels, so
+  they line up with Sinborn's canon cultures.
+
+### ⚔️ Quests
+- **Every slay quest now points you at its lore.** A Whispering Folio hint was added to all 69
+  `slay_*` boss quests, so you know which folio the kill ties into instead of guessing.
+- **Dead chapters cut**, theodyssey and thestoneflametrials chapters that referenced removed
+  content are gone, so the questbook doesn't dead-end.
+
+### 🗺️ Field Guide
+- **Boss tab restored and reorganized**, bosses are grouped by their pantheon now, so the
+  bestiary reads the way the lore does.
+- **Dragon boss-locks, Antique Atlas, and the bleeding-bubbles** visual issues fixed in the
+  same pass.
+
+### 🪣 Loot reliability
+- **The empty-chest bug is fixed at the root.** HistoryStages had been stripping gated items
+  straight out of chest loot, so structure chests generated barren. Gating moved to
+  recipes-not-items, so chests fill normally again and you still can't craft what you haven't
+  researched.
+- **Empty CTOV and Wares village chests filled** via a village-loot pass, no more hollow
+  village buildings.
+
 ### ðŸ§¹ Config cleanup
 - **46 orphan config files archived** â€” `.bak` configs from previously-removed
   mods (gobber, knightquest, just_leveling, eeeabsmobs, legendary_monsters,

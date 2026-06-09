@@ -68,7 +68,7 @@ forceUpdateLandmarks = true
 	# [Server] Ticks per terrain region load for batch update - lower is more frequent
 	# range: 1 - 200
 	# default: 20
-	terrainTicks = 20
+	terrainTicks = 60
 	# [Server] Ticks per position update - lower is more frequent
 	# range: 1 - 200
 	# default: 1

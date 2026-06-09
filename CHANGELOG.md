@@ -109,6 +109,27 @@ tags: [sinborn-dev]
   description text but no actual tasks; now they have proper check-tasks
   matching the description.
 
+### 🍳 Scroll system, this round's deep pass
+- **Research scrolls actually drop in chests now.** A loot-injection bug meant scrolls
+  weren't spawning in world chests at all (the injector was hitting a no-op event and
+  building empty NBT). Fixed, scrolls now drop across 4,013 chest mappings: villages,
+  Terralith and structure chests, dungeons, treasure. This is the one that makes the
+  whole discovery loop actually work in a fresh world.
+- **Food belongs to a culture, not a junk drawer.** Every food item is sorted into its
+  culture/subculture cookbook scroll by real-world culinary origin instead of a generic
+  pantry catch-all, so the cuisine scrolls read like actual regional cookbooks (dragon
+  meat to the savanna cultures, deep-dark fare to the cold cultures, and so on).
+- **Cookware and smithing are tiered.** New tiered cookware and a legendary smithing
+  scroll, with 4 new research quests wiring them into progression.
+- **Workstations routed by material** (317 placements), you research the discipline that
+  matches what a bench is made of to unlock it.
+- **Architects scroll is architecture-only** now, non-building items pulled out so it
+  reads as a focused discipline.
+- **Every scroll has a home in the world.** Loot coverage closed: every scroll (except the
+  dev-only one) has real spawn locations and drop rates, zero unreachable scrolls.
+- **3 scrolls renamed to in-world titles:** The Wayfarer's Endurance, The Wanderer's Pack,
+  The Homestead's Comfort (no more scrolls named after the mod they gate).
+
 ### ðŸ§¹ Config cleanup
 - **46 orphan config files archived** â€” `.bak` configs from previously-removed
   mods (gobber, knightquest, just_leveling, eeeabsmobs, legendary_monsters,

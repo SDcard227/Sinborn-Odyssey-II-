@@ -35,6 +35,13 @@ tags: [sinborn-dev]
   variants, we disabled just that one Sully's behavior (a tiny zombie-swap in vanilla
   dungeons); the trigger is gone and variants are back on both client and server with
   no freeze. The rest of Sully's Mod is untouched.
+- **Gated items can be picked up again (SMP fix).** HistoryStages was ignoring the
+  `lockItemPickup = false` setting and ejecting any gated item the instant you tried to
+  hold it, so mining a gated block shot the drop right back out until you researched its
+  scroll. A new mixin in `sinborn_hs_patch` (1.0.5) no-ops that block, so found gated
+  items stay pickable and usable, only crafting is gated, exactly how the discovery
+  system was meant to work. It's a server-side event, so the fix holds on dedicated
+  servers / SMP too.
 - **Smoother first joins:** Surveyor's terrain sync now spreads over more ticks
   (terrainTicks 20 to 60) instead of bursting ~8 regions at once, so the server
   thread doesn't spike you off the "loading terrain" screen.

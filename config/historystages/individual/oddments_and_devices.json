@@ -1,9 +1,16 @@
 {
-  "display_name": "Oddments & Devices",
+  "display_name": "Oddments \u0026 Devices",
   "research_time": 2400,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min",
   "items": [
     "amendments:dragon_charge",
     "amendments:dye_bottle",
+    "bubbles:bubble_net",
+    "bubbles:bubble_wand",
+    "bubbles:golden_bubble_wand",
+    "bubbles:lava_bubble",
+    "bubbles:water_bubble",
     "burnt:liquid_magma_bucket",
     "burnt:tar_bucket",
     "companions:empty_puppet_block",
@@ -45,10 +52,19 @@
     "luminousworld:netherite_hammer",
     "mcwwindows:hammer",
     "mcwwindows:key",
+    "messenger_crow:scroll",
     "molten_metals:molten_rose_gold_bucket",
+    "quark:abacus",
+    "quark:ancient_tome",
+    "quark:backpack",
+    "quark:bottled_cloud",
+    "quark:cloud",
+    "quark:diamond_heart",
     "quark:flamerang",
+    "quark:forgotten_hat",
     "quark:hammer",
     "quark:pickarang",
+    "quark:soul_bead",
     "quark:trowel",
     "supplementaries:altimeter",
     "supplementaries:altimeter_overlay",
@@ -108,7 +124,6 @@
     "supplementaries:flag_yellow",
     "supplementaries:flower_box",
     "supplementaries:flute",
-    "supplementaries:flute_gui",
     "supplementaries:flute_in_hand",
     "supplementaries:fodder",
     "supplementaries:globe",
@@ -152,7 +167,6 @@
     "supplementaries:pulley_block",
     "supplementaries:quiver",
     "supplementaries:quiver_dyed",
-    "supplementaries:quiver_gui",
     "supplementaries:quiver_gui_dyed",
     "supplementaries:quiver_in_hand",
     "supplementaries:quiver_in_hand_dyed",
@@ -164,8 +178,14 @@
     "supplementaries:rope_knot",
     "supplementaries:sack",
     "supplementaries:safe",
-    "supplementaries:sign_post_oak",
+    "supplementaries:sign_post_acacia",
+    "supplementaries:sign_post_birch",
+    "supplementaries:sign_post_crimson",
+    "supplementaries:sign_post_dark_oak",
+    "supplementaries:sign_post_jungle",
+    "supplementaries:sign_post_mangrove",
     "supplementaries:sign_post_spruce",
+    "supplementaries:sign_post_warped",
     "supplementaries:slidy_block",
     "supplementaries:slingshot",
     "supplementaries:slingshot_pulling_0",
@@ -235,15 +255,14 @@
     "vc_gliders:reinforced_paper_gold",
     "vc_gliders:reinforced_paper_iron",
     "vc_gliders:reinforced_paper_netherite",
-    "supplementaries:sign_post_acacia",
-    "supplementaries:sign_post_birch",
-    "supplementaries:sign_post_crimson",
-    "supplementaries:sign_post_dark_oak",
-    "supplementaries:sign_post_jungle",
-    "supplementaries:sign_post_mangrove",
-    "supplementaries:sign_post_warped"
+    "burnt:lit_molotov",
+    "burnt:rain_stick",
+    "burnt:extinguisher_spray",
+    "burnt:soul_charge"
   ],
-  "tags": [],
+  "tags": [
+    "supplementaries:sign_posts"
+  ],
   "mods": [
     "amendments",
     "dummmmmmy",
@@ -253,9 +272,13 @@
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],
-  "structures": [],
+  "structures": {
+    "structures": []
+  },
   "entities": {
+    "spawnlock": [],
     "attacklock": [],
-    "spawnlock": []
-  }
+    "modLinked": []
+  },
+  "dependencies": []
 }

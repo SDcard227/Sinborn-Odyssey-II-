@@ -20,7 +20,9 @@
     "ptd:soul_keeper"
   ],
   "tags": [],
-  "mods": [],
+  "mods": [
+    "ptd"
+  ],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],

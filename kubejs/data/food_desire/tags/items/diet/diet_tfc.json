@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#food_desire:desired_food/misc",
+    "#food_desire:desired_food/meat",
+    "#food_desire:desired_food/fish",
+    "#food_desire:desired_food/sweet"
+  ]
+}

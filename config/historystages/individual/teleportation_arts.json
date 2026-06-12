@@ -27,7 +27,8 @@
     "createteleporters:teleporter_enable",
     "createteleporters:tp_link",
     "createteleporters:tp_rec",
-    "createteleporters:warp_portal"
+    "createteleporters:warp_portal",
+    "createteleporters:quantum_fluid"
   ],
   "tags": [],
   "mods": [],

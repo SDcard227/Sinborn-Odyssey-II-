@@ -6,6 +6,50 @@ tags: [sinborn-dev]
 
 > Format: see [[Changelog Template]]. Newest at top.
 
+## v1.6.0 — The Discovery Update (June 2026)
+
+> The headline: **JEI starts completely empty.** A fresh player opens the recipe
+> book and sees nothing but the Quest Book, then watches the whole world unfold
+> as they research scrolls. Plus the gating system is airtight, fluids hide with
+> their mods, and the pack is verified plug-and-play on dedicated servers.
+
+### 🔍 Empty JEI, true discovery (the headline)
+- **JEI now hides everything you haven't unlocked.** Load into a fresh world and
+  the recipe list is empty except the Quest Book. Every item, block, and fluid
+  reveals itself only once you research the scroll that gates it.
+- **Why it never worked before:** HistoryStages' built-in JEI hiding only checks
+  *global* stages. This pack gates 100% via *individual* (per-player) stages, so
+  the hide found nothing and showed all ~22,500 items.
+- **Fix: a coremod (`sinborn_hs_patch` 1.0.11) that does the hide right** using
+  the individual-aware lock check, re-scanning late-loading items and hiding
+  fluids whose mod is still locked. Items + liquids, all hidden until earned.
+
+### 🚪 Gating, airtight
+- **Sealed Vault is now dev-only.** Full audit pulled every craftable, lootable,
+  and real-named item out of the dev catch-all (dragon gear, Twisted organs, oils,
+  the Corroding Flame Scepter, and more got proper homes). Render-states, spawn
+  eggs, and broken-name junk stay sealed.
+- **Dimensional double-gate, complete.** End and Nether content (vanilla *and*
+  modded) now needs dimension access **plus** its discipline scroll. Access chains
+  (ender pearls, blaze rods) stay open so you can still reach the dimensions.
+- **Everything has a home.** Barks, leaf piles, smithing templates, sign posts,
+  the Beast Pit, and every stray got sorted. Fixed a 5-scroll over-gate on the
+  metal-casting mods (one item was asking for five scrolls at once).
+
+### 🌐 Server / client plug-and-play (verified)
+- **Content-mod sets are now identical on client and server** (272/272, zero
+  mismatches either direction). A player pulls the pack off Modrinth and connects
+  straight to the server, no fiddling. Only per-user setup is voice chat.
+- Server pack synced: HistoryStages 5.4.0, the hide coremod, all gating configs,
+  KubeJS, all dependency libs verified present. Client-only rendering mods
+  correctly stripped from the server.
+
+### 🍲 Fixes
+- **"I'd like to eat some Air."** The food-craving system could crave an empty
+  diet (Dragon Survival / TerraFirmaCraft diets that aren't installed). Every
+  diet now points at the real food pools, so no more craving air.
+- **+ Multi Arrow Effects** added (combine potion effects onto a single arrow).
+
 ## v1.5.0 — The Coats of Paint Update (May 2026)
 
 > A polish + content update. Starter backpacks finally dye properly. Clouds stay

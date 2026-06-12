@@ -2,6 +2,7 @@
   "display_name": "The Wild Study",
   "research_time": 5400,
   "items": [
+    "alexscaves:cave_book",
     "dracolotl:bucket_of_dracolotl",
     "luminousworld:butterfly_encyclopedia",
     "luminousworld:butterfly_net",

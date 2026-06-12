@@ -12,6 +12,20 @@
 	showAllUntilComplete = true
 	#Show a lock icon overlay on locked items in JEI and Inventories? (Will be disabled if EMI is installed) [Default: true]
 	showLockIcons = false
+	#Show a tooltip on Research Pedestal booster blocks describing their speed/cost effect? [Default: true]
+	showBoosterTooltips = true
+	#Show the minimum required Pedestal tier on Research Scroll tooltips? [Default: true]
+	showScrollTierTooltip = true
+	#Render a red force-field overlay on the walls of locked structures as you approach them? [Default: true]
+	structureBorderEnabled = true
+	#How close (in blocks) to a locked structure wall before the border becomes visible. The border fades in as you approach. [Default: 8.0]
+	#Range: 1.0 ~ 32.0
+	structureBorderDistance = 8.0
+	#While standing inside a locked structure, tint the whole screen red (like looking through red glasses) to signal the lock? [Default: true]
+	structureLockOverlayEnabled = true
+	#Opacity of the red lock-overlay (0.0 = invisible, 1.0 = fully opaque). [Default: 0.30]
+	#Range: 0.0 ~ 1.0
+	structureLockOverlayOpacity = 0.3
 
 #Settings for dimension access feedback
 [dimension_lock]
@@ -53,4 +67,16 @@
 	showDependenciesOnScroll = true
 	#Hide already fulfilled dependencies in scroll tooltips? [Default: false]
 	hideFulfilledDependencies = false
+
+#JEI hiding (Issue #64) — opt-in toggle for fully hiding locked items/recipes in JEI.
+[jei_hiding]
+	#Remove locked items from the JEI ingredient panel entirely. [Default: false]
+	hideLockedItemsInJei = true
+	#Hide recipes whose OUTPUT is a locked item in JEI. [Default: false]
+	hideLockedRecipesInJei = true
+	#How to treat items assigned to multiple stages:
+	#STRICT  = locked while ANY assigned stage is still locked (default).
+	#LENIENT = unlocked as soon as ANY assigned stage is unlocked.
+	#Allowed Values: STRICT, LENIENT
+	lockedItemMultiStagePolicy = "STRICT"
 

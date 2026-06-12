@@ -2,7 +2,6 @@
   "display_name": "The Iron Road",
   "research_time": 2700,
   "items": [
-    "burnt:flint_trail_item",
     "burnt:sulphur_trail",
     "create:crushing_wheel_controller",
     "create:furnace_minecart_contraption",

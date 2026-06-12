@@ -94,7 +94,11 @@
     "alexscaves:totem_of_possession_active",
     "alexscaves:totem_of_possession_bound",
     "alexscaves:twilight_anemone",
-    "alexscaves:vesper_wing"
+    "alexscaves:vesper_wing",
+    "echovoids:acid_clump_item",
+    "echovoids:dash_item",
+    "echovoids:gravity_upgrade_template",
+    "echovoids:sparkling_levitation_cloud"
   ],
   "tags": [],
   "mods": [],

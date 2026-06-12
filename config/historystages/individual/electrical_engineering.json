@@ -206,7 +206,8 @@
     "tfmg:steel_casing_cable_hub",
     "tfmg:unfinished_capacitor",
     "tfmg:white_multimeter",
-    "tfmg:yellow_multimeter"
+    "tfmg:yellow_multimeter",
+    "powergrid:acid"
   ],
   "tags": [],
   "mods": [

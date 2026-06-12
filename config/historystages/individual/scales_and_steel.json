@@ -121,9 +121,6 @@
     "iceandfire:deathworm_chitin_yellow",
     "iceandfire:deathworm_egg",
     "iceandfire:deathworm_egg_giant",
-    "iceandfire:deathworm_gauntlet_red",
-    "iceandfire:deathworm_gauntlet_white",
-    "iceandfire:deathworm_gauntlet_yellow",
     "iceandfire:deathworm_red_boots",
     "iceandfire:deathworm_red_chestplate",
     "iceandfire:deathworm_red_helmet",
@@ -364,7 +361,9 @@
     "iceandfire:troll_weapon_trunk",
     "iceandfire:troll_weapon_trunk_frost",
     "iceandfire:wither_shard",
-    "iceandfire:witherbone"
+    "iceandfire:witherbone",
+    "mythsandlegends:maledictum_shield",
+    "mythsandlegends:stony_shield"
   ],
   "tags": [],
   "mods": [],

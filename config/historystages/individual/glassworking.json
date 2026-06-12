@@ -285,7 +285,9 @@
     "ramadandelight:orange_stained_glass_pane",
     "ramadandelight:stained_glass_block",
     "ramadandelight:stained_glass_pane",
-    "twisted:lensglass"
+    "twisted:lensglass",
+    "traveloptics:celestial_fragment",
+    "traveloptics:celestial_shard"
   ],
   "tags": [],
   "mods": [

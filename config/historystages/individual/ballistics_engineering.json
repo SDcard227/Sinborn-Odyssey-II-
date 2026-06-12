@@ -80,7 +80,8 @@
     "dungeonnowloading:explosive_barrel",
     "twm:dinamite",
     "twm:molotov",
-    "twm:molotovcocktail"
+    "twm:molotovcocktail",
+    "twm:dd_tdontdothis"
   ],
   "tags": [],
   "mods": [],

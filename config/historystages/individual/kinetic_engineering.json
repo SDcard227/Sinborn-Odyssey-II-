@@ -1034,7 +1034,12 @@
     "upgrade_aquatic:star_coral",
     "upgrade_aquatic:star_coral_block",
     "upgrade_aquatic:star_coral_fan",
-    "vampirism:cursed_grass"
+    "vampirism:cursed_grass",
+    "create_enchantment_industry:ink",
+    "ratatouille:compost_residue_fluid",
+    "create_new_age:incomplete_enchanted_golden_apple",
+    "create:package",
+    "create:rare_package"
   ],
   "tags": [],
   "mods": [

@@ -135,7 +135,11 @@
     "tfmg:advanced_potato_cannon",
     "tfmg:advanced_potato_cannon/item",
     "tfmg:quad_potato_cannon",
-    "tfmg:quad_potato_cannon/item"
+    "tfmg:quad_potato_cannon/item",
+    "createbigcannons:molten_bronze",
+    "createbigcannons:molten_cast_iron",
+    "createbigcannons:molten_nethersteel",
+    "createbigcannons:molten_steel"
   ],
   "tags": [],
   "mods": [],

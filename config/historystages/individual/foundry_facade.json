@@ -1,5 +1,5 @@
 {
-  "display_name": "The Foundry Façade",
+  "display_name": "The Foundry Fa\u00e7ade",
   "research_time": 2400,
   "items": [
     "create:andesite_bars",
@@ -638,7 +638,6 @@
     "tfmg:turbine_blade",
     "tfmg:turbine_engine",
     "tfmg:unfinished_generator",
-    "tfmg:unfinished_generator_model",
     "tfmg:winding_machine",
     "tfmg:zinc_frame",
     "tfmg:zinc_truss"

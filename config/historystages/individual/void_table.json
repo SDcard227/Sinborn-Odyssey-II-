@@ -132,7 +132,17 @@
     "minecraft:white_shulker_box",
     "minecraft:yellow_shulker_box",
     "echovoids:chorus_brick",
-    "echovoids:chorus_tile"
+    "echovoids:chorus_tile",
+    "echovoids:acid",
+    "echovoids:block_of_neon",
+    "echovoids:membrane",
+    "echovoids:mite_fan",
+    "echovoids:mite_fan_item",
+    "echovoids:neon_blob",
+    "echovoids:shadow_flame",
+    "echovoids:squerry_gum",
+    "echovoids:static_light",
+    "echovoids:void_fluid"
   ],
   "tags": [],
   "mods": [],

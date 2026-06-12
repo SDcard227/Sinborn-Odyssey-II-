@@ -36,6 +36,7 @@
     "cavedelight:shish_kebab",
     "cavedelight:stuffed_trilo_tails",
     "cavedelight:tectonic_pasta",
+    "cavedelight:tectonic_pie_slice",
     "cavedelight:trilocaris_noodles",
     "cavedelight:trilocaris_roll",
     "cavedelight:volcanic_chop",
@@ -165,8 +166,7 @@
     "unusual_delight:wart_bowl",
     "unusual_delight:wart_kernels",
     "vintagedelight:deepslate_salt_ore",
-    "vintagedelight:lush_grass_block",
-    "cavedelight:tectonic_pie_slice"
+    "vintagedelight:lush_grass_block"
   ],
   "tags": [],
   "mods": [],

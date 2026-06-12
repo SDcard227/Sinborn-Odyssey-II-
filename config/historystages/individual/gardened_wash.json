@@ -298,7 +298,6 @@
     "supplementaries:lunch_basket",
     "unusual_delight:braised_sea_pickle",
     "unusual_delight:carrotmite",
-    "unusual_delight:charging_curry",
     "unusual_delight:coated_berry",
     "unusual_delight:cyan_salad",
     "unusual_delight:desert_fry",
@@ -526,7 +525,8 @@
     "youkaisfeasts:wild_udumbara",
     "youkaisfeasts:wild_white_grape",
     "youkaisfeasts:yakumo_inari",
-    "youkaisfeasts:yashouma_dango"
+    "youkaisfeasts:yashouma_dango",
+    "supplementaries:soap_water"
   ],
   "tags": [],
   "mods": [],

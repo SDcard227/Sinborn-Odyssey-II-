@@ -27,6 +27,8 @@
     "quark:lime_frame_map",
     "quark:magenta_frame_map",
     "quark:orange_frame_map",
+    "quark:pathfinders_quill",
+    "quark:pathfinders_quill_with_biome",
     "quark:pink_frame_map",
     "quark:purple_frame_map",
     "quark:red_frame_map",

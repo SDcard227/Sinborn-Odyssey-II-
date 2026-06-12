@@ -3,16 +3,9 @@
   "research_time": 5400,
   "items": [
     "call_of_yucutan:obsidian_arrow",
-    "cataclysm:astrape",
-    "cataclysm:astrape_throwing",
-    "cataclysm:ceraunus",
-    "cataclysm:ceraunus_throwing",
     "cataclysm:coral_bardiche_throwing",
     "cataclysm:coral_spear_throwing",
     "cataclysm:cursed_bow",
-    "cataclysm:laser_gatling",
-    "cataclysm:void_assault_shoulder_weapon",
-    "cataclysm:wither_assault_shoulder_weapon",
     "compatdelight:dragonskin_bowl",
     "dungeons_and_combat:blunderbuss",
     "iceandfire:dragonbone_arrow",
@@ -38,8 +31,7 @@
     "tide:starlight_bow",
     "tide:starlight_bow_pulling_0",
     "tide:starlight_bow_pulling_1",
-    "tide:starlight_bow_pulling_2",
-    "traveloptics:abyssal_tidecaller"
+    "tide:starlight_bow_pulling_2"
   ],
   "tags": [],
   "mods": [],

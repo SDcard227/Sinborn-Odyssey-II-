@@ -93,7 +93,12 @@
     "obscure_api:astral_dust",
     "obscure_api:vial_of_knowledge",
     "wd:jam_invisibility",
-    "wd:levitan_jam"
+    "wd:levitan_jam",
+    "magicmod:matter",
+    "magicmod:philosopher_stone",
+    "magicmod:soul_keeper",
+    "magicmod:sacrifice_circle",
+    "create_wizardry:mana_bottle"
   ],
   "tags": [],
   "mods": [

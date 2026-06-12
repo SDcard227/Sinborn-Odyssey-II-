@@ -3,7 +3,19 @@
   "research_time": 5400,
   "items": [
     "cardiac:life_bottle",
-    "corpsebutbetter:curios_inventory"
+    "corpsebutbetter:curios_inventory",
+    "twisted:blinkinghamstring",
+    "twisted:blockofintestines",
+    "twisted:boilingtongue",
+    "twisted:eyeball",
+    "twisted:eyeballnatural",
+    "twisted:eyeballyolk",
+    "twisted:hamstring",
+    "twisted:incisorgrowth",
+    "twisted:intestine",
+    "twisted:mooch",
+    "twisted:stomach",
+    "twisted:vilefang"
   ],
   "tags": [],
   "mods": [

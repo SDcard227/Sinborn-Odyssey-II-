@@ -49,10 +49,19 @@
 #Research Pedestal Settings
 [research]
 	#Default research time in seconds. Used as fallback if a stage does not define its own 'research_time' in the JSON. [Default: 20]
-	#Range: 1 ~ 3600
+	#Range: 1 ~ 86400
 	researchTimeInSeconds = 20
 	#Show dependency checklist screen when interacting with pedestal that has dependency requirements? [Default: true]
 	showDependencyScreenInPedestal = true
+	#Booster blocks placed directly UNDER a Research Pedestal modify the active research.
+	#Format per entry: "block_id, speed_percent, cost_percent, tier, mode"
+	#  speed_percent: research time reduction (0-90). 90% = max (research runs 10x).
+	#  cost_percent:  item-dependency count reduction (0-90). Locked into the scroll on first deposit.
+	#  tier:          minimum pedestal tier the booster works under (1-4).
+	#  mode:          'min' = this tier and higher, 'exact' = only this tier.
+	#Legacy 3-column rows are accepted and treated as tier=1, mode=min.
+	#Unknown block ids and out-of-range values are logged and skipped/clamped.
+	researchBoosters = []
 
 #Settings for replacing locked loot with alternatives
 [loot_replacements]
@@ -110,4 +119,42 @@
 	#How often (in ticks) to deal damage while inside a locked structure. [Default: 20]
 	#Range: 1 ~ 600
 	damageInterval = 20
+	#ADVANCED — leave this alone if you don't know what it does.
+	#Extra blocks added around each piece of a locked structure (rooms, corridors, houses, ...).
+	#Note: a fixed safety buffer of 2 blocks is ALWAYS added on top of this value, so
+	#the effective padding around structure walls is (lockPadding + 2). Setting this to 0
+	#still leaves a 2-block safety wall between you and the structure. [Default: 0]
+	#Range: 0 ~ 16
+	lockPadding = 0
+	#ADVANCED — leave this alone if you don't know what it does.
+	#How far apart (in blocks) two pieces of the same structure can be while still being
+	#joined into one connected lock zone. Example for a village: with a low value, each
+	#house is its own little zone and the gaps between houses are walkable; with a higher
+	#value, neighbouring houses + paths fuse into one lock zone covering the whole area.
+	#Higher = larger, more 'filled-in' lock zones. Lower = more precise, more gaps. [Default: 6]
+	#Range: 0 ~ 32
+	clusterDistance = 6
+	#Cancel ALL right-click interactions (blocks, items, entities) while the player is inside a locked structure? [Default: true]
+	blockRightClick = true
+	#Cancel ALL left-click interactions (attacking entities, breaking blocks) while the player is inside a locked structure? [Default: true]
+	blockLeftClick = true
+	#Cancel projectiles (arrows, snowballs, ender pearls, etc.) the moment they would impact something inside a locked structure? [Default: true]
+	blockProjectiles = true
+
+#Override the displayed text for the six 'is locked' / 'unknown' messages.
+#Leave a value empty ("") to fall back to the default messages.
+#Use & for color codes (e.g. &c for red).
+[lock_messages]
+	#Actionbar message when entering a locked dimension. Lang key: message.historystages.dimension_unknown
+	dimensionUnknown = ""
+	#Actionbar message when attacking a locked mob. Lang key: message.historystages.mob_unknown
+	mobUnknown = ""
+	#Actionbar message when interacting with a locked item. Lang key: message.historystages.item_locked
+	itemLocked = ""
+	#Actionbar message when interacting with a locked block. Lang key: message.historystages.block_locked
+	blockLocked = ""
+	#Actionbar message when interacting with armor stands / item frames holding locked items. Lang key: message.historystages.entity_item_locked
+	entityItemLocked = ""
+	#Actionbar message when applying a locked enchantment. Lang key: message.historystages.enchantment_locked
+	enchantmentLocked = ""
 

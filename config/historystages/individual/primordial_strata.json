@@ -2,6 +2,7 @@
   "display_name": "The Primordial Strata",
   "research_time": 5400,
   "items": [
+    "alexscaves:acid",
     "alexscaves:acid_bucket",
     "alexscaves:acidic_radrock",
     "alexscaves:amber",

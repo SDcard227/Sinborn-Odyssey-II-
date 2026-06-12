@@ -1,1 +1,9 @@
 *.mrpack
+
+# session backup/archive clutter (not pack content)
+*.bak
+*.bak_*
+**/_archive_*/
+**/global_bak_*/
+**/global_split_*/
+**/global_backup_*/

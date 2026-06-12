@@ -3,7 +3,8 @@
   "research_time": 2400,
   "items": [
     "portal_fluid:portal_fluid_bottle",
-    "portal_fluid:portal_fluid_bucket"
+    "portal_fluid:portal_fluid_bucket",
+    "portal_fluid:portal_fluid"
   ],
   "tags": [],
   "mods": [],

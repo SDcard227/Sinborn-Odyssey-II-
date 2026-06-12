@@ -247,7 +247,6 @@
     "simplymore:runite_khopesh",
     "simplymore:runite_lance",
     "simplymore:runite_quarterstaff",
-    "simplymore:ruyi_jingu_bang",
     "simplymore:star_platinum_deer_horns",
     "simplymore:star_platinum_great_katana",
     "simplymore:star_platinum_great_spear",
@@ -314,8 +313,6 @@
     "simplyswords:gold_spear",
     "simplyswords:gold_twinblade",
     "simplyswords:gold_warglaive",
-    "simplyswords:magiscythe",
-    "simplyswords:magispear",
     "simplyswords:mythicmetals_compat/adamantite/adamantite_glaive",
     "simplyswords:mythicmetals_compat/adamantite/adamantite_greataxe",
     "simplyswords:mythicmetals_compat/adamantite/adamantite_greathammer",
@@ -468,8 +465,7 @@
     "simplyswords:runic_scythe",
     "simplyswords:runic_spear",
     "simplyswords:runic_twinblade",
-    "simplyswords:runic_warglaive",
-    "simplyswords:watching_warglaive"
+    "simplyswords:runic_warglaive"
   ],
   "tags": [],
   "mods": [],

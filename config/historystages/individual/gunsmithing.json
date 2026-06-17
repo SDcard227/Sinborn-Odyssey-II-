@@ -2,12 +2,14 @@
   "display_name": "Gunsmithing",
   "research_time": 5400,
   "items": [
+    "create_sa:flamethrower",
+    "create_sa:flamethrower_pr",
+    "create_sa:flamethrower_pr_2",
     "netherexp:pump_charge_shotgun",
     "netherexp:pump_charge_upgrade_smithing_template",
     "netherexp:sawed_on_shotgun",
     "netherexp:shotgun_barrel",
-    "netherexp:shotgun_core",
-    "tfmg:flamethrower"
+    "netherexp:shotgun_core"
   ],
   "tags": [],
   "mods": [],

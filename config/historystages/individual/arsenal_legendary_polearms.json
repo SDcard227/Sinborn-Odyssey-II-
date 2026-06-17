@@ -2,10 +2,16 @@
   "display_name": "The Legendary Arsenal: Named Hafted",
   "research_time": 18000,
   "items": [
+    "cataclysm_spellbooks:the_berserker",
+    "desert:spear_of_sands",
     "simplymore:ruyi_jingu_bang",
     "simplyswords:magiscythe",
     "simplyswords:magispear",
-    "simplyswords:watching_warglaive"
+    "simplyswords:watching_warglaive",
+    "traveloptics:abyssal_tidecaller",
+    "traveloptics:abyssal_tidecaller_level_one",
+    "traveloptics:abyssal_tidecaller_level_three",
+    "traveloptics:abyssal_tidecaller_level_two"
   ],
   "tags": [],
   "mods": [],

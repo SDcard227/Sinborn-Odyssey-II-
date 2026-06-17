@@ -16,7 +16,9 @@
     "mebahelcreaturesdwarven:weapon/dwemer/dwemer_mace",
     "mebahelcreaturesdwarven:weapon/dwemer/dwemer_sword",
     "mebahelcreaturesdwarven:weapon/dwemer/dwemer_war_axe",
-    "mebahelcreaturesdwarven:weapon/dwemer/dwemer_warhammer"
+    "mebahelcreaturesdwarven:weapon/dwemer/dwemer_warhammer",
+    "traveloptics:celestial_fragment",
+    "traveloptics:celestial_shard"
   ],
   "tags": [],
   "mods": [

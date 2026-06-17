@@ -8,7 +8,11 @@
     "snowrealmagic:slab",
     "snowrealmagic:snow",
     "snowrealmagic:stairs",
-    "snowrealmagic:wall"
+    "snowrealmagic:wall",
+    "tfmg:liquid_concrete",
+    "vintagedelight:vine_tile",
+    "vintagedelight:vine_tile_slab",
+    "vintagedelight:vine_tile_stairs"
   ],
   "tags": [],
   "mods": [

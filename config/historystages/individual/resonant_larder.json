@@ -1,0 +1,23 @@
+{
+  "display_name": "The Resonant Larder",
+  "research_time": 4800,
+  "items": [
+    "compatdelight:arcane_crystal_cookie",
+    "compatdelight:arcane_crystal_jem",
+    "compatdelight:arcane_crystal_juice",
+    "compatdelight:rose_crystalline_berries_cookie",
+    "compatdelight:rose_crystalline_berries_jem",
+    "dye_depot:amber_candle_cake",
+    "sullysmod:petrified_cookie",
+    "unusual_delight:amber_cookie",
+    "unusual_delight:ambercookiocity"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  }
+}

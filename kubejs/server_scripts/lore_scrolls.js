@@ -44,7 +44,7 @@ var LORE_BOOKS = [
    'minecraft:chests/village/village_butcher', 15],
 
   ['lore_artisans', 'A Sound in the Stone', 'Temple Attendant',
-   'The priests kept more than prayers. In the temple vaults, between the hymn books and the census, they filed the ledger. Everything the artisans made. Everything they recorded. The temple remembers what the village forgets.',
+   'A house is only walls until someone makes it a home. The makers who fit a room with seat and shelf and soft things kept their pattern-book filed with the village records. Comfort, it turns out, was always a craft.',
    'minecraft:chests/village/village_mason', 12],
 
   ['lore_cultivators', 'On Soil and Season', 'A Fisher\'s Aside',
@@ -60,7 +60,7 @@ var LORE_BOOKS = [
    'minecraft:chests/village/village_desert_house', 15],
 
   ['lore_herbal_arts', 'A Remedy from the Cold', 'Northern Healer',
-   'The ice preserved what the warmth destroyed. Medicinal knowledge that the southern villages lost to rot and fire survived in the frozen places. The igloo libraries. The shepherd\'s cabinets. Cold keeps secrets.',
+   'The ice preserved what the warmth destroyed. Medicine the southern villages lost to rot survived in the frozen places, the cold cabinets, the northern healer\'s stores. Cold keeps secrets, and some of them mend you.',
    'minecraft:chests/village/village_snowy_house', 15],
 
   ['lore_cave_kitchen', 'A Miner\'s Last Meal', 'Found in a Dungeon',
@@ -72,7 +72,7 @@ var LORE_BOOKS = [
    'minecraft:chests/village/village_armorer', 12],
 
   ['lore_warriors_feast', 'Field Rations Manifest', 'Supply Officer \u2014 Resigned',
-   'The outpost cooks fed armies on nothing. The woodland estates fed lords on excess. Between those two extremes is a cuisine designed for people who fight and then need to eat immediately. The records are in the places where fighting happened.',
+   'The outpost cooks fed armies on nothing. What keeps a body alive with no kitchen, no larder, no time, is its own discipline. The records survive where survival was hardest, in the dungeons and the ruined keeps.',
    'minecraft:chests/simple_dungeon', 12],
 
   // ═══════ T2 — COMBAT & SPECIALTY (1-2 books each, 10-12%) ═══════
@@ -98,7 +98,7 @@ var LORE_BOOKS = [
    'minecraft:chests/jungle_temple', 8],
 
   ['lore_infernal_kitchen', 'The Nether Cook', 'Piglin Barter Notes',
-   'They cook in the Nether. The piglins know food that survives the heat. The fortress bridges hold supply manifests. The bastion stores hold the actual recipes.',
+   'They learned to cross the fire before they learned to live in it. The piglins know which doors hold and which collapse. The way through the burning country is written where the bridges still stand.',
    'minecraft:chests/bastion_hoglin_stable', 10],
 
   ['lore_void_table', 'End Cuisine', 'Stronghold Archivist',
@@ -198,7 +198,7 @@ var LORE_BOOKS = [
    'minecraft:chests/nether_bridge', 6],
 
   ['lore_cataclysm_2', 'On Ignitium', 'Metallurgist\'s Notes',
-   'The metal that burns forever. Found only in the vaults of the eight. The acropolis treasuries have the smelting records. The bastion treasuries have samples that should not exist.',
+   'Eight horrors sleep in the deepest vaults, and the ones who chained them wrote down how. The acropolis archives hold the roster, the bastion treasuries hold what was buried beside them. Read before you wake anything.',
    'minecraft:chests/bastion_bridge', 5],
 
   ['lore_cataclysm_3', 'The Vault Sequence', 'Expedition Leader',
@@ -214,11 +214,11 @@ var LORE_BOOKS = [
    'minecraft:chests/bastion_treasure', 4],
 
   ['lore_wither_1', 'The First Summoning', 'Fortress Historian',
-   'The Nether fortress archives describe the first summoning. Not as triumph. As accident. The hoglin stables have the supply records. The fortress bridges have the ritual notes.',
+   'The first summoning was an accident, the records say, not a triumph. What was raised left a mark on the world that never closed, an eye that still watches from the wither-dark. The fortress archives hold the warning.',
    'minecraft:chests/bastion_bridge', 6],
 
   ['lore_wither_2', 'On Containing Stars', 'Piglin Elder',
-   'The nether star does not want to be contained. The fortress bridges have the containment protocols. The hoglin stables have the material lists. Both are needed.',
+   'The star at its heart does not want to be held. Those who studied the wither-eye learned to look without being seen. The protocols are in the bastion stores, filed under things that should have been burned.',
    'minecraft:chests/bastion_other', 5],
 
   ['lore_command_ruin_1', 'The Storm Warning', 'Classified Report',
@@ -380,12 +380,44 @@ var LORE_BOOKS = [
    'minecraft:chests/shipwreck_treasure', 8],
 
   ['lore_sugarstone_caverns', 'I Tasted the Wall', 'An Astonished Miner',
-   'I did not believe the miner until I tasted the wall. A whole cavern of it - chocolate set hard as bedrock, blooms of gumdrop, a river running sweet. Everything there can be eaten and almost nothing there is safe. What the place knows is kept in the bright ruined town beneath it.',
+   'I did not believe it until I tasted the wall. A whole cavern set sweet, chocolate hard as bedrock, a river running sugar. Everything there can be eaten and almost nothing is safe. What the place knows, the confectioners hollowed out and kept.',
    'minecraft:chests/simple_dungeon', 10],
 
   ['lore_runesmithing', 'The Blade Is Only the Question', 'A Fort Quartermaster',
    'A blade is only the question. The old smiths of the deep forts never merely sharpened steel - they taught it, setting gem and rune into the metal until the weapon answered back. Their tablets are filed where soldiers file everything: in the keep, past the bridge, with the quartermaster stores.',
    'minecraft:chests/nether_bridge', 8],
+
+  // ======= CULTURE CUISINE - the 9 civilizations (10-12%) =======
+  ['lore_bread_black_land', 'On the Bread of the Black Land', 'A Sun-Priest of Kamath',
+   'They ate at noon or not at all, under Sunleia\'s eye. Bread of the black land, dates pressed to syrup, meat cured in salt and sun. The recipe is not written, only practiced, in the rock-cut houses where the Gilded Sands kept their dead and their kitchens together.',
+   'minecraft:chests/desert_pyramid', 12],
+  ['lore_maize_codex', 'The Maize Codex', 'A Scribe of Yucatan',
+   'Corn was the first prayer and the last meal. The sky-priests ground maize into a hundred shapes and kept chocolate for the gods alone. What they knew of the kitchen is buried with what they knew of the sky, high in the green temples.',
+   'minecraft:chests/jungle_temple', 12],
+  ['lore_baobab_memory', 'The Memory of the Baobab', 'An Umvuthana Archivist',
+   'The Archive kept its cheeses the way it kept its memory, for generations, never thrown out, only added to. Seven kinds, and a wine older than the drinker. Find it where the savanna-people still tend the long tables beneath the great trees.',
+   'minecraft:chests/village/village_savanna_house', 12],
+  ['lore_two_larder', 'The Two-Larder Winter', 'A Steward of the Hoarfrost',
+   'Two larders: one for the winter you can see, one for the winter you cannot. The Hoarfrost salted the cod and smoked the herring against a spring that might not come. A sourdough nine generations old still rises in the frozen houses, if one is left standing.',
+   'minecraft:chests/village/village_snowy_house', 12],
+  ['lore_larder_methods', 'The Larder\'s Methods', 'A Hoarfrost Cook',
+   'Nothing was wasted because nothing was permitted to change, not even rot. The larder-craft turned a single catch into a season\'s meals. The methods survive in the snowy cellars and the ice-bound cabins, written for a people who refused to let the cold win.',
+   'minecraft:chests/igloo_chest', 12],
+  ['lore_stolovaya', 'The Stolovaya Ledger', 'A Forgesworn Quartermaster',
+   'The canteen fed the whole works on a schedule, every loaf the same weight, every cup the same hour. There was no joy in it and no waste either. The ledger of rations is filed where the engineers filed everything, in the buried works below.',
+   'minecraft:chests/simple_dungeon', 12],
+  ['lore_forgetting_broth', 'The Forgetting-Broth', 'No name was given',
+   'There is a soup you eat alone, to forget you were ever named. The recipe is never written down, only remembered, then unremembered, reinvented each time the people vanished. A single copy survived where copies were never meant to.',
+   'minecraft:chests/stronghold_corridor', 10],
+  ['lore_feast_worlds_edge', 'The Feast at the World\'s Edge', 'A Tidehold Magistrate',
+   'They ate from copper and kept the coin in the broth without ever eating it. The Tidehold\'s feast went where the tide went, out past the last shelf to the world\'s edge. What survives is held in the drowned holds and the cities beneath the ocean.',
+   'minecraft:chests/underwater_ruin_big', 10],
+  ['lore_gallery_broth', 'The Gallery-Broth', 'the gallery',
+   'One pot, never emptied, never restarted, fed from weaning to dying. The gallery-broth was the household\'s body, and in the end the household became the broth. Its keeping is recorded in the deep dark, where the hum has not stopped.',
+   'minecraft:chests/ancient_city', 10],
+  ['lore_long_meal', 'The Long Meal Before the Firing', 'Recovered, author burned',
+   'Only four dishes survived the reset, and this is the last of them: the long meal the builders ate before they fired the Storm. The recipe is a fragment, the rest burned with the cooks. What remains is sealed where the last cycle kept its secrets.',
+   'minecraft:chests/bastion_treasure', 8],
 ]
 
 // ─── INJECT LORE BOOKS INTO LOOT TABLES ─────────────────────

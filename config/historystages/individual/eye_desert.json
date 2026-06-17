@@ -2,7 +2,8 @@
   "display_name": "The Scroll of the Desert Eye",
   "research_time": 3600,
   "items": [
-    "cataclysm:desert_eye"
+    "cataclysm:desert_eye",
+    "cataclysm:sandstorm_in_a_bottle"
   ],
   "tags": [],
   "mods": [],

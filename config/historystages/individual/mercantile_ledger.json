@@ -4,7 +4,9 @@
   "items": [
     "bountiful:bounty",
     "bountiful:bountyboard",
-    "bountiful:decree"
+    "bountiful:decree",
+    "createadditionallogistics:cash_register",
+    "createadditionallogistics:sales_ledger"
   ],
   "tags": [],
   "mods": [

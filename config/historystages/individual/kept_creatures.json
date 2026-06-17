@@ -19,16 +19,14 @@
     "crittersandcompanions:silk",
     "crittersandcompanions:silk_cocoon",
     "crittersandcompanions:silk_lead",
-    "farm_and_charm:chicken_coop",
-    "farm_and_charm:chicken_feed",
     "farm_and_charm:chicken_nest",
     "farm_and_charm:feeding_trough",
-    "farm_and_charm:horse_fodder",
     "quark:egg_parrot_blue",
     "quark:egg_parrot_gray",
     "quark:egg_parrot_green",
     "quark:egg_parrot_red_blue",
-    "quark:egg_parrot_yellow_blue"
+    "quark:egg_parrot_yellow_blue",
+    "quark:slime_in_a_bucket"
   ],
   "tags": [],
   "mods": [

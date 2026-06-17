@@ -7,3 +7,12 @@
 **/global_bak_*/
 **/global_split_*/
 **/global_backup_*/
+
+# logs + this-session backups
+**/logs/
+**/debug-*.log
+**/individual_backup_*.zip
+**/individual_bak_*/
+**/*_bak_*/
+**/*.preblockrecipes.bak
+**/*.preog.bak

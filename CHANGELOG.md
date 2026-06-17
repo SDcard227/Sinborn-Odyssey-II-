@@ -6,6 +6,39 @@ tags: [sinborn-dev]
 
 > Format: see [[Changelog Template]]. Newest at top.
 
+## v1.6.1 — Spawn, Discovery & Server Test (June 2026)
+
+> Adds the Spawn creature mod, deepens the gating, and keeps the world on pure
+> explore-and-discover (no biome/structure trackers).
+
+### Content
+- **Spawn 4.0 added** — 270+ creatures, items, and foods, fully gated. Firekeeper,
+  Dodo, Stranded, Flukeshroom and the ocean roster folded into the nine-civ lore.
+- **Fixed a hard crash:** Create Big Cannons and Spawn both ship a `block_recipes`
+  folder; CBC parsed Spawn's typeless files and NPE-crashed the Create-World screen.
+  Stripped Spawn's 19 block_recipes (anthill-rot + heliostone conversion) — every
+  Spawn mob/item/food still works.
+
+### Scrolls & gating
+- Closed a gating leak: items with a model but no lang key slipped past the scanner.
+  All 276 holdable Spawn items now gated (incl. potted plants, buckets, dev variants).
+- Food variants reconciled — 119 served/bowl/slice/feast variants now match their base
+  food's form + culture; pies given proper form gates; raw fish moved out of the
+  creature scroll into the food scrolls.
+- Empty `resonant_larder` scroll given a real identity: the arcane crystalline larder.
+- All spawn eggs sealed (creative-only); 744 total in the Sealed Vault.
+- **Nether access fix:** `The Infernal Passage` now drops in overworld ruined portals,
+  breaking the chicken-and-egg (it used to drop only inside the Nether).
+- Oil Rig (create_ltab) now drops the `blood_and_oil` scroll.
+
+### Explore, don't track
+- Trialed a biome locator (Nature's Compass) + biome compaction, then **removed both** —
+  the pack stays vanilla worldgen, find-it-yourself discovery.
+
+### Other
+- Mob lore map: all 1,436 pack mobs sorted into the nine civilizations.
+- Keybinds restored to the intended pack defaults; quest book on `[`.
+
 ## v1.6.0 — The Discovery Update (June 2026)
 
 > The headline: **JEI starts completely empty.** A fresh player opens the recipe

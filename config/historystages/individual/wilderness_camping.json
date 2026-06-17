@@ -2,6 +2,8 @@
   "display_name": "The Wilderness Camping Manual",
   "research_time": 2700,
   "items": [
+    "beachparty:swim_wings",
+    "burnt:smoldering_campfire",
     "comforts:hammock_black",
     "comforts:hammock_blue",
     "comforts:hammock_brown",

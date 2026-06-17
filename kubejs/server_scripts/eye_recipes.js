@@ -110,7 +110,7 @@ EntityEvents.death(function(event) {
   // Wither already dead, so it would be a circular hardlock. the_wither scroll
   // lives in Nether Fortress / Bastion chest loot instead (see scroll_loot.js).
   if (t == 'witherstormmod:withered_symbiont') {
-    e.block.popItem(Item.of('historystages:research_scroll', '{StageResearch:"nature_void"}'))
+    e.block.popItem(Item.of('historystages:research_scroll', '{StageResearch:"void_table"}'))
   }
 
   // The Nightwarden — Keeper of the Path to Godhood. Lore (per CANON_LOCK §3.95
@@ -126,6 +126,6 @@ EntityEvents.death(function(event) {
   // deeper End access, then find the Void Cathedral and survive the Nightwarden
   // to claim the scroll.
   if (t == 'traveloptics:the_nightwarden') {
-    e.block.popItem(Item.of('historystages:research_scroll', '{StageResearch:"path_to_divinity"}'))
+    e.block.popItem(Item.of('historystages:research_scroll', '{StageResearch:"five_vessels_apocrypha"}'))
   }
 })

@@ -4,17 +4,12 @@
   "items": [
     "iceandfire:dragon_bone_block",
     "iceandfire:dragon_bone_wall",
-    "iceandfire:dragon_flute",
-    "iceandfire:dragon_horn",
-    "iceandfire:dragon_horn_fire",
-    "iceandfire:dragon_horn_ice",
     "iceandfire:dragon_horn_lightning",
     "iceandfire:dragon_ice",
     "iceandfire:dragon_ice_spikes",
     "iceandfire:dragon_skull_fire",
     "iceandfire:dragon_skull_ice",
     "iceandfire:dragon_skull_lightning",
-    "iceandfire:dragon_stick",
     "iceandfire:dragonbone",
     "iceandfire:dragonegg_amythest",
     "iceandfire:dragonegg_black",
@@ -60,8 +55,7 @@
     "iceandfire:ice_dragon_heart",
     "iceandfire:lightning_dragon_blood",
     "iceandfire:lightning_dragon_flesh",
-    "iceandfire:lightning_dragon_heart",
-    "iceandfire:sickly_dragon_meal"
+    "iceandfire:lightning_dragon_heart"
   ],
   "tags": [],
   "mods": [],

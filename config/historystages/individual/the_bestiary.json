@@ -1,7 +1,11 @@
 {
   "display_name": "The Bestiary of Myth & Monster",
   "research_time": 2400,
-  "items": [],
+  "items": [
+    "desert:construct_part",
+    "desert:scorpion_tail",
+    "mowziesmobs:naga_fang"
+  ],
   "tags": [],
   "mods": [
     "fieldguide"

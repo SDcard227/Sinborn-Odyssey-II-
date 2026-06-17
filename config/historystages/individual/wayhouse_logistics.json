@@ -13,7 +13,9 @@
     "cmpackagecouriers:rope_12x10",
     "cmpackagecouriers:rope_12x12",
     "create_mobile_packages:mobile_packager",
-    "create_mobile_packages:portable_stock_ticker"
+    "create_mobile_packages:portable_stock_ticker",
+    "minecraft:light_blue_shulker_box",
+    "minecraft:light_gray_shulker_box"
   ],
   "tags": [],
   "mods": [

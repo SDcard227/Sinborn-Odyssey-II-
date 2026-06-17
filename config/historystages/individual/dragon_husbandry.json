@@ -4,7 +4,14 @@
   "items": [
     "endertrigon:baby_dragon_egg",
     "endertrigon:dragon_horn",
-    "endertrigon:tooting_dragon_horn"
+    "endertrigon:tooting_dragon_horn",
+    "iceandfire:dragon_flute",
+    "iceandfire:dragon_horn",
+    "iceandfire:dragon_horn_fire",
+    "iceandfire:dragon_horn_ice",
+    "iceandfire:dragon_stick",
+    "iceandfire:sickly_dragon_meal",
+    "quark:dragon_scale"
   ],
   "tags": [],
   "mods": [

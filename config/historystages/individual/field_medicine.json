@@ -2,8 +2,7 @@
   "display_name": "Field Medicine",
   "research_time": 2700,
   "items": [
-    "food_desire:diet_book",
-    "food_desire:magic_appetizer",
+    "cuffed:bandage",
     "wd:medical_potato"
   ],
   "tags": [],

@@ -3,7 +3,7 @@
 // Gives new players their starting kit on first join.
 // Items are placed INSIDE the Sophisticated Backpack when possible.
 //
-// Kit (inside backpack): Diet Book, Quest Book, Atlas, Food Book,
+// Kit (inside backpack): Diet Book, Atlas, Food Book,
 //   Spyglass, Waterskin, Lantern, Bread x5, Tent, Sleeping Bag,
 //   Survivor's Codex scroll, Research Pedestal
 //
@@ -53,7 +53,8 @@ var JavaRandom = Java.loadClass('java.util.Random')
 // Atlas handled separately via Forge registry (Connector compat)
 var BACKPACK_ITEMS = [
   'food_desire:diet_book',
-  'heracles:quest_book',
+  // quest_book removed 2026-06-15 — questbook now opens via the "Open Quests"
+  // keybind ([ by default, rebindable). Item still craftable as a fallback.
   'solonion:food_book',
   'minecraft:spyglass',
   'cold_sweat:waterskin',

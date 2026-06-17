@@ -2,9 +2,6 @@
   "display_name": "The Evocation School",
   "research_time": 2700,
   "items": [
-    "companions:recall_platform_block",
-    "companions:respawn_totem_block",
-    "companions:shadow_bell",
     "dungeons_and_combat:bottled_fairy_dust",
     "dungeons_and_combat:enchanted_fairy_dust_apple",
     "dungeons_and_combat:fairy_dust",
@@ -21,6 +18,7 @@
     "irons_spellbooks:evocation_upgrade_orb",
     "irons_spellbooks:graybeard_staff",
     "irons_spellbooks:scroll_evocation",
+    "luminousworld:wind_ball",
     "traveloptics:evocation_echo"
   ],
   "tags": [],

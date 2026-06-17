@@ -1,7 +1,24 @@
 {
   "display_name": "The Homestead's Comfort",
   "research_time": 2700,
-  "items": [],
+  "items": [
+    "bits_n_bobs:blue_chair",
+    "bits_n_bobs:brown_chair",
+    "bits_n_bobs:cyan_chair",
+    "bits_n_bobs:gray_chair",
+    "bits_n_bobs:green_chair",
+    "bits_n_bobs:light_blue_chair",
+    "bits_n_bobs:light_gray_chair",
+    "bits_n_bobs:lime_chair",
+    "bits_n_bobs:magenta_chair",
+    "bits_n_bobs:orange_chair",
+    "bits_n_bobs:pink_chair",
+    "bits_n_bobs:purple_chair",
+    "bits_n_bobs:red_chair",
+    "bits_n_bobs:white_chair",
+    "bits_n_bobs:yellow_chair",
+    "witherstorm_delight:tainted_cabinet"
+  ],
   "tags": [],
   "mods": [
     "mr_typewriter_daycounter",

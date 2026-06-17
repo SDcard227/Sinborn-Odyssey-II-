@@ -1,5 +1,5 @@
 {
-  "display_name": "The Foundry Fa\u00e7ade",
+  "display_name": "The Foundry Façade",
   "research_time": 2400,
   "items": [
     "create:andesite_bars",
@@ -142,12 +142,6 @@
     "create:small_veridium_bricks",
     "create:veridium",
     "create:veridium_pillar",
-    "createbigcannons:cast_iron_autocannon_barrel",
-    "createbigcannons:cast_iron_autocannon_breech_extractor",
-    "createbigcannons:cast_iron_cannon_barrel",
-    "createbigcannons:partial_cast_iron_autocannon_breech_extractor",
-    "createbigcannons:unbored_cast_iron_autocannon_barrel",
-    "createbigcannons:unbored_cast_iron_cannon_barrel",
     "createdeco:andesite_bars",
     "createdeco:andesite_bars_overlay",
     "createdeco:andesite_catwalk",

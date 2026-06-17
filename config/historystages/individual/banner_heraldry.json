@@ -21,9 +21,12 @@
     "amendments:ceiling_banner_rose",
     "amendments:ceiling_banner_slate",
     "amendments:ceiling_banner_tan",
+    "amendments:ceiling_banner_teal",
     "amendments:ceiling_banner_verdant",
     "beachparty:beachparty_banner",
     "beachparty:beachparty_wall_banner",
+    "doapi:standard",
+    "doapi:wall_standard",
     "dungeonnowloading:dungeon_banner",
     "dungeonnowloading:dungeon_banner_chaos_spawner",
     "dungeonnowloading:dungeon_banner_experience_bottle",
@@ -104,7 +107,8 @@
     "minecraft:skull_banner_pattern",
     "minecraft:skull_banner_pattern_desc",
     "minecraft:white_banner",
-    "minecraft:yellow_banner"
+    "minecraft:yellow_banner",
+    "supplementaries:flag_teal"
   ],
   "tags": [],
   "mods": [],

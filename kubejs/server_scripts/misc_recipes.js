@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
   ], {
     N: 'minecraft:netherite_block',
     S: 'minecraft:nether_star'
-  })
+  }).id('kubejs:command_block')   // stable id so HistoryStages can gate it (command_ruin)
 
   // ─── HERACLES QUEST BOOK ─────────────────────────────────
   // Emerald above a book — knowledge has a cost.
@@ -53,6 +53,6 @@ ServerEvents.recipes(event => {
       L: '#forge:leather',
       C: '#forge:chests/wooden'
     }
-  )
+  ).id('kubejs:starter_backpack')   // stable id so HistoryStages can gate it (backpackcraft)
 
 })

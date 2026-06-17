@@ -2,6 +2,7 @@
   "display_name": "The Legendary Forge",
   "research_time": 5400,
   "items": [
+    "cataclysm:ignitium_upgrade_smithing_template",
     "cataclysm:infernal_forge",
     "cataclysm:mechanical_fusion_anvil",
     "cataclysm:void_forge",

@@ -2,7 +2,10 @@
   "display_name": "The Long Road",
   "research_time": 900,
   "items": [
-    "antique_atlas:atlas"
+    "antique_atlas:atlas",
+    "trotting_wagons:armored_wagon",
+    "trotting_wagons:conestoga_wagon",
+    "trotting_wagons:royal_wagon"
   ],
   "tags": [],
   "mods": [

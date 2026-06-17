@@ -2,8 +2,9 @@
   "display_name": "The Companions Charter",
   "research_time": 900,
   "items": [
-    "farm_and_charm:cat_food",
-    "farm_and_charm:dog_food",
+    "companions:recall_platform_block",
+    "companions:respawn_totem_block",
+    "companions:shadow_bell",
     "mca:baby_boy",
     "mca:baby_boy_empty",
     "mca:baby_girl",
@@ -270,7 +271,8 @@
     "recruits:horseman_block",
     "recruits:nomad_block",
     "recruits:recruit_block",
-    "recruits:recruit_shield_block"
+    "recruits:recruit_shield_block",
+    "trotting_wagons:horse_whip"
   ],
   "tags": [],
   "mods": [

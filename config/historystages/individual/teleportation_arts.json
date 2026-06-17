@@ -20,6 +20,7 @@
     "createteleporters:pocket_d_block",
     "createteleporters:pocket_dimension_remote",
     "createteleporters:quantum_casing",
+    "createteleporters:quantum_fluid",
     "createteleporters:quantum_fluid_bucket",
     "createteleporters:quantum_mechanism",
     "createteleporters:redstone_pearl",
@@ -28,7 +29,8 @@
     "createteleporters:tp_link",
     "createteleporters:tp_rec",
     "createteleporters:warp_portal",
-    "createteleporters:quantum_fluid"
+    "irons_spellbooks:pocket_dimension_portal_frame",
+    "irons_spellbooks:portal_frame"
   ],
   "tags": [],
   "mods": [],

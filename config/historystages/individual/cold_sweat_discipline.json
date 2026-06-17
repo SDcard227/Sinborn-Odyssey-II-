@@ -2,6 +2,7 @@
   "display_name": "The Wayfarer's Endurance",
   "research_time": 2700,
   "items": [
+    "cold_sweat:boiler",
     "cold_sweat:chameleon_boots",
     "cold_sweat:chameleon_chestplate",
     "cold_sweat:chameleon_helmet",
@@ -73,6 +74,7 @@
     "thirst:terracotta_bowl",
     "thirst:terracotta_water_bowl",
     "thirst:wooden_water_bowl",
+    "toughasnails:purified_water_bottle",
     "winteroverhaul:cyan_scarf",
     "winteroverhaul:cyan_winter_hat",
     "winteroverhaul:green_scarf",
@@ -82,8 +84,7 @@
     "winteroverhaul:skates",
     "winteroverhaul:top_hat",
     "winteroverhaul:yellow_scarf",
-    "winteroverhaul:yellow_winter_hat",
-    "toughasnails:purified_water_bottle"
+    "winteroverhaul:yellow_winter_hat"
   ],
   "tags": [],
   "mods": [

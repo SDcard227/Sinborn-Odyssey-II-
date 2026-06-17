@@ -27,6 +27,10 @@ tags: [sinborn-dev]
   creature scroll into the food scrolls.
 - Empty `resonant_larder` scroll given a real identity: the arcane crystalline larder.
 - All spawn eggs sealed (creative-only); 744 total in the Sealed Vault.
+- Sealed Vault audit (recipe cross-reference vs all 15,470 recipe outputs): confirmed
+  no craftable/survival item was wrongly dev-vaulted. Moved the 4 outliers out — the
+  Ice & Fire dragon egg into `Dragon Husbandry`, and 3 Burnt fluid buckets (eruption
+  lava / flaming tar / geyser water) into `Oddments & Devices` alongside their siblings.
 - **Nether access fix:** `The Infernal Passage` now drops in overworld ruined portals,
   breaking the chicken-and-egg (it used to drop only inside the Nether).
 - Oil Rig (create_ltab) now drops the `blood_and_oil` scroll.

@@ -377,7 +377,7 @@ simplycataclysm-1.0.1+1.20.1+forge.jar
 simplymore-forge-1.1.3.jar
 simplyswords-forge-1.56.0-1.20.1.jar
 simplytents-2.0.9.jar
-sinborn_hs_patch-1.0.11.jar
+sinborn_hs_patch-1.0.12.jar
 sleep_hunger-1.0.3-forge-1.20.1.jar
 sleeprework-FORGE-1.20.1-1.1.0.jar
 sliceanddice-forge-3.6.0.jar

@@ -251,19 +251,7 @@
     "wither_spawn_animation",
     "witherreincarnated"
   ],
-  "mod_exceptions": [
-    "witherstormmod:command_block",
-    "witherstormmod:command_block_sword",
-    "witherstormmod:formidibomb",
-    "witherstormmod:gold_command_block_sword",
-    "witherstormmod:iron_command_block_sword",
-    "witherstormmod:stone_command_block_sword",
-    "witherstormmod:super_beacon",
-    "witherstormmod:super_support_beacon",
-    "witherstormmod:super_tnt",
-    "witherstormmod:tainted_dust",
-    "witherstormmod:wooden_command_block_sword"
-  ],
+  "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],
   "structures": [],

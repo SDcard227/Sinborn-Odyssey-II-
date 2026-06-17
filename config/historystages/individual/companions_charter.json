@@ -279,20 +279,7 @@
     "mca",
     "recruits"
   ],
-  "mod_exceptions": [
-    "companions:book_naginata",
-    "companions:cannon_arm",
-    "companions:croissant_dragon_chocolate_armor",
-    "companions:croissant_dragon_strawberry_armor",
-    "companions:croissant_dragon_vanilla_armor",
-    "companions:croissant_egg_block",
-    "companions:crystallized_blood_sword",
-    "companions:eternal_lighter",
-    "companions:netherite_dagger",
-    "companions:relic_gold",
-    "companions:saint_klimt_music_disc",
-    "companions:shade_sword_altar"
-  ],
+  "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],
   "structures": [],

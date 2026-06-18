@@ -6,6 +6,21 @@ tags: [sinborn-dev]
 
 > Format: see [[Changelog Template]]. Newest at top.
 
+## v1.6.2 — Distant Horizons On (June 2026)
+
+> Small patch: Distant Horizons turns on by default now (was shipping off), plus
+> RAM/setup guidance to stop first-launch OutOfMemory crashes.
+
+### Fixed
+- **Distant Horizons renders by default.** It shipped with rendering OFF, so the world
+  looked fog-walled at vanilla distance even with the mod installed. Now the full
+  64-chunk LOD view is on out of the box (existing players: Options → Distant Horizons
+  → enable rendering). The far view builds in as you explore.
+
+### Setup
+- **Allocate 6-8 GB RAM.** 380+ mod pack; 2-4 GB crashes on boot (OutOfMemory). The
+  Modrinth App sets RAM automatically. Setup notes are pinned to the pack page.
+
 ## v1.6.1 — Spawn, Discovery & Server Test (June 2026)
 
 > Adds the Spawn creature mod, deepens the gating, and keeps the world on pure

@@ -16,6 +16,9 @@ tags: [sinborn-dev]
   looked fog-walled at vanilla distance even with the mod installed. Now the full
   64-chunk LOD view is on out of the box (existing players: Options → Distant Horizons
   → enable rendering). The far view builds in as you explore.
+- **Forlorn Hollows findable.** Alex's Caves' rarest cave was tuned way out (650 blocks,
+  rarity offset 4) and almost never appeared. Loosened to distance 400 / rarity offset 2
+  (still rarer than the common caves). New chunks only.
 
 ### Setup
 - **Allocate 6-8 GB RAM.** 380+ mod pack; 2-4 GB crashes on boot (OutOfMemory). The

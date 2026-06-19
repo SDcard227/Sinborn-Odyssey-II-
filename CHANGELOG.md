@@ -6,10 +6,17 @@ tags: [sinborn-dev]
 
 > Format: see [[Changelog Template]]. Newest at top.
 
-## v1.6.2 — Distant Horizons On (June 2026)
+## v1.6.2 — Crash Fix + Discovery Polish (June 2026)
 
-> Small patch: Distant Horizons turns on by default now (was shipping off), plus
-> RAM/setup guidance to stop first-launch OutOfMemory crashes.
+> Stability + polish: kills a world-load deadlock, turns Distant Horizons on by default,
+> and tidies loot homes and cravings.
+
+### Crash fixed
+- **World-load deadlock killed.** More Mob Variants deadlocked worldgen at "Preparing
+  spawn area" (conflict with Sully's Mod's dungeon spawner; getBiome blocked the worldgen
+  thread, no config/patch fix). Removed , no mob-variety loss (Creeper/Enderman/Golem
+  Overhaul cover it). Registers a network channel, so the live server drops it in sync
+  with this publish.
 
 ### Fixed
 - **Distant Horizons renders by default.** It shipped with rendering OFF, so the world
@@ -19,6 +26,11 @@ tags: [sinborn-dev]
 - **Forlorn Hollows findable.** Alex's Caves' rarest cave was tuned way out (650 blocks,
   rarity offset 4) and almost never appeared. Loosened to distance 400 / rarity offset 2
   (still rarer than the common caves). New chunks only.
+- **Scroll loot homes fixed.** End/Nether research scrolls were dropping in overworld
+  chests after a remap; routed back to their own dimensions (dwarven End-tech scrolls
+  stay in the dwarven observatory by design).
+- **Cravings cleaned.** Food-craving system was asking for crafting bases (mash, dough,
+  flour, sauces); scrubbed 77 ingredients , finished meals only now.
 
 ### Setup
 - **Allocate 6-8 GB RAM.** 380+ mod pack; 2-4 GB crashes on boot (OutOfMemory). The

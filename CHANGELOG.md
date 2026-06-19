@@ -6,17 +6,9 @@ tags: [sinborn-dev]
 
 > Format: see [[Changelog Template]]. Newest at top.
 
-## v1.6.2 — Crash Fix + Discovery Polish (June 2026)
+## v1.6.2 — Discovery Polish (June 2026)
 
-> Stability + polish: kills a world-load deadlock, turns Distant Horizons on by default,
-> and tidies loot homes and cravings.
-
-### Crash fixed
-- **World-load deadlock killed.** More Mob Variants deadlocked worldgen at "Preparing
-  spawn area" (conflict with Sully's Mod's dungeon spawner; getBiome blocked the worldgen
-  thread, no config/patch fix). Removed , no mob-variety loss (Creeper/Enderman/Golem
-  Overhaul cover it). Registers a network channel, so the live server drops it in sync
-  with this publish.
+> Polish patch: turns Distant Horizons on by default and tidies loot homes and cravings.
 
 ### Fixed
 - **Distant Horizons renders by default.** It shipped with rendering OFF, so the world

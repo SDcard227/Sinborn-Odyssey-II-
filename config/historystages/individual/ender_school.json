@@ -16,7 +16,12 @@
     "irons_spellbooks:ender_rune",
     "irons_spellbooks:ender_upgrade_orb",
     "traveloptics:ender_echo",
-    "traveloptics:spectral_spell_slot_upgrade"
+    "traveloptics:spectral_spell_slot_upgrade",
+    "irons_spellbooks:shadowwalker_boots",
+    "irons_spellbooks:shadowwalker_chestplate",
+    "irons_spellbooks:shadowwalker_helmet",
+    "irons_spellbooks:shadowwalker_leggings",
+    "endermanoverhaul:corrupted_shield"
   ],
   "tags": [],
   "mods": [],

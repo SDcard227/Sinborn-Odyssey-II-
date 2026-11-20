@@ -22,7 +22,11 @@
     "compatdelight:permafrost_ice_cream",
     "compatdelight:permafrost_stew",
     "irons_spellbooks:prepared_ice_spider_egg",
-    "irons_spellbooks:cooked_ice_spider_egg"
+    "irons_spellbooks:cooked_ice_spider_egg",
+    "irons_spellbooks:cryomancer_boots",
+    "irons_spellbooks:cryomancer_chestplate",
+    "irons_spellbooks:cryomancer_helmet",
+    "irons_spellbooks:cryomancer_leggings"
   ],
   "tags": [],
   "mods": [],

@@ -11,7 +11,12 @@
     "traveloptics:abyssal_tidecaller_level_one",
     "traveloptics:abyssal_tidecaller_level_three",
     "traveloptics:abyssal_tidecaller_level_two",
-    "traveloptics:tome_of_abyssal_flora"
+    "traveloptics:tome_of_abyssal_flora",
+    "cataclysm_spellbooks:abyssal_warlock_boots",
+    "cataclysm_spellbooks:abyssal_warlock_chestplate",
+    "cataclysm_spellbooks:abyssal_warlock_helmet",
+    "cataclysm_spellbooks:abyssal_warlock_leggings",
+    "cataclysm_spellbooks:abyssal_warlock_mask"
   ],
   "tags": [],
   "mods": [],

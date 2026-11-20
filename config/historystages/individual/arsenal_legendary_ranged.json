@@ -7,7 +7,12 @@
     "cataclysm:ceraunus",
     "cataclysm:laser_gatling",
     "cataclysm:void_assault_shoulder_weapon",
-    "cataclysm:wither_assault_shoulder_weapon"
+    "cataclysm:wither_assault_shoulder_weapon",
+    "cataclysm_spellbooks:gauntlet_of_gattling",
+    "traveloptics:charged_sands",
+    "traveloptics:charged_sands_level_one",
+    "traveloptics:charged_sands_level_two",
+    "traveloptics:charged_sands_level_three"
   ],
   "tags": [],
   "mods": [],

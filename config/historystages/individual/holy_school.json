@@ -22,7 +22,16 @@
     "traveloptics:sanctified_spell_slot_upgrade",
     "call_of_yucutan:hanging_vine_hook",
     "compatdelight:divine_pearl_dough",
-    "compatdelight:magic_hamburger"
+    "compatdelight:magic_hamburger",
+    "irons_spellbooks:priest_boots",
+    "irons_spellbooks:priest_chestplate",
+    "irons_spellbooks:priest_helmet",
+    "irons_spellbooks:priest_leggings",
+    "dacxirons:blessed_priest_boots",
+    "dacxirons:blessed_priest_robe",
+    "dacxirons:blessed_priest_hood",
+    "dacxirons:blessed_priest_leggings",
+    "irons_spellbooks:paladin_chestplate"
   ],
   "tags": [],
   "mods": [],

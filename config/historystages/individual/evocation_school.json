@@ -16,7 +16,12 @@
     "irons_spellbooks:evocation_rune",
     "irons_spellbooks:evocation_upgrade_orb",
     "irons_spellbooks:graybeard_staff",
-    "traveloptics:evocation_echo"
+    "traveloptics:evocation_echo",
+    "irons_spellbooks:archevoker_boots",
+    "irons_spellbooks:archevoker_chestplate",
+    "irons_spellbooks:archevoker_helmet",
+    "irons_spellbooks:archevoker_leggings",
+    "irons_spellbooks:speed_boots"
   ],
   "tags": [],
   "mods": [],

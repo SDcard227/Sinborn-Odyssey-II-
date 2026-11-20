@@ -6,6 +6,32 @@ tags: [sinborn-dev]
 
 > Format: see [[Changelog Template]]. Newest at top.
 
+## v2.0.0-beta.5.8 , No Gaps (November 2026)
+
+> A follow-up to Two Keys. If you can see a piece of gear in JEI, you can now make it. Mage robes and a handful of weapons and upgrades no longer show up long before their materials, and Distant Horizons stops cutting holes into cliffs.
+
+
+### 🧥 Mage robes wait for their school
+- **94 mage armor pieces** kept The Tanner's Craft (or their armor scroll) and now **also need the school their cloth or gem comes from**. You no longer see 30-armor robes on day one that you can't make until much later.
+- Crimson Wizard and Cultist sets need **The Blood School**, Pyromancer needs **The Fire School**, Priest needs **The Holy School**, Archevoker needs **The Evocation School**, Forlorn Harbinger and the Excelsius sets need **The Eldritch School**, Abyssal Warlock needs **The Abyssal School**, Engineer needs **The Technomancy School**, and Electromancer and the other Arcane robes need **The Arcane Codex**.
+- Armor still lives in armor scrolls. The school is the second key, the same way Nether materials need On Infernal Passage.
+
+### 🪜 The last skips
+- **Runic weapons** (sai, rapier, longsword, katana, cutlass, claymore, chakram) need **The Master Arsenal: Blades**, where their netherite base is.
+- **Weapon upgrades follow their weapon.** The Obliterator, the Thorns of Oblivion, the Wand of Final Light and the three Dragonsteel sickles need **The Legendary Arsenal: Named Blades**. The Gauntlet of Gattling and the Charged Sands need **The Legendary Arsenal: Named Ranged**.
+- **The Undead Eye and the Witch Eye** also need **Eye Synthesis**, like their ingredients.
+- Dog food needs The Forager's Almanac (animal fat), the mutton wrap needs The Maize Codex (tortilla), and molten slag needs Kinetic Engineering.
+
+### 🌄 Distant Horizons
+- **Cave culling is off by default.** It was hiding cliff faces it thought were underground, which left grey stripes and holes in far terrain.
+- Tip: set your video render distance to **8**. The server sends 8 chunks, and anything lower hands nearby terrain to the low-detail view.
+
+### 🧹 Small things
+- Quest book "Opens" lines updated for every scroll that gained items.
+- Your own JEI search history from other servers is no longer included in the pack.
+
+**Updating:** CurseForge app → Sinborn Odyssey 2 → v2.0.0-beta.5.8. Scrolls you already researched stay researched.
+
 ## v2.0.0-beta.5.7 , Two Keys (November 2026)
 
 > The biggest tidy-up of the scroll system so far. Recipes now unlock in the order you can actually build them, the strongest gear waits for its tier, the eyes work again, and the quest book and starter book were rebuilt to explain it all.

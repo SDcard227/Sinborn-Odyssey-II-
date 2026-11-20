@@ -33,7 +33,17 @@
     "cataclysm_spellbooks:soul_brazier",
     "cataclysm_spellbooks:the_berserker",
     "cataclysm_spellbooks:the_combuster",
-    "irons_spellbooks:furled_map_citadel"
+    "irons_spellbooks:furled_map_citadel",
+    "cataclysm_spellbooks:excelsius_power_chestplate",
+    "cataclysm_spellbooks:excelsius_power_visors",
+    "cataclysm_spellbooks:excelsius_resist_chestplate",
+    "cataclysm_spellbooks:excelsius_resist_visors",
+    "cataclysm_spellbooks:excelsius_speed_chestplate",
+    "cataclysm_spellbooks:excelsius_speed_visors",
+    "traveloptics:forlorn_harbinger_boots",
+    "traveloptics:forlorn_harbinger_hood",
+    "traveloptics:forlorn_harbinger_leggings",
+    "traveloptics:forlorn_harbinger_robe"
   ],
   "tags": [],
   "mods": [],

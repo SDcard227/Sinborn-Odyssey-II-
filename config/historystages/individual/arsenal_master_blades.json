@@ -196,7 +196,14 @@
     "irons_spellbooks:legionnaire_flamberge",
     "irons_spellbooks:keeper_flamberge",
     "witherstormmod:stone_command_block_sword",
-    "witherstormmod:iron_command_block_sword"
+    "witherstormmod:iron_command_block_sword",
+    "simplyswords:runic_chakram",
+    "simplyswords:runic_claymore",
+    "simplyswords:runic_cutlass",
+    "simplyswords:runic_katana",
+    "simplyswords:runic_longsword",
+    "simplyswords:runic_rapier",
+    "simplyswords:runic_sai"
   ],
   "tags": [],
   "mods": [

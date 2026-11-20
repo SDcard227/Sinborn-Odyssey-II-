@@ -1,741 +1,2949 @@
 {
   "replace": false,
   "values": [
-    "aoa3:candy_cane",
-    "aoa3:candy_corn",
-    "aoa3:gingerbread_cookie",
-    "aoa3:gingerbread_wing",
-    "aoa3:peppermint_candy",
-    "aoa3:sour_candy",
-    "aoa3:sour_gummy",
-    "aoa3:sour_pop",
-    "aoa3:spearmint_candy",
-    "atmospheric:yucca_gateau",
-    "autumnity:pancake",
-    "autumnity:syrup_bottle",
-    "beachparty:cocoa_cocktail",
-    "beachparty:coconut_cocktail",
-    "beachparty:honey_cocktail",
-    "beachparty:melon_cocktail",
-    "beachparty:pumpkin_cocktail",
-    "beachparty:sweetberries_cocktail",
-    "blueberry:blueberry_muffin",
-    "brewinandchewin:beer",
-    "brewinandchewin:bloody_mary",
-    "brewinandchewin:dread_nog",
-    "brewinandchewin:egg_grog",
-    "brewinandchewin:glittering_grenadine",
-    "brewinandchewin:kombucha",
-    "brewinandchewin:mead",
-    "brewinandchewin:pale_jane",
-    "brewinandchewin:rice_wine",
-    "brewinandchewin:strongroot_ale",
-    "buzzier_bees:sticky_honey_wand",
-    "caves_delight:acid_cocktail",
-    "charcoal_pit:choco_powder",
-    "charcoal_pit:chocolate",
-    "compatdelight:allium_cake",
-    "compatdelight:allium_shake",
-    "compatdelight:apple_jem",
-    "compatdelight:arcane_crystal_cookie",
-    "compatdelight:arcane_crystal_jem",
-    "compatdelight:arcane_crystal_juice",
-    "compatdelight:arcane_crystal_pie",
-    "compatdelight:arcane_shake",
-    "compatdelight:armor_scrap_juice",
-    "compatdelight:astral_cookie",
-    "compatdelight:astral_ice_cream",
-    "compatdelight:astral_jem",
-    "compatdelight:awakened_draconium_jem",
-    "compatdelight:awakened_draconium_pie",
-    "compatdelight:azure_bud_cider",
-    "compatdelight:azure_cider",
-    "compatdelight:bamboo_cookie",
-    "compatdelight:bamboo_juice",
-    "compatdelight:bamboo_pie",
-    "compatdelight:bamboo_tea",
-    "compatdelight:baobab_cookie",
-    "compatdelight:baobab_juice",
-    "compatdelight:baobab_pie",
-    "compatdelight:barrel_cactus_cookie",
-    "compatdelight:bastion_glaze",
-    "compatdelight:bastion_jelly",
-    "compatdelight:bastion_jem",
-    "compatdelight:bastion_shake",
-    "compatdelight:bastion_tea",
-    "compatdelight:bastion_yougurt",
-    "compatdelight:belladonna_berries_cookie",
-    "compatdelight:belladonna_berries_ice_cream",
-    "compatdelight:belladonna_tea",
-    "compatdelight:blood_vial_cookie",
-    "compatdelight:blood_vial_jem",
-    "compatdelight:blood_vial_pie",
-    "compatdelight:bloom_berries_cookie",
-    "compatdelight:bloom_berries_pie",
-    "compatdelight:bloom_jem",
-    "compatdelight:blueberries_cookie",
-    "compatdelight:blueberries_juice",
-    "compatdelight:bombegranate_doughnut",
-    "compatdelight:bombegranate_glaze",
-    "compatdelight:bombegranate_jelly",
-    "compatdelight:bombegranate_jem",
-    "compatdelight:bombegranate_tea",
-    "compatdelight:bombegranate_yougurt",
-    "compatdelight:bone_shake",
-    "compatdelight:bouncy_ball_and_card",
-    "compatdelight:bouncy_cake",
-    "compatdelight:bouncy_shake",
-    "compatdelight:brain_coral_cookie",
-    "compatdelight:brain_coral_ice_cream",
-    "compatdelight:brain_coral_pie",
-    "compatdelight:brain_jem",
-    "compatdelight:brimstone_nectar_ice_cream",
-    "compatdelight:brimstone_nectar_jem",
-    "compatdelight:brimstone_nectar_pie",
-    "compatdelight:bubble_coral_ice_cream",
-    "compatdelight:bubble_coral_juice",
-    "compatdelight:bubble_jem",
-    "compatdelight:cactus_cookie",
-    "compatdelight:cactus_ice_cream",
-    "compatdelight:cactus_jem",
-    "compatdelight:cactus_pie",
-    "compatdelight:candy_cookie",
-    "compatdelight:candy_dishes",
-    "compatdelight:candy_jem",
-    "compatdelight:candy_pancake",
-    "compatdelight:caramel",
-    "compatdelight:caramel_pepper_wrap",
-    "compatdelight:charc_os_cookie",
-    "compatdelight:charc_os_ice_cream",
-    "compatdelight:charged_apple_cider",
-    "compatdelight:cherry_cookie",
-    "compatdelight:cherry_pie",
-    "compatdelight:chocolate_caramel",
-    "compatdelight:chocolate_crunch_bar",
-    "compatdelight:chocolate_filled_marshmallow",
-    "compatdelight:chocolate_heart_shake",
-    "compatdelight:chocolate_wafer_bar",
-    "compatdelight:chorus_fruit_jem",
-    "compatdelight:cinder_essence_stew",
-    "compatdelight:coconut_cookie",
-    "compatdelight:coconut_custard",
-    "compatdelight:coffee_berry_jem",
-    "compatdelight:coffee_berry_pie",
-    "compatdelight:coffee_candy_shake",
-    "compatdelight:coffee_candy_stew",
-    "compatdelight:colorful_berry_cookie",
-    "compatdelight:colorful_berry_shake",
-    "compatdelight:comet_berries_custard",
-    "compatdelight:comet_berries_jem",
-    "compatdelight:comet_ice_cream",
-    "compatdelight:contaminated_food_ice_cream",
-    "compatdelight:cooked_smores",
-    "compatdelight:cooked_sticky_honey",
-    "compatdelight:coral_jelly",
-    "compatdelight:cornflower_cookie",
-    "compatdelight:cornflower_pie",
-    "compatdelight:corruotion_ice_cream",
-    "compatdelight:corruption_jem",
-    "compatdelight:corruption_shake",
-    "compatdelight:crescent_ice_cream",
-    "compatdelight:crescent_jem",
-    "compatdelight:crescent_shake",
-    "compatdelight:crushed_void_lily",
-    "compatdelight:cryo_root_jem",
-    "compatdelight:cryo_root_pie",
-    "compatdelight:crystal_fruit_ice_cream",
-    "compatdelight:crystal_fruit_jem",
-    "compatdelight:cursed_sapball_cookie",
-    "compatdelight:cursed_sapball_jam",
-    "compatdelight:cut_bastion_pod",
-    "compatdelight:cut_bombegranate_pod",
-    "compatdelight:cut_frostaya_pod",
-    "compatdelight:cut_mendosteen_pod",
-    "compatdelight:cut_source_berry",
-    "compatdelight:dark_chocolate_bar",
-    "compatdelight:dark_cookie",
-    "compatdelight:dark_jem",
-    "compatdelight:datura_ice_cream",
-    "compatdelight:datura_jem",
-    "compatdelight:datura_pie",
-    "compatdelight:datura_seeds_ice_cream",
-    "compatdelight:datura_shake",
-    "compatdelight:demons_dream_ice_cream",
-    "compatdelight:demons_dream_jem",
-    "compatdelight:demons_dream_shake",
-    "compatdelight:dewshroom_cookie",
-    "compatdelight:diamond_carrot_ice_cream",
-    "compatdelight:draconium_jem",
-    "compatdelight:draconium_pie",
-    "compatdelight:duskmelon_popsicle",
-    "compatdelight:ectoplasm_cookie",
-    "compatdelight:ectoplasm_jem",
-    "compatdelight:ectoplasm_pie",
-    "compatdelight:effect_powder_jem",
-    "compatdelight:effect_powder_juice",
-    "compatdelight:elegaia_icecream",
-    "compatdelight:elementium_shake",
-    "compatdelight:elevibloom_shake",
-    "compatdelight:emerald_apple_cider",
-    "compatdelight:ender_air_sauce",
-    "compatdelight:ender_dust_jem",
-    "compatdelight:ender_dust_shake",
-    "compatdelight:ender_ice_cream",
-    "compatdelight:ender_wisp_pollen_cookie",
-    "compatdelight:ennegel_shake",
-    "compatdelight:eternal_candy_shake",
-    "compatdelight:fiery_cider",
-    "compatdelight:fire_ale_juice",
-    "compatdelight:fire_coral_cider",
-    "compatdelight:fire_jem",
-    "compatdelight:firecracker_ice_cream",
-    "compatdelight:firecracker_shake",
-    "compatdelight:floral_sauce",
-    "compatdelight:flower_honey",
-    "compatdelight:flower_salad",
-    "compatdelight:forbidden_ice_cream",
-    "compatdelight:frost_lily_ice_cream",
-    "compatdelight:frost_lily_punch",
-    "compatdelight:frost_lily_shard",
-    "compatdelight:frostaya_glaze",
-    "compatdelight:frostaya_jelly",
-    "compatdelight:frostaya_jem",
-    "compatdelight:frostaya_shake",
-    "compatdelight:frostaya_tea",
-    "compatdelight:frostaya_yougurt",
-    "compatdelight:gaia_shake",
-    "compatdelight:garmonbozia_custard",
-    "compatdelight:garmonbozia_ice_cream",
-    "compatdelight:garmonbozia_jem",
-    "compatdelight:garmonbozia_pie",
-    "compatdelight:gem_ice_cream",
-    "compatdelight:gem_juice",
-    "compatdelight:gem_shake",
-    "compatdelight:glow_berries_cookie",
-    "compatdelight:glow_berries_ice_cream",
-    "compatdelight:glow_berries_jem",
-    "compatdelight:glow_berry_jem",
-    "compatdelight:glow_berry_lolipop",
-    "compatdelight:glow_berry_pie",
-    "compatdelight:glow_gourd_cookie",
-    "compatdelight:glow_lichen_jem",
-    "compatdelight:glowing_jelly_bowl",
-    "compatdelight:glowworm_ice_cream",
-    "compatdelight:glowworm_jem",
-    "compatdelight:glowworm_pie",
-    "compatdelight:gold_powder_cookie",
-    "compatdelight:gold_powder_ice_cream",
-    "compatdelight:gold_powder_shake",
-    "compatdelight:graham_cracker",
-    "compatdelight:grapefruit_jem",
-    "compatdelight:grapefruit_pie",
-    "compatdelight:green_apple_cookie",
-    "compatdelight:green_apple_juice",
-    "compatdelight:holiday_candy_ice_cream",
-    "compatdelight:holiday_candy_jem",
-    "compatdelight:holiday_candy_pie",
-    "compatdelight:honey_bar",
-    "compatdelight:honey_cookie",
-    "compatdelight:honey_sandwich",
-    "compatdelight:honey_yougurt",
-    "compatdelight:honeyed_bastion",
-    "compatdelight:honeyed_bombegranate",
-    "compatdelight:honeyed_frostaya",
-    "compatdelight:honeyed_mendosteen",
-    "compatdelight:honeyed_source_berry",
-    "compatdelight:horn_coral_cookie",
-    "compatdelight:horn_coral_pie",
-    "compatdelight:horn_jem",
-    "compatdelight:horn_sauce",
-    "compatdelight:hydrangea_ice_cream",
-    "compatdelight:hydrangea_shake",
-    "compatdelight:ice_cookie",
-    "compatdelight:ice_cream_shake",
-    "compatdelight:ice_icecream",
-    "compatdelight:ice_pie",
-    "compatdelight:ice_shake",
-    "compatdelight:ichor_cookie",
-    "compatdelight:ichor_shake",
-    "compatdelight:ichor_stew",
-    "compatdelight:icicle_juice",
-    "compatdelight:icicle_shard",
-    "compatdelight:infused_breath_cookie",
-    "compatdelight:infused_breath_pie",
-    "compatdelight:infused_breath_shake",
-    "compatdelight:kelp_pie",
-    "compatdelight:lemon_jem",
-    "compatdelight:lemon_pie",
-    "compatdelight:lightning_crenade_jem",
-    "compatdelight:lightning_grenade_cookie",
-    "compatdelight:lightning_grenade_shake",
-    "compatdelight:lightning_jem",
-    "compatdelight:lightning_shake",
-    "compatdelight:lime_jem",
-    "compatdelight:lime_pie",
-    "compatdelight:lolipop",
-    "compatdelight:lumisene_ice_cream",
-    "compatdelight:lumisene_shake",
-    "compatdelight:magic_jem",
-    "compatdelight:mana_shake",
-    "compatdelight:mandrake_tea",
-    "compatdelight:marigolds_pie",
-    "compatdelight:marshmallow",
-    "compatdelight:melon_jem",
-    "compatdelight:melon_pie",
-    "compatdelight:mending_cookie",
-    "compatdelight:mending_shake",
-    "compatdelight:mendosteen_glaze",
-    "compatdelight:mendosteen_jelly",
-    "compatdelight:mendosteen_jem",
-    "compatdelight:mendosteen_shake",
-    "compatdelight:mendosteen_tea",
-    "compatdelight:mendosteen_yougurt",
-    "compatdelight:milk_chocolate_bar",
-    "compatdelight:milk_in_honeycomb",
-    "compatdelight:mint_cookie",
-    "compatdelight:mint_crystalline_berries_jem",
-    "compatdelight:mix_draconium",
-    "compatdelight:mixed_caramel_papper",
-    "compatdelight:moonshroom_ice_cream",
-    "compatdelight:mugwort_tea",
-    "compatdelight:nether_fungus_jem",
-    "compatdelight:nether_wisp_pollen_cookie",
-    "compatdelight:ooze_ice_cream",
-    "compatdelight:orange_jem",
-    "compatdelight:orange_pie",
-    "compatdelight:otherworld_essence_ice_cream",
-    "compatdelight:otherworld_essence_shake",
-    "compatdelight:oxeye_daisy_shake",
-    "compatdelight:oxeye_daisy_tea",
-    "compatdelight:papaya_jem",
-    "compatdelight:papaya_pie",
-    "compatdelight:papaya_shake",
-    "compatdelight:peacock_string",
-    "compatdelight:permafrost_ice_cream",
-    "compatdelight:permafrost_stew",
-    "compatdelight:petal_cookie",
-    "compatdelight:petal_tea",
-    "compatdelight:pine_cookie",
-    "compatdelight:pine_fruit_jem",
-    "compatdelight:pineapple_jem",
-    "compatdelight:pineapple_shake",
-    "compatdelight:pollen_ice_cream",
-    "compatdelight:pollen_pie",
-    "compatdelight:poppy_cookie",
-    "compatdelight:poppy_pie",
-    "compatdelight:prickly_peach_cookie",
-    "compatdelight:prickly_peach_frost_lily_shard",
-    "compatdelight:prickly_peach_pie",
-    "compatdelight:prickly_pear_cider",
-    "compatdelight:prickly_pear_ice_cream",
-    "compatdelight:prickly_pear_jem",
-    "compatdelight:prickly_pear_pie",
-    "compatdelight:pumpkin_jem",
-    "compatdelight:resin_cookie",
-    "compatdelight:resin_ice_cream",
-    "compatdelight:resin_jem",
-    "compatdelight:resin_shake",
-    "compatdelight:resonarium_jem",
-    "compatdelight:rice_in_honeycomb",
-    "compatdelight:roots_cookie",
-    "compatdelight:roots_jem",
-    "compatdelight:rose_crystalline_berries_cookie",
-    "compatdelight:rose_crystalline_berries_jem",
-    "compatdelight:rose_quartz_icecream",
-    "compatdelight:rose_quartz_shake",
-    "compatdelight:royal_jelly_shake",
-    "compatdelight:runic_sapball_jam",
-    "compatdelight:salmonberry_shake",
-    "compatdelight:scalefruit_cider",
-    "compatdelight:sculk_cider",
-    "compatdelight:sculk_jem",
-    "compatdelight:sea_pickle_jem",
-    "compatdelight:sea_pickle_shake",
-    "compatdelight:silicon_juice",
-    "compatdelight:smelter_prism_ice_cream",
-    "compatdelight:smelter_prism_juice",
-    "compatdelight:smores",
-    "compatdelight:soap_cookie",
-    "compatdelight:soap_ice_cream",
-    "compatdelight:soul_cookie",
-    "compatdelight:source_berry_glaze",
-    "compatdelight:source_berry_ice_cream",
-    "compatdelight:source_berry_jelly",
-    "compatdelight:source_berry_jem",
-    "compatdelight:source_berry_shake",
-    "compatdelight:source_berry_tea",
-    "compatdelight:source_berry_yougurt",
-    "compatdelight:spectragel_ice_cream",
-    "compatdelight:spectragel_pie",
-    "compatdelight:spectragle_jem",
-    "compatdelight:strange_elixir_shake",
-    "compatdelight:strange_juice",
-    "compatdelight:strong_tau_cookie",
-    "compatdelight:strong_tau_ice_cream",
-    "compatdelight:strong_tau_jem",
-    "compatdelight:strong_tau_pie",
-    "compatdelight:sugar_water_shake",
-    "compatdelight:suns_pie",
-    "compatdelight:suns_shake",
-    "compatdelight:supremium_pie",
-    "compatdelight:sweet_berries_ice_cream",
-    "compatdelight:sweet_berries_lolipop",
-    "compatdelight:sweet_berry_ice_cream",
-    "compatdelight:sweet_berry_jem",
-    "compatdelight:tau_stew",
-    "compatdelight:terrasteel_shake",
-    "compatdelight:toasted_marshmallow",
-    "compatdelight:tube_coral_cookie",
-    "compatdelight:tube_coral_pie",
-    "compatdelight:tube_jem",
-    "compatdelight:viridshroom_cookie",
-    "compatdelight:viridshroom_shake",
-    "compatdelight:void_cookie",
-    "compatdelight:void_ice_cream",
-    "compatdelight:void_ice_cream1",
-    "compatdelight:void_jem",
-    "compatdelight:void_jem1",
-    "compatdelight:void_pie",
-    "compatdelight:void_pie1",
-    "compatdelight:void_shake",
-    "compatdelight:walnut_cookie",
-    "compatdelight:warp_flux_ice_cream",
-    "compatdelight:warped_enderman_jam",
-    "compatdelight:wax_jem",
-    "compatdelight:wax_shake",
-    "compatdelight:weak_tau_cookie",
-    "compatdelight:weak_tau_ice_cream",
-    "compatdelight:wisp_pollen",
-    "compatdelight:wisp_pollen_cookie",
-    "compatdelight:wither_rose_shake",
-    "compatdelight:xenon_cookie",
-    "compatdelight:yellow_dock_shake",
-    "compatdelight:yellow_dock_tea",
-    "compatdelight:yucca_cookie",
-    "compatdelight:yucca_juice",
-    "compatdelight:yucca_pie",
-    "create:bar_of_chocolate",
-    "create:chocolate_glazed_berries",
-    "create:honeyed_apple",
-    "create:sweet_roll",
-    "create_confectionery:bar_of_black_chocolate",
-    "create_confectionery:bar_of_caramel",
-    "create_confectionery:bar_of_ruby_chocolate",
-    "create_confectionery:bar_of_white_chocolate",
-    "create_confectionery:black_chocolate_glazed_berries",
-    "create_confectionery:caramel_glazed_berries",
-    "create_confectionery:hot_chocolate_bottle",
-    "create_confectionery:marshmallow",
-    "create_confectionery:ruby_chocolate_glazed_berries",
-    "create_confectionery:white_chocolate_glazed_berries",
-    "createaddition:chocolate_cake",
-    "createaddition:honey_cake",
-    "crockpot:avaj",
-    "crockpot:candy",
-    "crockpot:hot_cocoa",
-    "crockpot:ice_cream",
-    "crockpot:iced_tea",
-    "crockpot:pow_cake",
-    "crockpot:pumpkin_cookie",
-    "crockpot:syrup",
-    "crockpot:taffy",
-    "croptopia:apple_pie",
-    "croptopia:brownies",
-    "croptopia:cherry_pie",
-    "croptopia:churros",
-    "croptopia:doughnut",
-    "croptopia:eton_mess",
-    "croptopia:figgy_pudding",
-    "croptopia:molasses",
-    "croptopia:scones",
-    "croptopia:tres_leche_cake",
-    "delightful:rock_candy",
-    "druidcraft:blueberry_muffin",
-    "ends_delight:chorus_fruit_wine",
-    "environmental:truffle",
-    "extrafood:cupcake",
-    "extrafood:pancake",
-    "extrafoods:chocolate_chip_waffle",
-    "extrafoods:waffle",
-    "farm_and_charm:baked_lamb_ham",
-    "farm_and_charm:farmers_bread",
-    "farm_and_charm:farmers_breakfast",
-    "farm_and_charm:grandmothers_strawberry_cake",
-    "farm_and_charm:potato_with_roast_meat",
-    "farm_and_charm:stuffed_chicken",
-    "farm_and_charm:stuffed_rabbit",
-    "farmersdelight:apple_pie",
-    "farmersdelight:chocolate_pie",
-    "farmersdelight:sweet_berry_cheesecake",
-    "fluffy_farmer:carmel",
-    "fluffy_farmer:chocolate_bar",
-    "fluffy_farmer:melted_carmel",
-    "foodexpansion:chocolate_cake",
-    "frozenup:truffle",
-    "fruitsdelight:apple_jello",
-    "fruitsdelight:apple_jelly",
-    "fruitsdelight:bayberry_cookie",
-    "fruitsdelight:bayberry_jello",
-    "fruitsdelight:bayberry_jelly",
-    "fruitsdelight:bellini_cocktail",
-    "fruitsdelight:blueberry_custard",
-    "fruitsdelight:blueberry_jello",
-    "fruitsdelight:blueberry_jelly",
-    "fruitsdelight:blueberry_muffin",
-    "fruitsdelight:chorus_jello",
-    "fruitsdelight:chorus_jelly",
-    "fruitsdelight:cranberry_cookie",
-    "fruitsdelight:cranberry_jello",
-    "fruitsdelight:cranberry_jelly",
-    "fruitsdelight:cranberry_muffin",
-    "fruitsdelight:durian_jello",
-    "fruitsdelight:durian_jelly",
-    "fruitsdelight:durian_pie",
-    "fruitsdelight:fig_jello",
-    "fruitsdelight:fig_jelly",
-    "fruitsdelight:fig_pudding_slice",
-    "fruitsdelight:fig_tart",
-    "fruitsdelight:glowberry_jello",
-    "fruitsdelight:glowberry_jelly",
-    "fruitsdelight:hamimelon_jello",
-    "fruitsdelight:hamimelon_jelly",
-    "fruitsdelight:hawberry_jello",
-    "fruitsdelight:hawberry_jelly",
-    "fruitsdelight:hawberry_roll",
-    "fruitsdelight:jelly_bread",
-    "fruitsdelight:kiwi_jello",
-    "fruitsdelight:kiwi_jelly",
-    "fruitsdelight:lemon_cookie",
-    "fruitsdelight:lemon_jello",
-    "fruitsdelight:lemon_jelly",
-    "fruitsdelight:lemon_tart",
-    "fruitsdelight:lychee_jello",
-    "fruitsdelight:lychee_jelly",
-    "fruitsdelight:mango_jello",
-    "fruitsdelight:mango_jelly",
-    "fruitsdelight:mangosteen_jello",
-    "fruitsdelight:mangosteen_jelly",
-    "fruitsdelight:melon_jello",
-    "fruitsdelight:melon_jelly",
-    "fruitsdelight:orange_jello",
-    "fruitsdelight:orange_jelly",
-    "fruitsdelight:peach_jello",
-    "fruitsdelight:peach_jelly",
-    "fruitsdelight:pear_jello",
-    "fruitsdelight:pear_jelly",
-    "fruitsdelight:pear_with_rock_sugar",
-    "fruitsdelight:persimmon_cookie",
-    "fruitsdelight:persimmon_jello",
-    "fruitsdelight:persimmon_jelly",
-    "fruitsdelight:pineapple_jello",
-    "fruitsdelight:pineapple_jelly",
-    "fruitsdelight:pineapple_pie",
-    "fruitsdelight:sweetberry_jello",
-    "fruitsdelight:sweetberry_jelly",
-    "gaiadimension:blue_geode_slice",
-    "gaiadimension:green_geode_slice",
-    "gaiadimension:pink_geode_slice",
-    "gaiadimension:purple_geode_slice",
-    "good_nights_sleep:candy",
-    "hearthandharvest:2d_blueberry_wine",
-    "hearthandharvest:2d_cherry_wine",
-    "hearthandharvest:2d_green_grape_wine",
-    "hearthandharvest:2d_raspberry_wine",
-    "hearthandharvest:2d_red_grape_wine",
-    "hearthandharvest:2d_sweet_berry_wine",
-    "hearthandharvest:blueberry_wine",
-    "hearthandharvest:cherry_wine",
-    "hearthandharvest:green_grape_wine",
-    "hearthandharvest:raspberry_wine",
-    "hearthandharvest:red_grape_wine",
-    "hearthandharvest:sweet_berry_wine",
-    "iceandfire:pixie_dust",
-    "meetyourfight:aether_glazed_cupcake",
-    "minecolonies:cake_batter",
-    "minecolonies:cookie_dough",
-    "minecraft:cake",
-    "minecraft:cocoa_beans",
-    "minecraft:honey_bottle",
-    "minecraft:honeycomb",
-    "minecraft:sugar",
-    "neapolitan:adzuki_cake",
-    "neapolitan:banana_cake",
-    "neapolitan:chocolate_bar",
-    "neapolitan:chocolate_cake",
-    "neapolitan:mint_cake",
-    "neapolitan:strawberry_cake",
-    "neapolitan:vanilla_cake",
-    "nefdecomod:meal_03",
-    "nefdecomod:meal_04",
-    "nethervinery:blazewine_pinot",
-    "oceansdelight:honey_fried_kelp",
-    "pamhc2foodcore:caramelitem",
-    "pamhc2foodcore:trailmixitem",
-    "pamhc2foodextended:aebleskiversitem",
-    "pamhc2foodextended:brownieitem",
-    "pamhc2foodextended:candycornitem",
-    "pamhc2foodextended:cherrysodaitem",
-    "pamhc2foodextended:colasodaitem",
-    "pamhc2foodextended:frosteddonutitem",
-    "pamhc2foodextended:gingersodaitem",
-    "pamhc2foodextended:grapefruitsodaitem",
-    "pamhc2foodextended:grapesodaitem",
-    "pamhc2foodextended:holidaycakeitem",
-    "pamhc2foodextended:honeyglazedcarrotsitem",
-    "pamhc2foodextended:lemonlimesodaitem",
-    "pamhc2foodextended:meringuebrownieitem",
-    "pamhc2foodextended:meringueitem",
-    "pamhc2foodextended:mochicakeitem",
-    "pamhc2foodextended:orangesodaitem",
-    "pamhc2foodextended:pavlovaitem",
-    "pamhc2foodextended:rivermudcakeitem",
-    "pamhc2foodextended:rootbeersodaitem",
-    "pamhc2foodextended:strawberrysodaitem",
-    "pamhc2foodextended:sugarcookieitem",
-    "pamhc2foodextended:theatreboxitem",
-    "pamhc2foodextended:timtamitem",
-    "pamhc2trees:maplesyrupitem",
-    "peculiars:aloe_cake",
-    "peculiars:passionfruit_cake",
-    "peculiars:yucca_cake",
-    "pumpkin_spice_everything:pumpkin_spice",
-    "pumpkin_spice_everything:pumpkin_spice_cake",
-    "rankine:cake_slice",
-    "rankine:maple_syrup",
-    "rats:treacle",
-    "resourcefulbees:catnip_honey_bottle",
-    "resourcefulbees:oreo_cookie",
-    "resourcefulbees:rainbow_honey_bottle",
-    "seasonals:pumpkin_cake",
-    "seasonals:sweet_berry_cake",
-    "silentsdelight:sculk_shrieker_shake",
-    "simpledelights:creamcicle",
-    "simpledelights:fruit_tart",
-    "simpledelights:plum_pudding",
-    "simpledelights:strawberry_shortcake",
-    "simplefarming:birthday_cake",
-    "simplefarming:chocolate",
-    "simplefarming:chocolate_cake",
-    "simplefarming:jaffa_cake",
-    "simplefarming:marshmallow",
-    "simplefarming:pancakes",
-    "supplementaries:pancake",
-    "survivalplus:sponge_cake",
-    "tconstruct:blood_cake",
-    "tconstruct:earth_cake",
-    "tconstruct:ender_cake",
-    "tconstruct:magma_cake",
-    "tconstruct:sky_cake",
-    "tea_kettle:half_honey_bottle",
-    "terraincognita:taffy",
-    "the_bumblezone:honey_crystal_shards",
-    "the_bumblezone:sugar_water_bottle",
-    "thermal:carrot_cake",
-    "thermal:cheese_wheel",
-    "thermal:chocolate_cake",
-    "thermal:potion_cake",
-    "thermal:spice_cake",
-    "thermal:stuffed_pumpkin",
-    "thermal:syrup_bottle",
-    "trickcreeps:treat_powder",
-    "twilightforest:experiment_115",
-    "unusual_delight:mysterious_worm_cocktail",
-    "unusual_delight:soul_wine",
-    "vanillacookbook:berry_brownie",
-    "vanillacookbook:berry_cake",
-    "vanillacookbook:berry_pancake",
-    "vanillacookbook:book_cake",
-    "vanillacookbook:brownie",
-    "vanillacookbook:brownie_tray",
-    "vanillacookbook:carrot_cake",
-    "vanillacookbook:cheesecake",
-    "vanillacookbook:chocolate",
-    "vanillacookbook:chocolate_cake",
-    "vanillacookbook:chocolate_egg",
-    "vanillacookbook:chorus_cake",
-    "vanillacookbook:honey_pancake",
-    "vanillacookbook:ice_cream_cake",
-    "vanillacookbook:mohnkuchen",
-    "vanillacookbook:pancake",
-    "vanillacookbook:pancake_stack",
-    "vanillacookbook:rose_cake",
-    "vanillafoodpantry:apple_bread",
-    "vanillafoodpantry:apple_muffin",
-    "vanillafoodpantry:bottle_syrup_base",
-    "vanillafoodpantry:chocolate_sunbutter_sandwich",
-    "vanillafoodpantry:cookie_apple",
-    "vanillafoodpantry:enriched_pumpkin_pie",
-    "vanillafoodpantry:fizzing_agent",
-    "vanillafoodpantry:fizzydrink_apple",
-    "vanillafoodpantry:fizzydrink_klingon",
-    "vanillafoodpantry:fizzydrink_melon",
-    "vanillafoodpantry:fizzydrink_milk",
-    "vanillafoodpantry:gelo_apple",
-    "vanillafoodpantry:gelo_berry_mix",
-    "vanillafoodpantry:gelo_chorusfruit",
-    "vanillafoodpantry:gelo_cocoa",
-    "vanillafoodpantry:gelo_dandy",
-    "vanillafoodpantry:gelo_honey",
-    "vanillafoodpantry:gelo_klingon",
-    "vanillafoodpantry:gelo_melon",
-    "vanillafoodpantry:gelo_midnight",
-    "vanillafoodpantry:gelo_orange",
-    "vanillafoodpantry:gelo_poppy",
-    "vanillafoodpantry:gelo_sugarbomb",
-    "vanillafoodpantry:gelo_ugli",
-    "vanillafoodpantry:hardened_sugar",
-    "vanillafoodpantry:honey_bread",
-    "vanillafoodpantry:honey_muffin",
-    "vanillafoodpantry:honey_sunbutter_sandwich",
-    "vanillafoodpantry:molasses_bread",
-    "vanillafoodpantry:pumpkin_bread",
-    "vanillafoodpantry:snocone_apple",
-    "vanillafoodpantry:snocone_melon",
-    "vanillafoodpantry:teadrink_bushtea",
-    "vanillafoodpantry:uglifruit_muffin",
-    "vinery:aegis_wine",
-    "vinery:apple_cider",
-    "vinery:apple_wine",
-    "vinery:bolvar_wine",
-    "vinery:chenet_wine",
-    "vinery:cherry_wine",
-    "vinery:chorus_wine",
-    "vinery:clark_wine",
-    "vinery:cristel_wine",
-    "vinery:glowing_wine",
-    "vinery:jellie_wine",
-    "vinery:kelp_cider",
-    "vinery:lilitu_wine",
-    "vinery:magnetic_wine",
-    "vinery:mead",
-    "vinery:mellohi_wine",
-    "vinery:noir_wine",
-    "vinery:red_wine",
-    "vinery:solaris_wine",
-    "vinery:stal_wine",
-    "vinery:strad_wine",
-    "xercamod:ender_cupcake",
-    "xercamod:item_apple_cupcake",
-    "xercamod:item_apple_pie",
-    "xercamod:item_carrot_cupcake",
-    "xercamod:item_chocolate",
-    "xercamod:item_cocoa_cupcake",
-    "xercamod:item_donut",
-    "xercamod:item_fancy_apple_cupcake",
-    "xercamod:item_fancy_donut",
-    "xercamod:item_fancy_pumpkin_cupcake",
-    "xercamod:item_honey_cupcake",
-    "xercamod:item_melon_cupcake",
-    "xercamod:item_pumpkin_cupcake",
-    "xercamod:sweet_berry_cupcake",
-    "xercamod:sweet_berry_cupcake_fancy",
-    "xercamod:sweet_berry_pie",
-    "youkaisfeasts:bamboo_mizuyokan",
-    "youkaisfeasts:big_popsicle",
-    "youkaisfeasts:candy_apple",
-    "youkaisfeasts:mead",
-    "youkaisfeasts:milk_popsicle",
-    "youkaisfeasts:red_wine",
-    "youkaisfeasts:white_wine"
+    {
+      "id": "aoa3:candy_cane",
+      "required": false
+    },
+    {
+      "id": "aoa3:candy_corn",
+      "required": false
+    },
+    {
+      "id": "aoa3:gingerbread_cookie",
+      "required": false
+    },
+    {
+      "id": "aoa3:gingerbread_wing",
+      "required": false
+    },
+    {
+      "id": "aoa3:peppermint_candy",
+      "required": false
+    },
+    {
+      "id": "aoa3:sour_candy",
+      "required": false
+    },
+    {
+      "id": "aoa3:sour_gummy",
+      "required": false
+    },
+    {
+      "id": "aoa3:sour_pop",
+      "required": false
+    },
+    {
+      "id": "aoa3:spearmint_candy",
+      "required": false
+    },
+    {
+      "id": "atmospheric:yucca_gateau",
+      "required": false
+    },
+    {
+      "id": "autumnity:pancake",
+      "required": false
+    },
+    {
+      "id": "autumnity:syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "beachparty:cocoa_cocktail",
+      "required": false
+    },
+    {
+      "id": "beachparty:coconut_cocktail",
+      "required": false
+    },
+    {
+      "id": "beachparty:honey_cocktail",
+      "required": false
+    },
+    {
+      "id": "beachparty:melon_cocktail",
+      "required": false
+    },
+    {
+      "id": "beachparty:pumpkin_cocktail",
+      "required": false
+    },
+    {
+      "id": "beachparty:sweetberries_cocktail",
+      "required": false
+    },
+    {
+      "id": "blueberry:blueberry_muffin",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:beer",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:bloody_mary",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:dread_nog",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:egg_grog",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:glittering_grenadine",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:kombucha",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:mead",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:pale_jane",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:rice_wine",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:strongroot_ale",
+      "required": false
+    },
+    {
+      "id": "buzzier_bees:sticky_honey_wand",
+      "required": false
+    },
+    {
+      "id": "caves_delight:acid_cocktail",
+      "required": false
+    },
+    {
+      "id": "charcoal_pit:choco_powder",
+      "required": false
+    },
+    {
+      "id": "charcoal_pit:chocolate",
+      "required": false
+    },
+    {
+      "id": "compatdelight:allium_cake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:allium_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:apple_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:arcane_crystal_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:arcane_crystal_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:arcane_crystal_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:arcane_crystal_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:arcane_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:armor_scrap_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:astral_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:astral_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:astral_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:awakened_draconium_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:awakened_draconium_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:azure_bud_cider",
+      "required": false
+    },
+    {
+      "id": "compatdelight:azure_cider",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bamboo_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bamboo_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bamboo_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bamboo_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:baobab_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:baobab_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:baobab_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:barrel_cactus_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bastion_glaze",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bastion_jelly",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bastion_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bastion_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bastion_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bastion_yougurt",
+      "required": false
+    },
+    {
+      "id": "compatdelight:belladonna_berries_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:belladonna_berries_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:belladonna_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:blood_vial_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:blood_vial_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:blood_vial_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bloom_berries_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bloom_berries_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bloom_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:blueberries_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:blueberries_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bombegranate_doughnut",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bombegranate_glaze",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bombegranate_jelly",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bombegranate_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bombegranate_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bombegranate_yougurt",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bone_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bouncy_ball_and_card",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bouncy_cake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bouncy_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:brain_coral_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:brain_coral_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:brain_coral_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:brain_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:brimstone_nectar_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:brimstone_nectar_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:brimstone_nectar_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bubble_coral_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bubble_coral_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bubble_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cactus_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cactus_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cactus_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cactus_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:candy_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:candy_dishes",
+      "required": false
+    },
+    {
+      "id": "compatdelight:candy_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:candy_pancake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:caramel",
+      "required": false
+    },
+    {
+      "id": "compatdelight:caramel_pepper_wrap",
+      "required": false
+    },
+    {
+      "id": "compatdelight:charc_os_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:charc_os_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:charged_apple_cider",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cherry_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cherry_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:chocolate_caramel",
+      "required": false
+    },
+    {
+      "id": "compatdelight:chocolate_crunch_bar",
+      "required": false
+    },
+    {
+      "id": "compatdelight:chocolate_filled_marshmallow",
+      "required": false
+    },
+    {
+      "id": "compatdelight:chocolate_heart_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:chocolate_wafer_bar",
+      "required": false
+    },
+    {
+      "id": "compatdelight:chorus_fruit_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cinder_essence_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:coconut_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:coconut_custard",
+      "required": false
+    },
+    {
+      "id": "compatdelight:coffee_berry_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:coffee_berry_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:coffee_candy_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:coffee_candy_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:colorful_berry_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:colorful_berry_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:comet_berries_custard",
+      "required": false
+    },
+    {
+      "id": "compatdelight:comet_berries_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:comet_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:contaminated_food_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_smores",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_sticky_honey",
+      "required": false
+    },
+    {
+      "id": "compatdelight:coral_jelly",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cornflower_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cornflower_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:corruotion_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:corruption_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:corruption_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:crescent_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:crescent_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:crescent_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:crushed_void_lily",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cryo_root_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cryo_root_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:crystal_fruit_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:crystal_fruit_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cursed_sapball_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cursed_sapball_jam",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_bastion_pod",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_bombegranate_pod",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_frostaya_pod",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_mendosteen_pod",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_source_berry",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dark_chocolate_bar",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dark_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dark_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:datura_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:datura_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:datura_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:datura_seeds_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:datura_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:demons_dream_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:demons_dream_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:demons_dream_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dewshroom_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:diamond_carrot_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:draconium_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:draconium_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:duskmelon_popsicle",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ectoplasm_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ectoplasm_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ectoplasm_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:effect_powder_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:effect_powder_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:elegaia_icecream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:elementium_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:elevibloom_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:emerald_apple_cider",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_air_sauce",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_dust_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_dust_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_wisp_pollen_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ennegel_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:eternal_candy_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:fiery_cider",
+      "required": false
+    },
+    {
+      "id": "compatdelight:fire_ale_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:fire_coral_cider",
+      "required": false
+    },
+    {
+      "id": "compatdelight:fire_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:firecracker_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:firecracker_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:floral_sauce",
+      "required": false
+    },
+    {
+      "id": "compatdelight:flower_honey",
+      "required": false
+    },
+    {
+      "id": "compatdelight:flower_salad",
+      "required": false
+    },
+    {
+      "id": "compatdelight:forbidden_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frost_lily_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frost_lily_punch",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frost_lily_shard",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frostaya_glaze",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frostaya_jelly",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frostaya_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frostaya_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frostaya_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frostaya_yougurt",
+      "required": false
+    },
+    {
+      "id": "compatdelight:gaia_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:garmonbozia_custard",
+      "required": false
+    },
+    {
+      "id": "compatdelight:garmonbozia_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:garmonbozia_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:garmonbozia_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:gem_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:gem_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:gem_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_berries_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_berries_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_berries_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_berry_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_berry_lolipop",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_berry_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_gourd_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_lichen_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glowing_jelly_bowl",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glowworm_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glowworm_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glowworm_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:gold_powder_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:gold_powder_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:gold_powder_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:graham_cracker",
+      "required": false
+    },
+    {
+      "id": "compatdelight:grapefruit_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:grapefruit_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:green_apple_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:green_apple_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:holiday_candy_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:holiday_candy_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:holiday_candy_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honey_bar",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honey_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honey_sandwich",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honey_yougurt",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honeyed_bastion",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honeyed_bombegranate",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honeyed_frostaya",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honeyed_mendosteen",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honeyed_source_berry",
+      "required": false
+    },
+    {
+      "id": "compatdelight:horn_coral_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:horn_coral_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:horn_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:horn_sauce",
+      "required": false
+    },
+    {
+      "id": "compatdelight:hydrangea_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:hydrangea_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ice_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ice_cream_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ice_icecream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ice_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ice_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ichor_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ichor_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ichor_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:icicle_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:icicle_shard",
+      "required": false
+    },
+    {
+      "id": "compatdelight:infused_breath_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:infused_breath_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:infused_breath_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:kelp_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lemon_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lemon_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lightning_crenade_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lightning_grenade_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lightning_grenade_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lightning_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lightning_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lime_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lime_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lolipop",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lumisene_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:lumisene_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:magic_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mana_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mandrake_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:marigolds_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:marshmallow",
+      "required": false
+    },
+    {
+      "id": "compatdelight:melon_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:melon_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mending_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mending_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mendosteen_glaze",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mendosteen_jelly",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mendosteen_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mendosteen_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mendosteen_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mendosteen_yougurt",
+      "required": false
+    },
+    {
+      "id": "compatdelight:milk_chocolate_bar",
+      "required": false
+    },
+    {
+      "id": "compatdelight:milk_in_honeycomb",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mint_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mint_crystalline_berries_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mix_draconium",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mixed_caramel_papper",
+      "required": false
+    },
+    {
+      "id": "compatdelight:moonshroom_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mugwort_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:nether_fungus_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:nether_wisp_pollen_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ooze_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:orange_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:orange_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:otherworld_essence_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:otherworld_essence_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:oxeye_daisy_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:oxeye_daisy_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:papaya_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:papaya_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:papaya_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:peacock_string",
+      "required": false
+    },
+    {
+      "id": "compatdelight:permafrost_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:permafrost_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:petal_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:petal_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:pine_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:pine_fruit_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:pineapple_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:pineapple_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:pollen_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:pollen_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:poppy_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:poppy_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:prickly_peach_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:prickly_peach_frost_lily_shard",
+      "required": false
+    },
+    {
+      "id": "compatdelight:prickly_peach_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:prickly_pear_cider",
+      "required": false
+    },
+    {
+      "id": "compatdelight:prickly_pear_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:prickly_pear_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:prickly_pear_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:pumpkin_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:resin_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:resin_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:resin_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:resin_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:resonarium_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:rice_in_honeycomb",
+      "required": false
+    },
+    {
+      "id": "compatdelight:roots_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:roots_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:rose_crystalline_berries_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:rose_crystalline_berries_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:rose_quartz_icecream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:rose_quartz_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:royal_jelly_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:runic_sapball_jam",
+      "required": false
+    },
+    {
+      "id": "compatdelight:salmonberry_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:scalefruit_cider",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sculk_cider",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sculk_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sea_pickle_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sea_pickle_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:silicon_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:smelter_prism_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:smelter_prism_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:smores",
+      "required": false
+    },
+    {
+      "id": "compatdelight:soap_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:soap_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:soul_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:source_berry_glaze",
+      "required": false
+    },
+    {
+      "id": "compatdelight:source_berry_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:source_berry_jelly",
+      "required": false
+    },
+    {
+      "id": "compatdelight:source_berry_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:source_berry_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:source_berry_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:source_berry_yougurt",
+      "required": false
+    },
+    {
+      "id": "compatdelight:spectragel_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:spectragel_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:spectragle_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:strange_elixir_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:strange_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:strong_tau_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:strong_tau_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:strong_tau_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:strong_tau_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sugar_water_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:suns_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:suns_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:supremium_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sweet_berries_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sweet_berries_lolipop",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sweet_berry_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sweet_berry_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:tau_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:terrasteel_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:toasted_marshmallow",
+      "required": false
+    },
+    {
+      "id": "compatdelight:tube_coral_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:tube_coral_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:tube_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:viridshroom_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:viridshroom_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_ice_cream1",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_jem1",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_pie1",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:walnut_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:warp_flux_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:warped_enderman_jam",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wax_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wax_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:weak_tau_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:weak_tau_ice_cream",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wisp_pollen",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wisp_pollen_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wither_rose_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:xenon_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:yellow_dock_shake",
+      "required": false
+    },
+    {
+      "id": "compatdelight:yellow_dock_tea",
+      "required": false
+    },
+    {
+      "id": "compatdelight:yucca_cookie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:yucca_juice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:yucca_pie",
+      "required": false
+    },
+    {
+      "id": "create:bar_of_chocolate",
+      "required": false
+    },
+    {
+      "id": "create:chocolate_glazed_berries",
+      "required": false
+    },
+    {
+      "id": "create:honeyed_apple",
+      "required": false
+    },
+    {
+      "id": "create:sweet_roll",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:bar_of_black_chocolate",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:bar_of_caramel",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:bar_of_ruby_chocolate",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:bar_of_white_chocolate",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:black_chocolate_glazed_berries",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:caramel_glazed_berries",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:hot_chocolate_bottle",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:marshmallow",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:ruby_chocolate_glazed_berries",
+      "required": false
+    },
+    {
+      "id": "create_confectionery:white_chocolate_glazed_berries",
+      "required": false
+    },
+    {
+      "id": "createaddition:chocolate_cake",
+      "required": false
+    },
+    {
+      "id": "createaddition:honey_cake",
+      "required": false
+    },
+    {
+      "id": "crockpot:avaj",
+      "required": false
+    },
+    {
+      "id": "crockpot:candy",
+      "required": false
+    },
+    {
+      "id": "crockpot:hot_cocoa",
+      "required": false
+    },
+    {
+      "id": "crockpot:ice_cream",
+      "required": false
+    },
+    {
+      "id": "crockpot:iced_tea",
+      "required": false
+    },
+    {
+      "id": "crockpot:pow_cake",
+      "required": false
+    },
+    {
+      "id": "crockpot:pumpkin_cookie",
+      "required": false
+    },
+    {
+      "id": "crockpot:syrup",
+      "required": false
+    },
+    {
+      "id": "crockpot:taffy",
+      "required": false
+    },
+    {
+      "id": "croptopia:apple_pie",
+      "required": false
+    },
+    {
+      "id": "croptopia:brownies",
+      "required": false
+    },
+    {
+      "id": "croptopia:cherry_pie",
+      "required": false
+    },
+    {
+      "id": "croptopia:churros",
+      "required": false
+    },
+    {
+      "id": "croptopia:doughnut",
+      "required": false
+    },
+    {
+      "id": "croptopia:eton_mess",
+      "required": false
+    },
+    {
+      "id": "croptopia:figgy_pudding",
+      "required": false
+    },
+    {
+      "id": "croptopia:molasses",
+      "required": false
+    },
+    {
+      "id": "croptopia:scones",
+      "required": false
+    },
+    {
+      "id": "croptopia:tres_leche_cake",
+      "required": false
+    },
+    {
+      "id": "delightful:rock_candy",
+      "required": false
+    },
+    {
+      "id": "druidcraft:blueberry_muffin",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_fruit_wine",
+      "required": false
+    },
+    {
+      "id": "environmental:truffle",
+      "required": false
+    },
+    {
+      "id": "extrafood:cupcake",
+      "required": false
+    },
+    {
+      "id": "extrafood:pancake",
+      "required": false
+    },
+    {
+      "id": "extrafoods:chocolate_chip_waffle",
+      "required": false
+    },
+    {
+      "id": "extrafoods:waffle",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:baked_lamb_ham",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:farmers_bread",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:farmers_breakfast",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:grandmothers_strawberry_cake",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:potato_with_roast_meat",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:stuffed_chicken",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:stuffed_rabbit",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:apple_pie",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:chocolate_pie",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:sweet_berry_cheesecake",
+      "required": false
+    },
+    {
+      "id": "fluffy_farmer:carmel",
+      "required": false
+    },
+    {
+      "id": "fluffy_farmer:chocolate_bar",
+      "required": false
+    },
+    {
+      "id": "fluffy_farmer:melted_carmel",
+      "required": false
+    },
+    {
+      "id": "foodexpansion:chocolate_cake",
+      "required": false
+    },
+    {
+      "id": "frozenup:truffle",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:apple_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:apple_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:bayberry_cookie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:bayberry_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:bayberry_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:bellini_cocktail",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:blueberry_custard",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:blueberry_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:blueberry_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:blueberry_muffin",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:chorus_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:chorus_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:cranberry_cookie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:cranberry_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:cranberry_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:cranberry_muffin",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:durian_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:durian_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:durian_pie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:fig_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:fig_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:fig_pudding_slice",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:fig_tart",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:glowberry_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:glowberry_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:hamimelon_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:hamimelon_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:hawberry_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:hawberry_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:hawberry_roll",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:jelly_bread",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:kiwi_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:kiwi_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:lemon_cookie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:lemon_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:lemon_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:lemon_tart",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:lychee_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:lychee_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:mango_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:mango_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:mangosteen_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:mangosteen_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:melon_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:melon_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:orange_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:orange_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:peach_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:peach_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:pear_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:pear_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:pear_with_rock_sugar",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:persimmon_cookie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:persimmon_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:persimmon_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:pineapple_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:pineapple_jelly",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:pineapple_pie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:sweetberry_jello",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:sweetberry_jelly",
+      "required": false
+    },
+    {
+      "id": "gaiadimension:blue_geode_slice",
+      "required": false
+    },
+    {
+      "id": "gaiadimension:green_geode_slice",
+      "required": false
+    },
+    {
+      "id": "gaiadimension:pink_geode_slice",
+      "required": false
+    },
+    {
+      "id": "gaiadimension:purple_geode_slice",
+      "required": false
+    },
+    {
+      "id": "good_nights_sleep:candy",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:2d_blueberry_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:2d_cherry_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:2d_green_grape_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:2d_raspberry_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:2d_red_grape_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:2d_sweet_berry_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:blueberry_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:cherry_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:green_grape_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:raspberry_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:red_grape_wine",
+      "required": false
+    },
+    {
+      "id": "hearthandharvest:sweet_berry_wine",
+      "required": false
+    },
+    {
+      "id": "iceandfire:pixie_dust",
+      "required": false
+    },
+    {
+      "id": "meetyourfight:aether_glazed_cupcake",
+      "required": false
+    },
+    {
+      "id": "minecolonies:cake_batter",
+      "required": false
+    },
+    {
+      "id": "minecolonies:cookie_dough",
+      "required": false
+    },
+    {
+      "id": "minecraft:cake",
+      "required": false
+    },
+    {
+      "id": "minecraft:cocoa_beans",
+      "required": false
+    },
+    {
+      "id": "minecraft:honey_bottle",
+      "required": false
+    },
+    {
+      "id": "minecraft:honeycomb",
+      "required": false
+    },
+    {
+      "id": "minecraft:sugar",
+      "required": false
+    },
+    {
+      "id": "neapolitan:adzuki_cake",
+      "required": false
+    },
+    {
+      "id": "neapolitan:banana_cake",
+      "required": false
+    },
+    {
+      "id": "neapolitan:chocolate_bar",
+      "required": false
+    },
+    {
+      "id": "neapolitan:chocolate_cake",
+      "required": false
+    },
+    {
+      "id": "neapolitan:mint_cake",
+      "required": false
+    },
+    {
+      "id": "neapolitan:strawberry_cake",
+      "required": false
+    },
+    {
+      "id": "neapolitan:vanilla_cake",
+      "required": false
+    },
+    {
+      "id": "nefdecomod:meal_03",
+      "required": false
+    },
+    {
+      "id": "nefdecomod:meal_04",
+      "required": false
+    },
+    {
+      "id": "nethervinery:blazewine_pinot",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:honey_fried_kelp",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodcore:caramelitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodcore:trailmixitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:aebleskiversitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:brownieitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:candycornitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:cherrysodaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:colasodaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:frosteddonutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:gingersodaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:grapefruitsodaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:grapesodaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:holidaycakeitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:honeyglazedcarrotsitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:lemonlimesodaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:meringuebrownieitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:meringueitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:mochicakeitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:orangesodaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:pavlovaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:rivermudcakeitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:rootbeersodaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:strawberrysodaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:sugarcookieitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:theatreboxitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:timtamitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:maplesyrupitem",
+      "required": false
+    },
+    {
+      "id": "peculiars:aloe_cake",
+      "required": false
+    },
+    {
+      "id": "peculiars:passionfruit_cake",
+      "required": false
+    },
+    {
+      "id": "peculiars:yucca_cake",
+      "required": false
+    },
+    {
+      "id": "pumpkin_spice_everything:pumpkin_spice",
+      "required": false
+    },
+    {
+      "id": "pumpkin_spice_everything:pumpkin_spice_cake",
+      "required": false
+    },
+    {
+      "id": "rankine:cake_slice",
+      "required": false
+    },
+    {
+      "id": "rankine:maple_syrup",
+      "required": false
+    },
+    {
+      "id": "rats:treacle",
+      "required": false
+    },
+    {
+      "id": "resourcefulbees:catnip_honey_bottle",
+      "required": false
+    },
+    {
+      "id": "resourcefulbees:oreo_cookie",
+      "required": false
+    },
+    {
+      "id": "resourcefulbees:rainbow_honey_bottle",
+      "required": false
+    },
+    {
+      "id": "seasonals:pumpkin_cake",
+      "required": false
+    },
+    {
+      "id": "seasonals:sweet_berry_cake",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:sculk_shrieker_shake",
+      "required": false
+    },
+    {
+      "id": "simpledelights:creamcicle",
+      "required": false
+    },
+    {
+      "id": "simpledelights:fruit_tart",
+      "required": false
+    },
+    {
+      "id": "simpledelights:plum_pudding",
+      "required": false
+    },
+    {
+      "id": "simpledelights:strawberry_shortcake",
+      "required": false
+    },
+    {
+      "id": "simplefarming:birthday_cake",
+      "required": false
+    },
+    {
+      "id": "simplefarming:chocolate",
+      "required": false
+    },
+    {
+      "id": "simplefarming:chocolate_cake",
+      "required": false
+    },
+    {
+      "id": "simplefarming:jaffa_cake",
+      "required": false
+    },
+    {
+      "id": "simplefarming:marshmallow",
+      "required": false
+    },
+    {
+      "id": "simplefarming:pancakes",
+      "required": false
+    },
+    {
+      "id": "supplementaries:pancake",
+      "required": false
+    },
+    {
+      "id": "survivalplus:sponge_cake",
+      "required": false
+    },
+    {
+      "id": "tconstruct:blood_cake",
+      "required": false
+    },
+    {
+      "id": "tconstruct:earth_cake",
+      "required": false
+    },
+    {
+      "id": "tconstruct:ender_cake",
+      "required": false
+    },
+    {
+      "id": "tconstruct:magma_cake",
+      "required": false
+    },
+    {
+      "id": "tconstruct:sky_cake",
+      "required": false
+    },
+    {
+      "id": "tea_kettle:half_honey_bottle",
+      "required": false
+    },
+    {
+      "id": "terraincognita:taffy",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:honey_crystal_shards",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:sugar_water_bottle",
+      "required": false
+    },
+    {
+      "id": "thermal:carrot_cake",
+      "required": false
+    },
+    {
+      "id": "thermal:cheese_wheel",
+      "required": false
+    },
+    {
+      "id": "thermal:chocolate_cake",
+      "required": false
+    },
+    {
+      "id": "thermal:potion_cake",
+      "required": false
+    },
+    {
+      "id": "thermal:spice_cake",
+      "required": false
+    },
+    {
+      "id": "thermal:stuffed_pumpkin",
+      "required": false
+    },
+    {
+      "id": "thermal:syrup_bottle",
+      "required": false
+    },
+    {
+      "id": "trickcreeps:treat_powder",
+      "required": false
+    },
+    {
+      "id": "twilightforest:experiment_115",
+      "required": false
+    },
+    {
+      "id": "unusual_delight:mysterious_worm_cocktail",
+      "required": false
+    },
+    {
+      "id": "unusual_delight:soul_wine",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:berry_brownie",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:berry_cake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:berry_pancake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:book_cake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:brownie",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:brownie_tray",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:carrot_cake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:cheesecake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:chocolate",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:chocolate_cake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:chocolate_egg",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:chorus_cake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:honey_pancake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:ice_cream_cake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:mohnkuchen",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:pancake",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:pancake_stack",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:rose_cake",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:apple_bread",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:apple_muffin",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:bottle_syrup_base",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:chocolate_sunbutter_sandwich",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:cookie_apple",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:enriched_pumpkin_pie",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:fizzing_agent",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:fizzydrink_apple",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:fizzydrink_klingon",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:fizzydrink_melon",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:fizzydrink_milk",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_apple",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_berry_mix",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_chorusfruit",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_cocoa",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_dandy",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_honey",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_klingon",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_melon",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_midnight",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_orange",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_poppy",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_sugarbomb",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:gelo_ugli",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:hardened_sugar",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:honey_bread",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:honey_muffin",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:honey_sunbutter_sandwich",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:molasses_bread",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:pumpkin_bread",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:snocone_apple",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:snocone_melon",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:teadrink_bushtea",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:uglifruit_muffin",
+      "required": false
+    },
+    {
+      "id": "vinery:aegis_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:apple_cider",
+      "required": false
+    },
+    {
+      "id": "vinery:apple_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:bolvar_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:chenet_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:cherry_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:chorus_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:clark_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:cristel_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:glowing_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:jellie_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:kelp_cider",
+      "required": false
+    },
+    {
+      "id": "vinery:lilitu_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:magnetic_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:mead",
+      "required": false
+    },
+    {
+      "id": "vinery:mellohi_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:noir_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:red_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:solaris_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:stal_wine",
+      "required": false
+    },
+    {
+      "id": "vinery:strad_wine",
+      "required": false
+    },
+    {
+      "id": "xercamod:ender_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_apple_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_apple_pie",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_carrot_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_chocolate",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_cocoa_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_donut",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_fancy_apple_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_fancy_donut",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_fancy_pumpkin_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_honey_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_melon_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_pumpkin_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:sweet_berry_cupcake",
+      "required": false
+    },
+    {
+      "id": "xercamod:sweet_berry_cupcake_fancy",
+      "required": false
+    },
+    {
+      "id": "xercamod:sweet_berry_pie",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:bamboo_mizuyokan",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:big_popsicle",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:candy_apple",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:mead",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:milk_popsicle",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:red_wine",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:white_wine",
+      "required": false
+    }
   ]
 }

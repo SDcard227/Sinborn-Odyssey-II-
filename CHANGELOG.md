@@ -1,4 +1,4 @@
-﻿---
+---
 tags: [sinborn-dev]
 ---
 
@@ -6,64 +6,183 @@ tags: [sinborn-dev]
 
 > Format: see [[Changelog Template]]. Newest at top.
 
+## v2.0.0-beta.5.7 , Two Keys (November 2026)
+
+> The biggest tidy-up of the scroll system so far. Recipes now unlock in the order you can actually build them, the strongest gear waits for its tier, the eyes work again, and the quest book and starter book were rebuilt to explain it all.
+
+
+### 🗝️ Two keys
+- **Nether and End materials need their realm.** About 590 Nether items (crimson and warped wood furniture, blackstone and basalt blocks, netherite gear, ghast, hoglin and strider foods, soul torches, every Incision block) now need **On Infernal Passage** as well as their craft scroll. 54 End items (shulker boxes, chorus foods and blocks, purpur, elytra) need **The End Passage**.
+- **Boss gear needs the boss's scroll.** Cursium, ignitium and witherite gear also needs **Chronicle of the World-Enders**. Dragonsteel and dragonbone gear also needs **The Dragonslayer's Codex**. Anything crafted from a boss material follows the same rule.
+- **Boss and creature food needs its source** as well as its kitchen. Cataclysm meats need Chronicle of the World-Enders, Alex's Mobs meats need Beasts of the Wide World, warden and sculk dishes need On Sculk Sickness, and Alex's Caves foods need the cave their ingredient comes from.
+- **New: the Two Keys quests.** Twelve short quests explain why some recipes need two scrolls (the craft, and where the material came from), with the exact pair for Nether, End, dragon, boss, sculk, cave and beast materials.
+
+### 🪜 You can make what you can see
+- **About 1,700 items unlocked before the things they are made of.** Now an item keeps its craft scroll and also needs the scroll of its hardest ingredient or station. Brass and zinc gear needs Kinetic Engineering, iron lanterns and candle holders need Foundations of the Forge, and foods made from creature drops need the creature's scroll.
+- **More kitchen stations come with the Forge:** the Farm and Charm cooking pot, roaster, stove, mincer and crafting bowl, and the Meadow cooking cauldron.
+- **End basics come with The End Passage:** end stone, chorus fruit, purpur, end stone bricks and shulker shells.
+- **Silver is a Forge metal.** Silver ore, ingots and blocks moved to Foundations of the Forge. The tripwire hook moved there too, so a crossbow no longer waits on Redstone.
+- **Scrolls ask for what their contents need.** The Legendary Arsenal: Named Ranged needs Chronicle of the World-Enders. The Feast at the World's Edge needs The End Passage. Beehive Logistics needs Kinetic Engineering. Cannoneer, The Void School and On the Masterless Apex need the realm they drop in.
+- **The Lamp of Wishes is endgame now.** Excalibur, the Immortal Lamp and Instant Wish need a Tier III pedestal.
+
+### ⚔️ Power in the right order
+- **Nothing beats netherite before netherite.** Ebony, Titanium and the three Molten Blazing armor sets now also need **The Legendary Forge**. Bronze and Copper dragon scale armor need Scales and Steel like the other dragon colours.
+- **New scroll: The Mythic Forge.** A fourth forge tier past The Legendary Forge (Tier IV pedestal, 35 levels). Crimson armor, every dragonsteel armor set and the three dragon priest sets now need it. It turns up in the same chests as The Legendary Forge.
+- **Weapons follow the same line.** Eighteen weapons that out-hit a netherite sword now need **The Master Arsenal: Blades**. Ebony and Crimson long swords, daggers and scythes moved up to the Master Arsenal with the rest of their family.
+- **The seven celestial weapons** (Aquaflora, Breezebreaker, Crescentia, Frostbound, Poltergeist, Rainfall Serenity, Solaris) now also need Eye Synthesis.
+- **The Magnetic Deep and The Primordial Strata** can be learned a step earlier. Their strongest gear (Tectonic Crest and Primordial Crest armor, the Gauntlet of Extinction upgrades, the Galenic Polarizer) needs The Legendary Forge.
+- **Jetpacks wait for flight.** The Andesite, Brass and Copper Jetpacks moved from Kinetic Engineering to **The Aeronaut's Craft**, next to the gliders.
+- **Food that works like a potion needs Alchemy.** Eighteen dishes with potion-strength buffs now also need Alchemy, the scroll where potions open: the Century Egg, the Enchanted Golden Apple and its Slices, the mango dishes, Lychee Chicken, Cucumber Salad, Azalea Tea, Imitation Bear Paw, Power Soup and a few more.
+
+### 👁️ The eyes
+- **Fixed: three eyes could not be crafted at all.** The Witch Eye, the Lost Eye and the Frostmaw Eye had recipes that named items that do not exist. That also blocked the Arcane Eye, the Ancient Eye and the Vault Eye. All of them can be made now. The Witch Eye asks for an Evoker Spell Book and a Naga Fang, and the Frostmaw Eye asks for a Frozen Key.
+- **The Evoker Spell Book drops more often:** one evoker in ten, and more with Looting. It was one in eighty.
+- **The Vault Eye is fused the way its own book says.** It takes the five combined eyes (Ancient, Arcane, Enhancement, Environment, Weird) and the Wither Eye, which together hold all sixteen End Remastered eyes. The Cataclysm and Mowzie dungeon eyes and the Eye of Nothingness are no longer part of it.
+- **The Eyes are Sealed Relics.** Anyone can hold one, but you cannot throw it or set it in the frame until you learn its scroll.
+- **The "eye pool" chat messages are gone.** They promised a loot pool that was never built.
+
+### 🏛️ Relics and the Five Vessels
+- **Sealed Relics tell you which scroll they need.** The tooltip reads "Learn the scroll" and names it.
+- **Relics are relics, not tech.** Power Grid, Create New Age, TFMG, Big Cannons, teleporters and the Exotic Armory show their real names again. True relics stay sealed, and you have to learn a relic's scroll before you can use it.
+- **The Five Vessels are together at the very end.** The Monarch robes and Iron's Crown now belong to The Five Vessels Apocrypha with the Philosopher's Stone, the Vault Eye and Keres. That scroll needs every other scroll first.
+- **New capstone quest: The Monarch.** Hold all five Vessels of Divinity and the archive has a name for you.
+- Black Liquid, Mysterious Fluid and Bottle of Blood are ordinary Alchemy now.
+
+### 📖 Quest book and starter book
+- **New starter book.** The Tale of the Sinborn is rebuilt: 21 short pages that fit the page, and it now explains the pedestal, prerequisites, copying scrolls, Two Keys and Sealed Relics.
+- **Quests hand you the scroll, not the knowledge.** Quests that used to teach a scroll for walking into a place now give you the sealed scroll. You still research it, with its pedestal and its prerequisites.
+- **Quests that could never be finished are fixed.** The Pontiff's Jungle and The Wish-Seller's Tomb now lead to the Pontiff's Monkey Temple and the Genie Tombstone. Ten more quests pointed at creatures or places that are not in the game and are fixed or hidden. Slaying Hydra, Slaying The Warden and Slaying Warped Mosco can be unlocked now.
+- **The Door Under the Stone** counts the stronghold the Eye of Ender actually leads to.
+- **Practice quests ask for things you can make** with that scroll alone. The Angler's Arts asks for a Nautilus Bobber, The Arcane Codex for an Alchemist Cauldron, and the Fire School and the Legendary Forge have new test pieces.
+- **The Hoarfrost Covenant** asks for a dish you can cook. Three fish dishes that need a mod this pack does not have are out of the Nine Kitchens book.
+- **Slaying Warborn Aegis** is out of the book until the boss has a place to spawn.
+
+### 🍲 Kitchen
+- **Shiny Pudding and Spring Rolls can be cooked.** Both had a typo in the mod's own recipe.
+- **Foods are filed where they belong.** 24 foods moved to the right scroll, and three that had no kitchen got one. Onion, cabbage, tomato, cucumber and yeast are Pantry staples now.
+- **Starter kit:** the waterskin is replaced by a purified water bottle. The waterskin never filled the thirst bar. You can still craft it to cool down or warm up.
+
+### 🧹 Cleanup
+- 94 items that could never be crafted or found (made for mods this pack does not include) no longer show up in the scrolls or in JEI.
+
+### 🛡️ Stability
+- **A guard against the random kick.** A few players were dropped with an "Internal Exception" error when another player's held or worn item changed at the wrong moment. The server now tries again instead of closing your connection.
+
+### ⚠️ Heads up
+Items moved between scrolls again, and many now need a second scroll. If something you could make is suddenly hidden, play the Two Keys quests to see which pair it needs. Scrolls you already researched stay researched.
+
+Update in the CurseForge app.
+
+> Earlier 2.0.0 betas (beta.3 to beta.5.6): see each file's changelog on CurseForge.
+
+
+## v1.7.0 — The Comeback (August 2026)
+
+> The disciplines get honest. Armor is forged, not conjured; the Nether and the End make you re-learn your craft in a foreign land; and nothing sits in your recipe book that you haven't earned. Plus 50 mod updates and a full pass over every item in the pack.
+
+### ⚒️ Armor is a smith's work now
+- **Armor no longer comes from magic scrolls.** It's gated behind **smithing disciplines** — metalworking and leatherworking — so the path to protection runs through the forge and the tannery, not the library.
+- **12 magic schools** stand on their own, each with its own discipline, and three of them now open with dedicated school quests.
+
+### 🌋 The Nether and the End make you re-learn
+- **Dimensional double-gates.** Building in another dimension now needs *two* things: the overworld craft that taught you the skill, and the passage scroll that got you there. Woodworking plus *On Infernal Passage*. Stoneworking plus *The End Passage*.
+- The six redundant dimensional craft scrolls have been **retired** — the passage scrolls carry that weight instead. Cleaner ladder, same gating, **169 scrolls** total.
+- **Wither Storm content is double-gated** behind *The Command Ruin*: corruption is its own foreign country, and the Ruin is the way in.
+
+### 🔒 A truly empty book at spawn
+- Every item in the pack is now accounted for by the discipline system. A final sweep caught **251 previously ungated items** (the Spawn mod's fish, reefstone, date palms and ant hills) and sorted them into the disciplines they belong to — the sea-roads, the bestiary, stoneworking, woodworking, the forager's almanac.
+- Library debug items no longer clutter the recipe book.
+
+### ✨ New
+- **Room For Two** — share a bed with your spouse or a villager. MCA spouses finally get to sleep next to you.
+- **Recruits** gains an 11th unit: the siege engineer.
+- Four new visual packs ride along: **Complementary Reimagined** shaders, **Fresh Animations**, **Ender Eyes**, and **Just Expressions**.
+
+### 🔧 Fixed
+- **Nine mods are deliberately held at earlier versions.** A batch of Farmer's Delight add-ons had moved to builds that require Farmer's Delight 1.3, while the pack runs 1.2.10 — the mismatch caused mods to fail on load, missing textures, and a crash when hovering food in the creative inventory. The whole family is now internally consistent. Those add-on updates return in a future release when Farmer's Delight itself moves.
+- Create Big Cannons held at 5.11.0 — 5.11.4 removed a method that Canon Nukes depends on.
+- **Distant Horizons renders out of the box** (verified in this build).
+- Quest and scroll pass: **720 quests, zero dangling references.**
+- Canon fix: the Ice Civilization is properly the **Hoarfrost** everywhere it appears.
+
+### 🔄 Under the hood
+- **50 mods updated**, none removed.
+- **HistoryStages 5.4.0**, with the pack's own compatibility patch.
+- 17 mods that used to ship as bundled jars are now proper linked downloads.
+- Full drift audit after the update wave: every mob, item, food, structure and biome in the pack is classified — **3,424 foods, 1,444 mobs**.
+
+### 🖥️ Server
+- The plug-and-play server pack ships alongside this release, hosted on GitHub (it's larger than Modrinth allows as an attachment). Same gameplay, same gating, client-only mods stripped.
+
+---
+
 ## v1.6.2 — Discovery Polish (June 2026)
 
-> Polish patch: turns Distant Horizons on by default and tidies loot homes and cravings.
+> Polish patch , turns Distant Horizons on by default and tidies up loot homes and
+> cravings.
 
-### Fixed
-- **Distant Horizons renders by default.** It shipped with rendering OFF, so the world
-  looked fog-walled at vanilla distance even with the mod installed. Now the full
-  64-chunk LOD view is on out of the box (existing players: Options → Distant Horizons
-  → enable rendering). The far view builds in as you explore.
-- **Forlorn Hollows findable.** Alex's Caves' rarest cave was tuned way out (650 blocks,
-  rarity offset 4) and almost never appeared. Loosened to distance 400 / rarity offset 2
-  (still rarer than the common caves). New chunks only.
-- **Scroll loot homes fixed.** End/Nether research scrolls were dropping in overworld
-  chests after a remap; routed back to their own dimensions (dwarven End-tech scrolls
-  stay in the dwarven observatory by design).
-- **Cravings cleaned.** Food-craving system was asking for crafting bases (mash, dough,
-  flour, sauces); scrubbed 77 ingredients , finished meals only now.
+### 🎨 Fixed
+- **Distant Horizons renders by default** , it was shipping with rendering OFF, so
+  the world looked fog-walled at vanilla distance even with the mod installed. Now
+  the full 64-chunk LOD view is on out of the box. (Already installed? Options →
+  Distant Horizons → enable rendering.) The far view builds in as you explore.
+- **Forlorn Hollows findable** , Alex's Caves' rarest cave was tuned way out (650
+  blocks, rarity offset 4) so it almost never appeared. Loosened to distance 400 /
+  rarity offset 2 (still rarer than the common caves). Find one via a Woodland
+  Mansion Cave Tablet → Cave Map, or just by exploring now. New chunks only.
+- **Scroll loot homes fixed** , End research scrolls were dropping in overworld chests
+  (and Nether scrolls too) after a remap. End-material scrolls now come from End loot,
+  Nether ones from Nether loot. Dwarven End-tech scrolls stay in the dwarven observatory
+  by design.
+- **Cravings make sense** , the food-craving system was asking for crafting bases (raw
+  mash, dough, flour, sauces). Scrubbed 77 ingredients; it only craves finished meals now.
 
-### Setup
-- **Allocate 6-8 GB RAM.** 380+ mod pack; 2-4 GB crashes on boot (OutOfMemory). The
-  Modrinth App sets RAM automatically. Setup notes are pinned to the pack page.
+### 📖 Setup
+- **Allocate 6-8 GB RAM** , this is a 380+ mod pack, 2-4 GB crashes on boot with an
+  OutOfMemory error. The Modrinth App sets it for you. Full setup notes pinned to
+  the top of the pack page.
 
-## v1.6.1 — Spawn, Discovery & Server Test (June 2026)
+## v1.6.1 — Spawn, Discovery & a Cleaner Vault (June 2026)
 
-> Adds the Spawn creature mod, deepens the gating, and keeps the world on pure
-> explore-and-discover (no biome/structure trackers).
+> The ocean just got crowded, the gating runs deeper than ever, and the crash
+> that killed your world on creation is dead. Pure explore-and-discover, no maps
+> holding your hand.
 
-### Content
-- **Spawn 4.0 added** — 270+ creatures, items, and foods, fully gated. Firekeeper,
-  Dodo, Stranded, Flukeshroom and the ocean roster folded into the nine-civ lore.
-- **Fixed a hard crash:** Create Big Cannons and Spawn both ship a `block_recipes`
-  folder; CBC parsed Spawn's typeless files and NPE-crashed the Create-World screen.
-  Stripped Spawn's 19 block_recipes (anthill-rot + heliostone conversion) — every
-  Spawn mob/item/food still works.
+### 💀 What we killed
+- **The Create-World crash** , Create Big Cannons was choking on Spawn's recipe
+  files and hard-crashing the world-creation screen before you ever spawned in.
+  Ripped the bad files out, every Spawn mob, item, and food still works.
+- **Biome trackers** , trialed a biome locator and biome compaction, then cut
+  both. The world stays vanilla worldgen, you find it on foot or you don't.
 
-### Scrolls & gating
-- Closed a gating leak: items with a model but no lang key slipped past the scanner.
-  All 276 holdable Spawn items now gated (incl. potted plants, buckets, dev variants).
-- Food variants reconciled — 119 served/bowl/slice/feast variants now match their base
-  food's form + culture; pies given proper form gates; raw fish moved out of the
-  creature scroll into the food scrolls.
-- Empty `resonant_larder` scroll given a real identity: the arcane crystalline larder.
-- All spawn eggs sealed (creative-only); 744 total in the Sealed Vault.
-- Sealed Vault audit (recipe cross-reference vs all 15,470 recipe outputs): confirmed
-  no craftable/survival item was wrongly dev-vaulted. Moved the 4 outliers out — the
-  Ice & Fire dragon egg into `Dragon Husbandry`, and 3 Burnt fluid buckets (eruption
-  lava / flaming tar / geyser water) into `Oddments & Devices` alongside their siblings.
-- **Nether access fix:** `The Infernal Passage` now drops in overworld ruined portals,
-  breaking the chicken-and-egg (it used to drop only inside the Nether).
-- Oil Rig (create_ltab) now drops the `blood_and_oil` scroll.
+### ✨ New content
+- **Spawn 4.0** , 270+ new creatures, items, and foods. Firekeeper, Dodo,
+  Stranded, Flukeshroom, and a full ocean roster, all folded into the nine-civ
+  lore. Gated and waiting to be discovered.
 
-### Explore, don't track
-- Trialed a biome locator (Nature's Compass) + biome compaction, then **removed both** —
-  the pack stays vanilla worldgen, find-it-yourself discovery.
+### 🔥 Pack integration
+- **Every Spawn item is scroll-gated** , all 276 holdable items lock behind
+  research, down to potted plants, buckets, and dev variants. Nothing leaks into
+  JEI early.
+- **119 food variants reconciled** , served, bowl, slice, and feast dishes now
+  match their base food's form and culture. Pies form-gated, raw fish moved into
+  the food scrolls.
+- **Spawn eggs sealed** , all 744 creative spawn eggs tucked into the Sealed Vault.
+- **Sealed Vault audit** , cross-checked every sealed item against every recipe to
+  prove nothing craftable got hidden by mistake. Moved 4 survival items home: the
+  Ice & Fire dragon egg into Dragon Husbandry, 3 Burnt fluid buckets into
+  Oddments & Devices.
+- **Nether access fixed** , the Infernal Passage scroll now drops in overworld
+  ruined portals instead of only inside the Nether.
 
-### Other
-- Mob lore map: all 1,436 pack mobs sorted into the nine civilizations.
-- Keybinds restored to the intended pack defaults; quest book on `[`.
+### 🎨 What we polished
+- **Empty-JEI is relog-proof** , gated items stay hidden across reconnects.
+- **Keybinds restored** , back to pack defaults, quest book on `[`.
+
+### 🧹 Under the hood
+- **Mob lore map** , all 1,436 pack mobs sorted into the nine civilizations.
+- **Clean deterministic export** , verified integrity, test-deployed to the live
+  server, GitHub-synced.
 
 ## v1.6.0 — The Discovery Update (June 2026)
 
@@ -79,9 +198,9 @@ tags: [sinborn-dev]
 - **Why it never worked before:** HistoryStages' built-in JEI hiding only checks
   *global* stages. This pack gates 100% via *individual* (per-player) stages, so
   the hide found nothing and showed all ~22,500 items.
-- **Fix: a coremod (`sinborn_hs_patch` 1.0.11) that does the hide right** using
-  the individual-aware lock check, re-scanning late-loading items and hiding
-  fluids whose mod is still locked. Items + liquids, all hidden until earned.
+- **Fix: a coremod (`sinborn_hs_patch`) that does the hide right** using the
+  individual-aware lock check, re-scanning late-loading items and hiding fluids
+  whose mod is still locked. Items + liquids, all hidden until earned.
 
 ### 🚪 Gating, airtight
 - **Sealed Vault is now dev-only.** Full audit pulled every craftable, lootable,
@@ -114,40 +233,7 @@ tags: [sinborn-dev]
 > A polish + content update. Starter backpacks finally dye properly. Clouds stay
 > up between launches. The scroll system is the cleanest it's been (zero empty
 > scrolls, zero junk, zero double-gates). Plus a new aerial-loot mod, a
-> rendering tier upgrade, and two real worldgen crash fixes. And the headline:
-> the pack finally runs on dedicated and multiplayer servers.
-
-### 🌐 Server / multiplayer compatibility (the headline)
-- **The pack runs on dedicated servers now.** HistoryStages syncs every stage's
-  full item + recipe data to each player on join. With the scroll system fully
-  built out, that payload had grown to ~368 KB gzipped, past Minecraft's 262 KB
-  packet ceiling, so anyone connecting got booted at login with "Root tag must
-  be a named compound tag."
-- **Fix: dropped the redundant recipe lists.** HistoryStages already auto-locks
-  any recipe whose output is a gated item, so listing the 40,420 recipes too was
-  dead weight. Cleared them all and promoted 471 edge-case outputs into their
-  item lists, so gating behaves exactly the same. The synced payload is now
-  ~189 KB, well under the ceiling. Single-player is unaffected, and gating is
-  verified intact (the crafting table is still locked behind survivor_codex).
-- **Server mod list aligned to the client:** ColdSweat 2.4.1, Recruits 1.15.0,
-  Puddleflood 1.1.4.
-- **MoreMobVariants restored, and the freeze it caused is fixed.** The extra-mob-skins
-  mod had been pulled because it deadlocked world generation at "Preparing spawn area":
-  Sully's Mod swaps zombies into vanilla dungeon spawners, which made MoreMobVariants
-  run a blocking biome lookup on a worldgen thread and freeze. Rather than lose the
-  variants, we disabled just that one Sully's behavior (a tiny zombie-swap in vanilla
-  dungeons); the trigger is gone and variants are back on both client and server with
-  no freeze. The rest of Sully's Mod is untouched.
-- **Gated items can be picked up again (SMP fix).** HistoryStages was ignoring the
-  `lockItemPickup = false` setting and ejecting any gated item the instant you tried to
-  hold it, so mining a gated block shot the drop right back out until you researched its
-  scroll. A new mixin in `sinborn_hs_patch` (1.0.5) no-ops that block, so found gated
-  items stay pickable and usable, only crafting is gated, exactly how the discovery
-  system was meant to work. It's a server-side event, so the fix holds on dedicated
-  servers / SMP too.
-- **Smoother first joins:** Surveyor's terrain sync now spreads over more ticks
-  (terrainTicks 20 to 60) instead of bursting ~8 regions at once, so the server
-  thread doesn't spike you off the "loading terrain" screen.
+> rendering tier upgrade, and two real worldgen crash fixes.
 
 ### 💥 Crashes fixed
 - **Formations dep installed** — Echovoids' structure JSONs reference
@@ -218,61 +304,6 @@ tags: [sinborn-dev]
 - **2 empty Pale Shore quests populated** (ch10_gate + ch10_wither) — both had
   description text but no actual tasks; now they have proper check-tasks
   matching the description.
-
-### 🍳 Scroll system, this round's deep pass
-- **Research scrolls actually drop in chests now.** A loot-injection bug meant scrolls
-  weren't spawning in world chests at all (the injector was hitting a no-op event and
-  building empty NBT). Fixed, scrolls now drop across 4,013 chest mappings: villages,
-  Terralith and structure chests, dungeons, treasure. This is the one that makes the
-  whole discovery loop actually work in a fresh world.
-- **Food belongs to a culture, not a junk drawer.** Every food item is sorted into its
-  culture/subculture cookbook scroll by real-world culinary origin instead of a generic
-  pantry catch-all, so the cuisine scrolls read like actual regional cookbooks (dragon
-  meat to the savanna cultures, deep-dark fare to the cold cultures, and so on).
-- **Cookware and smithing are tiered.** New tiered cookware and a legendary smithing
-  scroll, with 4 new research quests wiring them into progression.
-- **Workstations routed by material** (317 placements), you research the discipline that
-  matches what a bench is made of to unlock it.
-- **Architects scroll is architecture-only** now, non-building items pulled out so it
-  reads as a focused discipline.
-- **Every scroll has a home in the world.** Loot coverage closed: every scroll (except the
-  dev-only one) has real spawn locations and drop rates, zero unreachable scrolls.
-- **3 scrolls renamed to in-world titles:** The Wayfarer's Endurance, The Wanderer's Pack,
-  The Homestead's Comfort (no more scrolls named after the mod they gate).
-
-### 🔒 Pack-wide gating, finished
-- **Every content mod is gated now.** Several item-level scan passes hunted down the
-  stragglers, 21 ungated item-adding mods slotted in one pass, then 9 more, then 11 more on a
-  final triage, so nothing with craftable content sneaks in ungated anymore. If a mod adds
-  stuff you make, it lives behind a scroll.
-- **Every food item belongs to a culture.** A pack-wide food pass put every edible into its
-  cuisine scroll, then a scrub kicked out non-food items that had crept in, so the cuisine
-  scrolls read like clean cookbooks instead of junk drawers.
-- **Sorted by actually reading the items, not guessing.** Scrolls were realigned by inspecting
-  each mod's real contents, and a group-by-group thematic audit fixed 14 misplacements, so
-  things sit in the scroll that matches what they actually are.
-- **Cuisine scrolls renamed to the pack's own civilizations** instead of real-world labels, so
-  they line up with Sinborn's canon cultures.
-
-### ⚔️ Quests
-- **Every slay quest now points you at its lore.** A Whispering Folio hint was added to all 69
-  `slay_*` boss quests, so you know which folio the kill ties into instead of guessing.
-- **Dead chapters cut**, theodyssey and thestoneflametrials chapters that referenced removed
-  content are gone, so the questbook doesn't dead-end.
-
-### 🗺️ Field Guide
-- **Boss tab restored and reorganized**, bosses are grouped by their pantheon now, so the
-  bestiary reads the way the lore does.
-- **Dragon boss-locks, Antique Atlas, and the bleeding-bubbles** visual issues fixed in the
-  same pass.
-
-### 🪣 Loot reliability
-- **The empty-chest bug is fixed at the root.** HistoryStages had been stripping gated items
-  straight out of chest loot, so structure chests generated barren. Gating moved to
-  recipes-not-items, so chests fill normally again and you still can't craft what you haven't
-  researched.
-- **Empty CTOV and Wares village chests filled** via a village-loot pass, no more hollow
-  village buildings.
 
 ### 🧹 Config cleanup
 - **46 orphan config files archived** — `.bak` configs from previously-removed

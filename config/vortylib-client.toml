@@ -1,0 +1,13 @@
+#Display a message if ChaosLib is not installed when Iris is running
+chaoslibWarning = true
+#Determines the theme of buttons in config screens
+#Range: 0 ~ 2
+uiTheme = 0
+#Determines the theme of panorama in config screens
+#Range: 0 ~ 2
+panoramaTheme = 0
+#Whether config button is rendered in main menu
+menuConfigButton = true
+#Whether config button is rendered in pause menu
+pauseConfigButton = true
+

@@ -1,5 +1,6 @@
 {
-  "configVersion": 7,
+  "configVersion": 9,
+  "safeMode": true,
   "renderNametagsThroughWalls": true,
   "blockEntityWhitelist": [
     "create:rope_pulley",
@@ -13,7 +14,8 @@
   "entityWhitelist": [
     "botania:mana_burst",
     "drg_flares:drg_flares",
-    "quark:soul_bead"
+    "quark:soul_bead",
+    "desert:sandstorm"
   ],
   "tracingDistance": 128,
   "debugMode": false,
@@ -59,11 +61,20 @@
     "minecraft:pale_oak_chest_boat",
     "minecraft:bamboo_chest_raft",
     "minecraft:mangrove_chest_boat",
-    "voidscape:corrupted_pawn"
+    "voidscape:corrupted_pawn",
+    "cinematiccataclysm:scylla_cutscene",
+    "cinematiccataclysm:maledictus_cutscene",
+    "cinematiccataclysm:leviathan_cutscene",
+    "cinematiccataclysm:ancient_remnant_cutscene",
+    "createbigcannons:cannon_carriage",
+    "desert:sandstorm",
+    "createbigcannons:pitch_contraption",
+    "cinematiccataclysm:ignis_cutscene"
   ],
   "disableF3": false,
   "skipEntityCulling": true,
   "skipBlockEntityCulling": false,
   "blockEntityFrustumCulling": true,
-  "forceDisplayCulling": false
+  "forceDisplayCulling": false,
+  "solidLeaves": false
 }

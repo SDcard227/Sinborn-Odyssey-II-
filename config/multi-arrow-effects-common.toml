@@ -1,0 +1,13 @@
+
+[arrow_combining]
+	# Maximum number of unique effects allowed per combined arrow
+	# Default: 3
+	max_effects = 3
+	# List of effects that cannot be combined at all
+	# Example: ["minecraft:poison", "minecraft:instant_damage"]
+	effects_blacklist = []
+	# List of effect pairs that cannot be combined together
+	# Format: "effect1,effect2" for each pair
+	# Example: ["minecraft:slowness,minecraft:speed", "minecraft:weakness,minecraft:strength"]
+	blacklist_grouping = []
+

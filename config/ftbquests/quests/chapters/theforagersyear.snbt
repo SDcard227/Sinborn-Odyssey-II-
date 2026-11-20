@@ -1,0 +1,685 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "theforagersyear"
+	group: "5A0000000000002B"
+	icon: "minecraft:sweet_berries"
+	id: "32B4FD7DEA1E3048"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Every civilisation in the archive began by eating what was already there, and wrote the farming down afterwards."]
+			icon: "minecraft:sweet_berries"
+			id: "41CDC270BB6C2BEF"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "The land feeds you before you farm it."
+			tasks: [{
+				id: "61906D2D155AA177"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Forager's Year"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41CDC270BB6C2BEF"]
+			description: [
+				"The Umvuthana Archive holds the most complete copy, and chose what to burn."
+				""
+				"&6Found in:&r armorer, badlands warehouse, beach warehouse and 69 more &8(35% a chest)"
+				"&bOpens:&r 410 entries and 2 whole bodies of work"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 3 minutes"
+			]
+			icon: "minecraft:wheat_seeds"
+			id: "373BBDDBE1D47C43"
+			rewards: [{
+				count: 12
+				id: "7716E61980BC2D1A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Umvuthana work. They chose what to keep."
+			tasks: [
+				{
+					id: "190FB712BCEDE79E"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "agronomic_path"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7C2B92E5DB70EDAB"
+					individual: true
+					negate: false
+					stage: "agronomic_path"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Agronomist Path"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["41CDC270BB6C2BEF"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r mansion common, mansion junk, mansion treasure and 1 more &8(7% a chest)"
+				"&bOpens:&r 238 entries and 3 whole bodies of work"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 2 minutes"
+			]
+			icon: "minecraft:lead"
+			id: "3BEEB7A6A5DC8AC7"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "31C935C5E85B3CD6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The terms, for something that cannot read them."
+			tasks: [
+				{
+					id: "5FC926F2812C539F"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "companions_charter"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "63EEE521C83A1EAD"
+					individual: true
+					negate: false
+					stage: "companions_charter"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Companions Charter"
+			x: 2.8d
+			y: -2.8d
+		}
+		{
+			dependencies: ["41CDC270BB6C2BEF"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r buried treasure, campsite, caveman house and 5 more &8(7% a chest)"
+				"&bOpens:&r 22 entries and 2 whole bodies of work"
+				"&dNeeds:&r one of The Agronomist Path, The Companions Charter, On Sniffers, Frogs, and Mangroves"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "crittersandcompanions:koi_fish"
+			id: "2AB2413E00AB9D95"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "570C3D67E179E335"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Kept, which is not the same as tamed."
+			tasks: [
+				{
+					id: "6D5C4B76D1C3887B"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "kept_creatures"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "02519D5C8F1356FB"
+					individual: true
+					negate: false
+					stage: "kept_creatures"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Codex of Kept Creatures"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41CDC270BB6C2BEF"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r aqua mage basic storage, aqua mage treasure storage, burnt chest and 14 more &8(17% a chest)"
+				"&bOpens:&r 23 entries"
+				"&dNeeds:&r one of The Codex of Kept Creatures, The Menagerie of the Wild"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "alexsmobs:falconry_glove"
+			id: "315F858AF8AF8CFA"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "3B0A544FB9F12C5B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "A bird, and a reason to come back."
+			tasks: [
+				{
+					id: "15D34AF1E84DCBD0"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "falconry"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "67415789CD3466EC"
+					individual: true
+					negate: false
+					stage: "falconry"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Falconry & Advanced Whistlecraft"
+			x: 2.8d
+			y: 2.8d
+		}
+		{
+			dependencies: ["41CDC270BB6C2BEF"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r arrows, blacksmithy, citadel bookshelf and 4 more &8(4% a chest)"
+				"&bOpens:&r 24 entries"
+				"&dNeeds:&r one of Archaeology Mastery, The Codex of Kukulkan, The End Passage, The Chorus Hearth"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "companions:soul_gem"
+			id: "4F6714524DEE5232"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6BAB807B6F1B49FE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "For the ones that got hurt following you."
+			tasks: [
+				{
+					id: "2B2ECA1FB313A057"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "mender_lost_company"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "6899F9EC4C78467E"
+					individual: true
+					negate: false
+					stage: "mender_lost_company"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Mender of the Lost Company"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["41CDC270BB6C2BEF"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abyssal ruins, abyssal ruins additions, buried treasure and 5 more &8(17% a chest)"
+				"&bOpens:&r 11 entries and 1 whole body of work"
+				"&dNeeds:&r one of The Agronomist Path, The Companions Charter, On Sniffers, Frogs, and Mangroves"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "luminousworld:beastiary"
+			id: "38E58CEF6655B935"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "24AA691FB33E7DCF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Everything that was never going to be kept."
+			tasks: [
+				{
+					id: "515FC018C0EFA99F"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "menagerie_of_the_wild"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "25B30283DE96B5D2"
+					individual: true
+					negate: false
+					stage: "menagerie_of_the_wild"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Menagerie of the Wild"
+			x: -2.8d
+			y: 2.8d
+		}
+		{
+			dependencies: ["41CDC270BB6C2BEF"]
+			description: [
+				"The Umvuthana Archive holds the most complete copy, and chose what to burn."
+				""
+				"&6Found in:&r caveman house, food storage, frosted prison treasure and 1 more &8(18% a chest)"
+				"&bOpens:&r 4 entries and 1 whole body of work"
+				"&dNeeds:&r On Sniffers, Frogs, and Mangroves; one of The Agronomist Path, The Iron Arsenal: Ranged, The Codex of Kukulkan, On Sniffers, Frogs, and Mangroves"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "luminousworld:butterfly_net"
+			id: "56ADACF58FF2D090"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6E8DEE420AD0CDDB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Umvuthana work. Look first, decide later."
+			tasks: [
+				{
+					id: "6C35475B580F0A1C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "wild_study"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "100143E6A6F18B0D"
+					individual: true
+					negate: false
+					stage: "wild_study"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Wild Study"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41CDC270BB6C2BEF"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r armory, buried treasure, dwemer ruin common and 2 more &8(12% a chest)"
+				"&bOpens:&r 2 entries and 1 whole body of work"
+				"&dNeeds:&r The Dragonslayer’s Codex; 25 levels of experience, spent"
+				"&aPedestal:&r Tier III, about 18 minutes"
+			]
+			icon: "endertrigon:baby_dragon_egg"
+			id: "0638F7ED50240834"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0E9D0662A8FDED94"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The last animal anyone tried this on."
+			tasks: [
+				{
+					id: "23BF055507C20621"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "dragon_husbandry"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7C0271F3D808593D"
+					individual: true
+					negate: false
+					stage: "dragon_husbandry"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Dragon Husbandry"
+			x: -2.8d
+			y: -2.8d
+		}
+		{
+			dependencies: ["373BBDDBE1D47C43"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "farm_and_charm:fertilizer"
+			id: "705FCA51F612BD9E"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7DF2BB97F1DC22B3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the furrow."
+			tasks: [
+				{
+					id: "147D01E650507884"
+					item: "farm_and_charm:fertilizer"
+					title: "Fertilizer"
+					type: "item"
+				}
+				{
+					id: "604FE8832B6EEA53"
+					item: "minecraft:carved_pumpkin"
+					title: "Carved Pumpkin"
+					type: "item"
+				}
+				{
+					id: "2BEE9C437A08EA56"
+					item: "farm_and_charm:oat"
+					title: "Oat"
+					type: "item"
+				}
+			]
+			title: "Practising , The Agronomist Path"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["315F858AF8AF8CFA"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "messenger_crow:white_ribbon"
+			id: "6E9ABC56FF1EF819"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "38E67AC59400B182"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on the glove."
+			tasks: [
+				{
+					id: "5BA8DD6E7DEBC902"
+					item: "messenger_crow:white_ribbon"
+					title: "Ribbon"
+					type: "item"
+				}
+				{
+					id: "51942851B5C42995"
+					item: "messenger_crow:cyan_ribbon"
+					title: "Ribbon"
+					type: "item"
+				}
+				{
+					id: "1A08D99E5686F13B"
+					item: "messenger_crow:gray_ribbon"
+					title: "Ribbon"
+					type: "item"
+				}
+			]
+			title: "Practising , Falconry & Advanced Whistlecraft"
+			x: 5.3d
+			y: 5.3d
+		}
+		{
+			dependencies: ["2AB2413E00AB9D95"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "crittersandcompanions:koi_fish_bucket"
+			id: "1F6320D0FFD1C24E"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0F24FCAC587DA0DF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the pen."
+			tasks: [
+				{
+					id: "3D5B55EE482EB4BE"
+					item: "crittersandcompanions:koi_fish_bucket"
+					title: "Bucket of Koi Fish"
+					type: "item"
+				}
+				{
+					id: "7A4B01CD8CA7A107"
+					item: "crittersandcompanions:dumbo_octopus_bucket"
+					title: "Bucket of Dumbo Octopus"
+					type: "item"
+				}
+				{
+					id: "677EC350C8273830"
+					item: "farm_and_charm:horse_fodder"
+					title: "Horse Fodder"
+					type: "item"
+				}
+			]
+			title: "Practising , The Codex of Kept Creatures"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38E58CEF6655B935"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "luminousworld:beastiary"
+			id: "768B84A9940797C1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4AD603D9BBB48D1D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the field."
+			tasks: [
+				{
+					id: "77BF77AFE58B4D3F"
+					item: "luminousworld:beastiary"
+					title: "Bestiary"
+					type: "item"
+				}
+				{
+					id: "3727919036E74F67"
+					item: "golemoverhaul:honey_blob"
+					title: "Honey Blob"
+					type: "item"
+				}
+				{
+					id: "00E74E769ED6245E"
+					item: "luminousworld:beast_totem"
+					title: "Totem of Beasts"
+					type: "item"
+				}
+			]
+			title: "Practising , The Menagerie of the Wild"
+			x: -5.3d
+			y: 5.3d
+		}
+		{
+			dependencies: ["4F6714524DEE5232"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "companions:book_black_hole"
+			id: "1DD81FB7A60ACF8C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1C9A8FE8D7B6FBBE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on the wounded."
+			tasks: [
+				{
+					id: "519FD98A19E8B7B9"
+					item: "companions:book_black_hole"
+					title: "Black Hole Magic Book"
+					type: "item"
+				}
+				{
+					id: "7898460CA283557D"
+					item: "companions:old_cloth"
+					title: "Old Cloth"
+					type: "item"
+				}
+				{
+					id: "609DDDA8CB100169"
+					item: "companions:book_fire_mark"
+					title: "Fire Mark Magic Book"
+					type: "item"
+				}
+			]
+			title: "Practising , The Mender of the Lost Company"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["56ADACF58FF2D090"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "dracolotl:bucket_of_dracolotl"
+			id: "690D9A9C19CA928C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1F0578E1C1B67C63"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it by looking."
+			tasks: [
+				{
+					id: "32BA499489A44BFA"
+					item: "dracolotl:bucket_of_dracolotl"
+					title: "Bucket of Dracolotl"
+					type: "item"
+				}
+				{
+					id: "689AE6B01B2127C5"
+					item: "luminousworld:butterfly_encyclopedia"
+					title: "Butterfly Encyclopedia"
+					type: "item"
+				}
+				{
+					id: "1E61B3DC15E2AEA8"
+					item: {
+						Count: 1
+						id: "luminousworld:butterfly_net"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Butterfly Net"
+					type: "item"
+				}
+			]
+			title: "Practising , The Wild Study"
+			x: -7.5d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Eat what is already there, then learn to grow it."]
+	title: "The Forager's Year"
+}

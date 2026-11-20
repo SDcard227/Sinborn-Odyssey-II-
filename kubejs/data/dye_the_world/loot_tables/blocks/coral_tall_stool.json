@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "another_furniture"
+    }
+  ],
+  "pools": [],
+  "random_sequence": "dye_the_world:blocks/coral_tall_stool"
+}

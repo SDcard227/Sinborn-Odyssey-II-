@@ -1,36 +1,17 @@
 {
   "display_name": "The Blood School",
-  "research_time": 3600,
+  "icon": "historystages:research_scroll",
+  "research_time": 600,
   "items": [
     "companions:crystallized_blood",
     "companions:crystallized_blood_axe",
-    "companions:crystallized_blood_axe_2d",
-    "companions:crystallized_blood_axe_3d",
-    "companions:crystallized_blood_boots",
-    "companions:crystallized_blood_chestplate",
-    "companions:crystallized_blood_helmet",
-    "companions:crystallized_blood_leggings",
     "companions:crystallized_blood_scythe",
-    "companions:crystallized_blood_scythe_2d",
-    "companions:crystallized_blood_scythe_3d",
     "companions:crystallized_blood_sword",
-    "companions:crystallized_blood_sword_2d",
-    "companions:crystallized_blood_sword_3d",
     "dacxirons:crimson_cloth",
-    "dacxirons:crimson_wizard_boots",
-    "dacxirons:crimson_wizard_hood",
-    "dacxirons:crimson_wizard_leggings",
-    "dacxirons:crimson_wizard_robe",
     "dacxirons:sanguine_scepter_staff",
     "dacxirons:wither_rune",
     "dungeons_and_combat:blood_orb",
     "dungeons_and_combat:blood_vial",
-    "dungeons_and_combat:bloody_cult_chestplate",
-    "dungeons_and_combat:bloody_cult_helmet",
-    "dungeons_and_combat:bloodymancer_chestplate",
-    "dungeons_and_combat:bloodymancer_helmet",
-    "dungeons_and_combat:bloodywarden_chestplate",
-    "dungeons_and_combat:bloodywarden_helmet",
     "dungeons_and_combat:cursed_soul",
     "dungeons_and_combat:eldrich_heart",
     "dungeons_and_combat:fractured_soul",
@@ -39,17 +20,11 @@
     "dungeons_and_combat:sacrificial_table",
     "dungeons_and_combat:sanguine_scepter",
     "dungeons_and_combat:soul_bottle",
-    "irons_spellbooks:blood_cauldron",
     "irons_spellbooks:blood_rune",
     "irons_spellbooks:blood_staff",
     "irons_spellbooks:blood_upgrade_orb",
     "irons_spellbooks:blood_vial",
     "irons_spellbooks:bloody_vellum",
-    "irons_spellbooks:cultist_boots",
-    "irons_spellbooks:cultist_chestplate",
-    "irons_spellbooks:cultist_helmet",
-    "irons_spellbooks:cultist_leggings",
-    "irons_spellbooks:scroll_blood",
     "lifesteal:crystal_block",
     "lifesteal:crystal_core",
     "lifesteal:crystal_fragment",
@@ -60,9 +35,36 @@
     "lifesteal:revive_crystal",
     "lifesteal:revive_head",
     "traveloptics:blood_echo",
-    "wd:soul_core",
-    "wd:soul_stone",
-    "wd:soul_stone_charged"
+    "companions:shade_bat_altar",
+    "companions:shade_maw_altar",
+    "companions:shade_sword_altar",
+    "companions:shadow_bell",
+    "compatdelight:blood_vial_cake",
+    "compatdelight:blood_vial_cookie",
+    "compatdelight:blood_vial_jem",
+    "compatdelight:blood_vial_pie",
+    "dacxirons:wither_ring",
+    "dungeons_and_combat:blessed_bandages",
+    "dungeons_and_combat:bloody_dye",
+    "dungeons_and_combat:crimson_brick",
+    "dungeons_and_combat:crimson_flask",
+    "dungeons_and_combat:crimson_sickle_sword",
+    "dungeons_and_combat:cursed_molten_blazing_greathammer",
+    "dungeons_and_combat:cursed_molten_blazing_sword",
+    "dungeons_and_combat:cursed_lamp",
+    "dungeons_and_combat:desolate_dirt",
+    "dungeons_and_combat:forging_of_essences",
+    "dungeons_and_combat:mortar_and_pestle_of_blood",
+    "dungeons_and_combat:mortar_and_pestle_of_wither",
+    "dungeons_and_combat:raw_crimson",
+    "dungeons_and_combat:crimson_brick_slab",
+    "dungeons_and_combat:crimson_brick_stairs",
+    "dungeons_and_combat:crimson_brick_wall",
+    "dungeons_and_combat:curse_molten_blazing_hammer",
+    "dungeons_and_combat:crimson_tiles",
+    "dungeons_and_combat:crimson_tiles_slab",
+    "dungeons_and_combat:crimson_tiles_stairs",
+    "dungeons_and_combat:crimson_tiles_wall"
   ],
   "tags": [],
   "mods": [
@@ -75,5 +77,89 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "abyssal_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ender_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "evocation_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "fire_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "holy_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ice_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lightning_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "nature_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "technomancy_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_school",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_cipher",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "backpackcraft",
+          "mode": "player"
+        },
+        {
+          "stage_id": "banner_heraldry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_road",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

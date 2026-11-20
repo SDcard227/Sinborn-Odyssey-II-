@@ -1,0 +1,17 @@
+#
+#Number of item stacks to show in tray tooltip. 
+#The rest will be omitted under "and N more...". 
+#Default: 5
+#Range: 1 ~ 64
+maxTrayTooltipLines = 5
+#
+#If enabled plates towers between ~5 and ~16 will render on the same height. 
+#Otherwise, the rendering height will not be corrected. 
+#Only affects first person perspective. 
+#Default: true
+trayDynamicPlateOffset = true
+#
+#Show food particles when eating from plates. 
+#Default: true
+showEatingParticles = true
+

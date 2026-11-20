@@ -1,0 +1,817 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "alexscavesdelight:cut_cooked_lanternfish",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_cooked_radgill",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_cooked_trilocararis",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_cooked_tripodfish",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_dinosaur_chop_cooked",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_dinosaur_chop_raw",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_lanternfish",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_radgill",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_sea_pig",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_sweetish_fish_blue",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_sweetish_fish_green",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_sweetish_fish_pink",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_sweetish_fish_red",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_sweetish_fish_yellow",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_trilocaris_tail",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_tripodfish",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:tremorzilla_maet",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cooked_sea_pig",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:dried_tripodfish",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:jerky",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:kippers",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:cheesy_pasta",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:horror_lasagna",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:fiery_fondue",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:ham_and_cheese_sandwich",
+   "required": false
+  },
+  {
+   "id": "compatdelight:ender_dragon_steak",
+   "required": false
+  },
+  {
+   "id": "compatdelight:warden_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:wither_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:raw_martian_raptor_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_martian_raptor_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_martian_raptor",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_raw_martian_raptor",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_wilden_guardian_steak",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_wilden_stalker_maet",
+   "required": false
+  },
+  {
+   "id": "compatdelight:wilden_stalker_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:salmon_slice",
+   "required": false
+  },
+  {
+   "id": "blue_skies:carabeef",
+   "required": false
+  },
+  {
+   "id": "blue_skies:cooked_carabeef",
+   "required": false
+  },
+  {
+   "id": "blue_skies:venison",
+   "required": false
+  },
+  {
+   "id": "blue_skies:cooked_venison",
+   "required": false
+  },
+  {
+   "id": "blue_skies:monitor_tail",
+   "required": false
+  },
+  {
+   "id": "blue_skies:cooked_monitor_tail",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:monster_flesh",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:smoked_monster_flesh",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:rotten_fish",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:smoked_fish",
+   "required": false
+  },
+  {
+   "id": "born_in_chaos_v1:smoked_flesh",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_piglin_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_warped_enderman",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_wex_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:piglin_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:warped_enderman",
+   "required": false
+  },
+  {
+   "id": "compatdelight:wraither_flesh",
+   "required": false
+  },
+  {
+   "id": "compatdelight:dragon_chaos_steak",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_penguin",
+   "required": false
+  },
+  {
+   "id": "compatdelight:penguin",
+   "required": false
+  },
+  {
+   "id": "ecologics:crab_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_crab_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_rascal_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:crab_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:glare_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:rascal_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:tuff_golem_heart",
+   "required": false
+  },
+  {
+   "id": "compatdelight:wildfire_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:frostmaw_steak",
+   "required": false
+  },
+  {
+   "id": "compatdelight:marinated_nagi_tail",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_grottol_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_naga_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_umvuthana",
+   "required": false
+  },
+  {
+   "id": "compatdelight:grottol_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:grottol_wrap",
+   "required": false
+  },
+  {
+   "id": "compatdelight:hamburger_of_umvuthana",
+   "required": false
+  },
+  {
+   "id": "compatdelight:ice_sandwich",
+   "required": false
+  },
+  {
+   "id": "compatdelight:naga_heart",
+   "required": false
+  },
+  {
+   "id": "compatdelight:naga_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:umvuthana",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_mutant_creeper_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_mutant_enderman_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_mutant_skeleton_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_mutant_snow_golem_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_spider_pig_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:mutant_creeper_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:mutant_enderman_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:mutant_rotten_flesh",
+   "required": false
+  },
+  {
+   "id": "compatdelight:mutant_skeleton_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:mutant_snow_golem_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:spider_pig_meat",
+   "required": false
+  },
+  {
+   "id": "compatdelight:duck_soup",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_butterfly",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_caterpillar",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_bass",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_catfish",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_bass",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_butterfly",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_caterpillar",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_catfish",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_duck",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_lizard",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_venison",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_duck",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_lizard_tail",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_venison",
+   "required": false
+  },
+  {
+   "id": "nourished_nether:cooked_hoglin",
+   "required": false
+  },
+  {
+   "id": "nourished_nether:raw_hoglin",
+   "required": false
+  },
+  {
+   "id": "compatdelight:awful_chast",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_awful_chast",
+   "required": false
+  },
+  {
+   "id": "compatdelight:propulk",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_propulk",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_ice_cube",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cooked_sand_shapper",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_ice_cube",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_cooked_sand_shapper",
+   "required": false
+  },
+  {
+   "id": "compatdelight:ice_cube",
+   "required": false
+  },
+  {
+   "id": "compatdelight:sand_shapper",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_ice_cube",
+   "required": false
+  },
+  {
+   "id": "compatdelight:cut_sand_shapper",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:fried_egg",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:cod_slice",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:cooked_cod_slice",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:salmon_slice",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:cooked_salmon_slice",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:bacon_and_eggs",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:undead_kebab",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:monster_mash",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:bone_kebab_rotten_flesh",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:bone_kebab_spider_eye",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:bone_kebab_slime",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:bone_kebab_slimeapple",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:cookie_flesh",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:cookie_spidereye",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:cookie_slime",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:cookie_slimeapple",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:soup_rotten_flesh",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:soup_spider_eye",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:soup_slime",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:soup_slimeapple",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punch_rotten_flesh",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punch_spidereye",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punch_slimeapple",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:rotten_flesh_pie_slice",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:slimeapple_pie_slice",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:spidereye_pie_slice",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:rotten_flesh_lollipop",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:slimeapple_lollipop",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:spidereye_lollipop",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:rotten_flesh_ring_candy",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:slimeapple_ring_candy",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:spidereye_ring_candy",
+   "required": false
+  },
+  {
+   "id": "netherexp:cooked_hogham",
+   "required": false
+  },
+  {
+   "id": "jadensnetherexpansiondelight:cooked_hogham_slice",
+   "required": false
+  },
+  {
+   "id": "netherexp:glowcheese",
+   "required": false
+  },
+  {
+   "id": "jadensnetherexpansiondelight:glowcheese_slice",
+   "required": false
+  },
+  {
+   "id": "netherexp:hogham",
+   "required": false
+  },
+  {
+   "id": "jadensnetherexpansiondelight:hogham_slice",
+   "required": false
+  },
+  {
+   "id": "netherexp:wraithing_flesh",
+   "required": false
+  },
+  {
+   "id": "jadensnetherexpansiondelight:wraithing_flesh_slice",
+   "required": false
+  },
+  {
+   "id": "jadensnetherexpansiondelight:cooked_wraithing_flesh",
+   "required": false
+  },
+  {
+   "id": "jadensnetherexpansiondelight:cooked_wraithing_flesh_slice",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:amethyst_crab_meat_stick",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:berserker",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_amethyst_crab_meat",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_berserker",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_koboleton_meat",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_coral_golem_meat",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_ender_golem_meat",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_leviathan",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_lionfish",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_netherite_monstrosity_meat",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:coral_golem_meat",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:amethyst_crab_meat_slice",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_amethyst_crab_meat_slice",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:maledictus_heart_slice",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:deepling_meat",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:ham_of_berserker",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:ignis",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:improved_dog_food",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:leviathan",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:maledictus_heart",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:raw_deepling_meat",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:watcher_heart",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:ender_golem_meat",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:cooked_crab_legs",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:crab_legs",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:hippocamtus",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:symbiocto_tentacle",
+   "required": false
+  },
+  {
+   "id": "lendersdelight:urchinkin",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:minced_beef",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:lamb_ham",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:chicken_parts",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:bacon",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:baked_lamb_ham",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:lamb_with_corn",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:goulash",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:beef_patty_with_vegetables",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:potato_with_roast_meat",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:stuffed_chicken",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:roasted_chicken",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:chicken_wrapped_in_bacon",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:cooked_cod",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:cooked_salmon",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:stuffed_rabbit",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:sausage_with_oat_patty",
+   "required": false
+  },
+  {
+   "id": "farm_and_charm:bacon_with_eggs",
+   "required": false
+  }
+ ]
+}

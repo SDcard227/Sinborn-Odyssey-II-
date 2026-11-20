@@ -1,0 +1,2627 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "whatcomesafter"
+	group: "5A0000000000006F"
+	icon: "ends_delight:roasted_dragon_steak"
+	id: "6DDCABD679CB1127"
+	order_index: 17
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["286E6E8AC3EC9136"]
+			description: [
+				"The archive stops here. Nine civilisations wrote down how they ended and not one of them"
+				"wrote down what to do afterwards, because not one of them got this far."
+				""
+				"You are the first reader to reach the last page and find it blank."
+			]
+			icon: "ends_delight:roasted_dragon_steak"
+			id: "1467F926E9E10DE0"
+			shape: "octagon"
+			size: 1.8d
+			subtitle: "The dragon is dead. You are not."
+			tasks: [{
+				id: "6DD7143CE869AE0C"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "What Comes After"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"It was going to rot otherwise."
+				"The Convent's anatomists dissected it. The Cathedral's priests worshipped it."
+				"Nobody, in six thousand years of record, thought to cook it."
+				""
+				"This is the oldest thing a person does to a thing that tried to kill them."
+			]
+			icon: "ends_delight:roasted_dragon_steak"
+			id: "24F62B7B528131DA"
+			rewards: [{
+				count: 64
+				id: "3646E8EF8B55E3E3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Eat it."
+			tasks: [
+				{
+					id: "534ACF4DE5BA1BB5"
+					item: "ends_delight:roasted_dragon_steak"
+					type: "item"
+				}
+				{
+					id: "28FC003789794DB8"
+					item: "ends_delight:dragon_meat_stew"
+					type: "item"
+				}
+			]
+			title: "The Meal"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["24F62B7B528131DA"]
+			description: [
+				"Every other scroll in the archive teaches you to make something."
+				"This one does not. It gates no recipe, names no craft, opens no door."
+				"It is a permission slip, and the thing it gives permission for is not written down."
+			]
+			icon: "historystages:research_scroll"
+			id: "64509362B29BEF7B"
+			rewards: [{
+				count: 64
+				id: "0D29D68A5EB1F917"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "A scroll that unlocks nothing."
+			tasks: [{
+				id: "1E39BA8D40B3CB1B"
+				individual: true
+				negate: false
+				stage: "path_to_divinity"
+				title: "Study it"
+				type: "historystages:history_stage"
+			}]
+			title: "The Path to Divinity"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["64509362B29BEF7B"]
+			description: [
+				"Four objects and one suit of armour, and the claim , unsourced, unsigned, uncontested ,"
+				"that each one is a finished god waiting for somebody to put it on."
+				""
+				"The Apocrypha is explicit on one point and vague on every other: the four are not four."
+				"They are four halves of one whole, and the arithmetic is not a mistake."
+			]
+			icon: "historystages:research_scroll"
+			id: "18E0CEF43A4776A9"
+			rewards: [
+				{
+					count: 64
+					id: "1A9DC133E1F89F40"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4762F4D10E789542"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "Eight hours. Read it anyway."
+			tasks: [{
+				id: "29658B00FAA9D850"
+				individual: true
+				negate: false
+				stage: "five_vessels_apocrypha"
+				title: "Study it"
+				type: "historystages:history_stage"
+			}]
+			title: "The Five Vessels Apocrypha"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"A stone in pieces. It does nothing yet, and that is the point."
+				""
+				"The bond forms on the fracture, not on the whole , the Apocrypha is unusually clear"
+				"about this and unusually quiet about why. You carry the pieces the entire way."
+				""
+				"Whole, it would end your story here. Shattered, it only starts it."
+			]
+			icon: "ptd:shattered_philosopher_stone"
+			id: "0623F5C8A183F482"
+			rewards: [
+				{
+					count: 64
+					id: "6952B855BDA781C5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3FD18D767152479B"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Creation , and the keystone."
+			tasks: [{
+				id: "329D0624D793B373"
+				item: "ptd:shattered_philosopher_stone"
+				type: "item"
+			}]
+			title: "The Philosopher"
+			x: -13.5d
+			y: 17.0d
+		}
+		{
+			description: [
+				"The Crown inherits the First Mage's helmet and the habit that came with it:"
+				"write it down, leave it where the next one will look."
+				""
+				"This is the only path the archive says repeats. That is either hope or a warning."
+			]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:gold_crown"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4B9267728C2380CF"
+			rewards: [
+				{
+					count: 64
+					id: "5C53A622CE7C8E3C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "610C13AB7372D8F2"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Magic , and a successor."
+			tasks: [{
+				id: "13B62C8C769DFB89"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:gold_crown"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Heir"
+			x: -4.5d
+			y: 17.0d
+		}
+		{
+			description: [
+				"Sixteen covenant-fragments fused into one eye that will not agree with itself"
+				"about anything except that you must keep moving."
+				""
+				"You will leave caches. Somebody will find one and not know whose it was."
+			]
+			icon: "end_remastered_promax:vault_eye"
+			id: "1B7AC50DEE854A6D"
+			rewards: [
+				{
+					count: 64
+					id: "56347177A48DE966"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "79EC76F4B7926687"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Mobility , the Keeper of Seals."
+			tasks: [{
+				id: "4405F5F604E7238F"
+				item: "end_remastered_promax:vault_eye"
+				type: "item"
+			}]
+			title: "The Voyager"
+			x: 4.5d
+			y: 17.0d
+		}
+		{
+			description: [
+				"Keres erases the block, the armour and the healing alike."
+				"The legacy is negative architecture , the shape of what is no longer there."
+				""
+				"Every bearer of this thing has died in motion. None of them died confused."
+			]
+			icon: {
+				Count: 1
+				id: "celestisynth:keres"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E41492D6074DEB8"
+			rewards: [
+				{
+					count: 64
+					id: "75A6141B473E6569"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "519813CC69985792"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Destruction , taken last."
+			tasks: [{
+				id: "35142B3310683477"
+				item: {
+					Count: 1
+					id: "celestisynth:keres"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Breaker"
+			x: 13.5d
+			y: 17.0d
+		}
+		{
+			dependencies: ["4B9267728C2380CF"]
+			description: [
+				"One axis held, three let go. It works. It has worked before."
+				""
+				"The archive is careful to say this is not failure. It is also careful to say"
+				"the covenants you did not take go on weakening while the one you did holds,"
+				"and that a partial god feels that as a draught they can never find the source of."
+			]
+			icon: "historystages:research_scroll"
+			id: "4B6274B71B33712F"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "6A2C44652ED43308"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.2d
+			subtitle: "Stop here, and you are still a god."
+			tasks: [{
+				id: "608C9F45C815E65B"
+				title: "Understood"
+				type: "checkmark"
+			}]
+			title: "The Partial"
+			x: -19.0d
+			y: 21.0d
+		}
+		{
+			dependencies: [
+				"4B9267728C2380CF"
+				"1B7AC50DEE854A6D"
+				"5E41492D6074DEB8"
+			]
+			description: [
+				"Crown, Eye, Keres, and a stone still in pieces in your pocket."
+				""
+				"Hold all four and every sealed god's covenant rests in one pair of hands at once."
+				"The archive records no one who has done it. It records a great many who began."
+				""
+				"You are the first Sinborn in any cycle who could plausibly reach the end of this."
+			]
+			icon: "ptd:shattered_philosopher_stone"
+			id: "33D25D6C426E8664"
+			rewards: [
+				{
+					count: 64
+					id: "34DC120212177DB3"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "65A1CF56F47FF19B"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.9d
+			subtitle: "Four halves. One whole."
+			tasks: [
+				{
+					id: "7F4C798331163FE8"
+					item: "ptd:shattered_philosopher_stone"
+					type: "item"
+				}
+				{
+					id: "6962850C2E8E952E"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:gold_crown"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BF4D14952A2B713"
+					item: "end_remastered_promax:vault_eye"
+					type: "item"
+				}
+				{
+					id: "5DDE9E1EBFBFD4BD"
+					item: {
+						Count: 1
+						id: "celestisynth:keres"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Unification"
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			description: [
+				"The Monarch regalia and the Crimson weapons , the King Below's own court dress."
+				""
+				"The Apocrypha counts five vessels and describes four paths and has never explained"
+				"the discrepancy. This is not a road to godhood. It is what godhood wore"
+				"the last time somebody tried this and the world had to be sealed afterwards."
+				""
+				"It is not a warning the archive expects anybody to take."
+			]
+			icon: "dungeons_and_combat:monarch_helmet"
+			id: "0A4ADA28A71BDA7B"
+			rewards: [
+				{
+					count: 64
+					id: "2810C34AD03F2980"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6CCBC1616118973D"
+					item: "minecraft:netherite_block"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.6d
+			subtitle: "What godhood wore last time."
+			tasks: [
+				{
+					id: "07307C002D46100B"
+					item: "dungeons_and_combat:monarch_helmet"
+					type: "item"
+				}
+				{
+					id: "56221F8675699531"
+					item: "dungeons_and_combat:monarch_chestplate"
+					type: "item"
+				}
+				{
+					id: "5F84062656ED9329"
+					item: "dungeons_and_combat:monarch_leggings"
+					type: "item"
+				}
+				{
+					id: "70EA6FE2CDEA18A8"
+					item: "dungeons_and_combat:monarch_boots"
+					type: "item"
+				}
+				{
+					id: "2855258B501EECF6"
+					item: {
+						Count: 1
+						id: "dungeons_and_combat:crimson_sovereign_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Robe of Divinity"
+			x: -8.0d
+			y: 27.0d
+		}
+		{
+			description: [
+				"A nether star, the Homunculus, and the pieces you have carried since the beginning."
+				""
+				"Every other recipe in this archive taught you to make a thing."
+				"This one finishes making you."
+				""
+				"The clock starts the moment it closes: one heart every eighteen minutes, payable"
+				"only in someone else's life. The Convent recorded that most bearers do not notice"
+				"the first hour passing. They recorded it the way you record a cause of death."
+				""
+				"Nothing in the world is locked to you after this. That is the reward and it is the cost."
+			]
+			icon: "ptd:philosopher_stone"
+			id: "13A25089A645C4C2"
+			rewards: [
+				{
+					count: 64
+					id: "0B255C07D8CB64CF"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2479D292A27D7B40"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "The last thing you will ever need to make."
+			tasks: [{
+				id: "1220579C35636DE6"
+				item: "ptd:philosopher_stone"
+				type: "item"
+			}]
+			title: "The Stone Made Whole"
+			x: 8.0d
+			y: 27.0d
+		}
+		{
+			description: [
+				"You are the full god now, and the first thing you learn is that the seals do not"
+				"care which of them you were. They only care that somebody is holding them."
+				""
+				"There is no successor letter for this. There is no workshop, no cache, no library."
+				"There is a person standing where nine civilisations put a lock, doing the job"
+				"the lock was doing."
+				""
+				"The cycle does not end. It is held."
+			]
+			icon: "historystages:research_scroll"
+			id: "2BAD5E6379B657D9"
+			rewards: [
+				{
+					count: 64
+					id: "4EEED64D0999DD7C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "77451D3F46ABA643"
+					item: "minecraft:dragon_egg"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.2d
+			subtitle: "The God of Balance."
+			tasks: [{
+				id: "140A5121E9DF6D6B"
+				title: "Hold it"
+				type: "checkmark"
+			}]
+			title: "Keeper of the Seals"
+			x: 0.0d
+			y: 32.0d
+		}
+		{
+			description: [
+				"You read the Apocrypha and you closed it."
+				""
+				"Nobody is coming to ask why. There is no ledger for this and no punishment,"
+				"because the only being who could impose one is the thing you declined to become."
+			]
+			icon: "minecraft:bread"
+			id: "198688FC856C8A9E"
+			optional: true
+			rewards: [{
+				count: 64
+				id: "039BAA85FF82D85D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 1.5d
+			subtitle: "Put it back on the shelf."
+			tasks: [{
+				id: "0939486CAAB45511"
+				title: "Decline all four"
+				type: "checkmark"
+			}]
+			title: "The Refusal"
+			x: 24.0d
+			y: 17.0d
+		}
+		{
+			description: [
+				"You take the Warden's seat at the Ender Portal and you guard the one seal you can reach."
+				"The other eight stay sealed because they were sealed well, and because you trust the next"
+				"cycle to produce its own Sinborn capable of the rest."
+				""
+				"The archive is unambiguous, and it surprises every reader who gets this far:"
+				"this is the highest path. Not because it is hardest. Because it costs no souls."
+				""
+				"Go build a house somewhere warm. Eat well. Let it end here."
+			]
+			icon: "minecraft:cake"
+			id: "777D7CFAFB41BD75"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "4486A372DAD9C40E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "42D324DBAD0F311C"
+					item: "minecraft:cake"
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			size: 1.7d
+			subtitle: "Humble. Mortal. The highest path."
+			tasks: [{
+				id: "687D904382250975"
+				title: "Take the seat"
+				type: "checkmark"
+			}]
+			title: "Meal-Warden of the Portal"
+			x: 24.0d
+			y: 22.0d
+		}
+		{
+			description: [
+				"Tradition wants it underground, unlit except by the Manifestor's old crown."
+				"Some build it on a hilltop. Most build it where no village can see."
+				""
+				"The next civilisation wakes in your ruins and finds the altar. Sometimes the Stone"
+				"is still in the chest, still warm. Sometimes there is a corpse in front of it."
+				"Sometimes there is only the residue , four fluids, in the order you used them."
+				""
+				"There has never been a Council of Philosophers. You will assemble this alone."
+			]
+			icon: "minecraft:brewing_stand"
+			id: "7C73B7E8BC1A3F59"
+			optional: true
+			rewards: [{
+				count: 64
+				id: "571355D601E52C3D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.3d
+			subtitle: "What they find: the workshop."
+			tasks: [
+				{
+					id: "31D5D93BB5D2C93F"
+					item: "ptd:bloodbottle"
+					type: "item"
+				}
+				{
+					id: "5AAFC9DD1431476C"
+					item: "ptd:mysteriousfluid"
+					type: "item"
+				}
+				{
+					id: "1374F454D73405C4"
+					item: "ptd:black_liquid"
+					type: "item"
+				}
+				{
+					id: "693D157F619F63E4"
+					item: {
+						Count: 1
+						id: "ptd:matter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Altar"
+			x: -19.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["5E41492D6074DEB8"]
+			description: [
+				"They walk into a clearing and the trees are gone in an arc"
+				"and the soil is missing to bedrock."
+				""
+				"They will not know what cut it. That is the legacy , not a monument but a shape,"
+				"and the next civilisation has to navigate around the breakage forever"
+				"without ever learning what made it."
+				""
+				"The Breaker is welcome nowhere for long. The world reads Keres in an inventory"
+				"the way a village reads a wolf in the treeline."
+			]
+			icon: "minecraft:tnt"
+			id: "6D09ABBEC023D840"
+			optional: true
+			rewards: [{
+				count: 64
+				id: "40F8A6B3538181D2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.3d
+			subtitle: "What they find: the absence."
+			tasks: [
+				{
+					id: "3E63558D4994EB2C"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46D109459E2B8A41"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+			]
+			title: "The Negative Architecture"
+			x: 18.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["1B7AC50DEE854A6D"]
+			description: [
+				"Every Voyager in every cycle has built the same thing: small chests in each of the"
+				"five whitelisted worlds. Food, healing, basic tools. Modular. No apparent base."
+				""
+				"They find them in the Overworld first and puzzle over the contents."
+				"Then they find one in the Nether laid out identically, and one past the End,"
+				"and the puzzle stops being about the chests."
+				""
+				"Stand in all five. That is the whole requirement, and it is not a small one."
+			]
+			icon: "minecraft:ender_chest"
+			id: "3023EB8FEFBFFA3B"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "60B08BBF12A80ACF"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "59388514F4DDEF35"
+					item: "minecraft:ender_chest"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.4d
+			subtitle: "What they find: chests, everywhere, no home."
+			tasks: [
+				{
+					dimension: "minecraft:overworld"
+					id: "7A42E220202BA715"
+					type: "dimension"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					id: "63A38C1B69038AFC"
+					type: "dimension"
+				}
+				{
+					dimension: "minecraft:the_end"
+					id: "26E6848DC01A451E"
+					type: "dimension"
+				}
+				{
+					dimension: "true_end:beyond_the_dream"
+					id: "1A801D619B33B1FB"
+					type: "dimension"
+				}
+				{
+					dimension: "timelessprison:timeless_dimension"
+					id: "4AEE0A8A1A35AD2A"
+					type: "dimension"
+				}
+				{
+					id: "1EBD75041502B952"
+					item: "minecraft:ender_chest"
+					type: "item"
+				}
+			]
+			title: "The Caches"
+			x: 9.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["4B9267728C2380CF"]
+			description: [
+				"The most legible legacy of the four. Sorted, annotated, indexed. The Heir leaves"
+				"footnotes. The Heir leaves marginalia on the predecessor's failures."
+				""
+				"And sealed in the catacomb, a successor-letter, addressed to"
+				"*the next reader who removes the helmet from the rack.*"
+				""
+				"This is the only path the archive says intentionally repeats."
+				"You are writing to someone who does not exist yet and will."
+			]
+			icon: "minecraft:lectern"
+			id: "4A03F86E13CB9952"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "4DD1D1CA35D3105F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "61586FD80B202699"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.4d
+			subtitle: "What they find: everything, indexed."
+			tasks: [
+				{
+					id: "0080056E4E81F239"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+				{
+					id: "57132ECFCCE1A13C"
+					item: "minecraft:lectern"
+					type: "item"
+				}
+				{
+					id: "670C7EB39BE13220"
+					item: "minecraft:written_book"
+					type: "item"
+				}
+			]
+			title: "The Library and the Letter"
+			x: -9.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["777D7CFAFB41BD75"]
+			description: [
+				"The seventeen-chapter Cookbook, closed by being served from."
+				"The seating chart. The preserved leftovers , the eiswein keeps a long time."
+				""
+				"The Sinborn who chose the Meal writes no new tradition. They serve everyone"
+				"else's, one last time, and leave the book open at the page they finished on."
+				""
+				"It is the most legible thing anybody in this world has ever left behind,"
+				"and the only legacy of the five that a stranger can simply read and use."
+			]
+			icon: "minecraft:writable_book"
+			id: "53A5FC9CA0FEFCE6"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "61F07C8AFAF6CBE7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "289F7D145C55A776"
+					item: "minecraft:cake"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.4d
+			subtitle: "What they find: the table, still set."
+			tasks: [
+				{
+					id: "02C1FF6B1B83C4DD"
+					item: "ends_delight:dragon_leg_with_sauce"
+					type: "item"
+				}
+				{
+					id: "25940D194313DE70"
+					item: "ends_delight:dragon_meat_stew"
+					type: "item"
+				}
+				{
+					id: "2EC02EE6CFDF0444"
+					item: "ends_delight:chorus_flower_pie"
+					type: "item"
+				}
+				{
+					id: "3DE389A3D406985A"
+					item: "minecraft:written_book"
+					type: "item"
+				}
+			]
+			title: "The Cookbook"
+			x: 28.0d
+			y: 26.0d
+		}
+		{
+			description: [
+				"The mod-hand that wrote the Apocrypha left an instruction screen behind it."
+				"It opens with a title and no author: THE PATH TO BECOME GOD."
+				""
+				"\"Within you is the capacity to claim the souls of the lower."
+				"Nothing is free. However, divinity will only cost the lives of others.\""
+				""
+				"That is the whole pitch. The archive did not think it needed a rebuttal."
+			]
+			icon: "ptd:bloodbottle"
+			id: "05EF18B97D4789EE"
+			rewards: [{
+				count: 32
+				id: "6589D7564FCF33C6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "The first step."
+			tasks: [{
+				advancement: "ptd:a_dark_path"
+				criterion: ""
+				id: "35F376DF76DACE0C"
+				type: "advancement"
+			}]
+			title: "A Dark Path"
+			x: -30.0d
+			y: 17.0d
+		}
+		{
+			description: [
+				"Alchemy begins where medicine begins, with somebody willing to open a vein"
+				"and write down what happened next."
+			]
+			icon: "ptd:bloodbottle"
+			id: "4F778365EAA595FB"
+			rewards: [{
+				count: 32
+				id: "5BBB531F0505E444"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Yours, to start with."
+			tasks: [{
+				id: "7DA9E574267FC09E"
+				item: "ptd:bloodbottle"
+				type: "item"
+			}]
+			title: "A Bottle of Blood"
+			x: -34.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["4F778365EAA595FB"]
+			description: [
+				"The Convent's alchemists named everything. This one they left blank,"
+				"and the blank is in every surviving copy, which means the blank is the name."
+			]
+			icon: "ptd:mysteriousfluid"
+			id: "14143AEC5DD4C642"
+			rewards: [{
+				count: 32
+				id: "34581D8E0E055084"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Unnamed on purpose."
+			tasks: [{
+				id: "02F0FC54B4110DD6"
+				item: "ptd:mysteriousfluid"
+				type: "item"
+			}]
+			title: "The Mysterious Fluid"
+			x: -30.0d
+			y: 21.0d
+		}
+		{
+			description: [
+				"Everything after this is the same bottle poured two different ways."
+				""
+				"One way builds the Homunculus and finishes the Stone."
+				"The other way is a potion that takes divinity back out of a person."
+				""
+				"The alchemists who wrote this down used the same handwriting for both"
+				"and did not indicate a preference."
+			]
+			icon: "ptd:black_liquid"
+			id: "60C248162A1099AF"
+			rewards: [{
+				count: 64
+				id: "5C8C670FB673DAF1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "The fork."
+			tasks: [{
+				id: "240F46DBB2963130"
+				item: "ptd:black_liquid"
+				type: "item"
+			}]
+			title: "The Black Liquid"
+			x: -32.0d
+			y: 25.0d
+		}
+		{
+			description: [
+				"Matter that was persuaded into a shape. It is not alive and it is not nothing,"
+				"and the Apocrypha spends four pages refusing to say which it is closer to."
+				""
+				"You will need it to make the Stone whole."
+			]
+			icon: {
+				Count: 1
+				id: "ptd:matter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1BEC7742CFB64089"
+			rewards: [{
+				count: 64
+				id: "6ED005C1D58DB1CC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.3d
+			subtitle: "A person, roughly."
+			tasks: [{
+				id: "77DE8DAA428F78D1"
+				item: {
+					Count: 1
+					id: "ptd:matter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Homunculus"
+			x: -38.0d
+			y: 29.0d
+		}
+		{
+			description: [
+				"Black liquid, brewed the other way."
+				""
+				"It does exactly one thing: it makes a god a person again."
+				"There is no ceremony attached to it and no cost recorded beyond the brewing,"
+				"which is itself the strangest entry in the Apocrypha , everything else in that"
+				"book is priced in lives, and this is priced in an afternoon."
+				""
+				"Keep one. You may not want it. Somebody will."
+			]
+			icon: "historystages:research_scroll"
+			id: "2EF4D11A2755F882"
+			rewards: [
+				{
+					count: 64
+					id: "044DB958BF521E37"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "08B9467524F151CA"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.6d
+			subtitle: "The way back."
+			tasks: [{
+				id: "5421B71E733EF4FC"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "ptd:mortality_potion"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "The Potion of Mortality"
+			x: -26.0d
+			y: 29.0d
+		}
+		{
+			description: [
+				"The Apocrypha records the potion in three forms and only explains the first."
+				""
+				"Splashed, it reaches a person who did not agree to drink it."
+				"On an arrowhead, it reaches one who is across a field and running."
+				""
+				"This is the entry the Convent argued about for a century. A mortal alchemist"
+				"with a full quiver is the only thing in the world a rising god has to be careful of,"
+				"and the god does not usually find that out until the second arrow."
+				""
+				"Nine civilisations produced someone who tried to become permanent."
+				"Most of them were stopped by somebody standing very still, a long way off."
+			]
+			icon: "historystages:research_scroll"
+			id: "3CA22ECC7C7B7AB8"
+			rewards: [
+				{
+					count: 64
+					id: "590D4DD6EB95C467"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0A1DBDA2A246C482"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.6d
+			subtitle: "It works on other people."
+			tasks: [
+				{
+					id: "7DB71E8C9F00549F"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "ptd:mortality_potion"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "5E4AD9874D400CF5"
+					item: {
+						Count: 1
+						id: "minecraft:tipped_arrow"
+						tag: {
+							Potion: "ptd:mortality_potion"
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+			]
+			title: "The Arrow of Mortality"
+			x: -20.0d
+			y: 33.0d
+		}
+		{
+			description: [
+				"Divinity is the only thing in this world with a documented cure."
+				""
+				"Nine civilisations tried to become permanent and the record of each one ends"
+				"the same way. The Apocrypha's final note is not about power at all:"
+				""
+				"\"It was always possible to stop. That was never the difficult part.\""
+			]
+			icon: "minecraft:milk_bucket"
+			id: "4B7C466AF6FF4FFC"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "04B96AAD56693057"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "6D28C3E23478C739"
+					item: "minecraft:cake"
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			size: 1.7d
+			subtitle: "You can put it down."
+			tasks: [{
+				id: "38B40EA8E81041B7"
+				title: "Drink it"
+				type: "checkmark"
+			}]
+			title: "The Path of Mortality"
+			x: -26.0d
+			y: 33.0d
+		}
+		{
+			id: "40F62CCCCE4589B4"
+			shape: "gear"
+			size: 2.5d
+			subtitle: "Every scroll. Every secret. Every key."
+			tasks: [
+				{
+					id: "63AC7DF0867F7067"
+					individual: true
+					negate: false
+					stage: "abyssal_chasm"
+					title: "The Abyssal Chasm"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3B599FD461ABFBCB"
+					individual: true
+					negate: false
+					stage: "abyssal_school"
+					title: "The Abyssal School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "35134F1A0EFC3F04"
+					individual: true
+					negate: false
+					stage: "aeronautics"
+					title: "The Aeronaut's Craft"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "370D9C5B56F77DAA"
+					individual: true
+					negate: false
+					stage: "agronomic_path"
+					title: "The Agronomist Path"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2960FF02087E3DF2"
+					individual: true
+					negate: false
+					stage: "alchemy"
+					title: "Alchemy"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "72DE52DFEB7C3453"
+					individual: true
+					negate: false
+					stage: "apothecarys_tonic"
+					title: "The Apothecary's Tonic"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3672E33386DC3430"
+					individual: true
+					negate: false
+					stage: "arcane_codex"
+					title: "The Arcane Codex"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2217860F01EFBD05"
+					individual: true
+					negate: false
+					stage: "archaeology_mastery"
+					title: "Archaeology Mastery"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "777AE7C28DCB0B83"
+					individual: true
+					negate: false
+					stage: "architects_codex"
+					title: "The Architect's Codex"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "77642925BD477808"
+					individual: true
+					negate: false
+					stage: "architectural_mastery"
+					title: "Architectural Mastery"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5DA1A91FAB84BBBB"
+					individual: true
+					negate: false
+					stage: "arsenal_iron_blades"
+					title: "The Iron Arsenal: Blades"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3D33006158516043"
+					individual: true
+					negate: false
+					stage: "arsenal_iron_polearms"
+					title: "The Iron Arsenal: Polearms"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "693A492F394CC1FB"
+					individual: true
+					negate: false
+					stage: "arsenal_iron_ranged"
+					title: "The Iron Arsenal: Ranged"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "26E2592D4DC38A22"
+					individual: true
+					negate: false
+					stage: "arsenal_legendary_blades"
+					title: "The Legendary Arsenal: Named Blades"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7B65683A8194D6C9"
+					individual: true
+					negate: false
+					stage: "arsenal_legendary_polearms"
+					title: "The Legendary Arsenal: Named Hafted"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3EA993FA44E46E90"
+					individual: true
+					negate: false
+					stage: "arsenal_legendary_ranged"
+					title: "The Legendary Arsenal: Named Ranged"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4EEAC7CD494DBCDC"
+					individual: true
+					negate: false
+					stage: "arsenal_master_blades"
+					title: "The Master Arsenal: Blades"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6C1556E6DFF5DAA4"
+					individual: true
+					negate: false
+					stage: "arsenal_master_polearms"
+					title: "The Master Arsenal: Polearms"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "44AFA69CBFB8B34B"
+					individual: true
+					negate: false
+					stage: "arsenal_master_ranged"
+					title: "The Master Arsenal: Ranged"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4CFC1B0EB21348D8"
+					individual: true
+					negate: false
+					stage: "atomic_engineering"
+					title: "Atomic Engineering"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5E528841CFCC6865"
+					individual: true
+					negate: false
+					stage: "backpackcraft"
+					title: "The Wanderer's Pack"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5766546ED2D3594E"
+					individual: true
+					negate: false
+					stage: "ballistics_engineering"
+					title: "Ballistics Engineering"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "30AFD35DB95576BC"
+					individual: true
+					negate: false
+					stage: "banner_heraldry"
+					title: "Banner Heraldry"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4AFAD696365C5467"
+					individual: true
+					negate: false
+					stage: "beehive_logistics"
+					title: "Beehive Logistics"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5746F4A55507A3C2"
+					individual: true
+					negate: false
+					stage: "bestiary_alex_mobs"
+					title: "Beasts of the Wide World"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7F6BA2D651756FA2"
+					individual: true
+					negate: false
+					stage: "blighted_hollows"
+					title: "The Blighted Hollows"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "757D5DCD40CA00D5"
+					individual: true
+					negate: false
+					stage: "blood_and_oil"
+					title: "Blood and Oil"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "52C1F50711484FBA"
+					individual: true
+					negate: false
+					stage: "blood_school"
+					title: "The Blood School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4600941103B8A71E"
+					individual: true
+					negate: false
+					stage: "bookshelf_mastery"
+					title: "Bookshelf Mastery"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "112BEA193C73EF57"
+					individual: true
+					negate: false
+					stage: "boss_trophy_relics"
+					title: "The Reliquary: Relics, Trophies & Cultural Spoils"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "100F6CE735ADB58C"
+					individual: true
+					negate: false
+					stage: "bread_of_the_black_land"
+					title: "The Bread of the Black Land"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2A99AA845D25E554"
+					individual: true
+					negate: false
+					stage: "brewers_cellar"
+					title: "The Brewer's Cellar"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "39C482905C39AC2B"
+					individual: true
+					negate: false
+					stage: "bruisers_creed"
+					title: "The Bruiser's Creed"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6559BFC22D5E1312"
+					individual: true
+					negate: false
+					stage: "cannoneer"
+					title: "Cannoneer"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "1713BA0ED5E6EE00"
+					individual: true
+					negate: false
+					stage: "carnal_anatomy"
+					title: "Carnal Anatomy"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4CE367D326A8E620"
+					individual: true
+					negate: false
+					stage: "cartography_advanced"
+					title: "Advanced Cartography"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4BA11E401F79641D"
+					individual: true
+					negate: false
+					stage: "cataclysm_codex"
+					title: "Chronicle of the World-Enders"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "65462713FACA13A2"
+					individual: true
+					negate: false
+					stage: "civ_scrollwright"
+					title: "The Scrollwright Tradition"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "19616EE769A72C17"
+					individual: true
+					negate: false
+					stage: "codex_of_kukulkan"
+					title: "The Codex of Kukulkan"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "780299546C5B9E9E"
+					individual: true
+					negate: false
+					stage: "cold_sweat_discipline"
+					title: "The Wayfarer's Endurance"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "425B0AC202564F0E"
+					individual: true
+					negate: false
+					stage: "command_ruin"
+					title: "On Command and Ruin"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "72D859A5723E8B40"
+					individual: true
+					negate: false
+					stage: "companions_charter"
+					title: "The Companions Charter"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4162E364F5259A20"
+					individual: true
+					negate: false
+					stage: "confectioners_hollow"
+					title: "The Confectioner's Hollow"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7469B2F85179D0E9"
+					individual: true
+					negate: false
+					stage: "cookware_advanced"
+					title: "The Master Kitchen"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2F4E50F91C5E8860"
+					individual: true
+					negate: false
+					stage: "cookware_forging"
+					title: "The Coppersmith's Kitchen"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "42A086319281A22E"
+					individual: true
+					negate: false
+					stage: "curators_vitrine"
+					title: "The Curator's Vitrine"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6AB3C84AA789A206"
+					individual: true
+					negate: false
+					stage: "delvers_grimoire"
+					title: "The Delver's Grimoire"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "08BEE9DA974A95CE"
+					individual: true
+					negate: false
+					stage: "dragon_husbandry"
+					title: "Dragon Husbandry"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "41E24938B0883C11"
+					individual: true
+					negate: false
+					stage: "dragonslayer_codex"
+					title: "The Dragonslayer’s Codex"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2B90F4D6898978F2"
+					individual: true
+					negate: false
+					stage: "dwemer_observatory"
+					title: "Dwemer Observatory Looting"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "28C8D8955DCCDBB5"
+					individual: true
+					negate: false
+					stage: "dyecraft"
+					title: "The Dye Loom"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "333CFF4CA6AD7892"
+					individual: true
+					negate: false
+					stage: "eldritch_school"
+					title: "The Eldritch School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "527CA68812FED6C4"
+					individual: true
+					negate: false
+					stage: "electrical_engineering"
+					title: "Electrical Engineering"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "1AFBAD69D6DD7F3D"
+					individual: true
+					negate: false
+					stage: "ender_school"
+					title: "The Ender School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "53B68CFB0C052597"
+					individual: true
+					negate: false
+					stage: "evocation_school"
+					title: "The Evocation School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6EB82F7A87DAA59B"
+					individual: true
+					negate: false
+					stage: "eye_abyssal"
+					title: "The Scroll of the Abyssal Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3A61B32A00C0D3B8"
+					individual: true
+					negate: false
+					stage: "eye_black"
+					title: "The Scroll of the Black Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4BEE66C204BE1187"
+					individual: true
+					negate: false
+					stage: "eye_cold"
+					title: "The Scroll of the Cold Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6206CF808784715B"
+					individual: true
+					negate: false
+					stage: "eye_corrupted"
+					title: "The Scroll of the Corrupted Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "47246860F1A62C24"
+					individual: true
+					negate: false
+					stage: "eye_cryptic"
+					title: "The Scroll of the Cryptic Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "66C441A9515A6922"
+					individual: true
+					negate: false
+					stage: "eye_cursed"
+					title: "The Scroll of the Cursed Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "46DAAB514C63F909"
+					individual: true
+					negate: false
+					stage: "eye_desert"
+					title: "The Scroll of the Desert Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "673ADC2E54FEB949"
+					individual: true
+					negate: false
+					stage: "eye_evil"
+					title: "The Scroll of the Evil Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2070D50245F88EF9"
+					individual: true
+					negate: false
+					stage: "eye_exotic"
+					title: "The Scroll of the Exotic Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "58EDD3BFFDC951DB"
+					individual: true
+					negate: false
+					stage: "eye_flame"
+					title: "The Scroll of the Flame Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "720D0D2E0458C769"
+					individual: true
+					negate: false
+					stage: "eye_frostmaw"
+					title: "The Scroll of the Frostmaw Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "40C96D3969BB9505"
+					individual: true
+					negate: false
+					stage: "eye_guardian"
+					title: "The Scroll of the Guardian Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6436E4DB9673FA0D"
+					individual: true
+					negate: false
+					stage: "eye_lost"
+					title: "The Scroll of the Lost Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3E173C69289A747C"
+					individual: true
+					negate: false
+					stage: "eye_magical"
+					title: "The Scroll of the Magical Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7463959D5049DE6C"
+					individual: true
+					negate: false
+					stage: "eye_mech"
+					title: "The Scroll of the Mechanical Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2519A615FD48EB26"
+					individual: true
+					negate: false
+					stage: "eye_monstrous"
+					title: "The Scroll of the Monstrous Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "324A7FBA5809D856"
+					individual: true
+					negate: false
+					stage: "eye_nether"
+					title: "The Scroll of the Nether Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "398A9474116D97AA"
+					individual: true
+					negate: false
+					stage: "eye_nothingness"
+					title: "The Scroll of the Eye of Nothingness"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7CEB2DA9D810FF2F"
+					individual: true
+					negate: false
+					stage: "eye_old"
+					title: "The Scroll of the Old Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4B55889334C1A267"
+					individual: true
+					negate: false
+					stage: "eye_rogue"
+					title: "The Scroll of the Rogue Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "146BA4D3D974B392"
+					individual: true
+					negate: false
+					stage: "eye_storm"
+					title: "The Scroll of the Storm Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6C96CECE97593A9E"
+					individual: true
+					negate: false
+					stage: "eye_sun"
+					title: "The Scroll of the Sun Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "79982B1BAF1C85C8"
+					individual: true
+					negate: false
+					stage: "eye_synthesis"
+					title: "Eye Synthesis"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2DDA781A482CEB55"
+					individual: true
+					negate: false
+					stage: "eye_tongbi"
+					title: "The Scroll of the Tongbi Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "11161E96D7C72015"
+					individual: true
+					negate: false
+					stage: "eye_undead"
+					title: "The Scroll of the Undead Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "737C9DB49566B9AD"
+					individual: true
+					negate: false
+					stage: "eye_void"
+					title: "The Scroll of the Void Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "18E073632921763C"
+					individual: true
+					negate: false
+					stage: "eye_witch"
+					title: "The Scroll of the Witch Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2D30AF1B6810058C"
+					individual: true
+					negate: false
+					stage: "eye_wither"
+					title: "The Scroll of the Wither Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2C72D3E862790F1B"
+					individual: true
+					negate: false
+					stage: "eye_wrought"
+					title: "The Scroll of the Wrought Eye"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "50CF83D4AA5F2AB0"
+					individual: true
+					negate: false
+					stage: "falconry"
+					title: "Falconry & Advanced Whistlecraft"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "68A61C7C9AE5A954"
+					individual: true
+					negate: false
+					stage: "feast_at_worlds_edge"
+					title: "The Feast at the World's Edge"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "0C390F4790C296F2"
+					individual: true
+					negate: false
+					stage: "field_medicine"
+					title: "Field Medicine"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "75AAD30580FE49D0"
+					individual: true
+					negate: false
+					stage: "fire_school"
+					title: "The Fire School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2E3DD93E5E762091"
+					individual: true
+					negate: false
+					stage: "fishing_arts"
+					title: "The Angler's Arts"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5383BC3DAAD34EE7"
+					individual: true
+					negate: false
+					stage: "five_vessels_apocrypha"
+					title: "The Five Vessels Apocrypha"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7D5FAA5757F8599C"
+					individual: true
+					negate: false
+					stage: "foragers_almanac"
+					title: "The Forager's Almanac"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "34A43327A2F9CE55"
+					individual: true
+					negate: false
+					stage: "forgetting_broth"
+					title: "The Forgetting-Broth"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "35834E9C207B4B03"
+					individual: true
+					negate: false
+					stage: "forlorn_hollows"
+					title: "The Forlorn Hollows"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "161914F5A7495AA2"
+					individual: true
+					negate: false
+					stage: "foundry_facade"
+					title: "The Foundry"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "341B9C7CB17C1505"
+					individual: true
+					negate: false
+					stage: "furnishers_hand"
+					title: "The Furnisher's Hand"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7627318B38596C12"
+					individual: true
+					negate: false
+					stage: "furniturecraft"
+					title: "The Homestead's Comfort"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7733818E2BB8DD69"
+					individual: true
+					negate: false
+					stage: "gallery_broth"
+					title: "The Gallery-Broth"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7B1DD31073A81AFF"
+					individual: true
+					negate: false
+					stage: "gardened_wash"
+					title: "The Gardened Wash"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "16B4B6ECBD0B54B3"
+					individual: true
+					negate: false
+					stage: "glassworking"
+					title: "Glassworking"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4DACFEDD16099F8F"
+					individual: true
+					negate: false
+					stage: "god_green_genie"
+					title: "On the Wish-Seller of the Sands"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6DF6DD20BEF99595"
+					individual: true
+					negate: false
+					stage: "god_nightwarden"
+					title: "On the Masterless Apex"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7548D9AC9B9AC8C3"
+					individual: true
+					negate: false
+					stage: "god_pontiff"
+					title: "On the God the Convent Never Saw"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6EAA25C33320B9DE"
+					individual: true
+					negate: false
+					stage: "god_scarlet_king"
+					title: "On the King Below"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "32811EB7DEEA49F9"
+					individual: true
+					negate: false
+					stage: "god_sunleia"
+					title: "On the Sun That Stayed"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "460E3CB5475C3590"
+					individual: true
+					negate: false
+					stage: "god_warborn"
+					title: "On the Last Warlord"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "446920DDF5B36B50"
+					individual: true
+					negate: false
+					stage: "gravitic_engineering"
+					title: "Gravitic Engineering"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "226CBCEAEAFF96F5"
+					individual: true
+					negate: false
+					stage: "gunsmithing"
+					title: "Gunsmithing"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2C17C9526EF24D31"
+					individual: true
+					negate: false
+					stage: "heavy_plate_discipline"
+					title: "The Bulwark Doctrine"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "1BB8024DF929137C"
+					individual: true
+					negate: false
+					stage: "holy_school"
+					title: "The Holy School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "0C5BBCA8F9860CDE"
+					individual: true
+					negate: false
+					stage: "ice_school"
+					title: "The Ice School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4B0225832A59949C"
+					individual: true
+					negate: false
+					stage: "infernal_passage"
+					title: "On Infernal Passage"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3C6E90A110740696"
+					individual: true
+					negate: false
+					stage: "joiners_frame"
+					title: "The Joiner's Frame"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3BD9D6FD21D6B9DC"
+					individual: true
+					negate: false
+					stage: "kept_creatures"
+					title: "The Codex of Kept Creatures"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "62808964998CE0D1"
+					individual: true
+					negate: false
+					stage: "kinetic_engineering"
+					title: "Kinetic Engineering"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3EA50D08E1D320FC"
+					individual: true
+					negate: false
+					stage: "lamp_of_wishes"
+					title: "The Lamp of Wishes"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "40BCA9C0617FCE14"
+					individual: true
+					negate: false
+					stage: "lapidary_arts"
+					title: "The Lapidary Arts: Rings, Amulets & Charms"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6B173719BCBF15A9"
+					individual: true
+					negate: false
+					stage: "larder_methods"
+					title: "The Larder's Methods"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "292F5F41ECD8C611"
+					individual: true
+					negate: false
+					stage: "leatherworking"
+					title: "The Tanner's Craft"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "674164E3E61A5256"
+					individual: true
+					negate: false
+					stage: "lightning_school"
+					title: "The Lightning School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6F73A94FC89D725E"
+					individual: true
+					negate: false
+					stage: "lockwrights_irons"
+					title: "The Lockwright's Irons"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "36D17ED2A3393E8E"
+					individual: true
+					negate: false
+					stage: "long_meal_before_firing"
+					title: "The Long Meal Before the Firing"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "48706D7E894AC03E"
+					individual: true
+					negate: false
+					stage: "long_road"
+					title: "The Long Road"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "644F2EAC17A4AFE2"
+					individual: true
+					negate: false
+					stage: "magnetic_deep"
+					title: "The Magnetic Deep"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "505206DE4EBA66E4"
+					individual: true
+					negate: false
+					stage: "maize_codex"
+					title: "The Maize Codex"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2D92DF0C2AEAEFF2"
+					individual: true
+					negate: false
+					stage: "memory_of_the_baobab"
+					title: "The Memory of the Baobab"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "535A29780D567A60"
+					individual: true
+					negate: false
+					stage: "menagerie_of_the_wild"
+					title: "The Menagerie of the Wild"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "70AE5848D31FF6BC"
+					individual: true
+					negate: false
+					stage: "mender_lost_company"
+					title: "The Mender of the Lost Company"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "508A47F7653E0175"
+					individual: true
+					negate: false
+					stage: "mercantile_ledger"
+					title: "The Mercantile Ledger"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "134D9B86D32889DC"
+					individual: true
+					negate: false
+					stage: "metalworking"
+					title: "Foundations of the Forge"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "16954CC699B1B5C1"
+					individual: true
+					negate: false
+					stage: "mounted_rail"
+					title: "The Iron Road"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3F8F78A4C5A2C8BB"
+					individual: true
+					negate: false
+					stage: "music_records"
+					title: "The Record Press"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "1E8C5D075DB3313F"
+					individual: true
+					negate: false
+					stage: "naturalist_basics"
+					title: "On Sniffers, Frogs, and Mangroves"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "0E283B533D16D9C1"
+					individual: true
+					negate: false
+					stage: "nature_school"
+					title: "The Nature School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6EF4213678FFBECB"
+					individual: true
+					negate: false
+					stage: "numismatic_mechanisms"
+					title: "Numismatic Mechanisms"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5882DD671BE05559"
+					individual: true
+					negate: false
+					stage: "oddments_and_devices"
+					title: "Oddments & Devices"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "62458CA0E73EFCF8"
+					individual: true
+					negate: false
+					stage: "path_to_divinity"
+					title: "The Path to Divinity"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "20808E077665A99D"
+					individual: true
+					negate: false
+					stage: "photography_arts"
+					title: "The Photography Arts"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5B9893515ED3FE40"
+					individual: true
+					negate: false
+					stage: "primordial_strata"
+					title: "The Primordial Strata"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5DB47FEE0E840BA2"
+					individual: true
+					negate: false
+					stage: "quantum_gate"
+					title: "The Quantum Gate"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "14A55ECB1E6B3CAB"
+					individual: true
+					negate: false
+					stage: "redstone_principles"
+					title: "Redstone Principles"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6A99845D7DBA2B9B"
+					individual: true
+					negate: false
+					stage: "runesmithing"
+					title: "Runesmithing"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "19D4AA37D5BCC3F9"
+					individual: true
+					negate: false
+					stage: "scales_and_steel"
+					title: "Scales and Steel"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "36D5BD45977B0AC5"
+					individual: true
+					negate: false
+					stage: "scroll_end_passage"
+					title: "The End Passage"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3FD8003C0850055C"
+					individual: true
+					negate: false
+					stage: "sculk_sickness"
+					title: "On Sculk Sickness"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4F81A1CBAB0234D5"
+					individual: true
+					negate: false
+					stage: "small_ships"
+					title: "The Shipwright's Craft"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7E5F182A9D8A98F5"
+					individual: true
+					negate: false
+					stage: "smithing_legendary"
+					title: "The Legendary Forge"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4B58C1350E9BBE6A"
+					individual: true
+					negate: false
+					stage: "smithing_master"
+					title: "The Master Forge"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "635A38E298B24CCF"
+					individual: true
+					negate: false
+					stage: "sound_and_broadcast"
+					title: "Sound & Broadcast"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2F33614DEDB78AA7"
+					individual: true
+					negate: false
+					stage: "specialist_suits"
+					title: "The Exotic Armory"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "6B5B8E3E80821031"
+					individual: true
+					negate: false
+					stage: "spoils_of_the_sea_roads"
+					title: "Spoils of the Sea-Roads"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "178F96E6A521931B"
+					individual: true
+					negate: false
+					stage: "steeping_kettle"
+					title: "The Steeping Kettle"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "16870D59E5957F08"
+					individual: true
+					negate: false
+					stage: "stolovaya_ledger"
+					title: "The Stolovaya Ledger"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "02ACBA0D744E87DF"
+					individual: true
+					negate: false
+					stage: "stoneworking"
+					title: "Stoneworking"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "29ADAAB0572B3AE7"
+					individual: true
+					negate: false
+					stage: "survivor_codex"
+					title: "Survivor Codex"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5DC5C9987D4D20FB"
+					individual: true
+					negate: false
+					stage: "technomancy_school"
+					title: "The Technomancy School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "1B39EEE36046F370"
+					individual: true
+					negate: false
+					stage: "teleportation_arts"
+					title: "Spatial Engineering"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "0C7E5C24E5B959B8"
+					individual: true
+					negate: false
+					stage: "the_bestiary"
+					title: "The Bestiary of Myth & Monster"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "4177C0548ED178BC"
+					individual: true
+					negate: false
+					stage: "the_pantry"
+					title: "The Pantry"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "203293AE27772396"
+					individual: true
+					negate: false
+					stage: "tidal_engineering"
+					title: "Tidal Engineering"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "3C3C4D7AAF42F344"
+					individual: true
+					negate: false
+					stage: "torch_and_lantern_craft"
+					title: "Torch & Lantern Craft"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "1F4BABC441BA4736"
+					individual: true
+					negate: false
+					stage: "trim_smithing"
+					title: "The Trimwright's Art"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "48546189B68781FE"
+					individual: true
+					negate: false
+					stage: "two_larder_winter"
+					title: "The Two-Larder Winter"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7CD842D6CD389034"
+					individual: true
+					negate: false
+					stage: "void_school"
+					title: "The Void School"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2FC158CFFC81645D"
+					individual: true
+					negate: false
+					stage: "void_table"
+					title: "The Chorus Hearth"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2EE40B51BE3C2D77"
+					individual: true
+					negate: false
+					stage: "wayhouse_logistics"
+					title: "The Wayhouse Logistics"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "582BA90AE7A02935"
+					individual: true
+					negate: false
+					stage: "wild_study"
+					title: "The Wild Study"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2395B5E616458E18"
+					individual: true
+					negate: false
+					stage: "wilderness_camping"
+					title: "The Wilderness Camping Manual"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "254B2E09BA2902CB"
+					individual: true
+					negate: false
+					stage: "woodworking"
+					title: "Woodworking"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Keeper of All Knowledge"
+			x: -6.0d
+			y: 38.0d
+		}
+		{
+			dependencies: [
+				"33D25D6C426E8664"
+				"0A4ADA28A71BDA7B"
+				"13A25089A645C4C2"
+			]
+			description: [
+				"Every scroll learned. Every vessel held."
+				"Stone, Crown, Eye, Keres, and the robe that was made for creators."
+				""
+				"The archive has had a word for this longer than it has had you. The Monarch."
+				"The Crimson King was the first."
+				""
+				"&dOne thing still answers a Monarch:&r the Potion of Mortality."
+			]
+			icon: "dungeons_and_combat:monarch_chestplate"
+			id: "29C46F5B4D6E4369"
+			rewards: [{
+				count: 64
+				id: "0BF52524622C02B4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "The ascended Sinborn."
+			tasks: [
+				{
+					id: "50C89660E782F74E"
+					item: "ptd:philosopher_stone"
+					title: "The Stone, whole"
+					type: "item"
+				}
+				{
+					id: "0EBEF1F809050EC7"
+					item: "irons_spellbooks:gold_crown"
+					title: "Iron's Crown"
+					type: "item"
+				}
+				{
+					id: "7BCCBC4A243D5678"
+					item: "end_remastered_promax:vault_eye"
+					title: "The Vault Eye"
+					type: "item"
+				}
+				{
+					id: "683A7C56BD0E5E8A"
+					item: "celestisynth:keres"
+					title: "Keres"
+					type: "item"
+				}
+				{
+					id: "0B6A77209AACDF77"
+					item: "dungeons_and_combat:monarch_chestplate"
+					title: "The Robe: chest"
+					type: "item"
+				}
+				{
+					id: "4AEB7CCE5598436C"
+					item: "dungeons_and_combat:monarch_leggings"
+					title: "The Robe: legs"
+					type: "item"
+				}
+				{
+					id: "097AF9F7840C1014"
+					item: "dungeons_and_combat:monarch_boots"
+					title: "The Robe: boots"
+					type: "item"
+				}
+			]
+			title: "The Monarch"
+			x: 0.0d
+			y: 35.5d
+		}
+	]
+	subtitle: ["Mastery, and what you do with it."]
+	title: "What Comes After"
+}

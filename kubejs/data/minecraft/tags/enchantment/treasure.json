@@ -1,0 +1,41 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "minecraft:binding_curse",
+   "required": false
+  },
+  {
+   "id": "minecraft:vanishing_curse",
+   "required": false
+  },
+  {
+   "id": "minecraft:swift_sneak",
+   "required": false
+  },
+  {
+   "id": "minecraft:soul_speed",
+   "required": false
+  },
+  {
+   "id": "minecraft:frost_walker",
+   "required": false
+  },
+  {
+   "id": "minecraft:mending",
+   "required": false
+  },
+  {
+   "id": "create_ltab:enchantment_luck",
+   "required": false
+  },
+  {
+   "id": "create_ltab:wanderer",
+   "required": false
+  },
+  {
+   "id": "minecraft:wind_burst",
+   "required": false
+  }
+ ]
+}

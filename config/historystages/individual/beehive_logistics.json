@@ -1,6 +1,7 @@
 {
   "display_name": "Beehive Logistics",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
     "cbbees:cargo_port",
     "cbbees:construction_planner",
@@ -23,7 +24,6 @@
     "cbbees:upgrade_template",
     "create_mobile_packages:bee_port",
     "create_mobile_packages:robo_bee",
-    "endergetic:poise_beehive",
     "minecraft:beehive"
   ],
   "tags": [],
@@ -37,5 +37,66 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "agronomic_path",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_umvuthana",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "agronomic_path",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_iron_ranged",
+          "mode": "player"
+        },
+        {
+          "stage_id": "codex_of_kukulkan",
+          "mode": "player"
+        },
+        {
+          "stage_id": "naturalist_basics",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "machine_base",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "kinetic_engineering",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

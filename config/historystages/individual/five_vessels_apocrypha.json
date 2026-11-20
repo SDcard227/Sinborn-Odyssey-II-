@@ -1,28 +1,23 @@
 {
   "display_name": "The Five Vessels Apocrypha",
-  "research_time": 28800,
+  "icon": "historystages:research_scroll",
+  "research_time": 3600,
   "items": [
     "celestisynth:keres",
     "dungeons_and_combat:crimson_bloodweave_sword",
     "dungeons_and_combat:crimson_sovereign_sword",
-    "dungeons_and_combat:monarch_boots",
-    "dungeons_and_combat:monarch_chestplate",
-    "dungeons_and_combat:monarch_helmet",
-    "dungeons_and_combat:monarch_leggings",
     "end_remastered_promax:vault_eye",
-    "irons_spellbooks:gold_crown",
-    "ptd:black_liquid",
-    "ptd:bloodbottle",
-    "ptd:matter",
-    "ptd:mysteriousfluid",
     "ptd:philosopher_stone",
     "ptd:shattered_philosopher_stone",
-    "ptd:soul_keeper"
+    "ptd:soul_keeper",
+    "dungeons_and_combat:monarch_helmet",
+    "dungeons_and_combat:monarch_chestplate",
+    "dungeons_and_combat:monarch_leggings",
+    "dungeons_and_combat:monarch_boots",
+    "irons_spellbooks:gold_crown"
   ],
   "tags": [],
-  "mods": [
-    "ptd"
-  ],
+  "mods": [],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],
@@ -30,5 +25,717 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": true,
+      "attack": true,
+      "equip": true,
+      "pickup": false,
+      "place": true,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "AND",
+      "individual_stages": [
+        {
+          "stage_id": "abyssal_chasm",
+          "mode": "player"
+        },
+        {
+          "stage_id": "abyssal_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "aeronautics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "agronomic_path",
+          "mode": "player"
+        },
+        {
+          "stage_id": "alchemy",
+          "mode": "player"
+        },
+        {
+          "stage_id": "apothecarys_tonic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arcane_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "archaeology_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "architects_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "architectural_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_iron_blades",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_iron_polearms",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_iron_ranged",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_legendary_blades",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_legendary_polearms",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_legendary_ranged",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_master_blades",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_master_polearms",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_master_ranged",
+          "mode": "player"
+        },
+        {
+          "stage_id": "atomic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "backpackcraft",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ballistics_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "banner_heraldry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "beehive_logistics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bestiary_alex_mobs",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blighted_hollows",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blood_and_oil",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blood_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bookshelf_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "boss_trophy_relics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bread_of_the_black_land",
+          "mode": "player"
+        },
+        {
+          "stage_id": "brewers_cellar",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bruisers_creed",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cannoneer",
+          "mode": "player"
+        },
+        {
+          "stage_id": "carnal_anatomy",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cartography_advanced",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cataclysm_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "civ_scrollwright",
+          "mode": "player"
+        },
+        {
+          "stage_id": "codex_of_kukulkan",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cold_sweat_discipline",
+          "mode": "player"
+        },
+        {
+          "stage_id": "command_ruin",
+          "mode": "player"
+        },
+        {
+          "stage_id": "companions_charter",
+          "mode": "player"
+        },
+        {
+          "stage_id": "confectioners_hollow",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cookware_advanced",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cookware_forging",
+          "mode": "player"
+        },
+        {
+          "stage_id": "curators_vitrine",
+          "mode": "player"
+        },
+        {
+          "stage_id": "delvers_grimoire",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dragon_husbandry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dragonslayer_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dwemer_observatory",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dyecraft",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eldritch_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "electrical_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ender_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "evocation_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_abyssal",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_black",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cold",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_corrupted",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cryptic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cursed",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_desert",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_evil",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_exotic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_flame",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_frostmaw",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_guardian",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_lost",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_magical",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_mech",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_monstrous",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nether",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nothingness",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_old",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_rogue",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_storm",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_sun",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_synthesis",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_tongbi",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_undead",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_void",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_witch",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wither",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wrought",
+          "mode": "player"
+        },
+        {
+          "stage_id": "falconry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "feast_at_worlds_edge",
+          "mode": "player"
+        },
+        {
+          "stage_id": "field_medicine",
+          "mode": "player"
+        },
+        {
+          "stage_id": "fire_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "fishing_arts",
+          "mode": "player"
+        },
+        {
+          "stage_id": "foragers_almanac",
+          "mode": "player"
+        },
+        {
+          "stage_id": "forgetting_broth",
+          "mode": "player"
+        },
+        {
+          "stage_id": "forlorn_hollows",
+          "mode": "player"
+        },
+        {
+          "stage_id": "foundry_facade",
+          "mode": "player"
+        },
+        {
+          "stage_id": "furnishers_hand",
+          "mode": "player"
+        },
+        {
+          "stage_id": "furniturecraft",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gallery_broth",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gardened_wash",
+          "mode": "player"
+        },
+        {
+          "stage_id": "glassworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_green_genie",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_nightwarden",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_pontiff",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_scarlet_king",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_sunleia",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_warborn",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gravitic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gunsmithing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "heavy_plate_discipline",
+          "mode": "player"
+        },
+        {
+          "stage_id": "holy_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ice_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "infernal_passage",
+          "mode": "player"
+        },
+        {
+          "stage_id": "joiners_frame",
+          "mode": "player"
+        },
+        {
+          "stage_id": "kept_creatures",
+          "mode": "player"
+        },
+        {
+          "stage_id": "kinetic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lamp_of_wishes",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lapidary_arts",
+          "mode": "player"
+        },
+        {
+          "stage_id": "larder_methods",
+          "mode": "player"
+        },
+        {
+          "stage_id": "leatherworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lightning_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lockwrights_irons",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_meal_before_firing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_road",
+          "mode": "player"
+        },
+        {
+          "stage_id": "magnetic_deep",
+          "mode": "player"
+        },
+        {
+          "stage_id": "maize_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "memory_of_the_baobab",
+          "mode": "player"
+        },
+        {
+          "stage_id": "menagerie_of_the_wild",
+          "mode": "player"
+        },
+        {
+          "stage_id": "mender_lost_company",
+          "mode": "player"
+        },
+        {
+          "stage_id": "mercantile_ledger",
+          "mode": "player"
+        },
+        {
+          "stage_id": "metalworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "mounted_rail",
+          "mode": "player"
+        },
+        {
+          "stage_id": "music_records",
+          "mode": "player"
+        },
+        {
+          "stage_id": "naturalist_basics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "nature_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "numismatic_mechanisms",
+          "mode": "player"
+        },
+        {
+          "stage_id": "oddments_and_devices",
+          "mode": "player"
+        },
+        {
+          "stage_id": "path_to_divinity",
+          "mode": "player"
+        },
+        {
+          "stage_id": "photography_arts",
+          "mode": "player"
+        },
+        {
+          "stage_id": "primordial_strata",
+          "mode": "player"
+        },
+        {
+          "stage_id": "quantum_gate",
+          "mode": "player"
+        },
+        {
+          "stage_id": "redstone_principles",
+          "mode": "player"
+        },
+        {
+          "stage_id": "runesmithing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "scales_and_steel",
+          "mode": "player"
+        },
+        {
+          "stage_id": "scroll_end_passage",
+          "mode": "player"
+        },
+        {
+          "stage_id": "sculk_sickness",
+          "mode": "player"
+        },
+        {
+          "stage_id": "small_ships",
+          "mode": "player"
+        },
+        {
+          "stage_id": "smithing_legendary",
+          "mode": "player"
+        },
+        {
+          "stage_id": "smithing_master",
+          "mode": "player"
+        },
+        {
+          "stage_id": "sound_and_broadcast",
+          "mode": "player"
+        },
+        {
+          "stage_id": "specialist_suits",
+          "mode": "player"
+        },
+        {
+          "stage_id": "spoils_of_the_sea_roads",
+          "mode": "player"
+        },
+        {
+          "stage_id": "steeping_kettle",
+          "mode": "player"
+        },
+        {
+          "stage_id": "stolovaya_ledger",
+          "mode": "player"
+        },
+        {
+          "stage_id": "stoneworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "survivor_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "technomancy_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "teleportation_arts",
+          "mode": "player"
+        },
+        {
+          "stage_id": "the_bestiary",
+          "mode": "player"
+        },
+        {
+          "stage_id": "the_pantry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "tidal_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "torch_and_lantern_craft",
+          "mode": "player"
+        },
+        {
+          "stage_id": "trim_smithing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "two_larder_winter",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_table",
+          "mode": "player"
+        },
+        {
+          "stage_id": "wayhouse_logistics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "wild_study",
+          "mode": "player"
+        },
+        {
+          "stage_id": "wilderness_camping",
+          "mode": "player"
+        },
+        {
+          "stage_id": "woodworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "smithing_mythic",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 35,
+        "consume": true
+      }
+    }
+  ],
+  "hidden_display": {
+    "name_mode": "replace",
+    "name_text": "Sealed Relic",
+    "tooltip_mode": "replace",
+    "tooltip_text": "Its nature is sealed.\nLearn the scroll: The Five Vessels Apocrypha",
+    "show_lock_hints": false
+  },
+  "min_pedestal_tier": 4,
+  "pedestal_tier_mode": "min"
 }

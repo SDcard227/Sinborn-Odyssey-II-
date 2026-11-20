@@ -1,6 +1,7 @@
 {
   "display_name": "Numismatic Mechanisms",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
     "createdeco:brass_coin",
     "createdeco:brass_coinstack",
@@ -35,7 +36,6 @@
     "numismatics:brown_card",
     "numismatics:brown_id_card",
     "numismatics:cog",
-    "numismatics:crown",
     "numismatics:cyan_card",
     "numismatics:cyan_id_card",
     "numismatics:gray_card",
@@ -67,7 +67,24 @@
     "numismatics:yellow_card",
     "numismatics:yellow_id_card",
     "numismatics_utils:bank_meter",
-    "numismatics_utils:portable_bank_terminal"
+    "numismatics_utils:portable_bank_terminal",
+    "numismatics:white_authorized_card",
+    "numismatics:orange_authorized_card",
+    "numismatics:magenta_authorized_card",
+    "numismatics:light_blue_authorized_card",
+    "numismatics:yellow_authorized_card",
+    "numismatics:lime_authorized_card",
+    "numismatics:pink_authorized_card",
+    "numismatics:gray_authorized_card",
+    "numismatics:light_gray_authorized_card",
+    "numismatics:cyan_authorized_card",
+    "numismatics:purple_authorized_card",
+    "numismatics:blue_authorized_card",
+    "numismatics:brown_authorized_card",
+    "numismatics:green_authorized_card",
+    "numismatics:red_authorized_card",
+    "numismatics:black_authorized_card",
+    "numismatics:crown"
   ],
   "tags": [],
   "mods": [
@@ -86,5 +103,34 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "kinetic_engineering",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

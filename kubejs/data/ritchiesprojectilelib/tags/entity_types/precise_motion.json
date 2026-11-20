@@ -1,0 +1,65 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "canonnukes:nuke_shell",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:shot",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:he_shell",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:shrapnel_shell",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:bag_of_grapeshot",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:ap_shot",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:traffic_cone",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:ap_shell",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:fluid_shell",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:smoke_shell",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:mortar_stone",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:drop_mortar_shell",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:ap_autocannon",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:flak_autocannon",
+   "required": false
+  },
+  {
+   "id": "createbigcannons:machine_gun_bullet",
+   "required": false
+  }
+ ]
+}

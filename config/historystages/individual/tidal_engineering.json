@@ -1,15 +1,13 @@
 {
   "display_name": "Tidal Engineering",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
     "create_aquatic_ambitions:calcium_rich_powder",
-    "create_aquatic_ambitions:fake_active_conduit",
     "create_aquatic_ambitions:mechanical_conduit",
-    "create_aquatic_ambitions:nautilus_shard",
     "create_aquatic_ambitions:prismarine_alloy",
     "create_aquatic_ambitions:prismarine_alloy_block",
     "create_aquatic_ambitions:prismarine_alloy_rod",
-    "create_aquatic_ambitions:prismarine_rod",
     "create_aquatic_ambitions:spiky_shell",
     "create_aquatic_ambitions:suspicious_rock"
   ],
@@ -22,5 +20,34 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "kinetic_engineering",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

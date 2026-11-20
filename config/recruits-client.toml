@@ -30,4 +30,38 @@
 	#It is recommended to keep it enabled to receive information about new bug fixes and features.""
 	#default: true
 	UpdateCheckerClientside = true
+	#----UpdateMapTiles----
+	#	(takes effect after restart)
+	#	
+	#Should the world map tiles be updated while playing?
+	#Disable this if you experience performance issues with the map.""
+	#default: true
+	UpdateMapTiles = true
+	#----RecruitsToasts----
+	#	(takes effect after restart)
+	#	
+	#Should important events be shown on the HUD by toast notifications?""
+	#default: true
+	RecruitsToasts = true
+	#----WorldMapUpdateAroundPlayer----
+	#Load and refresh map chunks around the player in the background.
+	#default: true
+	WorldMapUpdateAroundPlayer = true
+	#----WorldMapNightShading----
+	#Darken the world map at night.
+	#default: true
+	WorldMapNightShading = true
+	#----WorldMapShowCoordinates----
+	#Show the coordinates and zoom readout on the world map.
+	#default: true
+	WorldMapShowCoordinates = true
+	#----WorldMapClaimFill----
+	#Draw the filled territory overlay on the world map.
+	#default: true
+	WorldMapClaimFill = true
+	#----WorldMapPlayerIconStyle----
+	#Player icon style on the world map.
+	#default: OVERHAULED
+	#Allowed Values: VANILLA, OVERHAULED
+	WorldMapPlayerIconStyle = "OVERHAULED"
 

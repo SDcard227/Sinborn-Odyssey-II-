@@ -1,0 +1,24 @@
+
+[interface]
+	#Play page-turn sounds when browsing.
+	playPageSounds = true
+	#Reopen the book on the last viewed bookmark, search and entry.
+	rememberLastPage = true
+	#Initial sort: name_asc, name_desc, nutrition, saturation, recipes, mod.
+	defaultSort = "name_asc"
+	#Size of the book: 0 = automatic (the largest whole multiple of its pixel art that fits the
+	#window), 1-6 = at most this multiple. Whole multiples keep the pixel art crisp; windows too
+	#small for 1x shrink the book to fit.
+	#Range: 0 ~ 6
+	bookScale = 0
+
+[performance]
+	#Remember the cookbook's recipe index between game sessions (in <game dir>/lunchtimecookbook/index-cache),
+	#so the first opening in a session does not rediscover every recipe. A stored index is used only when
+	#the recipes, tags, mods, resource packs, rules and settings it was built from are exactly the same;
+	#otherwise it is rebuilt. '/cookbook cache clear' empties it.
+	persistentIndexCache = true
+	#Record timings, allocation and cache counters of the cookbook's own work, for '/cookbook perf'.
+	#Off by default: when off, the cookbook measures nothing.
+	diagnostics = false
+

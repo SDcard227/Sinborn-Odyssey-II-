@@ -1,9 +1,11 @@
 {
   "display_name": "Runesmithing",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
     "quark:smithing_template_rune",
-    "simplyswords:runic_tablet"
+    "simplyswords:runic_tablet",
+    "simplyswords:runefused_gem"
   ],
   "tags": [],
   "mods": [],
@@ -14,5 +16,60 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "smithing_master",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_cipher",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "backpackcraft",
+          "mode": "player"
+        },
+        {
+          "stage_id": "banner_heraldry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blood_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eldritch_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_road",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

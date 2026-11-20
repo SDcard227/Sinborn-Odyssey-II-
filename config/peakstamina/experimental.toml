@@ -1,0 +1,43 @@
+#Internal version of the config. DO NOT CHANGE.
+configVersion = "0.0.0"
+
+#Experimental features! These may impact performance or balance, use with caution.
+["Entity Stamina"]
+	#Enable stamina system for Mobs.
+	enableMobStamina = true
+	#Show sweat particles for exhausted mobs.
+	enableExhaustionParticles = true
+	#
+	#Exhaustion Profiles
+	#Define reusable attribute debuff templates here. Modded attributes are supported.
+	#Format: "ProfileName; AttributeI D=Multiplier, AttributeID=Multiplier..."
+	#
+	exhaustionProfiles = ["MeleeTired; minecraft:generic.movement_speed=-0.40, minecraft:generic.attack_damage=-0.4", "HeavyMelee; minecraft:generic.movement_speed=-0.60, minecraft:generic.attack_damage=-0.50", "RangedTired; minecraft:generic.movement_speed=-0.25, minecraft:generic.attack_damage=-0.40", "AgileTired; minecraft:generic.movement_speed=-0.40, minecraft:generic.attack_damage=-0.3"]
+	#
+	#Define which mobs use the stamina system and link them to a Profile defined above.
+	#Note: This list acts as a whitelist, mobs not defined on it will not use the stamina system. This is also not guaranteed to work on bosses.
+	#Format: "EntityID; MaxAttacks; ExhaustionTicks; ProfileName"
+	#  - EntityID: The registry name of the mob (e.g. minecraft:zombie)
+	#  - MaxAttacks: How many hits/shots they land before exhausting, for ranged mobs its how many shots they shoot (doesnt matter if they hit or miss)
+	#  - ExhaustionTicks: How long they stay exhausted (20 = 1 sec)
+	#  - ProfileName: The name of the template from 'exhaustionProfiles'
+	#Note: Ranged mobs that use bows and crossbows (should work with modded?) with attack attribute reduction will also lower the velocity of the arrow.
+	#
+	customMobStamina = ["minecraft:zombie; 4; 120; MeleeTired", "minecraft:husk; 4; 120; MeleeTired", "minecraft:drowned; 5; 80; MeleeTired", "minecraft:piglin; 5; 120; MeleeTired", "minecraft:skeleton; 4; 80; RangedTired", "minecraft:stray; 5; 80; RangedTired", "minecraft:pillager; 5; 80; RangedTired", "minecraft:piglin; 4; 80; RangedTired", "minecraft:spider; 5; 60; AgileTired", "minecraft:cave_spider; 4; 40; AgileTired", "minecraft:enderman; 6; 100; AgileTired", "minecraft:vindicator; 4; 80; HeavyMelee", "minecraft:piglin_brute; 5; 100; HeavyMelee", "minecraft:ravager; 6; 120; HeavyMelee"]
+
+["Action Hooks"]
+	#
+	#Custom Action Hooks
+	#Drain or restore stamina when specific Forge events occur.
+	#Format: "EVENT_TYPE; ARGUMENT; COST"
+	#
+	#Available Event Types & Arguments:
+	#  MOUNT ; entity_id (e.g., minecraft:horse, minecraft:boat, or ANY)
+	#  INTERACT_ENTITY ; entity_id (e.g., minecraft:villager, or ANY)
+	#  HURT ; damage_source (e.g., fall, onFire, mob, arrow, or ANY)
+	#  FISH ; ANY
+	#
+	#Note: If cost is positive and the player lacks stamina, cancelable events (like MOUNT) will be blocked.
+	#Note: Negative costs will restore stamina instead.
+	customActionHooks = ["MOUNT; minecraft:horse; 12.0", "INTERACT_ENTITY; minecraft:villager; 1.0", "HURT; fall; 10.0", "FISH; ANY; 15.0"]
+

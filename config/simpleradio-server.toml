@@ -1,12 +1,46 @@
 
+#These are the configurations for the audio.
+[audio]
+
+	#These are the configurations for the noise filter.
+	[audio.noise]
+		#This is the amount of background noise. Defaults to true.
+		background = 0.03
+		#This is the amount of voice distortion noise. Defaults to true.
+		distort = 0.25
+
+	#These are the configurations for the high pass filter.
+	[audio.highPass]
+		#This is the cutoff in HZ for the high pass filter. Defaults to 400.
+		cutoff = 400
+
+	#These are the configurations for the low pass filter.
+	[audio.lowPass]
+		#This is the cutoff in HZ for the low pass filter. Defaults to 3200.
+		cutoff = 3200
+
+	#These are the configurations for the middle EQ filter.
+	[audio.peak]
+		#This is the lower bound in HZ for the middle EQ peaking. Defaults to 1000.
+		low = 1000
+		#This is the upper bound in HZ for the middle EQ peaking. Defaults to 2000.
+		high = 2000
+		#This is the strength of the middle EQ peaking. Defaults to 1.0.
+		strength = 1.0
+
+	#These are the configurations for the downsampling filter.
+	[audio.downsample]
+		#This is the factor to downsample by. Defaults to 6.
+		factor = 6
+
 #These are the configurations for the wires.
 [wire]
 	#This is the method of diminishment to use. ADDITIVE subtracts a flat amount, while MULTIPLICATIVE subtracts a percentage from the initial transmission power. Defaults to ADDITIVE.
 	diminishmentMethod = "MULTIPLICATIVE"
 	#This is how much transmission power diminishes per block. Defaults to 0.01.
 	transmissionDiminishment = 0.01
-	#This is the amount of time (in ticks) per block a wire takes to relay data. Defaults to 4.
-	transmissionTime = 4
+	#This is the amount of time (in seconds) per block a wire takes to relay data. Defaults to 0.1.
+	transmissionTime = 0.1
 	#This is the amount of time (in ticks) between each header sent. Defaults to 5.
 	headerInterval = 5
 	#This is the range a wire can reach before breaking. Defaults to 12.
@@ -34,6 +68,8 @@
 	diminishmentMethod = "ADDITIVE"
 	#This is how much transmission power diminishes per block. Defaults to 1.
 	transmissionDiminishment = 1.0
+	#This is the cooldown in ticks after using. Defaults to 20.
+	cooldown = 20
 	#This is the range for the transceiver that it can hear from. Defaults to 4.
 	listeningRange = 4
 	#This is the range for the transceiver in which the audio played from it can be heard. Defaults to 4.
@@ -59,6 +95,8 @@
 	diminishmentMethod = "ADDITIVE"
 	#This is how much transmission power diminishes per block. Defaults to 1.
 	transmissionDiminishment = 1.0
+	#This is the cooldown in ticks after using. Defaults to 60.
+	cooldown = 60
 	#This is the range for the walkie that it can hear from. Defaults to 4.
 	listeningRange = 4
 	#This is the range for the walkie in which the audio played from it can be heard. Defaults to 4.
@@ -148,10 +186,12 @@
 	baseFMInterference = 2.0
 	#Whether or not the radios work across dimensions. Defaults to false.
 	crossDimensional = false
-	#The base amount of interference to give to radio transmission per block across dimensions. Defaults to 4.
-	dimensionalInterference = 4.0
-	#The packet buffer for packet transmission. You likely won't need to worry about this. Defaults to 2.
-	packetBuffer = 2
+	#The flat amount of interference to give to AM transmission across dimensions. Defaults to 50.
+	dimensionalAMInterference = 50.0
+	#The flat amount of interference to give to FM transmission across dimensions. Defaults to 75.
+	dimensionalFMInterference = 75.0
+	#How the transmission scales across dimensions. In general, a higher number yields higher effective range. Defaults to 0.75.
+	dimensionalScaling = 0.75
 
 #These are the configurations for ALL types of routers (such as Receivers, Transmitters, Listeners, and Speakers).
 [router]
@@ -165,6 +205,8 @@
 	activityTime = 20
 	#[EXPERIMENTAL] Pick up audio from the world, not just players. Defaults to false.
 	soundListening = false
+	#[EXPERIMENTAL] Pick up audio from speakers, can cause feedback loops. Defaults to false.
+	feedbackListening = false
 
 #These are the general configurations for compatibilities.
 [compatibilities]
@@ -187,5 +229,37 @@
 	#These are the configurations for the optional dependency Create.
 	[compatibilities.create]
 		#When false, removes compatibility for Create. Defaults to true.
+		enabled = true
+
+	#These are the configurations for the optional dependency CC: Tweaked.
+	[compatibilities.cc_tweaked]
+		#When false, removes compatibility for CC: Tweaked. Defaults to true.
+		enabled = true
+
+	#These are the configurations for the optional dependency Etched.
+	[compatibilities.etched]
+		#When false, removes compatibility for Etched. Defaults to true.
+		enabled = true
+		#When true, enabled the mixin patch fixing the 'dual-download' issue. Defaults to true.
+		streamPatch = true
+
+	#These are the configurations for the optional dependency AudioPlayer.
+	[compatibilities.audioplayer]
+		#When false, removes compatibility for AudioPlayer. Defaults to true.
+		enabled = true
+
+	#These are the configurations for the optional dependency Sable/Create Aeronautics.
+	[compatibilities.sable]
+		#When false, removes compatibility for Sable. Defaults to true.
+		enabled = true
+
+	#These are the configurations for the optional dependency Curios.
+	[compatibilities.curios]
+		#When false, removes compatibility for Curios. Defaults to true.
+		enabled = true
+
+	#These are the configurations for the optional dependency Trinkets.
+	[compatibilities.trinkets]
+		#When false, removes compatibility for Trinkets. Defaults to true.
 		enabled = true
 

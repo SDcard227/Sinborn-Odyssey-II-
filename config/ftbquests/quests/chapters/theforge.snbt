@@ -1,0 +1,1345 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "theforge"
+	group: "5A0000000000002B"
+	icon: "minecraft:anvil"
+	id: "1D89D717C6C3C29A"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The Convent copied cooking freely and guarded metallurgy. Ask why, and the answer is every war in the record."]
+			icon: "minecraft:anvil"
+			id: "36869C7556A23366"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "Metal is the first knowledge worth guarding."
+			tasks: [{
+				id: "4DF7B0AA5E02818C"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Forge"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r ancient vestiges chest, archer, armorer and 40 more &8(15% a chest)"
+				"&bOpens:&r 904 entries and 2 whole bodies of work"
+				"&dNeeds:&r Stoneworking"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:anvil"
+			id: "789379F29E9B3BF5"
+			rewards: [{
+				count: 12
+				id: "1A168E2047D8606F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Heat, and something to hold it."
+			tasks: [
+				{
+					id: "1B209D31983FEA27"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "metalworking"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "23A1B9F55611C5F4"
+					individual: true
+					negate: false
+					stage: "metalworking"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Foundations of the Forge"
+			x: 0.0d
+			y: -5.4d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft, abandoned mineshaft bc, abandoned mineshaft chalk loot and 5 more &8(17% a chest)"
+				"&bOpens:&r 914 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 6 minutes"
+			]
+			icon: "tfmg:coke_oven"
+			id: "5DD66FFAF7F71279"
+			rewards: [{
+				count: 12
+				id: "54A1AEFDB310681A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Pouring it, instead of beating it."
+			tasks: [
+				{
+					id: "3988C722C5503B9D"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "foundry_facade"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3109AC66B3BD7AD3"
+					individual: true
+					negate: false
+					stage: "foundry_facade"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Foundry"
+			x: 2.7d
+			y: -4.7d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft chalk loot, abyssal ruins, caveman house and 19 more &8(17% a chest)"
+				"&bOpens:&r 474 entries"
+				"&dNeeds:&r one of The Dragonslayer’s Codex, The Bulwark Doctrine"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "iceandfire:sea_serpent_fang"
+			id: "0D4CBBC03652B259"
+			rewards: [{
+				count: 12
+				id: "739BFD5FE2E1A65A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Armour, and the argument for wearing it."
+			tasks: [
+				{
+					id: "58A35E7A6ABF1AF6"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "scales_and_steel"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5B58ED8D70DCD89B"
+					individual: true
+					negate: false
+					stage: "scales_and_steel"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Scales and Steel"
+			x: 4.7d
+			y: -2.7d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r ancient vestiges chest, archer, basic loot and 52 more &8(14% a chest)"
+				"&bOpens:&r 303 entries"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 3 minutes"
+			]
+			icon: "minecraft:leather_chestplate"
+			id: "56E808398300E70A"
+			rewards: [{
+				count: 12
+				id: "2A0B1C45695460B4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The animal, after the animal."
+			tasks: [
+				{
+					id: "599DF1B9B16669FE"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "leatherworking"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "48C5E7DFDE89F504"
+					individual: true
+					negate: false
+					stage: "leatherworking"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Tanner's Craft"
+			x: 5.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Cipher work: the method survives and the reasoning does not."
+				""
+				"&6Found in:&r ancient vestiges chest, archer, armory and 38 more &8(12% a chest)"
+				"&bOpens:&r 132 entries"
+				"&dNeeds:&r one of The Dye Loom, Glassworking, Stoneworking, Woodworking; The Long Road"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "minecraft:white_banner"
+			id: "520057C2726777A1"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7B3158645B697697"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Cipher work. A sign, with the meaning cut out."
+			tasks: [
+				{
+					id: "0F60EFF48483CF02"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "banner_heraldry"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "248DFEAB7E4E437E"
+					individual: true
+					negate: false
+					stage: "banner_heraldry"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Banner Heraldry"
+			x: 4.7d
+			y: 2.7d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure, ancient vestiges chest, archer and 47 more &8(12% a chest)"
+				"&bOpens:&r 52 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "irons_spellbooks:mana_ring"
+			id: "5FD87A1AB6512486"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "3EB35171997BC4A3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Small, worn, and worth more than the metal."
+			tasks: [
+				{
+					id: "4D629829AA8DAE7D"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "lapidary_arts"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1CBFD67D632961F6"
+					individual: true
+					negate: false
+					stage: "lapidary_arts"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Lapidary Arts: Rings, Amulets & Charms"
+			x: 2.7d
+			y: 4.7d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r buried treasure, dwemer ruin common, dwemer tower and 2 more &8(17% a chest)"
+				"&bOpens:&r 82 entries and 7 whole bodies of work"
+				"&dNeeds:&r Kinetic Engineering"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "numismatics:sun"
+			id: "71318BFB88CF56D8"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "3025B4269257A2EC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Money, and the machines that count it."
+			tasks: [
+				{
+					id: "596F333F88A4EFF1"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "numismatic_mechanisms"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "062E386A720F0751"
+					individual: true
+					negate: false
+					stage: "numismatic_mechanisms"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Numismatic Mechanisms"
+			x: 0.0d
+			y: 5.4d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure, additional end city loot, armory and 29 more &8(7% a chest)"
+				"&bOpens:&r 227 entries"
+				"&dNeeds:&r The Master Forge"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:netherite_chestplate"
+			id: "3B58A726A7A7EC2D"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0C0C74C1AA48A5C3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Where the named weapons came from."
+			tasks: [
+				{
+					id: "1DC978B935590B91"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "smithing_legendary"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3B574D1DA49FF9EE"
+					individual: true
+					negate: false
+					stage: "smithing_legendary"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Legendary Forge"
+			x: -2.7d
+			y: 4.7d
+		}
+		{
+			dependencies: ["3B58A726A7A7EC2D"]
+			description: [
+				"Unsigned, and in three hands. It holds what the Legendary Forge would not teach: dragonsteel plate, the crimson harness, and the mail of the dragon priests."
+				""
+				"&6Found in:&r acropolis treasure, additional end city loot, armory and 29 more &8(7% a chest)"
+				"&bOpens:&r 40 entries"
+				"&dNeeds:&r The Legendary Forge; 35 levels of experience, spent"
+				"&aPedestal:&r Tier IV, about 30 minutes"
+			]
+			icon: "iceandfire:dragonsteel_fire_chestplate"
+			id: "F608EB181590FA96"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "F8275FED7DF5F0A2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Where the dragon plate was made."
+			tasks: [
+				{
+					id: "F4E491DFD8EFF9AA"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "smithing_mythic"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "D77CAA11F999115E"
+					individual: true
+					negate: false
+					stage: "smithing_mythic"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Mythic Forge"
+			x: -2.7d
+			y: 6.3d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r additional ominous spawner consumable loot, additional ominous vault loot, additional regular spawner consumable loot and 6 more &8(35% a chest)"
+				"&bOpens:&r 55 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 8 minutes"
+			]
+			icon: "minecraft:coast_armor_trim_smithing_template"
+			id: "43F0AD69F4086D14"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "3A77DAC646397447"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The mark that says whose armour it is."
+			tasks: [
+				{
+					id: "3EC2524F36E3AC45"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "trim_smithing"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3A32B2192A1AE10C"
+					individual: true
+					negate: false
+					stage: "trim_smithing"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Trimwright's Art"
+			x: -4.7d
+			y: 2.7d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r arrows, bastion bridge, bastion hoglin stable and 5 more &8(35% a chest)"
+				"&bOpens:&r 30 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 6 minutes"
+			]
+			icon: "cuffed:handcuffs"
+			id: "3080EFC079F8DCBA"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "305B023A8F557810"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Locking is a craft."
+			tasks: [
+				{
+					id: "50EEDC96E2F9CC73"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "lockwrights_irons"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "44477550C20C5039"
+					individual: true
+					negate: false
+					stage: "lockwrights_irons"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Lockwright's Irons"
+			x: -5.4d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r additional end city loot, bedroom, brewing and 29 more &8(17% a chest)"
+				"&bOpens:&r 20 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:diamond_chestplate"
+			id: "389482229AB3C0E8"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7504CA4ECC196EB9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The last anvil in the record."
+			tasks: [
+				{
+					id: "6400B978543F07C9"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "smithing_master"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "62584172F489C9C8"
+					individual: true
+					negate: false
+					stage: "smithing_master"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Master Forge"
+			x: -4.7d
+			y: -2.7d
+		}
+		{
+			dependencies: ["36869C7556A23366"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r blazing fortress loot, frosted prison treasure, simple dungeon and 1 more &8(13% a chest)"
+				"&bOpens:&r 6 entries"
+				"&dNeeds:&r Foundations of the Forge; On Infernal Passage"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "netherexp:pump_charge_shotgun"
+			id: "62D8C47D49BF3F9C"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "79E2A73F23CDCACF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Fire, aimed and repeatable."
+			tasks: [
+				{
+					id: "4A838249F6AE7645"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "gunsmithing"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "727053A5CC44C4E3"
+					individual: true
+					negate: false
+					stage: "gunsmithing"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Gunsmithing"
+			x: -2.7d
+			y: -4.7d
+		}
+		{
+			dependencies: ["520057C2726777A1"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "iceandfire:banner_pattern_weezer"
+			id: "6FEE3EB9BAE54217"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "42FFA3465ECF9E35"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on cloth."
+			tasks: [
+				{
+					id: "2A9AE4CC75C39546"
+					item: "iceandfire:banner_pattern_weezer"
+					title: "Banner Pattern"
+					type: "item"
+				}
+				{
+					id: "7FFA2C3950FC62DA"
+					item: "iceandfire:banner_pattern_feather"
+					title: "Banner Pattern"
+					type: "item"
+				}
+				{
+					id: "15668288B37F1DDC"
+					item: "dungeonnowloading:dungeon_banner_garhold_upsidedown"
+					title: "Garhold Banner"
+					type: "item"
+				}
+			]
+			title: "Practising , Banner Heraldry"
+			x: 7.7d
+			y: 4.4d
+		}
+		{
+			dependencies: ["5DD66FFAF7F71279"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "tfmg:turbine_blade"
+			id: "171888A25CC23C18"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "25D097F5BE5FB6F9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the pour."
+			tasks: [
+				{
+					id: "511D81E9AA752F6E"
+					item: "tfmg:turbine_blade"
+					title: "Turbine Blade"
+					type: "item"
+				}
+				{
+					id: "66DC104A3900734B"
+					item: "createdeco:industrial_iron_ingot"
+					title: "Industrial Iron Ingot"
+					type: "item"
+				}
+				{
+					id: "2D331135F1161E8B"
+					item: "tfmg:cast_iron_sheet"
+					title: "Cast Iron Sheet"
+					type: "item"
+				}
+			]
+			title: "Practising , The Foundry"
+			x: 4.4d
+			y: -7.7d
+		}
+		{
+			dependencies: ["62D8C47D49BF3F9C"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "netherexp:shotgun_core"
+			id: "5AA1147E4E841A6D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "48AD9EC90B9A0D4E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it downrange."
+			tasks: [
+				{
+					id: "5270BF82362EE155"
+					item: "netherexp:shotgun_core"
+					title: "Shotgun Core"
+					type: "item"
+				}
+				{
+					id: "338FA9769993BA32"
+					item: {
+						Count: 1
+						id: "netherexp:pump_charge_shotgun"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Pump-Charge Shotgun"
+					type: "item"
+				}
+				{
+					id: "324450888DDFA08C"
+					item: "netherexp:pump_charge_upgrade_smithing_template"
+					title: "Smithing Template"
+					type: "item"
+				}
+			]
+			title: "Practising , Gunsmithing"
+			x: -4.5d
+			y: -7.7d
+		}
+		{
+			dependencies: ["5FD87A1AB6512486"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "call_of_yucutan:jade_amulet"
+			id: "3259FEC15127DB73"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0016B6D7F0C0139B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the setting."
+			tasks: [
+				{
+					id: "7059AC1C19B10535"
+					item: "call_of_yucutan:jade_amulet"
+					title: "Jade Amulet"
+					type: "item"
+				}
+				{
+					id: "094F03AB5A8436B6"
+					item: "irons_spellbooks:mana_ring"
+					title: "Ring of Mana"
+					type: "item"
+				}
+				{
+					id: "36193DD242AF3AEB"
+					item: "irons_spellbooks:teleportation_amulet"
+					title: "Amulet of Teleportation"
+					type: "item"
+				}
+			]
+			title: "Practising , The Lapidary Arts: Rings, Amulets & Charms"
+			x: 4.4d
+			y: 7.7d
+		}
+		{
+			dependencies: ["56E808398300E70A"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "meadow:fur_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32C804CF8C0E6B2D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2BAD547E4683F9E7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in hide."
+			tasks: [
+				{
+					id: "3D4C515B54CA7A5A"
+					item: {
+						Count: 1
+						id: "meadow:fur_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Wandering Magician Hood"
+					type: "item"
+				}
+				{
+					id: "3D7FB9277B2D3151"
+					item: {
+						Count: 1
+						id: "meadow:fur_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Hoglin Leggings"
+					type: "item"
+				}
+				{
+					id: "1962E261204CA984"
+					item: "vinery:straw_hat"
+					title: "Straw Hat"
+					type: "item"
+				}
+			]
+			title: "Practising , The Tanner's Craft"
+			x: 8.9d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3080EFC079F8DCBA"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "cuffed:possessions_box"
+			id: "0A1E40CD6A5C4088"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7CD1B297A3313EDF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the lock."
+			tasks: [
+				{
+					id: "5D604D040E65A056"
+					item: "cuffed:possessions_box"
+					title: "Box of Possessions"
+					type: "item"
+				}
+				{
+					id: "0D2D43A5FAED098F"
+					item: "cuffed:weighted_anchor"
+					title: "Weighted Anchor"
+					type: "item"
+				}
+				{
+					id: "13B262758D071100"
+					item: "cuffed:key_ring"
+					title: "Key Ring"
+					type: "item"
+				}
+			]
+			title: "Practising , The Lockwright's Irons"
+			x: -8.9d
+			y: 0.0d
+		}
+		{
+			dependencies: ["789379F29E9B3BF5"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "tfmg:steel_axe"
+			id: "46075C7B22C0DDD6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "623EFA4B1F47AE0D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it at the anvil."
+			tasks: [
+				{
+					id: "7193EFC01CCEC6E2"
+					item: "tfmg:steel_axe"
+					title: "Steel Axe"
+					type: "item"
+				}
+				{
+					id: "0B5D99F4DDEBA6A6"
+					item: "tfmg:steel_pickaxe"
+					title: "Steel Pickaxe"
+					type: "item"
+				}
+				{
+					id: "4C1A13E188CB854B"
+					item: "tfmg:steel_hoe"
+					title: "Steel Hoe"
+					type: "item"
+				}
+			]
+			title: "Practising , Foundations of the Forge"
+			x: 0.0d
+			y: -8.9d
+		}
+		{
+			dependencies: ["71318BFB88CF56D8"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "numismatics:light_blue_id_card"
+			id: "0E09C4D6E06E662A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4F58EAD159701888"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in coin."
+			tasks: [
+				{
+					id: "1D99F275A52C2D46"
+					item: "numismatics:light_blue_id_card"
+					title: "Light Blue ID Card"
+					type: "item"
+				}
+				{
+					id: "632074B268F511E5"
+					item: "numismatics:sun"
+					title: "Sun"
+					type: "item"
+				}
+				{
+					id: "17CFB4AF8A2FA67E"
+					item: "createdeco:industrial_iron_coinstack"
+					title: "Industrial Iron Coin Stack"
+					type: "item"
+				}
+			]
+			title: "Practising , Numismatic Mechanisms"
+			x: 0.0d
+			y: 8.9d
+		}
+		{
+			dependencies: ["0D4CBBC03652B259"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "iceandfire:deathworm_yellow_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3BE2801465E48423"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "06E1DBFBACCB97DE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in plate."
+			tasks: [
+				{
+					id: "056B153CCF5E6684"
+					item: {
+						Count: 1
+						id: "iceandfire:deathworm_yellow_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Tan Death Worm Chitin Chestplate"
+					type: "item"
+				}
+				{
+					id: "6F071F8E0C46733B"
+					item: "companions:croissant_dragon_vanilla_armor"
+					title: "Croissant Dragon Vanilla Armor"
+					type: "item"
+				}
+				{
+					id: "1D9032BB048A1D28"
+					item: {
+						Count: 1
+						id: "iceandfire:myrmex_jungle_sword_venom"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Jungle Myrmex Stinger Sword"
+					type: "item"
+				}
+			]
+			title: "Practising , Scales and Steel"
+			x: 7.7d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3B58A726A7A7EC2D"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "fantasy_armor:dawncrest_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0D936AD81874EEC3"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "72B4A1B4866A6B19"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in something named."
+			tasks: [
+				{
+					id: "4028E5F9FE7252A7"
+					item: {
+						Count: 1
+						id: "fantasy_armor:dawncrest_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Dawncrest Chestplate"
+					type: "item"
+				}
+				{
+					id: "082E7DC9873DBDC8"
+					item: {
+						Count: 1
+						id: "fantasy_armor:grave_sentinel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Grave Sentinel Boots"
+					type: "item"
+				}
+				{
+					id: "6041860C2C16B8D6"
+					item: {
+						Count: 1
+						id: "fantasy_armor:golden_horns_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Golden Horns Helmet"
+					type: "item"
+				}
+			]
+			title: "Practising , The Legendary Forge"
+			x: -4.4d
+			y: 7.7d
+		}
+		{
+			dependencies: ["389482229AB3C0E8"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "dungeons_and_combat:diamond_metal_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "30E76C5A8BCD7741"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "357767D995078A59"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it at the master's anvil."
+			tasks: [
+				{
+					id: "10DB17D3D661E365"
+					item: {
+						Count: 1
+						id: "dungeons_and_combat:diamond_metal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Diamond Chestplate"
+					type: "item"
+				}
+				{
+					id: "11D5D90D0DAEDF89"
+					item: {
+						Count: 1
+						id: "dungeons_and_combat:diamond_metal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Diamond Helmet"
+					type: "item"
+				}
+				{
+					id: "3B7321675EA9BE34"
+					item: "iceandfire:diamond_hippogryph_armor"
+					title: "Diamond Hippogryph Armor"
+					type: "item"
+				}
+			]
+			title: "Practising , The Master Forge"
+			x: -7.7d
+			y: -4.5d
+		}
+		{
+			dependencies: ["43F0AD69F4086D14"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "dungeons_and_combat:light_smithing_template"
+			id: "2E7165388A2B849C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1CA6951A0E41F486"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the trim."
+			tasks: [
+				{
+					id: "2497030A220A8793"
+					item: "dungeons_and_combat:light_smithing_template"
+					title: "Smithing Template"
+					type: "item"
+				}
+				{
+					id: "38746AD274BA92DD"
+					item: "dungeons_and_combat:blessed_smithing_template"
+					title: "Smithing Template"
+					type: "item"
+				}
+				{
+					id: "7044313EAC8356C2"
+					item: "dungeons_and_combat:tohi_smithing_template"
+					title: "Smithing Template"
+					type: "item"
+				}
+			]
+			title: "Practising , The Trimwright's Art"
+			x: -7.7d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0D4CBBC03652B259"]
+			description: [
+				"Scale and bone are forge work. The archive files them under the animal first."
+				"&dNeeds both:&r Scales and Steel and The Dragonslayer’s Codex."
+				"&bWaiting on both:&r Red Dragon Chestplate, Blue Dragon Shield, Dragon Ice and the rest of that shelf."
+			]
+			icon: "dungeons_and_combat:red_dragon_chestplate"
+			id: "74CBE018F30FAB87"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "13791F27D3AF01B2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The smith has the hammer. The slayer has the dragon."
+			tasks: [
+				{
+					id: "05A4F84EE65545DC"
+					individual: true
+					negate: false
+					stage: "scales_and_steel"
+					title: "Scales and Steel"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "63ABEB87BAFC5062"
+					individual: true
+					negate: false
+					stage: "dragonslayer_codex"
+					title: "The Dragonslayer’s Codex"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , Dragon Work"
+			x: 6.2d
+			y: -2.0d
+		}
+		{
+			dependencies: ["789379F29E9B3BF5"]
+			description: [
+				"The forge can shape it. It cannot tell you what it was cut from."
+				"&dNeeds both:&r Foundations of the Forge and Chronicle of the World-Enders."
+				"&bWaiting on both:&r Cursium Ingot, Ignitium Knife, Block of Cursium and the rest of that shelf."
+			]
+			icon: "cataclysm:cursium_ingot"
+			id: "733378C25863AA9C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "12FF7E22237BB5FA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Taken off things that ended ages."
+			tasks: [
+				{
+					id: "343C3D638D801CBC"
+					individual: true
+					negate: false
+					stage: "metalworking"
+					title: "Foundations of the Forge"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "56250562A19E176C"
+					individual: true
+					negate: false
+					stage: "cataclysm_codex"
+					title: "Chronicle of the World-Enders"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , World-Ender Metal"
+			x: 1.4d
+			y: -6.4d
+		}
+	]
+	subtitle: ["They shared cooking. They guarded this."]
+	title: "The Forge"
+}

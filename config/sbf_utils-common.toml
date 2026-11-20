@@ -7,7 +7,7 @@
 	#Scan loaded mods and log duplicate display names/IDs during server start.
 	enableDuplicateModScan = true
 	#Apply lightweight HUD offset to avoid common UI overlaps.
-	enableGuiOverlapFix = true
+	enableGuiOverlapFix = false
 	#Cancel low-priority client particles when camera is in heavy scenes.
 	enableParticleSoftCap = true
 	#Inject a pause-menu button that opens your boss list UI via command.
@@ -24,11 +24,11 @@
 	#Registry names of starting items to grant once.
 	startingItems = []
 	#Item ID for quest book integration points.
-	questBookItem = "heracles:quest_book"
+	questBookItem = "ftbquests:book"
 	#Item ID for class book integration points.
 	classBookItem = "minecraft:writable_book"
 	#Client command sent when quest button is pressed in the inventory screen.
-	inventoryQuestCommand = ""
+	inventoryQuestCommand = "ftbquests open"
 	#Client command sent when the pause-menu boss list button is pressed.
 	bossListCommand = ""
 

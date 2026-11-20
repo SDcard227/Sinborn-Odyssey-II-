@@ -8105,6 +8105,486 @@
       "enabled": false,
       "speed": 1.0,
       "range": 50.0
+    },
+    "recruits:siege_engineer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:black_swallowtail": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:soul_monarch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:crimson_monarch": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:chorus_morpho": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:glowstone_morpho": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:ender_eyespot": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "luminousworld:squirrel": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:angler_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:tuna": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:seahorse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:snail": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:hamster": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:ant": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:herring": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:sunfish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:sea_cow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:flukeshroom": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:octopus": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:clam": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:stickbug": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:barracuda": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:coastal_crab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:dodo": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:iguana": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:marine_iguana": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:spider_crab": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spawn:barbed": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spawn:firekeeper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spawn:seal": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:booby": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:pilot_fish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:blenny": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spawn:bluefish": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "create_sa:lifted_block": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "boss_companions:witheriteshead": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "boss_companions:dragon": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "boss_companions:witherite": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "boss_companions:guardians_hatchling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "boss_companions:warling": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "boss_companions:mini_spud": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "nirvana:reefer": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "barnyardbuddies:hamphshire_pig": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:jacobs_sheep": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:cochin_bantam": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:silkie_chicken": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:clydesdale_horse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:trader_clydesdale": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:great_pyrenees_dog": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:coyote": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:manx_cat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:house_mouse": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "barnyardbuddies:flemish_giant_rabbit": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "animights:catwain": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "animights:canito": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "animights:lancelotl": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "animights:jumpy": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "raidsenhanced:raid_blimp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "raidsenhanced:golem_of_last_resort": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "raidsenhanced:zapper": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "raidsenhanced:raid_drill": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:desert_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:ice_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:jungle_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:sculk_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:mushroom_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "spider_overhaul:cavern_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:ocean_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:taiga_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:birch_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:savanna_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "spider_overhaul:swamp_spider": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "luminous_nether:warped_mushlin_king": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "companions:shade_bat": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "burnt:spark": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "burnt:flag": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "burnt:flag_black": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "burnt_additions:molotov_tar": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "burnt_additions:tar_splash": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "burnt_additions:wisp": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "burnt_additions:soul_spawner": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "burnt_additions:tomb_spawner": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "burnt_additions:fire_devil": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "aquamirae:abyssal_scyphoid": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "aquamirae_delight:golden_moth": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:ladybug": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:stag_beetle": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:roly_poly": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:snail": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:stick_bug": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "crittersandcompanions:weevil": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "mo_bubbles:sticky_bomb_projectile": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "mo_bubbles:sea_bomb_e": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "alexsmobsdelight:super_seagull": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
+    },
+    "alexsmobsdelight:super_mosquito": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 50.0
+    },
+    "hearthandharvest:crow": {
+      "enabled": false,
+      "speed": 1.0,
+      "range": 40.0
     }
   }
 }

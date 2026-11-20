@@ -1,0 +1,2803 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "theapprenticeships"
+	group: "5A0000000000006F"
+	icon: "minecraft:writable_book"
+	id: "08A45094F2579D6E"
+	order_index: 18
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1B29485E0451DBD1"]
+			description: [
+				"The Long Aftermath, in a bowl. The survivors of the Persecution learned that a thing which hunts you is also a thing which feeds you, and wrote the recipes down before they wrote anything else."
+				"This line follows the cook's own order. Nothing here works until the Gallery-Broth scroll is researched."
+			]
+			icon: "dungeonsdelight:monster_pot"
+			id: "18CA0650B867F263"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "You ate what tried to eat you."
+			tasks: [{
+				id: "20DEDBB448E4394D"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Gallery-Broth"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Consume all monster foods and drinks... you monster"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:monster_cake"
+			id: "33923B5F530C05D7"
+			rewards: [{
+				count: 48
+				id: "51013D95A19689B8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "The whole Bestiary, tasted. Row five, in a stomach."
+			tasks: [{
+				advancement: "dungeonsdelight:main/all_monster_foods"
+				criterion: ""
+				id: "4BC551FCB3118666"
+				type: "advancement"
+			}]
+			title: "The Privilege of The Living"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Destroy a spawner to obtain a stained scrap, a piece of metal with lively capabilities"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:stained_scrap"
+			id: "4719A9D03F951807"
+			rewards: [{
+				count: 24
+				id: "550F5D8E6BA2E813"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "Living metal. The cage remembers what it held."
+			tasks: [{
+				advancement: "dungeonsdelight:main/get_stained_scrap"
+				criterion: ""
+				id: "60272F0D5F4CA744"
+				type: "advancement"
+			}]
+			title: "Heavy Metal"
+			x: 2.5d
+			y: 1.2d
+		}
+		{
+			description: [
+				"Put down a Monster Pot and start preparing monstrous meals!"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:monster_pot"
+			id: "5D4C350F0D0054BA"
+			rewards: [{
+				count: 24
+				id: "44A777DA6EE2A311"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "A pot big enough for the argument."
+			tasks: [{
+				advancement: "dungeonsdelight:main/place_monster_pot"
+				criterion: ""
+				id: "124AF43BE3D5C544"
+				type: "advancement"
+			}]
+			title: "Delicious in a Dungeon"
+			x: 2.5d
+			y: 2.4d
+		}
+		{
+			description: [
+				"Plant a rotbulbling, a disgusting plant that spells like death"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:rotbulb_crop"
+			id: "2CAD157D77DE6C54"
+			rewards: [{
+				count: 8
+				id: "29F1FB55ED78E33D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "It smells like the Persecution. It grows anyway."
+			tasks: [{
+				advancement: "dungeonsdelight:main/place_rotbulb_crop"
+				criterion: ""
+				id: "03606469700ABDE8"
+				type: "advancement"
+			}]
+			title: "Corpsebloom"
+			x: 2.5d
+			y: 3.5999999999999996d
+		}
+		{
+			description: [
+				"Throw a Cleaver to pierce and scavenge extra goods from foes"
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "dungeonsdelight:iron_cleaver"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0E8A9FA7B16731D7"
+			rewards: [{
+				count: 8
+				id: "2435978CAD3941C2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Thrown, not swung. Ask the thing you threw it at."
+			tasks: [{
+				advancement: "dungeonsdelight:main/use_cleaver"
+				criterion: ""
+				id: "7FA8CBA37E48EFEE"
+				type: "advancement"
+			}]
+			title: "Heaven Pierce Her"
+			x: 2.5d
+			y: 4.8d
+		}
+		{
+			description: [
+				"Obtain a Stained Knife or Stained Cleaver and grasp the life essence of foes to charge it."
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "dungeonsdelight:stained_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7DA9CDA867BB633A"
+			rewards: [{
+				count: 48
+				id: "41F93679B5797BBA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "The knife takes the life. The cook takes the rest."
+			tasks: [{
+				advancement: "dungeonsdelight:main/get_stained_weapon"
+				criterion: ""
+				id: "1F7FC36B6DF2F97F"
+				type: "advancement"
+			}]
+			title: "A Slice of Life"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Place down a dungeon stove which it's flame can heat a monster pot"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:dungeon_stove"
+			id: "5B45525905B5C3FB"
+			rewards: [{
+				count: 8
+				id: "5F29D5164FF7A8F2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A fire that does not care where it burns."
+			tasks: [{
+				advancement: "dungeonsdelight:main/place_dungeon_stove"
+				criterion: ""
+				id: "2CAF20D52B33978B"
+				type: "advancement"
+			}]
+			title: "Uncaged, Unbound"
+			x: 4.5d
+			y: 1.2d
+		}
+		{
+			dependencies: ["5D4C350F0D0054BA"]
+			description: [
+				"Combine monsters and ingredients together to create your first monster food"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:ghoulash"
+			id: "309C1193C2983639"
+			rewards: [{
+				count: 8
+				id: "35AE97DDDE76DFB4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The first bowl. Everyone remembers the first bowl."
+			tasks: [{
+				advancement: "dungeonsdelight:main/eat_monster_food"
+				criterion: ""
+				id: "755F145B368F4B9B"
+				type: "advancement"
+			}]
+			title: "Ah, Dungeon Food"
+			x: 4.5d
+			y: 2.4d
+		}
+		{
+			dependencies: ["5D4C350F0D0054BA"]
+			description: [
+				"Use an amethyst rock candy to imprison a Vex or Silverfish"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:candied_vex_sucker"
+			id: "6E368BEA52660F34"
+			rewards: [{
+				count: 24
+				id: "3634F9094B7BCD54"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "Sweet on the outside. Furious on the inside."
+			tasks: [{
+				advancement: "dungeonsdelight:main/get_candied_sucker"
+				criterion: ""
+				id: "1FE8243C3FC7343F"
+				type: "advancement"
+			}]
+			title: "Sweet Revenge!"
+			x: 4.5d
+			y: 3.5999999999999996d
+		}
+		{
+			description: [
+				"Rot foods will make your absorption hearts take additional damage but explode on entities that hit you, transforms the Absorption effect"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:taro_milk_tea"
+			id: "5B7692DDF22F680F"
+			rewards: [{
+				count: 8
+				id: "048A8E81EACACB24"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Rot gives. Rot takes. Read the terms."
+			tasks: [{
+				advancement: "dungeonsdelight:main/obtain_exudation"
+				criterion: ""
+				id: "743BB63959554AF0"
+				type: "advancement"
+			}]
+			title: "Evil Up"
+			x: 4.5d
+			y: 4.8d
+		}
+		{
+			description: [
+				"Shoot a Gunk Arrow at something"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:gunk_arrow"
+			id: "276981CFB6CC1953"
+			rewards: [{
+				count: 8
+				id: "0BCC063654BD7275"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Filth, at range."
+			tasks: [{
+				advancement: "dungeonsdelight:main/use_gunk_arrow"
+				criterion: ""
+				id: "7DF02018DD711EB1"
+				type: "advancement"
+			}]
+			title: "Air Pollution"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0E8A9FA7B16731D7"]
+			description: [
+				"Consume a bottle of Ghastly Spirits, a drink that can help you quickly escape your enemies!"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:ghastly_spirits"
+			id: "48DD14CA5744B58F"
+			rewards: [{
+				count: 8
+				id: "2E0CBBBCE7E5E0F3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The dead are light. So, briefly, are you."
+			tasks: [{
+				advancement: "dungeonsdelight:main/eat_ghastly_spirits"
+				criterion: ""
+				id: "7FB418D3033C43CB"
+				type: "advancement"
+			}]
+			title: "Fizzy Lifting Drink"
+			x: 4.5d
+			y: 7.199999999999999d
+		}
+		{
+			dependencies: ["0E8A9FA7B16731D7"]
+			description: [
+				"Consume a Sniffer food... you monster"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:sniffer_shank"
+			id: "65B7C5F2BFA257BE"
+			rewards: [{
+				count: 8
+				id: "5AB0A6911122C338"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "It was old before the gods were. You ate it."
+			tasks: [{
+				advancement: "dungeonsdelight:main/eat_sniffer_food"
+				criterion: ""
+				id: "79471DDE14404231"
+				type: "advancement"
+			}]
+			title: "Is It Worth It?"
+			x: 4.5d
+			y: 8.4d
+		}
+		{
+			dependencies: ["0E8A9FA7B16731D7"]
+			description: [
+				"Cut a chunk of sculk into a sculk polyp"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:sculk_polyp"
+			id: "033D79F1F5AE85C9"
+			rewards: [{
+				count: 8
+				id: "2403D26C7E3B206C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The deep dark, cut into portions."
+			tasks: [{
+				advancement: "dungeonsdelight:main/get_sculk_polyp"
+				criterion: ""
+				id: "30F78678CAA8209B"
+				type: "advancement"
+			}]
+			title: "Apple of the Earth"
+			x: 4.5d
+			y: 9.6d
+		}
+		{
+			dependencies: ["0E8A9FA7B16731D7"]
+			description: [
+				"Cut a slab of slime into gooey noodles"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:slime_noodles"
+			id: "0D6B34EC56D66C1A"
+			rewards: [{
+				count: 8
+				id: "38109F999B885CB1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "It jiggles. It is still dinner."
+			tasks: [{
+				advancement: "dungeonsdelight:main/get_slime_noodles"
+				criterion: ""
+				id: "747F94CCDA8D3C5E"
+				type: "advancement"
+			}]
+			title: "Creepy Pasta"
+			x: 4.5d
+			y: 10.799999999999999d
+		}
+		{
+			description: [
+				"Biteable foods will allow you to eat from it multiple times and refill it with specific items"
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "dungeonsdelight:cob_n_candy"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "14D0F79259BED86F"
+			rewards: [{
+				count: 8
+				id: "537C58E80F16FC6C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Eat some. Keep the rest. A survivor's habit."
+			tasks: [{
+				advancement: "dungeonsdelight:main/eat_biteable_food"
+				criterion: ""
+				id: "15651D4F4D58D9DB"
+				type: "advancement"
+			}]
+			title: "Chewy!"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Consume the disgusting concoction known as a bloody mary"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:bloody_mary"
+			id: "4CAB87CC20D23AA1"
+			rewards: [{
+				count: 8
+				id: "613DA9FF1D492B8C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Nobody ordered it twice."
+			tasks: [{
+				advancement: "dungeonsdelight:main/eat_bloody_mary"
+				criterion: ""
+				id: "48A03B2B9024B607"
+				type: "advancement"
+			}]
+			title: "Bloody Mary Challenge"
+			x: 6.5d
+			y: 1.2d
+		}
+		{
+			description: [
+				"Feed a Wormouth and let it expel you a reward"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:wormouth"
+			id: "18923DA8B202FB26"
+			rewards: [{
+				count: 8
+				id: "648CD5F6E68A19C1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "It grows. So does what it gives back."
+			tasks: [{
+				advancement: "dungeonsdelight:main/feed_wormouth"
+				criterion: ""
+				id: "218966293981ECBC"
+				type: "advancement"
+			}]
+			title: "FEED US WE WILL GROW"
+			x: 6.5d
+			y: 2.4d
+		}
+		{
+			description: [
+				"Spider foods will allow you to climb and slide down blocks, transforms the Leaping effect"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:spider_tanghulu"
+			id: "082C06621952BD29"
+			rewards: [{
+				count: 8
+				id: "6AE1CD430E6BCE16"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Eight legs' worth of confidence."
+			tasks: [{
+				advancement: "dungeonsdelight:main/obtain_pouncing"
+				criterion: ""
+				id: "5FEAB051F482BC7D"
+				type: "advancement"
+			}]
+			title: "Eye of The Spider"
+			x: 6.5d
+			y: 3.5999999999999996d
+		}
+		{
+			description: [
+				"Bowled monster foods naturally heal based on how hungry you are, transforms the Comfort effect"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:salt_soaked_stew"
+			id: "518E8FDA49968E41"
+			rewards: [{
+				count: 8
+				id: "590A9213096B2B6F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The bowl heals the hungry hardest."
+			tasks: [{
+				advancement: "dungeonsdelight:main/obtain_tenacity"
+				criterion: ""
+				id: "1A54FA9F102016BD"
+				type: "advancement"
+			}]
+			title: "Struggler"
+			x: 6.5d
+			y: 4.8d
+		}
+		{
+			description: [
+				"Stick held monster foods have a chance to land 1.75x critical hits, transforms the Strength effect"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:soaked_skewer"
+			id: "21E9BCD20BEE566F"
+			rewards: [{
+				count: 8
+				id: "19370E8064964FED"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Food on a stick, and a gambler's heart."
+			tasks: [{
+				advancement: "dungeonsdelight:main/obtain_decisive"
+				criterion: ""
+				id: "19EE735FB0529FFF"
+				type: "advancement"
+			}]
+			title: "Chance Roll"
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["033D79F1F5AE85C9"]
+			description: [
+				"Combine eggs into a pile of sculk and let it fester"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:embedded_eggs"
+			id: "19CCB90E3656DA81"
+			rewards: [{
+				count: 8
+				id: "043BCDA88CA0C5FA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Bury eggs in the dark. Do not wait a century."
+			tasks: [{
+				advancement: "dungeonsdelight:main/place_embedded_eggs"
+				criterion: ""
+				id: "315053CFFC3BC0D5"
+				type: "advancement"
+			}]
+			title: "Won’t Take a Century"
+			x: 6.5d
+			y: 7.199999999999999d
+		}
+		{
+			dependencies: ["0D6B34EC56D66C1A"]
+			description: [
+				"Obtain all monster knife drops"
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "dungeonsdelight:diamond_cleaver"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "77D8321E696F0555"
+			rewards: [{
+				count: 24
+				id: "6C8E0FBAAF9F9771"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "Every cut the Bestiary allows."
+			tasks: [{
+				advancement: "dungeonsdelight:main/all_knife_mob_drops"
+				criterion: ""
+				id: "28FCB792268C8177"
+				type: "advancement"
+			}]
+			title: "Gastrocryptozoologist"
+			x: 6.5d
+			y: 8.4d
+		}
+		{
+			dependencies: ["0D6B34EC56D66C1A"]
+			description: [
+				"Upgrade your cleaver using netherite and prepare to slice and dice like a master chef"
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "dungeonsdelight:netherite_cleaver"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6BB8EEF8A1C0ECD3"
+			rewards: [{
+				count: 48
+				id: "21CF0632C125BC2B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "The last cleaver you will need. Probably."
+			tasks: [{
+				advancement: "dungeonsdelight:main/get_netherite_cleaver"
+				criterion: ""
+				id: "1DBF56949A8A42CE"
+				type: "advancement"
+			}]
+			title: "Cutlery of Apostasy"
+			x: 6.5d
+			y: 9.6d
+		}
+		{
+			dependencies: ["0D6B34EC56D66C1A"]
+			description: [
+				"Slime foods have a chance to bounce back out of your stomach and not be consumed"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:gelled_salad"
+			id: "040F1ADBA19F7DEF"
+			rewards: [{
+				count: 8
+				id: "6078C79BD84267AD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sometimes dinner leaves."
+			tasks: [{
+				advancement: "dungeonsdelight:main/slime_food_not_consumed"
+				criterion: ""
+				id: "6566638E15BB0B47"
+				type: "advancement"
+			}]
+			title: "Choking Hazard"
+			x: 6.5d
+			y: 10.799999999999999d
+		}
+		{
+			description: [
+				"Shoot a Gunk Arrow at a Monster Yam and have it's own horde attack it"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:rotbulb_plant"
+			id: "1EB03050718D0930"
+			rewards: [{
+				count: 48
+				id: "7C035130AF30A6DD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Turn the horde on its own harvest."
+			tasks: [{
+				advancement: "dungeonsdelight:main/use_gunk_arrow_on_monster_yam"
+				criterion: ""
+				id: "3C2DE6BAC9E5FAF5"
+				type: "advancement"
+			}]
+			title: "Septic Tank"
+			x: 6.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["14D0F79259BED86F"]
+			description: [
+				"Fully consume a Bubblegunk, a sludge of rot that can decrease hunger"
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "dungeonsdelight:bubblegunk"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4F94551705B8910B"
+			rewards: [{
+				count: 8
+				id: "0110DB7B451D8D13"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Chew until there is nothing left to chew."
+			tasks: [{
+				advancement: "dungeonsdelight:main/break_bubblegunk"
+				criterion: ""
+				id: "0AA9510D47ADEF0C"
+				type: "advancement"
+			}]
+			title: "...And I'm All Out of Gum"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Silverfish foods will allow you to consume blocks by destroying them but only can eat monster foods, transforms the Haste effect"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:silverfish_fried_rice"
+			id: "6BD17D5ABC01FF81"
+			rewards: [{
+				count: 8
+				id: "7559BF7A0C38FE14"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Eat the wall. The Seeped did."
+			tasks: [{
+				advancement: "dungeonsdelight:main/obtain_burrow_gut"
+				criterion: ""
+				id: "05FE462E657C5CE9"
+				type: "advancement"
+			}]
+			title: "Eater of Worlds"
+			x: 8.5d
+			y: 1.2d
+		}
+		{
+			description: [
+				"Plated monster foods will allow you to eat monsters alive but only can eat monster foods, transforms the Nourishment effect"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:guardian_angel"
+			id: "4A24AE79C2E4B873"
+			rewards: [{
+				count: 8
+				id: "1A46D30802AE6F6B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Plated, and still moving."
+			tasks: [{
+				advancement: "dungeonsdelight:main/obtain_voracity"
+				criterion: ""
+				id: "2F10DA3D3D61E193"
+				type: "advancement"
+			}]
+			title: "Don't Starve"
+			x: 8.5d
+			y: 2.4d
+		}
+		{
+			dependencies: ["19CCB90E3656DA81"]
+			description: [
+				"Sculk foods grant a varying amount of experience based on the amount of sculk ingredients"
+				"Pops the moment the advancement does."
+			]
+			icon: "dungeonsdelight:cleaved_ancient_egg"
+			id: "0C71CAEE9CBFC69A"
+			rewards: [{
+				count: 8
+				id: "7C62D78514068A7C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The dark pays in experience. It always did."
+			tasks: [{
+				advancement: "dungeonsdelight:main/eat_sculk_food"
+				criterion: ""
+				id: "643CE038FC134686"
+				type: "advancement"
+			}]
+			title: "Paint the Town Blue"
+			x: 8.5d
+			y: 3.5999999999999996d
+		}
+		{
+			description: [
+				"Consume an entire horse alive using the voracity effect"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:saddle"
+			id: "61ADADA0FC1E96F6"
+			rewards: [{
+				count: 48
+				id: "111AA1F90488963F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Nobody in the Accord will ever speak of this."
+			tasks: [{
+				advancement: "dungeonsdelight:main/eat_horse"
+				criterion: ""
+				id: "328071CAFF6D0536"
+				type: "advancement"
+			}]
+			title: "How Hungry...?"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F69B9780F833469"]
+			description: [
+				"The Sirben altars of the diaspora were kept with lavender and tea, because those were the two things a hunted faith could grow in a window."
+				"Nothing here works until the Steeping Kettle scroll is researched."
+			]
+			icon: "herbalbrews:copper_tea_kettle"
+			id: "0C93966B194633B5"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Boil water. Wait. That is most of it."
+			tasks: [{
+				id: "6A4269A957ADEBCF"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Steeping Kettle"
+			x: 0.0d
+			y: 17.599999999999998d
+		}
+		{
+			description: [
+				"Find Tea Blossoms by carefully breaking flowers with shears."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:tea_blossom"
+			id: "31AC755DD0A39AB8"
+			rewards: [{
+				count: 8
+				id: "4B3470E900708727"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Shear the flower gently. It is the only way it gives."
+			tasks: [{
+				advancement: "herbalbrews:main/find_tea_blossom"
+				criterion: ""
+				id: "5C076A28E90FB61F"
+				type: "advancement"
+			}]
+			title: "Blossoming Discoveries"
+			x: 2.5d
+			y: 15.2d
+		}
+		{
+			description: [
+				"Begin your journey as a master brewer by crafting a magical Brewing Cauldron."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:cauldron"
+			id: "2A576449D89A6DDA"
+			rewards: [{
+				count: 8
+				id: "5658AF44A9C22A9A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A cauldron that has never seen a war."
+			tasks: [{
+				advancement: "herbalbrews:main/place_cauldron"
+				criterion: ""
+				id: "6A352D8C039DBEC3"
+				type: "advancement"
+			}]
+			title: "A Sip of Serenity"
+			x: 2.5d
+			y: 16.4d
+		}
+		{
+			description: [
+				"Prepare the perfect heat for your brewing adventures with a Stove."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:stove"
+			id: "065AB63B1B5FE051"
+			rewards: [{
+				count: 8
+				id: "590BD9F555A09BAC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Low heat. Patience is the ingredient."
+			tasks: [{
+				advancement: "herbalbrews:main/place_stove"
+				criterion: ""
+				id: "1CFF153BA1DD279F"
+				type: "advancement"
+			}]
+			title: "A Warm Start"
+			x: 2.5d
+			y: 17.599999999999998d
+		}
+		{
+			description: [
+				"Seek out the soothing scent of lavender in the cool embrace of the mountains."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:lavender"
+			id: "4EBA0F08C7087E12"
+			rewards: [{
+				count: 8
+				id: "6EE7D49A9C6587F0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "High, cold, and purple. The mountain keeps it."
+			tasks: [{
+				advancement: "herbalbrews:main/find_lavender"
+				criterion: ""
+				id: "3A8BA3988AA48EFE"
+				type: "advancement"
+			}]
+			title: "Lavender Discovery"
+			x: 4.5d
+			y: 15.2d
+		}
+		{
+			description: [
+				"Discover the secrets of green tea by drying leaves under the sun."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:green_tea_leaf_block"
+			id: "407E7F5BCBB0A5C6"
+			rewards: [{
+				count: 8
+				id: "232462C431C1157A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Sun does the work. You do the waiting."
+			tasks: [{
+				advancement: "herbalbrews:main/let_it_dry"
+				criterion: ""
+				id: "6418C829159EB24E"
+				type: "advancement"
+			}]
+			title: "The Art of Drying"
+			x: 4.5d
+			y: 16.4d
+		}
+		{
+			description: [
+				"Unleash the essence of herbs in your first brewed Flask."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:flask"
+			id: "35A10959B18E790D"
+			rewards: [{
+				count: 8
+				id: "08132F70F736898B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A flask is a promise you can carry."
+			tasks: [{
+				advancement: "herbalbrews:main/get_a_flask"
+				criterion: ""
+				id: "7032340C42600F84"
+				type: "advancement"
+			}]
+			title: "Potion Perfected"
+			x: 4.5d
+			y: 17.599999999999998d
+		}
+		{
+			description: [
+				"Channel your inner witch by finding or crafting a Witch Hat."
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "herbalbrews:witch_hat"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7ECA84DF8CFCFBF3"
+			rewards: [{
+				count: 8
+				id: "383028A2A9E7FDAA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The hat is not a joke. It is a licence."
+			tasks: [{
+				advancement: "herbalbrews:main/witching_time"
+				criterion: ""
+				id: "7CA075B6622D114D"
+				type: "advancement"
+			}]
+			title: "Witching Time"
+			x: 4.5d
+			y: 18.799999999999997d
+		}
+		{
+			description: [
+				"Set the stage for the perfect brew with a Tea Kettle."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:copper_tea_kettle"
+			id: "368608AC8D4E4752"
+			rewards: [{
+				count: 8
+				id: "44D78C4B963E11F2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Copper, because copper listens."
+			tasks: [{
+				advancement: "herbalbrews:main/place_tea_kettle"
+				criterion: ""
+				id: "6E5448CF71EC8512"
+				type: "advancement"
+			}]
+			title: "Tea Time"
+			x: 4.5d
+			y: 20.0d
+		}
+		{
+			description: [
+				"Dark and bold. Experience the next level of tea craftsmanship."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:black_tea_leaf_block"
+			id: "079F8AE02833954F"
+			rewards: [{
+				count: 8
+				id: "59AF19AFF4735F2C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Darker, stronger, longer in the sun."
+			tasks: [{
+				advancement: "herbalbrews:main/let_it_dry_2"
+				criterion: ""
+				id: "5E36A91453A9CAF2"
+				type: "advancement"
+			}]
+			title: "A Black Tea Affair"
+			x: 6.5d
+			y: 15.2d
+		}
+		{
+			description: [
+				"Savor the joy of brewing by crafting every tea and coffee blend. Become the ultimate brewer!"
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:herbalbrews_banner"
+			id: "67CAE8AD8CEF60EB"
+			rewards: [{
+				count: 48
+				id: "275A1F73D3392D90"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Every blend the altars ever knew."
+			tasks: [{
+				advancement: "herbalbrews:main/craft_everything"
+				criterion: ""
+				id: "286E93ED270C15CB"
+				type: "advancement"
+			}]
+			title: "A Hug in a Cup"
+			x: 6.5d
+			y: 16.4d
+		}
+		{
+			description: [
+				"Enjoy a warm cup of freshly brewed coffee."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:coffee"
+			id: "4476A77E56CCB841"
+			rewards: [{
+				count: 24
+				id: "049EBE23BF8A704E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "The Long Pour depot's second export."
+			tasks: [{
+				advancement: "herbalbrews:main/drink_coffee"
+				criterion: ""
+				id: "2F25961C048CEA71"
+				type: "advancement"
+			}]
+			title: "Espresso Yourself"
+			x: 6.5d
+			y: 17.599999999999998d
+		}
+		{
+			description: [
+				"Craft a Jug and start filling it with your finest brews."
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "herbalbrews:jug"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6E0797095D66A9C6"
+			rewards: [{
+				count: 8
+				id: "5E73472D4B8EB0CB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Brew for the table, not the cup."
+			tasks: [{
+				advancement: "herbalbrews:main/place_jug"
+				criterion: ""
+				id: "13F34A0123BD24FD"
+				type: "advancement"
+			}]
+			title: "Pour Decisions"
+			x: 6.5d
+			y: 18.799999999999997d
+		}
+		{
+			description: [
+				"Combine a cup of coffee with a milk bucket to brew the perfect drink."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:milk_coffee"
+			id: "7217EFC627413CA5"
+			rewards: [{
+				count: 24
+				id: "0653EBF95F671C18"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "Softer. The Hearthhold way."
+			tasks: [{
+				advancement: "herbalbrews:main/drink_milk_coffee"
+				criterion: ""
+				id: "4DF53FD051516202"
+				type: "advancement"
+			}]
+			title: "Mocha Moment"
+			x: 8.5d
+			y: 15.2d
+		}
+		{
+			dependencies: ["079F8AE02833954F"]
+			description: [
+				"When opposites meet: a harmonious blend of green and black tea."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:mixed_tea_leaf_block"
+			id: "4161B5A6DFA348DA"
+			rewards: [{
+				count: 8
+				id: "2723FBB2CA81B49F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Green and black, in the same leaf."
+			tasks: [{
+				advancement: "herbalbrews:main/let_it_dry_3"
+				criterion: ""
+				id: "7F6556478E1FF8EB"
+				type: "advancement"
+			}]
+			title: "Blended Perfection"
+			x: 8.5d
+			y: 16.4d
+		}
+		{
+			dependencies: ["6E0797095D66A9C6"]
+			description: [
+				"Experience the potent effects of all brews at once."
+				"Pops the moment the advancement does."
+			]
+			icon: "herbalbrews:flask"
+			id: "657B39276668FDF8"
+			rewards: [{
+				count: 48
+				id: "383DE940FF0C9CF8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Every brew at once. Sit down first."
+			tasks: [{
+				advancement: "herbalbrews:main/all_effects"
+				criterion: ""
+				id: "4BF9CD713B08F570"
+				type: "advancement"
+			}]
+			title: "A Sip of Infinity"
+			x: 8.5d
+			y: 17.599999999999998d
+		}
+		{
+			dependencies: ["0EE2DC348C521B51"]
+			description: [
+				"Experience is a fluid to them. It always was. This is the machinery that proves it, and the reason the Ancient Factory has three failed minds in its basement."
+				"Nothing here works until Kinetic Engineering is researched."
+			]
+			icon: "create_enchantment_industry:disenchanter"
+			id: "5CDCD4AD80580A51"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The Forgesworn bottled it because they bottled everything."
+			tasks: [{
+				id: "6774D083C3E14F43"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "Bottled Experience"
+			x: 0.0d
+			y: 24.4d
+		}
+		{
+			dependencies: ["5CDCD4AD80580A51"]
+			description: [
+				"Get some Nuggets of Experience from crushing ores or killing mobs using deployer"
+				"Pops the moment the advancement does."
+			]
+			icon: "create:experience_nugget"
+			id: "5E0F5C8361FB528C"
+			rewards: [{
+				count: 8
+				id: "77BBE2B2486430DD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The Forgesworn counted experience in nuggets."
+			tasks: [{
+				advancement: "create_enchantment_industry:experienced_engineer"
+				criterion: ""
+				id: "088D121FEC09682E"
+				type: "advancement"
+			}]
+			title: "Experienced Engineer"
+			x: 2.5d
+			y: 23.2d
+		}
+		{
+			dependencies: ["5E0F5C8361FB528C"]
+			description: [
+				"Get a bucket of Ink for your publishing business"
+				"Pops the moment the advancement does."
+			]
+			icon: "create_enchantment_industry:ink_bucket"
+			id: "3B99EAFB37E35734"
+			rewards: [{
+				count: 8
+				id: "6E09CCAABEE739ED"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A bucket of ink is a bucket of arguments."
+			tasks: [{
+				advancement: "create_enchantment_industry:black_as_ink"
+				criterion: ""
+				id: "74AED80BB9C6565B"
+				type: "advancement"
+			}]
+			title: "Black as Ink!"
+			x: 4.5d
+			y: 23.2d
+		}
+		{
+			dependencies: ["5E0F5C8361FB528C"]
+			description: [
+				"Give your Blaze Burner a Enchanting Guide and turn it into a Blaze Enchanter"
+				"Pops the moment the advancement does."
+			]
+			icon: "create_enchantment_industry:enchanting_guide"
+			id: "5E26E33528477666"
+			rewards: [{
+				count: 8
+				id: "4552F48A28001328"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Teach the fire to read."
+			tasks: [{
+				advancement: "create_enchantment_industry:blazes_new_job"
+				criterion: ""
+				id: "3B7305B28289EA50"
+				type: "advancement"
+			}]
+			title: "Blaze's New Job"
+			x: 4.5d
+			y: 24.4d
+		}
+		{
+			dependencies: ["5E0F5C8361FB528C"]
+			description: [
+				"Get some Liquid Experience for your enchanting experiment!"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:experience_bottle"
+			id: "43CEFB180CEEACE8"
+			rewards: [{
+				count: 8
+				id: "6654B680AD6C0306"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Experience, poured."
+			tasks: [{
+				advancement: "create_enchantment_industry:experimental"
+				criterion: ""
+				id: "6D7A3FB685E7501A"
+				type: "advancement"
+			}]
+			title: "Experimental"
+			x: 4.5d
+			y: 25.599999999999998d
+		}
+		{
+			dependencies: ["3B99EAFB37E35734"]
+			description: [
+				"Copy a Written Book using Printer"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:written_book"
+			id: "108C32791775A547"
+			rewards: [{
+				count: 8
+				id: "130D0E7C358A683A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The Archive would have killed for this."
+			tasks: [{
+				advancement: "create_enchantment_industry:copiable_masterpiece"
+				criterion: ""
+				id: "329DF28D9839E181"
+				type: "advancement"
+			}]
+			title: "Copiable Masterpiece"
+			x: 6.5d
+			y: 23.2d
+		}
+		{
+			description: [
+				"Watch an enchanted item be disenchanted by a Disenchanter"
+				"Pops the moment the advancement does."
+			]
+			icon: "create_enchantment_industry:disenchanter"
+			id: "4430544265E6FCF2"
+			rewards: [{
+				count: 8
+				id: "2012A908AAFDFB92"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Strip the enchantment. Keep the lesson."
+			tasks: [{
+				advancement: "create_enchantment_industry:gone_with_the_foil"
+				criterion: ""
+				id: "33579AA1771F0FC3"
+				type: "advancement"
+			}]
+			title: "Gone with the Foil"
+			x: 6.5d
+			y: 24.4d
+		}
+		{
+			description: [
+				"Copy a Enchanted Book using Printer"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:enchanted_book"
+			id: "4470DD06ED738C0B"
+			rewards: [{
+				count: 8
+				id: "7FAC6ED651D381C3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A spell, copied. The Cipher would object."
+			tasks: [{
+				advancement: "create_enchantment_industry:copiable_mystery"
+				criterion: ""
+				id: "7223263C4FC8A4AD"
+				type: "advancement"
+			}]
+			title: "Copiable Mystery"
+			x: 8.5d
+			y: 23.2d
+		}
+		{
+			description: [
+				"Using the printer to name items"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:name_tag"
+			id: "0E104AC539924B03"
+			rewards: [{
+				count: 8
+				id: "774B6BB1FADAAC60"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Name it. Now it is yours."
+			tasks: [{
+				advancement: "create_enchantment_industry:emerging_brand"
+				criterion: ""
+				id: "616E28C9118305D9"
+				type: "advancement"
+			}]
+			title: "Emerging Brand"
+			x: 8.5d
+			y: 24.4d
+		}
+		{
+			description: [
+				"Get your experience absorbed by a Disenchanter"
+				"Pops the moment the advancement does."
+			]
+			icon: "create:mechanical_pump"
+			id: "706ABF155C3019AB"
+			rewards: [{
+				count: 8
+				id: "6D3BD861102F81E3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The machine drinks what you learned."
+			tasks: [{
+				advancement: "create_enchantment_industry:spirit_taking"
+				criterion: ""
+				id: "5C1A0241F0DC4ADE"
+				type: "advancement"
+			}]
+			title: "Spirit Taking"
+			x: 8.5d
+			y: 25.599999999999998d
+		}
+		{
+			dependencies: ["4470DD06ED738C0B"]
+			description: [
+				"Make brand new copy from a tattered book"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:writable_book"
+			id: "0A4C5B1C752AA69F"
+			rewards: [{
+				count: 24
+				id: "741DE6520F7139CB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "A tattered book, made whole. The Archive notices."
+			tasks: [{
+				advancement: "create_enchantment_industry:relic_restoration"
+				criterion: ""
+				id: "238B53C848E7482A"
+				type: "advancement"
+			}]
+			title: "Relic Restoration"
+			x: 10.5d
+			y: 23.2d
+		}
+		{
+			description: [
+				"Break a Fluid Pipe and bathe in the leaked experience"
+				"Pops the moment the advancement does."
+			]
+			icon: "create:fluid_pipe"
+			id: "74EC653A06700B32"
+			rewards: [{
+				count: 24
+				id: "5374D213CAF9D9BD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "Every engineer does this once."
+			tasks: [{
+				advancement: "create_enchantment_industry:a_shower_experience"
+				criterion: ""
+				id: "3253302CAC241429"
+				type: "advancement"
+			}]
+			title: "A Shower \"Experience\""
+			x: 10.5d
+			y: 24.4d
+		}
+		{
+			dependencies: ["74EC653A06700B32"]
+			description: [
+				"Recycle 1,000,000 mB of experience from Disenchanter"
+				"Pops the moment the advancement does."
+			]
+			icon: "create:copper_valve_handle"
+			id: "794DADF7AB5AE8CD"
+			rewards: [{
+				count: 48
+				id: "4A93E07072C5DA19"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "A million millibuckets. Optimisation-collapse, in miniature."
+			tasks: [{
+				advancement: "create_enchantment_industry:experienced_recycler"
+				criterion: ""
+				id: "5D68B31C62E8ADF0"
+				type: "advancement"
+			}]
+			title: "Experienced Recycler"
+			x: 12.5d
+			y: 23.2d
+		}
+		{
+			dependencies: ["0A4C5B1C752AA69F"]
+			description: [
+				"Copy 1000 books using Printer"
+				"Pops the moment the advancement does."
+			]
+			icon: "create_enchantment_industry:printer"
+			id: "6608F365E0B95E92"
+			rewards: [{
+				count: 48
+				id: "4B427A4C1266DD66"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "A thousand books. Somebody scattered the last thousand."
+			tasks: [{
+				advancement: "create_enchantment_industry:great_publisher"
+				criterion: ""
+				id: "17E5C6015C08BE9B"
+				type: "advancement"
+			}]
+			title: "Great Publisher"
+			x: 12.5d
+			y: 24.4d
+		}
+		{
+			dependencies: ["2A03B23AD2F2F9CE"]
+			description: [
+				"Year Six of the Accord. A good stone-fruit year and a poor grape year, and the Long Pour absorbed the difference. This is the vintner's road, from a seed found in the wild to a barrel that knows your name."
+				"Nothing here works until the Brewers' Cellar scroll is researched."
+			]
+			icon: "vinery:red_wine"
+			id: "019F085F3B6A6987"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A settlement named after what it grew."
+			tasks: [{
+				id: "7B67C4B38935D92E"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Vines"
+			x: 0.0d
+			y: 31.799999999999997d
+		}
+		{
+			description: [
+				"Apple and Cherry Trees now grow in Plains Biomes."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:apple_tree_sapling"
+			id: "476271D086315601"
+			rewards: [{
+				count: 8
+				id: "68E8BF248898C421"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Apple and cherry, where the plains are kind."
+			tasks: [{
+				advancement: "vinery:main/fruits_of_the_field"
+				criterion: ""
+				id: "08AB0693E9C1C465"
+				type: "advancement"
+			}]
+			title: "Fruits of the Field"
+			x: 2.5d
+			y: 28.799999999999997d
+		}
+		{
+			description: [
+				"Place a Grapevine Pot."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:grapevine_pot"
+			id: "3517921C05441377"
+			rewards: [{
+				count: 24
+				id: "597FED433214B755"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "A pot for the vine to climb."
+			tasks: [{
+				advancement: "vinery:main/juice_it_up"
+				criterion: ""
+				id: "732FA41F943A3D44"
+				type: "advancement"
+			}]
+			title: "Juice It Up!"
+			x: 2.5d
+			y: 29.999999999999996d
+		}
+		{
+			description: [
+				"Find and collect any Grape Seed."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:jungle_grape_seeds_red"
+			id: "070B68E075ED3421"
+			rewards: [{
+				count: 8
+				id: "181FA37510D62A44"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The first seed is never planted. It is found."
+			tasks: [{
+				advancement: "vinery:main/wild_harvest"
+				criterion: ""
+				id: "65F2BC9E2DACE0D7"
+				type: "advancement"
+			}]
+			title: "Wild Harvest"
+			x: 2.5d
+			y: 31.199999999999996d
+		}
+		{
+			description: [
+				"Harvest your first Cherry."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:cherry"
+			id: "68DCD2EB515A5B5F"
+			rewards: [{
+				count: 8
+				id: "16D4437E69D48B41"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A good stone-fruit year."
+			tasks: [{
+				advancement: "vinery:main/cherry_picker"
+				criterion: ""
+				id: "5619C8DD3CB0F45D"
+				type: "advancement"
+			}]
+			title: "Cherry Picker"
+			x: 4.5d
+			y: 28.799999999999997d
+		}
+		{
+			description: [
+				"Harvest an Apple."
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:apple"
+			id: "7935483F2041119A"
+			rewards: [{
+				count: 8
+				id: "39441A9C6272E250"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "An apple. The oldest argument."
+			tasks: [{
+				advancement: "vinery:main/forbidden_fruit"
+				criterion: ""
+				id: "25EC4B0C0978FBA2"
+				type: "advancement"
+			}]
+			title: "Forbidden Fruit"
+			x: 4.5d
+			y: 29.999999999999996d
+		}
+		{
+			description: [
+				"Obtain any Grape Juice variant."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:red_taiga_grapejuice"
+			id: "34FD2E08CA2B40EF"
+			rewards: [{
+				count: 8
+				id: "78083956D28FC614"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Before wine, there is this."
+			tasks: [{
+				advancement: "vinery:main/juicy_success"
+				criterion: ""
+				id: "36082FB98747A355"
+				type: "advancement"
+			}]
+			title: "Juicy Success"
+			x: 4.5d
+			y: 31.199999999999996d
+		}
+		{
+			description: [
+				"Grow Jungle Seeds on a Oak Lattice.."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:oak_lattice"
+			id: "4AC9DE5C381A6CEA"
+			rewards: [{
+				count: 8
+				id: "6FC0EC64169E9B94"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Give the jungle something to hold."
+			tasks: [{
+				advancement: "vinery:main/overgrown_lattices"
+				criterion: ""
+				id: "13724E07B384A8B4"
+				type: "advancement"
+			}]
+			title: "Overgrown Lattices"
+			x: 4.5d
+			y: 32.4d
+		}
+		{
+			description: [
+				"Boost your grape yield by planting seeds on Grapevine Stems."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:grapevine_stem"
+			id: "03F0299205E7E8C4"
+			rewards: [{
+				count: 8
+				id: "419DC7377F215F33"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Stems double the yield. The Vines knew."
+			tasks: [{
+				advancement: "vinery:main/sowing_the_future"
+				criterion: ""
+				id: "15C5243A1A198135"
+				type: "advancement"
+			}]
+			title: "Sowing the Future"
+			x: 4.5d
+			y: 33.599999999999994d
+		}
+		{
+			description: [
+				"Collect all Grape variants."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:savanna_grapes_white"
+			id: "1F40D47F2438B637"
+			rewards: [{
+				count: 48
+				id: "3BD26C6AE46F81C6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Every grape the world grows."
+			tasks: [{
+				advancement: "vinery:main/vineyard_visionary"
+				criterion: ""
+				id: "333BAEB1A22FCCE4"
+				type: "advancement"
+			}]
+			title: "Vineyard Visionary"
+			x: 4.5d
+			y: 34.8d
+		}
+		{
+			description: [
+				"Place an Apple Press."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:apple_press"
+			id: "1764AD8C1E08E5DD"
+			rewards: [{
+				count: 24
+				id: "3E68ECC353DE2D6E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.15d
+			subtitle: "The press is where patience starts."
+			tasks: [{
+				advancement: "vinery:main/the_first_press"
+				criterion: ""
+				id: "58C61B7F86DE8593"
+				type: "advancement"
+			}]
+			title: "The First Press"
+			x: 6.5d
+			y: 28.799999999999997d
+		}
+		{
+			description: [
+				"Collect all Grapejuice variants."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:white_taiga_grapejuice"
+			id: "4382C650C665977B"
+			rewards: [{
+				count: 48
+				id: "63B8E0A5BB26CE17"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Every juice. None of it fermented yet."
+			tasks: [{
+				advancement: "vinery:main/nectar_of_life"
+				criterion: ""
+				id: "7E7AEF4E8A0E382D"
+				type: "advancement"
+			}]
+			title: "Nectar of Life"
+			x: 6.5d
+			y: 29.999999999999996d
+		}
+		{
+			description: [
+				"Place an Fermentation Barrel."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:fermentation_barrel"
+			id: "64225A0F0E36266E"
+			rewards: [{
+				count: 8
+				id: "543413E70961526D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A barrel is time, with a lid."
+			tasks: [{
+				advancement: "vinery:main/the_magic_of_the_barrel"
+				criterion: ""
+				id: "207C2ECA5EA837FB"
+				type: "advancement"
+			}]
+			title: "The Magic of the Barrel"
+			x: 6.5d
+			y: 31.199999999999996d
+		}
+		{
+			dependencies: ["4AC9DE5C381A6CEA"]
+			description: [
+				"Harvest Red and White Jungle Grapes."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:jungle_grapes_red"
+			id: "704D770946D07DAB"
+			rewards: [{
+				count: 48
+				id: "698E00890248692A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Red and white, from the hot country."
+			tasks: [{
+				advancement: "vinery:main/budding_grapes"
+				criterion: ""
+				id: "2810C67C346013F1"
+				type: "advancement"
+			}]
+			title: "Budding Grapes"
+			x: 6.5d
+			y: 32.4d
+		}
+		{
+			description: [
+				"Harvest Red, White, Taiga, and Savanna Grape variants."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:taiga_grapes_red"
+			id: "755E63C643001726"
+			rewards: [{
+				count: 48
+				id: "04C12DD7ACD55255"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Four climates in one basket."
+			tasks: [{
+				advancement: "vinery:main/grape_picker"
+				criterion: ""
+				id: "7CECBD4581681877"
+				type: "advancement"
+			}]
+			title: "Grape Picker"
+			x: 6.5d
+			y: 33.599999999999994d
+		}
+		{
+			dependencies: ["1764AD8C1E08E5DD"]
+			description: [
+				"Produce Apple Mash by processing Apples in an Apple Press."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:apple_mash"
+			id: "756156AB2BEF3B51"
+			rewards: [{
+				count: 8
+				id: "09405DC1B817A51D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Apples, ruined on purpose."
+			tasks: [{
+				advancement: "vinery:main/mashy_success"
+				criterion: ""
+				id: "4110CC2E9AFE2E51"
+				type: "advancement"
+			}]
+			title: "Mashy Success"
+			x: 8.5d
+			y: 28.799999999999997d
+		}
+		{
+			dependencies: ["1764AD8C1E08E5DD"]
+			description: [
+				"Collect Apple Juice."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:apple_juice"
+			id: "7B6071E18C3197B0"
+			rewards: [{
+				count: 8
+				id: "68EE9CCCD2F25FBE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cider's honest cousin."
+			tasks: [{
+				advancement: "vinery:main/purely_apple"
+				criterion: ""
+				id: "782C7FA6DC4E2016"
+				type: "advancement"
+			}]
+			title: "Purely Apple"
+			x: 8.5d
+			y: 29.999999999999996d
+		}
+		{
+			dependencies: ["64225A0F0E36266E"]
+			description: [
+				"Harvest any Wine."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:red_wine"
+			id: "18454AEC47622487"
+			rewards: [{
+				count: 8
+				id: "085C27A97C7C8041"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The first bottle. Do not drink it alone."
+			tasks: [{
+				advancement: "vinery:main/the_noble_drop"
+				criterion: ""
+				id: "19BA9859F9FBE7D0"
+				type: "advancement"
+			}]
+			title: "The Noble Drop"
+			x: 8.5d
+			y: 31.199999999999996d
+		}
+		{
+			dependencies: ["18454AEC47622487"]
+			description: [
+				"Collect all Wine variants."
+				"Pops the moment the advancement does."
+			]
+			icon: "vinery:jellie_wine"
+			id: "2C235D96CDACF2C7"
+			rewards: [{
+				count: 48
+				id: "396FD85615BED03F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Every wine the Vines ever poured."
+			tasks: [{
+				advancement: "vinery:main/wine_somelier"
+				criterion: ""
+				id: "5D6B8BC71FC1A61E"
+				type: "advancement"
+			}]
+			title: "Wine Sommelier"
+			x: 10.5d
+			y: 28.799999999999997d
+		}
+		{
+			dependencies: ["3BEEB7A6A5DC8AC7"]
+			description: [
+				"The Accord was signed by seven cities and kept by families. This is the road from a stranger at a village gate to a name that outlives you."
+				"Nothing here works until the Companions' Charter is researched."
+			]
+			icon: "minecraft:cake"
+			id: "17424138CE42AB3C"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A kitchen with eight chairs, never fewer."
+			tasks: [{
+				id: "3F727BB5477CD16E"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Seven Houses"
+			x: 0.0d
+			y: 41.6d
+		}
+		{
+			description: [
+				"Kill a villager with the scythe"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "6B102C218B1D2673"
+			rewards: [{
+				count: 8
+				id: "5977119C50D25507"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The reaper's tool. It does what it says."
+			tasks: [{
+				advancement: "mca:adventure/scythe_kill"
+				criterion: ""
+				id: "2397AA5E48F38907"
+				type: "advancement"
+			}]
+			title: "Become the Grim Reaper"
+			x: 2.5d
+			y: 38.0d
+		}
+		{
+			description: [
+				"Use the staff of life to revive a fallen comrade"
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "mca:staff_of_life"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7056669164290717"
+			rewards: [{
+				count: 48
+				id: "5EA202A53181D00C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "One comrade, back. The Timeless Prison was built for less."
+			tasks: [{
+				advancement: "mca:adventure/staff_of_life"
+				criterion: ""
+				id: "3D1515B89278D8E8"
+				type: "advancement"
+			}]
+			title: "Staff of Life"
+			x: 2.5d
+			y: 39.2d
+		}
+		{
+			description: [
+				"Enter a village. Your new social journey awaits!"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:cake"
+			id: "4A8CD54E6701A36B"
+			rewards: [{
+				count: 8
+				id: "1F23342A9284C836"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A stranger at the gate."
+			tasks: [{
+				advancement: "mca:root"
+				criterion: ""
+				id: "01918DA7A27EE82D"
+				type: "advancement"
+			}]
+			title: "Minecraft Comes Alive"
+			x: 2.5d
+			y: 40.4d
+		}
+		{
+			description: [
+				"Use a charged scythe to revive a villager"
+				"Pops the moment the advancement does."
+			]
+			icon: "mca:upright_headstone"
+			id: "0DCB04CF13EB476D"
+			rewards: [{
+				count: 48
+				id: "1BC3D3F42B242214"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "A soul for a soul. The oldest trade there is."
+			tasks: [{
+				advancement: "mca:adventure/scythe_revive"
+				criterion: ""
+				id: "238F8F30188B1C40"
+				type: "advancement"
+			}]
+			title: "A Soul for a Soul"
+			x: 4.5d
+			y: 38.0d
+		}
+		{
+			dependencies: ["4A8CD54E6701A36B"]
+			description: [
+				"Explore the lore of the Sirbens and disturb the slumber of the ancient cultists."
+				"Pops the moment the advancement does."
+			]
+			icon: "mca:book_cult_ancient"
+			id: "2D2F8BED2A0C527C"
+			rewards: [{
+				count: 48
+				id: "0B173C242174247E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "The Sirbens, disturbed. Read what they wrote before you dig."
+			tasks: [{
+				advancement: "mca:ancient_cultists"
+				criterion: ""
+				id: "7B039F608B93C05E"
+				type: "advancement"
+			}]
+			title: "Ancient Cultists"
+			x: 4.5d
+			y: 39.2d
+		}
+		{
+			dependencies: ["4A8CD54E6701A36B"]
+			description: [
+				"Have your first baby"
+				"Pops the moment the advancement does."
+			]
+			icon: "mca:baby_boy"
+			id: "098B8DE62F619CB7"
+			rewards: [{
+				count: 8
+				id: "3247FA343CD1C45A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The eighth generation begins."
+			tasks: [{
+				advancement: "mca:baby"
+				criterion: ""
+				id: "5F8F9835C538ED38"
+				type: "advancement"
+			}]
+			title: "Next Generation"
+			x: 4.5d
+			y: 40.4d
+		}
+		{
+			dependencies: ["4A8CD54E6701A36B"]
+			description: [
+				"Abort a baby by unconventional means."
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:furnace"
+			id: "5E4920E01A205A0E"
+			rewards: [{
+				count: 8
+				id: "30E7471F18F2CDAB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "There is no line for this in the Chronicle. Deliberately."
+			tasks: [{
+				advancement: "mca:baby_smelted"
+				criterion: ""
+				id: "21F3BFEFE9AB5A30"
+				type: "advancement"
+			}]
+			title: "You are a horrible person!"
+			x: 4.5d
+			y: 41.6d
+		}
+		{
+			dependencies: ["4A8CD54E6701A36B"]
+			description: [
+				"Achieve 50 hearts"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:emerald"
+			id: "48053EC0B3A7CFD2"
+			rewards: [{
+				count: 8
+				id: "433729766EF94F90"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Fifty hearts. They know your name now."
+			tasks: [{
+				advancement: "mca:friend"
+				criterion: ""
+				id: "6D3EB2B1502EB54F"
+				type: "advancement"
+			}]
+			title: "Friendship Found"
+			x: 4.5d
+			y: 42.8d
+		}
+		{
+			dependencies: ["098B8DE62F619CB7"]
+			description: [
+				"Let your children do the work."
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "64AC5A9B7B606195"
+			rewards: [{
+				count: 8
+				id: "1AAF565AF3DDD230"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The children do the work. Fenn would approve."
+			tasks: [{
+				advancement: "mca:chores"
+				criterion: ""
+				id: "6B1C0100DFFF5839"
+				type: "advancement"
+			}]
+			title: "Chores"
+			x: 6.5d
+			y: 38.0d
+		}
+		{
+			dependencies: ["098B8DE62F619CB7"]
+			description: [
+				"Your baby has become a child!"
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_shovel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "33FC079E1DABF54B"
+			rewards: [{
+				count: 8
+				id: "6C03D6C20E80D2EF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A handful, and then a person."
+			tasks: [{
+				advancement: "mca:grow_child"
+				criterion: ""
+				id: "481F435454A09D65"
+				type: "advancement"
+			}]
+			title: "What a Handful"
+			x: 6.5d
+			y: 39.2d
+		}
+		{
+			dependencies: ["098B8DE62F619CB7"]
+			description: [
+				"Have two babies for the price of one!"
+				"Pops the moment the advancement does."
+			]
+			icon: "mca:baby_girl"
+			id: "22BB2A633DA4D15F"
+			rewards: [{
+				count: 48
+				id: "1AC9F434F3A05E45"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Two chairs, one year."
+			tasks: [{
+				advancement: "mca:twins"
+				criterion: ""
+				id: "49E74E826B0C7E63"
+				type: "advancement"
+			}]
+			title: "A Loving Parent (For Two!)"
+			x: 6.5d
+			y: 40.4d
+		}
+		{
+			dependencies: ["48053EC0B3A7CFD2"]
+			description: [
+				"Achieve 200 hearts in a relationship"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:emerald_block"
+			id: "067ED3FF29C6D23A"
+			rewards: [{
+				count: 48
+				id: "0FB51793BE675A59"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Two hundred. They would keep your chair."
+			tasks: [{
+				advancement: "mca:best_friend"
+				criterion: ""
+				id: "68A95E14362ABB4A"
+				type: "advancement"
+			}]
+			title: "Best Friends"
+			x: 6.5d
+			y: 41.6d
+		}
+		{
+			dependencies: ["48053EC0B3A7CFD2"]
+			description: [
+				"Give a perfect gift"
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:golden_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "261EBC14CD2E434B"
+			rewards: [{
+				count: 8
+				id: "0F62E4746E3404B8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Exactly the thing. How did you know."
+			tasks: [{
+				advancement: "mca:excellent_gift"
+				criterion: ""
+				id: "478E080F9B39686F"
+				type: "advancement"
+			}]
+			title: "Just What I Always Wanted"
+			x: 6.5d
+			y: 42.8d
+		}
+		{
+			dependencies: ["48053EC0B3A7CFD2"]
+			description: [
+				"Get engaged and marry a villager"
+				"Pops the moment the advancement does."
+			]
+			icon: "mca:wedding_ring"
+			id: "49B5C544D9D39B28"
+			rewards: [{
+				count: 8
+				id: "47316F600C17AC50"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Signed, the way the Accord was signed."
+			tasks: [{
+				advancement: "mca:marriage"
+				criterion: ""
+				id: "021C45184D130FA3"
+				type: "advancement"
+			}]
+			title: "'Til Death Do Us Part"
+			x: 6.5d
+			y: 44.0d
+		}
+		{
+			dependencies: ["48053EC0B3A7CFD2"]
+			description: [
+				"Get your first rank in a village."
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:leather_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "739E5D6AFE4543FA"
+			rewards: [{
+				count: 8
+				id: "3814C003C561F905"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The village gives you a rank. It is the lowest one."
+			tasks: [{
+				advancement: "mca:merchant"
+				criterion: ""
+				id: "20C2E361A82AFCA8"
+				type: "advancement"
+			}]
+			title: "Merchant"
+			x: 6.5d
+			y: 45.2d
+		}
+		{
+			dependencies: ["33FC079E1DABF54B"]
+			description: [
+				"Successfully raise a functioning adult"
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_shovel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "52CD53ED5ED7AB55"
+			rewards: [{
+				count: 8
+				id: "49FD289107B49BA0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "They will outlive you. That was the point."
+			tasks: [{
+				advancement: "mca:grow_adult"
+				criterion: ""
+				id: "035E32963B111A98"
+				type: "advancement"
+			}]
+			title: "They Grow Up So Fast"
+			x: 8.5d
+			y: 38.0d
+		}
+		{
+			description: [
+				"Get the Noble rank."
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "50015F4D825CB06E"
+			rewards: [{
+				count: 8
+				id: "1C6375C6A6E849FB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A name that opens doors."
+			tasks: [{
+				advancement: "mca:noble"
+				criterion: ""
+				id: "3F227074F954204C"
+				type: "advancement"
+			}]
+			title: "Noble"
+			x: 8.5d
+			y: 39.2d
+		}
+		{
+			description: [
+				"Start a family with a villager"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:bread"
+			id: "47C82BCD7238FC39"
+			rewards: [{
+				count: 8
+				id: "1588EDF29DA6FA55"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A table, set for more than one."
+			tasks: [{
+				advancement: "mca:family"
+				criterion: ""
+				id: "3CAA2A972B7DA97A"
+				type: "advancement"
+			}]
+			title: "Settling In"
+			x: 10.5d
+			y: 38.0d
+		}
+		{
+			description: [
+				"Father at least two generations of off-spring"
+				"Pops the moment the advancement does."
+			]
+			icon: "minecraft:clock"
+			id: "03E165FB1EF0C741"
+			rewards: [{
+				count: 48
+				id: "10E0F72ABA505014"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Two generations. The Chronicle starts to notice."
+			tasks: [{
+				advancement: "mca:grandparent"
+				criterion: ""
+				id: "3AEDBD40A56638FD"
+				type: "advancement"
+			}]
+			title: "Back In My day..."
+			x: 10.5d
+			y: 39.2d
+		}
+		{
+			description: [
+				"Get promoted to the Mayor."
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "19B4318FB9560FA1"
+			rewards: [{
+				count: 8
+				id: "7F10C32F5469DF85"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The village is yours to keep."
+			tasks: [{
+				advancement: "mca:mayor"
+				criterion: ""
+				id: "2724F3661C034F6C"
+				type: "advancement"
+			}]
+			title: "Mayor"
+			x: 10.5d
+			y: 40.4d
+		}
+		{
+			description: [
+				"Become a Monarch."
+				"Pops the moment the advancement does."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:golden_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5261BEB0BDF96F49"
+			rewards: [{
+				count: 48
+				id: "7B79F5B62CDC6405"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.4d
+			subtitle: "Seven cities. One chair. Sova would have written forty pages first."
+			tasks: [{
+				advancement: "mca:monarch"
+				criterion: ""
+				id: "2B5F34AE94279FD8"
+				type: "advancement"
+			}]
+			title: "Monarch"
+			x: 12.5d
+			y: 38.0d
+		}
+	]
+	subtitle: ["A trade is learned by doing it badly first."]
+	title: "The Apprenticeships"
+}

@@ -3,8 +3,10 @@
 	#Define the cooldown of Eternal Cooked Seagull in tick.
 	#Range: > 0
 	EatCooldown = 160
-	#A list of eternal foods which can be used to convert Eternal Cooked Seagull.
+	#A list of eternal foods which can be used to convert to the Eternal Cooked Seagull.
 	EternalFoodItems = ["alexsmobsdelight:eternal_cooked_seagull", "alexsmobsdelight:enchanted_eternal_cooked_seagull"]
+	#A list of foods which can not be absorbed by seagull to convert to the Enchanted Seagull.
+	EnchantedSeagullBlacklist = ["someassemblyrequired:sandwich"]
 
 ["Crocodile Karambit"]
 	#Define the chance of looting when you attack by Crocodile Karambit.
@@ -18,4 +20,20 @@
 	LootingAllItems = false
 	#A list of entities which can never be looted by Crocodile Karambit.
 	LootingEntitiesBlacklist = ["alexsmobs:void_worm"]
+
+["Orca‘s Leap Stew"]
+	#Define the chance of obtaining Orca's Leap Stew after you feed orca by seal meat.
+	#Range: 0 ~ 100
+	GiveChance = 30
+
+["Tiger Cake Roll"]
+	#Define the summon range of tiger cake roll item summoning tiger.
+	#Range: 0 ~ 128
+	TigerSummonRage = 16
+
+[Misc]
+	#Should BowlFoodItems in the Alex's Mobs become stackable to 16?
+	StackableSoupItems = true
+	#This mod enable Devil's Hole Pupfish in the Alex's Mobs breaks pupfish food blocks when breeding, should this feature active?
+	PupfishBreakFoodBlocks = true
 

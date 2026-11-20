@@ -1,6 +1,7 @@
 {
   "display_name": "The Scroll of the Tongbi Eye",
-  "research_time": 3600,
+  "icon": "minecraft:ender_eye",
+  "research_time": 720,
   "items": [
     "mowzies_cataclysm:tongbi_eye"
   ],
@@ -13,5 +14,284 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": true,
+      "attack": true,
+      "equip": true,
+      "pickup": false,
+      "place": true,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "scroll_end_passage",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "abyssal_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "apothecarys_tonic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "architects_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_iron_blades",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_iron_polearms",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_iron_ranged",
+          "mode": "player"
+        },
+        {
+          "stage_id": "backpackcraft",
+          "mode": "player"
+        },
+        {
+          "stage_id": "banner_heraldry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bread_of_the_black_land",
+          "mode": "player"
+        },
+        {
+          "stage_id": "brewers_cellar",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bruisers_creed",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cartography_advanced",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cold_sweat_discipline",
+          "mode": "player"
+        },
+        {
+          "stage_id": "confectioners_hollow",
+          "mode": "player"
+        },
+        {
+          "stage_id": "curators_vitrine",
+          "mode": "player"
+        },
+        {
+          "stage_id": "delvers_grimoire",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ender_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "evocation_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "feast_at_worlds_edge",
+          "mode": "player"
+        },
+        {
+          "stage_id": "field_medicine",
+          "mode": "player"
+        },
+        {
+          "stage_id": "fire_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "fishing_arts",
+          "mode": "player"
+        },
+        {
+          "stage_id": "foragers_almanac",
+          "mode": "player"
+        },
+        {
+          "stage_id": "forgetting_broth",
+          "mode": "player"
+        },
+        {
+          "stage_id": "foundry_facade",
+          "mode": "player"
+        },
+        {
+          "stage_id": "furnishers_hand",
+          "mode": "player"
+        },
+        {
+          "stage_id": "furniturecraft",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gallery_broth",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gardened_wash",
+          "mode": "player"
+        },
+        {
+          "stage_id": "holy_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ice_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "joiners_frame",
+          "mode": "player"
+        },
+        {
+          "stage_id": "kept_creatures",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lamp_of_wishes",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lightning_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lockwrights_irons",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_meal_before_firing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "maize_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "memory_of_the_baobab",
+          "mode": "player"
+        },
+        {
+          "stage_id": "menagerie_of_the_wild",
+          "mode": "player"
+        },
+        {
+          "stage_id": "mender_lost_company",
+          "mode": "player"
+        },
+        {
+          "stage_id": "mercantile_ledger",
+          "mode": "player"
+        },
+        {
+          "stage_id": "mounted_rail",
+          "mode": "player"
+        },
+        {
+          "stage_id": "music_records",
+          "mode": "player"
+        },
+        {
+          "stage_id": "nature_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "oddments_and_devices",
+          "mode": "player"
+        },
+        {
+          "stage_id": "photography_arts",
+          "mode": "player"
+        },
+        {
+          "stage_id": "quantum_gate",
+          "mode": "player"
+        },
+        {
+          "stage_id": "sound_and_broadcast",
+          "mode": "player"
+        },
+        {
+          "stage_id": "spoils_of_the_sea_roads",
+          "mode": "player"
+        },
+        {
+          "stage_id": "steeping_kettle",
+          "mode": "player"
+        },
+        {
+          "stage_id": "stolovaya_ledger",
+          "mode": "player"
+        },
+        {
+          "stage_id": "technomancy_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "the_bestiary",
+          "mode": "player"
+        },
+        {
+          "stage_id": "trim_smithing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "two_larder_winter",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "wayhouse_logistics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "wilderness_camping",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min",
+  "hidden_display": {
+    "name_mode": "replace",
+    "name_text": "Sealed Relic",
+    "tooltip_mode": "replace",
+    "tooltip_text": "Its nature is sealed.\nLearn the scroll: The Scroll of the Tongbi Eye",
+    "show_lock_hints": false
   }
 }

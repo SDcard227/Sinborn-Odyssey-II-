@@ -1,8 +1,9 @@
 {
-  "display_name": "The Trim Smithing Arts",
-  "research_time": 2700,
+  "display_name": "The Trimwright's Art",
+  "icon": "historystages:research_scroll",
+  "research_time": 450,
   "items": [
-    "cataclysm:cursium_upgrade_smithing_template",
+    "cataclysm:ignitium_upgrade_smithing_template",
     "dungeons_and_combat:blessed_smithing_template",
     "dungeons_and_combat:crimson_smithing_template",
     "dungeons_and_combat:light_smithing_template",
@@ -32,7 +33,31 @@
     "traveloptics:abyssal_upgrade_smithing_template",
     "traveloptics:ocean_sovereign_upgrade_smithing_template",
     "traveloptics:tectonic_upgrade_smithing_template",
-    "traveloptics:witherite_upgrade_smithing_template"
+    "traveloptics:witherite_upgrade_smithing_template",
+    "sullysmod:jade_upgrade_smithing_template",
+    "dungeons_and_combat:acid_molten_blazing_fists",
+    "dungeons_and_combat:blessed_gold_boots",
+    "dungeons_and_combat:blessed_gold_chestplate",
+    "dungeons_and_combat:blessed_gold_fist",
+    "dungeons_and_combat:blessed_gold_helmet",
+    "dungeons_and_combat:blessed_gold_hoe",
+    "dungeons_and_combat:blessed_gold_leggings",
+    "dungeons_and_combat:blessed_gold_pickaxe",
+    "dungeons_and_combat:blessed_gold_shovel",
+    "dungeons_and_combat:crimson_hoe",
+    "dungeons_and_combat:crimson_pickaxe",
+    "dungeons_and_combat:crimson_shovel",
+    "dungeons_and_combat:golden_boots",
+    "dungeons_and_combat:golden_chestplate",
+    "dungeons_and_combat:golden_helmet",
+    "dungeons_and_combat:golden_leggings",
+    "dungeons_and_combat:molten_dark_steel_hoe",
+    "dungeons_and_combat:molten_dark_steel_pickaxe",
+    "dungeons_and_combat:molten_dark_steel_shovel",
+    "dungeons_and_combat:mantle_of_the_demon_king_boots",
+    "dungeons_and_combat:mantle_of_the_demon_king_chestplate",
+    "dungeons_and_combat:mantle_of_the_demon_king_helmet",
+    "dungeons_and_combat:mantle_of_the_demon_king_leggings"
   ],
   "tags": [],
   "mods": [],
@@ -43,5 +68,35 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "metalworking",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

@@ -1,0 +1,56 @@
+{
+  "display_name": "The Abyssal School",
+  "icon": "historystages:research_scroll",
+  "research_time": 540,
+  "items": [
+    "cataclysm_spellbooks:abyss_spell_book",
+    "cataclysm_spellbooks:abyssal_rune",
+    "cataclysm_spellbooks:abyssal_upgrade_orb",
+    "cataclysm_spellbooks:coral_staff",
+    "traveloptics:abyssal_tidecaller",
+    "traveloptics:abyssal_tidecaller_level_one",
+    "traveloptics:abyssal_tidecaller_level_three",
+    "traveloptics:abyssal_tidecaller_level_two",
+    "traveloptics:tome_of_abyssal_flora"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "arcane_codex",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
+}

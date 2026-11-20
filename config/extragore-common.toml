@@ -3,9 +3,9 @@
 	#Enable blood particle effect for players only.
 	Only_Player = false
 	#Enable blood particle effect for mobs only.
-	Only_Mobs = false
+	Only_Mobs = true
 	#Enable blood particle effect for both players and mobs, overriding other settings.
-	Both = true
+	Both = false
 	#Entity list which will be blacklisted from getting blood particle effect.
 	Blacklisted_Entity = ["minecraft:ender_dragon", "minecraft:wither", "mo_bubbles:blown_bubble", "mo_bubbles:bomb_bubble", "mo_bubbles:bubble_pet", "mo_bubbles:chained_chest", "mo_bubbles:chest_bubble", "mo_bubbles:chest_nether_bubble", "mo_bubbles:nether_bubble", "mo_bubbles:water_bubble_e"]
 

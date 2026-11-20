@@ -14,7 +14,7 @@ contentMargin = 2
 #Automatically disabled after being shown once.
 showVibrantTooltipsHint = false
 #List of item IDs that should be ignored by Obscure Tooltips.
-ignoredItems = ["quality_equipment:reforge_gui_button"]
+ignoredItems = ["quality_equipment:reforge_gui_button", "minecraft:air"]
 
 [Sounds]
 	#Whether Obscure Tooltips should play sound effects.

@@ -1,6 +1,7 @@
 {
   "display_name": "The Delver's Grimoire",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 270,
   "items": [
     "dungeonnowloading:dueling_stone_emblem",
     "dungeonnowloading:puzzling_stone_emblem",
@@ -9,7 +10,20 @@
     "dungeonnowloading:signaling_stone_emblem",
     "dungeonnowloading:skull_of_chaos",
     "dungeonnowloading:soul_scorcher",
-    "dungeonnowloading:soul_silk"
+    "dungeonnowloading:soul_silk",
+    "dungeonnowloading:ballista_golem_statue",
+    "dungeonnowloading:chaotic_hexahedron",
+    "dungeonnowloading:combustion_cell",
+    "dungeonnowloading:eye_of_the_storm",
+    "dungeonnowloading:fairkeeper_serpent_caller",
+    "dungeonnowloading:great_experience_bottle",
+    "dungeonnowloading:item_scraps",
+    "dungeonnowloading:labyrinth_trophy",
+    "dungeonnowloading:scuttle_statue",
+    "dungeonnowloading:soul_cloth",
+    "dungeonnowloading:spawner_fragment",
+    "dungeonnowloading:temple_of_duality_trophy",
+    "dungeonnowloading:wind_jade"
   ],
   "tags": [],
   "mods": [],
@@ -20,5 +34,47 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "archaeology_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "codex_of_kukulkan",
+          "mode": "player"
+        },
+        {
+          "stage_id": "scroll_end_passage",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_table",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

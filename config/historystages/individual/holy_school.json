@@ -1,40 +1,28 @@
 {
   "display_name": "The Holy School",
-  "research_time": 2700,
+  "icon": "historystages:research_scroll",
+  "research_time": 540,
   "items": [
     "call_of_yucutan:mystic_vine",
     "call_of_yucutan:mystic_vine_block",
     "call_of_yucutan:reflector",
     "call_of_yucutan:reflector_mirror",
     "call_of_yucutan:sentient_vine",
-    "call_of_yucutan:sentient_vine_0",
-    "call_of_yucutan:sentient_vine_1",
-    "call_of_yucutan:sentient_vine_2",
-    "call_of_yucutan:sentient_vine_3",
-    "call_of_yucutan:sentient_vine_4",
     "call_of_yucutan:solar_projector",
     "call_of_yucutan:wand_of_radiance",
-    "call_of_yucutan:wand_of_radiance_0",
-    "cataclysm_spellbooks:murasama_blade_held",
-    "cataclysm_spellbooks:pharaoh_chestplate",
-    "cataclysm_spellbooks:pharaoh_greaves",
-    "cataclysm_spellbooks:pharaoh_helmet",
-    "cataclysm_spellbooks:pharaoh_leggings",
-    "companions:holy_robe_coat",
-    "companions:holy_robe_leggings",
-    "companions:holy_robe_mask",
-    "dacxirons:blessed_priest_boots",
-    "dacxirons:blessed_priest_hood",
-    "dacxirons:blessed_priest_leggings",
-    "dacxirons:blessed_priest_robe",
+    "cataclysm_spellbooks:murasama_blade",
+    "cataclysm_spellbooks:spirit_sunderer",
+    "cataclysm_spellbooks:the_berserker",
     "dacxirons:divine_manuscript_spell_book",
     "dacxirons:divine_mold",
     "irons_spellbooks:divine_pearl",
     "irons_spellbooks:holy_rune",
     "irons_spellbooks:holy_upgrade_orb",
-    "irons_spellbooks:scroll_holy",
     "traveloptics:holy_echo",
-    "traveloptics:sanctified_spell_slot_upgrade"
+    "traveloptics:sanctified_spell_slot_upgrade",
+    "call_of_yucutan:hanging_vine_hook",
+    "compatdelight:divine_pearl_dough",
+    "compatdelight:magic_hamburger"
   ],
   "tags": [],
   "mods": [],
@@ -45,5 +33,35 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "arcane_codex",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

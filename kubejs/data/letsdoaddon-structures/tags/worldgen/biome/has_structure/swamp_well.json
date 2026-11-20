@@ -1,0 +1,13 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "#bloomingnature:mangrove_swamp",
+   "required": false
+  },
+  {
+   "id": "#bloomingnature:swamp",
+   "required": false
+  }
+ ]
+}

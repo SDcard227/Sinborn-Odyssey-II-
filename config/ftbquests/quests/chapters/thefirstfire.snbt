@@ -1,0 +1,720 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thefirstfire"
+	group: "5A0000000000001A"
+	icon: "minecraft:campfire"
+	id: "29FD141AB99CBB46"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"You woke four and a half thousand years late into a world that finished without you."
+				"Nine civilisations left their knowledge lying around in pieces. None of it was left for you."
+				"First, survive the week. The reading comes after."
+			]
+			icon: "minecraft:campfire"
+			id: "223503805E7BCDB0"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "Four and a half thousand years late."
+			tasks: [{
+				id: "47F37E0E8C35D129"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The First Fire"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["223503805E7BCDB0"]
+			description: [
+				"A torch that stays lit is a decision somebody has to keep making."
+				"This world does not hand you permanent light. It lends it."
+			]
+			icon: "hardcore_torches:lit_torch"
+			id: "668E8A444E9A0155"
+			rewards: [{
+				count: 16
+				id: "4849272C58D0F310"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Light is a loan here."
+			tasks: [{
+				id: "3C4EA0AABF7274A2"
+				item: "hardcore_torches:lit_torch"
+				type: "item"
+			}]
+			title: "Something To Burn"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4121929587CA2F6F"]
+			description: [
+				"Every civilisation in the archive begins its record with a wall."
+				"Not a god, not a king. A wall, and the date they finished it."
+			]
+			icon: "minecraft:crafting_table"
+			id: "7084CF1BA7CAFD18"
+			rewards: [{
+				count: 32
+				id: "0CAF58971D4EC1F8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Every record starts with one."
+			tasks: [
+				{
+					id: "5EEDB6D054165857"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+				{
+					id: "66F33A69119C8ECD"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			title: "Four Walls"
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7920F8E2795B8D4C"]
+			description: [
+				"The Hoarfrost had a word for the first night indoors that translates roughly as *the argument won*."
+				"Nobody has found their word for the second night."
+			]
+			icon: "minecraft:white_bed"
+			id: "2A17CFE97D0AA83C"
+			rewards: [{
+				count: 32
+				id: "5C0A3B1E60CC73D6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The first night indoors."
+			tasks: [{
+				id: "773E94B3A20CA46E"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+			title: "Somewhere To Wake Up"
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["668E8A444E9A0155"]
+			description: [
+				"Temperature in this world is a system with opinions."
+				"The Hoarfrost built an entire preservation-architecture around not being warm enough,"
+				"and they are the second-longest-lived people in the record."
+			]
+			icon: "minecraft:campfire"
+			id: "1EB5135576AD55FD"
+			rewards: [{
+				count: 16
+				id: "46D5E137BC26C248"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A system with opinions."
+			tasks: [{
+				id: "4EBECE2F08C39A12"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "Against The Cold"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7084CF1BA7CAFD18"]
+			description: ["Fur first, cleverness later. Every civilisation did it in that order."]
+			icon: "cold_sweat:goat_fur"
+			id: "2BBB6AFD4D86CD2B"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "39DB930778CBD144"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Fur first. Cleverness later."
+			tasks: [{
+				id: "3DBA12B2EC03BDFD"
+				item: "cold_sweat:goat_fur"
+				type: "item"
+			}]
+			title: "Wear The Animal"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2A17CFE97D0AA83C"]
+			description: ["The Forgesworn's whole doctrine in one object: if the world is the wrong temperature, bring your own."]
+			icon: "cold_sweat:boiler"
+			id: "4E34BF49EBE9CD60"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "2C8DF878183847A6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Bring your own weather."
+			tasks: [{
+				id: "7F06CE8E9F01085A"
+				item: "cold_sweat:boiler"
+				type: "item"
+			}]
+			title: "Heat You Can Carry"
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1EB5135576AD55FD"]
+			description: [
+				"Thirst is the quietest of the systems and the fastest."
+				"The Gilded Sands priced a caravan route by how much of it was between wells."
+			]
+			icon: "thirst:clay_bowl"
+			id: "7448B2A67040E2E2"
+			rewards: [{
+				count: 24
+				id: "3258FE2201CA489B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The quietest system, and the fastest."
+			tasks: [{
+				id: "35BB6B4771D26F41"
+				item: "thirst:clay_bowl"
+				type: "item"
+			}]
+			title: "Something To Drink From"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BBB6AFD4D86CD2B"]
+			description: [
+				"Standing water is a decision. Boiled water is a discipline."
+				"The difference between those two sentences is most of the early archive."
+			]
+			icon: "thirst:terracotta_water_bowl"
+			id: "7B6C9F10CFFE3D83"
+			rewards: [{
+				count: 32
+				id: "2570A03C14196B0F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Boiling is a discipline."
+			tasks: [{
+				id: "4999930664C62FC0"
+				item: "thirst:terracotta_water_bowl"
+				type: "item"
+			}]
+			title: "Water You Can Trust"
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4E34BF49EBE9CD60"]
+			description: ["Clay, fired, holds water without opinions. This is the oldest craft in the record and nobody signed it."]
+			icon: "thirst:terracotta_bowl"
+			id: "731BE6E07AF2A915"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "33112D5CE82275E1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The oldest craft, and nobody signed it."
+			tasks: [{
+				id: "680F7EFD91A6FC66"
+				item: "thirst:terracotta_bowl"
+				type: "item"
+			}]
+			title: "The Fired Bowl"
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7448B2A67040E2E2"]
+			description: [
+				"Fire changes food permanently, which is the same principle behind every furnace in this world."
+				"The Long Table chapter is four thousand years of people noticing that."
+			]
+			icon: "minecraft:cooked_beef"
+			id: "4AAFBF3B92198132"
+			rewards: [{
+				count: 24
+				id: "01B4C7239D5FCB62"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Fire changes it permanently."
+			tasks: [{
+				id: "5CC39D69674CE58D"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			title: "The First Meal"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7B6C9F10CFFE3D83"]
+			description: ["Grain, ground, wetted, heated. Four steps, nine civilisations, one answer."]
+			icon: "minecraft:bread"
+			id: "4433FE12AE359878"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "11611D308A5C74FF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Four steps. Nine civilisations."
+			tasks: [{
+				id: "09CD13AB204D5883"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			title: "Bread Is A Technology"
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4AAFBF3B92198132"]
+			description: ["Stoneworking is a discipline with a scroll of its own and this is the entrance exam."]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4121929587CA2F6F"
+			rewards: [{
+				count: 24
+				id: "6755059E80E320FB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The entrance exam."
+			tasks: [{
+				id: "20CB7BE8E9A470EF"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Tools Of Stone"
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4433FE12AE359878"]
+			description: [
+				"Heat applied to the right material changes it permanently."
+				"This is the principle behind every machine that comes later, and the Forgesworn never found a better one."
+			]
+			icon: "minecraft:furnace"
+			id: "7920F8E2795B8D4C"
+			rewards: [{
+				count: 32
+				id: "05F1A1FB57288C72"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Every machine after this is the same idea."
+			tasks: [{
+				id: "7D14F0C58965CF6E"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			title: "Fire Eats Everything"
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["731BE6E07AF2A915"]
+			description: [
+				"The Cathedral copied cooking freely and guarded metallurgy."
+				"Ask why and the answer is every war in the record."
+			]
+			icon: "minecraft:raw_iron"
+			id: "42D3A0ADCAC36177"
+			rewards: [{
+				count: 32
+				id: "6CCC6A84CD60BB3C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "They shared cooking. They guarded this."
+			tasks: [{
+				id: "7C1BEC0ED496A1BA"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			title: "The First Metal"
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["04377AE588E14EC4"]
+			description: [
+				"A scroll. Water-damaged, unsigned, and older than every ruin you have walked past."
+				"The Convent suppressed authorship for its first three centuries , *the Cathedral wrote it* was the"
+				"standard formula , so most of these have no name on them."
+				"Most of the people who wrote them died young. That is not a metaphor; it is in the personnel records."
+			]
+			icon: "historystages:research_scroll"
+			id: "39C5C0DE4AD43CD0"
+			rewards: [{
+				count: 32
+				id: "655BA5B9531A010F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Unsigned, and older than the ruins."
+			tasks: [{
+				id: "526024B1725BD4C8"
+				item: "historystages:research_scroll"
+				type: "item"
+			}]
+			title: "Somebody Wrote This Down"
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["329B7DA181DFF005"]
+			description: [
+				"Nothing in this world is locked by a key. It is locked because you have not read the thing that explains it."
+				"That is the whole system. Find the text, study it, and the world quietly admits it knew how all along."
+			]
+			icon: "minecraft:campfire"
+			id: "6CB4BAFD6B632898"
+			rewards: [{
+				count: 12
+				id: "759D59CAF2A17145"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Nothing here is locked by a key."
+			tasks: [{
+				id: "2FB135BA961B3750"
+				individual: true
+				negate: false
+				stage: "survivor_codex"
+				type: "historystages:history_stage"
+			}]
+			title: "Reading Is The Mechanic"
+			x: 1.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["39C5C0DE4AD43CD0"]
+			description: [
+				"The Field Guide fills itself in when you look at something properly through glass."
+				"The Umvuthana recorded a creature before they fought it. They considered the order important."
+			]
+			icon: "minecraft:spyglass"
+			id: "76CAD53E0384CFA9"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "4AA06DE087BCB49C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "They considered the order important."
+			tasks: [{
+				id: "74C7881FB5D0D2E3"
+				item: "minecraft:spyglass"
+				type: "item"
+			}]
+			title: "Look Before You Fight"
+			x: -3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["76CAD53E0384CFA9"]
+			description: [
+				"The stone changes at depth. Darker, harder, more honest."
+				"Every civilisation that built something lasting went down first."
+			]
+			icon: "minecraft:campfire"
+			id: "329B7DA181DFF005"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "1D49A71B0185F581"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Darker, harder, more honest."
+			tasks: [{
+				advancement: "minecraft:story/mine_stone"
+				criterion: ""
+				id: "7E68F1924E7F5A72"
+				type: "advancement"
+			}]
+			title: "The Mountain Opens"
+			x: -1.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["42D3A0ADCAC36177"]
+			description: ["Something came for you and did not succeed, which is the entire content of most people's first week."]
+			icon: "minecraft:campfire"
+			id: "04377AE588E14EC4"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "6B85C1C599470DCE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Something tried. It did not succeed."
+			tasks: [{
+				advancement: "minecraft:adventure/kill_a_mob"
+				criterion: ""
+				id: "7B062DC0DDA8FAA2"
+				type: "advancement"
+			}]
+			title: "The First Night"
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["223503805E7BCDB0"]
+			description: [
+				"Hoarfrost work, by people who expected the cold to outlast them. It did."
+				""
+				"&6Found in:&r frozen chest, igloo chest, maze camp chest and 5 more &8(35% a chest)"
+				"&bOpens:&r 26 entries and 5 whole bodies of work"
+				"&dNeeds:&r one of The Tanner's Craft, The Long Road, Woodworking"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "cold_sweat:thermometer"
+			id: "79B359683972F0DB"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "23AB39E29439CF96"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The cold outlasted them."
+			tasks: [
+				{
+					id: "7C2A83441B444946"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "cold_sweat_discipline"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "2BE49ACF714F1B91"
+					individual: true
+					negate: false
+					stage: "cold_sweat_discipline"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Wayfarer's Endurance"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["223503805E7BCDB0"]
+			description: [
+				"The oldest kind of scroll: how to keep a light going when the world will not do it for you."
+				""
+				"&6Found in:&r chest loot, gingerbread town, grave loot and 6 more &8(35% a chest)"
+				"&bOpens:&r 378 entries and 1 whole body of work"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 3 minutes"
+			]
+			icon: "minecraft:lantern"
+			id: "484297B54C52D0C0"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "569A41CB70047E90"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "How to keep a light going."
+			tasks: [
+				{
+					id: "7AB5AA898604BA8C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "torch_and_lantern_craft"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "38DD38AA02F0675D"
+					individual: true
+					negate: false
+					stage: "torch_and_lantern_craft"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Torch & Lantern Craft"
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["223503805E7BCDB0"]
+			description: [
+				"How to sleep somewhere that is not yours and wake up anyway."
+				""
+				"&6Found in:&r abandoned mineshaft chalk loot, caveman house, food storage and 3 more &8(25% a chest)"
+				"&bOpens:&r 41 entries and 2 whole bodies of work"
+				"&dNeeds:&r one of The Tanner's Craft, The Long Road, Woodworking"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "comforts:sleeping_bag_red"
+			id: "2FCDD49B047E9E8D"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "10C65186D8E557E7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Waking up somewhere that is not yours."
+			tasks: [
+				{
+					id: "664D0EB358741BB1"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "wilderness_camping"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "6CB067C67D2ED3C6"
+					individual: true
+					negate: false
+					stage: "wilderness_camping"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Wilderness Camping Manual"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["223503805E7BCDB0"]
+			description: [
+				"The archive kept certain things under two headings: the craft, and where the stuff came from."
+				"Nether timber is carpentry and it is the Nether. Dragon work is smithing and it is the dragon."
+				"&dThe rule:&r if a thing sits in two scrolls, you need both before it shows itself."
+				"A missing recipe is not a broken one. It is waiting on the second key."
+				"The quests marked Two Keys in each chapter name the pairs."
+			]
+			icon: "historystages:research_scroll"
+			id: "11B1A0AB0C12B537"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2C9D3B92B0AF8E33"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Some knowledge was filed twice."
+			tasks: [{
+				id: "1881E12CDD1851D4"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "Two Keys"
+			x: -1.7d
+			y: -0.1d
+		}
+	]
+	subtitle: ["Survive the week. The reading comes after."]
+	title: "The First Fire"
+}

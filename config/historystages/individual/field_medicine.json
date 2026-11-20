@@ -1,9 +1,14 @@
 {
   "display_name": "Field Medicine",
-  "research_time": 2700,
+  "icon": "historystages:research_scroll",
+  "research_time": 300,
   "items": [
+    "food_desire:magic_appetizer",
     "cuffed:bandage",
-    "wd:medical_potato"
+    "dungeons_and_combat:blessed_bandages",
+    "dungeons_and_combat:processed_antidote",
+    "twm:medicinal_herb_seed",
+    "twm:wild_medicinal_herb"
   ],
   "tags": [],
   "mods": [
@@ -16,5 +21,43 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "agronomic_path",
+          "mode": "player"
+        },
+        {
+          "stage_id": "larder_methods",
+          "mode": "player"
+        },
+        {
+          "stage_id": "the_pantry",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

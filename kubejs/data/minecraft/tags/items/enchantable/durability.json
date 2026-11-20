@@ -1,0 +1,93 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "burnt:extinguisher",
+   "required": false
+  },
+  {
+   "id": "crittersandcompanions:grappling_hook",
+   "required": false
+  },
+  {
+   "id": "desert:spear_of_sands",
+   "required": false
+  },
+  {
+   "id": "desert:sandshaper",
+   "required": false
+  },
+  {
+   "id": "desert:living_glass_scythe",
+   "required": false
+  },
+  {
+   "id": "desert:rift_knife",
+   "required": false
+  },
+  {
+   "id": "irons_spellbooks:autoloader_crossbow",
+   "required": false
+  },
+  {
+   "id": "luminous_nether:molten_coal",
+   "required": false
+  },
+  {
+   "id": "luminousworld:jungle_pendant",
+   "required": false
+  },
+  {
+   "id": "luminousworld:butterfly_net",
+   "required": false
+  },
+  {
+   "id": "luminousworld:frigid_horn",
+   "required": false
+  },
+  {
+   "id": "luminousworld:pheonix_fire_ball",
+   "required": false
+  },
+  {
+   "id": "luminousworld:gator_tooth",
+   "required": false
+  },
+  {
+   "id": "luminousworld:vipertooth",
+   "required": false
+  },
+  {
+   "id": "luminousworld:enchanted_root",
+   "required": false
+  },
+  {
+   "id": "luminousworld:netherite_hammer",
+   "required": false
+  },
+  {
+   "id": "luminousworld:diamond_hammer",
+   "required": false
+  },
+  {
+   "id": "luminousworld:goldhammer",
+   "required": false
+  },
+  {
+   "id": "luminousworld:ironhammer",
+   "required": false
+  },
+  {
+   "id": "mo_bubbles:chain_hook",
+   "required": false
+  },
+  {
+   "id": "mo_bubbles:bubble_net",
+   "required": false
+  },
+  {
+   "id": "mo_bubbles:bubble_wand",
+   "required": false
+  }
+ ]
+}

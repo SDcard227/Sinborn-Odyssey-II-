@@ -1,59 +1,28 @@
 {
   "display_name": "The Iron Arsenal: Ranged",
-  "research_time": 2700,
+  "icon": "historystages:research_scroll",
+  "research_time": 300,
   "items": [
-    "burnt:glass_bow",
-    "burnt:molotov",
+    "alexsmobsdelight:lobster_dart",
     "call_of_yucutan:blow_gun",
     "call_of_yucutan:poisonous_dart",
-    "cataclysm:phantom_arrow",
     "dungeonnowloading:vertex_bow",
-    "dungeonnowloading:vertex_bow_pulling_0",
-    "dungeonnowloading:vertex_bow_pulling_1",
-    "dungeonnowloading:vertex_bow_pulling_2",
-    "dungeonnowloading:vertex_bow_pulling_3",
+    "dungeonsdelight:gunk_arrow",
     "minecraft:arrow",
     "minecraft:bow",
     "minecraft:crossbow",
-    "minecraft:crossbow_projectile",
-    "minecraft:crossbow_rope_arrow",
     "minecraft:spectral_arrow",
     "minecraft:tipped_arrow",
-    "minecraft:tipped_arrow_effect_awkward",
-    "minecraft:tipped_arrow_effect_empty",
-    "minecraft:tipped_arrow_effect_fire_resistance",
-    "minecraft:tipped_arrow_effect_harming",
-    "minecraft:tipped_arrow_effect_healing",
-    "minecraft:tipped_arrow_effect_invisibility",
-    "minecraft:tipped_arrow_effect_leaping",
-    "minecraft:tipped_arrow_effect_levitation",
-    "minecraft:tipped_arrow_effect_luck",
-    "minecraft:tipped_arrow_effect_mundane",
-    "minecraft:tipped_arrow_effect_night_vision",
-    "minecraft:tipped_arrow_effect_poison",
-    "minecraft:tipped_arrow_effect_regeneration",
-    "minecraft:tipped_arrow_effect_slow_falling",
-    "minecraft:tipped_arrow_effect_slowness",
-    "minecraft:tipped_arrow_effect_strength",
-    "minecraft:tipped_arrow_effect_swiftness",
-    "minecraft:tipped_arrow_effect_thick",
-    "minecraft:tipped_arrow_effect_turtle_master",
-    "minecraft:tipped_arrow_effect_water",
-    "minecraft:tipped_arrow_effect_water_breathing",
-    "minecraft:tipped_arrow_effect_weakness",
     "minecraft:trident",
     "mowziesmobs:blowgun",
-    "mowziesmobs:blowgun_using",
     "mowziesmobs:dart",
-    "multi_arrow_effects:mixed_arrow",
-    "netherexp:crossbow_black_icicle",
     "netherexp:phasmo_arrow",
+    "burnt_additions:flint_bow",
     "quark:torch_arrow",
-    "twm:tomahawk",
-    "twm:tomahawk_with_torpor",
-    "twm:tomahawk_with_wild_toxin",
-    "wd:flame_arrow",
-    "wd:hunting_twister"
+    "alexsmobsdelight:banana_bow",
+    "supplementaries:quiver",
+    "supplementaries:rope_arrow",
+    "supplementaries:slingshot"
   ],
   "tags": [],
   "mods": [],
@@ -64,5 +33,39 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "metalworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "woodworking",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

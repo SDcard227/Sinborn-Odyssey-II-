@@ -1,0 +1,206 @@
+{
+  "display_name": "The Path to Divinity",
+  "icon": "historystages:research_scroll",
+  "research_time": 1110,
+  "items": [
+    "ptd:matter"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": true,
+      "attack": true,
+      "equip": true,
+      "pickup": false,
+      "place": true,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "abyssal_chasm",
+          "mode": "player"
+        },
+        {
+          "stage_id": "aeronautics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arcane_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "architectural_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_master_blades",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_master_polearms",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_master_ranged",
+          "mode": "player"
+        },
+        {
+          "stage_id": "beehive_logistics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bestiary_alex_mobs",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blighted_hollows",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blood_and_oil",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bookshelf_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cannoneer",
+          "mode": "player"
+        },
+        {
+          "stage_id": "carnal_anatomy",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cataclysm_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cookware_advanced",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cookware_forging",
+          "mode": "player"
+        },
+        {
+          "stage_id": "falconry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "forlorn_hollows",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gravitic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gunsmithing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "heavy_plate_discipline",
+          "mode": "player"
+        },
+        {
+          "stage_id": "infernal_passage",
+          "mode": "player"
+        },
+        {
+          "stage_id": "kinetic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lapidary_arts",
+          "mode": "player"
+        },
+        {
+          "stage_id": "magnetic_deep",
+          "mode": "player"
+        },
+        {
+          "stage_id": "metalworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "numismatic_mechanisms",
+          "mode": "player"
+        },
+        {
+          "stage_id": "primordial_strata",
+          "mode": "player"
+        },
+        {
+          "stage_id": "runesmithing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "scales_and_steel",
+          "mode": "player"
+        },
+        {
+          "stage_id": "sculk_sickness",
+          "mode": "player"
+        },
+        {
+          "stage_id": "small_ships",
+          "mode": "player"
+        },
+        {
+          "stage_id": "smithing_legendary",
+          "mode": "player"
+        },
+        {
+          "stage_id": "smithing_master",
+          "mode": "player"
+        },
+        {
+          "stage_id": "tidal_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "wild_study",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 25,
+        "consume": true
+      }
+    }
+  ],
+  "hidden_display": {
+    "name_mode": "replace",
+    "name_text": "Sealed Relic",
+    "tooltip_mode": "replace",
+    "tooltip_text": "Its nature is sealed.\nLearn the scroll: The Path to Divinity",
+    "show_lock_hints": false
+  },
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min"
+}

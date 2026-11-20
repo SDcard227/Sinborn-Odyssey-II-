@@ -1,0 +1,10 @@
+{
+	chapter_groups: [
+		{ id: "5A0000000000001A", title: "I · The Thread" }
+		{ id: "5A0000000000002B", title: "II · The Crafts" }
+		{ id: "5A0000000000003C", title: "III · The Table" }
+		{ id: "5A0000000000004D", title: "IV · The Arcane" }
+		{ id: "5A0000000000005E", title: "V · The World" }
+		{ id: "5A0000000000006F", title: "VI · The Record" }
+	]
+}

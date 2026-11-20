@@ -6,4 +6,38 @@
 	showStatTip = true
 	#Reset player stats on death.
 	resetOnDeath = true
+	#ACCUBULATE=food can stats every time.
+	#ONCE=each food can give only once per player.
+	#LIMITED=food gives stats only Minecraft attribute is below configured limit.
+	#Allowed Values: ACCUMULATE, ONCE, LIMITED
+	statMode = "ACCUMULATE"
+
+["Stat Limits"]
+	#Maximum Armor attribute value
+	#Range: 0.0 ~ 10000.0
+	maxArmor = 20.0
+	#Maximum Attack Damage attribute value
+	#Range: 0.0 ~ 10000.0
+	maxAttackDamage = 20.0
+	#Maximum Movement Speed attribute value
+	#Range: 0.0 ~ 10000.0
+	maxMovementSpeed = 0.2
+	#Maximum stored Jump Boost stat percent
+	#Range: 0.0 ~ 10000.0
+	maxJumpBoost = 20.0
+	#Maximum Attack Speed attribute value
+	#Range: 0.0 ~ 10000.0
+	maxAttackSpeed = 8.0
+	#Maximum stored Crit Chance stat percent
+	#Range: 0.0 ~ 10000.0
+	maxCritChance = 20.0
+	#Maximum Knockback Resistance attribute value
+	#Range: 0.0 ~ 10000.0
+	maxKnockbackResistance = 0.5
+	#Maximum Passive Regen stat percent
+	#Range: 0.0 ~ 10000.0
+	maxPassiveRegen = 20.0
+	#Maximum Swim Speed attribute value
+	#Range: 0.0 ~ 10000.0
+	maxSwimSpeed = 10.0
 

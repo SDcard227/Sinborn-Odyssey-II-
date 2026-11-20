@@ -1,0 +1,5 @@
+
+[common_settings]
+	#Whether items have special abilities when enchanted
+	itemAbilities = true
+

@@ -1,35 +1,24 @@
 {
   "display_name": "The Aeronaut's Craft",
-  "research_time": 7200,
+  "icon": "historystages:research_scroll",
+  "research_time": 720,
   "items": [
     "breezy:hot_air_balloon",
+    "vc_gliders:paraglider_diamond",
+    "vc_gliders:paraglider_gold",
+    "vc_gliders:paraglider_iron",
+    "vc_gliders:paraglider_netherite",
+    "vc_gliders:paraglider_wood",
+    "vc_gliders:copper_upgrade",
+    "vc_gliders:nether_upgrade",
+    "vc_gliders:reinforced_paper",
+    "vc_gliders:reinforced_paper_diamond",
+    "vc_gliders:reinforced_paper_gold",
+    "vc_gliders:reinforced_paper_iron",
+    "vc_gliders:reinforced_paper_netherite",
     "create_sa:andesite_jetpack_chestplate",
     "create_sa:brass_jetpack_chestplate",
-    "create_sa:copper_jetpack_chestplate",
-    "create_sa:netherite_jetpack_chestplate",
-    "tide:ender_glider",
-    "traveloptics:elytra_jetpack_component",
-    "vc_gliders:damaged_glider",
-    "vc_gliders:paraglider_diamond",
-    "vc_gliders:paraglider_diamond_combined_upgrades",
-    "vc_gliders:paraglider_diamond_copper_upgrade",
-    "vc_gliders:paraglider_diamond_nether_upgrade",
-    "vc_gliders:paraglider_gold",
-    "vc_gliders:paraglider_gold_combined_upgrades",
-    "vc_gliders:paraglider_gold_copper_upgrade",
-    "vc_gliders:paraglider_gold_nether_upgrade",
-    "vc_gliders:paraglider_iron",
-    "vc_gliders:paraglider_iron_combined_upgrades",
-    "vc_gliders:paraglider_iron_copper_upgrade",
-    "vc_gliders:paraglider_iron_nether_upgrade",
-    "vc_gliders:paraglider_netherite",
-    "vc_gliders:paraglider_netherite_combined_upgrades",
-    "vc_gliders:paraglider_netherite_copper_upgrade",
-    "vc_gliders:paraglider_netherite_nether_upgrade",
-    "vc_gliders:paraglider_wood",
-    "vc_gliders:paraglider_wood_combined_upgrades",
-    "vc_gliders:paraglider_wood_copper_upgrade",
-    "vc_gliders:paraglider_wood_nether_upgrade"
+    "create_sa:copper_jetpack_chestplate"
   ],
   "tags": [],
   "mods": [],
@@ -40,5 +29,34 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "kinetic_engineering",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

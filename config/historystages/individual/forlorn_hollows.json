@@ -1,51 +1,13 @@
 {
   "display_name": "The Forlorn Hollows",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
-    "alexscaves:cave_painting_ambersol",
-    "alexscaves:cave_painting_dark",
-    "alexscaves:cave_painting_dino_nuggets",
-    "alexscaves:cave_painting_enderman",
-    "alexscaves:cave_painting_footprint",
-    "alexscaves:cave_painting_footprints",
-    "alexscaves:cave_painting_friendship",
-    "alexscaves:cave_painting_grottoceratops",
-    "alexscaves:cave_painting_grottoceratops_friend",
-    "alexscaves:cave_painting_hunt",
-    "alexscaves:cave_painting_mystery_1",
-    "alexscaves:cave_painting_mystery_2",
-    "alexscaves:cave_painting_mystery_3",
-    "alexscaves:cave_painting_mystery_4",
-    "alexscaves:cave_painting_mystery_5",
-    "alexscaves:cave_painting_mystery_6",
-    "alexscaves:cave_painting_mystery_7",
-    "alexscaves:cave_painting_mystery_8",
-    "alexscaves:cave_painting_mystery_9",
-    "alexscaves:cave_painting_pewen",
-    "alexscaves:cave_painting_portal",
-    "alexscaves:cave_painting_relicheirus",
-    "alexscaves:cave_painting_relicheirus_slash",
-    "alexscaves:cave_painting_subterranodon",
-    "alexscaves:cave_painting_subterranodon_ride",
-    "alexscaves:cave_painting_tree_stars",
-    "alexscaves:cave_painting_tremorsaurus",
-    "alexscaves:cave_painting_tremorsaurus_friend",
-    "alexscaves:cave_painting_trilocaris",
-    "alexscaves:cave_painting_vallumraptor_chest",
-    "alexscaves:cave_painting_vallumraptor_friend",
-    "alexscaves:charred_remnant",
-    "alexscaves:cloak_of_darkness",
     "alexscaves:dark_tatters",
     "alexscaves:darkened_apple",
     "alexscaves:dreadbow",
-    "alexscaves:dreadbow_inventory",
-    "alexscaves:dreadbow_pulling_0_inventory",
-    "alexscaves:dreadbow_pulling_1_inventory",
-    "alexscaves:dreadbow_pulling_2_inventory",
-    "alexscaves:dusk_anemone",
     "alexscaves:forsaken_idol",
     "alexscaves:gazing_pearl",
-    "alexscaves:gossamer_worm_bucket",
     "alexscaves:guano",
     "alexscaves:guano_block",
     "alexscaves:guano_layer",
@@ -60,13 +22,9 @@
     "alexscaves:guanostone_stairs",
     "alexscaves:guanostone_tiles",
     "alexscaves:guanostone_wall",
-    "alexscaves:hood_of_darkness",
-    "alexscaves:midnight_anemone",
     "alexscaves:moth_ball",
     "alexscaves:moth_dust",
     "alexscaves:occult_gem",
-    "alexscaves:ominous_catalyst",
-    "alexscaves:potted_thornwood_branch",
     "alexscaves:pure_darkness",
     "alexscaves:shadow_silk",
     "alexscaves:stripped_thornwood_log",
@@ -79,7 +37,6 @@
     "alexscaves:thornwood_fence",
     "alexscaves:thornwood_fence_gate",
     "alexscaves:thornwood_hanging_sign",
-    "alexscaves:thornwood_leaves",
     "alexscaves:thornwood_log",
     "alexscaves:thornwood_planks",
     "alexscaves:thornwood_pressure_plate",
@@ -88,13 +45,36 @@
     "alexscaves:thornwood_slab",
     "alexscaves:thornwood_stairs",
     "alexscaves:thornwood_trapdoor",
-    "alexscaves:thornwood_wall_sign",
     "alexscaves:thornwood_wood",
     "alexscaves:totem_of_possession",
-    "alexscaves:totem_of_possession_active",
-    "alexscaves:totem_of_possession_bound",
-    "alexscaves:twilight_anemone",
-    "alexscaves:vesper_wing"
+    "alexscaves:vesper_wing",
+    "alexscavesdelight:meat_stick",
+    "alexscavesdelight:pure_darkness_knife",
+    "alexscavesdelight:pure_darkness_shake",
+    "alexscavesdelight:pure_darkness_something_block",
+    "alexscavesdelight:thornwood_cabinet",
+    "alexscaves:cloak_of_darkness",
+    "alexscaves:hood_of_darkness",
+    "alexscaves:vesper_stew",
+    "alexscavesdelight:pure_darkness_pie",
+    "caves_delight:fried_vesper_wing",
+    "alexscavesdelight:pure_darkness_pie_slice",
+    "alexscaves:corrodent_teeth",
+    "alexscaves:beholder",
+    "alexscaves:burrowing_arrow",
+    "alexscaves:fertilizer",
+    "alexscaves:coprolith",
+    "alexscaves:coprolith_coal_ore",
+    "alexscaves:coprolith_slab",
+    "alexscaves:coprolith_stairs",
+    "alexscaves:coprolith_wall",
+    "alexscaves:peering_coprolith",
+    "alexscaves:porous_coprolith",
+    "alexscaves:smooth_coprolith",
+    "alexscaves:smooth_coprolith_slab",
+    "alexscaves:smooth_coprolith_stairs",
+    "alexscaves:smooth_coprolith_wall",
+    "alexscavesdelight:pure_darkness_something"
   ],
   "tags": [],
   "mods": [],
@@ -105,5 +85,176 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "archaeology_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "wild_study",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "alchemy",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blood_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dragonslayer_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eldritch_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_abyssal",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_black",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cold",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_corrupted",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cryptic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cursed",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_desert",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_evil",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_exotic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_flame",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_frostmaw",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_guardian",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_lost",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_magical",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_mech",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_monstrous",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nether",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nothingness",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_old",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_rogue",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_storm",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_sun",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_tongbi",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_undead",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_void",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_witch",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wither",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wrought",
+          "mode": "player"
+        },
+        {
+          "stage_id": "redstone_principles",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

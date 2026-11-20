@@ -1,42 +1,54 @@
 
 [performance]
-	#Use async tasks for some operations to improve performance. This may cause issues with some mods.
-	useAsync = false
+	#Run supported snow-processing work on background threads. Enabled by default only on systems with more than 6 processor cores. Disable this when diagnosing mod compatibility or threading problems.
+	runSnowUpdatesAsynchronously = true
 
-[snowPillerAndReplacer]
-	#Tick interval for snow pillers in ticks. Default is 20 (1 second).
+[snowUpdateTiming]
+	#Number of Minecraft ticks between snow-placement updates. 20 ticks is approximately 1 real-time second.
 	#Range: > 1
-	tickSnowPiller = 20
-	#Tick interval for snow replacer in ticks. Default is 20 (1 second).
+	snowPlacementIntervalInTicks = 20
+	#Number of Minecraft ticks between snow replacement and accumulation scans. Lower values update snow more frequently but require more processing. 20 ticks is approximately 1 real-time second.
 	#Range: > 1
-	tickSnowReplacer = 100
+	snowReplacementIntervalInTicks = 100
 
-[snowstorm]
-	#Enable snowstorm mode which increases snow pilling intensity.
-	enabled = false
+[seasonalSnowAccumulation]
+	#Allow Serene Seasons Plus to place, replace, and accumulate snow during supported seasonal weather.
+	enableSeasonalSnowAccumulation = false
 
-["Grass and Flower Growth"]
-	#Enable enhanced grass and flower growth during warm seasons.
-	enabled = true
+[seasonalPlantGrowth]
+	#Allow the mod to apply extra grass and flower growth during warm seasons.
+	enableSeasonalGrassAndFlowerGrowth = true
 
-[snow]
-	#Maximum total snow layers allowed per column (8 layers = 1 block). Default 24 = 3 blocks.
+[snowLimits]
+	#Maximum number of snow layers allowed in one vertical column. Eight layers equal one full snow block; the default of 24 equals three blocks.
 	#Range: 0 ~ 512
-	maxSnowAccumulationLayers = 24
+	maximumSnowLayersPerColumn = 24
 
-[seasonSync]
-	#Lock seasons to current Canadian calendar months (Eastern time).
-	realTimeCanadianSeasons = false
+[realWorldSeasonSynchronization]
+	#Synchronize the in-game season with the current real-world date in the America/Toronto time zone. Leave disabled to let Serene Seasons progress normally in-game.
+	syncSeasonsToEasternCanadianCalendar = false
 
-[seasonalDaylightCycle]
-	#Enable seasonal daylight cycle. This will change the length of day and night based on the current season.
-	enableSeasonalDaylightCycle = false
-	#If true, the day and night lengths will be determined by the custom values set below. If false, the day and night lengths will be determined by the season.
-	customCycleLength = false
-	#Custom day length in ticks. Only used if seasonal daylight cycle is disabled.
+[dayNightCycle]
+	#Change the daylight and nighttime proportions according to the current in-game sub-season, giving summer longer days and winter longer nights.
+	changeDayNightLengthsWithSeasons = true
+	#Allow Serene Seasons Plus to control Better Days day and night speed values. Disable this if Better Days or another mod should control time speed by itself.
+	allowSeasonalControlOfBetterDaysTimeSpeed = true
+	#Keep one complete day and night at a fixed total elapsed length while seasons change the daylight/night split. When false, the original seasonal speed behavior is preserved. This does not sync to the computer clock.
+	keepFullDayNightCycleAtFixedLength = false
+	#Total elapsed real-world minutes in one complete day and night when keepFullDayNightCycleAtFixedLength is enabled. Set to 1440 for 24 hours. This controls duration only and does not sync to the computer clock.
+	#Range: 0.1 ~ 10080.0
+	fullDayNightCycleLengthInRealMinutes = 20.0
+	#After Better Days finishes accelerating through sleep, move the world to the configured wake time. This does not alter Better Days day-start or night-start boundaries.
+	setWakeTimeAfterBetterDaysSleep = true
+	#Minecraft time-of-day tick used after a Better Days sleep cycle. Valid values are 0 through 23999; 1000 is approximately 7:00 AM.
+	#Range: 0 ~ 23999
+	wakeTimeAfterBetterDaysSleepInMinecraftTicks = 1000
+	#Use the custom day and night speed multipliers below when seasonal day/night length changes are disabled.
+	useCustomDayAndNightSpeedMultipliers = false
+	#Better Days speed multiplier for daytime when custom speed mode is active. Values below 1 make daytime longer; values above 1 make it shorter.
 	#Range: 0.05 ~ 100.0
-	customDayLength = 1.0
-	#Custom night length in ticks. Only used if seasonal daylight cycle is disabled.
+	customDaySpeedMultiplier = 1.0
+	#Better Days speed multiplier for nighttime when custom speed mode is active. Values below 1 make nighttime longer; values above 1 make it shorter.
 	#Range: 0.05 ~ 100.0
-	customNightLength = 1.0
+	customNightSpeedMultiplier = 1.0
 

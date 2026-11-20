@@ -41,7 +41,7 @@ function runDiag(src) {
   const mods = ['naturalist','ptd','lendersdelight','ends_delight','traveloptics',
     'iceandfire','cataclysm','simplycataclysm','alexscaves','alexsmobs','mowziesmobs',
     'dungeons_and_combat','celestisynth','endrem','end_remastered','goldcrownissb',
-    'terralith','aquamirae','historystages','heracles','fieldguide']
+    'terralith','aquamirae','historystages','ftbquests','fieldguide']
   mods.forEach(m => { try { out('  ' + yn(Platform.isModLoaded(m)) + ' ' + m) } catch (e) { out('  [?] ' + m + ' (check failed)') } })
   try { out('  total mods loaded: ' + Platform.getMods().length) } catch (e) {}
 

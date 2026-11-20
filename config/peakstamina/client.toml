@@ -1,0 +1,181 @@
+#Internal version of the config. DO NOT CHANGE.
+configVersion = "0.0.0"
+
+["HUD Layout"]
+	# The style of the HUD. BAR is horizontal, ICON is vertical.
+	#Allowed Values: BAR, ICON
+	hudStyle = "BAR"
+	#X offset for the Stamina HUD in BAR mode.
+	#Range: -5000 ~ 5000
+	barXOffset = 0
+	#Y offset for the Stamina HUD in BAR mode.
+	#Range: -5000 ~ 5000
+	barYOffset = 1
+	#X offset for the Stamina HUD in ICON mode.
+	#Range: -5000 ~ 5000
+	iconXOffset = 0
+	#Y offset for the Stamina HUD in ICON mode.
+	#Range: -5000 ~ 5000
+	iconYOffset = 0
+	# Width of the bar in pixels (Used for BAR style)
+	#Range: 1 ~ 1000
+	barWidth = 182
+	# Height of the bar in pixels (Used for BAR style)
+	#Range: 1 ~ 100
+	barHeight = 4
+	#Regen Arrow Style: DEFAULT (uses >>> ), CUSTOM (uses your custom texture made in the sprite sheet) or OFF.
+	#Allowed Values: DEFAULT, CUSTOM, OFF
+	regenIndicatorStyle = "DEFAULT"
+	#If true, draws a slightly dark border around the regen indicators (>).
+	showRegenBorder = true
+	# Whether to render text/emoji icons on the stamina bar penalty zones.
+	showIcons = true
+	# Draw a numerical text readout (e.g., 100 / 100) on the stamina HUD.
+	showNumericalReadout = false
+	#X offset for the numerical readout.
+	#Range: -5000 ~ 5000
+	numberXOffset = 0
+	#Y offset for the numerical readout.
+	#Range: -5000 ~ 5000
+	numberYOffset = 0
+	#Size scale for the numerical readout.
+	#Range: 0.1 ~ 5.0
+	numberScale = 0.6
+	#Brightness multiplier for the extra stamina bar section.
+	#Range: 1.0 ~ 5.0
+	extraStaminaBrightness = 4.5
+	#Enable the Stamina HUD overlay
+	enableStaminaHUD = true
+
+[Colors]
+	#Range: 0 ~ 16777215
+	colorBackground = 2236962
+	#Range: 0 ~ 16777215
+	colorSafe = 65280
+	#Range: 0 ~ 16777215
+	colorCritical = 16711680
+	#Range: 0 ~ 16777215
+	colorTireless = 65450
+	#Range: 0 ~ 16777215
+	colorStripes = 16711680
+	# Color for Hunger penalty stripes
+	#Range: 0 ~ 16777215
+	colorPenaltyHunger = 16763904
+	# Color for Food Poisoning penalty stripes
+	#Range: 0 ~ 16777215
+	colorPenaltyPoison = 11141375
+	# Color for weight stripes
+	#Range: 0 ~ 16777215
+	colorPenaltyWeight = 5592405
+
+["Bonus Stamina Bar"]
+	# Top gradient color for Bonus Stamina (RGB). Default: Gold
+	#Range: 0 ~ 16777215
+	colorBonusTop = 16777184
+	# Bottom gradient color for Bonus Stamina (RGB). Default: Dark Orange
+	#Range: 0 ~ 16777215
+	colorBonusBottom = 16449331
+	# Color of the highlight sheen (RGB). Default: White
+	#Range: 0 ~ 16777215
+	colorBonusHighlight = 16777215
+	# Opacity of the highlight sheen (0-255). 0 = Invisible, 255 = Solid. Default: 128 (Semi-transparent)
+	#Range: 0 ~ 255
+	bonusHighlightAlpha = 128
+
+["Encumbrance UI"]
+	#Enable the dynamic Weight/Encumbrance text on the inventory screen.
+	enableWeightHUD = true
+	#X position offset for the Weight HUD (0 is the center of the screen)
+	#Range: -4000 ~ 4000
+	weightXOffset = 27
+	#Y position offset for the Weight HUD (0 is the center of the screen)
+	#Range: -4000 ~ 4000
+	weightYOffset = -20
+	#The unit of measurement to display for weight. (Internal logic remains in lbs)
+	#Allowed Values: lbs, kg, CUSTOM
+	displayUnit = "lbs"
+	#If displayUnit is CUSTOM, what label should be shown? (e.g., 'oz', 'stones')
+	customUnitLabel = "kg"
+	#If displayUnit is CUSTOM, what should the internal lbs value be multiplied by.
+	#For example, 1 lbs = 16 oz, so the multiplier for 'oz' to be displayed 'accurately' would be 16.0.
+	#Range: 1.0E-4 ~ 10000.0
+	customUnitMultiplier = 1.0
+
+["Auto Hud"]
+	# Enable hiding the stamina bar when full/not in use.
+	autoHudEnable = false
+	# Animation type. FADE, SLIDE, or BOTH.
+	#Allowed Values: FADE, SLIDE, BOTH
+	autoHudMode = "FADE"
+	# Direction the bar slides away to. UP, DOWN, LEFT, RIGHT.
+	#Allowed Values: UP, DOWN, LEFT, RIGHT
+	autoHudSlideDir = "DOWN"
+	# The mathematical curve used for the slide animation.
+	# LINEAR: Constant speed from start to finish.
+	# SMOOTHSTEP: Starts slow, speeds up in the middle, then ends slow.
+	# EASE_OUT_SINE: Starts fast and then slows down to a stop.
+	# EASE_OUT_EXPO: Starts extremely fast and then quickly slows down to a stop.
+	#Allowed Values: LINEAR, SMOOTHSTEP, EASE_OUT_SINE, EASE_OUT_EXPO
+	autoHudEasing = "EASE_OUT_SINE"
+	# Speed the bar fades in.
+	#Range: 0.01 ~ 1.0
+	autoHudFadeInSpeed = 0.08
+	# Speed the bar fades out.
+	#Range: 0.01 ~ 1.0
+	autoHudFadeOutSpeed = 0.05
+	# Speed the bar slides in.
+	#Range: 0.01 ~ 1.0
+	autoHudSlideInSpeed = 0.08
+	# Speed the bar slides out.
+	#Range: 0.01 ~ 1.0
+	autoHudSlideOutSpeed = 0.05
+	# How many pixels the bar moves when sliding out.
+	#Range: 0 ~ 1000
+	autoHudSlideDistance = 45
+	# How long (in ticks) the bar stays visible after you stop using stamina (20 ticks = 1s).
+	#Range: 0 ~ 1200
+	autoHudLingerTime = 60
+	# Show the bar if stamina drops below this percentage (0.35 = 35%)
+	#Range: 0.0 ~ 1.0
+	autoHudThreshold = 0.35
+	# Force the bar to stay visible if you have penalties (hunger, poison, fatigue, weight).
+	autoHudShowOnPenalties = true
+	#If true, the stamina HUD will automatically show when you have Bonus Stamina.
+	autoHudShowOnBonus = true
+
+[Tooltips]
+	#Enable stamina information on item tooltips.
+	enableTooltips = true
+	#Only show tooltips when advanced tooltips are enabled (F3+H).
+	advancedTooltipsOnly = false
+	# Define multiple tooltips to display on items. (Order here dictates order shown in-game)
+	# Format: 'CONTENT_TYPE;PLACEMENT;LABEL_COLOR;VALUE_COLOR;PREFIX;SUFFIX'
+	# 
+	# Available Content: WEIGHT, ATTACK_COST, MISSED_ATTACK_COST, USE_COST, TICK_COST, BLOCK_COST,
+	#                    INSTANT_STAMINA, BONUS_STAMINA, REGEN_MODIFIER, CURES, ATTRIBUTE, POISON, PENALTY_RESIST
+	# Available Placements: BOTTOM, BELOW_NAME
+	# Colors: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+	# 
+	# Note: You can press Enter to format this list vertically in this file!
+	customTooltips = ["WEIGHT;BOTTOM;DARK_GRAY;WHITE", "ATTACK_COST;BOTTOM;DARK_GRAY;WHITE", "BLOCK_COST;BOTTOM;DARK_GRAY;WHITE", "USE_COST;BOTTOM;DARK_GRAY;WHITE", "TICK_COST;BOTTOM;DARK_GRAY;WHITE", "INSTANT_STAMINA;BOTTOM;DARK_GRAY;GREEN", "BONUS_STAMINA;BOTTOM;DARK_GRAY;GOLD", "REGEN_MODIFIER;BOTTOM;DARK_GRAY;YELLOW", "CURES;BOTTOM;DARK_GRAY;WHITE"]
+	#Color code attribute buffs and debuffs (Green for positive, Red for negative).
+	colorCodeBuffs = true
+	# A list of attribute IDs where a NEGATIVE/LOWER value is considered a BUFF (colored green).
+	# Add modded attributes here if they are being colored wrong in the tooltip.
+	# Format: modid:attribute_name
+	invertedTooltipAttributes = ["peakstamina:regen_delay_multiplier", "peakstamina:global_stamina_usage", "peakstamina:exhaustion_duration_multiplier", "peakstamina:penalty_gain_multiplier", "peakstamina:max_global_penalty_multiplier", "peakstamina:max_fatigue_penalty_multiplier", "peakstamina:max_hunger_penalty_multiplier", "peakstamina:max_poison_penalty_multiplier", "peakstamina:max_weight_penalty_multiplier", "peakstamina:weight_calculation_multiplier", "peakstamina:jump_cost_multiplier", "peakstamina:sprint_cost_multiplier", "peakstamina:attack_cost_multiplier", "peakstamina:missed_attack_cost_multiplier", "peakstamina:shield_block_cost_multiplier", "peakstamina:shieldexp_parry_cost_multiplier", "peakstamina:item_cost_multiplier", "peakstamina:block_break_cost_multiplier", "peakstamina:block_place_cost_multiplier", "peakstamina:swim_cost_multiplier", "peakstamina:climb_cost_multiplier", "peakstamina:elytra_cost_multiplier", "peakstamina:parcool_cost_multiplier", "peakstamina:walljumptxf_cost_multiplier", "peakstamina:combatroll_cost_multiplier", "peakstamina:bonus_stamina_decay_rate"]
+
+["Active Buffs UI"]
+	#Enable the Active Buffs button in the inventory.
+	enableActiveBuffsHUD = true
+	#X position offset for the Active Buffs button (0 is top-left of inventory GUI)
+	#Range: -4000 ~ 4000
+	activeBuffsXOffset = -24
+	#Y position offset for the Active Buffs button (0 is top-left of inventory GUI)
+	#Range: -4000 ~ 4000
+	activeBuffsYOffset = 10
+	#The text/icon displayed on the Active Buffs inventory button.
+	activeBuffsButtonLabel = "⬆"
+	#Show item icons next to attribute names in the Active Buffs screen.
+	activeBuffsShowIcons = true
+

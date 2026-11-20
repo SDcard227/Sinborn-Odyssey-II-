@@ -1,0 +1,2112 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thearchive"
+	group: "5A0000000000006F"
+	icon: "minecraft:bookshelf"
+	id: "3E65A8B703BCD3BC"
+	order_index: 16
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The history of the world before the Sinborn was written in folios, and the folios were not kept together. They are in chests, in ruins, in the hands of the things that were sealed."
+				"Every folio you pick up opens a page here. Every shelf you finish snaps shut with a sound."
+				"Six shelves. You will not find them in order. That is the point."
+			]
+			icon: "minecraft:bookshelf"
+			id: "5C9527F81FD9E408"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Somebody wrote it all down. Then somebody scattered it."
+			tasks: [{
+				id: "36FE6B9D6E6D7582"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Scattered Archive"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["Chest loot. Common. The cosmos before it was broken, filed where old things are kept."]
+			icon: "minecraft:book"
+			id: "07A4DA791E955CF1"
+			shape: "square"
+			size: 1.25d
+			subtitle: "Folios I-VIII: the cosmos before it was broken."
+			tasks: [{
+				id: "51C9F1B4A3363730"
+				title: "Open the shelf"
+				type: "checkmark"
+			}]
+			title: "The First World"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07A4DA791E955CF1"]
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in ancient city, library lower basic, stronghold library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "31B5B87FAD0B21F5"
+			rewards: [{
+				count: 8
+				id: "7EFE20CF9FC2EFA7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Copied from the Umvuthana Recitation by the Convent of Excrucis."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw1_f1"
+				criterion: ""
+				id: "1AB36271F047C3E9"
+				type: "advancement"
+			}]
+			title: "The Void and the Dragon"
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07A4DA791E955CF1"]
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in grand library, library higher basic, stronghold library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "74D9ED8FAA00E615"
+			rewards: [{
+				count: 8
+				id: "330C057F14E61D13"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "On the rising of the original gods."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw1_f2"
+				criterion: ""
+				id: "7994300BE0BB065E"
+				type: "advancement"
+			}]
+			title: "The Thirteen Substrates"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07A4DA791E955CF1"]
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in ancient city, grand library, jungle temple."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "141AA21BB1E7DA1D"
+			rewards: [{
+				count: 8
+				id: "1622514F0494735D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "What the cosmos was, before it was broken."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw1_f3"
+				criterion: ""
+				id: "728D9D737CB4F55C"
+				type: "advancement"
+			}]
+			title: "The Unified Realm"
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07A4DA791E955CF1"]
+			description: [
+				"Attributed to a Sirben hand, unsigned."
+				"Turns up in stronghold library, umvuthana grove chest, village plains house."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "0E3D69D09056CC71"
+			rewards: [{
+				count: 8
+				id: "554823A9106C6B4C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A Sirben copy. The Convent permitted it to stand."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw1_f4"
+				criterion: ""
+				id: "65358826AB5AFFD9"
+				type: "advancement"
+			}]
+			title: "When Mortal Life Arose"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07A4DA791E955CF1"]
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in ancient city, library lower basic, stronghold library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "30BA043A7AACC37C"
+			rewards: [{
+				count: 8
+				id: "0048229610FEA092"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The Convent’s caution against the Sirben folio \"When Mortal Life Arose.\""
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw1_f4b"
+				criterion: ""
+				id: "3CEA568539C7884D"
+				type: "advancement"
+			}]
+			title: "On the Question of Creation (Convent)"
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07A4DA791E955CF1"]
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in desert pyramid, library lower basic, stronghold library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "73C538800B720FBC"
+			rewards: [{
+				count: 8
+				id: "71892517E1D71842"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The first transgression."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw1_f5"
+				criterion: ""
+				id: "74E5959E08BDAF68"
+				type: "advancement"
+			}]
+			title: "The God Who Loved a Mortal"
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07A4DA791E955CF1"]
+			description: [
+				"Attributed to the Sirben Faith."
+				"Turns up in bastion other, chapel, sanctum supply."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "1B05E00A827E2648"
+			rewards: [{
+				count: 8
+				id: "1152AEDE70C7C484"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Kept on every Sirben altar of the diaspora."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw1_f6"
+				criterion: ""
+				id: "566E4852D7CCCEEA"
+				type: "advancement"
+			}]
+			title: "The Weeping Mother"
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07A4DA791E955CF1"]
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in ancient city, grand library, stronghold corridor."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "3AFE52602650094B"
+			rewards: [{
+				count: 8
+				id: "3B1E5B171B32716C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The sentence passed on the child."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw1_f7"
+				criterion: ""
+				id: "333E79E1C52D2933"
+				type: "advancement"
+			}]
+			title: "The Duties Without Powers"
+			x: 12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07A4DA791E955CF1"]
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in library higher basic, stronghold library, woodland mansion."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "547FB2033F63CBC7"
+			rewards: [{
+				count: 8
+				id: "71539A36B00D980C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "How the Path became inevitable."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw1_f8"
+				criterion: ""
+				id: "0C7F5D36C6E9345E"
+				type: "advancement"
+			}]
+			title: "The Centuries of Silence"
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"141AA21BB1E7DA1D"
+				"0E3D69D09056CC71"
+				"73C538800B720FBC"
+				"1B05E00A827E2648"
+				"3AFE52602650094B"
+				"547FB2033F63CBC7"
+			]
+			description: [
+				"Every folio on this shelf has passed through your hands."
+				"The archive notices."
+			]
+			icon: "minecraft:lectern"
+			id: "1A78C7705DA9D7FC"
+			rewards: [
+				{
+					count: 64
+					id: "0F6F8CDE5AF9742C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7CA5C7DE8A975D5C"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "The shelf is whole."
+			tasks: [{
+				advancement: "sinborn:archive/shelf1_complete"
+				criterion: ""
+				id: "5116D7338C17D195"
+				type: "advancement"
+			}]
+			title: "The First World , Complete"
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			description: ["Chest loot. Common. The nine civilisations and the gods who turned , filed in their own ruins."]
+			icon: "minecraft:writable_book"
+			id: "177E743C2DB9A5C8"
+			shape: "square"
+			size: 1.25d
+			subtitle: "Folios I-XII: the thousand-year war and the Sealing."
+			tasks: [{
+				id: "1BF4F24573A201AD"
+				title: "Open the shelf"
+				type: "checkmark"
+			}]
+			title: "The Crimson Reign"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in grand library, library higher basic, pillager outpost."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "50D7287E4617EA0F"
+			rewards: [{
+				count: 8
+				id: "5183EDC1DE350A08"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "CR 1. The year the first Sinborn ceased to wait."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f1"
+				criterion: ""
+				id: "09C8779E0DB26C50"
+				type: "advancement"
+			}]
+			title: "The Turn"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to a Forgesworn archivist."
+				"Turns up in catacumbs, desert pyramid, nether bridge."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "248C66605176896B"
+			rewards: [{
+				count: 8
+				id: "11D365AE76463DD7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A process, not an event."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f10"
+				criterion: ""
+				id: "6CE7459A3BAA33FF"
+				type: "advancement"
+			}]
+			title: "The Sealings"
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to a Forgesworn archivist."
+				"Turns up in bastion other, mechanism storage, woodland mansion."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "2445F7062684A112"
+			rewards: [{
+				count: 8
+				id: "0359D3D659066432"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "CR 700 to CR 1000. The Reign’s terminator."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f11"
+				criterion: ""
+				id: "2BA50F56EED0B654"
+				type: "advancement"
+			}]
+			title: "The Storm-Builders Rise"
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in library higher basic, nether bridge, stronghold library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "371A9E1A1359446A"
+			rewards: [{
+				count: 8
+				id: "13C3CE0E6B09E32C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "0 BS. The keystone hour. The end of the Reign."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f12"
+				criterion: ""
+				id: "6E868D55ACD22B0F"
+				type: "advancement"
+			}]
+			title: "The Sealing"
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in armory, nether bridge, pillager outpost."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "37F541DEC88F36D9"
+			rewards: [{
+				count: 8
+				id: "2BE458245C8F0E6A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "CR 1 to CR 200."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f2"
+				criterion: ""
+				id: "31CA531830FAA6FB"
+				type: "advancement"
+			}]
+			title: "The First Conquests"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Umvuthana Recitation."
+				"Turns up in catacumbs, desert pyramid, forgotten sand."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "2998FA5FFC1786B0"
+			rewards: [{
+				count: 8
+				id: "2B085C33EE1D1DE2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The first of the Nine. The Umvuthana sing it so it is not lost."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f3"
+				criterion: ""
+				id: "1D69FFD037F223D0"
+				type: "advancement"
+			}]
+			title: "Sunleia’s Court"
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Umvuthana Recitation."
+				"Turns up in catacumbs, jungle temple, library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "71ACEDF1270F0661"
+			rewards: [{
+				count: 8
+				id: "51A1153817A09EC1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The second of the Nine."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f4"
+				criterion: ""
+				id: "102C35DABF4A78A5"
+				type: "advancement"
+			}]
+			title: "Yucatan, the Sky-Reaching"
+			x: 11.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Umvuthana Recitation."
+				"Turns up in grand library, stronghold library, umvuthana grove chest."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "034215634E97A4E9"
+			rewards: [{
+				count: 8
+				id: "31E17CE229D7DD21"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The third of the Nine. The people who kept the record."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f5"
+				criterion: ""
+				id: "275D0EAEE058AB3B"
+				type: "advancement"
+			}]
+			title: "The Umvuthana Archive"
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Umvuthana Recitation."
+				"Turns up in frosted prison treasure, frozen chest, maze common chest."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "4C82121F3318DB43"
+			rewards: [{
+				count: 8
+				id: "1A7DB45B404B97B5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The fourth of the Nine. The people of the frozen vigil."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f6"
+				criterion: ""
+				id: "2C2E994C5046B980"
+				type: "advancement"
+			}]
+			title: "The Hoarfrost"
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to a Forgesworn archivist."
+				"Turns up in armory, dwemer tower, mechanism storage."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "1E62EDEDC6F22E72"
+			rewards: [{
+				count: 8
+				id: "2AA2DF345E046EFE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The fifth and sixth of the Nine."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f7"
+				criterion: ""
+				id: "56AC817DAE1FC81A"
+				type: "advancement"
+			}]
+			title: "The Forgesworn and the Cipher"
+			x: 15.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in ancient city, aqua mage basic storage, ship 1."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "1C03B7D9C9A00850"
+			rewards: [{
+				count: 8
+				id: "361DE907D77D2687"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The seventh and eighth of the Nine."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f8"
+				criterion: ""
+				id: "300F46AA7400B088"
+				type: "advancement"
+			}]
+			title: "The Tidehold and the Seeped"
+			x: 17.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in bastion other, library lower basic, nether bridge."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "2C4484F45FD751A6"
+			rewards: [{
+				count: 8
+				id: "09D1F1DE70809751"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "CR 200 to CR 700. A fact the survivors tried to erase."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f9"
+				criterion: ""
+				id: "211AD70D198D1D7F"
+				type: "advancement"
+			}]
+			title: "The Gods Who Turned"
+			x: 18.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"Attributed to the Sirben Faith."
+				"Turns up in bastion other, umvuthana grove chest, woodland mansion."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "4B7FCB00FF6A23F8"
+			rewards: [{
+				count: 8
+				id: "61BF1A1695556FA5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The Sirben telling of \"The Gods Who Turned.\" Kept where the Convent could not reach."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw2_f9b"
+				criterion: ""
+				id: "795618CDA9393254"
+				type: "advancement"
+			}]
+			title: "The Honest Dissenters (Sirben)"
+			x: 20.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"50D7287E4617EA0F"
+				"2445F7062684A112"
+				"371A9E1A1359446A"
+				"1E62EDEDC6F22E72"
+				"2C4484F45FD751A6"
+				"4B7FCB00FF6A23F8"
+			]
+			description: [
+				"Every folio on this shelf has passed through your hands."
+				"The archive notices."
+			]
+			icon: "minecraft:lectern"
+			id: "55BD816623E61C66"
+			rewards: [
+				{
+					count: 64
+					id: "5ECB553EF477ECF8"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0C4DB65FEF6B30D0"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "The shelf is whole."
+			tasks: [{
+				advancement: "sinborn:archive/shelf2_complete"
+				criterion: ""
+				id: "63DC523910E283FA"
+				type: "advancement"
+			}]
+			title: "The Crimson Reign , Complete"
+			x: 22.0d
+			y: 6.0d
+		}
+		{
+			description: ["Chest loot. Common. The persecution, the diaspora, the reset , filed where survivors hid."]
+			icon: "minecraft:paper"
+			id: "6B2C3C1782295930"
+			shape: "square"
+			size: 1.25d
+			subtitle: "Folios I-X: the persecution, the diaspora, the settled world."
+			tasks: [{
+				id: "1B539D0A7300CF8B"
+				title: "Open the shelf"
+				type: "checkmark"
+			}]
+			title: "The Long Aftermath"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in simple dungeon, village plains house, village temple."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "1C4F15CA25068C51"
+			rewards: [{
+				count: 8
+				id: "0A9CDFBF48039598"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "1 AS. The calendar reset around the binding."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f1"
+				criterion: ""
+				id: "6106D08562A8F6F1"
+				type: "advancement"
+			}]
+			title: "The First Day of the Persecution"
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in shipwreck supply, village fisher, village plains house."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "729A41CACFF3EF6A"
+			rewards: [{
+				count: 8
+				id: "49507DA951EE5CCD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The shape the cosmos wears now."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f10"
+				criterion: ""
+				id: "63D8DA239A02E07C"
+				type: "advancement"
+			}]
+			title: "The Settled World"
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to the Sirben Faith."
+				"Turns up in village plains house, village savanna house, village temple."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "6F0700832AFD3B6F"
+			rewards: [{
+				count: 8
+				id: "40DA3695E4D175F4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "1 AS to 3000 AS. The Sirben Faith keeps what it can."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f2"
+				criterion: ""
+				id: "72032F151B83DF55"
+				type: "advancement"
+			}]
+			title: "The Persecution Era"
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to the Sirben Faith."
+				"Turns up in village plains house, village snowy house, village taiga house."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "01CBB9C5E610A620"
+			rewards: [{
+				count: 8
+				id: "69A15128E2AC72DD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Where the survivors went."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f3"
+				criterion: ""
+				id: "353E65012DEF6ECE"
+				type: "advancement"
+			}]
+			title: "The Diaspora"
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to a Necromancer of the lineage."
+				"Turns up in abandoned mineshaft, crypt, simple dungeon."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "0F0E6C87A6069C05"
+			rewards: [{
+				count: 8
+				id: "245A5FD72F8AA0D9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Why the lineage’s corpses do not rest."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f4"
+				criterion: ""
+				id: "079A68FE31F66169"
+				type: "advancement"
+			}]
+			title: "The Sinborn Dead"
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in end city treasure, hidden sculk room, stronghold corridor."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "163DA7BF75D61056"
+			rewards: [{
+				count: 8
+				id: "0FE1C9A228BFB575"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The Convent’s distributed gaze."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f5"
+				criterion: ""
+				id: "28DB554025A28DA5"
+				type: "advancement"
+			}]
+			title: "The Endermen and the Pearl-Eyes"
+			x: 9.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to the Sirben Faith."
+				"Turns up in abandoned mineshaft, crypt, simple dungeon."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "1D802D168821C07A"
+			rewards: [{
+				count: 8
+				id: "6B7403B9318B6D1D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The dead who almost finished the Path."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f6"
+				criterion: ""
+				id: "5F323ABE7CD14FAD"
+				type: "advancement"
+			}]
+			title: "The Fallen Adventurers"
+			x: 11.0d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to a Forgesworn archivist."
+				"Turns up in abandoned mineshaft, mechanism storage, simple dungeon."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "6ADDC105DD157017"
+			rewards: [{
+				count: 8
+				id: "2996494798E33A33"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The cycle that almost ended the cycle."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f7"
+				criterion: ""
+				id: "064E096ED7E1D864"
+				type: "advancement"
+			}]
+			title: "The Storm-Builders’ Attempt"
+			x: 12.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to the Sirben Faith."
+				"Turns up in abandoned mineshaft, mechanism storage, simple dungeon."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "7B0CB5CD8ADE99A0"
+			rewards: [{
+				count: 8
+				id: "24DB118773A7DF82"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The Sirben telling of the Storm-Builders."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f7b"
+				criterion: ""
+				id: "57750E2B0006F642"
+				type: "advancement"
+			}]
+			title: "The Ones Who Nearly Finished (Sirben)"
+			x: 14.0d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in abandoned mineshaft, grand library, stronghold library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "639376A97B20192E"
+			rewards: [{
+				count: 8
+				id: "17F2EF85AADB5C4C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "How a cycle ends, and the next begins."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f8"
+				criterion: ""
+				id: "487C81AA5F436673"
+				type: "advancement"
+			}]
+			title: "The Reset"
+			x: 15.5d
+			y: 9.0d
+		}
+		{
+			description: [
+				"Attributed to the Umvuthana Recitation."
+				"Turns up in abandoned mineshaft, shipwreck treasure, stronghold corridor."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "53584F9253333C6F"
+			rewards: [{
+				count: 8
+				id: "4C3474AA78263EBF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "What the Last True Dragon’s clutch did, after the Sealing."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw3_f9"
+				criterion: ""
+				id: "1333E72D5ADF0FB3"
+				type: "advancement"
+			}]
+			title: "The Dragons Choose"
+			x: 17.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"0F0E6C87A6069C05"
+				"163DA7BF75D61056"
+			]
+			description: [
+				"Every folio on this shelf has passed through your hands."
+				"The archive notices."
+			]
+			icon: "minecraft:lectern"
+			id: "7E2D188FA74F4177"
+			rewards: [
+				{
+					count: 64
+					id: "3E6287C1DCF9408C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "315F4A94A0BFE999"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "The shelf is whole."
+			tasks: [{
+				advancement: "sinborn:archive/shelf3_complete"
+				criterion: ""
+				id: "09DC9FECB0D1DC61"
+				type: "advancement"
+			}]
+			title: "The Long Aftermath , Complete"
+			x: 19.0d
+			y: 9.0d
+		}
+		{
+			description: ["Chest loot. Rare. The apparatus and the apocrypha , the pages the Cathedral did not want read."]
+			icon: "minecraft:knowledge_book"
+			id: "40F3FCC4E6510FAB"
+			shape: "square"
+			size: 1.25d
+			subtitle: "Folios I-VIII: the deep readings, kept rarest."
+			tasks: [{
+				id: "66A21A392C8B6336"
+				title: "Open the shelf"
+				type: "checkmark"
+			}]
+			title: "Apparatus & Apocrypha"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in bastion treasure, end city treasure, hidden treasure place."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "333546A2840067B5"
+			rewards: [{
+				count: 8
+				id: "49C98C8326E30332"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The apparatus of ascension."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw4_f1"
+				criterion: ""
+				id: "317A06CA84B978F7"
+				type: "advancement"
+			}]
+			title: "The Five Vessels of Divinity"
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Attributed to the Umvuthana Recitation."
+				"Turns up in acropolis treasure, bastion treasure, catacumbs."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "31A9B62B696C8AC0"
+			rewards: [{
+				count: 8
+				id: "44C4716ABDD42546"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A catalogue of bound gods, sung so none is forgotten."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw4_f2"
+				criterion: ""
+				id: "6D88290754D3A147"
+				type: "advancement"
+			}]
+			title: "The Sealed Pantheon"
+			x: 3.5d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in end city treasure, hidden treasure place, library higher treasure."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "57E479EFCA483C7E"
+			rewards: [{
+				count: 8
+				id: "4D281CF096CCE626"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The Convent’s own origin."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw4_f3"
+				criterion: ""
+				id: "25AFC9A2E9631E55"
+				type: "advancement"
+			}]
+			title: "The Cathedral and the Nightwarden"
+			x: 5.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in bastion treasure, hidden sculk room, nether bridge."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "5AE73B95C471FFF1"
+			rewards: [{
+				count: 8
+				id: "6179DB4F923F7770"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "What visits a civilisation at its apex."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw4_f4"
+				criterion: ""
+				id: "726BE730BCD40B81"
+				type: "advancement"
+			}]
+			title: "The Manifestor’s Voice"
+			x: 6.5d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Attributed to a Forgesworn archivist."
+				"Turns up in ancient city, end city treasure, library higher treasure."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "5D161F8D4C6DBC35"
+			rewards: [{
+				count: 8
+				id: "3E34A0B2C2FD31AB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Why the same story keeps being told."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw4_f5"
+				criterion: ""
+				id: "33C6DC183A745AB8"
+				type: "advancement"
+			}]
+			title: "The Cycle and the Pattern"
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in ancient city, end city treasure, hidden treasure place."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "6F1310C2C1F907AC"
+			rewards: [{
+				count: 8
+				id: "53E73D7646469580"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "On the only act she has ever been said to perform."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw4_f6"
+				criterion: ""
+				id: "70762FDC07BCC370"
+				type: "advancement"
+			}]
+			title: "The Primal Dragon’s Witness"
+			x: 9.5d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in grand library, library higher basic, stronghold library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "2DEB4DD8D1765425"
+			rewards: [{
+				count: 8
+				id: "1861F96DB3B45961"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Why this Archive disagrees with itself."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw4_f7"
+				criterion: ""
+				id: "49E1BA0B5F0169BB"
+				type: "advancement"
+			}]
+			title: "On the Three Traditions"
+			x: 11.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in end city treasure, hidden treasure place, stronghold library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "22FBDD9B4F0FC6F1"
+			rewards: [{
+				count: 8
+				id: "20F33DCB63EFC512"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The one ending that breaks the cycle."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sw4_f8"
+				criterion: ""
+				id: "066369719A6B03AB"
+				type: "advancement"
+			}]
+			title: "The Refusal"
+			x: 12.5d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"31A9B62B696C8AC0"
+				"5D161F8D4C6DBC35"
+				"6F1310C2C1F907AC"
+				"2DEB4DD8D1765425"
+				"22FBDD9B4F0FC6F1"
+			]
+			description: [
+				"Every folio on this shelf has passed through your hands."
+				"The archive notices."
+			]
+			icon: "minecraft:lectern"
+			id: "11585F47BA9D7D58"
+			rewards: [
+				{
+					count: 64
+					id: "0BC48230374BF70E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7D5250D088BC7D10"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "The shelf is whole."
+			tasks: [{
+				advancement: "sinborn:archive/shelf4_complete"
+				criterion: ""
+				id: "62EE000B715BFBE4"
+				type: "advancement"
+			}]
+			title: "Apparatus & Apocrypha , Complete"
+			x: 14.5d
+			y: 12.0d
+		}
+		{
+			description: ["Boss drops. Every folio on this shelf falls, without fail, from a named sealed thing when it dies."]
+			icon: "minecraft:dragon_head"
+			id: "06FCCFDA500A48FA"
+			shape: "square"
+			size: 1.25d
+			subtitle: "Folios recovered from the bodies of bound gods."
+			tasks: [{
+				id: "43BBC8D66CBE2AFF"
+				title: "Open the shelf"
+				type: "checkmark"
+			}]
+			title: "The Bestiary of the Sealed"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Falls from The Aberrator when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "1D49EA1B2E32E826"
+			rewards: [{
+				count: 8
+				id: "2BD5B52061CEC4E6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found upon the Aberrator."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_aberrator"
+				criterion: ""
+				id: "3AAB3E3FDCDA7AD4"
+				type: "advancement"
+			}]
+			title: "The Aberrator"
+			x: 2.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to a scribe of Yucatan."
+				"Falls from Ah Puch when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "1EE32E115523CE8E"
+			rewards: [{
+				count: 8
+				id: "4F54AFF754C6A5BE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found upon Ah Puch, in the underworld gate."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_ahpuch"
+				criterion: ""
+				id: "1A3AAFC3DD4F5686"
+				type: "advancement"
+			}]
+			title: "The Brothers of Descent"
+			x: 3.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Falls from Ammit when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "686D95F3D384294E"
+			rewards: [{
+				count: 8
+				id: "111E24FC97AFAF24"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found upon Ammit, in her tomb."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_ammit"
+				criterion: ""
+				id: "0712F199F990BCE6"
+				type: "advancement"
+			}]
+			title: "The Devourer"
+			x: 5.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to a Forgesworn archivist."
+				"Falls from Chaos Spawner when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "4714EA535C4AD978"
+			rewards: [{
+				count: 8
+				id: "7D76BBA6EB550501"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Recovered from the Chaos Construct, in the Wrought Chambers."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_chaos"
+				criterion: ""
+				id: "0FAB7FEF2116E45A"
+				type: "advancement"
+			}]
+			title: "The Construct That Woke"
+			x: 6.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to a survivor of the Ship Graveyard."
+				"Falls from Captain Cornelia when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "440EF49EE2FE6507"
+			rewards: [{
+				count: 8
+				id: "563772447F9EC9FE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found in the wreck- fields of the Ship Graveyard."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_cornelia"
+				criterion: ""
+				id: "35467ED2F55106F8"
+				type: "advancement"
+			}]
+			title: "The Drowned Captain"
+			x: 8.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to the Umvuthana Recitation."
+				"Falls from Void Worm when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "5C1CA633E161C575"
+			rewards: [{
+				count: 8
+				id: "46B078C13D8FD642"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found where the Death Worm was unearthed."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_deathworm"
+				criterion: ""
+				id: "41C81A290AB3E1C6"
+				type: "advancement"
+			}]
+			title: "The Worm in the Strata"
+			x: 9.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to a Court priest of Kamath."
+				"Falls from Ernos when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "79D2DE5FD84EA6C5"
+			rewards: [{
+				count: 8
+				id: "51C9F5F24BC64F45"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found upon Ernos, sibling to the Refused-Dead King."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_ernos"
+				criterion: ""
+				id: "6D4ED90D664F020E"
+				type: "advancement"
+			}]
+			title: "The Failed Harvest"
+			x: 11.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to the Umvuthana Recitation."
+				"Falls from Frostmaw when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "3DAADC3F617C035C"
+			rewards: [{
+				count: 8
+				id: "285BDA94DF2F8B1C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found upon Frostmaw, where her mountain keeps her."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_frostmaw"
+				criterion: ""
+				id: "579FABC164E08CC7"
+				type: "advancement"
+			}]
+			title: "The Held Beast"
+			x: 12.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to a scribe of Yucatan."
+				"Falls from Kukulkan when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "3E8D37377118FBE3"
+			rewards: [{
+				count: 8
+				id: "66D47114D13F4EF3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found where Kukulkan was reached, at altitude."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_kukulkan"
+				criterion: ""
+				id: "42070D27914CDDD5"
+				type: "advancement"
+			}]
+			title: "The Full-Moon Sun-God"
+			x: 14.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to a Court priest of Kamath."
+				"Falls from Maledictus when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "1BD34A5FC9F70863"
+			rewards: [{
+				count: 8
+				id: "1D0A1CEA0DB8ECA2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found upon Maledictus, in the Cursed Pyramid."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_maledictus"
+				criterion: ""
+				id: "564CDC931124E8BD"
+				type: "advancement"
+			}]
+			title: "The Refused-Dead King"
+			x: 15.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to the Sirben Faith."
+				"Falls from Sunleia when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "0F1B85D3115A5DE8"
+			rewards: [{
+				count: 8
+				id: "3B3A3D4FEB814596"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found upon Sunleia. Read it grieving."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_sunleia"
+				criterion: ""
+				id: "255017B8BD663C6D"
+				type: "advancement"
+			}]
+			title: "The Sun-Mother’s Heart"
+			x: 17.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to the Umvuthana Recitation."
+				"Falls from Umvuthi when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "13C5441CB3DDF1A2"
+			rewards: [{
+				count: 8
+				id: "0592E2904C780568"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found upon Umvuthi the Sunbird."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_umvuthi"
+				criterion: ""
+				id: "0E054F92921FE10B"
+				type: "advancement"
+			}]
+			title: "The Memory-Mother"
+			x: 18.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to a Forgesworn archivist."
+				"Falls from Wither Storm when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "2BE757A4FF91EBBA"
+			rewards: [{
+				count: 8
+				id: "142C45EFA5A73897"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Recovered from the Wither Storm."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_witherstorm"
+				criterion: ""
+				id: "06C4E3A90936FD90"
+				type: "advancement"
+			}]
+			title: "The God-Killing Weapon"
+			x: 20.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["06FCCFDA500A48FA"]
+			description: [
+				"Attributed to a Forgesworn archivist."
+				"Falls from Ferrous Wroughtnaut when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "14D5FD1B0B1E1F8D"
+			rewards: [{
+				count: 8
+				id: "3A9BA46EAB465A2A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Found upon the Ferrous Wroughtnaut."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sb_wroughtnaut"
+				criterion: ""
+				id: "5E3C2624BF799612"
+				type: "advancement"
+			}]
+			title: "The Sleeping Guardian"
+			x: 21.5d
+			y: 15.0d
+		}
+		{
+			dependencies: [
+				"440EF49EE2FE6507"
+				"2BE757A4FF91EBBA"
+				"14D5FD1B0B1E1F8D"
+			]
+			description: [
+				"Every folio on this shelf has passed through your hands."
+				"The archive notices."
+			]
+			icon: "minecraft:lectern"
+			id: "5570C6A394054B23"
+			rewards: [
+				{
+					count: 64
+					id: "413C4E53F6F18829"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "425F1DBBD938659A"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "The shelf is whole."
+			tasks: [{
+				advancement: "sinborn:archive/shelf5_complete"
+				criterion: ""
+				id: "1809D9FC1B616ECF"
+				type: "advancement"
+			}]
+			title: "The Bestiary of the Sealed , Complete"
+			x: 23.5d
+			y: 15.0d
+		}
+		{
+			description: ["Chest loot. Rare. The anthologies of the divine , one per god, scattered by design."]
+			icon: "minecraft:enchanted_book"
+			id: "3C71FB6B76382EFD"
+			shape: "square"
+			size: 1.25d
+			subtitle: "Seven readings on the unsealed powers, and the door itself."
+			tasks: [{
+				id: "1798DB39AB2CFCE8"
+				title: "Open the shelf"
+				type: "checkmark"
+			}]
+			title: "The Divine Anthologies"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Attributed to an Umvuthana food-archivist."
+				"Turns up in desert pyramid, jungle temple, umvuthana grove chest."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "15D26C6D02E1F4B5"
+			rewards: [{
+				count: 8
+				id: "68B1C57B74E52738"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "An Umvuthana ledger of what the desert ate, and how."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sda_caravan"
+				criterion: ""
+				id: "39862651B5D35E65"
+				type: "advancement"
+			}]
+			title: "The Caravan Pantry"
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Turns up in end city treasure, stronghold library."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "66EDA96BA8E4BB7F"
+			rewards: [{
+				count: 8
+				id: "5B593A7C27B2F339"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The capstone. The Convent debated burning this one."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sda_divinity"
+				criterion: ""
+				id: "7E3BE0EB015C7E16"
+				type: "advancement"
+			}]
+			title: "The Path to Divinity"
+			x: 3.5d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Attributed to a Tidehold recension, salvaged."
+				"Falls from The Nightwarden when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "6E8A022EA13A0E2F"
+			rewards: [{
+				count: 8
+				id: "0CBD3D536CD1B516"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Salvaged from the Void Cathedral, where he keeps his exile."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sda_nightwarden"
+				criterion: ""
+				id: "36B912F0861DB139"
+				type: "advancement"
+			}]
+			title: "On the Masterless Apex"
+			x: 5.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Attributed to the Sirben Faith."
+				"Falls from His Holiness when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "77F000826402EE51"
+			rewards: [{
+				count: 8
+				id: "040D89CF49F38239"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A Sirben text. The Convent permits it, now, at last."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sda_pontiff"
+				criterion: ""
+				id: "5BD9D02D04BCE4CB"
+				type: "advancement"
+			}]
+			title: "The God the Convent Never Saw"
+			x: 6.5d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Falls from Sunleia when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "778818CCFF903D01"
+			rewards: [{
+				count: 8
+				id: "04C0CEF4E6BFF3FF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Recovered from the courts of Sunleia, where she still holds."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sda_sunleia"
+				criterion: ""
+				id: "6A09B965F64C7CE3"
+				type: "advancement"
+			}]
+			title: "On the Sun That Stayed"
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Attributed to the Convent of Excrucis."
+				"Falls from Green Genie Boss when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "431B1F26ED9C8D63"
+			rewards: [{
+				count: 8
+				id: "303047DD711BF235"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Taken down from a caravan-master’s deathbed account."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sda_ubar"
+				criterion: ""
+				id: "434AEA892A5E88BE"
+				type: "advancement"
+			}]
+			title: "The Wish-Seller of the Sands"
+			x: 9.5d
+			y: 18.0d
+		}
+		{
+			description: [
+				"Attributed to a Forgesworn fragment, machine-copied."
+				"Falls from Warborn Aegis when it dies. Every time."
+				"Pick the folio up and this page opens on its own."
+			]
+			icon: "minecraft:written_book"
+			id: "38BCC0986290D63A"
+			rewards: [{
+				count: 8
+				id: "7E317AC3401EFC30"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Machine-copied from the Forge-Tomb’s standing orders."
+			tasks: [{
+				advancement: "sinborn:archive/folio_sda_warborn"
+				criterion: ""
+				id: "54D106B335FBE8B1"
+				type: "advancement"
+			}]
+			title: "On the Last Warlord"
+			x: 11.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"66EDA96BA8E4BB7F"
+				"431B1F26ED9C8D63"
+			]
+			description: [
+				"Every folio on this shelf has passed through your hands."
+				"The archive notices."
+			]
+			icon: "minecraft:lectern"
+			id: "73D1D3B4D7993715"
+			rewards: [
+				{
+					count: 64
+					id: "5622A17258F78B4E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "628D323AC2238181"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "The shelf is whole."
+			tasks: [{
+				advancement: "sinborn:archive/shelf6_complete"
+				criterion: ""
+				id: "5B8B0F443A030B59"
+				type: "advancement"
+			}]
+			title: "The Divine Anthologies , Complete"
+			x: 13.0d
+			y: 18.0d
+		}
+		{
+			dependencies: [
+				"55BD816623E61C66"
+				"7E2D188FA74F4177"
+				"11585F47BA9D7D58"
+				"5570C6A394054B23"
+				"73D1D3B4D7993715"
+			]
+			description: [
+				"Six shelves, every folio, every capstone. The history of the world before you, reassembled by the one person who bothered."
+				"There is an eleventh row in a room somewhere that is still empty. This is not that. But it is how you earn the right to ask about it."
+			]
+			icon: "minecraft:enchanted_book"
+			id: "5722CF3B308699A0"
+			rewards: [
+				{
+					count: 256
+					id: "4C38A76FA9B9F103"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31B508D17BAF262C"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "2AAA08AD881FC2FC"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "Kept, not scattered."
+			tasks: [{
+				id: "7369CC7CE41E5F76"
+				title: "Close the archive"
+				type: "checkmark"
+			}]
+			title: "The Whole Archive"
+			x: 0.0d
+			y: 21.0d
+		}
+	]
+	subtitle: ["Sixty-eight folios. Six shelves. Scattered on purpose."]
+	title: "The Archive"
+}

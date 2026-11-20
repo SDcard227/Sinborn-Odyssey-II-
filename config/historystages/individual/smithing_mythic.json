@@ -1,0 +1,94 @@
+{
+  "display_name": "The Mythic Forge",
+  "icon": "historystages:research_scroll",
+  "research_time": 1800,
+  "items": [
+    "dungeons_and_combat:crimson_boots",
+    "dungeons_and_combat:crimson_chestplate",
+    "dungeons_and_combat:crimson_helmet",
+    "dungeons_and_combat:crimson_leggings",
+    "dungeons_and_combat:fire_dragonsteel_boots",
+    "dungeons_and_combat:fire_dragonsteel_chestplate",
+    "dungeons_and_combat:fire_dragonsteel_helmet",
+    "dungeons_and_combat:fire_dragonsteel_leggings",
+    "dungeons_and_combat:ice_dragonsteel_boots",
+    "dungeons_and_combat:ice_dragonsteel_chestplate",
+    "dungeons_and_combat:ice_dragonsteel_helmet",
+    "dungeons_and_combat:ice_dragonsteel_leggings",
+    "dungeons_and_combat:lightning_dragonsteel_boots",
+    "dungeons_and_combat:lightning_dragonsteel_chestplate",
+    "dungeons_and_combat:lightning_dragonsteel_helmet",
+    "dungeons_and_combat:lightning_dragonsteel_leggings",
+    "iceandfire:dragonsteel_fire_boots",
+    "iceandfire:dragonsteel_fire_chestplate",
+    "iceandfire:dragonsteel_fire_helmet",
+    "iceandfire:dragonsteel_fire_leggings",
+    "iceandfire:dragonsteel_ice_boots",
+    "iceandfire:dragonsteel_ice_chestplate",
+    "iceandfire:dragonsteel_ice_helmet",
+    "iceandfire:dragonsteel_ice_leggings",
+    "iceandfire:dragonsteel_lightning_boots",
+    "iceandfire:dragonsteel_lightning_chestplate",
+    "iceandfire:dragonsteel_lightning_helmet",
+    "iceandfire:dragonsteel_lightning_leggings",
+    "ice_and_fire_spellbooks:fire_dragon_priest_boots",
+    "ice_and_fire_spellbooks:fire_dragon_priest_chestplate",
+    "ice_and_fire_spellbooks:fire_dragon_priest_helmet",
+    "ice_and_fire_spellbooks:fire_dragon_priest_leggings",
+    "ice_and_fire_spellbooks:ice_dragon_priest_boots",
+    "ice_and_fire_spellbooks:ice_dragon_priest_chestplate",
+    "ice_and_fire_spellbooks:ice_dragon_priest_helmet",
+    "ice_and_fire_spellbooks:ice_dragon_priest_leggings",
+    "ice_and_fire_spellbooks:lightning_dragon_priest_boots",
+    "ice_and_fire_spellbooks:lightning_dragon_priest_chestplate",
+    "ice_and_fire_spellbooks:lightning_dragon_priest_helmet",
+    "ice_and_fire_spellbooks:lightning_dragon_priest_leggings"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "smithing_legendary",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 35,
+        "consume": true
+      }
+    }
+  ],
+  "min_pedestal_tier": 4,
+  "pedestal_tier_mode": "min"
+}

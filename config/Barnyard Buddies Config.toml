@@ -1,0 +1,41 @@
+
+["Spawn Animals"]
+	#Enable or disable Jacob's Sheep (Default is true)
+	"Spawn Jacob Sheep" = true
+	#Enable or disable Cochin Bantam Chickens (Default is true)
+	"Spawn Cochin Bantams" = true
+	#Enable or disable Hampshire Pigs (Default is true)
+	"Spawn Hampshire Pigs" = true
+	#Enable or disable Clydesdale Horses (Default is true)
+	"Spawn Clydesdale Horses" = true
+	#Enable or disable Silkie Chickens (Default is true)
+	"Spawn Silkie Chickens" = true
+	#Enable or disable Pyrenees Dog (Default is true)
+	"Spawn Great Pyrenees Dog" = true
+	#Enable or disable Manx Cat (Default is true)
+	"Spawn Manx Cat" = true
+	#Enable or disable Flemish Giant Rabbit (Default is true)
+	"Spawn Flemish Giant Rabbit" = true
+	#Enable or disable Coyotes (Default is true)
+	"Spawn Coyotes" = true
+	#Enable or disable House Mouse (Default is true)
+	"Spawn House Mouse" = true
+
+["Animal Behavior Settings"]
+	#Enable or disable Cochin Bantams lay eggs & shed feathers ( Enabeled by default.)
+	"Cochin Bantams Lay Eggs & Shed Feathers" = true
+	#Enable or Disable Clydesdale dust when jumping. (Enabeled by default. And setting is serverside))
+	"Clydesdale Jump Particles" = true
+	#Enable or Disable Clydesdale dust when Galloping. (Enabeled by default and setting is serverside.)
+	"Clydesdale Gallop Particles" = true
+	#Enable or disable House Mouse eating crops (Default is true)
+	"Mouse Eats Crops" = true
+	#Enable or disable Coyotes hunting livestock (Default is true)
+	"Coyotes Hunting" = true
+	#Enable or disable Coyotes hunting cats (Default is false)
+	"Coyotes Hunt Cats" = false
+
+["Fresh Animations Compat"]
+	#Enable or disable Fresh Animation's V1.9.4+ (For fresh animations spring to life compat texturemap! (false by default)
+	"Fresh Animations Hampshire Pig" = false
+

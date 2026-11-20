@@ -1,11 +1,13 @@
 {
   "display_name": "The Scrollwright Tradition",
-  "research_time": 3600,
-  "items": [],
-  "tags": [],
-  "mods": [
-    "historystages"
+  "icon": "historystages:research_scroll",
+  "research_time": 330,
+  "items": [
+    "historystages:research_scroll",
+    "historystages:research_scroll_open"
   ],
+  "tags": [],
+  "mods": [],
   "mod_exceptions": [],
   "recipes": [],
   "dimensions": [],
@@ -13,5 +15,24 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min",
+  "dependencies": []
 }

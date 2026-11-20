@@ -1,6 +1,7 @@
 {
   "display_name": "The Lockwright's Irons",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 360,
   "items": [
     "cuffed:baked_key_mold",
     "cuffed:bunk",
@@ -11,29 +12,15 @@
     "cuffed:guillotine",
     "cuffed:handcuffs",
     "cuffed:handcuffs_key",
-    "cuffed:information_booklet",
     "cuffed:key",
     "cuffed:key_mold",
     "cuffed:key_ring",
-    "cuffed:key_ring_1",
-    "cuffed:key_ring_2",
-    "cuffed:key_ring_3",
-    "cuffed:key_ring_4",
-    "cuffed:leg_shackles",
-    "cuffed:legcuffs",
+    "cuffed:knife",
     "cuffed:lockpick",
     "cuffed:padlock",
     "cuffed:pillory",
     "cuffed:possessions_box",
-    "cuffed:possessions_box_1",
     "cuffed:poster",
-    "cuffed:poster_ashadowlockedaway",
-    "cuffed:poster_impunity",
-    "cuffed:poster_lantern",
-    "cuffed:poster_prisoner",
-    "cuffed:poster_serenity",
-    "cuffed:poster_skeleton",
-    "cuffed:poster_zooom",
     "cuffed:prisoner_tag",
     "cuffed:reinforced_bars",
     "cuffed:reinforced_bars_gap",
@@ -45,7 +32,6 @@
     "cuffed:safe",
     "cuffed:shackles",
     "cuffed:shackles_key",
-    "cuffed:toilet",
     "cuffed:weighted_anchor"
   ],
   "tags": [],
@@ -57,5 +43,35 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "metalworking",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

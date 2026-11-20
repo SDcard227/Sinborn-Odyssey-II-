@@ -1,0 +1,93 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "festive_delight:gingerbread_dough",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_block",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_block_slab",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_block_stairs",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_block_wall",
+   "required": false
+  },
+  {
+   "id": "festive_delight:polished_gingerbread_block",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_pillar",
+   "required": false
+  },
+  {
+   "id": "festive_delight:ginger_bread_door",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_trapdoor",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_block_snow",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_block_creeper",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_block_diamond",
+   "required": false
+  },
+  {
+   "id": "festive_delight:gingerbread_block_decorations",
+   "required": false
+  },
+  {
+   "id": "festive_delight:festive_chicken_stage_0",
+   "required": false
+  },
+  {
+   "id": "festive_delight:festive_chicken_stage_1",
+   "required": false
+  },
+  {
+   "id": "festive_delight:festive_chicken_stage_2",
+   "required": false
+  },
+  {
+   "id": "festive_delight:festive_chicken_stage_3",
+   "required": false
+  },
+  {
+   "id": "festive_delight:festive_chicken_stage_leftover",
+   "required": false
+  },
+  {
+   "id": "festive_delight:spread_ginger_bread_dough",
+   "required": false
+  },
+  {
+   "id": "festive_delight:spead_gingerbread_1",
+   "required": false
+  },
+  {
+   "id": "festive_delight:spead_gingerbread_2",
+   "required": false
+  },
+  {
+   "id": "festive_delight:spead_gingerbread",
+   "required": false
+  }
+ ]
+}

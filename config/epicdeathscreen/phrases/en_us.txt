@@ -1,0 +1,5 @@
+# en_us. one phrase per line / одна фраза на строку
+# [fall], [fire], [mob], [hardcore], [damage:minecraft:lava]
+# {player}, {attacker}
+
+[generic]

@@ -1,0 +1,9 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "wares:cardboard_box",
+   "required": false
+  }
+ ]
+}

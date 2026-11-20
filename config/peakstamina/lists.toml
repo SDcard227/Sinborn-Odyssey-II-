@@ -1,0 +1,310 @@
+#Internal version of the config. DO NOT CHANGE.
+configVersion = "0.0.0"
+
+["Exhaustion Attribute Penalties"]
+	# List of Status Effects that grant infinite stamina (No stamina depletion).
+	infiniteStaminaEffects = ["minecraft:speed", "minecraft:saturation", "parcool:inexhaustible"]
+	# List of Attribute Penalties to apply when Stamina hits 0.
+	# Format: "AttributeRegistryName;Amount;Operation"
+	# Operations: 0 = ADDITION (Flat number), 1 = MULTIPLY_BASE, 2 = MULTIPLY_TOTAL (Percentage)
+	# 
+	# You can also apply Potion Effects.
+	# Format: "EffectRegistryName;Amplifier;DurationTicks"
+	# Example: "minecraft:slowness;0;30" (Slowness 1 for 1.5 seconds)
+	# Note: The mod automatically refreshes the potion effect every 10 ticks (0.5 secs) anything above that value will be a lingering penalty after they regain enough stamina.
+	# 
+	customExhaustionPenalties = ["minecraft:generic.movement_speed;-0.10;2", "minecraft:generic.attack_speed;-0.15;2", "minecraft:generic.attack_damage;-0.15;2", "minecraft:slowness;0;30"]
+	# List of Attribute Buffs or Potion Effects to apply when Stamina is completely full (100%).
+	# Format: "AttributeRegistryName;Amount;Operation"
+	# Operations: 0 = ADDITION (Flat number), 1 = MULTIPLY_BASE, 2 = MULTIPLY_TOTAL (Percentage)
+	# 
+	# You can also apply Potion Effects.
+	# Format: "EffectRegistryName;Amplifier;DurationTicks"
+	# Example: "minecraft:speed;0;30" (Speed 1 for 1.5 seconds)
+	# 
+	customFullStaminaBuffs = ["minecraft:generic.movement_speed;0.05;2", "minecraft:regeneration;0;5"]
+
+["Weight Lists"]
+	# Custom Container NBT Paths.
+	# Use this for backpacks/containers that store items inside their NBT data.
+	# 
+	# Format: 'modid:item;path.to.list'
+	# 
+	# Arguments Explained:
+	#  1. modid:item: The registry name of the container item.
+	#  2. path.to.list: The NBT path to the item list (use dots for nesting).
+	# 
+	# Examples:
+	#  'minecraft:shulker_box;BlockEntityTag.Items'
+	#  'somemod:satchel;Inventory'
+	# 
+	# Note: Vanilla Shulker Boxes and Bundles are already handled.
+	# Note: Compatible with Curios and Packedup. If a container mod doesn't work, add the path here.
+	# 
+	customContainerPaths = []
+	# 
+	# Priority 1: Explicit Item Weights.
+	# These values override the Auto-Weigher. Use this for heavy equipment. 
+	# 
+	# Format: 'modid:item;weight'
+	# 
+	# Example: 'minecraft:netherite_chestplate;15.0'
+	# 
+	# Note: This is the weight of every 1 item not stack of items.
+	customItemWeights = ["minecraft:netherite_chestplate;15.0", "minecraft:netherite_leggings;12.0", "minecraft:netherite_boots;8.0", "minecraft:netherite_helmet;8.0", "minecraft:netherite_sword;5.0", "minecraft:netherite_pickaxe;6.0", "minecraft:netherite_axe;7.0", "minecraft:netherite_shovel;4.0", "minecraft:netherite_hoe;4.0", "minecraft:diamond_chestplate;12.0", "minecraft:diamond_leggings;10.0", "minecraft:diamond_boots;6.0", "minecraft:diamond_helmet;6.0", "minecraft:diamond_sword;4.0", "minecraft:diamond_pickaxe;5.0", "minecraft:diamond_axe;6.0", "minecraft:diamond_shovel;3.0", "minecraft:diamond_hoe;3.0", "minecraft:diamond_horse_armor;15.0", "minecraft:iron_chestplate;10.0", "minecraft:iron_leggings;8.0", "minecraft:iron_boots;5.0", "minecraft:iron_helmet;5.0", "minecraft:iron_sword;3.5", "minecraft:iron_pickaxe;4.5", "minecraft:iron_axe;5.5", "minecraft:iron_shovel;2.5", "minecraft:iron_hoe;2.5", "minecraft:iron_horse_armor;12.0", "minecraft:shield;4.0", "minecraft:golden_chestplate;12.0", "minecraft:golden_leggings;10.0", "minecraft:golden_boots;6.0", "minecraft:golden_helmet;6.0", "minecraft:golden_sword;4.0", "minecraft:golden_pickaxe;5.0", "minecraft:golden_axe;6.0", "minecraft:golden_shovel;3.0", "minecraft:golden_hoe;3.0", "minecraft:golden_horse_armor;15.0", "minecraft:chainmail_chestplate;8.0", "minecraft:chainmail_leggings;6.0", "minecraft:chainmail_boots;4.0", "minecraft:chainmail_helmet;4.0", "minecraft:leather_chestplate;3.0", "minecraft:leather_leggings;2.0", "minecraft:leather_boots;1.0", "minecraft:leather_helmet;1.0", "minecraft:leather_horse_armor;4.0", "minecraft:stone_sword;3.0", "minecraft:stone_pickaxe;4.0", "minecraft:stone_axe;5.0", "minecraft:stone_shovel;2.0", "minecraft:stone_hoe;2.0", "minecraft:wooden_sword;1.5", "minecraft:wooden_pickaxe;2.0", "minecraft:wooden_axe;2.5", "minecraft:wooden_shovel;1.0", "minecraft:wooden_hoe;1.0", "minecraft:bow;2.0", "minecraft:crossbow;3.0", "minecraft:trident;4.0"]
+	# 
+	# Priority 2: Tag/Category Weights.
+	# Used if the item is not in the explicit list above.
+	# 
+	# Format: 'tag;weight'
+	# 
+	# Example: 'forge:obsidian;1.2'
+	# 
+	customTagWeights = ["forge:ores;0.25", "forge:storage_blocks;0.15", "minecraft:logs;0.15", "minecraft:planks;0.1", "forge:stone;0.1", "forge:cobblestone;0.1", "forge:sand;0.1", "forge:gravel;0.1", "forge:ingots;0.2", "forge:gems;0.1", "forge:obsidian;1.2"]
+
+	["Weight Lists"."Special NBT paths"]
+		# 
+		# Advanced NBT Weight Extraction
+		# 
+		# WHEN TO USE THIS:
+		# Most items in Minecraft use a standard Item ID (e.g., 'minecraft:apple' or 'minecraft:iron_sword').
+		# For those, you do NOT need this list. Just put them directly into the Explicit Item Weights list.
+		# However, some complex mods (like TACZ) use a single base item (e.g., 'tacz:ammo') and store the 
+		# ACTUAL specific item ID (like 'tacz:9mm') hidden inside NBT folders.
+		# This list tells the weight system exactly where to look inside the NBT data to find that true ID.
+		# 
+		# WHERE TO PUT THE IDS:
+		# Once you define a path here, the weight system will get the hidden ID (e.g., 'tacz:9mm').
+		# You must then put that extracted ID into your 'Explicit Item Weights' list to assign it a weight.
+		# 
+		# Format: 'base_item_id ; nbt.path.to.id ; fallbackWeight ; applyFallbackIfMissing'
+		# 
+		# Examples:
+		#  'tacz:ammo;AmmoId;0.05;true'
+		#   (Looks inside 'tacz:ammo' for 'AmmoId'. If it finds an ID like 'tacz:9mm', it checks Explicit Weights for it.
+		#   If 'tacz:9mm' isn't configured, it adds 0.05 weight. If the AmmoId tag is missing entirely, it adds 0.05 because true.)
+		# 
+		#  'tacz:modern_kinetic_gun;AttachmentSCOPE.tag.AttachmentId;0.5;false'
+		#   (Digs through the NBT folders to check for a scope. If found, checks explicit weights, else adds 0.5.
+		#   If no scope is equipped (AttachmentSCOPE is empty), it adds 0.0 weight because false. If it was true it would add 0.5 weight regardless of if its empty or not.)
+		# 
+		# Note: This uses the same logic as universal penalties (the '.' behavior, for assistance refer to the wiki)
+		nbtWeightPaths = ["tacz:ammo;AmmoId;0.2;true", "tacz:attachment;AttachmentId;1;true", "tacz:modern_kinetic_gun;GunId;5;true", "tacz:modern_kinetic_gun;AttachmentSCOPE.tag.AttachmentId;1;false", "tacz:modern_kinetic_gun;AttachmentMUZZLE.tag.AttachmentId;1;false", "tacz:modern_kinetic_gun;AttachmentSTOCK.tag.AttachmentId;2;false", "tacz:modern_kinetic_gun;AttachmentGRIP.tag.AttachmentId;2;false", "tacz:modern_kinetic_gun;AttachmentLASER.tag.AttachmentId;2;false", "tacz:modern_kinetic_gun;AttachmentEXTENDED_MAG.tag.AttachmentId;3;false"]
+
+["Item Costs"]
+	# Custom Stamina Costs for Items. Priority 1
+	# Format: "ItemId;TYPE;Cost;..."
+	# Types:
+	#  TICK  = Cost per tick while using. (1 Arg: Cost)
+	#  USE   = Cost on right-click. (1 Arg: Cost)
+	#  BLOCK = Cost when blocking damage. (2 Args: BaseCost; DamageMultiplier)
+	#  USE_ON_BLOCK = Cost on right-click block. (1 Arg: Cost)
+	# 
+	# Examples:
+	#  "minecraft:shield;TICK;0.2;BLOCK;2.0;0.8" (0.2/tick to hold, 2.0 + (Damage * 0.8) on block)
+	#  "minecraft:bow;TICK;1.0"
+	#  "minecraft:iron_axe;USE_ON_BLOCK;5.0" (Costs stamina to strip logs)
+	# Note: Negative cost values will restore stamina instead of draining it.
+	# 
+	itemCosts = ["minecraft:crossbow;TICK;0.5", "minecraft:trident;TICK;0.5", "minecraft:snowball;USE;1.0", "minecraft:egg;USE;1.0", "minecraft:ender_pearl;USE;4.0", "minecraft:splash_potion;USE;2.0", "minecraft:lingering_potion;USE;2.0", "minecraft:experience_bottle;USE;1.0", "minecraft:firework_rocket;USE;1.5", "minecraft:fishing_rod;USE;3.0", "minecraft:flint_and_steel;USE_ON_BLOCK;5.0", "minecraft:spyglass;TICK;0.1", "minecraft:goat_horn;TICK;0.6", "minecraft:wooden_axe;USE_ON_BLOCK;5", "minecraft:stone_axe;USE_ON_BLOCK;4.5", "minecraft:iron_axe;USE_ON_BLOCK;3", "minecraft:golden_axe;USE_ON_BLOCK;4", "minecraft:diamond_axe;USE_ON_BLOCK;2.5", "minecraft:netherite_axe;USE_ON_BLOCK;2.5", "minecraft:wooden_shovel;USE_ON_BLOCK;5", "minecraft:stone_shovel;USE_ON_BLOCK;4.5", "minecraft:iron_shovel;USE_ON_BLOCK;3", "minecraft:golden_shovel;USE_ON_BLOCK;4", "minecraft:diamond_shovel;USE_ON_BLOCK;2.5", "minecraft:netherite_shovel;USE_ON_BLOCK;2.5", "minecraft:wooden_hoe;USE_ON_BLOCK;5", "minecraft:stone_hoe;USE_ON_BLOCK;4.5", "minecraft:iron_hoe;USE_ON_BLOCK;3", "minecraft:golden_hoe;USE_ON_BLOCK;4", "minecraft:diamond_hoe;USE_ON_BLOCK;2.5", "minecraft:netherite_hoe;USE_ON_BLOCK;2.5"]
+	# Custom Stamina Costs for Item Tags (Categories). Priority 2
+	# Works exactly like itemCosts but applies to any item with the specified Tag.
+	# Priority: Specific items in 'itemCosts' will override these tag settings.
+	# Format: "TagId;TYPE;Cost;..."
+	# Example: "forge:tools/bows;TICK;0.5"
+	itemCostTags = ["forge:tools/bows;TICK;0.5", "forge:tools/shields;TICK;0.2;BLOCK;2.0;0.8"]
+
+[Consumables]
+	# 
+	# Attribute Modifiers applied when consuming an item.
+	# Define one action per line. To add multiple buffs to the same item, simply add multiple lines with the same item ID.
+	# Format: "modid:item_name;modifier_type;arg1;arg2;arg3;arg4"
+	# Keywords & Scales:
+	#  INSTANT;Amount        (FLAT: Instantly restores X stamina points)
+	#  BONUS;Amount          (FLAT: Grants X Temporary Bonus Stamina in a secondary bar)
+	#  ATTRIBUTE;Target;Op;Amount;Seconds (MIXED: Target Attribute; Operation (0=Add, 1=Mult Base, 2=Mult Total); Amount; Duration)
+	#  REGEN;Amount;Seconds  (PERCENT: Modifies regen speed. 0.2 = +20%)
+	#  POISON;Amount         (FLAT: Adds X points of Food Poisoning penalty)
+	#  PENALTY;Amount        (PERCENT: Adds Resistance to penalty buildup)
+	#     Formula: 30% Base Resistance + Amount. Caps at 80% total.
+	#     Examples: 10.0 = 40% resist (0.3 + 0.1), 50.0 = 80% resist (0.3 + 0.5).
+	#  CURE;Target;Amount    (FLAT: Removes X points of chosen penalties)
+	#     Targets: FATIGUE, HUNGER, POISON, WEIGHT, ALL, or Custom NBT Keys (e.g. 'thirstLevel')
+	# 
+	# Examples:
+	#  "minecraft:apple;INSTANT;10.0" (Restores 10 Stamina)
+	#  "minecraft:golden_apple;CURE;ALL;100.0" (Removes 100.0 from all penalties)
+	#  "minecraft:golden_apple;PENALTY;50.0" (Grants 80% total resistance to penalty buildup)
+	#  "minecraft:golden_apple;REGEN;0.25;60" (+25% Regen Speed for 60 seconds)
+	#  "minecraft:golden_apple;BONUS;50.0" (+50 Bonus Stamina overshield)
+	#  "minecraft:sweet_berries;ATTRIBUTE;peakstamina:jump_cost_multiplier;1;-0.5;30" (-50% Jump Cost for 30 Seconds)
+	consumableValues = ["minecraft:apple;INSTANT;10.0;BONUS;5.0", "minecraft:melon_slice;INSTANT;4.0;BONUS;2.0", "minecraft:sweet_berries;INSTANT;3.0;PENALTY;5.0;BONUS;1.5", "minecraft:glow_berries;INSTANT;3.0;PENALTY;5.0;BONUS;1.5", "minecraft:chorus_fruit;INSTANT;5.0;BONUS;2.5", "minecraft:carrot;INSTANT;6.0;BONUS;3.0", "minecraft:potato;INSTANT;5.0;BONUS;2.5", "minecraft:baked_potato;INSTANT;12.0;PENALTY;5.0;BONUS;6.0", "minecraft:beetroot;INSTANT;4.0;BONUS;2.0", "minecraft:dried_kelp;INSTANT;2.0;BONUS;1.0", "minecraft:bread;INSTANT;12.0;BONUS;6.0", "minecraft:cookie;INSTANT;4.0;PENALTY;2.0;BONUS;2.0", "minecraft:pumpkin_pie;INSTANT;16.0;BONUS;8.0", "minecraft:beef;INSTANT;6.0;BONUS;3.0", "minecraft:cooked_beef;INSTANT;18.0;PENALTY;5.0;BONUS;9.0", "minecraft:porkchop;INSTANT;6.0;PENALTY;5.0;BONUS;3.0", "minecraft:cooked_porkchop;INSTANT;18.0;PENALTY;5.0;BONUS;9.0", "minecraft:chicken;INSTANT;4.0;BONUS;2.0", "minecraft:cooked_chicken;INSTANT;14.0;PENALTY;5.0;BONUS;7.0", "minecraft:mutton;INSTANT;5.0;BONUS;2.5", "minecraft:cooked_mutton;INSTANT;16.0;PENALTY;5.0;BONUS;8.0", "minecraft:rabbit;INSTANT;5.0;BONUS;2.5", "minecraft:cooked_rabbit;INSTANT;12.0;PENALTY;5.0;BONUS;6.0", "minecraft:cod;INSTANT;5.0;BONUS;2.5", "minecraft:cooked_cod;INSTANT;12.0;PENALTY;5.0;BONUS;6.0", "minecraft:salmon;INSTANT;5.0;BONUS;2.5", "minecraft:cooked_salmon;INSTANT;14.0;PENALTY;5.0;BONUS;7.0", "minecraft:tropical_fish;INSTANT;4.0;BONUS;2.0", "minecraft:mushroom_stew;INSTANT;15.0;CURE;FATIGUE;10.0;BONUS;7.5", "minecraft:beetroot_soup;INSTANT;15.0;CURE;FATIGUE;10.0;BONUS;7.5", "minecraft:rabbit_stew;INSTANT;20.0;CURE;FATIGUE;25.0;BONUS;10.0", "minecraft:suspicious_stew;INSTANT;15.0;POISON;5.0;REGEN;-0.1;20;BONUS;7.5", "minecraft:milk_bucket;CURE;POISON;100.0;PENALTY;15.0", "minecraft:honey_bottle;INSTANT;10.0;REGEN;0.15;60;CURE;POISON;15.0;BONUS;5.0", "minecraft:golden_carrot;INSTANT;12.0;REGEN;0.2;60;PENALTY;20.0;BONUS;6.0", "minecraft:golden_apple;INSTANT;10.0;REGEN;0.25;60;CURE;ALL;20.0;PENALTY;10.0;BONUS;5.0", "minecraft:enchanted_golden_apple;INSTANT;20.0;REGEN;0.5;120;CURE;ALL;100.0;PENALTY;50.0;BONUS;10.0", "minecraft:rotten_flesh;INSTANT;8.0;REGEN;-0.3;30;POISON;15.0;BONUS;4.0", "minecraft:spider_eye;INSTANT;4.0;REGEN;-0.3;15;POISON;10.0;BONUS;2.0", "minecraft:pufferfish;INSTANT;4.0;REGEN;-0.5;15;POISON;20.0;BONUS;2.0", "minecraft:poisonous_potato;INSTANT;4.0;REGEN;-0.2;10;POISON;10.0;BONUS;2.0"]
+
+["Universal Penalties"]
+	# 
+	# Universal Compatibility with Scaling Penalties. This section is advanced but very useful when learned, I've made a ton of examples for your assistance.
+	# Allows you to link external mod data (NBT tags or Potion Effects) to the stamina system.
+	# 
+	# Format: "Type;Key;Comparator;Threshold;WorstValue;MaxPenalty;ColorInt;IconText"
+	# 
+	# Arguments Explained:
+	#  1. Type:       'NBT' (checks player data) or 'EFFECT' (checks potion amplifier/level).
+	#  2. Key:        The NBT path (e.g. 'thirstLevel') or Effect ID (e.g. 'minecraft:poison').
+	#  3. Comparator: Logic for calculating the penalty.
+	#     SCALE MODES (Linear penalty between two points):
+	#       >  : Penalty increases as value rises above Threshold, maxing at WorstValue.
+	#       <  : Penalty increases as value falls below Threshold, maxing at WorstValue.
+	#     MULTIPLIER MODE (Penalty stacks per unit):
+	#       * : (or *>) Each point ABOVE Threshold adds MaxPenalty to total.
+	#             Formula: (CurrentValue - Threshold) * MaxPenalty
+	#       *< : Each point BELOW Threshold adds MaxPenalty to total.
+	#             Formula: (Threshold - CurrentValue) * MaxPenalty
+	#     INSTANT FLAG:
+	#       ! : Add ! before any comparator (!>, !<, !*, !*<) to apply penalty instantly.
+	#             Without !, penalties build up gradually over time.
+	#  4. Threshold:  The safe value where penalty starts (0%).
+	#  5. WorstValue: In SCALE mode: The value where penalty reaches 100%.
+	#                 In MULTIPLIER mode: The Maximum total penalty allowed (Hard Cap).
+	#  6. MaxPenalty: In SCALE mode: Total penalty amount at WorstValue.
+	#                 In MULTIPLIER mode: Penalty amount per 1 unit of difference.
+	#  7. ColorInt:   Decimal color code for the HUD overlay (e.g. 16711680 is Red).
+	#  8. IconText:   Emoji or text to display on the bar. Write 'none' to disable.
+	# Note: Effect mode is compared to AMPLIFIER LEVEL (which is basically -1 of whatever level of effect you have so strength II is Amp 1)
+	# 
+	# Examples (SCALE MODE):
+	#  "NBT;thirstLevel;<;6;0;20.0;38143;💧"
+	#    -> Thirst dropping from 6 to 0 builds penalty from 0 to 20.
+	# 
+	#  "NBT;temperature;>;37;42;25.0;16724016;🔥"
+	#    -> Temperature rising from 37 to 42 builds penalty from 0 to 25.
+	# 
+	#  "EFFECT;minecraft:wither;>;-1;3;40.0;3355443;💀"
+	#    -> Wither I to IV builds penalty from 0 to 40.
+	# 
+	# Examples (SCALE MODE - INSTANT):
+	#  "NBT;thirstLevel;!<;6;0;20.0;38143;💧"
+	#    -> Thirst dropping from 6 to 0 instantly applies penalty from 0 to 20.
+	# 
+	# Examples (MULTIPLIER MODE):
+	#  "NBT;thirstLevel;*<;6;30;2.0;38143;💧"
+	#    -> Below 6 thirst, every point lost adds 2.0 penalty. Caps at 30 total.
+	# 
+	#  "EFFECT;minecraft:poison;*;0;50;5.0;4488448;☣"
+	#    -> Every poison level adds 5 penalty. Caps at 50.
+	# 
+	# --- ADVANCED NBT PATHS (Nested Tags & ForgeCaps) ---
+	# Sometimes even with the correct path it may not work. In this scenario try adding 'ForgeCaps.' to the start. Also use '.' to look inside tags. For assistance refer to the wiki
+	# 
+	# Examples of using '.' to look inside tags:
+	#  "ForgeCaps.legendarysurvivaloverhaul:thirst.hydrationLevel"
+	#    -> Open ForgeCaps ➡ open legendarysurvivaloverhaul:thirst ➡ grab hydrationLevel.
+	# 
+	universalPenalties = ["NBT;thirstLevel;*<;6;0;20.0;38143;💧", "NBT;targetTemperatureLevel;>;2;4;15.0;16724016;🔥", "NBT;targetTemperatureLevel;<;2;0;15.0;65535;❄", "EFFECT;minecraft:poison;!*;0;50;15.0;4488448;☣"]
+
+["Universal Buffs"]
+	# 
+	# Universal Compatibility for granting Bonus Stamina. Uses same logic as universal penalties.
+	# Use this to reward players with Bonus Stamina when they meet specific NBT or Potion Effect conditions.
+	# 
+	# Format: "Type;Key;ActionMode;Threshold;LimitOrCooldown;Amount;BurstAmount;ScalingFactor"
+	# Note: BurstAmount is only for BOTH mode and ScalingFactor is only for MULTIPLIER mode.
+	# 
+	# Arguments Explained:
+	#  1. Type:            'NBT' or 'EFFECT'.
+	#  2. Key:             The NBT path or Effect ID.
+	#  3. ActionMode:      How the Bonus Stamina is granted.
+	#       PASSIVE_OVER  : 'regens' Bonus Stamina per second as long as stat is GREATER than Threshold.
+	#       PASSIVE_UNDER : 'regens' Bonus Stamina per second as long as stat is LESS than Threshold.
+	#       BURST_OVER    : Instantly grants bonus stamina once when stat goes OVER Threshold.
+	#       BURST_UNDER   : Instantly grants bonus stamina once when stat goes UNDER Threshold.
+	#       BOTH_OVER     : Instantly grants bonus once when OVER, then regens passively till hardcap.
+	#       BOTH_UNDER    : Instantly grants bonus once when UNDER, then regens passively till hardcap.
+	#       MULTIPLIER MODE : Add '_MULTIPLIER' to the end of any mode (e.g., PASSIVE_OVER_MULTIPLIER).
+	#  4. Threshold:       The trigger value.
+	#  5. LimitOrCooldown: Depends on your ActionMode.
+	#       For PASSIVE & BOTH: This is the max Bonus Stamina the regen will give you.
+	#       For BURST: This is the cooldown in ticks before the burst can trigger again.
+	#  6. Amount:           The base amount of Bonus Stamina to grant.
+	#  7. BurstAmount:     (BOTH MODE ONLY) The base amount of Bonus Stamina for the initial one time burst.
+	#  8. ScalingFactor:   (MULTIPLIER MODE ONLY) The multiplier factor for each point past the threshold.
+	# 
+	# Examples:
+	#  "EFFECT;minecraft:regeneration;PASSIVE_OVER;-1;20.0;1.0"
+	#    -> While Regeneration is active (Amp > -1), passively generates 1.0 Bonus Stamina per second.
+	# 
+	#  "NBT;player_mana;BOTH_OVER;50;100.0;2.0;30.0"
+	#    -> The moment mana goes over 50, instantly grants 30.0 Bonus once, then generates 2.0/s passively.
+	# 
+	#  "EFFECT;minecraft:strength;PASSIVE_OVER_MULTIPLIER;-1;20.0;2.0;1.25"
+	#    -> Strength I (Amp 0): Multiplier 1.25x (Generates 2.5/sec, Cap: 25.0).
+	#    -> Strength II (Amp 1): Multiplier 1.50x (Generates 3.0/sec, Cap: 30.0).
+	# 
+	universalBuffs = ["EFFECT;minecraft:strength;PASSIVE_OVER;-1;20.0;1.0", "EFFECT;minecraft:resistance;BURST_OVER;-1;100;25.0", "EFFECT;minecraft:regeneration;PASSIVE_OVER_MULTIPLIER;-1;25.0;1.0;1.5", "EFFECT;minecraft:haste;BOTH_OVER_MULTIPLIER;-1;20.0;1.0;10.0;1.25"]
+
+["ParCool Compatibility"]
+	# 
+	# ParCool Action Stamina Costs
+	# Format: "ActionName;START;Cost;CONTINUE;Cost"
+	# Types:
+	#  START    = One-time cost when action begins
+	#  CONTINUE = Cost per tick while action is active
+	# 
+	# Examples:
+	#  "WallRun;START;15.0;CONTINUE;0.5"
+	# 
+	#  "Vault;START;8.0" (no continue cost)
+	# 
+	#  "Roll;START;5.0;CONTINUE;0.0" (explicit zero)
+	# 
+	# Note: Negative cost values will restore stamina instead of draining it.
+	# Note: Fast run and Fast swim costs are added onto the cost of regular sprinting and regular swimming.
+	# 
+	parCoolActionCosts = ["BreakfallReady;START;0.0", "CatLeap;START;2.0;CONTINUE;0.3", "ChargeJump;CONTINUE;0.2", "ClimbPoles;CONTINUE;0.3", "ClimbUp;START;2.0", "ClingToCliff;CONTINUE;0.2", "HideInBlock;START;1.0;CONTINUE;0.1", "Crawl;START;0.5;", "Dive;START;2.0", "Dodge;START;15.0", "FastRun;START;2.5;CONTINUE;0.1", "FastSwim;START;2.5;CONTINUE;0.06", "Flipping;START;2.0", "HangDown;CONTINUE;0.2", "HorizontalWallRun;CONTINUE;0.4", "JumpFromBar;START;5.0", "QuickTurn;START;2.0", "RideZipline;START;2.0;CONTINUE;0.2", "Roll;START;2.0", "SkyDive;START;0.0", "Slide;START;2.0;CONTINUE;0.2", "Tap;START;2.0", "Vault;START;3.0", "VerticalWallRun;CONTINUE;0.8", "WallJump;START;4.0", "WallSlide;CONTINUE;0.2"]
+
+["Combat Roll Compatibility"]
+	# How much stamina a Combat Roll costs.
+	#Range: -1000.0 ~ 1000.0
+	combatRollCost = 15.0
+
+["Shield Expansion Compatibility"]
+	# Multiplier for the stamina block cost when successfully parrying.
+	# 0.0 = Free parry, 0.5 = Half stamina cost, 1.0 = Normal block cost.
+	#Range: 0.0 ~ 10.0
+	shieldExpParryMult = 0.0
+	# Flat amount of Bonus Stamina (Yellow Bar) to grant when successfully parrying.
+	# Set to 0.0 to disable.
+	#Range: 0.0 ~ 100.0
+	shieldExpParryBonus = 15.0
+
+["WallJump Compatibility"]
+	# 
+	# Wall-Jump! TXF Action Stamina Costs
+	# Format: "ActionName;START;Cost;CONTINUE;Cost"
+	# Types:
+	#  START    = One-time cost when action begins
+	#  CONTINUE = Cost per tick while action is active
+	# 
+	# Available Actions:
+	#  WallJump, DoubleJump, WallCling, SpeedBoost, StepAssist
+	# 
+	wallJumpActionCosts = ["WallJump;START;10.0", "DoubleJump;START;15.0", "WallCling;START;3.0;CONTINUE;0.15", "SpeedBoost;START;3.0", "StepAssist;START;1.5"]
+	#Extra stamina drained per tick for Speed Boost Level 1.
+	#Range: 0.0 ~ 100.0
+	speedBoostExtraLvl1 = 0.02
+	#Extra stamina drained per tick for Speed Boost Level 2.
+	#Range: 0.0 ~ 100.0
+	speedBoostExtraLvl2 = 0.05
+	#Extra stamina drained per tick for Speed Boost Level 3.
+	#Range: 0.0 ~ 100.0
+	speedBoostExtraLvl3 = 0.1
+	#If true, the player will be forced to let go of the wall if they run out of stamina.
+	dropOnEmptyWallCling = true
+
+["Elenai Dodge 2"]
+	#How much stamina a ground dodge costs.
+	#Range: 0.0 ~ 1000.0
+	elenaiDodgeGroundCost = 5.0
+	#How much stamina a mid-air dodge costs.
+	#Range: 0.0 ~ 1000.0
+	elenaiDodgeAirCost = 8.0
+

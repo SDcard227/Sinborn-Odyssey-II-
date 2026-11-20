@@ -1,11 +1,9 @@
 {
   "display_name": "Falconry & Advanced Whistlecraft",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
     "alexsmobs:falconry_glove",
-    "alexsmobs:falconry_glove_hand",
-    "alexsmobs:falconry_glove_inventory",
-    "alexsmobs:falconry_hood",
     "alexsmobs:hummingbird_feeder",
     "messenger_crow:black_ribbon",
     "messenger_crow:blue_ribbon",
@@ -26,7 +24,8 @@
     "messenger_crow:red_ribbon",
     "messenger_crow:scarecrow",
     "messenger_crow:white_ribbon",
-    "messenger_crow:yellow_ribbon"
+    "messenger_crow:yellow_ribbon",
+    "messenger_crow:scroll"
   ],
   "tags": [],
   "mods": [],
@@ -37,5 +36,38 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "kept_creatures",
+          "mode": "player"
+        },
+        {
+          "stage_id": "menagerie_of_the_wild",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

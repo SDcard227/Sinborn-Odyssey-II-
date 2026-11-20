@@ -1,7 +1,16 @@
 {
   "display_name": "Gravitic Engineering",
-  "research_time": 7200,
-  "items": [],
+  "icon": "historystages:research_scroll",
+  "research_time": 720,
+  "items": [
+    "echovoids:antigrav_core",
+    "echovoids:gravity_strings",
+    "echovoids:gravity_string_block",
+    "echovoids:gravity_fabric",
+    "echovoids:gravity_upgrade_template",
+    "echovoids:levitation_cloud",
+    "echovoids:sparkling_levitation_cloud"
+  ],
   "tags": [],
   "mods": [
     "create_gravity"
@@ -13,5 +22,52 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "kinetic_engineering",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_dwemer",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "mounted_rail",
+          "mode": "player"
+        },
+        {
+          "stage_id": "redstone_principles",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_table",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

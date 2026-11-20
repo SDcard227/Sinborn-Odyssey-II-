@@ -1,0 +1,1302 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "themachineage"
+	group: "5A0000000000002B"
+	icon: "minecraft:redstone"
+	id: "2B418F18664882BF"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The Forgesworn wrote their technical scrolls as an academic catalogue, and the catalogue survived them."]
+			icon: "minecraft:redstone"
+			id: "20491185E0CEA39D"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "The Crimson Reign left its engines behind."
+			tasks: [{
+				id: "122FD70FD9BA240A"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Machine Age"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"A Forgesworn technical scroll, catalogued by a named scholar in Era VI."
+				""
+				"&6Found in:&r dwemer ruin common, dwemer ruin epic, dwemer ruin rare and 3 more &8(17% a chest)"
+				"&bOpens:&r 483 entries and 1 whole body of work"
+				"&dNeeds:&r Foundations of the Forge; one of Redstone Principles, Kinetic Engineering"
+				"&aPedestal:&r Tier II, about 8 minutes"
+			]
+			icon: "minecraft:rail"
+			id: "48B21A9BB31E5E09"
+			rewards: [{
+				count: 12
+				id: "715F13785D242D5F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Forgesworn, and signed. Rails go where you put them."
+			tasks: [
+				{
+					id: "3CDA585BB9B2B02C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "mounted_rail"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3E5689E43D152B8F"
+					individual: true
+					negate: false
+					stage: "mounted_rail"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Iron Road"
+			x: 0.0d
+			y: -6.3d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft, abandoned mineshaft bc, abandoned mineshaft chalk loot and 8 more &8(17% a chest)"
+				"&bOpens:&r 778 entries and 6 whole bodies of work"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "create:cogwheel"
+			id: "0EE2DC348C521B51"
+			rewards: [{
+				count: 12
+				id: "23E0C9B171D85EF5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Motion, borrowed and passed along."
+			tasks: [
+				{
+					id: "07FA18FDEDE2EBBF"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "kinetic_engineering"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "21A3FF17776E83EF"
+					individual: true
+					negate: false
+					stage: "kinetic_engineering"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Kinetic Engineering"
+			x: 2.7d
+			y: -5.7d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r basic loot, legend loot, rare loot and 1 more &8(18% a chest)"
+				"&bOpens:&r 391 entries and 1 whole body of work"
+				"&dNeeds:&r Kinetic Engineering"
+				"&aPedestal:&r Tier II, about 12 minutes"
+			]
+			icon: "tfmg:crude_oil_bucket"
+			id: "57C9F0869D1E8F1A"
+			rewards: [{
+				count: 12
+				id: "250673498200FD16"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Two fuels. The archive is clear which was cheaper."
+			tasks: [
+				{
+					id: "71FF82979695FE1E"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "blood_and_oil"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "38B45C476245964B"
+					individual: true
+					negate: false
+					stage: "blood_and_oil"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Blood and Oil"
+			x: 4.9d
+			y: -3.9d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r arrows, blacksmithy, coal storage and 3 more &8(17% a chest)"
+				"&bOpens:&r 107 entries and 3 whole bodies of work"
+				"&dNeeds:&r any one of 14 other scrolls"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "supplementaries:hourglass"
+			id: "577B8DE219A04404"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "1CA7A43BF5EA650D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The drawer everything else ended up in."
+			tasks: [
+				{
+					id: "3BBEBBD800A5172C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "oddments_and_devices"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "20A0B9739D6FB275"
+					individual: true
+					negate: false
+					stage: "oddments_and_devices"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Oddments & Devices"
+			x: 6.1d
+			y: -1.4d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"A Forgesworn technical scroll, catalogued by a named scholar in Era VI."
+				""
+				"&6Found in:&r ancient vestiges chest, archer, basic loot and 34 more &8(14% a chest)"
+				"&bOpens:&r 126 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "minecraft:redstone_torch"
+			id: "65F13E3BCCC88B10"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "059F939D434393CD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Forgesworn. A signal, and somewhere to send it."
+			tasks: [
+				{
+					id: "02F549606A1FACC7"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "redstone_principles"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "49F29A2C3D1F3D28"
+					individual: true
+					negate: false
+					stage: "redstone_principles"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Redstone Principles"
+			x: 6.1d
+			y: 1.4d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure, dwemer ruin rare, dwemer tower and 1 more &8(11% a chest)"
+				"&bOpens:&r 189 entries and 1 whole body of work"
+				"&dNeeds:&r Kinetic Engineering; 25 levels of experience, spent"
+				"&aPedestal:&r Tier III, about 18 minutes"
+			]
+			icon: "powergrid:battery"
+			id: "4D502E185F64D222"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "34E9F2F003A2ED71"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Lightning, domesticated and made to queue."
+			tasks: [
+				{
+					id: "73808589345FC859"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "electrical_engineering"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "0E87CDDC71406C0D"
+					individual: true
+					negate: false
+					stage: "electrical_engineering"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Electrical Engineering"
+			x: 4.9d
+			y: 3.9d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"A Forgesworn technical scroll, catalogued by a named scholar in Era VI."
+				""
+				"&6Found in:&r armory, armory loot, bastion bridge and 11 more &8(11% a chest)"
+				"&bOpens:&r 59 entries"
+				"&dNeeds:&r Cannoneer; one of The Master Arsenal: Ranged, Cannoneer, The End Passage; 25 levels of experience, spent"
+				"&aPedestal:&r Tier III, about 18 minutes"
+			]
+			icon: "createbigcannons:he_shell"
+			id: "6858C5A06D5AE1B4"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "567F15D4163D6862"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Forgesworn. Weapons that were aimed at buildings."
+			tasks: [
+				{
+					id: "0066A14D753A0EEE"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "ballistics_engineering"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "06736F5C10C14FA9"
+					individual: true
+					negate: false
+					stage: "ballistics_engineering"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Ballistics Engineering"
+			x: 2.7d
+			y: 5.7d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r lab, library, pharaoh hidden and 6 more &8(25% a chest)"
+				"&bOpens:&r 107 entries"
+				"&dNeeds:&r Woodworking"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "minecraft:jukebox"
+			id: "209C2E28B5860CD6"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "07FB9C51F3BDC533"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Sound, pressed flat and kept."
+			tasks: [
+				{
+					id: "4CF993CCBA2E0900"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "music_records"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3315FE9DD5E2C5E7"
+					individual: true
+					negate: false
+					stage: "music_records"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Record Press"
+			x: 0.0d
+			y: 6.3d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r armory, caveman house, food storage and 1 more &8(14% a chest)"
+				"&bOpens:&r 24 entries and 2 whole bodies of work"
+				"&dNeeds:&r Glassworking"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "exposure:camera"
+			id: "5E27D8B599986FE1"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "79E0BB6BCD3B68E1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "A moment, held still and argued with later."
+			tasks: [
+				{
+					id: "6D4B51261BB71DED"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "photography_arts"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "75F3B970EA3801EA"
+					individual: true
+					negate: false
+					stage: "photography_arts"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Photography Arts"
+			x: -2.7d
+			y: 5.7d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"The Umvuthana Archive holds the most complete copy, and chose what to burn."
+				""
+				"&6Found in:&r fd ruined portal, fd village savanna house, jungle temple and 2 more &8(17% a chest)"
+				"&bOpens:&r 22 entries and 1 whole body of work"
+				"&dNeeds:&r The Agronomist Path; one of The Agronomist Path, The Iron Arsenal: Ranged, The Codex of Kukulkan, On Sniffers, Frogs, and Mangroves; Kinetic Engineering"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:beehive"
+			id: "4EA3908144BDE136"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "04D2E859F96B6A77"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Umvuthana. Somebody counted the bees."
+			tasks: [
+				{
+					id: "130EFD64A1848AC6"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "beehive_logistics"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5394CAD93841BB3A"
+					individual: true
+					negate: false
+					stage: "beehive_logistics"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Beehive Logistics"
+			x: -4.9d
+			y: 3.9d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"A Forgesworn technical scroll, catalogued by a named scholar in Era VI."
+				""
+				"&6Found in:&r acropolis treasure, additional ancient city loot, ancient city and 10 more &8(11% a chest)"
+				"&bOpens:&r 14 entries and 1 whole body of work"
+				"&dNeeds:&r Electrical Engineering; one of Gravitic Engineering, The Iron Road, Redstone Principles, The Chorus Hearth; 25 levels of experience, spent"
+				"&aPedestal:&r Tier III, about 18 minutes"
+			]
+			icon: "create_new_age:reactor_rod"
+			id: "0FA7436D523F6129"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "64C9495AFCB7947A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Forgesworn, and they knew what it was."
+			tasks: [
+				{
+					id: "5A581DA026EF48A3"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "atomic_engineering"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "0BE4C768BD60B16E"
+					individual: true
+					negate: false
+					stage: "atomic_engineering"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Atomic Engineering"
+			x: -6.1d
+			y: 1.4d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r aqua mage basic storage, badlands warehouse, beach warehouse and 5 more &8(35% a chest)"
+				"&bOpens:&r 5 entries and 1 whole body of work"
+				"&dNeeds:&r Kinetic Engineering"
+				"&aPedestal:&r Tier II, about 8 minutes"
+			]
+			icon: "cmpackagecouriers:cardboard_plane"
+			id: "6A771358FB5F5FA6"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7D6A953F53913100"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Moving it is the whole problem."
+			tasks: [
+				{
+					id: "6D9F36759EB81B5C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "wayhouse_logistics"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "35E36D29EF9F1E09"
+					individual: true
+					negate: false
+					stage: "wayhouse_logistics"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Wayhouse Logistics"
+			x: -6.1d
+			y: -1.4d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft, abandoned mineshaft bc, abandoned mineshaft chalk loot and 3 more &8(17% a chest)"
+				"&bOpens:&r 7 entries"
+				"&dNeeds:&r Kinetic Engineering"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "create_aquatic_ambitions:mechanical_conduit"
+			id: "32E5B25D2E17CEDA"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0E727DF1C3437849"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The sea, put on a schedule."
+			tasks: [
+				{
+					id: "1FDC8AC8FE035272"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "tidal_engineering"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "27BF278643155167"
+					individual: true
+					negate: false
+					stage: "tidal_engineering"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Tidal Engineering"
+			x: -4.9d
+			y: -3.9d
+		}
+		{
+			dependencies: ["20491185E0CEA39D"]
+			description: [
+				"A Forgesworn technical scroll, catalogued by a named scholar in Era VI."
+				""
+				"&6Found in:&r dwemer ruin epic, dwemer ruin rare &8(15% a chest)"
+				"&bOpens:&r 7 entries and 1 whole body of work"
+				"&dNeeds:&r Kinetic Engineering; one of The Iron Road, Redstone Principles, The Chorus Hearth"
+				"&aPedestal:&r Tier II, about 12 minutes"
+			]
+			icon: "echovoids:antigrav_core"
+			id: "1C53F86F50612AE1"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "02365178F18443E5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Forgesworn. They argued with down."
+			tasks: [
+				{
+					id: "3774202F050B7D0D"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "gravitic_engineering"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "0E770425A53A3431"
+					individual: true
+					negate: false
+					stage: "gravitic_engineering"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Gravitic Engineering"
+			x: -2.7d
+			y: -5.7d
+		}
+		{
+			dependencies: ["0FA7436D523F6129"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "create_new_age:nuclear_fuel"
+			id: "1CC2A2A6F55E4262"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3A45C2FE9C6D9189"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it, carefully."
+			tasks: [
+				{
+					id: "08B5E5A99A936A25"
+					item: "create_new_age:nuclear_fuel"
+					title: "Nuclear Fuel"
+					type: "item"
+				}
+				{
+					id: "1E68CE557158A772"
+					item: "create_new_age:thorium"
+					title: "Thorium"
+					type: "item"
+				}
+				{
+					id: "59E1DDF7DA88752C"
+					item: "create_new_age:radioactive_thorium"
+					title: "Radioactive Thorium"
+					type: "item"
+				}
+			]
+			title: "Practising , Atomic Engineering"
+			x: -9.6d
+			y: 2.2d
+		}
+		{
+			dependencies: ["6858C5A06D5AE1B4"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "createbigcannons:filled_autocannon_cartridge"
+			id: "66362B593BB36953"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4C7ED4A5DDE8E2E3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it downrange."
+			tasks: [
+				{
+					id: "36524C8E09674CDB"
+					item: "createbigcannons:filled_autocannon_cartridge"
+					title: "Filled Autocannon Cartridge"
+					type: "item"
+				}
+				{
+					id: "24EA879B0184FEAA"
+					item: "createbigcannons:flak_autocannon_round"
+					title: "Flak Autocannon Round"
+					type: "item"
+				}
+				{
+					id: "4C2564DC9463464B"
+					item: "createbigcannons:empty_powder_charge"
+					title: "Empty Powder Charge"
+					type: "item"
+				}
+			]
+			title: "Practising , Ballistics Engineering"
+			x: 4.3d
+			y: 8.8d
+		}
+		{
+			dependencies: ["4EA3908144BDE136"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "create_mobile_packages:bee_port"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3FBF28283ABCCCDC"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "07D866814042E6E9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it at the hive."
+			tasks: [
+				{
+					id: "71AE072D2FF9FD92"
+					item: {
+						Count: 1
+						id: "create_mobile_packages:bee_port"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Portable Beehive"
+					type: "item"
+				}
+				{
+					id: "2865FC8AE0493820"
+					item: "cbbees:mechanical_bee"
+					title: "Mechanical Bee"
+					type: "item"
+				}
+				{
+					id: "1DECE08164B49C9F"
+					item: "cbbees:mechanical_bumble_bee"
+					title: "Mechanical Bumble Bee"
+					type: "item"
+				}
+			]
+			title: "Practising , Beehive Logistics"
+			x: -7.7d
+			y: 6.1d
+		}
+		{
+			dependencies: ["57C9F0869D1E8F1A"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "tfmg:propylene_bucket"
+			id: "52C1D948B0D592F9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "13D8DCF1BD49FF61"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the pump."
+			tasks: [
+				{
+					id: "35B42EB689412A8E"
+					item: "tfmg:propylene_bucket"
+					title: "Propylene Tank"
+					type: "item"
+				}
+				{
+					id: "2FED9FDE4BAF52CD"
+					item: "tfmg:unfinished_potentiometer"
+					title: "Unfinished Potentiometer"
+					type: "item"
+				}
+				{
+					id: "0B691841801230E7"
+					item: "tfmg:coated_circuit_board"
+					title: "Coated Circuit Board"
+					type: "item"
+				}
+			]
+			title: "Practising , Blood and Oil"
+			x: 7.7d
+			y: -6.1d
+		}
+		{
+			dependencies: ["4D502E185F64D222"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "tfmg:magenta_multimeter"
+			id: "0C984BA1BF01CF73"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "178074F9C1D99C00"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it under load."
+			tasks: [
+				{
+					id: "4FCA505F751A0AAA"
+					item: "tfmg:magenta_multimeter"
+					title: "Magenta Multimeter"
+					type: "item"
+				}
+				{
+					id: "38CABA49D8FB13BF"
+					item: "powergrid:portable_battery_placeable"
+					title: "Portable Battery Placeable"
+					type: "item"
+				}
+				{
+					id: "7F56F8B0177B2673"
+					item: "create_new_age:overcharged_golden_wire"
+					title: "Overcharged Golden Wire"
+					type: "item"
+				}
+			]
+			title: "Practising , Electrical Engineering"
+			x: 7.7d
+			y: 6.1d
+		}
+		{
+			dependencies: ["0EE2DC348C521B51"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "create_sa:medium_filling_tank"
+			id: "2B3E69A2137A64D0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "602A4057552A4AB8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in motion."
+			tasks: [
+				{
+					id: "1839C11FADEECFD2"
+					item: "create_sa:medium_filling_tank"
+					title: "Medium Filling Tank"
+					type: "item"
+				}
+				{
+					id: "5C595057EEDFA1CB"
+					item: "create:empty_blaze_burner"
+					title: "Empty Blaze Burner"
+					type: "item"
+				}
+				{
+					id: "44D4DD5A876BA4CF"
+					item: "create_sa:heap_of_experience"
+					title: "§eHeap of Experience"
+					type: "item"
+				}
+			]
+			title: "Practising , Kinetic Engineering"
+			x: 4.3d
+			y: -8.8d
+		}
+		{
+			dependencies: ["48B21A9BB31E5E09"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "railways:smokestack_oilburner_brass_cap_copper"
+			id: "108EF8C5B804833F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7D57325BD99ABDFA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on rails."
+			tasks: [
+				{
+					id: "35BAA28923B04C83"
+					item: "railways:smokestack_oilburner_brass_cap_copper"
+					title: "Brass Capped Copper Oilburner Smokestack"
+					type: "item"
+				}
+				{
+					id: "555B012E81515329"
+					item: "railways:smokestack_streamlined_copper_cap_brass"
+					title: "Copper Capped Brass Streamlined Smokestack"
+					type: "item"
+				}
+				{
+					id: "48352C047D9DB55F"
+					item: "railways:smokestack_streamlined_brass_cap_copper"
+					title: "Brass Capped Copper Streamlined Smokestack"
+					type: "item"
+				}
+			]
+			title: "Practising , The Iron Road"
+			x: 0.0d
+			y: -9.8d
+		}
+		{
+			dependencies: ["209C2E28B5860CD6"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "call_of_yucutan:music_disc_awakening"
+			id: "40366102D059C13B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1A83E86B6E8B8CC5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on a record."
+			tasks: [
+				{
+					id: "70357A444DFB4BEE"
+					item: "call_of_yucutan:music_disc_awakening"
+					title: "Music Disc "
+					type: "item"
+				}
+				{
+					id: "21F3A5E457D9765D"
+					item: "integrated_stronghold:disc_fragment_sight"
+					title: "Disc Fragment"
+					type: "item"
+				}
+				{
+					id: "13256DE117EB035F"
+					item: "ecologics:music_disc_coconut"
+					title: "Music Disc"
+					type: "item"
+				}
+			]
+			title: "Practising , The Record Press"
+			x: 0.0d
+			y: 9.8d
+		}
+		{
+			dependencies: ["577B8DE219A04404"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "foragersinsight:diamond_mallet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6817EF275564FFD7"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1069195ABCBFAB68"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the drawer."
+			tasks: [
+				{
+					id: "26AC7F2E117C741E"
+					item: {
+						Count: 1
+						id: "foragersinsight:diamond_mallet"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Diamond Mallet"
+					type: "item"
+				}
+				{
+					id: "7CB8CC230A742D95"
+					item: "quark:abacus"
+					title: "Abacus"
+					type: "item"
+				}
+			]
+			title: "Practising , Oddments & Devices"
+			x: 9.6d
+			y: -2.2d
+		}
+		{
+			dependencies: ["5E27D8B599986FE1"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "exposure_polaroid:high_sensitivity_instant_color_slide"
+			id: "37F090BB9C485A79"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "617947071FA45369"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in a picture."
+			tasks: [
+				{
+					id: "70FE341A920EDA4C"
+					item: "exposure_polaroid:high_sensitivity_instant_color_slide"
+					title: "High-Sensitivity Instant Color Slide"
+					type: "item"
+				}
+				{
+					id: "2C0F638A11BD86A5"
+					item: "exposure:stacked_photographs"
+					title: "Stacked Photographs"
+					type: "item"
+				}
+				{
+					id: "07F38914ECA05B28"
+					item: "exposure_polaroid:instant_black_and_white_slide"
+					title: "Instant Black and White Slide"
+					type: "item"
+				}
+			]
+			title: "Practising , The Photography Arts"
+			x: -4.3d
+			y: 8.8d
+		}
+		{
+			dependencies: ["65F13E3BCCC88B10"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "dungeonnowloading:repulsor"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1D0E8406BF28A2B0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "438525CE0030269C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the circuit."
+			tasks: [
+				{
+					id: "2A4E6E5CCFE5DDE1"
+					item: {
+						Count: 1
+						id: "dungeonnowloading:repulsor"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Repulsor"
+					type: "item"
+				}
+				{
+					id: "4A6F4C2C84FE6037"
+					item: "dungeonnowloading:redstone_core"
+					title: "Redstone Core"
+					type: "item"
+				}
+				{
+					id: "296C13851D585E50"
+					item: {
+						Count: 1
+						id: "dungeonnowloading:mendstone_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Mendstone Chalk"
+					type: "item"
+				}
+			]
+			title: "Practising , Redstone Principles"
+			x: 9.6d
+			y: 2.2d
+		}
+		{
+			dependencies: ["32E5B25D2E17CEDA"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "create_aquatic_ambitions:prismarine_alloy"
+			id: "390E0B17098D1344"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5D21AC536485A812"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it against the tide."
+			tasks: [
+				{
+					id: "2740634713037CA4"
+					item: "create_aquatic_ambitions:prismarine_alloy"
+					title: "Prismarine Alloy"
+					type: "item"
+				}
+				{
+					id: "79294051551638EA"
+					item: "create_aquatic_ambitions:prismarine_alloy_rod"
+					title: "Prismarine Alloy Rod"
+					type: "item"
+				}
+			]
+			title: "Practising , Tidal Engineering"
+			x: -7.7d
+			y: -6.1d
+		}
+		{
+			dependencies: ["6A771358FB5F5FA6"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "cmpackagecouriers:cardboard_plane"
+			id: "6BAD3188B5948513"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2D9C48BE2386526B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on the route."
+			tasks: [
+				{
+					id: "5F536DF5E91B2C85"
+					item: "cmpackagecouriers:cardboard_plane"
+					title: "Cardboard Plane"
+					type: "item"
+				}
+				{
+					id: "08D76DBDBB634AC9"
+					item: "cmpackagecouriers:location_transmitter"
+					title: "Location Transmitter"
+					type: "item"
+				}
+				{
+					id: "2EC3C3894FC74677"
+					item: "create_mobile_packages:portable_stock_ticker"
+					title: "Portable Stock Ticker"
+					type: "item"
+				}
+			]
+			title: "Practising , The Wayhouse Logistics"
+			x: -9.6d
+			y: -2.2d
+		}
+	]
+	subtitle: ["One machine is a tool. A hundred are a civilisation."]
+	title: "The Machine Age"
+}

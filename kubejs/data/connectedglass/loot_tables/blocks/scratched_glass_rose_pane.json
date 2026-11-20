@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "connectedglass"
+    }
+  ],
+  "pools": [],
+  "random_sequence": "connectedglass:blocks/scratched_glass_rose_pane"
+}

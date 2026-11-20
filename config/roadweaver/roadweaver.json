@@ -1,7 +1,7 @@
 {
   "villagePredictionEnabled": true,
   "structurePredictionEnabled": true,
-  "predictRadiusChunks": 1024,
+  "predictRadiusChunks": 256,
   "biomePrefilter": true,
   "structureWhitelist": [
     "#minecraft:village"
@@ -10,12 +10,11 @@
   "structurePredictionDimensionWhitelist": [
     "minecraft:overworld",
     "minecraft:the_nether",
-    "minecraft:the_end",
     "minecraft:the_end"
   ],
-  "initialPlanRadiusChunks": 128,
+  "initialPlanRadiusChunks": 48,
   "dynamicPlanEnabled": true,
-  "dynamicPlanRadiusChunks": 256,
+  "dynamicPlanRadiusChunks": 96,
   "dynamicPlanStrideChunks": 64,
   "planningAlgorithm": "RNG",
   "highwayEnabled": false,
@@ -37,7 +36,7 @@
   "spawnCabinEnabled": true,
   "averagingRadius": 8,
   "hierarchicalPathfindingEnabled": false,
-  "generationThreads": 3,
+  "generationThreads": 2,
   "computeThreads": 0,
   "initialGenerationThreads": 6,
   "maxConcurrentGenerations": 3,
@@ -78,7 +77,7 @@
   "largeStructureOffset": 16,
   "villageRoadOffset": 60,
   "otherStructureRoadOffset": 25,
-  "structureAvoidanceEnabled": true,
+  "structureAvoidanceEnabled": false,
   "structureRoadOffset": 60,
   "dimensionRoadSettings": {},
   "orthoStepCost": 1.0,

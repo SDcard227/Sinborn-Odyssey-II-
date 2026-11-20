@@ -1,0 +1,19 @@
+{
+	"//": "These settings are easier to change in-game! Mod List -> Hand Over Your Items -> Config",
+	"Enable Hand Over Your Items": {
+		"//": "Whether Hand Over Your Items is enabled. When disabled, none of its features run and its other settings are hidden. Takes effect after a restart.",
+		"value": true
+	},
+	"sendItemReceivedMessage": {
+		"//": "If enabled, players will receive a message when they have been given an item.",
+		"value": true
+	},
+	"sendItemGivenMessage": {
+		"//": "If enabled, players will receive a message when they give an item.",
+		"value": true
+	},
+	"mustCrouchToGiveItem": {
+		"//": "If enabled, players will only be able to give items when they are crouching/sneaking.",
+		"value": true
+	}
+}

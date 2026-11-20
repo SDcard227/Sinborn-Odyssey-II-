@@ -1,0 +1,1012 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stoneandtimber"
+	group: "5A0000000000002B"
+	icon: "minecraft:stone_bricks"
+	id: "15E8266FAD703086"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The oldest scrolls in the Cathedral are about walls. Everything grander came later and depended on them."]
+			icon: "minecraft:stone_bricks"
+			id: "3244DBA5EA43DD8C"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "Everything permanent starts as shelter."
+			tasks: [{
+				id: "0EA84AED0BDE6F61"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "Stone and Timber"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abyssal ruins additions, caveman house, desert common and 6 more &8(25% a chest)"
+				"&bOpens:&r 1177 entries"
+				"&dNeeds:&r one of The Dye Loom, Glassworking, Stoneworking, Woodworking"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "handcrafted:oak_counter"
+			id: "7B6A952949E4EB59"
+			rewards: [{
+				count: 12
+				id: "1BF4280414105AEA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "A room, made worth standing in."
+			tasks: [
+				{
+					id: "092C12163937BE9B"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "furnishers_hand"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "00DD21C2758D2751"
+					individual: true
+					negate: false
+					stage: "furnishers_hand"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Furnisher's Hand"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r ancient vestiges chest, archer, basic loot and 39 more &8(14% a chest)"
+				"&bOpens:&r 846 entries"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 3 minutes"
+			]
+			icon: "minecraft:stone_bricks"
+			id: "277EB44669C0451A"
+			rewards: [{
+				count: 12
+				id: "76C82C42F7B8305F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The oldest entrance exam in the archive."
+			tasks: [
+				{
+					id: "26108C5E0F190D85"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "stoneworking"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "2556ED44A2B2F1CF"
+					individual: true
+					negate: false
+					stage: "stoneworking"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Stoneworking"
+			x: 2.7d
+			y: -4.2d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r aqua, caveman house, desert common and 5 more &8(25% a chest)"
+				"&bOpens:&r 1461 entries and 2 whole bodies of work"
+				"&dNeeds:&r one of The Dye Loom, Glassworking, Stoneworking, Woodworking"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "minecraft:oak_door"
+			id: "0E5197F7AB99FABE"
+			rewards: [{
+				count: 12
+				id: "066601F4A7EF3290"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Wood, made to hold without nails."
+			tasks: [
+				{
+					id: "052D6DE19B953A95"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "joiners_frame"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "30EC2A7FAA0B3A96"
+					individual: true
+					negate: false
+					stage: "joiners_frame"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Joiner's Frame"
+			x: 4.5d
+			y: -2.1d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r dark forest warehouse, jungle warehouse, village dark forest house and 3 more &8(35% a chest)"
+				"&bOpens:&r 450 entries"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 3 minutes"
+			]
+			icon: "minecraft:oak_stairs"
+			id: "67D1F7CE36CD0923"
+			rewards: [{
+				count: 12
+				id: "178447CCA9DAF047"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Grain, and which way it runs."
+			tasks: [
+				{
+					id: "2711DBB8782E3FB5"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "woodworking"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3999BA2F8D45E77D"
+					individual: true
+					negate: false
+					stage: "woodworking"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Woodworking"
+			x: 4.9d
+			y: 0.7d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r armorer, dye, fletcher and 4 more &8(25% a chest)"
+				"&bOpens:&r 231 entries and 2 whole bodies of work"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 3 minutes"
+			]
+			icon: "minecraft:red_dye"
+			id: "4B559ECEB90193D8"
+			rewards: [{
+				count: 12
+				id: "195A5F78E229D90C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Colour, before anybody agreed on colour."
+			tasks: [
+				{
+					id: "246FC7E2B789A77E"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "dyecraft"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "55AE19ED81180E10"
+					individual: true
+					negate: false
+					stage: "dyecraft"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Dye Loom"
+			x: 3.7d
+			y: 3.2d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r construction, village desert house, village library and 2 more &8(35% a chest)"
+				"&bOpens:&r 227 entries and 1 whole body of work"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 3 minutes"
+			]
+			icon: "minecraft:glass"
+			id: "681150E3635B7091"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6D5443C9C453645C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Sand that was persuaded to be clear."
+			tasks: [
+				{
+					id: "3432C35973ABAE77"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "glassworking"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "771074421A90F692"
+					individual: true
+					negate: false
+					stage: "glassworking"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Glassworking"
+			x: 1.4d
+			y: 4.7d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure, acropolis treasure additions, additional library loot and 5 more &8(25% a chest)"
+				"&bOpens:&r 216 entries and 1 whole body of work"
+				"&dNeeds:&r one of The Dye Loom, Glassworking, Stoneworking, Woodworking"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "quark:glass_item_frame"
+			id: "4CA068D2C2C4C089"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6699FB334CB00F86"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Keeping a thing where it can be seen."
+			tasks: [
+				{
+					id: "06583677C0DE756B"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "curators_vitrine"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5249C09F95406663"
+					individual: true
+					negate: false
+					stage: "curators_vitrine"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Curator's Vitrine"
+			x: -1.4d
+			y: 4.7d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Cipher work: the method survives and the reasoning does not."
+				""
+				"&6Found in:&r cartographer librarian, fletcher, village cartographer and 1 more &8(35% a chest)"
+				"&bOpens:&r 84 entries and 3 whole bodies of work"
+				"&dNeeds:&r one of The Tanner's Craft, The Long Road, Woodworking; The Long Road"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "62A9D24BA498F878"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "165F380173C318F3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Cipher work. The method survives, the reasoning does not."
+			tasks: [
+				{
+					id: "40AFF40D3786A748"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "backpackcraft"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7293DC19022566CB"
+					individual: true
+					negate: false
+					stage: "backpackcraft"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Wanderer's Pack"
+			x: -3.7d
+			y: 3.2d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r additional library loot, library, library higher basic and 4 more &8(25% a chest)"
+				"&bOpens:&r 21 entries"
+				"&dNeeds:&r Woodworking"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:bookshelf"
+			id: "07443DBE51FC8650"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "07F638BFD6A4DC38"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Somewhere for the reading to live."
+			tasks: [
+				{
+					id: "7AECEE3F11D1C42F"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "bookshelf_mastery"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "50E5FA328DE1D97A"
+					individual: true
+					negate: false
+					stage: "bookshelf_mastery"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Bookshelf Mastery"
+			x: -4.9d
+			y: 0.7d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Previous-cycle material. Four fragments survive and this is one of them."
+				""
+				"&6Found in:&r additional library loot, grand library, hidden sculk room and 15 more &8(25% a chest)"
+				"&bOpens:&r 89 entries and 1 whole body of work"
+				"&dNeeds:&r The Architect's Codex"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "quark:calcite_pillar"
+			id: "345FCFE17646E18B"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0387566B69D121FD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Previous-cycle. Four fragments, this is one."
+			tasks: [
+				{
+					id: "2D58967C3887A7FD"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "architectural_mastery"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "54A9241CF5749691"
+					individual: true
+					negate: false
+					stage: "architectural_mastery"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Architectural Mastery"
+			x: -4.5d
+			y: -2.1d
+		}
+		{
+			dependencies: ["3244DBA5EA43DD8C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r badlands warehouse, beach warehouse, dark forest warehouse and 18 more &8(25% a chest)"
+				"&bOpens:&r 385 entries and 1 whole body of work"
+				"&dNeeds:&r one of The Dye Loom, Glassworking, Stoneworking, Woodworking"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "handcrafted:oak_chair"
+			id: "298B98F934E96FBB"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6B0B2266FD732AF9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The difference between shelter and a home."
+			tasks: [
+				{
+					id: "4CBB91E8C559C3B8"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "furniturecraft"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "37903CE20F827501"
+					individual: true
+					negate: false
+					stage: "furniturecraft"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Homestead's Comfort"
+			x: -2.7d
+			y: -4.2d
+		}
+		{
+			dependencies: ["62A9D24BA498F878"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "sophisticatedbackpacks:tank_upgrade"
+			id: "0A846BB46F993738"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5288F10BBA111F8D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on the road."
+			tasks: [
+				{
+					id: "093AC52EC6DBD2EF"
+					item: "sophisticatedbackpacks:tank_upgrade"
+					title: "Tank Upgrade"
+					type: "item"
+				}
+				{
+					id: "018D1E9EF432F79D"
+					item: "overpacked:green_giant_backpack"
+					title: "Green Giant Backpack"
+					type: "item"
+				}
+				{
+					id: "1B2BD123B9B6F260"
+					item: "sophisticatedbackpacks:tool_swapper_upgrade"
+					title: "Tool Swapper Upgrade"
+					type: "item"
+				}
+			]
+			title: "Practising , The Wanderer's Pack"
+			x: -6.4d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4CA068D2C2C4C089"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "quark:glass_item_frame"
+			id: "222894499EC79B76"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6B00222251B2EF48"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it behind glass."
+			tasks: [
+				{
+					id: "196420C16F440410"
+					item: "quark:glass_item_frame"
+					title: "Glass Item Frame"
+					type: "item"
+				}
+				{
+					id: "0BD7A1E54DBCEBE0"
+					item: "tide:fish_satchel"
+					title: "Fish Satchel"
+					type: "item"
+				}
+				{
+					id: "158DFDEDDF1D57E0"
+					item: "quark:glowing_glass_item_frame"
+					title: "Glow Glass Item Frame"
+					type: "item"
+				}
+			]
+			title: "Practising , The Curator's Vitrine"
+			x: -2.4d
+			y: 8.1d
+		}
+		{
+			dependencies: ["4B559ECEB90193D8"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "dye_depot:teal_dye"
+			id: "6A0B748438F65443"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "567021A5D0404578"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in colour."
+			tasks: [
+				{
+					id: "1101900567B26A55"
+					item: "dye_depot:teal_dye"
+					title: "Teal Dye"
+					type: "item"
+				}
+				{
+					id: "594B4CF23E1C4A3D"
+					item: {
+						Count: 1
+						id: "chalk:purple_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Purple Chalk"
+					type: "item"
+				}
+				{
+					id: "649097843F9FFBF0"
+					item: {
+						Count: 1
+						id: "chalk:orange_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Orange Chalk"
+					type: "item"
+				}
+			]
+			title: "Practising , The Dye Loom"
+			x: 6.4d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7B6A952949E4EB59"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "beachparty:rubber_ring_stripped"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6F2B1F3C21C85A20"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6735FBFCB79A4FD1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in a room."
+			tasks: [
+				{
+					id: "60BEF73320FBCE67"
+					item: {
+						Count: 1
+						id: "beachparty:rubber_ring_stripped"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Stripped Rubber Ring"
+					type: "item"
+				}
+				{
+					id: "703A3455DB9A20D0"
+					item: "redeco:jar"
+					title: "Jar"
+					type: "item"
+				}
+				{
+					id: "641DC55079E52FD8"
+					item: "redeco:yellow_upholstery"
+					title: "Yellow Fabric"
+					type: "item"
+				}
+			]
+			title: "Practising , The Furnisher's Hand"
+			x: 0.0d
+			y: -8.4d
+		}
+		{
+			dependencies: ["0E5197F7AB99FABE"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "mcwtrpdoors:print_beach"
+			id: "17A372C40735CF5B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1829701C63BB9765"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the joint."
+			tasks: [
+				{
+					id: "3F4FD01BB515ACEA"
+					item: "mcwtrpdoors:print_beach"
+					title: "Beach Trapdoor Print"
+					type: "item"
+				}
+				{
+					id: "2C74AF4DF9F69BA1"
+					item: "mcwwindows:window_centre_bar_base"
+					title: "Window Four Pane Base"
+					type: "item"
+				}
+				{
+					id: "2356BE4B1CD11A05"
+					item: "mcwtrpdoors:print_swamp"
+					title: "Swamp Trapdoor Print"
+					type: "item"
+				}
+			]
+			title: "Practising , The Joiner's Frame"
+			x: 7.7d
+			y: -3.5d
+		}
+		{
+			dependencies: ["277EB44669C0451A"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "sullysmod:amber_encased_bug"
+			id: "76415C3C86E7D663"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "59EE6D60BA9B86EA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in stone."
+			tasks: [
+				{
+					id: "7010B2AB9ADFC84B"
+					item: "sullysmod:amber_encased_bug"
+					title: "Amber Encased Bug"
+					type: "item"
+				}
+				{
+					id: "42D7010E3027859E"
+					item: "desert:cracked_sandstone"
+					title: "Cracked Sandstone"
+					type: "item"
+				}
+				{
+					id: "779B4DC0B9A7CD35"
+					item: "desert:weathered_sandstone"
+					title: "Weathered Sandstone"
+					type: "item"
+				}
+			]
+			title: "Practising , Stoneworking"
+			x: 4.6d
+			y: -7.1d
+		}
+		{
+			dependencies: ["67D1F7CE36CD0923"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "quark:oak_chest"
+			id: "61105F7C8A000B76"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "69B0118FFD872CBB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in timber."
+			tasks: [
+				{
+					id: "652C16F1D3A720DB"
+					item: "quark:oak_chest"
+					title: "Oak Chest"
+					type: "item"
+				}
+				{
+					id: "2EFFABC91C6A064F"
+					item: "quark:oak_post"
+					title: "Oak Post"
+					type: "item"
+				}
+				{
+					id: "69E92F04954B34DC"
+					item: "meadow:wooden_bucket"
+					title: "Wooden Bucket"
+					type: "item"
+				}
+			]
+			title: "Practising , Woodworking"
+			x: 8.4d
+			y: 1.2d
+		}
+		{
+			dependencies: ["0E5197F7AB99FABE"]
+			description: [
+				"Crimson and warped timber joins like any other. The archive still files it under the place it grew."
+				"&dNeeds both:&r The Joiner's Frame and On Infernal Passage."
+				"&bWaiting on both:&r Crimson Door, Warped Trapdoor, Crimson Pane Window and the rest of that shelf."
+			]
+			icon: "minecraft:crimson_door"
+			id: "5341C5C6BACC7A45"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "46908E3ACC718B74"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Still a door. Also from somewhere else."
+			tasks: [
+				{
+					id: "1077F15AC014A668"
+					individual: true
+					negate: false
+					stage: "joiners_frame"
+					title: "The Joiner's Frame"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "2DE7917B023E5DC1"
+					individual: true
+					negate: false
+					stage: "infernal_passage"
+					title: "On Infernal Passage"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , Nether Joinery"
+			x: 6.0d
+			y: -1.3d
+		}
+		{
+			dependencies: ["277EB44669C0451A"]
+			description: [
+				"A mason can dress it. Only someone who has been through the gate knows what it is."
+				"&dNeeds both:&r Stoneworking and On Infernal Passage."
+				"&bWaiting on both:&r Carrion, Polished Blackstone Plate, Clottage Bricks and the rest of that shelf."
+			]
+			icon: "incision:carrion"
+			id: "45F010C7FC710260"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7C68A74911447C17"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The cut is ordinary. The quarry is not."
+			tasks: [
+				{
+					id: "52C04FAC0732E2F5"
+					individual: true
+					negate: false
+					stage: "stoneworking"
+					title: "Stoneworking"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "70D71F1911FB91BA"
+					individual: true
+					negate: false
+					stage: "infernal_passage"
+					title: "On Infernal Passage"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , Nether Stone"
+			x: 4.4d
+			y: -4.3d
+		}
+		{
+			dependencies: ["277EB44669C0451A"]
+			description: [
+				"It takes a chisel the same as any other. It was a long way to carry."
+				"&dNeeds both:&r Stoneworking and The End Passage."
+				"&bWaiting on both:&r End Stone Slab, Purpur Wall, Chorus Stone Notch and the rest of that shelf."
+			]
+			icon: "echovoids:end_stone_slab"
+			id: "1D8FB0EF958E0B0A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "53A4EBDD83C41E46"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Stone from past the last gate."
+			tasks: [
+				{
+					id: "7F6F7A9C43F17EE4"
+					individual: true
+					negate: false
+					stage: "stoneworking"
+					title: "Stoneworking"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "5A672980EEF519C7"
+					individual: true
+					negate: false
+					stage: "scroll_end_passage"
+					title: "The End Passage"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , End Stone"
+			x: 2.1d
+			y: -5.8d
+		}
+	]
+	subtitle: ["Walls first. Everything grander came later."]
+	title: "Stone and Timber"
+}

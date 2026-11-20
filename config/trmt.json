@@ -6,9 +6,15 @@
     "leavesEnabled": true,
     "vegetationEnabled": true
   },
+  "deErosion": {
+    "grassEnabled": true,
+    "dirtEnabled": true,
+    "sandEnabled": true
+  },
   "erosionMultipliers": {
     "player": 0.5,
-    "mounted": 1.5
+    "mounted": 1.5,
+    "leash": 1.5
   },
   "erosionThresholds": {
     "grass": {
@@ -27,17 +33,37 @@
       "min": 4.0,
       "max": 8.0
     },
-    "vegetation": {
-      "dropChance": 0.2,
-      "min": 2.0,
-      "max": 3.0
-    },
     "leaves": {
       "dropChance": 0.1,
       "min": 2.0,
       "max": 3.0
+    },
+    "vegetation": {
+      "dropChance": 0.2,
+      "min": 2.0,
+      "max": 3.0
     }
   },
+  "erodableVegetation": [
+    "minecraft:grass",
+    "minecraft:tall_grass",
+    "minecraft:dandelion",
+    "minecraft:poppy",
+    "minecraft:blue_orchid",
+    "minecraft:allium",
+    "minecraft:azure_bluet",
+    "minecraft:red_tulip",
+    "minecraft:orange_tulip",
+    "minecraft:white_tulip",
+    "minecraft:pink_tulip",
+    "minecraft:oxeye_daisy",
+    "minecraft:cornflower",
+    "minecraft:lily_of_the_valley",
+    "minecraft:sunflower",
+    "minecraft:lilac",
+    "minecraft:rose_bush",
+    "minecraft:peony"
+  ],
   "deErosionTimeoutDays": {
     "grass": {
       "stage1": 1.0,

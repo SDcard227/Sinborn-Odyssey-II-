@@ -1,14 +1,8 @@
 {
   "display_name": "Ballistics Engineering",
-  "research_time": 10800,
+  "icon": "historystages:research_scroll",
+  "research_time": 1110,
   "items": [
-    "burnt:blaze_barrel",
-    "burnt:blaze_barrel_active",
-    "burnt:blaze_barrel_blast_block",
-    "burnt:fire_barrel",
-    "burnt:fire_barrel_active",
-    "burnt:fire_barrel_blast_block",
-    "create:potato_cannon",
     "create_radar:auto_pitch_controller",
     "create_radar:auto_yaw_controller",
     "create_radar:fire_controller",
@@ -16,18 +10,12 @@
     "create_radar:target_filter_item",
     "createbigcannons:ap_autocannon_round",
     "createbigcannons:ap_shell",
-    "createbigcannons:ap_shell_base_fuze",
-    "createbigcannons:ap_shell_head_fuze",
     "createbigcannons:ap_shot",
     "createbigcannons:autocannon_cartridge",
     "createbigcannons:autocannon_cartridge_sheet",
     "createbigcannons:bag_of_grapeshot",
     "createbigcannons:big_cartridge",
     "createbigcannons:big_cartridge_sheet",
-    "createbigcannons:cannon_drill",
-    "createbigcannons:cast_iron_autocannon_barrel",
-    "createbigcannons:cast_iron_autocannon_breech_extractor",
-    "createbigcannons:cast_iron_cannon_barrel",
     "createbigcannons:congealed_nitro",
     "createbigcannons:delayed_impact_fuze",
     "createbigcannons:delayed_inertia_fuze",
@@ -38,14 +26,10 @@
     "createbigcannons:filled_autocannon_cartridge",
     "createbigcannons:flak_autocannon_round",
     "createbigcannons:fluid_shell",
-    "createbigcannons:fluid_shell_base_fuze",
-    "createbigcannons:fluid_shell_head_fuze",
     "createbigcannons:guncotton",
     "createbigcannons:gunpowder_pinch",
     "createbigcannons:hardened_nitro",
     "createbigcannons:he_shell",
-    "createbigcannons:he_shell_base_fuze",
-    "createbigcannons:he_shell_head_fuze",
     "createbigcannons:impact_fuze",
     "createbigcannons:inertia_fuze",
     "createbigcannons:machine_gun_round",
@@ -54,43 +38,30 @@
     "createbigcannons:nitropowder",
     "createbigcannons:packed_guncotton",
     "createbigcannons:packed_gunpowder",
-    "createbigcannons:partial_cast_iron_autocannon_breech_extractor",
     "createbigcannons:partially_assembled_machine_gun_round",
     "createbigcannons:partially_filled_autocannon_cartridge",
     "createbigcannons:partially_formed_autocannon_cartridge",
-    "createbigcannons:partially_formed_autocannon_cartridge1",
-    "createbigcannons:partially_formed_autocannon_cartridge2",
-    "createbigcannons:partially_formed_autocannon_cartridge3",
-    "createbigcannons:partially_formed_autocannon_cartridge4",
     "createbigcannons:partially_formed_big_cartridge",
-    "createbigcannons:partially_formed_big_cartridge1",
-    "createbigcannons:partially_formed_big_cartridge2",
-    "createbigcannons:partially_formed_big_cartridge3",
     "createbigcannons:powder_charge",
     "createbigcannons:proximity_fuze",
     "createbigcannons:ram_head",
     "createbigcannons:ram_rod",
     "createbigcannons:shot_balls",
     "createbigcannons:shrapnel_shell",
-    "createbigcannons:shrapnel_shell_base_fuze",
-    "createbigcannons:shrapnel_shell_head_fuze",
     "createbigcannons:smoke_shell",
-    "createbigcannons:smoke_shell_base_fuze",
-    "createbigcannons:smoke_shell_head_fuze",
     "createbigcannons:solid_shot",
     "createbigcannons:timed_fuze",
     "createbigcannons:tracer_tip",
-    "createbigcannons:unbored_cast_iron_autocannon_barrel",
-    "createbigcannons:unbored_cast_iron_cannon_barrel",
     "createbigcannons:wired_fuze",
     "createbigcannons:worm",
     "createbigcannons:worm_head",
     "dungeonnowloading:explosive_barrel",
-    "quark:gunpowder_sack",
-    "tfmg:pipe_bomb",
+    "twm:dd_tdontdothis",
     "twm:dinamite",
     "twm:molotov",
-    "twm:molotovcocktail"
+    "twm:molotovcocktail",
+    "burnt_additions:molotov",
+    "burnt_additions:tar_bottle"
   ],
   "tags": [],
   "mods": [],
@@ -101,5 +72,60 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "cannoneer",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_forgesworn",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "arsenal_master_ranged",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cannoneer",
+          "mode": "player"
+        },
+        {
+          "stage_id": "scroll_end_passage",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 25,
+        "consume": true
+      }
+    }
+  ],
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min"
 }

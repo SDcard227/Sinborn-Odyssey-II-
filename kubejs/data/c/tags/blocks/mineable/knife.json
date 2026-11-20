@@ -1,0 +1,73 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "frightsdelight:melon_candy_basket",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:pumpkin_candy_basket",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:jack_o_lantern_candy_basket",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punchbowl_rotten_flesh",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punchbowl_slimeapple",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punchbowl_spidereye",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punchbowl_ghasttear",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punchbowl_soul_berry",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punchbowl_wither_berry",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:punchbowl_cobweb",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:rotten_flesh_pie",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:slimeapple_pie",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:spidereye_pie",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:ghasttear_pie",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:soul_berry_cheesecake",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:wither_berry_cheesecake",
+   "required": false
+  },
+  {
+   "id": "frightsdelight:cobweb_pie",
+   "required": false
+  }
+ ]
+}

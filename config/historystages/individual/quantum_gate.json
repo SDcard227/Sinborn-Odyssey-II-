@@ -1,10 +1,10 @@
 {
   "display_name": "The Quantum Gate",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 270,
   "items": [
     "portal_fluid:portal_fluid_bottle",
-    "portal_fluid:portal_fluid_bucket",
-    "portal_fluid:portal_fluid"
+    "portal_fluid:portal_fluid_bucket"
   ],
   "tags": [],
   "mods": [],
@@ -15,5 +15,51 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fluids": [
+    "portal_fluid:flowing_portal_fluid",
+    "portal_fluid:portal_fluid"
+  ],
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "archaeology_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "codex_of_kukulkan",
+          "mode": "player"
+        },
+        {
+          "stage_id": "scroll_end_passage",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_table",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

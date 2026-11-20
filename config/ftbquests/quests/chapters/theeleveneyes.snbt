@@ -1,0 +1,2587 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "theeleveneyes"
+	group: "5A0000000000004D"
+	icon: "minecraft:ender_eye"
+	id: "6CA7E5CE9A97529B"
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Nine civilisations, nine ways of ending, and one scroll each that says how."
+				"The rest of this chapter is what the Convent filed under things that should not be"
+				"assembled by one person."
+				"You are one person."
+			]
+			icon: "minecraft:ender_eye"
+			id: "1F1FF51DB79908D0"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "What the gods sealed, and what it costs to open it."
+			tasks: [{
+				id: "1CACCE9CD69651FD"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Eleven Eyes"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F1FF51DB79908D0"]
+			description: [
+				"A death-court, a sun that never set on it, and a doctrine that dying is administered."
+				"Their eye is the shape their ending took."
+				"Nine of these exist. The archive is explicit that they were meant to be read together."
+			]
+			icon: "historystages:research_scroll"
+			id: "55B55C8167EAA0CC"
+			rewards: [{
+				count: 12
+				id: "4135D825F645BF3F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "The Gilded Sands , Sun, Preservation"
+			tasks: [
+				{
+					id: "45C8A1DFF54E745B"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_black"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7D54EF3596FACDDD"
+					individual: true
+					negate: false
+					stage: "eye_black"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Black Eye"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F1FF51DB79908D0"]
+			description: [
+				"They climbed until the sky answered and sealed the stair behind them."
+				"Their eye is the shape their ending took."
+				"Nine of these exist. The archive is explicit that they were meant to be read together."
+			]
+			icon: "historystages:research_scroll"
+			id: "36DA3544AD34C5DC"
+			rewards: [{
+				count: 12
+				id: "4D71B9303C8EE5F7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "Yucatan , Sky, Self-sealing"
+			tasks: [
+				{
+					id: "09E68CAAFB885056"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_lost"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "4EDE23B4DD054E20"
+					individual: true
+					negate: false
+					stage: "eye_lost"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Lost Eye"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F1FF51DB79908D0"]
+			description: [
+				"They remembered everything. That is what it cost them."
+				"Their eye is the shape their ending took."
+				"Nine of these exist. The archive is explicit that they were meant to be read together."
+			]
+			icon: "historystages:research_scroll"
+			id: "05020D7F59906D60"
+			rewards: [{
+				count: 12
+				id: "7208D654A7E932EA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "The Umvuthana , Memory, Memory-overload"
+			tasks: [
+				{
+					id: "1007A161BDD42141"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_old"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "17ACCED81610AFEE"
+					individual: true
+					negate: false
+					stage: "eye_old"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Old Eye"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F1FF51DB79908D0"]
+			description: [
+				"They kept a vigil, a fleet and a burial method, and the ice kept all three."
+				"Their eye is the shape their ending took."
+				"Nine of these exist. The archive is explicit that they were meant to be read together."
+			]
+			icon: "historystages:research_scroll"
+			id: "68B1046258EA33BD"
+			rewards: [{
+				count: 12
+				id: "73A779D1E9F8E1BB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "The Hoarfrost , Ice, Preservation"
+			tasks: [
+				{
+					id: "62D4717A3304F056"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_cold"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "28D57709E7C75ABA"
+					individual: true
+					negate: false
+					stage: "eye_cold"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Cold Eye"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F1FF51DB79908D0"]
+			description: [
+				"Engineers who built a god and could not switch it off."
+				"Their eye is the shape their ending took."
+				"Nine of these exist. The archive is explicit that they were meant to be read together."
+			]
+			icon: "historystages:research_scroll"
+			id: "129A67BC920E7773"
+			rewards: [{
+				count: 12
+				id: "6CA25901FCA71423"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "The Forgesworn , Machine, Optimization-collapse"
+			tasks: [
+				{
+					id: "0A2BB0BF76741EB4"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_rogue"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1CD0B4E4493D0850"
+					individual: true
+					negate: false
+					stage: "eye_rogue"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Rogue Eye"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F1FF51DB79908D0"]
+			description: [
+				"Undocumentable by their own design, and they left on purpose."
+				"Their eye is the shape their ending took."
+				"Nine of these exist. The archive is explicit that they were meant to be read together."
+			]
+			icon: "historystages:research_scroll"
+			id: "4162515DC90C6E55"
+			rewards: [{
+				count: 12
+				id: "7A4E530A1228EC9B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "The Cipher , Erasure, Deliberate exit"
+			tasks: [
+				{
+					id: "2B2FF1571BD12296"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_cryptic"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3FCD53122948B08F"
+					individual: true
+					negate: false
+					stage: "eye_cryptic"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Cryptic Eye"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F1FF51DB79908D0"]
+			description: [
+				"Ocean mages who believed the deep could be negotiated with."
+				"Their eye is the shape their ending took."
+				"Nine of these exist. The archive is explicit that they were meant to be read together."
+			]
+			icon: "historystages:research_scroll"
+			id: "05CAEF9360D5BD31"
+			rewards: [{
+				count: 12
+				id: "7F9474AAF970198B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "The Tidehold , Water, Dissolution"
+			tasks: [
+				{
+					id: "4E79EE27DFC998DF"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_magical"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "2AC47894B82F5224"
+					individual: true
+					negate: false
+					stage: "eye_magical"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Magical Eye"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F1FF51DB79908D0"]
+			description: [
+				"Flesh-joined. The schism was about consent, never method."
+				"Their eye is the shape their ending took."
+				"Nine of these exist. The archive is explicit that they were meant to be read together."
+			]
+			icon: "historystages:research_scroll"
+			id: "403CEEFE7E991FAA"
+			rewards: [{
+				count: 12
+				id: "39A07DF1BDB0ABE2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "The Seeped , Flesh, Dissolution"
+			tasks: [
+				{
+					id: "59D72870D855DBA1"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_corrupted"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "4AAAAE4F6F3D97DD"
+					individual: true
+					negate: false
+					stage: "eye_corrupted"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Corrupted Eye"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F1FF51DB79908D0"]
+			description: [
+				"The previous cycle. Four fragments survive and one of them moves."
+				"Their eye is the shape their ending took."
+				"Nine of these exist. The archive is explicit that they were meant to be read together."
+			]
+			icon: "historystages:research_scroll"
+			id: "3B3C4FF60C3339D8"
+			rewards: [{
+				count: 12
+				id: "02CE1BB38863739C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "The Storm-Builders , Storm, Optimization-collapse"
+			tasks: [
+				{
+					id: "15EC085073CE5071"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_cursed"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "38C458DC229ED29C"
+					individual: true
+					negate: false
+					stage: "eye_cursed"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Cursed Eye"
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["55B55C8167EAA0CC"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "66A05B31C84A5B5A"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6CC9ACB09FC675C4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The deep, and what answers out of it."
+			tasks: [
+				{
+					id: "58B563C0D2C96443"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_abyssal"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "27E78DFA6DCF68BE"
+					individual: true
+					negate: false
+					stage: "eye_abyssal"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Abyssal Eye"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["36DA3544AD34C5DC"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "41F9C7699F109DD6"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6AA16E88D481B7BE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Barako's. The Wish-Seller took it up after."
+			tasks: [
+				{
+					id: "0554E1540FF62A06"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_desert"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7FADD924D27982CC"
+					individual: true
+					negate: false
+					stage: "eye_desert"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Desert Eye"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["05020D7F59906D60"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "648F922A0DC14E12"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "49F24DEE8E0C2E8C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "What the Remnant was still watching with."
+			tasks: [
+				{
+					id: "051A12ABD047A975"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_evil"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "58E8DEA8C2685D7A"
+					individual: true
+					negate: false
+					stage: "eye_evil"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Evil Eye"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["68B1046258EA33BD"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "657095DB0E39A1FA"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "5CA632B045F961D3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cornelia kept it in a graveyard of ships."
+			tasks: [
+				{
+					id: "2648A9C61BB69E3E"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_exotic"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "24CC35C307E2AB5E"
+					individual: true
+					negate: false
+					stage: "eye_exotic"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Exotic Eye"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["129A67BC920E7773"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "2D6DEA0DBCCB435B"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0699CAA6E4842808"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Two fires claim it and neither shares."
+			tasks: [
+				{
+					id: "0F6D9210352AB304"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_flame"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "38F222D3B3F311E7"
+					individual: true
+					negate: false
+					stage: "eye_flame"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Flame Eye"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4162515DC90C6E55"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "4F06FE2ADB118C27"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6BE538D75C4E6D64"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named for the thing that carried it."
+			tasks: [
+				{
+					id: "6FB75A8072B11E21"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_frostmaw"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "02076C34D341286C"
+					individual: true
+					negate: false
+					stage: "eye_frostmaw"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Frostmaw Eye"
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["05CAEF9360D5BD31"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "2450DD4715210AA0"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "5E254C088C566B4F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One temple in four gives it up."
+			tasks: [
+				{
+					id: "3278A45BE28E07A5"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_guardian"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "055F99073F63C117"
+					individual: true
+					negate: false
+					stage: "eye_guardian"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Guardian Eye"
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["403CEEFE7E991FAA"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "0D8918CCBEB458AF"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "2BFC07C3EE2189D8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Forge-residue, from something that stopped being a forge."
+			tasks: [
+				{
+					id: "315414BAB3041CF5"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_mech"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1ECC890FC3C44E6A"
+					individual: true
+					negate: false
+					stage: "eye_mech"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Mechanical Eye"
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["66A05B31C84A5B5A"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "64F2A33E19B6BF86"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "71A8DC4D3B31B832"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Two monstrosities. One lineage."
+			tasks: [
+				{
+					id: "1D8857A41F412307"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_monstrous"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "0D8F65B27D031A89"
+					individual: true
+					negate: false
+					stage: "eye_monstrous"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Monstrous Eye"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["41F9C7699F109DD6"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "2330DCD970898A88"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7A41579DC818A003"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Guaranteed, if you get that far."
+			tasks: [
+				{
+					id: "5631060E7A0F9454"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_nether"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1E60ABC77C0DA5B3"
+					individual: true
+					negate: false
+					stage: "eye_nether"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Nether Eye"
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["648F922A0DC14E12"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "3B35CF4D381CC42C"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "4C05A6FE14140DE0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The Nightwarden answered to nobody."
+			tasks: [
+				{
+					id: "6F0B2C1B40F4C810"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_nothingness"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3F738AEF6A55CCE1"
+					individual: true
+					negate: false
+					stage: "eye_nothingness"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Eye of Nothingness"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["657095DB0E39A1FA"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "0AF590962589ACAF"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "42316C59A4A9B724"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The Acropolis fight, and the Storm after it."
+			tasks: [
+				{
+					id: "5E17805B6E518942"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_storm"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "00A575648C2FB0AE"
+					individual: true
+					negate: false
+					stage: "eye_storm"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Storm Eye"
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2D6DEA0DBCCB435B"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "7295615829461B67"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0B6A706BA38CC3BA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Her vision. Her killer wears her armour."
+			tasks: [
+				{
+					id: "6C2414FF41D85EBC"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_sun"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3F51F77ACF00AFE8"
+					individual: true
+					negate: false
+					stage: "eye_sun"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Sun Eye"
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4F06FE2ADB118C27"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "778B172D65D5EC78"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "21EB7C1D13A34413"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The Sculptor's own, and unsigned like the rest."
+			tasks: [
+				{
+					id: "30DFE365F4B04F37"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_tongbi"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "0C6DED823661F55D"
+					individual: true
+					negate: false
+					stage: "eye_tongbi"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Tongbi Eye"
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2450DD4715210AA0"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "4EBFA1ADA20D97C0"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7DFB7A7D7FA726B2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The fortress will part with it. The Reaper will not."
+			tasks: [
+				{
+					id: "6AFEE8F1ECECE1D4"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_undead"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "283522ECFB5D3836"
+					individual: true
+					negate: false
+					stage: "eye_undead"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Undead Eye"
+			x: 12.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0D8918CCBEB458AF"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "6D2225EDF061D9CE"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0B3F159B3C548C3E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The boundary, and the thing set to guard it."
+			tasks: [
+				{
+					id: "6D61F458E9BA2492"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_void"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "54A93D12F02DC501"
+					individual: true
+					negate: false
+					stage: "eye_void"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Void Eye"
+			x: 14.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["64F2A33E19B6BF86"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "069C0C0AB607A5A4"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "3EDB2383D2E8AF4A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One witch in a hundred."
+			tasks: [
+				{
+					id: "626BDC8D36B65E1A"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_witch"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "693F265DE2C888D7"
+					individual: true
+					negate: false
+					stage: "eye_witch"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Witch Eye"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2330DCD970898A88"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "6352EB40425BDA6B"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "1B1C97B569022065"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The oldest apex in the record."
+			tasks: [
+				{
+					id: "221AC569BF13A1BF"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_wither"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "38E5A04A4916D5A5"
+					individual: true
+					negate: false
+					stage: "eye_wither"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Wither Eye"
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3B35CF4D381CC42C"]
+			description: [
+				"One of the eyes that answers to a thing rather than to a people."
+				"Filed with the eyes because nothing else in the archive would hold it."
+			]
+			icon: "historystages:research_scroll"
+			id: "161D7E16FC09F47A"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6F33610FC9388E20"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Iron that was taught to stand up."
+			tasks: [
+				{
+					id: "094B032FACBAF4F2"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_wrought"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "0AADAE6B97EDE25B"
+					individual: true
+					negate: false
+					stage: "eye_wrought"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scroll of the Wrought Eye"
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["069C0C0AB607A5A4"]
+			description: [
+				"Written by the priests who climbed, before they sealed the stair."
+				"It is a technical document about how to be answered, and it stops mid-procedure."
+			]
+			icon: "historystages:research_scroll"
+			id: "190239FAE6D60A52"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0578D436011830BB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "It stops mid-procedure."
+			tasks: [
+				{
+					id: "14078755E24B1227"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "codex_of_kukulkan"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "43AEC4F36F4AC70A"
+					individual: true
+					negate: false
+					stage: "codex_of_kukulkan"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Codex of Kukulkan"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"161D7E16FC09F47A"
+				"7978BA3F5A81E29D"
+			]
+			description: [
+				"The Cipher's discipline, taught by a people who then removed themselves from the record."
+				"Everything they left is instructions with the reasoning cut out."
+			]
+			icon: "historystages:research_scroll"
+			id: "033932ABA0D4297F"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "18ACA791710A2AD7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Instructions with the reasoning cut out."
+			tasks: [
+				{
+					id: "6A202F20B9C0052C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "void_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "56102A805C054293"
+					individual: true
+					negate: false
+					stage: "void_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Void School"
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0AF590962589ACAF"]
+			description: [
+				"Where the erasure work was done, and the surface still carries the marks of it."
+				"The Cipher did not clean up. They simply were not there the next morning."
+			]
+			icon: "historystages:research_scroll"
+			id: "21849E906FBFFA08"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6168A85668A466DA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "They did not clean up. They just were not there."
+			tasks: [
+				{
+					id: "42A3DECA9D83C58E"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "void_table"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "405DF4BE0193875D"
+					individual: true
+					negate: false
+					stage: "void_table"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Chorus Hearth"
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"55B55C8167EAA0CC"
+				"36DA3544AD34C5DC"
+				"05020D7F59906D60"
+				"129A67BC920E7773"
+				"4162515DC90C6E55"
+				"403CEEFE7E991FAA"
+				"3B3C4FF60C3339D8"
+				"2925BEA3FB0C3137"
+				"68B1046258EA33BD"
+				"05CAEF9360D5BD31"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Sands did not worship him. They negotiated, in writing, with witnesses."
+				"Sixteen contracts survive. Fifteen end with the signatory's name struck through."
+				"The sixteenth ends with the witness's."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "56BE60137CDF8C03"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7226E6B7720C1712"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.15d
+			subtitle: "Fifteen of sixteen signatories, struck through."
+			tasks: [
+				{
+					id: "69CFD4989A9CE2F0"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "god_green_genie"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5D46B488B59D2480"
+					individual: true
+					negate: false
+					stage: "god_green_genie"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On the Wish-Seller of the Sands"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"55B55C8167EAA0CC"
+				"36DA3544AD34C5DC"
+				"05020D7F59906D60"
+				"129A67BC920E7773"
+				"4162515DC90C6E55"
+				"403CEEFE7E991FAA"
+				"3B3C4FF60C3339D8"
+				"68B1046258EA33BD"
+				"05CAEF9360D5BD31"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"It built a pantheon and the pantheon failed, and the End is still arranged in the order"
+				"it was meant to be worshipped in."
+				"Masterless is the Convent's word. It means nobody is above it and nobody is coming."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "5F4DEBDAC04F2DEE"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6A31172D91C010A6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.15d
+			subtitle: "The pantheon failed. The seating chart did not."
+			tasks: [
+				{
+					id: "004B5FF4EB36C7F4"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "god_nightwarden"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1ED9240CBB36A9F7"
+					individual: true
+					negate: false
+					stage: "god_nightwarden"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On the Masterless Apex"
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"55B55C8167EAA0CC"
+				"36DA3544AD34C5DC"
+				"05020D7F59906D60"
+				"129A67BC920E7773"
+				"4162515DC90C6E55"
+				"403CEEFE7E991FAA"
+				"3B3C4FF60C3339D8"
+				"0BE5E5277B2B7730"
+				"68B1046258EA33BD"
+				"05CAEF9360D5BD31"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A rank the death-court invented and never retired, held by the last person to hold it."
+				"Sanctity, in the Gilded Sands, was a civil service grade."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "656807F56A63B573"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "28121415FF574631"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.15d
+			subtitle: "Sanctity, filed as a civil service grade."
+			tasks: [
+				{
+					id: "304391611A97AA03"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "god_pontiff"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "54CFA0BE96474EE3"
+					individual: true
+					negate: false
+					stage: "god_pontiff"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On the God the Convent Never Saw"
+			x: 4.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"55B55C8167EAA0CC"
+				"36DA3544AD34C5DC"
+				"05020D7F59906D60"
+				"129A67BC920E7773"
+				"4162515DC90C6E55"
+				"403CEEFE7E991FAA"
+				"3B3C4FF60C3339D8"
+				"68B1046258EA33BD"
+				"05CAEF9360D5BD31"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The last and largest sealing, at 0 BS, binding the King and the gods who held the chains."
+				"Everything else in the archive is a wartime decision. This is the one that ended the war."
+				"He is not sealed in a structure. He is sealed in the calendar."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "5CEF1B018C7D9135"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "098AE1B5843A0230"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.15d
+			subtitle: "0 BS. The one that ended the war."
+			tasks: [
+				{
+					id: "7351F24FE12F1C6C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "god_scarlet_king"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "2FD41B7038F25286"
+					individual: true
+					negate: false
+					stage: "god_scarlet_king"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On the King Below"
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"55B55C8167EAA0CC"
+				"36DA3544AD34C5DC"
+				"05020D7F59906D60"
+				"129A67BC920E7773"
+				"4162515DC90C6E55"
+				"403CEEFE7E991FAA"
+				"3B3C4FF60C3339D8"
+				"68B1046258EA33BD"
+				"05CAEF9360D5BD31"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Sun-Mother was never sealed, and the Gilded Sands taught that first and explained it never."
+				"Every other god in that desert has a tomb, a date and a reason. She has a direction."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "09113B96477FCC33"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6C326F4F32F507BD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.15d
+			subtitle: "No tomb, no date. A direction."
+			tasks: [
+				{
+					id: "1FD309B1DAFCBC05"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "god_sunleia"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5307A6FCE60170DC"
+					individual: true
+					negate: false
+					stage: "god_sunleia"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On the Sun That Stayed"
+			x: 8.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"55B55C8167EAA0CC"
+				"36DA3544AD34C5DC"
+				"05020D7F59906D60"
+				"129A67BC920E7773"
+				"4162515DC90C6E55"
+				"403CEEFE7E991FAA"
+				"3B3C4FF60C3339D8"
+				"68B1046258EA33BD"
+				"05CAEF9360D5BD31"
+				"286646E7E567515A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Last Warlord, in the Sepulcrum Ignitum, entombed by engineers who had run out of engineering."
+				"A tomb is what a Forgesworn solution looks like when it concedes."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:nether_star"
+			id: "5A52F22C73A938F1"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "3162F8C6F1E38221"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.15d
+			subtitle: "What a Forgesworn answer looks like conceding."
+			tasks: [
+				{
+					id: "1F9483B45DE494F5"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "god_warborn"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3F9255F7B03277DA"
+					individual: true
+					negate: false
+					stage: "god_warborn"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On the Last Warlord"
+			x: 10.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"55B55C8167EAA0CC"
+				"36DA3544AD34C5DC"
+				"05020D7F59906D60"
+				"129A67BC920E7773"
+				"4162515DC90C6E55"
+				"403CEEFE7E991FAA"
+				"3B3C4FF60C3339D8"
+				"68B1046258EA33BD"
+				"05CAEF9360D5BD31"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Nine peoples died nine different ways and each of them wrote down the shape of it."
+				"Preservation. Dissolution. Memory-overload. Optimisation-collapse. Deliberate exit. Self-sealing."
+				"Laid beside each other the accounts stop reading like nine tragedies and start reading like one"
+				"process observed from nine angles."
+				"That is what the synthesis is. Not a key. A conclusion."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:end_crystal"
+			id: "1B12235A72E97633"
+			rewards: [{
+				count: 12
+				id: "57C06FFF0E24A416"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "Nine deaths, nine shapes, written down."
+			tasks: [
+				{
+					id: "655297E69E4B68F8"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eye_synthesis"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "2201778DEFA19324"
+					individual: true
+					negate: false
+					stage: "eye_synthesis"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Eye Synthesis"
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["55B55C8167EAA0CC"]
+			description: [
+				"They administered dying. A court, a docket, a sentence for every heart weighed."
+				"Preservation is what they chose and preservation is what killed them: a civilisation cannot"
+				"keep everything and still move."
+				"To take their covenant is to accept that the record matters more than the reader."
+				""
+				"Their eye, their table, and three of their dead. That is what a covenant costs."
+			]
+			icon: "minecraft:ender_eye"
+			id: "3FD6E98F84AC75DC"
+			rewards: [{
+				count: 16
+				id: "793EC2CE660392DF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.35d
+			subtitle: "Sun , Preservation"
+			tasks: [
+				{
+					entity: "cataclysm:maledictus"
+					id: "05AC6BF8C4B7F8AA"
+					title: "Maledictus"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "irons_spellbooks:dead_king"
+					id: "3D1AB7AD931CFC19"
+					title: "The Dead King"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "dungeons_and_combat:ammit"
+					id: "5B15994C8ACB2A45"
+					title: "Ammit"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "0A615CAA852DD4A1"
+					item: "ramadandelight:date_syrup"
+					title: "Date Syrup"
+					type: "item"
+				}
+			]
+			title: "The Gilded Sands Covenant"
+			x: 0.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["36DA3544AD34C5DC"]
+			description: [
+				"They climbed until the sky answered and then sealed the stair so no one could ask again."
+				"It is the only death-mode in the archive that was a decision rather than a failure."
+				"Their covenant asks whether an answer is worth having if you must close the door behind it."
+				""
+				"Their eye, their table, and three of their dead. That is what a covenant costs."
+			]
+			icon: "minecraft:ender_eye"
+			id: "12066D98292A59D3"
+			rewards: [{
+				count: 16
+				id: "2B48484EFBE91DEA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.35d
+			subtitle: "Sky , Self-sealing"
+			tasks: [
+				{
+					entity: "alexscaves:atlatitan"
+					id: "3AA1BE19DAF27C14"
+					title: "Atlatitan"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexscaves:luxtructosaurus"
+					id: "4BBAD645DD9E7EF4"
+					title: "Luxtructosaurus"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexscaves:tremorsaurus"
+					id: "7972EE702F7F268D"
+					title: "Tremorsaurus"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "5B81733EB5794D1D"
+					item: "culturaldelights:avocado_toast"
+					title: "Avocado Toast"
+					type: "item"
+				}
+			]
+			title: "The Yucatan Covenant"
+			x: 2.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["05020D7F59906D60"]
+			description: [
+				"They remembered everything, which is the same as carrying everything."
+				"The most complete archive in the world is also the one that chose what to burn."
+				"Their covenant is the hardest: keep the record, and accept that keeping it is what breaks you."
+				""
+				"Their eye, their table, and three of their dead. That is what a covenant costs."
+			]
+			icon: "minecraft:ender_eye"
+			id: "4D7F86AB4F13CD40"
+			rewards: [{
+				count: 16
+				id: "6E8518EA897E5D03"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.35d
+			subtitle: "Memory , Memory-overload"
+			tasks: [
+				{
+					entity: "traveloptics:summoned_tremorsaurus"
+					id: "0E02646D796D5E5A"
+					title: "Summoned Tremorsaurus"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					id: "548965354F02C5B0"
+					title: "Ferrous Wroughtnaut"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "mowziesmobs:umvuthi"
+					id: "7CB1DF678EA24CF0"
+					title: "Umvuthi, the Sunbird"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "50263D02A892811C"
+					item: "meadow:piece_of_grain_cheese"
+					title: "Piece of Grain Cheese"
+					type: "item"
+				}
+			]
+			title: "The Umvuthana Covenant"
+			x: 4.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["68B1046258EA33BD"]
+			description: [
+				"They sailed, they froze, and they kept a vigil that outlived the people keeping it."
+				"Ice keeps things. That is a virtue right up until the thing being kept should have been let go."
+				""
+				"Their eye, their table, and three of their dead. That is what a covenant costs."
+			]
+			icon: "minecraft:ender_eye"
+			id: "4E81AB3F943DFFC2"
+			rewards: [{
+				count: 16
+				id: "7857201DF9F09D33"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.35d
+			subtitle: "Ice , Preservation"
+			tasks: [
+				{
+					entity: "cataclysm:aptrgangr"
+					id: "6ED395D60E2F0E46"
+					title: "Aptrgangr"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "iceandfire:ice_dragon"
+					id: "20D635CAC0E9B37B"
+					title: "Ice Dragon"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "63969EC495F1753A"
+					item: "aquamirae_delight:glazed_grilled_spinefish"
+					title: "Glazed Grilled Spinefish"
+					type: "item"
+				}
+			]
+			title: "The Hoarfrost Covenant"
+			x: 6.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["129A67BC920E7773"]
+			description: [
+				"They built a god and could not switch it off, then optimised until there was nothing left to optimise."
+				"Their covenant is an engineer's bargain: every problem is solvable, and the last problem is you."
+				""
+				"Their eye, their table, and three of their dead. That is what a covenant costs."
+			]
+			icon: "minecraft:ender_eye"
+			id: "309DB5C0921C34F8"
+			rewards: [{
+				count: 16
+				id: "2CD00AF4CC2DF838"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.35d
+			subtitle: "Machine , Optimization-collapse"
+			tasks: [
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					id: "62D38E97746EEFD7"
+					title: "Netherite Monstrosity"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "cataclysm:old_netherite_monstrosity"
+					id: "0D43D5ACCE795B36"
+					title: "Old Netherite Monstrosity"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexscaves:magnetron"
+					id: "13C2C29302700275"
+					title: "Magnetron"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "1B6774EE47EE5C3C"
+					item: "mineraldelight:diamond_cookie"
+					title: "Diamond Cookie"
+					type: "item"
+				}
+			]
+			title: "The Forgesworn Covenant"
+			x: 8.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["4162515DC90C6E55"]
+			description: [
+				"They left on purpose and took the reasoning with them."
+				"Every seal they cast still holds, four thousand years after the casters stopped existing."
+				"Their covenant is the only one that does not explain itself. That is the covenant."
+				""
+				"Their eye, their table, and three of their dead. That is what a covenant costs."
+			]
+			icon: "minecraft:ender_eye"
+			id: "2432E00EFF377029"
+			rewards: [{
+				count: 16
+				id: "103CD16F299CAD16"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.35d
+			subtitle: "Erasure , Deliberate exit"
+			tasks: [
+				{
+					entity: "cataclysm:the_harbinger"
+					id: "61A7475A763E38DB"
+					title: "The Harbinger"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "cataclysm:the_watcher"
+					id: "3C43EE3EE79102B2"
+					title: "The Watcher"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexscaves:forsaken"
+					id: "2C2C3307AF64B0A2"
+					title: "Forsaken"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "336C4D12166B2581"
+					item: "ends_delight:dragon_breath_and_chorus_soup"
+					title: "Dragon's Breath and Chorus Soup"
+					type: "item"
+				}
+			]
+			title: "The Cipher Covenant"
+			x: 0.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["12066D98292A59D3"]
+			description: [
+				"Ocean mages who believed the deep could be negotiated with, and were right, and lost anyway."
+				"Dissolution is not defeat. It is the terms being met."
+				""
+				"Their eye, their table, and three of their dead. That is what a covenant costs."
+			]
+			icon: "minecraft:ender_eye"
+			id: "2CE733B9F8414BA4"
+			rewards: [{
+				count: 16
+				id: "61B8A58DB479F85F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.35d
+			subtitle: "Water , Dissolution"
+			tasks: [
+				{
+					entity: "cataclysm:coralssus"
+					id: "4FB20580068A64B1"
+					title: "Coralssus"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "cataclysm:scylla"
+					id: "1FCB02948A648FFD"
+					title: "Scylla"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "cataclysm:the_leviathan"
+					id: "37DD770DCD0D19D6"
+					title: "The Leviathan"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "477161F80628D412"
+					item: "oceanic_delight:fish_egg_noodle_soup"
+					title: "Fish Egg Noodle Soup"
+					type: "item"
+				}
+			]
+			title: "The Tidehold Covenant"
+			x: 2.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["403CEEFE7E991FAA"]
+			description: [
+				"They joined themselves to something older and the schism was about consent, never method."
+				"Their covenant asks the same question, and it asks it of you specifically."
+				""
+				"Their eye, their table, and three of their dead. That is what a covenant costs."
+			]
+			icon: "minecraft:ender_eye"
+			id: "1A3F9A4DD5A9F036"
+			rewards: [{
+				count: 16
+				id: "267FD1A74FD3B11D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.35d
+			subtitle: "Flesh , Dissolution"
+			tasks: [
+				{
+					entity: "alexsmobs:warped_mosco"
+					id: "59B1F7E489E218D2"
+					title: "Warped Mosco"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "iceandfire:hydra"
+					id: "47FEF286F16D5DBC"
+					title: "Hydra"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "3320AEB28FDF57E9"
+					item: "silentsdelight:baked_warden_ear_on_a_stick"
+					title: "Baked Warden Ear on a Stick"
+					type: "item"
+				}
+			]
+			title: "The Seeped Covenant"
+			x: 4.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["3B3C4FF60C3339D8"]
+			description: [
+				"The previous cycle. Four fragments survive and one of them is still moving."
+				"They assembled a god out of a command and a corpse and let it decide the rest."
+				"Their covenant is the only one written by people who already know how this ends."
+				""
+				"Their eye, their table, and three of their dead. That is what a covenant costs."
+			]
+			icon: "minecraft:ender_eye"
+			id: "5E3A8EC0EE7AFC6E"
+			rewards: [{
+				count: 16
+				id: "184B6E28D5257397"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.35d
+			subtitle: "Storm , Optimization-collapse"
+			tasks: [
+				{
+					entity: "iceandfire:lightning_dragon"
+					id: "0744E251BD46AA59"
+					title: "Lightning Dragon"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "scarlet_king:scarlet_king"
+					id: "79A9632C9EA7E405"
+					title: "Scarlet King"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "witherstormmod:wither_storm"
+					id: "422F1F88936909F0"
+					title: "wither_storm"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "4262127B4831BB70"
+					item: "hearthandharvest:roasted_marshmallow_stick"
+					title: "Roasted Marshmallow"
+					type: "item"
+				}
+			]
+			title: "The Storm-Builders Covenant"
+			x: 6.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["5E3A8EC0EE7AFC6E"]
+			description: [
+				"The cachalot hunts a mile down, where light stopped being useful a long time ago."
+				"It does not look for anything. It shouts, and listens to the shape of what comes back."
+				"The Tidehold wrote that down before they drowned, and somebody kept the page."
+			]
+			icon: "alexsmobs:cachalot_whale_tooth"
+			id: "46264F00CA6E31B4"
+			rewards: [{
+				count: 16
+				id: "2E32A58A1D6A12AD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "It does not look. It shouts."
+			tasks: [{
+				entity: "alexsmobs:cachalot_whale"
+				id: "4A4A2587A7611D30"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Whale That Listens"
+			x: 6.0d
+			y: 32.0d
+		}
+		{
+			dependencies: ["1A3F9A4DD5A9F036"]
+			description: [
+				"Two teeth and a lump of something the animal could not digest."
+				"The Convent's anatomists were very clear that the second one is the important half,"
+				"and equally clear that they did not know why."
+			]
+			icon: "alexsmobs:ambergris"
+			id: "4CEC84BA167F35B9"
+			rewards: [{
+				count: 16
+				id: "0919E3F58C2D4ED8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "The lump is the important half."
+			tasks: [
+				{
+					id: "125534F3139C00BF"
+					item: { Count: 2, id: "alexsmobs:cachalot_whale_tooth" }
+					type: "item"
+				}
+				{
+					id: "030879D72D2F0E07"
+					item: "alexsmobs:ambergris"
+					type: "item"
+				}
+			]
+			title: "Teeth and Ambergris"
+			x: 4.0d
+			y: 34.0d
+		}
+		{
+			dependencies: ["46264F00CA6E31B4"]
+			description: [
+				"Iron around a tooth around a stone. It does what the whale does, badly, and on land."
+				"The Forgesworn built four of these and recorded that all four worked."
+				"They did not record what any of them found."
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:echolocator"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "699AF3DFB277F597"
+			rewards: [{
+				count: 16
+				id: "3637C412DB215062"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "What the whale does, badly, and on land."
+			tasks: [{
+				id: "147A9EE155389691"
+				item: {
+					Count: 1
+					id: "alexsmobs:echolocator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Echolocator"
+			x: 6.0d
+			y: 36.0d
+		}
+		{
+			dependencies: ["699AF3DFB277F597"]
+			description: [
+				"Four pearls set into the frame, and the thing stops listening for stone."
+				"It listens for the other side of a door instead."
+				"Nobody in the archive agrees on whether the pearls are the lens or the ear."
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:endolocator"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6B5C66AB3DC085F8"
+			rewards: [{
+				count: 16
+				id: "4223DBF4888E3A41"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			subtitle: "It stops listening for stone."
+			tasks: [{
+				id: "2F486A7273A38242"
+				item: {
+					Count: 1
+					id: "alexsmobs:endolocator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Endolocator"
+			x: 6.0d
+			y: 38.0d
+		}
+		{
+			dependencies: ["6B5C66AB3DC085F8"]
+			description: [
+				"Somewhere under you there is a room the gods sealed and then stopped mentioning."
+				"Every civilisation in the record found it. Not one of them wrote down where."
+				"That was not carelessness. Read the Holy Wars volumes and you will understand why."
+			]
+			icon: "minecraft:end_portal_frame"
+			id: "720CF5D55A800335"
+			rewards: [{
+				count: 16
+				id: "41BF1B2E71C77DAC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.35d
+			subtitle: "All of them found it. None left directions."
+			tasks: [{
+				id: "495F906B06D824B8"
+				structure: "#minecraft:eye_of_ender_located"
+				type: "structure"
+			}]
+			title: "The Door Under the Stone"
+			x: 6.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["033932ABA0D4297F"]
+			description: [
+				"The convent wrote him down for four hundred years and never once met him."
+				"The people who built the jungle temples did meet him, and said very little about it afterwards."
+				"Go and read what they left instead of what was written about them."
+			]
+			icon: "minecraft:filled_map"
+			id: "0BE5E5277B2B7730"
+			rewards: [
+				{
+					id: "6299D1658271BBA4"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "god_pontiff"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 24
+					id: "6E221E0DA16BD7CF"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The builders met him and said very little."
+			tasks: [{
+				id: "3C5BBE44BAD6953B"
+				structure: "companions:companions_monkey_temple"
+				type: "structure"
+			}]
+			title: "The Pontiff's Jungle"
+			x: 4.2d
+			y: 17.7d
+		}
+		{
+			dependencies: ["190239FAE6D60A52"]
+			description: [
+				"Every wish he ever sold was honoured exactly as it was worded."
+				"That is not mercy and it was never advertised as mercy."
+				"The sand keeps the receipts."
+			]
+			icon: "minecraft:filled_map"
+			id: "2925BEA3FB0C3137"
+			rewards: [
+				{
+					id: "4FDEBBCBAC583865"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "god_green_genie"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 24
+					id: "27035EAA627DF9C3"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Honoured exactly as worded."
+			tasks: [{
+				id: "0FB35B3FF2343E9B"
+				structure: "as_you_wish:genie_tombstone"
+				type: "structure"
+			}]
+			title: "The Wish-Seller's Tomb"
+			x: 0.0d
+			y: 17.7d
+		}
+		{
+			dependencies: ["4162515DC90C6E55"]
+			description: [
+				"The last warlord did not die in a field with a banner over him."
+				"He died underground, following a rail that ran out."
+				"Somebody down there kept a record of the walk."
+			]
+			icon: "minecraft:filled_map"
+			id: "286646E7E567515A"
+			rewards: [
+				{
+					id: "3E8E3773D1920B91"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "god_warborn"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 24
+					id: "268E68649BD84A0B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "He followed a rail until it ran out."
+			tasks: [{
+				id: "62859953EA8E3360"
+				structure: "minecraft:mineshaft"
+				type: "structure"
+			}]
+			title: "The Warborn's Dark Road"
+			x: 10.0d
+			y: 17.0d
+		}
+	]
+	subtitle: ["The Eyes are not keys. They are proof."]
+	title: "The Eleven Eyes"
+}

@@ -1,16 +1,21 @@
 {
   "display_name": "The Long Road",
-  "research_time": 900,
+  "icon": "historystages:research_scroll",
+  "research_time": 150,
   "items": [
-    "antique_atlas:atlas",
-    "trotting_wagons:armored_wagon",
+    "via_romana:charting_map",
+    "via_romana:warp_block",
     "trotting_wagons:conestoga_wagon",
-    "trotting_wagons:royal_wagon"
+    "trotting_wagons:armored_wagon",
+    "trotting_wagons:royal_wagon",
+    "trotting_wagons:horse_whip",
+    "trotting_wagons:wheel"
   ],
   "tags": [],
   "mods": [
     "antique_atlas",
-    "create_ltab"
+    "create_ltab",
+    "via_romana"
   ],
   "mod_exceptions": [],
   "recipes": [],
@@ -19,5 +24,24 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

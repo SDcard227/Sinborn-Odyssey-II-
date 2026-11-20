@@ -27,7 +27,7 @@
 	#Sets the amount of seconds (in ticks) crimson contaminant infects for (default is 300)
 	"Hemorrhage Timer" = 300.0
 	#Determines if the Luminous:Tag startup message appears
-	"Startup Message" = true
+	"Startup Message" = false
 
 [Rituals]
 	#Enter the item registry name of any items you do NOT want to be affected by the auto mending ritual

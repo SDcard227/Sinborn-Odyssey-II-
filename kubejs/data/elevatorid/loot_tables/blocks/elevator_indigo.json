@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "elevatorid"
+    }
+  ],
+  "pools": [],
+  "random_sequence": "elevatorid:blocks/elevator_indigo"
+}

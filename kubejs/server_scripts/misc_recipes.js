@@ -19,12 +19,12 @@ ServerEvents.recipes(event => {
     S: 'minecraft:nether_star'
   }).id('kubejs:command_block')   // stable id so HistoryStages can gate it (command_ruin)
 
-  // ─── HERACLES QUEST BOOK ─────────────────────────────────
+  // ─── FTB QUESTS BOOK ─────────────────────────────────
   // Emerald above a book — knowledge has a cost.
   //   _  E  _
   //   _  B  _
   //   _  _  _
-  event.shaped('heracles:quest_book', [
+  event.shaped('ftbquests:book', [
     ' E ',
     ' B ',
     '   '

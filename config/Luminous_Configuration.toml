@@ -70,7 +70,7 @@
 
 [Other]
 	#true means enabled, false means disabled
-	Startup_message = true
+	Startup_message = false
 	#determines if Tree Ents will grief leaves
 	Disable_Treeent_Griefing = true
 

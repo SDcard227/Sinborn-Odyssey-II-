@@ -16,10 +16,10 @@
       "item": "endrem:witch_pupil"
     },
     "W": {
-      "item": "irons_spellbooks:ashen_spellbook"
+      "item": "irons_spellbooks:evoker_spell_book"
     },
     "B": {
-      "item": "mowziesmobs:barakos_brew"
+      "item": "mowziesmobs:naga_fang"
     }
   },
   "result": {

@@ -1,0 +1,45 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "#c:mineable/knife",
+   "required": false
+  },
+  {
+   "id": "mynethersdelight:stuffed_hoglin",
+   "required": false
+  },
+  {
+   "id": "mynethersdelight:bread_loaf_block",
+   "required": false
+  },
+  {
+   "id": "mynethersdelight:ghasta_with_cream_block",
+   "required": false
+  },
+  {
+   "id": "mynethersdelight:striderloaf_block",
+   "required": false
+  },
+  {
+   "id": "mynethersdelight:magma_cake",
+   "required": false
+  },
+  {
+   "id": "mynethersdelight:powdery_cannon",
+   "required": false
+  },
+  {
+   "id": "mynethersdelight:powdery_cane",
+   "required": false
+  },
+  {
+   "id": "mynethersdelight:powdery_chubby_sapling",
+   "required": false
+  },
+  {
+   "id": "mynethersdelight:bullet_pepper",
+   "required": false
+  }
+ ]
+}

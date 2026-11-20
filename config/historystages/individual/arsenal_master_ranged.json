@@ -1,39 +1,19 @@
 {
   "display_name": "The Master Arsenal: Ranged",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
-    "burnt:blaze_flint_bow",
-    "burnt:flint_bow",
-    "burnt:soul_flint_bow",
     "call_of_yucutan:obsidian_arrow",
-    "cataclysm:coral_bardiche_throwing",
-    "cataclysm:coral_spear_throwing",
     "cataclysm:cursed_bow",
-    "dungeons_and_combat:blunderbuss",
     "iceandfire:dragonbone_arrow",
     "iceandfire:dragonbone_bow",
-    "iceandfire:dragonbone_bow_pulling_0",
-    "iceandfire:dragonbone_bow_pulling_1",
-    "iceandfire:dragonbone_bow_pulling_2",
     "irons_spellbooks:autoloader_crossbow",
-    "irons_spellbooks:autoloader_crossbow_arrow",
-    "irons_spellbooks:autoloader_crossbow_firework",
-    "irons_spellbooks:autoloader_crossbow_pulling_0",
-    "irons_spellbooks:autoloader_crossbow_pulling_1",
-    "irons_spellbooks:autoloader_crossbow_pulling_2",
-    "irons_spellbooks:autoloader_crossbow_pulling_3",
-    "irons_spellbooks:autoloader_crossbow_pulling_4",
-    "irons_spellbooks:autoloader_crossbow_pulling_5",
-    "irons_spellbooks:autoloader_crossbow_pulling_6",
     "simplycataclysm:ancient_metal_chakram",
     "simplycataclysm:black_steel_chakram",
     "simplycataclysm:cursium_chakram",
     "simplycataclysm:ignitium_chakram",
     "simplycataclysm:witherite_chakram",
-    "tide:starlight_bow",
-    "tide:starlight_bow_pulling_0",
-    "tide:starlight_bow_pulling_1",
-    "tide:starlight_bow_pulling_2"
+    "tide:starlight_bow"
   ],
   "tags": [],
   "mods": [],
@@ -44,5 +24,34 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "arsenal_iron_ranged",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

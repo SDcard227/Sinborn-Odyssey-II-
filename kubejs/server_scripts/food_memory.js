@@ -415,11 +415,12 @@ ServerEvents.tick(event => {
     const eaten = rawEaten ? rawEaten.split(',').filter(s => s.length > 0) : []
 
     let candidates
+    let uneaten
 
     if (Math.random() < RANDOM_CHANCE) {
       // 20%: unexplored — pick from foods the player has NOT eaten yet
-      const eatenSet = new Set(eaten)
-      const uneaten = FULL_FOOD_POOL.filter(f => !eatenSet.has(f))
+      // (no const inside this block: Rhino threw "redeclaration of var eatenSet" on the 2nd run, fixed 16 Nov 2026)
+      uneaten = FULL_FOOD_POOL.filter(f => eaten.indexOf(f) < 0)
       candidates = uneaten.length > 0 ? uneaten : FULL_FOOD_POOL
     } else {
       // 80%: familiar — pick from foods this player has already eaten

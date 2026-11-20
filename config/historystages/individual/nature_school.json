@@ -1,6 +1,7 @@
 {
   "display_name": "The Nature School",
-  "research_time": 2700,
+  "icon": "historystages:research_scroll",
+  "research_time": 540,
   "items": [
     "desert:dry_wand",
     "desert:wand_o_grass",
@@ -11,11 +12,10 @@
     "irons_spellbooks:greater_oakskin_elixir",
     "irons_spellbooks:hogskin",
     "irons_spellbooks:oakskin_elixir",
-    "irons_spellbooks:scroll_nature",
     "traveloptics:nature_echo",
-    "ars_nouveau:ritual_conjure_island_desert",
-    "ars_nouveau:ritual_forestation",
-    "ars_nouveau:source_berry_roll"
+    "compatdelight:dragonskin_bowl",
+    "irons_spellbooks:lesser_spell_slot_upgrade",
+    "compatdelight:arcane_dragonskin_stew"
   ],
   "tags": [],
   "mods": [],
@@ -26,5 +26,35 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "arcane_codex",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

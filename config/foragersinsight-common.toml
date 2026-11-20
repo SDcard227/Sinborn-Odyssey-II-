@@ -1,8 +1,4 @@
 
-["Flavor Text"]
-	#Enable Flavor Text tooltips.
-	"Flavor Text" = false
-
 ["Farming & Foraging XP"]
 	#Global multiplier applied to ALL farming & foraging XP.
 	#Range: 0.0 ~ 100.0
@@ -21,4 +17,8 @@
 	"Beehive XP" = true
 	#Enable XP from milking cows.
 	"Milking XP" = true
+
+["Flavor Text"]
+	#Enable Flavor Text tooltips.
+	"Flavor Text" = false
 

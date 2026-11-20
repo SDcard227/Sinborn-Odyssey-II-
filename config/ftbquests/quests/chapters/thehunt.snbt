@@ -1,0 +1,6644 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thehunt"
+	group: "5A0000000000005E"
+	icon: "minecraft:wither_skeleton_skull"
+	id: "757DDAB067A04E4F"
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Every civilisation in this world sealed something and then wrote down why."
+				"Most of those reasons are lost. The seals are not."
+				"Scan what you find before you fight it. The Field Guide keeps what you saw;"
+				"this book keeps what you killed."
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "46648E42C4B3234D"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Bosses are landmarks. Kill one and the world changes."
+			tasks: [{
+				id: "706F240F1C62BF5C"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Eleven-Eyed Hunt"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"What the Nightwarden's failed pantheon became when it stopped pretending."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "4CE540428AD04D8E"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "What the Nightwarden's failed pantheon became when it stopped pretending."
+			tasks: [{
+				id: "1A12A5A663C0FD9B"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The End Hunt"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4CE540428AD04D8E"]
+			description: [
+				"The pantheon failed and left its young in the arrangement."
+				"Nothing in the End was told the plan had ended."
+			]
+			icon: "minecraft:bone"
+			id: "3BA0A19363615AFE"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "323B3831520E0052"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The pantheon failed. Its young did not."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "0C3852DF508D57A0"
+					type: "dimension"
+				}
+				{
+					entity: "endertrigon:baby_ender_dragon"
+					id: "100D4FE6F9CC5393"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Baby Ender Dragon"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4CE540428AD04D8E"]
+			description: [
+				"Poise Forest, breeding, indifferent to the failed pantheon it lives inside."
+				"Life kept going in the ruins of the arrangement."
+			]
+			icon: "minecraft:bone"
+			id: "07F39BA692FAA86D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "695B2D4CFA3E4AE7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Breeding, and indifferent to all of it."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "5DB231B897D4CF48"
+					type: "dimension"
+				}
+				{
+					entity: "endergetic:brood_eetle"
+					id: "22BD4BB314D67D3D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Brood Eetle"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4CE540428AD04D8E"]
+			description: [
+				"A palette swap of a thing that was already a copy of something else."
+				"The failed pantheon reused its own assets. Gods economise too."
+			]
+			icon: "minecraft:bone"
+			id: "2F748A078E0ABE88"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6C64583A83406C61"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A copy of a copy."
+			tasks: [{
+				entity: "cataclysm:ender_golem"
+				id: "7D15604CD9281806"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ender Golem"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4CE540428AD04D8E"]
+			description: [
+				"A sentinel called up rather than posted."
+				"The End's staffing problem, solved badly, by us."
+			]
+			icon: "minecraft:bone"
+			id: "2A493B3CA85EC672"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "47A94B38474887B7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Called up, not posted."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "70DD68894011BB2C"
+					type: "dimension"
+				}
+				{
+					entity: "traveloptics:summoned_ender_golem"
+					id: "2629AFEF9F67851F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Summoned Ender Golem"
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3BA0A19363615AFE"]
+			dependency_requirement: "one_completed"
+			description: [
+				"A sentinel for a pantheon that failed, still standing its post four thousand years after the"
+				"thing it guarded stopped meaning anything."
+				"Nobody relieved it. That is the whole tragedy of the End in one posting."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "777F5946F3BA7D8A"
+			rewards: [
+				{
+					count: 64
+					id: "0F0EE4BF31465795"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "1FF33020BD4BBC43"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Still standing a post that ended."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "0854A61CF180BE4A"
+					type: "dimension"
+				}
+				{
+					entity: "cataclysm:ender_guardian"
+					id: "21934060C3985841"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Ender Guardian"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3BA0A19363615AFE"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Nightwarden's pantheon failed and the End kept the arrangement."
+				"This one sits at the centre of it, circling the same pillars on the same path,"
+				"which is either grief or scheduling and the difference stopped mattering long ago."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "286E6E8AC3EC9136"
+			rewards: [
+				{
+					count: 64
+					id: "502BADEA0D402F5D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "39A6270FF479EDE3"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The End kept the arrangement."
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				id: "2CF685FC6CC7303A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying The Ender Dragon"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3BA0A19363615AFE"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The End is the Nightwarden's failed pantheon, still arranged in the order it was meant to be"
+				"worshipped in."
+				"This one was not part of the arrangement. It is what moves between the pieces."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32EA6909F60AFDB1"
+			rewards: [
+				{
+					count: 64
+					id: "6D213B3048CFF1AE"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "1FE242549EABBE79"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "It tunnels through a failed pantheon."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "608564CC39FDA7ED"
+					type: "dimension"
+				}
+				{
+					entity: "alexsmobs:void_worm"
+					id: "6F35F2A62835C840"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Void Worm"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Flesh-joined. The schism was over consent, not method."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "6C3B8D0FCBAAB210"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "Flesh-joined. The schism was over consent, not method."
+			tasks: [{
+				id: "28FE7327CBB4DDE8"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Seeped Hunt"
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6C3B8D0FCBAAB210"]
+			description: [
+				"Blood-magic is a Convent-internal discipline that the Sirbens copied and the Seeped practised."
+				"Three groups, one manuscript, no agreement."
+			]
+			icon: "minecraft:bone"
+			id: "4DDAD266ABE7FAE1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0B5F1D8035E119FA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Convent-internal, and they deny it."
+			tasks: [{
+				entity: "dungeons_and_combat:bloodymancer_cultist"
+				id: "0476249FDCA2CC53"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Bloodymancer"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6C3B8D0FCBAAB210"]
+			description: [
+				"It refused the joining and stayed itself, which the Seeped consider the greater corruption."
+				"That schism is the entire civilisation."
+			]
+			icon: "minecraft:bone"
+			id: "0361742436F95FEF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "459D02027D0D3721"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "It refused the joining and stayed itself."
+			tasks: [{
+				entity: "iceandfire:dread_lich"
+				id: "1475CB8EBDEF3B5E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Dread Lich"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6C3B8D0FCBAAB210"]
+			description: [
+				"A rank in a faith whose central act was joining yourself to something else."
+				"Promotion here means less of you."
+			]
+			icon: "minecraft:bone"
+			id: "400405D8FB283A82"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0FAA665AE3844E47"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The rank above the joining."
+			tasks: [{
+				entity: "dungeons_and_combat:high_priest"
+				id: "4A84B845037DEDA2"
+				type: "kill"
+				value: 1L
+			}]
+			title: "High Priest"
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6C3B8D0FCBAAB210"]
+			description: [
+				"Not doctrine. Just what the swamp does with a body left in it."
+				"The Seeped studied this and then improved on it."
+			]
+			icon: "minecraft:bone"
+			id: "7F8BD8A220B3F9C3"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7A6AD18899E0FE46"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Not doctrine. Just the swamp."
+			tasks: [{
+				entity: "geckolib:mutant_zombie"
+				id: "78E8E66075A2F9A4"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Mutant Zombie"
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4DDAD266ABE7FAE1"]
+			description: [
+				"The blood dungeons are not metaphorical and neither is the name."
+				"The Seeped's schism was about consent. This is what the losing side of that argument built."
+			]
+			icon: "minecraft:bone"
+			id: "73A910EF0C50999A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4609B6BDAE54C568"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The blood dungeons are not metaphorical."
+			tasks: [{
+				entity: "dungeons_and_combat:torture"
+				id: "7812901D25960EF4"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Torture"
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"4DDAD266ABE7FAE1"
+				"0361742436F95FEF"
+				"7F8BD8A220B3F9C3"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Seeped's dead did not stay dead, which they had counted on, and did not stay theirs,"
+				"which they had not."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "717B16D0CAE368BB"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 16
+				id: "434D398789B9A703"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Their dead did not stay dead."
+			tasks: [{
+				entity: "iceandfire:dread_queen"
+				id: "4CF09B3FF553F45B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Dread Queen"
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"4DDAD266ABE7FAE1"
+				"0361742436F95FEF"
+				"6C3B8D0FCBAAB210"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Cut it and it answers with more of itself, which is the Seeped's entire doctrine expressed as"
+				"an animal."
+				"They found this encouraging. They would."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4609B939278EBE19"
+			rewards: [{
+				count: 16
+				id: "7C28CDDB4BFA084E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Cut it and it answers with more."
+			tasks: [{
+				entity: "iceandfire:hydra"
+				id: "08C7444CF57186E5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Hydra"
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"4DDAD266ABE7FAE1"
+				"0361742436F95FEF"
+				"6C3B8D0FCBAAB210"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Seeped joined themselves to something older and this is what was already down there."
+				"It is blind, it is patient, and it was never sealed because nothing had to seal it."
+				"It simply lives below the level anyone chose to argue at."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3289171B743E8E5B"
+			rewards: [{
+				count: 16
+				id: "6836473990AB981B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "They joined something older."
+			tasks: [{
+				entity: "minecraft:warden"
+				id: "2850869AF83782EF"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying The Warden"
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"4DDAD266ABE7FAE1"
+				"0361742436F95FEF"
+				"6C3B8D0FCBAAB210"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Seeped joined themselves to fungal substrate on purpose, and the schism that followed was"
+				"about consent rather than method."
+				"This is the argument's largest surviving participant."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0815B17D50E8615D"
+			rewards: [{
+				count: 16
+				id: "5A6E85003B3944E2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Fungal substrate, on purpose."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "7A41B6C083BEE721"
+					type: "dimension"
+				}
+				{
+					entity: "alexsmobs:warped_mosco"
+					id: "3701D51A6B747F71"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Warped Mosco"
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"The Long Hour froze an ocean with a fleet still on it."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "7152EFA438AB6DAF"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "The Long Hour froze an ocean with a fleet still on it."
+			tasks: [{
+				id: "10A568A782CF45B6"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Hoarfrost Hunt"
+			x: 23.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7152EFA438AB6DAF"]
+			description: [
+				"An acropolis piece: the murals name it among gods it never outranked."
+				"Wall-space is not the same as worship."
+			]
+			icon: "minecraft:bone"
+			id: "721A4B97F1B6C18F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2A7574D0FA96FE44"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The murals name it among gods."
+			tasks: [{
+				entity: "cataclysm:cindaria"
+				id: "3B1256C3B860F868"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Cindaria"
+			x: 20.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7152EFA438AB6DAF"]
+			description: [
+				"A throne-barrow occupant, still seated."
+				"The Hoarfrost buried rank with the body and the rank kept working."
+			]
+			icon: "minecraft:bone"
+			id: "72C97BE54DA6033A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3A2F57925AA39A29"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Still seated."
+			tasks: [{
+				entity: "cataclysm:royal_draugr"
+				id: "603FA53432D7361E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Royal Draugr"
+			x: 22.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7152EFA438AB6DAF"]
+			description: [
+				"Called rather than found, by someone who wanted the throne's opinion."
+				"It has one."
+			]
+			icon: "minecraft:bone"
+			id: "019175AEB98D32F9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5BDE2800C9316ECD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Called by somebody who wanted it."
+			tasks: [{
+				entity: "cataclysm_spellbooks:summoned_royal_draugur"
+				id: "515C8ED0843FD16F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Royal Draugur"
+			x: 24.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7152EFA438AB6DAF"]
+			description: [
+				"Calling up a corpse the King already claimed is a decision with two owners."
+				"Only one of them is you."
+			]
+			icon: "minecraft:bone"
+			id: "2D6DB9E2835FEDA8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7DBC3F2866694B2A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Calling what the King already claimed."
+			tasks: [{
+				entity: "traveloptics:summoned_aptrgangr"
+				id: "5CF734B8EC5AC055"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Summoned Aptrgangr"
+			x: 26.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7152EFA438AB6DAF"]
+			description: [
+				"The same rite, a different hand."
+				"Somebody has been practising."
+			]
+			icon: "minecraft:bone"
+			id: "0F13FF19391ED869"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "328C9295C7D4F067"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The same rite, a different hand."
+			tasks: [{
+				entity: "traveloptics:summoned_royal_draugr"
+				id: "5E8930004B9E3D5D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Summoned Royal Draugr"
+			x: 20.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7152EFA438AB6DAF"]
+			description: [
+				"The mountain's own, unbothered by the fall of anyone's civilisation."
+				"It was here before the vigil and it is here after."
+			]
+			icon: "minecraft:bone"
+			id: "747670DB8201487A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7D2EEBA76FFC7520"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The mountain's own, unbothered."
+			tasks: [{
+				entity: "luminousworld:yeti"
+				id: "1735950A3F4503B8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Yeti"
+			x: 22.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"72C97BE54DA6033A"
+				"019175AEB98D32F9"
+				"0F13FF19391ED869"
+				"747670DB8201487A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Hoarfrost's unfinished hunt, in the way Cornelia is their unfinished voyage."
+				"Their tracker-corps taught apprentices that some prey, once stalked, is owed the ending."
+				"The corps froze with the rest of them. The doctrine did not. It is still out there completing"
+				"an obligation to a people who cannot call it off."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A209BEA04C8FA1F"
+			rewards: [{
+				count: 16
+				id: "6FABD336E38B2F74"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The Hoarfrost's unfinished hunt."
+			tasks: [{
+				entity: "mythsandlegends:amarok"
+				id: "76F43B1772E16DE5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Amarok"
+			x: 24.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"72C97BE54DA6033A"
+				"019175AEB98D32F9"
+				"0F13FF19391ED869"
+				"747670DB8201487A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A draugr lord that the King's corruption reached this far north and rewrote."
+				"The Hoarfrost buried their dead in ice because ice keeps things, which was the correct method"
+				"for preservation and the wrong one for a corpse that had already been claimed."
+				"They found that out in the order the graves were opened."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "460330AD54ADA02B"
+			rewards: [{
+				count: 16
+				id: "56EA1B782574B2A5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The King's corruption reached this far."
+			tasks: [{
+				entity: "cataclysm:aptrgangr"
+				id: "3A53D0DB6D52CDA9"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Aptrgangr"
+			x: 26.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"72C97BE54DA6033A"
+				"019175AEB98D32F9"
+				"0F13FF19391ED869"
+				"747670DB8201487A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"What the cold makes of a dragon when it is given four thousand years and no reason to stop."
+				"The Hoarfrost's own texts stop mentioning it a century before the fall, which their archivists"
+				"read as extinction and their trackers read as it having stopped coming close enough to record."
+				"The trackers were the ones still alive at the end."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5A5E0B856A25995A"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 16
+				id: "373EA24631C53BAB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "What the cold makes of a dragon."
+			tasks: [{
+				entity: "iceandfire:black_frost_dragon"
+				id: "544F0D48158BED49"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Black Frost"
+			x: 20.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"72C97BE54DA6033A"
+				"019175AEB98D32F9"
+				"0F13FF19391ED869"
+				"747670DB8201487A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Hoarfrost called it the Held Beast, and held is the word they used for prisoners."
+				"It was never sealed inside anything. It was bound to the mountain and left free within it,"
+				"which the Convent files under substrate-held, the same class as a god bound to its own sleep."
+				"The keepers kept a vigil and the rule of the vigil was that nobody engage it. Their whole"
+				"preservation-architecture rested on it not waking. When the Hoarfrost fell around CR 600 the"
+				"vigil ended with them. It still sleeps. Not because anyone is still watching."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6D2597EE0DF3AAB2"
+			rewards: [{
+				count: 16
+				id: "10A7F9B162C3B37C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The Held Beast, and held is the word."
+			tasks: [{
+				entity: "mowziesmobs:frostmaw"
+				id: "5492363AF2945530"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Frostmaw"
+			x: 22.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"72C97BE54DA6033A"
+				"019175AEB98D32F9"
+				"0F13FF19391ED869"
+				"747670DB8201487A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The last Admiral of a people who sailed and who froze."
+				"The Ship Graveyard is the Hoarfrost's great work and their obituary in the same breath, and she"
+				"is still aboard it, still in command of a fleet that stopped moving four thousand years ago."
+				"Her crews wore the Three-Bolt Diving Suit as standard issue. Standard issue tells you they"
+				"expected to go down often enough to plan for it."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "217C1BC9E0C5A119"
+			rewards: [{
+				count: 16
+				id: "326BFC69ABC17959"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The last Admiral of a frozen fleet."
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				id: "4CE56A019F6BD980"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Ghost of Captain Cornelia"
+			x: 24.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"72C97BE54DA6033A"
+				"019175AEB98D32F9"
+				"0F13FF19391ED869"
+				"747670DB8201487A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Daughter of the Primal Dragon at the End of Time, sister to fire and lightning, and fostered"
+				"north by the Held Beast, who could not keep her either."
+				"The Hoarfrost recorded her as weather with a lineage."
+				"They were not wrong twice."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2FBB25B83B0F0A8C"
+			rewards: [{
+				count: 16
+				id: "0723ABF80976EC72"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Daughter of the Primal Dragon."
+			tasks: [{
+				entity: "iceandfire:ice_dragon"
+				id: "43A0635C1C927448"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Ice Dragon"
+			x: 26.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"72C97BE54DA6033A"
+				"019175AEB98D32F9"
+				"0F13FF19391ED869"
+				"747670DB8201487A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Anglerfish-Calling Spirit, sealed around CR 500 by architecture rather than by ritual."
+				"The Hoarfrost did not bind her. They built the Ice Maze in the shape that holds her, and the"
+				"shape is the seal. Take the walls away and there is nothing left holding anything."
+				"Everything with a light in this water is answering someone. She is who they are answering."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0DD34162A37BC03D"
+			rewards: [{
+				count: 16
+				id: "69E4E38B1BD4E390"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Sealed around CR 500."
+			tasks: [{
+				entity: "aquamirae:maze_mother"
+				id: "565867BDC90E4973"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Mother of the Maze"
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			dependencies: [
+				"72C97BE54DA6033A"
+				"019175AEB98D32F9"
+				"0F13FF19391ED869"
+				"747670DB8201487A"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Hoarfrost buried their dead in ice because ice keeps things, and a people who bury that"
+				"carefully need someone whose entire life is the burying. Their grave-crews carried the"
+				"Gravedigger and worked a rite over every interment."
+				"The Convent never sealed it. You cannot bind a job."
+				"So when the civilisation went under around CR 600 the crews went with it and the rite did not"
+				"stop working. Lift the tool, do the work, and for as long as it takes you are the new gravedigger."
+				"What answers is Palehand, and it does not arrive alone."
+				"It answers the Gravedigger. Carry the tool, do the work, and it comes."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4CD2FC882D8E0CD3"
+			rewards: [{
+				count: 16
+				id: "41E39422850E216D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "They buried in ice because ice keeps."
+			tasks: [{
+				entity: "dungeons_and_combat:palehand"
+				id: "23CF956D6FF6C5A8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Palehand"
+			x: 22.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Ocean mages who mistook the deep for something that could be bargained with."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "4ABECB09EAA35BC3"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "Ocean mages who mistook the deep for something that could be bargained with."
+			tasks: [{
+				id: "129B0DC9FD14611E"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Tidehold Hunt"
+			x: 33.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4ABECB09EAA35BC3"]
+			description: [
+				"A rank the Tidehold conferred on its best, in a discipline that drowned with them."
+				"The title still fits. There is nobody to award it."
+			]
+			icon: "minecraft:bone"
+			id: "230C1873E185620F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7DB6BCC473C8E72C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A rank the Tidehold gave its best."
+			tasks: [{
+				entity: "traveloptics:aqua_grandmaster"
+				id: "4D7DED0CAA69BD47"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Aqua Grandmaster"
+			x: 30.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4ABECB09EAA35BC3"]
+			description: [
+				"The Tidehold hunted it, then stopped, and the stopping is the part they recorded."
+				"Their argument was not about cruelty. It was about whether something that sings back counts as"
+				"a party to a negotiation."
+				"They ruled that it does. It is the only ruling of theirs the ocean appears to have honoured."
+			]
+			icon: "minecraft:bone"
+			id: "02FEE0241DFC3493"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "014C796A244C3A51"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "They hunted it, then stopped."
+			tasks: [{
+				entity: "alexsmobs:cachalot_whale"
+				id: "3728B0C9B367D15C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Cachalot Whale"
+			x: 32.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4ABECB09EAA35BC3"]
+			description: [
+				"Coast-dwelling, cave-keeping, and older than the Tidehold's whole mage tradition."
+				"They negotiated with the deep and never once tried it with this."
+			]
+			icon: "minecraft:bone"
+			id: "2D4E5B0C0443F75D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "615C9075F750187E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Older than the Tidehold."
+			tasks: [{
+				entity: "iceandfire:cyclops"
+				id: "72F7931F63897619"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Cyclops"
+			x: 34.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4ABECB09EAA35BC3"]
+			description: [
+				"The Tidehold bargained with the deep and this is one of the terms they agreed to."
+				"It still holds the monument. Nobody has renegotiated."
+			]
+			icon: "minecraft:bone"
+			id: "261D9971C325E7F4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7F504E74D942D4CE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One end of a bargain with the deep."
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				id: "1EA1EC3BE27A19A8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Elder Guardian"
+			x: 36.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"02FEE0241DFC3493"
+				"2D4E5B0C0443F75D"
+				"261D9971C325E7F4"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Tidehold built with the reef instead of against it, which worked until the reef had opinions."
+				"This is one of them, standing."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2CE71D519CB8F1F7"
+			rewards: [{
+				count: 16
+				id: "0C8F3C9EF0117D66"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Built with the reef, not against it."
+			tasks: [{
+				entity: "cataclysm:coralssus"
+				id: "34BED7949CD904B9"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Coralssus"
+			x: 30.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"02FEE0241DFC3493"
+				"2D4E5B0C0443F75D"
+				"261D9971C325E7F4"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Named by sailors rather than by mages, which is why the name is honest."
+				"The Tidehold's fleet-scale losses are recorded as tonnage. This is the reason for the tonnage."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "22BF8DDAD68E7F81"
+			rewards: [{
+				count: 16
+				id: "2778A96B1A7ECE2E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Named by sailors, not by mages."
+			tasks: [{
+				entity: "alexscaves:hullbreaker"
+				id: "1E5CF12C5F207598"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Hullbreaker"
+			x: 32.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"02FEE0241DFC3493"
+				"2D4E5B0C0443F75D"
+				"261D9971C325E7F4"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Storm Empress, and the Tidehold's texts use empress with no irony whatsoever."
+				"They were ocean mages who believed the deep could be negotiated with, and negotiation implies"
+				"somebody on the other side of the table."
+				"They were right about that part."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7B8C6A2B9AAB891E"
+			rewards: [{
+				count: 16
+				id: "5D0A6C7BC8B98BA3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The Storm Empress."
+			tasks: [{
+				entity: "cataclysm:scylla"
+				id: "32C822772FEB5B5C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Scylla"
+			x: 34.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"02FEE0241DFC3493"
+				"2D4E5B0C0443F75D"
+				"261D9971C325E7F4"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Somebody worked out how to call it deliberately."
+				"There is no version of the Tidehold's story where that was a good idea, and they did it anyway,"
+				"and wrote down how."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "11CECE22B08B8306"
+			rewards: [{
+				count: 16
+				id: "652E1438DAF11584"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Somebody worked out how to call it."
+			tasks: [{
+				entity: "traveloptics:summoned_hullbreaker"
+				id: "1E09BA4783A89632"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Summoned Hullbreaker"
+			x: 36.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"02FEE0241DFC3493"
+				"2D4E5B0C0443F75D"
+				"261D9971C325E7F4"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A multidimensional predator, which is a phrase the Tidehold would have found insulting in its"
+				"smallness."
+				"They did not think of it as an animal. They thought of it as weather that had learned to choose."
+				"The Sunken City is what negotiating with it cost."
+				"It does not spawn. It is summoned, and the Sunken City is where the calling is done."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A1423AAE8A0F3F9"
+			rewards: [{
+				count: 16
+				id: "0812690ED7D206C8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Multidimensional, which is a Tidehold word."
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				id: "36A210F5493FE7C5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying The Leviathan"
+			x: 30.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Not a civilisation. A place that produced gods anyway."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "1015BB0AD602A638"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "Not a civilisation. A place that produced gods anyway."
+			tasks: [{
+				id: "7F70C3D2A489A4DD"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Nether Hunt"
+			x: 3.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["1015BB0AD602A638"]
+			description: [
+				"A fire-court title in a place with no court."
+				"The Nether keeps producing ranks that nothing confers."
+			]
+			icon: "minecraft:bone"
+			id: "6F5683A832FD852E"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0D77DA1D57DE38B6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A fire-court title, with no court."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "2186BBB0B9977D85"
+					type: "dimension"
+				}
+				{
+					entity: "dungeons_and_combat:lady_blaze"
+					id: "49A1ACA8C4C5F1C8"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Ladyblaze"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1015BB0AD602A638"]
+			description: [
+				"Basalt-swimming, enormous, and entirely unbothered by the Reign."
+				"Some things simply were not involved."
+			]
+			icon: "minecraft:bone"
+			id: "11E8376133AC72B2"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "456A72F0E77F10E0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Basalt-swimming, and unbothered."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "154DA5D65D870916"
+					type: "dimension"
+				}
+				{
+					entity: "alexsmobs:laviathan"
+					id: "5EF24558C209B181"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Laviathan"
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1015BB0AD602A638"]
+			description: [
+				"Warped-forest royalty, crowned by fungus and consensus."
+				"The Seeped would recognise the governance immediately."
+			]
+			icon: "minecraft:bone"
+			id: "0350588C9ADE0EC1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6C931C09C55E6DB4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Crowned by fungus and consensus."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "628BA6CE397E51B6"
+					type: "dimension"
+				}
+				{
+					entity: "luminous_nether:mushlin_king"
+					id: "14A4ADE532A7908E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Mushlin King"
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["1015BB0AD602A638"]
+			description: [
+				"It can be befriended with roasted bones, which somebody discovered by trying."
+				"The Nether rewards the specific kind of person who tries that."
+			]
+			icon: "minecraft:bone"
+			id: "668FDDAAE184BF58"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "38973B770E01EBA3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Befriended with roasted bones."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "6F35EDB69EE39000"
+					type: "dimension"
+				}
+				{
+					entity: "netherexp:stampede"
+					id: "3002C650BC13CAB1"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Stampede"
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6F5683A832FD852E"]
+			description: [
+				"Imperfect, per the mod's own word, and called anyway."
+				"Somebody wanted the imperfect version."
+			]
+			icon: "minecraft:bone"
+			id: "0F14B9B46505D080"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0CEF53A404B59E18"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Imperfect, and called anyway."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "282CF36A132CB3CF"
+					type: "dimension"
+				}
+				{
+					entity: "traveloptics:summoned_ignited_revenant"
+					id: "5CD0E3837A6C65E7"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Summoned Ignited Revenant"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["11E8376133AC72B2"]
+			description: [
+				"The same forest, a louder claimant."
+				"Two kings in one wood is a Nether problem, not a Seeped one."
+			]
+			icon: "minecraft:bone"
+			id: "4C202798000F4B48"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "171F56B5D0F619B1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The same forest, a louder claimant."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "1D20D11BCB8BD47A"
+					type: "dimension"
+				}
+				{
+					entity: "luminous_nether:warped_mushlin_king"
+					id: "6345790B2E166A68"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Warped King"
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"668FDDAAE184BF58"
+				"4C202798000F4B48"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Destroyer, and the Nether did not produce it so much as fail to contain it."
+				"The Convent's five seal-types do not cover things that were never bound in the first place."
+				"There is no entry for this one because nobody survived writing it."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3A08326A305A9AF8"
+			rewards: [{
+				count: 16
+				id: "0BFE54364446FFD4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The Destroyer, and not Nether-born."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "1483D451821F54B8"
+					type: "dimension"
+				}
+				{
+					entity: "mythsandlegends:abaddon"
+					id: "4BE5D4CFC47AC51F"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Abaddon"
+			x: 4.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"668FDDAAE184BF58"
+				"4C202798000F4B48"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A fire god the Crimson King reached and rewrote, like everything else that burned long enough"
+				"to be noticed."
+				"The Burning Arena was not built to hold it. It was built to watch it."
+				"It does not spawn. It is summoned, in the Burning Arena, by someone who went there to do it."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "52FA410748569A66"
+			rewards: [{
+				count: 16
+				id: "7ADDBE337FC1549D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "A fire god the Crimson King rewrote."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "60C1C3DC06F03D58"
+					type: "dimension"
+				}
+				{
+					entity: "cataclysm:ignis"
+					id: "4EF51914104F4A58"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Ignis"
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			dependencies: [
+				"668FDDAAE184BF58"
+				"4C202798000F4B48"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Named by whoever found it rather than by anyone who understood it."
+				"The Nether keeps producing gods and the record-keeping keeps not keeping up."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3A19D279B1A41CEA"
+			rewards: [{
+				count: 16
+				id: "354F7AB93BC7B0B7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Named by whoever found it."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "1E489597D0B3DD76"
+					type: "dimension"
+				}
+				{
+					entity: "dungeons_and_combat:infernus"
+					id: "730F869FCDE6AB99"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Infernus"
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"668FDDAAE184BF58"
+				"4C202798000F4B48"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Not a creature. A working piece of infrastructure that nobody has switched off."
+				"Somebody built this to do a job, in the Nether, on purpose, and then the somebody stopped"
+				"coming back."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "25AECEEF58C97B30"
+			rewards: [{
+				count: 16
+				id: "6856FDACEA56F14F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Not a creature. Infrastructure."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "1632E1DD83725BF2"
+					type: "dimension"
+				}
+				{
+					entity: "luminous_nether:the_furnace"
+					id: "2083AB646FE71579"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying The Furnace"
+			x: 2.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"668FDDAAE184BF58"
+				"4C202798000F4B48"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The same design, running on the other fuel."
+				"The Forgesworn would have recognised the engineering immediately and the Convent would have"
+				"sealed the person who drew it."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "33F33C014BDD138E"
+			rewards: [{
+				count: 16
+				id: "6D0D97B3B740A57E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The same design, the other fuel."
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "365F2024C7FE5E3B"
+					type: "dimension"
+				}
+				{
+					entity: "luminous_nether:soul_furnace"
+					id: "5E19843FB7C0668E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying The Soul Furnace"
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"The desert kept a death-court and a sun that never set on it."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "433AE06E8F6CEF2B"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "The desert kept a death-court and a sun that never set on it."
+			tasks: [{
+				id: "6D8F9F05A122436A"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Gilded Sands Hunt"
+			x: 13.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["433AE06E8F6CEF2B"]
+			description: [
+				"Older than the Remnant, and the Sands' archivists simply doubled the word rather than admit they had no name for it."
+				"Two adjectives is what scholarship looks like when it is out of its depth."
+			]
+			icon: "minecraft:bone"
+			id: "463E7705BF792C38"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3F6A60FA80B4B7B6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Older than the Remnant, and they signed it."
+			tasks: [{
+				entity: "cataclysm:ancient_ancient_remnant"
+				id: "6F1B01384004112D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ancient Ancient Remnant"
+			x: 10.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["433AE06E8F6CEF2B"]
+			description: [
+				"What stayed behind in the Cursed Pyramid when the King was moved north."
+				"A corpse-shape that kept his throne and none of his refusal."
+				"The Sands left it where it sat. There was nothing in it left to contain."
+			]
+			icon: "minecraft:bone"
+			id: "73B0F855E084C98D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4D022EF02354FD15"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "What stayed in the Cursed Pyramid."
+			tasks: [{
+				entity: "cataclysm:ancient_remnant"
+				id: "22C8DEF4209FAB2B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ancient Remnant"
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["433AE06E8F6CEF2B"]
+			description: [
+				"Wrong climate, wrong creature, thriving anyway."
+				"The desert kept a few things it had no business keeping."
+			]
+			icon: "minecraft:bone"
+			id: "650756226A1F7F7B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2BC8478F651F68D1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Wrong climate, thriving anyway."
+			tasks: [{
+				entity: "luminousworld:arid_yeti"
+				id: "2AA9B666D52D4D45"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Arid Yeti"
+			x: 14.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["433AE06E8F6CEF2B"]
+			description: [
+				"It tends lights in a place with nobody left to light them for."
+				"Somebody's job outliving somebody's civilisation is the whole theme of this desert."
+			]
+			icon: "minecraft:bone"
+			id: "761449FA6A09A85D"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 16
+				id: "505375F6AA3EF384"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "It tends lights for nobody."
+			tasks: [{
+				entity: "mythsandlegends:candle_keeper"
+				id: "6D596CCFBC61499B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Candle Keeper"
+			x: 16.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["463E7705BF792C38"]
+			description: [
+				"Released rather than sealed , the death-court let this one go and wrote down that it had."
+				"The savanna edge is where it went. The record does not say why they bothered noting it."
+			]
+			icon: "minecraft:bone"
+			id: "04B8CD6522A338B6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "46B5706947628A1F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Released, not sealed."
+			tasks: [{
+				entity: "iceandfire:cockatrice"
+				id: "08B77FC0399278B0"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Cockatrice"
+			x: 10.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["73B0F855E084C98D"]
+			description: [
+				"The desert's own, moving under the sand the caravans had to cross."
+				"Gilded Sands road-law priced a route by how much of it was worm."
+			]
+			icon: "minecraft:bone"
+			id: "70455DDE09D1E834"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7122E1F50BC152D5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Under the sand the caravans crossed."
+			tasks: [{
+				entity: "iceandfire:deathworm"
+				id: "30E6F4C7C611F7FE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Death Worm"
+			x: 12.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["650756226A1F7F7B"]
+			description: [
+				"The desert's own, not anybody's design."
+				"Caravan law counted it as terrain."
+			]
+			icon: "minecraft:bone"
+			id: "0DAA5ED714F40E0A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6A4E0AA03919762F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The desert's own, not a design."
+			tasks: [{
+				entity: "dungeons_and_combat:gigant_scorpion"
+				id: "0C7ADF125192DA64"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Gigant Scorpion"
+			x: 14.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["433AE06E8F6CEF2B"]
+			description: [
+				"An oasis tree that grew long enough to develop opinions about water rights."
+				"In this desert that makes it a political entity."
+			]
+			icon: "minecraft:bone"
+			id: "76FE09D7E16FD958"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1F5A6F6A7B0DDDA8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "An oasis tree with opinions."
+			tasks: [{
+				entity: "luminousworld:gilded_ent"
+				id: "1A1BE1E146844AFE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Gilded Tree Ent"
+			x: 16.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["04B8CD6522A338B6"]
+			description: [
+				"A stare that finishes an argument permanently."
+				"The Sands recorded the counter-measure and not the creature, which tells you what they were for."
+			]
+			icon: "minecraft:bone"
+			id: "0D66FD9B283FF1E0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "44DDF8F86F8A78FA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A stare that ends the argument."
+			tasks: [{
+				entity: "iceandfire:gorgon"
+				id: "690BBCF85FEB72BB"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Gorgon"
+			x: 10.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["70455DDE09D1E834"]
+			description: [
+				"Not the death-court's employee. A freelancer."
+				"The Sands' whole doctrine was that dying is administered. This one does not file."
+			]
+			icon: "minecraft:bone"
+			id: "70D3F13655E0B481"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "43DA5B1C0482863E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Not an employee. A freelancer."
+			tasks: [{
+				entity: "mca:grim_reaper"
+				id: "12C08F327D2777C6"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Grim Reaper"
+			x: 12.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["0DAA5ED714F40E0A"]
+			description: [
+				"A temple title with nobody left to confer it."
+				"He kept the office anyway. There was no one to tell him it had lapsed."
+			]
+			icon: "minecraft:bone"
+			id: "742D2B28A666F944"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "56D5998B6F749B8D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A title with nobody left to confer it."
+			tasks: [{
+				entity: "companions:sacred_pontiff"
+				id: "697FB4909951BA51"
+				type: "kill"
+				value: 1L
+			}]
+			title: "His Holiness"
+			x: 14.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["76FE09D7E16FD958"]
+			description: [
+				"A tomb defence that works on exactly one instinct and has never needed a second."
+				"The death-court considered greed a solved problem."
+			]
+			icon: "minecraft:bone"
+			id: "4AFAB315AD27F27C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "00784E17C7BE7952"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "It works on exactly one instinct."
+			tasks: [{
+				entity: "dungeons_and_combat:mimy_chest"
+				id: "56DC41A8F6606AC3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Mimy Chest"
+			x: 16.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["0D66FD9B283FF1E0"]
+			description: [
+				"A hive under a dead kingdom, running its own succession without reference to ours."
+				"It has been a functioning state for longer than the Gilded Sands were."
+			]
+			icon: "minecraft:bone"
+			id: "651E7D9EE88CD1EB"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1A0497ACEE5657B1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A hive running its own succession."
+			tasks: [{
+				entity: "iceandfire:myrmex_queen"
+				id: "24D858DA4633A18C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Myrmex Queen"
+			x: 10.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["70D3F13655E0B481"]
+			description: [
+				"No name in the record, which in the Gilded Sands is deliberate."
+				"The death-court struck names from things it wanted forgotten but could not destroy."
+			]
+			icon: "minecraft:bone"
+			id: "5DA37982D7C7C0B6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "60E9220BB0D32805"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "No name, which in the Sands is a sentence."
+			tasks: [{
+				entity: "desert:nameless_construct"
+				id: "470FC50D03BE32F0"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Nameless Construct"
+			x: 12.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["742D2B28A666F944"]
+			description: [
+				"Fire that treats death as a scheduling problem."
+				"Sunleia's court took this as doctrine rather than as a bird."
+			]
+			icon: "minecraft:bone"
+			id: "79E555C377C1D54C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6B642567842BC03D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death, treated as a scheduling problem."
+			tasks: [{
+				entity: "luminousworld:phoenix"
+				id: "15E30C9354452E21"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Phoenix"
+			x: 14.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["4AFAB315AD27F27C"]
+			description: [
+				"A crowned head that kept the crown and lost everything the crown was for."
+				"The Sands buried kings in pieces so no single piece could rule."
+			]
+			icon: "minecraft:bone"
+			id: "0604D990D503ADC1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5E82D6495984A984"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Kept the crown, lost everything else."
+			tasks: [{
+				entity: "dungeons_and_combat:royal_skull"
+				id: "2E3F32888DA5BAA1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Royal Skull"
+			x: 16.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["651E7D9EE88CD1EB"]
+			description: [
+				"The last holder of a rank the death-court invented and never retired."
+				"Sanctity, in the Sands, was a civil service grade."
+			]
+			icon: "minecraft:bone"
+			id: "5FF7C8641CDD4906"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "39EEC61859D6D4EF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The last holder of an invented rank."
+			tasks: [{
+				entity: "companions:sacred_pontiff"
+				id: "61A4AF9AA38865E2"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sacred Pontiff"
+			x: 10.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["5DA37982D7C7C0B6"]
+			description: [
+				"Pyramid masonry that stands up when you take something."
+				"The Sands did not build guards. They built the building to object."
+			]
+			icon: "minecraft:bone"
+			id: "35647881C0EC05D3"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0BA949F690F37E1F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Masonry that stands up when you take something."
+			tasks: [{
+				entity: "dungeons_and_combat:sandstone_golem"
+				id: "49C1E4D6B43613F8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sandstone Golem"
+			x: 12.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["79E555C377C1D54C"]
+			description: [
+				"The same guard, called up rather than encountered."
+				"Grave-robbing became a profession, so counter-grave-robbing became a rite."
+			]
+			icon: "minecraft:bone"
+			id: "0302DB5CF532ED43"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "74C38913BC1C5A58"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The same guard, called instead of found."
+			tasks: [{
+				entity: "traveloptics:summoned_wadjet"
+				id: "74FFEB8D1C5B6C3C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Summoned Wadjet"
+			x: 14.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["0604D990D503ADC1"]
+			description: [
+				"A mesa creature the Sands read as an omen because everything bright was an omen."
+				"Their almanacs are half astronomy and half anxiety."
+			]
+			icon: "minecraft:bone"
+			id: "262CEE790F11076A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7904A4C4F5FEBA53"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The Sands read it as an omen."
+			tasks: [{
+				entity: "alexsmobs:sunbird"
+				id: "597680CE5BDBE89C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Sunbird"
+			x: 16.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["5FF7C8641CDD4906"]
+			description: [
+				"The other half of the contract, and the half that signs."
+				"Sixteen agreements survive. The Sands kept them filed under law rather than under faith."
+			]
+			icon: "minecraft:bone"
+			id: "10408B6FD0DAC57D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "27C248C009FD8DEA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The other half of the contract."
+			tasks: [{
+				entity: "as_you_wish:green_genie"
+				id: "7126B7357E7FDAEC"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Green Genie"
+			x: 10.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["35647881C0EC05D3"]
+			description: [
+				"Tomb-guard, coiled, and still doing the job it was left to do."
+				"The death-court hired well."
+			]
+			icon: "minecraft:bone"
+			id: "2501DDE2244D00E2"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3AFC8D49C22CC5B9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Coiled, and still doing the job."
+			tasks: [{
+				entity: "cataclysm:wadjet"
+				id: "5E65235BA22C5B00"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Wadjet"
+			x: 12.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["0302DB5CF532ED43"]
+			description: [
+				"It swims in the death-court's flooded lower chambers and it is not lost."
+				"Something down there is still weighing."
+			]
+			icon: "minecraft:bone"
+			id: "0EF126FE5B879F8B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3D244C8AFFF5934F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "It swims the flooded lower chambers."
+			tasks: [{
+				entity: "tide:judgment_fish"
+				id: "2A81ADB1AAF04E72"
+				type: "kill"
+				value: 1L
+			}]
+			title: "judgment_fish"
+			x: 14.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["262CEE790F11076A"]
+			description: [
+				"Gold-touched, oasis-bound, and worth more dead, which everyone learned at once."
+				"The oasis is emptier than the stories."
+			]
+			icon: "minecraft:bone"
+			id: "09AFD0CFA9B2753B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3C02F49EE7A794AB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Worth more dead, which was the problem."
+			tasks: [{
+				entity: "tide:midas_fish"
+				id: "10F66BC0FFB5A2F9"
+				type: "kill"
+				value: 1L
+			}]
+			title: "midas_fish"
+			x: 16.0d
+			y: 28.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Gilded Sands weighed a heart against a feather and fed the difference to Ammit."
+				"Their court records list the sentence, never the crime."
+				"Nine hundred years of judgements, and not one appeal was written down."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "21FEE11A01145041"
+			rewards: [{
+				count: 16
+				id: "0D37A831BDF3FA4E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "A heart, weighed against a feather."
+			tasks: [{
+				entity: "dungeons_and_combat:ammit"
+				id: "0867FEC36951EA29"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Ammit"
+			x: 10.0d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The same king, four hundred years later, after the seal thinned."
+				"The Gilded Sands sent scribes rather than soldiers. They wanted the end of the sentence."
+				"The scribes are also in the pyramid."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "586F34D9E42767BD"
+			rewards: [{
+				count: 16
+				id: "1E38EC700DD07252"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The same king, four hundred years on."
+			tasks: [{
+				entity: "traveloptics:enraged_dead_king"
+				id: "075EBC26A89FD029"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Enraged Dead King"
+			x: 12.0d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A falcon-headed judge who never sat on the death-court and was never asked to."
+				"The Sands recorded him only in the margins, always in a different hand."
+				"Someone kept adding him back in after someone else removed him."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "70E080A2B052C767"
+			rewards: [{
+				count: 16
+				id: "29F9C501935E37BE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "A judge who never sat on the court."
+			tasks: [{
+				entity: "dungeons_and_combat:horuso"
+				id: "6D1A4C78159CA592"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Horuso"
+			x: 14.0d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The desert's own answer to anything that walks too confidently across it."
+				"Caravan law required two guides: one who knew the route, one who knew Kamath."
+				"The second was paid more."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7FD65903B8BB9190"
+			rewards: [{
+				count: 16
+				id: "5FB84382D3C0243D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The answer to anything walking too close."
+			tasks: [{
+				entity: "dungeons_and_combat:kamath"
+				id: "4D035795B2853C74"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Kamath"
+			x: 16.0d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"He died wrong. The mummification-priest never arrived, the reagents were short, and the ritual"
+				"ended with too much of him left intact. He began to walk, and his own priests sealed the Cursed"
+				"Pyramid around him as containment. They fell within the year. The seal did not."
+				"When the Desert collapsed and the Pyramid could no longer hold him, the Convent bound him a second"
+				"time, north, in the Frosted Prison. Two buildings hold this king now: the Pyramid keeps what he was."
+				"The Prison keeps what he refuses to be."
+				"He will not be found. He has to be called, with the tablet the jailers left behind, which means the"
+				"second seal is broken by whoever wants him dead. Killing him is not vengeance."
+				"It is finishing the funeral his own people botched."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5FA3BB5FD176DC11"
+			rewards: [{
+				count: 16
+				id: "4C8FF88CDFC66C0E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "He died wrong. The priest never came."
+			tasks: [{
+				entity: "cataclysm:maledictus"
+				id: "1EFDFFAF22DB1E2C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Maledictus"
+			x: 10.0d
+			y: 32.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Sun-mother's guard, cast in bronze and lit from inside."
+				"The Gilded Sands did not build armour to survive heat. They built it to carry heat somewhere."
+				"The knight is what happens when the carrying stops."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "48F46A6019F735B0"
+			rewards: [{
+				count: 16
+				id: "5A885AC91B87A4A3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Cast in bronze, lit from inside."
+			tasks: [{
+				entity: "dungeons_and_combat:pyro_knight"
+				id: "3E7CBAA93F26520E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Pyro Knight"
+			x: 12.0d
+			y: 32.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Sands learned to call it deliberately, which is a different kind of courage."
+				"The summoning rite is four lines long. Two of them are apologies."
+				"It works either way."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4816456E56A93AB1"
+			rewards: [{
+				count: 16
+				id: "0BEC14AE785282FD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "They learned to call it deliberately."
+			tasks: [{
+				entity: "dacxirons:summoned_kamath"
+				id: "3D1303C3E92BE518"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Summoned Kamath"
+			x: 14.0d
+			y: 32.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A second knight, called rather than crowned."
+				"The rite is identical to the first one, minus the apologies."
+				"Nobody has recorded why they were dropped."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5B8CD92AE6B17D20"
+			rewards: [{
+				count: 16
+				id: "6CB1BC73E33BFD46"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Called, not crowned."
+			tasks: [{
+				entity: "dacxirons:summoned_pyro_knight"
+				id: "3C8A5A8BE709FE65"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Summoned Pyro Knight"
+			x: 16.0d
+			y: 32.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Sun-Mother was never sealed. That is the first thing the Sands teach and the last thing they explain."
+				"Every other god in this desert has a tomb, a date and a reason."
+				"She has a direction. West, and do not follow."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "17A20D224F359C2C"
+			rewards: [{
+				count: 16
+				id: "14D37352FD82A1DC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Never sealed. That is the first thing."
+			tasks: [{
+				entity: "dungeons_and_combat:sunleia"
+				id: "31624F1CE09B99A1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Sunleia"
+			x: 10.0d
+			y: 34.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A rider the death-court neither summoned nor stopped."
+				"The Sands wrote him down as weather: something that arrives, takes, and is gone by morning."
+				"Their word for him and their word for drought are the same word."
+				"He comes when he is called, and only after dark. Daylight is Sunleia's hour, so the rite that"
+				"calls him is a sun-priest's rite worked against the sun-priest's own permissions."
+				"The Court forbade it. The Court also wrote it down."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "44725A0855187CAC"
+			rewards: [{
+				count: 16
+				id: "13AD4D8C2D7855EC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Neither summoned nor stopped."
+			tasks: [{
+				entity: "mythsandlegends:black_charro"
+				id: "00AE736127DAC45D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying The Black Charro"
+			x: 12.0d
+			y: 34.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The body kept the crown and lost the argument."
+				"Death-court doctrine held that a king who cannot be killed must instead be outlived."
+				"They were wrong about how long that takes."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3288D3888515E875"
+			rewards: [{
+				count: 16
+				id: "291FBA535F660C02"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Kept the crown, lost the argument."
+			tasks: [{
+				entity: "irons_spellbooks:dead_king"
+				id: "2B57C88B5982EBDF"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying The Dead King"
+			x: 14.0d
+			y: 34.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Not a god. A employee."
+				"The death-court appointed it to count the dead and it has never once miscounted."
+				"It has, however, begun counting the living."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2EA954A58E0B56CB"
+			rewards: [{
+				count: 16
+				id: "0838E07D0BEEED27"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Not a god. An employee."
+			tasks: [{
+				entity: "dungeons_and_combat:the_grave_watcher"
+				id: "1E91B5D5A74ED612"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying The GraveWatcher"
+			x: 16.0d
+			y: 34.0d
+		}
+		{
+			dependencies: [
+				"73B0F855E084C98D"
+				"650756226A1F7F7B"
+				"04B8CD6522A338B6"
+				"70455DDE09D1E834"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Sands did not worship the Genie. They negotiated with him, in writing, with witnesses."
+				"Sixteen contracts survive. Fifteen end with the signatory's name struck through."
+				"The sixteenth ends with the witness's."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3137CFDB79DDCC08"
+			rewards: [{
+				count: 16
+				id: "1514993531BA8237"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "They negotiated. In writing."
+			tasks: [{
+				entity: "as_you_wish:green_genie_boss"
+				id: "7475322FF649F88C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Ubar, The Genie"
+			x: 10.0d
+			y: 36.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Engineers who built a god and could not switch it off."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "2D59D3D8F14B4FBA"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "Engineers who built a god and could not switch it off."
+			tasks: [{
+				id: "5B92FE08FF456605"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Forgesworn Hunt"
+			x: 23.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"An Ancient Knight still holding a citadel for a chain of command that dissolved."
+				"Nobody sent the stand-down order. There was nobody to send it."
+			]
+			icon: "minecraft:bone"
+			id: "610873F1EC482643"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "768602F1F7948CDD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Holding a citadel for a broken chain."
+			tasks: [{
+				entity: "irons_spellbooks:citadel_keeper"
+				id: "49F5C5531D55F1A0"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ancient Knight"
+			x: 20.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"A siege engine with legs, which the Forgesworn considered an efficiency."
+				"It has not stopped being efficient."
+			]
+			icon: "minecraft:bone"
+			id: "00F4A09B191DF369"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "683F1EE37E904599"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A siege engine with legs."
+			tasks: [{
+				entity: "dungeonnowloading:ballista_golem"
+				id: "6C09DFD1BB2D7005"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Ballista Golem"
+			x: 22.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"The Forgesworn built thinking machines and then built things to think about them."
+				"This is the second category, and it outlasted the first."
+			]
+			icon: "minecraft:bone"
+			id: "4BC69C21F0B32492"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2FE57EC8BC6DCF43"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "They built thinking machines, then built this."
+			tasks: [{
+				entity: "alexscaves:brainiac"
+				id: "6EBA93C8142EE4B2"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Brainiac"
+			x: 24.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"Automation outliving the automators, the canonical Forgesworn failure."
+				"It is not malfunctioning. Nobody has come to give it new orders."
+			]
+			icon: "minecraft:bone"
+			id: "2BFEC293E9FA0117"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7203CD198EB5895C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Automation outliving the automators."
+			tasks: [{
+				entity: "mebahelcreaturesdwarven:dwarven_centurion"
+				id: "426F5B33424AD00D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Dwarven Centurion"
+			x: 26.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"The magnetic caves are machinery. This is the part that still moves."
+				"Whatever it was quarrying, it is still quarrying."
+			]
+			icon: "minecraft:bone"
+			id: "5D3DAFABCBC20A99"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "46BDFCC7932CC5A8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The magnetic caves are machinery."
+			tasks: [{
+				entity: "alexscaves:quarry_smasher"
+				id: "21504764C8BDA8C4"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Magnetic Quarry Smasher"
+			x: 20.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"Posted in the magnetic caves, which are not caves, guarding a seam that is not natural."
+				"Everything about that sentence is a Forgesworn decision."
+			]
+			icon: "minecraft:bone"
+			id: "6E520359C0CE32B5"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "09E23E65D9108A34"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Posted where the caves are not caves."
+			tasks: [{
+				entity: "alexscaves:mine_guardian"
+				id: "4CD0E2E62D324797"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Mine Guardian"
+			x: 22.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"Built at the top of the material ladder and set to guard the ladder."
+				"The Forgesworn secured their best work with their best work."
+			]
+			icon: "minecraft:bone"
+			id: "57F3DC8EE5247A7B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5B15EA860812643B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Top of the ladder, and set to guard."
+			tasks: [{
+				entity: "golemoverhaul:netherite_golem"
+				id: "760B2D637CDE3D54"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Netherite Golem"
+			x: 24.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"Ore that walks. The Forgesworn found this convenient and then found it inconvenient."
+				"Their mining law has a clause for it."
+			]
+			icon: "minecraft:bone"
+			id: "09BB995D82ED14D4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7C085EC4FB6B9A00"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Ore that walks. They found it convenient."
+			tasks: [{
+				entity: "quark:toretoise"
+				id: "2C49F4E67CA9328F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Oretoise"
+			x: 26.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"Posted at the atomic wasteland's edge, on the Scorched Nest, still on watch."
+				"The disaster it was watching for already happened."
+			]
+			icon: "minecraft:bone"
+			id: "00893CD84F34FAB6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2D767D8802DE9280"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Posted at the wasteland's edge."
+			tasks: [{
+				entity: "mythsandlegends:scorched_sentinel"
+				id: "5B02ADD106988BE3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Scorched Sentinel"
+			x: 20.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"Something the mining crews called up when the seam got difficult."
+				"It solved the seam."
+			]
+			icon: "minecraft:bone"
+			id: "1B873968F86CF433"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6659B425DDAC0A95"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Called when the seam went bad."
+			tasks: [{
+				entity: "traveloptics:summoned_kobolediator"
+				id: "0BC0426E3C692B02"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Summoned Kobolediator"
+			x: 22.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"Calling an instrument that stopped being one."
+				"The Forgesworn's confidence is the most consistent thing about them."
+			]
+			icon: "minecraft:bone"
+			id: "4960C6927C646B6F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "41AA0C49CBD4013F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Calling an instrument that stopped being one."
+			tasks: [{
+				entity: "traveloptics:summoned_magnetron"
+				id: "1014FD7549489F00"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Summoned Magnetron"
+			x: 24.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["2D59D3D8F14B4FBA"]
+			description: [
+				"Industrial dark, and it moves like it knows the floor plan."
+				"It should. It was here when there was a floor plan."
+			]
+			icon: "minecraft:bone"
+			id: "07B65AAD0C026AAB"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "310591BBEF731B3C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "It moves like it knows the floor."
+			tasks: [{
+				entity: "cataclysm:the_prowler"
+				id: "6F8F6BB8351A0902"
+				type: "kill"
+				value: 1L
+			}]
+			title: "The Prowler"
+			x: 26.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"610873F1EC482643"
+				"00F4A09B191DF369"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Echo of Tyros, first of the flamebearers, and the word echo is the Forgesworn being precise."
+				"They did not preserve the man. They preserved the process he was running."
+				"It is still running."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0776FE107B150E96"
+			rewards: [{
+				count: 16
+				id: "3A5440AF975967CC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "First of the flamebearers."
+			tasks: [{
+				entity: "irons_spellbooks:fire_boss"
+				id: "39C356C72C6469B7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Echo of Tyros, First Flamebearer"
+			x: 20.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"610873F1EC482643"
+				"00F4A09B191DF369"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Forgesworn did not worship dragons. They studied heat, and a dragon is the largest sample"
+				"available."
+				"Their notes on it read like a foundry manual, because to them it was one."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "61D618D7F8B8F8BC"
+			rewards: [{
+				count: 16
+				id: "45C4F31B697FCA1D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "They did not worship dragons. They studied them."
+			tasks: [{
+				entity: "iceandfire:fire_dragon"
+				id: "74AA559A7ED54B07"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Fire Dragon"
+			x: 22.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"610873F1EC482643"
+				"00F4A09B191DF369"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"A Forgesworn instrument that stopped being an instrument."
+				"The magnetic caves are not a natural formation, whatever the surveys say. Something down there"
+				"was arranged, and it is still arranging."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0DD2960146BC814D"
+			rewards: [{
+				count: 16
+				id: "20590C4F08F841D3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "An instrument that stopped being one."
+			tasks: [{
+				entity: "alexscaves:magnetron"
+				id: "766670ACD092C9F3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Magnetron"
+			x: 24.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"610873F1EC482643"
+				"00F4A09B191DF369"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Forgesworn built war-machines and this is the one that outlived the war and the builders."
+				"It is not sealed, guarded or hidden. It is parked."
+				"Four thousand years of standing in the dark with nothing to fight is not rest. It is a queue."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E233E68FFDF2096"
+			rewards: [{
+				count: 16
+				id: "4F63A5D7793A8758"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The war-machine that worked."
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				id: "41E15D0FE83B742C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Netherite Monstrosity"
+			x: 26.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"610873F1EC482643"
+				"00F4A09B191DF369"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"An earlier revision of the same machine, kept because the Forgesworn kept everything."
+				"Engineers do not throw away the version that worked. They throw away the version that did not,"
+				"and this one is still here, which tells you which it was."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "54BC27E5023AA56C"
+			rewards: [{
+				count: 16
+				id: "0DE243ACBF578266"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "An earlier revision, kept anyway."
+			tasks: [{
+				entity: "cataclysm:old_netherite_monstrosity"
+				id: "00A057F1429C82BB"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Old Netherite Monstrosity"
+			x: 20.0d
+			y: 26.0d
+		}
+		{
+			dependencies: [
+				"610873F1EC482643"
+				"00F4A09B191DF369"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The atomic apex. The Forgesworn disaster around AS 3700 did not create it so much as it finished"
+				"the argument about whether it should exist."
+				"Halgren of the Slag-Doors dictated the atomic codex while dying of the same event."
+				"This is the other thing that walked out of it."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0ED1520662B0D9C7"
+			rewards: [{
+				count: 16
+				id: "79A3942416C5A2EC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The atomic apex, and their disaster."
+			tasks: [{
+				entity: "alexscaves:tremorzilla"
+				id: "34EA3967DA25E56A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Tremorzilla"
+			x: 22.0d
+			y: 26.0d
+		}
+		{
+			dependencies: [
+				"610873F1EC482643"
+				"00F4A09B191DF369"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Last Warlord, sealed in the Sepulcrum Ignitum by people who had run out of other options."
+				"The Forgesworn's whole doctrine was that any problem can be engineered around."
+				"A tomb is what engineering looks like when it concedes."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "02649D56A157E39D"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3CF049BEBAA8417F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Sealed in the Sepulcrum Ignitum."
+			tasks: [{
+				entity: "mythsandlegends:warborn_aegis"
+				id: "267493B6FA5EC993"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Warborn Aegis"
+			x: 24.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Undocumentable by their own design. Fifteen sealed things and no explanation."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "77731427A46F5A54"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "Undocumentable by their own design. Fifteen sealed things and no explanation."
+			tasks: [{
+				id: "7FC85BC439464078"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Cipher Hunt"
+			x: 33.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"Crystal-shelled, cave-bound, and useful, which is why it is in the record at all."
+				"The Cipher documented function. Never identity."
+			]
+			icon: "minecraft:bone"
+			id: "350AAEC4406F90EF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "049636DC8DE538FA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Crystal-shelled, and useful."
+			tasks: [{
+				entity: "cataclysm:amethyst_crab"
+				id: "5180EFC998E44268"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Amethyst Crab"
+			x: 30.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"The End observatory was built to look at things like this."
+				"It is not clear which direction the looking was meant to go."
+			]
+			icon: "minecraft:bone"
+			id: "5AC09F6BDB2FDEB4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "57CDBC4DE9EEFC0D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The observatory was built to watch this."
+			tasks: [{
+				entity: "celestisynth:star_monolith"
+				id: "7C62DA4556766C62"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Celestial Monolith"
+			x: 32.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"Dripstone, dark water, and something with a reach."
+				"Recorded by what it can touch from where it sits."
+			]
+			icon: "minecraft:bone"
+			id: "15F995C281FEED80"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "658E2B9208A9B194"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Dripstone, dark water, and a reach."
+			tasks: [{
+				entity: "cataclysm:clawdian"
+				id: "527665349513A8C2"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Clawdian"
+			x: 34.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"The candy cavity is a real place and the Cipher mapped it without comment."
+				"Function, never identity. Even here."
+			]
+			icon: "minecraft:bone"
+			id: "6BE0DBF331DA3C0A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "361CC98EBA6A355B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The candy cavity is a real place."
+			tasks: [{
+				entity: "alexscaves:gum_worm"
+				id: "2052FD04465AFA97"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Gum Worm"
+			x: 36.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"A tower, a practitioner, and a discipline the Convent has no file for."
+				"The Cipher's habit of not explaining is contagious."
+			]
+			icon: "minecraft:bone"
+			id: "11E63B7E0D2BF03A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7646602CB23C52D6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A tower, and a discipline the Convent denied."
+			tasks: [{
+				entity: "alexscaves:licowitch"
+				id: "61FA9D75A4F51040"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Licowitch"
+			x: 30.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"Somebody cooked one and wrote the method down."
+				"The Cipher preserved the recipe and lost the animal."
+			]
+			icon: "minecraft:bone"
+			id: "11F72F108D323AF7"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "40F5B7D7FA5C3AF8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Somebody cooked one and wrote it down."
+			tasks: [{
+				entity: "cavedelight:roasted_grottoceratops"
+				id: "523189630006DFAB"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Roasted Grottoceratops"
+			x: 32.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"A containment that held, with the contents still inside it."
+				"The Disappeared's seals are the most reliable structures in this world."
+			]
+			icon: "minecraft:bone"
+			id: "7B81EAB09578BD68"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "588FF126387E76AF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The containment held. Contents included."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "38074A374C87A3EB"
+					type: "dimension"
+				}
+				{
+					entity: "dungeonnowloading:sealed_chaos"
+					id: "693CF33857E00437"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Sealed Chaos"
+			x: 34.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"A junior office of the twins' court, and the only one with a job title."
+				"Calling serpents was somebody's whole career."
+			]
+			icon: "minecraft:bone"
+			id: "3BB8CA0AEDC62AA6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1BB45D6E02F73609"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A junior office of the twins' court."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "382789CD61CF82D5"
+					type: "dimension"
+				}
+				{
+					entity: "dungeonnowloading:fairkeeper_serpent_caller"
+					id: "2E437C209985810E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Serpent Caller"
+			x: 36.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"Called into a cave that already had one."
+				"The Cipher tested things by adding more of them."
+			]
+			icon: "minecraft:bone"
+			id: "0FB20188626FF352"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7502311D95A60D52"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Called into a cave that already had one."
+			tasks: [{
+				entity: "traveloptics:summoned_clawdian"
+				id: "088B0A0CAE49949E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Summoned Clawdian"
+			x: 30.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"It guards a library in the End that nobody has requested a book from."
+				"It will not be relieved of this."
+			]
+			icon: "minecraft:bone"
+			id: "6FA42928A17453C0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6266CE8F7C6EA50C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "It guards a library nobody requested."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "30CF7C8DD6C6C104"
+					type: "dimension"
+				}
+				{
+					entity: "traveloptics:voidshelf_golem"
+					id: "36FAB2709E14AFDA"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "VoidShelf Golem"
+			x: 34.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"It lives where the deep dark meets standing water, which is a place, not a metaphor."
+				"The Cipher mapped it and did not name it."
+			]
+			icon: "minecraft:bone"
+			id: "1CE94C0DDF3155C8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "693F55C0CFD5E6B8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Where the deep dark meets standing water."
+			tasks: [{
+				entity: "tide:darkness_eater"
+				id: "437024B97D3C16A6"
+				type: "kill"
+				value: 1L
+			}]
+			title: "darkness_eater"
+			x: 36.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"End-water, and the Cipher's observatory notes call it traffic."
+				"Something is going somewhere."
+			]
+			icon: "minecraft:bone"
+			id: "4FA19DAD4B1051CA"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "54ADB38F6CBE80E8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "End-water, per the observatory notes."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "0C31330F7D0C799F"
+					type: "dimension"
+				}
+				{
+					entity: "tide:dragon_fish"
+					id: "22F9C2F45999C43A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "dragon_fish"
+			x: 30.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["77731427A46F5A54"]
+			description: [
+				"Named after a star chart rather than an animal."
+				"The Cipher's astronomers won that argument."
+			]
+			icon: "minecraft:bone"
+			id: "145ED57BACCE9DEB"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1EE5070CA4AC4F15"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named after a star chart."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "4B0CC69FD1F3CD6A"
+					type: "dimension"
+				}
+				{
+					entity: "tide:uranias_pisces"
+					id: "618E5621A359F296"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "uranias_pisces"
+			x: 32.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6FA42928A17453C0"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The half that stayed."
+				"A banishing that lands partway leaves something on each side, and this is the side with weight."
+				"It is not a lesser version of the god. It is the portion the Hammer could not reach."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0C654184A13F37A9"
+			rewards: [{
+				count: 16
+				id: "4D82D9E86551F343"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The half that stayed."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "4164BBF82380E45C"
+					type: "dimension"
+				}
+				{
+					entity: "dungeonnowloading:broken_garhold"
+					id: "2C3660D9DB6ADA68"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Broken Garhold"
+			x: 34.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["1CE94C0DDF3155C8"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Bound at the centre of the Plains Labyrinth around CR 50, by a containment ritual the Convent"
+				"files under the Disappeared's signature: active sealing, maintained rather than set and forgotten."
+				"The seal still holds. That is the part worth sitting with , four and a half thousand years after"
+				"the people who cast it stopped existing, their work is still doing its job."
+				"Breaking it is, in their terms, violating a containment. In ours, it is liberating an experiment"
+				"that should have stayed concluded."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "26DA2B04DDF8CE3A"
+			rewards: [{
+				count: 16
+				id: "3D4EB303973F349F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Bound at the centre of the Labyrinth."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "1D393CC81555AC5F"
+					type: "dimension"
+				}
+				{
+					entity: "dungeonnowloading:chaos_spawner"
+					id: "1B895AC974130B24"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Chaos Spawner"
+			x: 36.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["4FA19DAD4B1051CA"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Listed among the Cipher's sealed things with no seal, no site and no date."
+				"The Disappeared were thorough about containment and careless about attribution, so an entry"
+				"like this one usually means the record was kept by somebody else, briefly, and then not."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "293AFA6D22545F37"
+			rewards: [{
+				count: 16
+				id: "2FB669F13BC5666C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Listed as sealed, with no seal."
+			tasks: [{
+				entity: "dungeons_and_combat:ernos"
+				id: "67D825EEAA0FEE80"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Ernos"
+			x: 30.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["145ED57BACCE9DEB"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Chaos Twin. Tomb-bound with its opposite, one at the Labyrinth and one at the Temple of"
+				"Duality, by a Cipher coalition that evidently did not trust either of them alone."
+				"The pair are recorded as a single doctrine and sealed as two problems."
+				"Everything the Cipher wrote about them survives as a piece of music."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "506B8620182C4643"
+			rewards: [{
+				count: 16
+				id: "4D0CC3884F5E3D18"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The Chaos Twin, tomb-bound with its opposite."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "37B900291B65DAEF"
+					type: "dimension"
+				}
+				{
+					entity: "dungeonnowloading:fairkeeper_boros"
+					id: "09B126E7DA54B053"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Fairkeeper Boros"
+			x: 32.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["0C654184A13F37A9"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Other Twin, and the Cipher's own texts never say which is which."
+				"Pattern against chaos, sealed apart so the argument could not continue."
+				"Four thousand years of separation and neither has conceded."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "18A600B20B78DAA8"
+			rewards: [{
+				count: 16
+				id: "71D185B440A8804F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The Other Twin, and they never say which."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "4F03AD124B4BB024"
+					type: "dimension"
+				}
+				{
+					entity: "dungeonnowloading:fairkeeper_ouros"
+					id: "080B484AF9338FCF"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Fairkeeper Ouros"
+			x: 34.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["26DA2B04DDF8CE3A"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Forsaken is not a name the Cipher gave it. It is a description, and it was applied by the"
+				"people who did the forsaking."
+				"The Cipher's habit of recording function instead of identity is the reason we know what was done"
+				"here and never who did it."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "084FBF44D10700F1"
+			rewards: [{
+				count: 16
+				id: "1FC83F2E57FD93B2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Not a name the Cipher gave it."
+			tasks: [{
+				entity: "alexscaves:forsaken"
+				id: "1809F9D7CA8E123C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Forsaken"
+			x: 36.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["293AFA6D22545F37"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Disappeared owned an instrument called the Banishing Hammer and used it, on the record, once."
+				"On this."
+				"It did not finish the job , Garhold was driven partway out of the world and left there, between"
+				"the surface and the Timeless Dimension, in the Forlorn Hollows around CR 700."
+				"Whether that was mercy, failure, or the intended result is exactly the sort of thing the"
+				"Disappeared declined to write down."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5AA534C8D2D11B92"
+			rewards: [{
+				count: 16
+				id: "5CBBDA851ED906EF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The Disappeared owned the Banisher."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "415DE30F9ED1E46C"
+					type: "dimension"
+				}
+				{
+					entity: "dungeonnowloading:garhold"
+					id: "3B94BC518AE95FAF"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Garhold"
+			x: 30.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["506B8620182C4643"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Cipher worked out how to call it back."
+				"That they could is unsurprising. That they wrote down the method, and nothing else, is very"
+				"much them."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "69FB8F33A1892BB8"
+			rewards: [{
+				count: 16
+				id: "408C6E120B7829FD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "They worked out how to call it back."
+			tasks: [{
+				entity: "traveloptics:summoned_forsaken"
+				id: "386DE95D63AEC02B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Summoned Forsaken"
+			x: 32.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["18A600B20B78DAA8"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Named for what it does rather than what it is, in a civilisation that only ever did that."
+				"The Cipher left instructions for calling it and no instructions for stopping."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7C86992AE0A7652D"
+			rewards: [{
+				count: 16
+				id: "3C3356C43EDBF0CA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Named for what it does."
+			tasks: [{
+				entity: "traveloptics:summoned_the_prowler"
+				id: "266A7E2EA30C238F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Summoned The Prowler"
+			x: 34.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["084FBF44D10700F1"]
+			dependency_requirement: "one_completed"
+			description: [
+				"A watcher called on purpose, which is a strange thing to want."
+				"The rite exists. The reasoning does not."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "105C7E1E6BAF146E"
+			rewards: [{
+				count: 16
+				id: "44254B7054C07550"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "A watcher called on purpose."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "59A81A5B6CDBF94D"
+					type: "dimension"
+				}
+				{
+					entity: "traveloptics:summoned_the_watcher"
+					id: "0C69FB3614A295F7"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying Summoned The Watcher"
+			x: 36.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["5AA534C8D2D11B92"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Even the name is a category rather than a title."
+				"The Cipher classified what they could not contain and shelved the classification where the"
+				"thing itself could not reach it."
+				"The shelf survived. The Cipher did not."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7BA57B2BC2570CA0"
+			rewards: [{
+				count: 16
+				id: "189DE975AFD4625B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The name is a category, not a title."
+			tasks: [{
+				entity: "dungeons_and_combat:the_aberrator"
+				id: "322182D833A29B4E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying The Aberrator"
+			x: 30.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["69FB8F33A1892BB8"]
+			dependency_requirement: "one_completed"
+			description: [
+				"A cave god the Crimson King reached and rewrote, the way he reached everything that lived"
+				"underground long enough to be found."
+				"It does not roam. It is woken , which means every account of it begins with somebody deciding"
+				"to go down there and make noise."
+				"It does not wander up to you. It is woken, and everything that follows is the consequence of having done that."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "78FE3EA16F8CE626"
+			rewards: [{
+				count: 16
+				id: "292BF75BCC515D8C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "A cave god the Crimson King rewrote."
+			tasks: [{
+				entity: "cataclysm:the_harbinger"
+				id: "4D6750633BACE7E8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying The Harbinger"
+			x: 32.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["7C86992AE0A7652D"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Nightwarden built a pantheon and it failed, and what the End holds now is the failure,"
+				"still arranged in the order it was meant to be worshipped in."
+				"It is the only Cipher-adjacent god that left a structure you can stand inside and understand."
+				"That is not the same as being welcome in it."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "462218D013AB9A6C"
+			rewards: [{
+				count: 16
+				id: "577988F30033C157"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "He built a pantheon and it failed."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "517E4EB0EDD3A9A0"
+					type: "dimension"
+				}
+				{
+					entity: "traveloptics:the_nightwarden"
+					id: "47DBE888E5E0FC9E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying The Nightwarden"
+			x: 34.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["105C7E1E6BAF146E"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Watcher of the Forsaken, and King-corrupted like everything else that stood between him and"
+				"the deep."
+				"Its title survives. What it was watching for does not."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "34DA24829ECD9AED"
+			rewards: [{
+				count: 16
+				id: "3BFB24E24DBCB2AF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "King-corrupted, like everything else."
+			tasks: [
+				{
+					dimension: "minecraft:the_end"
+					id: "277D441E580F3BE8"
+					type: "dimension"
+				}
+				{
+					entity: "cataclysm:the_watcher"
+					id: "4484BED375F0A251"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Slaying The Watcher"
+			x: 36.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"They climbed until the sky answered, then sealed the stair behind them."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "78C5728FCBD33489"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "They climbed until the sky answered, then sealed the stair behind them."
+			tasks: [{
+				id: "3734E8EA6CC60055"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Yucatan Hunt"
+			x: 3.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["78C5728FCBD33489"]
+			description: [
+				"Jungle-flier, and the Yucatan's stairs were built to be seen from above."
+				"Shoot it down and ride it, say the accounts, in that order and with no further comment."
+			]
+			icon: "minecraft:bone"
+			id: "5CA43EF5D52484FB"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3BD15A94178CCAE5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The stairs were built with it in mind."
+			tasks: [{
+				entity: "iceandfire:amphithere"
+				id: "03C5E2E5810DAC5B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Amphithere"
+			x: 0.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["78C5728FCBD33489"]
+			description: [
+				"Temple guard, gold-cased, posted before the stair was sealed."
+				"Nobody told it about the sealing."
+			]
+			icon: "minecraft:bone"
+			id: "65C29E591E719FD1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3BB9459A850B5601"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Posted before the stair was sealed."
+			tasks: [{
+				entity: "call_of_yucutan:golden_guard"
+				id: "14A262A27E178CC5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Golden Guard"
+			x: 2.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["65C29E591E719FD1"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The New-Moon Death-God, worshipped in the same breath as Kukulkan and in the opposite half of"
+				"the month."
+				"The Yucatan did not consider this a contradiction. Death gets the dark nights; the sun gets the"
+				"bright ones. Everyone is on the rota."
+				"The crypts are where his half of the calendar is kept."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "45C0F265C65C932F"
+			rewards: [
+				{
+					count: 64
+					id: "7F3013F50DD5BBBB"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "1D258BC68714EFD3"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The New-Moon Death-God."
+			tasks: [{
+				entity: "call_of_yucutan:ah_puch"
+				id: "1B22C090712FC8D6"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Ah Puch"
+			x: 4.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["65C29E591E719FD1"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Yucatan built upward and something older was already tall."
+				"Their records treat it as terrain with a temper, which is the same category they used for"
+				"weather and for kings."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5168D2CB78BF786B"
+			rewards: [
+				{
+					count: 64
+					id: "3BA6A423D7B3F2F7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "5CE50D0A68761E1B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "They built upward. Something was already there."
+			tasks: [{
+				entity: "alexscaves:atlatitan"
+				id: "08C30A15BA96FF78"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Atlatitan"
+			x: 6.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["65C29E591E719FD1"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Rain, which in a highland jungle is the whole argument."
+				"Every Yucatan structure is built to catch water and every Yucatan god-story is about who decides"
+				"when it falls."
+				"This one decides."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "62CFBD703ADABF35"
+			rewards: [
+				{
+					count: 64
+					id: "4581A961975BA641"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "0A2183F2EDC9127C"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Rain, which is the whole argument."
+			tasks: [{
+				entity: "call_of_yucutan:chaac"
+				id: "0C07545407FA567F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Chaac"
+			x: 0.0d
+			y: 44.0d
+		}
+		{
+			dependencies: ["65C29E591E719FD1"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Full-Moon Sun-God, and the only one of the Yucatan's two who was never sealed."
+				"Their priests climbed the stair until the sky answered, and then sealed the stair behind them"
+				"so nobody could ask a second question."
+				"The temples are overgrown now. The stair is still there. It still goes up."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7CFF36522A32F4F9"
+			rewards: [
+				{
+					count: 64
+					id: "17D0D31ED1EDA882"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "7BB0AF44FFF40AC1"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The Full-Moon Sun-God."
+			tasks: [{
+				entity: "call_of_yucutan:kukulkan"
+				id: "6201A3821E2FC390"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Kukulkan"
+			x: 2.0d
+			y: 44.0d
+		}
+		{
+			dependencies: ["65C29E591E719FD1"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Light-bearing and enormous, and the Yucatan's astronomers wrote more about it than their"
+				"priests did."
+				"That division tells you which discipline took it seriously."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "61F6C37F3F7ED58A"
+			rewards: [
+				{
+					count: 64
+					id: "36452470335CDD7D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "0FAD4725F1551FFC"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Light-bearing, and the astronomers noticed."
+			tasks: [{
+				entity: "alexscaves:luxtructosaurus"
+				id: "44317EFA1CEC35D7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Luxtructosaurus"
+			x: 4.0d
+			y: 44.0d
+		}
+		{
+			dependencies: ["65C29E591E719FD1"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The ground-shaker. The Yucatan's pyramid engineering assumes a shaking ground, which means they"
+				"designed around this rather than against it."
+				"Every stair in that jungle is a concession to it."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "712E676EC85525F3"
+			rewards: [
+				{
+					count: 64
+					id: "123BC7F405DFA78A"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "5B9BDBCFA90C8C4D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The ground-shaker, and the engineering knew it."
+			tasks: [{
+				entity: "alexscaves:tremorsaurus"
+				id: "24A8DEB338530C9C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Tremorsaurus"
+			x: 6.0d
+			y: 44.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"The previous cycle. Four fragments survive, and one of them moves."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "606C916F454BB8BA"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "The previous cycle. Four fragments survive, and one of them moves."
+			tasks: [{
+				id: "63D63B40A50DDB51"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Storm-Builders Hunt"
+			x: 13.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["606C916F454BB8BA"]
+			description: [
+				"Sky-weather with a spine."
+				"The previous cycle named themselves for the sky and then had to live under it."
+			]
+			icon: "minecraft:bone"
+			id: "146663F91BB3067C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6A96BBABD2BC7999"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sky-weather with a spine."
+			tasks: [{
+				entity: "cataclysm:storm_serpent"
+				id: "500902FED947F355"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Storm Serpent"
+			x: 10.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["606C916F454BB8BA"]
+			description: [
+				"Previous-cycle ruins, underwater, still occupied."
+				"Four fragments of that cycle survive and one of them moves."
+			]
+			icon: "minecraft:bone"
+			id: "0EAD5F569CE835BF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1C58F20861F3B9A4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Previous-cycle ruins, still occupied."
+			tasks: [{
+				entity: "cataclysm:symbiocto"
+				id: "394A7FD879386F89"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Symbiocto"
+			x: 12.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["606C916F454BB8BA"]
+			description: [
+				"Highland storm-bird, burning and blowing at once."
+				"The Storm-Builders took the combination as an endorsement."
+			]
+			icon: "minecraft:bone"
+			id: "5C1FF3DEC6779F12"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6211E5CDCD1FF859"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Burning and blowing at once."
+			tasks: [{
+				entity: "luminousworld:wind_phoenix"
+				id: "322D4BC3B87C7404"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Wind Phoenix"
+			x: 16.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["606C916F454BB8BA"]
+			description: [
+				"It waits in flooded previous-cycle ruins and the name is not ours."
+				"Somebody down there named it while there was still somebody down there."
+			]
+			icon: "minecraft:bone"
+			id: "23AF9BD52264C8D9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4AC292B735FEA8BF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "It waits in flooded previous-cycle ruins."
+			tasks: [{
+				entity: "tide:vengeance"
+				id: "0FFD49392A717596"
+				type: "kill"
+				value: 1L
+			}]
+			title: "vengeance"
+			x: 10.0d
+			y: 44.0d
+		}
+		{
+			dependencies: ["606C916F454BB8BA"]
+			description: [
+				"The command that built the Storm needed a host, and this is what a host becomes."
+				"The instructions do not mention this part."
+			]
+			icon: "minecraft:bone"
+			id: "65A05191CFD4425E"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "53E7AF1BC6F2CD68"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The command needed a host."
+			tasks: [{
+				entity: "witherstormmod:withered_symbiont"
+				id: "10C947E40710D289"
+				type: "kill"
+				value: 1L
+			}]
+			title: "withered_symbiont"
+			x: 12.0d
+			y: 44.0d
+		}
+		{
+			dependencies: [
+				"146663F91BB3067C"
+				"0EAD5F569CE835BF"
+				"606C916F454BB8BA"
+				"5C1FF3DEC6779F12"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Storm-Builders named themselves for weather and then went looking for the animal version."
+				"The previous cycle left four fragments of record. One of them is about this."
+				"It is not the flattering one."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4C732DA5CCD611B8"
+			rewards: [{
+				count: 16
+				id: "16CCEABFE0DB0B77"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "They named themselves for weather."
+			tasks: [{
+				entity: "iceandfire:lightning_dragon"
+				id: "54D4C47018A06CE1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Lightning Dragon"
+			x: 14.0d
+			y: 44.0d
+		}
+		{
+			dependencies: [
+				"146663F91BB3067C"
+				"0EAD5F569CE835BF"
+				"606C916F454BB8BA"
+				"5C1FF3DEC6779F12"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The last and largest sealing, at 0 BS, binding the King himself and the gods who held the chains."
+				"Everything else in this book is a battlefield decision made during the war."
+				"This is the decision that ended it, and the reason there is a cycle at all rather than a ruin."
+				"It is not sealed in a structure. It is sealed in the calendar."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4A63358EC0AF0979"
+			rewards: [{
+				count: 16
+				id: "09174465E0804553"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "0 BS. The last and largest sealing."
+			tasks: [{
+				entity: "scarlet_king:scarlet_king"
+				id: "3944B9AE27A16D27"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Scarlet King"
+			x: 16.0d
+			y: 44.0d
+		}
+		{
+			dependencies: [
+				"146663F91BB3067C"
+				"0EAD5F569CE835BF"
+				"606C916F454BB8BA"
+				"5C1FF3DEC6779F12"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Not sealed. Built , and buildable again, by anyone with the parts and the intent."
+				"The Storm-Builders are the previous cycle and this is the shape their ambition took:"
+				"a god you assemble."
+				"The Crimson Reign's own Wither Storm began the same way, from a command that someone ran."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2FE086CE290E08BE"
+			rewards: [{
+				count: 16
+				id: "19FE7DECF8005F4D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Not sealed. Built, and buildable again."
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "42F737F2361FE7B1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying The Wither"
+			x: 10.0d
+			y: 46.0d
+		}
+		{
+			dependencies: [
+				"146663F91BB3067C"
+				"0EAD5F569CE835BF"
+				"606C916F454BB8BA"
+				"5C1FF3DEC6779F12"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Not sealed, not found, not sleeping. Built."
+				"The Storm-Builders are named for it in the way a family is named for a trade, and the trade was"
+				"assembling something out of a command and a corpse and letting it decide the rest."
+				"It killed the Last True Dragon in the Long Aftermath, which is the only reason anyone kept the"
+				"instructions. Somebody always keeps the instructions."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2E3CA2723CFD4288"
+			rewards: [{
+				count: 16
+				id: "18EE67D2DE1B34AF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Not sealed, not found, not sleeping. Built."
+			tasks: [{
+				entity: "witherstormmod:wither_storm"
+				id: "58BADE779EDACCD5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying wither_storm"
+			x: 12.0d
+			y: 46.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"The oldest witnesses. They remembered everything and then forgot it on purpose."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "23A2AD53482009E2"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "The oldest witnesses. They remembered everything and then forgot it on purpose."
+			tasks: [{
+				id: "7EEF3B77984445D2"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Umvuthana Hunt"
+			x: 23.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["23A2AD53482009E2"]
+			description: [
+				"The Strata Guardian, bound to its own sleep rather than to a building , the Convent files it"
+				"beside Frostmaw as substrate-held."
+				"The Wrought Chambers are not a prison. They are a bedroom with a very serious door."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "00998A08C6FB7219"
+			rewards: [{
+				count: 16
+				id: "3D8ADE6BE2E68D80"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The Strata Guardian, bound to its own sleep."
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				id: "096A819119BDD0C8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Ferrous Wroughtnaut"
+			x: 20.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["23A2AD53482009E2"]
+			description: [
+				"The Umvuthana learned the calling from the Yucatan and used it exactly once in the record."
+				"The record does not say what for. The Umvuthana Archive is the most complete collection in the"
+				"world and it is also the one that decided what to burn."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0AAACE834A4105AB"
+			rewards: [{
+				count: 16
+				id: "1033132FAA048022"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "They learned the calling from the Yucatan."
+			tasks: [{
+				entity: "traveloptics:summoned_tremorsaurus"
+				id: "577D24779617EAB8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Summoned Tremorsaurus"
+			x: 22.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["23A2AD53482009E2"]
+			description: [
+				"Bound to his own stone, the way Frostmaw is bound to its mountain , the Convent files both"
+				"as substrate-held: free within a thing, never out of it."
+				"The Umvuthana did not seal Tongbi. They agreed with him about where he should be."
+				"He still sets a test to anyone who arrives. Passing it was never the difficult part."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "68742245702E8759"
+			rewards: [{
+				count: 16
+				id: "446A53F8BA61F60D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Bound to his own stone."
+			tasks: [{
+				entity: "mowziesmobs:sculptor"
+				id: "3E2D4C8B4FC34CA7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Tongbi, the Sculptor"
+			x: 24.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["23A2AD53482009E2"]
+			description: [
+				"Umvuthi, the Sunbird. The First Witness, and never sealed , which for the Umvuthana is the"
+				"whole point."
+				"They were the people who remembered everything and then chose to forget on purpose, and this"
+				"is what watched them decide."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "246B0795628156D5"
+			rewards: [{
+				count: 16
+				id: "1361BEC3E50A813D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "The First Witness, and never sealed."
+			tasks: [{
+				entity: "mowziesmobs:umvuthi"
+				id: "05D1FC8951B8F240"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Slaying Umvuthi, the Sunbird"
+			x: 26.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Things that belong to no pantheon. Nobody sealed them, and nobody wrote down why not."
+				"Their sealed gods are listed below in the order the archive lists them."
+			]
+			icon: "minecraft:spyglass"
+			id: "46159BD5CEAC2515"
+			shape: "gear"
+			size: 1.25d
+			subtitle: "Things that belong to no pantheon. Nobody sealed them, and nobody wrote down why not."
+			tasks: [{
+				id: "7A4A205B1EEAEAB6"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Unclaimed"
+			x: 33.0d
+			y: 40.0d
+		}
+		{
+			dependencies: ["46159BD5CEAC2515"]
+			description: [
+				"Woodland mansion, no pantheon, no seal, no civilisation claiming it."
+				"Some power was never anybody's."
+			]
+			icon: "minecraft:bone"
+			id: "54E1823C9466A1C0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7DC093B06A10A2FD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "No pantheon, no seal, no civilisation."
+			tasks: [{
+				entity: "irons_spellbooks:archevoker"
+				id: "1F105E9B141B7B0F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Archevoker"
+			x: 30.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["46159BD5CEAC2515"]
+			description: [
+				"The same, in blossom, which fools people for exactly one season."
+				"The Unclaimed are not gentler. They are only unfiled."
+			]
+			icon: "minecraft:bone"
+			id: "07DE8CA60C835A79"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3A2034C5EC6AF653"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "In blossom, which fools people briefly."
+			tasks: [{
+				entity: "luminousworld:cherry_tree_ent"
+				id: "1509335754ABFEFD"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Cherry Tree Ent"
+			x: 32.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["46159BD5CEAC2515"]
+			description: [
+				"Nobody's pantheon, nobody's seal, and a temperament that predates the argument."
+				"The Unclaimed were never unclaimed by choice. They were simply never asked."
+			]
+			icon: "minecraft:bone"
+			id: "16A68434DDE8103D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7DBBE15343CB0CC6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Nobody's, and a temperament to match."
+			tasks: [{
+				entity: "iceandfire:hippogryph"
+				id: "78EE22132EC90556"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Hippogryph"
+			x: 34.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["46159BD5CEAC2515"]
+			description: [
+				"The forest, standing up."
+				"Nobody sealed it because nobody had a reason to."
+			]
+			icon: "minecraft:bone"
+			id: "7104B2D0FF44C89F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "661962349FA3A549"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The forest, standing up."
+			tasks: [{
+				entity: "luminousworld:tree_ent"
+				id: "71DC922EEA6506A7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Tree Ent"
+			x: 36.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A weapon-list rather than a discipline: the Convent catalogued what people had already made."
+				""
+				"&6Found in:&r abandoned mineshaft, abandoned mineshaft bc, abandoned mineshaft chalk loot and 101 more &8(35% a chest)"
+				"&bOpens:&r 125 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 8 minutes"
+			]
+			icon: "minecraft:iron_sword"
+			id: "7F2A1ED706EC840E"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "082ACE887A124DF3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "A weapon-list, not a discipline."
+			tasks: [
+				{
+					id: "5EC140D4A1163A79"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arsenal_iron_blades"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3F14947925F7982F"
+					individual: true
+					negate: false
+					stage: "arsenal_iron_blades"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Iron Arsenal: Blades"
+			x: 0.0d
+			y: 50.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A weapon-list rather than a discipline: the Convent catalogued what people had already made."
+				""
+				"&6Found in:&r abandoned mineshaft, abandoned mineshaft bc, abandoned mineshaft chalk loot and 53 more &8(35% a chest)"
+				"&bOpens:&r 26 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 8 minutes"
+			]
+			icon: "simplyswords:iron_spear"
+			id: "5F05A8674B05265F"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "602540668FBD71A0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Reach, catalogued."
+			tasks: [
+				{
+					id: "2A3788EC2458514D"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arsenal_iron_polearms"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "590A928343CDF30F"
+					individual: true
+					negate: false
+					stage: "arsenal_iron_polearms"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Iron Arsenal: Polearms"
+			x: 2.0d
+			y: 50.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A weapon-list rather than a discipline: the Convent catalogued what people had already made."
+				""
+				"&6Found in:&r ancient vestiges chest, archer, archer chest and 39 more &8(14% a chest)"
+				"&bOpens:&r 20 entries"
+				"&dNeeds:&r one of Foundations of the Forge, Woodworking"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "minecraft:bow"
+			id: "4E80B9ADCEE7D133"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "03D413830F5FC523"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Distance, catalogued."
+			tasks: [
+				{
+					id: "3C11D6CD9049742C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arsenal_iron_ranged"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7051BC15E4EC36B8"
+					individual: true
+					negate: false
+					stage: "arsenal_iron_ranged"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Iron Arsenal: Ranged"
+			x: 4.0d
+			y: 50.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A weapon-list rather than a discipline: the Convent catalogued what people had already made."
+				""
+				"&6Found in:&r acropolis treasure, additional end city loot, armory and 29 more &8(7% a chest)"
+				"&bOpens:&r 167 entries"
+				"&dNeeds:&r The Master Arsenal: Blades; The Legendary Forge; 35 levels of experience, spent"
+				"&aPedestal:&r Tier IV, about 30 minutes"
+			]
+			icon: "simplyswords:mjolnir"
+			id: "3D560F75DDE3000F"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "582DFC4EF8DF7578"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The ones with names."
+			tasks: [
+				{
+					id: "3A96FA7D45F9E7A4"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arsenal_legendary_blades"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "042C1F9F9CAFD399"
+					individual: true
+					negate: false
+					stage: "arsenal_legendary_blades"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Legendary Arsenal: Named Blades"
+			x: 6.0d
+			y: 50.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A weapon-list rather than a discipline: the Convent catalogued what people had already made."
+				""
+				"&6Found in:&r acropolis treasure, additional end city loot, bastion treasure and 23 more &8(7% a chest)"
+				"&bOpens:&r 4 entries"
+				"&dNeeds:&r The Master Arsenal: Polearms; The Legendary Forge; 35 levels of experience, spent"
+				"&aPedestal:&r Tier IV, about 30 minutes"
+			]
+			icon: "simplyswords:magispear"
+			id: "47958E0872F76932"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "32920858BE88ECEB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The ones with names, on a shaft."
+			tasks: [
+				{
+					id: "35AF04A32CDA2BEE"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arsenal_legendary_polearms"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "229D9751D85B2628"
+					individual: true
+					negate: false
+					stage: "arsenal_legendary_polearms"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Legendary Arsenal: Named Hafted"
+			x: 8.0d
+			y: 50.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A weapon-list rather than a discipline: the Convent catalogued what people had already made."
+				""
+				"&6Found in:&r archer chest, archer chest2, armory and 5 more &8(7% a chest)"
+				"&bOpens:&r 5 entries"
+				"&dNeeds:&r The Master Arsenal: Ranged; The Legendary Forge; 35 levels of experience, spent; Chronicle of the World-Enders"
+				"&aPedestal:&r Tier IV, about 30 minutes"
+			]
+			icon: "cataclysm:void_assault_shoulder_weapon"
+			id: "5AC7B498533971B5"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "257FCC0C2CC61A48"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The ones with names, at range."
+			tasks: [
+				{
+					id: "5553DBFF6A91DD56"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arsenal_legendary_ranged"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5EB5AD763B78C56C"
+					individual: true
+					negate: false
+					stage: "arsenal_legendary_ranged"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Legendary Arsenal: Named Ranged"
+			x: 10.0d
+			y: 50.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A weapon-list rather than a discipline: the Convent catalogued what people had already made."
+				""
+				"&6Found in:&r additional end city loot, ancient vestiges chest, archer and 59 more &8(12% a chest)"
+				"&bOpens:&r 194 entries and 2 whole bodies of work"
+				"&dNeeds:&r The Iron Arsenal: Blades"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:diamond_sword"
+			id: "30369A1564F8977A"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "4E9E307833228316"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The last edge in the catalogue."
+			tasks: [
+				{
+					id: "3213B88A108D1C81"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arsenal_master_blades"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "19A99E11F4095069"
+					individual: true
+					negate: false
+					stage: "arsenal_master_blades"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Master Arsenal: Blades"
+			x: 12.0d
+			y: 50.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A weapon-list rather than a discipline: the Convent catalogued what people had already made."
+				""
+				"&6Found in:&r arrows, blacksmithy, catacumbs and 40 more &8(17% a chest)"
+				"&bOpens:&r 141 entries"
+				"&dNeeds:&r The Iron Arsenal: Polearms"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "simplyswords:diamond_halberd"
+			id: "13B772E3F8DF4B81"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "59F9BBF804EDDE34"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The last reach in the catalogue."
+			tasks: [
+				{
+					id: "37067AF58FB2B8ED"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arsenal_master_polearms"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "08379C4A52A5287A"
+					individual: true
+					negate: false
+					stage: "arsenal_master_polearms"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Master Arsenal: Polearms"
+			x: 0.0d
+			y: 52.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A weapon-list rather than a discipline: the Convent catalogued what people had already made."
+				""
+				"&6Found in:&r additional end city loot, archer chest, archer chest2 and 67 more &8(17% a chest)"
+				"&bOpens:&r 11 entries"
+				"&dNeeds:&r The Iron Arsenal: Ranged"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "iceandfire:dragonbone_bow"
+			id: "033C8087E73D68AA"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "5D9E0DB1E58BD381"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The last range in the catalogue."
+			tasks: [
+				{
+					id: "25086A5D011E1FE9"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arsenal_master_ranged"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "310C1BCD8931E53D"
+					individual: true
+					negate: false
+					stage: "arsenal_master_ranged"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Master Arsenal: Ranged"
+			x: 2.0d
+			y: 52.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A field record. Somebody watched these long enough to write them down and did not always survive the watching."
+				""
+				"&6Found in:&r abyssal ruins, campsite, caveman house additions new and 18 more &8(17% a chest)"
+				"&bOpens:&r 360 entries and 1 whole body of work"
+				"&dNeeds:&r one of The Menagerie of the Wild, The Bestiary of Myth & Monster"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "alexsmobs:animal_dictionary"
+			id: "286CE34D03F4D96D"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "1AB40AD62D828B12"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Somebody watched them long enough."
+			tasks: [
+				{
+					id: "5588C01C294E6928"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "bestiary_alex_mobs"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "11BDBC1F53FA0EFB"
+					individual: true
+					negate: false
+					stage: "bestiary_alex_mobs"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Beasts of the Wide World"
+			x: 4.0d
+			y: 52.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Convent-attributed, no author named. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure, ancient vestiges chest, arrows and 30 more &8(7% a chest)"
+				"&bOpens:&r 72 entries"
+				"&dNeeds:&r one of Chronicle of the World-Enders, The Dragonslayer’s Codex; any one of 15 other scrolls; 35 levels of experience, spent"
+				"&aPedestal:&r Tier IV, about 30 minutes"
+			]
+			icon: "minecraft:dragon_head"
+			id: "72AA6C7ED7C81396"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "37C4279085791FD8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "What was taken, and kept."
+			tasks: [
+				{
+					id: "6FBC91DDB5F70AEF"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "boss_trophy_relics"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7665AD9B6725AEFC"
+					individual: true
+					negate: false
+					stage: "boss_trophy_relics"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Reliquary: Relics, Trophies & Cultural Spoils"
+			x: 6.0d
+			y: 52.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Convent-attributed, no author named. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r armory, burning arena reward, gears and 8 more &8(17% a chest)"
+				"&bOpens:&r 13 entries"
+				"&dNeeds:&r one of The Iron Arsenal: Blades, The Tanner's Craft"
+				"&aPedestal:&r Tier II, about 8 minutes"
+			]
+			icon: "dungeons_and_combat:sandstone_fist"
+			id: "6BF9F4CD0A861B16"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "602FC805B60CA885"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "No edge. That is the creed."
+			tasks: [
+				{
+					id: "7BA7D6D63BACB7BD"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "bruisers_creed"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3C0ECCEAF236BD14"
+					individual: true
+					negate: false
+					stage: "bruisers_creed"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Bruiser's Creed"
+			x: 8.0d
+			y: 52.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Convent-attributed, no author named. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r bastion bridge, bastion hoglin stable, bastion other and 2 more &8(17% a chest)"
+				"&bOpens:&r 148 entries"
+				"&dNeeds:&r Kinetic Engineering; On Infernal Passage"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "createbigcannons:cannon_mount"
+			id: "31D680035A5D323E"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "701A0D535E66B81F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Aimed at buildings, not people."
+			tasks: [
+				{
+					id: "425C4995D692B6C0"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "cannoneer"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "700CF5DB531811D7"
+					individual: true
+					negate: false
+					stage: "cannoneer"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Cannoneer"
+			x: 10.0d
+			y: 52.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Convent-attributed, no author named. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r forlorn ruins additions new, underground cabin forlorn hollows &8(7% a chest)"
+				"&bOpens:&r 1 entry and 2 whole bodies of work"
+				"&dNeeds:&r Field Medicine; Alchemy"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "cardiac:life_bottle"
+			id: "672B4DC6DF38417C"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "3BB7E9747F009DD7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The body, studied without ceremony."
+			tasks: [
+				{
+					id: "578553122927989E"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "carnal_anatomy"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "06A7478E6457E52A"
+					individual: true
+					negate: false
+					stage: "carnal_anatomy"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Carnal Anatomy"
+			x: 12.0d
+			y: 52.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Instructions for killing a specific thing, written by the people who managed it once."
+				""
+				"&6Found in:&r abandoned mineshaft chalk loot, abyssal ruins, caveman house and 24 more &8(17% a chest)"
+				"&bOpens:&r 308 entries"
+				"&dNeeds:&r one of The Iron Arsenal: Blades, The Iron Arsenal: Polearms, The Iron Arsenal: Ranged"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "iceandfire:dragon_skull_fire"
+			id: "4F74AE1567F916BE"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0C982759B3FDB350"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Instructions for one specific thing."
+			tasks: [
+				{
+					id: "3198A852258EC9E7"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "dragonslayer_codex"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "70671BA8D577A155"
+					individual: true
+					negate: false
+					stage: "dragonslayer_codex"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Dragonslayer’s Codex"
+			x: 0.0d
+			y: 54.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Convent-attributed, no author named. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r ancient vestiges chest, archer, arrows and 48 more &8(12% a chest)"
+				"&bOpens:&r 311 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:shield"
+			id: "79822CDB83BC966D"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "10A0AB2CD070D2DB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Standing still, done properly."
+			tasks: [
+				{
+					id: "58ECCD42EF3864BC"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "heavy_plate_discipline"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5AD694710FC4FCBF"
+					individual: true
+					negate: false
+					stage: "heavy_plate_discipline"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Bulwark Doctrine"
+			x: 2.0d
+			y: 54.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"Convent-attributed, no author named. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft chalk loot, acropolis treasure, arrows and 20 more &8(11% a chest)"
+				"&bOpens:&r 65 entries and 1 whole body of work"
+				"&dNeeds:&r The Bulwark Doctrine; 25 levels of experience, spent"
+				"&aPedestal:&r Tier III, about 18 minutes"
+			]
+			icon: "minecraft:elytra"
+			id: "01B8E9BE50D4E454"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "00EE091B51A61978"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Not from here."
+			tasks: [
+				{
+					id: "717510DFC1EAEB66"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "specialist_suits"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3321CC8958D97199"
+					individual: true
+					negate: false
+					stage: "specialist_suits"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Exotic Armory"
+			x: 4.0d
+			y: 54.0d
+		}
+		{
+			dependencies: ["46648E42C4B3234D"]
+			description: [
+				"A field record. Somebody watched these long enough to write them down and did not always survive the watching."
+				"Copies turn up in ancient vestiges chest, armory, frosted prison treasure."
+			]
+			icon: "historystages:research_scroll"
+			id: "11F7B6786D865E2D"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "5C760A304A1E4E9C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The ones nobody could verify."
+			tasks: [
+				{
+					id: "75445FE973391FC9"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "the_bestiary"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5D420A24A0D1B88B"
+					individual: true
+					negate: false
+					stage: "the_bestiary"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Bestiary of Myth & Monster"
+			x: 6.0d
+			y: 54.0d
+		}
+	]
+	subtitle: ["Record the creature. Then fight it."]
+	title: "The Hunt"
+}

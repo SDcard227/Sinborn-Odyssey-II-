@@ -1,0 +1,9 @@
+
+[Time]
+	#Time in hours
+	PerishTime_Hours = 2.0
+	#Time in minutes
+	PerishTime_Minute = 0.0
+	#Time in seconds
+	PerishTime_Seconds = 0.0
+

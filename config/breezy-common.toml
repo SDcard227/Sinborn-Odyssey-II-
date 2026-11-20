@@ -13,6 +13,8 @@
 		#Default: 2.5%
 		#Range: 0.0 ~ 1.0
 		wind_change_percent = 0.025
+		#Wind directions lock to multiples of 45 degrees, aka N/S/E/W/NE/SE/NW/SW
+		octo_cardinal = false
 
 		[common."wind patterns"."speed modifiers"]
 			#Speed modifier for biomes with less wind

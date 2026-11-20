@@ -1,6 +1,7 @@
 {
   "display_name": "Spatial Engineering",
-  "research_time": 10800,
+  "icon": "historystages:research_scroll",
+  "research_time": 1110,
   "items": [
     "create_power_loader:andesite_chunk_loader",
     "create_power_loader:brass_chunk_loader",
@@ -8,29 +9,23 @@
     "create_power_loader:empty_brass_chunk_loader",
     "createteleporters:adv_tplink",
     "createteleporters:advanced_part",
-    "createteleporters:block_tp",
-    "createteleporters:block_tp_on",
+    "createteleporters:block_teleporter",
     "createteleporters:custom_portal",
+    "createteleporters:custom_portal_base",
     "createteleporters:custom_portal_on",
-    "createteleporters:gravity_stab",
+    "createteleporters:entity_teleporter_quarter",
+    "createteleporters:entity_teleporter_slab",
     "createteleporters:incomplete_advanced_part",
     "createteleporters:incomplete_q_mechanism",
     "createteleporters:item_tp",
-    "createteleporters:item_tp_rec",
     "createteleporters:pocket_d_block",
     "createteleporters:pocket_dimension_remote",
     "createteleporters:quantum_casing",
-    "createteleporters:quantum_fluid",
     "createteleporters:quantum_fluid_bucket",
     "createteleporters:quantum_mechanism",
     "createteleporters:redstone_pearl",
     "createteleporters:teleporter",
-    "createteleporters:teleporter_enable",
-    "createteleporters:tp_link",
-    "createteleporters:tp_rec",
-    "createteleporters:warp_portal",
-    "irons_spellbooks:pocket_dimension_portal_frame",
-    "irons_spellbooks:portal_frame"
+    "createteleporters:tp_link"
   ],
   "tags": [],
   "mods": [],
@@ -41,5 +36,46 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fluids": [
+    "createteleporters:flowing_quantum_fluid",
+    "createteleporters:quantum_fluid"
+  ],
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "electrical_engineering",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 25,
+        "consume": true
+      }
+    }
+  ],
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min"
 }

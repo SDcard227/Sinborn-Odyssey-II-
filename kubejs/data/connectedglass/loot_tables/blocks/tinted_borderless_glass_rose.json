@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "connectedglass"
+    }
+  ],
+  "pools": [],
+  "random_sequence": "connectedglass:blocks/tinted_borderless_glass_rose"
+}

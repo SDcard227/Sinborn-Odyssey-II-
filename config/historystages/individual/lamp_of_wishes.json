@@ -1,13 +1,14 @@
 {
   "display_name": "The Lamp of Wishes",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 1110,
   "items": [
     "as_you_wish:copper_lamp",
+    "as_you_wish:excalibur",
     "as_you_wish:fast_lamp",
-    "as_you_wish:heart_of_the_desert",
-    "as_you_wish:immortal_lamp",
     "as_you_wish:instant_wish",
     "as_you_wish:magic_lamp",
+    "as_you_wish:immortal_lamp",
     "as_you_wish:super_lamp"
   ],
   "tags": [],
@@ -21,5 +22,47 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "archaeology_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "codex_of_kukulkan",
+          "mode": "player"
+        },
+        {
+          "stage_id": "scroll_end_passage",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_table",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min"
 }

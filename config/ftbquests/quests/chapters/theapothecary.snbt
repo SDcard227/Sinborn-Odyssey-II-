@@ -1,0 +1,447 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "theapothecary"
+	group: "5A0000000000003C"
+	icon: "minecraft:brewing_stand"
+	id: "5D2BA4D9256314AE"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The Convent never separated them. The separation is a modern habit and a recent one."]
+			icon: "minecraft:brewing_stand"
+			id: "26DD4A5C83B28EB2"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "Medicine, poison and brewing are one discipline."
+			tasks: [{
+				id: "1B7EACEE63714BE0"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Apothecary"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["26DD4A5C83B28EB2"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r fd village taiga house, hidden potion storage, mixed seeds and 6 more &8(25% a chest)"
+				"&bOpens:&r 201 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "brewinandchewin:keg"
+			id: "2A03B23AD2F2F9CE"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "307C9FA1DC083178"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Fermentation, and the patience for it."
+			tasks: [
+				{
+					id: "04A5ECCA922F43AD"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "brewers_cellar"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "755974D0EC77325D"
+					individual: true
+					negate: false
+					stage: "brewers_cellar"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Brewer's Cellar"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["26DD4A5C83B28EB2"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r fd village snowy house, fd village taiga house, mixed seeds and 7 more &8(25% a chest)"
+				"&bOpens:&r 109 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "herbalbrews:tea_kettle"
+			id: "5F69B9780F833469"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "35BD2B8DC79DBB4A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Heat, water, and time."
+			tasks: [
+				{
+					id: "32B78FEFD30C6E75"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "steeping_kettle"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "357D1415861EEF55"
+					individual: true
+					negate: false
+					stage: "steeping_kettle"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Steeping Kettle"
+			x: 3.8d
+			y: -1.2d
+		}
+		{
+			dependencies: ["26DD4A5C83B28EB2"]
+			description: [
+				"A Sirben copy. The heretics preserved what the Cathedral would not."
+				""
+				"&6Found in:&r additional library loot, ancient vestiges chest, archer and 36 more &8(14% a chest)"
+				"&bOpens:&r 70 entries and 1 whole body of work"
+				"&dNeeds:&r one of The Apothecary's Tonic, The Brewer's Cellar, Field Medicine"
+				"&aPedestal:&r Tier I, about 6 minutes"
+			]
+			icon: "minecraft:brewing_stand"
+			id: "2A543AD2D6C52190"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "2F47C66E1810CFC1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "A Sirben copy. The heretics kept it."
+			tasks: [
+				{
+					id: "3ABD56A52E1F2495"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "alchemy"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "26D7470D275E1CDE"
+					individual: true
+					negate: false
+					stage: "alchemy"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Alchemy"
+			x: 2.4d
+			y: 3.2d
+		}
+		{
+			dependencies: ["26DD4A5C83B28EB2"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft, additional ancient city loot, aqua mage basic storage and 5 more &8(25% a chest)"
+				"&bOpens:&r 72 entries and 2 whole bodies of work"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "minecraft:golden_apple"
+			id: "5D9D8CEDB4784480"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "1D5C5ED3DAD41F00"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Medicine, before it was a profession."
+			tasks: [
+				{
+					id: "1E95F1D546B7D0F9"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "apothecarys_tonic"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "56928BB8CCCC286A"
+					individual: true
+					negate: false
+					stage: "apothecarys_tonic"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Apothecary's Tonic"
+			x: -2.4d
+			y: 3.2d
+		}
+		{
+			dependencies: ["26DD4A5C83B28EB2"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft chalk loot, caveman house, food storage and 2 more &8(22% a chest)"
+				"&bOpens:&r 6 entries and 1 whole body of work"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "cuffed:bandage"
+			id: "5DD4500F0ECFD093"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "41FB39BC7191E58A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Wounds, treated away from the table."
+			tasks: [
+				{
+					id: "2D8F4CD4F9986F52"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "field_medicine"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1D7E54A41D149F52"
+					individual: true
+					negate: false
+					stage: "field_medicine"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Field Medicine"
+			x: -3.8d
+			y: -1.2d
+		}
+		{
+			dependencies: ["2A543AD2D6C52190"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "dungeons_and_combat:slimy_tongue"
+			id: "47BEC3B051E26506"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7C6396ECC2DB1539"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it at the bench."
+			tasks: [
+				{
+					id: "368D355970919263"
+					item: "dungeons_and_combat:slimy_tongue"
+					title: "Slimy Tongue"
+					type: "item"
+				}
+				{
+					id: "188CBA73756130DB"
+					item: "dungeons_and_combat:divine_blood_vial"
+					title: "Divine Blood Vial"
+					type: "item"
+				}
+				{
+					id: "60E133E8FA08980E"
+					item: "knightlib:homunculus"
+					title: "Homunculus"
+					type: "item"
+				}
+			]
+			title: "Practising , Alchemy"
+			x: 4.4d
+			y: 6.1d
+		}
+		{
+			dependencies: ["5D9D8CEDB4784480"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "dungeons_and_combat:silver_carrot"
+			id: "474109C6BD483967"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "776FE0FCACDDE15D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in a bottle."
+			tasks: [
+				{
+					id: "3E65928C22B54AB5"
+					item: "dungeons_and_combat:silver_carrot"
+					title: "Silver Carrot"
+					type: "item"
+				}
+				{
+					id: "5AA78491402C5E3A"
+					item: "dungeons_and_combat:mortar_and_pestle_of_poison"
+					title: "Mortar And Pestle Of Poison"
+					type: "item"
+				}
+				{
+					id: "13A93768ADC160B4"
+					item: "twm:apple_drink"
+					title: "Apple Drink"
+					type: "item"
+				}
+			]
+			title: "Practising , The Apothecary's Tonic"
+			x: -4.4d
+			y: 6.1d
+		}
+		{
+			dependencies: ["2A03B23AD2F2F9CE"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "vinery:mead"
+			id: "67AE3ED98E0A71B4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2023F4645944F113"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the cellar."
+			tasks: [
+				{
+					id: "5136D9C361DF9581"
+					item: "vinery:mead"
+					title: "Mead"
+					type: "item"
+				}
+				{
+					id: "7B8A81955FC89274"
+					item: "createvinery:red_grape_juice_bucket"
+					title: "Red Grape Juice Bucket"
+					type: "item"
+				}
+				{
+					id: "5C5516BE097DE7CD"
+					item: "ratatouille:cocoa_liquor_bucket"
+					title: "Cocoa Liquor Bucket"
+					type: "item"
+				}
+			]
+			title: "Practising , The Brewer's Cellar"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5F69B9780F833469"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "youkaisfeasts:black_tea_leaves"
+			id: "393AC457CFA3EA2C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5384F3E4FC7CFC11"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the kettle."
+			tasks: [
+				{
+					id: "130E29F9285C988B"
+					item: "youkaisfeasts:black_tea_leaves"
+					title: "Black Tea Leaves"
+					type: "item"
+				}
+				{
+					id: "5B782A28DBDABFD0"
+					item: "herbalbrews:jug"
+					title: "Jug"
+					type: "item"
+				}
+				{
+					id: "5A82467120884E55"
+					item: "fruitsdelight:hawberry_tea"
+					title: "Hawberry Tea"
+					type: "item"
+				}
+			]
+			title: "Practising , The Steeping Kettle"
+			x: 7.1d
+			y: -2.3d
+		}
+	]
+	subtitle: ["Medicine and poison were never separate subjects."]
+	title: "The Apothecary"
+}

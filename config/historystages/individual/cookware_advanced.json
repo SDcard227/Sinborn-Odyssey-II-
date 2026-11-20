@@ -1,30 +1,25 @@
 {
   "display_name": "The Master Kitchen",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
     "alexscaves:confection_oven",
     "endersdelight:endstone_stove",
     "ends_delight:end_stove",
     "luminous_nether:netherrack_fire_pit",
     "luminous_nether:soul_soul_fire_pit",
-    "mynethersdelight:blackstone_cooking_pot",
     "mynethersdelight:nether_bricks_soul_stove",
     "mynethersdelight:nether_bricks_stove",
-    "mynethersdelight:nether_stove",
-    "ratatouille:oven",
-    "ratatouille_fried_delights:tartar_dip_cup",
-    "ratatouille_fried_delights:tartar_sauce",
-    "ratatouille_fried_delights:tartar_sauce_bucket",
-    "ratatouille_fried_delights:tartar_topping",
-    "some_assembly_required:sandwiching_station",
     "vintagedelight:evaporator",
-    "vintagedelight:fermenting_jar",
+    "witherstorm_delight:wither_stove",
     "youkaisfeasts:copper_faucet",
     "youkaisfeasts:copper_tank",
     "youkaisfeasts:fermentation_tank",
-    "youkaisfeasts:steamer_lid",
-    "youkaisfeasts:steamer_pot",
-    "youkaisfeasts:steamer_rack"
+    "dinnerware:chiseled_quartz_plate",
+    "dinnerware:diamond_plate",
+    "dinnerware:obsidian_plate",
+    "dinnerware:purpur_plate",
+    "dinnerware:quartz_plate"
   ],
   "tags": [],
   "mods": [],
@@ -35,5 +30,34 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "cookware_forging",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

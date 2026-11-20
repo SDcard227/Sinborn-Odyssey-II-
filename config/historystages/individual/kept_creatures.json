@@ -1,36 +1,35 @@
 {
   "display_name": "The Codex of Kept Creatures",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 270,
   "items": [
     "crittersandcompanions:clam",
     "crittersandcompanions:dragonfly_wing",
     "crittersandcompanions:dumbo_octopus_bucket",
-    "crittersandcompanions:dumbo_octopus_bucket_1",
-    "crittersandcompanions:dumbo_octopus_bucket_2",
-    "crittersandcompanions:dumbo_octopus_bucket_3",
     "crittersandcompanions:koi_fish",
     "crittersandcompanions:koi_fish_bucket",
     "crittersandcompanions:pearl",
     "crittersandcompanions:sea_bunny_bucket",
-    "crittersandcompanions:sea_bunny_bucket_1",
-    "crittersandcompanions:sea_bunny_bucket_2",
     "crittersandcompanions:sea_bunny_slime_block",
     "crittersandcompanions:sea_bunny_slime_bottle",
     "crittersandcompanions:silk",
     "crittersandcompanions:silk_cocoon",
     "crittersandcompanions:silk_lead",
+    "farm_and_charm:chicken_coop",
+    "farm_and_charm:chicken_feed",
     "farm_and_charm:chicken_nest",
     "farm_and_charm:feeding_trough",
+    "farm_and_charm:horse_fodder",
     "quark:egg_parrot_blue",
     "quark:egg_parrot_gray",
     "quark:egg_parrot_green",
     "quark:egg_parrot_red_blue",
-    "quark:egg_parrot_yellow_blue",
-    "quark:slime_in_a_bucket"
+    "quark:egg_parrot_yellow_blue"
   ],
   "tags": [],
   "mods": [
-    "crittersandcompanions"
+    "crittersandcompanions",
+    "boss_companions"
   ],
   "mod_exceptions": [],
   "recipes": [],
@@ -39,5 +38,43 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "agronomic_path",
+          "mode": "player"
+        },
+        {
+          "stage_id": "companions_charter",
+          "mode": "player"
+        },
+        {
+          "stage_id": "naturalist_basics",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

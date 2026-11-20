@@ -1,31 +1,9 @@
 {
   "display_name": "Atomic Engineering",
-  "research_time": 10800,
+  "icon": "historystages:research_scroll",
+  "research_time": 1110,
   "items": [
-    "alexscaves:acid",
-    "alexscaves:acid_bucket",
-    "alexscaves:block_of_uranium",
-    "alexscaves:fissile_core",
-    "alexscaves:green_soylent",
-    "alexscaves:hazmat_block",
-    "alexscaves:hazmat_boots",
-    "alexscaves:hazmat_chestplate",
-    "alexscaves:hazmat_leggings",
-    "alexscaves:hazmat_mask",
-    "alexscaves:hazmat_skull_block",
-    "alexscaves:hazmat_warning_block",
-    "alexscaves:nuclear_bomb",
-    "alexscaves:nuclear_furnace",
     "alexscaves:nuclear_furnace_component",
-    "alexscaves:nuclear_siren",
-    "alexscaves:radon_bottle",
-    "alexscaves:siren_light",
-    "alexscaves:toxic_paste",
-    "alexscaves:unrefined_waste",
-    "alexscaves:uranium",
-    "alexscaves:uranium_rod",
-    "alexscaves:uranium_shard",
-    "alexscaves:waste_drum",
     "canonnukes:nuke_shell",
     "create_new_age:heat_pump",
     "create_new_age:incomplete_reactor_casing",
@@ -51,5 +29,64 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "electrical_engineering",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_dwemer",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "gravitic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "mounted_rail",
+          "mode": "player"
+        },
+        {
+          "stage_id": "redstone_principles",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_table",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 25,
+        "consume": true
+      }
+    }
+  ],
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min"
 }

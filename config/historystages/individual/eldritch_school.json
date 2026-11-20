@@ -1,49 +1,39 @@
 {
   "display_name": "The Eldritch School",
-  "research_time": 3600,
+  "icon": "historystages:research_scroll",
+  "research_time": 600,
   "items": [
-    "cataclysm_spellbooks:abyss_spell_book",
-    "cataclysm_spellbooks:abyssal_rune",
-    "cataclysm_spellbooks:abyssal_upgrade_orb",
-    "cataclysm_spellbooks:abyssal_warlock_boots",
-    "cataclysm_spellbooks:abyssal_warlock_chestplate",
-    "cataclysm_spellbooks:abyssal_warlock_helmet",
-    "cataclysm_spellbooks:abyssal_warlock_leggings",
-    "cataclysm_spellbooks:abyssal_warlock_mask",
     "cataclysm_spellbooks:burning_knowledge_fragment",
     "cataclysm_spellbooks:burst_sheath",
-    "cataclysm_spellbooks:burst_sheath_fixed",
-    "cataclysm_spellbooks:burst_sheath_handheld",
     "cataclysm_spellbooks:codex_of_malice_spell_book",
-    "cataclysm_spellbooks:coral_staff",
-    "cataclysm_spellbooks:cursium_mage_boots",
-    "cataclysm_spellbooks:cursium_mage_chestplate",
-    "cataclysm_spellbooks:cursium_mage_elytra",
-    "cataclysm_spellbooks:cursium_mage_skirt",
     "cataclysm_spellbooks:desert_spell_book",
     "cataclysm_spellbooks:fake_wudjets_staff",
     "cataclysm_spellbooks:frozen_knowledge_fragment",
     "cataclysm_spellbooks:leviathans_blessing",
     "cataclysm_spellbooks:mechanical_scrap",
     "cataclysm_spellbooks:mechanical_weapon_parts",
-    "cataclysm_spellbooks:scroll_abyssal",
-    "cataclysm_spellbooks:spellstealer",
     "cataclysm_spellbooks:strange_disc",
     "cataclysm_spellbooks:the_nightstalker",
-    "cataclysm_spellbooks:void_staff",
-    "dacxirons:ebony_wizard_boots",
-    "dacxirons:ebony_wizard_hood",
-    "dacxirons:ebony_wizard_leggings",
-    "dacxirons:ebony_wizard_robe",
     "dacxirons:fairy_wand_staff",
     "dacxirons:scepter_of_compensation_staff",
     "irons_spellbooks:ancient_knowledge_fragment",
     "irons_spellbooks:cursed_doll_spell_book",
     "irons_spellbooks:eldritch_manuscript",
-    "irons_spellbooks:scroll_eldritch",
     "traveloptics:dark_gem_of_the_living_void",
     "traveloptics:darkness_cloth",
-    "traveloptics:darkness_upgrade_smithing_template"
+    "traveloptics:darkness_upgrade_smithing_template",
+    "cataclysm_spellbooks:burning_manuscript",
+    "cataclysm_spellbooks:disc_driver",
+    "cataclysm_spellbooks:excel_upgrade_cooldown",
+    "cataclysm_spellbooks:excel_upgrade_mana",
+    "cataclysm_spellbooks:excel_upgrade_resistence",
+    "cataclysm_spellbooks:frozen_tablet",
+    "cataclysm_spellbooks:mechanical_brace",
+    "cataclysm_spellbooks:murasama_blade",
+    "cataclysm_spellbooks:soul_brazier",
+    "cataclysm_spellbooks:the_berserker",
+    "cataclysm_spellbooks:the_combuster",
+    "irons_spellbooks:furled_map_citadel"
   ],
   "tags": [],
   "mods": [],
@@ -54,5 +44,89 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "abyssal_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ender_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "evocation_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "fire_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "holy_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ice_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lightning_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "nature_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "technomancy_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_school",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_cipher",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "backpackcraft",
+          "mode": "player"
+        },
+        {
+          "stage_id": "banner_heraldry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_road",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

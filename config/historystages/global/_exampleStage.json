@@ -1,5 +1,6 @@
 {
   "display_name": "Example Stage",
+  "icon": "historystages:research_scroll",
   "research_time": 20,
   "items": [
     "minecraft:iron_ingot",

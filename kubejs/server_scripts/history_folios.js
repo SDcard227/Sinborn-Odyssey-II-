@@ -123,7 +123,7 @@ var FOLIOS = [
     id: 'sw2_f6',
     title: 'The Crimson Reign — Folio VI: The Hoarfrost',
     author: 'the Umvuthana Recitation',
-    pages: ['{"text": "§lThe Crimson Reign§r\\n§oFolio VI§r\\n\\nThe Hoarfrost\\n\\nThe fourth of the Nine.\\nThe people of the\\nfrozen vigil."}', '{"text": "The Hoarfrost — the Reach, the Frozen Court — was the civilisation of the northern wastes and the frozen ocean rim. Their doctrine was preservation as defiance."}', '{"text": "Nothing should change while the Hoarfrost was alive to notice. They named themselves for the single hour they tried to hold forever."}', '{"text": "Their first patron was the Long Mother, the deep-ocean preservation-doctrine. Their late patron was Captain Cornelia — a sailor who became a god through occupational mastery, not devotion."}', '{"text": "They built the Ice Maze, whose paths did not conclude. The Frosted Prison, a sentence into a frozen instant. The Ship Graveyard, a fleet that never completed its return."}', '{"text": "Note the distinction the Recitation insists on. The Ice is a region. The Hoarfrost is the people, and the Long Hour is the doctrine they died holding, the single hour they refused to let pass. To call them merely the Ice is to mistake a place for a civilisation."}', '{"text": "When the world refused to be a single hour any longer, the Hoarfrost ended. Spring came. Ice cracked. The doctrine asked the citizens to deny the spring."}', '{"text": "The Hoarfrost preserved by freezing, and it froze completely. Even the covenant-fragments of sealed gods — the eyes the cycle\'s seekers most prize — lie in the ice-boxes of the deep cities, unchanged because the doctrine forbade all change."}', '{"text": "Most could not. The ones who could froze themselves into the architecture rather than witness the change.\\n\\nThey are there still. The vigil did not end. It only lost its watchers.\\n\\n§o— the Umvuthana Recitation§r"}'],
+    pages: ['{"text": "§lThe Crimson Reign§r\\n§oFolio VI§r\\n\\nThe Hoarfrost\\n\\nThe fourth of the Nine.\\nThe people of the\\nfrozen vigil."}', '{"text": "The Hoarfrost — the Reach, the Frozen Court — was the civilisation of the northern wastes and the frozen ocean rim. Their doctrine was preservation as defiance."}', '{"text": "Nothing should change while the Hoarfrost was alive to notice. They named themselves for the single hour they tried to hold forever."}', '{"text": "Their first patron was the Long Mother, the deep-ocean preservation-doctrine. Their late patron was Captain Cornelia — a sailor who became a god through occupational mastery, not devotion."}', '{"text": "They built the Ice Maze, whose paths did not conclude. The Frosted Prison, a sentence into a frozen instant. The Ship Graveyard, a fleet that never completed its return."}', '{"text": "Note the distinction the Recitation insists on. The Ice is a region. The Hoarfrost is the people, and the Long Hour is the doctrine they died holding, the single hour they refused to let pass. To call them merely the Ice is to mistake a place for a civilisation."}', '{"text": "When the world refused to be a single hour any longer, the Hoarfrost ended. Spring came. Ice cracked. The doctrine asked the citizens to deny the spring."}', '{"text": "The Long Hour preserved by freezing, and it froze completely. Even the covenant-fragments of sealed gods — the eyes the cycle\'s seekers most prize — lie in the ice-boxes of the deep cities, unchanged because the doctrine forbade all change."}', '{"text": "Most could not. The ones who could froze themselves into the architecture rather than witness the change.\\n\\nThey are there still. The vigil did not end. It only lost its watchers.\\n\\n§o— the Umvuthana Recitation§r"}'],
     chests: [['aquamirae:chests/frozen_chest', 13], ['aquamirae:chests/maze_common_chest', 12], ['cataclysm:chests/frosted_prison_treasure', 9]],
     boss: null,
   },
@@ -455,21 +455,73 @@ var FOLIOS = [
     chests: [],
     boss: 'dungeons_and_combat:the_aberrator',
   },
+  {
+    id: 'sda_sunleia',
+    title: 'The Divine Anthologies: On the Sun That Stayed',
+    author: 'the Convent of Excrucis',
+    pages: ['{"text": "§lThe Divine\\nAnthologies§r\\n\\nOn the Sun\\nThat Stayed\\n\\nRecovered from the\\ncourts of Sunleia,\\nwhere she still holds."}', '{"text": "Sunleia rose from the dragon’s judgement-warmth — the property by which heat blesses one field and burns the next. Her seal is the gentlest of the five types: structure-bound, and bound by consent."}', '{"text": "The Gilded Sands built the Pantheon around her and she agreed to stand in it. No chains — a desert cannot afford to be rid of its sun. The seal was an address, and she kept it."}', '{"text": "She presided over the judging courts. Ammit ate what the scales refused; Maledictus carried the dead across; Sunleia decided which light fell where. The court served her before it served him."}', '{"text": "When the Reign ended and the sealings began, she watched her court bind its own king into the Pyramid — and she stayed. The staying is the cruelty the archives circle and do not name."}', '{"text": "A god who stays outlives every worshipper, every court, every language that praised her. Her shrines empty by centuries. She holds the light steady over sand that no longer knows her name."}', '{"text": "§oThe Sirben reading: she stays because one soul in the desert still prays. The Convent neither confirms the soul nor searches for it. Some ledgers are better left unbalanced.§r"}', '{"text": "Her light, hardened, is sunstone. Wardens of molten rock and sunstone still walk where the desert meets old heat — the kindled fire turned sentinel. They are hers, and they do not know it.\\n\\n§o— the Convent of Excrucis§r"}'],
+    chests: [],
+    boss: 'dungeons_and_combat:sunleia',
+  },
+  {
+    id: 'sda_nightwarden',
+    title: 'The Divine Anthologies: On the Masterless Apex',
+    author: 'a Tidehold recension, salvaged',
+    pages: ['{"text": "§lThe Divine\\nAnthologies§r\\n\\nOn the Masterless\\nApex\\n\\nSalvaged from the\\nVoid Cathedral, where\\nhe keeps his exile."}', '{"text": "The ocean mages produced two apex minds. The Leviathan, the substrate’s summary spirit, the sea thinking about itself. And the Nightwarden — the mage who asked what the sea could not answer."}', '{"text": "When the Tidehold finished — it did not fall; it finished, and dissolved into the water it loved — the Nightwarden refused the dissolving. He alone kept a body. He alone kept a name."}', '{"text": "He went where the water could not follow, and in the dark between islands he attempted what the pantheon itself had never dared: he tried to father a pantheon of his own making."}', '{"text": "The End carries his results. Prototype after prototype — guardians, watchers, hollow crowns of intent — each one almost a god, none of them arriving. The archives call them the failed pantheon."}', '{"text": "He is called Masterless not because he overthrew a master but because everything that could have mastered him agreed to stop existing. There is no seal on him. There is nothing left to hold the chain."}', '{"text": "§oThe Convent’s marginal note, unsigned: of all the sealed and unsealed powers, only the Nightwarden chose his prison. Self-exile is the one binding that cannot be broken from outside.§r"}', '{"text": "What he guards in the Cathedral he built, no recension agrees upon. What is agreed: the sea still rises a little, every year, as if reaching for him.\\n\\n§o— a Tidehold hand, salvaged§r"}'],
+    chests: [],
+    boss: 'traveloptics:the_nightwarden',
+  },
+  {
+    id: 'sda_pontiff',
+    title: 'The Divine Anthologies: On the God the Convent Never Saw',
+    author: 'the Sirben Faith',
+    pages: ['{"text": "§lThe Divine\\nAnthologies§r\\n\\nOn the God the\\nConvent Never Saw\\n\\nA Sirben text. The\\nConvent permits it,\\nnow, at last."}', '{"text": "For two thousand years the Convent classified the Monkey Temple as a heretic shrine — a fanatic cult attending a zealot of unusual persistence. The classification was the point."}', '{"text": "The Sacred Pontiff was never sealed. He has been there the whole time. His substrate is god-tier; his surface is heretic-zealot; and the Convent’s misreading is itself the seal that keeps him."}', '{"text": "He has no lineage. He appears on no branch of the pantheon’s tree. He is worship made dense enough to precipitate — mortal faith, concentrated across ages, until divinity crystallised out of it."}', '{"text": "The Sirbens hold this emergence more honest than inheritance. A god that was prayed into being owes his existence to the pray-ers. The inherited gods owed nothing, and acted like it."}', '{"text": "His temple is not a ruin. Mark this against every other entry in these anthologies: the Monkey Temple is a functioning church. The worshippers are real. The fanaticism is the camouflage."}', '{"text": "Those who face him face three truths in sequence — the doctrine, the vanishing, and His Holiness. What he leaves behind, old cloth and relic gold, summons his residues at a totem’s side."}', '{"text": "§oCarry both residues and the diaspora will treat the bearer as priest-tier, consenting or not. The Convent does not recognise the office. The Sirbens note the Convent also did not recognise the god.§r"}', '{"text": "Elsewhere stands the only other power that survived by being misread — the Sunbird, the world’s first witness, whom no one thought to seal because everyone thought they knew what he was.\\n\\n§o— the Sirben Faith§r"}'],
+    chests: [],
+    boss: 'companions:his_holiness',
+  },
+  {
+    id: 'sda_ubar',
+    title: 'The Divine Anthologies: On the Wish-Seller of the Sands',
+    author: 'the Convent of Excrucis',
+    pages: ['{"text": "§lThe Divine\\nAnthologies§r\\n\\nOn the Wish-Seller\\nof the Sands\\n\\nTaken down from a\\ncaravan-master’s\\ndeathbed account."}', '{"text": "The Gilded Sands imported everything. Grain from the savanna, fish from the coasts, wine from three climates — a civilization that grew nothing and owned all of it. The ledgers were their scripture."}', '{"text": "Ubar was what their commerce prayed into the heat. Not a god of the pantheon’s line — a spirit of the transaction itself, the deal made flesh, the moment where want meets price."}', '{"text": "He sold the one good no caravan carried: the wish. The desert lords who had bought everything found, at the last, a merchant selling the only thing money could not otherwise reach."}', '{"text": "His lamps survive him — copper for the modest, worked brass for the wealthy, and quicker vessels for those whose want outran their patience. Each one is a contract that outlived its signatories."}', '{"text": "§oThe Convent’s warning stands in every recension: Ubar’s prices were never in coin. The Gilded Sands were preservers; what they preserved, in the end, was what they had traded away to him.§r"}', '{"text": "He is green, the accounts insist — green as the oasis the desert never had enough of. A merchant wears the colour of the scarcest good. He understood his customers to the bone."}', '{"text": "What became of the sands that bought from him is written in the pantry-book of the caravans, kept beside this folio on the shelf. Read them together. The cuisine and the god are one account.\\n\\n§o— the Convent of Excrucis§r"}'],
+    chests: [],
+    boss: 'as_you_wish:green_genie_boss',
+  },
+  {
+    id: 'sda_warborn',
+    title: 'The Divine Anthologies: On the Last Warlord',
+    author: 'a Forgesworn fragment, machine-copied',
+    pages: ['{"text": "§lThe Divine\\nAnthologies§r\\n\\nOn the Last\\nWarlord\\n\\nMachine-copied from\\nthe Forge-Tomb’s\\nstanding orders."}', '{"text": "The Engineers optimized everything, their gods included. Svarog kept the fires. Tremorzilla kept the wasteland. The Warborn Aegis kept the war — and when the war ended, he kept the ending."}', '{"text": "He is the Forge-Tomb’s last standing order: a warlord bound to a sepulchre of cooling slag, guarding the grave of the arsenal his makers had the sense, at the very end, to bury with themselves."}', '{"text": "The Convent’s cataloguers came to the Forge-Tomb expecting relics. They found none. No crown, no blade, no engine-heart. The Warborn Aegis holds nothing, wears nothing, hoards nothing."}', '{"text": "This is the entry the archives struggle to file: a god whose whole estate is the refusal. What he guards is not a treasure. It is the absence of one — the weapons that must not be re-made."}', '{"text": "§oThe Forgesworn fragment is explicit, in the flat voice their records keep: ASSET INVENTORY, SEPULCRUM IGNITUM — NIL. GUARD PRIORITY — ABSOLUTE. The nil is the priority. Read it twice.§r"}', '{"text": "He does not know the war is over. Or — the darker reading — he knows precisely, and stands anyway, because his makers’ last calculation showed the war returns the moment he sits down."}', '{"text": "Deeper in the wasteland his colleagues keep their own vigils: the atomic apex in her glass fields, and the wanderer with a mind like a closing fist. The Engineers’ pantheon does not retire.\\n\\n§o— machine-copied, checksum intact§r"}'],
+    chests: [],
+    boss: 'mythsandlegends:warborn_aegis',
+  },
+  {
+    id: 'sda_divinity',
+    title: 'The Divine Anthologies: The Path to Divinity',
+    author: 'the Convent of Excrucis',
+    pages: ['{"text": "§lThe Divine\\nAnthologies§r\\n\\nThe Path to\\nDivinity\\n\\nThe capstone. The\\nConvent debated\\nburning this one."}', '{"text": "Every entry in these anthologies describes a god. This one describes the door. It is kept last, and it is kept reluctantly, because a door described is a door findable."}', '{"text": "The first Sinborn walked it. Refused by the pantheon, unheard across centuries, he assembled the apparatus of ascension — the Stone, the Crown, the Vault Eye, the Keres-shape, the Robe."}', '{"text": "Five vessels, five loads the mortal frame cannot natively carry. The chronicle of what he did with them fills other shelves. What this folio records is that the apparatus worked."}', '{"text": "Divinity is not granted. That is the whole finding, the thing the pantheon burned a woman to keep unproven. It is assembled. It is walked to. The tier is a road, not a birthright."}', '{"text": "§oThe Convent’s position, stated for the record: the Path is real, the Path is open, and the Convent prays nightly that no reader of this page is ever desperate enough to take it.§r"}', '{"text": "For the wound that opens the road is always the same one. The cosmos refuses to answer, and the unanswered, in the end, go looking for a voice it cannot refuse."}', '{"text": "What lies past the finale is not in this book. Four roads leave that place — the thinker’s, the breaker’s, the voyager’s, the heir’s — and the Convent has followed none of them home.\\n\\n§o— the Convent of Excrucis§r"}'],
+    chests: [['minecraft:chests/stronghold_library', 8], ['minecraft:chests/end_city_treasure', 10]],
+    boss: null,
+  },
+  {
+    id: 'sda_caravan',
+    title: 'The Divine Anthologies: The Caravan Pantry',
+    author: 'an Umvuthana food-archivist',
+    pages: ['{"text": "§lThe Divine\\nAnthologies§r\\n\\nThe Caravan\\nPantry\\n\\nAn Umvuthana ledger\\nof what the desert\\nate, and how."}', '{"text": "Begin with the finding, because it explains a civilization: the desert of the Gilded Sands grows nothing. No date, no fig, no vine of its own. Survey every dune — the pantry is empty."}', '{"text": "Yet theirs was the richest table of the eight peoples. Syrup-sweets, cured meats, preserved fruits, wine of three terroirs. Every bite of it arrived by caravan. Every bite of it was bought."}', '{"text": "A land hands its people an ingredient pool, and the cuisine is what survives the negotiation. The Sands were handed nothing — so their cuisine became the negotiation itself."}', '{"text": "Their cooking was preservation, because everything edible had crossed weeks of heat to reach them. Salt, syrup, sealed jars, embalmed sweetness. Wealth, in the Sands, was sugar that had traveled."}', '{"text": "§oThe archivist’s note: no other people made preservation the whole of their kitchen. What a culture does to its food, it learns to do to everything. Keep this page in mind at the next.§r"}', '{"text": "They embalmed their meals. Then their dead. Then their courts, their king, their hours. The desert spread as they preserved the land itself — a pantry-craft, scaled to a world."}', '{"text": "The Gilded Sands did not starve. They kept. It is the gentlest way any of the eight died, and the only one you can taste.\\n\\n§o— an Umvuthana hand, well-fed§r"}'],
+    chests: [['minecraft:chests/desert_pyramid', 10], ['minecraft:chests/jungle_temple', 8], ['mowziesmobs:chests/umvuthana_grove_chest', 9]],
+    boss: null,
+  },
 ]
 
 // ---- build a written_book for a folio ----------------------
 function buildFolio(f) {
-  // A written_book is "Invalid book tag" if its title NBT is > 32 chars.
-  // Keep a short title for validity, show the full name via display.Name.
-  var shortTitle = f.title.length > 32 ? f.title.substring(0, 31) : f.title
   return Item.of('minecraft:written_book').withNBT({
-    title: shortTitle,
+    title: f.title,
     author: f.author,
     generation: 1,
     pages: f.pages,
     resolved: true,
     sinborn_folio_id: f.id,
-    display: { Name: JSON.stringify({ text: f.title, italic: false }) },
   })
 }
 

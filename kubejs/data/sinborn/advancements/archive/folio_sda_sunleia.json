@@ -1,0 +1,29 @@
+{
+  "parent": "sinborn:archive/shelf6_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:written_book"
+    },
+    "title": "On the Sun That Stayed",
+    "description": "The Divine Anthologies: On the Sun That Stayed",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sda_sunleia\"}"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
   "display_name": "The Apothecary's Tonic",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 270,
   "items": [
-    "compatdelight:datura_box",
-    "delightfulcreators:bone_broth_block",
-    "dungeons_and_combat:blessed_bandages",
+    "compatdelight:arcane_apple",
+    "compatdelight:soap_dust",
     "dungeons_and_combat:crimson_flask",
     "dungeons_and_combat:estus_flask",
     "dungeons_and_combat:mortar_and_pestle",
@@ -15,7 +15,6 @@
     "dungeons_and_combat:mortar_and_pestle_of_poison",
     "dungeons_and_combat:mortar_and_pestle_of_toxin",
     "dungeons_and_combat:mortar_and_pestle_of_wither",
-    "dungeons_and_combat:processed_antidote",
     "dungeons_and_combat:silver_carrot",
     "dungeons_and_combat:silver_orange",
     "iceandfire:fire_stew",
@@ -25,32 +24,25 @@
     "irons_spellbooks:greater_healing_potion",
     "irons_spellbooks:greater_invisibility_elixir",
     "irons_spellbooks:invisibility_elixir",
+    "minecraft:poisonous_potato",
     "minecraft:rabbit_foot",
+    "minecraft:spider_eye",
     "quark:golden_apple_crate",
     "quark:golden_carrot_crate",
     "twm:ancient_tonic",
     "twm:antidoto",
     "twm:apple_drink",
-    "twm:bela_dona_leavescrate",
     "twm:beladona",
     "twm:beladona_fruits",
     "twm:cigar",
     "twm:cigarette",
-    "twm:crop_lvl_1",
-    "twm:crop_lvl_2",
-    "twm:crop_lvl_3",
-    "twm:crop_lvl_4",
-    "twm:d_tabacco_leavesherbcrate",
     "twm:enchanted_golden_apple_drink",
     "twm:flame_tonic",
-    "twm:flower_herb_crate",
     "twm:fortitude_tonic",
     "twm:golden_apple_drink",
-    "twm:herb_leave_crate",
     "twm:honey_herb_blend",
     "twm:legendary_tonic",
     "twm:luna_blend",
-    "twm:lunar_flowerscrate",
     "twm:refined_herb_blend",
     "twm:resilience_tonic",
     "twm:simple_herb_blend",
@@ -58,20 +50,36 @@
     "twm:sus_cigarette",
     "twm:sus_plant",
     "twm:swiftness_tonic",
-    "twm:tabacco_leavesherbcrate",
     "twm:tabaco",
     "twm:tabaco_full",
     "twm:tabaco_low",
     "twm:tabaco_mid",
     "twm:tabaco_semi_full",
     "twm:void_tonic",
-    "wd:cleansing_decoction",
-    "wd:healing_dew",
-    "wd:jam_tonic"
+    "unusual_delight:glow_golden_apple",
+    "unusual_delight:silmy_acid",
+    "unusual_delight:soul_tonic",
+    "unusual_delight:talon_powder",
+    "unusual_delight:warding_soul",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:golden_apple",
+    "minecraft:golden_carrot",
+    "twm:beladona_leaves",
+    "twm:dried_tobacco_leaves",
+    "twm:herb_flower",
+    "twm:herb_leaf",
+    "twm:luna_flowers",
+    "twm:tabaco_seed",
+    "twm:tobacco_leaves",
+    "farmersdelight:horse_feed",
+    "some_assembly_required:chopped_golden_carrot",
+    "some_assembly_required:enchanted_golden_apple_slices",
+    "some_assembly_required:golden_apple_slices"
   ],
   "tags": [],
   "mods": [
-    "sculksickness"
+    "sculksickness",
+    "nirvana"
   ],
   "mod_exceptions": [],
   "recipes": [],
@@ -80,5 +88,43 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "agronomic_path",
+          "mode": "player"
+        },
+        {
+          "stage_id": "larder_methods",
+          "mode": "player"
+        },
+        {
+          "stage_id": "the_pantry",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

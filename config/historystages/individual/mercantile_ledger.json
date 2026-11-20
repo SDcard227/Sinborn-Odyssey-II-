@@ -1,12 +1,11 @@
 {
   "display_name": "The Mercantile Ledger",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 270,
   "items": [
     "bountiful:bounty",
     "bountiful:bountyboard",
-    "bountiful:decree",
-    "createadditionallogistics:cash_register",
-    "createadditionallogistics:sales_ledger"
+    "bountiful:decree"
   ],
   "tags": [],
   "mods": [
@@ -20,5 +19,43 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "leatherworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_road",
+          "mode": "player"
+        },
+        {
+          "stage_id": "woodworking",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

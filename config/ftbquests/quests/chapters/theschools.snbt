@@ -1,0 +1,1945 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "theschools"
+	group: "5A0000000000004D"
+	icon: "minecraft:enchanting_table"
+	id: "56490A6CD2D64BC5"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The Cathedral taught these as subjects, with terms, examinations and a great many dead students."]
+			icon: "minecraft:enchanting_table"
+			id: "43023103687DEC5D"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "Magic is a curriculum, not a power-up."
+			tasks: [{
+				id: "4F023ED23BF84218"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Schools"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft chalk loot, caveman house, food storage and 3 more &8(25% a chest)"
+				"&bOpens:&r 681 entries and 1 whole body of work"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 2 minutes"
+			]
+			icon: "minecraft:campfire"
+			id: "69C3E97F2DCACA59"
+			rewards: [{
+				count: 12
+				id: "3A881A8A787864A2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The week nobody writes down afterwards."
+			tasks: [
+				{
+					id: "5D50F09A8E363796"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "survivor_codex"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "2B93504D771E2BA2"
+					individual: true
+					negate: false
+					stage: "survivor_codex"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Survivor Codex"
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r additional library loot, armory, fd village plains house and 5 more &8(25% a chest)"
+				"&bOpens:&r 765 entries"
+				"&dNeeds:&r one of The Dye Loom, Glassworking, Stoneworking, Woodworking"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "quark:andesite_pillar"
+			id: "103521F537049E34"
+			rewards: [{
+				count: 12
+				id: "4E4E733B3D6E01A8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Building, once shelter stopped being the point."
+			tasks: [
+				{
+					id: "17A37A8DE1601867"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "architects_codex"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1D459B79F3D880E7"
+					individual: true
+					negate: false
+					stage: "architects_codex"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Architect's Codex"
+			x: 2.8d
+			y: -9.0d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Cipher work: the method survives and the reasoning does not."
+				""
+				"&6Found in:&r additional ancient city loot, additional end city loot, additional generic loot and 111 more &8(17% a chest)"
+				"&bOpens:&r 275 entries and 6 whole bodies of work"
+				"&dNeeds:&r Foundations of the Forge; one of The Wanderer's Pack, Banner Heraldry, The Long Road"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:enchanting_table"
+			id: "7978BA3F5A81E29D"
+			rewards: [{
+				count: 12
+				id: "638CB32009C1E23B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Cipher work. Method intact, reasoning gone."
+			tasks: [
+				{
+					id: "6A1D81F360C5E43B"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "arcane_codex"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "41659F4B7062D62B"
+					individual: true
+					negate: false
+					stage: "arcane_codex"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Arcane Codex"
+			x: 5.3d
+			y: -7.8d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r ancient vestiges chest, archer, basic loot and 35 more &8(15% a chest)"
+				"&bOpens:&r 175 entries and 1 whole body of work"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "minecraft:honeycomb"
+			id: "6407B910D036EF9A"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "62FF7BFD426DF291"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "What the year gives, and when it stops."
+			tasks: [
+				{
+					id: "3E7FA00068D4264B"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "foragers_almanac"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "4DBA2F6D2D749B81"
+					individual: true
+					negate: false
+					stage: "foragers_almanac"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Forager's Almanac"
+			x: 7.4d
+			y: -5.9d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure, dwemer ruin common, dwemer ruin epic and 4 more &8(11% a chest)"
+				"&bOpens:&r 301 entries and 1 whole body of work"
+				"&dNeeds:&r one of The Dragonslayer’s Codex, The Bulwark Doctrine"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "cataclysm:void_core"
+			id: "7468BAC129F90A7D"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "4A974FA9E4B9F588"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Nine attempts. Nine different failures."
+			tasks: [
+				{
+					id: "7FB987E1909487F0"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "cataclysm_codex"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3CEA67A445C7216C"
+					individual: true
+					negate: false
+					stage: "cataclysm_codex"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Chronicle of the World-Enders"
+			x: 8.8d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Cipher work: the method survives and the reasoning does not."
+				""
+				"&6Found in:&r catacombs additions, coffin loot, crypt loot and 3 more &8(11% a chest)"
+				"&bOpens:&r 62 entries and 1 whole body of work"
+				"&dNeeds:&r any one of 10 other scrolls; one of The Wanderer's Pack, Banner Heraldry, The Long Road"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "irons_spellbooks:blood_rune"
+			id: "6DD2217495D74CF6"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0A08B12FBB5C128A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Cipher work, and they paid for it themselves."
+			tasks: [
+				{
+					id: "0121CE4899B26224"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "blood_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "700A424D3BDABA05"
+					individual: true
+					negate: false
+					stage: "blood_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Blood School"
+			x: 9.4d
+			y: -0.7d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r additional nether loot, blazing fortress loot, burnt chest and 15 more &8(11% a chest)"
+				"&bOpens:&r 34 entries"
+				"&dNeeds:&r The Arcane Codex"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "irons_spellbooks:fire_rune"
+			id: "58445EF9A8FB338D"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "5969B3C00B47BCB7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The first thing anyone learned to aim."
+			tasks: [
+				{
+					id: "7CBF52BB5EF27B66"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "fire_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "44B6B5FD151AC814"
+					individual: true
+					negate: false
+					stage: "fire_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Fire School"
+			x: 9.2d
+			y: 2.1d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r campsite, crypt chest loot, jungle temple and 3 more &8(25% a chest)"
+				"&bOpens:&r 25 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "culturaldelights:corn_cob"
+			id: "7D4AC2ED837E26B4"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "03727D0F9411E1F0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "One crop, and the civilisation it carried."
+			tasks: [
+				{
+					id: "37B6EF416EE20369"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "maize_codex"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "38DA274EB3466A54"
+					individual: true
+					negate: false
+					stage: "maize_codex"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Maize Codex"
+			x: 8.2d
+			y: 4.7d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Cipher work: the method survives and the reasoning does not."
+				""
+				"&6Found in:&r catacombs additions, coffin loot, crypt loot and 3 more &8(11% a chest)"
+				"&bOpens:&r 31 entries"
+				"&dNeeds:&r any one of 10 other scrolls; one of The Wanderer's Pack, Banner Heraldry, The Long Road"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "irons_spellbooks:eldritch_manuscript"
+			id: "2CE42D431B89DFFF"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "06A269569EE6AAEA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Cipher work. Read carefully."
+			tasks: [
+				{
+					id: "60104990CB19BCA8"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "eldritch_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "190FDF423172BEA0"
+					individual: true
+					negate: false
+					stage: "eldritch_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Eldritch School"
+			x: 6.4d
+			y: 6.9d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r campsite, citadel bookshelf, citadel tomes and 14 more &8(11% a chest)"
+				"&bOpens:&r 20 entries"
+				"&dNeeds:&r The Arcane Codex"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "irons_spellbooks:holy_rune"
+			id: "0A24F95C63E54493"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "315EE8FCB0A3906A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Asking, from a pantheon that is sealed."
+			tasks: [
+				{
+					id: "64D6D1139ABFF23A"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "holy_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7EE13084B3CF7BC7"
+					individual: true
+					negate: false
+					stage: "holy_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Holy School"
+			x: 4.1d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r basement, captain quarters, cask and 5 more &8(11% a chest)"
+				"&bOpens:&r 20 entries"
+				"&dNeeds:&r The Arcane Codex"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "irons_spellbooks:ice_rune"
+			id: "7DB0F08C1F04A735"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "051D23EACF5449B5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Hoarfrost doctrine, taught as a weapon."
+			tasks: [
+				{
+					id: "310872D67E17455F"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "ice_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1AD881662C9E1410"
+					individual: true
+					negate: false
+					stage: "ice_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Ice School"
+			x: 1.4d
+			y: 9.3d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r evoker fort, guard tower, mansion common and 3 more &8(11% a chest)"
+				"&bOpens:&r 14 entries"
+				"&dNeeds:&r The Arcane Codex"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "irons_spellbooks:evocation_rune"
+			id: "53D0840229ABCA8B"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0A940C1C775726CA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Calling it, and hoping it is listening."
+			tasks: [
+				{
+					id: "76C707A4BCB7A5B1"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "evocation_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7F07CDEDC19A66F2"
+					individual: true
+					negate: false
+					stage: "evocation_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Evocation School"
+			x: -1.4d
+			y: 9.3d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r aqua mage basic storage, aqua mage treasure storage, burnt chest and 11 more &8(11% a chest)"
+				"&bOpens:&r 14 entries"
+				"&dNeeds:&r The Arcane Codex"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "irons_spellbooks:lightning_rune"
+			id: "268A7ABEDB323979"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0B99A458BF32E7E9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The sky, briefly on your side."
+			tasks: [
+				{
+					id: "434AC2FA65DC8FD6"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "lightning_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "31CA3BC907EC3641"
+					individual: true
+					negate: false
+					stage: "lightning_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Lightning School"
+			x: -4.1d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure, frosted prison treasure, home and 2 more &8(10% a chest)"
+				"&bOpens:&r 14 entries"
+				"&dNeeds:&r The Arcane Codex"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "irons_spellbooks:ender_rune"
+			id: "70FC3924B5861EF0"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "00000F462FEBF985"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The other side of the door."
+			tasks: [
+				{
+					id: "67E4BF87784BC91A"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "ender_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7AC1293FE5840E04"
+					individual: true
+					negate: false
+					stage: "ender_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Ender School"
+			x: -6.4d
+			y: 6.9d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r hidden potion storage, mangrove hut, potion ingredient storage &8(11% a chest)"
+				"&bOpens:&r 13 entries"
+				"&dNeeds:&r The Arcane Codex"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "irons_spellbooks:nature_rune"
+			id: "3CA69E22B00B1559"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "788536E4ED094A96"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "It was here first and it is patient."
+			tasks: [
+				{
+					id: "75F042A775FE7933"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "nature_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "2199F4748C2D4867"
+					individual: true
+					negate: false
+					stage: "nature_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Nature School"
+			x: -8.2d
+			y: 4.7d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r buried treasure, shipwreck treasure, underwater ruin big and 1 more &8(11% a chest)"
+				"&bOpens:&r 9 entries"
+				"&dNeeds:&r The Arcane Codex"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "cataclysm_spellbooks:abyssal_rune"
+			id: "3965E1C8A8736D0C"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "02ECF42DC702D9A0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Where the light stopped being useful."
+			tasks: [
+				{
+					id: "36D0045204A2C08A"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "abyssal_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7243D97C60D0AEF7"
+					individual: true
+					negate: false
+					stage: "abyssal_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Abyssal School"
+			x: -9.2d
+			y: 2.1d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r arrows, flame bow, gigantism and 5 more &8(17% a chest)"
+				"&bOpens:&r 21 entries"
+				"&dNeeds:&r one of Archaeology Mastery, The Codex of Kukulkan, The End Passage, The Chorus Hearth"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "dungeonnowloading:skull_of_chaos"
+			id: "14A6D6660CE3C7FD"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "5F8839A3CAE08DBC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Down, and how to come back up."
+			tasks: [
+				{
+					id: "1485BB7BF42F63B3"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "delvers_grimoire"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "6D3C2DBC098F15ED"
+					individual: true
+					negate: false
+					stage: "delvers_grimoire"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Delver's Grimoire"
+			x: -9.4d
+			y: -0.7d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure additions, additional treasure loot, bastion treasure and 5 more &8(7% a chest)"
+				"&bOpens:&r 7 entries and 1 whole body of work"
+				"&dNeeds:&r one of Archaeology Mastery, The Codex of Kukulkan, The End Passage, The Chorus Hearth"
+				"&aPedestal:&r Tier III, about 18 minutes"
+			]
+			icon: "as_you_wish:magic_lamp"
+			id: "1F940A26F6CE50EE"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "58AACB66FAE3D699"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Honoured exactly as worded."
+			tasks: [
+				{
+					id: "6312FAFDD51BC582"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "lamp_of_wishes"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "74F4F98F80B0060C"
+					individual: true
+					negate: false
+					stage: "lamp_of_wishes"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Lamp of Wishes"
+			x: -8.8d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft, jungle temple, stronghold corridor and 1 more &8(11% a chest)"
+				"&bOpens:&r 5 entries"
+				"&dNeeds:&r The Arcane Codex"
+				"&aPedestal:&r Tier II, about 9 minutes"
+			]
+			icon: "cataclysm_spellbooks:technomancy_rune"
+			id: "6280AA09B07A34A2"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "1F338612519FE06B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The Forgesworn heresy: build the miracle."
+			tasks: [
+				{
+					id: "39A624183F52C9C0"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "technomancy_school"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "66A452A49F209A98"
+					individual: true
+					negate: false
+					stage: "technomancy_school"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Technomancy School"
+			x: -7.4d
+			y: -5.9d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Cipher work: the method survives and the reasoning does not."
+				""
+				"&6Found in:&r grand library, library, stronghold library &8(17% a chest)"
+				"&bOpens:&r 3 entries"
+				"&dNeeds:&r The Master Forge; one of The Wanderer's Pack, Banner Heraldry, The Blood School, The Eldritch School, The Long Road"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "simplyswords:runic_tablet"
+			id: "788FA652CDE48CC1"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "2F8998DAF95D1FBE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Cipher work. Marks that still do something."
+			tasks: [
+				{
+					id: "40FC0EA6C4154BCA"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "runesmithing"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3B2C7E59A08CD165"
+					individual: true
+					negate: false
+					stage: "runesmithing"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Runesmithing"
+			x: -5.3d
+			y: -7.8d
+		}
+		{
+			dependencies: ["43023103687DEC5D"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft, caveman house, frosted prison treasure and 4 more &8(15% a chest)"
+				"&bOpens:&r 2 entries"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 6 minutes"
+			]
+			icon: "historystages:research_scroll"
+			id: "5A2C640FF38D4272"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "2EF9CD19FE6E0A13"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "How the archive got written at all."
+			tasks: [
+				{
+					id: "4398A0007C65F3A4"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "civ_scrollwright"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7E9A89F0B816DE09"
+					individual: true
+					negate: false
+					stage: "civ_scrollwright"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Scrollwright Tradition"
+			x: -2.8d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3965E1C8A8736D0C"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "traveloptics:tome_of_abyssal_flora"
+			id: "67857673FD46891C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "57C84B3457CA354E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the deep."
+			tasks: [
+				{
+					id: "6EE6D95DF7BDBC4D"
+					item: "traveloptics:tome_of_abyssal_flora"
+					title: "Shellbound"
+					type: "item"
+				}
+				{
+					id: "1A81ADE6BF46333D"
+					item: "traveloptics:abyssal_tidecaller_level_two"
+					title: "Abyssal Tidecaller"
+					type: "item"
+				}
+				{
+					id: "18035E978635FAA5"
+					item: "cataclysm_spellbooks:coral_staff"
+					title: "Coral Staff"
+					type: "item"
+				}
+			]
+			title: "Practising , The Abyssal School"
+			x: -12.6d
+			y: 2.9d
+		}
+		{
+			dependencies: ["7978BA3F5A81E29D"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "traveloptics:celestial_spellweave_ingot"
+			id: "486EFF913A6AC9D4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "22638698B834967A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the circle."
+			tasks: [
+				{
+					id: "3868AC7B6CE0C5FF"
+					item: "traveloptics:celestial_spellweave_ingot"
+					title: "Celestial Spellweave Ingot"
+					type: "item"
+				}
+				{
+					id: "374FEC0569368F24"
+					item: "irons_spellbooks:alchemist_cauldron"
+					title: "Alchemist Cauldron"
+					type: "item"
+				}
+				{
+					id: "47C932B295C2944B"
+					item: "traveloptics:chronicles_of_the_firelord"
+					title: "Chronicles Of The Firelord"
+					type: "item"
+				}
+			]
+			title: "Practising , The Arcane Codex"
+			x: 7.3d
+			y: -10.7d
+		}
+		{
+			dependencies: ["103521F537049E34"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "immersive_weathering:deepslate_brick"
+			id: "7E2C66C1F68FD6E6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2F5CB4D9B092FAE3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in what stands."
+			tasks: [
+				{
+					id: "794340C86122B4C5"
+					item: "immersive_weathering:deepslate_brick"
+					title: "Deepslate Brick"
+					type: "item"
+				}
+				{
+					id: "0187578B8B4AC230"
+					item: "luminousworld:ishslab"
+					title: "Ish Brick Slab"
+					type: "item"
+				}
+				{
+					id: "7ECE9F4C7F50FC04"
+					item: "luminousworld:ishwall"
+					title: "Ish Brick Wall"
+					type: "item"
+				}
+			]
+			title: "Practising , The Architect's Codex"
+			x: 3.8d
+			y: -12.4d
+		}
+		{
+			dependencies: ["6DD2217495D74CF6"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "dungeons_and_combat:fractured_soul"
+			id: "49EFE6E14A46807B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "30229856B6A971E1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it, and pay for it."
+			tasks: [
+				{
+					id: "600B2DF6BC96909E"
+					item: "dungeons_and_combat:fractured_soul"
+					title: "Fractured Soul"
+					type: "item"
+				}
+				{
+					id: "3F446F4909BC1C30"
+					item: "dungeons_and_combat:ritual_bone"
+					title: "Ritual Bone"
+					type: "item"
+				}
+				{
+					id: "78CCCED6C6CE7DD0"
+					item: "lifesteal:revive_crystal"
+					title: "Revive Crystal"
+					type: "item"
+				}
+			]
+			title: "Practising , The Blood School"
+			x: 12.9d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7468BAC129F90A7D"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "cataclysm:chain_of_soul_binding"
+			id: "6B5B4FB6F1D781DD"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5444370BCD5A57A6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove you read how they ended."
+			tasks: [
+				{
+					id: "645D02FCFEEFD349"
+					item: "cataclysm:chain_of_soul_binding"
+					title: "Chain of Soul Binding"
+					type: "item"
+				}
+				{
+					id: "724B9E4979CA09B1"
+					item: "cataclysm:enderite_ingot"
+					title: "Enderite Ingot"
+					type: "item"
+				}
+				{
+					id: "0036E3AD7C1CBD2E"
+					item: "cataclysm:cursed_eye"
+					title: "Eye of Curse"
+					type: "item"
+				}
+			]
+			title: "Practising , Chronicle of the World-Enders"
+			x: 12.1d
+			y: -4.7d
+		}
+		{
+			dependencies: ["14A6D6660CE3C7FD"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "dungeonnowloading:soul_silk"
+			id: "238222BB8E3B0318"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "57504EFE9766E607"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it underground."
+			tasks: [
+				{
+					id: "680BC4E25F680BEE"
+					item: "dungeonnowloading:soul_silk"
+					title: "Soul Silk"
+					type: "item"
+				}
+				{
+					id: "40D99B5B3D1E881A"
+					item: {
+						Count: 1
+						id: "dungeonnowloading:dueling_stone_emblem"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Scepter of Sealed Chaos"
+					type: "item"
+				}
+				{
+					id: "34295D4DBFD7A4D8"
+					item: {
+						Count: 1
+						id: "dungeonnowloading:puzzling_stone_emblem"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Scorcher"
+					type: "item"
+				}
+			]
+			title: "Practising , The Delver's Grimoire"
+			x: -12.9d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2CE42D431B89DFFF"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "irons_spellbooks:ancient_knowledge_fragment"
+			id: "3FB3C1C6F1271165"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6B945727F76ED839"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it, and stay yourself."
+			tasks: [
+				{
+					id: "50B92CED9F3C1D50"
+					item: "irons_spellbooks:ancient_knowledge_fragment"
+					title: "Ancient Knowledge Fragment"
+					type: "item"
+				}
+				{
+					id: "756E88D7E848C51D"
+					item: "cataclysm_spellbooks:mechanical_weapon_parts"
+					title: "Mechanical Weapon Parts"
+					type: "item"
+				}
+				{
+					id: "7A7F9E838E29C6DF"
+					item: "irons_spellbooks:eldritch_manuscript"
+					title: "Eldritch Manuscript"
+					type: "item"
+				}
+			]
+			title: "Practising , The Eldritch School"
+			x: 8.8d
+			y: 9.5d
+		}
+		{
+			dependencies: ["70FC3924B5861EF0"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "endermanoverhaul:summoner_pearl"
+			id: "4156CE0430AC00FA"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "421DF3AA7506D890"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on the far side."
+			tasks: [
+				{
+					id: "5AB2CE5989DA5669"
+					item: "endermanoverhaul:summoner_pearl"
+					title: "Summoner Pearl"
+					type: "item"
+				}
+				{
+					id: "6151D83B3C8FCC27"
+					item: "traveloptics:spectral_spell_slot_upgrade"
+					title: "Spectral Spell Slot Improvement"
+					type: "item"
+				}
+				{
+					id: "7AB029374C2894B4"
+					item: "endermanoverhaul:soul_pearl"
+					title: "Soul Pearl"
+					type: "item"
+				}
+			]
+			title: "Practising , The Ender School"
+			x: -8.8d
+			y: 9.5d
+		}
+		{
+			dependencies: ["53D0840229ABCA8B"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "irons_spellbooks:artificer_cane"
+			id: "323026B3FBDCA4D7"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "799C1670B7036DD8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it by calling."
+			tasks: [
+				{
+					id: "3B9F3E63E5DAFA89"
+					item: "irons_spellbooks:artificer_cane"
+					title: "Artificer's Cane"
+					type: "item"
+				}
+				{
+					id: "6FC044093756BAE8"
+					item: "irons_spellbooks:graybeard_staff"
+					title: "Graybeard Staff"
+					type: "item"
+				}
+				{
+					id: "110E62A56089928B"
+					item: "irons_spellbooks:evocation_rune"
+					title: "Evocation Rune"
+					type: "item"
+				}
+			]
+			title: "Practising , The Evocation School"
+			x: -1.9d
+			y: 12.8d
+		}
+		{
+			dependencies: ["58445EF9A8FB338D"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "irons_spellbooks:cinderous_soulcaller"
+			id: "6FD4A430D0B3BDBE"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5B474CCE96F4001D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in flame."
+			tasks: [
+				{
+					id: "6CFF9E0B2413B261"
+					item: "irons_spellbooks:cinderous_soulcaller"
+					title: "Cinderous Soulcaller"
+					type: "item"
+				}
+				{
+					id: "411E499DAE443A84"
+					item: "irons_spellbooks:hellrazor"
+					title: "Hellrazor"
+					type: "item"
+				}
+				{
+					id: "4F45EE145CA21532"
+					item: "irons_spellbooks:fire_upgrade_orb"
+					title: "Fire Upgrade Orb"
+					type: "item"
+				}
+			]
+			title: "Practising , The Fire School"
+			x: 12.6d
+			y: 2.9d
+		}
+		{
+			dependencies: ["6407B910D036EF9A"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "delightful:prickly_pear_juice"
+			id: "1FA70C0C9D61D008"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6ADB108B9ACF9AB4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in season."
+			tasks: [
+				{
+					id: "6BF96FED98F260C2"
+					item: "delightful:prickly_pear_juice"
+					title: "Prickly Pear Juice"
+					type: "item"
+				}
+				{
+					id: "278CD2E1F77D09EE"
+					item: "foragersinsight:glazed_porkchop_and_acorn_grits"
+					title: "Glazed Porkchop and Acorn Grits"
+					type: "item"
+				}
+				{
+					id: "361D35D98B4D32BB"
+					item: "foragersinsight:blewit_mushroom"
+					title: "Blewit Mushroom"
+					type: "item"
+				}
+			]
+			title: "Practising , The Forager's Almanac"
+			x: 10.1d
+			y: -8.1d
+		}
+		{
+			dependencies: ["0A24F95C63E54493"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "call_of_yucutan:wand_of_radiance"
+			id: "2A5310DF01C54014"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5CEA9517149E1D8B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it by asking."
+			tasks: [
+				{
+					id: "54348DE1E5D6D81D"
+					item: "call_of_yucutan:wand_of_radiance"
+					title: "Wand Of Radiance"
+					type: "item"
+				}
+				{
+					id: "25381A3E03DEA69C"
+					item: "traveloptics:holy_echo"
+					title: "Holy Echo"
+					type: "item"
+				}
+				{
+					id: "789F359946F13A61"
+					item: "irons_spellbooks:divine_pearl"
+					title: "Divine Pearl"
+					type: "item"
+				}
+			]
+			title: "Practising , The Holy School"
+			x: 5.6d
+			y: 11.7d
+		}
+		{
+			dependencies: ["7DB0F08C1F04A735"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:frosted_helve"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4E12C4495955714D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "70AF841EA58DFF29"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the cold."
+			tasks: [
+				{
+					id: "00B34AB4F9E8CC25"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:frosted_helve"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Boreal Blade"
+					type: "item"
+				}
+				{
+					id: "4ED444B8BC3C5D7B"
+					item: "irons_spellbooks:icy_fang"
+					title: "Icy Fang"
+					type: "item"
+				}
+				{
+					id: "3150DE464F8A3DCF"
+					item: "irons_spellbooks:ice_staff"
+					title: "Ice Staff"
+					type: "item"
+				}
+			]
+			title: "Practising , The Ice School"
+			x: 1.9d
+			y: 12.8d
+		}
+		{
+			dependencies: ["1F940A26F6CE50EE"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "as_you_wish:fast_lamp"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "607AC5D77014BBB9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5CDBF17C2C5846F3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the wording."
+			tasks: [
+				{
+					id: "5793D5951455B820"
+					item: {
+						Count: 1
+						id: "as_you_wish:fast_lamp"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Fast Lamp"
+					type: "item"
+				}
+				{
+					id: "2C8962AD026E995E"
+					item: {
+						Count: 1
+						id: "as_you_wish:excalibur"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Excalibur"
+					type: "item"
+				}
+				{
+					id: "121EB5D7F41A83D6"
+					item: {
+						Count: 1
+						id: "as_you_wish:magic_lamp"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Magic Lamp"
+					type: "item"
+				}
+			]
+			title: "Practising , The Lamp of Wishes"
+			x: -12.1d
+			y: -4.7d
+		}
+		{
+			dependencies: ["268A7ABEDB323979"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "create_wizardry:channeler"
+			id: "710BF2A9FBC7E156"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0298F770F3BCFEB5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the storm."
+			tasks: [
+				{
+					id: "60F06305C73658FA"
+					item: "create_wizardry:channeler"
+					title: "Channeler"
+					type: "item"
+				}
+				{
+					id: "38A7A05780CEF847"
+					item: "irons_spellbooks:energized_core"
+					title: "Energized Core"
+					type: "item"
+				}
+				{
+					id: "7A6D417F2DF8724B"
+					item: {
+						Count: 1
+						id: "traveloptics:lightning_echo"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Engineer's Suit"
+					type: "item"
+				}
+			]
+			title: "Practising , The Lightning School"
+			x: -5.6d
+			y: 11.7d
+		}
+		{
+			dependencies: ["7D4AC2ED837E26B4"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "culturaldelights:chicken_taco"
+			id: "3FFF8DDFE9FD694B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2066FDDF8D398AB5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it at harvest."
+			tasks: [
+				{
+					id: "2DAB3161B45D795C"
+					item: "culturaldelights:chicken_taco"
+					title: "Chicken Taco"
+					type: "item"
+				}
+				{
+					id: "21F1D1C0379ABC47"
+					item: "culturaldelights:corn_dough"
+					title: "Corn Dough"
+					type: "item"
+				}
+				{
+					id: "0E2FC371FEA64BF1"
+					item: "culturaldelights:tortilla"
+					title: "Tortilla"
+					type: "item"
+				}
+			]
+			title: "Practising , The Maize Codex"
+			x: 11.2d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3CA69E22B00B1559"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "irons_spellbooks:dragonskin"
+			id: "00350FEFB7F66F4E"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "76BEE35896B5FA38"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it by growing it."
+			tasks: [
+				{
+					id: "74BDD4D03EE966A3"
+					item: "irons_spellbooks:dragonskin"
+					title: "Dragonskin"
+					type: "item"
+				}
+				{
+					id: "2D80853AB0736CE4"
+					item: "irons_spellbooks:hogskin"
+					title: "Hogskin"
+					type: "item"
+				}
+				{
+					id: "4594E7652612810C"
+					item: {
+						Count: 1
+						id: "desert:dry_wand"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "§eDry Wand"
+					type: "item"
+				}
+			]
+			title: "Practising , The Nature School"
+			x: -11.2d
+			y: 6.5d
+		}
+		{
+			dependencies: ["69C3E97F2DCACA59"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "mowziesmobs:painted_acacia"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1BBDC86F5EF9B418"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "17786F76760DC1AE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it by still being here."
+			tasks: [
+				{
+					id: "639934BAFA0BD26D"
+					item: {
+						Count: 1
+						id: "mowziesmobs:painted_acacia"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Geomancer Belt"
+					type: "item"
+				}
+				{
+					id: "636A3D3764766703"
+					item: "ramadandelight:palm_wood"
+					title: "Date Palm Wood"
+					type: "item"
+				}
+				{
+					id: "1ED5EAB334BC48DE"
+					item: {
+						Count: 1
+						id: "would:fir_wood"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Ice Crystal"
+					type: "item"
+				}
+			]
+			title: "Practising , Survivor Codex"
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["6280AA09B07A34A2"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Two pieces of work from this discipline. Any two would do; these are the two"
+				"the archive happens to name."
+			]
+			icon: "cataclysm_spellbooks:technomancy_rune"
+			id: "3B4795606E29DFDF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "545A1E3985DDCD80"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it by building it."
+			tasks: [
+				{
+					id: "6717EA89A955C8FF"
+					item: "cataclysm_spellbooks:technomancy_rune"
+					title: "Technomancy Rune"
+					type: "item"
+				}
+				{
+					id: "2587F5122F39A70E"
+					item: "cataclysm_spellbooks:technomancy_upgrade_orb"
+					title: "Technomancy Upgrade Orb"
+					type: "item"
+				}
+			]
+			title: "Practising , The Technomancy School"
+			x: -10.1d
+			y: -8.1d
+		}
+	]
+	subtitle: ["Taught as subjects, with terms, exams and dead students."]
+	title: "The Schools"
+}

@@ -1,0 +1,29 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "#minecraft:non_treasure",
+   "required": false
+  },
+  {
+   "id": "minecraft:binding_curse",
+   "required": false
+  },
+  {
+   "id": "minecraft:vanishing_curse",
+   "required": false
+  },
+  {
+   "id": "minecraft:frost_walker",
+   "required": false
+  },
+  {
+   "id": "create_ltab:enchantment_luck",
+   "required": false
+  },
+  {
+   "id": "minecraft:mending",
+   "required": false
+  }
+ ]
+}

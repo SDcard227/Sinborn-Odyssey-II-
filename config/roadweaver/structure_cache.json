@@ -461,462 +461,6 @@
       ]
     },
     {
-      "id": "ati_structures:ancient_temple",
-      "displayName": "Ancient Temple",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:ancient_vessel",
-      "displayName": "Ancient Vessel",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:arachnid_dwelling",
-      "displayName": "Arachnid Dwelling",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:ati_stoneworks",
-      "displayName": "Ati Stoneworks",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:castillo",
-      "displayName": "Castillo",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:catalonian_castle",
-      "displayName": "Catalonian Castle",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:dark_keep",
-      "displayName": "Dark Keep",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:dark_tower",
-      "displayName": "Dark Tower",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:deepslate_keep",
-      "displayName": "Deepslate Keep",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:desert_outpost",
-      "displayName": "Desert Outpost",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:dojo",
-      "displayName": "Dojo",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:fortified_temple",
-      "displayName": "Fortified Temple",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:gnome_hut",
-      "displayName": "Gnome Hut",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:granite_fort",
-      "displayName": "Granite Fort",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:haunted_ruin",
-      "displayName": "Haunted Ruin",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:herobrine_stronghold",
-      "displayName": "Herobrine Stronghold",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:ice_tribe",
-      "displayName": "Ice Tribe",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:illager_homestead",
-      "displayName": "Illager Homestead",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:illager_tower",
-      "displayName": "Illager Tower",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:jungle_grotto",
-      "displayName": "Jungle Grotto",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:jungle_settlement",
-      "displayName": "Jungle Settlement",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:lighthouse",
-      "displayName": "Lighthouse",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:manor",
-      "displayName": "Manor",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:marble_chateau",
-      "displayName": "Marble Chateau",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:monastery_tower",
-      "displayName": "Monastery Tower",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:mosque",
-      "displayName": "Mosque",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:mud_tower",
-      "displayName": "Mud Tower",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:nomadic_camp",
-      "displayName": "Nomadic Camp",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:old_fort",
-      "displayName": "Old Fort",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:old_home",
-      "displayName": "Old Home",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:old_residence",
-      "displayName": "Old Residence",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:overgrown_outpost",
-      "displayName": "Overgrown Outpost",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:pufferfish_cave",
-      "displayName": "Pufferfish Cave",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:quarry",
-      "displayName": "Quarry",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:rotten_log",
-      "displayName": "Rotten Log",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:rotting_temple",
-      "displayName": "Rotting Temple",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:rotting_temple_underground",
-      "displayName": "Rotting Temple Underground",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:ruined_castle",
-      "displayName": "Ruined Castle",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:sculk_deposit",
-      "displayName": "Sculk Deposit",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:silverfish_nest",
-      "displayName": "Silverfish Nest",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:sinking_temple",
-      "displayName": "Sinking Temple",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:small_keep",
-      "displayName": "Small Keep",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:spider_nest",
-      "displayName": "Spider Nest",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:steam_house",
-      "displayName": "Steam House",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:storage_house",
-      "displayName": "Storage House",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:storage_shack",
-      "displayName": "Storage Shack",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:stray_ruins",
-      "displayName": "Stray Ruins",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:tavern",
-      "displayName": "Tavern",
-      "isVanilla": false,
-      "dimensions": [
-        "true_end:nightmare_within_a_dream",
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:underground_monument",
-      "displayName": "Underground Monument",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:underwater_dungeon",
-      "displayName": "Underwater Dungeon",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:villager_inn",
-      "displayName": "Villager Inn",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:warden_monument",
-      "displayName": "Warden Monument",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:wither_cavern",
-      "displayName": "Wither Cavern",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:wither_keep",
-      "displayName": "Wither Keep",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
-      "id": "ati_structures:woodland_keep",
-      "displayName": "Woodland Keep",
-      "isVanilla": false,
-      "dimensions": [
-        "minecraft:overworld"
-      ]
-    },
-    {
       "id": "beachparty:beach_hut",
       "displayName": "Beach Hut",
       "isVanilla": false,
@@ -1220,6 +764,14 @@
       ]
     },
     {
+      "id": "create_ltab:kings_castle",
+      "displayName": "Kings Castle",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
       "id": "create_ltab:mangrove_structures",
       "displayName": "Mangrove Structures",
       "isVanilla": false,
@@ -1322,8 +874,8 @@
       ]
     },
     {
-      "id": "create_ltab:the_caretakersbunker",
-      "displayName": "The Caretakersbunker",
+      "id": "create_ltab:the_bunker",
+      "displayName": "The Bunker",
       "isVanilla": false,
       "dimensions": [
         "true_end:nightmare_within_a_dream",
@@ -3361,6 +2913,78 @@
       ]
     },
     {
+      "id": "spawn:ant_mount",
+      "displayName": "Ant Mount",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "spawn:cold_island",
+      "displayName": "Cold Island",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "spawn:dodo_island",
+      "displayName": "Dodo Island",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "spawn:octopolis",
+      "displayName": "Octopolis",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "spawn:sandy_island",
+      "displayName": "Sandy Island",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "spawn:tide_pool",
+      "displayName": "Tide Pool",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "spawn:tropical_island",
+      "displayName": "Tropical Island",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "spawn:volcanic_island",
+      "displayName": "Volcanic Island",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
+      "id": "spider_overhaul:birch_spidernest",
+      "displayName": "Birch Spidernest",
+      "isVanilla": false,
+      "dimensions": [
+        "minecraft:overworld"
+      ]
+    },
+    {
       "id": "supplementaries:way_sign",
       "displayName": "Way Sign",
       "isVanilla": false,
@@ -4082,15 +3706,6 @@
       ]
     },
     {
-      "tagId": "create_ltab:big_structures_plains",
-      "displayName": "#Big Structures Plains",
-      "structureIds": [
-        "create_ltab:big_windmill",
-        "create_ltab:oak_house",
-        "create_ltab:railroad"
-      ]
-    },
-    {
       "tagId": "quark:birch_chest_structures",
       "displayName": "#Birch Chest Structures",
       "structureIds": [
@@ -4155,6 +3770,18 @@
       ]
     },
     {
+      "tagId": "create_ltab:core",
+      "displayName": "#Core",
+      "structureIds": [
+        "create_ltab:dungeon_desert",
+        "create_ltab:dungeon_jungle",
+        "create_ltab:dungeon_plains",
+        "create_ltab:dungeon_snow",
+        "create_ltab:grot",
+        "create_ltab:quarry"
+      ]
+    },
+    {
       "tagId": "traveloptics:cradle_of_will_destination",
       "displayName": "#Cradle Of Will Destination",
       "structureIds": [
@@ -4181,6 +3808,13 @@
       "structureIds": [
         "minecraft:mansion",
         "minecraft:pillager_outpost"
+      ]
+    },
+    {
+      "tagId": "spawn:dodo_island",
+      "displayName": "#Dodo Island",
+      "structureIds": [
+        "spawn:dodo_island"
       ]
     },
     {
@@ -4283,17 +3917,20 @@
       ]
     },
     {
-      "tagId": "create_ltab:grot",
-      "displayName": "#Grot",
-      "structureIds": [
-        "create_ltab:grot"
-      ]
-    },
-    {
       "tagId": "integrated_stronghold:integrated_stronghold",
       "displayName": "#Integrated Stronghold",
       "structureIds": [
         "integrated_stronghold:stronghold"
+      ]
+    },
+    {
+      "tagId": "spawn:is_island",
+      "displayName": "#Is Island",
+      "structureIds": [
+        "spawn:cold_island",
+        "spawn:dodo_island",
+        "spawn:sandy_island",
+        "spawn:tropical_island"
       ]
     },
     {
@@ -4302,6 +3939,13 @@
       "structureIds": [
         "minecraft:jungle_pyramid",
         "iceandfire:gorgon_temple"
+      ]
+    },
+    {
+      "tagId": "create_ltab:kings_castle",
+      "displayName": "#Kings Castle",
+      "structureIds": [
+        "create_ltab:kings_castle"
       ]
     },
     {
@@ -4451,6 +4095,16 @@
         "ctov:pillager_outpost_snowy",
         "ctov:pillager_outpost_swamp",
         "ctov:pillager_outpost_taiga"
+      ]
+    },
+    {
+      "tagId": "create_ltab:plains",
+      "displayName": "#Plains",
+      "structureIds": [
+        "create_ltab:big_windmill",
+        "create_ltab:oak_house",
+        "create_ltab:railroad",
+        "create_ltab:thecastle"
       ]
     },
     {

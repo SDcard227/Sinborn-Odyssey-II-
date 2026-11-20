@@ -1,6 +1,7 @@
 {
   "display_name": "The Reliquary: Relics, Trophies & Cultural Spoils",
-  "research_time": 18000,
+  "icon": "historystages:research_scroll",
+  "research_time": 1800,
   "items": [
     "alexsmobs:froststalker_horn",
     "alexsmobs:gazelle_horn",
@@ -8,11 +9,8 @@
     "aquamirae:anglers_fang",
     "aquamirae:shell_horn",
     "aquamirae:ship_graveyard_echo",
-    "cataclysm:aptrgangr_head",
-    "cataclysm:draugr_head",
     "cataclysm:essence_of_the_storm",
     "cataclysm:goddess_statue",
-    "cataclysm:kobolediator_skull",
     "cataclysm:modern_remnant_bucket",
     "cataclysm:monstrous_horn",
     "cataclysm:netherite_effigy",
@@ -20,24 +18,12 @@
     "cataclysm:remnant_skull",
     "cataclysm:the_baby_leviathan_bucket",
     "dungeons_and_combat:ammit_fang",
-    "dungeons_and_combat:avarice_mask_helmet",
     "dungeons_and_combat:ernos_fang",
     "dungeons_and_combat:essence_of_kamath",
-    "dungeons_and_combat:essence_of_sunleia",
     "dungeons_and_combat:mimic_eye",
     "dungeons_and_combat:skull_chest",
     "dungeons_and_combat:skull_head",
-    "dungeons_and_combat:solar_emblem",
-    "dungeons_and_combat:soleia",
-    "dungeons_and_combat:sunleia_hand",
-    "dungeons_and_combat:sunleia_light",
-    "dungeons_and_combat:sunleia_light_off",
     "dungeons_and_combat:totem_of_sacrifice",
-    "ice_and_fire_spellbooks:wooden_mask",
-    "lootr:crown",
-    "lootr:trophy",
-    "luminous_nether:furnace_trophy",
-    "luminous_nether:soul_furnace_trophy",
     "luminousworld:arid_yeti_trophy",
     "luminousworld:bone_stalker_trophy",
     "luminousworld:cherry_tree_ent_trophy",
@@ -48,7 +34,6 @@
     "luminousworld:golden_king_hermit_trophy",
     "luminousworld:king_crab_plaque",
     "luminousworld:mummy_trophy",
-    "luminousworld:pheonix_trophy",
     "luminousworld:rare_bone_stalker_trophy",
     "luminousworld:rare_witch_doctor_trophy",
     "luminousworld:red_mummy_trophy",
@@ -58,37 +43,16 @@
     "luminousworld:witch_doctor_trophy",
     "luminousworld:yeti_trophy",
     "minecraft:creeper_head",
-    "minecraft:creeper_wall_head",
     "minecraft:dragon_head",
-    "minecraft:dragon_wall_head",
     "minecraft:piglin_head",
-    "minecraft:piglin_wall_head",
     "minecraft:skeleton_skull",
-    "minecraft:skeleton_wall_skull",
     "minecraft:zombie_head",
-    "minecraft:zombie_wall_head",
     "mowziesmobs:elokosa_paw_crescent",
     "mowziesmobs:elokosa_paw_full",
     "mowziesmobs:elokosa_paw_gibbous",
     "mowziesmobs:elokosa_paw_half",
     "mowziesmobs:elokosa_paw_new",
-    "mowziesmobs:frostmaw_plushie",
     "mowziesmobs:sol_visage",
-    "mowziesmobs:sol_visage_frame",
-    "mowziesmobs:umvuthana_mask",
-    "mowziesmobs:umvuthana_mask_bliss",
-    "mowziesmobs:umvuthana_mask_bliss_frame",
-    "mowziesmobs:umvuthana_mask_faith",
-    "mowziesmobs:umvuthana_mask_faith_frame",
-    "mowziesmobs:umvuthana_mask_fear",
-    "mowziesmobs:umvuthana_mask_fear_frame",
-    "mowziesmobs:umvuthana_mask_frame",
-    "mowziesmobs:umvuthana_mask_fury",
-    "mowziesmobs:umvuthana_mask_fury_frame",
-    "mowziesmobs:umvuthana_mask_misery",
-    "mowziesmobs:umvuthana_mask_misery_frame",
-    "mowziesmobs:umvuthana_mask_rage",
-    "mowziesmobs:umvuthana_mask_rage_frame",
     "mythsandlegends:fire_heart",
     "mythsandlegends:frozen_heart",
     "mythsandlegends:gargoyle_arm",
@@ -103,7 +67,14 @@
     "mythsandlegends:umbras_whisper",
     "traveloptics:aqua_echo",
     "traveloptics:eldritch_echo",
-    "traveloptics:ethereal_echo"
+    "lootr:trophy",
+    "cataclysm:sandstorm_in_a_bottle",
+    "mowziesmobs:captured_grottol",
+    "mowziesmobs:grant_suns_blessing",
+    "mowziesmobs:ice_crystal",
+    "luminousworld:phoenix_feather",
+    "luminousworld:phoenix_fire_ball",
+    "luminousworld:phoenix_trophy"
   ],
   "tags": [],
   "mods": [],
@@ -114,5 +85,119 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "cataclysm_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dragonslayer_codex",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "atomic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ballistics_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "command_ruin",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dragon_husbandry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "electrical_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_synthesis",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_green_genie",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_nightwarden",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_pontiff",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_scarlet_king",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_sunleia",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_warborn",
+          "mode": "player"
+        },
+        {
+          "stage_id": "path_to_divinity",
+          "mode": "player"
+        },
+        {
+          "stage_id": "specialist_suits",
+          "mode": "player"
+        },
+        {
+          "stage_id": "teleportation_arts",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 35,
+        "consume": true
+      }
+    }
+  ],
+  "hidden_display": {
+    "name_mode": "replace",
+    "name_text": "Sealed Relic",
+    "tooltip_mode": "replace",
+    "tooltip_text": "Its nature is sealed.\nLearn the scroll: The Reliquary: Relics, Trophies & Cultural Spoils",
+    "show_lock_hints": false
+  },
+  "min_pedestal_tier": 4,
+  "pedestal_tier_mode": "min"
 }

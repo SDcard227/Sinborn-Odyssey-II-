@@ -1,0 +1,54 @@
+{
+  "display_name": "On the God the Convent Never Saw",
+  "icon": "minecraft:nether_star",
+  "research_time": 1110,
+  "items": [
+    "companions:holy_porcelain_pottery"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": true,
+      "attack": true,
+      "equip": true,
+      "pickup": false,
+      "place": true,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "path_to_divinity",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "hidden_display": {
+    "name_mode": "replace",
+    "name_text": "Sealed Relic",
+    "tooltip_mode": "replace",
+    "tooltip_text": "Its nature is sealed.\nLearn the scroll: On the God the Convent Never Saw",
+    "show_lock_hints": false
+  },
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min"
+}

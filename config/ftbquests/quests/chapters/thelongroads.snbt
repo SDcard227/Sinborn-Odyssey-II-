@@ -1,0 +1,2632 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thelongroads"
+	group: "5A0000000000005E"
+	icon: "minecraft:compass"
+	id: "18A5C890BEC66B09"
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"The Vessels are what you do when the dragon is dead. These are what you do instead."
+				""
+				"Every one of these roads was walked by somebody in one of the nine civilisations,"
+				"and every one of them is the reason that civilisation is a ruin you can visit."
+				""
+				"The archive does not rank them. It only notes that nobody has ever walked two."
+			]
+			icon: "minecraft:compass"
+			id: "0660D0D2C445B393"
+			shape: "octagon"
+			size: 1.8d
+			subtitle: "Six ways to spend a life."
+			tasks: [{
+				id: "614EB7C1E538836B"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Long Roads"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0660D0D2C445B393"]
+			description: [
+				"Every road on the previous pages was written down by somebody who thought"
+				"it was worth writing down."
+				""
+				"These three were not. They are here because somebody went looking through"
+				"what nobody had catalogued, which is , the Convent would point out , exactly"
+				"how all the other roads were found in the first place."
+			]
+			icon: "cuffed:poster"
+			id: "079287A633FE63EA"
+			shape: "octagon"
+			size: 1.8d
+			subtitle: "Four the archive forgot to file."
+			tasks: [{
+				id: "60682BCFE5C2458E"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Odd Roads"
+			x: 0.0d
+			y: 52.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: "cuffed:padlock"
+			id: "554A4FDF5CD37812"
+			rewards: [{
+				count: 24
+				id: "40B8F1BC6EA007CE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Standing between, on purpose."
+			tasks: [{
+				id: "3B6059BA3C4857CB"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE WARDEN"
+			x: -15.0d
+			y: 56.0d
+		}
+		{
+			dependencies: ["554A4FDF5CD37812"]
+			description: [
+				"A lock is a promise about the future made out of iron."
+				""
+				"The Convent classed locksmithing under ethics rather than metalwork,"
+				"which every apprentice found funny and every master did not."
+			]
+			icon: "cuffed:padlock"
+			id: "3201DC3839A46303"
+			rewards: [{
+				count: 16
+				id: "0C42C28FF7EA752B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Locking is a craft."
+			tasks: [
+				{
+					id: "1061A5C2E7E6C028"
+					item: "cuffed:padlock"
+					type: "item"
+				}
+				{
+					id: "1763A8B6B3D2AFF4"
+					item: "cuffed:key"
+					type: "item"
+				}
+				{
+					id: "3A17A76F4F70FB4A"
+					item: "cuffed:key_ring"
+					type: "item"
+				}
+			]
+			title: "The Padlock and the Key"
+			x: -15.0d
+			y: 60.0d
+		}
+		{
+			dependencies: ["3201DC3839A46303"]
+			description: [
+				"Handcuffs, shackles, and the leg irons that stop somebody walking away."
+				""
+				"The archive is careful here. It records the tools and does not record"
+				"a single instance of anybody agreeing they were necessary."
+			]
+			icon: {
+				Count: 1
+				id: "cuffed:handcuffs"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "138295FE0224344D"
+			rewards: [{
+				count: 28
+				id: "7C614A0FF155952C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "For people, now."
+			tasks: [
+				{
+					id: "066267DE0E759548"
+					item: {
+						Count: 1
+						id: "cuffed:handcuffs"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "73DA50298F57C340"
+					item: {
+						Count: 1
+						id: "cuffed:shackles"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D17078B1430B656"
+					item: "cuffed:fuzzy_handcuffs"
+					type: "item"
+				}
+			]
+			title: "Restraints"
+			x: -15.0d
+			y: 64.0d
+		}
+		{
+			description: [
+				"Reinforced stone, a cell door, a bunk to set a spawn at, and a safe"
+				"for the things they came in with."
+				""
+				"A Box of Possessions is the most humane object in this list and the"
+				"one that says the most about what the rest are for."
+			]
+			icon: "cuffed:cell_door"
+			id: "77A9D781A6344AD8"
+			rewards: [{
+				count: 40
+				id: "19846ABC8AE3D282"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Somewhere to put them."
+			tasks: [
+				{
+					id: "7B404E49C5669A42"
+					item: "cuffed:cell_door"
+					type: "item"
+				}
+				{
+					id: "7FE651032FCD008F"
+					item: "cuffed:reinforced_stone"
+					type: "item"
+				}
+				{
+					id: "2E71CFA87D85FCDE"
+					item: "cuffed:bunk"
+					type: "item"
+				}
+				{
+					id: "6156A88EC4E9C180"
+					item: "cuffed:possessions_box"
+					type: "item"
+				}
+			]
+			title: "The Cell"
+			x: -15.0d
+			y: 68.0d
+		}
+		{
+			dependencies: ["77A9D781A6344AD8"]
+			description: [
+				"The pillory. The guillotine that sits above it. The prisoner tag."
+				""
+				"Nine civilisations sealed something and every one of them first practised"
+				"on each other. The Sealer's road is the cosmic version of this one,"
+				"and this one came first."
+				""
+				"The Guide does not tell you whether to do it. It tells you how to do it well,"
+				"which the archive notes is the more dangerous document."
+			]
+			icon: "cuffed:pillory"
+			id: "4F3CE78930766B44"
+			rewards: [
+				{
+					count: 64
+					id: "4D4E31AF85831165"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "333F3C77AC4B1B33"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "333F3C77AC4B1B3D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "The job, written down."
+			tasks: [
+				{
+					id: "70F92AB358A044F4"
+					item: "cuffed:pillory"
+					type: "item"
+				}
+				{
+					id: "7071C872A5EB5AFB"
+					item: "cuffed:guillotine"
+					type: "item"
+				}
+				{
+					id: "72813B619BBF34B1"
+					item: "cuffed:prisoner_tag"
+					type: "item"
+				}
+				{
+					id: "40336D8AA5BA2463"
+					item: "cuffed:poster"
+					type: "item"
+				}
+			]
+			title: "A Warden's Guide"
+			x: -15.0d
+			y: 72.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: "simplyswords:runic_tablet"
+			id: "24254EDE8412ED2F"
+			rewards: [{
+				count: 24
+				id: "459802AD63404576"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Waking what was left asleep."
+			tasks: [{
+				id: "5446BC1C672D219F"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE AWAKENER"
+			x: 0.0d
+			y: 56.0d
+		}
+		{
+			description: [
+				"Smith a remnant with a Runic Tablet or a netherite ingot and you get a gem"
+				"that fits a hole most people never notice their weapon has."
+			]
+			icon: "simplyswords:runic_tablet"
+			id: "5B8DFA2D8543D642"
+			rewards: [{
+				count: 16
+				id: "4EE55E5DF01EEF8C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "A socket, and nothing to put in it."
+			tasks: [
+				{
+					id: "4C37B06552E6150E"
+					item: "simplyswords:runic_tablet"
+					type: "item"
+				}
+				{
+					id: "628DA708AB4E8548"
+					item: "simplyswords:netherfused_gem"
+					type: "item"
+				}
+			]
+			title: "The Runic Tablet"
+			x: 0.0d
+			y: 60.0d
+		}
+		{
+			dependencies: ["5B8DFA2D8543D642"]
+			description: [
+				"\\"
+				"Its"
+				"form"
+				"appears"
+				"to"
+				"be"
+				"changing"
+				"when"
+				"in"
+				"close"
+				"proximity"
+				"to"
+				"you."
+				"\\"
+				"\\"
+				""
+				""
+				"The mod's own note is the best quest hint in this pack and nobody wrote it:"
+				"keep it in your inventory, alongside a Runic Tablet, while exploring the End."
+				""
+				"That is the entire instruction. The archive would have approved of the brevity."
+			]
+			icon: "simplyswords:contained_remnant"
+			id: "63C3ED43D13A00FD"
+			rewards: [{
+				count: 28
+				id: "5FBAF994F68E9E59"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "It changes near you."
+			tasks: [
+				{
+					id: "3DE54B928BDC91FA"
+					item: "simplyswords:contained_remnant"
+					type: "item"
+				}
+				{
+					id: "6D70D437CAA6A636"
+					item: "simplyswords:empowered_remnant"
+					type: "item"
+				}
+			]
+			title: "The Contained Remnant"
+			x: 0.0d
+			y: 64.0d
+		}
+		{
+			dependencies: ["63C3ED43D13A00FD"]
+			description: [
+				"A lichblade that has not decided about you yet. Soul sand wakes it."
+				"The relics work the same way , decaying, then dormant, then tainted"
+				"or righteous depending on what you fed it."
+			]
+			icon: {
+				Count: 1
+				id: "simplyswords:slumbering_lichblade"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0C5434EB49783D86"
+			rewards: [{
+				count: 40
+				id: "20AE8A11E1FABF1E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Not asleep. Waiting."
+			tasks: [
+				{
+					id: "0F809C084CF9E884"
+					item: {
+						Count: 1
+						id: "simplyswords:slumbering_lichblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6AF3DC675673D500"
+					item: {
+						Count: 1
+						id: "simplyswords:dormant_relic"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Slumbering Blade"
+			x: 0.0d
+			y: 68.0d
+		}
+		{
+			description: [
+				"Weapons in this world do not level. This one does, and the levelling is"
+				"not a number you spend , it is a record of what the blade has been present for."
+				""
+				"The Watcher, the Soulkeeper and the Stormbringer wake the same way."
+				"None of them were forged. All of them were persuaded."
+			]
+			icon: {
+				Count: 1
+				id: "simplyswords:awakened_lichblade"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "27E47A76223D441D"
+			rewards: [{
+				count: 52
+				id: "0F1E0B94EFC62A4C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Awakening LV: maximum."
+			tasks: [
+				{
+					id: "2BADE49A25982024"
+					item: {
+						Count: 1
+						id: "simplyswords:awakened_lichblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D5E992472FCBC65"
+					item: {
+						Count: 1
+						id: "simplyswords:watcher_claymore"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Awakened Lichblade"
+			x: 0.0d
+			y: 72.0d
+		}
+		{
+			dependencies: ["6B25CBCEDAC3B6CB"]
+			description: [
+				"A Ruptured Idol is a remnant with an energy in it that has not decided anything yet."
+				"A Runic Tablet on either side, and then the recipe forks , and the fork is a mirror:"
+				""
+				"  gold, an enchanted apple, water, diamond   ->  ASCENDED. Blessed."
+				"  blaze powder, lava, obsidian, an ender eye ->  TARNISHED. Accursed."
+				""
+				"⚠ Neither is a damage weapon. Both are maces with baseline damage and an aura:"
+				"the Ascended spreads holy water, regenerates you and cures what is wrong with you."
+				"The Tarnished spreads unholy water and inflicts wither and weakness on everything near."
+				""
+				"Heal yourself or rot everything around you. The archive files both under *idol*"
+				"and declines, as usual, to say which one it means by the word."
+			]
+			icon: {
+				Count: 1
+				id: "simplymore:ruptured_idol"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "68C96AB4365F009E"
+			rewards: [
+				{
+					count: 64
+					id: "558A6965EACB12E7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "07D16D20B884EACF"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "07D16D20B884EACD"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "One core. Two opposite endings."
+			tasks: [{
+				id: "0C76EE764AC2AB90"
+				item: {
+					Count: 1
+					id: "simplymore:ruptured_idol"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Idol, Twice"
+			x: 0.0d
+			y: 76.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: "unusual_delight:charging_curry"
+			id: "09B5BDC8C05C919A"
+			rewards: [{
+				count: 24
+				id: "5F027110CA5E2F49"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Feeding more people than yourself."
+			tasks: [{
+				id: "47116B1EDCEF5234"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE WIDER TABLE"
+			x: 15.0d
+			y: 56.0d
+		}
+		{
+			dependencies: ["09B5BDC8C05C919A"]
+			description: [
+				"Bell pepper soup. A cherry blossom cheesecake. Nothing in this row was ever"
+				"eaten by a god and all of it outlived them."
+			]
+			icon: "rusticdelight:bell_pepper_soup"
+			id: "69DD9EF44F63D259"
+			rewards: [{
+				count: 16
+				id: "2632C98DC9AB2918"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Where most people actually cook."
+			tasks: [
+				{
+					id: "3950D35AB8DD79B6"
+					item: "rusticdelight:bell_pepper_soup"
+					type: "item"
+				}
+				{
+					id: "67C5D824E1516F9C"
+					item: "rusticdelight:cherry_blossom_cheesecake_slice"
+					type: "item"
+				}
+			]
+			title: "The Rustic Kitchen"
+			x: 15.0d
+			y: 60.0d
+		}
+		{
+			description: [
+				"A chicken jockey sandwich. A malicious sandwich. Somebody, in a cell,"
+				"with time and a knife, made these on purpose and wrote the recipe down."
+			]
+			icon: "dungeonsdelight:chicken_jockey_sandwich"
+			id: "5BD590B5EEFBC240"
+			rewards: [{
+				count: 28
+				id: "7625DF66205DEE35"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "The dungeon larder."
+			tasks: [
+				{
+					id: "5E530A21D2B6C881"
+					item: "dungeonsdelight:chicken_jockey_sandwich"
+					type: "item"
+				}
+				{
+					id: "014E121B62D248BA"
+					item: "frightsdelight:cobweb_pie_slice"
+					type: "item"
+				}
+			]
+			title: "Food From Bad Places"
+			x: 15.0d
+			y: 64.0d
+		}
+		{
+			dependencies: ["5BD590B5EEFBC240"]
+			description: [
+				"Hogham stew from the burning country. A glowing pie from the depths."
+				"The Forgesworn forge-priests ate like this and considered it devotional."
+			]
+			icon: "jadensnetherexpansiondelight:hogham_stew"
+			id: "4DCE4A88CCD64467"
+			rewards: [{
+				count: 40
+				id: "3E2588AE7B3503F0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "The Nether and the caves."
+			tasks: [
+				{
+					id: "1C88CFAAE3226C9B"
+					item: "jadensnetherexpansiondelight:hogham_stew"
+					type: "item"
+				}
+				{
+					id: "7398230199A5E2C1"
+					item: "alexscavesdelight:bioluminesscence_pie_slice"
+					type: "item"
+				}
+			]
+			title: "Food From Impossible Places"
+			x: 15.0d
+			y: 68.0d
+		}
+		{
+			dependencies: ["09B5BDC8C05C919A"]
+			description: [
+				"Charging curry. Copper feather soup. A deep skewer."
+				""
+				"Three thousand four hundred and twenty-two foods exist in this world."
+				"Nine civilisations fell. The cooking is the only thing that survived all nine,"
+				"and it survived by not being important enough to destroy."
+			]
+			icon: "unusual_delight:charging_curry"
+			id: "6E84D6661538EC93"
+			rewards: [
+				{
+					count: 64
+					id: "655614CDC846B594"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "583DCC14DA7379E8"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "583DCC14DA7379ED"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Everything else, all at once."
+			tasks: [
+				{
+					id: "3014DAEFC890B0C0"
+					item: "unusual_delight:charging_curry"
+					type: "item"
+				}
+				{
+					id: "21A7E64D2F8D8FF4"
+					item: "unusual_delight:copper_feather_soup"
+					type: "item"
+				}
+				{
+					id: "53A71BCBC670D070"
+					item: "unusual_delight:deep_skewer"
+					type: "item"
+				}
+			]
+			title: "The Unusual Table"
+			x: 15.0d
+			y: 72.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: {
+				Count: 1
+				id: "cataclysm:void_forge"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6B25CBCEDAC3B6CB"
+			rewards: [{
+				count: 24
+				id: "2CC632A7F66818FB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Everything sharp, catalogued."
+			tasks: [{
+				id: "41C9C8A2E3A4199B"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE ARSENAL"
+			x: 30.0d
+			y: 56.0d
+		}
+		{
+			dependencies: ["6B25CBCEDAC3B6CB"]
+			description: [
+				"The Void Forge and the Infernal Forge were made by people who had read the same"
+				"book and drawn opposite conclusions from it."
+				""
+				"Both work. That is the part the Convent could never get past."
+			]
+			icon: {
+				Count: 1
+				id: "cataclysm:void_forge"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2F3CAAC548287F91"
+			rewards: [{
+				count: 16
+				id: "752F6C96462E3942"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Two, and they disagree."
+			tasks: [
+				{
+					id: "085D7E1B434EF6ED"
+					item: {
+						Count: 1
+						id: "cataclysm:void_forge"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "11E68F2E817796A3"
+					item: {
+						Count: 1
+						id: "cataclysm:infernal_forge"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Forges"
+			x: 30.0d
+			y: 60.0d
+		}
+		{
+			dependencies: ["2F3CAAC548287F91"]
+			description: [
+				"The Incinerator. The Wither Assault Shoulder Weapon. A gauntlet named"
+				"for the wall it was built to be."
+				""
+				"Nothing in this row was designed with a person in mind, which is why"
+				"all of it works so well on one."
+			]
+			icon: "cataclysm:the_incinerator"
+			id: "4AB0B9BAE72AB0D6"
+			rewards: [{
+				count: 28
+				id: "786BC0E91EDEBF12"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Weapons that were aimed at buildings."
+			tasks: [
+				{
+					id: "50592EF311823308"
+					item: "cataclysm:the_incinerator"
+					type: "item"
+				}
+				{
+					id: "3D51CC8762EC3DAF"
+					item: "cataclysm:wither_assault_shoulder_weapon"
+					type: "item"
+				}
+				{
+					id: "7C8F30D70659307D"
+					item: "cataclysm:gauntlet_of_bulwark"
+					type: "item"
+				}
+			]
+			title: "Siege Equipment"
+			x: 30.0d
+			y: 64.0d
+		}
+		{
+			description: [
+				"A trident pulled from a maelstrom that has not stopped turning."
+				"An embryo that will not finish and will not die."
+				"A ring the Convent catalogued under *rest* and filed with the weapons anyway."
+			]
+			icon: "traveloptics:trident_of_the_eternal_maelstrom"
+			id: "64CFDA37EDB74726"
+			rewards: [{
+				count: 40
+				id: "2F836D0ED105CCB8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Not from here."
+			tasks: [
+				{
+					id: "249B07ABFCD28459"
+					item: "traveloptics:trident_of_the_eternal_maelstrom"
+					type: "item"
+				}
+				{
+					id: "499C7AF1CC48FEAF"
+					item: "alexscaves:immortal_embryo"
+					type: "item"
+				}
+				{
+					id: "0476B3FB4DA4777B"
+					item: "dungeons_and_combat:ring_of_the_eternal_resting"
+					type: "item"
+				}
+			]
+			title: "The Relics of Other Cycles"
+			x: 30.0d
+			y: 68.0d
+		}
+		{
+			dependencies: ["64CFDA37EDB74726"]
+			description: [
+				"The Ascended Idol beside it, and a Divine Soulshard, because the archivist"
+				"who filed these three together clearly meant something by it and did not say what."
+				""
+				"This is the end of the weapons. Everything past this point in the archive"
+				"is either a crown, a cookbook, or an apology."
+			]
+			icon: "cataclysm:the_annihilator"
+			id: "592588A66CE514D6"
+			rewards: [
+				{
+					count: 64
+					id: "64DD8AEF487E625C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "1190E4674242FDC8"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "1190E4674242FDCD"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "The last thing in the catalogue."
+			tasks: [
+				{
+					id: "6196DD883553BE14"
+					item: "cataclysm:the_annihilator"
+					type: "item"
+				}
+				{
+					id: "780046AE801C84AB"
+					item: "irons_spellbooks:divine_soulshard"
+					type: "item"
+				}
+			]
+			title: "The Annihilator"
+			x: 30.0d
+			y: 72.0d
+		}
+		{
+			dependencies: ["0660D0D2C445B393"]
+			description: [
+				"The roads above are what the archive wrote down, because the archive was written"
+				"by people who thought power was the interesting part."
+				""
+				"These are what everybody actually did. Nine civilisations fell and the thing"
+				"that survived all nine, in every single case, was the cooking."
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "64CBC28507FBB939"
+			shape: "octagon"
+			size: 1.8d
+			subtitle: "Six roads that never draw a weapon."
+			tasks: [{
+				id: "193C256E2139EFC6"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Quiet Trades"
+			x: 0.0d
+			y: 26.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: "numismatics:sun"
+			id: "6ABA747F3963F0EF"
+			rewards: [{
+				count: 24
+				id: "38A1D039515A26A3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Moving it, and pricing it."
+			tasks: [{
+				id: "18D139E4988914AF"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE MERCHANT"
+			x: -25.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["6ABA747F3963F0EF"]
+			description: [
+				"The Mercantile Ledger survives in more copies than any scripture in the archive."
+				"That is not irony. It is what people actually kept."
+			]
+			icon: "numismatics:spur"
+			id: "1A3ABC9B8F16634A"
+			rewards: [{
+				count: 16
+				id: "0495DEC120AC9B13"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Spur, bevel, sprocket."
+			tasks: [
+				{
+					id: "019B74722F7530C9"
+					item: "numismatics:spur"
+					type: "item"
+				}
+				{
+					id: "05C351E786FDFE38"
+					item: "numismatics:bevel"
+					type: "item"
+				}
+				{
+					id: "52188EA147CBA9E5"
+					item: "numismatics:sprocket"
+					type: "item"
+				}
+			]
+			title: "Small Money"
+			x: -25.0d
+			y: 34.0d
+		}
+		{
+			description: [
+				"Nine civilisations and only one of them invented interest."
+				"The archive does not say which, and the omission looks deliberate."
+			]
+			icon: "numismatics:banking_guide"
+			id: "212E41C97BA3C8F8"
+			rewards: [{
+				count: 28
+				id: "001BEFA66FE9101E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Somebody wrote the rules down."
+			tasks: [
+				{
+					id: "2BE3FE6B5C5392E0"
+					item: "numismatics:banking_guide"
+					type: "item"
+				}
+				{
+					id: "402AA25E6E60B25D"
+					item: "numismatics:crown"
+					type: "item"
+				}
+			]
+			title: "The Banking Guide"
+			x: -25.0d
+			y: 38.0d
+		}
+		{
+			dependencies: ["212E41C97BA3C8F8"]
+			description: [
+				"Named for the Court's god and worth more than most of the things she was worshipped for."
+				""
+				"A Black Card behind it, because past a certain amount you stop carrying money"
+				"and start carrying permission."
+			]
+			icon: "numismatics:sun"
+			id: "49F63090B43585D5"
+			rewards: [
+				{
+					count: 64
+					id: "55A5298A231D2848"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "7A916820C70DA365"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "7A916820C70DA36D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "The largest coin ever struck."
+			tasks: [
+				{
+					id: "7EDF0658D7244A7F"
+					item: "numismatics:sun"
+					type: "item"
+				}
+				{
+					id: "6C7ABAFF34A5AD4F"
+					item: "numismatics:black_card"
+					type: "item"
+				}
+			]
+			title: "The Sun"
+			x: -25.0d
+			y: 42.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: "exposure:signed_album"
+			id: "3663DEB765F4BDBD"
+			rewards: [{
+				count: 24
+				id: "6752B099624F1D85"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Writing it down before it goes."
+			tasks: [{
+				id: "6E1A3FA7D3FBD938"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE CHRONICLER"
+			x: -15.0d
+			y: 30.0d
+		}
+		{
+			description: [
+				"The Convent's archivists wrote everything down and drew almost nothing,"
+				"which is why nine civilisations are described and none of them are recognisable."
+			]
+			icon: "exposure:camera"
+			id: "2C524FA5186B1CD2"
+			rewards: [{
+				count: 16
+				id: "463BF18D2B4BB7AF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Look at it properly."
+			tasks: [
+				{
+					id: "0E90A5BED09499F1"
+					item: "exposure:camera"
+					type: "item"
+				}
+				{
+					id: "6ECD1E1711A01F2E"
+					item: "exposure:camera_stand"
+					type: "item"
+				}
+			]
+			title: "The Camera"
+			x: -15.0d
+			y: 34.0d
+		}
+		{
+			description: [
+				"A record that cannot be argued with by the next scribe who copies it."
+				"This is new. The archive has never had one of these."
+			]
+			icon: "exposure:photograph"
+			id: "220F4EE94F794D6D"
+			rewards: [{
+				count: 28
+				id: "2F971283EBB8C30D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Evidence, for once."
+			tasks: [
+				{
+					id: "6FA4936D6D5A1079"
+					item: "exposure:photograph"
+					type: "item"
+				}
+				{
+					id: "229A51E1B0C219CD"
+					item: "exposure:album"
+					type: "item"
+				}
+			]
+			title: "The Photograph"
+			x: -15.0d
+			y: 38.0d
+		}
+		{
+			dependencies: ["3663DEB765F4BDBD"]
+			description: [
+				"Every account in the archive is anonymous. The Cathedral suppressed authors"
+				"and the Convent thought attribution was vanity."
+				""
+				"You are the first person in six thousand years to sign the thing you made."
+				"The Interplanar Projector is how the next reader will see it."
+			]
+			icon: "exposure:signed_album"
+			id: "7EF7AF09ECF23300"
+			rewards: [
+				{
+					count: 64
+					id: "358B21EA156646CD"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5410D0C4684B9951"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "5410D0C4684B995D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Your name on the record."
+			tasks: [
+				{
+					id: "66618923E9DB0541"
+					item: "exposure:signed_album"
+					type: "item"
+				}
+				{
+					id: "0ED7C6E00A7EA6E7"
+					item: "exposure:interplanar_projector"
+					type: "item"
+				}
+			]
+			title: "The Signed Album"
+			x: -15.0d
+			y: 42.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: "xercamusic:god"
+			id: "2C6F07267DA5C9DD"
+			rewards: [{
+				count: 24
+				id: "4855AE70F0FF5AA2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Heard further than a voice goes."
+			tasks: [{
+				id: "0CCFF565FF906F3D"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE VOICE"
+			x: -5.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["2C6F07267DA5C9DD"]
+			description: [
+				"Every civilisation in the record had music and not one of them wrote it down"
+				"in a form anybody can still play. The notation is the part that never survives."
+			]
+			icon: "xercamusic:lyre"
+			id: "730C085D4CEEF3E8"
+			rewards: [{
+				count: 16
+				id: "4055041F81B2579A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Lyre and flute."
+			tasks: [
+				{
+					id: "00B20615042C3A5F"
+					item: "xercamusic:lyre"
+					type: "item"
+				}
+				{
+					id: "15C11A6A2868E1C9"
+					item: "xercamusic:flute"
+					type: "item"
+				}
+			]
+			title: "First Instruments"
+			x: -5.0d
+			y: 34.0d
+		}
+		{
+			dependencies: ["730C085D4CEEF3E8"]
+			description: [
+				"Music is the only technology in the archive that requires other people"
+				"and does not degrade when you add them."
+			]
+			icon: "xercamusic:guitar"
+			id: "47D8CEC3843F310C"
+			rewards: [{
+				count: 28
+				id: "3B41CE7CA6C98F39"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "It stops being one person."
+			tasks: [
+				{
+					id: "19C1C9FCDCD935AD"
+					item: "xercamusic:guitar"
+					type: "item"
+				}
+				{
+					id: "6A6BFEAC63F83037"
+					item: "xercamusic:drum_kit"
+					type: "item"
+				}
+			]
+			title: "The Full Band"
+			x: -5.0d
+			y: 38.0d
+		}
+		{
+			description: [
+				"A music box and a sheet you filled in yourself."
+				""
+				"Every civilisation in the record had music. Not one of them wrote it down"
+				"in a form anybody can still play."
+			]
+			icon: "xercamusic:music_box"
+			id: "162EEE8B5A93FB34"
+			rewards: [{
+				count: 40
+				id: "122AB7C2F569F19C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Notation is the part that never survives."
+			tasks: [
+				{
+					id: "339F4176FAF06A73"
+					item: "xercamusic:music_box"
+					type: "item"
+				}
+				{
+					id: "58613E90DFF3DA81"
+					item: "xercamusic:music_sheet"
+					type: "item"
+				}
+			]
+			title: "The Written Song"
+			x: -5.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["2C6F07267DA5C9DD"]
+			description: [
+				"It is filed in the Apocrypha beside the Vessels and it is not a weapon,"
+				"which is why nobody ever went looking for it."
+				""
+				"It is in the desert pyramids. The same tombs that hold the Wish-Seller's scroll,"
+				"in the same chests, and roughly one search in ten turns it up , which means"
+				"the Court of Sunleia almost certainly knew and simply did not consider it"
+				"worth a second expedition."
+				""
+				"The sealed gods were sung to before they were sealed."
+				"The archive records the singing and not the song. This is the song."
+			]
+			icon: "xercamusic:god"
+			id: "23966D98BC059BD5"
+			rewards: [
+				{
+					count: 64
+					id: "0C50AA8BCBFD966D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "16CF924FDF4E6D54"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "16CF924FDF4E6D5D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "In a desert tomb, one time in ten."
+			tasks: [{
+				id: "1D9739CE17316823"
+				item: "xercamusic:god"
+				type: "item"
+			}]
+			title: "The Voice of God"
+			x: -5.0d
+			y: 46.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: "createvinery:red_grape_juice_bucket"
+			id: "4185B2DEA42E3ACA"
+			rewards: [{
+				count: 24
+				id: "16D01BDD937066DF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Time, kept in a bottle."
+			tasks: [{
+				id: "11059ACAC2E7983C"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE VINTNER"
+			x: 5.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["4185B2DEA42E3ACA"]
+			description: [
+				"Fermentation is the one technology the Convent classed as *cooperative with time*"
+				"rather than imposed on it."
+			]
+			icon: "createvinery:red_grape_juice_bucket"
+			id: "2153AF65CDE94AFC"
+			rewards: [{
+				count: 16
+				id: "39B0FB380E88C712"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Grapes, and patience."
+			tasks: [
+				{
+					id: "24836941EFED8C3F"
+					item: "createvinery:red_grape_juice_bucket"
+					type: "item"
+				}
+				{
+					id: "43D394CC9B4875D9"
+					item: "createvinery:white_grape_juice_bucket"
+					type: "item"
+				}
+			]
+			title: "The Press"
+			x: 5.0d
+			y: 34.0d
+		}
+		{
+			dependencies: ["2153AF65CDE94AFC"]
+			description: [
+				"The Two-Larder Winter and the Stolovaya Ledger both begin with the same instruction:"
+				"put it somewhere cold and go away."
+			]
+			icon: "brewinandchewin:sweet_berry_jam"
+			id: "139679B6CFB84BCC"
+			rewards: [{
+				count: 28
+				id: "53897A07ED539BA8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Held, not hurried."
+			tasks: [{
+				id: "15E5FED67E861DBD"
+				item: "brewinandchewin:sweet_berry_jam"
+				type: "item"
+			}]
+			title: "The Cellar"
+			x: 5.0d
+			y: 38.0d
+		}
+		{
+			dependencies: ["139679B6CFB84BCC"]
+			description: [
+				"The eiswein keeps a long time. That is in the archive twice , once as a note"
+				"on storage, and once at the end of the Meal, where somebody wrote it down"
+				"because it was the last thing they were sure of."
+			]
+			icon: "createvinery:taiga_red_grape_juice_bucket"
+			id: "3D78CDE53A6CA0E0"
+			rewards: [
+				{
+					count: 64
+					id: "37BDCD8078D97BA4"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "494CF96DCB129C7C"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "494CF96DCB129C7D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Older than the drinker."
+			tasks: [
+				{
+					id: "64CB708B3D250A4A"
+					item: "createvinery:taiga_red_grape_juice_bucket"
+					type: "item"
+				}
+				{
+					id: "17B11A0F063FEDE6"
+					item: "createvinery:apple_juice_bucket"
+					type: "item"
+				}
+			]
+			title: "The Long Vintage"
+			x: 5.0d
+			y: 42.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: "farmersdelight:cooking_pot"
+			id: "62E5E6F1F8DF3572"
+			rewards: [{
+				count: 24
+				id: "565E4ADF3BA83A65"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Fire, applied on purpose."
+			tasks: [{
+				id: "2288F252D683B438"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE COOK"
+			x: 15.0d
+			y: 30.0d
+		}
+		{
+			description: [
+				"A cooking pot and a skillet. The Nine Kitchens chapter is ninety-nine percent"
+				"these two objects used by people who disagreed about everything else."
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "78ADF5959EA19B0D"
+			rewards: [{
+				count: 16
+				id: "02E358E0DD431093"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Where every civilisation starts."
+			tasks: [
+				{
+					id: "4DC5F4677F1FEA83"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "7C072087D0B6AF6A"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "The Pot and the Pan"
+			x: 15.0d
+			y: 34.0d
+		}
+		{
+			description: [
+				"The Gilded Sands' date syrup. Yucatan's tortilla. An acorn roasted the way"
+				"the foragers did it before any of them had a word for a kitchen."
+				""
+				"You cannot understand a civilisation from its scripture. You can from its lunch."
+			]
+			icon: "ramadandelight:date_syrup"
+			id: "34CA973C1AB50AA1"
+			rewards: [{
+				count: 28
+				id: "0BDE1681DBDFAFF5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Cook somebody else's food."
+			tasks: [
+				{
+					id: "7D6B5D264B195703"
+					item: "ramadandelight:date_syrup"
+					type: "item"
+				}
+				{
+					id: "218F569A5679FF21"
+					item: "culturaldelights:tortilla"
+					type: "item"
+				}
+				{
+					id: "517148DC81369D2D"
+					item: "delightful:roasted_acorn"
+					type: "item"
+				}
+			]
+			title: "Across the Nine"
+			x: 15.0d
+			y: 38.0d
+		}
+		{
+			dependencies: ["62E5E6F1F8DF3572"]
+			description: [
+				"Every other technology in this archive was invented to survive somebody."
+				"This one was invented to sit down with them."
+				""
+				"The Cookbook is the most legible thing anybody in this world has ever left behind."
+			]
+			icon: "farmersdelight:apple_pie"
+			id: "39B4465BBDD5D00B"
+			rewards: [
+				{
+					count: 64
+					id: "5412E2EC20ADBE82"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "53A155009EC42DA5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "53A155009EC42DAD"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "The only tradition that outlived all nine."
+			tasks: [
+				{
+					id: "69D17BF8E6B3A9E4"
+					item: "farmersdelight:apple_pie"
+					type: "item"
+				}
+				{
+					id: "16449FF0CE85C513"
+					item: "culturaldelights:chicken_taco"
+					type: "item"
+				}
+			]
+			title: "The Table"
+			x: 15.0d
+			y: 42.0d
+		}
+		{
+			description: ["One road. It does not cross the others."]
+			icon: "fieldguide:field_guide"
+			id: "3166929E62713AF6"
+			rewards: [{
+				count: 24
+				id: "3EB4119FA05DF000"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Looking first. Always looking first."
+			tasks: [{
+				id: "52AD2B54941B3599"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE NATURALIST"
+			x: 25.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["3166929E62713AF6"]
+			description: [
+				"The Field Guide keeps what you saw. The other book keeps what you killed."
+				"The archive is very clear that these are different disciplines."
+			]
+			icon: "fieldguide:field_guide"
+			id: "00B9C5A01A698471"
+			rewards: [{
+				count: 16
+				id: "3DF1DB88BDFF9A7E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Scan it before you fight it."
+			tasks: [{
+				id: "42FA7210B6F4F365"
+				item: "fieldguide:field_guide"
+				type: "item"
+			}]
+			title: "The Field Guide"
+			x: 25.0d
+			y: 34.0d
+		}
+		{
+			dependencies: ["00B9C5A01A698471"]
+			description: ["Every useful thing in the archive is a note somebody added to somebody else's page."]
+			icon: "fieldguide:page"
+			id: "73EA7D8FB08BAC69"
+			rewards: [{
+				count: 28
+				id: "4A01A73A71AD89E1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Marginalia is the real work."
+			tasks: [{
+				id: "26E2A55F59010AC2"
+				item: "fieldguide:page"
+				type: "item"
+			}]
+			title: "The Notes"
+			x: 25.0d
+			y: 38.0d
+		}
+		{
+			dependencies: ["3166929E62713AF6"]
+			description: [
+				"The world has more kinds of living thing in it than the nine civilisations had words."
+				""
+				"The Naturalist's road produces no weapon and no crown and ends with a book"
+				"that tells the next person which of these will kill them."
+				"That is, measurably, the most lives any of these roads has ever saved."
+			]
+			icon: "alexsmobs:animal_dictionary"
+			id: "79883E2CC321348C"
+			rewards: [
+				{
+					count: 64
+					id: "17AA3FA1D7E29BD5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "6A445D8384CCDDF7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "6A445D8384CCDDFD"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Fourteen hundred things that are not you."
+			tasks: [{
+				id: "41AE3B03865CA877"
+				item: "alexsmobs:animal_dictionary"
+				type: "item"
+			}]
+			title: "The Animal Dictionary"
+			x: 25.0d
+			y: 42.0d
+		}
+		{
+			dependencies: ["0660D0D2C445B393"]
+			description: ["One road. It does not cross the others."]
+			icon: {
+				Count: 1
+				id: "as_you_wish:magic_lamp"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "153FDF21559389A4"
+			rewards: [{
+				count: 24
+				id: "2F1ACEDB5E283178"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The wording is the whole craft."
+			tasks: [{
+				id: "4F19FC63B9DED3B2"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE WISH-SELLER"
+			x: -25.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["153FDF21559389A4"]
+			description: [
+				"Brass, sand-scoured, and warm on a cold night, which is the tell."
+				"The Gilded Sands traded these openly and priced them as decoration."
+			]
+			icon: {
+				Count: 1
+				id: "as_you_wish:magic_lamp"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3A84E9CC68A8EAFD"
+			rewards: [{
+				count: 16
+				id: "2C17E2CF56580C51"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Something is inside it."
+			tasks: [{
+				id: "1F22B55BC62F51EA"
+				item: {
+					Count: 1
+					id: "as_you_wish:magic_lamp"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Magic Lamp"
+			x: -25.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3A84E9CC68A8EAFD"]
+			description: [
+				"Every wish the Wish-Seller ever granted was honoured exactly as worded."
+				"That is not mercy and it was never advertised as mercy."
+				""
+				"Ubar is still down there. The scroll on him is filed under gods for a reason."
+			]
+			icon: "as_you_wish:heart_of_the_desert"
+			id: "66C563ADA718675D"
+			rewards: [{
+				count: 28
+				id: "6DE69E2A060580E8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "What it wants in exchange."
+			tasks: [{
+				id: "02AA0CF46D9A954D"
+				item: "as_you_wish:heart_of_the_desert"
+				type: "item"
+			}]
+			title: "The Heart of the Desert"
+			x: -25.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["66C563ADA718675D"]
+			description: [
+				"The Court of Sunleia banned these and then kept four."
+				""
+				"A wish is a sentence and a sentence can be read two ways, and the thing in the lamp"
+				"has had several thousand years to get good at the second reading."
+				"You will not out-word it. Nobody has."
+			]
+			icon: "as_you_wish:immortal_lamp"
+			id: "7D225935A7208391"
+			rewards: [
+				{
+					count: 64
+					id: "753CE130CF87A86F"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "204299664A924448"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Wishes without end."
+			tasks: [{
+				id: "005E376C9282CD68"
+				item: "as_you_wish:immortal_lamp"
+				type: "item"
+			}]
+			title: "The Immortal Lamp"
+			x: -25.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0660D0D2C445B393"]
+			description: ["One road. It does not cross the others."]
+			icon: "timelessprison:time_in_abottle"
+			id: "32CBE0C8FA07F1E7"
+			rewards: [{
+				count: 24
+				id: "72849A633898A172"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Keeping the clock nobody else watches."
+			tasks: [{
+				id: "0F88B8ED83351AED"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE HOUR-WARDEN"
+			x: -15.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["32CBE0C8FA07F1E7"]
+			description: [
+				"Stored duration , you keep the hours you did not spend and pour them"
+				"into something that needed them."
+				""
+				"It is brewed, not built. The recipe is not written in any book in this world:"
+				"it exists only as a thing the brewing stand will do if you already know to try."
+			]
+			icon: "timelessprison:time_in_abottle"
+			id: "308652E60DF5AC8E"
+			rewards: [{
+				count: 16
+				id: "0BCCD9C13A369DE7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Hours, decanted."
+			tasks: [{
+				id: "5AEB451D0F98ABBA"
+				item: "timelessprison:time_in_abottle"
+				type: "item"
+			}]
+			title: "Time in a Bottle"
+			x: -15.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"The Timeless Prison does not take prisoners. It takes agreements."
+				""
+				"A blank contract is a courtesy. It means the thing on the other side"
+				"is still pretending this is negotiable."
+			]
+			icon: "timelessprison:blank_contract"
+			id: "50124968BB40F50E"
+			rewards: [{
+				count: 28
+				id: "273A4F4BEDC4FD43"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "It expects you to read it."
+			tasks: [{
+				id: "0F34225566866AAA"
+				item: "timelessprison:blank_contract"
+				type: "item"
+			}]
+			title: "The Blank Contract"
+			x: -15.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"Stone from outside the sequence where weather happens."
+				"It does not age. Nothing built from it ages. That is the entire property"
+				"and it is the reason nobody sane builds a house out of it."
+			]
+			icon: "timelessprison:timeless_bricks"
+			id: "61FD06AED3791E46"
+			rewards: [{
+				count: 40
+				id: "4306711E9E839ED0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Masonry that does not weather."
+			tasks: [{
+				id: "72B06FD3C768E7CB"
+				item: "timelessprison:timeless_bricks"
+				type: "item"
+			}]
+			title: "Timeless Brick"
+			x: -15.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["61FD06AED3791E46"]
+			description: [
+				"Whoever made this expected to need it, which is the most alarming sentence"
+				"in the Hour-Warden's whole file."
+			]
+			icon: {
+				Count: 1
+				id: "timelessprison:escaper"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "30E00EC91C7309F6"
+			rewards: [{
+				count: 52
+				id: "289C0EB8084A8594"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "A way back out."
+			tasks: [{
+				id: "1BBE14366B2DB532"
+				item: {
+					Count: 1
+					id: "timelessprison:escaper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Escaper"
+			x: -15.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["30E00EC91C7309F6"]
+			description: [
+				"Whatever is sealed in the Timeless Dimension is sealed in the only way that lasts:"
+				"not behind a door, but outside the sequence where doors happen."
+				""
+				"The archive lists a Bottle that holds unbounded time and gives no recipe for it."
+				"That is either an omission or a mercy , the note underneath reads:"
+				"\\"
+				"A"
+				"person"
+				"who"
+				"cannot"
+				"run"
+				"out"
+				"of"
+				"time"
+				"stops"
+				"making"
+				"choices"
+				"and"
+				"starts"
+				"making"
+				"passes."
+				"\\"
+				"\\"
+				""
+			]
+			icon: "timelessprison:timeless_core"
+			id: "74923EA44476F8E5"
+			rewards: [
+				{
+					count: 64
+					id: "079CE2CA688AA361"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6F2305363DECAA29"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "The prison's own clock."
+			tasks: [{
+				id: "5CE118CA72E84B1D"
+				item: "timelessprison:timeless_core"
+				type: "item"
+			}]
+			title: "The Timeless Core"
+			x: -15.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["0660D0D2C445B393"]
+			description: ["One road. It does not cross the others."]
+			icon: "scarlet_king:banishing_chains"
+			id: "20ED95504242B7FD"
+			rewards: [{
+				count: 24
+				id: "79E1F3C28707BC9B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Shutting things, and meaning it."
+			tasks: [{
+				id: "47172040ABDEAC20"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE SEALER"
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Nine civilisations sealed something. Only one of them wrote down the method,"
+				"and the method is a hammer."
+			]
+			icon: {
+				Count: 1
+				id: "timelessprison:banishing_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "06F56B57F4A1CBEA"
+			rewards: [{
+				count: 16
+				id: "5F0EEF3244E752AD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "The verb the gods used."
+			tasks: [{
+				id: "5D3AA5E8B36E6F5D"
+				item: {
+					Count: 1
+					id: "timelessprison:banishing_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "The Banishing Hammer"
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Forged-iron , the iron of the Chains, the only iron the cosmos has ever needed"
+				"in this concentration. Every meal afterward carries the trace."
+				"Wine tastes of iron. Bread tastes of iron."
+				""
+				"⚠ There is no recipe. There was never going to be a recipe."
+				""
+				"The Chains appear only while the King Below is being hurt , they surface out of"
+				"him, one length at a time, and you take them off him by hand while he is still"
+				"moving. The Convent's note on the method is four words long: *during, not after.*"
+				""
+				"This is the material the world's locks are made of. You are holding a spare."
+			]
+			icon: "scarlet_king:banishing_chains"
+			id: "4C87BD46CF7ABA1C"
+			rewards: [{
+				count: 28
+				id: "7662916D019A96F4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Taken off the King, during."
+			tasks: [{
+				id: "77C6B7E069CC1F52"
+				item: "scarlet_king:banishing_chains"
+				type: "item"
+			}]
+			title: "The Banishing Chains"
+			x: -5.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4C87BD46CF7ABA1C"]
+			description: [
+				"A seal is not a wall. It is an appointment that keeps being postponed,"
+				"and the clock is what does the postponing."
+				""
+				"The Sealer's road is maintenance, not mastery. It never finishes. That is the job."
+			]
+			icon: "scarlet_king:manifestation_clock"
+			id: "129D2D4894C6FA4C"
+			rewards: [
+				{
+					count: 64
+					id: "108ACA4EF6AFC9C4"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3E52D6D536E26FAB"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Sealing is a schedule."
+			tasks: [{
+				id: "1164CBDE5B38B324"
+				item: "scarlet_king:manifestation_clock"
+				type: "item"
+			}]
+			title: "The Manifestation Clock"
+			x: -5.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0660D0D2C445B393"]
+			description: ["One road. It does not cross the others."]
+			icon: "createteleporters:tp_link"
+			id: "12448047B6A8C844"
+			rewards: [{
+				count: 24
+				id: "4ED809FC716E1BB9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Whatever is still standing after."
+			tasks: [{
+				id: "4AB47DCE244F1116"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE ARCHITECT"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Geography is a rule and rules are load-bearing. The Architect starts by"
+				"removing one small piece of the rule and seeing what leans."
+			]
+			icon: "createteleporters:tp_link"
+			id: "209880C2A9EBED6C"
+			rewards: [{
+				count: 16
+				id: "6A88B1590A1C146D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Two places agree to be one."
+			tasks: [
+				{
+					id: "40B328A81601913F"
+					item: "createteleporters:tp_link"
+					type: "item"
+				}
+				{
+					id: "68F4E119BFB7F16D"
+					item: "createteleporters:redstone_pearl"
+					type: "item"
+				}
+			]
+			title: "The Link"
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"It works. It works in the way an unfinished bridge works, which is to say"
+				"for exactly as long as nobody puts weight in the wrong place."
+			]
+			icon: "createteleporters:incomplete_q_mechanism"
+			id: "33368378F1FA407C"
+			rewards: [{
+				count: 28
+				id: "654088B7742442FE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Nearly."
+			tasks: [{
+				id: "6BC7EC9C5B4666B5"
+				item: "createteleporters:incomplete_q_mechanism"
+				type: "item"
+			}]
+			title: "The Incomplete Mechanism"
+			x: 5.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"When travel is instant, the journey ends. Decide if that tradeoff is yours."
+				""
+				"The Storm-Builders reached this and their entire civilisation is a crater,"
+				"which the archive presents without comment directly beneath the schematic."
+			]
+			icon: "createteleporters:quantum_mechanism"
+			id: "62ADC45787FA2A38"
+			rewards: [{
+				count: 40
+				id: "1B4AA1344F3CFB53"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Instant travel."
+			tasks: [{
+				id: "244D07AA29004CCC"
+				item: "createteleporters:quantum_mechanism"
+				type: "item"
+			}]
+			title: "The Quantum Mechanism"
+			x: 5.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["62ADC45787FA2A38"]
+			description: ["The last step is not moving through space. It is adding a room to it."]
+			icon: "createteleporters:custom_portal"
+			id: "32ED1BAA15E659B9"
+			rewards: [
+				{
+					count: 64
+					id: "6D4773A81CDDB604"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "32EFAD7ED3AB8244"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Somewhere that was not there."
+			tasks: [
+				{
+					id: "464ACB0EE9049E8A"
+					item: "createteleporters:custom_portal"
+					type: "item"
+				}
+				{
+					id: "590A4CED197F77ED"
+					item: "createteleporters:custom_portal_base"
+					type: "item"
+				}
+			]
+			title: "The Custom Portal"
+			x: 5.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0660D0D2C445B393"]
+			description: ["One road. It does not cross the others."]
+			icon: "witherstormmod:command_block_sword"
+			id: "7A72EC2DED0D7F13"
+			rewards: [{
+				count: 24
+				id: "132D8BC5BC312D18"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Weather, taken personally."
+			tasks: [{
+				id: "619FB6064100A861"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE STORM"
+			x: 15.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"The Engineers reached toward alchemy and produced this instead."
+				"The Apocrypha calls it a weapon in the tone other pages reserve for a mistake."
+			]
+			icon: "witherstormmod:command_block_sword"
+			id: "6CFE04537C9D5D6C"
+			rewards: [{
+				count: 16
+				id: "2642949855D3E8C9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Somebody bolted logic onto a weapon."
+			tasks: [{
+				id: "0C6D02568C2669FF"
+				item: "witherstormmod:command_block_sword"
+				type: "item"
+			}]
+			title: "The Command Block Sword"
+			x: 15.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"The Formidi-Bomb was crafted, not found. That distinction matters and the archive"
+				"underlines it twice: nothing summoned the Storm. Someone assembled it."
+			]
+			icon: "witherstormmod:eye_of_the_storm"
+			id: "56ED992CEEBFDD6B"
+			rewards: [{
+				count: 28
+				id: "52E86BBFC6527CC4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "It is watching from inside."
+			tasks: [{
+				id: "49F8558A1AA0522A"
+				item: "witherstormmod:eye_of_the_storm"
+				type: "item"
+			}]
+			title: "The Eye of the Storm"
+			x: 15.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["56ED992CEEBFDD6B"]
+			description: [
+				"Made from the Storm to be used on the Storm, which is the oldest weapon-logic"
+				"the world has and the one it never learns from."
+				""
+				"You are now carrying the reason a civilisation is a crater, sharpened."
+			]
+			icon: "witherstormmod:formidi_blade"
+			id: "0D65EB9663133069"
+			rewards: [
+				{
+					count: 64
+					id: "7FE93B3909F1C498"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3CEC28B4AD87EFF1"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "The only thing that ever stopped one."
+			tasks: [{
+				id: "12E834EF2142107F"
+				item: "witherstormmod:formidi_blade"
+				type: "item"
+			}]
+			title: "The Formidi-Blade"
+			x: 15.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0660D0D2C445B393"]
+			description: ["One road. It does not cross the others."]
+			icon: "celestisynth:celestial_core"
+			id: "6FD11919C3761D47"
+			rewards: [{
+				count: 24
+				id: "54205EE4E80CD7E2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Up, and then further than that."
+			tasks: [{
+				id: "5FD2A8A10C3055CC"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "THE CELESTIAL"
+			x: 25.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6FD11919C3761D47"]
+			description: [
+				"Lunar scrap and a core that was never made on this world."
+				"The Convent's metallurgists could describe it and could not reproduce it."
+			]
+			icon: "celestisynth:celestial_core"
+			id: "0A45902A4E238DB1"
+			rewards: [{
+				count: 16
+				id: "4F84258C82CA3460"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "Something fell and cooled."
+			tasks: [
+				{
+					id: "3AECAA6303FDB414"
+					item: "celestisynth:celestial_core"
+					type: "item"
+				}
+				{
+					id: "732FF73BF86CEAF9"
+					item: "celestisynth:lunar_scrap"
+					type: "item"
+				}
+			]
+			title: "The Celestial Core"
+			x: 25.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0A45902A4E238DB1"]
+			description: [
+				"Netherite is the hardest thing the world can make. This is the hardest thing"
+				"the world can make, alloyed with something the world did not make."
+			]
+			icon: "celestisynth:celestial_netherite_ingot"
+			id: "67DA5DA54629F497"
+			rewards: [{
+				count: 28
+				id: "6030B32B4B7311B4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.1d
+			subtitle: "An alloy of two impossible things."
+			tasks: [{
+				id: "3ACDAF0E5342D8ED"
+				item: "celestisynth:celestial_netherite_ingot"
+				type: "item"
+			}]
+			title: "Celestial Netherite"
+			x: 25.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6FD11919C3761D47"]
+			description: [
+				"The spellbook is not a book of spells. It is a book of one spell"
+				"that the caster is expected to finish writing."
+				""
+				"The road ends where the Convent's cataloguing does. Everything past this"
+				"is filed under things observed once and not repeated."
+			]
+			icon: "celestisynth:celestial_spell_book"
+			id: "34A937406AB384E2"
+			rewards: [
+				{
+					count: 64
+					id: "3232842819AB3659"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "76AF1B9E54495D4B"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "CELESTIAL GRADE."
+			tasks: [{
+				id: "179D02650BF86199"
+				item: "celestisynth:celestial_spell_book"
+				type: "item"
+			}]
+			title: "The Celestial Genesis"
+			x: 25.0d
+			y: 16.0d
+		}
+	]
+	subtitle: ["Odd jobs, odd roads, and what you carry on them."]
+	title: "The Long Roads"
+}

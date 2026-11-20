@@ -1,0 +1,13 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "alexscaves:cooked_trilocaris",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_cooked_trilocararis",
+   "required": false
+  }
+ ]
+}

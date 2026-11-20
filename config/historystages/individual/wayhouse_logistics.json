@@ -1,21 +1,13 @@
 {
   "display_name": "The Wayhouse Logistics",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 480,
   "items": [
-    "cmpackagecouriers:address_sign",
     "cmpackagecouriers:cardboard_plane",
     "cmpackagecouriers:cardboard_plane_parts",
     "cmpackagecouriers:location_transmitter",
-    "cmpackagecouriers:location_transmitter_enabled",
-    "cmpackagecouriers:portable_stock_ticker",
-    "cmpackagecouriers:rope_10x12",
-    "cmpackagecouriers:rope_10x8",
-    "cmpackagecouriers:rope_12x10",
-    "cmpackagecouriers:rope_12x12",
     "create_mobile_packages:mobile_packager",
-    "create_mobile_packages:portable_stock_ticker",
-    "minecraft:light_blue_shulker_box",
-    "minecraft:light_gray_shulker_box"
+    "create_mobile_packages:portable_stock_ticker"
   ],
   "tags": [],
   "mods": [
@@ -28,5 +20,35 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "kinetic_engineering",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

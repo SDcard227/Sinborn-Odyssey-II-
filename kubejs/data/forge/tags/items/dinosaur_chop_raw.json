@@ -1,0 +1,13 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "alexscaves:dinosaur_chop_raw",
+   "required": false
+  },
+  {
+   "id": "alexscavesdelight:cut_dinosaur_chop_raw",
+   "required": false
+  }
+ ]
+}

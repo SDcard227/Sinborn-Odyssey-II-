@@ -1,0 +1,2965 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "buriedthings"
+	group: "5A0000000000005E"
+	icon: {
+		Count: 1
+		id: "minecraft:brush"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "3309B979E4CAD27D"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Strongholds are bunkers. Tombs are filing systems. Someone put all of it down there on purpose."]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "73BEA5460D63B4CC"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Everything old is underneath something new."
+			tasks: [{
+				id: "5A9EC84ABCED7AA5"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "Buried Things"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7FB4937387DC3C5E"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abyssal ruins, caveman house, cooker and 38 more &8(17% a chest)"
+				"&bOpens:&r 907 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "minecraft:cake"
+			id: "3B3E8289B11F6CAA"
+			rewards: [{
+				count: 12
+				id: "201B022DDDDE6ED5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "Sugar, found underground."
+			tasks: [
+				{
+					id: "727BADA2E75A9212"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "confectioners_hollow"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "179B255D2CFD158A"
+					individual: true
+					negate: false
+					stage: "confectioners_hollow"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Confectioner's Hollow"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7FB4937387DC3C5E"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r bastion other, chapel, infernal fortress and 2 more &8(17% a chest)"
+				"&bOpens:&r 364 entries"
+				"&dNeeds:&r On Infernal Passage"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "netherexp:soul_glass"
+			id: "4E6576C26F0BCBA9"
+			rewards: [{
+				count: 12
+				id: "2745FDC400E0B07D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "It did not heal and nobody made it."
+			tasks: [
+				{
+					id: "2D1CA41CEF5B3CBF"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "blighted_hollows"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "20E878992D3F06A6"
+					individual: true
+					negate: false
+					stage: "blighted_hollows"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Blighted Hollows"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["33515B57C332424C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r armory, bastion treasure, frosted prison treasure and 1 more &8(10% a chest)"
+				"&bOpens:&r 163 entries and 2 whole bodies of work"
+				"&dNeeds:&r any one of 37 other scrolls; 25 levels of experience, spent"
+				"&aPedestal:&r Tier III, about 18 minutes"
+			]
+			icon: "minecraft:command_block"
+			id: "622F29ADC59337E9"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "05AF3D74E4A52DE9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A block that gives orders."
+			tasks: [
+				{
+					id: "19CFE7C4540782BA"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "command_ruin"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "497E7E21EEB24B1F"
+					individual: true
+					negate: false
+					stage: "command_ruin"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On Command and Ruin"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["33515B57C332424C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r caveman house, underground cabin, underground cabin primordial caves &8(17% a chest)"
+				"&bOpens:&r 339 entries"
+				"&dNeeds:&r one of Archaeology Mastery, The Wild Study; any one of 34 other scrolls"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "alexscaves:tree_star"
+			id: "023344D612FB48D1"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "4013FB100E835E1D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The layer under the layer."
+			tasks: [
+				{
+					id: "58F3CBF285C6746C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "primordial_strata"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7883D3FE7E34CBA8"
+					individual: true
+					negate: false
+					stage: "primordial_strata"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Primordial Strata"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["33515B57C332424C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r forlorn ruins, forlorn ruins additions new, underground cabin forlorn hollows &8(17% a chest)"
+				"&bOpens:&r 72 entries"
+				"&dNeeds:&r one of Archaeology Mastery, The Wild Study; any one of 33 other scrolls"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "alexscaves:guanostone"
+			id: "6A00F59D53AD43BF"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "4A00F5BA61C5488B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Empty, and it was not always."
+			tasks: [
+				{
+					id: "54F2C9D050A30CBF"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "forlorn_hollows"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5188EC0526E3921F"
+					individual: true
+					negate: false
+					stage: "forlorn_hollows"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Forlorn Hollows"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["33515B57C332424C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abyssal ruins, abyssal ruins additions, additional ancient city loot and 15 more &8(17% a chest)"
+				"&bOpens:&r 132 entries"
+				"&dNeeds:&r one of Archaeology Mastery, The Wild Study; any one of 33 other scrolls"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "alexscaves:abyssmarine"
+			id: "23D4416BAA66D779"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "191F8186981670E6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Down past where light was useful."
+			tasks: [
+				{
+					id: "1048BF17EE76F72E"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "abyssal_chasm"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "45E5BE6338CD941C"
+					individual: true
+					negate: false
+					stage: "abyssal_chasm"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Abyssal Chasm"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["33515B57C332424C"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r magnetic ruins, magnetic ruins additions new, underground cabin magnetic caves &8(17% a chest)"
+				"&bOpens:&r 68 entries"
+				"&dNeeds:&r one of Archaeology Mastery, The Wild Study; any one of 34 other scrolls"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "alexscaves:scarlet_magnet"
+			id: "5107157DB3463B9C"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "2CC50A4B1E67C4CA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The stone pulls. Nobody wrote down why."
+			tasks: [
+				{
+					id: "4772C06F26E59529"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "magnetic_deep"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "56FA33550C7E7ABE"
+					individual: true
+					negate: false
+					stage: "magnetic_deep"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Magnetic Deep"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3B3E8289B11F6CAA"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r dwemer ruin common, dwemer ruin epic, dwemer ruin rare and 1 more &8(4% a chest)"
+				"&bOpens:&r 15 entries and 1 whole body of work"
+				"&dNeeds:&r any one of 15 other scrolls; 35 levels of experience, spent"
+				"&aPedestal:&r Tier IV, about 30 minutes"
+			]
+			icon: "mebahelcreaturesdwarven:dwemer_metal_gear"
+			id: "10D6D53A7BA4566B"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "787FC87BC9089810"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "They watched something. It is not written down."
+			tasks: [
+				{
+					id: "0DEBD4E610FCD717"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "dwemer_observatory"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1A449138482D76BA"
+					individual: true
+					negate: false
+					stage: "dwemer_observatory"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Dwemer Observatory Looting"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4E6576C26F0BCBA9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure, ancient city, ancient city additions and 2 more &8(12% a chest)"
+				"&bOpens:&r 78 entries"
+				"&dNeeds:&r Archaeology Mastery; any one of 33 other scrolls"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:sculk_catalyst"
+			id: "69AECC29DCB6BED4"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7628018F09A9EFDB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "It listens, and then it spreads."
+			tasks: [
+				{
+					id: "490A4438DEBFDE37"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "sculk_sickness"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "6A31B8C0600AE01A"
+					individual: true
+					negate: false
+					stage: "sculk_sickness"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On Sculk Sickness"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["622F29ADC59337E9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abyssal ruins, abyssal ruins additions, additional ancient city loot and 75 more &8(35% a chest)"
+				"&bOpens:&r 77 entries"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 3 minutes"
+			]
+			icon: "minecraft:brush"
+			id: "2FDE0D45B86FC44C"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "17C9E0493FF9DDB2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The archive, one brush-stroke at a time."
+			tasks: [
+				{
+					id: "55C89CC3E71D9115"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "archaeology_mastery"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7E58BC41D42B0E84"
+					individual: true
+					negate: false
+					stage: "archaeology_mastery"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Archaeology Mastery"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["10D6D53A7BA4566B"]
+			description: [
+				"One of the sealed sites. Something was put in here and the door was meant to stay shut."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7600B18A9224554F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "60FAC61AD2B66DD7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sealed. The Scylla fight."
+			tasks: [{
+				id: "6A9819FD4D917273"
+				structure: "cataclysm:acropolis"
+				type: "structure"
+			}]
+			title: "Acropolis"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["69AECC29DCB6BED4"]
+			description: [
+				"One of the sealed sites. Something was put in here and the door was meant to stay shut."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "391CE82E6FF248DD"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "61C7D2DF36415F24"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sealed. It was still running when they left."
+			tasks: [{
+				id: "1E725F05FA724A01"
+				structure: "cataclysm:ancient_factory"
+				type: "structure"
+			}]
+			title: "Ancient Factory"
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2FDE0D45B86FC44C"]
+			description: [
+				"One of the sealed sites. Something was put in here and the door was meant to stay shut."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0FBAB88E57D8CE6B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "323F9FCB8CBBAF57"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sealed, and built for an audience."
+			tasks: [{
+				id: "4AC782F9C3A5F96D"
+				structure: "cataclysm:burning_arena"
+				type: "structure"
+			}]
+			title: "Burning Arena"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["023344D612FB48D1"]
+			description: [
+				"One of the sealed sites. Something was put in here and the door was meant to stay shut."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4FC4E9C6F995FB22"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "725876A53D2ED65B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sealed. A tomb that argues back."
+			tasks: [{
+				id: "3415B5EDD2A32A06"
+				structure: "cataclysm:cursed_pyramid"
+				type: "structure"
+			}]
+			title: "Cursed Pyramid"
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6A00F59D53AD43BF"]
+			description: [
+				"One of the sealed sites. Something was put in here and the door was meant to stay shut."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "79DCED9859B2D9A0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "33686811C28F7EE0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sealed. Something is still in it."
+			tasks: [{
+				id: "4A894FD1AA269812"
+				structure: "cataclysm:frosted_prison"
+				type: "structure"
+			}]
+			title: "Frosted Prison"
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["23D4416BAA66D779"]
+			description: [
+				"One of the sealed sites. Something was put in here and the door was meant to stay shut."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7CA5B8DFAB257AC4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "111A6CDE8A669754"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sealed. The fire never went out."
+			tasks: [{
+				id: "6A2F8DB6F04C597D"
+				structure: "cataclysm:ruined_citadel"
+				type: "structure"
+			}]
+			title: "Ruined Citadel"
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["5107157DB3463B9C"]
+			description: [
+				"One of the sealed sites. Something was put in here and the door was meant to stay shut."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "27289ACADCA61BDF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "312FA30386436E48"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sealed. A forge that took payment in souls."
+			tasks: [{
+				id: "085ED783549946D3"
+				structure: "cataclysm:soul_black_smith"
+				type: "structure"
+			}]
+			title: "Soul Black Smith"
+			x: 12.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["33515B57C332424C"]
+			description: [
+				"One of the sealed sites. Something was put in here and the door was meant to stay shut."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "340C443A31FE0829"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "73E9D8D25C3011A3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Sealed, and then the water finished the job."
+			tasks: [{
+				id: "6B60C119D067D060"
+				structure: "cataclysm:sunken_city"
+				type: "structure"
+			}]
+			title: "Sunken City"
+			x: 14.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7600B18A9224554F"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "21E2FA3F2449620F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7C5A4404587210A7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Nobody in the record claims it."
+			tasks: [{
+				id: "47D3BBE160C735ED"
+				structure: "terralith:desert_outpost"
+				type: "structure"
+			}]
+			title: "Desert Outpost"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["391CE82E6FF248DD"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1AA85987469DF6A0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6ED7FD695F88F3EA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "They built walls before they built wells."
+			tasks: [{
+				id: "7B5C958C0E8237B0"
+				structure: "terralith:fortified_desert_village"
+				type: "structure"
+			}]
+			title: "Fortified Desert Village"
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0FBAB88E57D8CE6B"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2291589B926AD13B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "51520A102A33205A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Walls first. Always walls first."
+			tasks: [{
+				id: "5DAC58C5A02D97C7"
+				structure: "terralith:fortified_village"
+				type: "structure"
+			}]
+			title: "Fortified Village"
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4FC4E9C6F995FB22"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6B3665A79D1310A1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0622A334527B85AB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One room, and it was enough."
+			tasks: [{
+				id: "4FA951AEF64ABE3E"
+				structure: "terralith:glacial_hut"
+				type: "structure"
+			}]
+			title: "Glacial Hut"
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["79DCED9859B2D9A0"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "764AD2870D14D229"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "51056ECB6D58E270"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Hoarfrost method, without the Hoarfrost."
+			tasks: [{
+				id: "685D7F41E220F6C1"
+				structure: "terralith:igloo"
+				type: "structure"
+			}]
+			title: "Igloo"
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7CA5B8DFAB257AC4"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5B5B4E0CA33EC5EE"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2E0DD10C5CDAC59D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Somebody taught here, and left no roll."
+			tasks: [{
+				id: "7F303B6C45DBAFAA"
+				structure: "terralith:mage_complex"
+				type: "structure"
+			}]
+			title: "Mage Complex"
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["27289ACADCA61BDF"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2E2D1E4E91A2E491"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "33B93EF3FDA5A158"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Up, because the work needed height."
+			tasks: [{
+				id: "46A48422B87D3B94"
+				structure: "terralith:mage_tower"
+				type: "structure"
+			}]
+			title: "Mage Tower"
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["340C443A31FE0829"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3868B250FCEA95BB"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "351137BC80508EAD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The same tower, keeping a different season."
+			tasks: [{
+				id: "27E88A3DB6B438EA"
+				structure: "terralith:mage_tower_autumn"
+				type: "structure"
+			}]
+			title: "Mage Tower Autumn"
+			x: 14.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["21E2FA3F2449620F"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "30C1CCC034E95147"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "64937384E5877CD3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The same tower, keeping a different season."
+			tasks: [{
+				id: "404934F8D0056273"
+				structure: "terralith:mage_tower_spring"
+				type: "structure"
+			}]
+			title: "Mage Tower Spring"
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1AA85987469DF6A0"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1723CDED174CAAC9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "64EEDBD71BEF677E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The same tower, keeping a different season."
+			tasks: [{
+				id: "74BAE6B51E8F367E"
+				structure: "terralith:mage_tower_summer"
+				type: "structure"
+			}]
+			title: "Mage Tower Summer"
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["2291589B926AD13B"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "571248DC1F5789A6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6AA2E250D914BA59"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The same tower, keeping a different season."
+			tasks: [{
+				id: "3BDBB92254C633E6"
+				structure: "terralith:mage_tower_winter"
+				type: "structure"
+			}]
+			title: "Mage Tower Winter"
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6B3665A79D1310A1"]
+			description: [
+				"Not built by anyone in the record, which is its own kind of unsettling."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "34693FD632113865"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "278D397735A0D659"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "What is left when the sand wins."
+			tasks: [{
+				id: "005CF10BD4C9F6FC"
+				structure: "terralith:rubble_desert"
+				type: "structure"
+			}]
+			title: "Rubble Desert"
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["764AD2870D14D229"]
+			description: [
+				"Hoarfrost water. Their fleet went down in places like this and stayed in command."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "08C3C9BF861D2FA0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "47F5449D5086B25D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Hoarfrost water. The fleet went down near here."
+			tasks: [{
+				id: "5FA33B54E30FE95F"
+				structure: "aquamirae:surface/arch"
+				type: "structure"
+			}]
+			title: "Ice Maze , Arch"
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["5B5B4E0CA33EC5EE"]
+			description: [
+				"Hoarfrost water. Their fleet went down in places like this and stayed in command."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "60E287CDE5D73042"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 16
+				id: "770CAE3961854D65"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Hoarfrost water. Easy to enter, less so to leave."
+			tasks: [{
+				id: "02BE6F97B5D2E48C"
+				structure: "aquamirae:ice_maze/common"
+				type: "structure"
+			}]
+			title: "Ice Maze , Common"
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["2E2D1E4E91A2E491"]
+			description: [
+				"Hoarfrost water. Their fleet went down in places like this and stayed in command."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "088508E3D96332D3"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "137083FC7A742040"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Hoarfrost water. It only turns one way."
+			tasks: [{
+				id: "05ED343C8D4E41D2"
+				structure: "aquamirae:surface/spiral"
+				type: "structure"
+			}]
+			title: "Ice Maze , Spiral"
+			x: 12.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["3868B250FCEA95BB"]
+			description: [
+				"Hoarfrost water. Their fleet went down in places like this and stayed in command."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "07D0D55F7CF0D77B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "137FDFBB5A95CFF4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The last warm room for a long way."
+			tasks: [{
+				id: "032B507AF9699A85"
+				structure: "aquamirae:outpost"
+				type: "structure"
+			}]
+			title: "Outpost"
+			x: 14.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["30C1CCC034E95147"]
+			description: [
+				"Hoarfrost water. Their fleet went down in places like this and stayed in command."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6791A0D09310893F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5D5D82E8ABAA6E19"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Built to survive one night, used for many."
+			tasks: [{
+				id: "69CE7C516993CAA8"
+				structure: "aquamirae:shelter"
+				type: "structure"
+			}]
+			title: "Shelter"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["1723CDED174CAAC9"]
+			description: [
+				"Hoarfrost water. Their fleet went down in places like this and stayed in command."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "54EF3C2CC4FB1BAE"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "166C3AF54E16937E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "It did not make port."
+			tasks: [{
+				id: "33DCEDBED234B5D9"
+				structure: "aquamirae:ship"
+				type: "structure"
+			}]
+			title: "Ship"
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["571248DC1F5789A6"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2F7892C38D4C16D6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3532ED85A7A3E739"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work, and the reasoning was removed."
+			tasks: [{
+				id: "79D48F7A4FD2D758"
+				structure: "alexscaves:abyssal_ruins"
+				type: "structure"
+			}]
+			title: "Abyssal Ruins"
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["34693FD632113865"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "761025422B3D8BF9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7CFC61C18B48BC01"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work. They knew what it did."
+			tasks: [{
+				id: "2F58A38A1E112FD8"
+				structure: "alexscaves:acid_pit"
+				type: "structure"
+			}]
+			title: "Acid Pit"
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["08C3C9BF861D2FA0"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6C4CAA5F248F3BF8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "443277CDE124865B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work, and nobody will explain it."
+			tasks: [{
+				id: "10B3FE7670E44831"
+				structure: "alexscaves:cake_cave"
+				type: "structure"
+			}]
+			title: "Cake Cave"
+			x: 8.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5B5B4E0CA33EC5EE"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0D680CF3F64BB430"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "5E061C3B4239CFA8"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "6C4C0DC508A59FEB"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "primordial_strata"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work. Older than it should be."
+			tasks: [{
+				id: "5C529A56F5E482C8"
+				structure: "alexscaves:dino_bowl"
+				type: "structure"
+			}]
+			title: "Dino Bowl"
+			x: 10.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["088508E3D96332D3"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7229805BCE7C6397"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1B636746B9319D6A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work. The method survives."
+			tasks: [{
+				id: "01953D0F8D57E222"
+				structure: "alexscaves:donut_arch"
+				type: "structure"
+			}]
+			title: "Donut Arch"
+			x: 12.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["07D0D55F7CF0D77B"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32A58F5E412D403C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "62444E0E82ADB0F6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work, in iron."
+			tasks: [{
+				id: "2FFA6A5C525C265C"
+				structure: "alexscaves:ferrocave"
+				type: "structure"
+			}]
+			title: "Ferrocave"
+			x: 14.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6791A0D09310893F"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "310243F7D639B96B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "76DEE76D856E1801"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "It crosses something nobody named."
+			tasks: [{
+				id: "3A5680D2DA0143C2"
+				structure: "alexscaves:forlorn_bridge"
+				type: "structure"
+			}]
+			title: "Forlorn Bridge"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["54EF3C2CC4FB1BAE"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7F57E3053363BF8F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5085F124C83CB6BF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work. Cut, then abandoned."
+			tasks: [{
+				id: "0AD70EE560B20626"
+				structure: "alexscaves:forlorn_canyon"
+				type: "structure"
+			}]
+			title: "Forlorn Canyon"
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["2F7892C38D4C16D6"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "161FB2EC63A6CD8C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7711F56B9BED7CC0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work, and it is not a joke."
+			tasks: [{
+				id: "750995AB35A20557"
+				structure: "alexscaves:gingerbread_town"
+				type: "structure"
+			}]
+			title: "Gingerbread Town"
+			x: 4.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["761025422B3D8BF9"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "44783288DD3F5EF5"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7D291993240E8D49"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work. Somebody stayed."
+			tasks: [{
+				id: "2B6AA81D9EFD5811"
+				structure: "alexscaves:licowitch_tower"
+				type: "structure"
+			}]
+			title: "Licowitch Tower"
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6C4CAA5F248F3BF8"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1D2845C77A9593D4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1CFB26D0DDCF5987"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work, at the bottom."
+			tasks: [{
+				id: "44FE1645BB25E87D"
+				structure: "alexscaves:ocean_trench"
+				type: "structure"
+			}]
+			title: "Ocean Trench"
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["0D680CF3F64BB430"]
+			description: [
+				"Cipher territory. The method survives; the reasoning was removed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1124668A1013F9AA"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1B42D44C65A3BC26"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Cipher work. No reasoning survives at all."
+			tasks: [{
+				id: "11BAF19494E953C9"
+				structure: "alexscaves:soda_bottle"
+				type: "structure"
+			}]
+			title: "Soda Bottle"
+			x: 10.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["7229805BCE7C6397"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0E6E4152CD0DD7DF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "652D64567F329F13"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court. The Sands filed things in living wood."
+			tasks: [{
+				id: "089FC34A388187AF"
+				structure: "dungeons_and_combat:ancient_tree"
+				type: "structure"
+			}]
+			title: "Ancient Tree"
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["32A58F5E412D403C"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "16C56F4A3B86A30B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "47DE838DA227421B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court, and it is still hot."
+			tasks: [{
+				id: "45570D44E856EED4"
+				structure: "dungeons_and_combat:blazing_fortress"
+				type: "structure"
+			}]
+			title: "Blazing Fortress"
+			x: 14.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["310243F7D639B96B"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7768BCF6E67ED649"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5D3AA5F79E1C5BC8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court. It repeats what you say."
+			tasks: [{
+				id: "50A2DD7749197ECD"
+				structure: "dungeons_and_combat:echoing_ruins"
+				type: "structure"
+			}]
+			title: "Echoing Ruins"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["7F57E3053363BF8F"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "491E4A6F48B50282"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7F1A7877534A33FC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court. Named for a clerk."
+			tasks: [{
+				id: "7C7A65943A9C1648"
+				structure: "dungeons_and_combat:ernos_cave"
+				type: "structure"
+			}]
+			title: "Ernos Cave"
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["161FB2EC63A6CD8C"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5F542E0201DB876C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "18AA2DFB9278829B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court. They were only passing through."
+			tasks: [{
+				id: "1B7DE7F2668C9482"
+				structure: "dungeons_and_combat:remanent_camp"
+				type: "structure"
+			}]
+			title: "Remanent Camp"
+			x: 4.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["44783288DD3F5EF5"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5B548C623C643248"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5FC1CB62F8EEA6BD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court. Somebody was watching for something."
+			tasks: [{
+				id: "5156399F634964C9"
+				structure: "dungeons_and_combat:remanent_watch_tower"
+				type: "structure"
+			}]
+			title: "Remanent Watch Tower"
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["1D2845C77A9593D4"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "768F0E4D984743CD"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6FC2A4DB5739615F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court, and the only cheerful entry."
+			tasks: [{
+				id: "28CC54372420FFD2"
+				structure: "dungeons_and_combat:tavern"
+				type: "structure"
+			}]
+			title: "Tavern"
+			x: 8.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["1124668A1013F9AA"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2BDC32620CEF9552"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1899DC8C693C6523"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court. The forge outlasted the smith."
+			tasks: [{
+				id: "580EC3725A7E839F"
+				structure: "dungeons_and_combat:the_blacksmith_house"
+				type: "structure"
+			}]
+			title: "The Blacksmith House"
+			x: 10.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0E6E4152CD0DD7DF"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5C854E3CBD778F7B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7D902C9363ABB2F6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court. A filing system for people."
+			tasks: [{
+				id: "59DC5D6A3614283F"
+				structure: "dungeons_and_combat:the_catacumbs_lugubrious"
+				type: "structure"
+			}]
+			title: "The Catacumbs Lugubrious"
+			x: 12.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["16C56F4A3B86A30B"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "51678FD897C779E8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "426FD5CF1A1C8B66"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court. Where the authorship was suppressed."
+			tasks: [{
+				id: "60C6A392ED15D5A3"
+				structure: "dungeons_and_combat:the_cathedral"
+				type: "structure"
+			}]
+			title: "The Cathedral"
+			x: 14.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["7768BCF6E67ED649"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2E62ED13E0C70725"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "55DEE7DCDC7A7C0B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court, and smaller than it sounds."
+			tasks: [{
+				id: "1B5D34633701C4C4"
+				structure: "dungeons_and_combat:the_church"
+				type: "structure"
+			}]
+			title: "The Church"
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["491E4A6F48B50282"]
+			description: [
+				"Death-court architecture. The Gilded Sands built filing systems and called them tombs."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "150D62BEB8981A43"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "56FC3FEFB250E7CE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Death-court. Filed where they dropped."
+			tasks: [{
+				id: "5CA049DF0ADE6B24"
+				structure: "dungeons_and_combat:the_field_of_the_fallen"
+				type: "structure"
+			}]
+			title: "The Field Of The Fallen"
+			x: 2.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["5F542E0201DB876C"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7D3CDC772C180B85"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "386F6D05ECB8E7E5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "A kingdom that ended before the record starts."
+			tasks: [{
+				id: "07D0C773C9527CE5"
+				structure: "grim_kingdoms:blackridge_watch"
+				type: "structure"
+			}]
+			title: "Blackridge Watch"
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["5B548C623C643248"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "44290FA05C3F0992"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1307929F5A1A9BFE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record. Somebody lived very well here."
+			tasks: [{
+				id: "6D350545EA8AC6DC"
+				structure: "grim_kingdoms:chill_hallmanor"
+				type: "structure"
+			}]
+			title: "Chill Hallmanor"
+			x: 6.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["768F0E4D984743CD"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6EA2E59148FC6378"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "658389F00C14D488"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record. They took the crown off it."
+			tasks: [{
+				id: "445DEC6C09D74993"
+				structure: "grim_kingdoms:decrown_monolith"
+				type: "structure"
+			}]
+			title: "Decrown Monolith"
+			x: 8.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["2BDC32620CEF9552"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3ACCC8A2D31750A7"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "457EF307C5E28F22"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record, and it held for a while."
+			tasks: [{
+				id: "0A456C12F18AAAED"
+				structure: "grim_kingdoms:frostbloom_bastion"
+				type: "structure"
+			}]
+			title: "Frostbloom Bastion"
+			x: 10.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["5C854E3CBD778F7B"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2059DFFE85592991"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3E61EE7B2316A3D5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record. Layers, and a joke nobody explains."
+			tasks: [{
+				id: "058F77B7EE6ABA87"
+				structure: "grim_kingdoms:frozen_onion_fort"
+				type: "structure"
+			}]
+			title: "Frozen Onion Fort"
+			x: 12.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["51678FD897C779E8"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "704B29B386D7214E"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "57A66EDED8D9BEB6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record. The ice took it, eventually."
+			tasks: [{
+				id: "59DEB48D6FE89E96"
+				structure: "grim_kingdoms:glacierfall_keep"
+				type: "structure"
+			}]
+			title: "Glacierfall Keep"
+			x: 14.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["2E62ED13E0C70725"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2B5B0867D19DD128"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "02C735AA760DED81"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record. Something was worth locking up."
+			tasks: [{
+				id: "7D42796A905CA545"
+				structure: "grim_kingdoms:glimmervault_fortress"
+				type: "structure"
+			}]
+			title: "Glimmervault Fortress"
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["150D62BEB8981A43"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5809682495113F52"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "42BDB7AA18FAA5FB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record. It broke upward."
+			tasks: [{
+				id: "02754416DF84DDCB"
+				structure: "grim_kingdoms:shardspire_castle"
+				type: "structure"
+			}]
+			title: "Shardspire Castle"
+			x: 2.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["7D3CDC772C180B85"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0E80B0B2F54A41B8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2813D2D18B83DA0B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record, and the wind stops at the wall."
+			tasks: [{
+				id: "51256445943C05AA"
+				structure: "grim_kingdoms:silentgale_citadel"
+				type: "structure"
+			}]
+			title: "Silentgale Citadel"
+			x: 4.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["44290FA05C3F0992"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6CD04D2C2D217F64"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "46FEF37973EC81CA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record. The name is the whole story."
+			tasks: [{
+				id: "7E405773F45F339B"
+				structure: "grim_kingdoms:snowgrave_citadel"
+				type: "structure"
+			}]
+			title: "Snowgrave Citadel"
+			x: 6.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6EA2E59148FC6378"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "77C2357906B4FD5F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "68F07C40201A12D2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record. The furthest marker they set."
+			tasks: [{
+				id: "480D412A5232B6F9"
+				structure: "grim_kingdoms:stonyfell_outpost"
+				type: "structure"
+			}]
+			title: "Stonyfell Outpost"
+			x: 8.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["3ACCC8A2D31750A7"]
+			description: [
+				"A kingdom that ended before the record starts."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6C41EA9E6619A516"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "47C92158C1CEDEE6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Pre-record. Everyone stopped here once."
+			tasks: [{
+				id: "3C6A074037147714"
+				structure: "grim_kingdoms:travelers_lodge"
+				type: "structure"
+			}]
+			title: "Travelers Lodge"
+			x: 10.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["2059DFFE85592991"]
+			description: [
+				"Disappeared work. Every seal here still holds, which is the frightening part."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0991D72F0A286B40"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "768A70E638897111"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Every seal here still holds."
+			tasks: [{
+				id: "733E6DB3C8645451"
+				structure: "dungeonnowloading:labyrinth"
+				type: "structure"
+			}]
+			title: "Labyrinth"
+			x: 12.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["704B29B386D7214E"]
+			description: [
+				"Disappeared work. Every seal here still holds, which is the frightening part."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "22EA23AE57656312"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0E441EBB99AB1B0F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Two of everything, including the answer."
+			tasks: [{
+				id: "7D33A38E20D052DC"
+				structure: "dungeonnowloading:temple_of_duality"
+				type: "structure"
+			}]
+			title: "Temple Of Duality"
+			x: 14.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["2B5B0867D19DD128"]
+			description: [
+				"Named in the archive, explained nowhere."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "50AAC692395838FF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "00B485C3AAF80E62"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named in the archive, explained nowhere."
+			tasks: [{
+				id: "041CB00779A252B7"
+				structure: "mythsandlegends:ancient_vestiges"
+				type: "structure"
+			}]
+			title: "Ancient Vestiges"
+			x: 0.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["5809682495113F52"]
+			description: [
+				"Named in the archive, explained nowhere."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0AFBD084F33904A1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7B545781148B46A0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named, and left at that."
+			tasks: [{
+				id: "48F3639A2A47CF9A"
+				structure: "mythsandlegends:graveyard"
+				type: "structure"
+			}]
+			title: "Graveyard"
+			x: 2.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["0E80B0B2F54A41B8"]
+			description: [
+				"Named in the archive, explained nowhere."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1DBA3A8E8270CE17"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5A1AAE399D07C95F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Somebody stopped here long enough to name it."
+			tasks: [{
+				id: "711CB424CDAAA1EF"
+				structure: "mythsandlegends:old_camp"
+				type: "structure"
+			}]
+			title: "Old Camp"
+			x: 4.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6CD04D2C2D217F64"]
+			description: [
+				"Named in the archive, explained nowhere."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "69A13CF652616BAE"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "03F3B12B5BD5DE52"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named. Nobody wrote what nested in it."
+			tasks: [{
+				id: "35DF8AB946A7F1F4"
+				structure: "mythsandlegends:scorched_nest"
+				type: "structure"
+			}]
+			title: "Scorched Nest"
+			x: 6.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["77C2357906B4FD5F"]
+			description: [
+				"Yucatan. They climbed here, were answered, and sealed the stair."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "698034AE1328112C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "751E4B25020BF803"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Yucatan. They were answered, and sealed the stair."
+			tasks: [{
+				id: "5CD01B525C13F986"
+				structure: "call_of_yucutan:deadly_crypt"
+				type: "structure"
+			}]
+			title: "Deadly Crypt"
+			x: 8.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6C41EA9E6619A516"]
+			description: [
+				"Yucatan. They climbed here, were answered, and sealed the stair."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4DE973817B760E51"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6F0A4EA6383CB4E4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Yucatan. The jungle took it back."
+			tasks: [{
+				id: "6515F25A96EBEDC7"
+				structure: "call_of_yucutan:overgrown_temple"
+				type: "structure"
+			}]
+			title: "Overgrown Temple"
+			x: 10.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["0991D72F0A286B40"]
+			description: [
+				"The End kept growing after the pantheon failed."
+				"Everything old is underneath something new."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:brush"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "26FC3825A372F75A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5A7B421FB046E42C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The End kept growing after the pantheon failed."
+			tasks: [{
+				id: "24EB0EE82CED358C"
+				structure: "endergetic:eetle_nest"
+				type: "structure"
+			}]
+			title: "Eetle Nest"
+			x: 12.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["73BEA5460D63B4CC"]
+			description: [
+				"Someone dug down to where rock stops behaving like rock, and built a room there."
+				"They were not prospecting. They were reading."
+			]
+			icon: "minecraft:filled_map"
+			id: "33515B57C332424C"
+			rewards: [
+				{
+					id: "10CD745951CED8B8"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "wild_study"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 24
+					id: "335AA9FD636CB4D5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Somebody dug to where rock stops behaving."
+			tasks: [{
+				id: "7E511A6FA636490B"
+				structure: "alexscaves:underground_cabin"
+				type: "structure"
+			}]
+			title: "The Cabin Under the Stone"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73BEA5460D63B4CC"]
+			description: [
+				"A hollow that never healed over."
+				"The people who studied why did their writing on site, and did not carry it home."
+			]
+			icon: "minecraft:filled_map"
+			id: "7FB4937387DC3C5E"
+			rewards: [
+				{
+					id: "74C382AF581A9088"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "forlorn_hollows"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 24
+					id: "60DE8FB9E93ABF55"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "A hollow that never healed over."
+			tasks: [{
+				id: "22834D00C26CB343"
+				structure: "alexscaves:forlorn_canyon"
+				type: "structure"
+			}]
+			title: "The Forlorn Canyon"
+			x: 2.0d
+			y: 1.0d
+		}
+	]
+	subtitle: ["What the nine civilisations left standing."]
+	title: "Buried Things"
+}

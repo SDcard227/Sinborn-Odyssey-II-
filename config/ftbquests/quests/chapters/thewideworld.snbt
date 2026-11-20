@@ -1,0 +1,2490 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thewideworld"
+	group: "5A0000000000005E"
+	icon: "minecraft:filled_map"
+	id: "1E72EA0521485AD1"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Cartography in this world is archaeology with better weather."]
+			icon: "minecraft:filled_map"
+			id: "6F72360D3CDB938F"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "The map is a record of what you have found."
+			tasks: [{
+				id: "0005C16621D38EAD"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Wide World"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6F72360D3CDB938F"
+				"61C3EA8CE31BA1FF"
+			]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r buried treasure, cask, shipwreck supply and 2 more &8(35% a chest)"
+				"&bOpens:&r 352 entries"
+				"&dNeeds:&r one of The Tanner's Craft, The Long Road, Woodworking"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "minecraft:tropical_fish"
+			id: "5633C8082D3791E5"
+			rewards: [{
+				count: 12
+				id: "10F630573C863B11"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.25d
+			subtitle: "What the water gave back."
+			tasks: [
+				{
+					id: "325D3C0181E6F0D5"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "spoils_of_the_sea_roads"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "6E03EF69D01CB8A2"
+					individual: true
+					negate: false
+					stage: "spoils_of_the_sea_roads"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Spoils of the Sea-Roads"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"The Umvuthana Archive holds the most complete copy, and chose what to burn."
+				""
+				"&6Found in:&r home farming chest, jungle warehouse, village jungle house and 2 more &8(35% a chest)"
+				"&bOpens:&r 327 entries and 2 whole bodies of work"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 3 minutes"
+			]
+			icon: "minecraft:sniffer_egg"
+			id: "457EBE60BA10EE8B"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "5D0D525E070F8C46"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Umvuthana. They looked before they named it."
+			tasks: [
+				{
+					id: "5DD642A1B6EAE940"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "naturalist_basics"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "206BCB065A7D6D4E"
+					individual: true
+					negate: false
+					stage: "naturalist_basics"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On Sniffers, Frogs, and Mangroves"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r caveman house, food storage, frosted prison treasure and 2 more &8(18% a chest)"
+				"&bOpens:&r 53 entries and 3 whole bodies of work"
+				"&dNeeds:&r The Record Press"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "xercamusic:guitar"
+			id: "178E21CCDF79BE4A"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7D1D3077E8413EB8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "A voice, sent further than a voice goes."
+			tasks: [
+				{
+					id: "27EA72DB0662644F"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "sound_and_broadcast"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "6A7397AAFDD5999D"
+					individual: true
+					negate: false
+					stage: "sound_and_broadcast"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Sound & Broadcast"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r additional library loot, ancient fish eggs from buried treasure, buried treasure and 11 more &8(25% a chest)"
+				"&bOpens:&r 9 entries"
+				"&dNeeds:&r one of The Tanner's Craft, The Long Road, Woodworking"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "quark:pathfinders_quill"
+			id: "464D3495DE1CC20F"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7E1138A906CD7F91"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "The survey, once it stopped guessing."
+			tasks: [
+				{
+					id: "0B1DD645F07B844B"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "cartography_advanced"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "3ED13D78F9E0ED79"
+					individual: true
+					negate: false
+					stage: "cartography_advanced"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Advanced Cartography"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Cipher work: the method survives and the reasoning does not."
+				""
+				"&6Found in:&r pillager outpost, ruined portal, shipwreck map and 7 more &8(25% a chest)"
+				"&bOpens:&r 7 entries and 3 whole bodies of work"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 2 minutes"
+			]
+			icon: "historystages:research_scroll"
+			id: "108F34BF29B5E96B"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "4641CB83DD6E655D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Cipher work. Six roads that never draw a weapon."
+			tasks: [
+				{
+					id: "6CABB24418E67E2C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "long_road"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1FEE1F894F71DDF0"
+					individual: true
+					negate: false
+					stage: "long_road"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Long Road"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"One of the six below. The Cipher mapped these and recorded function, never identity."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "10082BC9F8C4C645"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "584AC3BAAA664FC4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One of the six below. Mapped, then left."
+			tasks: [{
+				biome: "alexscaves:abyssal_chasm"
+				id: "189EB93C860A0C0D"
+				type: "biome"
+			}]
+			title: "Abyssal Chasm"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"One of the six below. The Cipher mapped these and recorded function, never identity."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "153C104838FB3F21"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "22A04D9813173438"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One of the six below, and nobody explains it."
+			tasks: [{
+				biome: "alexscaves:candy_cavity"
+				id: "2179281B49F35E0E"
+				type: "biome"
+			}]
+			title: "Candy Cavity"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"One of the six below. The Cipher mapped these and recorded function, never identity."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "080B39495C3BF033"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1B5AA4D05CEDDA5C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One of the six below. Empty on purpose."
+			tasks: [{
+				biome: "alexscaves:forlorn_hollows"
+				id: "0C62B4128E9658FB"
+				type: "biome"
+			}]
+			title: "Forlorn Hollows"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"One of the six below. The Cipher mapped these and recorded function, never identity."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "09B022EAAF4C1312"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7350BFFDF75C613A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One of the six below. The stone pulls."
+			tasks: [{
+				biome: "alexscaves:magnetic_caves"
+				id: "3FC7A6BCDEBDC438"
+				type: "biome"
+			}]
+			title: "Magnetic Caves"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"One of the six below. The Cipher mapped these and recorded function, never identity."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "05573C3CD7B52010"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7F0D7D8B6AF64B58"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One of the six below. Older than the survey."
+			tasks: [{
+				biome: "alexscaves:primordial_caves"
+				id: "5096ECCE7EB00183"
+				type: "biome"
+			}]
+			title: "Primordial Caves"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"One of the six below. The Cipher mapped these and recorded function, never identity."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "1EE6D8E31F743DFA"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "74ABA5054FF7145B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "One of the six below. They recorded the air."
+			tasks: [{
+				biome: "alexscaves:toxic_caves"
+				id: "4029F48336475AE3"
+				type: "biome"
+			}]
+			title: "Toxic Caves"
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "2D585D6CAAF7D0D3"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "55CC0BBB47225FED"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The survey reached it. The archive did not."
+			tasks: [{
+				biome: "createteleporters:pd_biome"
+				id: "6634F4226C949B22"
+				type: "biome"
+			}]
+			title: "The Pocket Dimension"
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"The Gilded Sands claimed everything this dry and most of it claimed them back."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "61043CD499954322"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6E3BC2252CA5859F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The Sands claimed everything this dry."
+			tasks: [{
+				biome: "desert:desert"
+				id: "3EC78021F2FCAC10"
+				type: "biome"
+			}]
+			title: "Desert"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"The Gilded Sands claimed everything this dry and most of it claimed them back."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "58B391611ED6DDE8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4437B93A98F09DBA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Dry country, on the one week it is not."
+			tasks: [{
+				biome: "desert:desert_rainy"
+				id: "6AC5CC61B8FC89D9"
+				type: "biome"
+			}]
+			title: "Desert Rainy"
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"The Gilded Sands claimed everything this dry and most of it claimed them back."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "41597047817D3515"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "71D91E1F82D29CF0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Shade, and what it was worth."
+			tasks: [{
+				biome: "desert:desert_trees"
+				id: "2484777C38A78F99"
+				type: "biome"
+			}]
+			title: "Desert Trees"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Void-adjacent. The Convent's dimensional scrolls carry the second stamp for places like this."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "3B20B237DF8128F1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "704BF622D8F1F640"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Void-adjacent. The Convent kept notes."
+			tasks: [{
+				biome: "echovoids:altered"
+				id: "3AF54516079450F0"
+				type: "biome"
+			}]
+			title: "Altered"
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Void-adjacent. The Convent's dimensional scrolls carry the second stamp for places like this."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "05EF3510C564A425"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "354B344E13EB9069"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Void-adjacent, and named for the obvious."
+			tasks: [{
+				biome: "echovoids:black"
+				id: "313E0F735A468B7C"
+				type: "biome"
+			}]
+			title: "Black"
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Void-adjacent. The Convent's dimensional scrolls carry the second stamp for places like this."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "5238F7006ADF5D80"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6338B1723CE14294"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Void-adjacent. Filed by colour."
+			tasks: [{
+				biome: "echovoids:blue"
+				id: "5DE87DA28FF50704"
+				type: "biome"
+			}]
+			title: "Blue"
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Void-adjacent. The Convent's dimensional scrolls carry the second stamp for places like this."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "7BD76F74B8217C1A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5F4D974401AA1B0E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Void-adjacent. It grows without asking."
+			tasks: [{
+				biome: "echovoids:chorus"
+				id: "7D1EB98B1A9790D6"
+				type: "biome"
+			}]
+			title: "Chorus"
+			x: 12.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Void-adjacent. The Convent's dimensional scrolls carry the second stamp for places like this."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "74E7E266C3B882A6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4C73DB9DCD80EC8A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Void-adjacent. It moves you."
+			tasks: [{
+				biome: "echovoids:chorus_warp"
+				id: "5C1C62DB13A7D615"
+				type: "biome"
+			}]
+			title: "Chorus Warp"
+			x: 14.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Void-adjacent. The Convent's dimensional scrolls carry the second stamp for places like this."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "1F84CBDD827D367C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7C2C6A018A5C2A7F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Void-adjacent. It spreads."
+			tasks: [{
+				biome: "echovoids:corruption"
+				id: "33AAF61E9C32E492"
+				type: "biome"
+			}]
+			title: "Corruption"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Void-adjacent. The Convent's dimensional scrolls carry the second stamp for places like this."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "026D0C6FAF1FD179"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "291688DDE9FD9E29"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Void-adjacent. The colour of nothing deciding."
+			tasks: [{
+				biome: "echovoids:gray"
+				id: "0A2B49AEB8ECD166"
+				type: "biome"
+			}]
+			title: "Gray"
+			x: 2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Void-adjacent. The Convent's dimensional scrolls carry the second stamp for places like this."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "2C7B95379670247C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "35E1040A3E19BF4E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Void-adjacent. Distance stops being reliable."
+			tasks: [{
+				biome: "echovoids:warp"
+				id: "7A5C8EDA3ECFDE57"
+				type: "biome"
+			}]
+			title: "Warp"
+			x: 4.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Void-adjacent. The Convent's dimensional scrolls carry the second stamp for places like this."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "4508ED969D183996"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3792301D989D75E0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Void-adjacent. Filed by colour."
+			tasks: [{
+				biome: "echovoids:yellow"
+				id: "69D0FAC8AC03A39F"
+				type: "biome"
+			}]
+			title: "Yellow"
+			x: 6.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "781CFAC045BB1168"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3864643F3CFE2EF3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed, unexplained."
+			tasks: [{
+				biome: "endergetic:poise_forest"
+				id: "5586195C33D30B71"
+				type: "biome"
+			}]
+			title: "Poise Forest"
+			x: 8.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "3D01FD885E725896"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6CBD182AEC535BFA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed. The ground gave up."
+			tasks: [{
+				biome: "incision:eroded_yard"
+				id: "20D44652CC3F167D"
+				type: "biome"
+			}]
+			title: "Eroded Yard"
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "5526691D4AD933A9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7FA627B48FD1D327"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed. It is still falling."
+			tasks: [{
+				biome: "incision:gravelfalls"
+				id: "326234096DA9BEB4"
+				type: "biome"
+			}]
+			title: "Gravelfalls"
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "115220AF316D2070"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "31CAA8E5A8EA2CC6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed. Something burned first."
+			tasks: [{
+				biome: "luminous_nether:ash_forest"
+				id: "0B7389129F8CCCC5"
+				type: "biome"
+			}]
+			title: "Ash Forest"
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "6988BC12A12CB24D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0039FD623DF8E78A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed. It is one organism."
+			tasks: [{
+				biome: "luminous_nether:fungal_plains"
+				id: "6305ABA9D9154BB6"
+				type: "biome"
+			}]
+			title: "Fungal Plains"
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "3DFE43EE3DBB30E4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5C2092F39BAF9249"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed, and it holds one colour."
+			tasks: [{
+				biome: "luminousworld:auburn_forest"
+				id: "264C0F8057DA2923"
+				type: "biome"
+			}]
+			title: "Auburn Forest"
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"The Nether keeps producing places nobody surveyed on purpose."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "439EEF529CDFAD85"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5224C7FF0617CCE5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The Nether, doing something it should not."
+			tasks: [{
+				biome: "netherexp:black_ice_glaciers"
+				id: "47654F04CF23B9E9"
+				type: "biome"
+			}]
+			title: "Black Ice Glaciers"
+			x: 6.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"The Nether keeps producing places nobody surveyed on purpose."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "574CD6C2A4BE52F0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3F560EB7BE390C40"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The Nether. Nobody surveyed this on purpose."
+			tasks: [{
+				biome: "netherexp:exhaust_mire"
+				id: "380067EE02C108DC"
+				type: "biome"
+			}]
+			title: "Exhaust Mire"
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"The Nether keeps producing places nobody surveyed on purpose."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "6AAB1D6272CC4618"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "078C638128CCAD90"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The Nether. Somebody farmed here."
+			tasks: [{
+				biome: "netherexp:sorrowsquash_pastures"
+				id: "70FC3E1480106841"
+				type: "biome"
+			}]
+			title: "Sorrowsquash Pastures"
+			x: 10.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "1CE160D225ECF27F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2BC7AAB8C4C9B4E2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed. It lights itself."
+			tasks: [{
+				biome: "quark:glimmering_weald"
+				id: "614C07F5BA7FC8CD"
+				type: "biome"
+			}]
+			title: "Glimmering Weald"
+			x: 12.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "380C2D1189BB16A6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "69CE4CCBFEAD5E27"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed. Nobody stayed."
+			tasks: [{
+				biome: "scarlet_king:scarlet_void"
+				id: "717F8F51F6F1033A"
+				type: "biome"
+			}]
+			title: "Scarlet Void"
+			x: 14.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "60784D3F208376A5"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "56BBC4D1148E75BE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. What lives here was put here."
+			tasks: [{
+				biome: "spawn:ant_gardens"
+				id: "0D898FA29F13F566"
+				type: "biome"
+			}]
+			title: "Ant Gardens"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "6A6E1D83C36067C7"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "52CD6117B4D13484"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. Placed, not grown."
+			tasks: [{
+				biome: "spawn:cold_island"
+				id: "7E958075280AA2F2"
+				type: "biome"
+			}]
+			title: "Cold Island"
+			x: 2.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "34511CE4C7794F23"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "358ACCA057FF83E2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. Stocked deliberately."
+			tasks: [{
+				biome: "spawn:deep_warm_ocean"
+				id: "28EEDFCC192CE11D"
+				type: "biome"
+			}]
+			title: "Deep Warm Ocean"
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "6915B0A7257119F3"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3FC72AF978801244"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. It should not have lasted."
+			tasks: [{
+				biome: "spawn:dodo_island"
+				id: "2CAD102672B06074"
+				type: "biome"
+			}]
+			title: "Dodo Island"
+			x: 6.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "48B13AAFD1E71228"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "274D3B20F5EF127A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. Hard landing."
+			tasks: [{
+				biome: "spawn:rocky_shore"
+				id: "06EB28F9433F6D26"
+				type: "biome"
+			}]
+			title: "Rocky Shore"
+			x: 8.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "00F1E61D2BAF2B53"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4E0E88046E0A4B64"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. Placed, not grown."
+			tasks: [{
+				biome: "spawn:sandy_island"
+				id: "59D0AED01AD3F505"
+				type: "biome"
+			}]
+			title: "Sandy Island"
+			x: 10.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "00BB60477A240460"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "34D4F783F0DD5097"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. Planted."
+			tasks: [{
+				biome: "spawn:seagrass_meadow"
+				id: "34F60B1B9D8692AF"
+				type: "biome"
+			}]
+			title: "Seagrass Meadow"
+			x: 12.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "4F2A0795BF449222"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5C0906D0ECA5B882"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. A world per puddle."
+			tasks: [{
+				biome: "spawn:tide_pool"
+				id: "150120252B037BC9"
+				type: "biome"
+			}]
+			title: "Tide Pool"
+			x: 14.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "5C2AC59EEC7EAFB5"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "32AEAEBEDFAF88E5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. Stocked deliberately."
+			tasks: [{
+				biome: "spawn:tropical_island"
+				id: "60EBB4AC0E0A1128"
+				type: "biome"
+			}]
+			title: "Tropical Island"
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Firekeeper country. What lives here was put here."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "285BF06EBB25686F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "15A5D07F9C724AEC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Firekeeper country. Built on something active."
+			tasks: [{
+				biome: "spawn:volcanic_island"
+				id: "4A0A066747BF44CC"
+				type: "biome"
+			}]
+			title: "Volcanic Island"
+			x: 2.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "3E2DA4F18F606A74"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5861A9F5570DB8BF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Terralith surveyed it and named it."
+			tasks: [{
+				biome: "terralith:alpha_islands"
+				id: "452AA41555A8D5CA"
+				type: "biome"
+			}]
+			title: "Alpha Islands"
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "55827A223CB63832"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2445054EB4B2AEF4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "The same islands, colder."
+			tasks: [{
+				biome: "terralith:alpha_islands_winter"
+				id: "1181D8ACF4E31E58"
+				type: "biome"
+			}]
+			title: "Alpha Islands Winter"
+			x: 8.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "5D74A072A73E85F9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0412927802B9E2FD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. High and quiet."
+			tasks: [{
+				biome: "terralith:alpine_grove"
+				id: "2F70CF7FBDAA2935"
+				type: "biome"
+			}]
+			title: "Alpine Grove"
+			x: 10.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "593D60B03865F969"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6A1DF02AB0D425F3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Higher still."
+			tasks: [{
+				biome: "terralith:alpine_highlands"
+				id: "393EC1144D96B394"
+				type: "biome"
+			}]
+			title: "Alpine Highlands"
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "40E3E3F84CADA450"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4FFCE643D629687C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Cut through crystal."
+			tasks: [{
+				biome: "terralith:amethyst_canyon"
+				id: "6D5D00C55FE7A1BD"
+				type: "biome"
+			}]
+			title: "Amethyst Canyon"
+			x: 14.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "538170E51E5D1730"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7C3092D86B6D03AD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Wet, and it grows."
+			tasks: [{
+				biome: "terralith:amethyst_rainforest"
+				id: "7BBC50C5CAD4F10D"
+				type: "biome"
+			}]
+			title: "Amethyst Rainforest"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "1BE728315FFC9005"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4285287096CD05B5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Older than the desert."
+			tasks: [{
+				biome: "terralith:ancient_sands"
+				id: "3095D4F074B22E51"
+				type: "biome"
+			}]
+			title: "Ancient Sands"
+			x: 2.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "520DF22480A3ECD5"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "049DB9A142AB6704"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Dry and up."
+			tasks: [{
+				biome: "terralith:arid_highlands"
+				id: "0F67F77A3504C17F"
+				type: "biome"
+			}]
+			title: "Arid Highlands"
+			x: 4.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "6EAEC061026EBB7B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "40B9C224B018283A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. It burned once."
+			tasks: [{
+				biome: "terralith:ashen_savanna"
+				id: "613587FE086EDC02"
+				type: "biome"
+			}]
+			title: "Ashen Savanna"
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "2653CC4449ECE45F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "091AF09969B83CF8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. It cooled fast."
+			tasks: [{
+				biome: "terralith:basalt_cliffs"
+				id: "5E92E350B7E4332A"
+				type: "biome"
+			}]
+			title: "Basalt Cliffs"
+			x: 8.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "5AE293BF446815C8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2DAF891A12BEFC2F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Two forests overlapping."
+			tasks: [{
+				biome: "terralith:birch_taiga"
+				id: "3A6BC7501E85D465"
+				type: "biome"
+			}]
+			title: "Birch Taiga"
+			x: 10.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "15BFF6D65CA8A6EA"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "63D582D922D0BC95"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Flat, and in flower."
+			tasks: [{
+				biome: "terralith:blooming_plateau"
+				id: "4F612B27AB0F823B"
+				type: "biome"
+			}]
+			title: "Blooming Plateau"
+			x: 12.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "5C863C169E36C5E8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "26CEEB10AB2B9F97"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Low, and in flower."
+			tasks: [{
+				biome: "terralith:blooming_valley"
+				id: "760D6CA9FA541BB3"
+				type: "biome"
+			}]
+			title: "Blooming Valley"
+			x: 14.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "4C83331A3F506EEF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0027EB1C3AA4A00C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Low cover, hard going."
+			tasks: [{
+				biome: "terralith:brushland"
+				id: "6F4AF4CB752EAB54"
+				type: "biome"
+			}]
+			title: "Brushland"
+			x: 0.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "4D272FA99AEE3BA3"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "503E966C1CF88D09"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. Layers, read like pages."
+			tasks: [{
+				biome: "terralith:bryce_canyon"
+				id: "03E98CB34280FBF9"
+				type: "biome"
+			}]
+			title: "Bryce Canyon"
+			x: 2.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "2E3D36B746BE93DC"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3C49CD5171CFF66A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Named by the survey. It emptied itself."
+			tasks: [{
+				biome: "terralith:caldera"
+				id: "18E45A4C2F3BC3F7"
+				type: "biome"
+			}]
+			title: "Caldera"
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "567B557376EAB3B4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0903542353C5CBAA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. Filed by the stone."
+			tasks: [{
+				biome: "terralith:cave/andesite_caves"
+				id: "578FA42971615211"
+				type: "biome"
+			}]
+			title: "Cave , Andesite Caves"
+			x: 6.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "5CBDD1F4E0AF6499"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "29419CE7C6442634"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. It grows inward."
+			tasks: [{
+				biome: "terralith:cave/crystal_caves"
+				id: "5AC12ABDA71BBDA3"
+				type: "biome"
+			}]
+			title: "Cave , Crystal Caves"
+			x: 8.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "33E43E31FF081F0A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0A0DF9E8CB83312D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. Down past the survey."
+			tasks: [{
+				biome: "terralith:cave/deep_caves"
+				id: "772D3F36C33F1B07"
+				type: "biome"
+			}]
+			title: "Cave , Deep Caves"
+			x: 10.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "7CC52DCA5C36CF91"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "36A4A229B378069D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. Dry, all the way down."
+			tasks: [{
+				biome: "terralith:cave/desert_caves"
+				id: "058A6D67AEA57D06"
+				type: "biome"
+			}]
+			title: "Cave , Desert Caves"
+			x: 12.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "6EE8BFBD91B1AE7C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5BE5BBD5703B59DD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. Filed by the stone."
+			tasks: [{
+				biome: "terralith:cave/diorite_caves"
+				id: "464D1722FB24EA0E"
+				type: "biome"
+			}]
+			title: "Cave , Diorite Caves"
+			x: 14.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "53DA3739B6D37472"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "086F2A28F512B82F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. Two things that should not share."
+			tasks: [{
+				biome: "terralith:cave/frostfire_caves"
+				id: "7531B158771891E5"
+				type: "biome"
+			}]
+			title: "Cave , Frostfire Caves"
+			x: 0.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "00253B0D5CC5FC84"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "37BD0921DF13AF9C"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. It is alive."
+			tasks: [{
+				biome: "terralith:cave/fungal_caves"
+				id: "7C4769FC3111445A"
+				type: "biome"
+			}]
+			title: "Cave , Fungal Caves"
+			x: 2.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "1B8D1EA06724CA6A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7584D9E7013B1BF1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. Filed by the stone."
+			tasks: [{
+				biome: "terralith:cave/granite_caves"
+				id: "768AF7CF4EED0623"
+				type: "biome"
+			}]
+			title: "Cave , Granite Caves"
+			x: 4.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "5D572B1349095FAA"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "20C334D72C25ACB6"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. Hoarfrost conditions, no Hoarfrost."
+			tasks: [{
+				biome: "terralith:cave/ice_caves"
+				id: "0E3AF02290AB02F0"
+				type: "biome"
+			}]
+			title: "Cave , Ice Caves"
+			x: 6.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "49246478FFD066C0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "746C8E380234E090"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. Something got there first."
+			tasks: [{
+				biome: "terralith:cave/infested_caves"
+				id: "5E5100604FDECC4A"
+				type: "biome"
+			}]
+			title: "Cave , Infested Caves"
+			x: 8.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "45430F24313BC99B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6F792EA610A4611D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. As deep as the survey went."
+			tasks: [{
+				biome: "terralith:cave/mantle_caves"
+				id: "02726987700812AE"
+				type: "biome"
+			}]
+			title: "Cave , Mantle Caves"
+			x: 10.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "2DEFDE51690250F3"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4D8DDE3EA8C4AF04"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. The rock is still working."
+			tasks: [{
+				biome: "terralith:cave/thermal_caves"
+				id: "440BF933971C8834"
+				type: "biome"
+			}]
+			title: "Cave , Thermal Caves"
+			x: 12.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "1BBDE7D1CF47FE70"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3A9A58B0BC4A3DF4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. Filed by the stone."
+			tasks: [{
+				biome: "terralith:cave/tuff_caves"
+				id: "508013EDCC1B4CE4"
+				type: "biome"
+			}]
+			title: "Cave , Tuff Caves"
+			x: 14.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Terralith surveyed it and gave it a name. The Umvuthana had a different one and did not write it down."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "09C394A2BC8D1653"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2C636164F2DD6093"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Survey cave. A forest with a roof."
+			tasks: [{
+				biome: "terralith:cave/underground_jungle"
+				id: "0FE1B428B8BC48AC"
+				type: "biome"
+			}]
+			title: "Cave , Underground Jungle"
+			x: 0.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "0EB78844638054E2"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "488A3AF51F742732"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed. Nothing in it moves on."
+			tasks: [{
+				biome: "timelessprison:timeless_biome"
+				id: "6DB97CE11998B145"
+				type: "biome"
+			}]
+			title: "Timeless Biome"
+			x: 2.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "2F38A4AD345BBDB4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "704F6B227D5898DB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed, and left plain."
+			tasks: [{
+				biome: "true_end:forest"
+				id: "1A7CE93F0908FB3C"
+				type: "biome"
+			}]
+			title: "Forest"
+			x: 4.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "2E1BE3330A52839D"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "46F5FE591EF36082"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed, and left plain."
+			tasks: [{
+				biome: "true_end:plains"
+				id: "62A6FCB0EEC354F0"
+				type: "biome"
+			}]
+			title: "Plains"
+			x: 6.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "2ABF28EAF01D488E"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3F3DE6A2E12805AC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed. It is coming through."
+			tasks: [{
+				biome: "true_end:seeping_reality"
+				id: "282C921387B15A67"
+				type: "biome"
+			}]
+			title: "Seeping Reality"
+			x: 8.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somewhere the survey reached and the archive did not."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "2597281F392AF698"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2E5168CD64DFF54B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Surveyed. The name was the warning."
+			tasks: [{
+				biome: "witherstormmod:bowels"
+				id: "09217B96E46B1192"
+				type: "biome"
+			}]
+			title: "Bowels"
+			x: 10.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somebody cooked here long enough to leave a cuisine behind."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "7E568E5E5030C96F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "7850AC618212D848"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Somebody cooked here long enough to leave a cuisine."
+			tasks: [{
+				biome: "youkaisfeasts:animal_path"
+				id: "20E259AB24C47243"
+				type: "biome"
+			}]
+			title: "Animal Path"
+			x: 12.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somebody cooked here long enough to leave a cuisine behind."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "5F5DCBD00DB65ED4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "47AE220A76704FE1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Somebody cooked here. The trees got the credit."
+			tasks: [{
+				biome: "youkaisfeasts:sakura_birch_forest"
+				id: "5FB2F02080C27D23"
+				type: "biome"
+			}]
+			title: "Sakura Birch Forest"
+			x: 14.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somebody cooked here long enough to leave a cuisine behind."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "3127196052BEC7B1"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3C9A8D4FC7934E9F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Somebody cooked here long enough to leave a cuisine."
+			tasks: [{
+				biome: "youkaisfeasts:sakura_forest"
+				id: "479E28C0476AD22B"
+				type: "biome"
+			}]
+			title: "Sakura Forest"
+			x: 0.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Somebody cooked here long enough to leave a cuisine behind."
+				"Standing in it is the whole of the requirement. The map is a record of what you have found."
+			]
+			icon: "minecraft:filled_map"
+			id: "47E436216067EBBC"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "4BDD3A25E7938C9B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.75d
+			subtitle: "Somebody cooked here, in the cold."
+			tasks: [{
+				biome: "youkaisfeasts:sakura_taiga"
+				id: "150B3117CBB8A376"
+				type: "biome"
+			}]
+			title: "Sakura Taiga"
+			x: 2.0d
+			y: 28.0d
+		}
+		{
+			dependencies: ["6F72360D3CDB938F"]
+			description: [
+				"Sea-roads freeze. Cargo becomes salvage, and salvage becomes somebody's nest lining."
+				"What you want is in a cask, and the cask is somewhere with legs."
+			]
+			icon: "minecraft:filled_map"
+			id: "61C3EA8CE31BA1FF"
+			rewards: [
+				{
+					id: "0646227C15C2B448"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "spoils_of_the_sea_roads"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 24
+					id: "31FBD590A09C3C64"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Cargo became salvage. Salvage became a recipe."
+			tasks: [{
+				id: "3AC7060A87439233"
+				structure: "irons_spellbooks:ice_spider_den"
+				type: "structure"
+			}]
+			title: "The Cask in the Ice"
+			x: 0.0d
+			y: 1.7d
+		}
+		{
+			dependencies: ["5633C8082D3791E5"]
+			description: [
+				"Lanternfish and tripodfish cook like any fish. Finding them is the other half."
+				"&dNeeds both:&r Spoils of the Sea-Roads and The Abyssal Chasm."
+				"&bWaiting on both:&r Cut Lanternfish, Tripodfish Roll, Cut Sea Pig and the rest of that shelf."
+			]
+			icon: "alexscavesdelight:cut_lanternfish"
+			id: "42E0FE0753E5B4C2"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "534DB32CDA60A84F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Filed under the sea-roads, caught in the chasm."
+			tasks: [
+				{
+					id: "54800E44900F92A2"
+					individual: true
+					negate: false
+					stage: "spoils_of_the_sea_roads"
+					title: "Spoils of the Sea-Roads"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "764D597553ADF553"
+					individual: true
+					negate: false
+					stage: "abyssal_chasm"
+					title: "The Abyssal Chasm"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , The Abyssal Catch"
+			x: -1.4d
+			y: 5.0d
+		}
+	]
+	subtitle: ["Eighty places worth the walk."]
+	title: "The Wide World"
+}

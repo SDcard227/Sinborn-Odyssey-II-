@@ -1,0 +1,9 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "wares:sealed_delivery_agreement",
+   "required": false
+  }
+ ]
+}

@@ -1,43 +1,22 @@
 {
   "display_name": "The Lightning School",
-  "research_time": 2700,
+  "icon": "historystages:research_scroll",
+  "research_time": 540,
   "items": [
-    "cataclysm_spellbooks:disc_driver",
-    "cataclysm_spellbooks:engineer_boots",
-    "cataclysm_spellbooks:engineer_hood",
-    "cataclysm_spellbooks:engineer_leggings",
-    "cataclysm_spellbooks:engineer_suit",
+    "cataclysm_spellbooks:bloom_stone_staff",
     "cataclysm_spellbooks:excel_upgrade_cooldown",
     "cataclysm_spellbooks:excel_upgrade_mana",
     "cataclysm_spellbooks:excel_upgrade_resistence",
-    "cataclysm_spellbooks:excelsius_greaves",
-    "cataclysm_spellbooks:excelsius_leggings",
-    "cataclysm_spellbooks:excelsius_power_chestplate",
-    "cataclysm_spellbooks:excelsius_power_visors",
-    "cataclysm_spellbooks:excelsius_resist_chestplate",
-    "cataclysm_spellbooks:excelsius_resist_visors",
-    "cataclysm_spellbooks:excelsius_speed_chestplate",
-    "cataclysm_spellbooks:excelsius_speed_visors",
     "cataclysm_spellbooks:mechanical_brace",
-    "cataclysm_spellbooks:scroll_technomancy",
-    "cataclysm_spellbooks:technomancy_rune",
-    "cataclysm_spellbooks:technomancy_upgrade_orb",
     "companions:plasma_lamp_block",
     "companions:tesla_coil_block",
     "companions:voltaic_pillar_block",
     "companions:voltaic_relay_block",
-    "ice_and_fire_spellbooks:lightning_dragon_priest_boots",
-    "ice_and_fire_spellbooks:lightning_dragon_priest_chestplate",
-    "ice_and_fire_spellbooks:lightning_dragon_priest_helmet",
-    "ice_and_fire_spellbooks:lightning_dragon_priest_leggings",
     "ice_and_fire_spellbooks:thunderous_dragon_priest_staff",
-    "irons_spellbooks:electromancer_boots",
-    "irons_spellbooks:electromancer_chestplate",
-    "irons_spellbooks:electromancer_helmet",
-    "irons_spellbooks:electromancer_leggings",
     "irons_spellbooks:energized_core",
-    "irons_spellbooks:scroll_lightning",
-    "traveloptics:lightning_echo"
+    "traveloptics:lightning_echo",
+    "compatdelight:pasta_with_energized_core",
+    "create_wizardry:channeler"
   ],
   "tags": [],
   "mods": [],
@@ -48,5 +27,35 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "arcane_codex",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

@@ -1,6 +1,7 @@
 {
   "display_name": "The Wanderer's Pack",
-  "research_time": 2700,
+  "icon": "historystages:research_scroll",
+  "research_time": 300,
   "items": [
     "aquamirae:treasure_pouch",
     "overpacked:black_giant_backpack",
@@ -28,10 +29,9 @@
     "sophisticatedbackpacks:advanced_deposit_upgrade",
     "sophisticatedbackpacks:advanced_feeding_upgrade",
     "sophisticatedbackpacks:advanced_filter_upgrade",
-    "sophisticatedbackpacks:advanced_jukebox_upgrade",
     "sophisticatedbackpacks:advanced_magnet_upgrade",
+    "sophisticatedbackpacks:advanced_mob_catcher_upgrade",
     "sophisticatedbackpacks:advanced_pickup_upgrade",
-    "sophisticatedbackpacks:advanced_pump_upgrade",
     "sophisticatedbackpacks:advanced_refill_upgrade",
     "sophisticatedbackpacks:advanced_restock_upgrade",
     "sophisticatedbackpacks:advanced_tool_swapper_upgrade",
@@ -44,13 +44,6 @@
     "sophisticatedbackpacks:backpack",
     "sophisticatedbackpacks:battery_upgrade",
     "sophisticatedbackpacks:blasting_upgrade",
-    "sophisticatedbackpacks:chipped/alchemy_bench_upgrade",
-    "sophisticatedbackpacks:chipped/botanist_workbench_upgrade",
-    "sophisticatedbackpacks:chipped/carpenters_table_upgrade",
-    "sophisticatedbackpacks:chipped/glassblower_upgrade",
-    "sophisticatedbackpacks:chipped/loom_table_upgrade",
-    "sophisticatedbackpacks:chipped/mason_table_upgrade",
-    "sophisticatedbackpacks:chipped/tinkering_table_upgrade",
     "sophisticatedbackpacks:compacting_upgrade",
     "sophisticatedbackpacks:copper_backpack",
     "sophisticatedbackpacks:crafting_upgrade",
@@ -63,8 +56,8 @@
     "sophisticatedbackpacks:inception_upgrade",
     "sophisticatedbackpacks:infinity_upgrade",
     "sophisticatedbackpacks:iron_backpack",
-    "sophisticatedbackpacks:jukebox_upgrade",
     "sophisticatedbackpacks:magnet_upgrade",
+    "sophisticatedbackpacks:mob_catcher_upgrade",
     "sophisticatedbackpacks:netherite_backpack",
     "sophisticatedbackpacks:pickup_upgrade",
     "sophisticatedbackpacks:pump_upgrade",
@@ -82,19 +75,24 @@
     "sophisticatedbackpacks:stack_upgrade_tier_2",
     "sophisticatedbackpacks:stack_upgrade_tier_3",
     "sophisticatedbackpacks:stack_upgrade_tier_4",
-    "sophisticatedbackpacks:stonecutter_upgrade",
     "sophisticatedbackpacks:survival_infinity_upgrade",
     "sophisticatedbackpacks:tank_upgrade",
     "sophisticatedbackpacks:tool_swapper_upgrade",
     "sophisticatedbackpacks:upgrade_base",
     "sophisticatedbackpacks:void_upgrade",
-    "sophisticatedbackpacks:xp_pump_upgrade",
-    "suppsquared:sack_teal"
+    "sophisticatedcore:ender_linker",
+    "sophisticatedcore:xp_bucket",
+    "craftandfind:storage_workbench",
+    "sophisticatedbackpacks:advanced_jukebox_upgrade",
+    "sophisticatedbackpacks:advanced_pump_upgrade",
+    "sophisticatedbackpacks:jukebox_upgrade",
+    "sophisticatedbackpacks:stonecutter_upgrade"
   ],
   "tags": [],
   "mods": [
     "overpacked",
-    "sophisticatedbackpacks"
+    "sophisticatedbackpacks",
+    "craftandfind"
   ],
   "mod_exceptions": [],
   "recipes": [],
@@ -103,5 +101,56 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fluids": [
+    "sophisticatedcore:xp_still"
+  ],
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "leatherworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_road",
+          "mode": "player"
+        },
+        {
+          "stage_id": "woodworking",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_cipher",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "long_road",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

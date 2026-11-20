@@ -3,8 +3,8 @@
 // Gives new players their starting kit on first join.
 // Items are placed INSIDE the Sophisticated Backpack when possible.
 //
-// Kit (inside backpack): Diet Book, Atlas, Food Book,
-//   Spyglass, Waterskin, Lantern, Bread x5, Tent, Sleeping Bag,
+// Kit (inside backpack): Diet Book, Quest Book, Atlas, Food Book,
+//   Spyglass, Water Bottle, Lantern, Bread x5, Tent, Sleeping Bag,
 //   Survivor's Codex scroll, Research Pedestal
 //
 // Kit (in hand): Backpack (random tactical color via Sophi NBT),
@@ -53,11 +53,10 @@ var JavaRandom = Java.loadClass('java.util.Random')
 // Atlas handled separately via Forge registry (Connector compat)
 var BACKPACK_ITEMS = [
   'food_desire:diet_book',
-  // quest_book removed 2026-06-15 — questbook now opens via the "Open Quests"
-  // keybind ([ by default, rebindable). Item still craftable as a fallback.
+  'ftbquests:book',
   'solonion:food_book',
   'minecraft:spyglass',
-  'cold_sweat:waterskin',
+  Item.of('minecraft:potion', '{Potion:"minecraft:water",Purity:3}'),   // purified water bottle. Replaced the Cold Sweat waterskin (it never filled the thirst bar), 18 Nov 2026
   'minecraft:lantern',
   '5x minecraft:bread'
 ]
@@ -98,17 +97,27 @@ PlayerEvents.loggedIn(function(event) {
       title: 'The Tale of the Sinborn',
       author: 'Unknown',
       pages: [
-        '{"text":"The Tale of the Sinborn\\n\\nYou were not chosen.\\nYou were not summoned.\\nYou were simply born\\ninto a world that does not\\ncare whether you survive.\\n\\nThis is your story now."}',
-        '{"text":"THE WORLD\\n\\nThis land remembers\\nages of civilization.\\nEach left knowledge behind\\u2014\\nsealed in scrolls,\\nburied in ruins,\\nguarded by things that\\nnever forgot how to kill.\\n\\nFind the scrolls.\\nPlace them on the\\nresearch pedestal.\\nStudy them.\\nThe ages will open."}',
-        '{"text":"THE SCATTERED\\nARCHIVE\\n\\nThe history itself\\nwas written down\\u2014\\nthen scattered.\\n\\nFolios. Loose pages\\nof an old archive,\\nhidden in chests\\nacross every land,\\nand carried by the\\ngreat beasts of it.\\n\\nFind them. Keep them.\\nBuild a library.\\n\\nThe world remembers\\nitself through those\\nwho gather what was\\nscattered."}',
-        '{"text":"YOUR KIT\\n\\nYour backpack holds\\neverything that keeps\\nyou alive tonight.\\n\\nTent. Sleeping bag.\\nWaterskin. Lantern. Bread.\\nA spyglass.\\n\\nThe scroll inside is\\nyour Survivor\\u2019s Codex.\\nIt is your first lesson."}',
-        '{"text":"SCROLLS\\n\\nScrolls are how\\nthe world unlocks.\\n\\nFind them in chests.\\nCraft a Research Pedestal.\\nPlace the scroll on it.\\nWait.\\n\\nWhen research completes,\\nthe knowledge opens:\\nnew crafting recipes,\\nnew creatures to fight,\\nnew ways to survive.\\n\\nStart with the Codex\\nin your bag. Place it\\non the pedestal.\\nLearn how this works."}',
-        '{"text":"THE FORGOTTEN CRAFTS\\n\\nEven the basics are\\nlearned, not born.\\n\\nMetalworking shapes iron.\\nLeatherworking binds hide.\\nGlassworking colors sand.\\nStoneworking cuts precise.\\nAlchemy brews potion.\\nRedstone Principles wire.\\n\\nWithout these, you\\nforage with wood and stone\\nand looted gear alone.\\n\\nIron tools wait for\\nthe Metalworking scroll.\\nFind the smith-benches.\\nFind the scroll."}',
-        '{"text":"WARMTH AND WATER\\n\\nThe cold kills before\\nany monster does.\\n\\nCheck your temperature.\\nDress for the weather.\\nBuild a fire at night.\\n\\nThirst is equally urgent.\\nCarry water. Filter it\\nbefore drinking.\\nThe Nether triples thirst."}',
+        '{"text":"The Tale of\\nthe Sinborn\\n\\nYou were not chosen.\\nYou were not\\nsummoned.\\nYou were simply born\\ninto a world that\\ndoes not care\\nwhether you survive.\\n\\nThis is your story\\nnow."}',
+        '{"text":"THE WORLD\\n\\nThis land remembers\\nages of civilization.\\n\\nEach left knowledge\\nbehind. Sealed in\\nscrolls. Buried in\\nruins. Guarded by\\nthings that never\\nforgot how to kill.\\n\\nFind the scrolls.\\nThe ages will open."}',
+        '{"text":"YOUR KIT\\n\\nYour backpack holds\\nall that keeps you\\nalive tonight.\\n\\nTent. Sleeping bag.\\nWater. Lantern.\\nBread. Spyglass.\\nA Research Pedestal.\\n\\nThe scroll inside is\\nthe Survivor Codex.\\nYour first lesson."}',
+        '{"text":"SCROLLS\\n\\nScrolls are how\\nthe world unlocks.\\n\\nFind them in chests.\\nYour bag holds a\\nResearch Pedestal.\\nSet it down. Place\\na scroll on it. Wait.\\n\\nWhen it finishes,\\nthe knowledge opens."}',
+        '{"text":"WHAT YOU KNOW\\n\\nWhat you learn,\\nonly you know.\\nOthers must learn\\nit themselves.\\n\\nThings you find still\\nwork in your hands.\\nThe scroll teaches\\nyou to make them.\\n\\nStart with the Codex."}',
+        '{"text":"THE KEY RETURNS\\n\\nLearning does not\\nburn the scroll.\\n\\nCommon scrolls open.\\nAn open scroll can\\nbe copied with paper\\nand passed on.\\n\\nRare scrolls stay\\nsealed. One key.\\nHide it, lend it,\\nsell it, lose it."}',
+        '{"text":"WHAT A SCROLL ASKS\\n\\nSome scrolls ask for\\nan earlier scroll\\nfirst. The quest book\\nsays which.\\n\\nDeeper scrolls need\\na better pedestal.\\nThere are four. Each\\nis built from the last.\\n\\nThe deepest also ask\\nfor experience."}',
+        '{"text":"TWO KEYS\\n\\nSome things sit in\\ntwo scrolls: the\\ncraft, and where it\\ncame from.\\n\\nNether timber needs\\nthe joiner and the\\nNether. Boss meat\\nneeds the kitchen\\nand the boss.\\n\\nYou need both keys."}',
+        '{"text":"SEALED RELICS\\n\\nSome things hide\\ntheir name. You see\\nonly: Sealed Relic.\\n\\nIt names the scroll\\nthat remembers it.\\nUntil you learn that\\nscroll you can carry\\nit. You cannot use it.\\n\\nThe Eyes are relics."}',
+        '{"text":"THE QUEST BOOK\\n\\nThe quest book in\\nyour bag does not\\ngate you. It is a map\\nof what can be known.\\n\\nEach scroll has a\\npage: what it opens,\\nwhat it needs, which\\npedestal.\\n\\nLost? Read it."}',
+        '{"text":"FORGOTTEN CRAFTS\\n\\nEven the basics are\\nlearned, not born.\\n\\nIron waits on\\nFoundations of the\\nForge. Hide waits on\\nThe Tanner\\u2019s Craft.\\n\\nGlass, stone, alchemy\\nand redstone each\\nhave a scroll too."}',
+        '{"text":"WARMTH\\n\\nThe cold kills before\\nany monster does.\\n\\nWatch your heat.\\nDress for weather.\\nBuild a fire at night."}',
+        '{"text":"WATER\\n\\nThirst is as urgent.\\nYour bag holds one\\nclean bottle.\\n\\nAfter that, filter\\nwhat you drink.\\nRunning water is\\ncleaner than still.\\n\\nThe Nether triples\\nthirst."}',
         '{"text":"LIGHT AND SHELTER\\n\\nTorches burn out.\\nThis is not a defect.\\nThis is time passing.\\nCarry enough.\\n\\nThe tent is your\\nfirst home. Set it\\nbefore dark.\\n\\nThe sleeping bag\\nsets your respawn.\\nSleep in it."}',
-        '{"text":"FOOD AND COMBAT\\n\\nThe grill is the first\\ncooking upgrade.\\nMeat over flame. Simple.\\n\\nEat more than one thing\\u2014\\nyour body demands variety.\\nCheck your diet.\\n\\nYou can dodge.\\nYou can parry.\\nYou can die.\\nStamina is finite."}',
-        '{"text":"THE TWELVE EYES\\n\\nTwelve Eyes of Ender\\nwere scattered across\\nthe world.\\n\\nEach one is held by\\na creature or a place\\nthat will not surrender\\nit peacefully.\\n\\nCraft them from what\\nyou take. Place them\\nin the ancient portal.\\n\\nThis is not optional.\\nThis is why you are here."}',
-        '{"text":"THE GATE\\n\\nWhen twelve Eyes rest\\nin the portal frame,\\nthe gate opens.\\n\\nBeyond it waits a dragon\\nolder than any age\\nof civilization.\\n\\nKill it.\\nCook it.\\nEat it.\\n\\nThat is the tale\\nof the Sinborn."}'
+        '{"text":"FOOD AND COMBAT\\n\\nThe grill is your\\nfirst kitchen.\\n\\nEat more than one\\nthing. Your body\\ndemands variety.\\nCheck your diet.\\n\\nYou can dodge.\\nYou can parry.\\nYou can die.\\nStamina is finite."}',
+        '{"text":"THE SCATTERED\\nARCHIVE\\n\\nThe history itself\\nwas written down,\\nthen scattered.\\n\\nFolios. Loose pages\\nof an old archive,\\nhidden in chests\\nacross every land,\\nand carried by the\\ngreat beasts of it."}',
+        '{"text":"\\nFind them. Keep them.\\nBuild a library.\\n\\nThe world remembers\\nitself through those\\nwho gather what was\\nscattered."}',
+        '{"text":"THE TWELVE EYES\\n\\nTwelve Eyes of Ender\\nwere scattered\\nacross the world.\\n\\nEach one is held by\\na creature or a\\nplace that will not\\nsurrender it\\npeacefully."}',
+        '{"text":"THE EYES ARE RELICS\\n\\nEvery Eye has a\\nscroll. It teaches\\nyou to craft the Eye\\nfrom what you take.\\n\\nAn Eye you have not\\nlearned will not sit\\nin the portal.\\n\\nThis is not optional.\\nThis is why you are\\nhere."}',
+        '{"text":"THE GATE\\n\\nWhen twelve Eyes\\nrest in the frame,\\nthe gate opens.\\n\\nBeyond it waits\\na dragon older than\\nany age of\\ncivilization.\\n\\nKill it.\\nCook it.\\nEat it."}',
+        '{"text":"\\n\\n\\n\\nThat is the tale\\nof the Sinborn."}'
       ],
       resolved: true
     })

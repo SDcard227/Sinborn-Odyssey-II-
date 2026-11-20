@@ -1,15 +1,13 @@
 {
   "display_name": "The Legendary Arsenal: Named Ranged",
-  "research_time": 18000,
+  "icon": "historystages:research_scroll",
+  "research_time": 1800,
   "items": [
     "cataclysm:astrape",
-    "cataclysm:astrape_throwing",
     "cataclysm:ceraunus",
-    "cataclysm:ceraunus_throwing",
     "cataclysm:laser_gatling",
     "cataclysm:void_assault_shoulder_weapon",
-    "cataclysm:wither_assault_shoulder_weapon",
-    "cataclysm:wrath_of_the_desert"
+    "cataclysm:wither_assault_shoulder_weapon"
   ],
   "tags": [],
   "mods": [],
@@ -20,5 +18,69 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": true,
+      "attack": true,
+      "equip": true,
+      "pickup": false,
+      "place": true,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "arsenal_master_ranged",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "legendary_forge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "smithing_legendary",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 35,
+        "consume": true
+      }
+    },
+    {
+      "id": "boss_lore",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "cataclysm_codex",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "hidden_display": {
+    "name_mode": "replace",
+    "name_text": "Sealed Relic",
+    "tooltip_mode": "replace",
+    "tooltip_text": "Its nature is sealed.\nLearn the scroll: The Legendary Arsenal: Named Ranged",
+    "show_lock_hints": false
+  },
+  "min_pedestal_tier": 4,
+  "pedestal_tier_mode": "min"
 }

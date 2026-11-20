@@ -1,0 +1,133 @@
+{
+  "parent": "sinborn:archive/shelf6_root",
+  "display": {
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "title": "The Divine Anthologies — Complete",
+    "description": "Every folio of The Divine Anthologies, gathered. The shelf is whole.",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sda_sunleia": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sda_sunleia\"}"
+          }
+        ]
+      }
+    },
+    "sda_nightwarden": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sda_nightwarden\"}"
+          }
+        ]
+      }
+    },
+    "sda_pontiff": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sda_pontiff\"}"
+          }
+        ]
+      }
+    },
+    "sda_ubar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sda_ubar\"}"
+          }
+        ]
+      }
+    },
+    "sda_warborn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sda_warborn\"}"
+          }
+        ]
+      }
+    },
+    "sda_divinity": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sda_divinity\"}"
+          }
+        ]
+      }
+    },
+    "sda_caravan": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:written_book"
+            ],
+            "nbt": "{sinborn_folio_id:\"sda_caravan\"}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "sda_sunleia"
+    ],
+    [
+      "sda_nightwarden"
+    ],
+    [
+      "sda_pontiff"
+    ],
+    [
+      "sda_ubar"
+    ],
+    [
+      "sda_warborn"
+    ],
+    [
+      "sda_divinity"
+    ],
+    [
+      "sda_caravan"
+    ]
+  ],
+  "rewards": {
+    "experience": 400
+  }
+}

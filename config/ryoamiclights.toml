@@ -394,6 +394,8 @@
 				enderfly = true
 				baby_phoenix = true
 				babyfireball = true
+				black_swallowtail = true
+				squirrel = true
 
 			[light_sources.settings.entities.golemoverhaul]
 				coal_golem = true
@@ -418,6 +420,12 @@
 				otter = true
 				red_panda = true
 				shima_enaga = true
+				weevil = true
+				ladybug = true
+				roly_poly = true
+				stick_bug = true
+				snail = true
+				stag_beetle = true
 
 			[light_sources.settings.entities.born_in_chaos_v1]
 				decrepit_skeleton = true
@@ -564,6 +572,10 @@
 				healing_aoe = true
 				cursed_armor_stand = true
 				summoned_vex = true
+				snowball = true
+				frost_field = true
+				ice_tomb = true
+				dead_king = true
 
 			[light_sources.settings.entities.knightquest]
 				ratman = true
@@ -690,6 +702,7 @@
 				fissure_piece = true
 				earth_spike = true
 				ice_ball = true
+				block_swapper = true
 
 			[light_sources.settings.entities.mutantmonsters]
 				mutant_skeleton = true
@@ -761,6 +774,8 @@
 				deep_one = true
 				deep_one_mage = true
 				deep_one_knight = true
+				watcher = true
+				forsaken = true
 
 			[light_sources.settings.entities.recruits]
 				recruit = true
@@ -850,6 +865,8 @@
 				bloodymancer_dark_magic = true
 				weakness = true
 				the_aberrator = true
+				mummy = true
+				horuso = true
 
 			[light_sources.settings.entities.netherexp]
 				shotgun_pellet = true
@@ -885,6 +902,7 @@
 				pillagers_patrol = true
 				maze_mother = true
 				eel = true
+				abyssal_scyphoid = true
 
 			[light_sources.settings.entities.luminous_halloween]
 				pumpkin_minion = true
@@ -1034,6 +1052,9 @@
 				fairkeeper_serpent_caller = true
 				vertex_arrow_projectile = true
 				flame_projectile = true
+				garhold = true
+				broken_garhold = true
+				hollow = true
 
 			[light_sources.settings.entities.knightlib]
 				great_chalice_starset_ring = true
@@ -1130,6 +1151,7 @@
 				ashen_breath = true
 				hydroshot = true
 				stellothorn_projectile = true
+				flood_slash_projectile = true
 
 			[light_sources.settings.entities.ecologics]
 				squirrel = true
@@ -1250,6 +1272,11 @@
 
 			[light_sources.settings.entities.desert]
 				gust = true
+				scorpion = true
+				rolling_cactus = true
+				glass_skeleton = true
+				vengeful_chicken_husk = true
+				sandstorm = true
 
 			[light_sources.settings.entities.sandworm_mod]
 				worm_segment = true
@@ -1368,6 +1395,8 @@
 
 			[light_sources.settings.entities.cropcritters]
 				wheat_critter = true
+				popper_pod_projectile = true
+				popper_seed_projectile = true
 
 			[light_sources.settings.entities.mo_bubbles]
 				water_bubble_e = true
@@ -1390,4 +1419,66 @@
 				earth_spike_visual = true
 				vine_flower_visual = true
 				shoulder_bow = true
+
+			[light_sources.settings.entities.obscure_api]
+				vfx = true
+
+			[light_sources.settings.entities.spawn]
+				snail = true
+				hamster = true
+				ant = true
+				coastal_crab = true
+				clam = true
+				herring = true
+				pilot_fish = true
+				bluefish = true
+				octopus = true
+				barbed = true
+				spider_crab = true
+				sunfish = true
+				crab_bubble = true
+				seahorse = true
+				seal = true
+				booby = true
+
+			[light_sources.settings.entities.boss_companions]
+				mini_spud = true
+				warling = true
+				dragon = true
+				witherite = true
+
+			[light_sources.settings.entities.barnyardbuddies]
+				clydesdale_horse = true
+				silkie_chicken = true
+				house_mouse = true
+				coyote = true
+				jacobs_sheep = true
+				hamphshire_pig = true
+				great_pyrenees_dog = true
+				cochin_bantam = true
+				manx_cat = true
+
+			[light_sources.settings.entities.spider_overhaul]
+				cavern_spider = true
+				ice_spider = true
+				desert_spider = true
+				jungle_spider = true
+				sculk_spider = true
+				mushroom_spider = true
+				ocean_spider = true
+				taiga_spider = true
+				swamp_spider = true
+				birch_spider = true
+				cactus_spine = true
+
+			[light_sources.settings.entities.farmersdelight]
+				rotten_tomato = true
+
+			[light_sources.settings.entities.raidsenhanced]
+				raid_blimp_bomb = true
+				ball_lightning = true
+				player_blimp = true
+
+			[light_sources.settings.entities.burnt_additions]
+				fire_devil = true
 

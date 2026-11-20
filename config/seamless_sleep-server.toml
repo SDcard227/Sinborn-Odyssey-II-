@@ -7,4 +7,4 @@ mod_version = "2.5.2"
     sleepClearsWeather = true
 
     #Sleep animation duration multiplier. Range: 0.25 to 8.0. Default: 1.0
-    sleepAnimationDurationMultiplier = 1.0
+    sleepAnimationDurationMultiplier = 2.0

@@ -1,0 +1,55 @@
+{
+  "enabled": true,
+  "general": {
+    "smoothness": 4,
+    "modPriority": 100,
+    "letOthersControlArms": true,
+    "smoothInterpolation": true
+  },
+  "procedural": {
+    "bodyLean": true,
+    "bodyLeanDegrees": 12,
+    "lanternAnimation": true,
+    "cemAnimation": true
+  },
+  "itemAnims": {
+    "rules": []
+  },
+  "animations": {
+    "groundMove": true,
+    "sneak": true,
+    "jump": true,
+    "fall": true,
+    "swim": true,
+    "elytra": true,
+    "climb": true,
+    "crawl": true,
+    "walkBack": true,
+    "stepDown": true,
+    "idleSpecial": true,
+    "heldItemIdle": true,
+    "horseRiding": true,
+    "boatRiding": true,
+    "bounce": true
+  },
+  "tools": {
+    "punch": true,
+    "sword": true,
+    "pickaxe": true,
+    "axe": true,
+    "shovel": true,
+    "hoe": true,
+    "bow": true,
+    "crossbow": true,
+    "shield": true,
+    "map": true,
+    "eating": true,
+    "spyglass": true,
+    "tootHorn": true,
+    "brush": true,
+    "tridentThrow": true,
+    "tridentAttack": true
+  },
+  "emfShieldPersisted": false,
+  "emfShieldOwnedIds": []
+}

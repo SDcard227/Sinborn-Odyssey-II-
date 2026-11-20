@@ -1,10 +1,10 @@
 {
   "display_name": "The Bestiary of Myth & Monster",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 270,
   "items": [
-    "desert:construct_part",
-    "desert:scorpion_tail",
-    "mowziesmobs:naga_fang"
+    "fieldguide:field_guide",
+    "fieldguide:page"
   ],
   "tags": [],
   "mods": [
@@ -17,5 +17,43 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "agronomic_path",
+          "mode": "player"
+        },
+        {
+          "stage_id": "companions_charter",
+          "mode": "player"
+        },
+        {
+          "stage_id": "naturalist_basics",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

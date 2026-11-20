@@ -1,0 +1,787 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "themainline"
+	group: "5A0000000000001A"
+	icon: "minecraft:campfire"
+	id: "6DCB4442C1250416"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6&o“Make fire. Learn temperature. Survive.”"
+				""
+				"&a→ Begin the Kindled Age"
+			]
+			icon: "minecraft:torch"
+			id: "1F851C1341FC67D6"
+			rewards: [
+				{
+					count: 3
+					id: "74B21205A6B5DB37"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7CBD3ADFAC7679DD"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C8080B69A533350"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "You wake hungry. Begin."
+			tasks: [
+				{
+					id: "4B0751125A59105D"
+					item: {
+						Count: 1
+						id: "hardcore_torches:fire_starter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56B0D2162AF959A5"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+			]
+			title: "Kindled"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F851C1341FC67D6"]
+			description: [
+				"&6&o“The day you build a hearth is the day you decide to stay.”"
+				""
+				"&bSeek:&r a scroll left in a home someone built and walked away from."
+				""
+				"&a→ Reach the Hearth Age"
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "7F3E3DFF8675493D"
+			rewards: [
+				{
+					count: 3
+					id: "668B1F748C4FDB05"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "3762A471127D7B90"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "1239978D7656CD12"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Food is stability."
+			tasks: [{
+				id: "6E96C140701AA86C"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			title: "Hearth"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&6&o“The surface is not the world. The surface is the lid.”"
+				""
+				"&bSeek:&r the wheel scroll. Found near old mills where water once did the work."
+				"&bSeek:&r the press scroll. Left where stone was shaped under great weight."
+				""
+				"&a→ Enter the Water Age"
+			]
+			icon: "create:water_wheel"
+			id: "673243FE233B75FE"
+			rewards: [
+				{
+					count: 3
+					id: "362FA0514A429CFA"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "397DC07AC0FF1B77"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6D1EFB934D3BED5D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "We can shape the world."
+			tasks: [{
+				id: "00E9461EF1DB7C5F"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Water"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["673243FE233B75FE"]
+			description: [
+				"&6&o“The brewer understood you could change a substance completely by adding heat.”"
+				""
+				"&bSeek:&r the fermentation scroll. Tucked in a cellar no one has opened recently."
+				"&bSeek:&r the alchemy scroll. A healer kept it near their ingredients."
+				""
+				"&a→ Begin Fermentation Age"
+			]
+			icon: "minecraft:brewing_stand"
+			id: "6800DD0109D3AD37"
+			rewards: [
+				{
+					count: 3
+					id: "4FA66630249F7727"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "2CE67304AA0240B5"
+					item: "minecraft:brewing_stand"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "0BD9C31B2BED40EB"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Time changes things, and we can use that."
+			tasks: [{
+				id: "53B20CEA77DA7C47"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			title: "Fermentation"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6800DD0109D3AD37"]
+			description: [
+				"&6&o“Every civilization that found an herb developed a ritual around it.”"
+				""
+				"&bSeek:&r the scroll of shared meals. In a place where many people once ate together."
+				""
+				"&a→ Enter the Culture Age"
+			]
+			icon: "farmersdelight:canvas"
+			id: "19C9418884219EE8"
+			rewards: [
+				{
+					count: 3
+					id: "43CBC9E7E18598F0"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "15831B435D242E22"
+					item: "farmersdelight:canvas"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "2E7044BEB775510D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Every place has its own way to live."
+			tasks: [{
+				id: "2659EA9EA8173EBD"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			title: "Culture"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"&6&o“Water heated beyond boiling becomes power. This is what built industrial civilization.”"
+				""
+				"&bSeek:&r the steam scroll. Left inside a machine that no longer runs."
+				"&bSeek:&r the automation scroll. In the ruins of something that was meant to scale."
+				"&bSeek:&r the enchanting scroll. In a library or tower where someone studied the arcane."
+				""
+				"&a→ Enter the Steam Age"
+			]
+			icon: "create:brass_ingot"
+			id: "48E241E32F2534F0"
+			rewards: [
+				{
+					count: 3
+					id: "056359B4C21F6140"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3EFDD63A08641D12"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 28
+					id: "5B52225D5CD6912E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "We are no longer surviving. We are scaling."
+			tasks: [{
+				id: "705E6B81ABDF47D5"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "Steam"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["48E241E32F2534F0"]
+			description: [
+				"&6&o“One machine is a tool. Two machines are a system. A hundred machines are a civilization.”"
+				""
+				"&bSeek:&r the combustion scroll. Near fuel, near fire, near the engine that came after."
+				"&bSeek:&r the industrial kitchen scroll. Where food was made by the batch, not the meal."
+				""
+				"&a→ Begin the Oil Age"
+			]
+			icon: "create:sturdy_sheet"
+			id: "4EF5D06F68D92B84"
+			rewards: [
+				{
+					count: 3
+					id: "46636F27C7AA4991"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3591D10CD9DA6698"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0476C7AF71BADEDF"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "We burn what the earth stored for millions of years."
+			tasks: [{
+				count: 4L
+				id: "4B11F2CB7B9B9864"
+				item: "tfmg:bitumen"
+				type: "item"
+			}]
+			title: "Oil"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4EF5D06F68D92B84"]
+			description: [
+				"&6&o“The deep does not care if you survive. It is not hostile. It is indifferent.”"
+				""
+				"&bSeek:&r the deep scroll. It went down with something. The ocean still has it."
+				""
+				"&a→ Enter the Abyssal Age"
+			]
+			icon: "minecraft:spyglass"
+			id: "383C71B93F7EE542"
+			rewards: [
+				{
+					count: 3
+					id: "15CB39E330C72E82"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "69809B0D18082637"
+					item: "minecraft:spyglass"
+					type: "item"
+				}
+				{
+					count: 36
+					id: "280471B2797510AA"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The world is deeper than we thought."
+			tasks: [{
+				id: "1330E925B328DCD2"
+				item: "alexscaves:abyssmarine"
+				type: "item"
+			}]
+			title: "Abyssal"
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			description: [
+				"&6&o“The Twelve Eyes are not keys. They are proof.”"
+				""
+				"&bSeek:&r the first Eye scroll. It sees nothing. The place that keeps it sees even less."
+				""
+				"&a→ Begin the Eye Hunt"
+			]
+			icon: "endrem:black_eye"
+			id: "6B1D1D4DD15C744B"
+			rewards: [
+				{
+					count: 3
+					id: "3392270D56BDCED0"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 40
+					id: "5ECD646A9E8A6705"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Everything was leading here."
+			tasks: [
+				{
+					id: "79C22BFC301F1EFF"
+					item: {
+						Count: 1
+						id: "endrem:black_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A3EF7789E4E5C25"
+					individual: true
+					negate: false
+					stage: "eye_black"
+					title: "Study it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Eye Hunt"
+			x: 0.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["6B1D1D4DD15C744B"]
+			description: [
+				"&6&o“The atom is not a weapon. It is a door.”"
+				""
+				"&bSeek:&r the atomic scroll. Left where the old world measured energy in orders of magnitude."
+				"&bSeek:&r the power scroll. Written at the edge of what electricity could do."
+				"&bSeek:&r the electrical scroll. Where voltage, current, and resistance were first written down."
+				""
+				"&a→ Enter the Nuclear Age"
+			]
+			icon: "minecraft:netherite_ingot"
+			id: "65317140D5E90FD2"
+			rewards: [
+				{
+					count: 3
+					id: "526C9450AF4B8786"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "3F8D32696D9C81AD"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 44
+					id: "6E336C0E3905A0D1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "We are stronger than the world."
+			tasks: [
+				{
+					id: "05B12FABD8385654"
+					item: "alexscaves:uranium"
+					type: "item"
+				}
+				{
+					id: "05C6337F965BAD75"
+					individual: true
+					negate: false
+					stage: "electrical_engineering"
+					title: "Study it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Nuclear"
+			x: 0.0d
+			y: 22.5d
+		}
+		{
+			description: [
+				"&6&o“The Nether is not a place. It is a state.”"
+				""
+				"&bSeek:&r the decay scroll. Withdrawn from the Academy and never returned. Find where it ended up."
+				"&bSeek:&r the nether scroll. Keeper Varos left notes somewhere near the gate."
+				""
+				"&a→ Pass into the Infernal Age"
+			]
+			icon: "minecraft:blaze_rod"
+			id: "44A1C5C9CCF01575"
+			rewards: [
+				{
+					count: 3
+					id: "1153CA0BD37CA246"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "754668C44F5F058F"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					count: 48
+					id: "7401E613710913D3"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "We crossed a line."
+			tasks: [
+				{
+					id: "761CEEF8BC451B68"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "0CC8AFE967DCDB89"
+					individual: true
+					negate: false
+					stage: "infernal_passage"
+					title: "Study it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Infernal"
+			x: 0.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["44A1C5C9CCF01575"]
+			description: [
+				"&6&o“The Storm does not want to destroy. It wants to absorb.”"
+				""
+				"&bSeek:&r the ruin scroll. Pages recovered from a site no one has named since it fell."
+				""
+				"&a→ Enter the Cursed Age"
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "4D1CFDE3856801C6"
+			rewards: [
+				{
+					count: 3
+					id: "77456368FDD7E2E5"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "5357D292908C928B"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					count: 52
+					id: "3BF49840AAF364E1"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "We chose this."
+			tasks: [
+				{
+					id: "4156DA259005D7F1"
+					item: "minecraft:wither_rose"
+					type: "item"
+				}
+				{
+					id: "362FF1CF3A12FD1A"
+					individual: true
+					negate: false
+					stage: "command_ruin"
+					title: "Study it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Cursed"
+			x: 0.0d
+			y: 27.5d
+		}
+		{
+			dependencies: ["4D1CFDE3856801C6"]
+			description: [
+				"&6&o“The void is the absence of rules. Not emptiness. The absence of structure.”"
+				""
+				"&bSeek:&r the void scroll. Written at the edge. Look where the world stops."
+				"&bSeek:&r the gate scroll. It was left in the stronghold by someone who did not come back out."
+				""
+				"&a→ Open the Void Age"
+			]
+			icon: "minecraft:ender_eye"
+			id: "120A554D5100A0B7"
+			rewards: [
+				{
+					count: 3
+					id: "4085594E3C56F319"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6495FFCC2EA818C7"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					count: 56
+					id: "61B2FD9B0B18287D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "This was never meant to be opened."
+			tasks: [{
+				id: "262A69F1E5170716"
+				item: {
+					Count: 1
+					id: "endrem:cursed_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Void"
+			x: 0.0d
+			y: 30.0d
+		}
+		{
+			dependencies: [
+				"120A554D5100A0B7"
+				"720CF5D55A800335"
+			]
+			description: [
+				"&6&o“The dragon did not build the End. It inherited it.”"
+				""
+				"&a→ Hunt the Dragon"
+			]
+			icon: "ends_delight:dragon_leg"
+			id: "1621F68C0B30DE8C"
+			rewards: [
+				{
+					count: 3
+					id: "055227A319BFE668"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "2D5CB9B03E40E428"
+					item: "ends_delight:dragon_leg"
+					type: "item"
+				}
+				{
+					count: 60
+					id: "1334A69E8275A9A6"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The gate is open."
+			tasks: [{
+				count: 4L
+				id: "5541C3C556D3F48F"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			title: "Dragon"
+			x: 0.0d
+			y: 32.5d
+		}
+		{
+			description: [
+				"&6&o“You came back. Nothing else is guaranteed.”"
+				""
+				"&a→ Survive the Lost Void"
+			]
+			icon: "lifesteal:heart_crystal"
+			id: "10A247C74B8038DE"
+			rewards: [
+				{
+					count: 3
+					id: "2A956431030A7088"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "465938D17A348CE9"
+					item: "lifesteal:heart_crystal"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "305CC2E4F5CF32F7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Power was never everything."
+			tasks: [{
+				id: "5803D46EE5120B73"
+				item: "lifesteal:revive_crystal"
+				type: "item"
+			}]
+			title: "Lost Void"
+			x: 0.0d
+			y: 35.0d
+		}
+		{
+			dependencies: ["10A247C74B8038DE"]
+			description: [
+				"&6&o“Power you had is not power lost. It is power you now know you can build.”"
+				""
+				"&a→ Enter the Elder Age"
+			]
+			icon: "celestisynth:celestial_netherite_ingot"
+			id: "0548EBF0FD185BAD"
+			rewards: [
+				{
+					count: 3
+					id: "16BEE8A16E03513B"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "5DCD9377B613FD36"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "You came back."
+			tasks: [{
+				id: "48D33429EA31E0B3"
+				item: "celestisynth:celestial_netherite_ingot"
+				type: "item"
+			}]
+			title: "Elder"
+			x: 0.0d
+			y: 37.5d
+		}
+		{
+			dependencies: ["0548EBF0FD185BAD"]
+			description: [
+				"&6&o“When travel is instant, the journey ends. Decide if that tradeoff is yours.”"
+				""
+				"&a→ Reach Mastery"
+			]
+			icon: "minecraft:nether_star"
+			id: "72B8725ECC8BCD01"
+			rewards: [
+				{
+					count: 3
+					id: "6918F51D855440D7"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "32400420B12004C7"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "7D9BD7E544992028"
+					item: "numismatics:cog"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.4d
+			subtitle: "What do we do with absolute power?"
+			tasks: [{
+				id: "476152D42496D67A"
+				item: "createteleporters:quantum_mechanism"
+				type: "item"
+			}]
+			title: "Mastery"
+			x: 0.0d
+			y: 40.0d
+		}
+	]
+	subtitle: ["Seventeen ages, in the order the world lived them."]
+	title: "The Main Line"
+}

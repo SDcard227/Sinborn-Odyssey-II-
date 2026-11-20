@@ -1,0 +1,493 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "aquamirae_delight:deepsea_pie",
+   "required": false
+  },
+  {
+   "id": "aquamirae_delight:fishermans_delicacy",
+   "required": false
+  },
+  {
+   "id": "aquamirae_delight:aquatic_feast",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:coaster",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:unripe_flaxen_cheese_wheel",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:flaxen_cheese_wheel",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:unripe_scarlet_cheese_wheel",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:scarlet_cheese_wheel",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:pizza",
+   "required": false
+  },
+  {
+   "id": "brewinandchewin:quiche",
+   "required": false
+  },
+  {
+   "id": "delightful:sliced_pumpkin",
+   "required": false
+  },
+  {
+   "id": "delightful:sliced_melon",
+   "required": false
+  },
+  {
+   "id": "delightful:mini_melon",
+   "required": false
+  },
+  {
+   "id": "delightful:sliced_mini_melon",
+   "required": false
+  },
+  {
+   "id": "delightful:cantaloupe",
+   "required": false
+  },
+  {
+   "id": "delightful:sliced_cantaloupe",
+   "required": false
+  },
+  {
+   "id": "delightful:sliced_gloomgourd",
+   "required": false
+  },
+  {
+   "id": "delightful:baklava",
+   "required": false
+  },
+  {
+   "id": "delightful:salmonberry_pie",
+   "required": false
+  },
+  {
+   "id": "delightful:blueberry_pie",
+   "required": false
+  },
+  {
+   "id": "delightful:green_apple_pie",
+   "required": false
+  },
+  {
+   "id": "delightful:source_berry_pie",
+   "required": false
+  },
+  {
+   "id": "delightful:gloomgourd_pie",
+   "required": false
+  },
+  {
+   "id": "delightful:chorus_pie",
+   "required": false
+  },
+  {
+   "id": "delightful:mulberry_pie",
+   "required": false
+  },
+  {
+   "id": "delightful:passion_fruit_tart",
+   "required": false
+  },
+  {
+   "id": "delightful:mutton_pie",
+   "required": false
+  },
+  {
+   "id": "undergarden:gloomgourd",
+   "required": false
+  },
+  {
+   "id": "undergarden:carved_gloomgourd",
+   "required": false
+  },
+  {
+   "id": "seasonals:pumpkin_cake",
+   "required": false
+  },
+  {
+   "id": "seasonals:sweet_berry_cake",
+   "required": false
+  },
+  {
+   "id": "seasonals:beetroot_cake",
+   "required": false
+  },
+  {
+   "id": "peculiars:aloe_cake",
+   "required": false
+  },
+  {
+   "id": "peculiars:yucca_cake",
+   "required": false
+  },
+  {
+   "id": "peculiars:passion_fruit_cake",
+   "required": false
+  },
+  {
+   "id": "exquisito:chorus_cake",
+   "required": false
+  },
+  {
+   "id": "exquisito:ether_bulb_cake",
+   "required": false
+  },
+  {
+   "id": "exquisito:nightshade_berry_cake",
+   "required": false
+  },
+  {
+   "id": "interiors:amber_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:aqua_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:beige_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:coral_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:forest_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:ginger_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:indigo_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:maroon_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:mint_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:navy_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:olive_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:rose_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:slate_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:tan_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:teal_cushion",
+   "required": false
+  },
+  {
+   "id": "interiors:verdant_cushion",
+   "required": false
+  },
+  {
+   "id": "minecraft:cactus",
+   "required": false
+  },
+  {
+   "id": "minecraft:melon",
+   "required": false
+  },
+  {
+   "id": "minecraft:pumpkin",
+   "required": false
+  },
+  {
+   "id": "minecraft:carved_pumpkin",
+   "required": false
+  },
+  {
+   "id": "minecraft:jack_o_lantern",
+   "required": false
+  },
+  {
+   "id": "minecraft:cobweb",
+   "required": false
+  },
+  {
+   "id": "minecraft:cake",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:rice_bag",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:apple_pie",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:sweet_berry_cheesecake",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:chocolate_pie",
+   "required": false
+  },
+  {
+   "id": "farmersdelight:pumpkin_pie",
+   "required": false
+  },
+  {
+   "id": "#minecraft:wool_carpets",
+   "required": false
+  },
+  {
+   "id": "#minecraft:wool",
+   "required": false
+  },
+  {
+   "id": "#minecraft:candle_cakes",
+   "required": false
+  },
+  {
+   "id": "#farmersdelight:straw_blocks",
+   "required": false
+  },
+  {
+   "id": "#forge:mineable/knife",
+   "required": false
+  },
+  {
+   "id": "foragersinsight:dandelion_root_sack",
+   "required": false
+  },
+  {
+   "id": "foragersinsight:roselle_calyx_sack",
+   "required": false
+  },
+  {
+   "id": "foragersinsight:rose_hip_sack",
+   "required": false
+  },
+  {
+   "id": "foragersinsight:poppy_seeds_sack",
+   "required": false
+  },
+  {
+   "id": "foragersinsight:spruce_tips_sack",
+   "required": false
+  },
+  {
+   "id": "foragersinsight:black_acorn_sack",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:glow_berry_gelatin_block",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:sculk_tart",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:monster_cake",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:spider_pie",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:guardian_angel_block",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:candle_monster_cake",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:gunk",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:spider_donut",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:sculk_mayo_block",
+   "required": false
+  },
+  {
+   "id": "minecraft:sculk",
+   "required": false
+  },
+  {
+   "id": "minecraft:sculk_catalyst",
+   "required": false
+  },
+  {
+   "id": "minecraft:sculk_vein",
+   "required": false
+  },
+  {
+   "id": "minecraft:sculk_sensor",
+   "required": false
+  },
+  {
+   "id": "minecraft:calibrated_sculk_sensor",
+   "required": false
+  },
+  {
+   "id": "minecraft:sculk_shrieker",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:embedded_eggs",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:heap_of_ancient_eggs",
+   "required": false
+  },
+  {
+   "id": "dungeonsdelight:silverfish_and_chips_block",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:blueberry_pie",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:cherry_pie",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:raspberry_pie",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:grape_pie",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:peanut_butter_pie",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:chicken_pot_pie",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:carrot_cake",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:chocolate_cake",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:hay_rug",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:straw_rug",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:salt_bag",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:sugar_bag",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:cocoa_bean_bag",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:corn_kernel_bag",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:hops_bag",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:flour_bag",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:gunpowder_bag",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:manure_bag",
+   "required": false
+  },
+  {
+   "id": "hearthandharvest:feather_bag",
+   "required": false
+  },
+  {
+   "id": "miners_delight:stuffed_squid",
+   "required": false
+  },
+  {
+   "id": "miners_delight:glazed_arachnid_limbs",
+   "required": false
+  },
+  {
+   "id": "miners_delight:fake_meatloaf",
+   "required": false
+  },
+  {
+   "id": "oceanic_delight:sponge_cake",
+   "required": false
+  },
+  {
+   "id": "ramadandelight:quiche",
+   "required": false
+  },
+  {
+   "id": "spawn:crab_boil_block",
+   "required": false
+  },
+  {
+   "id": "supplementaries:sack",
+   "required": false
+  },
+  {
+   "id": "#supplementaries:flags",
+   "required": false
+  }
+ ]
+}

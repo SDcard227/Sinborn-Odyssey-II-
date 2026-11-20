@@ -1,7 +1,119 @@
-#Should the Wandering Trader sell the mods crops?
-wanderingTraderCrops = true
-#Base chance (0.0 - 1.0) per random tick for a Tree Tapper to increase sap when on a tappable block.
+#Chance (0.0 - 1.0) per check interval (~2 seconds) for a Tree Tapper to collect sap when on a tappable block.
 #Higher values make sap fill faster.
 #Range: 0.0 ~ 1.0
 treeTapperBaseChance = 0.5
+#Whether water bottles should stack up to 16
+stackWaterBottles = true
+#Disables milking cows and goats with glass bottles. 
+#Be aware that setting this can cause goat milk bottles to be unobtainable unless handled otherwise
+disableBottleMilking = false
+#Whether corn mazes should spawn in the world
+generateCornMazes = true
+#Whether grown corn stalks block movement. Set to false to let players and mobs walk through all corn.
+#Individual stalks can also be made passable by using a pitchfork on them. Keep this the same on the server and every client
+cornCollision = true
+#Whether Lilliput Lane should spawn in the world
+generateLilliputLane = true
+#Whether a ghost preview of the trellis piece is shown before placing
+trellisPlacementPreview = true
+#Whether grapes on a trellis require farmland beneath the base of the column to grow and spread.
+#Set to false to let grapes grow anywhere, like the Vine and Rose Bush trellis plants.
+grapeRequireFarmland = true
+#Max animals in a 10-block radius before the food trough stops triggering breeding.
+#Range: 1 ~ 256
+troughBreedingCap = 16
+
+[crow]
+	#Amount of crops that need to be in an area for a crow to spawn nearby. Used alongside the crowSpawnRadius config to control crow spawning.
+	#Setting to 0 disables crop-based crow spawning. Crows can still spawn near naturally generated nests unless crow.spawnNearNests is false
+	#Range: 0 ~ 192
+	crowCropRequirement = 8
+	#Radius that crows check for crops to be in when trying to spawn. Larger radius means higher changes of spawning.
+	#Setting to 0 would prevent crow spawning
+	#Range: 0 ~ 64
+	crowSpawnRadius = 8
+	#Radius that players, villgers, and repelling blocks will be effective towards scaring wild crows.
+	#Setting to 0 would prevent crows from being scared
+	#Range: 0 ~ 64
+	crowScareRadius = 6
+	#Whether crows can spawn near naturally generated nests without needing nearby crops
+	spawnNearNests = true
+	#Whether wild crows snatch shiny items off the ground and carry them to nests
+	stealShinyItems = true
+	#Whether tamed crows pick up nearby items and bring them to their owner
+	fetchItems = true
+	#Whether tamed crows also fetch items their owner threw away
+	fetchThrownItems = true
+	#Whether tamed crows hop off their owner's shoulder to fetch nearby items
+	leaveShoulderToFetch = true
+	#Whether wild crows eat crow food dropped on the ground, with a chance to be tamed if a player threw it
+	eatDroppedFood = true
+	#Whether wild crows are drawn to players holding crow food and slowly learn to trust them
+	tempting = true
+	#Whether hurting a wild crow makes nearby crows flee from the attacker
+	flockAlarm = true
+	#Whether wild crows peck at and damage crops. Also requires the mobGriefing gamerule
+	eatCrops = true
+
+[nests]
+	#Whether chickens walk to a nest before laying an egg. Disable if another mod already adds nest-seeking behavior
+	chickensSeekNests = true
+	#Whether nests generate naturally in the world
+	generateNests = true
+
+[salt]
+	#Multiplier applied to a food's nutrition value to determine bonus hunger granted when eating salted food.
+	#For example, 0.2 means a food restoring 5 hunger gets +1 bonus hunger (20% of 5, minimum 1 for foods with less than 5 hunger).
+	#Range: 0.0 ~ 1.0
+	saltedHungerBonus = 0.2
+	#Fraction of the saturation granted by a food that is removed when eating salted food.
+	#For example, 0.1 means 10% of the saturation normally given is taken away.
+	#Range: 0.0 ~ 1.0
+	saltedSaturationPenalty = 0.1
+	#Radius in blocks that animals are kept within when near a salt block.
+	#Range: 1 ~ 64
+	saltAnimalRadius = 12
+	#Ticks between each animal licking a nearby salt block. 9600 = 8 minutes.
+	#Range: 200 ~ 72000
+	saltLickInterval = 9600
+	#Chance (0.0–1.0) that a player's right-click lick degrades the salt block.
+	#Range: 0.0 ~ 1.0
+	saltPlayerLickChance = 0.05
+	#Whether salt caves generate underground in biomes tagged #hearthandharvest:has_salt_caves
+	generateSaltCaves = true
+	#Salt caves attempt to generate on average once every this many chunks in eligible biomes
+	#Range: 1 ~ 1000
+	saltCaveRarity = 24
+	#Lowest Y level a salt cave can be centered on. Caves always stay clear of bedrock
+	#Range: -64 ~ 320
+	saltCaveMinY = -40
+	#Highest Y level a salt cave can be centered on
+	#Range: -64 ~ 320
+	saltCaveMaxY = 30
+
+[manure]
+	#Whether players are able to poop using the poop keybind
+	playerPoopEnabled = true
+	#Drop manure after being fed
+	fedPoopEnabled = true
+	#Drop manure randomly over time
+	randomPoopEnabled = false
+	#1-in-N chance per second for random drop
+	#Range: 1 ~ 10000
+	randomPoopChance = 300
+
+[breeding]
+	#Disables the extra baby pigs spawned when pigs breed
+	disablePigLitters = false
+	#Disables the extra baby rabbits spawned when rabbits breed
+	disableRabbitLitters = false
+	#Disables shift-right-click plucking feathers from chickens
+	disableChickenPlucking = false
+	#Whether players can pick up a chicken with an empty hand and glide while holding it overhead. Sneak to put it down
+	chickenGliding = true
+
+[stompingBasin]
+	#How many items fit in one stomping basin slot. A single basin has one slot, a 2x2 multiblock has four
+	#Range: 1 ~ 512
+	slotLimit = 64
 

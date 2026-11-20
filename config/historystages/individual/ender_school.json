@@ -1,23 +1,20 @@
 {
   "display_name": "The Ender School",
-  "research_time": 2700,
+  "icon": "historystages:research_scroll",
+  "research_time": 540,
   "items": [
     "endermanoverhaul:ancient_pearl",
-    "endermanoverhaul:badlands_hood",
     "endermanoverhaul:bubble_pearl",
     "endermanoverhaul:corrupted_pearl",
     "endermanoverhaul:crimson_pearl",
     "endermanoverhaul:enderman_tooth",
     "endermanoverhaul:icy_pearl",
-    "endermanoverhaul:savanna_hood",
-    "endermanoverhaul:snowy_hood",
     "endermanoverhaul:soul_pearl",
     "endermanoverhaul:summoner_pearl",
     "endermanoverhaul:tiny_skull",
     "endermanoverhaul:warped_pearl",
     "irons_spellbooks:ender_rune",
     "irons_spellbooks:ender_upgrade_orb",
-    "irons_spellbooks:scroll_ender",
     "traveloptics:ender_echo",
     "traveloptics:spectral_spell_slot_upgrade"
   ],
@@ -30,5 +27,35 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "arcane_codex",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

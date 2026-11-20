@@ -1,0 +1,13 @@
+{
+ "replace": true,
+ "values": [
+  {
+   "id": "#minecraft:non_treasure",
+   "required": false
+  },
+  {
+   "id": "create_ltab:enchantment_luck",
+   "required": false
+  }
+ ]
+}

@@ -1,6 +1,7 @@
 {
   "display_name": "Dwemer Observatory Looting",
-  "research_time": 18000,
+  "icon": "historystages:research_scroll",
+  "research_time": 1800,
   "items": [
     "mebahelcreaturesdwarven:dwarven_arrow",
     "mebahelcreaturesdwarven:dwarven_spider_block",
@@ -16,9 +17,7 @@
     "mebahelcreaturesdwarven:weapon/dwemer/dwemer_mace",
     "mebahelcreaturesdwarven:weapon/dwemer/dwemer_sword",
     "mebahelcreaturesdwarven:weapon/dwemer/dwemer_war_axe",
-    "mebahelcreaturesdwarven:weapon/dwemer/dwemer_warhammer",
-    "traveloptics:celestial_fragment",
-    "traveloptics:celestial_shard"
+    "mebahelcreaturesdwarven:weapon/dwemer/dwemer_warhammer"
   ],
   "tags": [],
   "mods": [
@@ -31,5 +30,98 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "atomic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "ballistics_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "command_ruin",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dragon_husbandry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "electrical_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_synthesis",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_green_genie",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_nightwarden",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_pontiff",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_scarlet_king",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_sunleia",
+          "mode": "player"
+        },
+        {
+          "stage_id": "god_warborn",
+          "mode": "player"
+        },
+        {
+          "stage_id": "path_to_divinity",
+          "mode": "player"
+        },
+        {
+          "stage_id": "specialist_suits",
+          "mode": "player"
+        },
+        {
+          "stage_id": "teleportation_arts",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 35,
+        "consume": true
+      }
+    }
+  ],
+  "min_pedestal_tier": 4,
+  "pedestal_tier_mode": "min"
 }

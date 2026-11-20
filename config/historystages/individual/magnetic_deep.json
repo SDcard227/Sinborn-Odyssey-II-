@@ -1,22 +1,19 @@
 {
   "display_name": "The Magnetic Deep",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
     "alexscaves:azure_magnet",
     "alexscaves:azure_neodymium_ingot",
     "alexscaves:azure_neodymium_node",
     "alexscaves:azure_neodymium_pillar",
-    "alexscaves:beholder",
     "alexscaves:block_of_azure_neodymium",
     "alexscaves:block_of_scarlet_neodymium",
-    "alexscaves:burrowing_arrow",
     "alexscaves:copper_valve",
     "alexscaves:energized_galena_azure",
     "alexscaves:energized_galena_neutral",
     "alexscaves:energized_galena_scarlet",
-    "alexscaves:enigmatic_engine",
     "alexscaves:ferrouslime_ball",
-    "alexscaves:floater",
     "alexscaves:galena",
     "alexscaves:galena_brick_slab",
     "alexscaves:galena_brick_stairs",
@@ -29,11 +26,9 @@
     "alexscaves:galena_stairs",
     "alexscaves:galena_wall",
     "alexscaves:game_controller",
-    "alexscaves:gobthumper",
     "alexscaves:heart_of_iron",
     "alexscaves:heavyweight",
     "alexscaves:holocoder",
-    "alexscaves:holocoder_bound",
     "alexscaves:hologram_projector",
     "alexscaves:magnetic_activator",
     "alexscaves:magnetic_levitation_rail",
@@ -42,14 +37,10 @@
     "alexscaves:metal_scaffolding",
     "alexscaves:notor_gizmo",
     "alexscaves:packed_galena",
-    "alexscaves:polymer_plate",
     "alexscaves:quarry",
     "alexscaves:quarry_smasher",
     "alexscaves:raw_azure_neodymium",
     "alexscaves:raw_scarlet_neodymium",
-    "alexscaves:raygun",
-    "alexscaves:remote_detonator",
-    "alexscaves:remote_detonator_active",
     "alexscaves:resistor_shield",
     "alexscaves:rusty_rebar",
     "alexscaves:rusty_scaffolding",
@@ -63,7 +54,23 @@
     "alexscaves:scrap_metal_plate",
     "alexscaves:seeking_arrow",
     "alexscaves:telecore",
-    "alexscaves:tesla_bulb"
+    "alexscaves:tesla_bulb",
+    "alexscavesdelight:azure_neodymium_knife",
+    "alexscavesdelight:cooked_ferrouslime_ball",
+    "alexscavesdelight:cooked_heart_of_iron",
+    "alexscavesdelight:ferrouslime_shake",
+    "alexscavesdelight:scarlet_neodymium_knife",
+    "alexscavesdelight:ferrouslime_ball_sandwich",
+    "alexscavesdelight:ferrouslime_pie_block",
+    "alexscavesdelight:heart_of_iron_humburger",
+    "alexscaves:galena_gauntlet",
+    "traveloptics:galenic_polarizer",
+    "traveloptics:neodymium_infused_mechanized_catalyst",
+    "traveloptics:galenic_polarizer_level_one",
+    "traveloptics:galenic_polarizer_level_three",
+    "traveloptics:galenic_polarizer_level_two",
+    "traveloptics:the_diamantic_archive",
+    "alexscavesdelight:ferrouslime_pie"
   ],
   "tags": [],
   "mods": [],
@@ -74,5 +81,180 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "archaeology_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "wild_study",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "alchemy",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blood_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dragonslayer_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eldritch_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_abyssal",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_black",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cold",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_corrupted",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cryptic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cursed",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_desert",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_evil",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_exotic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_flame",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_frostmaw",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_guardian",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_lost",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_magical",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_mech",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_monstrous",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nether",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nothingness",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_old",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_rogue",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_storm",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_sun",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_tongbi",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_undead",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_void",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_witch",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wither",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wrought",
+          "mode": "player"
+        },
+        {
+          "stage_id": "redstone_principles",
+          "mode": "player"
+        },
+        {
+          "stage_id": "metalworking",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

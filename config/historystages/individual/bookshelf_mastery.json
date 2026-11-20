@@ -1,16 +1,15 @@
 {
   "display_name": "Bookshelf Mastery",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
-    "createrailwaysnavigator:navigator_lectern",
+    "irons_spellbooks:inscription_table",
     "messenger_crow:scroll_lectern",
     "minecraft:bookshelf",
-    "minecraft:cartography_table",
     "minecraft:chiseled_bookshelf",
     "minecraft:enchanted_book",
     "minecraft:experience_bottle",
     "minecraft:lectern",
-    "minecraft:written_book_tattered",
     "quark:acacia_bookshelf",
     "quark:ancient_bookshelf",
     "quark:azalea_bookshelf",
@@ -24,9 +23,7 @@
     "quark:mangrove_bookshelf",
     "quark:spruce_bookshelf",
     "quark:warped_bookshelf",
-    "simplyswords:patchouli/book_0",
-    "simplyswords:patchouli/book_1",
-    "simplyswords:patchouli/book_2"
+    "burnt:burnt_bookshelf"
   ],
   "tags": [],
   "mods": [],
@@ -37,5 +34,34 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "woodworking",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

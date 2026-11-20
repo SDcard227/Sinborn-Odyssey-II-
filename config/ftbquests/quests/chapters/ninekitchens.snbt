@@ -1,0 +1,2660 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ninekitchens"
+	group: "5A0000000000003C"
+	icon: "minecraft:cake"
+	id: "6D5FB271A2F80B38"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Nine peoples, nine larders, and nine different answers to the same winter."]
+			icon: "minecraft:cake"
+			id: "362C98B9C99F65BD"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "A civilisation is what it eats."
+			tasks: [{
+				id: "3A913D2333404D75"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "Nine Kitchens"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r additional nether loot, bastion bridge, bastion hoglin stable and 25 more &8(25% a chest)"
+				"&bOpens:&r 447 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "farmersdelight:beef_stew"
+			id: "1B29485E0451DBD1"
+			rewards: [{
+				count: 12
+				id: "2B2A6C1AEDBEB505"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Broth, in a room meant for looking."
+			tasks: [
+				{
+					id: "4B271B66EBA53BD2"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "gallery_broth"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "684B30317F678CE6"
+					individual: true
+					negate: false
+					stage: "gallery_broth"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Gallery-Broth"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r archer, basic loot, butcher and 27 more &8(25% a chest)"
+				"&bOpens:&r 119 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "ramadandelight:flat_bread"
+			id: "58760CD5A999BF87"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "66FB7E4BCBC3B40D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "One soil, and everything it gave."
+			tasks: [
+				{
+					id: "7E714CE9EA15FC52"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "bread_of_the_black_land"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "2BB1D248E41CF515"
+					individual: true
+					negate: false
+					stage: "bread_of_the_black_land"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Bread of the Black Land"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abyssal ruins, ancient city, ancient city additions and 20 more &8(25% a chest)"
+				"&bOpens:&r 172 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "miners_delight:cave_soup"
+			id: "3B1139B64B68879E"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7C47CAAA2632FA38"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Eaten to put something down."
+			tasks: [
+				{
+					id: "52B57953CFCC739B"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "forgetting_broth"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1FA3EC395C81A3C9"
+					individual: true
+					negate: false
+					stage: "forgetting_broth"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Forgetting-Broth"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r end city treasure, home, legend loot and 1 more &8(10% a chest)"
+				"&bOpens:&r 97 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry; The End Passage"
+				"&aPedestal:&r Tier III, about 12 minutes"
+			]
+			icon: "minecraft:chorus_fruit"
+			id: "12E7C5623B8ED692"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6C6C533377B43A0B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "The last meal before the edge."
+			tasks: [
+				{
+					id: "27B728BB44B91F0D"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "feast_at_worlds_edge"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "50AD648DAB1DBDDF"
+					individual: true
+					negate: false
+					stage: "feast_at_worlds_edge"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Feast at the World's Edge"
+			x: 0.5d
+			y: -2.6d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r armorer, badlands warehouse, beach warehouse and 77 more &8(35% a chest)"
+				"&bOpens:&r 82 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "meadow:cheese_block"
+			id: "25EC03163A441B65"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "32B4994EA28E28F2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Everyone fed, and all of it written down."
+			tasks: [
+				{
+					id: "3804E8C5BC3894C3"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "stolovaya_ledger"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "6DAC1E19E2D1FE12"
+					individual: true
+					negate: false
+					stage: "stolovaya_ledger"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Stolovaya Ledger"
+			x: -3.2d
+			y: -3.2d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r plains common, savanna common, village plains house and 1 more &8(35% a chest)"
+				"&bOpens:&r 56 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "ends_delight:dragon_leg"
+			id: "254A024159352FA5"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6303FC84F76E7711"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "A tree that outlived the people under it."
+			tasks: [
+				{
+					id: "4CBEFC584E90E314"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "memory_of_the_baobab"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "0ECF1C41C02325C0"
+					individual: true
+					negate: false
+					stage: "memory_of_the_baobab"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Memory of the Baobab"
+			x: 2.1d
+			y: -1.5d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r ancient fish eggs from buried treasure, basement, basic loot and 39 more &8(25% a chest)"
+				"&bOpens:&r 32 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "minecraft:salmon"
+			id: "6D091EAD63D82664"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "647AE9BB46E4435D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "One larder to eat. One not to touch."
+			tasks: [
+				{
+					id: "26E7DAA0685FE001"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "two_larder_winter"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "6AAC1BF568AB56FF"
+					individual: true
+					negate: false
+					stage: "two_larder_winter"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Two-Larder Winter"
+			x: 3.2d
+			y: 3.2d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r acropolis treasure, acropolis treasure additions, additional treasure loot and 5 more &8(35% a chest)"
+				"&bOpens:&r 3 entries and 2 whole bodies of work"
+				"&dNeeds:&r one of The Tanner's Craft, The Long Road, Woodworking"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "bountiful:bountyboard"
+			id: "57854769F8651F98"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "7D57F289DF760681"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "Food, priced."
+			tasks: [
+				{
+					id: "3913D44E349A9F9E"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "mercantile_ledger"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "2A839DCB43CB6899"
+					individual: true
+					negate: false
+					stage: "mercantile_ledger"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Mercantile Ledger"
+			x: 2.6d
+			y: 0.5d
+		}
+		{
+			dependencies: ["58760CD5A999BF87"]
+			description: [
+				"&6🏜️ The Gilded Sands kitchen"
+				""
+				"Dates boiled down until they pour. The Gilded Sands paid caravan guards in it, by the jar."
+			]
+			icon: "ramadandelight:date_syrup"
+			id: "0ECE4D767FBB0645"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0B749D9B73A80461"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The well, reduced to sugar."
+			tasks: [{
+				id: "41F7F6D908B5C0C2"
+				item: "ramadandelight:date_syrup"
+				type: "item"
+			}]
+			title: "Date Syrup"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0ECE4D767FBB0645"]
+			description: [
+				"&6🏜️ The Gilded Sands kitchen"
+				""
+				"Road food. A date sealed in dough keeps for a month, which is two wells' worth of desert."
+			]
+			icon: "ramadandelight:date_stuffed_cookie"
+			id: "7BD7D75BA752A574"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "00309F51C0338800"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Caravan food that survived the trip."
+			tasks: [{
+				id: "34E4FB6C5E7F0FE2"
+				item: "ramadandelight:date_stuffed_cookie"
+				type: "item"
+			}]
+			title: "Date Stuffed Cookie"
+			x: 9.3d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7BD7D75BA752A574"]
+			description: [
+				"&6🏜️ The Gilded Sands kitchen"
+				""
+				"Cooked under a clay cone so nothing escapes. In a land that counts water, steam is a debt."
+			]
+			icon: "ramadandelight:sweet_tagine"
+			id: "484223AFDD305DBA"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "0D1B32109C5A7939"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Slow, sealed, and worth the wait."
+			tasks: [{
+				id: "01D8FF4C6CF90533"
+				item: "ramadandelight:sweet_tagine"
+				type: "item"
+			}]
+			title: "Sweet Tagine"
+			x: 11.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["484223AFDD305DBA"]
+			description: [
+				"&6🏜️ The Gilded Sands kitchen"
+				""
+				"No oven, no yeast, no waiting. A hot stone and the flat of a hand."
+			]
+			icon: "ramadandelight:flat_bread"
+			id: "3D5F2564C6DFA5D6"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "58EBACE2155F8749"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "No oven required. That was the point."
+			tasks: [{
+				id: "6DBFC2972F76EC6D"
+				item: "ramadandelight:flat_bread"
+				type: "item"
+			}]
+			title: "Flat Bread"
+			x: 12.9d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D5F2564C6DFA5D6"]
+			description: [
+				"&6🏜️ The Gilded Sands kitchen"
+				""
+				"Cut from the palm whole. The Gilded Sands counted wealth in clusters before they counted it in coin."
+			]
+			icon: "ramadandelight:cluster_of_dates"
+			id: "180771EDD75BD486"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "08B73A2567F82E61"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Priced by the well, not the weight."
+			tasks: [{
+				id: "5D94B0508E669ADD"
+				item: "ramadandelight:cluster_of_dates"
+				type: "item"
+			}]
+			title: "Cluster Of Dates"
+			x: 14.7d
+			y: 0.0d
+		}
+		{
+			dependencies: ["180771EDD75BD486"]
+			description: [
+				"&6🏜️ The Gilded Sands kitchen"
+				""
+				"Grain and meat beaten together for most of a day. It was made for feasts because nobody had the patience otherwise."
+			]
+			icon: "ramadandelight:haleem"
+			id: "0F9E1966D14C46D0"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "75F82C4DDA22E694"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Everything in the pot, all night."
+			tasks: [{
+				id: "614ABECDE554F050"
+				item: "ramadandelight:haleem"
+				type: "item"
+			}]
+			title: "Haleem"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F9E1966D14C46D0"]
+			description: [
+				"&6🏜️ The Gilded Sands kitchen"
+				""
+				"The same clay cone, with a bird in it. Their records list it under 'occasions'."
+			]
+			icon: "ramadandelight:tagine"
+			id: "4B5710DFE465E3FD"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "5CEDB02D8D4EDE05"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The same lid, a different argument."
+			tasks: [{
+				id: "13721D4118CD921C"
+				item: "ramadandelight:tagine"
+				type: "item"
+			}]
+			title: "Tagine Chicken"
+			x: 18.3d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B5710DFE465E3FD"]
+			description: [
+				"&6🏜️ The Gilded Sands kitchen"
+				""
+				"One date. The whole cuisine starts here, and so did the trade routes."
+			]
+			icon: "ramadandelight:date"
+			id: "7F41884132E0797F"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "5FE46E731513B453"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "670118314390F593"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The Sands measured distance in these."
+			tasks: [{
+				id: "08440D8AB5FFA910"
+				item: "ramadandelight:date"
+				type: "item"
+			}]
+			title: "Date"
+			x: 20.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"&6🌄 Yucatan kitchen"
+				""
+				"The fruit they called butter of the forest, on the oldest bread they had."
+			]
+			icon: "culturaldelights:avocado_toast"
+			id: "0F1FAA5E9E5A9916"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "19E0513414D84FDE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Older than the joke."
+			tasks: [{
+				id: "1F1ACD3E580D561C"
+				item: "culturaldelights:avocado_toast"
+				type: "item"
+			}]
+			title: "Avocado Toast"
+			x: 24.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F1FAA5E9E5A9916"]
+			description: [
+				"&6🌄 Yucatan kitchen"
+				""
+				"Maize hung over the fire to last the dry season. The smoke was the preservative and the flavour both."
+			]
+			icon: "culturaldelights:smoked_corn"
+			id: "2A79A792E40E89B4"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6AE8ACD586283FD3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Maize, and the smoke it was owed."
+			tasks: [{
+				id: "4FD46CC5F4B4739D"
+				item: "culturaldelights:smoked_corn"
+				type: "item"
+			}]
+			title: "Smoked Corn"
+			x: 24.1d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A79A792E40E89B4"]
+			description: [
+				"&6🌄 Yucatan kitchen"
+				""
+				"Yesterday's tortillas, cut and fried. Nothing in this kitchen was thrown away."
+			]
+			icon: "culturaldelights:tortilla_chips"
+			id: "58CE8B4DFB5AF92B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5D5A4DA1D9B6EEA3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "What the tortilla becomes when it waits."
+			tasks: [{
+				id: "0DDC8A0196D4400D"
+				item: "culturaldelights:tortilla_chips"
+				type: "item"
+			}]
+			title: "Tortilla Chips"
+			x: 24.1d
+			y: 4.0d
+		}
+		{
+			dependencies: ["58CE8B4DFB5AF92B"]
+			description: [
+				"&6🌄 Yucatan kitchen"
+				""
+				"Forest honey over forest nuts. An offering dish that people kept eating after the offerings stopped."
+			]
+			icon: "delightful:honey_glazed_walnut"
+			id: "414515DC8360917C"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0F973F1A8B2D151D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Sweet, and it keeps."
+			tasks: [{
+				id: "11A105203634E5C8"
+				item: "delightful:honey_glazed_walnut"
+				type: "item"
+			}]
+			title: "Honey Glazed Walnut"
+			x: 24.1d
+			y: 6.0d
+		}
+		{
+			dependencies: ["414515DC8360917C"]
+			description: [
+				"&6🌄 Yucatan kitchen"
+				""
+				"Bitter until roasted, then not. Somebody found that out the hard way and wrote it down."
+			]
+			icon: "delightful:roasted_acorn"
+			id: "62FC015FE60A5243"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "278A00D75B5FD5BA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Famine food that stayed on the menu."
+			tasks: [{
+				id: "7A48B9E4A70A3C4B"
+				item: "delightful:roasted_acorn"
+				type: "item"
+			}]
+			title: "Roasted Acorn"
+			x: 24.1d
+			y: 8.0d
+		}
+		{
+			dependencies: ["62FC015FE60A5243"]
+			description: [
+				"&6🌄 Yucatan kitchen"
+				""
+				"Maize, lime water, a flat stone. Every other dish in this kitchen is built on top of it."
+			]
+			icon: "culturaldelights:tortilla"
+			id: "337FBA51BFCCD3F5"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "78FBD241145FD109"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "One crop, flattened into a civilisation."
+			tasks: [{
+				id: "4C83542375B9500B"
+				item: "culturaldelights:tortilla"
+				type: "item"
+			}]
+			title: "Tortilla"
+			x: 24.1d
+			y: 10.0d
+		}
+		{
+			dependencies: ["337FBA51BFCCD3F5"]
+			description: [
+				"&6🌄 Yucatan kitchen"
+				""
+				"A tortilla folded around whatever the day provided. The fold is the invention."
+			]
+			icon: "culturaldelights:chicken_taco"
+			id: "45016AD4FA9BC0D0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1F5E7EE8463413A7"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Everything folded into the crop."
+			tasks: [{
+				id: "7A191675037510E8"
+				item: "culturaldelights:chicken_taco"
+				type: "item"
+			}]
+			title: "Chicken Taco"
+			x: 24.1d
+			y: 12.0d
+		}
+		{
+			dependencies: ["45016AD4FA9BC0D0"]
+			description: [
+				"&6🌄 Yucatan kitchen"
+				""
+				"The coast's contribution. It travelled inland dried and came back to life in the pot."
+			]
+			icon: "culturaldelights:cooked_calamari"
+			id: "5593CA7721B85E16"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2758CC98F899F830"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The coast, when the jungle ran short."
+			tasks: [{
+				id: "41172D903211497E"
+				item: "culturaldelights:cooked_calamari"
+				type: "item"
+			}]
+			title: "Cooked Calamari"
+			x: 24.1d
+			y: 14.0d
+		}
+		{
+			dependencies: ["25EC03163A441B65"]
+			description: [
+				"&6📜 The Umvuthana kitchen"
+				""
+				"Cheese made without an animal, from soaked grain. The Umvuthana kept herds for other reasons."
+			]
+			icon: "meadow:piece_of_grain_cheese"
+			id: "47F4FAA774DF5B84"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "19D04BE201703DD5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Milk, kept by being changed."
+			tasks: [{
+				id: "0DD17C15624331CE"
+				item: "meadow:piece_of_grain_cheese"
+				type: "item"
+			}]
+			title: "Piece of Grain Cheese"
+			x: -5.3d
+			y: -5.3d
+		}
+		{
+			dependencies: ["47F4FAA774DF5B84"]
+			description: [
+				"&6📜 The Umvuthana kitchen"
+				""
+				"Two preserved things between two slices of a third. A hunter's lunch, carried in a mask bag."
+			]
+			icon: "brewinandchewin:ham_and_cheese_sandwich"
+			id: "3DBAC155D2710D20"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "019FA5317DF0C23B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Two preserved things, agreeing."
+			tasks: [{
+				id: "1BBC29EE46DBE2A1"
+				item: "brewinandchewin:ham_and_cheese_sandwich"
+				type: "item"
+			}]
+			title: "Ham and Cheese Sandwich"
+			x: -6.6d
+			y: -6.6d
+		}
+		{
+			dependencies: ["3DBAC155D2710D20"]
+			description: [
+				"&6📜 The Umvuthana kitchen"
+				""
+				"Pickled, then pickled again. The second brine was a matter of pride, not necessity."
+			]
+			icon: "brewinandchewin:pickled_pickles"
+			id: "75CA4880230659B9"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "5FC0408D933DCE8E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Brine is a form of record-keeping."
+			tasks: [{
+				id: "158DD4A08CAA1A4C"
+				item: "brewinandchewin:pickled_pickles"
+				type: "item"
+			}]
+			title: "Pickled Pickles"
+			x: -7.8d
+			y: -7.8d
+		}
+		{
+			dependencies: ["75CA4880230659B9"]
+			description: [
+				"&6📜 The Umvuthana kitchen"
+				""
+				"Fermented in sealed gourds and opened at masked dances. The masks were to hide who drank most."
+			]
+			icon: "brewinandchewin:rice_wine"
+			id: "50E10684938C827F"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "0FF70138A35A90A3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The archive's only unserious document."
+			tasks: [{
+				id: "6A916824B458850D"
+				item: "brewinandchewin:rice_wine"
+				type: "item"
+			}]
+			title: "Rice Wine"
+			x: -9.1d
+			y: -9.1d
+		}
+		{
+			dependencies: ["50E10684938C827F"]
+			description: [
+				"&6📜 The Umvuthana kitchen"
+				""
+				"The plain version. Their records note it was what children were sent out with."
+			]
+			icon: "meadow:cheese_sandwich"
+			id: "2F1FB0C11088F7A9"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "51950C51E14A4AFD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The plainest entry in the catalogue."
+			tasks: [{
+				id: "78C48E467CC5775E"
+				item: "meadow:cheese_sandwich"
+				type: "item"
+			}]
+			title: "Cheese Sandwich"
+			x: -10.4d
+			y: -10.4d
+		}
+		{
+			dependencies: ["2F1FB0C11088F7A9"]
+			description: [
+				"&6📜 The Umvuthana kitchen"
+				""
+				"Aged in crystal caves until it took the colour. Nobody can say if the crystals did anything."
+			]
+			icon: "meadow:piece_of_amethyst_cheese"
+			id: "0AD64EC6E6735269"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "27646948AC3FFAC8"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Somebody catalogued this by colour."
+			tasks: [{
+				id: "38727C8214ADB5A2"
+				item: "meadow:piece_of_amethyst_cheese"
+				type: "item"
+			}]
+			title: "Piece of Amethyst Cheese"
+			x: -11.7d
+			y: -11.7d
+		}
+		{
+			dependencies: ["0AD64EC6E6735269"]
+			description: [
+				"&6📜 The Umvuthana kitchen"
+				""
+				"From the herd they followed across the grass. Rich, heavy, and gone by the dry season."
+			]
+			icon: "meadow:piece_of_buffalo_cheese"
+			id: "6DDA17F25FB162D7"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "21C8BEEF93B0E34E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Named for the animal, filed under the method."
+			tasks: [{
+				id: "0938186DD46919D7"
+				item: "meadow:piece_of_buffalo_cheese"
+				type: "item"
+			}]
+			title: "Piece of Buffalo Cheese"
+			x: -12.9d
+			y: -12.9d
+		}
+		{
+			dependencies: ["6DDA17F25FB162D7"]
+			description: [
+				"&6📜 The Umvuthana kitchen"
+				""
+				"Milk that was left alone on purpose. The first one was probably an accident."
+			]
+			icon: "meadow:piece_of_cheese"
+			id: "1E8ADC4A015AC4D7"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "106DCC1E40A11F57"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "56CFFB81820D306B"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Where the whole discipline starts."
+			tasks: [{
+				id: "0D9D566134BC9983"
+				item: "meadow:piece_of_cheese"
+				type: "item"
+			}]
+			title: "Piece of Cheese"
+			x: -14.2d
+			y: -14.2d
+		}
+		{
+			dependencies: ["6D091EAD63D82664"]
+			description: [
+				"&6❄️ The Hoarfrost kitchen"
+				""
+				"Made from whatever the hole in the ice gave up, on the days it gave up very little."
+			]
+			icon: "aquaculturedelight:poor_fisher_chowder"
+			id: "48F150B65CE7494E"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5632FFEEB1E6C43B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Named for the day, not the fish."
+			tasks: [{
+				id: "21D97CDEFF9C5629"
+				item: "aquaculturedelight:poor_fisher_chowder"
+				type: "item"
+			}]
+			title: "Unlucky Fisher Chowder"
+			x: 5.3d
+			y: 5.3d
+		}
+		{
+			dependencies: ["6D091EAD63D82664"]
+			description: [
+				"&6❄️ The Hoarfrost kitchen"
+				""
+				"A lake fish and a long boil. The Hoarfrost measured winter in how many of these were left."
+			]
+			icon: "aquaculturedelight:bass_stew"
+			id: "6B48C7BF226E54AD"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "2A7CB3EE79A55813"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Hot, and that was the whole ambition."
+			tasks: [{
+				id: "1BEF18AFD7DED7F2"
+				item: "aquaculturedelight:bass_stew"
+				type: "item"
+			}]
+			title: "Bass Stew"
+			x: 6.6d
+			y: 6.6d
+		}
+		{
+			dependencies: ["6B48C7BF226E54AD"]
+			description: [
+				"&6❄️ The Hoarfrost kitchen"
+				""
+				"Fried hard so it would still be food by the time it reached the far camp."
+			]
+			icon: "aquaculturedelight:fish_and_chips"
+			id: "58B34B8BBE6F485A"
+			invisible: true
+			optional: true
+			rewards: [{
+				count: 24
+				id: "5E911CB8B5F3150F"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Fried twice, for the cold."
+			tasks: [{
+				id: "0C114318D0084847"
+				item: "aquaculturedelight:fish_and_chips"
+				type: "item"
+			}]
+			title: "Fish and Chips"
+			x: 7.8d
+			y: 7.8d
+		}
+		{
+			dependencies: ["6B48C7BF226E54AD"]
+			description: [
+				"&6❄️ The Hoarfrost kitchen"
+				""
+				"The name is the original. They did not always know what they had caught."
+			]
+			icon: "aquaculturedelight:unusual_fish_soup"
+			id: "418E6A18BB6BB08F"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "1BD6D1E0555588A0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "They ate it anyway."
+			tasks: [{
+				id: "36CB5FBB4E05A414"
+				item: "aquaculturedelight:unusual_fish_soup"
+				type: "item"
+			}]
+			title: "Unusual Fish Soup"
+			x: 9.1d
+			y: 9.1d
+		}
+		{
+			dependencies: ["418E6A18BB6BB08F"]
+			description: [
+				"&6❄️ The Hoarfrost kitchen"
+				""
+				"From under the sea ice, glazed so the spines stop mattering. Mostly."
+			]
+			icon: "aquamirae_delight:glazed_grilled_spinefish"
+			id: "11EA48B8AA345728"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "6A474AAD73B11CA0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Worth the trouble of the spines."
+			tasks: [{
+				id: "60EDDB4E95A42C52"
+				item: "aquamirae_delight:glazed_grilled_spinefish"
+				type: "item"
+			}]
+			title: "Glazed Grilled Spinefish"
+			x: 10.4d
+			y: 10.4d
+		}
+		{
+			dependencies: ["11EA48B8AA345728"]
+			description: [
+				"&6❄️ The Hoarfrost kitchen"
+				""
+				"A cod with the rest of the larder inside it. One fish, one family, one night."
+			]
+			icon: "oceansdelight:cooked_stuffed_cod"
+			id: "7EE357D0296B2ACC"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "59235901524601E4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The fish, and what it was carrying."
+			tasks: [{
+				id: "54AF02AD6D0F3E3A"
+				item: "oceansdelight:cooked_stuffed_cod"
+				type: "item"
+			}]
+			title: "Cooked Stuffed Cod"
+			x: 13.2d
+			y: 13.2d
+		}
+		{
+			dependencies: ["7EE357D0296B2ACC"]
+			description: [
+				"&6❄️ The Hoarfrost kitchen"
+				""
+				"The same dish before the fire. It kept frozen like this for the whole dark season."
+			]
+			icon: "oceansdelight:stuffed_cod"
+			id: "01ECE7EE154BDDC2"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "7EAE6E971EFF8138"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Before the fire got to it."
+			tasks: [{
+				id: "0E06C2C4C56449E7"
+				item: "oceansdelight:stuffed_cod"
+				type: "item"
+			}]
+			title: "Stuffed Cod"
+			x: 14.4d
+			y: 14.4d
+		}
+		{
+			dependencies: ["01ECE7EE154BDDC2"]
+			description: [
+				"&6❄️ The Hoarfrost kitchen"
+				""
+				"Rare this far north. When one washed in, the whole hold ate."
+			]
+			icon: "aquaculturedelight:cooked_small_turtle_meat"
+			id: "62100326FFF14662"
+			invisible: true
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "06313F9C9DB2C607"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "218C114F7E4BC447"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Slow food, in every sense."
+			tasks: [{
+				id: "51F12EFE88BFA658"
+				item: "aquaculturedelight:cooked_small_turtle_meat"
+				type: "item"
+			}]
+			title: "Cooked Turtle Meat Slice"
+			x: 15.7d
+			y: 15.7d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"&6⚙️ The Forgesworn kitchen"
+				""
+				"The Forgesworn baked what they mined. This one was a guild joke that became a tradition."
+			]
+			icon: "mineraldelight:diamond_cookie"
+			id: "1C251CA2DE01CE26"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "716E371E3FCE556E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "They put it in a cookie. Of course they did."
+			tasks: [{
+				id: "725BE186AC548662"
+				item: "mineraldelight:diamond_cookie"
+				type: "item"
+			}]
+			title: "Diamond Cookie"
+			x: 3.2d
+			y: -3.2d
+		}
+		{
+			dependencies: ["1C251CA2DE01CE26"]
+			description: [
+				"&6⚙️ The Forgesworn kitchen"
+				""
+				"Leaves cut thin enough to see the plate through. Precision was the point, in the kitchen too."
+			]
+			icon: "mineraldelight:glass_salad"
+			id: "059B8E3450247009"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "413C6EA8DE9B87AA"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Engineers, cooking."
+			tasks: [{
+				id: "387279F0CD6A0FDB"
+				item: "mineraldelight:glass_salad"
+				type: "item"
+			}]
+			title: "Glass Salad"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["059B8E3450247009"]
+			description: [
+				"&6⚙️ The Forgesworn kitchen"
+				""
+				"Drunk at the furnace mouth between pours. White so you could see the soot land in it."
+			]
+			icon: "mineraldelight:ivory_milk_tea"
+			id: "52711B3D1607ED81"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "6EEC48BE55D3F9A2"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "A break, scheduled and enforced."
+			tasks: [{
+				id: "799732C07A9FA622"
+				item: "mineraldelight:ivory_milk_tea"
+				type: "item"
+			}]
+			title: "Ivory Milk Tea"
+			x: 5.7d
+			y: -5.7d
+		}
+		{
+			dependencies: ["52711B3D1607ED81"]
+			description: [
+				"&6⚙️ The Forgesworn kitchen"
+				""
+				"Served at a temperature the rest of the world considers a mistake."
+			]
+			icon: "mineraldelight:molten_stew"
+			id: "0EA8F34B7BB32F49"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "045855E93C7526E1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Served at the wrong temperature deliberately."
+			tasks: [{
+				id: "3EED1FB1C0FA9B0E"
+				item: "mineraldelight:molten_stew"
+				type: "item"
+			}]
+			title: "Molten Stew"
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0EA8F34B7BB32F49"]
+			description: [
+				"&6⚙️ The Forgesworn kitchen"
+				""
+				"A recipe traded up from below. The Forgesworn never asked what was in the original."
+			]
+			icon: "mineraldelight:piglin_salad"
+			id: "2DBA3135CBE0E0F1"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "29803F4E83A70D79"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Traded for, not grown."
+			tasks: [{
+				id: "57AC9F38B2FA3F09"
+				item: "mineraldelight:piglin_salad"
+				type: "item"
+			}]
+			title: "Piglin Salad"
+			x: 8.3d
+			y: -8.3d
+		}
+		{
+			dependencies: ["2DBA3135CBE0E0F1"]
+			description: [
+				"&6⚙️ The Forgesworn kitchen"
+				""
+				"Sweetness made in a crucible. They would rather synthesise sugar than grow it."
+			]
+			icon: "mineraldelight:saccharin_syrup"
+			id: "5CD86BFC91CCE9CE"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "6F642802CF258B57"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Sweetness, synthesised."
+			tasks: [{
+				id: "19A2F526B48A366C"
+				item: "mineraldelight:saccharin_syrup"
+				type: "item"
+			}]
+			title: "Saccharin Syrup"
+			x: 9.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["5CD86BFC91CCE9CE"]
+			description: [
+				"&6⚙️ The Forgesworn kitchen"
+				""
+				"Clear enough to read a gauge through. Apprentices were judged on it."
+			]
+			icon: "mineraldelight:shining_broth"
+			id: "280B0E1DD72F4305"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "26216F57575AAE19"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "It should not glow. It does."
+			tasks: [{
+				id: "2B8A3076BD014CA5"
+				item: "mineraldelight:shining_broth"
+				type: "item"
+			}]
+			title: "Shining Broth"
+			x: 10.8d
+			y: -10.8d
+		}
+		{
+			dependencies: ["280B0E1DD72F4305"]
+			description: [
+				"&6⚙️ The Forgesworn kitchen"
+				""
+				"The end of a guild dinner. It was polished before it was served."
+			]
+			icon: "mineraldelight:shiny_pudding"
+			id: "504AB5F27266027A"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "3EBF8CE51D95CA1E"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "2A020EEBAE9BEA32"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Finish, applied to food."
+			tasks: [{
+				id: "720FFB4EDEE0017B"
+				item: "mineraldelight:shiny_pudding"
+				type: "item"
+			}]
+			title: "Shiny Pudding"
+			x: 12.1d
+			y: -12.1d
+		}
+		{
+			dependencies: ["3B1139B64B68879E"]
+			description: [
+				"&6🕳️ The Cipher kitchen"
+				""
+				"The Cipher cooked with what the End exhaled. Nobody else thought to bottle it first."
+			]
+			icon: "ends_delight:dragon_breath_and_chorus_soup"
+			id: "79311CD874B6CCC0"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "0A525FA98D97584A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Two things that should not share a bowl."
+			tasks: [{
+				id: "15C20D24A6C87150"
+				item: "ends_delight:dragon_breath_and_chorus_soup"
+				type: "item"
+			}]
+			title: "Dragon's Breath and Chorus Soup"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["79311CD874B6CCC0"]
+			description: [
+				"&6🕳️ The Cipher kitchen"
+				""
+				"Noodles from the deep, eaten cold. The recipe is written in a code only half broken."
+			]
+			icon: "caves_delight:sea_noodle_soup"
+			id: "1CCDAE5C7E1F86F0"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "7B5A2564F2D7585E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "From a people who left no coastline."
+			tasks: [{
+				id: "7C7C30D58472B5B6"
+				item: "caves_delight:sea_noodle_soup"
+				type: "item"
+			}]
+			title: "Sea Noodle Soup"
+			x: 0.0d
+			y: -9.3d
+		}
+		{
+			dependencies: ["1CCDAE5C7E1F86F0"]
+			description: [
+				"&6🕳️ The Cipher kitchen"
+				""
+				"The name is a translation and probably a wrong one. The soup is right."
+			]
+			icon: "caves_delight:slam_soup"
+			id: "640405665C8DF860"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "195A20B3A1992242"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The name survives. The reasoning does not."
+			tasks: [{
+				id: "3D7AEE21D29B30AC"
+				item: "caves_delight:slam_soup"
+				type: "item"
+			}]
+			title: "Slam Soup"
+			x: 0.0d
+			y: -11.1d
+		}
+		{
+			dependencies: ["640405665C8DF860"]
+			description: [
+				"&6🕳️ The Cipher kitchen"
+				""
+				"Surface fruit in deep water. A dish from the years they still traded upward."
+			]
+			icon: "caves_delight:tomato_sea_soup"
+			id: "00D1BB3FE727E88A"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "4D9C47F8768B176D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Red, and nobody recorded why."
+			tasks: [{
+				id: "27B34A88C2F185B8"
+				item: "caves_delight:tomato_sea_soup"
+				type: "item"
+			}]
+			title: "Tomato Sea Soup"
+			x: 0.0d
+			y: -12.9d
+		}
+		{
+			dependencies: ["00D1BB3FE727E88A"]
+			description: [
+				"&6🕳️ The Cipher kitchen"
+				""
+				"Eat it and you may not finish it where you started. They considered that part of the meal."
+			]
+			icon: "endersdelight:chorus_stew"
+			id: "7BF5F849C78E56B9"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "16B76F9E6CF80164"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "It moves you while you eat it."
+			tasks: [{
+				id: "1B1B41FF02FA2163"
+				item: "endersdelight:chorus_stew"
+				type: "item"
+			}]
+			title: "Chorus Stew"
+			x: 0.0d
+			y: -14.7d
+		}
+		{
+			dependencies: ["7BF5F849C78E56B9"]
+			description: [
+				"&6🕳️ The Cipher kitchen"
+				""
+				"Small, purple, and the reason their children were hard to find at bedtime."
+			]
+			icon: "ends_delight:chorus_cookie"
+			id: "253FF770CC258728"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "724DF307C91BEC7D"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Sweet, and slightly elsewhere."
+			tasks: [{
+				id: "70939A1052E3DF22"
+				item: "ends_delight:chorus_cookie"
+				type: "item"
+			}]
+			title: "Chorus Cookie"
+			x: 0.0d
+			y: -16.5d
+		}
+		{
+			dependencies: ["253FF770CC258728"]
+			description: [
+				"&6🕳️ The Cipher kitchen"
+				""
+				"The flower only, never the stalk. That rule cost someone a great deal to learn."
+			]
+			icon: "ends_delight:chorus_flower_pie"
+			id: "7E5C1059CBE71E00"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "3D63F16F27857DBE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Baked from something that teleports."
+			tasks: [{
+				id: "040204144790C76F"
+				item: "ends_delight:chorus_flower_pie"
+				type: "item"
+			}]
+			title: "Chorus Flower Pie"
+			x: 0.0d
+			y: -18.3d
+		}
+		{
+			dependencies: ["7E5C1059CBE71E00"]
+			description: [
+				"&6🕳️ The Cipher kitchen"
+				""
+				"Steeped until it stops moving on its own."
+			]
+			icon: "ends_delight:chorus_flower_tea"
+			id: "0AE86A11D38F0468"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "710301624830743D"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "514A48A95E38008F"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Steeped at the edge of the record."
+			tasks: [{
+				id: "3712A69A4433D8D9"
+				item: "ends_delight:chorus_flower_tea"
+				type: "item"
+			}]
+			title: "Chorus Flower Tea"
+			x: 0.0d
+			y: -20.1d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"&6🌊 The Tidehold kitchen"
+				""
+				"The Tidehold wasted nothing the sea gave, least of all next year's fish."
+			]
+			icon: "oceanic_delight:fish_egg_noodle_soup"
+			id: "5632AF7C2653EF66"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6349AFD8F3ED9A87"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Counted by the thousand."
+			tasks: [{
+				id: "6CB205E2509C606D"
+				item: "oceanic_delight:fish_egg_noodle_soup"
+				type: "item"
+			}]
+			title: "Fish Egg Noodle Soup"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5632AF7C2653EF66"]
+			description: [
+				"&6🌊 The Tidehold kitchen"
+				""
+				"Served by cooks who trained for years. The plate is how you know one of them made it."
+			]
+			icon: "oceanic_delight:plate_of_stuffed_pufferfish"
+			id: "4E3F879C7FC7C5FB"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "19B83F5B9A50AA28"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Prepared correctly, or not at all."
+			tasks: [{
+				id: "57E86EA43D91588F"
+				item: "oceanic_delight:plate_of_stuffed_pufferfish"
+				type: "item"
+			}]
+			title: "Plate Of Stuffed Pufferfish"
+			x: -6.3d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E3F879C7FC7C5FB"]
+			description: [
+				"&6🌊 The Tidehold kitchen"
+				""
+				"The whole catch on one stick, in the order it came up the line."
+			]
+			icon: "oceanic_delight:seafood_skewer"
+			id: "5993C814200B8E91"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "39DB181B02FD5C71"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The whole reef on one stick."
+			tasks: [{
+				id: "38B6FDDE1CD50993"
+				item: "oceanic_delight:seafood_skewer"
+				type: "item"
+			}]
+			title: "Seafood Skewer"
+			x: -8.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5993C814200B8E91"]
+			description: [
+				"&6🌊 The Tidehold kitchen"
+				""
+				"River mouth fish, fried on the dock before the boats were even tied."
+			]
+			icon: "tidesdelight:fried_catfish"
+			id: "3772B5F86185C38A"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "724DF0D83A35ACD0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Bottom-feeder, top of the menu."
+			tasks: [{
+				id: "6D2964F4E4E44AFB"
+				item: "tidesdelight:fried_catfish"
+				type: "item"
+			}]
+			title: "Fried Catfish"
+			x: -9.9d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3772B5F86185C38A"]
+			description: [
+				"&6🌊 The Tidehold kitchen"
+				""
+				"Nothing added. A Tidehold cook who seasoned a crab was assumed to be hiding something."
+			]
+			icon: "youkaisfeasts:steamed_crab"
+			id: "0187B8A05D66C10A"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "48660DCDD0E11C2E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Armour, and the work of getting past it."
+			tasks: [{
+				id: "0F4A583AAC02CA2E"
+				item: "youkaisfeasts:steamed_crab"
+				type: "item"
+			}]
+			title: "Steamed Crab"
+			x: -11.7d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0187B8A05D66C10A"]
+			description: [
+				"&6🌊 The Tidehold kitchen"
+				""
+				"Bean curd came by sea trade and never left. The crab was already here."
+			]
+			icon: "youkaisfeasts:tofu_crab_stew"
+			id: "0B4C7930D445703E"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "1DBAEADAB8C49DC4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Two proteins, one bowl, no argument."
+			tasks: [{
+				id: "695909E5551A1652"
+				item: "youkaisfeasts:tofu_crab_stew"
+				type: "item"
+			}]
+			title: "Tofu Crab Stew"
+			x: -13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B4C7930D445703E"]
+			description: [
+				"&6🌊 The Tidehold kitchen"
+				""
+				"A shore salad with the anchovy doing all the work, as it does in everything they made."
+			]
+			icon: "oceanic_delight:caesar_salad"
+			id: "19DD0293CBC7E65D"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "1DE6A0372EE588C0"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Green, from a people who had none."
+			tasks: [{
+				id: "7B1E39D29D8D6A53"
+				item: "oceanic_delight:caesar_salad"
+				type: "item"
+			}]
+			title: "Caesar Salad"
+			x: -15.3d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19DD0293CBC7E65D"]
+			description: [
+				"&6🌊 The Tidehold kitchen"
+				""
+				"Harbour-master food. The eggs were counted before they were eaten."
+			]
+			icon: "oceanic_delight:caviar_toast"
+			id: "646D6BA388D40215"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "3B04B041219558FC"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "34BFD7FA0C2DD964"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The Tidehold's idea of showing off."
+			tasks: [{
+				id: "71C1A789688BC132"
+				item: "oceanic_delight:caviar_toast"
+				type: "item"
+			}]
+			title: "Caviar Toast"
+			x: -17.1d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B29485E0451DBD1"]
+			description: [
+				"&6🍄 The Seeped kitchen"
+				""
+				"The Seeped ate the thing that hunted them by sound. Draw your own conclusions."
+			]
+			icon: "silentsdelight:baked_warden_ear_on_a_stick"
+			id: "11BD8D7AFB331A1F"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "5487668028BD9462"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "It was listening. Now it is dinner."
+			tasks: [{
+				id: "2A5EC02CEC33C11B"
+				item: "silentsdelight:baked_warden_ear_on_a_stick"
+				type: "item"
+			}]
+			title: "Baked Warden Ear on a Stick"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["11BD8D7AFB331A1F"]
+			description: [
+				"&6🍄 The Seeped kitchen"
+				""
+				"A crust that keeps growing if you let it. Bake it quickly."
+			]
+			icon: "silentsdelight:sculk_catalyst_pie_crust"
+			id: "20ABA6DFF900EE7A"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "0E251431FC68A3DF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The crust spreads if you let it."
+			tasks: [{
+				id: "3D4563506A50FF3E"
+				item: "silentsdelight:sculk_catalyst_pie_crust"
+				type: "item"
+			}]
+			title: "Sculk Catalyst Pie Crust"
+			x: 0.0d
+			y: 9.3d
+		}
+		{
+			dependencies: ["20ABA6DFF900EE7A"]
+			description: [
+				"&6🍄 The Seeped kitchen"
+				""
+				"Dark, quiet, and it listens. Eat it before it learns anything."
+			]
+			icon: "silentsdelight:sculk_soup"
+			id: "2334162DE1867F11"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "6BA0A97085516353"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Quiet food, for obvious reasons."
+			tasks: [{
+				id: "0AEEB1041B883630"
+				item: "silentsdelight:sculk_soup"
+				type: "item"
+			}]
+			title: "Sculk Soup"
+			x: 0.0d
+			y: 13.9d
+		}
+		{
+			dependencies: ["2334162DE1867F11"]
+			description: [
+				"&6🍄 The Seeped kitchen"
+				""
+				"Picked from the walls of the deep cities. It was the only thing down there that was green, once."
+			]
+			icon: "silentsdelight:sculk_vein_salad"
+			id: "15CC9B8CC5EE897E"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "2C8FA0032E5755D9"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Harvested carefully and eaten quickly."
+			tasks: [{
+				id: "2901F9E0E3C3E76A"
+				item: "silentsdelight:sculk_vein_salad"
+				type: "item"
+			}]
+			title: "Sculk Vein Salad"
+			x: 0.0d
+			y: 15.7d
+		}
+		{
+			dependencies: ["15CC9B8CC5EE897E"]
+			description: [
+				"&6🍄 The Seeped kitchen"
+				""
+				"Fried loud, on purpose. A dish made by people who had stopped being afraid."
+			]
+			icon: "silentsdelight:warden_ear_fried_rice"
+			id: "49550C2BEE87E01D"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "0B9C4072CBE29688"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Cooked loud, on purpose."
+			tasks: [{
+				id: "1DC234A4D61B375F"
+				item: "silentsdelight:warden_ear_fried_rice"
+				type: "item"
+			}]
+			title: "Warden Ear Fried Rice"
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["49550C2BEE87E01D"]
+			description: [
+				"&6🍄 The Seeped kitchen"
+				""
+				"It takes a long time to stop. Mince it anyway."
+			]
+			icon: "silentsdelight:minced_warden_heart"
+			id: "0FFC67EF540298AB"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "186F818635C29063"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "It still keeps time."
+			tasks: [{
+				id: "062B686D0C92819E"
+				item: "silentsdelight:minced_warden_heart"
+				type: "item"
+			}]
+			title: "Minced Warden Heart"
+			x: 0.0d
+			y: 19.3d
+		}
+		{
+			dependencies: ["0FFC67EF540298AB"]
+			description: [
+				"&6🍄 The Seeped kitchen"
+				""
+				"The centre of a Seeped feast, and the reason there were so few of them."
+			]
+			icon: "silentsdelight:plate_of_warden_heart"
+			id: "00133109A1B983B8"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "578B3D25F6C18D8B"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Served whole, which is a statement."
+			tasks: [{
+				id: "4F29A56BD3E195C8"
+				item: "silentsdelight:plate_of_warden_heart"
+				type: "item"
+			}]
+			title: "Plate of Warden Heart"
+			x: 0.0d
+			y: 21.1d
+		}
+		{
+			dependencies: ["00133109A1B983B8"]
+			description: [
+				"&6🍄 The Seeped kitchen"
+				""
+				"Charred until it stops reacting to footsteps."
+			]
+			icon: "silentsdelight:sculk_barbecue_stick"
+			id: "4B1D34BAF7D1FF16"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "49DC58F632877536"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "66E553BF15D814CA"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The only loud meal they allowed."
+			tasks: [{
+				id: "71A28B59B5E5932A"
+				item: "silentsdelight:sculk_barbecue_stick"
+				type: "item"
+			}]
+			title: "Sculk Barbecue Stick"
+			x: 0.0d
+			y: 22.9d
+		}
+		{
+			dependencies: ["362C98B9C99F65BD"]
+			description: [
+				"&6⛈️ The Storm-Builders kitchen"
+				""
+				"The Storm-Builders cooked over what was burning. There was usually something."
+			]
+			icon: "hearthandharvest:roasted_marshmallow_stick"
+			id: "6857CDD0FEEE70D9"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "425B6FD9301F0CD4"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Fire, used frivolously and on purpose."
+			tasks: [{
+				id: "569EE5DF5D5FB9E0"
+				item: "hearthandharvest:roasted_marshmallow_stick"
+				type: "item"
+			}]
+			title: "Roasted Marshmallow"
+			x: -3.2d
+			y: 3.2d
+		}
+		{
+			dependencies: ["6857CDD0FEEE70D9"]
+			description: [
+				"&6⛈️ The Storm-Builders kitchen"
+				""
+				"Shelter food. Small, dry, and it does not care how long you are stuck underground."
+			]
+			icon: "hearthandharvest:roasted_peanuts"
+			id: "10EB1C815C7391B8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "144EDA1ECACCE0E5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Field food. Nothing to wash."
+			tasks: [{
+				id: "5B53186856519A27"
+				item: "hearthandharvest:roasted_peanuts"
+				type: "item"
+			}]
+			title: "Roasted Peanuts"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["10EB1C815C7391B8"]
+			description: [
+				"&6⛈️ The Storm-Builders kitchen"
+				""
+				"Whatever survived, between whatever else survived."
+			]
+			icon: "witherstorm_delight:storm_sandwich"
+			id: "5F99E46887CF6FD8"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "5A24A669CD3F499E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Made fast, between two fronts."
+			tasks: [{
+				id: "425636D90FEC1621"
+				item: "witherstorm_delight:storm_sandwich"
+				type: "item"
+			}]
+			title: "Storm Sandwich"
+			x: -5.7d
+			y: 5.7d
+		}
+		{
+			dependencies: ["5F99E46887CF6FD8"]
+			description: [
+				"&6⛈️ The Storm-Builders kitchen"
+				""
+				"The fire got to it first. They ate it and built the next wall higher."
+			]
+			icon: "barbequesdelight:burnt_skewer"
+			id: "2EFF5027E264BFFA"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "08BB295200ECA7BF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "They kept the failures on the menu."
+			tasks: [{
+				id: "59DA5542D0FB24AB"
+				item: "barbequesdelight:burnt_skewer"
+				type: "item"
+			}]
+			title: "Burnt Skewer"
+			x: -7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2EFF5027E264BFFA"]
+			description: [
+				"&6⛈️ The Storm-Builders kitchen"
+				""
+				"Meat on a rod over an open flame, eaten standing up, watching the sky."
+			]
+			icon: "barbequesdelight:grilled_beef_skewer"
+			id: "0B2370BCDB34D672"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "3934F6BBBD2D2D13"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Over open flame, like everything else."
+			tasks: [{
+				id: "7B158F0599EE68D5"
+				item: "barbequesdelight:grilled_beef_skewer"
+				type: "item"
+			}]
+			title: "Grilled Beef Skewer"
+			x: -8.3d
+			y: 8.3d
+		}
+		{
+			dependencies: ["0B2370BCDB34D672"]
+			description: [
+				"&6⛈️ The Storm-Builders kitchen"
+				""
+				"Quick to cook, quick to eat. Nobody lingered over dinner in those years."
+			]
+			icon: "barbequesdelight:grilled_chicken_skewer"
+			id: "3E312C25B8410189"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "0F6D568C5A5514B5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "Faster than the beef, and they timed it."
+			tasks: [{
+				id: "24A55F773066F7AA"
+				item: "barbequesdelight:grilled_chicken_skewer"
+				type: "item"
+			}]
+			title: "Grilled Chicken Skewer"
+			x: -9.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3E312C25B8410189"]
+			description: [
+				"&6⛈️ The Storm-Builders kitchen"
+				""
+				"From the last calm water they could find."
+			]
+			icon: "barbequesdelight:grilled_cod_skewer"
+			id: "1847DAACBB70B597"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "3813878FE5B28A1E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The sea, cooked the land's way."
+			tasks: [{
+				id: "7A131EF71C78AAB1"
+				item: "barbequesdelight:grilled_cod_skewer"
+				type: "item"
+			}]
+			title: "Grilled Cod Skewer"
+			x: -10.8d
+			y: 10.8d
+		}
+		{
+			dependencies: ["1847DAACBB70B597"]
+			description: [
+				"&6⛈️ The Storm-Builders kitchen"
+				""
+				"The feast dish, for the nights the storm passed over."
+			]
+			icon: "barbequesdelight:grilled_lamb_skewer"
+			id: "358054E9DB38C4A9"
+			optional: true
+			rewards: [
+				{
+					count: 64
+					id: "4276A3C847A96916"
+					item: "numismatics:cog"
+					type: "item"
+				}
+				{
+					id: "7358F97A84C6610D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 0.9d
+			subtitle: "The one they served to guests."
+			tasks: [{
+				id: "18DC11CD71E15002"
+				item: "barbequesdelight:grilled_lamb_skewer"
+				type: "item"
+			}]
+			title: "Grilled Lamb Skewer"
+			x: -12.1d
+			y: 12.1d
+		}
+		{
+			dependencies: ["1B29485E0451DBD1"]
+			description: [
+				"It cannot tell you what you are holding. The Chronicle can."
+				"&dNeeds both:&r The Gallery-Broth and Chronicle of the World-Enders."
+				"&bWaiting on both:&r Ignis, Maledictus Heart, Koboleton Meat and the rest of that shelf."
+			]
+			icon: "lendersdelight:ignis"
+			id: "74E6DA5A0AE7EFE7"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "72F7B66620647B72"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "A kitchen can cook anything."
+			tasks: [
+				{
+					id: "4D557CDAD867A7F0"
+					individual: true
+					negate: false
+					stage: "gallery_broth"
+					title: "The Gallery-Broth"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "29C0ADD94D5A0018"
+					individual: true
+					negate: false
+					stage: "cataclysm_codex"
+					title: "Chronicle of the World-Enders"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , Boss Meat"
+			x: -1.4d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1B29485E0451DBD1"]
+			description: [
+				"The cook needs to know that before the pot does."
+				"&dNeeds both:&r The Gallery-Broth and On Sculk Sickness."
+				"&bWaiting on both:&r Warden Ear, Sculk Jem, Wardenzola and the rest of that shelf."
+			]
+			icon: "silentsdelight:warden_ear"
+			id: "44E98ACE9A4CF76A"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "113FD13627C0CE43"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "It grows where something large died."
+			tasks: [
+				{
+					id: "051B62E3201168F2"
+					individual: true
+					negate: false
+					stage: "gallery_broth"
+					title: "The Gallery-Broth"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "38C03D14AF8FB652"
+					individual: true
+					negate: false
+					stage: "sculk_sickness"
+					title: "On Sculk Sickness"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , Sculk On The Plate"
+			x: 1.4d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1B29485E0451DBD1"]
+			description: [
+				"The broth is the same broth. The meat came through a gate."
+				"&dNeeds both:&r The Gallery-Broth and On Infernal Passage."
+				"&bWaiting on both:&r Strider Shank, Ghastew, Ghast Roll and the rest of that shelf."
+			]
+			icon: "unusual_delight:strider_shank"
+			id: "525B7E859A48F2A7"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "42606390A4E5E900"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Hot food from a hot place."
+			tasks: [
+				{
+					id: "492BDF75FD8B6A89"
+					individual: true
+					negate: false
+					stage: "gallery_broth"
+					title: "The Gallery-Broth"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "78A0EBABFE63F91A"
+					individual: true
+					negate: false
+					stage: "infernal_passage"
+					title: "On Infernal Passage"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , The Nether Kitchen"
+			x: -1.2d
+			y: 3.3d
+		}
+		{
+			dependencies: ["3B1139B64B68879E"]
+			description: [
+				"The Strata grew it in the dark. The archive files it under the cave first."
+				"&dNeeds both:&r The Forgetting-Broth and The Primordial Strata."
+				"&bWaiting on both:&r Raw Dino Cut, Seething Stew, Cooked Relicheirus Egg and the rest of that shelf."
+			]
+			icon: "cavedelight:raw_dino_cut"
+			id: "40B40F9840319048"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "27A9DA93069CAB55"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "What lives under the stone is edible."
+			tasks: [
+				{
+					id: "2C85735803A2C804"
+					individual: true
+					negate: false
+					stage: "forgetting_broth"
+					title: "The Forgetting-Broth"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "421EFA57F8020E61"
+					individual: true
+					negate: false
+					stage: "primordial_strata"
+					title: "The Primordial Strata"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , The Deep Larder"
+			x: 1.4d
+			y: -5.5d
+		}
+	]
+	subtitle: ["Nine peoples, nine larders, one winter."]
+	title: "Nine Kitchens"
+}

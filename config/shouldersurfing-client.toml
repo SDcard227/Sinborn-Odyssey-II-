@@ -1,31 +1,28 @@
 
 [camera]
-	#The distance multiplier on whether or not to hide the player model if the camera gets too close to it. Set to 0 to disable.
+	#The distance multiplier on whether to hide the player model if the camera gets too close to it. Set to 0 to disable.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	keep_camera_out_of_head_distance_multiplier = 0.75
-	#Size of the camera adjustment per step.
-	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-	camera_step_size = 0.025
 	#The speed multiplier at which the camera transitions between positions.
 	#Range: 0.05 ~ 1.0
 	camera_transition_speed_multiplier = 0.25
 	#The angle at which the camera will be centered when looking down. Set to 0 to disable.
 	#Range: 0.0 ~ 90.0
 	center_camera_when_looking_down_angle = 1.0
-	#Whether or not to dynamically adjust camera offsets depending on space constraints.
-	dynamically_adjust_offsets = true
-	#Whether or not to decouple the camera rotation from the player rotation.
+	#Whether to decouple the camera rotation from the player rotation.
 	decoupled_camera = true
-	#Whether or not to orient the camera rotation when the player is teleported. This includes passenger (dis-)mounting and traveling through portals.
+	#Whether to orient the camera rotation when the player is teleported. This includes passenger (dis-)mounting and traveling through portals.
 	orient_camera_on_teleport = true
-	#Whether or not to apply the FOV override when in shoulder surfing perspective.
-	fov_override_enabled = false
-	#The camera FOV when in shoulder surfing perspective. Depends on config option 'fov_override_enabled'.
-	#Range: 30.0 ~ 110.0
-	fov_override = 70.0
 	#Whether to apply view bobbing in shoulder surfing perspective. Set to INHERIT to inherit vanilla setting.
 	#Allowed Values: INHERIT, ON, OFF
 	view_bobbing_mode = "INHERIT"
+	#Whether to turn the camera with the player when camera is decoupled.
+	turn_with_player = false
+	#The delay in ticks after which the camera will turn with the player.
+	#Range: > 1
+	turn_with_player_delay = 40
+	#The list of blocks that do not collide with the camera. Must be transparent blocks or blocks that do not take up a full block. This config option supports regular expressions. Example: 'minecraft:.*leaves' matches 'minecraft:oak_leaves' and 'minecraft:spruce_leaves'.
+	non_collidable_blocks = []
 
 	[camera.offset]
 		#Third person camera x-offset.
@@ -36,7 +33,14 @@
 		offset_y = 0.0
 		#Third person camera z-offset.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		offset_z = 4.0
+		offset_z = 3.975
+		#Whether to dynamically adjust camera offsets depending on space constraints.
+		dynamic_offsets = true
+		#Size of the offset adjustment per step.
+		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+		step_size = 0.025
+		#Whether to ignore block pillars, such as tree trunks, when calculating camera offsets. This improves overall immersion at the cost of block targeting accessibility.
+		ignore_block_pillars = false
 
 		[camera.offset.presets]
 			#A list of x-offset presets that can be toggled via the 'Toggle X-Offset Presets' keybind. WARNING: Duplicate entries can result in undefined behavior!
@@ -69,11 +73,11 @@
 			max_offset_z = 5.0
 
 		[camera.offset.limits]
-			#Whether or not x-offset adjustment has limits.
+			#Whether x-offset adjustment has limits.
 			unlimited_offset_x = false
-			#Whether or not y-offset adjustment has limits.
+			#Whether y-offset adjustment has limits.
 			unlimited_offset_y = false
-			#Whether or not z-offset adjustment has limits.
+			#Whether z-offset adjustment has limits.
 			unlimited_offset_z = false
 
 		[camera.offset.multiplier]
@@ -215,36 +219,56 @@
 		#Range: 0.05 ~ 1000.0
 		max_velocity_axis_z = 5.0
 
+	[camera.fov]
+		#Whether to apply the FOV override when in shoulder surfing perspective.
+		fov_override_enabled = false
+		#The camera FOV when in shoulder surfing perspective. Depends on config option 'fov_override_enabled'.
+		#Range: 30.0 ~ 110.0
+		fov_override = 70.0
+
 [perspective]
 	#The default perspective when you load the game.
 	#Allowed Values: FIRST_PERSON, THIRD_PERSON_BACK, THIRD_PERSON_FRONT, SHOULDER_SURFING
 	default_perspective = "FIRST_PERSON"
-	#Whether or not to remember the last perspective used.
+	#Whether to remember the last perspective used.
 	remember_last_perspective = true
-	#Whether or not to replace the default third person perspective.
+	#Whether to replace the default third person perspective.
 	replace_default_perspective = false
-	#Whether or not the first person perspective is enabled.
+	#Whether the first person perspective is enabled.
 	first_person_enabled = true
-	#Whether or not the third person front perspective is enabled.
+	#Whether the third person front perspective is enabled.
 	third_person_front_enabled = true
-	#Whether or not the third person back perspective is enabled.
+	#Whether the third person back perspective is enabled.
 	third_person_back_enabled = true
 
+	[perspective.temporary_first_person_in_constrained_spaces]
+		#Whether to switch to first person temporarily when space constrained.
+		enabled = false
+		#The minium time in ticks the temporary first will be active when entering a constrained space.
+		#Range: > 0
+		minimum_time = 60
+		#The additional time in ticks the perspective will stay in temporary first person after leaving a constrained space.
+		#Range: > 0
+		additional_time = 20
+		#The time in ticks the temporary first will be on cooldown before it can be entered again.
+		#Range: > 0
+		cooldown_time = 60
+
+		[perspective.temporary_first_person_in_constrained_spaces.offset_threshold]
+			#The x-axis camera offset threshold. When the x-axis camera offset falls below the configured threshold, the perspective will switch to temporary first person.
+			#Range: 0.0 ~ 1.7976931348623157E308
+			offset_x = 0.1
+			#The y-axis camera offset threshold. When the y-axis camera offset falls below the configured threshold, the perspective will switch to temporary first person.
+			#Range: 0.0 ~ 1.7976931348623157E308
+			offset_y = 0.0
+			#The z-axis camera offset threshold. When the z-axis camera offset falls below the configured threshold, the perspective will switch to temporary first person.
+			#Range: 0.0 ~ 1.7976931348623157E308
+			offset_z = 0.1
+
 [player]
-	#Whether or not to adjust the player model transparency when view is obstructed. Changing this value may require a game restart to take full effect.
-	adjust_player_transparency = true
-	#Whether or not to turn the player model transparent when aiming. This config option only applies when adjust player transparency is enabled.
-	turn_player_transparent_when_aiming = false
 	#The angle at which the player will no longer be rendered when looking up. Set to 0 to disable.
 	#Range: 0.0 ~ 90.0
 	hide_player_when_looking_up_angle = 0.0
-	#Whether the x-rot of the player should follow the camera x-rot. This config option only applies when camera is decoupled.
-	player_x_rot_follows_camera = false
-	#Whether the y-rot of the player should follow the camera y-rot. This config option only applies when camera is decoupled.
-	player_y_rot_follows_camera = false
-	#The maximum angle to which the player y-rot follows the camera y-rot. This config option only applies when player y-rot follows camera option is enabled.
-	#Range: 0.0 ~ 180.0
-	player_y_rot_follow_angle_limit = 90.0
 
 	[player.turning]
 		#Whether to turn the player when using an item. This config option only applies when camera is decoupled.
@@ -262,13 +286,35 @@
 		#The time in ticks the player will remain turned after the interaction has ended. Set to 0 to disable. This config option only applies when camera is decoupled.
 		#Range: > 0
 		turning_lock_time = 4
+		#The speed multiplier at which the player rotation converges to the movement direction of the player.
+		#Range: 0.05000000074505806 ~ 1.0
+		turning_speed_multiplier = 0.25
+		#Whether the x-rot of the player turns with the camera. This config option only applies when camera is decoupled.
+		turn_player_x_rot_with_camera = true
+		#Whether the y-rot of the player turns with the camera. This config option only applies when camera is decoupled.
+		turn_player_y_rot_with_camera = true
+		#The maximum angle to turn the player y-rot with the camera. This config option only applies when 'Turn player y-rot with camera' is enabled.
+		#Range: 0.0 ~ 180.0
+		turn_player_y_rot_angle_limit = 90.0
+		#Whether the x-rot of the player turns such that it is always facing the camera. This config option only applies when camera is decoupled and player x-rot turning with camera is enabled.
+		turn_player_x_rot_to_camera = false
+
+	[player.transparency]
+		#Whether to adjust the player model transparency when view is obstructed. Changing this value may require a game restart to take full effect.
+		adjust_transparency = true
+		#Whether to turn the player model transparent when aiming. This config option only applies when adjust player transparency is enabled.
+		when_aiming = false
+		#Whether to turn the player model transparent when climbing. This config option only applies when adjust player transparency is enabled.
+		when_climbing = false
 
 [object_picker]
 	#The raytrace distance used for the dynamic crosshair.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	custom_raytrace_distance = 400.0
-	#Whether or not to use the custom raytrace distance used for the dynamic crosshair.
+	#Whether to use the custom raytrace distance used for the dynamic crosshair.
 	use_custom_raytrace_distance = true
+	#The list of invisible entities to ignore while picking. This config option supports regular expressions. Example: 'minecraft:oak_.*' matches 'minecraft:oak_boat' and 'minecraft:oak_chest_boat'.
+	unpickable_invisible_entities = ["minecraft:armor_stand", "minecraft:block_display", "minecraft:item_display", "minecraft:text_display"]
 
 	[object_picker.pick_origin]
 		#The origin where the entity pick starts when using the static crosshair.
@@ -297,8 +343,6 @@
 	adaptive_crosshair_use_item_properties = ["minecraft:pull", "minecraft:throwing"]
 
 	[crosshair.obstruction]
-		#When the crosshair type is static, shows an additional indicator on obstacles that stand between you and your target.
-		show_obstruction_indicator = true
 		#Only show the obstruction indicator when using items that would trigger the adaptive crosshair.
 		only_when_aiming = true
 		#Hide the obstruction indicator when it is too close to the main crosshair. Distance measured in scaled pixels.
@@ -307,6 +351,8 @@
 		#Ignore obstructions that are too far away from the player. Distance measured in blocks. Set to 0 to disable.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		max_distance_to_obstruction = 20.0
+		#When the crosshair type is static, shows an additional indicator on obstacles that stand between you and your target.
+		obstruction_indicator = true
 
 	[crosshair.visibility]
 		#Crosshair visibility for first person.
@@ -337,4 +383,30 @@
 	[integrations.epicfight]
 		#Whether to allow target lock-on when camera is decoupled.
 		decoupled_camera_lock_on = false
+
+[gui]
+
+	[gui.maps]
+		#Whether to render map previews in the hud when a map item is held.
+		map_item_overlay_enabled = true
+		#The directional anchor to use for map item overlay rendering.
+		#Allowed Values: TOP, BOTTOM
+		map_item_overlay_anchor = "BOTTOM"
+		#The scale to use for map item overlay rendering.
+		#Range: 5 ~ 100
+		map_item_overlay_scale = 40
+
+		[gui.maps.insets]
+			#The inset from the top of the screen.
+			#Range: 0 ~ 500
+			top = 1
+			#The inset from the right of the screen.
+			#Range: 0 ~ 500
+			right = 1
+			#The inset from the bottom of the screen.
+			#Range: 0 ~ 500
+			bottom = 1
+			#The inset from the left of the screen.
+			#Range: 0 ~ 500
+			left = 1
 

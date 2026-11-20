@@ -1,96 +1,39 @@
 {
   "display_name": "The Wayfarer's Endurance",
-  "research_time": 2700,
+  "icon": "historystages:research_scroll",
+  "research_time": 300,
   "items": [
-    "cold_sweat:boiler",
-    "cold_sweat:chameleon_boots",
-    "cold_sweat:chameleon_chestplate",
-    "cold_sweat:chameleon_helmet",
-    "cold_sweat:chameleon_leggings",
     "cold_sweat:chameleon_molt",
     "cold_sweat:filled_waterskin",
     "cold_sweat:goat_fur",
-    "cold_sweat:goat_fur_boots",
-    "cold_sweat:goat_fur_chestplate",
-    "cold_sweat:goat_fur_helmet",
-    "cold_sweat:goat_fur_leggings",
     "cold_sweat:hearth",
-    "cold_sweat:hearth_bottom",
-    "cold_sweat:hearth_top",
-    "cold_sweat:hoglin_boots",
-    "cold_sweat:hoglin_chestplate",
-    "cold_sweat:hoglin_helmet",
     "cold_sweat:hoglin_hide",
-    "cold_sweat:hoglin_leggings",
     "cold_sweat:icebox",
     "cold_sweat:insulated_minecart",
     "cold_sweat:minecart_insulation",
     "cold_sweat:slush_bucket",
     "cold_sweat:smokestack",
     "cold_sweat:soul_sprout",
-    "cold_sweat:soul_stalk",
     "cold_sweat:soulspring_lamp",
-    "cold_sweat:soulspring_lamp/soulspring_lamp_0",
-    "cold_sweat:soulspring_lamp/soulspring_lamp_1",
-    "cold_sweat:soulspring_lamp/soulspring_lamp_2",
-    "cold_sweat:soulspring_lamp/soulspring_lamp_3",
-    "cold_sweat:special/blue_ice",
-    "cold_sweat:special/ice",
-    "cold_sweat:special/packed_ice",
     "cold_sweat:thermolith",
     "cold_sweat:thermometer",
-    "cold_sweat:thermometer/thermometer_0",
-    "cold_sweat:thermometer/thermometer_1",
-    "cold_sweat:thermometer/thermometer_2",
-    "cold_sweat:thermometer/thermometer_3",
-    "cold_sweat:thermometer/thermometer_4",
     "cold_sweat:waterskin",
-    "cold_sweat:waterskin/filled_waterskin_cold",
-    "cold_sweat:waterskin/filled_waterskin_hot",
     "sereneseasons:calendar",
-    "sereneseasons:calendar_00",
-    "sereneseasons:calendar_01",
-    "sereneseasons:calendar_02",
-    "sereneseasons:calendar_03",
-    "sereneseasons:calendar_04",
-    "sereneseasons:calendar_05",
-    "sereneseasons:calendar_06",
-    "sereneseasons:calendar_07",
-    "sereneseasons:calendar_08",
-    "sereneseasons:calendar_09",
-    "sereneseasons:calendar_10",
-    "sereneseasons:calendar_11",
-    "sereneseasons:calendar_null",
     "sereneseasons:season_sensor",
-    "sereneseasons:ss_icon",
-    "sereneseasons:tropical_calendar_00",
-    "sereneseasons:tropical_calendar_01",
-    "sereneseasons:tropical_calendar_02",
-    "sereneseasons:tropical_calendar_03",
-    "sereneseasons:tropical_calendar_04",
-    "sereneseasons:tropical_calendar_05",
     "thirst:clay_bowl",
     "thirst:sand_filter",
     "thirst:terracotta_bowl",
     "thirst:terracotta_water_bowl",
-    "thirst:wooden_water_bowl",
-    "toughasnails:purified_water_bottle",
     "winteroverhaul:cyan_scarf",
-    "winteroverhaul:cyan_winter_hat",
     "winteroverhaul:green_scarf",
-    "winteroverhaul:green_winter_hat",
     "winteroverhaul:red_scarf",
-    "winteroverhaul:red_winter_hat",
     "winteroverhaul:skates",
-    "winteroverhaul:top_hat",
-    "winteroverhaul:yellow_scarf",
-    "winteroverhaul:yellow_winter_hat"
+    "winteroverhaul:yellow_scarf"
   ],
   "tags": [],
   "mods": [
     "cold_sweat",
     "fiahi",
-    "peak_stamina",
     "sereneseasons",
     "thirst",
     "winteroverhaul"
@@ -102,5 +45,47 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fluids": [
+    "cold_sweat:flowing_slush",
+    "cold_sweat:slush"
+  ],
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "leatherworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_road",
+          "mode": "player"
+        },
+        {
+          "stage_id": "woodworking",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

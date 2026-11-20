@@ -1,6 +1,6 @@
 {
   "preventSearchIgnoredItems": false,
-  "ingredientDedupe": true,
+  "ingredientDedupe": false,
   "resourceLocationDedupe": true,
   "debugItemStackModifications": false,
   "logIntervalInMinutes": 10,

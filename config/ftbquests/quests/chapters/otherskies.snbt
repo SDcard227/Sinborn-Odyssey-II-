@@ -1,0 +1,516 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "otherskies"
+	group: "5A0000000000004D"
+	icon: "minecraft:ender_pearl"
+	id: "0EE3297D342266DB"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["The Convent's dimensional scrolls are the only ones it stamped twice, and the second stamp is a warning."]
+			icon: "minecraft:ender_pearl"
+			id: "55BD4849FA3E5FD9"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "Some doors open onto a different sky."
+			tasks: [{
+				id: "751F1A771FB88D7C"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "Other Skies"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["649143DBA6098A99"]
+			description: [
+				"A Forgesworn technical scroll, catalogued by a named scholar in Era VI."
+				""
+				"&cWithout this scroll the End portal will not take you through."
+				"&6Found in:&r bastion treasure, Nether fortresses, Cataclysm vaults and 8 more &8(about 10% a chest)"
+				"&bOpens:&r 315 entries and 6 whole bodies of work"
+				"&dNeeds:&r On Infernal Passage"
+				"&aPedestal:&r Tier III, about 12 minutes"
+			]
+			icon: "minecraft:end_stone"
+			id: "0900A8F52827D9F6"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "6301EA31293D5CAC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Forgesworn, and signed for once."
+			tasks: [
+				{
+					id: "78AC0781439B08EC"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "scroll_end_passage"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1D647CEAC2EBD276"
+					individual: true
+					negate: false
+					stage: "scroll_end_passage"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The End Passage"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["55BD4849FA3E5FD9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&cWithout this scroll the Nether portal will not take you through."
+				"&6Found in:&r blazing fortress loot, chest loot, fd bastion hoglin stable and 4 more &8(15% a chest)"
+				"&bOpens:&r 1033 entries and 6 whole bodies of work"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:netherrack"
+			id: "649143DBA6098A99"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "1A2D1BC3AF220F29"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The other door, and it is hotter."
+			tasks: [
+				{
+					id: "33AE823DC00B0143"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "infernal_passage"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1D1C3DB8F88E5EDC"
+					individual: true
+					negate: false
+					stage: "infernal_passage"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "On Infernal Passage"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["55BD4849FA3E5FD9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r deep, deep lava, end and 4 more &8(25% a chest)"
+				"&bOpens:&r 130 entries and 2 whole bodies of work"
+				"&dNeeds:&r Woodworking"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "minecraft:oak_boat"
+			id: "1706CA3C96C7C727"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "0A73ACF45E0481C5"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Hulls, and what keeps them up."
+			tasks: [
+				{
+					id: "0AD2E3E1BA083DB1"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "small_ships"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7A12DAE01F73285E"
+					individual: true
+					negate: false
+					stage: "small_ships"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Shipwright's Craft"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["55BD4849FA3E5FD9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r abandoned mineshaft, abandoned mineshaft bc, abandoned mineshaft chalk loot and 4 more &8(11% a chest)"
+				"&bOpens:&r 23 entries"
+				"&dNeeds:&r Electrical Engineering; 25 levels of experience, spent"
+				"&aPedestal:&r Tier III, about 18 minutes"
+			]
+			icon: "createteleporters:teleporter"
+			id: "5C9F20466F2A7222"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "67C39EF91826C8BE"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Distance, treated as a material."
+			tasks: [
+				{
+					id: "5566503EA433DD0D"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "teleportation_arts"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1A8FD3555DB8A47B"
+					individual: true
+					negate: false
+					stage: "teleportation_arts"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Spatial Engineering"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["55BD4849FA3E5FD9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r dwemer ruin common, dwemer ruin rare, dwemer tower &8(16% a chest)"
+				"&bOpens:&r 16 entries"
+				"&dNeeds:&r Kinetic Engineering"
+				"&aPedestal:&r Tier II, about 12 minutes"
+			]
+			icon: "vc_gliders:paraglider_wood"
+			id: "183EB72229540FCF"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "759E1447FE2DFA21"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Dwemer work. It goes up."
+			tasks: [
+				{
+					id: "0EADEC1E406DD99A"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "aeronautics"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "084AF08EF66E489D"
+					individual: true
+					negate: false
+					stage: "aeronautics"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Aeronaut's Craft"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["55BD4849FA3E5FD9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r dwemer ruin epic, end city treasure, fd end city treasure &8(4% a chest)"
+				"&bOpens:&r 2 entries"
+				"&dNeeds:&r one of Archaeology Mastery, The Codex of Kukulkan, The End Passage, The Chorus Hearth"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "portal_fluid:portal_fluid_bucket"
+			id: "107D991F2080929C"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "69B0F40F1EA518B1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The last door in the catalogue."
+			tasks: [
+				{
+					id: "11D361A9503BF07A"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "quantum_gate"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "7CB38DA953AF0F4F"
+					individual: true
+					negate: false
+					stage: "quantum_gate"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Quantum Gate"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["183EB72229540FCF"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: {
+				Count: 1
+				id: "vc_gliders:paraglider_wood"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "68D9AFA09EB939D8"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "124E2C7C47821B62"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the air."
+			tasks: [
+				{
+					id: "040146CDCBCB6326"
+					item: {
+						Count: 1
+						id: "vc_gliders:paraglider_wood"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Basic Paraglider"
+					type: "item"
+				}
+				{
+					id: "0B0AED0C5ADF80D7"
+					item: "breezy:hot_air_balloon"
+					title: "Hot Air Balloon"
+					type: "item"
+				}
+				{
+					id: "60C2BFD2B27775AB"
+					item: {
+						Count: 1
+						id: "vc_gliders:paraglider_diamond"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Diamond Paraglider"
+					type: "item"
+				}
+			]
+			title: "Practising , The Aeronaut's Craft"
+			x: -6.5d
+			y: 3.8d
+		}
+		{
+			dependencies: ["0900A8F52827D9F6"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "echovoids:liquid_entropite_bucket"
+			id: "21CECF8AAABD32EF"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "2B3950A7FD560D27"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it at the edge."
+			tasks: [
+				{
+					id: "48ACF38219744E67"
+					item: "echovoids:liquid_entropite_bucket"
+					title: "Bucket of Entropic Fluid"
+					type: "item"
+				}
+				{
+					id: "698C21B0BB3D46AF"
+					item: "true_end:fence"
+					title: "Fence"
+					type: "item"
+				}
+				{
+					id: "58D64634D0D23525"
+					item: "true_end:door"
+					title: "Door"
+					type: "item"
+				}
+			]
+			title: "Practising , The End Passage"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1706CA3C96C7C727"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "smallships:cherry_galley"
+			id: "3C51BA0B92A070E3"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "423EDAFF6009ECE3"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on water."
+			tasks: [
+				{
+					id: "454BE71133A9B6E0"
+					item: "smallships:cherry_galley"
+					title: "Cherry Galley"
+					type: "item"
+				}
+				{
+					id: "4DA400C4189B7F7B"
+					item: "smallships:cherry_cog"
+					title: "Cherry Cog"
+					type: "item"
+				}
+				{
+					id: "7C5E8CE02D972214"
+					item: "smallships:dark_oak_brigg"
+					title: "Dark Oak Brigg"
+					type: "item"
+				}
+			]
+			title: "Practising , The Shipwright's Craft"
+			x: 6.5d
+			y: 3.7d
+		}
+		{
+			dependencies: ["5C9F20466F2A7222"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "createteleporters:quantum_fluid_bucket"
+			id: "006A59C4D584FAEC"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "6381883AC6055B22"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it across a distance."
+			tasks: [
+				{
+					id: "032C854BC84384F5"
+					item: "createteleporters:quantum_fluid_bucket"
+					title: "Telejuice Bucket"
+					type: "item"
+				}
+				{
+					id: "3799367BA1C04359"
+					item: "createteleporters:pocket_dimension_remote"
+					title: "Pocket Dimension Remote"
+					type: "item"
+				}
+				{
+					id: "653BF549E465D0A7"
+					item: "createteleporters:item_tp"
+					title: "Item Teleporter"
+					type: "item"
+				}
+			]
+			title: "Practising , Spatial Engineering"
+			x: 0.0d
+			y: 7.5d
+		}
+	]
+	subtitle: ["The scrolls the Convent stamped twice."]
+	title: "Other Skies"
+}

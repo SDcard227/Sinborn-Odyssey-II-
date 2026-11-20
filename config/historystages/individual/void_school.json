@@ -1,0 +1,59 @@
+{
+  "display_name": "The Void School",
+  "icon": "historystages:research_scroll",
+  "research_time": 720,
+  "items": [
+    "cataclysm_spellbooks:void_staff",
+    "traveloptics:void_manuscript"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [],
+  "dimensions": [],
+  "structures": [],
+  "entities": {
+    "attacklock": [],
+    "spawnlock": []
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "arcane_codex",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "realm_key",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "scroll_end_passage",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min"
+}

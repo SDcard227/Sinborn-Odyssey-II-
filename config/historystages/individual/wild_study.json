@@ -1,12 +1,12 @@
 {
   "display_name": "The Wild Study",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
     "alexscaves:cave_book",
     "dracolotl:bucket_of_dracolotl",
     "luminousworld:butterfly_encyclopedia",
-    "luminousworld:butterfly_net",
-    "luminousworld:butterfly_net_0"
+    "luminousworld:butterfly_net"
   ],
   "tags": [],
   "mods": [
@@ -19,5 +19,56 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "naturalist_basics",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_umvuthana",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "agronomic_path",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_iron_ranged",
+          "mode": "player"
+        },
+        {
+          "stage_id": "codex_of_kukulkan",
+          "mode": "player"
+        },
+        {
+          "stage_id": "naturalist_basics",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

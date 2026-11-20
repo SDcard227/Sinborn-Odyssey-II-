@@ -1,0 +1,39 @@
+
+[general]
+	#Whether right-clicking the handheld Cookbook opens the cookbook.
+	#Read by each player's own client: a server's value does not apply to players who join it.
+	enablePortableCookbook = true
+	#Whether pure ingredients (flour, raw meat, crops) also appear in the 'All' bookmark.
+	#They always appear under 'Ingredients'.
+	showIngredientsInAllTab = true
+	#How many processing steps away from a food an item may be and still count as a culinary ingredient.
+	#1 = only direct ingredients of foods; 3 = e.g. wheat -> flour -> dough -> bread.
+	#Range: 1 ~ 10
+	maxPreparationChainDepth = 3
+
+[categories]
+	#Category overrides. 'mod:item=category' adds, 'mod:item=-category' removes.
+	#Categories: meals, snacks, baking, drinks, ingredients, preparation.
+	customCategoryAssignments = []
+
+[filters]
+	#Items never shown in the catalogue.
+	excludedItemIds = []
+	#Recipe ids never shown.
+	excludedRecipeIds = []
+	#Recipe type ids (or EMI/JEI category ids) never shown.
+	excludedRecipeTypes = []
+	#Items always shown as culinary entries even if not detected.
+	includedAdditionalItemIds = []
+	#Custom workstation names. Format: 'mod:recipe_type=Display Name'.
+	workstationAliases = []
+
+[integrations]
+	#Read recipe displays registered with EMI when EMI is installed.
+	useEmi = true
+	#Read recipes registered with JEI when JEI is installed and EMI is not.
+	#When EMI is installed, JEI plugins already reach the cookbook through EMI.
+	useJei = true
+	#Typed integrations to disable: farmersdelight, create, brewinandchewin, kaleidoscope_cookery, kaleidoscope_tavern.
+	disabledIntegrations = []
+

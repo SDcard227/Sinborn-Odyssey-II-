@@ -1,9 +1,8 @@
 {
   "display_name": "The Wilderness Camping Manual",
-  "research_time": 2700,
+  "icon": "historystages:research_scroll",
+  "research_time": 300,
   "items": [
-    "beachparty:swim_wings",
-    "burnt:smoldering_campfire",
     "comforts:hammock_black",
     "comforts:hammock_blue",
     "comforts:hammock_brown",
@@ -38,30 +37,13 @@
     "comforts:sleeping_bag_teal",
     "comforts:sleeping_bag_white",
     "comforts:sleeping_bag_yellow",
-    "meadow:climbing_rope",
     "meadow:climbing_rope_topmount",
     "simplytents:canvas_wall",
     "simplytents:roof_tent",
     "simplytents:tent",
     "simplytents:wall_tent",
     "simplytents:zip_tent",
-    "upgrade_aquatic:bedroll",
-    "upgrade_aquatic:black_bedroll",
-    "upgrade_aquatic:blue_bedroll",
-    "upgrade_aquatic:brown_bedroll",
-    "upgrade_aquatic:cyan_bedroll",
-    "upgrade_aquatic:gray_bedroll",
-    "upgrade_aquatic:green_bedroll",
-    "upgrade_aquatic:light_blue_bedroll",
-    "upgrade_aquatic:light_gray_bedroll",
-    "upgrade_aquatic:lime_bedroll",
-    "upgrade_aquatic:magenta_bedroll",
-    "upgrade_aquatic:orange_bedroll",
-    "upgrade_aquatic:pink_bedroll",
-    "upgrade_aquatic:purple_bedroll",
-    "upgrade_aquatic:red_bedroll",
-    "upgrade_aquatic:white_bedroll",
-    "upgrade_aquatic:yellow_bedroll"
+    "comforts:hammock_teal"
   ],
   "tags": [],
   "mods": [
@@ -75,5 +57,43 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "leatherworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "long_road",
+          "mode": "player"
+        },
+        {
+          "stage_id": "woodworking",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

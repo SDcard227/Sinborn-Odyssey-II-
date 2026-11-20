@@ -1,7 +1,6 @@
 {
   "gui.destiny.somewhere": "Awaken",
   "destiny.story.somewhere/1": "The world does not announce where it places you. You wake far from any map you could have drawn — no village, no road, no name on the land. Wherever this is, it is yours to survive now.",
-
   "gui.destiny.jungle_pyramid": "Jungle Temple",
   "gui.destiny.pyramid": "Desert Pyramid",
   "gui.destiny.ruined_portal": "Ruined Portal",
@@ -10,7 +9,6 @@
   "gui.destiny.ruined_portal_swamp": "Swamp Portal",
   "gui.destiny.swamp_hut": "Witch's Hut",
   "gui.destiny.igloo": "Igloo",
-
   "destiny.story.jungle_pyramid/1": "You push through dense vines to find the crumbling stones of an ancient temple. Whatever was worshipped here is long gone — but their traps are not.",
   "destiny.story.pyramid/1": "The desert swallowed this structure long before you arrived. Sand pours from the ceilings and the hieroglyphs glow faintly in the dark.",
   "destiny.story.ruined_portal/1": "A gateway to somewhere — or nowhere. The obsidian frame is shattered and overgrown. You wonder what passed through it last.",
@@ -18,5 +16,23 @@
   "destiny.story.ruined_portal_mountain/1": "High in the peaks, the wind howls through a broken portal frame. The cold is sharp. The view is worth it.",
   "destiny.story.ruined_portal_swamp/1": "The portal sank into the bog long ago. Frogs watch you from the mud. The frame still stands, barely.",
   "destiny.story.swamp_hut/1": "A witch's hut tilts at the edge of a murky swamp. The door is open. The cauldron is still warm.",
-  "destiny.story.igloo/1": "You dig yourself out of a snowbank to find a small igloo, smoke drifting from a hole in the roof. Someone lived here once."
+  "destiny.story.igloo/1": "You dig yourself out of a snowbank to find a small igloo, smoke drifting from a hole in the roof. Someone lived here once.",
+  "gui.destiny.spawn:is_island": "Castaway",
+  "destiny.story.castaway/1": "You wake to salt and birdsong on a strip of land the sea forgot. No road leaves here. Whatever you build, you build from what washes up and what already grew.",
+  "destiny.story.castaway": "You wake to salt and birdsong on a strip of land the sea forgot. No road leaves here. Whatever you build, you build from what washes up and what already grew.",
+  "gui.destiny.ctov:village": "The Last Village",
+  "destiny.story.village/1": "There are people here, which is more than most of this world can say. They will not explain the ruins to you. They have lived beside them long enough to stop asking.",
+  "destiny.story.village": "There are people here, which is more than most of this world can say. They will not explain the ruins to you. They have lived beside them long enough to stop asking.",
+  "gui.destiny.terralith:mage_towers": "The Abandoned Tower",
+  "destiny.story.tower/1": "Someone studied here once, high above the trees, and left in a hurry. The shelves are bare and the stairs still hold. Knowledge was kept in this place. It can be again.",
+  "destiny.story.tower": "Someone studied here once, high above the trees, and left in a hurry. The shelves are bare and the stairs still hold. Knowledge was kept in this place. It can be again.",
+  "gui.destiny.betterdeserttemples:better_desert_temples": "The Buried Temple",
+  "destiny.story.desert_temple/1": "Sand has been trying to swallow this place for a thousand years and has not finished. The people who built it are gone. Their traps are patient and still working.",
+  "destiny.story.desert_temple": "Sand has been trying to swallow this place for a thousand years and has not finished. The people who built it are gone. Their traps are patient and still working.",
+  "gui.destiny.betterjungletemples:better_jungle_temples": "The Overgrown Temple",
+  "destiny.story.jungle_temple/1": "The jungle took this temple back so thoroughly that you could walk past it twice. Roots hold the walls together now. Something was worshipped here, and it was not kind.",
+  "destiny.story.jungle_temple": "The jungle took this temple back so thoroughly that you could walk past it twice. Roots hold the walls together now. Something was worshipped here, and it was not kind.",
+  "gui.destiny.aquamirae:ship": "The Frozen Wreck",
+  "destiny.story.wreck/1": "A ship sits locked in ice far from any shore it meant to reach. The cold kept everything, including whatever the crew was running from.",
+  "destiny.story.wreck": "A ship sits locked in ice far from any shore it meant to reach. The cold kept everything, including whatever the crew was running from."
 }

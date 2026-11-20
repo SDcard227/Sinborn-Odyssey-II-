@@ -26,7 +26,8 @@
 	# • temperature: The temperature of the dimension
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
 	"Dimension Temperatures" = [
-	    ["minecraft:the_end", 20.0, "f"]
+	    ["minecraft:the_end", 20.0, "f"],
+	    ["minecraft:the_nether", 120.0, "f"]
 	]
 
 [Biomes]

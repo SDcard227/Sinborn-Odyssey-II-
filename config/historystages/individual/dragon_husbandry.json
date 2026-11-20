@@ -1,18 +1,10 @@
 {
   "display_name": "Dragon Husbandry",
-  "research_time": 10800,
+  "icon": "historystages:research_scroll",
+  "research_time": 1110,
   "items": [
     "endertrigon:baby_dragon_egg",
-    "endertrigon:dragon_horn",
-    "endertrigon:tooting_dragon_horn",
-    "iceandfire:dragon_flute",
-    "iceandfire:dragon_horn",
-    "iceandfire:dragon_horn_fire",
-    "iceandfire:dragon_horn_ice",
-    "iceandfire:dragon_stick",
-    "iceandfire:dragonegg",
-    "iceandfire:sickly_dragon_meal",
-    "quark:dragon_scale"
+    "endertrigon:dragon_horn"
   ],
   "tags": [],
   "mods": [
@@ -25,5 +17,49 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "dragonslayer_codex",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 25,
+        "consume": true
+      }
+    }
+  ],
+  "hidden_display": {
+    "name_mode": "replace",
+    "name_text": "Sealed Relic",
+    "tooltip_mode": "replace",
+    "tooltip_text": "Its nature is sealed.\nLearn the scroll: Dragon Husbandry",
+    "show_lock_hints": false
+  },
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min"
 }

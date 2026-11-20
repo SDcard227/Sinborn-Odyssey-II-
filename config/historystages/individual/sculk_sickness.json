@@ -1,6 +1,7 @@
 {
   "display_name": "On Sculk Sickness",
-  "research_time": 5400,
+  "icon": "historystages:research_scroll",
+  "research_time": 630,
   "items": [
     "minecraft:echo_shard",
     "minecraft:recovery_compass",
@@ -8,12 +9,78 @@
     "minecraft:sculk_catalyst",
     "minecraft:sculk_shrieker",
     "minecraft:sculk_vein",
-    "netherexp:sculk_grinder",
     "sculksickness:ambrosia_herb",
     "sculksickness:bloom_fruit",
     "sculksickness:sculk_blossom",
     "sculksickness:shrieker_bone",
-    "sculksickness:vile_herb"
+    "sculksickness:vile_herb",
+    "alexsmobs:sculk_boomer",
+    "compatdelight:cooked_sculk_vein",
+    "compatdelight:sculk_jem",
+    "compatdelight:sculk_vein_knife",
+    "desert:vitalizer",
+    "dungeonsdelight:embedded_eggs",
+    "redeco:sculk_terrarium",
+    "silentsdelight:sculk_sensor_sprinkles",
+    "silentsdelight:sculk_shrieker_shake",
+    "silentsdelight:sculk_soup",
+    "silentsdelight:sculk_catalyst_pie",
+    "silentsdelight:sculk_catalyst_pie_crust",
+    "silentsdelight:sculk_vein_salad",
+    "tide:echo_bobber",
+    "twm:ancient_tonic",
+    "vista:hollow_cassette",
+    "compatdelight:sculk_cider",
+    "compatdelight:sculk_stew",
+    "silentsdelight:sculk_catalyst_pie_slice",
+    "compatdelight:hamburger_of_warden",
+    "compatdelight:warden_meat",
+    "compatdelight:warden_roll",
+    "compatdelight:warden_stew",
+    "dungeonsdelight:au_rotten_potatoes",
+    "dungeonsdelight:bloated_baked_potato",
+    "dungeonsdelight:devilish_eggs",
+    "dungeonsdelight:gyudon",
+    "dungeonsdelight:malicious_sandwich",
+    "dungeonsdelight:monster_burger",
+    "dungeonsdelight:poisonous_poutine",
+    "dungeonsdelight:sculk_apple",
+    "dungeonsdelight:sculk_catblueberry",
+    "dungeonsdelight:sculk_dogapple",
+    "dungeonsdelight:sculk_mayo",
+    "dungeonsdelight:sculk_tart_slice",
+    "dungeonsdelight:tokayaki",
+    "dungeonsdelight:wardenzola",
+    "dungeonsdelight:wardenzola_crumbles",
+    "silentsdelight:baked_warden_ear_on_a_stick",
+    "silentsdelight:cut_warden_ear",
+    "silentsdelight:heartburger",
+    "silentsdelight:minced_warden_heart",
+    "silentsdelight:plate_of_warden_heart",
+    "silentsdelight:sculk_barbecue_stick",
+    "silentsdelight:sculk_sensor_tendril",
+    "silentsdelight:sculk_sensor_tendril_roll",
+    "silentsdelight:sculk_sensor_tendril_roll_slice",
+    "silentsdelight:warden_ear",
+    "silentsdelight:warden_ear_fried_rice",
+    "silentsdelight:warden_ear_on_a_stick",
+    "silentsdelight:warden_heart",
+    "silentsdelight:warden_heart_patty",
+    "unusual_delight:blue_cheese",
+    "unusual_delight:charged_lasagna",
+    "unusual_delight:deep_skewer",
+    "unusual_delight:lavapool_tart",
+    "unusual_delight:lightning_cheesecake",
+    "unusual_delight:sculk_and_egg",
+    "unusual_delight:sculk_candy",
+    "unusual_delight:sculk_chunk",
+    "unusual_delight:sculk_cookie",
+    "unusual_delight:sculk_donut",
+    "unusual_delight:sculk_pudding",
+    "unusual_delight:silent_bread",
+    "unusual_delight:smoldering_cheesewheel",
+    "dungeonsdelight:sculk_mayo_block",
+    "silentsdelight:plated_warden_heart"
   ],
   "tags": [],
   "mods": [],
@@ -24,5 +91,172 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "archaeology_mastery",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "alchemy",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blood_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "dragonslayer_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eldritch_school",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_abyssal",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_black",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cold",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_corrupted",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cryptic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cursed",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_desert",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_evil",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_exotic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_flame",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_frostmaw",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_guardian",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_lost",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_magical",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_mech",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_monstrous",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nether",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nothingness",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_old",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_rogue",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_storm",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_sun",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_tongbi",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_undead",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_void",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_witch",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wither",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wrought",
+          "mode": "player"
+        },
+        {
+          "stage_id": "redstone_principles",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "min_pedestal_tier": 2,
+  "pedestal_tier_mode": "min"
 }

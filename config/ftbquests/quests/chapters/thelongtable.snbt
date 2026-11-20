@@ -1,0 +1,671 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "thelongtable"
+	group: "5A0000000000003C"
+	icon: "minecraft:cauldron"
+	id: "19D572535C0089EF"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Before a people has a cuisine it has equipment, and somebody had to work out the equipment."]
+			icon: "minecraft:cauldron"
+			id: "56297B854A3FDED9"
+			shape: "octagon"
+			size: 1.6d
+			subtitle: "Cooking is a craft with its own tools."
+			tasks: [{
+				id: "1E914CE6D58C7F4C"
+				title: "Read"
+				type: "checkmark"
+			}]
+			title: "The Long Table"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56297B854A3FDED9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r ancient fish eggs from buried treasure, aqua, buried treasure and 28 more &8(35% a chest)"
+				"&bOpens:&r 637 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "farmersdelight:mixed_salad"
+			id: "5C8A2BF3430DD2B4"
+			rewards: [{
+				count: 12
+				id: "6D0D77AE735B93BB"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Before any of it reaches the board."
+			tasks: [
+				{
+					id: "470027878D4CA694"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "gardened_wash"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "54EB822E10096DFE"
+					individual: true
+					negate: false
+					stage: "gardened_wash"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Gardened Wash"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["56297B854A3FDED9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r basic loot, junk, main cs and 3 more &8(12% a chest)"
+				"&bOpens:&r 145 entries"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "farmersdelight:ham"
+			id: "78070F659B20DAEE"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "2E25A1C780952217"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Keeping it longer than it wants to keep."
+			tasks: [
+				{
+					id: "266F54378572FCB7"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "larder_methods"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "130D29FB5FD5405F"
+					individual: true
+					negate: false
+					stage: "larder_methods"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Larder's Methods"
+			x: 3.1d
+			y: -2.5d
+		}
+		{
+			dependencies: ["56297B854A3FDED9"]
+			description: [
+				"Hoarfrost work, written by people who expected the cold to outlast them. It did."
+				""
+				"&6Found in:&r aqua, aqua mage basic storage, aqua mage treasure storage and 19 more &8(25% a chest)"
+				"&bOpens:&r 279 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Companions Charter, On Sniffers, Frogs, and Mangroves"
+				"&aPedestal:&r Tier I, about 5 minutes"
+			]
+			icon: "minecraft:fishing_rod"
+			id: "3B10066E9DDE634D"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "3AAF7374292CF4DC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Hoarfrost work. The cold outlasted them."
+			tasks: [
+				{
+					id: "424F9E0C0511BE7C"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "fishing_arts"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "4CA208053D629F83"
+					individual: true
+					negate: false
+					stage: "fishing_arts"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Angler's Arts"
+			x: 3.9d
+			y: 0.9d
+		}
+		{
+			dependencies: ["56297B854A3FDED9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r taiga common, village butcher, village snowy house and 1 more &8(25% a chest)"
+				"&bOpens:&r 206 entries"
+				"&dNeeds:&r one of The Agronomist Path, The Larder's Methods, The Pantry"
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "minecraft:cooked_beef"
+			id: "278F4D71FCFD2CDA"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "4295B11F9E5F7712"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "What the kiln crew ate."
+			tasks: [
+				{
+					id: "35AE518AD2BE15C9"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "long_meal_before_firing"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "4858CFACE2F9EAE3"
+					individual: true
+					negate: false
+					stage: "long_meal_before_firing"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Long Meal Before the Firing"
+			x: 1.7d
+			y: 3.6d
+		}
+		{
+			dependencies: ["56297B854A3FDED9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r ancient fish eggs from buried treasure, badlands warehouse, beach warehouse and 95 more &8(30% a chest)"
+				"&bOpens:&r 138 entries"
+				"&dNeeds:&r Foundations of the Forge"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "79AACE7E581BDED3"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "3BCE2D8D9D8960DC"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Copper holds heat evenly. That is the doctrine."
+			tasks: [
+				{
+					id: "4069F2881218B4ED"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "cookware_forging"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "1E192A8571EEA679"
+					individual: true
+					negate: false
+					stage: "cookware_forging"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Coppersmith's Kitchen"
+			x: -1.7d
+			y: 3.6d
+		}
+		{
+			dependencies: ["56297B854A3FDED9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r ancient fish eggs from buried treasure, ancient vestiges chest, archer and 125 more &8(35% a chest)"
+				"&bOpens:&r 98 entries and 1 whole body of work"
+				"&dNeeds:&r nothing. Open from the start."
+				"&aPedestal:&r Tier I, about 4 minutes"
+			]
+			icon: "minecraft:bread"
+			id: "4BD8A53657D52EB7"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "195DCD23ABFD9ACF"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "Where most of the archive actually lives."
+			tasks: [
+				{
+					id: "329E71D19856E39E"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "the_pantry"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "73F2307560B0C728"
+					individual: true
+					negate: false
+					stage: "the_pantry"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Pantry"
+			x: -3.9d
+			y: 0.9d
+		}
+		{
+			dependencies: ["56297B854A3FDED9"]
+			description: [
+				"Convent-attributed, no author named , the Cathedral suppressed authorship for its first three centuries. Most of the people who wrote these died young."
+				""
+				"&6Found in:&r dwemer tower, fd end city treasure, frd bastion treasure &8(12% a chest)"
+				"&bOpens:&r 17 entries"
+				"&dNeeds:&r The Coppersmith's Kitchen"
+				"&aPedestal:&r Tier II, about 10 minutes"
+			]
+			icon: "vintagedelight:evaporator"
+			id: "6B4D7974F21B6A9D"
+			optional: true
+			rewards: [{
+				count: 12
+				id: "53CB88F4A897EDCD"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "The last kitchen in the record."
+			tasks: [
+				{
+					id: "3926DCC07AA51491"
+					item: {
+						Count: 1
+						id: "historystages:research_scroll"
+						tag: {
+							StageResearch: "cookware_advanced"
+						}
+					}
+					match_nbt: true
+					title: "Find the scroll"
+					type: "item"
+				}
+				{
+					id: "5E29788BFCAD59C1"
+					individual: true
+					negate: false
+					stage: "cookware_advanced"
+					title: "Research it"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "The Master Kitchen"
+			x: -3.1d
+			y: -2.5d
+		}
+		{
+			dependencies: ["79AACE7E581BDED3"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "cuffed:fork"
+			id: "1520D9FD83B316F6"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "66A013712C1CE35A"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in copper."
+			tasks: [
+				{
+					id: "5A4F66FDD41E59EF"
+					item: "cuffed:fork"
+					title: "Fork"
+					type: "item"
+				}
+				{
+					id: "5130641F6DC7872E"
+					item: "cuffed:tray"
+					title: "Tray"
+					type: "item"
+				}
+				{
+					id: "53AA683F85A42B0D"
+					item: "miners_delight:powder_snow_cup"
+					title: "Powder Snow Cup"
+					type: "item"
+				}
+			]
+			title: "Practising , The Coppersmith's Kitchen"
+			x: -3.3d
+			y: 6.8d
+		}
+		{
+			dependencies: ["3B10066E9DDE634D"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "tide:nautilus_bobber"
+			id: "766099A7DC1E3115"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3387E81353E964E1"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on the line."
+			tasks: [
+				{
+					id: "46F6C9E5BE90C23E"
+					item: "tide:nautilus_bobber"
+					title: "Nautilus Bobber"
+					type: "item"
+				}
+				{
+					id: "1446F52797CE1316"
+					item: "tide:amber_rockfish_bucket"
+					title: "Amber Rockfish Bucket"
+					type: "item"
+				}
+				{
+					id: "2E714A61B1CA3FF0"
+					item: "tide:light_gray_bobber"
+					title: "Light Gray Fishing Bobber"
+					type: "item"
+				}
+			]
+			title: "Practising , The Angler's Arts"
+			x: 7.3d
+			y: 1.7d
+		}
+		{
+			dependencies: ["5C8A2BF3430DD2B4"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "youkaisfeasts:tamagoyaki"
+			id: "10475EADD9B34251"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3A719B5593B33F08"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the wash."
+			tasks: [
+				{
+					id: "37D4687F863F8C8C"
+					item: "youkaisfeasts:tamagoyaki"
+					title: "Tamagoyaki"
+					type: "item"
+				}
+				{
+					id: "2337AF274CCB28BB"
+					item: "culturaldelights:chicken_roll"
+					title: "Chicken Roll"
+					type: "item"
+				}
+				{
+					id: "76796C8D3450C036"
+					item: "alexsmobsdelight:bowl_of_stuffed_crocodile_tail"
+					title: "Plate Of Stuffed Crocodile Tail"
+					type: "item"
+				}
+			]
+			title: "Practising , The Gardened Wash"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["78070F659B20DAEE"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "meadow:alpine_salt"
+			id: "2AD70EF5ECDF8579"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1E45D00628415D2E"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it in the larder."
+			tasks: [
+				{
+					id: "628A6B2E2F413AAD"
+					item: "meadow:alpine_salt"
+					title: "Alpine Salt"
+					type: "item"
+				}
+				{
+					id: "6A6B0EE60098AD0B"
+					item: "farmersdelight:bacon_and_eggs"
+					title: "Bacon and Eggs"
+					type: "item"
+				}
+				{
+					id: "568D8866A2D2262B"
+					item: "farmersdelight:rice"
+					title: "Rice Crops"
+					type: "item"
+				}
+			]
+			title: "Practising , The Larder's Methods"
+			x: 5.9d
+			y: -4.7d
+		}
+		{
+			dependencies: ["278F4D71FCFD2CDA"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "hearthandharvest:macaroni_and_cheese"
+			id: "4245B560FD1B031B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "1F8DDC336E474489"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it before the firing."
+			tasks: [
+				{
+					id: "35870F7D7BCA2435"
+					item: "hearthandharvest:macaroni_and_cheese"
+					title: "Macaroni and Cheese"
+					type: "item"
+				}
+				{
+					id: "00EE5B8BC7697393"
+					item: "hearthandharvest:hot_dog"
+					title: "Hot Dog"
+					type: "item"
+				}
+				{
+					id: "7CFD784006CC1DA3"
+					item: "hearthandharvest:biscuits_and_gravy"
+					title: "Biscuits and Gravy"
+					type: "item"
+				}
+			]
+			title: "Practising , The Long Meal Before the Firing"
+			x: 3.3d
+			y: 6.8d
+		}
+		{
+			dependencies: ["4BD8A53657D52EB7"]
+			description: [
+				"Reading it is not the same as knowing it. The Convent examined its students."
+				"Three pieces of work from this discipline. Any three would do; these are the three"
+				"the archive happens to name."
+			]
+			icon: "burnt:baked_apple"
+			id: "6CF6879C6AC53E96"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "684B1A4FC7983293"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Prove it on the shelf."
+			tasks: [
+				{
+					id: "3090C878B38BE925"
+					item: "burnt:baked_apple"
+					title: "Baked Apple"
+					type: "item"
+				}
+				{
+					id: "419F37772AD34487"
+					item: "solonion:food_book"
+					title: "Food Book"
+					type: "item"
+				}
+				{
+					id: "65A7EEF3204EA9C4"
+					item: "some_assembly_required:apple_slices"
+					title: "Apple Slices"
+					type: "item"
+				}
+			]
+			title: "Practising , The Pantry"
+			x: -7.3d
+			y: 1.7d
+		}
+		{
+			dependencies: ["5C8A2BF3430DD2B4"]
+			description: [
+				"The Wash can plate it once you know the beast."
+				"&dNeeds both:&r The Gardened Wash and Beasts of the Wide World."
+				"&bWaiting on both:&r Mantis Shrimp Tempura, Fried Crocodile Egg, Seal Meat and the rest of that shelf."
+			]
+			icon: "alexsmobsdelight:mantis_shrimp_tempura"
+			id: "2C7027C770A42F83"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "16C21BA86F75A256"
+				item: "numismatics:cog"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "The recipe is simple. The animal is the second half."
+			tasks: [
+				{
+					id: "6C42E7D238F0E077"
+					individual: true
+					negate: false
+					stage: "gardened_wash"
+					title: "The Gardened Wash"
+					type: "historystages:history_stage"
+				}
+				{
+					id: "7AC0FD1FAA6D3A22"
+					individual: true
+					negate: false
+					stage: "bestiary_alex_mobs"
+					title: "Beasts of the Wide World"
+					type: "historystages:history_stage"
+				}
+			]
+			title: "Two Keys , Beast Meat"
+			x: 1.4d
+			y: -5.0d
+		}
+	]
+	subtitle: ["Before a cuisine there is equipment."]
+	title: "The Long Table"
+}

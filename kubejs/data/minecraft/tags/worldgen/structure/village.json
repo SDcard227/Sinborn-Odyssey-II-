@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "revampedvillages:plains_village",
-    "revampedvillages:desert_village",
-    "revampedvillages:savanna_village",
-    "revampedvillages:taiga_village",
-    "revampedvillages:snowy_village"
+    {"id": "revampedvillages:plains_village", "required": false},
+    {"id": "revampedvillages:desert_village", "required": false},
+    {"id": "revampedvillages:savanna_village", "required": false},
+    {"id": "revampedvillages:taiga_village", "required": false},
+    {"id": "revampedvillages:snowy_village", "required": false}
   ]
 }

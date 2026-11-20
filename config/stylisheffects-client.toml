@@ -13,7 +13,7 @@
 		tooltip_duration = true
 		#Maximum amount of status effects rendered in a single row.
 		#Range: 1 ~ 255
-		max_columns = 5
+		max_columns = 1
 		#Space between individual effect widgets on y-axis.
 		#Range: > 0
 		widget_space_y = 1

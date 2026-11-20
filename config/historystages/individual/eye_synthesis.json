@@ -1,10 +1,22 @@
 {
   "display_name": "Eye Synthesis",
-  "research_time": 14400,
+  "icon": "minecraft:ender_eye",
+  "research_time": 1500,
   "items": [
-    "endrem:lost_frame",
+    "endrem:ancient_portal_frame",
     "endrem:undead_soul",
-    "endrem:witch_pupil"
+    "endrem:witch_pupil",
+    "end_remastered_promax:ancient_eye",
+    "end_remastered_promax:enhance_eye",
+    "end_remastered_promax:environment_eye",
+    "end_remastered_promax:weird_eye",
+    "celestisynth:aquaflora",
+    "celestisynth:breezebreaker",
+    "celestisynth:crescentia",
+    "celestisynth:frostbound",
+    "celestisynth:poltergeist",
+    "celestisynth:rainfall_serenity",
+    "celestisynth:solaris"
   ],
   "tags": [],
   "mods": [
@@ -17,5 +29,333 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "eye_abyssal",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_black",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cold",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_corrupted",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cryptic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_cursed",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_desert",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_evil",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_exotic",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_flame",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_frostmaw",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_guardian",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_lost",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_magical",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_mech",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_monstrous",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nether",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_nothingness",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_old",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_rogue",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_storm",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_sun",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_tongbi",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_undead",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_void",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_witch",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wither",
+          "mode": "player"
+        },
+        {
+          "stage_id": "eye_wrought",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "abyssal_chasm",
+          "mode": "player"
+        },
+        {
+          "stage_id": "aeronautics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arcane_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "architectural_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_master_blades",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_master_polearms",
+          "mode": "player"
+        },
+        {
+          "stage_id": "arsenal_master_ranged",
+          "mode": "player"
+        },
+        {
+          "stage_id": "beehive_logistics",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bestiary_alex_mobs",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blighted_hollows",
+          "mode": "player"
+        },
+        {
+          "stage_id": "blood_and_oil",
+          "mode": "player"
+        },
+        {
+          "stage_id": "bookshelf_mastery",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cannoneer",
+          "mode": "player"
+        },
+        {
+          "stage_id": "carnal_anatomy",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cataclysm_codex",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cookware_advanced",
+          "mode": "player"
+        },
+        {
+          "stage_id": "cookware_forging",
+          "mode": "player"
+        },
+        {
+          "stage_id": "falconry",
+          "mode": "player"
+        },
+        {
+          "stage_id": "forlorn_hollows",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gravitic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "gunsmithing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "heavy_plate_discipline",
+          "mode": "player"
+        },
+        {
+          "stage_id": "infernal_passage",
+          "mode": "player"
+        },
+        {
+          "stage_id": "kinetic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "lapidary_arts",
+          "mode": "player"
+        },
+        {
+          "stage_id": "magnetic_deep",
+          "mode": "player"
+        },
+        {
+          "stage_id": "metalworking",
+          "mode": "player"
+        },
+        {
+          "stage_id": "numismatic_mechanisms",
+          "mode": "player"
+        },
+        {
+          "stage_id": "primordial_strata",
+          "mode": "player"
+        },
+        {
+          "stage_id": "runesmithing",
+          "mode": "player"
+        },
+        {
+          "stage_id": "scales_and_steel",
+          "mode": "player"
+        },
+        {
+          "stage_id": "sculk_sickness",
+          "mode": "player"
+        },
+        {
+          "stage_id": "small_ships",
+          "mode": "player"
+        },
+        {
+          "stage_id": "smithing_legendary",
+          "mode": "player"
+        },
+        {
+          "stage_id": "smithing_master",
+          "mode": "player"
+        },
+        {
+          "stage_id": "tidal_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "wild_study",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "lineage_dwemer",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "gravitic_engineering",
+          "mode": "player"
+        },
+        {
+          "stage_id": "mounted_rail",
+          "mode": "player"
+        },
+        {
+          "stage_id": "redstone_principles",
+          "mode": "player"
+        },
+        {
+          "stage_id": "void_table",
+          "mode": "player"
+        }
+      ]
+    },
+    {
+      "id": "the_price",
+      "logic": "AND",
+      "xp_level": {
+        "level": 25,
+        "consume": true
+      }
+    }
+  ],
+  "hidden_display": {
+    "name_mode": "replace",
+    "name_text": "Sealed Relic",
+    "tooltip_mode": "replace",
+    "tooltip_text": "Its nature is sealed.\nLearn the scroll: Eye Synthesis",
+    "show_lock_hints": false
+  },
+  "min_pedestal_tier": 3,
+  "pedestal_tier_mode": "min"
 }

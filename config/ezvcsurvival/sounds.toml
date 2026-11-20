@@ -29,3 +29,9 @@
 [tacz_silenced_guns]
 	ids = ["daffas_arsenal:hk45_sup", "daffas_arsenal:apacoba9_sup"]
 
+[tacz_silencer_modifiers]
+	#If false, silenced guns are completely ignored by mobs (original behavior)
+	enabled = true
+	#Silencer modifiers per gun type in format: type=speed,range
+	modifiers = ["pistol=0.5,0.4", "sniper=0.5,0.35", "rifle=0.5,0.4", "shotgun=0.5,0.45", "smg=0.5,0.4", "rpg=0.5,0.5", "mg=0.5,0.45"]
+

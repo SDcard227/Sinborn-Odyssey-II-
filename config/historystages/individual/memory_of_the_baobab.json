@@ -1,31 +1,64 @@
 {
   "display_name": "The Memory of the Baobab",
-  "research_time": 2400,
+  "icon": "historystages:research_scroll",
+  "research_time": 270,
   "items": [
-    "compatdelight:awakened_draconium_cake",
-    "compatdelight:baobab_cookie",
-    "compatdelight:baobab_juice",
-    "compatdelight:baobab_pie",
-    "compatdelight:coffee_berry_jem",
-    "compatdelight:coffee_berry_pie",
-    "compatdelight:coffee_berry_shake",
-    "compatdelight:coffee_candy_shake",
-    "compatdelight:coffee_candy_stew",
+    "compatdelight:arcane_dragonskin_stew",
+    "compatdelight:cinder_dragonskin_stew",
+    "compatdelight:cooked_dragon_egg",
     "compatdelight:cooked_umvuthana",
     "compatdelight:cut_cooked_umvuthana",
     "compatdelight:cut_umvuthana",
+    "compatdelight:dragon_egg_soup",
+    "compatdelight:dragonskin_bowl",
+    "compatdelight:ender_dragon_sandwich",
+    "compatdelight:ender_dragon_steak",
+    "compatdelight:ender_dragon_stew",
     "compatdelight:umvuthana",
-    "rusticdelight:coffee",
-    "rusticdelight:coffee_braised_beef",
-    "rusticdelight:coffee_cookie",
-    "rusticdelight:dark_coffee",
-    "rusticdelight:honey_coffee",
-    "rusticdelight:milk_coffee",
-    "rusticdelight:syrup_coffee",
-    "unusual_delight:jungle_roast",
+    "ends_delight:dragon_breath_and_chorus_soup",
+    "ends_delight:dragon_leg",
+    "ends_delight:dragon_leg_with_sauce",
+    "ends_delight:dragon_leg_with_sauce_block",
+    "ends_delight:dragon_meat_stew",
+    "ends_delight:dragon_meat_stew_block",
+    "ends_delight:dragon_tooth",
+    "ends_delight:fried_dragon_egg",
+    "ends_delight:half_dragon_egg_shell",
+    "ends_delight:liquid_dragon_egg",
+    "ends_delight:raw_dragon_meat",
+    "ends_delight:raw_dragon_meat_cuts",
+    "ends_delight:roasted_dragon_meat",
+    "ends_delight:roasted_dragon_meat_cuts",
+    "ends_delight:roasted_dragon_steak",
+    "ends_delight:smoked_dragon_leg",
+    "ends_delight:steamed_dragon_egg",
+    "ends_delight:steamed_dragon_egg_block",
+    "iceandfire:dragon_meal",
+    "unusual_delight:bowl_of_dragon_loaf",
+    "unusual_delight:charging_curry",
+    "unusual_delight:cooked_sniffer_meat",
+    "unusual_delight:draco_pasta",
+    "unusual_delight:dragon_chillbreath",
+    "unusual_delight:dragon_chunk",
+    "unusual_delight:dragon_ice_cream",
+    "unusual_delight:dragon_loaf",
+    "unusual_delight:dragonloaf_2",
+    "unusual_delight:dragonloaf_3",
+    "unusual_delight:dragonscale_crumble",
+    "unusual_delight:everfrost_fudge",
+    "unusual_delight:fire_dragon_chunk",
+    "unusual_delight:fried_sniffer_egg",
+    "unusual_delight:ice_dragon_chunk",
+    "unusual_delight:lightning_cheesecake",
+    "unusual_delight:lightning_dragon_chunk",
+    "unusual_delight:lightning_sourdough",
+    "unusual_delight:smoldering_cheesewheel",
+    "unusual_delight:smoldering_steak",
+    "unusual_delight:stir_fried_lightning_dragon",
     "vintagedelight:magic_peanut",
-    "vintagedelight:peanut_crop",
-    "wd:cooked_horse"
+    "vintagedelight:nut_milk_bottle",
+    "vintagedelight:peanut",
+    "vintagedelight:roasted_peanut"
   ],
   "tags": [],
   "mods": [],
@@ -36,5 +69,43 @@
   "entities": {
     "attacklock": [],
     "spawnlock": []
-  }
+  },
+  "fixed_lock_actions": {
+    "items": {
+      "use": false,
+      "attack": false,
+      "equip": false,
+      "pickup": false,
+      "place": false,
+      "break": false,
+      "gui": false,
+      "loot": false,
+      "trade": false,
+      "recipe": true,
+      "icon": true
+    }
+  },
+  "dependencies": [
+    {
+      "id": "prior_knowledge",
+      "logic": "OR",
+      "individual_stages": [
+        {
+          "stage_id": "agronomic_path",
+          "mode": "player"
+        },
+        {
+          "stage_id": "larder_methods",
+          "mode": "player"
+        },
+        {
+          "stage_id": "the_pantry",
+          "mode": "player"
+        }
+      ]
+    }
+  ],
+  "scroll_completion": "open",
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min"
 }

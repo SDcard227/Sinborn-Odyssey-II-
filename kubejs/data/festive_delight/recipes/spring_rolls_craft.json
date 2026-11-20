@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:rice"
+    },
+    {
+      "item": "minecraft:porkchop"
+    },
+    {
+      "item": "farmersdelight:cabbage_leaf"
+    },
+    {
+      "item": "farmersdelight:wheat_dough"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "festive_delight:spring_rolls"
+  },
+  "container": {
+    "item": "minecraft:air"
+  }
+}

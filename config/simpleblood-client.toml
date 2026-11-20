@@ -1,0 +1,6 @@
+#Multiplier for how long blood ground decals remain visible.
+#Range: 0.1 ~ 10.0
+groundDecalDurationMultiplier = 1.0
+#Whether blood particles marked as graphics are allowed to spawn.
+allowGraphicParticles = true
+

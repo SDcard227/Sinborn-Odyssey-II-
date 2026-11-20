@@ -13,6 +13,7 @@
   "villagerChatPrefix": "",
   "canHurtBabies": true,
   "enterVillageNotification": true,
+  "giveAdvancementBooks": true,
   "villagerMarriageNotification": true,
   "villagerBirthNotification": true,
   "innArrivalNotification": true,
@@ -20,8 +21,6 @@
   "showNotificationsAsChat": false,
   "heartsToBeConsideredAsFriend": 40,
   "enableVillagerMailingPlayers": true,
-  "allowBodyCustomizationInDestiny": true,
-  "allowTraitCustomizationInDestiny": true,
   "enableGenderCheckForPlayers": true,
   "zombieBiteInfectionChance": 0.05,
   "infectionChanceDecreasePerLevel": 0.25,
@@ -30,15 +29,14 @@
   "marriageHeartsRequirement": 100,
   "engagementHeartsRequirement": 50,
   "bouquetHeartsRequirement": 10,
-  "babyItemGrowUpTime": 24000,
-  "villagerMaxAgeTime": 384000,
   "villagerMaxHealth": 20,
   "allowVillagerTeleporting": false,
   "villagerMinTeleportationDistance": 128.0,
+  "villagerPathfindingDistance": 96,
   "childInitialHearts": 100,
   "greetHeartsThreshold": 75,
   "greetAfterDays": 1,
-  "geneticImmigrantChance": 0.2,
+  "geneticImmigrantChance": 0.0,
   "traitChance": 0.25,
   "traitInheritChance": 0.5,
   "bypassTraitRestrictions": false,
@@ -106,9 +104,9 @@
   "villagerProcreationChancePerMinute": 0.05,
   "bountyHunterInterval": 48000,
   "bountyHunterHearts": -150,
-  "innSpawnsAdventurers": true,
-  "innSpawnsCultists": true,
-  "innSpawnsWanderingTraders": true,
+  "innSpawnsAdventurers": false,
+  "innSpawnsCultists": false,
+  "innSpawnsWanderingTraders": false,
   "fractionOfVanillaVillages": 0.0,
   "fractionOfVanillaZombies": 0.0,
   "minimumBuildingsToBeConsideredAVillage": 3,
@@ -120,9 +118,8 @@
   "villagerInteractionItemBlacklist": [
     "minecraft:bucket"
   ],
-  "enableAutoScanByDefault": true,
+  "enableAutoScanByDefault": false,
   "immersiveLibraryUrl": "https://mca.conczin.net",
-  "allowEveryoneToAddContentGlobally": false,
   "giftDesaturationQueueLength": 16,
   "giftDesaturationFactor": 0.5,
   "giftDesaturationExponent": 0.85,
@@ -152,8 +149,7 @@
   "forceVillagerPlayerModel": false,
   "allowLimitedPlayerEditor": false,
   "allowFullPlayerEditor": true,
-  "allowPlayerSizeAdjustment": true,
-  "adjustPlayerEyesToHeight": true,
+  "scaleEyeHeightWithPlayerHeight": true,
   "useModernUSANamesOnly": false,
   "guardsTargetEntities": {
     "minecraft:creeper": -1,
@@ -207,13 +203,6 @@
     "minecraft:pillager_outpost",
     "minecraft:ancient_city"
   ],
-  "destinySpawnLocations": [
-    "somewhere"
-  ],
-  "destinyLocationsToTranslationMap": {
-    "minecraft:shipwreck_beached": "destiny.story.sailing",
-    "default": "destiny.story.travelling"
-  },
   "professionConversionsMap": {},
   "shaderLocationsMap": {
     "sirben": "mca:shaders/post/sirben.json",
@@ -224,6 +213,28 @@
     "firstperson": "arms",
     "morph": "arms",
     "epicfight": "all"
+  },
+  "taxesMap": {
+    "numismatics:cog": 1.0
+  },
+  "babyItemGrowUpTime": 24000,
+  "villagerMaxAgeTime": 384000,
+  "allowEveryoneToAddContentGlobally": false,
+  "allowPlayerSizeAdjustment": true,
+  "allowBodyCustomizationInDestiny": true,
+  "allowTraitCustomizationInDestiny": true,
+  "destinySpawnLocations": [
+    "somewhere"
+  ],
+  "destinyLocationsToTranslationMap": {
+    "minecraft:shipwreck_beached": "destiny.story.sailing",
+    "default": "destiny.story.travelling",
+    "spawn:is_island": "destiny.story.castaway",
+    "ctov:village": "destiny.story.village",
+    "terralith:mage_towers": "destiny.story.tower",
+    "betterdeserttemples:better_desert_temples": "destiny.story.desert_temple",
+    "betterjungletemples:better_jungle_temples": "destiny.story.jungle_temple",
+    "aquamirae:ship": "destiny.story.wreck"
   },
   "enabledTraits": {
     "SIRBEN": true,
@@ -244,8 +255,5 @@
     "UNKNOWN": true,
     "DWARFISM": true,
     "TOUGH": true
-  },
-  "taxesMap": {
-    "numismatics:cog": 1.0
   }
 }

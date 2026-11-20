@@ -1,720 +1,2865 @@
 {
   "replace": false,
   "values": [
-    "alexsdelight:cooked_centipede_leg",
-    "alexsdelight:raw_bison",
-    "alexsdelight:raw_bunfungus",
-    "alexsmobs:emu_egg",
-    "alexsmobs:kangaroo_meat",
-    "alexsmobs:maggot",
-    "alexsmobs:moose_ribs",
-    "animalium:bear_meat",
-    "animalium:rat_meat",
-    "aoa3:eye_bulb",
-    "aoa3:fiery_chops",
-    "aoa3:halycon_milk",
-    "aoa3:raw_charger_shank",
-    "aoa3:raw_chimera_chop",
-    "aoa3:raw_furlion_chop",
-    "aoa3:raw_halycon_beef",
-    "aquaculture:frog_legs_raw",
-    "aquaculture:turtle_soup",
-    "artifacts:everlasting_beef",
-    "atum:camel",
-    "atum:crunchy_golden_scarab",
-    "atum:crunchy_scarab",
-    "atum:quail",
-    "autumnity:cooked_turkey",
-    "autumnity:turkey",
-    "autumnity:turkey_egg",
-    "beachparty:cooked_mussel_meat",
-    "beachparty:raw_mussel_meat",
-    "betteranimalsplus:blubber",
-    "betteranimalsplus:goatcheese",
-    "betteranimalsplus:goatmilk",
-    "betteranimalsplus:golden_goose_egg",
-    "betteranimalsplus:goose_egg",
-    "betteranimalsplus:pheasant_egg",
-    "betteranimalsplus:pheasantraw",
-    "betteranimalsplus:turkey_cooked",
-    "betteranimalsplus:turkey_egg",
-    "betteranimalsplus:turkey_leg_raw",
-    "betteranimalsplus:turkey_raw",
-    "betteranimalsplus:venisonraw",
-    "betterdefaultbiomes:duck",
-    "betterdefaultbiomes:duck_egg",
-    "betterdefaultbiomes:frog_leg",
-    "betterdefaultbiomes:frozen_flesh",
-    "blue_skies:carabeef",
-    "blue_skies:fiery_beans",
-    "blue_skies:monitor_tail",
-    "blue_skies:solnut",
-    "blue_skies:venison",
-    "butchersdelight:beefribs",
-    "butchersdelight:beeftenderloin",
-    "butchersdelight:ham",
-    "butchersdelight:legcow",
-    "butchersdelight:porkloin",
-    "butchersdelight:porkribs",
-    "butchersdelight:sheeploin",
-    "butchersdelight:sheeprack",
-    "butchersdelight:sheepshank",
-    "charcoal_pit:cheese",
-    "charcoal_pit:chestnut",
-    "charcoal_pit:turtle_raw",
-    "comfortable_nether:baleen_filter",
-    "comfortable_nether:popped_pummeler_remnant",
-    "comfortable_nether:remnant_stew",
-    "comfortable_nether:strider_milk",
-    "comfortable_nether:weeping_abscess",
-    "compatdelight:arcane_dragon_soup",
-    "compatdelight:arcane_dragonskin_stew",
-    "compatdelight:arcane_essence_stew",
-    "compatdelight:ars_burger",
-    "compatdelight:aura_stew",
-    "compatdelight:awful_chast",
-    "compatdelight:azulfo_sandwich",
-    "compatdelight:bat_tentacle_stew",
-    "compatdelight:bat_tentacle_stick",
-    "compatdelight:blue_cheese_sauce",
-    "compatdelight:blue_cheese_slice",
-    "compatdelight:bogshroom_stew",
-    "compatdelight:bone_dust",
-    "compatdelight:bone_stew",
-    "compatdelight:bramble_and_spider_egg",
-    "compatdelight:cheese_bar",
-    "compatdelight:cheese_cube",
-    "compatdelight:cheese_sauce",
-    "compatdelight:cinder_dragonskin_stew",
-    "compatdelight:cooked_arcane_dragon_egg",
-    "compatdelight:cooked_awful_chast",
-    "compatdelight:cooked_card",
-    "compatdelight:cooked_crab_meat",
-    "compatdelight:cooked_creaking",
-    "compatdelight:cooked_dragon_egg",
-    "compatdelight:cooked_ender_wisp_pollen",
-    "compatdelight:cooked_glow_spruit",
-    "compatdelight:cooked_grottol_meat",
-    "compatdelight:cooked_heart_of_the_deep",
-    "compatdelight:cooked_hound",
-    "compatdelight:cooked_ice_cube",
-    "compatdelight:cooked_martian_raptor_meat",
-    "compatdelight:cooked_mutant_creeper_meat",
-    "compatdelight:cooked_mutant_enderman_meat",
-    "compatdelight:cooked_mutant_skeleton_meat",
-    "compatdelight:cooked_mutant_snow_golem_meat",
-    "compatdelight:cooked_naga_meat",
-    "compatdelight:cooked_nether_wisp_pollen",
-    "compatdelight:cooked_penguin",
-    "compatdelight:cooked_piglin_meat",
-    "compatdelight:cooked_propulk",
-    "compatdelight:cooked_rascal_meat",
-    "compatdelight:cooked_rat_stick",
-    "compatdelight:cooked_sand_shapper",
-    "compatdelight:cooked_scorpion",
-    "compatdelight:cooked_sculk_leech",
-    "compatdelight:cooked_sculk_meat",
-    "compatdelight:cooked_spider_egg",
-    "compatdelight:cooked_spider_pig_meat",
-    "compatdelight:cooked_stalker_meat",
-    "compatdelight:cooked_umvuthana",
-    "compatdelight:cooked_warden_tendril",
-    "compatdelight:cooked_warped_enderman",
-    "compatdelight:cooked_wex_meat",
-    "compatdelight:cooked_wilden_guardian_steak",
-    "compatdelight:cooked_wilden_stalker_maet",
-    "compatdelight:cooked_wisp_pollen",
-    "compatdelight:corpse_eater_bone",
-    "compatdelight:corruption_roll",
-    "compatdelight:cut_card",
-    "compatdelight:cut_cooked_butterfly",
-    "compatdelight:cut_cooked_caterpillar",
-    "compatdelight:cut_cooked_duck",
-    "compatdelight:cut_cooked_grottol_meat",
-    "compatdelight:cut_cooked_ice_cube",
-    "compatdelight:cut_cooked_lizard",
-    "compatdelight:cut_cooked_martian_raptor",
-    "compatdelight:cut_cooked_naga_meat",
-    "compatdelight:cut_cooked_sand_shapper",
-    "compatdelight:cut_cooked_sculk_leech",
-    "compatdelight:cut_cooked_sculk_meat",
-    "compatdelight:cut_cooked_stalker_meat",
-    "compatdelight:cut_cooked_suavis",
-    "compatdelight:cut_cooked_umvuthana",
-    "compatdelight:cut_cooked_venison",
-    "compatdelight:cut_cooked_wilden_guardian_steak",
-    "compatdelight:cut_cooked_wilden_stalker_meat",
-    "compatdelight:cut_duck",
-    "compatdelight:cut_frostmaw_steak",
-    "compatdelight:cut_grottol_meat",
-    "compatdelight:cut_ice_cube",
-    "compatdelight:cut_lizard_tail",
-    "compatdelight:cut_naga_meat",
-    "compatdelight:cut_raw_martian_raptor",
-    "compatdelight:cut_sand_shapper",
-    "compatdelight:cut_sculk_leech",
-    "compatdelight:cut_sculk_meat",
-    "compatdelight:cut_stag_flank",
-    "compatdelight:cut_stalker_meat",
-    "compatdelight:cut_suavis",
-    "compatdelight:cut_umvuthana",
-    "compatdelight:cut_venison",
-    "compatdelight:cut_wilden_guardian_steak",
-    "compatdelight:cut_wilden_stalker_meat",
-    "compatdelight:dewshroom_stew",
-    "compatdelight:draconium_dragon_heart_glazed",
-    "compatdelight:dragon_breath_stew",
-    "compatdelight:dragon_chaos_steak",
-    "compatdelight:dragon_egg_soup",
-    "compatdelight:dragon_heart_stew",
-    "compatdelight:dried_tentacle",
-    "compatdelight:duck_soup",
-    "compatdelight:dull_dust_sauce",
-    "compatdelight:dull_dust_stew",
-    "compatdelight:ectoplasm_stew",
-    "compatdelight:end_ham",
-    "compatdelight:ender_dragon_and_ender_egg",
-    "compatdelight:ender_dragon_blood",
-    "compatdelight:ender_dragon_steak",
-    "compatdelight:ender_dragon_stew",
-    "compatdelight:ender_dust_sauce",
-    "compatdelight:ender_wisp_pollen",
-    "compatdelight:energy_salad",
-    "compatdelight:flesh",
-    "compatdelight:flesh_werewolf_sandwich",
-    "compatdelight:flesh_werewolf_stick",
-    "compatdelight:frog_leg_stick",
-    "compatdelight:frostmaw_steak",
-    "compatdelight:gem_dust_stew",
-    "compatdelight:glare_meat",
-    "compatdelight:glazed_obsidian_heart",
-    "compatdelight:glazed_rings_raptor",
-    "compatdelight:glazed_warden_tendril",
-    "compatdelight:glow_berries_stew",
-    "compatdelight:glow_spruit",
-    "compatdelight:grilled_hoglin",
-    "compatdelight:grilled_monitor_tail",
-    "compatdelight:grilled_mutant_enderman",
-    "compatdelight:grilled_scorpion",
-    "compatdelight:grottol_meat",
-    "compatdelight:heart_pie",
-    "compatdelight:hoglin_sandwich",
-    "compatdelight:honey_glazed_monster_flesh",
-    "compatdelight:hot_fuel_bucket",
-    "compatdelight:hound",
-    "compatdelight:ice_cube",
-    "compatdelight:improved_stew",
-    "compatdelight:infused_pumpkin",
-    "compatdelight:jem_glazed_arcane_dragon_egg",
-    "compatdelight:living_flesh_slice",
-    "compatdelight:magic_dog_food",
-    "compatdelight:mana_flesh",
-    "compatdelight:marinated_naga_heart",
-    "compatdelight:marinated_nagi_tail",
-    "compatdelight:marlin_stew",
-    "compatdelight:marlin_stick",
-    "compatdelight:mending_stew",
-    "compatdelight:mix_astra",
-    "compatdelight:mix_essence_stew",
-    "compatdelight:monster_flesh_hamburger",
-    "compatdelight:monster_flesh_sandwich",
-    "compatdelight:monster_flesh_wrap",
-    "compatdelight:mutant_creeper_meat",
-    "compatdelight:mutant_dog_food",
-    "compatdelight:mutant_enderman_meat",
-    "compatdelight:mutant_rotten_flesh",
-    "compatdelight:mutant_skeleton_meat",
-    "compatdelight:mutant_snow_golem_meat",
-    "compatdelight:naga_heart",
-    "compatdelight:naga_meat",
-    "compatdelight:naga_soup",
-    "compatdelight:nagi_tail",
-    "compatdelight:nether_cheese_slice",
-    "compatdelight:nether_cheese_toast",
-    "compatdelight:nether_wisp_pollen",
-    "compatdelight:pasta_with_bone",
-    "compatdelight:pasta_with_heart",
-    "compatdelight:penguin",
-    "compatdelight:piglin_meat",
-    "compatdelight:processor_binding_stew",
-    "compatdelight:processor_salad",
-    "compatdelight:processor_stew",
-    "compatdelight:propulk",
-    "compatdelight:purifying_soap_sauce",
-    "compatdelight:radioactive_roll",
-    "compatdelight:rascal_meat",
-    "compatdelight:raw_martian_raptor_meat",
-    "compatdelight:roast_mutant_snow_golem",
-    "compatdelight:roast_venison",
-    "compatdelight:runic_jam_glazed_living_flesh",
-    "compatdelight:sand_shapper",
-    "compatdelight:scorpion",
-    "compatdelight:sculk_dog_food",
-    "compatdelight:sculk_leech",
-    "compatdelight:sculk_meat",
-    "compatdelight:sculk_stew",
-    "compatdelight:silicon_stew",
-    "compatdelight:small_pizza",
-    "compatdelight:soul_custard",
-    "compatdelight:soul_jem",
-    "compatdelight:soul_star_stew",
-    "compatdelight:spider_noodle_soup",
-    "compatdelight:spider_pig_meat",
-    "compatdelight:squished_bounceling_stew",
-    "compatdelight:stalker_meat",
-    "compatdelight:stalker_roll",
-    "compatdelight:stalker_stew",
-    "compatdelight:star_lily_salad",
-    "compatdelight:suavis_and_stinger_egg",
-    "compatdelight:tentacle_and_arcane_eggs",
-    "compatdelight:tentacle_of_hamburger",
-    "compatdelight:tentacle_stew",
-    "compatdelight:tuff_golem_heart",
-    "compatdelight:umvuthana",
-    "compatdelight:void_bone",
-    "compatdelight:void_dog_food",
-    "compatdelight:void_steak",
-    "compatdelight:warden_meat",
-    "compatdelight:warden_pasta_with_rare_material",
-    "compatdelight:warden_roll",
-    "compatdelight:warden_stew",
-    "compatdelight:warped_aura_stew",
-    "compatdelight:warped_enderman",
-    "compatdelight:weeping_vines_with_meatballs",
-    "compatdelight:wilden_chimera_heart",
-    "compatdelight:wilden_guardian_steak",
-    "compatdelight:wilden_stalker_meat",
-    "compatdelight:wildfire_meat",
-    "compatdelight:wither_meat",
-    "compatdelight:wither_meat_stick",
-    "compatdelight:wraither_flesh",
-    "compatdelight:yellow_dock_stew",
-    "crockpot:bacon_eggs",
-    "crockpot:bone_soup",
-    "crockpot:bone_stew",
-    "crockpot:california_roll",
-    "crockpot:ceviche",
-    "crockpot:frog_legs",
-    "crockpot:froggle_bunwich",
-    "crockpot:honey_ham",
-    "crockpot:honey_nuggets",
-    "crockpot:hot_chili",
-    "crockpot:kabobs",
-    "crockpot:meat_balls",
-    "crockpot:monster_lasagna",
-    "crockpot:monster_tartare",
-    "crockpot:moqueca",
-    "crockpot:pepper_popper",
-    "crockpot:perogies",
-    "crockpot:surf_n_turf",
-    "crockpot:tropical_bouillabaisse",
-    "crockpot:turkey_dinner",
-    "croptopia:almond",
-    "croptopia:beef_jerky",
-    "croptopia:blackbean",
-    "croptopia:cashew",
-    "croptopia:cheese_cake",
-    "croptopia:milk_bottle",
-    "croptopia:peanut",
-    "croptopia:pecan",
-    "croptopia:pork_jerky",
-    "croptopia:soybean",
-    "croptopia:walnut",
-    "delightful:acorn",
-    "delightful:animal_fat",
-    "delightful:honey_glazed_walnut",
-    "delightful:raw_goat",
-    "delightful:venison_chops",
-    "dropthemeat:piglin_porkchop",
-    "dropthemeat:raw_bat",
-    "dropthemeat:raw_bear",
-    "dropthemeat:raw_bee",
-    "dropthemeat:raw_cat",
-    "dropthemeat:raw_dolphin",
-    "dropthemeat:raw_fox",
-    "dropthemeat:raw_horse",
-    "dropthemeat:raw_iron_golem",
-    "dropthemeat:raw_llama",
-    "dropthemeat:raw_monster_meat",
-    "dropthemeat:raw_parrot",
-    "dropthemeat:raw_red_meat",
-    "dropthemeat:raw_strider",
-    "dropthemeat:raw_turtle",
-    "dropthemeat:raw_villager",
-    "dropthemeat:raw_white_meat",
-    "dropthemeat:raw_wolf",
-    "dropthemeat:villager_nose",
-    "ecologics:walnut",
-    "ediblebugs:aphid",
-    "ediblebugs:camelspider",
-    "ediblebugs:caphid",
-    "ediblebugs:centipede",
-    "ediblebugs:cricket",
-    "ediblebugs:dungbeetle",
-    "ediblebugs:fireant",
-    "ediblebugs:grasshopper",
-    "ediblebugs:jumilbug",
-    "ediblebugs:locust",
-    "ediblebugs:scarab",
-    "ediblebugs:scorpion",
-    "ediblebugs:slug",
-    "ediblebugs:sowbug",
-    "ediblebugs:termite",
-    "ediblebugs:witchettygrub",
-    "ediblebugs:woodtermite",
-    "endersdelight:mite_crust",
-    "endersdelight:shulker_mollusk",
-    "endlessoceans:cooked_blue_tang",
-    "endlessoceans:cooked_coral_goby",
-    "endlessoceans:cooked_crescent_tail_bigeye",
-    "endlessoceans:cooked_moorish_idol",
-    "endlessoceans:cooked_sailfin_tang",
-    "endlessoceans:cooked_starcks_demoiselle",
-    "endlessoceans:cooked_yellow_tang",
-    "environmental:duck",
-    "environmental:duck_egg",
-    "environmental:venison",
-    "evilcraft:flesh_humanoid",
-    "evilcraft:flesh_werewolf",
-    "exoticbirds:bluejay_egg",
-    "exoticbirds:booby_egg",
-    "exoticbirds:budgerigar_egg",
-    "exoticbirds:cardinal_egg",
-    "exoticbirds:cassowary_egg",
-    "exoticbirds:cockatoo_egg",
-    "exoticbirds:crane_egg",
-    "exoticbirds:duck_egg",
-    "exoticbirds:flamingo_egg",
-    "exoticbirds:gouldianfinch_egg",
-    "exoticbirds:gull_egg",
-    "exoticbirds:heron_egg",
-    "exoticbirds:hummingbird_egg",
-    "exoticbirds:kiwi_egg",
-    "exoticbirds:kookaburra_egg",
-    "exoticbirds:lyrebird_egg",
-    "exoticbirds:macaw_egg",
-    "exoticbirds:magpie_egg",
-    "exoticbirds:ostrich_egg",
-    "exoticbirds:owl_egg",
-    "exoticbirds:peafowl_egg",
-    "exoticbirds:pelican_egg",
-    "exoticbirds:penguin_egg",
-    "exoticbirds:pigeon_egg",
-    "exoticbirds:raw_birdmeat",
-    "exoticbirds:roadrunner_egg",
-    "exoticbirds:robin_egg",
-    "exoticbirds:swan_egg",
-    "exoticbirds:toucan_egg",
-    "exoticbirds:woodpecker_egg",
-    "farm_and_charm:bacon",
-    "farm_and_charm:chicken_parts",
-    "farm_and_charm:lamb_ham",
-    "farm_and_charm:minced_beef",
-    "farmersdelight:cabbage_rolls",
-    "farmersdelight:fried_egg",
-    "farmersdelight:ham",
-    "farmersdelight:honey_glazed_ham",
-    "farmersdelight:roast_chicken",
-    "farmersdelight:shepherds_pie",
-    "fins:blu_wee",
-    "fins:bugmeat",
-    "fins:cooked_bull_crab_claw",
-    "fins:flatback_sucker",
-    "fins:golden_river_ray_wing_fillet",
-    "fins:high_finned_blue",
-    "fins:papa_wee",
-    "fins:pea_wee",
-    "fins:raw_golden_river_ray_wing",
-    "fins:swamp_mucker",
-    "fins:vibra_wee",
-    "fins:wee_wee",
-    "fins:wherble_fin",
-    "fluffy_farmer:cold_cuts",
-    "foodexpansion:bat_wing",
-    "foodexpansion:horse_meat",
-    "foodexpansion:llama_meat",
-    "foodexpansion:ocelot_meat",
-    "foodexpansion:parrot_meat",
-    "foodexpansion:polar_bear_meat",
-    "foodexpansion:wolf_meat",
-    "forbidden_arcanus:bat_wing",
-    "forbidden_arcanus:edelwood_suspicious_stew_bucket",
-    "forbidden_arcanus:tentacle",
-    "fruitsdelight:fig_chicken_stew",
-    "fruitsdelight:lychee_chicken",
-    "fruitsdelight:orange_chicken",
-    "fruitsdelight:orange_marinated_pork",
-    "fruitsdelight:pineapple_marinated_pork",
-    "gaiadimension:large_tentacle",
-    "gaiadimension:luggeroth_chop",
-    "gaiadimension:lurmorus_meat",
-    "gaiadimension:small_tentacle",
-    "glowbats:glow_bat_wing",
-    "goat_meat_mod:rawchevon",
-    "greekfantasy:gorgon_blood",
-    "iceandfire:cannoli",
-    "iceandfire:deathworm_egg",
-    "iceandfire:deathworm_egg_giant",
-    "iceandfire:fire_dragon_flesh",
-    "iceandfire:hippogryph_egg",
-    "iceandfire:ice_dragon_flesh",
-    "iceandfire:lightning_dragon_flesh",
-    "iceandfire:myrmex_desert_egg",
-    "iceandfire:myrmex_jungle_egg",
-    "immersivecooking:raw_spider_shank",
-    "infernalexp:blindsight_tongue",
-    "infernalexp:raw_hogchop",
-    "krayscandles:soybean",
-    "largemeals:omurice",
-    "minecolonies:raw_pumpkin_pie",
-    "minecraft:beef",
-    "minecraft:bone",
-    "minecraft:chicken",
-    "minecraft:egg",
-    "minecraft:fermented_spider_eye",
-    "minecraft:ink_sac",
-    "minecraft:milk_bucket",
-    "minecraft:mutton",
-    "minecraft:porkchop",
-    "minecraft:rabbit",
-    "minecraft:rotten_flesh",
-    "minecraft:spider_eye",
-    "minecraft:suspicious_stew",
-    "minecraft:turtle_egg",
-    "mowziesmobs:glowing_jelly",
-    "mysticalworld:venison",
-    "neapolitan:adzuki_beans",
-    "nefdecomod:meal_01",
-    "nefdecomod:meal_02",
-    "nethers_delight:hoglin_ear",
-    "nethers_delight:hoglin_loin",
-    "nethers_delight:propelpearl",
-    "nethers_delight:roast_hoglin",
-    "nethers_delight:roast_hoglin_ham",
-    "nethers_delight:roast_hoglin_snout",
-    "nethers_delight:strider_slice",
-    "nethers_delight:stuffed_hoglin_item",
-    "nourished_nether:raw_hoglin_meat",
-    "oceansdelight:baked_tentacle_on_a_stick",
-    "oceansdelight:bowl_of_guardian_soup",
-    "oceansdelight:braised_sea_pickle",
-    "oceansdelight:cabbage_wrapped_elder_guardian",
-    "oceansdelight:cooked_elder_guardian_slice",
-    "oceansdelight:cooked_guardian_tail",
-    "oceansdelight:cut_tentacles",
-    "oceansdelight:elder_guardian_roll",
-    "oceansdelight:elder_guardian_slab",
-    "oceansdelight:elder_guardian_slice",
-    "oceansdelight:fugu_roll",
-    "oceansdelight:fugu_slice",
-    "oceansdelight:guardian_tail",
-    "oceansdelight:tentacle_on_a_stick",
-    "oceansdelight:tentacles",
-    "oddwatermobs:raw_coelacanth",
-    "oddwatermobs:raw_ghost_shark",
-    "oddwatermobs:raw_isopod",
-    "oddwatermobs:raw_mudskipper",
-    "outer_end:stalker_meat",
-    "pamhc2crops:beanitem",
-    "pamhc2crops:peanutitem",
-    "pamhc2crops:soybeanitem",
-    "pamhc2crops:waterchestnutitem",
-    "pamhc2foodcore:freshmilkitem",
-    "pamhc2foodcore:sunflowerseedsitem",
-    "pamhc2foodextended:bangersandmashitem",
-    "pamhc2foodextended:bolognaitem",
-    "pamhc2foodextended:bulgogiitem",
-    "pamhc2foodextended:cevicheitem",
-    "pamhc2foodextended:cornedbeefitem",
-    "pamhc2foodextended:eggsbenedictitem",
-    "pamhc2foodextended:gourmetmuttonpattyitem",
-    "pamhc2foodextended:honeyglazedhamitem",
-    "pamhc2foodextended:misopasteitem",
-    "pamhc2foodextended:padthaiitem",
-    "pamhc2foodextended:paneeritem",
-    "pamhc2foodextended:pinkelitem",
-    "pamhc2foodextended:rawtofaconitem",
-    "pamhc2foodextended:refriedbeansitem",
-    "pamhc2foodextended:schnitzelitem",
-    "pamhc2foodextended:seedsoupitem",
-    "pamhc2foodextended:soymilkitem",
-    "pamhc2foodextended:springrollitem",
-    "pamhc2trees:almonditem",
-    "pamhc2trees:candlenutitem",
-    "pamhc2trees:cashewitem",
-    "pamhc2trees:chestnutitem",
-    "pamhc2trees:hazelnutitem",
-    "pamhc2trees:pecanitem",
-    "pamhc2trees:pinenutitem",
-    "pamhc2trees:pistachioitem",
-    "pamhc2trees:walnutitem",
-    "pandoras_creatures:bufflon_beef",
-    "pandoras_creatures:seahorse",
-    "quark:frog_leg",
-    "ramadandelight:chickpea",
-    "rankine:aged_cheese",
-    "rankine:black_walnut",
-    "rankine:cheese",
-    "rankine:unaged_cheese",
-    "rats:blue_cheese",
-    "rats:contaminated_food",
-    "rats:nether_cheese",
-    "rats:plague_leech",
-    "rats:raw_rat",
-    "rats:string_cheese",
-    "silents_mechanisms:beef_jerky",
-    "silents_mechanisms:chicken_jerky",
-    "silents_mechanisms:mutton_jerky",
-    "silents_mechanisms:pork_jerky",
-    "silents_mechanisms:rabbit_jerky",
-    "silentsdelight:baked_warden_ear_on_a_stick",
-    "silentsdelight:cut_warden_ear",
-    "silentsdelight:heartburger",
-    "silentsdelight:minced_warden_heart",
-    "silentsdelight:sculk_barbecue_stick",
-    "silentsdelight:sculk_sensor_sprinkles",
-    "silentsdelight:sculk_sensor_tendril",
-    "silentsdelight:sculk_sensor_tendril_roll",
-    "silentsdelight:sculk_sensor_tendril_roll_slice",
-    "silentsdelight:sculk_soup",
-    "silentsdelight:warden_ear",
-    "silentsdelight:warden_ear_fried_rice",
-    "silentsdelight:warden_ear_on_a_stick",
-    "silentsdelight:warden_heart",
-    "silentsdelight:warden_heart_patty",
-    "simplefarming:cheese_block",
-    "simplefarming:cheese_slice",
-    "simplefarming:peanut",
-    "simplefarming:raw_bacon",
-    "simplefarming:raw_chicken_wings",
-    "simplefarming:raw_horse_meat",
-    "simplefarming:soybean",
-    "survivalplus:cheese_cake",
-    "tconstruct:bacon",
-    "tea_kettle:black_latte",
-    "tea_kettle:green_latte",
-    "tea_kettle:oolong_latte",
-    "tea_kettle:white_latte",
-    "terraincognita:hazelnut",
-    "thermal:peanut",
-    "twilightforest:hydra_chop",
-    "twilightforest:meef_stroganoff",
-    "twilightforest:raw_meef",
-    "twilightforest:raw_venison",
-    "undergarden:raw_dweller_meat",
-    "undergarden:raw_gloomper_leg",
-    "uniquecrops:teriyaki",
-    "untitledduckmod:duck_egg",
-    "untitledduckmod:goose_egg",
-    "untitledduckmod:raw_duck",
-    "untitledduckmod:raw_goose",
-    "vanillafoodpantry:acorn_nuts",
-    "vanillafoodpantry:bat_raw",
-    "vanillafoodpantry:bear_raw",
-    "vanillafoodpantry:bear_raw_charred",
-    "vanillafoodpantry:carrot_muffin",
-    "vanillafoodpantry:cave_stew",
-    "vanillafoodpantry:creamsoup_beet",
-    "vanillafoodpantry:creamsoup_cactus",
-    "vanillafoodpantry:creamsoup_carrot",
-    "vanillafoodpantry:creamsoup_mushroom",
-    "vanillafoodpantry:creamsoup_potato",
-    "vanillafoodpantry:creamsoup_pumpkin",
-    "vanillafoodpantry:cyclops_sandwich",
-    "vanillafoodpantry:decker_cheesesteak",
-    "vanillafoodpantry:decker_cuban",
-    "vanillafoodpantry:decker_mutton",
-    "vanillafoodpantry:decker_steak",
-    "vanillafoodpantry:fried_eggwhite",
-    "vanillafoodpantry:guardian_meat_raw",
-    "vanillafoodpantry:hocks_raw",
-    "vanillafoodpantry:horse_raw",
-    "vanillafoodpantry:llama_raw",
-    "vanillafoodpantry:phantom_meat_raw",
-    "vanillafoodpantry:pigtail_raw",
-    "vanillafoodpantry:polar_bear_stew",
-    "vanillafoodpantry:portion_jerky",
-    "vanillafoodpantry:potato_chowder",
-    "vanillafoodpantry:pumpkin_pigtail_stew",
-    "vanillafoodpantry:pumpkin_pigtail_stew_combo",
-    "vanillafoodpantry:ravager_meat_charred",
-    "vanillafoodpantry:ravager_meat_raw",
-    "vanillafoodpantry:sanitized_flesh_steamed",
-    "vanillafoodpantry:teadrink_milky_bushtea",
-    "vanillafoodpantry:teadrink_milky_dandtea",
-    "vanillafoodpantry:wolf_raw",
-    "vintagedelight:century_egg",
-    "vintagedelight:cheese_curds",
-    "vintagedelight:cheese_slice",
-    "vintagedelight:peanut",
-    "wyrmroost:desert_wyrm",
-    "wyrmroost:dragon_egg",
-    "wyrmroost:raw_apex_meat",
-    "wyrmroost:raw_behemoth_meat",
-    "wyrmroost:raw_common_meat",
-    "wyrmroost:raw_lowtier_meat",
-    "xercamod:doner_slice",
-    "youkaisfeasts:blazing_red_curry",
-    "youkaisfeasts:california_roll",
-    "youkaisfeasts:california_roll_slice",
-    "youkaisfeasts:cold_tofu",
-    "youkaisfeasts:cumberland_loin",
-    "youkaisfeasts:egg_futomaki",
-    "youkaisfeasts:egg_futomaki_slice",
-    "youkaisfeasts:egg_nigiri",
-    "youkaisfeasts:grilled_boarchop",
-    "youkaisfeasts:grilled_boarchop_bits",
-    "youkaisfeasts:grilled_eel_over_rice",
-    "youkaisfeasts:grilled_venison",
-    "youkaisfeasts:grilled_venison_slice",
-    "youkaisfeasts:han_palace",
-    "youkaisfeasts:imitation_bear_paw",
-    "youkaisfeasts:imitation_crab",
-    "youkaisfeasts:kabayaki",
-    "youkaisfeasts:kaguya_hime",
-    "youkaisfeasts:lamprey_skewer",
-    "youkaisfeasts:lions_head",
-    "youkaisfeasts:longevity_noodles",
-    "youkaisfeasts:lorelei_nigiri",
-    "youkaisfeasts:mapo_tofu",
-    "youkaisfeasts:nattou",
-    "youkaisfeasts:nattou_gunkan",
-    "youkaisfeasts:oily_bean_curd",
-    "youkaisfeasts:otoro",
-    "youkaisfeasts:otoro_nigiri",
-    "youkaisfeasts:pastitsio",
-    "youkaisfeasts:pork_rice_ball",
-    "youkaisfeasts:potato_soup",
-    "youkaisfeasts:power_soup",
-    "youkaisfeasts:rainbow_futomaki",
-    "youkaisfeasts:rainbow_futomaki_slice",
-    "youkaisfeasts:rainbow_roll",
-    "youkaisfeasts:rainbow_roll_slice",
-    "youkaisfeasts:raw_boarchop",
-    "youkaisfeasts:raw_boarchop_bits",
-    "youkaisfeasts:raw_imitation_bear_paw",
-    "youkaisfeasts:raw_kaguya_hime",
-    "youkaisfeasts:raw_lamprey",
-    "youkaisfeasts:raw_lamprey_fillet",
-    "youkaisfeasts:raw_rice_powder_pork",
-    "youkaisfeasts:raw_venison",
-    "youkaisfeasts:raw_venison_slice",
-    "youkaisfeasts:rice_powder_pork",
-    "youkaisfeasts:roasted_lamprey",
-    "youkaisfeasts:roasted_lamprey_fillet",
-    "youkaisfeasts:shirayuki",
-    "youkaisfeasts:steamed_crab",
-    "youkaisfeasts:steamed_egg_in_bamboo",
-    "youkaisfeasts:stinky_tofu",
-    "youkaisfeasts:tamagoyaki",
-    "youkaisfeasts:tamagoyaki_slice",
-    "youkaisfeasts:tekka_maki",
-    "youkaisfeasts:tekka_maki_slice",
-    "youkaisfeasts:tobiko_gunkan",
-    "youkaisfeasts:tofu",
-    "youkaisfeasts:tofu_burger",
-    "youkaisfeasts:tofu_crab_stew",
-    "youkaisfeasts:volcano_roll",
-    "youkaisfeasts:volcano_roll_slice"
+    {
+      "id": "alexsdelight:cooked_centipede_leg",
+      "required": false
+    },
+    {
+      "id": "alexsdelight:raw_bison",
+      "required": false
+    },
+    {
+      "id": "alexsdelight:raw_bunfungus",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:emu_egg",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:kangaroo_meat",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:maggot",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:moose_ribs",
+      "required": false
+    },
+    {
+      "id": "animalium:bear_meat",
+      "required": false
+    },
+    {
+      "id": "animalium:rat_meat",
+      "required": false
+    },
+    {
+      "id": "aoa3:eye_bulb",
+      "required": false
+    },
+    {
+      "id": "aoa3:fiery_chops",
+      "required": false
+    },
+    {
+      "id": "aoa3:halycon_milk",
+      "required": false
+    },
+    {
+      "id": "aoa3:raw_charger_shank",
+      "required": false
+    },
+    {
+      "id": "aoa3:raw_chimera_chop",
+      "required": false
+    },
+    {
+      "id": "aoa3:raw_furlion_chop",
+      "required": false
+    },
+    {
+      "id": "aoa3:raw_halycon_beef",
+      "required": false
+    },
+    {
+      "id": "aquaculture:frog_legs_raw",
+      "required": false
+    },
+    {
+      "id": "aquaculture:turtle_soup",
+      "required": false
+    },
+    {
+      "id": "artifacts:everlasting_beef",
+      "required": false
+    },
+    {
+      "id": "atum:camel",
+      "required": false
+    },
+    {
+      "id": "atum:crunchy_golden_scarab",
+      "required": false
+    },
+    {
+      "id": "atum:crunchy_scarab",
+      "required": false
+    },
+    {
+      "id": "atum:quail",
+      "required": false
+    },
+    {
+      "id": "autumnity:cooked_turkey",
+      "required": false
+    },
+    {
+      "id": "autumnity:turkey",
+      "required": false
+    },
+    {
+      "id": "autumnity:turkey_egg",
+      "required": false
+    },
+    {
+      "id": "beachparty:cooked_mussel_meat",
+      "required": false
+    },
+    {
+      "id": "beachparty:raw_mussel_meat",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:blubber",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:goatcheese",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:goatmilk",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:golden_goose_egg",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:goose_egg",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:pheasant_egg",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:pheasantraw",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:turkey_cooked",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:turkey_egg",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:turkey_leg_raw",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:turkey_raw",
+      "required": false
+    },
+    {
+      "id": "betteranimalsplus:venisonraw",
+      "required": false
+    },
+    {
+      "id": "betterdefaultbiomes:duck",
+      "required": false
+    },
+    {
+      "id": "betterdefaultbiomes:duck_egg",
+      "required": false
+    },
+    {
+      "id": "betterdefaultbiomes:frog_leg",
+      "required": false
+    },
+    {
+      "id": "betterdefaultbiomes:frozen_flesh",
+      "required": false
+    },
+    {
+      "id": "blue_skies:carabeef",
+      "required": false
+    },
+    {
+      "id": "blue_skies:fiery_beans",
+      "required": false
+    },
+    {
+      "id": "blue_skies:monitor_tail",
+      "required": false
+    },
+    {
+      "id": "blue_skies:solnut",
+      "required": false
+    },
+    {
+      "id": "blue_skies:venison",
+      "required": false
+    },
+    {
+      "id": "butchersdelight:beefribs",
+      "required": false
+    },
+    {
+      "id": "butchersdelight:beeftenderloin",
+      "required": false
+    },
+    {
+      "id": "butchersdelight:ham",
+      "required": false
+    },
+    {
+      "id": "butchersdelight:legcow",
+      "required": false
+    },
+    {
+      "id": "butchersdelight:porkloin",
+      "required": false
+    },
+    {
+      "id": "butchersdelight:porkribs",
+      "required": false
+    },
+    {
+      "id": "butchersdelight:sheeploin",
+      "required": false
+    },
+    {
+      "id": "butchersdelight:sheeprack",
+      "required": false
+    },
+    {
+      "id": "butchersdelight:sheepshank",
+      "required": false
+    },
+    {
+      "id": "charcoal_pit:cheese",
+      "required": false
+    },
+    {
+      "id": "charcoal_pit:chestnut",
+      "required": false
+    },
+    {
+      "id": "charcoal_pit:turtle_raw",
+      "required": false
+    },
+    {
+      "id": "comfortable_nether:baleen_filter",
+      "required": false
+    },
+    {
+      "id": "comfortable_nether:popped_pummeler_remnant",
+      "required": false
+    },
+    {
+      "id": "comfortable_nether:remnant_stew",
+      "required": false
+    },
+    {
+      "id": "comfortable_nether:strider_milk",
+      "required": false
+    },
+    {
+      "id": "comfortable_nether:weeping_abscess",
+      "required": false
+    },
+    {
+      "id": "compatdelight:arcane_dragon_soup",
+      "required": false
+    },
+    {
+      "id": "compatdelight:arcane_dragonskin_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:arcane_essence_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ars_burger",
+      "required": false
+    },
+    {
+      "id": "compatdelight:aura_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:awful_chast",
+      "required": false
+    },
+    {
+      "id": "compatdelight:azulfo_sandwich",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bat_tentacle_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bat_tentacle_stick",
+      "required": false
+    },
+    {
+      "id": "compatdelight:blue_cheese_sauce",
+      "required": false
+    },
+    {
+      "id": "compatdelight:blue_cheese_slice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bogshroom_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bone_dust",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bone_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:bramble_and_spider_egg",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cheese_bar",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cheese_cube",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cheese_sauce",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cinder_dragonskin_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_arcane_dragon_egg",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_awful_chast",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_card",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_crab_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_creaking",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_dragon_egg",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_ender_wisp_pollen",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_glow_spruit",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_grottol_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_heart_of_the_deep",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_hound",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_ice_cube",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_martian_raptor_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_mutant_creeper_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_mutant_enderman_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_mutant_skeleton_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_mutant_snow_golem_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_naga_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_nether_wisp_pollen",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_penguin",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_piglin_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_propulk",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_rascal_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_rat_stick",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_sand_shapper",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_scorpion",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_sculk_leech",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_sculk_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_spider_egg",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_spider_pig_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_stalker_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_umvuthana",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_warden_tendril",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_warped_enderman",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_wex_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_wilden_guardian_steak",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_wilden_stalker_maet",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cooked_wisp_pollen",
+      "required": false
+    },
+    {
+      "id": "compatdelight:corpse_eater_bone",
+      "required": false
+    },
+    {
+      "id": "compatdelight:corruption_roll",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_card",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_butterfly",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_caterpillar",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_duck",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_grottol_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_ice_cube",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_lizard",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_martian_raptor",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_naga_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_sand_shapper",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_sculk_leech",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_sculk_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_stalker_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_suavis",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_umvuthana",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_venison",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_wilden_guardian_steak",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_cooked_wilden_stalker_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_duck",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_frostmaw_steak",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_grottol_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_ice_cube",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_lizard_tail",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_naga_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_raw_martian_raptor",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_sand_shapper",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_sculk_leech",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_sculk_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_stag_flank",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_stalker_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_suavis",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_umvuthana",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_venison",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_wilden_guardian_steak",
+      "required": false
+    },
+    {
+      "id": "compatdelight:cut_wilden_stalker_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dewshroom_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:draconium_dragon_heart_glazed",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dragon_breath_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dragon_chaos_steak",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dragon_egg_soup",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dragon_heart_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dried_tentacle",
+      "required": false
+    },
+    {
+      "id": "compatdelight:duck_soup",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dull_dust_sauce",
+      "required": false
+    },
+    {
+      "id": "compatdelight:dull_dust_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ectoplasm_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:end_ham",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_dragon_and_ender_egg",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_dragon_blood",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_dragon_steak",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_dragon_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_dust_sauce",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ender_wisp_pollen",
+      "required": false
+    },
+    {
+      "id": "compatdelight:energy_salad",
+      "required": false
+    },
+    {
+      "id": "compatdelight:flesh",
+      "required": false
+    },
+    {
+      "id": "compatdelight:flesh_werewolf_sandwich",
+      "required": false
+    },
+    {
+      "id": "compatdelight:flesh_werewolf_stick",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frog_leg_stick",
+      "required": false
+    },
+    {
+      "id": "compatdelight:frostmaw_steak",
+      "required": false
+    },
+    {
+      "id": "compatdelight:gem_dust_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glare_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glazed_obsidian_heart",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glazed_rings_raptor",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glazed_warden_tendril",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_berries_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:glow_spruit",
+      "required": false
+    },
+    {
+      "id": "compatdelight:grilled_hoglin",
+      "required": false
+    },
+    {
+      "id": "compatdelight:grilled_monitor_tail",
+      "required": false
+    },
+    {
+      "id": "compatdelight:grilled_mutant_enderman",
+      "required": false
+    },
+    {
+      "id": "compatdelight:grilled_scorpion",
+      "required": false
+    },
+    {
+      "id": "compatdelight:grottol_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:heart_pie",
+      "required": false
+    },
+    {
+      "id": "compatdelight:hoglin_sandwich",
+      "required": false
+    },
+    {
+      "id": "compatdelight:honey_glazed_monster_flesh",
+      "required": false
+    },
+    {
+      "id": "compatdelight:hot_fuel_bucket",
+      "required": false
+    },
+    {
+      "id": "compatdelight:hound",
+      "required": false
+    },
+    {
+      "id": "compatdelight:ice_cube",
+      "required": false
+    },
+    {
+      "id": "compatdelight:improved_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:infused_pumpkin",
+      "required": false
+    },
+    {
+      "id": "compatdelight:jem_glazed_arcane_dragon_egg",
+      "required": false
+    },
+    {
+      "id": "compatdelight:living_flesh_slice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:magic_dog_food",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mana_flesh",
+      "required": false
+    },
+    {
+      "id": "compatdelight:marinated_naga_heart",
+      "required": false
+    },
+    {
+      "id": "compatdelight:marinated_nagi_tail",
+      "required": false
+    },
+    {
+      "id": "compatdelight:marlin_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:marlin_stick",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mending_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mix_astra",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mix_essence_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:monster_flesh_hamburger",
+      "required": false
+    },
+    {
+      "id": "compatdelight:monster_flesh_sandwich",
+      "required": false
+    },
+    {
+      "id": "compatdelight:monster_flesh_wrap",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mutant_creeper_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mutant_dog_food",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mutant_enderman_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mutant_rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mutant_skeleton_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:mutant_snow_golem_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:naga_heart",
+      "required": false
+    },
+    {
+      "id": "compatdelight:naga_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:naga_soup",
+      "required": false
+    },
+    {
+      "id": "compatdelight:nagi_tail",
+      "required": false
+    },
+    {
+      "id": "compatdelight:nether_cheese_slice",
+      "required": false
+    },
+    {
+      "id": "compatdelight:nether_cheese_toast",
+      "required": false
+    },
+    {
+      "id": "compatdelight:nether_wisp_pollen",
+      "required": false
+    },
+    {
+      "id": "compatdelight:pasta_with_bone",
+      "required": false
+    },
+    {
+      "id": "compatdelight:pasta_with_heart",
+      "required": false
+    },
+    {
+      "id": "compatdelight:penguin",
+      "required": false
+    },
+    {
+      "id": "compatdelight:piglin_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:processor_binding_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:processor_salad",
+      "required": false
+    },
+    {
+      "id": "compatdelight:processor_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:propulk",
+      "required": false
+    },
+    {
+      "id": "compatdelight:purifying_soap_sauce",
+      "required": false
+    },
+    {
+      "id": "compatdelight:radioactive_roll",
+      "required": false
+    },
+    {
+      "id": "compatdelight:rascal_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:raw_martian_raptor_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:roast_mutant_snow_golem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:roast_venison",
+      "required": false
+    },
+    {
+      "id": "compatdelight:runic_jam_glazed_living_flesh",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sand_shapper",
+      "required": false
+    },
+    {
+      "id": "compatdelight:scorpion",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sculk_dog_food",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sculk_leech",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sculk_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:sculk_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:silicon_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:small_pizza",
+      "required": false
+    },
+    {
+      "id": "compatdelight:soul_custard",
+      "required": false
+    },
+    {
+      "id": "compatdelight:soul_jem",
+      "required": false
+    },
+    {
+      "id": "compatdelight:soul_star_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:spider_noodle_soup",
+      "required": false
+    },
+    {
+      "id": "compatdelight:spider_pig_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:squished_bounceling_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:stalker_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:stalker_roll",
+      "required": false
+    },
+    {
+      "id": "compatdelight:stalker_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:star_lily_salad",
+      "required": false
+    },
+    {
+      "id": "compatdelight:suavis_and_stinger_egg",
+      "required": false
+    },
+    {
+      "id": "compatdelight:tentacle_and_arcane_eggs",
+      "required": false
+    },
+    {
+      "id": "compatdelight:tentacle_of_hamburger",
+      "required": false
+    },
+    {
+      "id": "compatdelight:tentacle_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:tuff_golem_heart",
+      "required": false
+    },
+    {
+      "id": "compatdelight:umvuthana",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_bone",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_dog_food",
+      "required": false
+    },
+    {
+      "id": "compatdelight:void_steak",
+      "required": false
+    },
+    {
+      "id": "compatdelight:warden_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:warden_pasta_with_rare_material",
+      "required": false
+    },
+    {
+      "id": "compatdelight:warden_roll",
+      "required": false
+    },
+    {
+      "id": "compatdelight:warden_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:warped_aura_stew",
+      "required": false
+    },
+    {
+      "id": "compatdelight:warped_enderman",
+      "required": false
+    },
+    {
+      "id": "compatdelight:weeping_vines_with_meatballs",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wilden_chimera_heart",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wilden_guardian_steak",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wilden_stalker_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wildfire_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wither_meat",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wither_meat_stick",
+      "required": false
+    },
+    {
+      "id": "compatdelight:wraither_flesh",
+      "required": false
+    },
+    {
+      "id": "compatdelight:yellow_dock_stew",
+      "required": false
+    },
+    {
+      "id": "crockpot:bacon_eggs",
+      "required": false
+    },
+    {
+      "id": "crockpot:bone_soup",
+      "required": false
+    },
+    {
+      "id": "crockpot:bone_stew",
+      "required": false
+    },
+    {
+      "id": "crockpot:california_roll",
+      "required": false
+    },
+    {
+      "id": "crockpot:ceviche",
+      "required": false
+    },
+    {
+      "id": "crockpot:frog_legs",
+      "required": false
+    },
+    {
+      "id": "crockpot:froggle_bunwich",
+      "required": false
+    },
+    {
+      "id": "crockpot:honey_ham",
+      "required": false
+    },
+    {
+      "id": "crockpot:honey_nuggets",
+      "required": false
+    },
+    {
+      "id": "crockpot:hot_chili",
+      "required": false
+    },
+    {
+      "id": "crockpot:kabobs",
+      "required": false
+    },
+    {
+      "id": "crockpot:meat_balls",
+      "required": false
+    },
+    {
+      "id": "crockpot:monster_lasagna",
+      "required": false
+    },
+    {
+      "id": "crockpot:monster_tartare",
+      "required": false
+    },
+    {
+      "id": "crockpot:moqueca",
+      "required": false
+    },
+    {
+      "id": "crockpot:pepper_popper",
+      "required": false
+    },
+    {
+      "id": "crockpot:perogies",
+      "required": false
+    },
+    {
+      "id": "crockpot:surf_n_turf",
+      "required": false
+    },
+    {
+      "id": "crockpot:tropical_bouillabaisse",
+      "required": false
+    },
+    {
+      "id": "crockpot:turkey_dinner",
+      "required": false
+    },
+    {
+      "id": "croptopia:almond",
+      "required": false
+    },
+    {
+      "id": "croptopia:beef_jerky",
+      "required": false
+    },
+    {
+      "id": "croptopia:blackbean",
+      "required": false
+    },
+    {
+      "id": "croptopia:cashew",
+      "required": false
+    },
+    {
+      "id": "croptopia:cheese_cake",
+      "required": false
+    },
+    {
+      "id": "croptopia:milk_bottle",
+      "required": false
+    },
+    {
+      "id": "croptopia:peanut",
+      "required": false
+    },
+    {
+      "id": "croptopia:pecan",
+      "required": false
+    },
+    {
+      "id": "croptopia:pork_jerky",
+      "required": false
+    },
+    {
+      "id": "croptopia:soybean",
+      "required": false
+    },
+    {
+      "id": "croptopia:walnut",
+      "required": false
+    },
+    {
+      "id": "delightful:acorn",
+      "required": false
+    },
+    {
+      "id": "delightful:animal_fat",
+      "required": false
+    },
+    {
+      "id": "delightful:honey_glazed_walnut",
+      "required": false
+    },
+    {
+      "id": "delightful:raw_goat",
+      "required": false
+    },
+    {
+      "id": "delightful:venison_chops",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:piglin_porkchop",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_bat",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_bear",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_bee",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_cat",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_dolphin",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_fox",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_horse",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_iron_golem",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_llama",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_monster_meat",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_parrot",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_red_meat",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_strider",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_turtle",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_villager",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_white_meat",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:raw_wolf",
+      "required": false
+    },
+    {
+      "id": "dropthemeat:villager_nose",
+      "required": false
+    },
+    {
+      "id": "ecologics:walnut",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:aphid",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:camelspider",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:caphid",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:centipede",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:cricket",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:dungbeetle",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:fireant",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:grasshopper",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:jumilbug",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:locust",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:scarab",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:scorpion",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:slug",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:sowbug",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:termite",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:witchettygrub",
+      "required": false
+    },
+    {
+      "id": "ediblebugs:woodtermite",
+      "required": false
+    },
+    {
+      "id": "endersdelight:mite_crust",
+      "required": false
+    },
+    {
+      "id": "endersdelight:shulker_mollusk",
+      "required": false
+    },
+    {
+      "id": "endlessoceans:cooked_blue_tang",
+      "required": false
+    },
+    {
+      "id": "endlessoceans:cooked_coral_goby",
+      "required": false
+    },
+    {
+      "id": "endlessoceans:cooked_crescent_tail_bigeye",
+      "required": false
+    },
+    {
+      "id": "endlessoceans:cooked_moorish_idol",
+      "required": false
+    },
+    {
+      "id": "endlessoceans:cooked_sailfin_tang",
+      "required": false
+    },
+    {
+      "id": "endlessoceans:cooked_starcks_demoiselle",
+      "required": false
+    },
+    {
+      "id": "endlessoceans:cooked_yellow_tang",
+      "required": false
+    },
+    {
+      "id": "environmental:duck",
+      "required": false
+    },
+    {
+      "id": "environmental:duck_egg",
+      "required": false
+    },
+    {
+      "id": "environmental:venison",
+      "required": false
+    },
+    {
+      "id": "evilcraft:flesh_humanoid",
+      "required": false
+    },
+    {
+      "id": "evilcraft:flesh_werewolf",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:bluejay_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:booby_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:budgerigar_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:cardinal_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:cassowary_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:cockatoo_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:crane_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:duck_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:flamingo_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:gouldianfinch_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:gull_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:heron_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:hummingbird_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:kiwi_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:kookaburra_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:lyrebird_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:macaw_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:magpie_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:ostrich_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:owl_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:peafowl_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:pelican_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:penguin_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:pigeon_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:raw_birdmeat",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:roadrunner_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:robin_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:swan_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:toucan_egg",
+      "required": false
+    },
+    {
+      "id": "exoticbirds:woodpecker_egg",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:bacon",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:chicken_parts",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:lamb_ham",
+      "required": false
+    },
+    {
+      "id": "farm_and_charm:minced_beef",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:cabbage_rolls",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:fried_egg",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:ham",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:honey_glazed_ham",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:roast_chicken",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:shepherds_pie",
+      "required": false
+    },
+    {
+      "id": "fins:blu_wee",
+      "required": false
+    },
+    {
+      "id": "fins:bugmeat",
+      "required": false
+    },
+    {
+      "id": "fins:cooked_bull_crab_claw",
+      "required": false
+    },
+    {
+      "id": "fins:flatback_sucker",
+      "required": false
+    },
+    {
+      "id": "fins:golden_river_ray_wing_fillet",
+      "required": false
+    },
+    {
+      "id": "fins:high_finned_blue",
+      "required": false
+    },
+    {
+      "id": "fins:papa_wee",
+      "required": false
+    },
+    {
+      "id": "fins:pea_wee",
+      "required": false
+    },
+    {
+      "id": "fins:raw_golden_river_ray_wing",
+      "required": false
+    },
+    {
+      "id": "fins:swamp_mucker",
+      "required": false
+    },
+    {
+      "id": "fins:vibra_wee",
+      "required": false
+    },
+    {
+      "id": "fins:wee_wee",
+      "required": false
+    },
+    {
+      "id": "fins:wherble_fin",
+      "required": false
+    },
+    {
+      "id": "fluffy_farmer:cold_cuts",
+      "required": false
+    },
+    {
+      "id": "foodexpansion:bat_wing",
+      "required": false
+    },
+    {
+      "id": "foodexpansion:horse_meat",
+      "required": false
+    },
+    {
+      "id": "foodexpansion:llama_meat",
+      "required": false
+    },
+    {
+      "id": "foodexpansion:ocelot_meat",
+      "required": false
+    },
+    {
+      "id": "foodexpansion:parrot_meat",
+      "required": false
+    },
+    {
+      "id": "foodexpansion:polar_bear_meat",
+      "required": false
+    },
+    {
+      "id": "foodexpansion:wolf_meat",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:bat_wing",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_suspicious_stew_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:tentacle",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:fig_chicken_stew",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:lychee_chicken",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:orange_chicken",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:orange_marinated_pork",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:pineapple_marinated_pork",
+      "required": false
+    },
+    {
+      "id": "gaiadimension:large_tentacle",
+      "required": false
+    },
+    {
+      "id": "gaiadimension:luggeroth_chop",
+      "required": false
+    },
+    {
+      "id": "gaiadimension:lurmorus_meat",
+      "required": false
+    },
+    {
+      "id": "gaiadimension:small_tentacle",
+      "required": false
+    },
+    {
+      "id": "glowbats:glow_bat_wing",
+      "required": false
+    },
+    {
+      "id": "goat_meat_mod:rawchevon",
+      "required": false
+    },
+    {
+      "id": "greekfantasy:gorgon_blood",
+      "required": false
+    },
+    {
+      "id": "iceandfire:cannoli",
+      "required": false
+    },
+    {
+      "id": "iceandfire:deathworm_egg",
+      "required": false
+    },
+    {
+      "id": "iceandfire:deathworm_egg_giant",
+      "required": false
+    },
+    {
+      "id": "iceandfire:fire_dragon_flesh",
+      "required": false
+    },
+    {
+      "id": "iceandfire:hippogryph_egg",
+      "required": false
+    },
+    {
+      "id": "iceandfire:ice_dragon_flesh",
+      "required": false
+    },
+    {
+      "id": "iceandfire:lightning_dragon_flesh",
+      "required": false
+    },
+    {
+      "id": "iceandfire:myrmex_desert_egg",
+      "required": false
+    },
+    {
+      "id": "iceandfire:myrmex_jungle_egg",
+      "required": false
+    },
+    {
+      "id": "immersivecooking:raw_spider_shank",
+      "required": false
+    },
+    {
+      "id": "infernalexp:blindsight_tongue",
+      "required": false
+    },
+    {
+      "id": "infernalexp:raw_hogchop",
+      "required": false
+    },
+    {
+      "id": "krayscandles:soybean",
+      "required": false
+    },
+    {
+      "id": "largemeals:omurice",
+      "required": false
+    },
+    {
+      "id": "minecolonies:raw_pumpkin_pie",
+      "required": false
+    },
+    {
+      "id": "minecraft:beef",
+      "required": false
+    },
+    {
+      "id": "minecraft:bone",
+      "required": false
+    },
+    {
+      "id": "minecraft:chicken",
+      "required": false
+    },
+    {
+      "id": "minecraft:egg",
+      "required": false
+    },
+    {
+      "id": "minecraft:fermented_spider_eye",
+      "required": false
+    },
+    {
+      "id": "minecraft:ink_sac",
+      "required": false
+    },
+    {
+      "id": "minecraft:milk_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:mutton",
+      "required": false
+    },
+    {
+      "id": "minecraft:porkchop",
+      "required": false
+    },
+    {
+      "id": "minecraft:rabbit",
+      "required": false
+    },
+    {
+      "id": "minecraft:rotten_flesh",
+      "required": false
+    },
+    {
+      "id": "minecraft:spider_eye",
+      "required": false
+    },
+    {
+      "id": "minecraft:suspicious_stew",
+      "required": false
+    },
+    {
+      "id": "minecraft:turtle_egg",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:glowing_jelly",
+      "required": false
+    },
+    {
+      "id": "mysticalworld:venison",
+      "required": false
+    },
+    {
+      "id": "neapolitan:adzuki_beans",
+      "required": false
+    },
+    {
+      "id": "nefdecomod:meal_01",
+      "required": false
+    },
+    {
+      "id": "nefdecomod:meal_02",
+      "required": false
+    },
+    {
+      "id": "nethers_delight:hoglin_ear",
+      "required": false
+    },
+    {
+      "id": "nethers_delight:hoglin_loin",
+      "required": false
+    },
+    {
+      "id": "nethers_delight:propelpearl",
+      "required": false
+    },
+    {
+      "id": "nethers_delight:roast_hoglin",
+      "required": false
+    },
+    {
+      "id": "nethers_delight:roast_hoglin_ham",
+      "required": false
+    },
+    {
+      "id": "nethers_delight:roast_hoglin_snout",
+      "required": false
+    },
+    {
+      "id": "nethers_delight:strider_slice",
+      "required": false
+    },
+    {
+      "id": "nethers_delight:stuffed_hoglin_item",
+      "required": false
+    },
+    {
+      "id": "nourished_nether:raw_hoglin_meat",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:baked_tentacle_on_a_stick",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:bowl_of_guardian_soup",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:braised_sea_pickle",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:cabbage_wrapped_elder_guardian",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:cooked_elder_guardian_slice",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:cooked_guardian_tail",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:cut_tentacles",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:elder_guardian_roll",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:elder_guardian_slab",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:elder_guardian_slice",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:fugu_roll",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:fugu_slice",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:guardian_tail",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:tentacle_on_a_stick",
+      "required": false
+    },
+    {
+      "id": "oceansdelight:tentacles",
+      "required": false
+    },
+    {
+      "id": "oddwatermobs:raw_coelacanth",
+      "required": false
+    },
+    {
+      "id": "oddwatermobs:raw_ghost_shark",
+      "required": false
+    },
+    {
+      "id": "oddwatermobs:raw_isopod",
+      "required": false
+    },
+    {
+      "id": "oddwatermobs:raw_mudskipper",
+      "required": false
+    },
+    {
+      "id": "outer_end:stalker_meat",
+      "required": false
+    },
+    {
+      "id": "pamhc2crops:beanitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2crops:peanutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2crops:soybeanitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2crops:waterchestnutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodcore:freshmilkitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodcore:sunflowerseedsitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:bangersandmashitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:bolognaitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:bulgogiitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:cevicheitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:cornedbeefitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:eggsbenedictitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:gourmetmuttonpattyitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:honeyglazedhamitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:misopasteitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:padthaiitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:paneeritem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:pinkelitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:rawtofaconitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:refriedbeansitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:schnitzelitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:seedsoupitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:soymilkitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2foodextended:springrollitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:almonditem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:candlenutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:cashewitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:chestnutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:hazelnutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:pecanitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:pinenutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:pistachioitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:walnutitem",
+      "required": false
+    },
+    {
+      "id": "pandoras_creatures:bufflon_beef",
+      "required": false
+    },
+    {
+      "id": "pandoras_creatures:seahorse",
+      "required": false
+    },
+    {
+      "id": "quark:frog_leg",
+      "required": false
+    },
+    {
+      "id": "ramadandelight:chickpea",
+      "required": false
+    },
+    {
+      "id": "rankine:aged_cheese",
+      "required": false
+    },
+    {
+      "id": "rankine:black_walnut",
+      "required": false
+    },
+    {
+      "id": "rankine:cheese",
+      "required": false
+    },
+    {
+      "id": "rankine:unaged_cheese",
+      "required": false
+    },
+    {
+      "id": "rats:blue_cheese",
+      "required": false
+    },
+    {
+      "id": "rats:contaminated_food",
+      "required": false
+    },
+    {
+      "id": "rats:nether_cheese",
+      "required": false
+    },
+    {
+      "id": "rats:plague_leech",
+      "required": false
+    },
+    {
+      "id": "rats:raw_rat",
+      "required": false
+    },
+    {
+      "id": "rats:string_cheese",
+      "required": false
+    },
+    {
+      "id": "silents_mechanisms:beef_jerky",
+      "required": false
+    },
+    {
+      "id": "silents_mechanisms:chicken_jerky",
+      "required": false
+    },
+    {
+      "id": "silents_mechanisms:mutton_jerky",
+      "required": false
+    },
+    {
+      "id": "silents_mechanisms:pork_jerky",
+      "required": false
+    },
+    {
+      "id": "silents_mechanisms:rabbit_jerky",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:baked_warden_ear_on_a_stick",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:cut_warden_ear",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:heartburger",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:minced_warden_heart",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:sculk_barbecue_stick",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:sculk_sensor_sprinkles",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:sculk_sensor_tendril",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:sculk_sensor_tendril_roll",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:sculk_sensor_tendril_roll_slice",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:sculk_soup",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:warden_ear",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:warden_ear_fried_rice",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:warden_ear_on_a_stick",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:warden_heart",
+      "required": false
+    },
+    {
+      "id": "silentsdelight:warden_heart_patty",
+      "required": false
+    },
+    {
+      "id": "simplefarming:cheese_block",
+      "required": false
+    },
+    {
+      "id": "simplefarming:cheese_slice",
+      "required": false
+    },
+    {
+      "id": "simplefarming:peanut",
+      "required": false
+    },
+    {
+      "id": "simplefarming:raw_bacon",
+      "required": false
+    },
+    {
+      "id": "simplefarming:raw_chicken_wings",
+      "required": false
+    },
+    {
+      "id": "simplefarming:raw_horse_meat",
+      "required": false
+    },
+    {
+      "id": "simplefarming:soybean",
+      "required": false
+    },
+    {
+      "id": "survivalplus:cheese_cake",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bacon",
+      "required": false
+    },
+    {
+      "id": "tea_kettle:black_latte",
+      "required": false
+    },
+    {
+      "id": "tea_kettle:green_latte",
+      "required": false
+    },
+    {
+      "id": "tea_kettle:oolong_latte",
+      "required": false
+    },
+    {
+      "id": "tea_kettle:white_latte",
+      "required": false
+    },
+    {
+      "id": "terraincognita:hazelnut",
+      "required": false
+    },
+    {
+      "id": "thermal:peanut",
+      "required": false
+    },
+    {
+      "id": "twilightforest:hydra_chop",
+      "required": false
+    },
+    {
+      "id": "twilightforest:meef_stroganoff",
+      "required": false
+    },
+    {
+      "id": "twilightforest:raw_meef",
+      "required": false
+    },
+    {
+      "id": "twilightforest:raw_venison",
+      "required": false
+    },
+    {
+      "id": "undergarden:raw_dweller_meat",
+      "required": false
+    },
+    {
+      "id": "undergarden:raw_gloomper_leg",
+      "required": false
+    },
+    {
+      "id": "uniquecrops:teriyaki",
+      "required": false
+    },
+    {
+      "id": "untitledduckmod:duck_egg",
+      "required": false
+    },
+    {
+      "id": "untitledduckmod:goose_egg",
+      "required": false
+    },
+    {
+      "id": "untitledduckmod:raw_duck",
+      "required": false
+    },
+    {
+      "id": "untitledduckmod:raw_goose",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:acorn_nuts",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:bat_raw",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:bear_raw",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:bear_raw_charred",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:carrot_muffin",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:cave_stew",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:creamsoup_beet",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:creamsoup_cactus",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:creamsoup_carrot",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:creamsoup_mushroom",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:creamsoup_potato",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:creamsoup_pumpkin",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:cyclops_sandwich",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:decker_cheesesteak",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:decker_cuban",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:decker_mutton",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:decker_steak",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:fried_eggwhite",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:guardian_meat_raw",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:hocks_raw",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:horse_raw",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:llama_raw",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:phantom_meat_raw",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:pigtail_raw",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:polar_bear_stew",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:portion_jerky",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:potato_chowder",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:pumpkin_pigtail_stew",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:pumpkin_pigtail_stew_combo",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:ravager_meat_charred",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:ravager_meat_raw",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:sanitized_flesh_steamed",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:teadrink_milky_bushtea",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:teadrink_milky_dandtea",
+      "required": false
+    },
+    {
+      "id": "vanillafoodpantry:wolf_raw",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:century_egg",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:cheese_curds",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:cheese_slice",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:peanut",
+      "required": false
+    },
+    {
+      "id": "wyrmroost:desert_wyrm",
+      "required": false
+    },
+    {
+      "id": "wyrmroost:dragon_egg",
+      "required": false
+    },
+    {
+      "id": "wyrmroost:raw_apex_meat",
+      "required": false
+    },
+    {
+      "id": "wyrmroost:raw_behemoth_meat",
+      "required": false
+    },
+    {
+      "id": "wyrmroost:raw_common_meat",
+      "required": false
+    },
+    {
+      "id": "wyrmroost:raw_lowtier_meat",
+      "required": false
+    },
+    {
+      "id": "xercamod:doner_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:blazing_red_curry",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:california_roll",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:california_roll_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:cold_tofu",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:cumberland_loin",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:egg_futomaki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:egg_futomaki_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:egg_nigiri",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:grilled_boarchop",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:grilled_boarchop_bits",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:grilled_eel_over_rice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:grilled_venison",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:grilled_venison_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:han_palace",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:imitation_bear_paw",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:imitation_crab",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:kabayaki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:kaguya_hime",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:lamprey_skewer",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:lions_head",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:longevity_noodles",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:lorelei_nigiri",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:mapo_tofu",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:nattou",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:nattou_gunkan",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:oily_bean_curd",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:otoro",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:otoro_nigiri",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:pastitsio",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:pork_rice_ball",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:potato_soup",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:power_soup",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rainbow_futomaki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rainbow_futomaki_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rainbow_roll",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rainbow_roll_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_boarchop",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_boarchop_bits",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_imitation_bear_paw",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_kaguya_hime",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_lamprey",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_lamprey_fillet",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_rice_powder_pork",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_venison",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:raw_venison_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:rice_powder_pork",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:roasted_lamprey",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:roasted_lamprey_fillet",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:shirayuki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:steamed_crab",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:steamed_egg_in_bamboo",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:stinky_tofu",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tamagoyaki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tamagoyaki_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tekka_maki",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tekka_maki_slice",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tobiko_gunkan",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tofu",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tofu_burger",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:tofu_crab_stew",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:volcano_roll",
+      "required": false
+    },
+    {
+      "id": "youkaisfeasts:volcano_roll_slice",
+      "required": false
+    }
   ]
 }

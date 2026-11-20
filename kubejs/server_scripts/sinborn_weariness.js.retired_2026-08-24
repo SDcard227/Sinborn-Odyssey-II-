@@ -1,0 +1,229 @@
+// ============================================================
+// SINBORN ODYSSEY 2 — The Long Day
+//
+// Connects the three rest systems that currently ignore
+// each other:
+//
+//   PeakStamina       = SORENESS      (overexertion, cured by food)
+//   this script        = SLEEP DEBT    (hours awake, cured by sleep)
+//   Midnight Thoughts  = SLEEP QUALITY (comfort sets how much clears)
+//
+// Sleep Rework was removed 2026-08-24. Its clock ignored what
+// you actually did, and its meter reset fully on any sleep while
+// this one keeps debt, so the two contradicted each other on
+// screen. This script is now the only sleep drive.
+//
+// This script adds one per-player value, WEARINESS, that:
+//   1. climbs with time awake AND with what you actually do
+//   2. shrinks your maximum stamina as it climbs
+//   3. reports itself on the actionbar once you are past
+//      "starting to flag", so it is visible without a HUD mod
+//   4. is cleared by sleeping, by an amount set by how
+//      comfortable the bed was (Midnight Thoughts level 1-5)
+//
+// So: a rough day makes you genuinely tired, being tired
+// costs you stamina, and a good bed fixes more than a bad one.
+//
+// Verified hooks (read out of the jars, 2026-08-23):
+//   - peakstamina:max_stamina is a real registered attribute
+//     (com.peakstamina.registry.StaminaAttributes, DeferredRegister)
+//   - MidnightThoughtsEvents.wellRestedApplied carries `level`
+//     (mt.integration.kubejs.MTKubeEvents)
+//   - PlayerKJS.setStatusMessage draws the actionbar
+//
+// Attribute changes go through the vanilla /attribute command
+// and ONLY fire when the tier changes, so this is cheap.
+// ============================================================
+
+// ---------- tuning: derived from real sleep research ----------
+// A Minecraft day cycle is 20 real minutes = 24 hours.
+// So 1 MC minute = 1.2 IRL hours, and WEARINESS is measured
+// directly in IRL-equivalent HOURS AWAKE. Every number below
+// comes from that conversion, not from game feel.
+//
+//   ~16h awake ....... measurable impairment begins
+//   17-19h awake ..... roughly 0.05% BAC equivalent
+//   ~24h awake ....... roughly 0.10% BAC equivalent  (Dawson & Reid 1997)
+//   48h .............. practical ceiling
+//
+// Sleep subtracts a FLAT number of hours, which is why a normal
+// day clears completely and a brutal one leaves debt behind.
+// That is the chronic-restriction finding: one night does not
+// repay an accumulated deficit.
+
+const KEY = 'sinborn_weariness'       // hours awake, 0 .. 48
+const KEY_TIER = 'sinborn_weariness_tier'
+const MAX = 48.0                      // two days awake
+
+const TICK_EVERY = 100                // 5 seconds = 1/12 MC minute = 0.1 IRL hours
+
+const PER_TICK_AWAKE = 0.10           // 1.2 IRL hours per MC minute
+const PER_TICK_SPRINT = 0.05          // hard exertion ages you ~50% faster
+const PER_MOB_KILL = 0.30             // a fight
+const PER_DAMAGE_HALFHEART = 0.05     // injury is genuinely fatiguing
+const PER_BLOCK_BROKEN = 0.01         // manual labour
+
+// hours awake -> max stamina penalty.
+// Sleep loss hits ENDURANCE much harder than peak strength
+// (20-30%+ decrements on time-to-exhaustion), and stamina is
+// endurance, so the ceiling is steep. PeakStamina's own floor
+// (minMaxStamina = 10) stops this stacking into nothing.
+const TIERS = [
+  { at: 0,  penalty: 0,  label: 'rested' },
+  { at: 16, penalty: 8,  label: 'starting to flag' },       // impairment onset
+  { at: 18, penalty: 18, label: 'tired' },                  // ~0.05% BAC
+  { at: 21, penalty: 28, label: 'impaired' },
+  { at: 24, penalty: 38, label: 'exhausted' },              // ~0.10% BAC
+  { at: 36, penalty: 45, label: 'dangerously spent' }
+]
+
+// A full night restores about one day's worth. Flat, so a normal
+// day clears entirely and a 36h bender leaves 12h of debt.
+const SLEEP_CLEARS_BASE = 16.0        // a poor night, level 1
+const SLEEP_CLEARS_PER_LEVEL = 4.0    // level 5 = 16 + 20 = 36h
+
+// fixed uuid so the modifier is always replaceable / removable
+const MOD_UUID = 'b7e1c3a4-5d62-4f18-9a30-2c8be5f41d77'
+const MOD_NAME = 'sinborn_weariness'
+const ATTR = 'peakstamina:max_stamina'
+
+// ---------- helpers ----------
+function getWeariness(player) {
+  return player.persistentData.contains(KEY) ? player.persistentData.getDouble(KEY) : 0.0
+}
+
+function addWeariness(player, amount) {
+  if (!player || !player.isPlayer() || player.isSpectator() || player.isCreative()) return
+  let v = getWeariness(player) + amount
+  if (v < 0) v = 0
+  if (v > MAX) v = MAX
+  player.persistentData.putDouble(KEY, v)
+}
+
+function tierFor(weariness) {
+  let t = 0
+  for (let i = 0; i < TIERS.length; i++) if (weariness >= TIERS[i].at) t = i
+  return t
+}
+
+// Only ever called when the tier actually changed.
+function applyTier(player, tier) {
+  const server = player.server
+  if (!server) return
+  const name = player.username
+
+  // always clear the old modifier first, so tiers never stack
+  try {
+    server.runCommandSilent('attribute ' + name + ' ' + ATTR + ' modifier remove ' + MOD_UUID)
+  } catch (e) { /* no modifier present yet */ }
+
+  const penalty = TIERS[tier].penalty
+  if (penalty > 0) {
+    try {
+      server.runCommandSilent(
+        'attribute ' + name + ' ' + ATTR + ' modifier add ' +
+        MOD_UUID + ' ' + MOD_NAME + ' -' + penalty + ' add'
+      )
+    } catch (e) { console.warn('[weariness] could not apply attribute modifier: ' + e) }
+  }
+
+  player.persistentData.putInt(KEY_TIER, tier)
+}
+
+// ---------- accrual: the clock, and what you do ----------
+PlayerEvents.tick(event => {
+  const player = event.player
+  if (!player || player.isSpectator() || player.isCreative()) return
+  if (player.tickCount % TICK_EVERY !== 0) return
+
+  addWeariness(player, PER_TICK_AWAKE)
+  if (player.isSprinting()) addWeariness(player, PER_TICK_SPRINT)
+
+  const w = getWeariness(player)
+  const tier = tierFor(w)
+  const was = player.persistentData.contains(KEY_TIER) ? player.persistentData.getInt(KEY_TIER) : -1
+
+  if (tier !== was) {
+    applyTier(player, tier)
+    if (tier > was && tier > 0) {
+      player.tell(Component.literal('§7You feel ' + TIERS[tier].label + '.'))
+    }
+  }
+
+  // Once you are actually flagging, keep it on screen.
+  // This is the readout that replaces Sleep Rework's widget.
+  if (tier > 0) {
+    const colour = tier >= 4 ? '§c' : (tier >= 2 ? '§6' : '§e')
+    player.setStatusMessage(Component.literal(
+      colour + 'Awake ' + Math.round(w) + 'h §7· ' + TIERS[tier].label +
+      '§7 · -' + TIERS[tier].penalty + ' stamina'
+    ))
+  }
+})
+
+// killing things is work
+EntityEvents.death(event => {
+  const src = event.source
+  if (!src) return
+  const killer = src.player
+  if (killer) addWeariness(killer, PER_MOB_KILL)
+})
+
+// so is getting hit
+EntityEvents.hurt(event => {
+  const e = event.entity
+  if (!e || !e.isPlayer()) return
+  addWeariness(e, event.damage * PER_DAMAGE_HALFHEART)
+})
+
+// and so is swinging a pick all day
+BlockEvents.broken(event => {
+  if (event.player) addWeariness(event.player, PER_BLOCK_BROKEN)
+})
+
+// ---------- the reset: sleeping, weighted by how good the bed was ----------
+// Midnight Thoughts fires this on waking, with the comfort tier (1-5).
+// A level 5 bedroom clears everything. A level 1 hole in the ground
+// takes the edge off and no more.
+try {
+  MidnightThoughtsEvents.wellRestedApplied(event => {
+    const player = event.player
+    if (!player) return
+    const level = event.level || 1
+    const clears = SLEEP_CLEARS_BASE + (SLEEP_CLEARS_PER_LEVEL * level)
+
+    const before = getWeariness(player)
+    let after = before - clears
+    if (after < 0) after = 0
+    player.persistentData.putDouble(KEY, after)
+
+    const tier = tierFor(after)
+    applyTier(player, tier)
+
+    if (before > 16) {
+      player.tell(Component.literal(after <= 0
+        ? '§7You wake up clear-headed.'
+        : '§7You wake up, but the week is still in your legs.'))
+    }
+  })
+} catch (e) {
+  console.warn('[weariness] MidnightThoughtsEvents not available, sleep will not clear weariness: ' + e)
+}
+
+// ---------- readout ----------
+ServerEvents.commandRegistry(event => {
+  const { commands: Commands } = event
+  event.register(
+    Commands.literal('weariness').executes(ctx => {
+      const player = ctx.source.player
+      if (!player) return 0
+      const w = getWeariness(player)
+      const t = tierFor(w)
+      player.tell(Component.literal(
+        '§7Awake ' + Math.round(w) + 'h (' + TIERS[t].label + ')' +
+        (TIERS[t].penalty > 0 ? ' , -' + TIERS[t].penalty + ' max stamina' : '')
+      ))
+      return 1
+    })
+  )
+})

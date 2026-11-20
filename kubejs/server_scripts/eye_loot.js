@@ -37,6 +37,12 @@ const CUSTOM_EYES = [
   'endrem:nether_eye'
 ]
 
+// 18 Nov 2026 (SD: "switch em off"). The pool was never finished: nothing puts an eye in a chest,
+// there is no way to claim one, and /eyepool is not a real command. So the two chat messages below
+// promised players something that isn't there. They are OFF. The counter still runs silently, so
+// the numbers exist if the pool is ever built for real (see the relic notes in the vault).
+const EYE_POOL_MESSAGES = false
+
 function poolKey(eyeId) {
   // 'endrem:black_eye' → 'sinborn_eye_pool_endrem_black_eye'
   return 'sinborn_eye_pool_' + eyeId.replace(':', '_')
@@ -66,8 +72,8 @@ ItemEvents.crafted(event => {
   // Add 1 to pool when crafted
   setPoolCount(server, itemId, current + 1)
 
-  // Notify player once (first craft ever = announce to server)
-  if (current === 0) {
+  // Notify player once (first craft ever = announce to server) , OFF, see EYE_POOL_MESSAGES
+  if (EYE_POOL_MESSAGES && current === 0) {
     server.runCommandSilent(
       `tellraw @a {"text":"[Eye Pool] ${itemId.split(':')[1].replace(/_/g,' ')} has been added to the world loot pool.","color":"dark_purple"}`
     )
@@ -146,6 +152,7 @@ ServerEvents.tick(function(event) {
 // Every 6 hours, if there are eyes in pool, hint to all players.
 
 ServerEvents.tick(event => {
+  if (!EYE_POOL_MESSAGES) return // OFF, see EYE_POOL_MESSAGES
   if (event.server.tickCount % 72000 !== 0) return // 6 hours
 
   const server = event.server
